@@ -1,0 +1,4692 @@
+{
+  "artifact_inventory": {
+    "candidate_dom_pages": [
+      1
+    ],
+    "candidate_json": {
+      "path": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+      "present": true,
+      "sha256": "020248d7b97cab184ba7b5a132b8dc4352c34df9a1db9e5b6e0adf98b57c2625",
+      "size_bytes": 137835
+    },
+    "candidate_markdown": {
+      "path": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+      "present": true,
+      "sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+      "size_bytes": 3173
+    },
+    "reference_dom_pages": [
+      1
+    ],
+    "reference_json": {
+      "path": "llamaparse/settlement-agreement/reference.json",
+      "present": true,
+      "sha256": "f6896470093d239d03d65fe40afec120da25a13826332928f0823e7a040e8ff8",
+      "size_bytes": 25246
+    },
+    "reference_markdown": {
+      "path": "llamaparse/settlement-agreement/reference.md",
+      "present": true,
+      "sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+      "size_bytes": 3210
+    },
+    "service_http": {
+      "json": {
+        "content_type": "application/json",
+        "sha256": "020248d7b97cab184ba7b5a132b8dc4352c34df9a1db9e5b6e0adf98b57c2625",
+        "size_bytes": 137835,
+        "status_code": 200
+      },
+      "markdown": {
+        "content_type": "text/markdown; charset=utf-8",
+        "sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+        "size_bytes": 3173,
+        "status_code": 200
+      }
+    }
+  },
+  "case_id": "settlement-agreement",
+  "discrepancies": [
+    {
+      "actual": {
+        "text_excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Ov…",
+        "token_count": 450
+      },
+      "category": "text_integrity",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 2683,
+        "actual_duplicate_lines": [],
+        "actual_tokens": 450,
+        "added_segments": [
+          {
+            "text": "state's",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state's",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state's",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "added_token_counts": [
+          [
+            "state's",
+            3
+          ]
+        ],
+        "expected_chars": 2681,
+        "expected_duplicate_lines": [],
+        "expected_tokens": 450,
+        "missing_segments": [
+          {
+            "text": "state’s",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state’s",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state’s",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            3
+          ]
+        ],
+        "normalized_exact": false,
+        "replaced_segments": [
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          }
+        ],
+        "token_f1": 0.9933333333333333,
+        "token_precision": 0.9933333333333333,
+        "token_recall": 0.9933333333333333,
+        "token_sequence_ratio": 0.9933333333333333
+      },
+      "expected": {
+        "text_excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Ov…",
+        "token_count": 450
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-dcebd22141bf",
+      "output_type": "markdown",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/0"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "No baseline text token is missing, added, duplicated, truncated, or moved out of reading order beyond an explicitly reviewed exception.",
+        "dedicated_test_anchor": "test_p02_us04_text_reconciliation.py",
+        "gap_id": "GAP-TEXT-001",
+        "milestone": "M1",
+        "primary_story": "P02-US04",
+        "secondary_stories": "P02-US03/US06",
+        "story_action": "Existing; evidence/acceptance expanded"
+      },
+      "summary": "Raw Markdown has missing, added, replaced, duplicated, or reordered visible text."
+    },
+    {
+      "actual": {
+        "emphasis_markers": 0
+      },
+      "category": "markdown_structure",
+      "classification": "functional_regression",
+      "evidence": {
+        "emphasis_markers": {
+          "actual": 0,
+          "expected": 1
+        }
+      },
+      "expected": {
+        "emphasis_markers": 1
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-068a56e11ad1",
+      "output_type": "markdown",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/1"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Canonical Markdown preserves render-significant block boundaries and syntax without losing or duplicating content.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "User-visible Markdown emphasis or code syntax differs."
+    },
+    {
+      "actual": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "category": "table_presentation",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_field_sha256": null,
+        "actual_logical_rows": [],
+        "actual_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "cell_difference_count": 1,
+        "cell_differences": [
+          {
+            "actual": "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "column": 2,
+            "expected": "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "row": 1
+          }
+        ],
+        "column_order_changed": false,
+        "expected_field_sha256": null,
+        "expected_logical_rows": [],
+        "expected_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "logical_cell_difference_count": 0,
+        "logical_cell_differences": [],
+        "logical_shape_changed": false,
+        "row_order_changed": false,
+        "shape_changed": false,
+        "span_changed": false,
+        "table_index": 1
+      },
+      "expected": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-015c49e44743",
+      "output_type": "markdown",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/2"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Raw Markdown, JSON, and rendered DOM expose the same canonical table semantics and user-visible header/body grouping.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-TABLE-003",
+        "milestone": "M3",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P04-US01",
+        "story_action": "Existing; parity assertions expanded"
+      },
+      "summary": "Table 1 differs in shape, spans, row order, or cell content."
+    },
+    {
+      "actual": [
+        "text",
+        "text",
+        "text",
+        "table_candidate",
+        "text",
+        "footer"
+      ],
+      "category": "json_structure",
+      "classification": "acceptable_difference",
+      "evidence": {
+        "canonical_families": [
+          "text",
+          "text",
+          "text",
+          "table",
+          "text",
+          "footer"
+        ]
+      },
+      "expected": [
+        "text",
+        "text",
+        "text",
+        "table",
+        "text",
+        "footer"
+      ],
+      "id": "FID-SETTLEMENT-AGREEMENT-98c50c05c437",
+      "output_type": "json",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/3"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Pages and components retain stable types, order, nesting, page association, semantic fields, and canonical serialized content.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Component type names differ but map to the same semantic families and order."
+    },
+    {
+      "actual": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "category": "table_fidelity",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_field_sha256": {
+          "csv": "e11d106658be0f1d5b7aa5fe9edd31effa5ec441bb212e422d073f49fc154ccf",
+          "html": "d1374be34872166628b265e2bf3770ffbd026ba9f273a9f5ad8ce49cb5ee4093",
+          "md": "d1374be34872166628b265e2bf3770ffbd026ba9f273a9f5ad8ce49cb5ee4093"
+        },
+        "actual_logical_rows": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "actual_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "cell_difference_count": 1,
+        "cell_differences": [
+          {
+            "actual": "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "column": 2,
+            "expected": "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "row": 1
+          }
+        ],
+        "column_order_changed": false,
+        "expected_field_sha256": {
+          "csv": "068ea10d1aef1648be1c89b4a954b72e75cc8face22c51d584a7c9624303d0d6",
+          "html": "88baeb2f33457a823daf023cf4acbea6569dc4b121f93b43b947aa5d0fb37b14",
+          "md": "462e6eceb3138cf33d5e5f86552b55d8cc9999176f2f57d74835ffab83925099"
+        },
+        "expected_logical_rows": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "expected_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "logical_cell_difference_count": 1,
+        "logical_cell_differences": [
+          {
+            "actual": "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "column": 2,
+            "expected": "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "row": 1
+          }
+        ],
+        "logical_shape_changed": false,
+        "row_order_changed": false,
+        "shape_changed": false,
+        "span_changed": false,
+        "table_index": 1
+      },
+      "expected": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-715d1044c081",
+      "output_type": "json",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/4"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Headers, row/column order, every cell value, blank cells, and rowspan/colspan ownership match the reviewed table.",
+        "dedicated_test_anchor": "test_p04_us01_span_fidelity.py",
+        "gap_id": "GAP-TABLE-002",
+        "milestone": "M3",
+        "primary_story": "P04-US01",
+        "secondary_stories": "P04-US02/US04",
+        "story_action": "Existing; re-estimated 3→5"
+      },
+      "summary": "Table 1 differs in shape, spans, row order, or cell content."
+    },
+    {
+      "actual": {
+        "excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Ov…",
+        "page_number": 1,
+        "token_count": 450
+      },
+      "category": "text_integrity",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 2683,
+        "actual_duplicate_lines": [],
+        "actual_tokens": 450,
+        "added_segments": [
+          {
+            "text": "state's",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state's",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state's",
+            "token_end": 288,
+            "token_start": 287
+          },
+          {
+            "text": "24",
+            "token_end": 450,
+            "token_start": 449
+          }
+        ],
+        "added_token_counts": [
+          [
+            "state's",
+            3
+          ],
+          [
+            "24",
+            1
+          ]
+        ],
+        "expected_chars": 2678,
+        "expected_duplicate_lines": [],
+        "expected_tokens": 449,
+        "missing_segments": [
+          {
+            "text": "state’s",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state’s",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state’s",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            3
+          ]
+        ],
+        "normalized_exact": false,
+        "physical_page": 1,
+        "replaced_segments": [
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          }
+        ],
+        "token_f1": 0.9922135706340379,
+        "token_precision": 0.9911111111111112,
+        "token_recall": 0.9933184855233853,
+        "token_sequence_ratio": 0.9922135706340378
+      },
+      "expected": {
+        "excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Ov…",
+        "page_number": 1,
+        "token_count": 449
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-01f6e229967c",
+      "output_type": "json",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/5"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "No baseline text token is missing, added, duplicated, truncated, or moved out of reading order beyond an explicitly reviewed exception.",
+        "dedicated_test_anchor": "test_p02_us04_text_reconciliation.py",
+        "gap_id": "GAP-TEXT-001",
+        "milestone": "M1",
+        "primary_story": "P02-US04",
+        "secondary_stories": "P02-US03/US06",
+        "story_action": "Existing; evidence/acceptance expanded"
+      },
+      "summary": "Page-associated JSON component content differs from LlamaParse."
+    },
+    {
+      "actual": {
+        "excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Ov…",
+        "token_count": 449
+      },
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 2680,
+        "actual_tokens": 449,
+        "added_segments": [
+          {
+            "text": "state's",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state's",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state's",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "added_token_counts": [
+          [
+            "state's",
+            3
+          ]
+        ],
+        "expected_chars": 2708,
+        "expected_tokens": 454,
+        "missing_segments": [
+          {
+            "text": "state’s",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state’s",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state’s",
+            "token_end": 288,
+            "token_start": 287
+          },
+          {
+            "text": "page number 24 page number",
+            "token_end": 454,
+            "token_start": 449
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            3
+          ],
+          [
+            "page",
+            2
+          ],
+          [
+            "number",
+            2
+          ],
+          [
+            "24",
+            1
+          ]
+        ],
+        "normalized_exact": false,
+        "replaced_segments": [
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          }
+        ],
+        "token_f1": 0.9878183831672204,
+        "token_precision": 0.9933184855233853,
+        "token_recall": 0.9823788546255506,
+        "token_sequence_ratio": 0.9878183831672204
+      },
+      "expected": {
+        "excerpt": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Ov…",
+        "token_count": 454
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-e84eb88221cb",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/6"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered Markdown visible semantic text differs from LlamaParse."
+    },
+    {
+      "actual": {
+        "p": 4,
+        "table": 1,
+        "tbody": 1,
+        "td": 14,
+        "th": 2,
+        "thead": 1,
+        "tr": 8
+      },
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_headings": [],
+        "actual_structure": [
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "table"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "table",
+            "tag": "thead"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "thead",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "th"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "th"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "table",
+            "tag": "tbody"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          }
+        ],
+        "actual_tag_sequence": [
+          "p",
+          "p",
+          "p",
+          "table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "p"
+        ],
+        "expected_headings": [],
+        "expected_structure": [
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "table"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "table",
+            "tag": "thead"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "thead",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "th"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "th"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "table",
+            "tag": "tbody"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 2,
+            "parent_tag": "tbody",
+            "tag": "tr"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 3,
+            "parent_tag": "tr",
+            "tag": "td"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          }
+        ],
+        "expected_tag_sequence": [
+          "p",
+          "p",
+          "p",
+          "table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "tr",
+          "td",
+          "td",
+          "p",
+          "p"
+        ],
+        "sequence_ratio": 0.9841269841269841
+      },
+      "expected": {
+        "p": 5,
+        "table": 1,
+        "tbody": 1,
+        "td": 14,
+        "th": 2,
+        "thead": 1,
+        "tr": 8
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-c3c86d501635",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/7"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered semantic tag hierarchy or order differs from LlamaParse."
+    },
+    {
+      "actual": [
+        "text",
+        "text",
+        "text",
+        "table_candidate",
+        "text"
+      ],
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "sequence_ratio": 0.7272727272727273
+      },
+      "expected": [
+        "text",
+        "text",
+        "text",
+        "table",
+        "text",
+        "footer"
+      ],
+      "id": "FID-SETTLEMENT-AGREEMENT-4742c6e21c60",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/8"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered item grouping/type sequence differs from LlamaParse."
+    },
+    {
+      "actual": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "category": "table_presentation",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_field_sha256": null,
+        "actual_logical_rows": [],
+        "actual_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "cell_difference_count": 1,
+        "cell_differences": [
+          {
+            "actual": "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "column": 2,
+            "expected": "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount",
+            "row": 1
+          }
+        ],
+        "column_order_changed": false,
+        "expected_field_sha256": null,
+        "expected_logical_rows": [],
+        "expected_matrix": [
+          [
+            "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+            "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+          ],
+          [
+            "Participation below 95%",
+            "15%"
+          ],
+          [
+            "Participation of 95% but less than 96%",
+            "13%"
+          ],
+          [
+            "Participation of 96% but less than 97%",
+            "11%"
+          ],
+          [
+            "Participation of 97% but less than 98%",
+            "9%"
+          ],
+          [
+            "Participation of 98% but less than 99%",
+            "7%"
+          ],
+          [
+            "Participation of 99% but less than 100%",
+            "5%"
+          ],
+          [
+            "Participation of 100%",
+            "3%"
+          ]
+        ],
+        "logical_cell_difference_count": 0,
+        "logical_cell_differences": [],
+        "logical_shape_changed": false,
+        "row_order_changed": false,
+        "shape_changed": false,
+        "span_changed": false,
+        "table_index": 1
+      },
+      "expected": {
+        "column_count": 2,
+        "header_row_count": 1,
+        "row_count": 8,
+        "spans": []
+      },
+      "id": "FID-SETTLEMENT-AGREEMENT-7370a7e3d335",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "reference_json": "llamaparse/settlement-agreement/reference.json",
+          "reference_markdown": "llamaparse/settlement-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+        "json_pointer": "/discrepancies/9"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Raw Markdown, JSON, and rendered DOM expose the same canonical table semantics and user-visible header/body grouping.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-TABLE-003",
+        "milestone": "M3",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P04-US01",
+        "story_action": "Existing; parity assertions expanded"
+      },
+      "summary": "Table 1 differs in shape, spans, row order, or cell content."
+    }
+  ],
+  "metrics": {
+    "json": {
+      "actual": {
+        "canonical_sha256": "d04ca4f0c482a6a6f57a26ef0aa114f2978d3a2d2e82c8a0ce4cb7fcd4f1fc24",
+        "items": {
+          "family_counts": {
+            "footer": 1,
+            "table": 1,
+            "text": 4
+          },
+          "field_counts": {
+            "bbox": 7,
+            "candidate_table_evidence": 1,
+            "cells": 1,
+            "column_count": 1,
+            "confidence": 7,
+            "csv": 1,
+            "embedded_images": 1,
+            "engine": 1,
+            "html": 1,
+            "id": 6,
+            "items": 1,
+            "label": 5,
+            "layout_running_region_projected": 1,
+            "md": 7,
+            "parse_concerns": 1,
+            "reading_order": 6,
+            "row_count": 1,
+            "rows": 1,
+            "running_region": 1,
+            "running_region_policy": 1,
+            "source": 7,
+            "source_alignment": 1,
+            "table_candidate_gate": 1,
+            "table_candidate_gate_reasons": 1,
+            "table_candidate_gate_sources": 1,
+            "type": 7,
+            "value": 7
+          },
+          "field_coverage": {
+            "bbox": 1.0,
+            "confidence": 0.0,
+            "content": 1.0,
+            "provenance": 1.0
+          },
+          "item_count": 7,
+          "page_count": 1,
+          "page_numbers": [
+            1
+          ],
+          "pages": [
+            {
+              "content_anchors": [
+                "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Ince…",
+                "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes…",
+                "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of th…",
+                "<table> <thead> <tr> <th scope=\"col\">Percentage of Incentive BC Subdivision Population as of the Third Subdivision Part…",
+                "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the I…",
+                "24"
+              ],
+              "item_trees": [
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "table",
+                  "type": "table_candidate"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "family": "text",
+                      "type": "text"
+                    }
+                  ],
+                  "family": "footer",
+                  "type": "footer"
+                }
+              ],
+              "max_nesting_depth": 1,
+              "nested_item_count": 1,
+              "page_label": "1",
+              "page_number": 1,
+              "printed_page_numbers": [
+                "24"
+              ],
+              "reading_order_monotonic": true,
+              "reading_order_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "top_level_family_sequence": [
+                "text",
+                "text",
+                "text",
+                "table",
+                "text",
+                "footer"
+              ],
+              "top_level_item_count": 6,
+              "top_level_type_sequence": [
+                "text",
+                "text",
+                "text",
+                "table_candidate",
+                "text",
+                "footer"
+              ]
+            }
+          ],
+          "top_level_family_sequence": [
+            "text",
+            "text",
+            "text",
+            "table",
+            "text",
+            "footer"
+          ],
+          "top_level_type_sequence": [
+            "text",
+            "text",
+            "text",
+            "table_candidate",
+            "text",
+            "footer"
+          ],
+          "type_counts": {
+            "footer": 1,
+            "table_candidate": 1,
+            "text": 4
+          }
+        },
+        "markdown_pages": [
+          {
+            "markdown": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:\n\na. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State's population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an ' Incentive Payment D Look-Back Date ').\n\nb. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:\n\n<table>\n  <thead>\n    <tr>\n      <th scope=\"col\">Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date</th>\n      <th scope=\"col\">Incentive Payment D Amount as a Percentage of Settling State&#x27;s Overall Allocation Percentage of the Global Settlement Remediation Amount</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Participation below 95%</td>\n      <td>15%</td>\n    </tr>\n    <tr>\n      <td>Participation of 95% but less than 96%</td>\n      <td>13%</td>\n    </tr>\n    <tr>\n      <td>Participation of 96% but less than 97%</td>\n      <td>11%</td>\n    </tr>\n    <tr>\n      <td>Participation of 97% but less than 98%</td>\n      <td>9%</td>\n    </tr>\n    <tr>\n      <td>Participation of 98% but less than 99%</td>\n      <td>7%</td>\n    </tr>\n    <tr>\n      <td>Participation of 99% but less than 100%</td>\n      <td>5%</td>\n    </tr>\n    <tr>\n      <td>Participation of 100%</td>\n      <td>3%</td>\n    </tr>\n  </tbody>\n</table>\n\nc. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the\n\n24",
+            "page_number": 1,
+            "printed_page_label": "1"
+          }
+        ],
+        "schema_paths": {
+          "$": [
+            "object"
+          ],
+          "canonical_presentation": [
+            "object"
+          ],
+          "canonical_presentation.body": [
+            "object"
+          ],
+          "canonical_presentation.body.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.body.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.body.markdown": [
+            "string"
+          ],
+          "canonical_presentation.body.text": [
+            "string"
+          ],
+          "canonical_presentation.footer": [
+            "object"
+          ],
+          "canonical_presentation.footer.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.footer.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.footer.markdown": [
+            "string"
+          ],
+          "canonical_presentation.footer.text": [
+            "string"
+          ],
+          "canonical_presentation.full": [
+            "object"
+          ],
+          "canonical_presentation.full.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.full.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.full.markdown": [
+            "string"
+          ],
+          "canonical_presentation.full.text": [
+            "string"
+          ],
+          "canonical_presentation.header": [
+            "object"
+          ],
+          "canonical_presentation.header.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.header.markdown": [
+            "string"
+          ],
+          "canonical_presentation.header.text": [
+            "string"
+          ],
+          "canonical_presentation.pages": [
+            "array"
+          ],
+          "canonical_presentation.pages[]": [
+            "object"
+          ],
+          "canonical_presentation.pages[].blocks": [
+            "array"
+          ],
+          "canonical_presentation.pages[].blocks[]": [
+            "object"
+          ],
+          "canonical_presentation.pages[].body": [
+            "object"
+          ],
+          "canonical_presentation.pages[].body.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].body.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].body.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].footer": [
+            "object"
+          ],
+          "canonical_presentation.pages[].footer.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].footer.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].footer.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].full": [
+            "object"
+          ],
+          "canonical_presentation.pages[].full.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].full.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].full.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].header": [
+            "object"
+          ],
+          "canonical_presentation.pages[].header.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].header.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].header.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.concern_codes": [
+            "array"
+          ],
+          "canonical_presentation.pages[].page_identity.confidence": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.detected_printed_label": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.display_label": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.display_source": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.embedded_label": [
+            "null"
+          ],
+          "canonical_presentation.pages[].page_identity.evidence_bbox": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.evidence_source": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.page_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.physical_page_index": [
+            "integer"
+          ],
+          "canonical_presentation.pages[].page_identity.policy_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.schema_version": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.visible_text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_index": [
+            "integer"
+          ],
+          "canonical_presentation.pages[].page_label": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_number": [
+            "integer"
+          ],
+          "canonical_presentation.policy_id": [
+            "string"
+          ],
+          "canonical_presentation.schema_version": [
+            "string"
+          ],
+          "canonical_presentation.source_ir_version": [
+            "string"
+          ],
+          "document": [
+            "object"
+          ],
+          "document.content_region_count": [
+            "integer"
+          ],
+          "document.content_region_types": [
+            "object"
+          ],
+          "document.filename": [
+            "string"
+          ],
+          "document.image_count": [
+            "integer"
+          ],
+          "document.mime_type": [
+            "string"
+          ],
+          "document.page_count": [
+            "integer"
+          ],
+          "document.page_source_region_count": [
+            "integer"
+          ],
+          "document.rendered_visual_region_count": [
+            "integer"
+          ],
+          "document.sha256": [
+            "string"
+          ],
+          "document.source_format": [
+            "string"
+          ],
+          "pages": [
+            "array"
+          ],
+          "pages[]": [
+            "object"
+          ],
+          "pages[].detected_images": [
+            "array"
+          ],
+          "pages[].items": [
+            "array"
+          ],
+          "pages[].items[]": [
+            "object"
+          ],
+          "pages[].items[].bbox": [
+            "object"
+          ],
+          "pages[].items[].candidate_table_evidence": [
+            "object"
+          ],
+          "pages[].items[].cells": [
+            "array"
+          ],
+          "pages[].items[].column_count": [
+            "integer"
+          ],
+          "pages[].items[].confidence": [
+            "null"
+          ],
+          "pages[].items[].csv": [
+            "string"
+          ],
+          "pages[].items[].embedded_images": [
+            "array"
+          ],
+          "pages[].items[].engine": [
+            "string"
+          ],
+          "pages[].items[].html": [
+            "string"
+          ],
+          "pages[].items[].id": [
+            "string"
+          ],
+          "pages[].items[].items": [
+            "array"
+          ],
+          "pages[].items[].label": [
+            "string"
+          ],
+          "pages[].items[].layout_running_region_projected": [
+            "boolean"
+          ],
+          "pages[].items[].md": [
+            "string"
+          ],
+          "pages[].items[].parse_concerns": [
+            "array"
+          ],
+          "pages[].items[].reading_order": [
+            "integer"
+          ],
+          "pages[].items[].row_count": [
+            "integer"
+          ],
+          "pages[].items[].rows": [
+            "array"
+          ],
+          "pages[].items[].running_region": [
+            "object"
+          ],
+          "pages[].items[].running_region_policy": [
+            "string"
+          ],
+          "pages[].items[].source": [
+            "string"
+          ],
+          "pages[].items[].source_alignment": [
+            "object"
+          ],
+          "pages[].items[].table_candidate_gate": [
+            "object"
+          ],
+          "pages[].items[].table_candidate_gate_reasons": [
+            "array"
+          ],
+          "pages[].items[].table_candidate_gate_sources": [
+            "array"
+          ],
+          "pages[].items[].type": [
+            "string"
+          ],
+          "pages[].items[].value": [
+            "array",
+            "string"
+          ],
+          "pages[].page_height": [
+            "number"
+          ],
+          "pages[].page_identity": [
+            "object"
+          ],
+          "pages[].page_identity.concern_codes": [
+            "array"
+          ],
+          "pages[].page_identity.confidence": [
+            "object"
+          ],
+          "pages[].page_identity.confidence.scope": [
+            "string"
+          ],
+          "pages[].page_identity.confidence.score": [
+            "number"
+          ],
+          "pages[].page_identity.confidence.unavailable_reason": [
+            "null"
+          ],
+          "pages[].page_identity.detected_printed_label": [
+            "string"
+          ],
+          "pages[].page_identity.display_label": [
+            "string"
+          ],
+          "pages[].page_identity.display_source": [
+            "string"
+          ],
+          "pages[].page_identity.embedded_label": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_bbox": [
+            "object"
+          ],
+          "pages[].page_identity.evidence_bbox.height": [
+            "number"
+          ],
+          "pages[].page_identity.evidence_bbox.unit": [
+            "string"
+          ],
+          "pages[].page_identity.evidence_bbox.width": [
+            "number"
+          ],
+          "pages[].page_identity.evidence_bbox.x": [
+            "number"
+          ],
+          "pages[].page_identity.evidence_bbox.y": [
+            "number"
+          ],
+          "pages[].page_identity.evidence_source": [
+            "object"
+          ],
+          "pages[].page_identity.evidence_source.bbox_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.element_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.evidence_ids": [
+            "array"
+          ],
+          "pages[].page_identity.evidence_source.method": [
+            "string"
+          ],
+          "pages[].page_identity.evidence_source.page_index": [
+            "integer"
+          ],
+          "pages[].page_identity.evidence_source.public_item_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.public_path": [
+            "array"
+          ],
+          "pages[].page_identity.evidence_source.reader": [
+            "string"
+          ],
+          "pages[].page_identity.evidence_source.source_object_ids": [
+            "array"
+          ],
+          "pages[].page_identity.page_id": [
+            "string"
+          ],
+          "pages[].page_identity.physical_page_index": [
+            "integer"
+          ],
+          "pages[].page_identity.policy_id": [
+            "string"
+          ],
+          "pages[].page_identity.schema_version": [
+            "string"
+          ],
+          "pages[].page_identity.visible_text": [
+            "string"
+          ],
+          "pages[].page_index": [
+            "integer"
+          ],
+          "pages[].page_label": [
+            "string"
+          ],
+          "pages[].page_number": [
+            "integer"
+          ],
+          "pages[].page_width": [
+            "number"
+          ],
+          "pages[].success": [
+            "boolean"
+          ],
+          "pages[].unit": [
+            "string"
+          ],
+          "pages[].warnings": [
+            "array"
+          ],
+          "processing": [
+            "object"
+          ],
+          "processing.duration_ms": [
+            "integer"
+          ],
+          "processing.engine": [
+            "string"
+          ],
+          "processing.form_semantics": [
+            "object"
+          ],
+          "processing.form_semantics.extraction_ms": [
+            "number"
+          ],
+          "processing.form_semantics.projection_ms": [
+            "number"
+          ],
+          "processing.form_semantics.total_ms": [
+            "number"
+          ],
+          "processing.input_format": [
+            "string"
+          ],
+          "processing.local_processing": [
+            "boolean"
+          ],
+          "processing.native_text_engine": [
+            "string"
+          ],
+          "processing.ocr_engine": [
+            "string"
+          ],
+          "processing.ocr_languages": [
+            "array"
+          ],
+          "processing.ocr_languages[]": [
+            "string"
+          ],
+          "processing.outline_structure": [
+            "object"
+          ],
+          "processing.outline_structure.concern_count": [
+            "integer"
+          ],
+          "processing.outline_structure.extraction_ms": [
+            "number"
+          ],
+          "processing.outline_structure.group_count": [
+            "integer"
+          ],
+          "processing.outline_structure.node_count": [
+            "integer"
+          ],
+          "processing.outline_structure.policy_id": [
+            "string"
+          ],
+          "processing.outline_structure.projection_ms": [
+            "number"
+          ],
+          "processing.outline_structure.reason": [
+            "null"
+          ],
+          "processing.outline_structure.relationship_count": [
+            "integer"
+          ],
+          "processing.outline_structure.status": [
+            "string"
+          ],
+          "processing.outline_structure.total_ms": [
+            "number"
+          ],
+          "processing.picture_captioning": [
+            "object"
+          ],
+          "processing.picture_captioning.local_model_available": [
+            "boolean"
+          ],
+          "processing.picture_captioning.requested": [
+            "boolean"
+          ],
+          "processing.running_regions": [
+            "object"
+          ],
+          "processing.running_regions.bottom_navigation_count": [
+            "integer"
+          ],
+          "processing.running_regions.candidate_count": [
+            "integer"
+          ],
+          "processing.running_regions.comparison_count": [
+            "integer"
+          ],
+          "processing.running_regions.concern_count": [
+            "integer"
+          ],
+          "processing.running_regions.detected_label_count": [
+            "integer"
+          ],
+          "processing.running_regions.embedded_label_count": [
+            "integer"
+          ],
+          "processing.running_regions.extraction_ms": [
+            "number"
+          ],
+          "processing.running_regions.footer_count": [
+            "integer"
+          ],
+          "processing.running_regions.header_count": [
+            "integer"
+          ],
+          "processing.running_regions.identity_count": [
+            "integer"
+          ],
+          "processing.running_regions.legacy_fallback_count": [
+            "integer"
+          ],
+          "processing.running_regions.policy_id": [
+            "string"
+          ],
+          "processing.running_regions.projection_ms": [
+            "number"
+          ],
+          "processing.running_regions.reason": [
+            "null"
+          ],
+          "processing.running_regions.running_region_count": [
+            "integer"
+          ],
+          "processing.running_regions.source_page_count": [
+            "integer"
+          ],
+          "processing.running_regions.status": [
+            "string"
+          ],
+          "processing.running_regions.top_navigation_count": [
+            "integer"
+          ],
+          "processing.running_regions.total_ms": [
+            "number"
+          ],
+          "processing.source_text_alignment": [
+            "object"
+          ],
+          "processing.source_text_alignment.concerns": [
+            "array"
+          ],
+          "processing.source_text_alignment.considered_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.elapsed_ms": [
+            "number"
+          ],
+          "processing.source_text_alignment.policy_id": [
+            "string"
+          ],
+          "processing.source_text_alignment.schema_version": [
+            "string"
+          ],
+          "processing.source_text_alignment.selected_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.selections": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[]": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].checks": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].id": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].method": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].original_text": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].owner_bbox": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].owner_id": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].owner_type": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].page_index": [
+            "integer"
+          ],
+          "processing.source_text_alignment.selections[].rejected_ocr_alternative": [
+            "null"
+          ],
+          "processing.source_text_alignment.selections[].selected_source": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].selected_text": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].source_character_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].source_line_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].source_roles": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].terminal_reason": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].type1_mapping_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.source_sha256": [
+            "string"
+          ],
+          "processing.source_text_alignment.status": [
+            "string"
+          ],
+          "processing.source_text_alignment.unchanged_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.unresolved_count": [
+            "integer"
+          ],
+          "processing.table_engines": [
+            "array"
+          ],
+          "processing.table_engines[]": [
+            "string"
+          ],
+          "processing.visual_analysis": [
+            "object"
+          ],
+          "processing.visual_analysis.heading_height_ratio": [
+            "number"
+          ],
+          "processing.visual_analysis.heading_min_confidence": [
+            "number"
+          ],
+          "processing.visual_analysis.low_confidence_min_alnum_chars": [
+            "integer"
+          ],
+          "processing.visual_analysis.pdf_selective_rendering_enabled": [
+            "boolean"
+          ],
+          "processing.visual_analysis.picture_classification_threshold": [
+            "number"
+          ],
+          "processing.visual_analysis.primary_ocr_min_confidence": [
+            "number"
+          ],
+          "processing.visual_analysis.shared_pipeline": [
+            "boolean"
+          ],
+          "schema_version": [
+            "string"
+          ],
+          "warnings": [
+            "array"
+          ],
+          "warnings[]": [
+            "string"
+          ]
+        },
+        "serialized_chars": 142777,
+        "tables": [
+          {
+            "column_count": 2,
+            "field_sha256": {
+              "csv": "e11d106658be0f1d5b7aa5fe9edd31effa5ec441bb212e422d073f49fc154ccf",
+              "html": "d1374be34872166628b265e2bf3770ffbd026ba9f273a9f5ad8ce49cb5ee4093",
+              "md": "d1374be34872166628b265e2bf3770ffbd026ba9f273a9f5ad8ce49cb5ee4093"
+            },
+            "has_csv": true,
+            "has_html": true,
+            "has_markdown": true,
+            "has_rows": true,
+            "header_row_count": 1,
+            "item_index": 4,
+            "logical_rows": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "logical_rows_digest": "4c0be7533fefdd3d8a2ebed4b5d323ac45da054bf550da5399a0cb16a2306155",
+            "matrix": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "normalized_digest": "4c0be7533fefdd3d8a2ebed4b5d323ac45da054bf550da5399a0cb16a2306155",
+            "page_number": 1,
+            "page_table_index": 1,
+            "parse_concerns": [
+              "table_candidate_ownership_ambiguous",
+              "table_reconciliation_conflict",
+              "table_reconciliation_low_margin"
+            ],
+            "row_count": 8,
+            "spans": [],
+            "table_index": 1
+          }
+        ],
+        "top_level_keys": [
+          "canonical_presentation",
+          "document",
+          "pages",
+          "processing",
+          "schema_version",
+          "warnings"
+        ],
+        "visuals": []
+      },
+      "expected": {
+        "canonical_sha256": "bb8477a1663b7a04bc3b92ad2f1c117ff388f3cb46a4b7b5ff3d1da44a9a050a",
+        "items": {
+          "family_counts": {
+            "footer": 1,
+            "table": 1,
+            "text": 4
+          },
+          "field_counts": {
+            "bbox": 7,
+            "csv": 1,
+            "html": 1,
+            "items": 1,
+            "md": 7,
+            "parse_concerns": 1,
+            "rows": 1,
+            "type": 7,
+            "value": 5
+          },
+          "field_coverage": {
+            "bbox": 1.0,
+            "confidence": 0.0,
+            "content": 1.0,
+            "provenance": 0.0
+          },
+          "item_count": 7,
+          "page_count": 1,
+          "page_numbers": [
+            1
+          ],
+          "pages": [
+            {
+              "content_anchors": [
+                "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Ince…",
+                "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes…",
+                "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of th…",
+                "| Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date | Incentive Payment …",
+                "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the I…",
+                "<page_number>24</page_number>"
+              ],
+              "item_trees": [
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "table",
+                  "type": "table"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "family": "text",
+                      "type": "text"
+                    }
+                  ],
+                  "family": "footer",
+                  "type": "footer"
+                }
+              ],
+              "max_nesting_depth": 1,
+              "nested_item_count": 1,
+              "page_label": null,
+              "page_number": 1,
+              "printed_page_numbers": [
+                "24"
+              ],
+              "reading_order_monotonic": null,
+              "reading_order_values": [],
+              "top_level_family_sequence": [
+                "text",
+                "text",
+                "text",
+                "table",
+                "text",
+                "footer"
+              ],
+              "top_level_item_count": 6,
+              "top_level_type_sequence": [
+                "text",
+                "text",
+                "text",
+                "table",
+                "text",
+                "footer"
+              ]
+            }
+          ],
+          "top_level_family_sequence": [
+            "text",
+            "text",
+            "text",
+            "table",
+            "text",
+            "footer"
+          ],
+          "top_level_type_sequence": [
+            "text",
+            "text",
+            "text",
+            "table",
+            "text",
+            "footer"
+          ],
+          "type_counts": {
+            "footer": 1,
+            "table": 1,
+            "text": 4
+          }
+        },
+        "markdown_pages": [
+          {
+            "markdown": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:\n\na. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”).\n\nb. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:\n\n<table>\n  <thead>\n    <tr>\n        <th>Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date</th>\n        <th>Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Participation below 95%</td>\n        <td>15%</td>\n    </tr>\n    <tr>\n        <td>Participation of 95% but less than 96%</td>\n        <td>13%</td>\n    </tr>\n    <tr>\n        <td>Participation of 96% but less than 97%</td>\n        <td>11%</td>\n    </tr>\n    <tr>\n        <td>Participation of 97% but less than 98%</td>\n        <td>9%</td>\n    </tr>\n    <tr>\n        <td>Participation of 98% but less than 99%</td>\n        <td>7%</td>\n    </tr>\n    <tr>\n        <td>Participation of 99% but less than 100%</td>\n        <td>5%</td>\n    </tr>\n    <tr>\n        <td>Participation of 100%</td>\n        <td>3%</td>\n    </tr>\n  </tbody>\n</table>\n\nc. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the",
+            "page_number": 1
+          }
+        ],
+        "schema_paths": {
+          "$": [
+            "object"
+          ],
+          "debug": [
+            "null"
+          ],
+          "forms": [
+            "null"
+          ],
+          "images_content_metadata": [
+            "object"
+          ],
+          "images_content_metadata.images": [
+            "array"
+          ],
+          "images_content_metadata.images[]": [
+            "object"
+          ],
+          "images_content_metadata.images[].bbox": [
+            "object"
+          ],
+          "images_content_metadata.images[].bbox.h": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.w": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.x": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.y": [
+            "integer"
+          ],
+          "images_content_metadata.images[].category": [
+            "string"
+          ],
+          "images_content_metadata.images[].content_type": [
+            "string"
+          ],
+          "images_content_metadata.images[].filename": [
+            "string"
+          ],
+          "images_content_metadata.images[].index": [
+            "integer"
+          ],
+          "images_content_metadata.images[].presigned_url": [
+            "string"
+          ],
+          "images_content_metadata.total_count": [
+            "integer"
+          ],
+          "items": [
+            "object"
+          ],
+          "items.pages": [
+            "array"
+          ],
+          "items.pages[]": [
+            "object"
+          ],
+          "items.pages[].items": [
+            "array"
+          ],
+          "items.pages[].items[]": [
+            "object"
+          ],
+          "items.pages[].page_height": [
+            "integer"
+          ],
+          "items.pages[].page_number": [
+            "integer"
+          ],
+          "items.pages[].page_width": [
+            "integer"
+          ],
+          "items.pages[].success": [
+            "boolean"
+          ],
+          "job": [
+            "object"
+          ],
+          "job.created_at": [
+            "string"
+          ],
+          "job.error_message": [
+            "null"
+          ],
+          "job.id": [
+            "string"
+          ],
+          "job.name": [
+            "string"
+          ],
+          "job.project_id": [
+            "string"
+          ],
+          "job.status": [
+            "string"
+          ],
+          "job.tier": [
+            "string"
+          ],
+          "job.updated_at": [
+            "string"
+          ],
+          "job.user_metadata": [
+            "null"
+          ],
+          "job_metadata": [
+            "null"
+          ],
+          "markdown": [
+            "object"
+          ],
+          "markdown.pages": [
+            "array"
+          ],
+          "markdown.pages[]": [
+            "object"
+          ],
+          "markdown.pages[].footer": [
+            "string"
+          ],
+          "markdown.pages[].markdown": [
+            "string"
+          ],
+          "markdown.pages[].page_number": [
+            "integer"
+          ],
+          "markdown.pages[].success": [
+            "boolean"
+          ],
+          "markdown_full": [
+            "null"
+          ],
+          "metadata": [
+            "object"
+          ],
+          "metadata.pages": [
+            "array"
+          ],
+          "metadata.pages[]": [
+            "object"
+          ],
+          "metadata.pages[].confidence": [
+            "number"
+          ],
+          "metadata.pages[].cost_optimized": [
+            "boolean"
+          ],
+          "metadata.pages[].original_orientation_angle": [
+            "integer"
+          ],
+          "metadata.pages[].page_number": [
+            "integer"
+          ],
+          "metadata.pages[].triggered_auto_mode": [
+            "boolean"
+          ],
+          "raw_parameters": [
+            "null"
+          ],
+          "result_content_metadata": [
+            "null"
+          ],
+          "text": [
+            "object"
+          ],
+          "text.pages": [
+            "array"
+          ],
+          "text.pages[]": [
+            "object"
+          ],
+          "text.pages[].page_number": [
+            "integer"
+          ],
+          "text.pages[].text": [
+            "string"
+          ],
+          "text_full": [
+            "null"
+          ]
+        },
+        "serialized_chars": 21536,
+        "tables": [
+          {
+            "column_count": 2,
+            "field_sha256": {
+              "csv": "068ea10d1aef1648be1c89b4a954b72e75cc8face22c51d584a7c9624303d0d6",
+              "html": "88baeb2f33457a823daf023cf4acbea6569dc4b121f93b43b947aa5d0fb37b14",
+              "md": "462e6eceb3138cf33d5e5f86552b55d8cc9999176f2f57d74835ffab83925099"
+            },
+            "has_csv": true,
+            "has_html": true,
+            "has_markdown": true,
+            "has_rows": true,
+            "header_row_count": 1,
+            "item_index": 4,
+            "logical_rows": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "logical_rows_digest": "ee8f49d2cc1ae78f07e7a8cee838d32f50aa7b43f13d383b04deef48033a605a",
+            "matrix": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "normalized_digest": "ee8f49d2cc1ae78f07e7a8cee838d32f50aa7b43f13d383b04deef48033a605a",
+            "page_number": 1,
+            "page_table_index": 1,
+            "parse_concerns": [
+              {
+                "details": "col 0 'Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date' expects datetime, got 'Participation below 95%' in row 1",
+                "type": "header_value_type_mismatch"
+              }
+            ],
+            "row_count": 8,
+            "spans": [],
+            "table_index": 1
+          }
+        ],
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "visuals": []
+      },
+      "ocr_text": {
+        "actual_chars": 0,
+        "actual_tokens": 0,
+        "added_segments": [],
+        "added_token_counts": [],
+        "expected_chars": 0,
+        "expected_tokens": 0,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": true,
+        "replaced_segments": [],
+        "token_f1": 1.0,
+        "token_precision": 1.0,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 1.0
+      },
+      "page_text": [
+        {
+          "actual_chars": 2683,
+          "actual_page_number": 1,
+          "actual_tokens": 450,
+          "added_segments": [
+            {
+              "text": "state's",
+              "token_end": 37,
+              "token_start": 36
+            },
+            {
+              "text": "state's",
+              "token_end": 124,
+              "token_start": 123
+            },
+            {
+              "text": "state's",
+              "token_end": 288,
+              "token_start": 287
+            },
+            {
+              "text": "24",
+              "token_end": 450,
+              "token_start": 449
+            }
+          ],
+          "added_token_counts": [
+            [
+              "state's",
+              3
+            ],
+            [
+              "24",
+              1
+            ]
+          ],
+          "expected_chars": 2678,
+          "expected_page_number": 1,
+          "expected_tokens": 449,
+          "missing_segments": [
+            {
+              "text": "state’s",
+              "token_end": 37,
+              "token_start": 36
+            },
+            {
+              "text": "state’s",
+              "token_end": 124,
+              "token_start": 123
+            },
+            {
+              "text": "state’s",
+              "token_end": 288,
+              "token_start": 287
+            }
+          ],
+          "missing_token_counts": [
+            [
+              "state’s",
+              3
+            ]
+          ],
+          "normalized_exact": false,
+          "physical_page": 1,
+          "replaced_segments": [
+            {
+              "actual": "state's",
+              "expected": "state’s"
+            },
+            {
+              "actual": "state's",
+              "expected": "state’s"
+            },
+            {
+              "actual": "state's",
+              "expected": "state’s"
+            }
+          ],
+          "token_f1": 0.9922135706340379,
+          "token_precision": 0.9911111111111112,
+          "token_recall": 0.9933184855233853,
+          "token_sequence_ratio": 0.9922135706340378
+        }
+      ]
+    },
+    "markdown": {
+      "actual": {
+        "block_kinds": [
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "table",
+          "paragraph",
+          "paragraph"
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "line_end": 1,
+            "line_start": 1,
+            "text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Ov…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 3,
+            "line_start": 3,
+            "text": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 5,
+            "line_start": 5,
+            "text": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The…"
+          },
+          {
+            "kind": "table",
+            "line_end": 44,
+            "line_start": 7,
+            "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount Parti…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 46,
+            "line_start": 46,
+            "text": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Sett…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 48,
+            "line_start": 48,
+            "text": "24"
+          }
+        ],
+        "duplicate_lines": [],
+        "feature_counts": {
+          "emphasis_markers": 0,
+          "fenced_code_blocks": 0,
+          "hard_break_lines": 0,
+          "headings": 0,
+          "images": 0,
+          "links": 0,
+          "list_items": 0,
+          "strong_markers": 0,
+          "tables": 1
+        },
+        "headings": [],
+        "links": [],
+        "list_items": [],
+        "raw_bytes": 3173,
+        "raw_chars": 3169,
+        "raw_sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+        "tables": [
+          {
+            "column_count": 2,
+            "header_row_count": 1,
+            "matrix": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "normalized_digest": "4c0be7533fefdd3d8a2ebed4b5d323ac45da054bf550da5399a0cb16a2306155",
+            "page_number": 1,
+            "row_count": 8,
+            "spans": [],
+            "table_index": 1
+          }
+        ],
+        "visible_text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows: a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State's population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an ' Incentive Payment D Look-Back Date '). b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6: Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount Participation below 95% 15% Participation of 95% but less than 96% 13% Participation of 96% but less than 97% 11% Participation of 97% but less than 98% 9% Participation of 98% but less than 99% 7% Participation of 99% but less than 100% 5% Participation of 100% 3% c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the 24",
+        "visible_text_digest": "845783789318632e81e5063167541d658534af08350905e1151740521807b428",
+        "whitespace": {
+          "blank_line_runs": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "final_newline": true,
+          "line_ending": "lf",
+          "max_blank_run": 2,
+          "tab_count": 0,
+          "trailing_space_lines": 0
+        }
+      },
+      "expected": {
+        "block_kinds": [
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "table",
+          "paragraph",
+          "paragraph"
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "line_end": 1,
+            "line_start": 1,
+            "text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Ov…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 3,
+            "line_start": 3,
+            "text": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 5,
+            "line_start": 5,
+            "text": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The…"
+          },
+          {
+            "kind": "table",
+            "line_end": 44,
+            "line_start": 7,
+            "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount Parti…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 46,
+            "line_start": 46,
+            "text": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Sett…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 48,
+            "line_start": 48,
+            "text": "<page_number>24</page_number>"
+          }
+        ],
+        "duplicate_lines": [],
+        "feature_counts": {
+          "emphasis_markers": 1,
+          "fenced_code_blocks": 0,
+          "hard_break_lines": 0,
+          "headings": 0,
+          "images": 0,
+          "links": 0,
+          "list_items": 0,
+          "strong_markers": 0,
+          "tables": 1
+        },
+        "headings": [],
+        "links": [],
+        "list_items": [],
+        "raw_bytes": 3210,
+        "raw_chars": 3196,
+        "raw_sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+        "tables": [
+          {
+            "column_count": 2,
+            "header_row_count": 1,
+            "matrix": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "normalized_digest": "ee8f49d2cc1ae78f07e7a8cee838d32f50aa7b43f13d383b04deef48033a605a",
+            "page_number": 1,
+            "row_count": 8,
+            "spans": [],
+            "table_index": 1
+          }
+        ],
+        "visible_text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows: a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”). b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6: Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount Participation below 95% 15% Participation of 95% but less than 96% 13% Participation of 96% but less than 97% 11% Participation of 97% but less than 98% 9% Participation of 98% but less than 99% 7% Participation of 99% but less than 100% 5% Participation of 100% 3% c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the 24",
+        "visible_text_digest": "33969714659e839f8b41c187c3145ddf969dd68435c367f28f6736cd78570f13",
+        "whitespace": {
+          "blank_line_runs": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "final_newline": false,
+          "line_ending": "lf",
+          "max_blank_run": 2,
+          "tab_count": 0,
+          "trailing_space_lines": 0
+        }
+      },
+      "text": {
+        "actual_chars": 2683,
+        "actual_tokens": 450,
+        "added_segments": [
+          {
+            "text": "state's",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state's",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state's",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "added_token_counts": [
+          [
+            "state's",
+            3
+          ]
+        ],
+        "expected_chars": 2681,
+        "expected_tokens": 450,
+        "missing_segments": [
+          {
+            "text": "state’s",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state’s",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state’s",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            3
+          ]
+        ],
+        "normalized_exact": false,
+        "replaced_segments": [
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          }
+        ],
+        "token_f1": 0.9933333333333333,
+        "token_precision": 0.9933333333333333,
+        "token_recall": 0.9933333333333333,
+        "token_sequence_ratio": 0.9933333333333333
+      }
+    },
+    "rendered_dom": {
+      "actual_pages": [
+        {
+          "headings": [],
+          "html_chars": 3495,
+          "html_sha256": "480e4796be216edf06e6ec13de6eafbfc5c1ace4294e6cb4c3e6f0732d201b08",
+          "images": [],
+          "item_types": [
+            "text",
+            "text",
+            "text",
+            "table_candidate",
+            "text"
+          ],
+          "layout_classes": {},
+          "links": [],
+          "page_number": 1,
+          "semantic_elements": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State's population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an ' Incentive Payment D Look-Back Date ')."
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "table",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation AmountParticipation below 95%15%Participation of 95% but less than 96%13%Participation of 96% but less than 97%11%Participation of 97% but less than 98%9%Participation of 98% but less than 99%7%Participation of 99% but less than 100%5%Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "table",
+              "tag": "thead",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "thead",
+              "tag": "tr",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "th",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "th",
+              "text": "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "table",
+              "tag": "tbody",
+              "text": "Participation below 95%15%Participation of 95% but less than 96%13%Participation of 96% but less than 97%11%Participation of 97% but less than 98%9%Participation of 98% but less than 99%7%Participation of 99% but less than 100%5%Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation below 95%15%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation below 95%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "15%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 95% but less than 96%13%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 95% but less than 96%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "13%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 96% but less than 97%11%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 96% but less than 97%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "11%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 97% but less than 98%9%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 97% but less than 98%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "9%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 98% but less than 99%7%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 98% but less than 99%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "7%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 99% but less than 100%5%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 99% but less than 100%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "5%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 100%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "3%"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the"
+            }
+          ],
+          "semantic_tags": [
+            "p",
+            "p",
+            "p",
+            "table",
+            "thead",
+            "tr",
+            "th",
+            "th",
+            "tbody",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "p"
+          ],
+          "semantic_text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows: a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State's population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an ' Incentive Payment D Look-Back Date '). b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6: Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount Participation below 95% 15% Participation of 95% but less than 96% 13% Participation of 96% but less than 97% 11% Participation of 97% but less than 98% 9% Participation of 98% but less than 99% 7% Participation of 99% but less than 100% 5% Participation of 100% 3% c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the",
+          "structural_sequence": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "table"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "table",
+              "tag": "thead"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "thead",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "th"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "th"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "table",
+              "tag": "tbody"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            }
+          ],
+          "tables": [
+            {
+              "column_count": 2,
+              "header_row_count": 1,
+              "matrix": [
+                [
+                  "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                  "Incentive Payment D Amount as a Percentage of Settling State's Overall Allocation Percentage of the Global Settlement Remediation Amount"
+                ],
+                [
+                  "Participation below 95%",
+                  "15%"
+                ],
+                [
+                  "Participation of 95% but less than 96%",
+                  "13%"
+                ],
+                [
+                  "Participation of 96% but less than 97%",
+                  "11%"
+                ],
+                [
+                  "Participation of 97% but less than 98%",
+                  "9%"
+                ],
+                [
+                  "Participation of 98% but less than 99%",
+                  "7%"
+                ],
+                [
+                  "Participation of 99% but less than 100%",
+                  "5%"
+                ],
+                [
+                  "Participation of 100%",
+                  "3%"
+                ]
+              ],
+              "normalized_digest": "4c0be7533fefdd3d8a2ebed4b5d323ac45da054bf550da5399a0cb16a2306155",
+              "row_count": 8,
+              "spans": [],
+              "table_index": 1
+            }
+          ],
+          "tag_counts": {
+            "p": 4,
+            "table": 1,
+            "tbody": 1,
+            "td": 14,
+            "th": 2,
+            "thead": 1,
+            "tr": 8
+          }
+        }
+      ],
+      "expected_pages": [
+        {
+          "headings": [],
+          "html_chars": 16217,
+          "html_sha256": "fb6008572d4cd8d031e62476546cc51cbb357ceaf23b6e5c84350d9de0380e4d",
+          "images": [],
+          "item_types": [
+            "text",
+            "text",
+            "text",
+            "table",
+            "text",
+            "footer"
+          ],
+          "layout_classes": {
+            "mb-4": 5,
+            "min-w-full": 1,
+            "py-2": 16,
+            "text-left": 2
+          },
+          "links": [],
+          "page_number": 1,
+          "semantic_elements": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”)."
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "min-w-full"
+              ],
+              "parent_tag": null,
+              "tag": "table",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation AmountParticipation below 95%15%Participation of 95% but less than 96%13%Participation of 96% but less than 97%11%Participation of 97% but less than 98%9%Participation of 98% but less than 99%7%Participation of 99% but less than 100%5%Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "table",
+              "tag": "thead",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "thead",
+              "tag": "tr",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation DateIncentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2",
+                "text-left"
+              ],
+              "parent_tag": "tr",
+              "tag": "th",
+              "text": "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2",
+                "text-left"
+              ],
+              "parent_tag": "tr",
+              "tag": "th",
+              "text": "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "table",
+              "tag": "tbody",
+              "text": "Participation below 95%15%Participation of 95% but less than 96%13%Participation of 96% but less than 97%11%Participation of 97% but less than 98%9%Participation of 98% but less than 99%7%Participation of 99% but less than 100%5%Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation below 95%15%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation below 95%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "15%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 95% but less than 96%13%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 95% but less than 96%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "13%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 96% but less than 97%11%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 96% but less than 97%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "11%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 97% but less than 98%9%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 97% but less than 98%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "9%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 98% but less than 99%7%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 98% but less than 99%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "7%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 99% but less than 100%5%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 99% but less than 100%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "5%"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "layout_classes": [],
+              "parent_tag": "tbody",
+              "tag": "tr",
+              "text": "Participation of 100%3%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "Participation of 100%"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "layout_classes": [
+                "py-2"
+              ],
+              "parent_tag": "tr",
+              "tag": "td",
+              "text": "3%"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "<page_number>24</page_number>"
+            }
+          ],
+          "semantic_tags": [
+            "p",
+            "p",
+            "p",
+            "table",
+            "thead",
+            "tr",
+            "th",
+            "th",
+            "tbody",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "tr",
+            "td",
+            "td",
+            "p",
+            "p"
+          ],
+          "semantic_text": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows: a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”). b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6: Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount Participation below 95% 15% Participation of 95% but less than 96% 13% Participation of 96% but less than 97% 11% Participation of 97% but less than 98% 9% Participation of 98% but less than 99% 7% Participation of 99% but less than 100% 5% Participation of 100% 3% c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the <page_number>24</page_number>",
+          "structural_sequence": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "table"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "table",
+              "tag": "thead"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "thead",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "th"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "th"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "table",
+              "tag": "tbody"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 2,
+              "parent_tag": "tbody",
+              "tag": "tr"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 3,
+              "parent_tag": "tr",
+              "tag": "td"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            }
+          ],
+          "tables": [
+            {
+              "column_count": 2,
+              "header_row_count": 1,
+              "matrix": [
+                [
+                  "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                  "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+                ],
+                [
+                  "Participation below 95%",
+                  "15%"
+                ],
+                [
+                  "Participation of 95% but less than 96%",
+                  "13%"
+                ],
+                [
+                  "Participation of 96% but less than 97%",
+                  "11%"
+                ],
+                [
+                  "Participation of 97% but less than 98%",
+                  "9%"
+                ],
+                [
+                  "Participation of 98% but less than 99%",
+                  "7%"
+                ],
+                [
+                  "Participation of 99% but less than 100%",
+                  "5%"
+                ],
+                [
+                  "Participation of 100%",
+                  "3%"
+                ]
+              ],
+              "normalized_digest": "ee8f49d2cc1ae78f07e7a8cee838d32f50aa7b43f13d383b04deef48033a605a",
+              "row_count": 8,
+              "spans": [],
+              "table_index": 1
+            }
+          ],
+          "tag_counts": {
+            "p": 5,
+            "table": 1,
+            "tbody": 1,
+            "td": 14,
+            "th": 2,
+            "thead": 1,
+            "tr": 8
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "actual": {
+            "dimensions": null,
+            "present": false,
+            "sha256": null
+          },
+          "expected": {
+            "dimensions": null,
+            "present": true,
+            "sha256": "4c8eade8724b103b4ada20eaf52b719e0b4b20a2f63e4a85c6462fc4d852729d"
+          },
+          "page_number": 1,
+          "pixel_comparison": null
+        }
+      ]
+    }
+  },
+  "page_results": [
+    {
+      "candidate_dom_captured": true,
+      "discrepancy_ids": [
+        "FID-SETTLEMENT-AGREEMENT-dcebd22141bf",
+        "FID-SETTLEMENT-AGREEMENT-068a56e11ad1",
+        "FID-SETTLEMENT-AGREEMENT-015c49e44743",
+        "FID-SETTLEMENT-AGREEMENT-98c50c05c437",
+        "FID-SETTLEMENT-AGREEMENT-715d1044c081",
+        "FID-SETTLEMENT-AGREEMENT-01f6e229967c",
+        "FID-SETTLEMENT-AGREEMENT-e84eb88221cb",
+        "FID-SETTLEMENT-AGREEMENT-c3c86d501635",
+        "FID-SETTLEMENT-AGREEMENT-4742c6e21c60",
+        "FID-SETTLEMENT-AGREEMENT-7370a7e3d335"
+      ],
+      "json_text_metrics": {
+        "actual_chars": 2683,
+        "actual_page_number": 1,
+        "actual_tokens": 450,
+        "added_segments": [
+          {
+            "text": "state's",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state's",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state's",
+            "token_end": 288,
+            "token_start": 287
+          },
+          {
+            "text": "24",
+            "token_end": 450,
+            "token_start": 449
+          }
+        ],
+        "added_token_counts": [
+          [
+            "state's",
+            3
+          ],
+          [
+            "24",
+            1
+          ]
+        ],
+        "expected_chars": 2678,
+        "expected_page_number": 1,
+        "expected_tokens": 449,
+        "missing_segments": [
+          {
+            "text": "state’s",
+            "token_end": 37,
+            "token_start": 36
+          },
+          {
+            "text": "state’s",
+            "token_end": 124,
+            "token_start": 123
+          },
+          {
+            "text": "state’s",
+            "token_end": 288,
+            "token_start": 287
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            3
+          ]
+        ],
+        "normalized_exact": false,
+        "physical_page": 1,
+        "replaced_segments": [
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          },
+          {
+            "actual": "state's",
+            "expected": "state’s"
+          }
+        ],
+        "token_f1": 0.9922135706340379,
+        "token_precision": 0.9911111111111112,
+        "token_recall": 0.9933184855233853,
+        "token_sequence_ratio": 0.9922135706340378
+      },
+      "physical_page": 1,
+      "reference_dom_captured": true,
+      "severity_counts": {
+        "major": 5,
+        "minor": 5
+      },
+      "status": "discrepancy_found"
+    }
+  ],
+  "release_ready": false,
+  "reproduce": {
+    "candidate_root": "service-final-source-grounded-20260813/settlement-agreement",
+    "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813 --cases settlement-agreement",
+    "reference_root": "llamaparse/settlement-agreement"
+  },
+  "schema_version": "functional-fidelity-comparison-v1",
+  "source_context": {
+    "document_category": "legal settlement-agreement excerpt",
+    "known_complex_elements": [
+      "legal clause hierarchy",
+      "table-interrupted prose",
+      "percentage values",
+      "source page ending mid-sentence",
+      "physical-versus-printed page identity"
+    ],
+    "layout_characteristics": [
+      "single-column legal prose",
+      "lettered clauses",
+      "embedded percentage table",
+      "running page number"
+    ],
+    "mixed_native_and_scanned_candidate": false,
+    "scanned_candidate": false,
+    "source_page_count": 1
+  },
+  "status": "discrepancy_found",
+  "summary": {
+    "acceptable_or_harmless_differences": 1,
+    "discrepancy_count": 10,
+    "evidence_gaps": 0,
+    "functional_regressions": 9,
+    "missing_rendered_dom_pages": [],
+    "review_required": 0,
+    "severity_counts": {
+      "critical": 0,
+      "major": 5,
+      "minor": 5
+    }
+  }
+}

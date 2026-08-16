@@ -1,0 +1,93 @@
+{
+  "schema_version": "parser-release-runbook-v1",
+  "runbook_id": "p08-rollback-nonprod-v1",
+  "kind": "rollback",
+  "environment": "non_production",
+  "known_good_release_id": "p08-known-good-nonprod-v1",
+  "known_good_release_pin_sha256": "5c6ceed753e958b0bc039f00641ba4118abf5d13c676fa416d028b99fecf7ee9",
+  "candidate_release_id": "p08-candidate-nonprod-v1",
+  "candidate_release_pin_sha256": "6da6b31aebb5e3957674cfded3330fa49117d85a3283152dfc50223a2310e9a0",
+  "smoke_gate_id": "p08-functional-smoke-v1",
+  "steps": [
+    {
+      "step_id": "rollback.stop_candidate",
+      "owner": "rollback_owner",
+      "prerequisites": [],
+      "action": "request_candidate_stop",
+      "expected_result": "The bounded rollback trigger prevents any later candidate selection.",
+      "abort_condition": "The trigger is missing, unowned, ambiguous, or targets a different candidate.",
+      "evidence_key": "rollback.stop_candidate",
+      "next_approval": "rollback_owner"
+    },
+    {
+      "step_id": "rollback.kill_switch",
+      "owner": "rollback_owner",
+      "prerequisites": ["rollback.stop_candidate"],
+      "action": "enable_global_kill_switch",
+      "expected_result": "The documented global shipping kill switch makes optional Phase 08 paths inert.",
+      "abort_condition": "A stale optional setting is parsed or an optional route remains active.",
+      "evidence_key": "rollback.kill_switch",
+      "next_approval": "release_owner"
+    },
+    {
+      "step_id": "rollback.flags",
+      "owner": "release_owner",
+      "prerequisites": ["rollback.kill_switch"],
+      "action": "restore_known_good_flags",
+      "expected_result": "The exact known-good default-off flag and configuration snapshot is selected.",
+      "abort_condition": "A restored flag differs, bypasses dependencies, or enables an optional capability.",
+      "evidence_key": "rollback.flags",
+      "next_approval": "artifact_owner"
+    },
+    {
+      "step_id": "rollback.artifact_selection",
+      "owner": "artifact_owner",
+      "prerequisites": ["rollback.flags"],
+      "action": "select_known_good_artifacts",
+      "expected_result": "The manifest catalog selects the exact pinned known-good artifact identity.",
+      "abort_condition": "The known-good manifest is unavailable, unverified, substituted, or unbound.",
+      "evidence_key": "rollback.artifact_selection",
+      "next_approval": "privacy_owner"
+    },
+    {
+      "step_id": "rollback.policy",
+      "owner": "privacy_owner",
+      "prerequisites": ["rollback.artifact_selection"],
+      "action": "restore_known_good_policy",
+      "expected_result": "Hosted processing returns to the pinned deny-by-default known-good policy.",
+      "abort_condition": "The policy identity differs or a denied request can reach transport.",
+      "evidence_key": "rollback.policy",
+      "next_approval": "artifact_owner"
+    },
+    {
+      "step_id": "rollback.artifact_verification",
+      "owner": "artifact_owner",
+      "prerequisites": ["rollback.policy"],
+      "action": "verify_known_good_artifacts",
+      "expected_result": "Required known-good artifact bytes, sources, licenses, and profile bindings verify.",
+      "abort_condition": "Any required artifact verification or rollback binding fails.",
+      "evidence_key": "rollback.artifact_verification",
+      "next_approval": "api_owner"
+    },
+    {
+      "step_id": "rollback.known_good_flows",
+      "owner": "api_owner",
+      "prerequisites": ["rollback.artifact_verification"],
+      "action": "verify_known_good_flows",
+      "expected_result": "Representative public success, ordinary failure, schema, and serializers match known-good.",
+      "abort_condition": "A known-good flow is missing, incompatible, or still identifies the candidate.",
+      "evidence_key": "rollback.known_good_flows",
+      "next_approval": "rollback_owner"
+    },
+    {
+      "step_id": "rollback.record",
+      "owner": "rollback_owner",
+      "prerequisites": ["rollback.known_good_flows"],
+      "action": "record_rollback_evidence",
+      "expected_result": "Bounded evidence records exact known-good restoration and no active candidate flow.",
+      "abort_condition": "Evidence is incomplete, content-bearing, unbound, or reports any active candidate flow.",
+      "evidence_key": "rollback.record",
+      "next_approval": "complete"
+    }
+  ]
+}

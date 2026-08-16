@@ -1,0 +1,2050 @@
+{
+  "aggregate": {
+    "enabled_form_summaries_exact": true,
+    "enabled_semantic_determinism": true,
+    "flag_off_extractor_count_zero": true,
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "input_custody_exact": true,
+    "maximum_boundary_within_250ms": true,
+    "maximum_plus_one_failed_closed": true,
+    "maximum_plus_one_within_250ms": true,
+    "paired_parser_within_absolute_ceilings": true,
+    "paired_parser_within_both_ceilings": true,
+    "paired_parser_within_five_percent": true,
+    "paired_rss_delta_within_64mib": true,
+    "projection_comparisons_within_page_cap": true,
+    "projection_p95_within_50ms": true,
+    "projection_peak_within_64mib": true,
+    "source_extraction_p95_within_case_ceilings": true,
+    "source_extraction_peak_within_64mib": true,
+    "source_reports_within_8mib": true
+  },
+  "association_projection": {
+    "component-datasheet": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "component-datasheet",
+      "clock": "time.perf_counter_ns",
+      "comparison_ceiling_per_page": 65536,
+      "comparison_instrumentation_separate_from_timing": true,
+      "comparisons_by_page": {
+        "1": 10,
+        "2": 5327,
+        "3": 2328
+      },
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "instrumented_projection_semantically_equal": true,
+      "max_seconds": 0.02815475,
+      "maximum_comparisons_on_page": 5327,
+      "min_seconds": 0.025315375,
+      "p50_seconds": 0.027233521,
+      "p95_ceiling_seconds": 0.05,
+      "p95_seconds": 0.028097125,
+      "peak_allocated_bytes": 5392187,
+      "peak_allocated_samples_bytes": [
+        5392187,
+        5392187,
+        5392187,
+        5392187,
+        5392187
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "predecessor_unmodified": true,
+      "profile": "isolated_association_projection",
+      "projected_ir_size_bytes": 601320,
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "repeated_projection_idempotent": true,
+      "role_counts": {
+        "control": 0,
+        "field": 0,
+        "group": 3,
+        "key_value_pair": 16,
+        "label": 16,
+        "value_region": 16
+      },
+      "sample_count": 20,
+      "samples_seconds": [
+        0.025315375,
+        0.027910375,
+        0.027274,
+        0.026816959,
+        0.028097125,
+        0.027543083,
+        0.02815475,
+        0.027637333,
+        0.027831375,
+        0.027421167,
+        0.026420625,
+        0.026213959,
+        0.026047916,
+        0.026063667,
+        0.02592025,
+        0.027517959,
+        0.027193042,
+        0.027384791,
+        0.026057,
+        0.02612475
+      ],
+      "semantic_deterministic": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_comparison_ceiling": true,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true
+    },
+    "insurance-acord": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "insurance-acord",
+      "clock": "time.perf_counter_ns",
+      "comparison_ceiling_per_page": 65536,
+      "comparison_instrumentation_separate_from_timing": true,
+      "comparisons_by_page": {
+        "1": 59849
+      },
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "instrumented_projection_semantically_equal": true,
+      "max_seconds": 0.046016125,
+      "maximum_comparisons_on_page": 59849,
+      "min_seconds": 0.041040625,
+      "p50_seconds": 0.042477646,
+      "p95_ceiling_seconds": 0.05,
+      "p95_seconds": 0.044531625,
+      "peak_allocated_bytes": 6458160,
+      "peak_allocated_samples_bytes": [
+        6458160,
+        6457632,
+        6458160,
+        6458160,
+        6458160
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "predecessor_unmodified": true,
+      "profile": "isolated_association_projection",
+      "projected_ir_size_bytes": 478299,
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "repeated_projection_idempotent": true,
+      "role_counts": {
+        "control": 24,
+        "field": 24,
+        "group": 6,
+        "key_value_pair": 0,
+        "label": 42,
+        "value_region": 24
+      },
+      "sample_count": 20,
+      "samples_seconds": [
+        0.04433425,
+        0.043259458,
+        0.044531625,
+        0.042305333,
+        0.043223208,
+        0.041040625,
+        0.046016125,
+        0.041726042,
+        0.041888208,
+        0.041423292,
+        0.041661958,
+        0.042596417,
+        0.043858625,
+        0.042522333,
+        0.042359,
+        0.042110375,
+        0.043693042,
+        0.042432959,
+        0.042236667,
+        0.043132167
+      ],
+      "semantic_deterministic": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_comparison_ceiling": true,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true
+    }
+  },
+  "boundary_fixture_custody": {
+    "boundary": "maximum_groups_per_page",
+    "cases": {
+      "exact_maximum": {
+        "document_payload_sha256": "9f81f9daeb44a95c47bda081dc87eedfa0dfc90ffc86f492d276724d7fc06908",
+        "expected": "success",
+        "group_count": 256,
+        "preconstructed_candidates": true
+      },
+      "maximum_plus_one": {
+        "document_payload_sha256": "f4019527968418c5efcc319311fd90d3cbaf761367caed77de920e81621ea877",
+        "expected": "page_fail_closed",
+        "group_count": 257,
+        "preconstructed_candidates": true
+      }
+    },
+    "construction_excluded_from_timing": true,
+    "custody_sha256": "2c987cbd67602d124b4109c59c45d7a70295c2d20fd30fd67fc9aefd9a52a2cc"
+  },
+  "code_sha256": {
+    ".env.example": {
+      "path": ".env.example",
+      "sha256": "cc5714583caabe07ce9f59f3158b74f93f92d385fc3940985d23c6405e336eff",
+      "size_bytes": 4152
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "3ac2cb223855b3d157dfa00d7ce556bccd394bae28ec85fbda427189d0fb27c1",
+      "size_bytes": 32320
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "sha256": "b27355c4117a3a71df5c0764aa779a6a4d3231a6472398f9061e8a750e9bf81c",
+      "size_bytes": 14810
+    },
+    "app/models.py": {
+      "path": "app/models.py",
+      "sha256": "553d6a6040f926fbd894d6337c866a64dd82857375510d86633f318cc7f24afa",
+      "size_bytes": 2310
+    },
+    "app/services/acroform.py": {
+      "path": "app/services/acroform.py",
+      "sha256": "d7df50a8eabaf9ac00a438196a05c217ec294526bb1fefdbdadfddc526b44a2c",
+      "size_bytes": 70061
+    },
+    "app/services/acroform_raw.py": {
+      "path": "app/services/acroform_raw.py",
+      "sha256": "3657a3e96bfb59041b47626a54753c8f2c5adfb1d0ab839ff015ffe050c709d7",
+      "size_bytes": 62689
+    },
+    "app/services/form_semantics.py": {
+      "path": "app/services/form_semantics.py",
+      "sha256": "ac0cb9cdc7490b19126e46094e1ed150aa5da228db4ab887ee7465b6ba970e0d",
+      "size_bytes": 314287
+    },
+    "app/services/ir.py": {
+      "path": "app/services/ir.py",
+      "sha256": "e6dd9b9fe62894d5ec785f11a110b98a5acbf88562869c68f377283919f835b8",
+      "size_bytes": 227162
+    },
+    "app/services/layout.py": {
+      "path": "app/services/layout.py",
+      "sha256": "db2f524674530ffad38f00905648bc4bc0d037e8f2670531c7819fcad0cc6edb",
+      "size_bytes": 151636
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "sha256": "1ab3dd8278ca82b45e8002ae8a46516db6bf589bccab467b6da016edc2cb037e",
+      "size_bytes": 155469
+    },
+    "app/services/presentation.py": {
+      "path": "app/services/presentation.py",
+      "sha256": "85c7b793f7b3cba657869fd9f53193230f86f591e03de9086ee56015a16ccf9b",
+      "size_bytes": 170396
+    },
+    "app/services/serializer.py": {
+      "path": "app/services/serializer.py",
+      "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+      "size_bytes": 5026
+    },
+    "frontend/app/clearleaf-workspace.tsx": {
+      "path": "frontend/app/clearleaf-workspace.tsx",
+      "sha256": "112ff21f9d22152e85199d626d17e6984b78367ff09ed133363f079cf0f63e76",
+      "size_bytes": 59735
+    },
+    "frontend/lib/canonical-presentation.ts": {
+      "path": "frontend/lib/canonical-presentation.ts",
+      "sha256": "9a2a012533001802abaad2037fd7aa1fdbbb71cf6d8225dba2fd123629ddb9c7",
+      "size_bytes": 21704
+    },
+    "frontend/lib/form-semantics.ts": {
+      "path": "frontend/lib/form-semantics.ts",
+      "sha256": "3c0d633cba318b593636bb69f16a4a83a8d1fe1eb6fee6c7369edaf6fb305434",
+      "size_bytes": 39903
+    },
+    "frontend/lib/normalize-document-json.ts": {
+      "path": "frontend/lib/normalize-document-json.ts",
+      "sha256": "d97e044667fc1b60fa7167f9157c23453297c259557c78ae018a9fde7252cf0a",
+      "size_bytes": 15808
+    },
+    "frontend/lib/serialize-output.ts": {
+      "path": "frontend/lib/serialize-output.ts",
+      "sha256": "a3b98088569d2533bfb2ac87fcd5893bd63d372208aecdaaa54b48bd4d739659",
+      "size_bytes": 2911
+    },
+    "frontend/lib/types.ts": {
+      "path": "frontend/lib/types.ts",
+      "sha256": "1cf036ddb8140213baca991af753a76b0b765bcf6aa6673ef1c254c7880637e8",
+      "size_bytes": 13242
+    },
+    "frontend/package-lock.json": {
+      "path": "frontend/package-lock.json",
+      "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+      "size_bytes": 346488
+    },
+    "frontend/tests/p03-us06-form-semantics.test.mts": {
+      "path": "frontend/tests/p03-us06-form-semantics.test.mts",
+      "sha256": "1e80bdf1c176dbd5e7f9b4f477214083b1567c7c2040c535183cfdba91f2a1da",
+      "size_bytes": 16527
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+      "size_bytes": 734
+    },
+    "tests/benchmarks/form_semantics_metrics.py": {
+      "path": "tests/benchmarks/form_semantics_metrics.py",
+      "sha256": "5a8a76582b8275bbe4569025d4552ccb7ec30de54ee70586e941f19cbaa42f16",
+      "size_bytes": 63596
+    },
+    "tests/contract/test_p03_us06_form_semantics_contract.py": {
+      "path": "tests/contract/test_p03_us06_form_semantics_contract.py",
+      "sha256": "6674607e8736c5d3fdffbffcb32ac7b05d6911b4db11bfbfb9105aa0caf7f6af",
+      "size_bytes": 15562
+    },
+    "tests/fixtures/phase_03/form_semantics/__init__.py": {
+      "path": "tests/fixtures/phase_03/form_semantics/__init__.py",
+      "sha256": "92c4966decf799ec7134d15ddb5ae4d07be2025a64546529e85124965e183672",
+      "size_bytes": 2102
+    },
+    "tests/fixtures/phase_03/form_semantics/oracle.py": {
+      "path": "tests/fixtures/phase_03/form_semantics/oracle.py",
+      "sha256": "f314b73ed525926bb108b99012a4ebecb69973810f445772bccd83ab71185865",
+      "size_bytes": 52501
+    },
+    "tests/fixtures/phase_03/form_semantics/synthetic.py": {
+      "path": "tests/fixtures/phase_03/form_semantics/synthetic.py",
+      "sha256": "47e7212af20bbf2f851a313b2cc96d46219417933a1391217e2492365bd7e060",
+      "size_bytes": 113489
+    },
+    "tests/performance/test_p03_us06_form_performance.py": {
+      "path": "tests/performance/test_p03_us06_form_performance.py",
+      "sha256": "62c558542c4486139e5b1d9b75e0e703ba6a1be7a927e081aa963f0986c5aedb",
+      "size_bytes": 23405
+    },
+    "tests/stories/phase_03/test_p03_us06_acroform_raw.py": {
+      "path": "tests/stories/phase_03/test_p03_us06_acroform_raw.py",
+      "sha256": "53ccc1ac35addfc5b9075913167571ad51fee9aa9bb9a27ed4a8427f6c02c93a",
+      "size_bytes": 20229
+    },
+    "tests/stories/phase_03/test_p03_us06_acroform_security.py": {
+      "path": "tests/stories/phase_03/test_p03_us06_acroform_security.py",
+      "sha256": "0ce90adfe9eb393ece2d1bce844e30d3b0da4ee230f6c6935d0755c7cb7ae7d6",
+      "size_bytes": 22547
+    },
+    "tests/stories/phase_03/test_p03_us06_form_source_security.py": {
+      "path": "tests/stories/phase_03/test_p03_us06_form_source_security.py",
+      "sha256": "26465a3ca597f5c605bbe73c4b964446ea9d06c172635c34c40791895ce93dec",
+      "size_bytes": 17854
+    },
+    "tests/stories/phase_03/test_p03_us06_forms_key_values.py": {
+      "path": "tests/stories/phase_03/test_p03_us06_forms_key_values.py",
+      "sha256": "66c4f0e6ee87d3a26892dc090d09d127615ae59821f1374ce40e06b8b51d9736",
+      "size_bytes": 29989
+    },
+    "tests/stories/phase_03/test_p03_us06_group_caps.py": {
+      "path": "tests/stories/phase_03/test_p03_us06_group_caps.py",
+      "sha256": "a94fc878416e69e16e8fe6eb24ad501b3df63131eb2265085ab3fdeb169c4d7c",
+      "size_bytes": 14972
+    },
+    "tracker/phase-03-layout/decisions/P03-form-and-key-value-semantics-policy.md": {
+      "path": "tracker/phase-03-layout/decisions/P03-form-and-key-value-semantics-policy.md",
+      "sha256": "b4e61f9c9a939179df51bc6ddfee1ecb122509d3f299932bc5542e0888f4f9cf",
+      "size_bytes": 49960
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+      "size_bytes": 606113
+    }
+  },
+  "control_matrix": {
+    "component-datasheet": {
+      "all_disabled_form_projections_absent": true,
+      "all_enabled_form_summaries_exact": true,
+      "disabled_semantic_deterministic": true,
+      "enabled_all_semantic_deterministic": true,
+      "enabled_first_three_semantic_deterministic": true,
+      "expected_form_summary": {
+        "anchor_count": 3,
+        "control_count": 0,
+        "field_count": 0,
+        "group_count": 3,
+        "key_value_pair_count": 16,
+        "label_count": 16,
+        "value_region_count": 16
+      },
+      "zero_hosted_usage": true
+    },
+    "insurance-acord": {
+      "all_disabled_form_projections_absent": true,
+      "all_enabled_form_summaries_exact": true,
+      "disabled_semantic_deterministic": true,
+      "enabled_all_semantic_deterministic": true,
+      "enabled_first_three_semantic_deterministic": true,
+      "expected_form_summary": {
+        "anchor_count": 6,
+        "control_count": 24,
+        "field_count": 24,
+        "group_count": 6,
+        "key_value_pair_count": 0,
+        "label_count": 42,
+        "value_region_count": 24
+      },
+      "zero_hosted_usage": true
+    }
+  },
+  "dependency_custody": {
+    "dependency_manifests": {
+      "frontend/package-lock.json": {
+        "path": "frontend/package-lock.json",
+        "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+        "size_bytes": 346488
+      },
+      "pyproject.toml": {
+        "path": "pyproject.toml",
+        "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+        "size_bytes": 734
+      },
+      "uv.lock": {
+        "path": "uv.lock",
+        "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+        "size_bytes": 606113
+      }
+    },
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "local_tool_identity": {
+      "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+      "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "python_version": "3.13.5",
+      "tesseract": {
+        "path": "/opt/homebrew/Cellar/tesseract/5.5.3/bin/tesseract",
+        "sha256": "16020f485da1f534089d82608797d98f71322c67dee772438fb755ad9b4f79b5",
+        "size_bytes": 69184,
+        "version": "tesseract 5.5.3"
+      }
+    },
+    "offline_environment": {
+      "HF_HUB_OFFLINE": null,
+      "TOKENIZERS_PARALLELISM": null,
+      "TRANSFORMERS_OFFLINE": null
+    },
+    "python_packages": {
+      "docling": "2.114.0",
+      "docling-core": "2.88.0",
+      "pdfminer.six": "20260107",
+      "pdfplumber": "0.11.10",
+      "pydantic": "2.13.4",
+      "pypdfium2": "5.12.1"
+    }
+  },
+  "generated_at": "2026-07-31T20:07:26.197687+00:00",
+  "hosted_cost_usd": 0,
+  "hosted_requests": 0,
+  "hosted_tokens": 0,
+  "input_custody": {
+    "component-datasheet": {
+      "exact_match": true,
+      "expected": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      },
+      "observed": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      }
+    },
+    "insurance-acord": {
+      "exact_match": true,
+      "expected": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      },
+      "observed": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      }
+    }
+  },
+  "m0_reference": {
+    "component-datasheet": {
+      "label": "M0_reference_context_not_paired_predecessor",
+      "peak_rss_mib": 1840.3,
+      "wall_seconds": 10.56
+    },
+    "insurance-acord": {
+      "label": "M0_reference_context_not_paired_predecessor",
+      "peak_rss_mib": 1401.1,
+      "wall_seconds": 9.06
+    }
+  },
+  "maximum_boundary": {
+    "boundary": "maximum_groups_per_page",
+    "ceiling_seconds_each": 0.25,
+    "construction_timed": false,
+    "exact_completed": true,
+    "exact_elapsed_seconds": 0.096586833,
+    "exact_maximum": 256,
+    "exact_role_counts": {
+      "control": 256,
+      "field": 0,
+      "group": 256,
+      "key_value_pair": 0,
+      "label": 0,
+      "value_region": 0
+    },
+    "exact_within_ceiling": true,
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "maximum_plus_one": 257,
+    "maximum_plus_one_concern_codes": [
+      "form_projection_failed_closed"
+    ],
+    "maximum_plus_one_elapsed_seconds": 0.005138833,
+    "maximum_plus_one_failed_closed": true,
+    "maximum_plus_one_role_counts": {
+      "control": 0,
+      "field": 0,
+      "group": 0,
+      "key_value_pair": 0,
+      "label": 0,
+      "value_region": 0
+    },
+    "maximum_plus_one_within_ceiling": true,
+    "within_ceiling": true
+  },
+  "measurement": {
+    "cache_disclaimer": "operating-system caches were not explicitly flushed; no cold-cache claim is made",
+    "execution_order": "alternating off/on by pair index",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "pair_count_per_case": 5,
+    "performance_cases": [
+      "insurance-acord",
+      "component-datasheet"
+    ],
+    "pre_post_code_custody_match": true,
+    "pre_post_source_custody_match": true,
+    "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+    "quantile_method": "empirical_p95_inclusive_nearest_rank",
+    "timing_and_traced_allocation_measured_separately": true,
+    "timing_outputs_released_between_samples": true,
+    "worker_process_count": 20
+  },
+  "oracle_custody": {
+    "acord_relationship_oracle_sha256": "0c8b6386beaa3e073037b86f3c6da731abcace62fe35d00fc288bc9240ee1442",
+    "acord_reviewed_counts": {
+      "ambiguous_control_count": 5,
+      "checked_control_count": 0,
+      "contains_relationship_count": 114,
+      "control_count": 24,
+      "control_label_count": 20,
+      "control_relationship_count": 24,
+      "empty_field_count": 24,
+      "fabricated_signature_count": 0,
+      "fabricated_value_count": 0,
+      "field_bearing_label_header_count": 19,
+      "field_group_label_header_count": 22,
+      "form_overlay_relationship_count": 1,
+      "group_count": 6,
+      "group_only_heading_count": 3,
+      "label_control_relationship_count": 20,
+      "label_field_relationship_count": 30,
+      "label_group_relationship_count": 3,
+      "total_label_count": 42,
+      "total_label_relationship_count": 53,
+      "total_relationship_count": 216,
+      "unchecked_control_count": 19,
+      "value_relationship_count": 24
+    },
+    "component_relationship_oracle_sha256": "5e8cdf05fffd32bfa4ff8d5378d8460efd12149611ef559f21371883a6cc1b05",
+    "component_reviewed_counts": {
+      "contains_relationship_count": 48,
+      "group_count": 3,
+      "key_label_count": 16,
+      "key_relationship_count": 16,
+      "pair_count": 16,
+      "present_value_region_count": 16,
+      "total_relationship_count": 80,
+      "value_relationship_count": 16
+    },
+    "oracle_file": {
+      "path": "tests/fixtures/phase_03/form_semantics/oracle.py",
+      "sha256": "f314b73ed525926bb108b99012a4ebecb69973810f445772bccd83ab71185865",
+      "size_bytes": 52501
+    },
+    "oracle_payload_sha256": "850ed849c8ba38149008c8b28eb47e995ad216f9650e484f704280d28fc47bd8",
+    "source_identities": {
+      "component-datasheet": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      },
+      "insurance-acord": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      }
+    },
+    "source_identities_exact": true
+  },
+  "output_sizes": {
+    "component-datasheet": {
+      "off": [
+        {
+          "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+          "markdown_size_bytes": 3642,
+          "raw_json_sha256": "f767777c89b4d46909f1726778f64f325837629eb7f2f9d0df159ad251c76951",
+          "raw_json_size_bytes": 235905,
+          "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+          "semantic_json_size_bytes": 235885
+        },
+        {
+          "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+          "markdown_size_bytes": 3642,
+          "raw_json_sha256": "ae04bec1d42b112eadb576910fc72c1e2941cf7d3405128e898ee7b2158bb50f",
+          "raw_json_size_bytes": 235905,
+          "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+          "semantic_json_size_bytes": 235885
+        },
+        {
+          "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+          "markdown_size_bytes": 3642,
+          "raw_json_sha256": "66e35640b70dddbe0f295ed595e5ea18a32fda3e34d563f23fbdf126b6f40b0d",
+          "raw_json_size_bytes": 235905,
+          "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+          "semantic_json_size_bytes": 235885
+        },
+        {
+          "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+          "markdown_size_bytes": 3642,
+          "raw_json_sha256": "af0305c80b022cd3ae7c3442c6442ed527d0b38f51123c5187030e5dab7f190b",
+          "raw_json_size_bytes": 235905,
+          "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+          "semantic_json_size_bytes": 235885
+        },
+        {
+          "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+          "markdown_size_bytes": 3642,
+          "raw_json_sha256": "ae2e5866664460340696395b33f273dc1798b662b45994a6f50831d069eb14ff",
+          "raw_json_size_bytes": 235905,
+          "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+          "semantic_json_size_bytes": 235885
+        }
+      ],
+      "on": [
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "raw_json_sha256": "0f6865b36664fc03320cbc3756d17b5fb981f668d1596956e3e65c5da396dfed",
+          "raw_json_size_bytes": 320050,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "raw_json_sha256": "62ea118e793f541e50280644805d8bd6cbf0150878504b05fbfd5c0eaadb12b7",
+          "raw_json_size_bytes": 320050,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "raw_json_sha256": "c7d1e1a3bc9db2e7c1e5087f32afd160492a4dfbc25eae4773df795fd24b7809",
+          "raw_json_size_bytes": 320050,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "raw_json_sha256": "56de3817b7523cc7daa180b76efcaefcf8748fc16ef705dc96fd6c21d56f2fb3",
+          "raw_json_size_bytes": 320050,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "raw_json_sha256": "7d5b1f583d1e1a3350134929a00b310b56909c7bc4ef5f0c9fe963bde73274e2",
+          "raw_json_size_bytes": 320050,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        }
+      ]
+    },
+    "insurance-acord": {
+      "off": [
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "357f7b838afabdfcb58725b93085ed1140f70bd46efe48bf690e0e99a5a04801",
+          "raw_json_size_bytes": 91489,
+          "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+          "semantic_json_size_bytes": 91469
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "288469f7a691eb25bb14e801bb539974d3c83c73adea9c5a4a318bf43a6f6390",
+          "raw_json_size_bytes": 91488,
+          "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+          "semantic_json_size_bytes": 91469
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "43c1c25997f5bb2495bc77b8bdbcb6c1d8f3b5564d01584f185a52872575b0ac",
+          "raw_json_size_bytes": 91488,
+          "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+          "semantic_json_size_bytes": 91469
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "d6b171ce74ff36787088f94eccae358ebf6b860d7b8aac0180c4779e8f031784",
+          "raw_json_size_bytes": 91488,
+          "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+          "semantic_json_size_bytes": 91469
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "753e842ea483aa22df51afc079cdeb99a7197785322e0bffea7cc185a9955f0e",
+          "raw_json_size_bytes": 91488,
+          "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+          "semantic_json_size_bytes": 91469
+        }
+      ],
+      "on": [
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "3886520d0bad05db828918372f3c460a027eb23821b565310cb19cc2da6d1d07",
+          "raw_json_size_bytes": 217311,
+          "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+          "semantic_json_size_bytes": 217228
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "b9bf700df958a40af3eeab7341aad4045e044b4dc0b7522c6cfca91a8bb4f121",
+          "raw_json_size_bytes": 217311,
+          "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+          "semantic_json_size_bytes": 217228
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "7c7bc3e536757bdf06a053b0a23669e8746404322701f9d791e01df21decead7",
+          "raw_json_size_bytes": 217311,
+          "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+          "semantic_json_size_bytes": 217228
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "d30e741c74386941035d7ef5db7a99e41f263f2ff01f1be2be0eb15aa2bac548",
+          "raw_json_size_bytes": 217311,
+          "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+          "semantic_json_size_bytes": 217228
+        },
+        {
+          "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+          "markdown_size_bytes": 5080,
+          "raw_json_sha256": "6bff5c2308a82d9c00d8de344c1ee15161ae6b60b84adde7dd0cbc71746e2218",
+          "raw_json_size_bytes": 217311,
+          "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+          "semantic_json_size_bytes": 217228
+        }
+      ]
+    }
+  },
+  "paired_parser": {
+    "cases": {
+      "component-datasheet": {
+        "all_flag_off_extractor_counts_zero": true,
+        "all_flag_off_projection_absent": true,
+        "all_flag_on_extractor_counts_one": true,
+        "all_flag_on_form_summaries_exact": true,
+        "all_flag_on_processing_summaries_present": true,
+        "all_samples_zero_hosted_usage": true,
+        "execution_order": [
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ]
+        ],
+        "flag_off_samples": [
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+            "markdown_size_bytes": 3642,
+            "peak_rss_bytes": 2016051200,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "f767777c89b4d46909f1726778f64f325837629eb7f2f9d0df159ad251c76951",
+            "raw_json_size_bytes": 235905,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+            "semantic_json_size_bytes": 235885,
+            "wall_seconds": 11.049758
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+            "markdown_size_bytes": 3642,
+            "peak_rss_bytes": 2001420288,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "ae04bec1d42b112eadb576910fc72c1e2941cf7d3405128e898ee7b2158bb50f",
+            "raw_json_size_bytes": 235905,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+            "semantic_json_size_bytes": 235885,
+            "wall_seconds": 10.8941
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+            "markdown_size_bytes": 3642,
+            "peak_rss_bytes": 2001895424,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "66e35640b70dddbe0f295ed595e5ea18a32fda3e34d563f23fbdf126b6f40b0d",
+            "raw_json_size_bytes": 235905,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+            "semantic_json_size_bytes": 235885,
+            "wall_seconds": 10.819434
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+            "markdown_size_bytes": 3642,
+            "peak_rss_bytes": 2030272512,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "af0305c80b022cd3ae7c3442c6442ed527d0b38f51123c5187030e5dab7f190b",
+            "raw_json_size_bytes": 235905,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+            "semantic_json_size_bytes": 235885,
+            "wall_seconds": 10.779568
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "7242f6f51df66443b563e66fc16c4613deadec3c5d6bb816213fb6d8571511ac",
+            "markdown_size_bytes": 3642,
+            "peak_rss_bytes": 2002206720,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "ae2e5866664460340696395b33f273dc1798b662b45994a6f50831d069eb14ff",
+            "raw_json_size_bytes": 235905,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "a7c4ed717daf823b90e8a9d53434dccf9768ef2caedb843b19dba64933c55d39",
+            "semantic_json_size_bytes": 235885,
+            "wall_seconds": 10.812775
+          }
+        ],
+        "flag_off_semantic_deterministic": true,
+        "flag_on_all_semantic_deterministic": true,
+        "flag_on_first_three_semantic_deterministic": true,
+        "flag_on_samples": [
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "peak_rss_bytes": 1996685312,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "0f6865b36664fc03320cbc3756d17b5fb981f668d1596956e3e65c5da396dfed",
+            "raw_json_size_bytes": 320050,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 11.362405
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "peak_rss_bytes": 2031091712,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "62ea118e793f541e50280644805d8bd6cbf0150878504b05fbfd5c0eaadb12b7",
+            "raw_json_size_bytes": 320050,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 11.208943
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "peak_rss_bytes": 1999454208,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "c7d1e1a3bc9db2e7c1e5087f32afd160492a4dfbc25eae4773df795fd24b7809",
+            "raw_json_size_bytes": 320050,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 11.202199
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "peak_rss_bytes": 2041528320,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "56de3817b7523cc7daa180b76efcaefcf8748fc16ef705dc96fd6c21d56f2fb3",
+            "raw_json_size_bytes": 320050,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 11.296458
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "peak_rss_bytes": 2005254144,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "7d5b1f583d1e1a3350134929a00b310b56909c7bc4ef5f0c9fe963bde73274e2",
+            "raw_json_size_bytes": 320050,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 11.110053
+          }
+        ],
+        "paired_performance": {
+          "absolute_ceiling_seconds": 0.528,
+          "cache_state": "operating-system caches were not explicitly flushed",
+          "case": "component-datasheet",
+          "current_paired_predecessor_p95_seconds": 11.049758,
+          "effective_ceiling_seconds": 0.528,
+          "execution_order_alternated": true,
+          "five_percent_ceiling_seconds": 0.552488,
+          "flag_off_maximum_peak_rss_bytes": 2030272512,
+          "flag_off_peak_rss_bytes": [
+            2016051200,
+            2001420288,
+            2001895424,
+            2030272512,
+            2002206720
+          ],
+          "flag_off_wall_seconds": [
+            11.049758,
+            10.8941,
+            10.819434,
+            10.779568,
+            10.812775
+          ],
+          "flag_on_maximum_peak_rss_bytes": 2041528320,
+          "flag_on_peak_rss_bytes": [
+            1996685312,
+            2031091712,
+            1999454208,
+            2041528320,
+            2005254144
+          ],
+          "flag_on_wall_seconds": [
+            11.362405,
+            11.208943,
+            11.202199,
+            11.296458,
+            11.110053
+          ],
+          "gate_value": "p95_of_clipped_nonnegative_paired_overhead",
+          "hosted_cost_usd": 0,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "m0_reference": {
+            "label": "M0_reference_context_not_paired_predecessor",
+            "peak_rss_mib": 1840.3,
+            "wall_seconds": 10.56
+          },
+          "maximum_peak_rss_delta_bytes": 11255808,
+          "p50_nonnegative_overhead_seconds": 0.314843,
+          "p50_signed_delta_seconds": 0.314843,
+          "p95_nonnegative_overhead_seconds": 0.51689,
+          "p95_signed_delta_seconds": 0.51689,
+          "pair_count": 5,
+          "paired_nonnegative_overhead_seconds": [
+            0.312647,
+            0.314843,
+            0.382765,
+            0.51689,
+            0.297278
+          ],
+          "paired_signed_wall_seconds_deltas": [
+            0.312647,
+            0.314843,
+            0.382765,
+            0.51689,
+            0.297278
+          ],
+          "peak_rss_delta_ceiling_bytes": 67108864,
+          "process_model": "fresh_process_per_flag_state",
+          "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+          "quantile_method": "empirical_p95_inclusive_nearest_rank",
+          "within_absolute_ceiling": true,
+          "within_both_ceilings": true,
+          "within_five_percent_ceiling": true,
+          "within_peak_rss_delta_ceiling": true
+        },
+        "timing_paths_removed": [
+          "processing.duration_ms",
+          "processing.form_semantics.extraction_ms",
+          "processing.form_semantics.projection_ms",
+          "processing.form_semantics.total_ms"
+        ]
+      },
+      "insurance-acord": {
+        "all_flag_off_extractor_counts_zero": true,
+        "all_flag_off_projection_absent": true,
+        "all_flag_on_extractor_counts_one": true,
+        "all_flag_on_form_summaries_exact": true,
+        "all_flag_on_processing_summaries_present": true,
+        "all_samples_zero_hosted_usage": true,
+        "execution_order": [
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ]
+        ],
+        "flag_off_samples": [
+          {
+            "case": "insurance-acord",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1475756032,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "357f7b838afabdfcb58725b93085ed1140f70bd46efe48bf690e0e99a5a04801",
+            "raw_json_size_bytes": 91489,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+            "semantic_json_size_bytes": 91469,
+            "wall_seconds": 10.857654
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1515503616,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "288469f7a691eb25bb14e801bb539974d3c83c73adea9c5a4a318bf43a6f6390",
+            "raw_json_size_bytes": 91488,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+            "semantic_json_size_bytes": 91469,
+            "wall_seconds": 9.857863
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1493434368,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "43c1c25997f5bb2495bc77b8bdbcb6c1d8f3b5564d01584f185a52872575b0ac",
+            "raw_json_size_bytes": 91488,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+            "semantic_json_size_bytes": 91469,
+            "wall_seconds": 9.480978
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1475772416,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "d6b171ce74ff36787088f94eccae358ebf6b860d7b8aac0180c4779e8f031784",
+            "raw_json_size_bytes": 91488,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+            "semantic_json_size_bytes": 91469,
+            "wall_seconds": 9.630361
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1476853760,
+            "processing_has_form_summary": false,
+            "raw_json_sha256": "753e842ea483aa22df51afc079cdeb99a7197785322e0bffea7cc185a9955f0e",
+            "raw_json_size_bytes": 91488,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "b452c5383ef46dad0bff248e7dea3082c3c893045f07e4d61dadf668eef67e3d",
+            "semantic_json_size_bytes": 91469,
+            "wall_seconds": 9.54871
+          }
+        ],
+        "flag_off_semantic_deterministic": true,
+        "flag_on_all_semantic_deterministic": true,
+        "flag_on_first_three_semantic_deterministic": true,
+        "flag_on_samples": [
+          {
+            "case": "insurance-acord",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 6,
+              "control_count": 24,
+              "field_count": 24,
+              "group_count": 6,
+              "key_value_pair_count": 0,
+              "label_count": 42,
+              "value_region_count": 24
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1475526656,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "3886520d0bad05db828918372f3c460a027eb23821b565310cb19cc2da6d1d07",
+            "raw_json_size_bytes": 217311,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+            "semantic_json_size_bytes": 217228,
+            "wall_seconds": 9.78128
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 6,
+              "control_count": 24,
+              "field_count": 24,
+              "group_count": 6,
+              "key_value_pair_count": 0,
+              "label_count": 42,
+              "value_region_count": 24
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1477017600,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "b9bf700df958a40af3eeab7341aad4045e044b4dc0b7522c6cfca91a8bb4f121",
+            "raw_json_size_bytes": 217311,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+            "semantic_json_size_bytes": 217228,
+            "wall_seconds": 9.538914
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 6,
+              "control_count": 24,
+              "field_count": 24,
+              "group_count": 6,
+              "key_value_pair_count": 0,
+              "label_count": 42,
+              "value_region_count": 24
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1558347776,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "7c7bc3e536757bdf06a053b0a23669e8746404322701f9d791e01df21decead7",
+            "raw_json_size_bytes": 217311,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+            "semantic_json_size_bytes": 217228,
+            "wall_seconds": 9.551251
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 6,
+              "control_count": 24,
+              "field_count": 24,
+              "group_count": 6,
+              "key_value_pair_count": 0,
+              "label_count": 42,
+              "value_region_count": 24
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1487126528,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "d30e741c74386941035d7ef5db7a99e41f263f2ff01f1be2be0eb15aa2bac548",
+            "raw_json_size_bytes": 217311,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+            "semantic_json_size_bytes": 217228,
+            "wall_seconds": 9.931188
+          },
+          {
+            "case": "insurance-acord",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 6,
+              "control_count": 24,
+              "field_count": 24,
+              "group_count": 6,
+              "key_value_pair_count": 0,
+              "label_count": 42,
+              "value_region_count": 24
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+              "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+              "size_bytes": 17086
+            },
+            "markdown_sha256": "ab627954916aafee6237863ef8efae4f3719c7e3395294a60b5cdff9fbd326ff",
+            "markdown_size_bytes": 5080,
+            "peak_rss_bytes": 1477197824,
+            "processing_has_form_summary": true,
+            "raw_json_sha256": "6bff5c2308a82d9c00d8de344c1ee15161ae6b60b84adde7dd0cbc71746e2218",
+            "raw_json_size_bytes": 217311,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "ac776b9674a712a0a9adfbd790833e434cc3c5ad3d4ad0e00fc7eb1fbf7eb02e",
+            "semantic_json_size_bytes": 217228,
+            "wall_seconds": 9.371886
+          }
+        ],
+        "paired_performance": {
+          "absolute_ceiling_seconds": 0.453,
+          "cache_state": "operating-system caches were not explicitly flushed",
+          "case": "insurance-acord",
+          "current_paired_predecessor_p95_seconds": 10.857654,
+          "effective_ceiling_seconds": 0.453,
+          "execution_order_alternated": true,
+          "five_percent_ceiling_seconds": 0.542883,
+          "flag_off_maximum_peak_rss_bytes": 1515503616,
+          "flag_off_peak_rss_bytes": [
+            1475756032,
+            1515503616,
+            1493434368,
+            1475772416,
+            1476853760
+          ],
+          "flag_off_wall_seconds": [
+            10.857654,
+            9.857863,
+            9.480978,
+            9.630361,
+            9.54871
+          ],
+          "flag_on_maximum_peak_rss_bytes": 1558347776,
+          "flag_on_peak_rss_bytes": [
+            1475526656,
+            1477017600,
+            1558347776,
+            1487126528,
+            1477197824
+          ],
+          "flag_on_wall_seconds": [
+            9.78128,
+            9.538914,
+            9.551251,
+            9.931188,
+            9.371886
+          ],
+          "gate_value": "p95_of_clipped_nonnegative_paired_overhead",
+          "hosted_cost_usd": 0,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "m0_reference": {
+            "label": "M0_reference_context_not_paired_predecessor",
+            "peak_rss_mib": 1401.1,
+            "wall_seconds": 9.06
+          },
+          "maximum_peak_rss_delta_bytes": 42844160,
+          "p50_nonnegative_overhead_seconds": 0.0,
+          "p50_signed_delta_seconds": -0.176824,
+          "p95_nonnegative_overhead_seconds": 0.300827,
+          "p95_signed_delta_seconds": 0.300827,
+          "pair_count": 5,
+          "paired_nonnegative_overhead_seconds": [
+            0.0,
+            0.0,
+            0.070273,
+            0.300827,
+            0.0
+          ],
+          "paired_signed_wall_seconds_deltas": [
+            -1.076374,
+            -0.318949,
+            0.070273,
+            0.300827,
+            -0.176824
+          ],
+          "peak_rss_delta_ceiling_bytes": 67108864,
+          "process_model": "fresh_process_per_flag_state",
+          "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+          "quantile_method": "empirical_p95_inclusive_nearest_rank",
+          "within_absolute_ceiling": true,
+          "within_both_ceilings": true,
+          "within_five_percent_ceiling": true,
+          "within_peak_rss_delta_ceiling": true
+        },
+        "timing_paths_removed": [
+          "processing.duration_ms",
+          "processing.form_semantics.extraction_ms",
+          "processing.form_semantics.projection_ms",
+          "processing.form_semantics.total_ms"
+        ]
+      }
+    },
+    "execution_order_policy": "off/on alternates by pair index",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "pair_count_per_case": 5,
+    "performance_cases": [
+      "insurance-acord",
+      "component-datasheet"
+    ]
+  },
+  "policy": {
+    "default_enabled": false,
+    "feature_flag": "PARSER_LAYOUT_FORMS_ENABLED",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "isolated_peak_allocation_ceiling_bytes": 67108864,
+    "maximum_boundary_ceiling_seconds": 0.25,
+    "maximum_comparisons_per_page": 65536,
+    "maximum_report_bytes": 8388608,
+    "paired_absolute_ceiling_seconds": {
+      "component-datasheet": 0.528,
+      "insurance-acord": 0.453
+    },
+    "paired_percent_ceiling": 5.0,
+    "peak_rss_delta_ceiling_bytes": 67108864,
+    "policy_id": "p03-form-semantics-v1",
+    "projection_p95_ceiling_seconds": 0.05,
+    "rollback_value": false,
+    "semantic_timing_paths_removed": [
+      "processing.duration_ms",
+      "processing.form_semantics.extraction_ms",
+      "processing.form_semantics.projection_ms",
+      "processing.form_semantics.total_ms"
+    ],
+    "source_extraction_p95_ceiling_seconds": {
+      "component-datasheet": 0.3,
+      "insurance-acord": 0.15
+    }
+  },
+  "predecessor_custody": {
+    "path": "tracker/phase-03-layout/evidence/P03-US05-text-run-metrics.json",
+    "raw_sha256": "0ba7e13f1fce12dc0f6c2d0a4e65aab850d2012025ca9996b9645d371aff7659",
+    "relationship_order_retention_all_pass": true,
+    "semantic_sha256": "e432ce80d6351d1d161010aec7f8b32a1622a54cf1b14e14bfccb3411c79c3c3",
+    "sha256": "0ba7e13f1fce12dc0f6c2d0a4e65aab850d2012025ca9996b9645d371aff7659",
+    "size_bytes": 82934,
+    "story": "P03-US05"
+  },
+  "record_kind": "p03_us06_form_metrics",
+  "retained_path": "tracker/phase-03-layout/evidence/P03-US06-form-metrics.json",
+  "rollback": {
+    "all_flag_off_extractor_counts_zero": true,
+    "all_flag_off_projection_absent": true,
+    "all_repeated_projections_idempotent": true,
+    "maximum_plus_one_page_failed_closed": true,
+    "only_us06_setting_toggled": true,
+    "rollback_value": false
+  },
+  "schema_version": "1.0",
+  "semantic_sha256": "7cfff9b19f129ab29f2a14317a479c50ed38397921ef9111b0a4b57f7d557fc7",
+  "settings_delta": {
+    "accepted_predecessor_flags_enabled": true,
+    "changed_fields": [
+      "layout_forms_enabled"
+    ],
+    "flag_off": {
+      "layout_forms_enabled": false
+    },
+    "flag_on": {
+      "layout_forms_enabled": true
+    }
+  },
+  "source_extraction": {
+    "component-datasheet": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "component-datasheet",
+      "character_count": 3009,
+      "clock": "time.perf_counter_ns",
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "interactive_control_count": 0,
+      "interactivity": "none",
+      "max_seconds": 0.199289917,
+      "min_seconds": 0.176356958,
+      "p50_seconds": 0.178591563,
+      "p95_ceiling_seconds": 0.3,
+      "p95_seconds": 0.181412167,
+      "page_count": 3,
+      "peak_allocated_bytes": 11262672,
+      "peak_allocated_samples_bytes": [
+        11259948,
+        11262672,
+        11261715,
+        11253272,
+        11259308
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "profile": "isolated_source_extraction",
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "report_size_bytes": 537282,
+      "report_size_ceiling_bytes": 8388608,
+      "sample_count": 20,
+      "samples_seconds": [
+        0.176678958,
+        0.176356958,
+        0.177072417,
+        0.178405583,
+        0.178025083,
+        0.178805333,
+        0.178664209,
+        0.17814925,
+        0.178680375,
+        0.178421667,
+        0.179389625,
+        0.178518917,
+        0.177763708,
+        0.179757041,
+        0.178853,
+        0.180979083,
+        0.181412167,
+        0.178440208,
+        0.199289917,
+        0.178785833
+      ],
+      "semantic_deterministic": true,
+      "source_sha256_exact": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "vector_count": 644,
+      "warmup_count": 2,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true,
+      "within_report_size_ceiling": true,
+      "word_count": 532
+    },
+    "insurance-acord": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "insurance-acord",
+      "character_count": 2843,
+      "clock": "time.perf_counter_ns",
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "interactive_control_count": 0,
+      "interactivity": "static",
+      "max_seconds": 0.077105084,
+      "min_seconds": 0.074366041,
+      "p50_seconds": 0.075456229,
+      "p95_ceiling_seconds": 0.15,
+      "p95_seconds": 0.076932875,
+      "page_count": 1,
+      "peak_allocated_bytes": 16851449,
+      "peak_allocated_samples_bytes": [
+        16851449,
+        16851193,
+        16851449,
+        16851449,
+        16851449
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "profile": "isolated_source_extraction",
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "report_size_bytes": 425351,
+      "report_size_ceiling_bytes": 8388608,
+      "sample_count": 20,
+      "samples_seconds": [
+        0.075162542,
+        0.076610334,
+        0.0754145,
+        0.076026417,
+        0.075107625,
+        0.075156625,
+        0.075323375,
+        0.077105084,
+        0.074728208,
+        0.075799541,
+        0.075497958,
+        0.075673667,
+        0.076932875,
+        0.075797583,
+        0.076497291,
+        0.074366041,
+        0.075381291,
+        0.075029292,
+        0.075113875,
+        0.076222375
+      ],
+      "semantic_deterministic": true,
+      "source_sha256_exact": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "vector_count": 145,
+      "warmup_count": 2,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true,
+      "within_report_size_ceiling": true,
+      "word_count": 473
+    }
+  },
+  "status": "final_measurement_candidate",
+  "story": "P03-US06",
+  "synthetic_fixture_custody": {
+    "fixture_count": 25,
+    "fixture_hashes": {
+      "synthetic:p03-us06:acroform-limits-v1": "a5be5bd17e47ba9220c46da4d896979398aabb6a49a3b9911d51d968ccf74ce7",
+      "synthetic:p03-us06:aspect-thresholds-v1": "e87b55bc9c792e9700e7a1c45267c67c7e233b844098689cfcb2b16a1d6e7cf4",
+      "synthetic:p03-us06:closure-thresholds-v1": "2bf53e213e078999b2f7a241a122f61ba2c816f159c9bc02e038bd3bd5387316",
+      "synthetic:p03-us06:cyclic-acroform-v1": "4940c526257dc0db9b61d071ba196b1331c07fff52a2ff90884b002e3d4b5670",
+      "synthetic:p03-us06:duplicate-geometry-v1": "0a6e1eb876cc5122dcb25972fad59a6cc3dfb7aa5a22df09ef34da0f7bfe7c90",
+      "synthetic:p03-us06:endpoint-thresholds-v1": "5963102cb12d7798fe2321f11054651a482b3385499eb18c111a335f8d1cff99",
+      "synthetic:p03-us06:field-values-v1": "afba5c63e4eff11c806f7bb9a3cfa977048f26ac7c286ccd7bb2b75b156fab88",
+      "synthetic:p03-us06:inherited-widget-kids-v1": "79e29195ef7d60c64176e0da60a2254d0f30384ca348e9d821e0f873fda073cd",
+      "synthetic:p03-us06:interactive-controls-v1": "21aa05cebc9b058412b80e827eea64f6bbc2eb80ff90b83666826bbbeabc8c4d",
+      "synthetic:p03-us06:invalid-transforms-v1": "8bd51df7756c35434af45b8f3f4f1c7cc38631b549c37096a02a2a182292c502",
+      "synthetic:p03-us06:kv-anchor-thresholds-v1": "1736878195a55e1ff5266664bf93b4ce1a91fa5bf36b937aa2ebec166a7446b3",
+      "synthetic:p03-us06:kv-borderless-table-v1": "1637eccc77db49936f0bc0e9a02eb981e4ef4c50d16751d1c3658a0313e9f936",
+      "synthetic:p03-us06:kv-cadence-thresholds-v1": "c2ff6429752d7fe96037e56f7a895e420e71f0ce12a89c592cf8827a37935187",
+      "synthetic:p03-us06:kv-cross-page-v1": "1427e1504040db1c465dec275dcd3abfe6175352e5fca9c6bd7fc0beb0bd7c42",
+      "synthetic:p03-us06:kv-gap-thresholds-v1": "55e458ff83fe8a042f679f6ba64e627faf3d6fc56a4e5d198d4e2ad9e205eaa6",
+      "synthetic:p03-us06:kv-tie-v1": "c7159c4449b3b2ce84c2b52fd942d8ecf3f1771a6f4c3a4dee3a52c326dada93",
+      "synthetic:p03-us06:kv-two-row-v1": "4045d2d93c59c36c9dc9edb534a0aa367ec1dcea1bce4c28efa13dd479e16ada",
+      "synthetic:p03-us06:label-distance-thresholds-v1": "025d38d6cf893055cf0024bf1870e4f6890e1a98976d18896e13bb1add0d4a0c",
+      "synthetic:p03-us06:mark-thresholds-v1": "476dffb570f27e950456e42ec540641e46a27276146b65021579691e970bbee1",
+      "synthetic:p03-us06:mixed-static-interactive-v1": "e333dc80cdb5acb4a73b254b8f5aa7bc3da4e09b8400d5aa7c74adc076df0558",
+      "synthetic:p03-us06:orphan-widget-v1": "bb09ef5f6cf643306fb2693790936b76b5ef832634fd932025081af0f8270ed1",
+      "synthetic:p03-us06:rotated-cropped-transforms-v1": "eb75428a507f1a4501281364c8373dde7df129dadcd1c97ca168896460ff3c3e",
+      "synthetic:p03-us06:semantic-relationship-limits-v1": "96763466ecd17710fecf592ae72aec7f1c5754a1698969a2e902f17f64960d14",
+      "synthetic:p03-us06:shared-edge-phantom-v1": "13ec0770d047fc1ec49c4eafb7e6196ecf43399bfe8c8f9b0254d0c438c36eea",
+      "synthetic:p03-us06:static-controls-v1": "fea776cc96160bf8382054442f4f525c1b6524bb1fed32bc67d6b049d24265e1"
+    },
+    "generator_file": {
+      "path": "tests/fixtures/phase_03/form_semantics/synthetic.py",
+      "sha256": "47e7212af20bbf2f851a313b2cc96d46219417933a1391217e2492365bd7e060",
+      "size_bytes": 113489
+    },
+    "pdf_reader_verification_scope": "retained test gate; omitted from performance process",
+    "registry_sha256": "ddf25860262952f8caa158a57cc26bff92f86097a53c8663c995858dc61c1b21",
+    "required_capability_count": 37,
+    "self_check_passed": true,
+    "thresholds": {
+      "acroform_max_depth": 32,
+      "acroform_max_dictionary_entries": 256,
+      "acroform_max_kids_per_node": 256,
+      "acroform_max_name_bytes": 256,
+      "acroform_max_nodes": 10000,
+      "acroform_max_object_bytes": 262144,
+      "acroform_max_resolution_steps": 65536,
+      "acroform_max_string_bytes": 16384,
+      "acroform_max_tree_bytes": 8388608,
+      "acroform_max_visited_references": 32768,
+      "axis_alignment_pt": 0.15,
+      "closure_gap_pt": 0.15,
+      "control_interior_inset_pt": 1.0,
+      "control_label_max_below_pt": 4.0,
+      "control_label_max_gap_pt": 96.0,
+      "control_label_min_gap_pt": 0.5,
+      "control_label_tie_pt": 0.5,
+      "control_mark_max_fill_coverage": 0.5,
+      "control_mark_min_combined_length": 0.35,
+      "control_mark_min_horizontal_span": 0.35,
+      "control_mark_min_vertical_span": 0.35,
+      "control_max_aspect_ratio": 1.55,
+      "control_max_side_pt": 24.0,
+      "control_min_aspect_ratio": 0.65,
+      "control_min_edge_coverage": 0.95,
+      "control_min_side_pt": 6.0,
+      "endpoint_snap_pt": 0.15,
+      "field_inline_max_height_pt": 24.0,
+      "field_inline_min_height_pt": 6.0,
+      "field_inline_min_width_pt": 24.0,
+      "field_inline_top_tolerance_pt": 1.25,
+      "field_label_max_above_pt": 12.0,
+      "kv_anchor_tolerance_pt": 2.0,
+      "kv_height_tolerance_pt": 2.0,
+      "kv_max_cadence_pt": 30.0,
+      "kv_max_gap_absolute_pt": 160.0,
+      "kv_max_gap_page_fraction": 0.35,
+      "kv_min_cadence_pt": 4.0,
+      "kv_min_gap_pt": 2.0,
+      "kv_min_rows": 3,
+      "kv_top_tolerance_pt": 1.25,
+      "max_annotations_widgets_per_document": 10000,
+      "max_annotations_widgets_per_page": 2048,
+      "max_controls_per_group": 256,
+      "max_fields_controls_pairs_per_document": 10000,
+      "max_fields_controls_pairs_per_page": 2048,
+      "max_fields_per_group": 128,
+      "max_groups_per_document": 2048,
+      "max_groups_per_page": 256,
+      "max_key_value_pairs_per_group": 32,
+      "max_labels_per_group": 256,
+      "max_relationships_per_document": 65536,
+      "max_relationships_per_page": 32768,
+      "max_semantic_records_per_document": 32768,
+      "max_semantic_records_per_page": 8192,
+      "max_source_identities_per_semantic_record": 64,
+      "max_value_regions_per_group": 128,
+      "unlabeled_control_max_pitch_pt": 24.0,
+      "unlabeled_control_min_labeled_peers": 3,
+      "unlabeled_control_size_tolerance_pt": 0.15
+    }
+  }
+}

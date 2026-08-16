@@ -1,0 +1,724 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-xe3dr2ykcmeh3c1hffx5thd1y7hc",
+    "created_at": "2026-08-12T18:31:42.133146Z",
+    "updated_at": "2026-08-12T18:32:02.107333Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "health-report.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "                                                                                 | 103\n\n   Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)\n\n     Total                                               Men                     Women\n   Age-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n   50\n  0\n\n\n\n   Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD.\n   Source: Eurostat (hlth_cd_asdr2).\n                                                                            StatLink 2 https://stat.link/hufsd5\n\n   Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21\n    20%    Percentage change in mortality rate 2011-21\n\n    10%\n                                                      Pancreas\n   0%\n           Brain\n   -10%    Skin                     Liver    Prostate   Breast\n                                                                                                                    Lung\n   -20%    Cervix   Ovary  Bladder           Leukaemia         Colorectum\n           uteri\n   -30%                             Stomach\n\n   -40%\n           0                        10                         20        30                                         40    50\n                                                                                                                    Mortality in 2021 per 100 000 population\n   Note: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality\n   rate in 2021. “Lung” includes cancers of the lung, trachea, and bronchus. “Brain” refers to both brain cancers and central nervous system cancers. The data correspond\n   to the EU27 weighted averages.\n   Source: Eurostat (hlth_cd_asdr2).\n                                                                                                                    StatLink 2 https://stat.link/styxji\n\n\n\n\n\n\n\n\n\n\n   HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)\n\n<table>\n  <thead>\n    <tr>\n        <th>Country</th>\n        <th>Total</th>\n        <th>Men</th>\n        <th>Women</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Hungary</td>\n        <td>310</td>\n        <td>415</td>\n        <td>245</td>\n    </tr>\n    <tr>\n        <td>Croatia</td>\n        <td>305</td>\n        <td>435</td>\n        <td>230</td>\n    </tr>\n    <tr>\n        <td>Latvia</td>\n        <td>285</td>\n        <td>440</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Slovenia</td>\n        <td>280</td>\n        <td>395</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Slovak Republic</td>\n        <td>275</td>\n        <td>385</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Denmark</td>\n        <td>275</td>\n        <td>330</td>\n        <td>240</td>\n    </tr>\n    <tr>\n        <td>Estonia</td>\n        <td>270</td>\n        <td>415</td>\n        <td>205</td>\n    </tr>\n    <tr>\n        <td>Poland</td>\n        <td>265</td>\n        <td>355</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Lithuania</td>\n        <td>265</td>\n        <td>400</td>\n        <td>190</td>\n    </tr>\n    <tr>\n        <td>Czechia</td>\n        <td>260</td>\n        <td>340</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Netherlands</td>\n        <td>255</td>\n        <td>315</td>\n        <td>220</td>\n    </tr>\n    <tr>\n        <td>Ireland</td>\n        <td>245</td>\n        <td>295</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Romania</td>\n        <td>245</td>\n        <td>340</td>\n        <td>180</td>\n    </tr>\n    <tr>\n        <td>Greece</td>\n        <td>240</td>\n        <td>330</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Germany</td>\n        <td>240</td>\n        <td>300</td>\n        <td>195</td>\n    </tr>\n    <tr>\n        <td>EU27</td>\n        <td>235</td>\n        <td>315</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>Bulgaria</td>\n        <td>230</td>\n        <td>320</td>\n        <td>165</td>\n    </tr>\n    <tr>\n        <td>Portugal</td>\n        <td>230</td>\n        <td>320</td>\n        <td>170</td>\n    </tr>\n    <tr>\n        <td>Austria</td>\n        <td>225</td>\n        <td>290</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>France</td>\n        <td>220</td>\n        <td>300</td>\n        <td>170</td>\n    </tr>\n    <tr>\n        <td>Italy</td>\n        <td>220</td>\n        <td>285</td>\n        <td>180</td>\n    </tr>\n    <tr>\n        <td>Belgium</td>\n        <td>215</td>\n        <td>285</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Spain</td>\n        <td>215</td>\n        <td>300</td>\n        <td>155</td>\n    </tr>\n    <tr>\n        <td>Cyprus</td>\n        <td>215</td>\n        <td>275</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Finland</td>\n        <td>210</td>\n        <td>270</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Sweden</td>\n        <td>205</td>\n        <td>240</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>Luxembourg</td>\n        <td>205</td>\n        <td>275</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>Malta</td>\n        <td>200</td>\n        <td>260</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>United Kingdom</td>\n        <td>260</td>\n        <td>315</td>\n        <td>220</td>\n    </tr>\n    <tr>\n        <td>Norway</td>\n        <td>220</td>\n        <td>265</td>\n        <td>190</td>\n    </tr>\n    <tr>\n        <td>Iceland</td>\n        <td>215</td>\n        <td>250</td>\n        <td>195</td>\n    </tr>\n    <tr>\n        <td>Switzerland</td>\n        <td>195</td>\n        <td>245</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>Türkiye</td>\n        <td>165</td>\n        <td>245</td>\n        <td>110</td>\n    </tr>\n  </tbody>\n</table>\n\nNote: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD.\n\nSource: Eurostat (hlth_cd_asdr2).\n\nStatLink 2 https://stat.link/hufsd5\n\nFigure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21\n\n<table>\n  <thead>\n    <tr>\n        <th>Cancer site</th>\n        <th>Mortality in 2021 (per 100 000)</th>\n        <th>Percentage change 2011-21</th>\n        <th>Trend</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Pancreas</td>\n        <td>18</td>\n        <td>5</td>\n        <td>Increase</td>\n    </tr>\n    <tr>\n        <td>Brain</td>\n        <td>6</td>\n        <td>-6</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Skin</td>\n        <td>3</td>\n        <td>-8</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Liver</td>\n        <td>10</td>\n        <td>-11</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Prostate</td>\n        <td>15</td>\n        <td>-9</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Breast</td>\n        <td>18</td>\n        <td>-10</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Lung</td>\n        <td>45</td>\n        <td>-15</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Cervix uteri</td>\n        <td>2</td>\n        <td>-17</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Ovary</td>\n        <td>5</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Bladder</td>\n        <td>8</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Leukaemia</td>\n        <td>12</td>\n        <td>-22</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Colorectum</td>\n        <td>27</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Stomach</td>\n        <td>10</td>\n        <td>-29</td>\n        <td>Decrease</td>\n    </tr>\n  </tbody>\n</table>\n\nNote: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality rate in 2021. “Lung” includes cancers of the lung, trachea, and bronchus. “Brain” refers to both brain cancers and central nervous system cancers. The data correspond to the EU27 weighted averages.\n\nSource: Eurostat (hlth_cd_asdr2).\n\nStatLink 2 https://stat.link/styxji",
+        "header": "| 103",
+        "footer": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "header",
+            "md": "| 103",
+            "bbox": [
+              {
+                "x": 532.06,
+                "y": 30.51,
+                "w": 20.94,
+                "h": 10.13
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "\\| 103",
+                "bbox": [
+                  {
+                    "x": 532.06,
+                    "y": 30.51,
+                    "w": 20.94,
+                    "h": 10.13,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 5,
+                    "label": "header"
+                  }
+                ],
+                "value": "| 103"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)",
+            "bbox": [
+              {
+                "x": 41.96,
+                "y": 57.76,
+                "w": 332.07,
+                "h": 11.85,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 77,
+                "label": "caption"
+              }
+            ],
+            "value": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)"
+          },
+          {
+            "type": "table",
+            "md": "| Country         | Total | Men | Women |\n| --------------- | ----- | --- | ----- |\n| Hungary         | 310   | 415 | 245   |\n| Croatia         | 305   | 435 | 230   |\n| Latvia          | 285   | 440 | 210   |\n| Slovenia        | 280   | 395 | 215   |\n| Slovak Republic | 275   | 385 | 215   |\n| Denmark         | 275   | 330 | 240   |\n| Estonia         | 270   | 415 | 205   |\n| Poland          | 265   | 355 | 210   |\n| Lithuania       | 265   | 400 | 190   |\n| Czechia         | 260   | 340 | 210   |\n| Netherlands     | 255   | 315 | 220   |\n| Ireland         | 245   | 295 | 215   |\n| Romania         | 245   | 340 | 180   |\n| Greece          | 240   | 330 | 175   |\n| Germany         | 240   | 300 | 195   |\n| EU27            | 235   | 315 | 185   |\n| Bulgaria        | 230   | 320 | 165   |\n| Portugal        | 230   | 320 | 170   |\n| Austria         | 225   | 290 | 185   |\n| France          | 220   | 300 | 170   |\n| Italy           | 220   | 285 | 180   |\n| Belgium         | 215   | 285 | 175   |\n| Spain           | 215   | 300 | 155   |\n| Cyprus          | 215   | 275 | 175   |\n| Finland         | 210   | 270 | 175   |\n| Sweden          | 205   | 240 | 185   |\n| Luxembourg      | 205   | 275 | 160   |\n| Malta           | 200   | 260 | 160   |\n| United Kingdom  | 260   | 315 | 220   |\n| Norway          | 220   | 265 | 190   |\n| Iceland         | 215   | 250 | 195   |\n| Switzerland     | 195   | 245 | 160   |\n| Türkiye         | 165   | 245 | 110   |",
+            "bbox": [
+              {
+                "x": 44.66,
+                "y": 78.96,
+                "w": 497.03,
+                "h": 197.25,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 1468,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Country",
+                "Total",
+                "Men",
+                "Women"
+              ],
+              [
+                "Hungary",
+                "310",
+                "415",
+                "245"
+              ],
+              [
+                "Croatia",
+                "305",
+                "435",
+                "230"
+              ],
+              [
+                "Latvia",
+                "285",
+                "440",
+                "210"
+              ],
+              [
+                "Slovenia",
+                "280",
+                "395",
+                "215"
+              ],
+              [
+                "Slovak Republic",
+                "275",
+                "385",
+                "215"
+              ],
+              [
+                "Denmark",
+                "275",
+                "330",
+                "240"
+              ],
+              [
+                "Estonia",
+                "270",
+                "415",
+                "205"
+              ],
+              [
+                "Poland",
+                "265",
+                "355",
+                "210"
+              ],
+              [
+                "Lithuania",
+                "265",
+                "400",
+                "190"
+              ],
+              [
+                "Czechia",
+                "260",
+                "340",
+                "210"
+              ],
+              [
+                "Netherlands",
+                "255",
+                "315",
+                "220"
+              ],
+              [
+                "Ireland",
+                "245",
+                "295",
+                "215"
+              ],
+              [
+                "Romania",
+                "245",
+                "340",
+                "180"
+              ],
+              [
+                "Greece",
+                "240",
+                "330",
+                "175"
+              ],
+              [
+                "Germany",
+                "240",
+                "300",
+                "195"
+              ],
+              [
+                "EU27",
+                "235",
+                "315",
+                "185"
+              ],
+              [
+                "Bulgaria",
+                "230",
+                "320",
+                "165"
+              ],
+              [
+                "Portugal",
+                "230",
+                "320",
+                "170"
+              ],
+              [
+                "Austria",
+                "225",
+                "290",
+                "185"
+              ],
+              [
+                "France",
+                "220",
+                "300",
+                "170"
+              ],
+              [
+                "Italy",
+                "220",
+                "285",
+                "180"
+              ],
+              [
+                "Belgium",
+                "215",
+                "285",
+                "175"
+              ],
+              [
+                "Spain",
+                "215",
+                "300",
+                "155"
+              ],
+              [
+                "Cyprus",
+                "215",
+                "275",
+                "175"
+              ],
+              [
+                "Finland",
+                "210",
+                "270",
+                "175"
+              ],
+              [
+                "Sweden",
+                "205",
+                "240",
+                "185"
+              ],
+              [
+                "Luxembourg",
+                "205",
+                "275",
+                "160"
+              ],
+              [
+                "Malta",
+                "200",
+                "260",
+                "160"
+              ],
+              [
+                "United Kingdom",
+                "260",
+                "315",
+                "220"
+              ],
+              [
+                "Norway",
+                "220",
+                "265",
+                "190"
+              ],
+              [
+                "Iceland",
+                "215",
+                "250",
+                "195"
+              ],
+              [
+                "Switzerland",
+                "195",
+                "245",
+                "160"
+              ],
+              [
+                "Türkiye",
+                "165",
+                "245",
+                "110"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Country</th>\n        <th>Total</th>\n        <th>Men</th>\n        <th>Women</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Hungary</td>\n        <td>310</td>\n        <td>415</td>\n        <td>245</td>\n    </tr>\n    <tr>\n        <td>Croatia</td>\n        <td>305</td>\n        <td>435</td>\n        <td>230</td>\n    </tr>\n    <tr>\n        <td>Latvia</td>\n        <td>285</td>\n        <td>440</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Slovenia</td>\n        <td>280</td>\n        <td>395</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Slovak Republic</td>\n        <td>275</td>\n        <td>385</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Denmark</td>\n        <td>275</td>\n        <td>330</td>\n        <td>240</td>\n    </tr>\n    <tr>\n        <td>Estonia</td>\n        <td>270</td>\n        <td>415</td>\n        <td>205</td>\n    </tr>\n    <tr>\n        <td>Poland</td>\n        <td>265</td>\n        <td>355</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Lithuania</td>\n        <td>265</td>\n        <td>400</td>\n        <td>190</td>\n    </tr>\n    <tr>\n        <td>Czechia</td>\n        <td>260</td>\n        <td>340</td>\n        <td>210</td>\n    </tr>\n    <tr>\n        <td>Netherlands</td>\n        <td>255</td>\n        <td>315</td>\n        <td>220</td>\n    </tr>\n    <tr>\n        <td>Ireland</td>\n        <td>245</td>\n        <td>295</td>\n        <td>215</td>\n    </tr>\n    <tr>\n        <td>Romania</td>\n        <td>245</td>\n        <td>340</td>\n        <td>180</td>\n    </tr>\n    <tr>\n        <td>Greece</td>\n        <td>240</td>\n        <td>330</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Germany</td>\n        <td>240</td>\n        <td>300</td>\n        <td>195</td>\n    </tr>\n    <tr>\n        <td>EU27</td>\n        <td>235</td>\n        <td>315</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>Bulgaria</td>\n        <td>230</td>\n        <td>320</td>\n        <td>165</td>\n    </tr>\n    <tr>\n        <td>Portugal</td>\n        <td>230</td>\n        <td>320</td>\n        <td>170</td>\n    </tr>\n    <tr>\n        <td>Austria</td>\n        <td>225</td>\n        <td>290</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>France</td>\n        <td>220</td>\n        <td>300</td>\n        <td>170</td>\n    </tr>\n    <tr>\n        <td>Italy</td>\n        <td>220</td>\n        <td>285</td>\n        <td>180</td>\n    </tr>\n    <tr>\n        <td>Belgium</td>\n        <td>215</td>\n        <td>285</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Spain</td>\n        <td>215</td>\n        <td>300</td>\n        <td>155</td>\n    </tr>\n    <tr>\n        <td>Cyprus</td>\n        <td>215</td>\n        <td>275</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Finland</td>\n        <td>210</td>\n        <td>270</td>\n        <td>175</td>\n    </tr>\n    <tr>\n        <td>Sweden</td>\n        <td>205</td>\n        <td>240</td>\n        <td>185</td>\n    </tr>\n    <tr>\n        <td>Luxembourg</td>\n        <td>205</td>\n        <td>275</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>Malta</td>\n        <td>200</td>\n        <td>260</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>United Kingdom</td>\n        <td>260</td>\n        <td>315</td>\n        <td>220</td>\n    </tr>\n    <tr>\n        <td>Norway</td>\n        <td>220</td>\n        <td>265</td>\n        <td>190</td>\n    </tr>\n    <tr>\n        <td>Iceland</td>\n        <td>215</td>\n        <td>250</td>\n        <td>195</td>\n    </tr>\n    <tr>\n        <td>Switzerland</td>\n        <td>195</td>\n        <td>245</td>\n        <td>160</td>\n    </tr>\n    <tr>\n        <td>Türkiye</td>\n        <td>165</td>\n        <td>245</td>\n        <td>110</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Country\",\"Total\",\"Men\",\"Women\"\n\"Hungary\",\"310\",\"415\",\"245\"\n\"Croatia\",\"305\",\"435\",\"230\"\n\"Latvia\",\"285\",\"440\",\"210\"\n\"Slovenia\",\"280\",\"395\",\"215\"\n\"Slovak Republic\",\"275\",\"385\",\"215\"\n\"Denmark\",\"275\",\"330\",\"240\"\n\"Estonia\",\"270\",\"415\",\"205\"\n\"Poland\",\"265\",\"355\",\"210\"\n\"Lithuania\",\"265\",\"400\",\"190\"\n\"Czechia\",\"260\",\"340\",\"210\"\n\"Netherlands\",\"255\",\"315\",\"220\"\n\"Ireland\",\"245\",\"295\",\"215\"\n\"Romania\",\"245\",\"340\",\"180\"\n\"Greece\",\"240\",\"330\",\"175\"\n\"Germany\",\"240\",\"300\",\"195\"\n\"EU27\",\"235\",\"315\",\"185\"\n\"Bulgaria\",\"230\",\"320\",\"165\"\n\"Portugal\",\"230\",\"320\",\"170\"\n\"Austria\",\"225\",\"290\",\"185\"\n\"France\",\"220\",\"300\",\"170\"\n\"Italy\",\"220\",\"285\",\"180\"\n\"Belgium\",\"215\",\"285\",\"175\"\n\"Spain\",\"215\",\"300\",\"155\"\n\"Cyprus\",\"215\",\"275\",\"175\"\n\"Finland\",\"210\",\"270\",\"175\"\n\"Sweden\",\"205\",\"240\",\"185\"\n\"Luxembourg\",\"205\",\"275\",\"160\"\n\"Malta\",\"200\",\"260\",\"160\"\n\"United Kingdom\",\"260\",\"315\",\"220\"\n\"Norway\",\"220\",\"265\",\"190\"\n\"Iceland\",\"215\",\"250\",\"195\"\n\"Switzerland\",\"195\",\"245\",\"160\"\n\"Türkiye\",\"165\",\"245\",\"110\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [chart, caption, text, header, footer] but no table/form"
+              },
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD.",
+            "bbox": [
+              {
+                "x": 41.52,
+                "y": 285.63,
+                "w": 367.31,
+                "h": 9.82,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 112,
+                "label": "text"
+              }
+            ],
+            "value": "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD."
+          },
+          {
+            "type": "text",
+            "md": "Source: Eurostat (hlth_cd_asdr2).",
+            "bbox": [
+              {
+                "x": 41.83,
+                "y": 295.86,
+                "w": 104.58,
+                "h": 9.87,
+                "confidence": 0.77,
+                "start_index": 0,
+                "end_index": 32,
+                "label": "text"
+              }
+            ],
+            "value": "Source: Eurostat (hlth_cd_asdr2)."
+          },
+          {
+            "type": "text",
+            "md": "StatLink 2 ",
+            "bbox": [
+              {
+                "x": 407.91,
+                "y": 310.69,
+                "w": 40.85,
+                "h": 7.01,
+                "confidence": 0.78,
+                "start_index": 0,
+                "end_index": 10,
+                "label": "text"
+              }
+            ],
+            "value": "StatLink 2 "
+          },
+          {
+            "type": "link",
+            "md": "https://stat.link/hufsd5",
+            "bbox": [
+              {
+                "x": 480.73,
+                "y": 309.12,
+                "w": 72.49,
+                "h": 9.53,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 23,
+                "label": "text"
+              },
+              {
+                "x": 407.84810716048526,
+                "y": 309.1858309978816,
+                "w": 145.33065976615572,
+                "h": 9.485875064849854,
+                "confidence": 0.8,
+                "label": "text"
+              }
+            ],
+            "url": "https://stat.link/hufsd5",
+            "text": "https://stat.link/hufsd5"
+          },
+          {
+            "type": "text",
+            "md": "Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21",
+            "bbox": [
+              {
+                "x": 41.84,
+                "y": 331.92,
+                "w": 311.14,
+                "h": 11.61,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 72,
+                "label": "caption"
+              }
+            ],
+            "value": "Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21"
+          },
+          {
+            "type": "table",
+            "md": "| Cancer site  | Mortality in 2021 (per 100 000) | Percentage change 2011-21 | Trend    |\n| ------------ | ------------------------------- | ------------------------- | -------- |\n| Pancreas     | 18                              | 5                         | Increase |\n| Brain        | 6                               | -6                        | Decrease |\n| Skin         | 3                               | -8                        | Decrease |\n| Liver        | 10                              | -11                       | Decrease |\n| Prostate     | 15                              | -9                        | Decrease |\n| Breast       | 18                              | -10                       | Decrease |\n| Lung         | 45                              | -15                       | Decrease |\n| Cervix uteri | 2                               | -17                       | Decrease |\n| Ovary        | 5                               | -21                       | Decrease |\n| Bladder      | 8                               | -21                       | Decrease |\n| Leukaemia    | 12                              | -22                       | Decrease |\n| Colorectum   | 27                              | -21                       | Decrease |\n| Stomach      | 10                              | -29                       | Decrease |",
+            "bbox": [
+              {
+                "x": 50.6,
+                "y": 353.2,
+                "w": 492.29,
+                "h": 200.01,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 1348,
+                "label": "chart"
+              },
+              {
+                "x": 434.57,
+                "y": 544.98,
+                "w": 108.53,
+                "h": 8.55,
+                "confidence": 1,
+                "start_index": 17,
+                "end_index": 60,
+                "label": "text"
+              }
+            ],
+            "rows": [
+              [
+                "Cancer site",
+                "Mortality in 2021 (per 100 000)",
+                "Percentage change 2011-21",
+                "Trend"
+              ],
+              [
+                "Pancreas",
+                "18",
+                "5",
+                "Increase"
+              ],
+              [
+                "Brain",
+                "6",
+                "-6",
+                "Decrease"
+              ],
+              [
+                "Skin",
+                "3",
+                "-8",
+                "Decrease"
+              ],
+              [
+                "Liver",
+                "10",
+                "-11",
+                "Decrease"
+              ],
+              [
+                "Prostate",
+                "15",
+                "-9",
+                "Decrease"
+              ],
+              [
+                "Breast",
+                "18",
+                "-10",
+                "Decrease"
+              ],
+              [
+                "Lung",
+                "45",
+                "-15",
+                "Decrease"
+              ],
+              [
+                "Cervix uteri",
+                "2",
+                "-17",
+                "Decrease"
+              ],
+              [
+                "Ovary",
+                "5",
+                "-21",
+                "Decrease"
+              ],
+              [
+                "Bladder",
+                "8",
+                "-21",
+                "Decrease"
+              ],
+              [
+                "Leukaemia",
+                "12",
+                "-22",
+                "Decrease"
+              ],
+              [
+                "Colorectum",
+                "27",
+                "-21",
+                "Decrease"
+              ],
+              [
+                "Stomach",
+                "10",
+                "-29",
+                "Decrease"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Cancer site</th>\n        <th>Mortality in 2021 (per 100 000)</th>\n        <th>Percentage change 2011-21</th>\n        <th>Trend</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Pancreas</td>\n        <td>18</td>\n        <td>5</td>\n        <td>Increase</td>\n    </tr>\n    <tr>\n        <td>Brain</td>\n        <td>6</td>\n        <td>-6</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Skin</td>\n        <td>3</td>\n        <td>-8</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Liver</td>\n        <td>10</td>\n        <td>-11</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Prostate</td>\n        <td>15</td>\n        <td>-9</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Breast</td>\n        <td>18</td>\n        <td>-10</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Lung</td>\n        <td>45</td>\n        <td>-15</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Cervix uteri</td>\n        <td>2</td>\n        <td>-17</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Ovary</td>\n        <td>5</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Bladder</td>\n        <td>8</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Leukaemia</td>\n        <td>12</td>\n        <td>-22</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Colorectum</td>\n        <td>27</td>\n        <td>-21</td>\n        <td>Decrease</td>\n    </tr>\n    <tr>\n        <td>Stomach</td>\n        <td>10</td>\n        <td>-29</td>\n        <td>Decrease</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Cancer site\",\"Mortality in 2021 (per 100 000)\",\"Percentage change 2011-21\",\"Trend\"\n\"Pancreas\",\"18\",\"5\",\"Increase\"\n\"Brain\",\"6\",\"-6\",\"Decrease\"\n\"Skin\",\"3\",\"-8\",\"Decrease\"\n\"Liver\",\"10\",\"-11\",\"Decrease\"\n\"Prostate\",\"15\",\"-9\",\"Decrease\"\n\"Breast\",\"18\",\"-10\",\"Decrease\"\n\"Lung\",\"45\",\"-15\",\"Decrease\"\n\"Cervix uteri\",\"2\",\"-17\",\"Decrease\"\n\"Ovary\",\"5\",\"-21\",\"Decrease\"\n\"Bladder\",\"8\",\"-21\",\"Decrease\"\n\"Leukaemia\",\"12\",\"-22\",\"Decrease\"\n\"Colorectum\",\"27\",\"-21\",\"Decrease\"\n\"Stomach\",\"10\",\"-29\",\"Decrease\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [chart, caption, text, header, footer] but no table/form"
+              },
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Note: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality rate in 2021. “Lung” includes cancers of the lung, trachea, and bronchus. “Brain” refers to both brain cancers and central nervous system cancers. The data correspond to the EU27 weighted averages.",
+            "bbox": [
+              {
+                "x": 41.1,
+                "y": 559.53,
+                "w": 512.58,
+                "h": 31.31,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 365,
+                "label": "text"
+              }
+            ],
+            "value": "Note: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality rate in 2021. “Lung” includes cancers of the lung, trachea, and bronchus. “Brain” refers to both brain cancers and central nervous system cancers. The data correspond to the EU27 weighted averages."
+          },
+          {
+            "type": "text",
+            "md": "Source: Eurostat (hlth_cd_asdr2).",
+            "bbox": [
+              {
+                "x": 41.65,
+                "y": 591.16,
+                "w": 104.84,
+                "h": 9.58,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 32,
+                "label": "text"
+              }
+            ],
+            "value": "Source: Eurostat (hlth_cd_asdr2)."
+          },
+          {
+            "type": "text",
+            "md": "StatLink 2 ",
+            "bbox": [
+              {
+                "x": 413.9,
+                "y": 605.39,
+                "w": 40.75,
+                "h": 7.13,
+                "confidence": 0.78,
+                "start_index": 0,
+                "end_index": 10,
+                "label": "text"
+              }
+            ],
+            "value": "StatLink 2 "
+          },
+          {
+            "type": "link",
+            "md": "https://stat.link/styxji",
+            "bbox": [
+              {
+                "x": 487.21,
+                "y": 604.36,
+                "w": 65.81,
+                "h": 9.99,
+                "confidence": 0.79,
+                "start_index": 0,
+                "end_index": 23,
+                "label": "text"
+              },
+              {
+                "x": 413.9305869744342,
+                "y": 604.3760503543356,
+                "w": 139.16109979579758,
+                "h": 9.87947983932495,
+                "confidence": 0.79,
+                "label": "text"
+              }
+            ],
+            "url": "https://stat.link/styxji",
+            "text": "https://stat.link/styxji"
+          },
+          {
+            "type": "footer",
+            "md": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024",
+            "bbox": [
+              {
+                "x": 41.72,
+                "y": 738.77,
+                "w": 274.26,
+                "h": 9
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024",
+                "bbox": [
+                  {
+                    "x": 41.72,
+                    "y": 739.01,
+                    "w": 274.26,
+                    "h": 7.61,
+                    "confidence": 0.86,
+                    "start_index": 0,
+                    "end_index": 57,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 42.56,
+                    "y": 738.77,
+                    "w": 90.85,
+                    "h": 9,
+                    "confidence": 1,
+                    "start_index": 0,
+                    "end_index": 18,
+                    "label": "footer"
+                  }
+                ],
+                "value": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024"
+              }
+            ]
+          }
+        ],
+        "page_width": 595.276,
+        "page_height": 793.701,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.763,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 3,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/e7f59828-8a5a-4a4c-9c76-9b4d63d8621b/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XT4WOCMJGU&Signature=%2FQn%2FCvg9dIkG%2B10mbDSSdxU916M%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIAMQOdqRJt%2F76I8Q6duSNbK1oqEL%2BIyQXH17j24D%2BFrmAiEAvHSbjcX%2BCWL1nYwnOU1cdTNC6ghJ%2B9aoQeD3CiTHFf0qkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDC7ZVfA%2FM7lbMX7KfCrkBDvVWpcpGRS44t6WIRWJCe3nKkulYIH8j5P6fxESu9ixCPKVpvc5wSjl5uTKyrm%2BlDkgayCnZwTrHTByEzy3CHahPWZm5oRiNQOHaO07HqU8XwViofqgGH%2BQja5Wy%2F4N9D9EUfsxh%2FcMUjj9b63mlgeEcMZeY6z6yxWDTqj2wv50xOfdbgdY2M4eJbNUVPfS%2Bl%2BMR5RtQrY3QJZccSiTUEiay%2B962a1Mt0mJPg38on7SCuHMIiwZTUs11OC8z7Mvtk7ZZ3aL%2FyKCrLYRWeK18IQyqHTsu%2BXCEAuDlP0%2FEw7YpgBKzhXrOFNIIfhSIVnuFwe8QesOeulyYPa1wmlhQNWaznKyNDGBdVsiZ9q5B52646zvQy3jh9goDtG7NuCHQbYPWNahk%2BW0gg5Et0TjgPjimmEBcnbt8NYwCGWdkORA5k3SVjFJ4sW%2BzA9k8pUF6JIKWwYDewhGgTZy0il0YjFebc64wv7OiIiIPzaN2pvk4cshaRBCEU7EoyistPUGZSyz18BAJPZIbqLr5ICutFdg4pAt0LSJCaLB0xA8WE9BmBLOCcmnsIjn2OrXtxn5Si0CmdXyoph6xfY%2FGlGyfNz%2FwlQrL7gliHoED0RwEuMSpHVz6jz3IYNFpt3stokgxZM7SJgdyvIOUwRlykZBvGjGbf2w3ZrF70n5RHothRCZ94GmHMYp6qWJsjfovRaLIMPnTM%2FJNktF5x7lmvJYirx6ETWmpMM5A1S1DyobqwijGWQjVjR8jXT154DGGiElahG7GVyRsuMkZDTV34fbp6jcttIq99kwO%2FK4rW1lERUh1RpPyzDq7PLTBjqYAXsTj3kJ8ygfKViKl0gXhK6TXshIWpHyFxJBD9q1gp0Pwpoz8OIeeREtB%2BQ%2FfbuBPqmMi5xe4R%2BZ184iE%2BUTPv5Fh9q3UPvEG7cZTxms%2F1s3q1nfETRP0SNl%2B4iyIJJhA%2F7%2BR8iX6ng%2BGgB4Nqne5br5V2XmZZUHPM4FGTJP2t%2BY0pBkaQyc7VJ%2FX8d%2Be97GbjOLzx6KyaCd&Expires=1786563837",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 595,
+          "h": 794
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_chart_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/e7f59828-8a5a-4a4c-9c76-9b4d63d8621b/page_1_chart_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT4WOCMJGU&Signature=r6hPdcU4333xO%2BU7%2BjqKK8NGx90%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIAMQOdqRJt%2F76I8Q6duSNbK1oqEL%2BIyQXH17j24D%2BFrmAiEAvHSbjcX%2BCWL1nYwnOU1cdTNC6ghJ%2B9aoQeD3CiTHFf0qkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDC7ZVfA%2FM7lbMX7KfCrkBDvVWpcpGRS44t6WIRWJCe3nKkulYIH8j5P6fxESu9ixCPKVpvc5wSjl5uTKyrm%2BlDkgayCnZwTrHTByEzy3CHahPWZm5oRiNQOHaO07HqU8XwViofqgGH%2BQja5Wy%2F4N9D9EUfsxh%2FcMUjj9b63mlgeEcMZeY6z6yxWDTqj2wv50xOfdbgdY2M4eJbNUVPfS%2Bl%2BMR5RtQrY3QJZccSiTUEiay%2B962a1Mt0mJPg38on7SCuHMIiwZTUs11OC8z7Mvtk7ZZ3aL%2FyKCrLYRWeK18IQyqHTsu%2BXCEAuDlP0%2FEw7YpgBKzhXrOFNIIfhSIVnuFwe8QesOeulyYPa1wmlhQNWaznKyNDGBdVsiZ9q5B52646zvQy3jh9goDtG7NuCHQbYPWNahk%2BW0gg5Et0TjgPjimmEBcnbt8NYwCGWdkORA5k3SVjFJ4sW%2BzA9k8pUF6JIKWwYDewhGgTZy0il0YjFebc64wv7OiIiIPzaN2pvk4cshaRBCEU7EoyistPUGZSyz18BAJPZIbqLr5ICutFdg4pAt0LSJCaLB0xA8WE9BmBLOCcmnsIjn2OrXtxn5Si0CmdXyoph6xfY%2FGlGyfNz%2FwlQrL7gliHoED0RwEuMSpHVz6jz3IYNFpt3stokgxZM7SJgdyvIOUwRlykZBvGjGbf2w3ZrF70n5RHothRCZ94GmHMYp6qWJsjfovRaLIMPnTM%2FJNktF5x7lmvJYirx6ETWmpMM5A1S1DyobqwijGWQjVjR8jXT154DGGiElahG7GVyRsuMkZDTV34fbp6jcttIq99kwO%2FK4rW1lERUh1RpPyzDq7PLTBjqYAXsTj3kJ8ygfKViKl0gXhK6TXshIWpHyFxJBD9q1gp0Pwpoz8OIeeREtB%2BQ%2FfbuBPqmMi5xe4R%2BZ184iE%2BUTPv5Fh9q3UPvEG7cZTxms%2F1s3q1nfETRP0SNl%2B4iyIJJhA%2F7%2BR8iX6ng%2BGgB4Nqne5br5V2XmZZUHPM4FGTJP2t%2BY0pBkaQyc7VJ%2FX8d%2Be97GbjOLzx6KyaCd&Expires=1786563837",
+        "category": "layout",
+        "bbox": {
+          "x": 50,
+          "y": 353,
+          "w": 490,
+          "h": 195
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/e7f59828-8a5a-4a4c-9c76-9b4d63d8621b/page_1_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT4WOCMJGU&Signature=7X262uUoq8FkSBfXAvFCkde7E60%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIAMQOdqRJt%2F76I8Q6duSNbK1oqEL%2BIyQXH17j24D%2BFrmAiEAvHSbjcX%2BCWL1nYwnOU1cdTNC6ghJ%2B9aoQeD3CiTHFf0qkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDC7ZVfA%2FM7lbMX7KfCrkBDvVWpcpGRS44t6WIRWJCe3nKkulYIH8j5P6fxESu9ixCPKVpvc5wSjl5uTKyrm%2BlDkgayCnZwTrHTByEzy3CHahPWZm5oRiNQOHaO07HqU8XwViofqgGH%2BQja5Wy%2F4N9D9EUfsxh%2FcMUjj9b63mlgeEcMZeY6z6yxWDTqj2wv50xOfdbgdY2M4eJbNUVPfS%2Bl%2BMR5RtQrY3QJZccSiTUEiay%2B962a1Mt0mJPg38on7SCuHMIiwZTUs11OC8z7Mvtk7ZZ3aL%2FyKCrLYRWeK18IQyqHTsu%2BXCEAuDlP0%2FEw7YpgBKzhXrOFNIIfhSIVnuFwe8QesOeulyYPa1wmlhQNWaznKyNDGBdVsiZ9q5B52646zvQy3jh9goDtG7NuCHQbYPWNahk%2BW0gg5Et0TjgPjimmEBcnbt8NYwCGWdkORA5k3SVjFJ4sW%2BzA9k8pUF6JIKWwYDewhGgTZy0il0YjFebc64wv7OiIiIPzaN2pvk4cshaRBCEU7EoyistPUGZSyz18BAJPZIbqLr5ICutFdg4pAt0LSJCaLB0xA8WE9BmBLOCcmnsIjn2OrXtxn5Si0CmdXyoph6xfY%2FGlGyfNz%2FwlQrL7gliHoED0RwEuMSpHVz6jz3IYNFpt3stokgxZM7SJgdyvIOUwRlykZBvGjGbf2w3ZrF70n5RHothRCZ94GmHMYp6qWJsjfovRaLIMPnTM%2FJNktF5x7lmvJYirx6ETWmpMM5A1S1DyobqwijGWQjVjR8jXT154DGGiElahG7GVyRsuMkZDTV34fbp6jcttIq99kwO%2FK4rW1lERUh1RpPyzDq7PLTBjqYAXsTj3kJ8ygfKViKl0gXhK6TXshIWpHyFxJBD9q1gp0Pwpoz8OIeeREtB%2BQ%2FfbuBPqmMi5xe4R%2BZ184iE%2BUTPv5Fh9q3UPvEG7cZTxms%2F1s3q1nfETRP0SNl%2B4iyIJJhA%2F7%2BR8iX6ng%2BGgB4Nqne5br5V2XmZZUHPM4FGTJP2t%2BY0pBkaQyc7VJ%2FX8d%2Be97GbjOLzx6KyaCd&Expires=1786563837",
+        "category": "layout",
+        "bbox": {
+          "x": 45,
+          "y": 79,
+          "w": 497,
+          "h": 197
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

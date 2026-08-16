@@ -1,0 +1,68 @@
+{
+  "attempt": 1,
+  "candidate_id": "p04-us01-conditional-reachability-v11-attempt-01",
+  "canonical_campaign": false,
+  "command_exit_code": 1,
+  "command_stdout_bytes": 0,
+  "error_type": "RuntimeError",
+  "execution_order": [
+    "ny-timetable:flag_off",
+    "ny-timetable:flag_on"
+  ],
+  "failure": {
+    "accepted_continuous_count": 783,
+    "case_id": "ny-timetable",
+    "enabled": false,
+    "failure_code": "rss_sampling_cadence_exceeded",
+    "hard_gap_ns": 10000000,
+    "message": "fresh P04-US01 worker category=external_monitor_failure error_type=RuntimeError failure_code=rss_sampling_cadence_exceeded observed_gap_ns=32442083 hard_gap_ns=10000000 accepted_continuous_count=783",
+    "observed_gap_ns": 32442083,
+    "snapshot_returned": false
+  },
+  "final_artifact": {
+    "path": "tracker/phase-04-tables/evidence/P04-US01-final-metrics.json",
+    "present_after_failure": false,
+    "present_before_attempt": false
+  },
+  "frozen_final_code_surface": {
+    "file_count": 70,
+    "identity_aggregate_sha256": "b4da1b818f0acfa1b3c1ef527861699bceae2869a8c06b19b21dc9ee962f7cff",
+    "post_failure_read_only_recheck_matches": true,
+    "starting_check_completed_before_worker": true,
+    "total_bytes": 5747758
+  },
+  "independent_preexecution_review": {
+    "open_blocking_or_major_findings": 0,
+    "predeclaration_sha256": "eb97e4bea052952cb2376ed1b6c07a24e894f5bb94b5f22666381001820b3280",
+    "result": "approved"
+  },
+  "no_canonical_metrics_pass": true,
+  "no_current_metrics_pass": true,
+  "no_same_design_retry": true,
+  "offline_environment": {
+    "HF_HUB_OFFLINE": "1",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": ".",
+    "TOKENIZERS_PARALLELISM": "false",
+    "TRANSFORMERS_OFFLINE": "1"
+  },
+  "phase05_authorized": false,
+  "predeclaration": {
+    "inline_source_size_bytes": 7750,
+    "path": "tracker/phase-04-tables/evidence/P04-US01-conditional-reachability-candidate-v11-attempt-01-predeclaration.md",
+    "sha256": "eb97e4bea052952cb2376ed1b6c07a24e894f5bb94b5f22666381001820b3280",
+    "size_bytes": 11616
+  },
+  "schema_id": "p04-us01-conditional-reachability-v11-candidate-failed-attempt-v1",
+  "second_execution_started": false,
+  "sealed_v10_failure_unchanged": true,
+  "story_id": "P04-US01",
+  "story_status": "In Progress",
+  "terminal_transcript": {
+    "line_count": 24,
+    "path": "tracker/phase-04-tables/evidence/P04-US01-conditional-reachability-candidate-v11-attempt-01-stderr.txt",
+    "sha256": "4ab99fdacd99d006425ed836fe00fbe30e9491d070a117182ea66019180a1c05",
+    "size_bytes": 1249,
+    "source": "verbatim tool-returned terminal stderr transcribed without normalization"
+  }
+}

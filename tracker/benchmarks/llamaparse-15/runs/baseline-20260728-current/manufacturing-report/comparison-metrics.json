@@ -1,0 +1,3260 @@
+{
+  "case_id": "manufacturing-report",
+  "document": {
+    "expert_page_count": 3,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 3,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "manufacturing-report.pdf",
+    "source_page_count": 3
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 13,
+        "line": "<td>13.5</td>"
+      },
+      {
+        "count": 8,
+        "line": "<td>22.5</td>"
+      },
+      {
+        "count": 8,
+        "line": "<td>22.0</td>"
+      },
+      {
+        "count": 8,
+        "line": "<td>21.5</td>"
+      },
+      {
+        "count": 7,
+        "line": "<td>23.0</td>"
+      },
+      {
+        "count": 7,
+        "line": "<td>39.8</td>"
+      },
+      {
+        "count": 7,
+        "line": "<td>34.4</td>"
+      },
+      {
+        "count": 5,
+        "line": "</tbody>"
+      },
+      {
+        "count": 5,
+        "line": "</table>"
+      },
+      {
+        "count": 5,
+        "line": "<td>21.0</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>12.0</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td> </td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>40.5</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>40.0</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>34.5</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>40.6</td>"
+      },
+      {
+        "count": 4,
+        "line": "</thead>"
+      },
+      {
+        "count": 4,
+        "line": "<td>0.3</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>11.5</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>10.5</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>40.1</td>"
+      },
+      {
+        "count": 3,
+        "line": "nist ams 100-76"
+      },
+      {
+        "count": 3,
+        "line": "february 2026"
+      },
+      {
+        "count": 3,
+        "line": "data source: united nations statistics division. (2025). “national accounts main aggregates database.” https://unstats.un.org/unsd/snaama/"
+      },
+      {
+        "count": 3,
+        "line": "<td>13.0</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>14.0</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>20.5</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>11.0</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>291</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>141</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 3,
+        "line": "data source: united nations statistics division. (2025). 'national accounts main aggregates database.' https://unstats.un.org/unsd/snaama/"
+      },
+      {
+        "count": 2,
+        "line": "nist ams 100-76 february 2026"
+      },
+      {
+        "count": 2,
+        "line": "mexico, 1.4%"
+      },
+      {
+        "count": 2,
+        "line": "united states, 1.6%"
+      },
+      {
+        "count": 2,
+        "line": "percentile"
+      },
+      {
+        "count": 2,
+        "line": "25th 50th 75th 100th"
+      },
+      {
+        "count": 2,
+        "line": "germany, 0.0%"
+      },
+      {
+        "count": 2,
+        "line": "china (mainland),"
+      },
+      {
+        "count": 2,
+        "line": "ireland, 6.9%"
+      },
+      {
+        "count": 2,
+        "line": "nist ams 100-76"
+      },
+      {
+        "count": 2,
+        "line": "february 2026"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 0.9655172413793104,
+      "confidence_coverage": 0.7931034482758621,
+      "item_count": 29,
+      "parse_concern_count": 9,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 2,
+          "parse_concerns": [
+            {
+              "details": "layout detected [chart, caption, text, footer, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 11
+        },
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 6,
+          "parse_concerns": [
+            {
+              "details": "layout detected [chart, caption, text, footer, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 12
+        },
+        {
+          "column_count": 5,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 12,
+          "parse_concerns": [
+            {
+              "details": "layout detected [chart, caption, footer, text, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 28
+        },
+        {
+          "column_count": 8,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 16,
+          "parse_concerns": [
+            {
+              "details": "layout detected [chart, caption, footer, text, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 12
+        },
+        {
+          "column_count": 5,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 22,
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, paragraph_title, caption, footer, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "row_count": 21
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "header": 3,
+        "heading": 1,
+        "link": 5,
+        "table": 5,
+        "text": 12
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.3181818181818182,
+      "item_count": 22,
+      "parse_concern_count": 5,
+      "provenance_coverage": 1.0,
+      "tables": [],
+      "type_counts": {
+        "chart": 5,
+        "footer": 3,
+        "header": 2,
+        "heading": 1,
+        "image": 1,
+        "text": 10
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 2117,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 1510,
+        "candidate_tokens": 302,
+        "extra_token_counts": [
+          [
+            "0",
+            48
+          ],
+          [
+            "percentile",
+            9
+          ],
+          [
+            "1",
+            8
+          ],
+          [
+            "10",
+            8
+          ],
+          [
+            "3",
+            7
+          ],
+          [
+            "5",
+            7
+          ],
+          [
+            "20",
+            6
+          ],
+          [
+            "4",
+            4
+          ],
+          [
+            "6",
+            4
+          ],
+          [
+            "15",
+            4
+          ],
+          [
+            "25th",
+            4
+          ],
+          [
+            "50th",
+            4
+          ],
+          [
+            "75th",
+            4
+          ],
+          [
+            "100th",
+            4
+          ],
+          [
+            "30",
+            4
+          ],
+          [
+            "italy",
+            2
+          ],
+          [
+            "australia",
+            2
+          ],
+          [
+            "france",
+            2
+          ],
+          [
+            "japan",
+            2
+          ],
+          [
+            "mexico",
+            2
+          ],
+          [
+            "united",
+            2
+          ],
+          [
+            "states",
+            2
+          ],
+          [
+            "germany",
+            2
+          ],
+          [
+            "world",
+            2
+          ],
+          [
+            "8",
+            2
+          ],
+          [
+            "ireland",
+            2
+          ],
+          [
+            "india",
+            2
+          ],
+          [
+            "9",
+            2
+          ],
+          [
+            "50",
+            2
+          ],
+          [
+            "40",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            84
+          ],
+          [
+            "tr",
+            46
+          ],
+          [
+            "th",
+            8
+          ],
+          [
+            "table",
+            4
+          ],
+          [
+            "thead",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "country",
+            2
+          ],
+          [
+            "growth",
+            2
+          ],
+          [
+            "rate",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.3170331473580571,
+        "reference_chars": 2117,
+        "reference_tokens": 292,
+        "token_f1": 0.45791245791245794,
+        "token_multiset_overlap": 136,
+        "token_precision": 0.4503311258278146,
+        "token_recall": 0.4657534246575342
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 1510,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1027,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 2117,
+        "candidate_tokens": 292,
+        "extra_token_counts": [
+          [
+            "td",
+            84
+          ],
+          [
+            "tr",
+            46
+          ],
+          [
+            "th",
+            8
+          ],
+          [
+            "table",
+            4
+          ],
+          [
+            "thead",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "country",
+            2
+          ],
+          [
+            "growth",
+            2
+          ],
+          [
+            "rate",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "0",
+            19
+          ],
+          [
+            "percentile",
+            7
+          ],
+          [
+            "10",
+            4
+          ],
+          [
+            "20",
+            3
+          ],
+          [
+            "25th",
+            2
+          ],
+          [
+            "50th",
+            2
+          ],
+          [
+            "75th",
+            2
+          ],
+          [
+            "100th",
+            2
+          ],
+          [
+            "15",
+            2
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "30",
+            2
+          ],
+          [
+            "nist",
+            1
+          ],
+          [
+            "ams",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "76",
+            1
+          ],
+          [
+            "february",
+            1
+          ],
+          [
+            "2026",
+            1
+          ],
+          [
+            "40",
+            1
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "11",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.3866199922209257,
+        "reference_chars": 1027,
+        "reference_tokens": 192,
+        "token_f1": 0.5619834710743802,
+        "token_multiset_overlap": 136,
+        "token_precision": 0.4657534246575342,
+        "token_recall": 0.7083333333333334
+      },
+      "source_vs_ours": {
+        "candidate_chars": 1510,
+        "candidate_tokens": 302,
+        "extra_token_counts": [
+          [
+            "0",
+            29
+          ],
+          [
+            "1",
+            8
+          ],
+          [
+            "3",
+            7
+          ],
+          [
+            "5",
+            5
+          ],
+          [
+            "4",
+            4
+          ],
+          [
+            "6",
+            4
+          ],
+          [
+            "10",
+            4
+          ],
+          [
+            "20",
+            3
+          ],
+          [
+            "italy",
+            2
+          ],
+          [
+            "australia",
+            2
+          ],
+          [
+            "france",
+            2
+          ],
+          [
+            "japan",
+            2
+          ],
+          [
+            "mexico",
+            2
+          ],
+          [
+            "united",
+            2
+          ],
+          [
+            "states",
+            2
+          ],
+          [
+            "germany",
+            2
+          ],
+          [
+            "world",
+            2
+          ],
+          [
+            "8",
+            2
+          ],
+          [
+            "ireland",
+            2
+          ],
+          [
+            "india",
+            2
+          ],
+          [
+            "15",
+            2
+          ],
+          [
+            "25th",
+            2
+          ],
+          [
+            "50th",
+            2
+          ],
+          [
+            "percentile",
+            2
+          ],
+          [
+            "75th",
+            2
+          ],
+          [
+            "100th",
+            2
+          ],
+          [
+            "9",
+            2
+          ],
+          [
+            "30",
+            2
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.4924901185770751,
+        "reference_chars": 1027,
+        "reference_tokens": 192,
+        "token_f1": 0.7773279352226721,
+        "token_multiset_overlap": 192,
+        "token_precision": 0.6357615894039735,
+        "token_recall": 1.0
+      }
+    },
+    {
+      "expert_body_chars": 7023,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 2720,
+        "candidate_tokens": 517,
+        "extra_token_counts": [
+          [
+            "2",
+            4
+          ],
+          [
+            "a",
+            4
+          ],
+          [
+            "dollars",
+            3
+          ],
+          [
+            "100",
+            3
+          ],
+          [
+            "o",
+            3
+          ],
+          [
+            "6",
+            3
+          ],
+          [
+            "sx",
+            3
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "oo",
+            3
+          ],
+          [
+            "gnv",
+            3
+          ],
+          [
+            "of",
+            2
+          ],
+          [
+            "constant",
+            2
+          ],
+          [
+            "current",
+            2
+          ],
+          [
+            "nist",
+            2
+          ],
+          [
+            "ams",
+            2
+          ],
+          [
+            "76",
+            2
+          ],
+          [
+            "february",
+            2
+          ],
+          [
+            "2026",
+            2
+          ],
+          [
+            "15",
+            2
+          ],
+          [
+            "2000",
+            2
+          ],
+          [
+            "40",
+            2
+          ],
+          [
+            "germany",
+            2
+          ],
+          [
+            "8",
+            2
+          ],
+          [
+            "xs",
+            2
+          ],
+          [
+            "jo",
+            2
+          ],
+          [
+            "e",
+            2
+          ],
+          [
+            "wn",
+            2
+          ],
+          [
+            "95",
+            2
+          ],
+          [
+            "461",
+            2
+          ],
+          [
+            "67",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            446
+          ],
+          [
+            "tr",
+            80
+          ],
+          [
+            "5",
+            56
+          ],
+          [
+            "0",
+            29
+          ],
+          [
+            "th",
+            26
+          ],
+          [
+            "13",
+            16
+          ],
+          [
+            "22",
+            16
+          ],
+          [
+            "21",
+            13
+          ],
+          [
+            "23",
+            9
+          ],
+          [
+            "11",
+            7
+          ],
+          [
+            "12",
+            6
+          ],
+          [
+            "table",
+            4
+          ],
+          [
+            "thead",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "24",
+            4
+          ],
+          [
+            "14",
+            4
+          ],
+          [
+            "28",
+            3
+          ],
+          [
+            "27",
+            3
+          ],
+          [
+            "20",
+            3
+          ],
+          [
+            "26",
+            2
+          ],
+          [
+            "19",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "17",
+            2
+          ],
+          [
+            "10",
+            2
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "33",
+            1
+          ],
+          [
+            "31",
+            1
+          ],
+          [
+            "29",
+            1
+          ],
+          [
+            "25",
+            1
+          ],
+          [
+            "16",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.09986684420772303,
+        "reference_chars": 7023,
+        "reference_tokens": 1046,
+        "token_f1": 0.37619961612284075,
+        "token_multiset_overlap": 294,
+        "token_precision": 0.5686653771760155,
+        "token_recall": 0.28107074569789675
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 2720,
+      "our_success": true,
+      "page_number": 2,
+      "source_chars": 1850,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 7023,
+        "candidate_tokens": 1046,
+        "extra_token_counts": [
+          [
+            "td",
+            446
+          ],
+          [
+            "tr",
+            80
+          ],
+          [
+            "5",
+            53
+          ],
+          [
+            "0",
+            34
+          ],
+          [
+            "th",
+            26
+          ],
+          [
+            "13",
+            16
+          ],
+          [
+            "22",
+            16
+          ],
+          [
+            "21",
+            13
+          ],
+          [
+            "23",
+            9
+          ],
+          [
+            "12",
+            8
+          ],
+          [
+            "and",
+            8
+          ],
+          [
+            "11",
+            7
+          ],
+          [
+            "24",
+            5
+          ],
+          [
+            "products",
+            5
+          ],
+          [
+            "table",
+            4
+          ],
+          [
+            "thead",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "27",
+            4
+          ],
+          [
+            "14",
+            4
+          ],
+          [
+            "33",
+            3
+          ],
+          [
+            "28",
+            3
+          ],
+          [
+            "20",
+            3
+          ],
+          [
+            "equipment",
+            3
+          ],
+          [
+            "141",
+            3
+          ],
+          [
+            "26",
+            2
+          ],
+          [
+            "25",
+            2
+          ],
+          [
+            "19",
+            2
+          ],
+          [
+            "18",
+            2
+          ],
+          [
+            "17",
+            2
+          ],
+          [
+            "10",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "1",
+            18
+          ],
+          [
+            "3",
+            13
+          ],
+          [
+            "4",
+            11
+          ],
+          [
+            "2",
+            10
+          ],
+          [
+            "dna",
+            8
+          ],
+          [
+            "8",
+            7
+          ],
+          [
+            "stcudorp",
+            5
+          ],
+          [
+            "6",
+            4
+          ],
+          [
+            "9",
+            4
+          ],
+          [
+            "7",
+            3
+          ],
+          [
+            "tnempiuqe",
+            3
+          ],
+          [
+            "pdg",
+            2
+          ],
+          [
+            "fo",
+            2
+          ],
+          [
+            "erahs",
+            2
+          ],
+          [
+            "0791",
+            2
+          ],
+          [
+            "4791",
+            2
+          ],
+          [
+            "8791",
+            2
+          ],
+          [
+            "2891",
+            2
+          ],
+          [
+            "6891",
+            2
+          ],
+          [
+            "0991",
+            2
+          ],
+          [
+            "4991",
+            2
+          ],
+          [
+            "8991",
+            2
+          ],
+          [
+            "6002",
+            2
+          ],
+          [
+            "0102",
+            2
+          ],
+          [
+            "4102",
+            2
+          ],
+          [
+            "8102",
+            2
+          ],
+          [
+            "2202",
+            2
+          ],
+          [
+            "piuqe",
+            2
+          ],
+          [
+            "tpecxe",
+            2
+          ],
+          [
+            "yrenihcam",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.11830222757375075,
+        "reference_chars": 1850,
+        "reference_tokens": 369,
+        "token_f1": 0.23886925795053005,
+        "token_multiset_overlap": 169,
+        "token_precision": 0.1615678776290631,
+        "token_recall": 0.45799457994579945
+      },
+      "source_vs_ours": {
+        "candidate_chars": 2720,
+        "candidate_tokens": 517,
+        "extra_token_counts": [
+          [
+            "and",
+            10
+          ],
+          [
+            "0",
+            5
+          ],
+          [
+            "products",
+            5
+          ],
+          [
+            "a",
+            4
+          ],
+          [
+            "dollars",
+            3
+          ],
+          [
+            "germany",
+            3
+          ],
+          [
+            "o",
+            3
+          ],
+          [
+            "sx",
+            3
+          ],
+          [
+            "n",
+            3
+          ],
+          [
+            "oo",
+            3
+          ],
+          [
+            "equipment",
+            3
+          ],
+          [
+            "gnv",
+            3
+          ],
+          [
+            "of",
+            2
+          ],
+          [
+            "constant",
+            2
+          ],
+          [
+            "current",
+            2
+          ],
+          [
+            "100",
+            2
+          ],
+          [
+            "2000",
+            2
+          ],
+          [
+            "xs",
+            2
+          ],
+          [
+            "jo",
+            2
+          ],
+          [
+            "e",
+            2
+          ],
+          [
+            "wn",
+            2
+          ],
+          [
+            "288",
+            2
+          ],
+          [
+            "223",
+            2
+          ],
+          [
+            "134",
+            2
+          ],
+          [
+            "165",
+            2
+          ],
+          [
+            "148",
+            2
+          ],
+          [
+            "146",
+            2
+          ],
+          [
+            "83",
+            2
+          ],
+          [
+            "62",
+            2
+          ],
+          [
+            "85",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "1",
+            18
+          ],
+          [
+            "3",
+            13
+          ],
+          [
+            "4",
+            11
+          ],
+          [
+            "dna",
+            8
+          ],
+          [
+            "2",
+            6
+          ],
+          [
+            "8",
+            5
+          ],
+          [
+            "stcudorp",
+            5
+          ],
+          [
+            "9",
+            4
+          ],
+          [
+            "5",
+            3
+          ],
+          [
+            "7",
+            3
+          ],
+          [
+            "tnempiuqe",
+            3
+          ],
+          [
+            "pdg",
+            2
+          ],
+          [
+            "erahs",
+            2
+          ],
+          [
+            "0791",
+            2
+          ],
+          [
+            "4791",
+            2
+          ],
+          [
+            "8791",
+            2
+          ],
+          [
+            "2891",
+            2
+          ],
+          [
+            "6891",
+            2
+          ],
+          [
+            "0991",
+            2
+          ],
+          [
+            "4991",
+            2
+          ],
+          [
+            "8991",
+            2
+          ],
+          [
+            "6002",
+            2
+          ],
+          [
+            "0102",
+            2
+          ],
+          [
+            "4102",
+            2
+          ],
+          [
+            "8102",
+            2
+          ],
+          [
+            "2202",
+            2
+          ],
+          [
+            "piuqe",
+            2
+          ],
+          [
+            "tpecxe",
+            2
+          ],
+          [
+            "yrenihcam",
+            2
+          ],
+          [
+            "rehto",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.1462987297415681,
+        "reference_chars": 1850,
+        "reference_tokens": 369,
+        "token_f1": 0.4424379232505643,
+        "token_multiset_overlap": 196,
+        "token_precision": 0.379110251450677,
+        "token_recall": 0.5311653116531165
+      }
+    },
+    {
+      "expert_body_chars": 4421,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 2032,
+        "candidate_tokens": 355,
+        "extra_token_counts": [
+          [
+            "0",
+            5
+          ],
+          [
+            "32",
+            2
+          ],
+          [
+            "36",
+            2
+          ],
+          [
+            "42",
+            2
+          ],
+          [
+            "goods",
+            2
+          ],
+          [
+            "nist",
+            1
+          ],
+          [
+            "ams",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "76",
+            1
+          ],
+          [
+            "february",
+            1
+          ],
+          [
+            "2026",
+            1
+          ],
+          [
+            "44",
+            1
+          ],
+          [
+            "hours",
+            1
+          ],
+          [
+            "per",
+            1
+          ],
+          [
+            "week",
+            1
+          ],
+          [
+            "total",
+            1
+          ],
+          [
+            "private",
+            1
+          ],
+          [
+            "manufacturing",
+            1
+          ],
+          [
+            "durable",
+            1
+          ],
+          [
+            "nondurable",
+            1
+          ],
+          [
+            "99m",
+            1
+          ],
+          [
+            "sunoh",
+            1
+          ],
+          [
+            "jad",
+            1
+          ],
+          [
+            "d",
+            1
+          ],
+          [
+            "9002",
+            1
+          ],
+          [
+            "8002",
+            1
+          ],
+          [
+            "6002",
+            1
+          ],
+          [
+            "stoz",
+            1
+          ],
+          [
+            "eco",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            210
+          ],
+          [
+            "tr",
+            42
+          ],
+          [
+            "40",
+            29
+          ],
+          [
+            "39",
+            17
+          ],
+          [
+            "34",
+            16
+          ],
+          [
+            "4",
+            14
+          ],
+          [
+            "5",
+            13
+          ],
+          [
+            "8",
+            11
+          ],
+          [
+            "3",
+            10
+          ],
+          [
+            "41",
+            9
+          ],
+          [
+            "2",
+            7
+          ],
+          [
+            "1",
+            7
+          ],
+          [
+            "6",
+            6
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "7",
+            2
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "33",
+            1
+          ],
+          [
+            "9",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.5792188651436994,
+        "reference_chars": 4421,
+        "reference_tokens": 718,
+        "token_f1": 0.5927306616961788,
+        "token_multiset_overlap": 318,
+        "token_precision": 0.895774647887324,
+        "token_recall": 0.4428969359331476
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 2032,
+      "our_success": true,
+      "page_number": 3,
+      "source_chars": 1864,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 4421,
+        "candidate_tokens": 718,
+        "extra_token_counts": [
+          [
+            "td",
+            210
+          ],
+          [
+            "tr",
+            42
+          ],
+          [
+            "40",
+            30
+          ],
+          [
+            "34",
+            18
+          ],
+          [
+            "39",
+            17
+          ],
+          [
+            "4",
+            15
+          ],
+          [
+            "5",
+            13
+          ],
+          [
+            "8",
+            12
+          ],
+          [
+            "3",
+            11
+          ],
+          [
+            "41",
+            9
+          ],
+          [
+            "2",
+            7
+          ],
+          [
+            "1",
+            7
+          ],
+          [
+            "6",
+            6
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "7",
+            2
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "2006",
+            1
+          ],
+          [
+            "0",
+            1
+          ],
+          [
+            "2007",
+            1
+          ],
+          [
+            "2008",
+            1
+          ],
+          [
+            "2009",
+            1
+          ],
+          [
+            "33",
+            1
+          ],
+          [
+            "38",
+            1
+          ],
+          [
+            "2010",
+            1
+          ],
+          [
+            "2011",
+            1
+          ],
+          [
+            "2012",
+            1
+          ],
+          [
+            "2013",
+            1
+          ],
+          [
+            "2014",
+            1
+          ],
+          [
+            "2015",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "nist",
+            1
+          ],
+          [
+            "ams",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "76",
+            1
+          ],
+          [
+            "february",
+            1
+          ],
+          [
+            "2026",
+            1
+          ],
+          [
+            "44",
+            1
+          ],
+          [
+            "42",
+            1
+          ],
+          [
+            "36",
+            1
+          ],
+          [
+            "32",
+            1
+          ],
+          [
+            "keew",
+            1
+          ],
+          [
+            "rep",
+            1
+          ],
+          [
+            "sruoh",
+            1
+          ],
+          [
+            "6002",
+            1
+          ],
+          [
+            "7002",
+            1
+          ],
+          [
+            "8002",
+            1
+          ],
+          [
+            "9002",
+            1
+          ],
+          [
+            "0102",
+            1
+          ],
+          [
+            "1102",
+            1
+          ],
+          [
+            "2102",
+            1
+          ],
+          [
+            "3102",
+            1
+          ],
+          [
+            "4102",
+            1
+          ],
+          [
+            "5102",
+            1
+          ],
+          [
+            "6102",
+            1
+          ],
+          [
+            "7102",
+            1
+          ],
+          [
+            "8102",
+            1
+          ],
+          [
+            "9102",
+            1
+          ],
+          [
+            "0202",
+            1
+          ],
+          [
+            "1202",
+            1
+          ],
+          [
+            "2202",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.618830675778284,
+        "reference_chars": 1864,
+        "reference_tokens": 323,
+        "token_f1": 0.5571565802113353,
+        "token_multiset_overlap": 290,
+        "token_precision": 0.403899721448468,
+        "token_recall": 0.8978328173374613
+      },
+      "source_vs_ours": {
+        "candidate_chars": 2032,
+        "candidate_tokens": 355,
+        "extra_token_counts": [
+          [
+            "0",
+            6
+          ],
+          [
+            "34",
+            2
+          ],
+          [
+            "goods",
+            2
+          ],
+          [
+            "4",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "hours",
+            1
+          ],
+          [
+            "32",
+            1
+          ],
+          [
+            "36",
+            1
+          ],
+          [
+            "38",
+            1
+          ],
+          [
+            "40",
+            1
+          ],
+          [
+            "42",
+            1
+          ],
+          [
+            "2006",
+            1
+          ],
+          [
+            "2007",
+            1
+          ],
+          [
+            "2008",
+            1
+          ],
+          [
+            "2009",
+            1
+          ],
+          [
+            "2010",
+            1
+          ],
+          [
+            "2011",
+            1
+          ],
+          [
+            "2012",
+            1
+          ],
+          [
+            "2013",
+            1
+          ],
+          [
+            "2014",
+            1
+          ],
+          [
+            "2015",
+            1
+          ],
+          [
+            "2016",
+            1
+          ],
+          [
+            "2017",
+            1
+          ],
+          [
+            "2018",
+            1
+          ],
+          [
+            "2019",
+            1
+          ],
+          [
+            "2020",
+            1
+          ],
+          [
+            "2021",
+            1
+          ],
+          [
+            "2022",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "2024",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "keew",
+            1
+          ],
+          [
+            "rep",
+            1
+          ],
+          [
+            "sruoh",
+            1
+          ],
+          [
+            "7002",
+            1
+          ],
+          [
+            "0102",
+            1
+          ],
+          [
+            "1102",
+            1
+          ],
+          [
+            "2102",
+            1
+          ],
+          [
+            "3102",
+            1
+          ],
+          [
+            "4102",
+            1
+          ],
+          [
+            "5102",
+            1
+          ],
+          [
+            "6102",
+            1
+          ],
+          [
+            "7102",
+            1
+          ],
+          [
+            "8102",
+            1
+          ],
+          [
+            "9102",
+            1
+          ],
+          [
+            "0202",
+            1
+          ],
+          [
+            "1202",
+            1
+          ],
+          [
+            "2202",
+            1
+          ],
+          [
+            "3202",
+            1
+          ],
+          [
+            "4202",
+            1
+          ],
+          [
+            "5202",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8287037037037037,
+        "reference_chars": 1864,
+        "reference_tokens": 323,
+        "token_f1": 0.8938053097345133,
+        "token_multiset_overlap": 303,
+        "token_precision": 0.8535211267605634,
+        "token_recall": 0.9380804953560371
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 6267,
+      "candidate_tokens": 1174,
+      "extra_token_counts": [
+        [
+          "0",
+          24
+        ],
+        [
+          "percentile",
+          9
+        ],
+        [
+          "10",
+          6
+        ],
+        [
+          "15",
+          6
+        ],
+        [
+          "100",
+          5
+        ],
+        [
+          "30",
+          5
+        ],
+        [
+          "nist",
+          4
+        ],
+        [
+          "ams",
+          4
+        ],
+        [
+          "76",
+          4
+        ],
+        [
+          "february",
+          4
+        ],
+        [
+          "2026",
+          4
+        ],
+        [
+          "germany",
+          4
+        ],
+        [
+          "25th",
+          4
+        ],
+        [
+          "50th",
+          4
+        ],
+        [
+          "75th",
+          4
+        ],
+        [
+          "100th",
+          4
+        ],
+        [
+          "a",
+          4
+        ],
+        [
+          "japan",
+          3
+        ],
+        [
+          "united",
+          3
+        ],
+        [
+          "states",
+          3
+        ],
+        [
+          "world",
+          3
+        ],
+        [
+          "20",
+          3
+        ],
+        [
+          "china",
+          3
+        ],
+        [
+          "dollars",
+          3
+        ],
+        [
+          "o",
+          3
+        ],
+        [
+          "sx",
+          3
+        ],
+        [
+          "n",
+          3
+        ],
+        [
+          "oo",
+          3
+        ],
+        [
+          "gnv",
+          3
+        ],
+        [
+          "italy",
+          2
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          740
+        ],
+        [
+          "tr",
+          168
+        ],
+        [
+          "5",
+          62
+        ],
+        [
+          "th",
+          34
+        ],
+        [
+          "40",
+          25
+        ],
+        [
+          "39",
+          17
+        ],
+        [
+          "13",
+          16
+        ],
+        [
+          "22",
+          16
+        ],
+        [
+          "34",
+          16
+        ],
+        [
+          "21",
+          13
+        ],
+        [
+          "table",
+          10
+        ],
+        [
+          "tbody",
+          10
+        ],
+        [
+          "4",
+          10
+        ],
+        [
+          "23",
+          9
+        ],
+        [
+          "41",
+          9
+        ],
+        [
+          "thead",
+          8
+        ],
+        [
+          "8",
+          7
+        ],
+        [
+          "12",
+          6
+        ],
+        [
+          "11",
+          6
+        ],
+        [
+          "24",
+          4
+        ],
+        [
+          "14",
+          4
+        ],
+        [
+          "3",
+          3
+        ],
+        [
+          "28",
+          3
+        ],
+        [
+          "27",
+          3
+        ],
+        [
+          "country",
+          2
+        ],
+        [
+          "growth",
+          2
+        ],
+        [
+          "rate",
+          2
+        ],
+        [
+          "2",
+          2
+        ],
+        [
+          "year",
+          2
+        ],
+        [
+          "33",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.3032084558133717,
+      "reference_chars": 13565,
+      "reference_tokens": 2056,
+      "token_f1": 0.5133126934984521,
+      "token_multiset_overlap": 829,
+      "token_precision": 0.7061328790459966,
+      "token_recall": 0.4032101167315175
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 6267,
+      "candidate_tokens": 1174,
+      "extra_token_counts": [
+        [
+          "0",
+          24
+        ],
+        [
+          "percentile",
+          9
+        ],
+        [
+          "10",
+          6
+        ],
+        [
+          "15",
+          5
+        ],
+        [
+          "30",
+          5
+        ],
+        [
+          "germany",
+          4
+        ],
+        [
+          "25th",
+          4
+        ],
+        [
+          "50th",
+          4
+        ],
+        [
+          "75th",
+          4
+        ],
+        [
+          "100th",
+          4
+        ],
+        [
+          "a",
+          4
+        ],
+        [
+          "japan",
+          3
+        ],
+        [
+          "united",
+          3
+        ],
+        [
+          "states",
+          3
+        ],
+        [
+          "world",
+          3
+        ],
+        [
+          "20",
+          3
+        ],
+        [
+          "china",
+          3
+        ],
+        [
+          "dollars",
+          3
+        ],
+        [
+          "o",
+          3
+        ],
+        [
+          "sx",
+          3
+        ],
+        [
+          "n",
+          3
+        ],
+        [
+          "oo",
+          3
+        ],
+        [
+          "gnv",
+          3
+        ],
+        [
+          "100",
+          2
+        ],
+        [
+          "italy",
+          2
+        ],
+        [
+          "australia",
+          2
+        ],
+        [
+          "france",
+          2
+        ],
+        [
+          "mexico",
+          2
+        ],
+        [
+          "ireland",
+          2
+        ],
+        [
+          "india",
+          2
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          740
+        ],
+        [
+          "tr",
+          168
+        ],
+        [
+          "5",
+          62
+        ],
+        [
+          "th",
+          34
+        ],
+        [
+          "40",
+          25
+        ],
+        [
+          "39",
+          17
+        ],
+        [
+          "13",
+          16
+        ],
+        [
+          "22",
+          16
+        ],
+        [
+          "34",
+          16
+        ],
+        [
+          "21",
+          13
+        ],
+        [
+          "table",
+          10
+        ],
+        [
+          "tbody",
+          10
+        ],
+        [
+          "4",
+          10
+        ],
+        [
+          "23",
+          9
+        ],
+        [
+          "41",
+          9
+        ],
+        [
+          "thead",
+          8
+        ],
+        [
+          "8",
+          7
+        ],
+        [
+          "11",
+          7
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "12",
+          6
+        ],
+        [
+          "24",
+          4
+        ],
+        [
+          "14",
+          4
+        ],
+        [
+          "3",
+          3
+        ],
+        [
+          "28",
+          3
+        ],
+        [
+          "27",
+          3
+        ],
+        [
+          "country",
+          2
+        ],
+        [
+          "growth",
+          2
+        ],
+        [
+          "rate",
+          2
+        ],
+        [
+          "2",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.2908033892015585,
+      "reference_chars": 13751,
+      "reference_tokens": 2089,
+      "token_f1": 0.5197670855041373,
+      "token_multiset_overlap": 848,
+      "token_precision": 0.7223168654173765,
+      "token_recall": 0.40593585447582575
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 13751,
+      "candidate_tokens": 2089,
+      "extra_token_counts": [
+        [
+          "td",
+          740
+        ],
+        [
+          "tr",
+          168
+        ],
+        [
+          "5",
+          64
+        ],
+        [
+          "th",
+          34
+        ],
+        [
+          "40",
+          28
+        ],
+        [
+          "34",
+          18
+        ],
+        [
+          "0",
+          16
+        ],
+        [
+          "13",
+          16
+        ],
+        [
+          "22",
+          16
+        ],
+        [
+          "39",
+          16
+        ],
+        [
+          "21",
+          13
+        ],
+        [
+          "table",
+          10
+        ],
+        [
+          "tbody",
+          10
+        ],
+        [
+          "23",
+          9
+        ],
+        [
+          "41",
+          9
+        ],
+        [
+          "thead",
+          8
+        ],
+        [
+          "12",
+          8
+        ],
+        [
+          "and",
+          8
+        ],
+        [
+          "11",
+          7
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "8",
+          5
+        ],
+        [
+          "24",
+          5
+        ],
+        [
+          "products",
+          5
+        ],
+        [
+          "4",
+          4
+        ],
+        [
+          "33",
+          4
+        ],
+        [
+          "27",
+          4
+        ],
+        [
+          "14",
+          4
+        ],
+        [
+          "28",
+          3
+        ],
+        [
+          "equipment",
+          3
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "1",
+          11
+        ],
+        [
+          "dna",
+          8
+        ],
+        [
+          "percentile",
+          7
+        ],
+        [
+          "stcudorp",
+          5
+        ],
+        [
+          "2",
+          3
+        ],
+        [
+          "9",
+          3
+        ],
+        [
+          "6002",
+          3
+        ],
+        [
+          "0102",
+          3
+        ],
+        [
+          "4102",
+          3
+        ],
+        [
+          "8102",
+          3
+        ],
+        [
+          "2202",
+          3
+        ],
+        [
+          "tnempiuqe",
+          3
+        ],
+        [
+          "25th",
+          2
+        ],
+        [
+          "50th",
+          2
+        ],
+        [
+          "75th",
+          2
+        ],
+        [
+          "100th",
+          2
+        ],
+        [
+          "15",
+          2
+        ],
+        [
+          "10",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "30",
+          2
+        ],
+        [
+          "pdg",
+          2
+        ],
+        [
+          "fo",
+          2
+        ],
+        [
+          "erahs",
+          2
+        ],
+        [
+          "0791",
+          2
+        ],
+        [
+          "4791",
+          2
+        ],
+        [
+          "8791",
+          2
+        ],
+        [
+          "2891",
+          2
+        ],
+        [
+          "6891",
+          2
+        ],
+        [
+          "0991",
+          2
+        ],
+        [
+          "4991",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.356991886548033,
+      "reference_chars": 4745,
+      "reference_tokens": 884,
+      "token_f1": 0.46686848301379075,
+      "token_multiset_overlap": 694,
+      "token_precision": 0.3322163714696027,
+      "token_recall": 0.7850678733031674
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 6267,
+      "candidate_tokens": 1174,
+      "extra_token_counts": [
+        [
+          "0",
+          40
+        ],
+        [
+          "and",
+          10
+        ],
+        [
+          "germany",
+          5
+        ],
+        [
+          "products",
+          5
+        ],
+        [
+          "10",
+          4
+        ],
+        [
+          "a",
+          4
+        ],
+        [
+          "japan",
+          3
+        ],
+        [
+          "united",
+          3
+        ],
+        [
+          "states",
+          3
+        ],
+        [
+          "6",
+          3
+        ],
+        [
+          "world",
+          3
+        ],
+        [
+          "15",
+          3
+        ],
+        [
+          "20",
+          3
+        ],
+        [
+          "china",
+          3
+        ],
+        [
+          "40",
+          3
+        ],
+        [
+          "30",
+          3
+        ],
+        [
+          "dollars",
+          3
+        ],
+        [
+          "o",
+          3
+        ],
+        [
+          "sx",
+          3
+        ],
+        [
+          "n",
+          3
+        ],
+        [
+          "oo",
+          3
+        ],
+        [
+          "equipment",
+          3
+        ],
+        [
+          "gnv",
+          3
+        ],
+        [
+          "100",
+          2
+        ],
+        [
+          "italy",
+          2
+        ],
+        [
+          "australia",
+          2
+        ],
+        [
+          "france",
+          2
+        ],
+        [
+          "mexico",
+          2
+        ],
+        [
+          "ireland",
+          2
+        ],
+        [
+          "5",
+          2
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "1",
+          10
+        ],
+        [
+          "dna",
+          8
+        ],
+        [
+          "4",
+          6
+        ],
+        [
+          "3",
+          5
+        ],
+        [
+          "2",
+          5
+        ],
+        [
+          "stcudorp",
+          5
+        ],
+        [
+          "0102",
+          3
+        ],
+        [
+          "4102",
+          3
+        ],
+        [
+          "8102",
+          3
+        ],
+        [
+          "2202",
+          3
+        ],
+        [
+          "tnempiuqe",
+          3
+        ],
+        [
+          "8",
+          2
+        ],
+        [
+          "7",
+          2
+        ],
+        [
+          "9",
+          2
+        ],
+        [
+          "pdg",
+          2
+        ],
+        [
+          "erahs",
+          2
+        ],
+        [
+          "0791",
+          2
+        ],
+        [
+          "4791",
+          2
+        ],
+        [
+          "8791",
+          2
+        ],
+        [
+          "2891",
+          2
+        ],
+        [
+          "6891",
+          2
+        ],
+        [
+          "0991",
+          2
+        ],
+        [
+          "4991",
+          2
+        ],
+        [
+          "8991",
+          2
+        ],
+        [
+          "6002",
+          2
+        ],
+        [
+          "2102",
+          2
+        ],
+        [
+          "6102",
+          2
+        ],
+        [
+          "piuqe",
+          2
+        ],
+        [
+          "tpecxe",
+          2
+        ],
+        [
+          "yrenihcam",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.47397160538769567,
+      "reference_chars": 4745,
+      "reference_tokens": 884,
+      "token_f1": 0.7026239067055393,
+      "token_multiset_overlap": 723,
+      "token_precision": 0.6158432708688245,
+      "token_recall": 0.8178733031674208
+    }
+  }
+}

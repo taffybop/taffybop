@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-vpn3e4kt636fnx2y4vlr98otbyic",
+    "created_at": "2026-08-13T06:23:02.279080Z",
+    "updated_at": "2026-08-13T06:23:24.655491Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "manufacturing-report.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 3,
+  "captured_at": "2026-08-13T06:26:00.535Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-vpn3e4kt636fnx2y4vlr98otbyic?fileName=manufacturing-report.pdf"
+}

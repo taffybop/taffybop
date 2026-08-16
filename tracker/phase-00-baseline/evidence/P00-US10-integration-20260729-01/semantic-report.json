@@ -1,0 +1,1297 @@
+{
+  "all_outputs_stable": true,
+  "case_count": 2,
+  "claim_ledger": [
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-01",
+      "claim_type": "page_identity",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:01:source:p01",
+          "region_scope": "page"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-02",
+      "claim_type": "image",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:02:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-03",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:03:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-04",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:04:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-05",
+      "claim_type": "table",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "table",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:05:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-06",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:06:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-07",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:07:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-08",
+      "claim_type": "chart",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "chart",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:08:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-09",
+      "claim_type": "chart",
+      "diagnostic_reason": "Source review rejects or cannot independently verify this expert claim; it is excluded from literal and semantic denominators and retained as a safer-disagreement control.",
+      "dimension": "chart",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "incorrect",
+      "semantic_eligible": false,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:09:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "excluded_unsupported"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-10",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:10:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-11",
+      "claim_type": "page_identity",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:11:source:p01",
+          "region_scope": "page"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-12",
+      "claim_type": "structure",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "reading_order",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:12:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-13",
+      "claim_type": "geometry",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:13:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-14",
+      "claim_type": "metadata",
+      "diagnostic_reason": "Source review rejects or cannot independently verify this expert claim; it is excluded from literal and semantic denominators and retained as a safer-disagreement control.",
+      "dimension": "json",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "not_independently_verifiable",
+      "semantic_eligible": false,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:14:source:p01",
+          "region_scope": "derived_artifact"
+        }
+      ],
+      "treatment": "excluded_unsupported"
+    },
+    {
+      "case_id": "catastrophe-recap",
+      "claim_id": "p00-us06:catastrophe-recap:expert-row-15",
+      "claim_type": "metadata",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "json",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "catastrophe-recap",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "7",
+          "region_id": "expert-row:15:source:p01",
+          "region_scope": "derived_artifact"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-01",
+      "claim_type": "page_identity",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:01:source:p01",
+          "region_scope": "page"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-02",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:02:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-03",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:03:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-04",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:04:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-05",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:05:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-06",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:06:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-07",
+      "claim_type": "chart",
+      "diagnostic_reason": "Source review rejects or cannot independently verify this expert claim; it is excluded from literal and semantic denominators and retained as a safer-disagreement control.",
+      "dimension": "chart",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "potentially_inferred",
+      "semantic_eligible": false,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:07:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "excluded_unsupported"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-08",
+      "claim_type": "chart",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "chart",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:08:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-09",
+      "claim_type": "text",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "text",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:09:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-10",
+      "claim_type": "page_identity",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": true,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:10:source:p01",
+          "region_scope": "page"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-11",
+      "claim_type": "structure",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "reading_order",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:11:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-12",
+      "claim_type": "geometry",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "layout",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:12:source:p01",
+          "region_scope": "source_region"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-13",
+      "claim_type": "metadata",
+      "diagnostic_reason": "Source review rejects or cannot independently verify this expert claim; it is excluded from literal and semantic denominators and retained as a safer-disagreement control.",
+      "dimension": "json",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "not_independently_verifiable",
+      "semantic_eligible": false,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:13:source:p01",
+          "region_scope": "derived_artifact"
+        }
+      ],
+      "treatment": "excluded_unsupported"
+    },
+    {
+      "case_id": "clean-energy",
+      "claim_id": "p00-us07:clean-energy:expert-row-14",
+      "claim_type": "metadata",
+      "diagnostic_reason": "This source-supported narrative claim has no versioned executable candidate evaluator in Phase 0; it is retained with exact provenance as diagnostic-only evidence.",
+      "dimension": "json",
+      "evaluator_id": null,
+      "literal_eligible": false,
+      "output_artifact_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "review_status": "partially_verified",
+      "semantic_eligible": true,
+      "source_locators": [
+        {
+          "bbox": null,
+          "case_id": "clean-energy",
+          "coordinates": {
+            "bbox_format": "[x,y,width,height]",
+            "origin": "top_left",
+            "page_space": "displayed_after_source_rotation",
+            "unit": "pt"
+          },
+          "physical_page": 1,
+          "printed_page": "11",
+          "region_id": "expert-row:14:source:p01",
+          "region_scope": "derived_artifact"
+        }
+      ],
+      "treatment": "diagnostic_only"
+    }
+  ],
+  "cost": {
+    "billed_usd": 0.0,
+    "completion_tokens": 0,
+    "hosted_requests": 0,
+    "method": "fixed offline execution policy",
+    "prompt_tokens": 0
+  },
+  "diagnostic_only_count": 25,
+  "diagnostics": [
+    {
+      "case_id": null,
+      "code": "eligible-claims-diagnostic-only",
+      "message": "Reviewed narrative claims have no versioned executable candidate evaluators in Phase 0 and are not counted as passes.",
+      "remediation": "Future stories may add claim-specific evaluators without changing these frozen masks or source locators.",
+      "stage": "semantic-report"
+    },
+    {
+      "case_id": null,
+      "code": "legacy-token-metrics-diagnostic-only",
+      "message": "Frozen token/string similarity remains a drift diagnostic and is excluded from semantic pass/fail counts.",
+      "remediation": "Use source-grounded versioned evaluators for any future automatic semantic scoring.",
+      "stage": "legacy-comparison"
+    }
+  ],
+  "dimensions": [
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-03",
+        "p00-us06:catastrophe-recap:expert-row-04",
+        "p00-us06:catastrophe-recap:expert-row-06",
+        "p00-us06:catastrophe-recap:expert-row-07",
+        "p00-us06:catastrophe-recap:expert-row-10",
+        "p00-us07:clean-energy:expert-row-02",
+        "p00-us07:clean-energy:expert-row-03",
+        "p00-us07:clean-energy:expert-row-04",
+        "p00-us07:clean-energy:expert-row-05",
+        "p00-us07:clean-energy:expert-row-06",
+        "p00-us07:clean-energy:expert-row-09"
+      ],
+      "control_assignment_ids": [
+        "p00-us09:gap-unicode-001:target"
+      ],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 11,
+      "dimension": "text",
+      "eligible_literal_count": 11,
+      "eligible_semantic_count": 11,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [
+        "p00-us09:catastrophe-recap:mapped-gap-row-01"
+      ],
+      "observation": "11 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-01",
+        "p00-us06:catastrophe-recap:expert-row-02",
+        "p00-us06:catastrophe-recap:expert-row-11",
+        "p00-us06:catastrophe-recap:expert-row-13",
+        "p00-us07:clean-energy:expert-row-01",
+        "p00-us07:clean-energy:expert-row-10",
+        "p00-us07:clean-energy:expert-row-12"
+      ],
+      "control_assignment_ids": [
+        "p00-us09:gap-bbox-001:target",
+        "p00-us09:gap-visual-001:related_positive"
+      ],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 7,
+      "dimension": "layout",
+      "eligible_literal_count": 4,
+      "eligible_semantic_count": 7,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [
+        "p00-us09:catastrophe-recap:mapped-gap-row-04",
+        "p00-us09:clean-energy:mapped-gap-row-03",
+        "p00-us09:clean-energy:mapped-gap-row-04"
+      ],
+      "observation": "7 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-12",
+        "p00-us07:clean-energy:expert-row-11"
+      ],
+      "control_assignment_ids": [
+        "p00-us09:gap-order-001:related_positive"
+      ],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 2,
+      "dimension": "reading_order",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 2,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "2 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-05"
+      ],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 1,
+      "dimension": "table",
+      "eligible_literal_count": 1,
+      "eligible_semantic_count": 1,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "1 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-08",
+        "p00-us06:catastrophe-recap:expert-row-09",
+        "p00-us07:clean-energy:expert-row-07",
+        "p00-us07:clean-energy:expert-row-08"
+      ],
+      "control_assignment_ids": [
+        "p00-us09:gap-chart-002:related_positive"
+      ],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 2,
+      "dimension": "chart",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 2,
+      "excluded_count": 2,
+      "fail_count": 0,
+      "gap_row_ids": [
+        "p00-us09:catastrophe-recap:mapped-gap-row-02",
+        "p00-us09:clean-energy:mapped-gap-row-01"
+      ],
+      "observation": "4 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 0,
+      "dimension": "diagram",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "0 reviewed claims retain exact masks and source locators; eligible narrative claims without an evaluator are diagnostic-only.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 0,
+      "dimension": "markdown",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [
+        "p00-us09:catastrophe-recap:mapped-gap-row-05",
+        "p00-us09:clean-energy:mapped-gap-row-05"
+      ],
+      "observation": "Exact Markdown identities stable for 2/2 selected cases; semantic claim scoring is not inferred from strings.",
+      "output_comparisons": [
+        {
+          "case_id": "catastrophe-recap",
+          "current_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "current_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "markdown_stable": true,
+          "reference_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "reference_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "semantic_json_stable": true
+        },
+        {
+          "case_id": "clean-energy",
+          "current_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "current_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "markdown_stable": true,
+          "reference_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "reference_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "semantic_json_stable": true
+        }
+      ],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-14",
+        "p00-us06:catastrophe-recap:expert-row-15",
+        "p00-us07:clean-energy:expert-row-13",
+        "p00-us07:clean-energy:expert-row-14"
+      ],
+      "control_assignment_ids": [
+        "p00-us09:gap-benchmark-001:target"
+      ],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 2,
+      "dimension": "json",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 2,
+      "excluded_count": 2,
+      "fail_count": 0,
+      "gap_row_ids": [
+        "p00-us09:catastrophe-recap:mapped-gap-row-03",
+        "p00-us09:clean-energy:mapped-gap-row-02"
+      ],
+      "observation": "Duration-masked JSON identities stable for 2/2 selected cases.",
+      "output_comparisons": [
+        {
+          "case_id": "catastrophe-recap",
+          "current_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "current_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "markdown_stable": true,
+          "reference_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "reference_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "semantic_json_stable": true
+        },
+        {
+          "case_id": "clean-energy",
+          "current_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "current_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "markdown_stable": true,
+          "reference_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "reference_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "semantic_json_stable": true
+        }
+      ],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [
+        "p00-us06:catastrophe-recap:expert-row-09",
+        "p00-us06:catastrophe-recap:expert-row-14",
+        "p00-us07:clean-energy:expert-row-07",
+        "p00-us07:clean-energy:expert-row-13"
+      ],
+      "diagnostic_only_count": 0,
+      "dimension": "hallucination",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "4 unsupported reviewed claims and 0 negative/ambiguous controls remain explicit cross-cutting exclusions.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 0,
+      "dimension": "diagnostics",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "Case errors, partial outputs, timeouts, skips, and parser warnings remain separate from content quality.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 0,
+      "dimension": "performance",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "Latency, CPU, RSS, and output sizes are reported without quality weighting.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    },
+    {
+      "claim_ids": [],
+      "control_assignment_ids": [],
+      "cross_cutting_claim_ids": [],
+      "diagnostic_only_count": 0,
+      "dimension": "cost",
+      "eligible_literal_count": 0,
+      "eligible_semantic_count": 0,
+      "excluded_count": 0,
+      "fail_count": 0,
+      "gap_row_ids": [],
+      "observation": "Offline execution made zero hosted requests and incurred zero billed cost.",
+      "output_comparisons": [],
+      "partial_count": 0,
+      "pass_count": 0,
+      "safety_control_assignment_ids": [],
+      "scored_count": 0
+    }
+  ],
+  "excluded_unsupported_count": 4,
+  "frozen_inputs": {
+    "control_registry": {
+      "file_sha256": "a383938d41d067e0b3e01729d12def7b573764092100ef76228e4c23707c86b5",
+      "identity": "p00-us09-benchmark-control-registry",
+      "path": "tracker/phase-00-baseline/evidence/P00-US09-control-registry.json",
+      "semantic_sha256": "d3c734957b507f07508f8eeffe43ac450f50f53d5f42f8cf63e354fe60738fce"
+    },
+    "corpus_registry": {
+      "file_sha256": "f8024ab7a47df2cedf2d10b996fc8eb140404cdafea0b0a0a9ae2bb059263ceb",
+      "identity": "llamaparse-15",
+      "path": "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+      "semantic_sha256": "f7c3bdf460f64c51a7d7e29765ab1e621dc5f59224ddeba8c8a66959c901e4ca"
+    },
+    "legacy_comparison_sha256": "2a23aabc812e6723621174f9c66027c2cf3e852de31a8481262e7a2708710e7b",
+    "legacy_metadata_sha256": "386c333bff8ec0678d1194fff5899f82ec9475d29be7d72999a58c3817e3128f",
+    "review_batches": [
+      {
+        "file_sha256": "f987d84ca1b0d08dfd304d7ea3164a78366643f4b42ef03bc4975d4d09548de4",
+        "identity": "p00-us06-reviewed-claims-batch-a",
+        "path": "tracker/phase-00-baseline/evidence/P00-US06-reviewed-claims-batch-a.json",
+        "semantic_sha256": "f6f0ef58f4cb1379f808e8d5bb7253f260a8f643a83e98e75e4d2e1a3fff01ee"
+      },
+      {
+        "file_sha256": "7e4728c1c5d76a6453d42c640de8a25c24989ed3a160cac2fe4640b22a55814e",
+        "identity": "p00-us07-reviewed-claims-batch-b",
+        "path": "tracker/phase-00-baseline/evidence/P00-US07-reviewed-claims-batch-b.json",
+        "semantic_sha256": "9afe6c098adcd32e3a8370af5ecb2b27ac4730f098e39128e787eef991990d0f"
+      },
+      {
+        "file_sha256": "1411d75d2701e51b815f9f3c0e0e5ba5f799f6ec32ca2788cd31ee4f69f05be1",
+        "identity": "p00-us08-reviewed-claims-batch-c",
+        "path": "tracker/phase-00-baseline/evidence/P00-US08-reviewed-claims-batch-c.json",
+        "semantic_sha256": "69c58b8ab7a3b9bdd21bc49183fb5334ee88bee1a4850061820b551ae416eb89"
+      }
+    ]
+  },
+  "literal_eligible_count": 16,
+  "page_count": 2,
+  "performance": {
+    "case_count": 2,
+    "case_latency_ms": {
+      "count": 2,
+      "maximum": 11014.497875003144,
+      "mean": 9826.22160401661,
+      "minimum": 8637.945333030075,
+      "p50": 8637.945333030075,
+      "p95": 11014.497875003144
+    },
+    "cpu_ms": {
+      "count": 2,
+      "maximum": 7630.330000000001,
+      "mean": 6805.3105,
+      "minimum": 5980.290999999999,
+      "p50": 5980.290999999999,
+      "p95": 7630.330000000001
+    },
+    "environment_comparable": true,
+    "parse_latency_ms": {
+      "count": 2,
+      "maximum": 9847.136708209291,
+      "mean": 8696.805250132456,
+      "minimum": 7546.473792055622,
+      "p50": 7546.473792055622,
+      "p95": 9847.136708209291
+    },
+    "peak_rss_bytes": {
+      "count": 2,
+      "maximum": 1500823552.0,
+      "mean": 1473282048.0,
+      "minimum": 1445740544.0,
+      "p50": 1445740544.0,
+      "p95": 1500823552.0
+    },
+    "reference_latency_p50_ms": 9061.990999965928,
+    "reference_latency_p95_ms": 46758.3517919993,
+    "reference_rss_max_bytes": 2715254784.0,
+    "reference_rss_p50_bytes": 1506803712.0,
+    "tolerance_percent": 25.0,
+    "total_markdown_bytes": 2894,
+    "total_raw_json_bytes": 186633,
+    "within_tolerance": true
+  },
+  "quality_signature_sha256": "a8b7ff47f2652192752aac5e87fff35e14942ec78cf0c182f1c8ef2d7bc799bb",
+  "report_kind": "p00-us10-corpus-semantic-report",
+  "reviewed_claim_count": 29,
+  "run_id": "p00-us10-integration-20260729-01",
+  "run_record": {
+    "derivation": null,
+    "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/run-record.json",
+    "role": "corpus_run_record",
+    "sha256": "e98d292e05e8b569e423295a711156795bfca7b22430b5adb3136039bcaef869",
+    "size_bytes": 14080
+  },
+  "run_semantic_sha256": "51fda4e871bd0560f5b32f083185e6c1b516245dc04fce60ee217b690c3907fd",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "scored_claim_count": 0,
+  "selected_case_ids": [
+    "catastrophe-recap",
+    "clean-energy"
+  ],
+  "semantic_eligible_count": 25,
+  "stable_output_signature_sha256": "0969491618f29db4c0a7a9deb25b8231119e41941b60bb63ab3700c94118ee50"
+}

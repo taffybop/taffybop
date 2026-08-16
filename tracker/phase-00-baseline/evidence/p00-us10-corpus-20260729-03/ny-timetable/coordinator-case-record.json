@@ -1,0 +1,102 @@
+{
+  "case_id": "ny-timetable",
+  "case_latency_ms": 46706.959957955405,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "ny-timetable",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/ny-timetable",
+    "--run-id",
+    "p00-us10-corpus-20260729-03",
+    "--order",
+    "11",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:54:00.584890+00:00",
+  "cpu_ms": 51625.493,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 11,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/ny-timetable/our-output.md",
+      "role": "markdown",
+      "sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+      "size_bytes": 40319
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/ny-timetable/our-output.json",
+      "role": "raw_json",
+      "sha256": "d22e78abac30bc6eab73fbe60380be79c1f672199e66128f8acc4f57f2b366cb",
+      "size_bytes": 2313602
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/ny-timetable/our-output.json",
+      "role": "semantic_json",
+      "sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+      "size_bytes": 1081782
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 45379.16004192084,
+  "peak_rss_bytes": 1984430080,
+  "reference_comparison": {
+    "case_id": "ny-timetable",
+    "current_markdown_sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+    "current_semantic_json_sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+    "reference_semantic_json_sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+      "role": "source",
+      "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "size_bytes": 26109
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/ny-timetable.md",
+      "role": "expert_markdown",
+      "sha256": "cc939684182ad5220dddba6bdf3f60f3bbfd8e14977900c1814b129e0df7d396",
+      "size_bytes": 47316
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/ny-timetable.json",
+      "role": "expert_json",
+      "sha256": "075e663d4cf4af674bf518343b4fabea6e281efc4606cb77bc2f854931af463d",
+      "size_bytes": 239491
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:53:15.103948+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

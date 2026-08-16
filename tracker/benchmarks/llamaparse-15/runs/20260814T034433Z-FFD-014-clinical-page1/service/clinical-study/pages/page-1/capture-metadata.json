@@ -1,0 +1,19 @@
+{
+  "schema_version": "ffd014-page1-ui-capture-v1",
+  "captured_at_utc": "2026-08-14T03:46:10.824Z",
+  "browser": "Chrome extension",
+  "title": "Clearleaf — Document parsing workspace",
+  "url": "http://localhost:3000/",
+  "viewport": {
+    "devicePixelRatio": 1,
+    "height": 802,
+    "width": 1920
+  },
+  "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+  "page_index": 1,
+  "printed_label": "1/21",
+  "target": "Clinical page-1 visual placeholder custody",
+  "diagnostic_budget_override": false,
+  "production_document_budget_seconds": 5,
+  "production_page_budget_seconds": 0.5
+}

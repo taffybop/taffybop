@@ -1,0 +1,42 @@
+{
+  "schema_version": "functional-fidelity-reference-selection-v1",
+  "policy": "Use the newest immutable completed LlamaParse Agentic rerun captured after each affected production correction; use the primary batch for unaffected cases.",
+  "cases": {
+    "catastrophe-recap": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after chart-routing and API correction"
+    },
+    "clean-energy": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after chart-routing correction"
+    },
+    "clinical-study": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after diagram-routing correction"
+    },
+    "egov-survey": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after chart-routing correction"
+    },
+    "health-report": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after chart-routing and blank-table correction"
+    },
+    "manufacturing-report": {
+      "root": "llamaparse-visual-routing-fix",
+      "reason": "fresh reference after chart-routing and approved-OCR correction"
+    },
+    "ny-timetable": {
+      "root": "llamaparse-table-fix-20260813",
+      "reason": "fresh reference after 13-column source-grid correction"
+    },
+    "purchase-agreement": {
+      "root": "llamaparse-text-render-fix",
+      "reason": "fresh reference after Markdown emphasis and semantic-UI correction"
+    },
+    "uber-earnings": {
+      "root": "llamaparse-visual-fix",
+      "reason": "fresh reference after low-confidence photograph-OCR correction"
+    }
+  }
+}

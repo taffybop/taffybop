@@ -1,0 +1,339 @@
+{
+  "acceptable_or_harmless_differences": 54,
+  "case_count": 15,
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "evidence_path": "catastrophe-recap/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 3,
+        "discrepancy_count": 14,
+        "evidence_gaps": 0,
+        "functional_regressions": 10,
+        "missing_rendered_dom_pages": [],
+        "resolved_discrepancies": 1,
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 5
+        }
+      }
+    },
+    {
+      "case_id": "clean-energy",
+      "evidence_path": "clean-energy/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 3,
+        "discrepancy_count": 13,
+        "evidence_gaps": 0,
+        "functional_regressions": 9,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 4
+        }
+      }
+    },
+    {
+      "case_id": "clinical-study",
+      "evidence_path": "clinical-study/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 8,
+        "discrepancy_count": 43,
+        "evidence_gaps": 0,
+        "functional_regressions": 34,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 8,
+          "major": 25,
+          "minor": 10
+        }
+      }
+    },
+    {
+      "case_id": "component-datasheet",
+      "evidence_path": "component-datasheet/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 5,
+        "discrepancy_count": 25,
+        "evidence_gaps": 0,
+        "functional_regressions": 20,
+        "missing_rendered_dom_pages": [],
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 10,
+          "major": 9,
+          "minor": 6
+        }
+      }
+    },
+    {
+      "case_id": "egov-survey",
+      "evidence_path": "egov-survey/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 2,
+        "discrepancy_count": 13,
+        "evidence_gaps": 0,
+        "functional_regressions": 10,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 4
+        }
+      }
+    },
+    {
+      "case_id": "esg-metrics",
+      "evidence_path": "esg-metrics/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 2,
+        "discrepancy_count": 19,
+        "evidence_gaps": 0,
+        "functional_regressions": 16,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 5,
+          "major": 10,
+          "minor": 4
+        }
+      }
+    },
+    {
+      "case_id": "finance-10k",
+      "evidence_path": "finance-10k/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 4,
+        "discrepancy_count": 28,
+        "evidence_gaps": 0,
+        "functional_regressions": 24,
+        "missing_rendered_dom_pages": [],
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 9,
+          "major": 12,
+          "minor": 7
+        }
+      }
+    },
+    {
+      "case_id": "health-report",
+      "evidence_path": "health-report/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 2,
+        "discrepancy_count": 15,
+        "evidence_gaps": 0,
+        "functional_regressions": 12,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 7,
+          "major": 5,
+          "minor": 3
+        }
+      }
+    },
+    {
+      "case_id": "insurance-acord",
+      "evidence_path": "insurance-acord/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 2,
+        "discrepancy_count": 19,
+        "evidence_gaps": 0,
+        "functional_regressions": 16,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 11,
+          "major": 4,
+          "minor": 4
+        }
+      }
+    },
+    {
+      "case_id": "manufacturing-report",
+      "evidence_path": "manufacturing-report/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 7,
+        "discrepancy_count": 45,
+        "evidence_gaps": 0,
+        "functional_regressions": 37,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 16,
+          "major": 20,
+          "minor": 9
+        }
+      }
+    },
+    {
+      "case_id": "ny-timetable",
+      "evidence_path": "ny-timetable/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 5,
+        "discrepancy_count": 29,
+        "evidence_gaps": 0,
+        "functional_regressions": 24,
+        "missing_rendered_dom_pages": [],
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 11,
+          "major": 7,
+          "minor": 11
+        }
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "evidence_path": "postal-10k/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 3,
+        "discrepancy_count": 27,
+        "evidence_gaps": 0,
+        "functional_regressions": 24,
+        "missing_rendered_dom_pages": [],
+        "resolved_discrepancies": 1,
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 5,
+          "major": 17,
+          "minor": 5
+        }
+      }
+    },
+    {
+      "case_id": "purchase-agreement",
+      "evidence_path": "purchase-agreement/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 1,
+        "discrepancy_count": 7,
+        "evidence_gaps": 0,
+        "functional_regressions": 6,
+        "missing_rendered_dom_pages": [],
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 0,
+          "major": 2,
+          "minor": 5
+        }
+      }
+    },
+    {
+      "case_id": "settlement-agreement",
+      "evidence_path": "settlement-agreement/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 1,
+        "discrepancy_count": 10,
+        "evidence_gaps": 0,
+        "functional_regressions": 9,
+        "missing_rendered_dom_pages": [],
+        "review_required": 0,
+        "severity_counts": {
+          "critical": 0,
+          "major": 5,
+          "minor": 5
+        }
+      }
+    },
+    {
+      "case_id": "uber-earnings",
+      "evidence_path": "uber-earnings/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 6,
+        "discrepancy_count": 34,
+        "evidence_gaps": 0,
+        "functional_regressions": 27,
+        "missing_rendered_dom_pages": [],
+        "review_required": 1,
+        "severity_counts": {
+          "critical": 13,
+          "major": 13,
+          "minor": 8
+        }
+      }
+    }
+  ],
+  "comparison_policy": {
+    "baseline_role": "LlamaParse is the requested reference baseline, not independent source truth; a difference can expose a baseline defect rather than a service defect.",
+    "chart_table_polymorphism": "A LlamaParse table item labelled only as chart is compared as a chart visual and excluded from business-table counts.",
+    "component_decomposition": "Type-family and nesting-only differences are reported as acceptable schema differences; missing/reordered user-visible content is classified independently.",
+    "json_envelopes": "Exact wire-schema parity is not required. Raw keys, paths, types, and nesting are inventoried, while functional classification uses normalized page, content, table, visual, and ordering projections.",
+    "ocr_and_visuals": "Non-scanned visual-origin OCR aggregation is a token proxy, not spatial source truth; proxy-only differences require page-region review.",
+    "out_of_scope": "Latency, CPU, memory, and exhaustive hardening are not measured.",
+    "page_identity": "Physical page association prefers service page_index; printed page labels are compared separately against LlamaParse page-number tokens.",
+    "rendering": "DOM checks compare semantic tags, text, grouping, tables, links, and meaningful layout tokens. PNG metrics are diagnostic unless viewport, fonts, theme, and renderer match.",
+    "surface_independence": "Standalone reference Markdown and page Markdown embedded in LlamaParse JSON can differ; each surface is compared independently."
+  },
+  "evidence_gaps": 0,
+  "functional_regressions": 278,
+  "reference_selection": {
+    "overrides": {
+      "catastrophe-recap": "llamaparse-visual-routing-fix",
+      "clean-energy": "llamaparse-visual-routing-fix",
+      "clinical-study": "llamaparse-visual-routing-fix",
+      "egov-survey": "llamaparse-visual-routing-fix",
+      "health-report": "llamaparse-visual-routing-fix",
+      "manufacturing-report": "llamaparse-visual-routing-fix",
+      "ny-timetable": "llamaparse-table-fix-20260813",
+      "purchase-agreement": "llamaparse-text-render-fix",
+      "uber-earnings": "llamaparse-visual-fix"
+    },
+    "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/reference-selection.json",
+    "sha256": "23895405c459e9f8181090656897f28a5791d0ddb8055d7832b48eac1a2b0015"
+  },
+  "release_ready": false,
+  "resolved_discrepancies": 2,
+  "review_required": 9,
+  "run_id": "functional-fidelity-20260813",
+  "schema_version": "functional-fidelity-comparison-v1",
+  "service_root": "service-final-source-grounded-20260813-v2",
+  "status_counts": {
+    "acceptable_difference": 0,
+    "discrepancy_found": 15,
+    "fixed": 0,
+    "match": 0,
+    "pending": 0
+  },
+  "story_matrix": {
+    "mapped_gap_count": 25,
+    "path": "tracker/benchmarks/llamaparse-15/gap-to-story-matrix.md",
+    "sha256": "b89373d7a790de3edac5a38ade1af36ae45085b7f056c2515f1b463b5592542c"
+  }
+}

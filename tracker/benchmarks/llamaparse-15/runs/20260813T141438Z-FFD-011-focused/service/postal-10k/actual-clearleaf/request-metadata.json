@@ -1,0 +1,16 @@
+{
+  "schema_version": "ffd-011-clearleaf-request-v1",
+  "source_name": "postal-10k.pdf",
+  "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+  "source_size_bytes": 83589,
+  "complete_pdf_pages": 3,
+  "frontend_url": "http://localhost:3000/",
+  "transport": "Same-origin API proxy",
+  "backend_url": "http://127.0.0.1:8000",
+  "endpoint": "/v1/parse",
+  "output_surface": "JSON response rendered through canonical presentation",
+  "ui_status": "Parsing complete. 3 physical pages are available.",
+  "ui_reported_processing_seconds": 22.6,
+  "request_id": "not emitted by service",
+  "captured_at_utc": "2026-08-13T14:40:49.147Z"
+}

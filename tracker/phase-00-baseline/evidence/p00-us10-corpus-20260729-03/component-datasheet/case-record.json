@@ -1,0 +1,102 @@
+{
+  "case_id": "component-datasheet",
+  "case_latency_ms": 9544.988750014454,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "component-datasheet",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/component-datasheet",
+    "--run-id",
+    "p00-us10-corpus-20260729-03",
+    "--order",
+    "4",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:52:06.163023+00:00",
+  "cpu_ms": 7755.357999999999,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 4,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/component-datasheet/our-output.md",
+      "role": "markdown",
+      "sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+      "size_bytes": 3771
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/component-datasheet/our-output.json",
+      "role": "raw_json",
+      "sha256": "627dd2c188569b9d7eeb42d23e9f9a7e4aa1431d48105cf0526aa222c8925aa6",
+      "size_bytes": 262955
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/component-datasheet/our-output.json",
+      "role": "semantic_json",
+      "sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+      "size_bytes": 124060
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 9530.651249922812,
+  "peak_rss_bytes": 2017722368,
+  "reference_comparison": {
+    "case_id": "component-datasheet",
+    "current_markdown_sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+    "current_semantic_json_sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+    "reference_semantic_json_sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+      "role": "source",
+      "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "size_bytes": 329199
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/component-datasheet.md",
+      "role": "expert_markdown",
+      "sha256": "73c00a11c9d719ef6413e51bb20de690a7beb5b69eb031839e537ace11e8e7b4",
+      "size_bytes": 3845
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/component-datasheet.json",
+      "role": "expert_json",
+      "sha256": "be6790098274c52e6b1267822fb8a3f72ae3b5de6470a1955da7250982348573",
+      "size_bytes": 105212
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:51:56.617492+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

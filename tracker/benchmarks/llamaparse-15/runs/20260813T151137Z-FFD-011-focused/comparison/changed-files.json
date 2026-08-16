@@ -1,0 +1,156 @@
+{
+  "backend_diff_method": "retained file hashes, focused searches, tests, and independent production review",
+  "backend_git_metadata_available": false,
+  "files": {
+    "backend_tests_and_contracts": [
+      {
+        "exists": true,
+        "path": "tests/stories/phase_02/test_p02_us04_table_owned_supplemental_reconciliation.py",
+        "purpose": "Generic positives, identity/page/batch independence, and fail-closed adversaries.",
+        "sha256": "ff5f19f5a6bdece8b18b48e314f4ea3ff3a010a41c7c683fc55f36ae5917a118",
+        "size_bytes": 45951
+      },
+      {
+        "exists": true,
+        "path": "tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py",
+        "purpose": "Complete Postal three-surface regression, named collateral, and Finance fail-closed control.",
+        "sha256": "53f8a4442c3205b97327ce40caba0470ac86d7a61db8833061c596e5705f2f10",
+        "size_bytes": 33937
+      },
+      {
+        "exists": true,
+        "path": "tests/contract/test_p03_source_alignment_table_owned_suppression_contract.py",
+        "purpose": "Independent suppression/provenance reconstruction contract.",
+        "sha256": "c490729f5429af383d1c1edb3634db06e0cb8dd0e6e735603b8762c27f3da825",
+        "size_bytes": 16394
+      },
+      {
+        "exists": true,
+        "path": "tests/fixtures/phase_03/running_regions/contract.py",
+        "purpose": "Terminal table-owned witness and independent coverage validation.",
+        "sha256": "3d907b76d29e29ad7a64729e45e5ee31e7d55f3977cd3970a21e642c2333bd50",
+        "size_bytes": 527524
+      },
+      {
+        "exists": true,
+        "path": "tests/stories/phase_04/test_p04_us01_table_dependency_rollback.py",
+        "purpose": "Exact timeout/integrity/resource rollback and successful dependency commit.",
+        "sha256": "ae9716b3c8efe9758804b902c632a277ed3bd6049e97ca12ce698947397b2ae1",
+        "size_bytes": 17494
+      },
+      {
+        "exists": true,
+        "path": "tests/stories/phase_03/test_p03_us05_algorithm_hardening.py",
+        "purpose": "Supplemental OCR/native text-run custody control.",
+        "sha256": "953e715ee838da144076e7992805dbde5298a2161f4fa94e6127c49e7ff140a3",
+        "size_bytes": 32480
+      },
+      {
+        "exists": true,
+        "path": "tests/stories/phase_02/test_source_text_alignment_service.py",
+        "purpose": "Legacy lineage fail-closed expectation update.",
+        "sha256": "de06eec1a1c4f0e8d388ca66be337dc4a5d2995bffcf31a8d1ab700a01f12d82",
+        "size_bytes": 6699
+      },
+      {
+        "exists": true,
+        "path": "tests/regression/phase_02/test_p02_phase_exit_text_targets.py",
+        "purpose": "Legacy lineage fail-closed and FFD-011 phase-exit expectation update.",
+        "sha256": "9db784430325ed1e049f14c579eb58900b3e2dc5d712b31343d10fe5a2a8d05e",
+        "size_bytes": 28893
+      },
+      {
+        "exists": true,
+        "path": "tests/regression/phase_04/test_p04_us01_public_projection_regression.py",
+        "purpose": "Semantic footer lookup after legitimate deterministic ID repair.",
+        "sha256": "439028ed9c180f6e5152ef0d0aff0b0a209317952507c84d5e3d5868b31e9577",
+        "size_bytes": 6413
+      }
+    ],
+    "frontend_test": [
+      {
+        "exists": true,
+        "path": "frontend/tests/rendered-ui-capture.test.mts",
+        "purpose": "Real renderer exactly-once table custody regression.",
+        "sha256": "9f193dba858f652d572187743fc7d5b9eb3c600db04c96f5e52ceeeecd3ad7d4",
+        "size_bytes": 15896
+      }
+    ],
+    "production": [
+      {
+        "exists": true,
+        "path": "app/services/source_text_alignment.py",
+        "purpose": "Generic authenticated table-owned supplemental matching, complete coverage, ambiguity, diagnostics, and terminal reconstruction.",
+        "sha256": "4efbcf6e159c4e5f9164cd27504d37346faeba8739468bc2f80d5f05ffd825db",
+        "size_bytes": 179205
+      },
+      {
+        "exists": true,
+        "path": "app/services/pipeline.py",
+        "purpose": "Private P04 authority-view transport, OCR contributor issuance, and dependency rollback.",
+        "sha256": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9",
+        "size_bytes": 349485
+      },
+      {
+        "exists": true,
+        "path": "app/services/text_run_semantics.py",
+        "purpose": "Non-destructive exclusion of authenticated supplemental OCR from native formatting-target competition.",
+        "sha256": "5e679c53f21d72db302a35a07852a638cd0a1caa5083d54be1f239a718453fd8",
+        "size_bytes": 138343
+      }
+    ],
+    "tracker_and_evidence": [
+      {
+        "exists": true,
+        "path": "tracker/functional-fidelity-defects/issues/FFD-011-postal-detached-fers-duplicate.md",
+        "purpose": "Readiness, implementation, immediate validation, and closure blocker.",
+        "sha256": "5c46f7371973c93e0100b5439063b9679a4dee7de60857908595649005ab4d42",
+        "size_bytes": 30491
+      },
+      {
+        "exists": true,
+        "path": "tracker/functional-fidelity-defects/README.md",
+        "purpose": "Current WIP validation state.",
+        "sha256": "8b26f132dd54c88014bdeb5b56ac2beb859fcf0e71c91cbfebfc58ae01fc2364",
+        "size_bytes": 13249
+      },
+      {
+        "exists": true,
+        "path": "tracker/functional-fidelity-defects/execution-order.md",
+        "purpose": "Slice-1 target pass and named-control blocker.",
+        "sha256": "86ba8547ffa3a5d92ed4d17ccc0d3ffa6c844aadc222e53a1666623e56abd0be",
+        "size_bytes": 37769
+      },
+      {
+        "exists": true,
+        "path": "tracker/functional-fidelity-defects/index.md",
+        "purpose": "Validating release-tracking state.",
+        "sha256": "bbb07013156defa23113ad2f8074789ebb16c06203959dca8c090a91e6579bfa",
+        "size_bytes": 4683
+      },
+      {
+        "exists": true,
+        "path": "tracker/functional-fidelity-defects/source-gap-coverage.md",
+        "purpose": "SG-020 targeted-pass/open-card disposition.",
+        "sha256": "9c9bfaecfb4c643b3ae9794acb98711ebcbe9f145edee29797d8f9a68d0e3410",
+        "size_bytes": 6559
+      },
+      {
+        "exists": true,
+        "path": "tracker/phase-02-text-integrity/stories/P02-US04.md",
+        "purpose": "FFD-011 capability/acceptance addendum.",
+        "sha256": "7b162df6095d238f9abc790e4e6f93dc04701d63b47f6dd741730efc8685cb10",
+        "size_bytes": 8483
+      },
+      {
+        "exists": true,
+        "path": "tracker/phase-04-tables/stories/P04-US01.md",
+        "purpose": "FFD-011 custody/rollback addendum.",
+        "sha256": "f928ca357bb99951760eec68e5234443ef7c69481a863af7113ff616e3c595db",
+        "size_bytes": 35364
+      }
+    ]
+  },
+  "frontend_worktree_note": "The frontend worktree already contained unrelated tracked and untracked changes; they were preserved.",
+  "schema_version": "ffd-011-changed-files-v1"
+}

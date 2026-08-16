@@ -1,0 +1,321 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-run-v1",
+  "classification": "diagnostic_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "source": {
+    "case_id": "ny-timetable",
+    "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+    "size_bytes": 26109,
+    "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+    "page_count": 3
+  },
+  "requested_document_seconds": 30.0,
+  "production_document_seconds": 5.0,
+  "page_seconds": 0.5,
+  "hard_max_document_seconds": 30.0,
+  "public_request_control": false,
+  "process_isolation": {
+    "pid": 98869,
+    "single_case_budget_pair": true,
+    "parser_cache_shared_across_pairs": false
+  },
+  "settings": {
+    "table_span_fidelity_enabled": true,
+    "text_integrity_source_alignment_enabled": false,
+    "predecessor_configuration": {
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true,
+      "canonical_serialization_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true
+    }
+  },
+  "code_identity": [
+    {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 349485,
+      "sha256": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9"
+    },
+    {
+      "path": "app/services/table_semantics.py",
+      "size_bytes": 349176,
+      "sha256": "1b1581896149ef6559c619de36f99084618b15791d2bcdd3bc051e9282335957"
+    },
+    {
+      "path": "app/services/opaque_group_custody.py",
+      "size_bytes": 112863,
+      "sha256": "2de517c1ac9a64946011c44319a56152e386fd4ef0c8a83d7fae298dd5a8283f"
+    },
+    {
+      "path": "app/services/ir.py",
+      "size_bytes": 262807,
+      "sha256": "8d7347ae3022a8826f13681046c2e4c66288fb8d3ed2734f86c9504ac2abd9aa"
+    },
+    {
+      "path": "app/services/presentation.py",
+      "size_bytes": 191222,
+      "sha256": "754b0c03002cd1c5c1203057ac2f9bab0e7ceab564151ac0295b66cf934d528b"
+    },
+    {
+      "path": "app/models.py",
+      "size_bytes": 382483,
+      "sha256": "5d8b9cf1efa85edebb5a104d8e20aac6da01be27cb04f6c967114b85d310d472"
+    },
+    {
+      "path": "app/config.py",
+      "size_bytes": 101261,
+      "sha256": "0fa0e5d87afbf126ab6c5d8527b6136c08f7a9fb9bb63b342b8933ff3c433db2"
+    },
+    {
+      "path": "tests/fixtures/phase_04/tables/diagnostic_budget.py",
+      "size_bytes": 14814,
+      "sha256": "5ede1ab5f2a735c10930ead06c6887cf319eb7d66cf28aab097cbae0ca9944f8"
+    },
+    {
+      "path": "tests/benchmarks/p04_deadline_diagnostic.py",
+      "size_bytes": 18175,
+      "sha256": "9e771ed543d981846068af1e42ac9a1c94553683c8e92acd18340baef742b09f"
+    }
+  ],
+  "started_at_utc": "2026-08-13T17:51:33.306911Z",
+  "command": ".venv/bin/python -m tests.benchmarks.p04_deadline_diagnostic --case ny-timetable --budget-seconds 30.0 --output-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260813T174647Z-FFD-011-P04-deadline-diagnostic/sweep/budget-030/ny-timetable",
+  "budget_policy": {
+    "schema_version": "1.0",
+    "policy_id": "p04-diagnostic-document-budget-v1",
+    "classification": "diagnostic_non_closure",
+    "production_document_seconds": 5.0,
+    "diagnostic_document_seconds": 30.0,
+    "page_seconds": 0.5,
+    "public_request_control": false,
+    "closure_evidence": false
+  },
+  "completed_at_utc": "2026-08-13T17:52:29.834651Z",
+  "wall_ms": 56526.36904199608,
+  "memory": {
+    "rss_before_bytes": 94470144,
+    "rss_after_bytes": 1833074688,
+    "ru_maxrss_before": 94470144,
+    "ru_maxrss_after": 2569502720,
+    "ru_maxrss_platform_semantics": "bytes"
+  },
+  "result": {
+    "parse_result_valid": true,
+    "context_free_json_round_trip_exact": true,
+    "response_json_sha256": "4ec2836569ba0e0e8193138a0a1911ce0cf0cf11674cd56269dab4212539840c",
+    "response_markdown_sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66",
+    "canonical_markdown_sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66",
+    "raw_canonical_markdown_byte_identical": true,
+    "stable_payload_sha256": "2ec30754b3182cbc7df01503684699ba719d2e648cccec478384820c165ea6d9",
+    "warnings": [],
+    "page_count": 3,
+    "table_count": 3,
+    "predecessor_table_count": 3,
+    "all_table_projections_match_predecessor": false,
+    "all_table_content_matches_predecessor": true,
+    "table_evidence_count": 0,
+    "canonical_source_custody_present": false,
+    "canonical_source_custody_sha256": null,
+    "tables": [
+      {
+        "page_index": 1,
+        "table_ordinal": 0,
+        "item_id": "p1-i1",
+        "reading_order": 0,
+        "row_count": 51,
+        "column_count": 12,
+        "cell_count": 543,
+        "rows_sha256": "dfda849f5336efe95db9b80226849becaf7bf42e6108985ec3c53a4b5cd6d3cf",
+        "cells_sha256": "179a9886733d05d673f37ae5e6be42d476727c8c02708c98c76af55226965311",
+        "markdown_sha256": "40ccfce0c71540a85f8eecddb4fdbfa736276e789377855b1ed20c30f5fc87a7",
+        "html_sha256": "40ccfce0c71540a85f8eecddb4fdbfa736276e789377855b1ed20c30f5fc87a7",
+        "projection_sha256": "87a5dd9236e82ad121f7e7b2053159da5325260a6f3527cf3b936444f55ba886",
+        "predecessor_projection_sha256": "87a5dd9236e82ad121f7e7b2053159da5325260a6f3527cf3b936444f55ba886",
+        "predecessor_projection_exact": true,
+        "predecessor_content_exact": true,
+        "table_evidence": null
+      },
+      {
+        "page_index": 2,
+        "table_ordinal": 0,
+        "item_id": "p2-i1",
+        "reading_order": 0,
+        "row_count": 50,
+        "column_count": 12,
+        "cell_count": 564,
+        "rows_sha256": "32ae7a220bf647840f900a783349fc7711d4592970de27ff827db0e707c6fdc4",
+        "cells_sha256": "5700c3d76e483589fd5e126af3a9b7d52072e8b2e529dc4063e67ac8afc0a151",
+        "markdown_sha256": "73ca1142748e11f570b77c0bbe5d3f859d67e3aa2109fb7aa6e616a801486300",
+        "html_sha256": "73ca1142748e11f570b77c0bbe5d3f859d67e3aa2109fb7aa6e616a801486300",
+        "projection_sha256": "925f8c2832154805e567751357fceb24c1dcdff1f15c480c55a49b82e503d0fe",
+        "predecessor_projection_sha256": "2bb7b8da227322ae5937ad0d6da035c4d1f6084b5b94b155323693027499c0bb",
+        "predecessor_projection_exact": false,
+        "predecessor_content_exact": true,
+        "table_evidence": null
+      },
+      {
+        "page_index": 3,
+        "table_ordinal": 0,
+        "item_id": "p3-i1",
+        "reading_order": 0,
+        "row_count": 51,
+        "column_count": 12,
+        "cell_count": 509,
+        "rows_sha256": "76d1ceffc18244c1bb020ace6940f1a051d7bb0ae77759e5851eda3bc0bfc4a5",
+        "cells_sha256": "aaf7547ad70eea974eeaaa8470221ffcd84c2332d8727f2f545aeddf950d26af",
+        "markdown_sha256": "25769bf9dafa18b16ae3123b1b1fefe19ada46e52da800c472610922ba23e2dc",
+        "html_sha256": "25769bf9dafa18b16ae3123b1b1fefe19ada46e52da800c472610922ba23e2dc",
+        "projection_sha256": "03e71ed95cf2de48c18245da8e6c9e9ed82d6c1f0fa1e695efd5025091c25145",
+        "predecessor_projection_sha256": "03e71ed95cf2de48c18245da8e6c9e9ed82d6c1f0fa1e695efd5025091c25145",
+        "predecessor_projection_exact": true,
+        "predecessor_content_exact": true,
+        "table_evidence": null
+      }
+    ]
+  },
+  "terminal": {
+    "outcome": "completed_without_custody_or_state",
+    "pre_cleanup_state": {},
+    "errors": []
+  },
+  "stage_timings": [
+    {
+      "stage": "pipeline.partitioned_table_repair_words",
+      "status": "ok",
+      "elapsed_ms": 1.035582972690463,
+      "sequence": 0
+    },
+    {
+      "stage": "table.orchestrate_docling_projection",
+      "status": "ok",
+      "elapsed_ms": 498.2852910179645,
+      "source_page_index": 1,
+      "passed_page_deadline": 1137527.408967208,
+      "page_remaining_ms_at_start": 499.9848329462111,
+      "passed_document_deadline": 1137556.908936625,
+      "document_remaining_ms_at_start": 29999.954250175506,
+      "sequence": 1
+    },
+    {
+      "stage": "pipeline.docling_table_item",
+      "status": "ok",
+      "elapsed_ms": 498.30837501212955,
+      "source_page_index": 1,
+      "passed_page_deadline": 1137527.408967208,
+      "page_remaining_ms_at_start": 499.99174987897277,
+      "passed_document_deadline": 1137556.908936625,
+      "document_remaining_ms_at_start": 29999.961167108268,
+      "sequence": 2
+    },
+    {
+      "stage": "table.orchestrate_docling_projection",
+      "status": "ok",
+      "elapsed_ms": 246.2956248782575,
+      "source_page_index": 2,
+      "passed_page_deadline": 1137527.907320833,
+      "page_remaining_ms_at_start": 499.99279202893376,
+      "passed_document_deadline": 1137556.9089576253,
+      "document_remaining_ms_at_start": 29501.62958423607,
+      "sequence": 3
+    },
+    {
+      "stage": "pipeline.docling_table_item",
+      "status": "ok",
+      "elapsed_ms": 246.3134170975536,
+      "source_page_index": 2,
+      "passed_page_deadline": 1137527.907320833,
+      "page_remaining_ms_at_start": 499.9947501346469,
+      "passed_document_deadline": 1137556.9089576253,
+      "document_remaining_ms_at_start": 29501.631542341784,
+      "sequence": 4
+    },
+    {
+      "stage": "table.orchestrate_docling_projection",
+      "status": "ok",
+      "elapsed_ms": 229.43662502802908,
+      "source_page_index": 3,
+      "passed_page_deadline": 1137528.153683166,
+      "page_remaining_ms_at_start": 499.9933750368655,
+      "passed_document_deadline": 1137556.9089786254,
+      "document_remaining_ms_at_start": 29255.288834450766,
+      "sequence": 5
+    },
+    {
+      "stage": "pipeline.docling_table_item",
+      "status": "ok",
+      "elapsed_ms": 229.45695812813938,
+      "source_page_index": 3,
+      "passed_page_deadline": 1137528.153683166,
+      "page_remaining_ms_at_start": 499.995666090399,
+      "passed_document_deadline": 1137556.9089786254,
+      "document_remaining_ms_at_start": 29255.2911255043,
+      "sequence": 6
+    },
+    {
+      "stage": "pipeline.normalize_docling_body",
+      "status": "ok",
+      "elapsed_ms": 974.2640829645097,
+      "sequence": 7
+    },
+    {
+      "stage": "table.seal_pages",
+      "status": "ok",
+      "elapsed_ms": 74.59574984386563,
+      "sequence": 8
+    },
+    {
+      "stage": "pipeline.shared_page_analysis",
+      "status": "ok",
+      "elapsed_ms": 1641.893792198971,
+      "sequence": 9
+    },
+    {
+      "stage": "ir.build_document",
+      "status": "ok",
+      "elapsed_ms": 790.9849160350859,
+      "sequence": 10
+    },
+    {
+      "stage": "presentation.build_canonical",
+      "status": "ok",
+      "elapsed_ms": 672.3223328590393,
+      "sequence": 11
+    },
+    {
+      "stage": "presentation.build_canonical",
+      "status": "ok",
+      "elapsed_ms": 419.69320783391595,
+      "sequence": 12
+    },
+    {
+      "stage": "pipeline.shared_ir_compatibility_projection",
+      "status": "ok",
+      "elapsed_ms": 7188.560541952029,
+      "sequence": 13
+    },
+    {
+      "stage": "pipeline.terminal_source_text_alignment",
+      "status": "ok",
+      "elapsed_ms": 0.005624955520033836,
+      "sequence": 14
+    },
+    {
+      "stage": "pipeline.table_budget_pre_cleanup_state",
+      "status": "observed",
+      "elapsed_ms": 0.0,
+      "state": {},
+      "sequence": 15
+    }
+  ],
+  "environment": {
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "psutil": "7.2.2"
+  }
+}

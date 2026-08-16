@@ -1,0 +1,102 @@
+{
+  "case_id": "egov-survey",
+  "case_latency_ms": 7573.952290927991,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "egov-survey",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/egov-survey",
+    "--run-id",
+    "p00-us10-corpus-20260729-03",
+    "--order",
+    "5",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:52:13.768403+00:00",
+  "cpu_ms": 5937.594,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 5,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/egov-survey/our-output.md",
+      "role": "markdown",
+      "sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+      "size_bytes": 3056
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/egov-survey/our-output.json",
+      "role": "raw_json",
+      "sha256": "52a8bedb9cf41adc0de27f4bdb3d9f94cb4ee8f335c6bbc464f7e653b93e94e4",
+      "size_bytes": 58400
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/egov-survey/our-output.json",
+      "role": "semantic_json",
+      "sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+      "size_bytes": 31731
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 6427.287624916062,
+  "peak_rss_bytes": 1503772672,
+  "reference_comparison": {
+    "case_id": "egov-survey",
+    "current_markdown_sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+    "current_semantic_json_sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+    "reference_semantic_json_sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/egov-survey.pdf",
+      "role": "source",
+      "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "size_bytes": 82800
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/egov-survey.md",
+      "role": "expert_markdown",
+      "sha256": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01",
+      "size_bytes": 3563
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/egov-survey.json",
+      "role": "expert_json",
+      "sha256": "fd541826cd9236c2b9ff2528154863b9c13c9b3ddfb111fe1167f368392cd292",
+      "size_bytes": 28081
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:52:07.336505+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

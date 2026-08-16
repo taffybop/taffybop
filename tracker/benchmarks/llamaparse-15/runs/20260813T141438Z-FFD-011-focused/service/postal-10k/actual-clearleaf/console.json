@@ -1,0 +1,38 @@
+[
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:38:25.955Z",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:38:25.955Z",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:38:25.955Z",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:38:25.955Z",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "level": "log",
+    "message": "body",
+    "timestamp": "2026-08-13T14:38:25.959Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  },
+  {
+    "level": "log",
+    "message": "Extension: Message listener registered successfully",
+    "timestamp": "2026-08-13T14:38:25.968Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  }
+]

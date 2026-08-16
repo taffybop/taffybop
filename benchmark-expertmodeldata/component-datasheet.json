@@ -1,0 +1,2618 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-nkvx5uzug6gvu6s351djqfjnpf70",
+    "created_at": "2026-07-28T12:48:57.717045Z",
+    "updated_at": "2026-07-28T12:49:17.185478Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "component-datasheet.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "Raspberry Pi Pico Datasheet\n\n\n\n\nChapter 1. About Raspberry Pi Pico\n\n\n                 Raspberry Pi Pico is a microcontroller board based on the Raspberry Pi RP2040 microcontroller chip.\n\nFigure 1. The\nRaspberry Pi Pico\nRev3 board.      C\n                 Raspberry Pi Pico O 2020  W  BOOTSEL  TA 2\n\n                 0                 8 S     1           S\n                      +            PA\n                                                THOE       4\n                                           1\n                                           21 I 7  +      360\n\n                                   .\n\n\n\n3           -                  2           0%\n          B 0      20 20 0 2 ANE C S M  AT SA        SSSS0\n   0      0 0\n   SWDIO                            2       D            2\n   GND                              N C R P1r SA 1t       Aa\n   SWCLK                            S C\n   A0\n          OA A 12 1 0  80                 8          0\n            0%         O0 90  e       0      3 20 0  80%\n3                 - B -       -          :    =\n\n\n\nRaspberry Pi Pico has been designed to be a low cost yet flexible development platform for RP2040, with the following\nkey features:\n • RP2040 microcontroller with 2MB Flash\n • Micro-USB B port for power and data (and for reprogramming the Flash)\n • 40 pin 21×51 'DIP' style 1mm thick PCB with 0.1\" through-hole pins also with edge ᶜᵃˢᵗᵉˡˡᵃᵗⁱᵒⁿˢ\n  ◦ Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)\n  ◦ 23 GPIO are digital-only and 3 are ADC capable\n  ◦ Can be surface mounted as a ᵐᵒᵈᵘˡᵉ\n • 3-pin ARM Serial Wire Debug (SWD) ᵖᵒʳᵗ\n • Simple yet highly flexible power supply ᵃʳᶜʰⁱᵗᵉᶜᵗᵘʳᵉ\n  ◦ Various options for easily powering the unit from micro-USB, external supplies or ᵇᵃᵗᵗᵉʳⁱᵉˢ\n • High quality, low cost, high ᵃᵛᵃⁱˡᵃᵇⁱˡⁱᵗʸ\n • Comprehensive SDK, software examples and ᵈᵒᶜᵘᵐᵉⁿᵗᵃᵗⁱᵒⁿ\nFor full details of the RP2040 microcontroller please see the RP2040 Datasheet, however the headline features are:\n • Dual-core cortex M0+ at up to ¹³³ᴹᴴᶻ\n  ◦ On-chip PLL allows variable core frequency\n • 264kB multi-bank high performance SRAM\n • External Quad-SPI Flash with eXecute In Place (XIP) and 16kB on-chip ᶜᵃᶜʰᵉ\n • High performance full-crossbar bus ᶠᵃᵇʳⁱᶜ\n\n\n\nChapter 1. About Raspberry Pi Pico    3"
+      },
+      {
+        "page_number": 2,
+        "text": "  Raspberry Pi Pico Datasheet\n\n\n\n\nFigure 4. The pin\nnumbering of the\nRaspberry Pi Pico\nRev3 board.  1  40\n2 DO  TP1  39\nO\n3 O  TP4  O 38\n4 PO  O 37\n©\n5  O  TP5  O 36\n6 6  TP6  O 35\nO\n7 DO  TP1-6 ARE ON  O 34\nO\n8 PO  REVERSE SIDE  33\nO  O\n9 PO  © 32\nO\n10 D  O 31\nPO  ©\n11 PO  O 30\n12 O  O 29\n13 O  O 28\n1  O 27\n14 O\n15 0  O 26\nO  ©\n16  O 25\n17 PO  O 24\n©\n199  O 23\n18 DO\n           3    22\n19  O  0 2 2  O\n20         0    21\nO O  O\n\n\n\n  0NOTE\n\n  The physical pin numbering is shown in Figure 4, for the pin allocation see Figure 2 or the full Raspberry Pi Pico\n  schematics in Appendix B.\n\n\n  A few RP2040 GPIO pins are used for internal board functions, these are:\n\n   GPIO29     IP Used in ADC mode (ADC3) to measure VSYS/3\n\n   GPIO25     OP Connected to user LED\n\n   GPIO24     IP VBUS sense - high if VBUS is present, else low\n\n   GPIO23     OP Controls the on-board SMPS Power Save pin (Section 4.4)\n\n  Apart from GPIO and ground pins, there are 7 other pins on the main 40-pin interface:\n\n   PIN40     VBUS\n\n   PIN39     VSYS\n\n   PIN37     3V3_EN\n\n   PIN36     3V3\n\n   PIN35     ADC_VREF\n\n   PIN33     AGND\n\n   PIN30     RUN\n\n  VBUS is the micro-USB input voltage, connected to micro-USB port pin 1. This is nominally 5V (or 0V if the USB is not\n  connected or not powered).\n\n  VSYS is the main system input voltage, which can vary in the allowed range 1.8V to 5.5V, and is used by the on-board\n  SMPS to generate the 3.3V for the RP2040 and its GPIO.\n\n  3V3_EN connects to the on-board SMPS enable pin, and is pulled high (to VSYS) via a 100kΩ resistor. To disable the\n  3.3V (which also de-powers the RP2040), short this pin low.\n\n\n  2.1. Raspberry Pi Pico pinout    7"
+      },
+      {
+        "page_number": 3,
+        "text": "Raspberry Pi Pico Datasheet\n\n\n\n\n2.3. Recommended operating conditions\n\nOperating conditions for the Raspberry Pi Pico are largely a function of the operating conditions specified by its\ncomponents.\n\n Operating Temp Max     85°C (including self-heating)\n\n Operating Temp Min     -20°C\n\n VBUS                   5V ± 10%.\n\n VSYS Min               1.8V\n\n VSYS Max               5.5V\n\nNote that VBUS and VSYS current will depend on use-case, some examples are given in the next section.\n\nRecommended maximum ambient temperature of operation is 70°C.\n\n\n\n\n\n\n\n\n\n\n2.3. Recommended operating conditions    11"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "# Chapter 1. About Raspberry Pi Pico\n\nRaspberry Pi Pico is a microcontroller board based on the Raspberry Pi RP2040 microcontroller chip.\n\nFigure 1. The Raspberry Pi Pico Rev3 board.\n\nThe Raspberry Pi Pico Rev3 board showing top and bottom views with pinout labels\n\nRaspberry Pi Pico has been designed to be a low cost yet flexible development platform for RP2040, with the following key features:\n\n* RP2040 microcontroller with 2MB Flash\n\n* Micro-USB B port for power and data (and for reprogramming the Flash)\n\n* 40 pin 21×51 'DIP' style 1mm thick PCB with 0.1\" through-hole pins also with edge castellations\n\n    - Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)\n\n    - 23 GPIO are digital-only and 3 are ADC capable\n\n    - Can be surface mounted as a module\n\n* 3-pin ARM Serial Wire Debug (SWD) port\n\n* Simple yet highly flexible power supply architecture\n\n    - Various options for easily powering the unit from micro-USB, external supplies or batteries\n\n* High quality, low cost, high availability\n\n* Comprehensive SDK, software examples and documentation\n\nFor full details of the RP2040 microcontroller please see the RP2040 Datasheet, however the headline features are:\n\n* Dual-core cortex M0+ at up to 133MHz\n\n    - On-chip PLL allows variable core frequency\n\n* 264kB multi-bank high performance SRAM\n\n* External Quad-SPI Flash with eXecute In Place (XIP) and 16kB on-chip cache\n\n* High performance full-crossbar bus fabric",
+        "header": "Raspberry Pi Pico Datasheet",
+        "footer": "Chapter 1. About Raspberry Pi Pico\n\n<page_number>3</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "Figure 4. The pin numbering of the Raspberry Pi Pico Rev3 board.\n\nThe pin numbering of the Raspberry Pi Pico Rev3 board engineering drawing\n\n> Note icon **NOTE**\n>\n> \n\n> The physical pin numbering is shown in Figure 4, for the pin allocation see Figure 2 or the full Raspberry Pi Pico schematics in Appendix B.\n\nA few RP2040 GPIO pins are used for internal board functions, these are:\n\n*   **GPIO29**: IP Used in ADC mode (ADC3) to measure VSYS/3\n*   **GPIO25**: OP Connected to user LED\n*   **GPIO24**: IP VBUS sense - high if VBUS is present, else low\n*   **GPIO23**: OP Controls the on-board SMPS Power Save pin (Section 4.4)\n\nApart from GPIO and ground pins, there are 7 other pins on the main 40-pin interface:\n\n*   **PIN40**: VBUS\n*   **PIN39**: VSYS\n*   **PIN37**: 3V3_EN\n*   **PIN36**: 3V3\n*   **PIN35**: ADC_VREF\n*   **PIN33**: AGND\n*   **PIN30**: RUN\n\nVBUS is the micro-USB input voltage, connected to micro-USB port pin 1. This is nominally 5V (or 0V if the USB is not connected or not powered).\n\nVSYS is the main system input voltage, which can vary in the allowed range 1.8V to 5.5V, and is used by the on-board SMPS to generate the 3.3V for the RP2040 and its GPIO.\n\n3V3_EN connects to the on-board SMPS enable pin, and is pulled high (to VSYS) via a 100kΩ resistor. To disable the 3.3V (which also de-powers the RP2040), short this pin low.",
+        "header": "Raspberry Pi Pico Datasheet",
+        "footer": "2.1. Raspberry Pi Pico pinout\n\n<page_number>7</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "markdown": "## 2.3. Recommended operating conditions\n\nOperating conditions for the Raspberry Pi Pico are largely a function of the operating conditions specified by its components.\n\n<table>\n    <tr>\n        <td>**Operating Temp Max**</td>\n        <td>85°C (including self-heating)</td>\n    </tr>\n    <tr>\n        <td>**Operating Temp Min**</td>\n        <td>-20°C</td>\n    </tr>\n    <tr>\n        <td>**VBUS**</td>\n        <td>5V ± 10%.</td>\n    </tr>\n    <tr>\n        <td>**VSYS Min**</td>\n        <td>1.8V</td>\n    </tr>\n    <tr>\n        <td>**VSYS Max**</td>\n        <td>5.5V</td>\n    </tr>\n</table>\n\nNote that VBUS and VSYS current will depend on use-case, some examples are given in the next section.\n\nRecommended maximum ambient temperature of operation is 70°C.",
+        "header": "Raspberry Pi Pico Datasheet",
+        "footer": "2.3. Recommended operating conditions\n\n<page_number>11</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "header",
+            "md": "Raspberry Pi Pico Datasheet",
+            "bbox": [
+              {
+                "x": 55.33,
+                "y": 29.26,
+                "w": 106.31,
+                "h": 9.69
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Raspberry Pi Pico Datasheet",
+                "bbox": [
+                  {
+                    "x": 55.33,
+                    "y": 29.26,
+                    "w": 106.31,
+                    "h": 9.69,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 26,
+                    "label": "header"
+                  }
+                ],
+                "value": "Raspberry Pi Pico Datasheet"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "md": "# Chapter 1. About Raspberry Pi Pico",
+            "bbox": [
+              {
+                "x": 114.78,
+                "y": 86.69,
+                "w": 396.23,
+                "h": 24.76,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 35,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Chapter 1. About Raspberry Pi Pico"
+          },
+          {
+            "type": "text",
+            "md": "Raspberry Pi Pico is a microcontroller board based on the Raspberry Pi RP2040 microcontroller chip.",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 135,
+                "w": 355.16,
+                "h": 8,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 98,
+                "label": "text"
+              },
+              {
+                "x": 114.07600591742474,
+                "y": 133.88120421627295,
+                "w": 356.19820735267973,
+                "h": 9.18637518758358,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "Raspberry Pi Pico is a microcontroller board based on the Raspberry Pi RP2040 microcontroller chip."
+          },
+          {
+            "type": "text",
+            "md": "Figure 1. The Raspberry Pi Pico Rev3 board.",
+            "bbox": [
+              {
+                "x": 56,
+                "y": 152.79,
+                "w": 40.52,
+                "h": 24.59,
+                "confidence": 0.84,
+                "start_index": 0,
+                "end_index": 42,
+                "label": "text"
+              }
+            ],
+            "value": "Figure 1. The Raspberry Pi Pico Rev3 board."
+          },
+          {
+            "type": "text",
+            "md": "The Raspberry Pi Pico Rev3 board showing top and bottom views with pinout labels",
+            "bbox": [
+              {
+                "x": 128.63,
+                "y": 296.24,
+                "w": 252.26,
+                "h": 102.34,
+                "confidence": 0.84,
+                "start_index": 2,
+                "end_index": 54,
+                "label": "text"
+              },
+              {
+                "x": 145.99,
+                "y": 170.48,
+                "w": 253.84,
+                "h": 99.71,
+                "confidence": 0.84,
+                "start_index": 4,
+                "end_index": 45,
+                "label": "text"
+              },
+              {
+                "x": 182.29299160406538,
+                "y": 296.76622499999996,
+                "w": 3.682686699072036,
+                "h": 4.735631249999983,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 247.2661069376933,
+                "y": 296.24004375,
+                "w": 3.9457357490057348,
+                "h": 4.472540625000022,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 144.15087936367652,
+                "y": 307.28985,
+                "w": 128.36793636765353,
+                "h": 31.04469375000002,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 303.03250552364113,
+                "y": 306.76366874999997,
+                "w": 69.97104728236854,
+                "h": 28.93996874999999,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 301.71726027397256,
+                "y": 334.388184375,
+                "w": 12.889403446752112,
+                "h": 15.522346874999982,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 373.0035528060097,
+                "y": 330.96800625,
+                "w": 7.8914714980114695,
+                "h": 13.154531249999991,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 144.94002651347768,
+                "y": 343.07017499999995,
+                "w": 12.626354396818385,
+                "h": 8.418900000000008,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 274.6232081307998,
+                "y": 341.228540625,
+                "w": 90.75192222713207,
+                "h": 26.572153124999943,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 309.8717808219178,
+                "y": 348.85816875,
+                "w": 4.997931948740586,
+                "h": 4.209450000000004,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 373.52965090587713,
+                "y": 348.595078125,
+                "w": 6.839275298276618,
+                "h": 11.312896874999979,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 144.94002651347768,
+                "y": 355.961615625,
+                "w": 19.72867874502873,
+                "h": 8.15580937499999,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 274.88625718073354,
+                "y": 357.80325,
+                "w": 9.995863897481229,
+                "h": 6.3141749999999774,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 304.6107998232435,
+                "y": 359.38179375,
+                "w": 8.943667697746378,
+                "h": 9.471262500000023,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 152.04235086168802,
+                "y": 370.694690625,
+                "w": 121.52866106937694,
+                "h": 16.31161874999998,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 291.45834732655766,
+                "y": 373.5886875,
+                "w": 7.8914714980114695,
+                "h": 12.102168749999976,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 316.184958020327,
+                "y": 372.799415625,
+                "w": 56.55554573574898,
+                "h": 13.154531249999991,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 129.68318161732213,
+                "y": 383.849221875,
+                "w": 6.050128148475466,
+                "h": 12.102168749999976,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 181.24079540433053,
+                "y": 391.47884999999997,
+                "w": 5.787079098541767,
+                "h": 6.5772656249999955,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 195.70849315068492,
+                "y": 392.268121875,
+                "w": 4.471833848873189,
+                "h": 5.787993749999998,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 208.0717984975696,
+                "y": 392.00503125,
+                "w": 4.471833848873189,
+                "h": 5.52490312499998,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 259.8924613345117,
+                "y": 391.47884999999997,
+                "w": 4.997931948740586,
+                "h": 6.8403562500000135,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 311.45007512152006,
+                "y": 391.21575937499995,
+                "w": 4.997931948740586,
+                "h": 7.366537499999993,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 337.49193106495795,
+                "y": 391.47884999999997,
+                "w": 4.997931948740586,
+                "h": 7.103446874999975,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 152.56844896155545,
+                "y": 181.00635,
+                "w": 122.31780821917809,
+                "h": 12.891440625000001,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 296.45627927529824,
+                "y": 189.95143124999998,
+                "w": 2.3674414494034295,
+                "h": 2.893996874999999,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 316.4480070702607,
+                "y": 182.321803125,
+                "w": 48.927123287671236,
+                "h": 13.680712499999998,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 145.99222271321253,
+                "y": 209.94631875,
+                "w": 8.417569597878924,
+                "h": 19.468706249999997,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 249.1074502872293,
+                "y": 204.68450625,
+                "w": 4.997931948740614,
+                "h": 15.259256249999993,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 283.56687582854613,
+                "y": 214.945040625,
+                "w": 4.208784798939462,
+                "h": 2.3678156249999915,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 358.2728060097216,
+                "y": 213.6295875,
+                "w": 6.576226248342891,
+                "h": 11.575987499999997,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 301.4542112240389,
+                "y": 238.88628749999998,
+                "w": 14.467697746354418,
+                "h": 6.314175000000006,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 394.5735749005744,
+                "y": 237.044653125,
+                "w": 5.260980998674313,
+                "h": 4.4725406249999935,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 292.5105435262925,
+                "y": 254.934815625,
+                "w": 2.8935395492708835,
+                "h": 1.5785437499999944,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 315.1327618205921,
+                "y": 253.88245312499998,
+                "w": 2.8935395492708835,
+                "h": 2.8939968750000276,
+                "confidence": 0.84,
+                "label": "text"
+              },
+              {
+                "x": 368.7947680070703,
+                "y": 253.356271875,
+                "w": 7.102324348210345,
+                "h": 8.15580937499999,
+                "confidence": 0.84,
+                "label": "text"
+              }
+            ],
+            "value": "The Raspberry Pi Pico Rev3 board showing top and bottom views with pinout labels"
+          },
+          {
+            "type": "text",
+            "md": "Raspberry Pi Pico has been designed to be a low cost yet flexible development platform for RP2040, with the following key features:",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 431.05,
+                "w": 424.67,
+                "h": 20.47,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 130,
+                "label": "text"
+              }
+            ],
+            "value": "Raspberry Pi Pico has been designed to be a low cost yet flexible development platform for RP2040, with the following key features:"
+          },
+          {
+            "type": "list",
+            "md": "* RP2040 microcontroller with 2MB Flash\n\n* Micro-USB B port for power and data (and for reprogramming the Flash)\n\n* 40 pin 21×51 'DIP' style 1mm thick PCB with 0.1\" through-hole pins also with edge castellations\n\n  * Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)\n\n  * 23 GPIO are digital-only and 3 are ADC capable\n\n  * Can be surface mounted as a module\n\n* 3-pin ARM Serial Wire Debug (SWD) port\n\n* Simple yet highly flexible power supply architecture\n\n  * Various options for easily powering the unit from micro-USB, external supplies or batteries\n\n* High quality, low cost, high availability\n\n* Comprehensive SDK, software examples and documentation",
+            "bbox": [
+              {
+                "x": 124.57,
+                "y": 460.96,
+                "w": 344.33,
+                "h": 192.87,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 663,
+                "label": "list"
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "RP2040 microcontroller with 2MB Flash",
+                "bbox": [
+                  {
+                    "x": 124.57,
+                    "y": 460.96,
+                    "w": 149.5,
+                    "h": 7.6,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 36,
+                    "label": "text"
+                  }
+                ],
+                "value": "RP2040 microcontroller with 2MB Flash"
+              },
+              {
+                "type": "text",
+                "md": "Micro-USB B port for power and data (and for reprogramming the Flash)",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 479.89,
+                    "w": 253.97,
+                    "h": 8.42,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 68,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.52511485887611,
+                    "y": 479.04664653446366,
+                    "w": 262.21228140457816,
+                    "h": 9.04845284296115,
+                    "confidence": 0.98,
+                    "label": "text"
+                  }
+                ],
+                "value": "Micro-USB B port for power and data (and for reprogramming the Flash)"
+              },
+              {
+                "type": "text",
+                "md": "40 pin 21×51 'DIP' style 1mm thick PCB with 0.1\" through-hole pins also with edge castellations",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 498.7,
+                    "w": 335.27,
+                    "h": 8,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 94,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.47516931450886,
+                    "y": 497.48373274388524,
+                    "w": 345.14529664246936,
+                    "h": 8.964079695162546,
+                    "confidence": 0.98,
+                    "label": "text"
+                  }
+                ],
+                "value": "40 pin 21×51 'DIP' style 1mm thick PCB with 0.1\" through-hole pins also with edge castellations"
+              },
+              {
+                "type": "list",
+                "md": "* Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)\n\n* 23 GPIO are digital-only and 3 are ADC capable\n\n* Can be surface mounted as a module",
+                "bbox": [
+                  {
+                    "x": 141.32,
+                    "y": 516.67,
+                    "w": 219.88,
+                    "h": 43.73,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 146,
+                    "label": "list"
+                  }
+                ],
+                "items": [
+                  {
+                    "type": "text",
+                    "md": "Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)",
+                    "bbox": [
+                      {
+                        "x": 151,
+                        "y": 516.67,
+                        "w": 210.2,
+                        "h": 8.42,
+                        "confidence": 0.97,
+                        "start_index": 0,
+                        "end_index": 56,
+                        "label": "text"
+                      },
+                      {
+                        "x": 141.22363689920178,
+                        "y": 516.1218553447724,
+                        "w": 219.44981217425803,
+                        "h": 8.82797257755109,
+                        "confidence": 0.97,
+                        "label": "text"
+                      }
+                    ],
+                    "value": "Exposes 26 multi-function 3.3V General Purpose I/O (GPIO)"
+                  },
+                  {
+                    "type": "text",
+                    "md": "23 GPIO are digital-only and 3 are ADC capable",
+                    "bbox": [
+                      {
+                        "x": 151,
+                        "y": 535.48,
+                        "w": 165.54,
+                        "h": 8,
+                        "confidence": 0.97,
+                        "start_index": 0,
+                        "end_index": 45,
+                        "label": "text"
+                      },
+                      {
+                        "x": 141.06623500326407,
+                        "y": 534.6146550601462,
+                        "w": 175.36992585223658,
+                        "h": 8.77274778656341,
+                        "confidence": 0.97,
+                        "label": "text"
+                      }
+                    ],
+                    "value": "23 GPIO are digital-only and 3 are ADC capable"
+                  },
+                  {
+                    "type": "text",
+                    "md": "Can be surface mounted as a module",
+                    "bbox": [
+                      {
+                        "x": 141.32,
+                        "y": 553.07,
+                        "w": 142.13,
+                        "h": 7.33,
+                        "confidence": 0.96,
+                        "start_index": 0,
+                        "end_index": 33,
+                        "label": "text"
+                      }
+                    ],
+                    "value": "Can be surface mounted as a module"
+                  }
+                ],
+                "ordered": false
+              },
+              {
+                "type": "text",
+                "md": "3-pin ARM Serial Wire Debug (SWD) port",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 571.85,
+                    "w": 141.8,
+                    "h": 8.42,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 37,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.54873625050422,
+                    "y": 571.0768756721332,
+                    "w": 150.82359753816024,
+                    "h": 9.090831412025063,
+                    "confidence": 0.97,
+                    "label": "text"
+                  }
+                ],
+                "value": "3-pin ARM Serial Wire Debug (SWD) port"
+              },
+              {
+                "type": "text",
+                "md": "Simple yet highly flexible power supply architecture",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 590.58,
+                    "w": 181.48,
+                    "h": 8.08,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 51,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.57380158299985,
+                    "y": 589.6398408931234,
+                    "w": 190.00957333606226,
+                    "h": 8.820118229907587,
+                    "confidence": 0.98,
+                    "label": "text"
+                  }
+                ],
+                "value": "Simple yet highly flexible power supply architecture"
+              },
+              {
+                "type": "list",
+                "md": "* Various options for easily powering the unit from micro-USB, external supplies or batteries",
+                "bbox": [
+                  {
+                    "x": 151,
+                    "y": 608.97,
+                    "w": 317.9,
+                    "h": 8.08,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 92,
+                    "label": "list"
+                  }
+                ],
+                "items": [
+                  {
+                    "type": "text",
+                    "md": "Various options for easily powering the unit from micro-USB, external supplies or batteries",
+                    "bbox": [
+                      {
+                        "x": 151,
+                        "y": 608.97,
+                        "w": 317.9,
+                        "h": 8.08,
+                        "confidence": 0.98,
+                        "start_index": 0,
+                        "end_index": 90,
+                        "label": "text"
+                      },
+                      {
+                        "x": 141.06197722891105,
+                        "y": 608.3352827777034,
+                        "w": 328.48251522395924,
+                        "h": 8.810343930617629,
+                        "confidence": 0.98,
+                        "label": "text"
+                      }
+                    ],
+                    "value": "Various options for easily powering the unit from micro-USB, external supplies or batteries"
+                  }
+                ],
+                "ordered": false
+              },
+              {
+                "type": "text",
+                "md": "High quality, low cost, high availability",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 627.44,
+                    "w": 133.3,
+                    "h": 8,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 40,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.63545909218166,
+                    "y": 626.4943948969634,
+                    "w": 142.74265035048776,
+                    "h": 8.841831137615728,
+                    "confidence": 0.98,
+                    "label": "text"
+                  }
+                ],
+                "value": "High quality, low cost, high availability"
+              },
+              {
+                "type": "text",
+                "md": "Comprehensive SDK, software examples and documentation",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 645.75,
+                    "w": 214.76,
+                    "h": 8.08,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 53,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.65958648018216,
+                    "y": 644.9718699073792,
+                    "w": 223.19788774241576,
+                    "h": 8.80056963132767,
+                    "confidence": 0.97,
+                    "label": "text"
+                  }
+                ],
+                "value": "Comprehensive SDK, software examples and documentation"
+              }
+            ],
+            "ordered": false
+          },
+          {
+            "type": "text",
+            "md": "For full details of the RP2040 microcontroller please see the RP2040 Datasheet, however the headline features are:",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 664.14,
+                "w": 406.15,
+                "h": 8.08,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 113,
+                "label": "text"
+              },
+              {
+                "x": 113.90839770441471,
+                "y": 663.3003566700479,
+                "w": 408.3224610270625,
+                "h": 8.661355682870663,
+                "confidence": 0.92,
+                "label": "text"
+              }
+            ],
+            "value": "For full details of the RP2040 microcontroller please see the RP2040 Datasheet, however the headline features are:"
+          },
+          {
+            "type": "list",
+            "md": "* Dual-core cortex M0+ at up to 133MHz\n\n  * On-chip PLL allows variable core frequency\n\n* 264kB multi-bank high performance SRAM\n\n* External Quad-SPI Flash with eXecute In Place (XIP) and 16kB on-chip cache\n\n* High performance full-crossbar bus fabric",
+            "bbox": [
+              {
+                "x": 133,
+                "y": 682.62,
+                "w": 268.91,
+                "h": 81.57,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 250,
+                "label": "list"
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Dual-core cortex M0+ at up to 133MHz",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 682.62,
+                    "w": 136.93,
+                    "h": 8,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 35,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.64829412211543,
+                    "y": 681.5850685351828,
+                    "w": 145.68014441282853,
+                    "h": 8.73941044434264,
+                    "confidence": 0.97,
+                    "label": "text"
+                  }
+                ],
+                "value": "Dual-core cortex M0+ at up to 133MHz"
+              },
+              {
+                "type": "list",
+                "md": "* On-chip PLL allows variable core frequency",
+                "bbox": [
+                  {
+                    "x": 151,
+                    "y": 700.93,
+                    "w": 152.08,
+                    "h": 8.08,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 43,
+                    "label": "list"
+                  }
+                ],
+                "items": [
+                  {
+                    "type": "text",
+                    "md": "On-chip PLL allows variable core frequency",
+                    "bbox": [
+                      {
+                        "x": 151,
+                        "y": 700.93,
+                        "w": 152.08,
+                        "h": 8.08,
+                        "confidence": 0.97,
+                        "start_index": 0,
+                        "end_index": 41,
+                        "label": "text"
+                      },
+                      {
+                        "x": 141.22124267246414,
+                        "y": 699.8884912018154,
+                        "w": 162.07493287459667,
+                        "h": 8.834430596724806,
+                        "confidence": 0.97,
+                        "label": "text"
+                      }
+                    ],
+                    "value": "On-chip PLL allows variable core frequency"
+                  }
+                ],
+                "ordered": false
+              },
+              {
+                "type": "text",
+                "md": "264kB multi-bank high performance SRAM",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 719.32,
+                    "w": 150.64,
+                    "h": 8.08,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 37,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.36096223084823,
+                    "y": 718.274995412412,
+                    "w": 159.14275794485343,
+                    "h": 8.874924122354187,
+                    "confidence": 0.97,
+                    "label": "text"
+                  }
+                ],
+                "value": "264kB multi-bank high performance SRAM"
+              },
+              {
+                "type": "text",
+                "md": "External Quad-SPI Flash with eXecute In Place (XIP) and 16kB on-chip cache",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 737.38,
+                    "w": 268.91,
+                    "h": 8.42,
+                    "confidence": 0.98,
+                    "start_index": 0,
+                    "end_index": 73,
+                    "label": "text"
+                  }
+                ],
+                "value": "External Quad-SPI Flash with eXecute In Place (XIP) and 16kB on-chip cache"
+              },
+              {
+                "type": "text",
+                "md": "High performance full-crossbar bus fabric",
+                "bbox": [
+                  {
+                    "x": 133,
+                    "y": 756.1,
+                    "w": 147.56,
+                    "h": 8.08,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 40,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.47736607924752,
+                    "y": 755.1546833287115,
+                    "w": 157.387419504912,
+                    "h": 8.824586481011485,
+                    "confidence": 0.97,
+                    "label": "text"
+                  }
+                ],
+                "value": "High performance full-crossbar bus fabric"
+              }
+            ],
+            "ordered": false
+          },
+          {
+            "type": "footer",
+            "md": "Chapter 1. About Raspberry Pi Pico\n\n<page_number>3</page_number>",
+            "bbox": [
+              {
+                "x": 55.36,
+                "y": 798.36,
+                "w": 484.06,
+                "h": 9.12
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Chapter 1. About Raspberry Pi Pico",
+                "bbox": [
+                  {
+                    "x": 55.36,
+                    "y": 798.36,
+                    "w": 130.17,
+                    "h": 9.12,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 33,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Chapter 1. About Raspberry Pi Pico"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>3\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 534.22,
+                    "y": 798.87,
+                    "w": 5.2,
+                    "h": 6.71,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 29,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>3</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 595.28,
+        "page_height": 841.89,
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "items": [
+          {
+            "type": "header",
+            "md": "Raspberry Pi Pico Datasheet",
+            "bbox": [
+              {
+                "x": 55.32,
+                "y": 29.25,
+                "w": 106.28,
+                "h": 9.68
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Raspberry Pi Pico Datasheet",
+                "bbox": [
+                  {
+                    "x": 55.32,
+                    "y": 29.25,
+                    "w": 106.28,
+                    "h": 9.68,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 26,
+                    "label": "header"
+                  }
+                ],
+                "value": "Raspberry Pi Pico Datasheet"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Figure 4. The pin numbering of the Raspberry Pi Pico Rev3 board.",
+            "bbox": [
+              {
+                "x": 56,
+                "y": 82.79,
+                "w": 40.52,
+                "h": 33.88,
+                "confidence": 0.91,
+                "start_index": 0,
+                "end_index": 63,
+                "label": "text"
+              }
+            ],
+            "value": "Figure 4. The pin numbering of the Raspberry Pi Pico Rev3 board."
+          },
+          {
+            "type": "text",
+            "md": "The pin numbering of the Raspberry Pi Pico Rev3 board engineering drawing",
+            "bbox": [
+              {
+                "x": 113.01,
+                "y": 79.03,
+                "w": 173.16,
+                "h": 293.06,
+                "confidence": 0.82,
+                "start_index": 0,
+                "end_index": 72,
+                "label": "table"
+              },
+              {
+                "x": 138.4916472951601,
+                "y": 107.95266070312499,
+                "w": 6.116539380654473,
+                "h": 11.494867890625002,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 251.8515104832895,
+                "y": 107.1315987109375,
+                "w": 12.233078761308917,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 138.88989836500218,
+                "y": 121.54786874999999,
+                "w": 22.09612019443219,
+                "h": 8.945081249999987,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 200.88034897783564,
+                "y": 119.44752859375,
+                "w": 15.087463805614334,
+                "h": 10.673805898437493,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 251.8515104832895,
+                "y": 119.44752859375,
+                "w": 12.233078761308917,
+                "h": 12.315929882812512,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 136.8605701269856,
+                "y": 130.942396484375,
+                "w": 23.862399382515065,
+                "h": 13.958053867187488,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 237.1718159697188,
+                "y": 131.7634584765625,
+                "w": 26.912773274879612,
+                "h": 11.494867890624988,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 138.88989836500218,
+                "y": 145.489115625,
+                "w": 22.88526734423334,
+                "h": 9.471262499999995,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 181.30742295974136,
+                "y": 139.15301640625,
+                "w": 24.058388230574224,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 237.1718159697188,
+                "y": 144.079388359375,
+                "w": 26.912773274879612,
+                "h": 11.494867890624988,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 137.67610871107286,
+                "y": 156.3953182421875,
+                "w": 6.9320779647417226,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 190.7105612019443,
+                "y": 153.11874375,
+                "w": 14.46769774635439,
+                "h": 9.208171875000005,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 251.8515104832895,
+                "y": 155.57425625000002,
+                "w": 12.233078761308917,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 152.30539991162172,
+                "y": 159.16982812499998,
+                "w": 8.68061864781265,
+                "h": 7.103446875000003,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 238.58548828988066,
+                "y": 158.9067375,
+                "w": 12.889403446752084,
+                "h": 7.629628125000011,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 137.67610871107286,
+                "y": 168.711248125,
+                "w": 23.309909848361514,
+                "h": 11.494867890624988,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 180.4918843756541,
+                "y": 162.96381417968752,
+                "w": 24.873926814661473,
+                "h": 13.136991875000007,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 168.711248125,
+                "w": 27.72831185896689,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 136.8605701269856,
+                "y": 180.206116015625,
+                "w": 24.388497482382462,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 174.6645691559876,
+                "y": 180.48016875,
+                "w": 47.085779938135204,
+                "h": 9.208171875000005,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 237.98735455380606,
+                "y": 180.206116015625,
+                "w": 26.097234690792362,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 136.04503154289833,
+                "y": 193.343107890625,
+                "w": 9.3786937170035,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 174.4015201060539,
+                "y": 189.688340625,
+                "w": 46.822730888201505,
+                "h": 8.945081249999987,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 251.8515104832895,
+                "y": 193.343107890625,
+                "w": 12.233078761308917,
+                "h": 11.494867890624988,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 147.05480242807636,
+                "y": 194.1641698828125,
+                "w": 13.864155929483445,
+                "h": 9.852743906249998,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 239.11158638974808,
+                "y": 196.26560625,
+                "w": 8.68061864781265,
+                "h": 6.5772656249999955,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 136.04503154289833,
+                "y": 205.65903777343752,
+                "w": 25.467085116403467,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 237.1718159697188,
+                "y": 205.65903777343752,
+                "w": 26.912773274879612,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 133.59841579063655,
+                "y": 217.97496765625002,
+                "w": 28.176749918598972,
+                "h": 11.494867890624988,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 216.332843671875,
+                "w": 27.72831185896689,
+                "h": 13.136991875000007,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 134.94416261599645,
+                "y": 230.99356874999998,
+                "w": 26.831003093239076,
+                "h": 10.786715625,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 238.05939019001323,
+                "y": 230.2908975390625,
+                "w": 26.025199054585187,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 134.68111356606272,
+                "y": 243.358828125,
+                "w": 26.831003093239076,
+                "h": 10.260534374999992,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 240.9647034375,
+                "w": 27.72831185896689,
+                "h": 13.958053867187488,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 134.68111356606272,
+                "y": 255.98717812499999,
+                "w": 26.56795404330535,
+                "h": 10.260534374999992,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 238.84853733981438,
+                "y": 254.9227573046875,
+                "w": 25.236051904784034,
+                "h": 12.315929882812526,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 131.96733862246202,
+                "y": 263.1333772265625,
+                "w": 29.80782708677347,
+                "h": 42.69522359375003,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 266.4176251953125,
+                "w": 27.72831185896689,
+                "h": 37.76885164062497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 134.94416261599645,
+                "y": 304.92203437499995,
+                "w": 26.831003093239076,
+                "h": 10.26053437500002,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 303.36541484375,
+                "w": 27.72831185896689,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 132.78287720654927,
+                "y": 314.0392207421875,
+                "w": 28.203141352885098,
+                "h": 27.095045742187494,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 182.1229615438286,
+                "y": 328.8183366015625,
+                "w": 35.41860275135477,
+                "h": 12.315929882812497,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 236.35627738563153,
+                "y": 316.50240671875,
+                "w": 27.72831185896689,
+                "h": 25.452921757812476,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 133.59841579063655,
+                "y": 339.4921425,
+                "w": 11.009770885178028,
+                "h": 13.136991874999978,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 196.23459125055234,
+                "y": 340.3132044921875,
+                "w": 19.991727794962458,
+                "h": 13.136991874999978,
+                "confidence": 0.82,
+                "label": "table"
+              },
+              {
+                "x": 239.11158638974808,
+                "y": 339.4921425,
+                "w": 24.157464270763057,
+                "h": 13.136991874999978,
+                "confidence": 0.82,
+                "label": "table"
+              }
+            ],
+            "value": "The pin numbering of the Raspberry Pi Pico Rev3 board engineering drawing"
+          },
+          {
+            "type": "text",
+            "md": "Note icon **NOTE**",
+            "bbox": [
+              {
+                "x": 128.78,
+                "y": 386.21,
+                "w": 23.83,
+                "h": 8.64,
+                "confidence": 0.68,
+                "start_index": 0,
+                "end_index": 17,
+                "label": "paragraph_title"
+              }
+            ],
+            "value": "Note icon NOTE"
+          },
+          {
+            "type": "text",
+            "md": "The physical pin numbering is shown in Figure 4, for the pin allocation see Figure 2 or the full Raspberry Pi Pico schematics in Appendix B.",
+            "bbox": [
+              {
+                "x": 121,
+                "y": 410.76,
+                "w": 412.56,
+                "h": 20.47,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 139,
+                "label": "text"
+              }
+            ],
+            "value": "The physical pin numbering is shown in Figure 4, for the pin allocation see Figure 2 or the full Raspberry Pi Pico schematics in Appendix B."
+          },
+          {
+            "type": "text",
+            "md": "A few RP2040 GPIO pins are used for internal board functions, these are:",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 452.54,
+                "w": 256.29,
+                "h": 8.08,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 71,
+                "label": "text"
+              },
+              {
+                "x": 113.99354085010032,
+                "y": 451.47785139705826,
+                "w": 258.4733261124984,
+                "h": 8.765242521037203,
+                "confidence": 0.93,
+                "label": "text"
+              }
+            ],
+            "value": "A few RP2040 GPIO pins are used for internal board functions, these are:"
+          },
+          {
+            "type": "list",
+            "md": "* **GPIO29**: IP Used in ADC mode (ADC3) to measure VSYS/3\n* **GPIO25**: OP Connected to user LED\n* **GPIO24**: IP VBUS sense - high if VBUS is present, else low\n* **GPIO23**: OP Controls the on-board SMPS Power Save pin (Section 4.4)",
+            "bbox": [
+              {
+                "x": 124.68,
+                "y": 470.6,
+                "w": 264.85,
+                "h": 63.59,
+                "confidence": 0.78,
+                "start_index": 0,
+                "end_index": 233,
+                "label": "list"
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "**GPIO29**: IP Used in ADC mode (ADC3) to measure VSYS/3",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 470.6,
+                    "w": 221.85,
+                    "h": 8.42,
+                    "confidence": 0.62,
+                    "start_index": 0,
+                    "end_index": 55,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.62,
+                    "y": 470.6,
+                    "w": 174.22,
+                    "h": 8.42,
+                    "confidence": 1,
+                    "start_index": 12,
+                    "end_index": 55,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 471.013,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.62,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 470.597,
+                    "w": 174.22400000000002,
+                    "h": 8.415999999999997,
+                    "confidence": 0.62,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "GPIO29: IP Used in ADC mode (ADC3) to measure VSYS/3"
+              },
+              {
+                "type": "text",
+                "md": "**GPIO25**: OP Connected to user LED",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 489.41,
+                    "w": 141.03,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "start_index": 0,
+                    "end_index": 35,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.62,
+                    "y": 489.41,
+                    "w": 93.41,
+                    "h": 8,
+                    "confidence": 1,
+                    "start_index": 12,
+                    "end_index": 35,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 489.405,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 489.405,
+                    "w": 93.40800000000004,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "GPIO25: OP Connected to user LED"
+              },
+              {
+                "type": "text",
+                "md": "**GPIO24**: IP VBUS sense - high if VBUS is present, else low",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 507.8,
+                    "w": 219.76,
+                    "h": 8,
+                    "confidence": 0.63,
+                    "start_index": 0,
+                    "end_index": 60,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 507.797,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.63,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 507.717,
+                    "w": 172.136,
+                    "h": 8.080000000000041,
+                    "confidence": 0.63,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "GPIO24: IP VBUS sense - high if VBUS is present, else low"
+              },
+              {
+                "type": "text",
+                "md": "**GPIO23**: OP Controls the on-board SMPS Power Save pin (Section 4.4)",
+                "bbox": [
+                  {
+                    "x": 124.68,
+                    "y": 525.48,
+                    "w": 27.84,
+                    "h": 7.17,
+                    "confidence": 0.76,
+                    "start_index": 0,
+                    "end_index": 7,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.62,
+                    "y": 525.77,
+                    "w": 216.9,
+                    "h": 8.42,
+                    "confidence": 0.86,
+                    "start_index": 8,
+                    "end_index": 69,
+                    "label": "text"
+                  },
+                  {
+                    "x": 124.33713103584621,
+                    "y": 469.7454931466476,
+                    "w": 264.608359348463,
+                    "h": 64.28609005264612,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 471.013,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 470.597,
+                    "w": 174.22400000000002,
+                    "h": 8.415999999999997,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 489.405,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 489.405,
+                    "w": 93.40800000000004,
+                    "h": 8,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 507.797,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 507.717,
+                    "w": 172.136,
+                    "h": 8.080000000000041,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 526.189,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.76,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 172.624,
+                    "y": 525.773,
+                    "w": 216.90400000000002,
+                    "h": 8.41599999999994,
+                    "confidence": 0.76,
+                    "label": "text"
+                  }
+                ],
+                "value": "GPIO23: OP Controls the on-board SMPS Power Save pin (Section 4.4)"
+              }
+            ],
+            "ordered": false
+          },
+          {
+            "type": "text",
+            "md": "Apart from GPIO and ground pins, there are 7 other pins on the main 40-pin interface:",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 544.89,
+                "w": 299.36,
+                "h": 8.08,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 84,
+                "label": "text"
+              },
+              {
+                "x": 114.10530434152355,
+                "y": 543.9686943887629,
+                "w": 300.6552323830647,
+                "h": 9.0077149598494,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "Apart from GPIO and ground pins, there are 7 other pins on the main 40-pin interface:"
+          },
+          {
+            "type": "list",
+            "md": "* **PIN40**: VBUS\n* **PIN39**: VSYS\n* **PIN37**: 3V3_EN\n* **PIN36**: 3V3\n* **PIN35**: ADC_VREF\n* **PIN33**: AGND\n* **PIN30**: RUN",
+            "bbox": [
+              {
+                "x": 125,
+                "y": 563.37,
+                "w": 80.3,
+                "h": 118.35,
+                "confidence": 0.58,
+                "start_index": 0,
+                "end_index": 128,
+                "label": "list"
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "**PIN40**: VBUS",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 563.37,
+                    "w": 62.3,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "start_index": 0,
+                    "end_index": 14,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 563.365,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 563.365,
+                    "w": 20,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN40: VBUS"
+              },
+              {
+                "type": "text",
+                "md": "**PIN39**: VSYS",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 581.76,
+                    "w": 61.3,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "start_index": 0,
+                    "end_index": 14,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 581.757,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 581.757,
+                    "w": 19,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN39: VSYS"
+              },
+              {
+                "type": "text",
+                "md": "**PIN37**: 3V3_EN",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 600.15,
+                    "w": 70.3,
+                    "h": 26.39,
+                    "confidence": 0.59,
+                    "start_index": 0,
+                    "end_index": 16,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 600.149,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.59,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 600.149,
+                    "w": 28,
+                    "h": 8,
+                    "confidence": 0.59,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 618.541,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.59,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 618.541,
+                    "w": 14,
+                    "h": 8,
+                    "confidence": 0.59,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN37: 3V3_EN"
+              },
+              {
+                "type": "text",
+                "md": "**PIN36**: 3V3",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 618.54,
+                    "w": 56.3,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "start_index": 0,
+                    "end_index": 13,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 618.541,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 618.541,
+                    "w": 14,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN36: 3V3"
+              },
+              {
+                "type": "text",
+                "md": "**PIN35**: ADC_VREF",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 636.93,
+                    "w": 80.3,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "start_index": 0,
+                    "end_index": 18,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 636.933,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 636.933,
+                    "w": 38,
+                    "h": 8,
+                    "confidence": 0.6,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN35: ADC_VREF"
+              },
+              {
+                "type": "text",
+                "md": "**PIN33**: AGND",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 655.33,
+                    "w": 64.3,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "start_index": 0,
+                    "end_index": 14,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 655.325,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 655.325,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN33: AGND"
+              },
+              {
+                "type": "text",
+                "md": "**PIN30**: RUN",
+                "bbox": [
+                  {
+                    "x": 125,
+                    "y": 673.72,
+                    "w": 58.3,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "start_index": 0,
+                    "end_index": 13,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 125,
+                    "y": 673.717,
+                    "w": 22,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  },
+                  {
+                    "x": 167.304,
+                    "y": 673.717,
+                    "w": 16,
+                    "h": 8,
+                    "confidence": 0.57,
+                    "label": "key-value-region"
+                  }
+                ],
+                "value": "PIN30: RUN"
+              }
+            ],
+            "ordered": false
+          },
+          {
+            "type": "text",
+            "md": "VBUS is the micro-USB input voltage, connected to micro-USB port pin 1. This is nominally 5V (or 0V if the USB is not connected or not powered).",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 692.09,
+                "w": 424.7,
+                "h": 20.81,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 143,
+                "label": "text"
+              }
+            ],
+            "value": "VBUS is the micro-USB input voltage, connected to micro-USB port pin 1. This is nominally 5V (or 0V if the USB is not connected or not powered)."
+          },
+          {
+            "type": "text",
+            "md": "VSYS is the main system input voltage, which can vary in the allowed range 1.8V to 5.5V, and is used by the on-board SMPS to generate the 3.3V for the RP2040 and its GPIO.",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 723.29,
+                "w": 424.51,
+                "h": 20.39,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 170,
+                "label": "text"
+              }
+            ],
+            "value": "VSYS is the main system input voltage, which can vary in the allowed range 1.8V to 5.5V, and is used by the on-board SMPS to generate the 3.3V for the RP2040 and its GPIO."
+          },
+          {
+            "type": "text",
+            "md": "3V3_EN connects to the on-board SMPS enable pin, and is pulled high (to VSYS) via a 100kΩ resistor. To disable the 3.3V (which also de-powers the RP2040), short this pin low.",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 753.65,
+                "w": 424.04,
+                "h": 20.81,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 173,
+                "label": "text"
+              }
+            ],
+            "value": "3V3_EN connects to the on-board SMPS enable pin, and is pulled high (to VSYS) via a 100kΩ resistor. To disable the 3.3V (which also de-powers the RP2040), short this pin low."
+          },
+          {
+            "type": "footer",
+            "md": "2.1. Raspberry Pi Pico pinout\n\n<page_number>7</page_number>",
+            "bbox": [
+              {
+                "x": 55.29,
+                "y": 798.34,
+                "w": 484.79,
+                "h": 9.25
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "2.1. Raspberry Pi Pico pinout",
+                "bbox": [
+                  {
+                    "x": 55.29,
+                    "y": 798.34,
+                    "w": 107.14,
+                    "h": 9.25,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 28,
+                    "label": "footer"
+                  }
+                ],
+                "value": "2.1. Raspberry Pi Pico pinout"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>7\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 534.12,
+                    "y": 798.63,
+                    "w": 5.97,
+                    "h": 6.69,
+                    "confidence": 0.91,
+                    "start_index": 0,
+                    "end_index": 29,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>7</page_number>"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 114.60584582619046,
+                "y": 384.733245807316,
+                "w": 10.77045366204303,
+                "h": 10.415283874014163,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          }
+        ],
+        "page_width": 595.28,
+        "page_height": 841.89,
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "items": [
+          {
+            "type": "header",
+            "md": "Raspberry Pi Pico Datasheet",
+            "bbox": [
+              {
+                "x": 55.23,
+                "y": 29.2,
+                "w": 106.37,
+                "h": 9.81
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Raspberry Pi Pico Datasheet",
+                "bbox": [
+                  {
+                    "x": 55.23,
+                    "y": 29.2,
+                    "w": 106.37,
+                    "h": 9.81,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 26,
+                    "label": "header"
+                  }
+                ],
+                "value": "Raspberry Pi Pico Datasheet"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "md": "## 2.3. Recommended operating conditions",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 81.78,
+                "w": 291.51,
+                "h": 16,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 39,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "2.3. Recommended operating conditions"
+          },
+          {
+            "type": "text",
+            "md": "Operating conditions for the Raspberry Pi Pico are largely a function of the operating conditions specified by its components.",
+            "bbox": [
+              {
+                "x": 113.9,
+                "y": 111.18,
+                "w": 426.11,
+                "h": 21.01,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 125,
+                "label": "text"
+              }
+            ],
+            "value": "Operating conditions for the Raspberry Pi Pico are largely a function of the operating conditions specified by its components."
+          },
+          {
+            "type": "table",
+            "md": "| \\*\\*Operating Temp Max\\*\\* | 85°C (including self-heating) |\n| -------------------------- | ----------------------------- |\n| \\*\\*Operating Temp Min\\*\\* | -20°C                         |\n| \\*\\*VBUS\\*\\*               | 5V ± 10%.                     |\n| \\*\\*VSYS Min\\*\\*           | 1.8V                          |\n| \\*\\*VSYS Max\\*\\*           | 5.5V                          |",
+            "bbox": [
+              {
+                "x": 125,
+                "y": 142.54,
+                "w": 195.46,
+                "h": 81.98,
+                "confidence": 1,
+                "start_index": 0,
+                "end_index": 376,
+                "label": "key-value-region"
+              },
+              {
+                "x": 125,
+                "y": 142.96,
+                "w": 75.06,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 2,
+                "end_index": 27,
+                "label": "key-value-region"
+              },
+              {
+                "x": 220.41,
+                "y": 142.54,
+                "w": 100.05,
+                "h": 8.42,
+                "confidence": 0.93,
+                "start_index": 31,
+                "end_index": 59,
+                "label": "key-value-region"
+              },
+              {
+                "x": 125,
+                "y": 161.35,
+                "w": 74.06,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 128,
+                "end_index": 153,
+                "label": "key-value-region"
+              },
+              {
+                "x": 220.41,
+                "y": 161.35,
+                "w": 19,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 157,
+                "end_index": 161,
+                "label": "key-value-region"
+              },
+              {
+                "x": 125,
+                "y": 179.74,
+                "w": 21,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 191,
+                "end_index": 202,
+                "label": "key-value-region"
+              },
+              {
+                "x": 220.41,
+                "y": 179.74,
+                "w": 34.8,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 220,
+                "end_index": 228,
+                "label": "key-value-region"
+              },
+              {
+                "x": 125,
+                "y": 198.14,
+                "w": 35.98,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 254,
+                "end_index": 269,
+                "label": "key-value-region"
+              },
+              {
+                "x": 220.41,
+                "y": 198.14,
+                "w": 16,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 283,
+                "end_index": 286,
+                "label": "key-value-region"
+              },
+              {
+                "x": 125,
+                "y": 216.53,
+                "w": 36.98,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 317,
+                "end_index": 332,
+                "label": "key-value-region"
+              },
+              {
+                "x": 220.41,
+                "y": 216.53,
+                "w": 16,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 346,
+                "end_index": 349,
+                "label": "key-value-region"
+              }
+            ],
+            "rows": [
+              [
+                "**Operating Temp Max**",
+                "85°C (including self-heating)"
+              ],
+              [
+                "**Operating Temp Min**",
+                "-20°C"
+              ],
+              [
+                "**VBUS**",
+                "5V ± 10%."
+              ],
+              [
+                "**VSYS Min**",
+                "1.8V"
+              ],
+              [
+                "**VSYS Max**",
+                "5.5V"
+              ]
+            ],
+            "html": "<table>\n    <tr>\n        <td>**Operating Temp Max**</td>\n        <td>85°C (including self-heating)</td>\n    </tr>\n    <tr>\n        <td>**Operating Temp Min**</td>\n        <td>-20°C</td>\n    </tr>\n    <tr>\n        <td>**VBUS**</td>\n        <td>5V ± 10%.</td>\n    </tr>\n    <tr>\n        <td>**VSYS Min**</td>\n        <td>1.8V</td>\n    </tr>\n    <tr>\n        <td>**VSYS Max**</td>\n        <td>5.5V</td>\n    </tr>\n</table>",
+            "csv": "\"**Operating Temp Max**\",\"85°C (including self-heating)\"\n\"**Operating Temp Min**\",\"-20°C\"\n\"**VBUS**\",\"5V ± 10%.\"\n\"**VSYS Min**\",\"1.8V\"\n\"**VSYS Max**\",\"5.5V\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 0 '**Operating Temp Max**' expects numeric, got '**Operating Temp Min**' in row 1"
+              },
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [text, footer, paragraph_title, header, key-value-region] but no table/form"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Note that VBUS and VSYS current will depend on use-case, some examples are given in the next section.",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 235.31,
+                "w": 368.33,
+                "h": 8,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 100,
+                "label": "text"
+              },
+              {
+                "x": 114.01167032988177,
+                "y": 234.2976512388561,
+                "w": 369.63733524820077,
+                "h": 8.766848298777711,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "Note that VBUS and VSYS current will depend on use-case, some examples are given in the next section."
+          },
+          {
+            "type": "text",
+            "md": "Recommended maximum ambient temperature of operation is 70°C.",
+            "bbox": [
+              {
+                "x": 115,
+                "y": 253.62,
+                "w": 242.12,
+                "h": 8.08,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 60,
+                "label": "text"
+              },
+              {
+                "x": 114.14325406945271,
+                "y": 252.53235709065976,
+                "w": 243.18037560504416,
+                "h": 8.88747362447824,
+                "confidence": 0.94,
+                "label": "text"
+              }
+            ],
+            "value": "Recommended maximum ambient temperature of operation is 70°C."
+          },
+          {
+            "type": "footer",
+            "md": "2.3. Recommended operating conditions\n\n<page_number>11</page_number>",
+            "bbox": [
+              {
+                "x": 55.3,
+                "y": 798.27,
+                "w": 484.44,
+                "h": 9.14
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "2.3. Recommended operating conditions",
+                "bbox": [
+                  {
+                    "x": 55.3,
+                    "y": 798.27,
+                    "w": 151.52,
+                    "h": 9.14,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 36,
+                    "label": "footer"
+                  }
+                ],
+                "value": "2.3. Recommended operating conditions"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>11\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 531.3,
+                    "y": 798.61,
+                    "w": 8.44,
+                    "h": 6.83,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 30,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>11</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 595.28,
+        "page_height": 841.89,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.958,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 2,
+        "confidence": 0.933,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 3,
+        "confidence": 0.977,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 7,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=vtfRb7bG9KOsv50nUHQ2XjkTFRM%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 595,
+          "h": 842
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_image_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_1_image_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=94ad8LjA%2BuY3U1DmRXll%2BXQVoBM%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "layout",
+        "bbox": {
+          "x": 130,
+          "y": 166,
+          "w": 269,
+          "h": 108
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_1_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=4RQ%2BeAQe6RG0tKyEhy0FyI8w94Y%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "layout",
+        "bbox": {
+          "x": 114,
+          "y": 152,
+          "w": 298,
+          "h": 265
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=ukBdEZ5KI1AY%2BrZR6iRSGfkPjPo%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 595,
+          "h": 842
+        }
+      },
+      {
+        "index": 4,
+        "filename": "page_2_image_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_2_image_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=OCpRlRtgZcLHHf0%2FKRfqF47p7Qk%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "layout",
+        "bbox": {
+          "x": 115,
+          "y": 385,
+          "w": 11,
+          "h": 10
+        }
+      },
+      {
+        "index": 5,
+        "filename": "page_2_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_2_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=PUsq7cZcooyAQvzP6Ju%2F1ak3Iao%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "layout",
+        "bbox": {
+          "x": 113,
+          "y": 79,
+          "w": 173,
+          "h": 293
+        }
+      },
+      {
+        "index": 6,
+        "filename": "page_3.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/abe80121-45d9-46a4-b938-c64d5bf67356/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XTY65N2AHO&Signature=%2Bp9rxdFDDBb3X74GTpvAp5WBotE%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIB5DH51ZfNf98AnMvFm7glhAW1AE%2Fgupne95PKRkkJusAiB6v5CSgTwAnKT4OkMpw%2BTfeD8AMaFKy2%2FB7GS9QJCc3iqHBQhmEAAaDDUwNjk1NDk2NjUwMyIM5rPXdffty49Q%2BMhPKuQE1gp6QGNbRxPxDtsUKa5m5QyzMiU2sT%2BXzGJPLbbRYZPun551AkzrRgqRbKDZkQmx8iczTVnq%2B3NmAtzJTXvbBs3yTEOjZTMnpUdS1dXNbeq82XYzJTjrbrgQ4cMIbm3ib89YWK8nh76pTJxh1cIWXHtq2FSey7XBgdwxClklZ03Zefh3f08%2BRT8BuRwPA4cBxZ5Ge6YG95zWCEp4vKRQqRa8y0ela4OYsk2f%2BiACqsZx86xirrpCurvrixJVYcDVpkv9cUcLBd2YhXYt4hyGm%2B8lcC6pDgkdj5Ia2CoqfD8tlSu6dJU6%2BkhE58wfPKHaK9OwDdJhdKy6VMSK6%2BjTHUHFK2VZQvtSmg3kVxzKaF1AGpJ857FRMiFMOGjNhyGoO4ki6cWfc7KrnXR4j0NsmJgVcbcnWtrU4Z4i%2FCxQDAgpX3jSANRr5UBTqIHyPd%2FN%2FsQN12CGuFALh5baALtLwyvImT57z8F7B%2BrlbJ8ip0B5%2FMYlHhljP2RkFS6flxhwSkANkEJTJBjxQldrrxEKSWEWdviJcTVc1gHk0og%2Fpv%2BCWlT2lLYK54lFywMSDJYMVrXgyjq9Jeob9XjD4Zq60ot3sGmpbQhZxQ%2FeboAQPynSLzoN6%2FEIR%2BmxZnOR%2B92HzB9XZKXdilqEDf%2FYxicOkIoGhpps0RqkALB6NXGfXG1UEBwMl4UGDfM1hUFc1bt7vgkf7VXp0bFB0OROQub62MAbEUBT%2BrUjmXwuPjScQuJ%2Ft8MS7L%2FFSbkiXxvaMk10uSklTFcD8iDkHAoyTQ1tfeqVvWiqKfI4jJid6LTKlvRTu89dMPLJotMGOpkB5adSznWYHxOUfYHicYaa0simqjMLZcP%2F125%2B%2BkNrX7ZAA7YPt9%2BPFKKPGYiiQJbYsC1V2lJTBTGP%2BvmbCyuKE%2Bi37GxiPbVsT26rJuiTZdGiSfm7A2du55FUoyuRdsWyg6R3agW8%2BrMcUTHDs1vrm5Nafs4GnDttw%2B9N%2Blq6fR7ajWNavWz%2Bog4iVfa6QYqCKgyn7NfISovc&Expires=1785246561",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 595,
+          "h": 842
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

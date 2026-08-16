@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0",
+  "story_id": "P01-US03",
+  "policy_id": "canonical-presentation-v1",
+  "frozen_corpus_root": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03",
+  "authority": {
+    "run_record": {
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/run-record.json",
+      "sha256": "aa6192f99e8c7ac8136aad7a7ed47278e02f9093d8d37b219e2068b020c310e2",
+      "size_bytes": 79247
+    },
+    "corpus_registry": {
+      "path": "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+      "sha256": "f8024ab7a47df2cedf2d10b996fc8eb140404cdafea0b0a0a9ae2bb059263ceb",
+      "size_bytes": 20744
+    }
+  },
+  "derivation": {
+    "source_run_id": "p00-us10-corpus-20260729-03",
+    "input_contract": "Frozen normalized v1 our-output.json files; Phase 0 retained no raw Docling graph.",
+    "canonical_json_encoding": "UTF-8, sorted object keys, compact separators, ensure_ascii=false, allow_nan=false, exclude_none=true"
+  },
+  "summary": {
+    "case_count": 15,
+    "changed_case_count": 10,
+    "byte_stable_case_count": 5,
+    "unreviewed_difference_count": 0,
+    "hash_scope": "Canonical contract hashes cover ordered block IDs, relationship IDs, and contributing element IDs; canonical DocumentIR hashes cover the complete ordered IR graph."
+  },
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "legacy_markdown": {
+        "sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "size_bytes": 2008
+      },
+      "canonical_document_ir": {
+        "sha256": "82152526f23b70d9ce7b4688e94d97930402d5e5ed5b67b940f20ff4e53328a0",
+        "json_size_bytes": 124983
+      },
+      "canonical_contract": {
+        "sha256": "232a3eb8fff0c4472f88a3bb549075d7ccd1ee4d77aef6d8f9e77ca9b29ecb1a",
+        "json_size_bytes": 24454
+      },
+      "canonical_markdown": {
+        "sha256": "bc853d88e8b38c962372554ddb26aaa7afba8d538d29866f33534639f9b41977",
+        "size_bytes": 1844
+      },
+      "canonical_text": {
+        "sha256": "89cf32bbe8b4e0d0bf4374d0620b485a66b163ce658434afa744023743bd07e6",
+        "size_bytes": 1221
+      },
+      "blocks": {
+        "total": 6,
+        "included": 5
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-46e168e32ca9a28b5532",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "clean-energy",
+      "source_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "legacy_markdown": {
+        "sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+        "size_bytes": 886
+      },
+      "canonical_document_ir": {
+        "sha256": "0da5b3b30982984ba401fa244ac20598a51449f62c1f4cba85163da0bf157ef0",
+        "json_size_bytes": 136973
+      },
+      "canonical_contract": {
+        "sha256": "446e1bb74c45347815497e1458acf10a0b930d9b1f5eb0eba9de9b4b6a6ab786",
+        "json_size_bytes": 19191
+      },
+      "canonical_markdown": {
+        "sha256": "6680d479725f8cedb79bde79f51cfe54f779fe7dc47ec379762b8a68f1ebd843",
+        "size_bytes": 554
+      },
+      "canonical_text": {
+        "sha256": "8bff8f4454e22118e05ca2def2cd3fa6dc95babaf0b97644771790d3ad835ca6",
+        "size_bytes": 552
+      },
+      "blocks": {
+        "total": 8,
+        "included": 6
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-dfe7d21314b73228a675",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-6ac19660506bf3fcff7f",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "clinical-study",
+      "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "legacy_markdown": {
+        "sha256": "11a5339797e1ed41a164b23ada5386dc7220d32e10633181a76323f06271a160",
+        "size_bytes": 18012
+      },
+      "canonical_document_ir": {
+        "sha256": "b1c93334d76d8529918fc59c980eb9890f1c4192e587321ba7125cacad4e78ca",
+        "json_size_bytes": 688766
+      },
+      "canonical_contract": {
+        "sha256": "e4d7381adb27c453b907256f694f7f783fe5ab647767a58a21416e571fa83697",
+        "json_size_bytes": 185900
+      },
+      "canonical_markdown": {
+        "sha256": "1c016b508ed159acd5c942d7039073848b751d7fd45d1c236b50f59856ba96dc",
+        "size_bytes": 17211
+      },
+      "canonical_text": {
+        "sha256": "f9656a3eb80b7e29e0601f68aea005e54b43cc984fdd6e87edc9454111232523",
+        "size_bytes": 11211
+      },
+      "blocks": {
+        "total": 39,
+        "included": 37
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-c6401f256116b1985a9a",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-ac6fcd62e674f30cfa69",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "component-datasheet",
+      "source_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "legacy_markdown": {
+        "sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+        "size_bytes": 3771
+      },
+      "canonical_document_ir": {
+        "sha256": "83121cb48ebd693080e69c0457ba72594e3595d4f8a1548d40e5f3fa91979af6",
+        "json_size_bytes": 423802
+      },
+      "canonical_contract": {
+        "sha256": "b8fe2bb5a844547de7b963f69ae626d533bb2ed014a56217dc9d3dea6ce06132",
+        "json_size_bytes": 83633
+      },
+      "canonical_markdown": {
+        "sha256": "44cc4eec95eea1f84b6072d2fe3b1bf165c0bfe286bc32e4bb2689fccc098ac5",
+        "size_bytes": 3595
+      },
+      "canonical_text": {
+        "sha256": "9f3fb17d1a53c2cdb8929f5c481b36cfd123fa8fcd41b82af4b26a06ffccd0c7",
+        "size_bytes": 3556
+      },
+      "blocks": {
+        "total": 60,
+        "included": 58
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-edf904105901266c6f3e",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-528e36ee7280e261e746",
+          "reason": "empty_visual",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "egov-survey",
+      "source_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "legacy_markdown": {
+        "sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+        "size_bytes": 3056
+      },
+      "canonical_document_ir": {
+        "sha256": "4daa0960560c8bae4199a5f0641c6ec4c6cdb12800055e3f826183fd2347ade4",
+        "json_size_bytes": 76376
+      },
+      "canonical_contract": {
+        "sha256": "00159c6f3c80ee68fc0ebb46a9a159c3e0e8b7de428a44e5ab199f2859cb18c0",
+        "json_size_bytes": 35943
+      },
+      "canonical_markdown": {
+        "sha256": "df719171ae7b84c313a9cd6690ad67e25d0807d5d3c2dc4fe45aec3ec1a90553",
+        "size_bytes": 2785
+      },
+      "canonical_text": {
+        "sha256": "df719171ae7b84c313a9cd6690ad67e25d0807d5d3c2dc4fe45aec3ec1a90553",
+        "size_bytes": 2785
+      },
+      "blocks": {
+        "total": 8,
+        "included": 8
+      },
+      "omissions": [],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "esg-metrics",
+      "source_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "legacy_markdown": {
+        "sha256": "67efecc558dfbdd15f84eede895e3d4339e9bab39c8e8293bc21d4065586544b",
+        "size_bytes": 3190
+      },
+      "canonical_document_ir": {
+        "sha256": "606d1b1124aa639c6d9dc93bb431ad378bdb7c064a7f67f897e16aca46017acd",
+        "json_size_bytes": 197193
+      },
+      "canonical_contract": {
+        "sha256": "07e172c95cc24bf572de14771cebc2ad1a9b897880316141b7fb29420a78dad7",
+        "json_size_bytes": 41252
+      },
+      "canonical_markdown": {
+        "sha256": "546d1244d49816ba675345218f712e6a08227148d911697dbae5a5ad5fed3a04",
+        "size_bytes": 3023
+      },
+      "canonical_text": {
+        "sha256": "bd2aee7b6ae86437775908eeeceed12fe9764064976ed0582de840b2871c885d",
+        "size_bytes": 1752
+      },
+      "blocks": {
+        "total": 20,
+        "included": 20
+      },
+      "omissions": [],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "finance-10k",
+      "source_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "legacy_markdown": {
+        "sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "size_bytes": 12622
+      },
+      "canonical_document_ir": {
+        "sha256": "58ee3b6ca759834c67ce820d995365edec76080c788826d4dd7e28ffd1201b4f",
+        "json_size_bytes": 584183
+      },
+      "canonical_contract": {
+        "sha256": "42052e3981bf9a0bc0ca5497f3d99b8f305818247dc8c7275b433d3419f10623",
+        "json_size_bytes": 117672
+      },
+      "canonical_markdown": {
+        "sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "size_bytes": 12622
+      },
+      "canonical_text": {
+        "sha256": "36294c912062c8fb0aa2b1e78dcf4f732b890575e5c70d4f3a1a1ba6cae2d78f",
+        "size_bytes": 5043
+      },
+      "blocks": {
+        "total": 18,
+        "included": 18
+      },
+      "omissions": [],
+      "disposition": "byte-stable"
+    },
+    {
+      "case_id": "health-report",
+      "source_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "legacy_markdown": {
+        "sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+        "size_bytes": 1897
+      },
+      "canonical_document_ir": {
+        "sha256": "00ba8d802bd9c242398ddf133c3d66ca879fa56620f971b5977d5fbf3691fae4",
+        "json_size_bytes": 140716
+      },
+      "canonical_contract": {
+        "sha256": "45c145f09cc13e1fb6cbdf1d1d7092a2f2d075e5796048a36bddd8e40f431fcf",
+        "json_size_bytes": 26825
+      },
+      "canonical_markdown": {
+        "sha256": "95d7bee13e742f3d8eafbb692176faecd2fd3591d41b83a52b7c3a8feab23b04",
+        "size_bytes": 1202
+      },
+      "canonical_text": {
+        "sha256": "95d7bee13e742f3d8eafbb692176faecd2fd3591d41b83a52b7c3a8feab23b04",
+        "size_bytes": 1202
+      },
+      "blocks": {
+        "total": 10,
+        "included": 9
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-e86e3f183c6ef560979c",
+          "reason": "overlapping_visual_table",
+          "suppressed_by_element_id": "el-9576860715a66449ae50"
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "insurance-acord",
+      "source_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "legacy_markdown": {
+        "sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+        "size_bytes": 5127
+      },
+      "canonical_document_ir": {
+        "sha256": "84e39dcce98a8ee41c79b04065c3287b0ebce3eec67a74c213c71f41a049c4ff",
+        "json_size_bytes": 135508
+      },
+      "canonical_contract": {
+        "sha256": "104fb7be8ff1ff6edf941d96c84e5c1eacb4b5dd9317084d807a7618a0bdcf06",
+        "json_size_bytes": 53964
+      },
+      "canonical_markdown": {
+        "sha256": "faf1d448f69cb2a9d31ee968cca63a0eb13758a8a813318e448bfb8016f1f331",
+        "size_bytes": 5080
+      },
+      "canonical_text": {
+        "sha256": "e42065c9c43624aadc59dd43f4cc1718f107a545854847c85f2c6e212282dac2",
+        "size_bytes": 3002
+      },
+      "blocks": {
+        "total": 21,
+        "included": 20
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-d05daca8c34b4bf198cd",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "manufacturing-report",
+      "source_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "legacy_markdown": {
+        "sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+        "size_bytes": 6296
+      },
+      "canonical_document_ir": {
+        "sha256": "aea09fd04523e98b2ff0ec1d0cf5af661be40513996a9b04febce4996ebe5606",
+        "json_size_bytes": 595566
+      },
+      "canonical_contract": {
+        "sha256": "caebf8e550d1d3c27b48720617e70a3b3b15d61531b57df71e378cf4c520ec91",
+        "json_size_bytes": 106044
+      },
+      "canonical_markdown": {
+        "sha256": "2f8657a2e47346649c55d23b33222c0629ebd58600bc846e6ff0861bb3571abc",
+        "size_bytes": 4533
+      },
+      "canonical_text": {
+        "sha256": "be7c9278597be5ff7bf0250c78ab7fa750452556c92073638cfca61529872b59",
+        "size_bytes": 4531
+      },
+      "blocks": {
+        "total": 22,
+        "included": 21
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-9cbcfe198e377f99b2c3",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    },
+    {
+      "case_id": "ny-timetable",
+      "source_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "legacy_markdown": {
+        "sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+        "size_bytes": 40319
+      },
+      "canonical_document_ir": {
+        "sha256": "01a00b7f792f7f3d71755f051169dfbe66423ca434fee3dc6f7c3f9047dc6cf8",
+        "json_size_bytes": 2859962
+      },
+      "canonical_contract": {
+        "sha256": "315769c9592ae57f320c6669d43933263ed9f045f721e7e421d201025b6dd8ee",
+        "json_size_bytes": 363300
+      },
+      "canonical_markdown": {
+        "sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+        "size_bytes": 40319
+      },
+      "canonical_text": {
+        "sha256": "9cfef7e670a7397732f643deffdc918adfdc333b6124c4251776e290bf082982",
+        "size_bytes": 10164
+      },
+      "blocks": {
+        "total": 11,
+        "included": 11
+      },
+      "omissions": [],
+      "disposition": "byte-stable"
+    },
+    {
+      "case_id": "postal-10k",
+      "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "legacy_markdown": {
+        "sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+        "size_bytes": 11109
+      },
+      "canonical_document_ir": {
+        "sha256": "384511883ad260a27dff5b96611899e9a524fbaa0463d2ba53ad1a6e778ec84a",
+        "json_size_bytes": 517713
+      },
+      "canonical_contract": {
+        "sha256": "2d8a1158eef9becfc00dca0d1da306ae8cf4d99482becea0fdaa376dc8bde7c6",
+        "json_size_bytes": 104092
+      },
+      "canonical_markdown": {
+        "sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+        "size_bytes": 11109
+      },
+      "canonical_text": {
+        "sha256": "4363142028cbd2433f1ef446bf529bd0d7997d5078201e1c1a140a4f3c9884d9",
+        "size_bytes": 4753
+      },
+      "blocks": {
+        "total": 14,
+        "included": 14
+      },
+      "omissions": [],
+      "disposition": "byte-stable"
+    },
+    {
+      "case_id": "purchase-agreement",
+      "source_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "legacy_markdown": {
+        "sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+        "size_bytes": 3370
+      },
+      "canonical_document_ir": {
+        "sha256": "379886441c71827bd394e8a77945bb4d7cb4053af453f478483029e00dabb686",
+        "json_size_bytes": 34485
+      },
+      "canonical_contract": {
+        "sha256": "464f9fd38b456f3e938b136b1142d4ff6514c1d912f8c5cc98063c2232b643bb",
+        "json_size_bytes": 39202
+      },
+      "canonical_markdown": {
+        "sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+        "size_bytes": 3370
+      },
+      "canonical_text": {
+        "sha256": "5b8ea09db81dcda568af3f0f32c73c277c92f19dc59ed2ca1dda5d729bf19abe",
+        "size_bytes": 3364
+      },
+      "blocks": {
+        "total": 12,
+        "included": 12
+      },
+      "omissions": [],
+      "disposition": "byte-stable"
+    },
+    {
+      "case_id": "settlement-agreement",
+      "source_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "legacy_markdown": {
+        "sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+        "size_bytes": 3144
+      },
+      "canonical_document_ir": {
+        "sha256": "ecea943f9a52ca24f3f8d4c23a8d68190a02f03121844b626203ea04e322697a",
+        "json_size_bytes": 52602
+      },
+      "canonical_contract": {
+        "sha256": "fcc4fdedad51b0e5a8c3a2db99afb47a4a6b8b781d3238b1cb44cd01d51baf64",
+        "json_size_bytes": 33343
+      },
+      "canonical_markdown": {
+        "sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+        "size_bytes": 3144
+      },
+      "canonical_text": {
+        "sha256": "25465a5f00ef8379ba36a490c734ea4e649f36645558222f18dfd885f1c3086a",
+        "size_bytes": 2688
+      },
+      "blocks": {
+        "total": 6,
+        "included": 6
+      },
+      "omissions": [],
+      "disposition": "byte-stable"
+    },
+    {
+      "case_id": "uber-earnings",
+      "source_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "legacy_markdown": {
+        "sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+        "size_bytes": 1453
+      },
+      "canonical_document_ir": {
+        "sha256": "61d5364bacd808597b33c293ca93c7211cb131a809c4286083815153a1294de9",
+        "json_size_bytes": 278948
+      },
+      "canonical_contract": {
+        "sha256": "fbfc1467896b83aab4ec2e231c1db3b4e9ac40f7d40c496a3f5cedd955ec99f9",
+        "json_size_bytes": 39970
+      },
+      "canonical_markdown": {
+        "sha256": "3d60e12a80f655cd61d0eb7d514dbafe8e83898bf5e4bb4c1fa3536bdfccbce4",
+        "size_bytes": 991
+      },
+      "canonical_text": {
+        "sha256": "5ea26b543f039fac1a1a57c63765e5ad82a0f3cc1d9edbe552af5cc03f6b525a",
+        "size_bytes": 977
+      },
+      "blocks": {
+        "total": 36,
+        "included": 29
+      },
+      "omissions": [
+        {
+          "primary_element_id": "el-434eb08a93ba590a7a9e",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-8b12ea4abab9cb9458fb",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-b20eedc218efc72d1637",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-0146e0583244b038432d",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-bd5f555e82b48b4db306",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-8fb1ddb5cff23ade095e",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        },
+        {
+          "primary_element_id": "el-1af41a0d4a3e1e6e871b",
+          "reason": "unsupported_primary_ocr",
+          "suppressed_by_element_id": null
+        }
+      ],
+      "disposition": "reviewed-flag-only"
+    }
+  ]
+}

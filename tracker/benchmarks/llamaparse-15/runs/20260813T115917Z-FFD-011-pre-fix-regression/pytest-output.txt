@@ -1,0 +1,41 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.5, pytest-9.1.1, pluggy-1.6.0 -- /Users/vignesh/Downloads/taffybop/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/vignesh/Downloads/taffybop
+configfile: pyproject.toml
+plugins: anyio-4.14.2, Faker-40.36.0
+collecting ... collected 1 item
+
+tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py::test_real_postal_has_no_detached_complete_fers_line FAILED [100%]
+
+=================================== FAILURES ===================================
+_____________ test_real_postal_has_no_detached_complete_fers_line ______________
+
+E       AssertionError: FFD-011 public-surface failures:
+E         - row-cell source/evidence lineage is incomplete
+E         - detached public items survived: [{'item_id': 'p1-i5', 'bbox': {'x': 61.8, 'y': 713.6, 'width': 25.4, 'height': 7.6, 'unit': 'pt', 'h': 7.6, 'w': 25.4}, 'source_line_id': None}]
+E         - suppression ledger count=0
+E         - Markdown contains the detached paragraph
+E         - rendered DOM contains the detached paragraph
+E       assert not ['row-cell source/evidence lineage is incomplete', "detached public items survived: [{'item_id': 'p1-i5', 'bbox': {'x': 61.8, 'y': 713.6, 'width': 25.4, 'height': 7.6, 'unit': 'pt', 'h': 7.6, 'w': 25.4}, 'source_line_id': None}]", 'suppression ledger count=0', 'Markdown contains the detached paragraph', 'rendered DOM contains the detached paragraph']
+
+tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py:358: AssertionError
+----------------------------- Captured stderr call -----------------------------
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 8714.67it/s]
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /Users/vignesh/Downloads/taffybop/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py::test_real_postal_has_no_detached_complete_fers_line
+  /Users/vignesh/Downloads/taffybop/.venv/lib/python3.13/site-packages/docling/pipeline/standard_pdf_pipeline.py:588: DeprecationWarning: This field is deprecated. Use `generate_page_images=True` and call `TableItem.get_image()` to extract table images from page images.
+    or self.pipeline_options.generate_table_images
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py::test_real_postal_has_no_detached_complete_fers_line
+======================== 1 failed, 2 warnings in 27.54s ========================
+
+Process exit code: 1
+Wall time reported by the command runner: 29.37 seconds

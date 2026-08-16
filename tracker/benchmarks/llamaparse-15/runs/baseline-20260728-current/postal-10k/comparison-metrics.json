@@ -1,0 +1,1361 @@
+{
+  "case_id": "postal-10k",
+  "document": {
+    "expert_page_count": 3,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 3,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "postal-10k.pdf",
+    "source_page_count": 3
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 27,
+        "line": "<td></td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>-</td>"
+      },
+      {
+        "count": 3,
+        "line": "</tbody>"
+      },
+      {
+        "count": 3,
+        "line": "</table>"
+      },
+      {
+        "count": 2,
+        "line": "</thead>"
+      },
+      {
+        "count": 2,
+        "line": "<td>128</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>retirement benefits</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>net loss</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(8,978)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(9,520)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(6,478)</td>"
+      },
+      {
+        "count": 2,
+        "line": "see accompanying notes to the financial statements."
+      },
+      {
+        "count": 2,
+        "line": "<th></th>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(97)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>40</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(28)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(3,000)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>3,000</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(34)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>6,688</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>9,634</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 24,
+        "line": "<td></td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>-</td>"
+      },
+      {
+        "count": 3,
+        "line": "</tbody>"
+      },
+      {
+        "count": 3,
+        "line": "</table>"
+      },
+      {
+        "count": 2,
+        "line": "<th></th>"
+      },
+      {
+        "count": 2,
+        "line": "</thead>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(in millions)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<th>2025</th>"
+      },
+      {
+        "count": 2,
+        "line": "<th>2024</th>"
+      },
+      {
+        "count": 2,
+        "line": "<th>2023</th>"
+      },
+      {
+        "count": 2,
+        "line": "<td>128</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>retirement benefits</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>net loss</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ (8,978)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ (9,520)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ (6,478)</td>"
+      },
+      {
+        "count": 2,
+        "line": "see accompanying notes to the financial statements."
+      },
+      {
+        "count": 2,
+        "line": "<td>(97)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>40</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(28)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(3,000)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>3,000</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>(34)</td>"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.7692307692307693,
+      "item_count": 13,
+      "parse_concern_count": 2,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 3,
+          "parse_concerns": [],
+          "row_count": 40
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 6,
+          "parse_concerns": [
+            {
+              "details": "col 1 'Year Ended September 30,' expects datetime, got '80,453' in row 3",
+              "type": "header_value_type_mismatch"
+            }
+          ],
+          "row_count": 16
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 11,
+          "parse_concerns": [
+            {
+              "details": "col 1 'Years Ended September' expects datetime, got '(8,978)' in row 3",
+              "type": "header_value_type_mismatch"
+            }
+          ],
+          "row_count": 37
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "heading": 3,
+        "table": 3,
+        "text": 4
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.7857142857142857,
+      "item_count": 14,
+      "parse_concern_count": 2,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 3,
+          "parse_concerns": [],
+          "row_count": 39
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 8,
+          "parse_concerns": [],
+          "row_count": 17
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 12,
+          "parse_concerns": [],
+          "row_count": 37
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "heading": 3,
+        "table": 3,
+        "text": 5
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 4069,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3837,
+        "candidate_tokens": 526,
+        "extra_token_counts": [
+          [
+            "report",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "clo",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "em",
+            8
+          ],
+          [
+            "th",
+            4
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tr",
+            2
+          ],
+          [
+            "retirement",
+            1
+          ],
+          [
+            "system",
+            1
+          ],
+          [
+            "federal",
+            1
+          ],
+          [
+            "employees",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9363917358060843,
+        "reference_chars": 4069,
+        "reference_tokens": 533,
+        "token_f1": 0.9688385269121813,
+        "token_multiset_overlap": 513,
+        "token_precision": 0.9752851711026616,
+        "token_recall": 0.9624765478424016
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 3837,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1906,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 4069,
+        "candidate_tokens": 533,
+        "extra_token_counts": [
+          [
+            "td",
+            156
+          ],
+          [
+            "tr",
+            80
+          ],
+          [
+            "em",
+            8
+          ],
+          [
+            "th",
+            4
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "report",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.6537462537462537,
+        "reference_chars": 1906,
+        "reference_tokens": 290,
+        "token_f1": 0.6780072904009721,
+        "token_multiset_overlap": 279,
+        "token_precision": 0.5234521575984991,
+        "token_recall": 0.9620689655172414
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3837,
+        "candidate_tokens": 526,
+        "extra_token_counts": [
+          [
+            "td",
+            156
+          ],
+          [
+            "tr",
+            78
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "clo",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "retirement",
+            1
+          ],
+          [
+            "system",
+            1
+          ],
+          [
+            "federal",
+            1
+          ],
+          [
+            "employees",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.6564392410173597,
+        "reference_chars": 1906,
+        "reference_tokens": 290,
+        "token_f1": 0.7009803921568626,
+        "token_multiset_overlap": 286,
+        "token_precision": 0.5437262357414449,
+        "token_recall": 0.9862068965517241
+      }
+    },
+    {
+      "expert_body_chars": 2021,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 2163,
+        "candidate_tokens": 311,
+        "extra_token_counts": [
+          [
+            "td",
+            2
+          ],
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "report",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "46",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "th",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8544243577545195,
+        "reference_chars": 2021,
+        "reference_tokens": 299,
+        "token_f1": 0.9737704918032787,
+        "token_multiset_overlap": 297,
+        "token_precision": 0.954983922829582,
+        "token_recall": 0.9933110367892977
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 2163,
+      "our_success": true,
+      "page_number": 2,
+      "source_chars": 762,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 2021,
+        "candidate_tokens": 299,
+        "extra_token_counts": [
+          [
+            "td",
+            120
+          ],
+          [
+            "tr",
+            34
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "report",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "46",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.5063180827886711,
+        "reference_chars": 762,
+        "reference_tokens": 136,
+        "token_f1": 0.5747126436781609,
+        "token_multiset_overlap": 125,
+        "token_precision": 0.4180602006688963,
+        "token_recall": 0.9191176470588235
+      },
+      "source_vs_ours": {
+        "candidate_chars": 2163,
+        "candidate_tokens": 311,
+        "extra_token_counts": [
+          [
+            "td",
+            122
+          ],
+          [
+            "tr",
+            34
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "x27",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.5440806045340051,
+        "reference_chars": 762,
+        "reference_tokens": 136,
+        "token_f1": 0.6085011185682326,
+        "token_multiset_overlap": 136,
+        "token_precision": 0.43729903536977494,
+        "token_recall": 1.0
+      }
+    },
+    {
+      "expert_body_chars": 5116,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 5104,
+        "candidate_tokens": 723,
+        "extra_token_counts": [
+          [
+            "amp",
+            3
+          ],
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "report",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "49",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "th",
+            6
+          ],
+          [
+            "td",
+            6
+          ],
+          [
+            "tr",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9706823710152349,
+        "reference_chars": 5116,
+        "reference_tokens": 720,
+        "token_f1": 0.9785169785169785,
+        "token_multiset_overlap": 706,
+        "token_precision": 0.9764868603042877,
+        "token_recall": 0.9805555555555555
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 5104,
+      "our_success": true,
+      "page_number": 3,
+      "source_chars": 2099,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 5116,
+        "candidate_tokens": 720,
+        "extra_token_counts": [
+          [
+            "td",
+            288
+          ],
+          [
+            "tr",
+            76
+          ],
+          [
+            "th",
+            16
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "united",
+            1
+          ],
+          [
+            "states",
+            1
+          ],
+          [
+            "postal",
+            1
+          ],
+          [
+            "service",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "report",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "49",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.6304892302554683,
+        "reference_chars": 2099,
+        "reference_tokens": 345,
+        "token_f1": 0.6272300469483567,
+        "token_multiset_overlap": 334,
+        "token_precision": 0.4638888888888889,
+        "token_recall": 0.9681159420289855
+      },
+      "source_vs_ours": {
+        "candidate_chars": 5104,
+        "candidate_tokens": 723,
+        "extra_token_counts": [
+          [
+            "td",
+            282
+          ],
+          [
+            "tr",
+            74
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "amp",
+            3
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "x27",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.6445182724252492,
+        "reference_chars": 2099,
+        "reference_tokens": 345,
+        "token_f1": 0.6460674157303371,
+        "token_multiset_overlap": 345,
+        "token_precision": 0.47717842323651455,
+        "token_recall": 1.0
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 11109,
+      "candidate_tokens": 1560,
+      "extra_token_counts": [
+        [
+          "report",
+          3
+        ],
+        [
+          "on",
+          3
+        ],
+        [
+          "form",
+          3
+        ],
+        [
+          "10",
+          3
+        ],
+        [
+          "k",
+          3
+        ],
+        [
+          "postal",
+          3
+        ],
+        [
+          "united",
+          3
+        ],
+        [
+          "states",
+          3
+        ],
+        [
+          "service",
+          3
+        ],
+        [
+          "x27",
+          3
+        ],
+        [
+          "2025",
+          3
+        ],
+        [
+          "amp",
+          3
+        ],
+        [
+          "clo",
+          1
+        ],
+        [
+          "2",
+          1
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "46",
+          1
+        ],
+        [
+          "49",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "th",
+          12
+        ],
+        [
+          "em",
+          8
+        ],
+        [
+          "tr",
+          4
+        ],
+        [
+          "td",
+          4
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "retirement",
+          1
+        ],
+        [
+          "system",
+          1
+        ],
+        [
+          "federal",
+          1
+        ],
+        [
+          "employees",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9288927841075081,
+      "reference_chars": 11210,
+      "reference_tokens": 1552,
+      "token_f1": 0.9755784061696657,
+      "token_multiset_overlap": 1518,
+      "token_precision": 0.9730769230769231,
+      "token_recall": 0.9780927835051546
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 11109,
+      "candidate_tokens": 1560,
+      "extra_token_counts": [
+        [
+          "x27",
+          3
+        ],
+        [
+          "amp",
+          3
+        ],
+        [
+          "clo",
+          1
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "th",
+          12
+        ],
+        [
+          "em",
+          8
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "tr",
+          4
+        ],
+        [
+          "td",
+          4
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "retirement",
+          1
+        ],
+        [
+          "system",
+          1
+        ],
+        [
+          "federal",
+          1
+        ],
+        [
+          "employees",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9398825290798112,
+      "reference_chars": 11464,
+      "reference_tokens": 1597,
+      "token_f1": 0.9825783972125435,
+      "token_multiset_overlap": 1551,
+      "token_precision": 0.9942307692307693,
+      "token_recall": 0.971195992485911
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 11464,
+      "candidate_tokens": 1597,
+      "extra_token_counts": [
+        [
+          "td",
+          564
+        ],
+        [
+          "tr",
+          190
+        ],
+        [
+          "th",
+          32
+        ],
+        [
+          "em",
+          8
+        ],
+        [
+          "table",
+          6
+        ],
+        [
+          "thead",
+          6
+        ],
+        [
+          "tbody",
+          6
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.6247784997046663,
+      "reference_chars": 4771,
+      "reference_tokens": 771,
+      "token_f1": 0.6511824324324325,
+      "token_multiset_overlap": 771,
+      "token_precision": 0.482780212899186,
+      "token_recall": 1.0
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 11109,
+      "candidate_tokens": 1560,
+      "extra_token_counts": [
+        [
+          "td",
+          560
+        ],
+        [
+          "tr",
+          186
+        ],
+        [
+          "th",
+          20
+        ],
+        [
+          "table",
+          6
+        ],
+        [
+          "tbody",
+          6
+        ],
+        [
+          "thead",
+          4
+        ],
+        [
+          "x27",
+          3
+        ],
+        [
+          "amp",
+          3
+        ],
+        [
+          "colspan",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "clo",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "retirement",
+          1
+        ],
+        [
+          "system",
+          1
+        ],
+        [
+          "federal",
+          1
+        ],
+        [
+          "employees",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.6347305389221557,
+      "reference_chars": 4771,
+      "reference_tokens": 771,
+      "token_f1": 0.658086658086658,
+      "token_multiset_overlap": 767,
+      "token_precision": 0.49166666666666664,
+      "token_recall": 0.9948119325551232
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "approval": {
+    "authorized_on": "2026-08-03",
+    "owner": "project owner/requester",
+    "source": "active Codex thread",
+    "statement": "I also authorize the narrow administrative renewal of the existing P03-US08 latency exception required to permit unrelated Phase 04 table changes."
+  },
+  "authorized_change": {
+    "added_phase04_paths": [
+      "app/services/table_semantics.py",
+      "frontend/lib/table-semantics.ts",
+      "frontend/tests/p04-tables.test.mts"
+    ],
+    "allowed_existing_paths": [
+      "app/config.py",
+      "app/services/pipeline.py",
+      "app/services/tables.py",
+      "frontend/app/clearleaf-workspace.tsx"
+    ],
+    "baseline_code_manifest_sha256": "b5bfab2739f231a57abddf787a6c566c5fddec5b2128bd4892f3682622a06fcc",
+    "baseline_files": {
+      "app/config.py": {
+        "path": "app/config.py",
+        "sha256": "3903a634160e5c48f54092f820dbc7129ed941a39d6984212dd635415d0292f3",
+        "size_bytes": 16344
+      },
+      "app/services/pipeline.py": {
+        "path": "app/services/pipeline.py",
+        "sha256": "b6223e52746e334bbd58cafcaedb1462f44e9a037339daacc88736b305078a76",
+        "size_bytes": 171536
+      },
+      "app/services/tables.py": {
+        "path": "app/services/tables.py",
+        "sha256": "dc889c00eea03ee3506093c6e806966e16f76f02ff941e6476e61c32545d0d42",
+        "size_bytes": 18319
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "path": "frontend/app/clearleaf-workspace.tsx",
+        "sha256": "260c00eda83f115695da08aa4294824689fc99cb377f947814e3f4c1cc5f1d94",
+        "size_bytes": 66939
+      }
+    },
+    "difference_scope": "unrelated default-off Phase 04 table implementation, tests, and rendering only",
+    "phase04_only": true,
+    "protected_surfaces": {
+      "app/config.py": {
+        "normalization": "remove only table_* Settings fields, table-only __post_init__ guards, and table_* from_env keywords",
+        "normalized_ast_sha256": "5066fbcff36b5b90ce35080bf1d386da73e8e28b0c01d956147258f81aa30be0"
+      },
+      "app/services/pipeline.py": {
+        "allowed_function_names": [
+          "_analyze_shared_pages",
+          "_docling_table_item",
+          "_merge_body_items",
+          "_merge_tables",
+          "_normalize_docling_body",
+          "_vector_table_item"
+        ],
+        "normalized_ast_sha256": "eaf196df6b9eba2b1fa8b2c264dafdd850245ee0ad169cff1b3237a3d92a2131"
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "allowed_helper_import": "import { readTableSemantics } from \"@/lib/table-semantics\";\n",
+        "normalized_source_sha256": "5a4c2eb5f692f4cf30725d14d055b78c40fd60fbdd97c5fd906ed1ddbd02e116",
+        "table_block_end": "  if (type === \"list\") {",
+        "table_block_start": "  if (type === \"table\") {"
+      }
+    },
+    "running_region_behavior_changed": false,
+    "running_region_custody_changed": false
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-renewal.md",
+    "raw_sha256": "951f9e2a73fecdb6fa591a807af882fec334b26d9c63fdbcee16d92b96b42aad",
+    "size_bytes": 4242
+  },
+  "deferred_work": {
+    "required_outcome": "replace this exception with a strict current-code final campaign or explicitly renew it",
+    "scope": [
+      "near-boundary projection latency",
+      "fresh-process RSS measurement stability"
+    ]
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "maximum_overrun_fraction": 0.05,
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "expired_effect": "P03-US08 returns to In Progress and dependent exit claims are blocked",
+    "expires_before": [
+      "production enablement of running regions",
+      "running-region semantic or runtime behavior change",
+      "relevant running-region custody change",
+      "authorized Phase 04 scope expansion"
+    ],
+    "review_due_on": "2026-09-02"
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "hosted_usage": {
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_compatibility",
+    "code_dependency_input_and_fixture_custody",
+    "correctness_and_quality",
+    "deadlines_and_resource_boundaries",
+    "hosted_usage",
+    "output_sizes",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "feature_flag_default": false,
+    "rollback": "disable the flag to skip US08 work and return the exact configured predecessor"
+  },
+  "prior_renewal_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-frontend-bbox-latency-waiver-renewal.json",
+    "raw_sha256": "9e5761d53c8769daca3c2c59f37bfc99b1db12f89f28410e2b8667583a4e58d1",
+    "semantic_sha256": "c650af287d8010d5a94c4c572f41538e3249c4acf4653531f2e37eab208d39e8",
+    "size_bytes": 5236
+  },
+  "record_kind": "p03_us08_phase04_tables_latency_exception_renewal",
+  "renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-PHASE04-TABLES",
+  "renews_renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-FRONTEND-BBOX",
+  "schema_version": "1.0",
+  "semantic_sha256": "84e95a5992ff45df073eaab500fde1185a6fd65affb3445989c2fc7adee32675",
+  "status": "accepted_with_time_bounded_metrics_exception_renewal",
+  "story": "P03-US08"
+}

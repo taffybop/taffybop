@@ -1,0 +1,285 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- link:
+  - /url: /
+- button "Toggle Sidebar":
+  - generic: Toggle Sidebar
+- separator
+- list:
+  - button "DE Default Free plan":
+    - generic: DE
+    - generic: Default
+    - generic: Free plan
+- separator
+- list:
+  - link "Home":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780
+    - button "Home":
+      - generic: Home
+  - link "Parse":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse
+    - button "Parse":
+      - generic: Parse
+  - link "Extract":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/extract
+    - button "Extract":
+      - generic: Extract
+  - link "Split":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/split
+    - button "Split":
+      - generic: Split
+  - link "Classify":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/classify
+    - button "Classify":
+      - generic: Classify
+  - link "Sheets":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/sheets
+    - button "Sheets":
+      - generic: Sheets
+  - link "Verify Preview":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/verify
+    - button "Verify Preview":
+      - generic: Verify
+      - generic: Preview
+- separator
+- list:
+  - link "Agents Beta":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/agents
+    - button "Agents Beta":
+      - generic: Agents
+      - generic: Beta
+- generic: Free plan usage
+- generic: 6,183 of 10,000
+- link "Upgrade":
+  - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/plan
+- progressbar
+- list:
+  - link "Documentation":
+    - /url: https://developers.llamaindex.ai/python/cloud
+    - button "Documentation":
+      - generic: Documentation
+  - link "API Keys":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/api-keys
+    - button "API Keys":
+      - generic: API Keys
+  - link "Billing":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/billing/usage
+    - button "Billing":
+      - generic: Billing
+  - link "Settings":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/organization
+    - button "Settings":
+      - generic: Settings
+- separator
+- list:
+  - button "VI Vignesh Prabakaran vignesh.ph10@gmail.com":
+    - generic: VI
+    - generic: Vignesh Prabakaran
+    - generic: vignesh.ph10@gmail.com
+- button "Toggle Sidebar"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - link "Parse":
+        - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse?
+      - link "pjb-sx7k..." [disabled]
+  - generic: Success
+  - button "Docs":
+    - generic: Docs
+  - button "Configs":
+    - generic: Configs
+  - button "History":
+    - generic: History
+  - button "Feedback":
+    - generic: Feedback
+  - separator
+  - button [disabled]:
+  - spinbutton: "1"
+  - generic: of
+  - generic: "3"
+  - button:
+  - button "Zoom Out":
+  - generic: 100%
+  - button "Zoom In":
+  - button "Reset Zoom":
+  - button "Download PDF":
+  - button "Fullscreen":
+  - generic: postal-10k.pdf
+  - img "postal-10k.pdf"
+  - separator
+  - tablist:
+    - tab "Build":
+      - generic: Build
+    - tab "Results" [selected]:
+      - generic: Results
+    - tab "Code":
+      - generic: Code
+  - button "Markdown" [active] [pressed]:
+    - text: Markdown
+  - button "Text":
+  - button "JSON":
+  - button "Images":
+  - button "XLSX":
+  - button "PDF":
+  - button "Previous page" [disabled]:
+    - generic: Previous page
+  - textbox: "1"
+  - generic: of 3
+  - button "Next page":
+    - generic: Next page
+  - button "Copy":
+    - generic: Copy
+  - button "View options":
+    - generic: View options
+  - button "More actions":
+    - generic: More actions
+  - tabpanel:
+    - text: heading
+    - heading "GLOSSARY OF ACRONYMS AND DEFINED TERMS" [level=1]
+    - text: text
+    - paragraph: "The following are definitions of some of the terms or acronyms that may be used throughout this report:"
+    - text: table
+    - table:
+      - rowgroup:
+        - row "Term or Acronym Definition":
+          - columnheader "Term or Acronym"
+          - columnheader "Definition"
+      - rowgroup:
+        - row "AED Advanced Electronic Data":
+          - cell "AED"
+          - cell "Advanced Electronic Data"
+        - row "Annual Report Annual Report on Form 10-K":
+          - cell "Annual Report"
+          - cell "Annual Report on Form 10-K"
+        - row "AFC Audit and Finance Committee of the Board of Governors":
+          - cell "AFC"
+          - cell "Audit and Finance Committee of the Board of Governors"
+        - row "AFL-CIO American Federation of Labor and Congress of Industrial Organizations":
+          - cell "AFL-CIO"
+          - cell "American Federation of Labor and Congress of Industrial Organizations"
+        - row "APWU American Postal Workers Union, AFL-CIO":
+          - cell "APWU"
+          - cell "American Postal Workers Union, AFL-CIO"
+        - row "ASC Accounting Standards Codification":
+          - cell "ASC"
+          - cell "Accounting Standards Codification"
+        - row "ASU Accounting Standards Update":
+          - cell "ASU"
+          - cell "Accounting Standards Update"
+        - row "Board Board of Governors of the United States Postal Service":
+          - cell "Board"
+          - cell "Board of Governors of the United States Postal Service"
+        - row "Board of Actuaries Board of Actuaries of the Civil Service Retirement System":
+          - cell "Board of Actuaries"
+          - cell "Board of Actuaries of the Civil Service Retirement System"
+        - row "CARES Act Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136":
+          - cell "CARES Act":
+            - emphasis: CARES Act
+          - cell "Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136":
+            - emphasis: Coronavirus Aid, Relief, and Economic Security Act
+            - text: ", enacted as Public Law 116-136"
+        - row "CBP U.S. Customs and Border Protection":
+          - cell "CBP"
+          - cell "U.S. Customs and Border Protection"
+        - row "CEO Chief Executive Officer":
+          - cell "CEO"
+          - cell "Chief Executive Officer"
+        - row "CFO Chief Financial Officer":
+          - cell "CFO"
+          - cell "Chief Financial Officer"
+        - row "CHRO Chief Human Resources Officer":
+          - cell "CHRO"
+          - cell "Chief Human Resources Officer"
+        - row "CIO Chief Information Officer":
+          - cell "CIO"
+          - cell "Chief Information Officer"
+        - row "CISO Chief Information Security Office":
+          - cell "CISO"
+          - cell "Chief Information Security Office"
+        - row "COFA Compacts of Free Association":
+          - cell "COFA"
+          - cell "Compacts of Free Association"
+        - row "COLA(s) Cost-of-living adjustment(s)":
+          - cell "COLA(s)"
+          - cell "Cost-of-living adjustment(s)"
+        - row "COO Chief Operating Officer":
+          - cell "COO"
+          - cell "Chief Operating Officer"
+        - row "COR House Committee on Oversight and Reform":
+          - cell "COR"
+          - cell "House Committee on Oversight and Reform"
+        - row "COVID-19 Coronavirus":
+          - cell "COVID-19"
+          - cell "Coronavirus"
+        - row "CPI Consumer Price Index":
+          - cell "CPI"
+          - cell "Consumer Price Index"
+        - row "CPI-U Consumer Price Index for All Urban Consumers":
+          - cell "CPI-U"
+          - cell "Consumer Price Index for All Urban Consumers"
+        - row "CPI-W Consumer Price Index for Urban Wage Earners and Clerical Workers":
+          - cell "CPI-W"
+          - cell "Consumer Price Index for Urban Wage Earners and Clerical Workers"
+        - row "CSRDF Civil Service Retirement and Disability Fund":
+          - cell "CSRDF"
+          - cell "Civil Service Retirement and Disability Fund"
+        - row "CSRS Civil Service Retirement System":
+          - cell "CSRS"
+          - cell "Civil Service Retirement System"
+        - row "DOL U.S. Department of Labor":
+          - cell "DOL"
+          - cell "U.S. Department of Labor"
+        - row "DPMG Deputy Postmaster General":
+          - cell "DPMG"
+          - cell "Deputy Postmaster General"
+        - row "ECRC Executive Cyber Risk Committee":
+          - cell "ECRC"
+          - cell "Executive Cyber Risk Committee"
+        - row "EEOC U.S. Equal Employment Opportunity Commission":
+          - cell "EEOC"
+          - cell "U.S. Equal Employment Opportunity Commission"
+        - row "EIS Environmental Impact Statement":
+          - cell "EIS"
+          - cell "Environmental Impact Statement"
+        - row "EPA Environmental Protection Agency":
+          - cell "EPA"
+          - cell "Environmental Protection Agency"
+        - row "Exchange Act Securities and Exchange Act of 1934, enacted as Public Law 73-291":
+          - cell "Exchange Act":
+            - emphasis: Exchange Act
+          - cell "Securities and Exchange Act of 1934, enacted as Public Law 73-291":
+            - emphasis: Securities and Exchange Act of 1934
+            - text: ", enacted as Public Law 73-291"
+        - row "FAS Freely Associated States":
+          - cell "FAS"
+          - cell "Freely Associated States"
+        - row "FASB Financial Accounting Standards Board":
+          - cell "FASB"
+          - cell "Financial Accounting Standards Board"
+        - row "FECA Federal Employees' Compensation Act":
+          - cell "FECA"
+          - cell "Federal Employees' Compensation Act"
+        - row "FEGLI Federal Employees Group Life Insurance":
+          - cell "FEGLI"
+          - cell "Federal Employees Group Life Insurance"
+        - row "FEHB Federal Employees Health Benefits":
+          - cell "FEHB"
+          - cell "Federal Employees Health Benefits"
+        - row "FERS Federal Employees Retirement System":
+          - cell "FERS"
+          - cell "Federal Employees Retirement System"
+    - text: footer
+    - paragraph: 2025 Report on Form 10-K United States Postal Service <page_number>2</page_number>
+  - generic: Estimated cost
+  - generic: 1 file (estimate unavailable)
+  - link "Start over":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse
+    - button "Start over":
+      - generic: Start over
+  - button "Save config":
+    - generic: Save config
+  - button "Run again":
+    - generic: Run again
+- region "Notifications alt+T"
+- alert
+- document

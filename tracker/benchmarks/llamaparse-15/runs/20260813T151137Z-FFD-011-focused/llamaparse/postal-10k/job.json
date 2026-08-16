@@ -1,0 +1,60 @@
+{
+  "complete_pdf": true,
+  "configuration_name": "Playground",
+  "cost_optimizer": false,
+  "freshness": {
+    "attempt_started_at_utc": "2026-08-13T15:11:37Z",
+    "created_after_attempt_start": true,
+    "new_job_id": "pjb-frndkxx9xo4bww7bjg78oxfvhqqe",
+    "selected_reference_job_id": "pjb-a97cbzz7kcwjfk5n2n51r6jkyljc"
+  },
+  "job": {
+    "created_at": "2026-08-13T15:19:36.640060Z",
+    "error_message": null,
+    "id": "pjb-frndkxx9xo4bww7bjg78oxfvhqqe",
+    "name": "postal-10k.pdf",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "tier": "agentic",
+    "updated_at": "2026-08-13T15:19:56.295102Z",
+    "user_metadata": null
+  },
+  "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+  "referenced_assets_manifest": "assets/assets-manifest.json",
+  "result_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-frndkxx9xo4bww7bjg78oxfvhqqe",
+  "source": {
+    "filename": "postal-10k-FFD-011-20260813T151137Z.pdf",
+    "page_count": 3,
+    "pages": [
+      {
+        "height_pt": 792.0,
+        "page_index": 1,
+        "render_path": "source/pages/page-1.png",
+        "render_sha256": "63f96cef700897c36fefb22178c4044fa03bf70b1b89e2ebdd68d1f544039dac",
+        "render_size_bytes": 467246,
+        "width_pt": 612.0
+      },
+      {
+        "height_pt": 792.0,
+        "page_index": 2,
+        "render_path": "source/pages/page-2.png",
+        "render_sha256": "c0fe428c08193f0c3332fa3a2205726f149f028de76c803254639eb09aa28af0",
+        "render_size_bytes": 215996,
+        "width_pt": 612.0
+      },
+      {
+        "height_pt": 792.0,
+        "page_index": 3,
+        "render_path": "source/pages/page-3.png",
+        "render_sha256": "149f6e446aedb7505757c58600590245a4c149736267e9fc9f38bdb9abd7781f",
+        "render_size_bytes": 529069,
+        "width_pt": 612.0
+      }
+    ],
+    "render_dpi": 200,
+    "render_engine": "pypdfium2",
+    "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+    "source_size_bytes": 83589
+  },
+  "tier": "agentic"
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "acord-form-resolution-ledger-v1",
+  "created_at": "2026-08-13",
+  "case_id": "insurance-acord",
+  "page_numbers": [
+    1
+  ],
+  "final_status": "fixed",
+  "severity_before_fix": "major",
+  "mapped_stories": [
+    "P03-US06",
+    "P03-US04"
+  ],
+  "scope": {
+    "resolved_region": "blank static producer/contact/insured/insurer form at PDF bbox [18, 120, 576, 120] pt",
+    "primary_owner": "P03-US06 form semantics and canonical ownership",
+    "boundary_owner": "P03-US04 relationship-aware reading order and exact-once contributor custody",
+    "explicitly_unchanged": [
+      "coverage-grid table reconstruction",
+      "signature or form filling",
+      "domain-specific insurance inference",
+      "visual/logo extraction"
+    ]
+  },
+  "source_truth": {
+    "pdf_path": "benchmark-expertmodeldata/insurance-acord.pdf",
+    "pdf_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+    "pdf_size_bytes": 17086,
+    "page_count": 1,
+    "page_width_pt": 612,
+    "page_height_pt": 792,
+    "line_count": 125,
+    "rectangle_count": 20,
+    "annotation_count": 0,
+    "reviewed_observations": [
+      "The source form is static and contains no entered producer, contact, insured, insurer-name, or NAIC values.",
+      "PRODUCER occupies the left region from y=120 through insurer A; INSURED begins beside insurer B at y=180.",
+      "CONTACT NAME, PHONE, FAX, and E-MAIL labels occupy the upper-right rows; the insurer heading and NAIC heading precede insurer A through F.",
+      "No source-visible signature value is present."
+    ]
+  },
+  "reference_baseline": {
+    "job_id": "pjb-e949skk13ihc9wbmdhk348mw2t69",
+    "reference_json": {
+      "path": "llamaparse/insurance-acord/reference.json",
+      "sha256": "20134cd09606dc210d65fe18f5596f13a94dfba41c4bc498d1d69858e87822b2"
+    },
+    "reference_markdown": {
+      "path": "llamaparse/insurance-acord/reference.md",
+      "sha256": "47dac93cc27ff6adb158974b33e53872e70a9475f4659e2ab6328e7d6ec5288f"
+    },
+    "rendered_dom": {
+      "path": "llamaparse/insurance-acord/pages/page-1/rendered-dom.json",
+      "sha256": "5f002098f4df1602796700590359ceed2bc43f672b04492a8ccb1816ea11ee86"
+    }
+  },
+  "defect": {
+    "before_artifact": "service-final-20260813/insurance-acord",
+    "root_cause": "The form graph already contained all 18 blank fields and all 14 source labels, but static groups were forced to canonical_mode=inert. Canonical output therefore retained a malformed predecessor candidate table and detached native/OCR contributors, duplicating labels and corrupting CONTACT/PHONE ownership.",
+    "frontend_followup_root_cause": "The generic form sidecar converted JSON value_state=empty into synthetic visible prose and repeated shared NAIC/insurer labels once per field instead of presenting the source-complete replacement as one region.",
+    "pre_fix_evidence": [
+      "CONTACT/PHONE/FAX/E-MAIL and insurer labels were detached or duplicated in raw Markdown.",
+      "The predecessor output contained the corrupt token PHONE NAME:.",
+      "The first backend-fixed UI capture still contained Empty source-visible field and repeated shared labels."
+    ]
+  },
+  "production_correction": {
+    "backend": [
+      "Admit replacement only for the exact resolved static parties-and-insurers group.",
+      "Require the six base fields, paired insurer name/NAIC fields, complete native labels, vector-backed contained blank fields, source-coherent geometry, no controls, no concerns, and no entered values.",
+      "Revalidate the complete contract at canonical render time and fail closed to no replacement content when it differs.",
+      "Render one source-ordered six-column Markdown grid with explicit blank value cells and exact-once labels."
+    ],
+    "frontend": [
+      "Represent value_state=empty as an empty semantic value node, never synthetic user-visible prose.",
+      "Revalidate the exact complete parties-and-insurers contract before using the specialized semantic table.",
+      "Render one table with source-correct PRODUCER and INSURED row spans, one insurer-group heading, one NAIC heading, six insurer rows, and 18 blank value cells.",
+      "Fall back to the generic form renderer for entered, incomplete, unresolved, non-target, or otherwise nonmatching forms."
+    ]
+  },
+  "fail_closed_boundaries": [
+    "wrong group key",
+    "unresolved group",
+    "any entered value",
+    "missing insurer name/NAIC partner",
+    "changed or incomplete label",
+    "non-vector field provenance",
+    "out-of-group field geometry",
+    "controls or key-value pairs present",
+    "concern codes present"
+  ],
+  "final_http_evidence": {
+    "run_path": "service-acord-form-fix-20260813-attempt-03",
+    "run_status": "success",
+    "run_json_sha256": "71f2d780b9aee3c1231ea5d47fa904487ab561d9dd51eb16d4e341180f939132",
+    "json": {
+      "status_code": 200,
+      "content_type": "application/json",
+      "size_bytes": 351106,
+      "sha256": "b4f25d85215f6ba33ef847f4b160c78a799d61bd80bc8fb54b85415d00ae943f",
+      "public_parse_result_revalidated": true
+    },
+    "markdown": {
+      "status_code": 200,
+      "content_type": "text/markdown; charset=utf-8",
+      "size_bytes": 10006,
+      "sha256": "f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1",
+      "byte_equal_to_canonical_full_markdown": true,
+      "byte_equal_to_public_serializer": true
+    },
+    "form_group": {
+      "anchor_public_item_id": "p1-i6",
+      "anchor_element_id": "el-e0de889b136d65c3c52b",
+      "canonical_block_id": "pb-eec7995924381a407b44",
+      "status": "resolved",
+      "interactivity": "static",
+      "canonical_mode": "replace",
+      "field_count": 18,
+      "label_count": 14,
+      "control_count": 0,
+      "all_values": null,
+      "all_value_states": "empty",
+      "other_form_groups_canonical_mode": "inert"
+    }
+  },
+  "final_ui_evidence": {
+    "renderer": "ClearleafWorkspace/RenderedPageCapture",
+    "presentation_view": "body",
+    "manifest_path": "service-acord-form-fix-20260813-attempt-03/insurance-acord/rendered-capture.json",
+    "manifest_sha256": "cc3d54a3f4ca82ba335f482dd8f60b5564666b94206f6f820c0bb6df47fd2daf",
+    "dom_path": "service-acord-form-fix-20260813-attempt-03/insurance-acord/pages/page-1/rendered-dom.json",
+    "dom_sha256": "9078a1088c6a7e3e0bd22376356329d40097b1454440c25f85e907fb9d600ea1",
+    "html_sha256": "04b6ecb058e80caf5972ac2cb0200c94c63d0843a6f15627a964dd260b7fc677",
+    "text_sha256": "cd8a588fe3672715abc03d3d31760733f894e521fe64c8d21e3a5c90512b33c1",
+    "parties_table": {
+      "table_count": 1,
+      "row_count": 10,
+      "header_cell_count": 14,
+      "blank_value_cell_count": 18,
+      "label_count": 14,
+      "each_label_occurs_once_within_table": true
+    },
+    "forbidden_visible_text": {
+      "empty source-visible field": 0,
+      "PHONE NAME:": 0,
+      "[signature]": 0
+    }
+  },
+  "attempt_custody": [
+    {
+      "path": "service-acord-form-fix-20260813",
+      "status": "failed_before_http_capture",
+      "reason": "workspace sandbox denied the local server bind",
+      "preserved": true
+    },
+    {
+      "path": "service-acord-form-fix-20260813-attempt-02",
+      "status": "backend_fixed_ui_failed",
+      "response_json_sha256": "08ad3186ebbe93b47851051f633d182cd78b7a7d1dd29c88a4b9d8e93491777e",
+      "response_markdown_sha256": "4425177345902d25bf299ad0a8ff7e22949e51099bea997040ac56cc58e3763a",
+      "rendered_dom_sha256": "903aeafa82139b212d777bbaeae78b515db98652110bfd64b58cfb842634269a",
+      "reason": "actual UI capture exposed synthetic blank-field prose and repeated shared labels",
+      "preserved": true
+    },
+    {
+      "path": "service-acord-form-fix-20260813-attempt-03",
+      "status": "fixed",
+      "preserved": true
+    }
+  ],
+  "validation": {
+    "python_story_and_real_corpus": {
+      "command": "HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false .venv/bin/pytest -q tests/stories/phase_03/test_p03_us06_forms_key_values.py tests/regression/phase_03/test_p03_us06_acord_form_read_order.py",
+      "result": "47 passed",
+      "duration_seconds": 37.02
+    },
+    "frontend_focused": {
+      "command": "node --experimental-strip-types --test tests/p03-us06-form-semantics.test.mts",
+      "result": "9 passed"
+    },
+    "frontend_unit": {
+      "command": "node --experimental-strip-types --test frontend/tests/*.test.mts",
+      "result": "161 passed"
+    },
+    "frontend_typecheck": "passed",
+    "frontend_lint": "passed",
+    "frontend_production_build_node_24_14_0": "passed",
+    "python_compileall": "passed"
+  },
+  "code_and_test_hashes": {
+    "app/services/form_semantics.py": "a1bcec367c518101c2a11c7b810ad15c1c49405f746c378ceea7dd9321e0700f",
+    "frontend/lib/form-semantics.ts": "5bb7f73fc0625e5f539b8bdde0a015e804121a6f548838382195b89c48520141",
+    "tests/fixtures/phase_03/form_semantics/oracle.py": "d44125b29297dd76c1936ee341c8f26095d0db339d565200145e59c4c1fcc144",
+    "tests/stories/phase_03/test_p03_us06_forms_key_values.py": "d190497494426d27670c38b74b55dcb7c4a8a9ce651cca9b17f68cf91b0c0d63",
+    "tests/regression/phase_03/test_p03_us06_acord_form_read_order.py": "41e762cdeff31edd6752aa571cfa00aafbdf2e6ca459953fddb41301383f1a2e",
+    "frontend/tests/p03-us06-form-semantics.test.mts": "95ff0118e1024dc7de5325a66d7338a57460011ced7583db6c8f7ddd57a6fb37"
+  },
+  "adjudication": {
+    "scoped_discrepancy": "fixed",
+    "acceptable_differences": [
+      "LlamaParse serializes this blank static region as raw HTML with three logical columns and row spans; the service raw Markdown uses explicit label/value cells while its semantic DOM restores the same row spans and source reading order.",
+      "The service JSON exposes typed form groups, fields, labels, blank value state, provenance, geometry, and canonical custody; the LlamaParse JSON envelope uses a different taxonomy."
+    ],
+    "analyzer_caveats": [
+      "Document-wide token counts are not a valid duplication signal for PRODUCER or INSURED because those words also occur in source prose and the coverage paragraph; exact-once checks must be scoped to the parties table/canonical block.",
+      "Generic JSON type-sequence or nested-path diffs do not establish a form-fidelity regression across these two schemas.",
+      "Blank source fields must be checked through JSON value_state and empty DOM cells, not by requiring synthetic placeholder text."
+    ],
+    "remaining_scoped_gaps": [],
+    "not_adjudicated_here": [
+      "the lower coverage grid and its table/form ownership",
+      "the ACORD logo and other visual-only content"
+    ]
+  }
+}

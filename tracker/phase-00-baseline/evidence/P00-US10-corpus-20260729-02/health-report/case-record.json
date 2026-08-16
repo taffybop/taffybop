@@ -1,0 +1,102 @@
+{
+  "case_id": "health-report",
+  "case_latency_ms": 7199.890125077218,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "health-report",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/health-report",
+    "--run-id",
+    "p00-us10-corpus-20260729-02",
+    "--order",
+    "8",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf"
+  ],
+  "completed_at_utc": "2026-07-29T08:47:23.712549+00:00",
+  "cpu_ms": 6013.853,
+  "environment_sha256": "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf",
+  "error": null,
+  "order": 8,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/health-report/our-output.md",
+      "role": "markdown",
+      "sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+      "size_bytes": 1897
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/health-report/our-output.json",
+      "role": "raw_json",
+      "sha256": "1cb81767e8bc77664220ca634d2090c1b4236519c3f54a6a1e4b3a7c06fb6536",
+      "size_bytes": 114680
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/health-report/our-output.json",
+      "role": "semantic_json",
+      "sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+      "size_bytes": 55446
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 7193.10212507844,
+  "peak_rss_bytes": 1505558528,
+  "reference_comparison": {
+    "case_id": "health-report",
+    "current_markdown_sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+    "current_semantic_json_sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+    "reference_semantic_json_sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-02",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/health-report.pdf",
+      "role": "source",
+      "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "size_bytes": 222282
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/health-report.md",
+      "role": "expert_markdown",
+      "sha256": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d",
+      "size_bytes": 6271
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/health-report.json",
+      "role": "expert_json",
+      "sha256": "e1b7c94e8eefc1eac9611222848cd2680eb70a4993a8a7d1710fa0b3783f45dc",
+      "size_bytes": 43114
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:47:16.512204+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

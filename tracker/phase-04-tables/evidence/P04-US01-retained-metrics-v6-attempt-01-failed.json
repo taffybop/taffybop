@@ -1,0 +1,94 @@
+{
+  "artifact_observation": {
+    "exists_immediately_after_failure": false,
+    "identity": null,
+    "path": "tracker/phase-04-tables/evidence/P04-US01-final-metrics.json"
+  },
+  "attempt_id": "P04-US01-retained-metrics-v6-attempt-01",
+  "candidate_custody": {
+    "administrative_freeze": {
+      "input_count": 59,
+      "manifest_sha256": "fd49b22916ffa677ccaf3c50431e8ea896fee6facf848e7435c3c36d86c8d862",
+      "total_bytes": 4292724
+    },
+    "final_code": {
+      "aggregate_sha256": "d2a97e20763a50b16f67cc9ab307c9754dd8e3d56aa23a0f63e4f638ef0ec83d",
+      "path_count": 61,
+      "total_bytes": 5324377
+    },
+    "focused_guard_test": {
+      "path": "tests/performance/test_p03_us08_provisional_latency_exception.py",
+      "sha256": "b81e85ec4fafa25d770fc2b1e2b4116f95700f5e9c2ea487d5826310881614e4",
+      "size_bytes": 351684
+    },
+    "metrics_fixture": {
+      "path": "tests/fixtures/phase_04/tables/metrics.py",
+      "sha256": "955383dd2b9ed4b778623fee652b72850a916713614e39f200cbff234c7cf28f",
+      "size_bytes": 397444
+    },
+    "metrics_test": {
+      "path": "tests/performance/test_p04_us01_table_metrics.py",
+      "sha256": "61a83c0b00e96e168eaf34cfd1a00f2f02a2f9bfbc9a701cb71158ff81080393",
+      "size_bytes": 281525
+    },
+    "phase03_guard": {
+      "path": "tests/fixtures/phase_03/running_regions/performance_exception.py",
+      "sha256": "e1bbb0f83c8a08d1b8093c755601fa3f5fa280d7de34f4053ef8a720f64d4c58",
+      "size_bytes": 679969
+    },
+    "phase03_semantic_isolation_renewal": {
+      "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-semantic-isolation-renewal.json",
+      "raw_sha256": "1482ceab7c557c2be73fb39e018b498b799225d8eebb8dc89548812fad81db65",
+      "semantic_sha256": "4c41e162cb395a7d07dce79e417c21f17f2c0ef39fd0bef8cee3f8fdb8755a61",
+      "size_bytes": 47973
+    }
+  },
+  "claims": {
+    "complete_gate_results_retained": false,
+    "completion_claimed": false,
+    "metrics_pass_claimed": false,
+    "partial_measurements_retained": false,
+    "relabelled_or_reused": false,
+    "semantic_identity_claimed": false,
+    "terminal_approval_claimed": false
+  },
+  "invocation": {
+    "argv": [
+      ".venv/bin/python",
+      "tests/fixtures/phase_04/tables/metrics.py",
+      "--workspace",
+      "/Users/vignesh/Downloads/taffybop",
+      "--generate-retained-report"
+    ],
+    "explicit_environment": {
+      "HF_HUB_OFFLINE": "1",
+      "P04_US01_RUN_REAL_METRICS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPATH": ".",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "rendered_command": "PYTHONPATH=. PYTHONDONTWRITEBYTECODE=1 P04_US01_RUN_REAL_METRICS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false .venv/bin/python tests/fixtures/phase_04/tables/metrics.py --workspace /Users/vignesh/Downloads/taffybop --generate-retained-report",
+    "working_directory": "/Users/vignesh/Downloads/taffybop"
+  },
+  "observed_date": "2026-08-06",
+  "outcome": {
+    "case_id": null,
+    "enabled_state": null,
+    "exit_code": null,
+    "partial_worker_state": null,
+    "private_inner_cause": null,
+    "status": "failed_closed",
+    "surfaced_exception": {
+      "message": "fresh P04-US01 worker category=external_monitor_failure error_type=RuntimeError",
+      "type": "RuntimeError"
+    }
+  },
+  "preservation": {
+    "phase03_failed_history_artifact_count": 55,
+    "phase03_failed_history_manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff",
+    "phase03_history_modified": false,
+    "phase05_authorized": false
+  },
+  "schema_id": "p04-us01-retained-metrics-failed-attempt-v1"
+}

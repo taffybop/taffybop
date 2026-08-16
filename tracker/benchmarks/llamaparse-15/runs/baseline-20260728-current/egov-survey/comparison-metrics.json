@@ -1,0 +1,1335 @@
+{
+  "case_id": "egov-survey",
+  "document": {
+    "expert_page_count": 1,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 1,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "egov-survey.pdf",
+    "source_page_count": 1
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 2,
+        "line": "<td>32 (16.6%)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>62 (32.1%)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>57 (29.5%)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>73 (37.8%)</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 2,
+        "line": "74 (38.3%)"
+      },
+      {
+        "count": 2,
+        "line": "57 (29.5%)"
+      },
+      {
+        "count": 2,
+        "line": "65 (33.7%)"
+      },
+      {
+        "count": 2,
+        "line": "59 (30.6%)"
+      },
+      {
+        "count": 2,
+        "line": "44 (22.8%)"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.75,
+      "item_count": 8,
+      "parse_concern_count": 2,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 5,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [
+            {
+              "details": "layout detected [text, chart, caption, footer, header] but no table/form",
+              "type": "layout_lvm_disagreement"
+            },
+            {
+              "details": "col 1 'Low EGDI': 6/6 (100%) have interior whitespace",
+              "type": "possible_merged_columns"
+            }
+          ],
+          "row_count": 7
+        }
+      ],
+      "type_counts": {
+        "footer": 1,
+        "header": 1,
+        "table": 1,
+        "text": 5
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.125,
+      "item_count": 8,
+      "parse_concern_count": 1,
+      "provenance_coverage": 1.0,
+      "tables": [],
+      "type_counts": {
+        "chart": 1,
+        "footer": 1,
+        "header": 1,
+        "text": 5
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 3476,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3052,
+        "candidate_tokens": 573,
+        "extra_token_counts": [
+          [
+            "egdi",
+            7
+          ],
+          [
+            "high",
+            4
+          ],
+          [
+            "20",
+            4
+          ],
+          [
+            "0",
+            3
+          ],
+          [
+            "7",
+            3
+          ],
+          [
+            "40",
+            3
+          ],
+          [
+            "60",
+            3
+          ],
+          [
+            "chapter",
+            2
+          ],
+          [
+            "2",
+            2
+          ],
+          [
+            "very",
+            2
+          ],
+          [
+            "middle",
+            2
+          ],
+          [
+            "low",
+            2
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "22",
+            2
+          ],
+          [
+            "80",
+            2
+          ],
+          [
+            "100",
+            2
+          ],
+          [
+            "120",
+            2
+          ],
+          [
+            "140",
+            2
+          ],
+          [
+            "160",
+            2
+          ],
+          [
+            "180",
+            2
+          ],
+          [
+            "200",
+            2
+          ],
+          [
+            "global",
+            1
+          ],
+          [
+            "trends",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "e",
+            1
+          ],
+          [
+            "government",
+            1
+          ],
+          [
+            "39",
+            1
+          ],
+          [
+            "76",
+            1
+          ],
+          [
+            "25",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            60
+          ],
+          [
+            "tr",
+            14
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "32",
+            2
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "62",
+            1
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "73",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7158133506156837,
+        "reference_chars": 3476,
+        "reference_tokens": 577,
+        "token_f1": 0.8365217391304348,
+        "token_multiset_overlap": 481,
+        "token_precision": 0.8394415357766143,
+        "token_recall": 0.8336221837088388
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 3052,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 2817,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 3476,
+        "candidate_tokens": 577,
+        "extra_token_counts": [
+          [
+            "td",
+            60
+          ],
+          [
+            "tr",
+            14
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "conveniences",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "egdi",
+            3
+          ],
+          [
+            "chapter",
+            2
+          ],
+          [
+            "2",
+            2
+          ],
+          [
+            "high",
+            2
+          ],
+          [
+            "37",
+            1
+          ],
+          [
+            "global",
+            1
+          ],
+          [
+            "trends",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "e",
+            1
+          ],
+          [
+            "very",
+            1
+          ],
+          [
+            "0",
+            1
+          ],
+          [
+            "low",
+            1
+          ],
+          [
+            "200",
+            1
+          ],
+          [
+            "180",
+            1
+          ],
+          [
+            "40",
+            1
+          ],
+          [
+            "20",
+            1
+          ],
+          [
+            "60",
+            1
+          ],
+          [
+            "160",
+            1
+          ],
+          [
+            "140",
+            1
+          ],
+          [
+            "120",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "80",
+            1
+          ],
+          [
+            "conveniemncieds",
+            1
+          ],
+          [
+            "dofl",
+            1
+          ],
+          [
+            "deig",
+            1
+          ],
+          [
+            "ietalg",
+            1
+          ],
+          [
+            "godveirnment",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7910497981157469,
+        "reference_chars": 2817,
+        "reference_tokens": 515,
+        "token_f1": 0.8846153846153847,
+        "token_multiset_overlap": 483,
+        "token_precision": 0.8370883882149047,
+        "token_recall": 0.9378640776699029
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3052,
+        "candidate_tokens": 573,
+        "extra_token_counts": [
+          [
+            "egdi",
+            4
+          ],
+          [
+            "7",
+            3
+          ],
+          [
+            "20",
+            3
+          ],
+          [
+            "high",
+            2
+          ],
+          [
+            "0",
+            2
+          ],
+          [
+            "middle",
+            2
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "29",
+            2
+          ],
+          [
+            "22",
+            2
+          ],
+          [
+            "40",
+            2
+          ],
+          [
+            "60",
+            2
+          ],
+          [
+            "government",
+            1
+          ],
+          [
+            "very",
+            1
+          ],
+          [
+            "39",
+            1
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "76",
+            1
+          ],
+          [
+            "25",
+            1
+          ],
+          [
+            "53",
+            1
+          ],
+          [
+            "2022",
+            1
+          ],
+          [
+            "44",
+            1
+          ],
+          [
+            "2024",
+            1
+          ],
+          [
+            "low",
+            1
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "2014",
+            1
+          ],
+          [
+            "15",
+            1
+          ],
+          [
+            "8",
+            1
+          ],
+          [
+            "4",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "74",
+            1
+          ],
+          [
+            "38",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "32",
+            2
+          ],
+          [
+            "37",
+            1
+          ],
+          [
+            "62",
+            1
+          ],
+          [
+            "73",
+            1
+          ],
+          [
+            "16",
+            1
+          ],
+          [
+            "conveniemncieds",
+            1
+          ],
+          [
+            "dofl",
+            1
+          ],
+          [
+            "deig",
+            1
+          ],
+          [
+            "ietalg",
+            1
+          ],
+          [
+            "godveirnment",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.754691231661549,
+        "reference_chars": 2817,
+        "reference_tokens": 515,
+        "token_f1": 0.9264705882352943,
+        "token_multiset_overlap": 504,
+        "token_precision": 0.8795811518324608,
+        "token_recall": 0.9786407766990292
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 3053,
+      "candidate_tokens": 573,
+      "extra_token_counts": [
+        [
+          "egdi",
+          7
+        ],
+        [
+          "high",
+          4
+        ],
+        [
+          "20",
+          4
+        ],
+        [
+          "0",
+          3
+        ],
+        [
+          "7",
+          3
+        ],
+        [
+          "40",
+          3
+        ],
+        [
+          "60",
+          3
+        ],
+        [
+          "chapter",
+          2
+        ],
+        [
+          "2",
+          2
+        ],
+        [
+          "very",
+          2
+        ],
+        [
+          "middle",
+          2
+        ],
+        [
+          "low",
+          2
+        ],
+        [
+          "5",
+          2
+        ],
+        [
+          "29",
+          2
+        ],
+        [
+          "22",
+          2
+        ],
+        [
+          "80",
+          2
+        ],
+        [
+          "100",
+          2
+        ],
+        [
+          "120",
+          2
+        ],
+        [
+          "140",
+          2
+        ],
+        [
+          "160",
+          2
+        ],
+        [
+          "180",
+          2
+        ],
+        [
+          "200",
+          2
+        ],
+        [
+          "global",
+          1
+        ],
+        [
+          "trends",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "e",
+          1
+        ],
+        [
+          "government",
+          1
+        ],
+        [
+          "39",
+          1
+        ],
+        [
+          "76",
+          1
+        ],
+        [
+          "25",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          60
+        ],
+        [
+          "tr",
+          14
+        ],
+        [
+          "th",
+          10
+        ],
+        [
+          "32",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "62",
+          1
+        ],
+        [
+          "year",
+          1
+        ],
+        [
+          "16",
+          1
+        ],
+        [
+          "73",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.7158133506156837,
+      "reference_chars": 3476,
+      "reference_tokens": 577,
+      "token_f1": 0.8365217391304348,
+      "token_multiset_overlap": 481,
+      "token_precision": 0.8394415357766143,
+      "token_recall": 0.8336221837088388
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 3053,
+      "candidate_tokens": 573,
+      "extra_token_counts": [
+        [
+          "egdi",
+          7
+        ],
+        [
+          "high",
+          4
+        ],
+        [
+          "20",
+          4
+        ],
+        [
+          "0",
+          3
+        ],
+        [
+          "7",
+          3
+        ],
+        [
+          "40",
+          3
+        ],
+        [
+          "60",
+          3
+        ],
+        [
+          "very",
+          2
+        ],
+        [
+          "middle",
+          2
+        ],
+        [
+          "low",
+          2
+        ],
+        [
+          "5",
+          2
+        ],
+        [
+          "29",
+          2
+        ],
+        [
+          "22",
+          2
+        ],
+        [
+          "80",
+          2
+        ],
+        [
+          "100",
+          2
+        ],
+        [
+          "120",
+          2
+        ],
+        [
+          "140",
+          2
+        ],
+        [
+          "160",
+          2
+        ],
+        [
+          "180",
+          2
+        ],
+        [
+          "200",
+          2
+        ],
+        [
+          "39",
+          1
+        ],
+        [
+          "76",
+          1
+        ],
+        [
+          "25",
+          1
+        ],
+        [
+          "53",
+          1
+        ],
+        [
+          "2022",
+          1
+        ],
+        [
+          "44",
+          1
+        ],
+        [
+          "2024",
+          1
+        ],
+        [
+          "2014",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "8",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          60
+        ],
+        [
+          "tr",
+          14
+        ],
+        [
+          "th",
+          10
+        ],
+        [
+          "32",
+          2
+        ],
+        [
+          "number",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "62",
+          1
+        ],
+        [
+          "year",
+          1
+        ],
+        [
+          "16",
+          1
+        ],
+        [
+          "73",
+          1
+        ],
+        [
+          "37",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.7204988807163415,
+      "reference_chars": 3561,
+      "reference_tokens": 591,
+      "token_f1": 0.8419243986254296,
+      "token_multiset_overlap": 490,
+      "token_precision": 0.8551483420593369,
+      "token_recall": 0.8291032148900169
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 3561,
+      "candidate_tokens": 591,
+      "extra_token_counts": [
+        [
+          "td",
+          60
+        ],
+        [
+          "tr",
+          14
+        ],
+        [
+          "th",
+          10
+        ],
+        [
+          "number",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "government",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "digital",
+          1
+        ],
+        [
+          "year",
+          1
+        ],
+        [
+          "conveniences",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "egdi",
+          3
+        ],
+        [
+          "high",
+          2
+        ],
+        [
+          "very",
+          1
+        ],
+        [
+          "0",
+          1
+        ],
+        [
+          "low",
+          1
+        ],
+        [
+          "200",
+          1
+        ],
+        [
+          "180",
+          1
+        ],
+        [
+          "40",
+          1
+        ],
+        [
+          "20",
+          1
+        ],
+        [
+          "60",
+          1
+        ],
+        [
+          "160",
+          1
+        ],
+        [
+          "140",
+          1
+        ],
+        [
+          "120",
+          1
+        ],
+        [
+          "100",
+          1
+        ],
+        [
+          "80",
+          1
+        ],
+        [
+          "conveniemncieds",
+          1
+        ],
+        [
+          "dofl",
+          1
+        ],
+        [
+          "deig",
+          1
+        ],
+        [
+          "ietalg",
+          1
+        ],
+        [
+          "godveirnment",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.7942250248921341,
+      "reference_chars": 2817,
+      "reference_tokens": 515,
+      "token_f1": 0.8896925858951176,
+      "token_multiset_overlap": 492,
+      "token_precision": 0.8324873096446701,
+      "token_recall": 0.9553398058252427
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 3053,
+      "candidate_tokens": 573,
+      "extra_token_counts": [
+        [
+          "egdi",
+          4
+        ],
+        [
+          "7",
+          3
+        ],
+        [
+          "20",
+          3
+        ],
+        [
+          "high",
+          2
+        ],
+        [
+          "0",
+          2
+        ],
+        [
+          "middle",
+          2
+        ],
+        [
+          "5",
+          2
+        ],
+        [
+          "29",
+          2
+        ],
+        [
+          "22",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "60",
+          2
+        ],
+        [
+          "government",
+          1
+        ],
+        [
+          "very",
+          1
+        ],
+        [
+          "39",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "76",
+          1
+        ],
+        [
+          "25",
+          1
+        ],
+        [
+          "53",
+          1
+        ],
+        [
+          "2022",
+          1
+        ],
+        [
+          "44",
+          1
+        ],
+        [
+          "2024",
+          1
+        ],
+        [
+          "low",
+          1
+        ],
+        [
+          "digital",
+          1
+        ],
+        [
+          "2014",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "8",
+          1
+        ],
+        [
+          "4",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "74",
+          1
+        ],
+        [
+          "38",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "32",
+          2
+        ],
+        [
+          "37",
+          1
+        ],
+        [
+          "62",
+          1
+        ],
+        [
+          "73",
+          1
+        ],
+        [
+          "16",
+          1
+        ],
+        [
+          "conveniemncieds",
+          1
+        ],
+        [
+          "dofl",
+          1
+        ],
+        [
+          "deig",
+          1
+        ],
+        [
+          "ietalg",
+          1
+        ],
+        [
+          "godveirnment",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.754691231661549,
+      "reference_chars": 2817,
+      "reference_tokens": 515,
+      "token_f1": 0.9264705882352943,
+      "token_multiset_overlap": 504,
+      "token_precision": 0.8795811518324608,
+      "token_recall": 0.9786407766990292
+    }
+  }
+}

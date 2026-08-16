@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "egov-survey",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "52fd5abf5bea1da78cadb031b477355446e2865c1d195979416432131b200a97",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "e4d7acf05d47c0b52c8d7466a861143a5f5da56feb57143c0140e0dc2721513c",
+      "html_sha256": "e0ab12e3446f09846e8fdcc6c1000476f37db5122bb41ee14f4cea5e53825d3b",
+      "text_sha256": "c12886b484b028e843e1f590ad0dce2998dc6d17803dc782e21ce2b95fb18df0"
+    }
+  ]
+}

@@ -1,0 +1,1753 @@
+{
+  "compatibility": {
+    "api_schema_hashes": {
+      "error_response": "3fde7027b8452307282b52870914475672aed4b4326018867fdf467922d1a5a6",
+      "openapi": "3c71271be81fc55e8f85229e1ffdf01ef6a7977c4638a87449617749a1a2983a",
+      "parse_result": "706a1f63bf77eaa6cc3f114b9b5c976d07d764de04a8beffa45cd2b04aafa91f"
+    },
+    "captured_at_utc": "2026-07-28T18:30:37Z",
+    "gates": [
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "tests/test_api.py",
+          "tests/test_serializer.py",
+          "tests/contract"
+        ],
+        "cwd": ".",
+        "evidence": "25 passed, 0 failed, 0 skipped, 1 Starlette deprecation warning in 0.35s.",
+        "fail_count": 0,
+        "gate_id": "backend_api_schema_serializer",
+        "pass_count": 25,
+        "runtime": "Python 3.13.5 / pytest 9.1.1 / FastAPI 0.139.2 / Pydantic 2.13.4",
+        "skip_count": 0,
+        "skip_records": [],
+        "status": "pass",
+        "warning_count": 1
+      },
+      {
+        "command": [
+          ".venv/bin/python",
+          "-m",
+          "pytest",
+          "-q"
+        ],
+        "cwd": ".",
+        "evidence": "156 passed, 0 failed, 10 explicitly enumerated opt-in integration skips, 1 Starlette deprecation warning in 8.75s.",
+        "fail_count": 0,
+        "gate_id": "backend_full_regression",
+        "pass_count": 156,
+        "runtime": "Python 3.13.5 / pytest 9.1.1 / FastAPI 0.139.2 / Pydantic 2.13.4",
+        "skip_count": 10,
+        "skip_records": [
+          {
+            "node_id": "tests/test_image_integration.py::test_real_text_form_and_table_image_preserves_available_content",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_image_integration.py::test_real_http_endpoint_accepts_image_multipart",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_image_integration.py::test_real_visual_classification_is_confidence_gated_and_non_fabricating[chart-chart]",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_image_integration.py::test_real_visual_classification_is_confidence_gated_and_non_fabricating[diagram-diagram]",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_image_integration.py::test_real_multipage_tiff_keeps_frame_order_and_markdown",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_image_integration.py::test_supplied_photo_cover_has_clean_primary_output_and_region_roles",
+            "opt_in_condition": "RUN_IMAGE_INTEGRATION=1",
+            "owner_role": "image-pipeline-maintainers",
+            "reason": "Set RUN_IMAGE_INTEGRATION=1 to run real image models."
+          },
+          {
+            "node_id": "tests/test_sample_integration.py::test_full_sample_pipeline_matches_reference_invariants",
+            "opt_in_condition": "RUN_INTEGRATION=1",
+            "owner_role": "backend-parser-maintainers",
+            "reason": "Set RUN_INTEGRATION=1 to run the Docling sample pipeline."
+          },
+          {
+            "node_id": "tests/test_sample_integration.py::test_generic_workaround_page_seven_preserves_complete_paragraph",
+            "opt_in_condition": "RUN_INTEGRATION=1",
+            "owner_role": "backend-parser-maintainers",
+            "reason": "Set RUN_INTEGRATION=1 to run the Docling regression pipeline."
+          },
+          {
+            "node_id": "tests/test_sample_integration.py::test_finance_pdf_retains_reference_pages_headings_and_tables",
+            "opt_in_condition": "RUN_INTEGRATION=1",
+            "owner_role": "backend-parser-maintainers",
+            "reason": "Set RUN_INTEGRATION=1 to run the finance PDF regression."
+          },
+          {
+            "node_id": "tests/test_shared_analysis_pipeline.py::test_real_direct_image_and_full_page_pdf_preserve_unique_title",
+            "opt_in_condition": "RUN_SHARED_ANALYSIS_INTEGRATION=1",
+            "owner_role": "shared-analysis-maintainers",
+            "reason": "Set RUN_SHARED_ANALYSIS_INTEGRATION=1 to run real cross-format OCR/layout parity."
+          }
+        ],
+        "status": "pass",
+        "warning_count": 1
+      },
+      {
+        "command": [
+          "/opt/homebrew/opt/node@24/bin/node",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "--pretty",
+          "false"
+        ],
+        "cwd": "frontend",
+        "evidence": "TypeScript no-emit check exited 0 with no diagnostics.",
+        "fail_count": 0,
+        "gate_id": "frontend_typecheck",
+        "pass_count": 1,
+        "runtime": "Node.js v24.18.0",
+        "skip_count": 0,
+        "skip_records": [],
+        "status": "pass",
+        "warning_count": 0
+      },
+      {
+        "command": [
+          "/opt/homebrew/opt/node@24/bin/node",
+          "node_modules/eslint/bin/eslint.js",
+          ".",
+          "--ignore-pattern",
+          "dist",
+          "--ignore-pattern",
+          ".next",
+          "--ignore-pattern",
+          "public/pdf.worker.min.mjs"
+        ],
+        "cwd": "frontend",
+        "evidence": "ESLint exited 0 with no diagnostics.",
+        "fail_count": 0,
+        "gate_id": "frontend_lint",
+        "pass_count": 1,
+        "runtime": "Node.js v24.18.0",
+        "skip_count": 0,
+        "skip_records": [],
+        "status": "pass",
+        "warning_count": 0
+      },
+      {
+        "command": [
+          "/opt/homebrew/opt/node@24/bin/node",
+          "--experimental-strip-types",
+          "--test",
+          "tests/*.test.mts"
+        ],
+        "cwd": "frontend",
+        "evidence": "27 passed, 0 failed, 0 skipped, 0 todo in 600.478ms.",
+        "fail_count": 0,
+        "gate_id": "frontend_unit",
+        "pass_count": 27,
+        "runtime": "Node.js v24.18.0",
+        "skip_count": 0,
+        "skip_records": [],
+        "status": "pass",
+        "warning_count": 0
+      }
+    ],
+    "schema_version": "1.0"
+  },
+  "duration_ms": {
+    "count": 5,
+    "maximum": 11955.22337500006,
+    "mean": 8871.063132956624,
+    "minimum": 7944.886165903881,
+    "p50": 8050.769750028849,
+    "p95": 11955.22337500006,
+    "percentile_method": "nearest_rank",
+    "unit": "ms"
+  },
+  "environment": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "logical_cpu_count": "10",
+    "machine": "arm64",
+    "node": "v24.18.0",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "pydantic": "2.13.4",
+    "pypdfium2": "5.12.1",
+    "pytest": "9.1.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+    "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+    "tesseract": "tesseract 5.5.3"
+  },
+  "execution_policy": {
+    "hf_hub_offline": true,
+    "hosted_services": "disabled",
+    "image_captioning": false,
+    "optional_models": "disabled",
+    "tokenizers_parallelism": false,
+    "transformers_offline": true
+  },
+  "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+  "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+  "fixture": {
+    "custody": "public-redistributable",
+    "fixture_id": "catastrophe-recap",
+    "schema_version": "1.0",
+    "source_format": "PDF",
+    "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e"
+  },
+  "generated_from_run_set": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/run-set.json",
+  "peak_rss_mib": {
+    "count": 5,
+    "maximum": 1428.328125,
+    "mean": 1407.21875,
+    "minimum": 1338.421875,
+    "p50": 1426.96875,
+    "p95": 1428.328125,
+    "percentile_method": "nearest_rank",
+    "unit": "MiB"
+  },
+  "quality_fail_count": 10,
+  "quality_pass_count": 5,
+  "quality_signature": "8507b5d0da5dfccda412b23757e091d59de7178899b3749305420649d9bbc998",
+  "reference_command": [
+    ".venv/bin/python",
+    "-m",
+    "tests.benchmarks.baseline_report",
+    "capture",
+    "--source",
+    "benchmark-expertmodeldata/catastrophe-recap.pdf",
+    "--truth",
+    "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+    "--runs-root",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728",
+    "--repeat",
+    "5",
+    "--node",
+    "/opt/homebrew/opt/node@24/bin/node"
+  ],
+  "report_id": "P00-US03-catastrophe-baseline",
+  "run_count": 5,
+  "runner_version": "P00-US03-1.0",
+  "runs": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "tests.benchmarks.baseline_report",
+        "worker",
+        "--source",
+        "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "--truth",
+        "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01",
+        "--run-id",
+        "catastrophe-cold-01",
+        "--node",
+        "/opt/homebrew/opt/node@24/bin/node"
+      ],
+      "completed_at_utc": "2026-07-28T18:27:40.389954+00:00",
+      "cpu_ms": 8450.889,
+      "cwd": ".",
+      "duration_ms": 11955.22337500006,
+      "environment": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "logical_cpu_count": "10",
+        "machine": "arm64",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+        "processor": "arm",
+        "pydantic": "2.13.4",
+        "pypdfium2": "5.12.1",
+        "pytest": "9.1.1",
+        "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "error": null,
+      "execution_policy": {
+        "hf_hub_offline": true,
+        "hosted_services": "disabled",
+        "image_captioning": false,
+        "optional_models": "disabled",
+        "tokenizers_parallelism": false,
+        "transformers_offline": true
+      },
+      "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "fixture_id": "catastrophe-recap",
+      "output": {
+        "backend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/our-output.md",
+        "backend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "backend_markdown_size_bytes": 2008,
+        "frontend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/frontend-markdown.md",
+        "frontend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "frontend_markdown_size_bytes": 2008,
+        "frontend_normalized_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/frontend-normalized.json",
+        "frontend_normalized_json_sha256": "deb96f5a15b8c53a8f7453c058b3fd8c46e8aebdce0aff42816d09e5645cf737",
+        "frontend_normalized_json_size_bytes": 112014,
+        "frontend_text_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/frontend-text.txt",
+        "frontend_text_sha256": "8e6cdbc380d86ebcfd0e3d79ee61cc76b584aea4c959078b5d4cdad1fd18eb45",
+        "frontend_text_size_bytes": 1965,
+        "raw_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/our-output.json",
+        "raw_json_sha256": "7964be2a299e187510231e73660cf61f29199b7ace6795b7e13463bb05827e29",
+        "raw_json_size_bytes": 79006,
+        "semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_size_bytes": 38325
+      },
+      "peak_rss_bytes": 1403437056,
+      "quality_checks": [
+        {
+          "category": "table",
+          "check_id": "exhibit_7_table_exact",
+          "evidence_ids": [
+            "exhibit-7-table"
+          ],
+          "expected": "One exact 6x5 Exhibit 7 table with 30 explicit cells.",
+          "gap_id": "catastrophe-positive-table",
+          "observed": "exact_table_match=True; table_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "text",
+          "check_id": "damaged_sentence_exact",
+          "evidence_ids": [
+            "damaged-sentence"
+          ],
+          "expected": "Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+          "gap_id": "GAP-UNICODE-001",
+          "observed": "output retains the corrupted 'É w' / '€ ' fragments",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_7_caption_separate",
+          "evidence_ids": [
+            "exhibit-7-title",
+            "exhibit-7-table"
+          ],
+          "expected": "Exhibit 7 title is a separate ordered caption.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "Exhibit 7 title omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_8_title_separate",
+          "evidence_ids": [
+            "exhibit-8-title",
+            "exhibit-8-chart"
+          ],
+          "expected": "Exhibit 8 title is separate from chart-internal OCR.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "title is merged into the chart item with internal noise",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "chart_source_note_present",
+          "evidence_ids": [
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Data: Aon Catastrophe Insight appears as a separate item after Exhibit 8.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "separate ordered source note omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_routed_as_chart",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Exactly one chart-typed Exhibit 8 item.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "chart_item_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_year_anchors_structured",
+          "evidence_ids": [
+            "chart-label-americas-2015",
+            "chart-label-americas-2020",
+            "chart-label-americas-2025",
+            "chart-label-apac-2015",
+            "chart-label-apac-2020",
+            "chart-label-apac-2025",
+            "chart-label-emea-2015",
+            "chart-label-emea-2020",
+            "chart-label-emea-2025",
+            "chart-label-usa-2015",
+            "chart-label-usa-2020",
+            "chart-label-usa-2025"
+          ],
+          "expected": "Twelve year anchors remain individually represented without a fused duplicate label stream.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "individual_year_anchor_count=12; fused_duplicate_present=True",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_1h_legend_present",
+          "evidence_ids": [
+            "chart-label-legend-1h"
+          ],
+          "expected": "The literal 1H legend label is retained.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "1H is absent; rejected raw OCR contains 'iH'",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_series_structured",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Chart labels, series, and marks expose structured associations.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "0 structured series; 9/14 printed labels survive as exact child strings",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "unsupported_chart_values_withheld",
+          "evidence_ids": [
+            "negative-unsupported-exact-value"
+          ],
+          "expected": "No unsupported exact Exhibit 8 value table or series is emitted.",
+          "gap_id": "catastrophe-safer-than-expert",
+          "observed": "0 unsupported structured chart values emitted",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_retained_in_json",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Accepted AON OCR remains available in JSON evidence.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "AON retained as image-level JSON evidence",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_present_in_markdown",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Primary Markdown preserves source-visible AON.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "generic image placeholder hides accepted AON OCR",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "page_identity",
+          "check_id": "printed_page_identity_distinct",
+          "evidence_ids": [
+            "printed-page-label"
+          ],
+          "expected": "Physical page 1 and printed page 7 are distinct structured fields.",
+          "gap_id": "GAP-PAGE-001",
+          "observed": "page_index=1; page_label=1; printed 7 remains footer text",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "diagnostics",
+          "check_id": "targeted_defect_diagnostics",
+          "evidence_ids": [
+            "damaged-sentence",
+            "exhibit-7-title",
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Material reviewed defects have localized structured diagnostics.",
+          "gap_id": "GAP-DIAGNOSTICS-001",
+          "observed": "document_warning_count=0; item_concern_count=1",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "serialization",
+          "check_id": "backend_frontend_markdown_parity",
+          "evidence_ids": [
+            "catastrophe-recap"
+          ],
+          "expected": "Frontend document Markdown is byte-identical to backend Markdown.",
+          "gap_id": "serializer-compatibility",
+          "observed": "byte-identical",
+          "passed": true,
+          "safety_guardrail": true
+        }
+      ],
+      "run_id": "catastrophe-cold-01",
+      "runner_version": "P00-US03-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "started_at_utc": "2026-07-28T18:27:28.264580+00:00",
+      "status": "success",
+      "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac",
+      "versions": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "pypdfium2": "5.12.1",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      }
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "tests.benchmarks.baseline_report",
+        "worker",
+        "--source",
+        "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "--truth",
+        "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02",
+        "--run-id",
+        "catastrophe-cold-02",
+        "--node",
+        "/opt/homebrew/opt/node@24/bin/node"
+      ],
+      "completed_at_utc": "2026-07-28T18:27:50.266820+00:00",
+      "cpu_ms": 7683.472000000001,
+      "cwd": ".",
+      "duration_ms": 8375.082082813606,
+      "environment": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "logical_cpu_count": "10",
+        "machine": "arm64",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+        "processor": "arm",
+        "pydantic": "2.13.4",
+        "pypdfium2": "5.12.1",
+        "pytest": "9.1.1",
+        "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "error": null,
+      "execution_policy": {
+        "hf_hub_offline": true,
+        "hosted_services": "disabled",
+        "image_captioning": false,
+        "optional_models": "disabled",
+        "tokenizers_parallelism": false,
+        "transformers_offline": true
+      },
+      "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "fixture_id": "catastrophe-recap",
+      "output": {
+        "backend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/our-output.md",
+        "backend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "backend_markdown_size_bytes": 2008,
+        "frontend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/frontend-markdown.md",
+        "frontend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "frontend_markdown_size_bytes": 2008,
+        "frontend_normalized_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/frontend-normalized.json",
+        "frontend_normalized_json_sha256": "89def140c8318e4ad280082a1da76cefe63f21f85f8aba8c7368696a8c96dffc",
+        "frontend_normalized_json_size_bytes": 112013,
+        "frontend_text_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/frontend-text.txt",
+        "frontend_text_sha256": "8e6cdbc380d86ebcfd0e3d79ee61cc76b584aea4c959078b5d4cdad1fd18eb45",
+        "frontend_text_size_bytes": 1965,
+        "raw_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/our-output.json",
+        "raw_json_sha256": "aba471440b59208aa6e2ff831e42fa4a02f84d9125f62ed19aae9615d3f550a5",
+        "raw_json_size_bytes": 79005,
+        "semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_size_bytes": 38325
+      },
+      "peak_rss_bytes": 1483751424,
+      "quality_checks": [
+        {
+          "category": "table",
+          "check_id": "exhibit_7_table_exact",
+          "evidence_ids": [
+            "exhibit-7-table"
+          ],
+          "expected": "One exact 6x5 Exhibit 7 table with 30 explicit cells.",
+          "gap_id": "catastrophe-positive-table",
+          "observed": "exact_table_match=True; table_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "text",
+          "check_id": "damaged_sentence_exact",
+          "evidence_ids": [
+            "damaged-sentence"
+          ],
+          "expected": "Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+          "gap_id": "GAP-UNICODE-001",
+          "observed": "output retains the corrupted 'É w' / '€ ' fragments",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_7_caption_separate",
+          "evidence_ids": [
+            "exhibit-7-title",
+            "exhibit-7-table"
+          ],
+          "expected": "Exhibit 7 title is a separate ordered caption.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "Exhibit 7 title omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_8_title_separate",
+          "evidence_ids": [
+            "exhibit-8-title",
+            "exhibit-8-chart"
+          ],
+          "expected": "Exhibit 8 title is separate from chart-internal OCR.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "title is merged into the chart item with internal noise",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "chart_source_note_present",
+          "evidence_ids": [
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Data: Aon Catastrophe Insight appears as a separate item after Exhibit 8.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "separate ordered source note omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_routed_as_chart",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Exactly one chart-typed Exhibit 8 item.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "chart_item_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_year_anchors_structured",
+          "evidence_ids": [
+            "chart-label-americas-2015",
+            "chart-label-americas-2020",
+            "chart-label-americas-2025",
+            "chart-label-apac-2015",
+            "chart-label-apac-2020",
+            "chart-label-apac-2025",
+            "chart-label-emea-2015",
+            "chart-label-emea-2020",
+            "chart-label-emea-2025",
+            "chart-label-usa-2015",
+            "chart-label-usa-2020",
+            "chart-label-usa-2025"
+          ],
+          "expected": "Twelve year anchors remain individually represented without a fused duplicate label stream.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "individual_year_anchor_count=12; fused_duplicate_present=True",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_1h_legend_present",
+          "evidence_ids": [
+            "chart-label-legend-1h"
+          ],
+          "expected": "The literal 1H legend label is retained.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "1H is absent; rejected raw OCR contains 'iH'",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_series_structured",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Chart labels, series, and marks expose structured associations.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "0 structured series; 9/14 printed labels survive as exact child strings",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "unsupported_chart_values_withheld",
+          "evidence_ids": [
+            "negative-unsupported-exact-value"
+          ],
+          "expected": "No unsupported exact Exhibit 8 value table or series is emitted.",
+          "gap_id": "catastrophe-safer-than-expert",
+          "observed": "0 unsupported structured chart values emitted",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_retained_in_json",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Accepted AON OCR remains available in JSON evidence.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "AON retained as image-level JSON evidence",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_present_in_markdown",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Primary Markdown preserves source-visible AON.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "generic image placeholder hides accepted AON OCR",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "page_identity",
+          "check_id": "printed_page_identity_distinct",
+          "evidence_ids": [
+            "printed-page-label"
+          ],
+          "expected": "Physical page 1 and printed page 7 are distinct structured fields.",
+          "gap_id": "GAP-PAGE-001",
+          "observed": "page_index=1; page_label=1; printed 7 remains footer text",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "diagnostics",
+          "check_id": "targeted_defect_diagnostics",
+          "evidence_ids": [
+            "damaged-sentence",
+            "exhibit-7-title",
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Material reviewed defects have localized structured diagnostics.",
+          "gap_id": "GAP-DIAGNOSTICS-001",
+          "observed": "document_warning_count=0; item_concern_count=1",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "serialization",
+          "check_id": "backend_frontend_markdown_parity",
+          "evidence_ids": [
+            "catastrophe-recap"
+          ],
+          "expected": "Frontend document Markdown is byte-identical to backend Markdown.",
+          "gap_id": "serializer-compatibility",
+          "observed": "byte-identical",
+          "passed": true,
+          "safety_guardrail": true
+        }
+      ],
+      "run_id": "catastrophe-cold-02",
+      "runner_version": "P00-US03-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "started_at_utc": "2026-07-28T18:27:41.723177+00:00",
+      "status": "success",
+      "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac",
+      "versions": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "pypdfium2": "5.12.1",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      }
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "tests.benchmarks.baseline_report",
+        "worker",
+        "--source",
+        "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "--truth",
+        "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03",
+        "--run-id",
+        "catastrophe-cold-03",
+        "--node",
+        "/opt/homebrew/opt/node@24/bin/node"
+      ],
+      "completed_at_utc": "2026-07-28T18:27:59.744988+00:00",
+      "cpu_ms": 7680.148000000001,
+      "cwd": ".",
+      "duration_ms": 8029.354291036725,
+      "environment": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "logical_cpu_count": "10",
+        "machine": "arm64",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+        "processor": "arm",
+        "pydantic": "2.13.4",
+        "pypdfium2": "5.12.1",
+        "pytest": "9.1.1",
+        "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "error": null,
+      "execution_policy": {
+        "hf_hub_offline": true,
+        "hosted_services": "disabled",
+        "image_captioning": false,
+        "optional_models": "disabled",
+        "tokenizers_parallelism": false,
+        "transformers_offline": true
+      },
+      "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "fixture_id": "catastrophe-recap",
+      "output": {
+        "backend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/our-output.md",
+        "backend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "backend_markdown_size_bytes": 2008,
+        "frontend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/frontend-markdown.md",
+        "frontend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "frontend_markdown_size_bytes": 2008,
+        "frontend_normalized_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/frontend-normalized.json",
+        "frontend_normalized_json_sha256": "3ded2f1ef709bd3160313ddc58d891581b57826d76e34f953faebc9f2b7fd4e1",
+        "frontend_normalized_json_size_bytes": 112013,
+        "frontend_text_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/frontend-text.txt",
+        "frontend_text_sha256": "8e6cdbc380d86ebcfd0e3d79ee61cc76b584aea4c959078b5d4cdad1fd18eb45",
+        "frontend_text_size_bytes": 1965,
+        "raw_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/our-output.json",
+        "raw_json_sha256": "809677ad89190b4a55996fef587717e26762f9e898ba3994c783720de767b613",
+        "raw_json_size_bytes": 79005,
+        "semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_size_bytes": 38325
+      },
+      "peak_rss_bytes": 1497710592,
+      "quality_checks": [
+        {
+          "category": "table",
+          "check_id": "exhibit_7_table_exact",
+          "evidence_ids": [
+            "exhibit-7-table"
+          ],
+          "expected": "One exact 6x5 Exhibit 7 table with 30 explicit cells.",
+          "gap_id": "catastrophe-positive-table",
+          "observed": "exact_table_match=True; table_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "text",
+          "check_id": "damaged_sentence_exact",
+          "evidence_ids": [
+            "damaged-sentence"
+          ],
+          "expected": "Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+          "gap_id": "GAP-UNICODE-001",
+          "observed": "output retains the corrupted 'É w' / '€ ' fragments",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_7_caption_separate",
+          "evidence_ids": [
+            "exhibit-7-title",
+            "exhibit-7-table"
+          ],
+          "expected": "Exhibit 7 title is a separate ordered caption.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "Exhibit 7 title omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_8_title_separate",
+          "evidence_ids": [
+            "exhibit-8-title",
+            "exhibit-8-chart"
+          ],
+          "expected": "Exhibit 8 title is separate from chart-internal OCR.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "title is merged into the chart item with internal noise",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "chart_source_note_present",
+          "evidence_ids": [
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Data: Aon Catastrophe Insight appears as a separate item after Exhibit 8.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "separate ordered source note omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_routed_as_chart",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Exactly one chart-typed Exhibit 8 item.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "chart_item_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_year_anchors_structured",
+          "evidence_ids": [
+            "chart-label-americas-2015",
+            "chart-label-americas-2020",
+            "chart-label-americas-2025",
+            "chart-label-apac-2015",
+            "chart-label-apac-2020",
+            "chart-label-apac-2025",
+            "chart-label-emea-2015",
+            "chart-label-emea-2020",
+            "chart-label-emea-2025",
+            "chart-label-usa-2015",
+            "chart-label-usa-2020",
+            "chart-label-usa-2025"
+          ],
+          "expected": "Twelve year anchors remain individually represented without a fused duplicate label stream.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "individual_year_anchor_count=12; fused_duplicate_present=True",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_1h_legend_present",
+          "evidence_ids": [
+            "chart-label-legend-1h"
+          ],
+          "expected": "The literal 1H legend label is retained.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "1H is absent; rejected raw OCR contains 'iH'",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_series_structured",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Chart labels, series, and marks expose structured associations.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "0 structured series; 9/14 printed labels survive as exact child strings",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "unsupported_chart_values_withheld",
+          "evidence_ids": [
+            "negative-unsupported-exact-value"
+          ],
+          "expected": "No unsupported exact Exhibit 8 value table or series is emitted.",
+          "gap_id": "catastrophe-safer-than-expert",
+          "observed": "0 unsupported structured chart values emitted",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_retained_in_json",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Accepted AON OCR remains available in JSON evidence.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "AON retained as image-level JSON evidence",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_present_in_markdown",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Primary Markdown preserves source-visible AON.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "generic image placeholder hides accepted AON OCR",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "page_identity",
+          "check_id": "printed_page_identity_distinct",
+          "evidence_ids": [
+            "printed-page-label"
+          ],
+          "expected": "Physical page 1 and printed page 7 are distinct structured fields.",
+          "gap_id": "GAP-PAGE-001",
+          "observed": "page_index=1; page_label=1; printed 7 remains footer text",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "diagnostics",
+          "check_id": "targeted_defect_diagnostics",
+          "evidence_ids": [
+            "damaged-sentence",
+            "exhibit-7-title",
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Material reviewed defects have localized structured diagnostics.",
+          "gap_id": "GAP-DIAGNOSTICS-001",
+          "observed": "document_warning_count=0; item_concern_count=1",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "serialization",
+          "check_id": "backend_frontend_markdown_parity",
+          "evidence_ids": [
+            "catastrophe-recap"
+          ],
+          "expected": "Frontend document Markdown is byte-identical to backend Markdown.",
+          "gap_id": "serializer-compatibility",
+          "observed": "byte-identical",
+          "passed": true,
+          "safety_guardrail": true
+        }
+      ],
+      "run_id": "catastrophe-cold-03",
+      "runner_version": "P00-US03-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "started_at_utc": "2026-07-28T18:27:51.562436+00:00",
+      "status": "success",
+      "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac",
+      "versions": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "pypdfium2": "5.12.1",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      }
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "tests.benchmarks.baseline_report",
+        "worker",
+        "--source",
+        "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "--truth",
+        "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04",
+        "--run-id",
+        "catastrophe-cold-04",
+        "--node",
+        "/opt/homebrew/opt/node@24/bin/node"
+      ],
+      "completed_at_utc": "2026-07-28T18:28:09.281556+00:00",
+      "cpu_ms": 7710.341,
+      "cwd": ".",
+      "duration_ms": 8050.769750028849,
+      "environment": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "logical_cpu_count": "10",
+        "machine": "arm64",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+        "processor": "arm",
+        "pydantic": "2.13.4",
+        "pypdfium2": "5.12.1",
+        "pytest": "9.1.1",
+        "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "error": null,
+      "execution_policy": {
+        "hf_hub_offline": true,
+        "hosted_services": "disabled",
+        "image_captioning": false,
+        "optional_models": "disabled",
+        "tokenizers_parallelism": false,
+        "transformers_offline": true
+      },
+      "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "fixture_id": "catastrophe-recap",
+      "output": {
+        "backend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/our-output.md",
+        "backend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "backend_markdown_size_bytes": 2008,
+        "frontend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/frontend-markdown.md",
+        "frontend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "frontend_markdown_size_bytes": 2008,
+        "frontend_normalized_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/frontend-normalized.json",
+        "frontend_normalized_json_sha256": "a05edc1bccfaa87d1a8ca8c713cefa06ceac8ec5265fb5e66be2b42c2dee75af",
+        "frontend_normalized_json_size_bytes": 112013,
+        "frontend_text_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/frontend-text.txt",
+        "frontend_text_sha256": "8e6cdbc380d86ebcfd0e3d79ee61cc76b584aea4c959078b5d4cdad1fd18eb45",
+        "frontend_text_size_bytes": 1965,
+        "raw_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/our-output.json",
+        "raw_json_sha256": "f069a05d3908e44a9eb54a3f989533abe225282ae9f9267b4dd2fd6104f9063e",
+        "raw_json_size_bytes": 79005,
+        "semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_size_bytes": 38325
+      },
+      "peak_rss_bytes": 1496694784,
+      "quality_checks": [
+        {
+          "category": "table",
+          "check_id": "exhibit_7_table_exact",
+          "evidence_ids": [
+            "exhibit-7-table"
+          ],
+          "expected": "One exact 6x5 Exhibit 7 table with 30 explicit cells.",
+          "gap_id": "catastrophe-positive-table",
+          "observed": "exact_table_match=True; table_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "text",
+          "check_id": "damaged_sentence_exact",
+          "evidence_ids": [
+            "damaged-sentence"
+          ],
+          "expected": "Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+          "gap_id": "GAP-UNICODE-001",
+          "observed": "output retains the corrupted 'É w' / '€ ' fragments",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_7_caption_separate",
+          "evidence_ids": [
+            "exhibit-7-title",
+            "exhibit-7-table"
+          ],
+          "expected": "Exhibit 7 title is a separate ordered caption.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "Exhibit 7 title omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_8_title_separate",
+          "evidence_ids": [
+            "exhibit-8-title",
+            "exhibit-8-chart"
+          ],
+          "expected": "Exhibit 8 title is separate from chart-internal OCR.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "title is merged into the chart item with internal noise",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "chart_source_note_present",
+          "evidence_ids": [
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Data: Aon Catastrophe Insight appears as a separate item after Exhibit 8.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "separate ordered source note omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_routed_as_chart",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Exactly one chart-typed Exhibit 8 item.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "chart_item_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_year_anchors_structured",
+          "evidence_ids": [
+            "chart-label-americas-2015",
+            "chart-label-americas-2020",
+            "chart-label-americas-2025",
+            "chart-label-apac-2015",
+            "chart-label-apac-2020",
+            "chart-label-apac-2025",
+            "chart-label-emea-2015",
+            "chart-label-emea-2020",
+            "chart-label-emea-2025",
+            "chart-label-usa-2015",
+            "chart-label-usa-2020",
+            "chart-label-usa-2025"
+          ],
+          "expected": "Twelve year anchors remain individually represented without a fused duplicate label stream.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "individual_year_anchor_count=12; fused_duplicate_present=True",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_1h_legend_present",
+          "evidence_ids": [
+            "chart-label-legend-1h"
+          ],
+          "expected": "The literal 1H legend label is retained.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "1H is absent; rejected raw OCR contains 'iH'",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_series_structured",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Chart labels, series, and marks expose structured associations.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "0 structured series; 9/14 printed labels survive as exact child strings",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "unsupported_chart_values_withheld",
+          "evidence_ids": [
+            "negative-unsupported-exact-value"
+          ],
+          "expected": "No unsupported exact Exhibit 8 value table or series is emitted.",
+          "gap_id": "catastrophe-safer-than-expert",
+          "observed": "0 unsupported structured chart values emitted",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_retained_in_json",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Accepted AON OCR remains available in JSON evidence.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "AON retained as image-level JSON evidence",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_present_in_markdown",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Primary Markdown preserves source-visible AON.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "generic image placeholder hides accepted AON OCR",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "page_identity",
+          "check_id": "printed_page_identity_distinct",
+          "evidence_ids": [
+            "printed-page-label"
+          ],
+          "expected": "Physical page 1 and printed page 7 are distinct structured fields.",
+          "gap_id": "GAP-PAGE-001",
+          "observed": "page_index=1; page_label=1; printed 7 remains footer text",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "diagnostics",
+          "check_id": "targeted_defect_diagnostics",
+          "evidence_ids": [
+            "damaged-sentence",
+            "exhibit-7-title",
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Material reviewed defects have localized structured diagnostics.",
+          "gap_id": "GAP-DIAGNOSTICS-001",
+          "observed": "document_warning_count=0; item_concern_count=1",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "serialization",
+          "check_id": "backend_frontend_markdown_parity",
+          "evidence_ids": [
+            "catastrophe-recap"
+          ],
+          "expected": "Frontend document Markdown is byte-identical to backend Markdown.",
+          "gap_id": "serializer-compatibility",
+          "observed": "byte-identical",
+          "passed": true,
+          "safety_guardrail": true
+        }
+      ],
+      "run_id": "catastrophe-cold-04",
+      "runner_version": "P00-US03-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "started_at_utc": "2026-07-28T18:28:01.065820+00:00",
+      "status": "success",
+      "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac",
+      "versions": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "pypdfium2": "5.12.1",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      }
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "tests.benchmarks.baseline_report",
+        "worker",
+        "--source",
+        "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "--truth",
+        "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05",
+        "--run-id",
+        "catastrophe-cold-05",
+        "--node",
+        "/opt/homebrew/opt/node@24/bin/node"
+      ],
+      "completed_at_utc": "2026-07-28T18:28:18.729704+00:00",
+      "cpu_ms": 7588.803,
+      "cwd": ".",
+      "duration_ms": 7944.886165903881,
+      "environment": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "logical_cpu_count": "10",
+        "machine": "arm64",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+        "processor": "arm",
+        "pydantic": "2.13.4",
+        "pypdfium2": "5.12.1",
+        "pytest": "9.1.1",
+        "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      },
+      "error": null,
+      "execution_policy": {
+        "hf_hub_offline": true,
+        "hosted_services": "disabled",
+        "image_captioning": false,
+        "optional_models": "disabled",
+        "tokenizers_parallelism": false,
+        "transformers_offline": true
+      },
+      "expert_json_sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "expert_markdown_sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "fixture_id": "catastrophe-recap",
+      "output": {
+        "backend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/our-output.md",
+        "backend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "backend_markdown_size_bytes": 2008,
+        "frontend_markdown_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/frontend-markdown.md",
+        "frontend_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "frontend_markdown_size_bytes": 2008,
+        "frontend_normalized_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/frontend-normalized.json",
+        "frontend_normalized_json_sha256": "2aa460cb321b7bb38f7786bcc62e05c0f640aec18ada053cd64c05a388fa9293",
+        "frontend_normalized_json_size_bytes": 112013,
+        "frontend_text_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/frontend-text.txt",
+        "frontend_text_sha256": "8e6cdbc380d86ebcfd0e3d79ee61cc76b584aea4c959078b5d4cdad1fd18eb45",
+        "frontend_text_size_bytes": 1965,
+        "raw_json_path": "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/our-output.json",
+        "raw_json_sha256": "6cc98e525563bc439a701af5d15569d3e78a14807f5c8de39efc087207ea1cdf",
+        "raw_json_size_bytes": 79005,
+        "semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_size_bytes": 38325
+      },
+      "peak_rss_bytes": 1496285184,
+      "quality_checks": [
+        {
+          "category": "table",
+          "check_id": "exhibit_7_table_exact",
+          "evidence_ids": [
+            "exhibit-7-table"
+          ],
+          "expected": "One exact 6x5 Exhibit 7 table with 30 explicit cells.",
+          "gap_id": "catastrophe-positive-table",
+          "observed": "exact_table_match=True; table_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "text",
+          "check_id": "damaged_sentence_exact",
+          "evidence_ids": [
+            "damaged-sentence"
+          ],
+          "expected": "Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+          "gap_id": "GAP-UNICODE-001",
+          "observed": "output retains the corrupted 'É w' / '€ ' fragments",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_7_caption_separate",
+          "evidence_ids": [
+            "exhibit-7-title",
+            "exhibit-7-table"
+          ],
+          "expected": "Exhibit 7 title is a separate ordered caption.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "Exhibit 7 title omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "exhibit_8_title_separate",
+          "evidence_ids": [
+            "exhibit-8-title",
+            "exhibit-8-chart"
+          ],
+          "expected": "Exhibit 8 title is separate from chart-internal OCR.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "title is merged into the chart item with internal noise",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "layout",
+          "check_id": "chart_source_note_present",
+          "evidence_ids": [
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Data: Aon Catastrophe Insight appears as a separate item after Exhibit 8.",
+          "gap_id": "GAP-LAYOUT-001",
+          "observed": "separate ordered source note omitted",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_routed_as_chart",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Exactly one chart-typed Exhibit 8 item.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "chart_item_count=1",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_year_anchors_structured",
+          "evidence_ids": [
+            "chart-label-americas-2015",
+            "chart-label-americas-2020",
+            "chart-label-americas-2025",
+            "chart-label-apac-2015",
+            "chart-label-apac-2020",
+            "chart-label-apac-2025",
+            "chart-label-emea-2015",
+            "chart-label-emea-2020",
+            "chart-label-emea-2025",
+            "chart-label-usa-2015",
+            "chart-label-usa-2020",
+            "chart-label-usa-2025"
+          ],
+          "expected": "Twelve year anchors remain individually represented without a fused duplicate label stream.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "individual_year_anchor_count=12; fused_duplicate_present=True",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_1h_legend_present",
+          "evidence_ids": [
+            "chart-label-legend-1h"
+          ],
+          "expected": "The literal 1H legend label is retained.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "1H is absent; rejected raw OCR contains 'iH'",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "chart_series_structured",
+          "evidence_ids": [
+            "exhibit-8-chart"
+          ],
+          "expected": "Chart labels, series, and marks expose structured associations.",
+          "gap_id": "GAP-CHART-001",
+          "observed": "0 structured series; 9/14 printed labels survive as exact child strings",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "chart",
+          "check_id": "unsupported_chart_values_withheld",
+          "evidence_ids": [
+            "negative-unsupported-exact-value"
+          ],
+          "expected": "No unsupported exact Exhibit 8 value table or series is emitted.",
+          "gap_id": "catastrophe-safer-than-expert",
+          "observed": "0 unsupported structured chart values emitted",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_retained_in_json",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Accepted AON OCR remains available in JSON evidence.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "AON retained as image-level JSON evidence",
+          "passed": true,
+          "safety_guardrail": true
+        },
+        {
+          "category": "visual",
+          "check_id": "logo_aon_present_in_markdown",
+          "evidence_ids": [
+            "logo-aon"
+          ],
+          "expected": "Primary Markdown preserves source-visible AON.",
+          "gap_id": "GAP-VISUAL-001",
+          "observed": "generic image placeholder hides accepted AON OCR",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "page_identity",
+          "check_id": "printed_page_identity_distinct",
+          "evidence_ids": [
+            "printed-page-label"
+          ],
+          "expected": "Physical page 1 and printed page 7 are distinct structured fields.",
+          "gap_id": "GAP-PAGE-001",
+          "observed": "page_index=1; page_label=1; printed 7 remains footer text",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "diagnostics",
+          "check_id": "targeted_defect_diagnostics",
+          "evidence_ids": [
+            "damaged-sentence",
+            "exhibit-7-title",
+            "chart-source-note",
+            "exhibit-8-chart"
+          ],
+          "expected": "Material reviewed defects have localized structured diagnostics.",
+          "gap_id": "GAP-DIAGNOSTICS-001",
+          "observed": "document_warning_count=0; item_concern_count=1",
+          "passed": false,
+          "safety_guardrail": false
+        },
+        {
+          "category": "serialization",
+          "check_id": "backend_frontend_markdown_parity",
+          "evidence_ids": [
+            "catastrophe-recap"
+          ],
+          "expected": "Frontend document Markdown is byte-identical to backend Markdown.",
+          "gap_id": "serializer-compatibility",
+          "observed": "byte-identical",
+          "passed": true,
+          "safety_guardrail": true
+        }
+      ],
+      "run_id": "catastrophe-cold-05",
+      "runner_version": "P00-US03-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "started_at_utc": "2026-07-28T18:28:10.620467+00:00",
+      "status": "success",
+      "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac",
+      "versions": {
+        "application": "0.1.0",
+        "docling": "2.114.0",
+        "docling-core": "2.87.1",
+        "node": "v24.18.0",
+        "pdfplumber": "0.11.10",
+        "pillow": "12.3.0",
+        "pypdfium2": "5.12.1",
+        "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+        "tesseract": "tesseract 5.5.3"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "source_rights_sha256": "a8176f88ca7bebd7b9c5fa28b88db064570c603c926fcd2e0f65f943fbb573ff",
+  "stability": {
+    "backend_markdown_hashes_stable": true,
+    "fixture_hashes_stable": true,
+    "frontend_markdown_hashes_stable": true,
+    "frontend_normalized_json_unique_hash_count": 5,
+    "frontend_text_hashes_stable": true,
+    "quality_outcomes_stable": true,
+    "raw_json_unique_hash_count": 5,
+    "semantic_json_hashes_stable": true,
+    "volatility_allowlist": [
+      "/processing/duration_ms"
+    ]
+  },
+  "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac"
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "level": "log",
+    "message": "setting backend url https://api.cloud.llamaindex.ai",
+    "timestamp": "2026-08-13T14:04:23.321Z",
+    "url": "https://cloud.llamaindex.ai/_next/static/chunks/6938-fe15b55b496eea7e.js"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:04:23.322Z",
+    "url": "https://cloud.llamaindex.ai/_next/static/chunks/5604-6bf3a4c9bf6171fe.js"
+  },
+  {
+    "level": "log",
+    "message": "%cWelcome to Llamacloud font-size: 24px; font-weight: bold; background: linear-gradient(176.57deg, #F4E0D9 15.72%, #F98BE7 39.65%, #64DFFC 62.5%, #8399F3 84.28%); color: white; padding: 10px 20px; border-radius: 10px;",
+    "timestamp": "2026-08-13T14:04:23.322Z",
+    "url": "https://cloud.llamaindex.ai/_next/static/chunks/6938-fe15b55b496eea7e.js"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780"
+  },
+  {
+    "level": "log",
+    "message": "body",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  },
+  {
+    "level": "log",
+    "message": "Extension: Message listener registered successfully",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:04:23.323Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  },
+  {
+    "level": "log",
+    "message": "setting backend url https://api.cloud.llamaindex.ai",
+    "timestamp": "2026-08-13T14:31:12.274Z",
+    "url": "https://cloud.llamaindex.ai/_next/static/chunks/6938-fe15b55b496eea7e.js"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:31:13.327Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-14b0cvq6kxwvp0khz6m4luax0q47"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:31:13.327Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-14b0cvq6kxwvp0khz6m4luax0q47"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:31:13.327Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-14b0cvq6kxwvp0khz6m4luax0q47"
+  },
+  {
+    "level": "error",
+    "message": "Error: Access to storage is not allowed from this context.",
+    "timestamp": "2026-08-13T14:31:13.327Z",
+    "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-14b0cvq6kxwvp0khz6m4luax0q47"
+  },
+  {
+    "level": "log",
+    "message": "body",
+    "timestamp": "2026-08-13T14:31:13.334Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  },
+  {
+    "level": "log",
+    "message": "Extension: Message listener registered successfully",
+    "timestamp": "2026-08-13T14:31:13.349Z",
+    "url": "chrome-extension://cdanebjdgmnmngofmbamppbjigkellmi/content-scripts/content.js"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:31:13.593Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  },
+  {
+    "level": "log",
+    "message": "%cWelcome to Llamacloud font-size: 24px; font-weight: bold; background: linear-gradient(176.57deg, #F4E0D9 15.72%, #F98BE7 39.65%, #64DFFC 62.5%, #8399F3 84.28%); color: white; padding: 10px 20px; border-radius: 10px;",
+    "timestamp": "2026-08-13T14:31:13.593Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:31:14.245Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat",
+    "timestamp": "2026-08-13T14:33:05.394Z",
+    "url": "https://cloud.llamaindex.ai/xph/static/posthog-recorder.js?v=1.415.5"
+  }
+]

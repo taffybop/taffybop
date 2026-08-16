@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-g66fg3bwy8plzgmslyhwfhb4taoe",
+    "created_at": "2026-08-13T06:22:47.801466Z",
+    "updated_at": "2026-08-13T06:23:04.352451Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "health-report.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 1,
+  "captured_at": "2026-08-13T06:25:56.591Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-g66fg3bwy8plzgmslyhwfhb4taoe?fileName=health-report.pdf"
+}

@@ -1,0 +1,14 @@
+{
+  "closure_blocker_count": 3,
+  "closure_record": "comparison/closure-record.json",
+  "final_frozen_all_15_campaign": "pending",
+  "fresh_llamaparse_job": "pjb-frndkxx9xo4bww7bjg78oxfvhqqe",
+  "fresh_service_status": "success",
+  "immediate_affected_benchmark_attempt_result": "pass",
+  "immutable": true,
+  "overall_defect_status": "Validating",
+  "run_id": "20260813T151137Z-FFD-011-focused",
+  "status": "targeted_pass_overall_closure_blocked",
+  "targeted_review_status": "pass",
+  "wave_a_all_15_drift_gate": "pending"
+}

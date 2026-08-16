@@ -1,0 +1,102 @@
+{
+  "case_id": "settlement-agreement",
+  "case_latency_ms": 5841.13858290948,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "settlement-agreement",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/settlement-agreement",
+    "--run-id",
+    "p00-us10-corpus-20260729-03",
+    "--order",
+    "14",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:54:34.439836+00:00",
+  "cpu_ms": 6141.064,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 14,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/settlement-agreement/our-output.md",
+      "role": "markdown",
+      "sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+      "size_bytes": 3144
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/settlement-agreement/our-output.json",
+      "role": "raw_json",
+      "sha256": "bb37edba82549e2dd0cfd1275c16de33a5208508a3848e4ff7da82217c35cdb1",
+      "size_bytes": 23135
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/settlement-agreement/our-output.json",
+      "role": "semantic_json",
+      "sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+      "size_bytes": 14798
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 5838.7862499803305,
+  "peak_rss_bytes": 1479999488,
+  "reference_comparison": {
+    "case_id": "settlement-agreement",
+    "current_markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+    "current_semantic_json_sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+    "reference_semantic_json_sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+      "role": "source",
+      "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "size_bytes": 164483
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/settlement-agreement.md",
+      "role": "expert_markdown",
+      "sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+      "size_bytes": 3210
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/settlement-agreement.json",
+      "role": "expert_json",
+      "sha256": "cca63534b7853e8ea64ce106dc82629ce3172bfdaba8353cf7b7881d7af137ae",
+      "size_bytes": 25242
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:54:28.598289+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

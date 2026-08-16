@@ -1,0 +1,33 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "ny-timetable",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "4ab820aca7683116dc8426526e3223217d45695eddcf81a8c22f6ffeb1960308",
+  "page_count": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "ed04bff795059537fe94d9424ab87662d15440a7aad1d568fa5dddff516714de",
+      "html_sha256": "bc4235051e28f55232d24f080fe91ccee04650870d81379cceb67446a0d79604",
+      "text_sha256": "550e4a9d8a1237f35cd354d7b8d4ad704d46accf8f48fbf95bdca27f4a2c9f5a"
+    },
+    {
+      "page_number": 2,
+      "artifact": "pages/page-2/rendered-dom.json",
+      "artifact_sha256": "0a5b455f78fbcf59ee4565e01dd1b5e2a822f95eb20c260c323bce9decbbf5e7",
+      "html_sha256": "2f22c2075d4a38f759fca12df0cd424169ad82e6fb528ec7f72ab9103f1b34b6",
+      "text_sha256": "cd9f40c8d036b3f7400d8efbe9ed5facac47615e569309a3a54c6cc725982ec9"
+    },
+    {
+      "page_number": 3,
+      "artifact": "pages/page-3/rendered-dom.json",
+      "artifact_sha256": "b8e15822f511014db82f3b0bb19c9d7151010080fbff37adee3b310cfa7ab720",
+      "html_sha256": "5dac4d4a59714016e7c08a1c92e7f5879402daf0e6d2774928afae55fd300bd5",
+      "text_sha256": "48d8230e54e9f89bc57a130ec93138b35f9205a0f0391b1cfd680478322574f3"
+    }
+  ]
+}

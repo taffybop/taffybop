@@ -1,0 +1,9 @@
+{
+  "schema_version": "parser-nonproduction-hosted-policy-selection-v1",
+  "profile_id": "p08-candidate-manifest-bound-hosted-v1",
+  "environment": "non_production",
+  "hosted_enabled": true,
+  "default_decision": "deny",
+  "required_gateway": "manifest_bound_release_gateway",
+  "maximum_transport_calls_on_denial": 0
+}

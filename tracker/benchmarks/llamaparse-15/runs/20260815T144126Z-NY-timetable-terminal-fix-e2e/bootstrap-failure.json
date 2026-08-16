@@ -1,0 +1,50 @@
+{
+  "schema_id": "ny-timetable-diagnostic-bootstrap-failure-v1",
+  "classification": "pre-request-diagnostic-bootstrap-failure",
+  "recorded_at": "2026-08-15T14:42:30Z",
+  "output_directory": "tracker/benchmarks/llamaparse-15/runs/20260815T144126Z-NY-timetable-terminal-fix-e2e",
+  "started_at": "2026-08-15T14:41:31.815081Z",
+  "worker_pid": 20173,
+  "worker_exited": true,
+  "exit_code": 1,
+  "wall_seconds": 0.763119542,
+  "command": [
+    "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+    "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+    "--source",
+    "benchmark-expertmodeldata/ny-timetable.pdf",
+    "--profile-script",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt",
+    "--output-dir",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T144126Z-NY-timetable-terminal-fix-e2e"
+  ],
+  "failure": {
+    "type": "ModuleNotFoundError",
+    "message": "No module named 'tests'",
+    "site": "tests/benchmarks/ny_timetable_stage_diagnostic.py:_attempt importing tests.benchmarks.latency_contracts",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/vignesh/Downloads/taffybop/tests/benchmarks/ny_timetable_stage_diagnostic.py\", line 2558, in <module>\n    raise SystemExit(main())\n  File \"/Users/vignesh/Downloads/taffybop/tests/benchmarks/ny_timetable_stage_diagnostic.py\", line 2554, in main\n    return run(parser.parse_args())\n  File \"/Users/vignesh/Downloads/taffybop/tests/benchmarks/ny_timetable_stage_diagnostic.py\", line 2434, in run\n    _attempt(...)\n  File \"/Users/vignesh/Downloads/taffybop/tests/benchmarks/ny_timetable_stage_diagnostic.py\", line 1867, in _attempt\n    from tests.benchmarks.latency_contracts import StageStatus\nModuleNotFoundError: No module named 'tests'\n"
+  },
+  "request_evidence": {
+    "attempt_directory_count": 0,
+    "http_request_count": 0,
+    "cold_request_count": 0,
+    "warm_request_count": 0,
+    "retry_count": 0,
+    "ports_touched": [],
+    "basis": "failure occurred before the first _attempt request setup and no attempt-* directory or response artifact exists"
+  },
+  "harness_sha256": "923b0440a83ea2df6803048f8d510da6d8df0073745af6ae6aca2d2fe80f49d1",
+  "pre_record_artifact_manifest": {
+    "schema_id": "ny-timetable-diagnostic-artifact-manifest-v1",
+    "artifact_count": 5,
+    "aggregate_sha256": "df8a7a363d78e73103eae3d65c01643c8854cad30c6c0114e63f3455166573d4",
+    "artifacts": [
+      {"path": "effective-settings.json", "size_bytes": 7800, "sha256": "0eddd9d57639acc01a6325f2722d85ab7d893c2c463087d9c16c65e0692aabd2"},
+      {"path": "host-pre.json", "size_bytes": 9074, "sha256": "926b63f24a3feb2fdfd51b1ae011470413897c0fbd448a1509018dc2523c9da5"},
+      {"path": "identity.json", "size_bytes": 37654, "sha256": "fdca70d136ccbb800eb0b8151193dd8ce23acb5c870bec049328233455ca5b25"},
+      {"path": "profile-script.txt", "size_bytes": 2062, "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"},
+      {"path": "resource-samples.ndjson", "size_bytes": 601, "sha256": "d949fd3493a7cd1f48cf925e5c60f7aba409f2d39fd78dda093e6a3a61a71f8a"}
+    ]
+  },
+  "replacement_relationship": "A separately authorized replacement evidence run may use module execution; it is not a parse retry because this worker issued zero parse requests."
+}

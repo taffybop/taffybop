@@ -1,0 +1,208 @@
+{
+  "schema_version": "functional-fidelity-final-validation-v1",
+  "generated_at_utc": "2026-08-13T09:12:08Z",
+  "scope": "Backend functional fidelity only; latency, CPU, memory, and performance hardening excluded.",
+  "service_artifact_root": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813",
+  "service_profile": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-profile.json",
+  "source_manifest": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/artifact-manifest-final-source-grounded.json",
+  "validated_tree_sha256": {
+    "command": "shasum -a 256 app/services/pipeline.py app/services/text_run_semantics.py app/services/visual_source_text.py app/models.py tests/regression/phase_04/test_p04_us01_public_projection_regression.py tests/stories/phase_03/test_p03_us05_adversarial.py tests/stories/phase_03/test_p03_us05_redline_runs.py tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py",
+    "captured_at_utc": "2026-08-13T09:12:08Z",
+    "files": {
+      "app/services/pipeline.py": "8fe5731fa4142fd00e1801afd394d9743efd542a57275b82e51c445b04e39414",
+      "app/services/text_run_semantics.py": "2b91ab8e4f564b4406a1cd495031725f1e5af41ffb644abdc99f9eb9d9c1ecc5",
+      "app/services/visual_source_text.py": "0bb2590aaccfe801fe3c13468a83b6565e8b7e3cf749f1cf9c775ac5771eaf97",
+      "app/models.py": "5d8b9cf1efa85edebb5a104d8e20aac6da01be27cb04f6c967114b85d310d472",
+      "tests/regression/phase_04/test_p04_us01_public_projection_regression.py": "c28dd8b451b4b7644979557abc4815b0f21262186581ae6f8905274837cd4e38",
+      "tests/stories/phase_03/test_p03_us05_adversarial.py": "04c20670e9512fb3307eb90d9a2c3fc1ae855ae74dbc25910783653135c3d512",
+      "tests/stories/phase_03/test_p03_us05_redline_runs.py": "27909d4db219069edf285ffd2ccee6bc5c076d4980f3bec0c250450904dd20bb",
+      "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py": "481aa17ac8facac8dfab5b783b9161ffc2d6dcadda633ef80ce56537b9ff4ab6"
+    }
+  },
+  "test_runs": [
+    {
+      "id": "backend-functional-slice-initial",
+      "kind": "deterministic",
+      "command": ".venv/bin/python -m pytest -q -m 'not integration' tests/test_api.py tests/test_image_quality.py tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py tests/contract/test_p03_us02_visual_relationship_contract.py tests/stories/phase_03/test_p03_us02_visual_children.py tests/contract/test_p03_us05_target_path_order_interop.py tests/contract/test_p03_us05_text_run_contract.py tests/stories/phase_03/test_p03_us05_adversarial.py tests/stories/phase_03/test_p03_us05_algorithm_hardening.py tests/stories/phase_03/test_p03_us05_redline_runs.py tests/contract/test_p03_us06_form_semantics_contract.py tests/stories/phase_03/test_p03_us06_acroform_raw.py tests/stories/phase_03/test_p03_us06_acroform_security.py tests/stories/phase_03/test_p03_us06_form_source_security.py tests/stories/phase_03/test_p03_us06_forms_key_values.py tests/stories/phase_03/test_p03_us06_group_caps.py tests/contract/test_p03_us08_api_model_strictness.py tests/contract/test_p03_us08_running_region_contract.py tests/stories/phase_03/test_p03_us08_running_regions.py tests/regression/phase_03/test_p03_us08_real_running_regions.py tests/regression/phase_04/test_functional_fidelity_table_regressions.py tests/stories/phase_04/test_p04_us01_span_fidelity.py tests/stories/phase_04/test_p04_us01_table_input_recovery.py tests/stories/phase_04/test_p04_us01_table_repair_word_bounds.py tests/stories/phase_04/test_p04_us02_table_reconciliation.py tests/stories/phase_04/test_p04_us03_continued_tables.py tests/stories/phase_04/test_p04_us04_table_candidate_gate.py tests/stories/phase_05/test_p05_visual_source_text.py tests/stories/phase_05/test_p05_us01_visual_schema.py tests/stories/phase_05/test_p05_us10_diagram_topology.py tests/benchmarks/test_functional_fidelity_analyzer.py tests/benchmarks/test_functional_fidelity_manifest.py",
+      "exit_code": 1,
+      "summary": "847 passed, 1 failed, 10 deselected, 6 warnings in 82.12s",
+      "failure": {
+        "test": "tests/stories/phase_03/test_p03_us05_adversarial.py::test_markup_injection_is_escaped_and_heading_envelope_is_preserved",
+        "expected": "item['md'].startswith('# ~~')",
+        "actual": "Fully deleted scalar heading was demoted to text and lost its heading envelope.",
+        "isolated_rerun": "1 failed in 0.22s"
+      }
+    },
+    {
+      "id": "backend-real-corpus-slice-initial",
+      "kind": "integration",
+      "environment": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "TOKENIZERS_PARALLELISM": "false",
+        "DOCLING_ARTIFACTS_PATH": "/Users/vignesh/Downloads/taffybop/.models/docling",
+        "RUN_INTEGRATION": "1"
+      },
+      "command": "env HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false DOCLING_ARTIFACTS_PATH=/Users/vignesh/Downloads/taffybop/.models/docling RUN_INTEGRATION=1 .venv/bin/python -m pytest -q tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py tests/regression/phase_03/test_p03_us05_real_redline_runs.py tests/regression/phase_03/test_p03_us06_acord_form_read_order.py tests/regression/phase_04/test_p04_us01_public_projection_regression.py tests/regression/phase_05/test_p05_us01_real_visual_routing.py",
+      "exit_code": 1,
+      "summary": "29 passed, 2 failed, 3 warnings in 351.65s",
+      "failures": [
+        {
+          "test": "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py::test_manufacturing_chart_ocr_survives_subpoint_crop_coordinate_drift",
+          "expected": "owner.get('detected_text') is True",
+          "actual": "detected_text held the promoted source string rather than the schema boolean"
+        },
+        {
+          "test": "tests/regression/phase_04/test_p04_us01_public_projection_regression.py::test_real_pdf_survives_http_public_projection_validation[catastrophe-recap-el-05e74d7032a69bdc451e]",
+          "expected": "one public table_evidence sidecar",
+          "actual": "zero because terminal table authority failed closed"
+        }
+      ]
+    },
+    {
+      "id": "backend-functional-slice-post-primary-fixes",
+      "kind": "deterministic",
+      "command_ref": "backend-functional-slice-initial.command (rerun byte-for-byte)",
+      "exit_code": 1,
+      "summary": "849 passed, 1 failed, 10 deselected, 6 warnings in 89.76s",
+      "skipped": 0,
+      "xfailed": 0,
+      "deselected": 10,
+      "deselection_reason": "Expected: command explicitly uses -m 'not integration'; the integration slice is run separately with the frozen offline profile.",
+      "failure": {
+        "test": "tests/stories/phase_03/test_p03_us05_redline_runs.py::test_heading_refinement_rejects_partial_deletion_and_competing_h1s",
+        "actual": "Legacy direct helper invocation raised TypeError because three new keyword-only banner-evidence parameters lacked fail-closed defaults.",
+        "resolution": "The three optional evidence inputs now have fail-closed defaults; direct helper, hostile injection, and positive banner focused checks passed before the final full rerun."
+      }
+    },
+    {
+      "id": "backend-real-corpus-slice-final",
+      "kind": "integration",
+      "environment": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "TOKENIZERS_PARALLELISM": "false",
+        "DOCLING_ARTIFACTS_PATH": "/Users/vignesh/Downloads/taffybop/.models/docling",
+        "RUN_INTEGRATION": "1"
+      },
+      "command_ref": "backend-real-corpus-slice-initial.command (rerun byte-for-byte)",
+      "exit_code": 0,
+      "summary": "31 passed, 3 warnings in 451.11s (0:07:31)",
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "deselected": 0,
+      "warning_disposition": "Three dependency deprecation warnings only: one Starlette TestClient warning and two Docling table-image-field warnings; no functional skip, xfail, or failure.",
+      "validated_repairs": [
+        "manufacturing-report detected_text boolean contract through the real PDF",
+        "catastrophe-recap terminal table authority and HTTP public projection through the real PDF",
+        "postal-10k unaffected public projection",
+        "visual children, redline, ACORD read order, and P05 visual routing"
+      ]
+    },
+    {
+      "id": "backend-functional-slice-final",
+      "kind": "deterministic",
+      "command_ref": "backend-functional-slice-initial.command (rerun byte-for-byte)",
+      "exit_code": 0,
+      "summary": "850 passed, 10 deselected, 6 warnings in 82.07s (0:01:22)",
+      "passed": 850,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "deselected": 10,
+      "deselection_reason": "Expected: command explicitly uses -m 'not integration'; all selected deterministic tests ran, and the integration tests were exercised in backend-real-corpus-slice-final.",
+      "warning_disposition": "Six dependency deprecation warnings only: one Starlette TestClient warning, two Docling table-image-field warnings, and three Docling annotations-field warnings; no functional skip, xfail, or failure."
+    }
+  ],
+  "diagnostics": {
+    "catastrophe_table_evidence": {
+      "resolution_status": "fixed_and_real_pdf_confirmed",
+      "first_loss_stage": "app.services.pipeline._apply_terminal_table_authority ParseResult commit validation",
+      "survived_prior_stages": [
+        "_normalize_docling_body",
+        "reconcile_table_candidates",
+        "_merge_tables",
+        "gate_table_candidates",
+        "_supplement_unrepresented_page_ocr",
+        "_merge_body_items",
+        "seal_table_pages"
+      ],
+      "validation_error": "marked table canonical layout overlay differs for el-05e74d7032a69bdc451e at [3, 4]",
+      "missing_public_reconstructible_relationship": {
+        "id": "rel-c730a7f75ecfecdbefe3",
+        "type": "contains",
+        "source_id": "el-05e74d7032a69bdc451e",
+        "target_id": "el-737d0804f16f00851bf6",
+        "identity_field": "parent",
+        "target_role": "raw source identity for projected caption layout-caption-5a6f8b41401544adeb2a"
+      },
+      "root_cause": "The visual-overlay rebind allowlist proves this caption-source edge, but retained IDs are restricted to relationships already present in predecessor or baseline. The source-grounded baseline no longer contains this edge, so it is allowed but never synthesized; strict public reconstruction requires it and rejects the complete terminal table transaction.",
+      "narrow_fix_contract": "Synthesize only the containment relationships and evidence-only exclusions for raw caption-source IDs proven by the existing deterministic public caption ID/text/bbox binding; do not restore the full baseline visual graph or admit arbitrary raw edges.",
+      "validation_evidence": "backend-real-corpus-slice-final passed catastrophe-recap and postal-10k HTTP public projection within the 31/31 passing run."
+    },
+    "text_run_heading": {
+      "resolution_status": "fixed_and_full_slice_confirmed",
+      "root_cause": "_entire_heading_is_source_deleted treats every exactly-one-run fully deleted heading as a revision banner and the caller unconditionally removes its heading envelope.",
+      "narrow_guard": "Require source-backed compact top-right banner geometry in addition to the existing single fully deleted source run; the current 15-artifact scan found no other eligible one-run fully deleted scalar item.",
+      "compatibility_followup": "New optional evidence parameters use fail-closed defaults for legacy direct callers.",
+      "validation_evidence": "backend-functional-slice-final passed all 850 selected tests, including hostile markup, positive banner, partial deletion, and direct helper coverage."
+    },
+    "manufacturing_detected_text": {
+      "resolution_status": "fixed_and_real_pdf_confirmed",
+      "root_cause": "app/services/visual_source_text.py assigns extracted text to detected_text even though the public contract requires a strict boolean.",
+      "narrow_fix_contract": "Keep the extracted string in value/md/visual_source_text and assign detected_text=true.",
+      "validation_evidence": "backend-real-corpus-slice-final passed the manufacturing chart coordinate-drift test within the 31/31 passing run."
+    }
+  },
+  "artifact_integrity": {
+    "audit_command": ".venv/bin/python inline read-only audit using hashlib, json, pdfplumber, and app.models.ParseResult against service-final-source-grounded-20260813/run.json and artifact-manifest-final-source-grounded.json",
+    "invariants_checked_per_case": [
+      "JSON and Markdown recorded HTTP status_code are 200",
+      "ParseResult.model_validate succeeds and model_dump(mode='json', exclude_unset=True) equals the stored JSON object",
+      "response.md bytes equal canonical_presentation.full.markdown UTF-8 bytes",
+      "JSON and Markdown SHA-256 and byte sizes equal run.json",
+      "source SHA-256 and byte size equal run.json and artifact manifest",
+      "physical PDF page count equals manifest, document.page_count, and len(pages)",
+      "source byte size is at most 20 MiB"
+    ],
+    "case_count": 15,
+    "all_cases_passed": true,
+    "all_http_200": true,
+    "all_parse_result_model_valid": true,
+    "all_markdown_byte_equal_canonical_full": true,
+    "all_source_identity_and_page_counts_match": true,
+    "all_sources_within_20mb": true,
+    "post_patch_revalidation": {
+      "validated_at_utc": "2026-08-13T09:12:08Z",
+      "case_count": 15,
+      "failed_cases": [],
+      "all_passed": true
+    },
+    "largest_source": {
+      "case_id": "uber-earnings",
+      "source_size_bytes": 7584019,
+      "limit_bytes": 20971520
+    },
+    "semantic_caveat": "The frozen source-grounded artifact set predates the terminal caption-source repair, so catastrophe-recap's stored JSON remains the internally valid fail-closed artifact. Current-code semantic correction is independently confirmed by the real-PDF 31/31 integration rerun; regenerating that frozen artifact set belongs to the owning benchmark rerun, not this read-only validation slice.",
+    "cases": [
+      {"case_id":"catastrophe-recap","source_sha256":"d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e","source_size_bytes":58779,"source_page_count":1,"response_json_sha256":"5e7c7f4b124216524dfc77e21adff8ad76778d2e7e83ea3afd9eb80a51c6873a","response_markdown_sha256":"6b4a99e24a1925d2f8885b24eda699bbea778866a6c31da81597703098708f5d","canonical_markdown_size_bytes":2060,"all_checks_passed":true},
+      {"case_id":"clean-energy","source_sha256":"161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d","source_size_bytes":122014,"source_page_count":1,"response_json_sha256":"6d7f5ec31747b61ba18b3228349cc2bee34416f8faf0abfabdf2e526d3107fc6","response_markdown_sha256":"86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e","canonical_markdown_size_bytes":629,"all_checks_passed":true},
+      {"case_id":"clinical-study","source_sha256":"4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2","source_size_bytes":750004,"source_page_count":4,"response_json_sha256":"28cde6e007132e63296824d707ed5fe47da52bbe25e79df39ad504e0d8a2f118","response_markdown_sha256":"8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2","canonical_markdown_size_bytes":17695,"all_checks_passed":true},
+      {"case_id":"component-datasheet","source_sha256":"5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4","source_size_bytes":329199,"source_page_count":3,"response_json_sha256":"c531d1c0dd2848a1ec35a1fd97031b22c32ed63535ac99e5e29fe462c00f58bd","response_markdown_sha256":"4e00f4db0ba84ff89ca12e56dbfd6db87f20fbd24006510122bcfbd15a0b9f49","canonical_markdown_size_bytes":5736,"all_checks_passed":true},
+      {"case_id":"egov-survey","source_sha256":"7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846","source_size_bytes":82800,"source_page_count":1,"response_json_sha256":"392f65ab7124a5dfb00322802b3a2e566981089986e69a44334001957fb74d65","response_markdown_sha256":"5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c","canonical_markdown_size_bytes":2830,"all_checks_passed":true},
+      {"case_id":"esg-metrics","source_sha256":"6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9","source_size_bytes":60516,"source_page_count":1,"response_json_sha256":"488d6124a8689898676b349e0082fb9cc75c394eee274bc38fee0cc2725775e8","response_markdown_sha256":"987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8","canonical_markdown_size_bytes":3012,"all_checks_passed":true},
+      {"case_id":"finance-10k","source_sha256":"e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086","source_size_bytes":87105,"source_page_count":3,"response_json_sha256":"e3e5f77cd06ef4887959fe0ece0dbb35a6538fec2de60e8696c92a8668d19ff5","response_markdown_sha256":"8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389","canonical_markdown_size_bytes":12618,"all_checks_passed":true},
+      {"case_id":"health-report","source_sha256":"fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181","source_size_bytes":222282,"source_page_count":1,"response_json_sha256":"34e59bc6897ccdbd9fa37b06b228327e1d68d1c9e695e59834a5887ddfded57c","response_markdown_sha256":"40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0","canonical_markdown_size_bytes":1482,"all_checks_passed":true},
+      {"case_id":"insurance-acord","source_sha256":"85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4","source_size_bytes":17086,"source_page_count":1,"response_json_sha256":"6c43ba709af44c811010484e3bb24cbb33dd12744b51e642b462a2b85b7b609b","response_markdown_sha256":"f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1","canonical_markdown_size_bytes":10006,"all_checks_passed":true},
+      {"case_id":"manufacturing-report","source_sha256":"414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f","source_size_bytes":380274,"source_page_count":3,"response_json_sha256":"371af6c8a97f5d83affcc1edbd05cc29bdd7bdf94072b13877b896a6edba4052","response_markdown_sha256":"55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599","canonical_markdown_size_bytes":4479,"all_checks_passed":true},
+      {"case_id":"ny-timetable","source_sha256":"f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30","source_size_bytes":26109,"source_page_count":3,"response_json_sha256":"489c1da4a8dc094d4de98b50dd523a86327a0a4e3421f6ffa720c1bcb99da137","response_markdown_sha256":"16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef","canonical_markdown_size_bytes":43231,"all_checks_passed":true},
+      {"case_id":"postal-10k","source_sha256":"72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74","source_size_bytes":83589,"source_page_count":3,"response_json_sha256":"b01b967103802ffd07598687ae50b2ae5f4a7ec8ab633ae126582905a4467a2a","response_markdown_sha256":"20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10","canonical_markdown_size_bytes":11275,"all_checks_passed":true},
+      {"case_id":"purchase-agreement","source_sha256":"00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14","source_size_bytes":152828,"source_page_count":1,"response_json_sha256":"607b604f80c7ff9a160d4e34adf1dc083c403cb3ec9746c12ef7a6b6d681cea1","response_markdown_sha256":"cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0","canonical_markdown_size_bytes":3503,"all_checks_passed":true},
+      {"case_id":"settlement-agreement","source_sha256":"adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc","source_size_bytes":164483,"source_page_count":1,"response_json_sha256":"020248d7b97cab184ba7b5a132b8dc4352c34df9a1db9e5b6e0adf98b57c2625","response_markdown_sha256":"8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d","canonical_markdown_size_bytes":3173,"all_checks_passed":true},
+      {"case_id":"uber-earnings","source_sha256":"76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5","source_size_bytes":7584019,"source_page_count":3,"response_json_sha256":"d12dfb86a7171757a9228c97aeccc85a46af758c1ba6a800a9eefe65e5c30ea4","response_markdown_sha256":"b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094","canonical_markdown_size_bytes":1235,"all_checks_passed":true}
+    ]
+  },
+  "release_validation_status": "backend_functional_slice_passed"
+}

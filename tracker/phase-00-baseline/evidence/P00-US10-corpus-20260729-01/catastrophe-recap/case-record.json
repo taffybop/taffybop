@@ -1,0 +1,102 @@
+{
+  "case_id": "catastrophe-recap",
+  "case_latency_ms": 8776.587374974042,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "catastrophe-recap",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap",
+    "--run-id",
+    "p00-us10-corpus-20260729-01",
+    "--order",
+    "1",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+  ],
+  "completed_at_utc": "2026-07-29T08:41:31.502053+00:00",
+  "cpu_ms": 7281.424999999999,
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error": null,
+  "order": 1,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.md",
+      "role": "markdown",
+      "sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+      "size_bytes": 2008
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.json",
+      "role": "raw_json",
+      "sha256": "d7b5673775fdc005d7b32a24488e3fc0c31a9b587744dc8cca7628f1fd512309",
+      "size_bytes": 79005
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.json",
+      "role": "semantic_json",
+      "sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+      "size_bytes": 38325
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 8771.374207921326,
+  "peak_rss_bytes": 1423114240,
+  "reference_comparison": {
+    "case_id": "catastrophe-recap",
+    "current_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+    "current_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+    "reference_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "role": "source",
+      "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "size_bytes": 58779
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/catastrophe-recap.md",
+      "role": "expert_markdown",
+      "sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+      "size_bytes": 6755
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/catastrophe-recap.json",
+      "role": "expert_json",
+      "sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+      "size_bytes": 42573
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:41:22.725003+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

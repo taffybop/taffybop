@@ -1,0 +1,21 @@
+{
+  "affected_region_capture": "affected-fers-region.png",
+  "browser_family": "Google Chrome",
+  "browser_version": "150.0.7871.125",
+  "capture_surface": "browser extension controlled actual UI",
+  "captured_pages": [
+    1,
+    2,
+    3
+  ],
+  "device_pixel_ratio": 1,
+  "frontend_serve_mode": "existing candidate development server",
+  "language": "en",
+  "storage_console_note": "Browser-extension storage access warnings were present; parsing, rendering, and capture completed successfully.",
+  "timezone": "Asia/Kolkata",
+  "url": "http://localhost:3000/",
+  "viewport_css_px": {
+    "height": 802,
+    "width": 1920
+  }
+}

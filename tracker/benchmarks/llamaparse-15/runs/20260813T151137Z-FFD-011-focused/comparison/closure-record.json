@@ -1,0 +1,75 @@
+{
+  "affected_case": "postal-10k",
+  "blocker_scope_adjudication": "The failing tests disable source alignment and the selected pre-fix artifacts already lack the sidecars. They are not an FFD-011 content regression, but literal named-control/P04-custody closure requirements remain unsatisfied. Resolving or waiving them requires authority outside this FFD-011-only slice.",
+  "closure_blockers": [
+    {
+      "cause": "fixed five-second P04 active wall deadline restores exact predecessor without expected table_evidence",
+      "test": "test_clinical_headers_sections_and_group_spans_are_source_supported"
+    },
+    {
+      "cause": "fixed five-second P04 active wall deadline restores exact predecessor without expected table_evidence",
+      "test": "test_timetable_fails_closed_without_shifting_or_silently_merging_rows"
+    },
+    {
+      "cause": "fixed five-second P04 active wall deadline restores exact predecessor without expected canonical_source_custody",
+      "test": "test_clinical_output_context_free_json_round_trip_is_exact_and_bounded"
+    }
+  ],
+  "collateral_verdict": {
+    "CIO_CARES_Exchange_neighbors": "pass: table-owned and no detached paragraphs; ClO absent",
+    "all_39_glossary_rows": "pass: exact selected content and order",
+    "postal_page_2_table": "pass: complete table object equal to selected service",
+    "postal_page_3_table": "pass: complete table object equal to selected service",
+    "unexpected_material_pre_post_service_changes": []
+  },
+  "defect_id": "FFD-011",
+  "drift": {
+    "generic_analyzer": "30 pre-existing cross-system signals owned by other tracker work or envelope differences; not an FFD-011 target verdict",
+    "llamaparse_markdown": "identical",
+    "llamaparse_semantic_json": "identical except fresh job and asset identities/URLs",
+    "raw_paths": "comparison/drift",
+    "service_dom_pages_2_3": "identical",
+    "service_json": "intended complete supplemental suppression ledger/provenance and deterministic custody repair",
+    "service_markdown": "only detached FERS paragraph removal"
+  },
+  "final_frozen_all_15_campaign": "pending",
+  "immediate_affected_benchmark_attempt_result": "pass",
+  "implementation_slice": 1,
+  "local_pass_replaces_later_gates": false,
+  "overall_defect_status": "Validating",
+  "reviewed_at_utc": "2026-08-13T16:01:31.000332+00:00",
+  "reviewers": [
+    {
+      "evidence": "61 focused passes, 13 complete-PDF regression passes, terminal/text-run checks, production hashes, and forbidden search",
+      "reviewer": "/root/settled_prod_review",
+      "role": "independent production implementation reviewer",
+      "verdict": "clean; no correctness, genericity, provenance, ambiguity, performance-bound, atomicity, schema, collateral, or rollback finding"
+    },
+    {
+      "evidence": "source renders, both raw Markdown files, both full JSON files, actual UI screenshots/DOM/accessibility, downloaded assets, and complete drift bundle",
+      "reviewer": "/root/fresh_artifact_review",
+      "role": "independent source/Markdown/UI-DOM/JSON and drift reviewer",
+      "verdict": "pass for the immediate FFD-011 targeted attempt; keep the overall card Validating because mandatory named P04 controls remain red"
+    },
+    {
+      "reviewer": "/root/closure_tracker_audit",
+      "role": "independent closure-policy reviewer",
+      "verdict": "not eligible for Done while three named P04 custody controls remain red"
+    }
+  ],
+  "safest_next_action": "Keep FFD-011 Validating; separately authorize correction of the P04 deadline/custody gate or explicitly approve a bounded closure exception. Do not start FFD-012.",
+  "schema_version": "ffd-011-immediate-closure-record-v1",
+  "source_page_count": 3,
+  "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+  "source_size_bytes": 83589,
+  "surface_verdicts": {
+    "actual_clearleaf_ui_dom": "pass: 40 table rows, one FERS row, one introductory paragraph, no post-table duplicate",
+    "actual_llamaparse_ui_dom": "pass: heading/text/table/footer, 40 rows, one FERS row, no post-table text item",
+    "llamaparse_full_json": "pass: semantic payload equal to selected reference; fresh job/asset identities retained raw",
+    "llamaparse_raw_markdown": "pass: byte-identical to selected reference; one row and no detached paragraph",
+    "service_full_public_json": "pass: context-free validation, unique canonical row, no detached item, complete suppression provenance",
+    "service_raw_and_canonical_markdown": "pass: byte-identical; one row and zero detached target/collateral paragraphs",
+    "source": "pass: one table row; no detached source paragraph"
+  },
+  "wave_a_all_15_drift_gate": "pending"
+}

@@ -1,0 +1,1 @@
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -p no:cacheprovider -q tests/contract/test_p04_us01_diagnostic_document_budget.py

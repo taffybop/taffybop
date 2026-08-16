@@ -1,0 +1,222 @@
+{
+  "schema_version": "functional-fidelity-visual-resolution-ledger-v1",
+  "generated_at_utc": "2026-08-13T06:30:00Z",
+  "policy": {
+    "scope": "OCR, image, chart, and diagram functional-fidelity resolutions only",
+    "source_grounding": "A LlamaParse description, chart value, or relationship is not treated as source truth unless it is visibly supported by the hash-bound PDF or its retained page render.",
+    "immutability": "All post-fix service captures use new sibling directories; service-post-fix and LlamaParse reference evidence were not overwritten.",
+    "resolution_gate": "A resolution requires public JSON, raw Markdown, and rendered-DOM validation for the affected PDF; unit tests alone are insufficient."
+  },
+  "resolutions": [
+    {
+      "resolution_id": "VIS-RES-UBER-PHOTO-OCR-001",
+      "status": "resolved",
+      "case_id": "uber-earnings",
+      "pages": [1],
+      "story_ids": ["P05-US01"],
+      "source_pdf_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "defect": "When the optional picture classifier was unavailable, 19 low-confidence OCR fragments from the cover photograph were admitted to primary Markdown and UI content.",
+      "source_truth": "The hash-bound page-1 render is a natural Uber Eats delivery photograph with no meaningful document text in the routed picture region. LlamaParse's prose description is model-generated semantic text, not printed OCR.",
+      "fix": "Unclassified visual OCR now clears both the primary-OCR threshold and the picture-classification confidence floor before it may enter primary content. Diagnostic OCR, line confidence, and provenance remain serialized.",
+      "implementation_sha256": {
+        "app/services/pipeline.py": "b7ccdb79b32317cb30beaff67e6d9949d3ea2099de17671f5ed6b851aff04b38",
+        "tests/test_image_quality.py": "5b2ae9de04da8ed7e7e7f46b8e12e212d2fc478118542393e2b4060674713631",
+        "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py": "2c92eff9691f68912c5e364bbf72a55395c6f6dadd70b72fbd76aa1aca6a37c6"
+      },
+      "before": {
+        "service_json_sha256": "13872622936844a2311e6848d3e59ac2fb73e8851873d7247d0264571850424f",
+        "service_markdown_sha256": "9151ce08b71893dd143905e1c12b646abe9544b4564aecb378e9b96aa88c1e9d",
+        "service_page_1_dom_sha256": "7a465ee3ab1107fc3372b0e9271c683f9e444a82bfe57cbb0e1a7c2738dbaa88"
+      },
+      "after": {
+        "artifact_root": "service-visual-fix/uber-earnings",
+        "service_json_sha256": "8a9a5daa68703f287472ff9899753ebf742c30df3f094b70c5e8b427a75508e9",
+        "service_markdown_sha256": "38a70ffc902eb7b15775327f2a90c0c28716256bdfd7c0d7a5def19f3857b62a",
+        "service_page_1_dom_sha256": "4a0963d9a2dc8abc618c659817df045c1af715b69f4ac7bcd78245fe5568b027",
+        "json_assertion": {
+          "item_id": "p1-i1",
+          "type": "image",
+          "confidence": 0.5419,
+          "classification": null,
+          "include_ocr_in_primary": false,
+          "value": "",
+          "md": "[Image detected; no reliable text extracted.]",
+          "diagnostic_ocr_retained": true
+        },
+        "markdown_and_ui_assertion": "The placeholder is visible once and the rejected photograph OCR fragments are absent."
+      },
+      "fresh_llamaparse": {
+        "job_id": "pjb-skyvq5noznjko41p3fs2vxgfgptg",
+        "status": "COMPLETED",
+        "reference_json_sha256": "922ed2e93a5e7ce84ddcc3750dc1ae3655e3518e3c669cfc3be2b05e2b642d7e",
+        "reference_markdown_sha256": "40caf1fe84fcf30c2b180b06d988f60f8c0c80ff8fd083df3f96950ab8d3f64c",
+        "page_dom_sha256": {
+          "1": "edbafe1a31504bd4426856ef40845facf3815be0c103d80eacda086f908e7f41",
+          "2": "a0fb9be04edcc319d5b1f078ca8435638b6db1f588c36446cf8dcd257d365f35",
+          "3": "6a84fdc05573d0d887828896e5e81e60e968681c5feb5aeb0ee04708d78b5d8e"
+        }
+      },
+      "validation": [
+        "tests/test_image_quality.py: explicit 0.54 rejection and 0.72 acceptance fixtures",
+        "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py::test_uber_photo_ocr_remains_subordinate_in_local_fidelity_profile",
+        "Combined visual slice: 45 passed in 58.06s",
+        "Public HTTP JSON and Markdown: 200/200",
+        "Rendered DOM: 3/3 pages captured"
+      ]
+    },
+    {
+      "resolution_id": "VIS-RES-CAPTION-ROUTING-001",
+      "status": "resolved",
+      "case_ids": [
+        "catastrophe-recap",
+        "clean-energy",
+        "clinical-study",
+        "egov-survey",
+        "health-report",
+        "manufacturing-report"
+      ],
+      "pages": {
+        "catastrophe-recap": [1],
+        "clean-energy": [1],
+        "clinical-study": [3],
+        "egov-survey": [1],
+        "health-report": [1],
+        "manufacturing-report": [1, 2, 3]
+      },
+      "story_ids": ["P05-US01", "P05-US10"],
+      "defect": "Classifier-unavailable document visuals with source-declared chart or flowchart captions remained generic images even when the caption geometry and reliable OCR supported a safe semantic type.",
+      "fix": "Phase 05 now routes only a uniquely geometry-matched Docling picture/caption pair with reliable accepted OCR. Diagram and chart keywords are source-caption based; chart routing additionally requires numeric evidence. Raw source IDs and the caption digest are retained in provenance.",
+      "implementation_sha256": {
+        "app/services/visual_semantics.py": "3a3fcdbf1b1c21e970c42c5c6ef4b15e896286790b38549424b45ffeec2fc6d8",
+        "app/services/layout.py": "40136f2801bb4556b19f8cf5d38b90de09ad2ca898af97c337e971679228d1ea",
+        "tests/stories/phase_05/test_p05_us01_visual_schema.py": "d59ce9d7cf4b6cc54e8ed720f749b153ea758f113d4edb80b3de40ac6ab13f11",
+        "tests/regression/phase_05/test_p05_us01_real_visual_routing.py": "e90b72bc2474d7ce7fe7da16ca15c5569552f7f9e2147004013d4a5f521c5fc0",
+        "tests/stories/phase_03/test_p03_us02_visual_children.py": "ea6fdeb8557eba29c5d405d5cc3bcda3697a3f49f50567068ca9dfe139fd91fe",
+        "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py": "2c92eff9691f68912c5e364bbf72a55395c6f6dadd70b72fbd76aa1aca6a37c6"
+      },
+      "negative_gates": [
+        "photograph, photo, image, board, logo, icon, screenshot, or illustration caption",
+        "generic or missing source caption",
+        "fewer than four accepted OCR lines",
+        "fewer than six accepted OCR words",
+        "aggregate OCR confidence below the configured source-classification floor",
+        "chart caption without at least three numeric OCR tokens",
+        "table-like item or Table-prefixed caption",
+        "caption overlap, page mismatch, excessive distance, or ambiguous picture match"
+      ],
+      "public_capture": {
+        "artifact_root": "service-visual-routing-fix",
+        "artifact_overrides": {
+          "clinical-study": "service-visual-ocr-final/clinical-study",
+          "health-report": "service-visual-routing-table-fix/health-report",
+          "manufacturing-report": "service-visual-ocr-final/manufacturing-report"
+        },
+        "http_status": "All six JSON and all six Markdown responses were 200.",
+        "rendered_dom": "11/11 physical pages captured.",
+        "typed_regions": {
+          "catastrophe-recap": {"chart": 1},
+          "clean-energy": {"chart": 1},
+          "clinical-study": {"diagram": 1},
+          "egov-survey": {"chart": 1},
+          "health-report": {"chart": 2},
+          "manufacturing-report": {"chart": 4}
+        },
+        "fabricated_structure_counts": {
+          "series": 0,
+          "points": 0,
+          "nodes": 0,
+          "connectors": 0
+        },
+        "service_json_sha256": {
+          "catastrophe-recap": "6c69bad3f0f07c185897a76e78bc6926abff0a5b4ee299ceccbafe4b9284523f",
+          "clean-energy": "53718c1af8565aabb4e7c309cbacc982a4d2afefb681e582d39d4a69852dc5d1",
+          "clinical-study": "ad1e8ba564f2bf719a2759871026caca44843915efb1fda44346d1467f8fd9be",
+          "egov-survey": "40b3c9634ad4f4e44311d38022e7dfdea6161a6eab878f26d0521921bed7f838",
+          "health-report": "c3b1002617858d246a91bd09e6594d8a5370acc03b3b22e207070ad1c2157fae",
+          "manufacturing-report": "6029852e9b662ab2f9897da6f9965e98f2730ceedc4e890e6d9e6e11e911699f"
+        },
+        "service_markdown_sha256": {
+          "catastrophe-recap": "d293f534cafa9de630a7e3d6039797aa60029a56f12d001dd0fd3497c9f78f72",
+          "clean-energy": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+          "clinical-study": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2",
+          "egov-survey": "1fc3fe667190353ab21652874631e5b25f506b8e87c9773ca750ab2e5e6a1306",
+          "health-report": "f094dc43b953e8942637a32f331a7143d667ad5b0860ecd497246552631e3122",
+          "manufacturing-report": "6aef58c75d563a3ed714c1d0b245fb8879e3a55e452cc8614bf1f76d7fd7a483"
+        },
+        "rendered_dom_artifact_sha256": {
+          "catastrophe-recap/1": "da68c2b22382d575769905faf3b2519fc26b4302e9faa08914275e3e878789cc",
+          "clean-energy/1": "24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46",
+          "clinical-study/1": "b04956dbf65eed89e77a40522b04ad8839f192fff6210927267e5cd6ce3b45df",
+          "clinical-study/2": "78ac06cd1717d1dcd797e771b8ee002277b81d9451d57ebf7d815f1ab448eee5",
+          "clinical-study/3": "36a25e704845430a4d291d59d51c39c5ade38ead8f577ad8c0d0a3a742047fbb",
+          "clinical-study/4": "d78fadab1c04bb5bffef348060f10cbfe09188dcfac74b274867f951ba50a7a2",
+          "egov-survey/1": "3a9d59264eb54d0ff47a4e9afc3c0c1da3a858162fe273cd9c353bc22a379064",
+          "health-report/1": "f57ead36fd6e3a0c0e9331db2f7939b0671722f28726591726ba99e93a09bb37",
+          "manufacturing-report/1": "3ca5309d30a69fc37552154fc5b640af1558f74b518c433d324304dd1c4a1762",
+          "manufacturing-report/2": "614256f247756964f16056020348eff127d31e7f565f1040c9ee359090e45799",
+          "manufacturing-report/3": "0a1384e6d1e0309e4f610b737cced5cd1c87f28229f1672eb2900adae3633b33"
+        }
+      },
+      "fresh_llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "jobs": {
+          "catastrophe-recap": "pjb-28bcomrkzsgzg7uvfwiirhnteu3z",
+          "clean-energy": "pjb-rmfslteo6otbhxp9qj7kv61l50p0",
+          "clinical-study": "pjb-33emg9582knzmzw35de91sw2y56q",
+          "egov-survey": "pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v",
+          "health-report": "pjb-g66fg3bwy8plzgmslyhwfhb4taoe",
+          "manufacturing-report": "pjb-vpn3e4kt636fnx2y4vlr98otbyic"
+        },
+        "reference_json_sha256": {
+          "catastrophe-recap": "272286e328081551b9a50e939d967ea4870e1ac1ec10aed8e089a6547822dd2a",
+          "clean-energy": "b52ca25655678729c09ba1802aa7da550bc89e4d16b07a8cdcb44dd9f7780148",
+          "clinical-study": "19834aea456a200b1df6fd5cc872b91480909bc9e6987ed80ff3ea8fbb00cb9e",
+          "egov-survey": "30a5bd4b97bb5f4038f8ef5a666f33bf3b2ec7e404400397e5a523508ca8b21e",
+          "health-report": "84e5ed92de3380cf7216c5fa5d78932d5d761705513c5994248ec54fc0ce646e",
+          "manufacturing-report": "409a8ba52a3051066041540f9e70e56e9edd322a571581755402f164e8e89d08"
+        },
+        "reference_markdown_sha256": {
+          "catastrophe-recap": "ae13b7417fd230b7ed727f78b863a09a0a77c5451b428be2392dfd893ffe1db3",
+          "clean-energy": "6b26884cca160ac4803763e19bbfcfb868a96acc29a0122d57527834460564af",
+          "clinical-study": "035ad5d2c672f5f53cd8f0fbc5d0c6d51d1af629231dc2ce4d195f6fb66a210e",
+          "egov-survey": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01",
+          "health-report": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d",
+          "manufacturing-report": "771226b27e5a6ad2024adc6acc66f23eda5c89ca105b32cc114bdc619b7a31d6"
+        },
+        "rendered_dom_sha256": {
+          "catastrophe-recap/1": "56e2b20b36af1cc4f9d54d849f97b6a1490fd0b5b61d03cff58cb256180f74ad",
+          "clean-energy/1": "798fc79e2a9f4c82d33830c57a9a770f1edafbf3c25b654eda63c60a4a776b3b",
+          "clinical-study/1": "ef941ab0d15dee60f77600280e94963166922ab346f691793017bf91b6a08a18",
+          "clinical-study/2": "77094e68e8eadb09979c956c344587f2435e0814c19ba30874dca5458c2a2bb1",
+          "clinical-study/3": "6cb296e7756927b3b8005565d0793e986dbb7f8e9a27bbbb3bf299cad4f1fa61",
+          "clinical-study/4": "29847f4110b8ab9cda1df2c15ee79692d5d073a1562e1416aaf5b525246efab7",
+          "egov-survey/1": "a48e482001fdec5f1efe2cfbed1ee8bc1c28a1a181e3124bbba23a0f53466cf1",
+          "health-report/1": "0ada1a35cda9264e06d88c496dd7cdb7984e76f4fdc59b7ee4e0f084313b18d7",
+          "manufacturing-report/1": "e7b1ca739f58c2fca0b8363f0b6d68c54d21c4b8d47e40eae4a53e5939d7215a",
+          "manufacturing-report/2": "84fe00b5d5dab909697aa54ad316df2df05dda2a9eff332808d6b8b1ba2a6b14",
+          "manufacturing-report/3": "281f4d1bd7ce664e6c7d2f3b20d110df63b46af0659710153999de670bc4a58a"
+        },
+        "capture_completeness": "6/6 raw Markdown, 6/6 full JSON, 11/11 rendered DOM, and 11/11 rendered PNG artifacts captured."
+      },
+      "validation": [
+        "tests/stories/phase_05/test_p05_us01_visual_schema.py: 14 passed, including explicit negative fixtures",
+        "tests/regression/phase_05/test_p05_us01_real_visual_routing.py: 3 passed against absolute offline Docling artifacts",
+        "Combined visual slice including P05-US10: 45 passed in 58.06s",
+        "P03 primary-OCR containment suite: 64 passed",
+        "Exact-profile clinical/manufacturing/Uber real-corpus slice: 3 passed in 57.07s",
+        "Final clinical and manufacturing public JSON/Markdown: 200/200 for both surfaces; rendered DOM: 7/7 pages",
+        "compileall passed"
+      ],
+      "final_primary_ocr_validation": {
+        "production_fix": "app/services/layout.py admits at most 1.0 pt of same-unit crop-coordinate drift when every approved owner OCR contribution is otherwise source-grounded; larger or cross-unit drift fails closed.",
+        "clinical-study": "p3-i2 value == md == ocr_text (802 characters), source=ocr, owner OCR count is 1 in raw Markdown/canonical Markdown/rendered DOM, external Fig 1 caption count is separately 1, and no placeholder remains.",
+        "manufacturing-report": "p1-i2 value == md == ocr_text (244 characters), source=ocr, owner OCR count is 1 in raw Markdown/canonical Markdown/rendered DOM, and no placeholder remains."
+      },
+      "remaining_gaps": [
+        "Clinical diagram topology remains safely unresolved because explicit connector proof does not satisfy P05-US10.",
+        "Manufacturing page 1 first chart has no source-declared caption and correctly remains an image under this conservative type-routing fix, while its approved OCR is now user-visible.",
+        "An intermediate shared-code health rerun exposed an unrelated empty-table Markdown regression. Table custody fixed it; service-visual-routing-table-fix/health-report is the final hash-bound health capture and its Markdown is byte-identical to service-post-fix."
+      ]
+    }
+  ]
+}

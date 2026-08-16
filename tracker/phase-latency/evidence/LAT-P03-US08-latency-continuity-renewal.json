@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "decision_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260808-PHASE-LATENCY-CONTINUITY",
+  "status": "accepted_by_explicit_sponsor_authorization_pending_exact_independent_review_before_story_done",
+  "date": "2026-08-08",
+  "scope": {
+    "included_story_ids": [
+      "LAT-US01",
+      "LAT-US02",
+      "LAT-US03",
+      "LAT-US04",
+      "LAT-US05",
+      "LAT-US06",
+      "LAT-US07",
+      "LAT-US08"
+    ],
+    "default_off_only": true,
+    "maximum_in_progress_stories": 1,
+    "production_enablement": false,
+    "phase_04_behavior_change": false,
+    "phase_05_authority": false
+  },
+  "immutable_attempt_48": {
+    "case": "ny-timetable",
+    "stage": "running_region_projection",
+    "metric": "latency_p95_seconds",
+    "observed_seconds": "0.050946750",
+    "strict_ceiling_seconds": "0.050000000",
+    "overrun_seconds": "0.000946750",
+    "overrun_fraction": "0.018935",
+    "maximum_candidate_specific_bound": "0.05",
+    "status": "failed",
+    "raw_sha256": "1289f186c1cd6ee7f99eaa843f66e5416f15c0215e205e0ed5936737cd2a7123",
+    "raw_size_bytes": 158921,
+    "semantic_sha256": "51433843638d69a2d09ced0d96a44a34323b1f5ece9c890c7c91088bac2df2e5"
+  },
+  "sealed_failed_history": {
+    "through_attempt": 55,
+    "artifact_count": 55,
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "unchanged_ceilings": {
+    "running_region_projection_p95_seconds": "0.050000000",
+    "source_extraction_p95_seconds": "0.250000000",
+    "ny_timetable_paired_parser_seconds": "2.338000000",
+    "uber_earnings_paired_parser_seconds": "1.457500000",
+    "allocation_delta_bytes": 67108864,
+    "peak_rss_delta_bytes": 67108864,
+    "source_report_size_bytes": 8388608
+  },
+  "strict_final_artifact": "absent",
+  "complete_companion": "quarantined",
+  "default_off_rollback": {
+    "latency_flag_prefix": "PARSER_LATENCY_",
+    "disable_order": "reverse_dependency_order",
+    "running_region_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "running_region_default": false,
+    "exact_predecessor_required": true
+  },
+  "non_waived_gates": [
+    "rss",
+    "allocation",
+    "cpu_gpu_and_resources",
+    "paired_parser_latency",
+    "source_extraction_latency",
+    "llamaparse_paired_latency",
+    "correctness",
+    "quality_and_source_fidelity",
+    "non_fabrication_and_alternative_evidence",
+    "security_and_privacy",
+    "malformed_input_timeout_and_fail_closed",
+    "api_schema_serializer_frontend_compatibility",
+    "code_dependency_fixture_benchmark_input_evidence_model_custody",
+    "hosted_use",
+    "output_cost_and_egress",
+    "determinism",
+    "default_off_and_rollback",
+    "independent_review",
+    "prior_phase_and_latency_exit_gates"
+  ],
+  "review_due_no_later_than": "2026-09-02",
+  "hard_expiry": "2026-09-02T23:59:59Z",
+  "expires_before": [
+    "production_enablement_or_reliance",
+    "relevant_running_region_semantic_runtime_reachability_output_dependency_evidence_or_custody_change",
+    "ceiling_bound_default_off_rollback_or_non_waived_gate_change",
+    "work_outside_lat_us01_through_lat_us08",
+    "phase_04_behavior_change_while_paused",
+    "phase_05_work_or_status_transition",
+    "classifier_ambiguity_or_gate_bypass",
+    "rollback_failure"
+  ],
+  "claims": {
+    "strict_current_artifact_pass": false,
+    "story_completion": false,
+    "phase_exit": false,
+    "production_approval": false
+  }
+}
+

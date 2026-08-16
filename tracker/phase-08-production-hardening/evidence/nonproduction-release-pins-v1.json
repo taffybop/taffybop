@@ -1,0 +1,28 @@
+{
+  "schema_version": "parser-nonproduction-release-pins-v1",
+  "environment": "non_production",
+  "known_good": {
+    "release_id": "p08-known-good-nonprod-v1",
+    "parser_version": "0.1.0",
+    "artifact_manifest_sha256": "1f10328783f2963a92a796c56b894a90988f046dd57b52381f14cb54e5ec96e9",
+    "configuration_sha256": "11636866259287cbeae46019293a6cfbc01621d194621ab394517d8cc3becf8d",
+    "api_schema_sha256": "56934727c1188b10f6bce1738a2438d53577c472ccd5f662ac3893285fa0aeef",
+    "policy_sha256": "3d5f24210ff697e8e84d057217c0b32f87def70ddc1d0b674d86fa32c4a30f9d"
+  },
+  "candidate": {
+    "release_id": "p08-candidate-nonprod-v1",
+    "parser_version": "0.1.0",
+    "artifact_manifest_sha256": "1f10328783f2963a92a796c56b894a90988f046dd57b52381f14cb54e5ec96e9",
+    "configuration_sha256": "64733cbe083dd6640c8b389a96d3faef4f80bd21b9a62a33d2d483df20a9cedb",
+    "api_schema_sha256": "56934727c1188b10f6bce1738a2438d53577c472ccd5f662ac3893285fa0aeef",
+    "policy_sha256": "b72b98a82a4e4f1e65cf94b37dd428957e8c72a358e1853fe040f7d15749d0bd"
+  },
+  "evidence": {
+    "artifact_manifest": "tracker/phase-08-production-hardening/evidence/shipped-artifacts-reference-v1.json",
+    "known_good_configuration": "tracker/phase-08-production-hardening/evidence/known-good-flags-v1.json",
+    "candidate_configuration": "tracker/phase-08-production-hardening/evidence/candidate-flags-v1.json",
+    "api_schema": "runtime:app.main:app.openapi",
+    "known_good_policy": "tracker/phase-08-production-hardening/evidence/known-good-hosted-policy-v1.json",
+    "candidate_policy": "tracker/phase-08-production-hardening/evidence/candidate-hosted-policy-v1.json"
+  }
+}

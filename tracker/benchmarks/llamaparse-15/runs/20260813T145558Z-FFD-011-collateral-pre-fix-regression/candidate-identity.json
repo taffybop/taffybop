@@ -1,0 +1,37 @@
+{
+  "schema_version": "ffd-011-collateral-pre-fix-regression-v1",
+  "defect_id": "FFD-011",
+  "source_attempt": "../20260813T141438Z-FFD-011-focused",
+  "reason": "The first fresh validation attempt exposed complete, uniquely table-owned OCR duplicates masked only by a table-generated space before source punctuation at a native font-run boundary.",
+  "synthetic_candidate": {
+    "owner_id": "supplemental-2",
+    "source_line_id": "source-line-2",
+    "source_text": "QTX Continuity Act, enacted under Rule 9 Active",
+    "table_text": "QTX Continuity Act , enacted under Rule 9 Active",
+    "page_index": 2,
+    "positive_owner_columns": [0, 1]
+  },
+  "real_candidates": [
+    {
+      "item_id": "p1-i43",
+      "value": "CARES Act",
+      "source_line_id": "line-d071b3fec17ab6e601399695",
+      "row_index": 10,
+      "ocr_contributor_id": "ocr-contributor-9948400510b32112907870bbb8c89e52169e8f19e003b42f2ebb8e70526153c2"
+    },
+    {
+      "item_id": "p1-i82",
+      "value": "Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136",
+      "source_line_id": "line-d071b3fec17ab6e601399695",
+      "row_index": 10,
+      "ocr_contributor_id": "ocr-contributor-21a0f6e472e7d8215fb4f857c99708fb97aa742301a6f0d73073da608b0c980e"
+    },
+    {
+      "item_id": "p1-i75",
+      "value": "Securities and Exchange Act of 1934, enacted as Public Law 73-291",
+      "source_line_id": "line-72e56ef72d1416cae0ce705a",
+      "row_index": 33,
+      "ocr_contributor_id": "ocr-contributor-61375066c0755ed6733c80ec49df3b940757369c181a6ae42173b50bd088d7df"
+    }
+  ]
+}

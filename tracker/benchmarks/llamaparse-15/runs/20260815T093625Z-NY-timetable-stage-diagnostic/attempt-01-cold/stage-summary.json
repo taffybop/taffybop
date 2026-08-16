@@ -1,0 +1,720 @@
+{
+  "timing_policy": {
+    "wall_clock": "perf_counter_ns",
+    "inclusive_rows_are_nested_and_must_not_be_summed": true,
+    "exclusive_wall_ns": "inclusive minus union of direct child wall intervals",
+    "closure": "disjoint top-level union plus explicit residual"
+  },
+  "spans": [
+    {
+      "span_id": "request",
+      "name": "request_total",
+      "parent_span_id": null,
+      "started_monotonic_ns": 1280592185482208,
+      "ended_monotonic_ns": 1280929024868166,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-request",
+      "parent_relation": "root",
+      "inclusive_wall_ns": 336839385958,
+      "direct_child_union_ns": 336806430001,
+      "exclusive_wall_ns": 32955957,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-000",
+      "name": "api.input_validation",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280592190617291,
+      "ended_monotonic_ns": 1280592190655458,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 38167,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 38167,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-001",
+      "name": "api.upload_read",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280592190665625,
+      "ended_monotonic_ns": 1280592190686625,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 21000,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 21000,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-002",
+      "name": "queue_wait",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280592192906958,
+      "ended_monotonic_ns": 1280592192998458,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 91500,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 91500,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-003",
+      "name": "api.parse_dispatch",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280592193008208,
+      "ended_monotonic_ns": 1280928552225375,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 336359217167,
+      "direct_child_union_ns": 336295397958,
+      "exclusive_wall_ns": 63819209,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-004",
+      "name": "harness.pipeline_import_resolution",
+      "parent_span_id": "external-003",
+      "started_monotonic_ns": 1280592193014583,
+      "ended_monotonic_ns": 1280592277893583,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 84879000,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 84879000,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-005",
+      "name": "pipeline.input_load",
+      "parent_span_id": "external-003",
+      "started_monotonic_ns": 1280592339517875,
+      "ended_monotonic_ns": 1280592339548041,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 30166,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 30166,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-006",
+      "name": "pipeline.parse_loaded",
+      "parent_span_id": "external-003",
+      "started_monotonic_ns": 1280592339555083,
+      "ended_monotonic_ns": 1280928550043875,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 336210488792,
+      "direct_child_union_ns": 62433433586,
+      "exclusive_wall_ns": 273777055206,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-007",
+      "name": "pipeline.font_audit",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280592348709083,
+      "ended_monotonic_ns": 1280592617934000,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 269224917,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 269224917,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-008",
+      "name": "pipeline.native_page_extraction",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280592617990000,
+      "ended_monotonic_ns": 1280592886111708,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 268121708,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 268121708,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-009",
+      "name": "pipeline.docling_conversion",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280592886127958,
+      "ended_monotonic_ns": 1280628304245000,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 35418117042,
+      "direct_child_union_ns": 31095592417,
+      "exclusive_wall_ns": 4322524625,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-010",
+      "name": "pipeline.docling_converter_acquisition",
+      "parent_span_id": "external-009",
+      "started_monotonic_ns": 1280597180924791,
+      "ended_monotonic_ns": 1280599071212791,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 1890288000,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 1890288000,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-011",
+      "name": "pipeline.docling_lock_wait",
+      "parent_span_id": "external-009",
+      "started_monotonic_ns": 1280599072848958,
+      "ended_monotonic_ns": 1280599072889500,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 40542,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 40542,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-012",
+      "name": "pipeline.docling_convert",
+      "parent_span_id": "external-009",
+      "started_monotonic_ns": 1280599072908375,
+      "ended_monotonic_ns": 1280628278172250,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 29205263875,
+      "direct_child_union_ns": 1136966167,
+      "exclusive_wall_ns": 28068297708,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-013",
+      "name": "pipeline.docling_pipeline_initialization",
+      "parent_span_id": "external-012",
+      "started_monotonic_ns": 1280599109269416,
+      "ended_monotonic_ns": 1280600246235583,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 1136966167,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 1136966167,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-014",
+      "name": "pipeline.text_run_evidence",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280628321640791,
+      "ended_monotonic_ns": 1280628854557833,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 532917042,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 532917042,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-015",
+      "name": "pipeline.form_evidence",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280628922355916,
+      "ended_monotonic_ns": 1280629528383208,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 606027292,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 606027292,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-016",
+      "name": "pipeline.outline_evidence",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280629552703541,
+      "ended_monotonic_ns": 1280629938140125,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 385436584,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 385436584,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-017",
+      "name": "pipeline.source_text_evidence",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280629961453416,
+      "ended_monotonic_ns": 1280630505524125,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 544070709,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 544070709,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-018",
+      "name": "pipeline.embedded_image_ocr",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280630505561416,
+      "ended_monotonic_ns": 1280630521912916,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 16351500,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 16351500,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-019",
+      "name": "pipeline.render_request_planning",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280630521923291,
+      "ended_monotonic_ns": 1280630529780958,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 7857667,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 7857667,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-020",
+      "name": "pipeline.rendered_region_ocr",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280630529795333,
+      "ended_monotonic_ns": 1280645062453708,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 14532658375,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 14532658375,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-021",
+      "name": "pipeline.source_note_augmentation",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280645062557750,
+      "ended_monotonic_ns": 1280645065051083,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 2493333,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 2493333,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-022",
+      "name": "pipeline.vector_table_extraction",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280645065073791,
+      "ended_monotonic_ns": 1280645599751791,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 534678000,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 534678000,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-023",
+      "name": "pipeline.table_repair_extraction",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280645601969041,
+      "ended_monotonic_ns": 1280645603093708,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 1124667,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 1124667,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-024",
+      "name": "pipeline.shared_page_analysis",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280645603159791,
+      "ended_monotonic_ns": 1280647405330166,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 1802170375,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 1802170375,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-025",
+      "name": "pipeline.compatibility_projection",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280921035460708,
+      "ended_monotonic_ns": 1280926741984708,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 5706524000,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 5706524000,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-026",
+      "name": "pipeline.terminal_source_alignment",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280926742049750,
+      "ended_monotonic_ns": 1280928475661458,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 1733611708,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 1733611708,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-027",
+      "name": "pipeline.parse_result_validation",
+      "parent_span_id": "external-006",
+      "started_monotonic_ns": 1280928477984541,
+      "ended_monotonic_ns": 1280928550033208,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-002",
+      "parent_relation": "causal_stack",
+      "inclusive_wall_ns": 72048667,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 72048667,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-028",
+      "name": "api.jsonable_encoder",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280928552400375,
+      "ended_monotonic_ns": 1280928777265125,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 224864750,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 224864750,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-029",
+      "name": "api.result_validation",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280928777302041,
+      "ended_monotonic_ns": 1280928848206291,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 70904250,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 70904250,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-030",
+      "name": "api.model_dump",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280928848234916,
+      "ended_monotonic_ns": 1280928912602708,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 64367792,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 64367792,
+      "inclusive_is_additive": false
+    },
+    {
+      "span_id": "external-031",
+      "name": "api.response_build",
+      "parent_span_id": "request",
+      "started_monotonic_ns": 1280928913257000,
+      "ended_monotonic_ns": 1280929000182375,
+      "status": "success",
+      "failure_code": null,
+      "execution_context_id": "context-001",
+      "parent_relation": "request_scope",
+      "inclusive_wall_ns": 86925375,
+      "direct_child_union_ns": 0,
+      "exclusive_wall_ns": 86925375,
+      "inclusive_is_additive": false
+    }
+  ],
+  "stage_aggregates": {
+    "request_total": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 336839385958,
+      "exclusive_wall_ns": 32955957,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.input_validation": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 38167,
+      "exclusive_wall_ns": 38167,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.upload_read": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 21000,
+      "exclusive_wall_ns": 21000,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "queue_wait": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 91500,
+      "exclusive_wall_ns": 91500,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.parse_dispatch": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 336359217167,
+      "exclusive_wall_ns": 63819209,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "harness.pipeline_import_resolution": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 84879000,
+      "exclusive_wall_ns": 84879000,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.input_load": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 30166,
+      "exclusive_wall_ns": 30166,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.parse_loaded": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 336210488792,
+      "exclusive_wall_ns": 273777055206,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.font_audit": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 269224917,
+      "exclusive_wall_ns": 269224917,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.native_page_extraction": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 268121708,
+      "exclusive_wall_ns": 268121708,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.docling_conversion": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 35418117042,
+      "exclusive_wall_ns": 4322524625,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.docling_converter_acquisition": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 1890288000,
+      "exclusive_wall_ns": 1890288000,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.docling_lock_wait": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 40542,
+      "exclusive_wall_ns": 40542,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.docling_convert": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 29205263875,
+      "exclusive_wall_ns": 28068297708,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.docling_pipeline_initialization": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 1136966167,
+      "exclusive_wall_ns": 1136966167,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.text_run_evidence": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 532917042,
+      "exclusive_wall_ns": 532917042,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.form_evidence": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 606027292,
+      "exclusive_wall_ns": 606027292,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.outline_evidence": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 385436584,
+      "exclusive_wall_ns": 385436584,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.source_text_evidence": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 544070709,
+      "exclusive_wall_ns": 544070709,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.embedded_image_ocr": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 16351500,
+      "exclusive_wall_ns": 16351500,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.render_request_planning": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 7857667,
+      "exclusive_wall_ns": 7857667,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.rendered_region_ocr": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 14532658375,
+      "exclusive_wall_ns": 14532658375,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.source_note_augmentation": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 2493333,
+      "exclusive_wall_ns": 2493333,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.vector_table_extraction": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 534678000,
+      "exclusive_wall_ns": 534678000,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.table_repair_extraction": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 1124667,
+      "exclusive_wall_ns": 1124667,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.shared_page_analysis": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 1802170375,
+      "exclusive_wall_ns": 1802170375,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.compatibility_projection": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 5706524000,
+      "exclusive_wall_ns": 5706524000,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.terminal_source_alignment": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 1733611708,
+      "exclusive_wall_ns": 1733611708,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "pipeline.parse_result_validation": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 72048667,
+      "exclusive_wall_ns": 72048667,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.jsonable_encoder": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 224864750,
+      "exclusive_wall_ns": 224864750,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.result_validation": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 70904250,
+      "exclusive_wall_ns": 70904250,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.model_dump": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 64367792,
+      "exclusive_wall_ns": 64367792,
+      "inclusive_is_additive_across_hierarchy": false
+    },
+    "api.response_build": {
+      "invocation_count": 1,
+      "inclusive_wall_ns": 86925375,
+      "exclusive_wall_ns": 86925375,
+      "inclusive_is_additive_across_hierarchy": false
+    }
+  },
+  "closure": {
+    "request_total_ns": 336839385958,
+    "disjoint_top_level_union_ns": 336806430001,
+    "explicit_residual_ns": 32955957,
+    "observer_reported_top_level_union_ns": 336806430001,
+    "observer_reported_residual_ns": 32955957,
+    "checks": {
+      "computed_union_matches_observer": true,
+      "computed_residual_matches_observer": true,
+      "residual_nonnegative": true,
+      "all_nonroot_spans_bounded_by_request": true,
+      "union_plus_residual_equals_total": true
+    },
+    "valid": true
+  }
+}

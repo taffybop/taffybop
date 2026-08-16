@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "clean-energy",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "d5e70601c79d52fac9d152e0815d7f54079fe7fed71a7c8ddfbe808ff07158e6",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46",
+      "html_sha256": "dc143553e0098f5d1b90ee6e3a817ed9406e8b4edbe1ea95d672a8c911411211",
+      "text_sha256": "24f2e507961f70ba26718a229c789da1e8cec252de3fbce86f3f10a2d0918a07"
+    }
+  ]
+}

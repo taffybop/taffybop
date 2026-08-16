@@ -1,0 +1,39 @@
+{
+  "forbidden_search": {
+    "matches": [],
+    "patterns": [
+      "FFD-011",
+      "postal-10k",
+      "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "Federal Employees Retirement System",
+      "FERS",
+      "llamaparse",
+      "benchmark-expertmodeldata",
+      "expected glossary",
+      "glossary row"
+    ]
+  },
+  "production_hashes": {
+    "app/services/pipeline.py": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9",
+    "app/services/source_text_alignment.py": "4efbcf6e159c4e5f9164cd27504d37346faeba8739468bc2f80d5f05ffd825db",
+    "app/services/text_run_semantics.py": "5e679c53f21d72db302a35a07852a638cd0a1caa5083d54be1f239a718453fd8"
+  },
+  "reviewed_files": [
+    "app/services/source_text_alignment.py",
+    "app/services/pipeline.py",
+    "app/services/text_run_semantics.py",
+    "app/services/table_semantics.py"
+  ],
+  "schema_version": "ffd-011-production-search-v1",
+  "suspicious_constant_search": {
+    "matches": [
+      {
+        "adjudication": "Generic validation that an issued contributor is bound to the current input source; no fixture value is present.",
+        "line": 924,
+        "path": "app/services/source_text_alignment.py",
+        "text": "rebuilt[\"source_document_identity\"] == source_sha256"
+      }
+    ]
+  },
+  "verdict": "pass: no fixture-specific activation rule or oracle leak found"
+}

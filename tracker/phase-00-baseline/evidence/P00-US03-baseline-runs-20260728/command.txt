@@ -1,0 +1,1 @@
+.venv/bin/python -m tests.benchmarks.baseline_report capture --source benchmark-expertmodeldata/catastrophe-recap.pdf --truth tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json --runs-root tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728 --repeat 5 --node /opt/homebrew/opt/node@24/bin/node

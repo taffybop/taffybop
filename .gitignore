@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Virtual environments and local configuration
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Test and tool output
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local models and generated extraction output
+.models/
+tmp/
+parsed.json
+parsed.md
+
+# Private sample and reference artifacts
+/Original document.pdf
+/markdown.md
+/json_data.json
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+

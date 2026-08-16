@@ -1,0 +1,122 @@
+{
+  "case_id": "catastrophe-recap",
+  "completed_at_utc": "2026-07-28T13:47:13.937284+00:00",
+  "elapsed_seconds": 8.50208433298394,
+  "error": null,
+  "operating_mode": {
+    "image_captioning_enabled": false,
+    "network_services_enabled": false,
+    "optional_model_configuration": null,
+    "parser_invocation": "direct app.services.pipeline.parse_document",
+    "pdf_visual_analysis_enabled": true
+  },
+  "output": {
+    "detected_image_count": 2,
+    "document_warnings": [],
+    "item_type_counts": {
+      "chart": 1,
+      "footer": 1,
+      "image": 1,
+      "table": 1,
+      "text": 2
+    },
+    "json_sha256": "3f1f0d9b7768e119d65a887e73f54173df633eeca004e9296bcfeb6aebc91abe",
+    "json_size_bytes": 79005,
+    "markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+    "markdown_size_bytes": 2008,
+    "page_count": 1,
+    "pages": [
+      {
+        "detected_image_count": 2,
+        "item_count": 6,
+        "item_type_counts": {
+          "chart": 1,
+          "footer": 1,
+          "image": 1,
+          "table": 1,
+          "text": 2
+        },
+        "page_index": 1,
+        "page_number": 1,
+        "success": true,
+        "warnings": []
+      }
+    ],
+    "processing": {
+      "duration_ms": 8500,
+      "engine": "docling",
+      "input_format": "pdf",
+      "local_processing": true,
+      "native_text_engine": "pypdfium2",
+      "ocr_engine": "tesseract",
+      "ocr_languages": [
+        "eng"
+      ],
+      "picture_captioning": {
+        "local_model_available": false,
+        "requested": false
+      },
+      "table_engines": [
+        "docling",
+        "pdfplumber"
+      ],
+      "visual_analysis": {
+        "heading_height_ratio": 1.8,
+        "heading_min_confidence": 0.75,
+        "low_confidence_min_alnum_chars": 8,
+        "pdf_selective_rendering_enabled": true,
+        "picture_classification_threshold": 0.6,
+        "primary_ocr_min_confidence": 0.45,
+        "shared_pipeline": true
+      }
+    },
+    "total_item_count": 6
+  },
+  "peak_rss_bytes": 1496825856,
+  "process_cpu_seconds": 7.600326,
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "source_filename": "catastrophe-recap.pdf",
+  "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+  "source_size_bytes": 58779,
+  "started_at_utc": "2026-07-28T13:47:05.434662+00:00",
+  "status": "success",
+  "versions": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "pypdfium2": "5.12.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "source_tree_sha256": "ff2e4656dcb9f6eefb5c2e3b94919c5eb080aad7a8cf6dc09463e9f86d87d98c",
+    "tesseract": "tesseract 5.5.3"
+  }
+}

@@ -1,0 +1,2403 @@
+{
+  "schema_version": "1.0",
+  "story": "P03-US05",
+  "generated_at": "2026-07-31T09:51:01.404661+00:00",
+  "measurement": {
+    "performance_case": "purchase-agreement",
+    "memory_guard_case": "uber-earnings",
+    "pair_count_per_case": 5,
+    "worker_process_count": 20,
+    "execution_order": "alternating off/on then on/off within paired indexes",
+    "quantile_method": "empirical_p95_inclusive",
+    "cache_disclaimer": "operating-system caches were not explicitly flushed; no cold-cache claim is made",
+    "timing_and_traced_allocation_measured_separately": true,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "policy": {
+    "policy_id": "p03-text-run-semantics-v1",
+    "extraction_policy_id": "p03-text-run-extraction-v1",
+    "association_policy_id": "p03-text-run-association-v1",
+    "feature_flag": "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED",
+    "default_enabled": false,
+    "rollback_value": false,
+    "source_extraction_p95_ceiling_seconds": 0.15,
+    "source_extraction_peak_allocation_ceiling_bytes": 67108864,
+    "projection_p95_ceiling_seconds": 0.05,
+    "projection_peak_allocation_ceiling_bytes": 33554432,
+    "maximum_boundary_ceiling_seconds": 0.25,
+    "paired_absolute_ceiling_seconds": 0.309,
+    "paired_percent_ceiling": 5.0,
+    "maximum_report_bytes": 8388608,
+    "maximum_rules_per_run": 64,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "settings_delta": {
+    "changed_fields": [
+      "layout_text_run_semantics_enabled"
+    ],
+    "flag_off": {
+      "layout_text_run_semantics_enabled": false
+    },
+    "flag_on": {
+      "layout_text_run_semantics_enabled": true
+    },
+    "accepted_predecessor_flags_enabled": true
+  },
+  "m0_reference": {
+    "label": "M0_reference_context_not_paired_predecessor",
+    "wall_seconds": 6.18,
+    "peak_rss_mib": 1401.0
+  },
+  "fixed_denominators": {
+    "purchase_page_1_characters": 3338,
+    "purchase_page_1_filled_rules": 13,
+    "repair_expected": 3,
+    "deleted_logical_groups_expected": 6,
+    "deleted_group_rule_edges_expected": 7,
+    "deleted_run_rule_links_expected": 9,
+    "blue_runs_expected": 2,
+    "blue_rule_links_expected": 4,
+    "same_page_false_deletion_expected": 0,
+    "same_page_false_deletion_control_count": 3,
+    "source_proven_inserted_replacement_expected": 0,
+    "purchase_source_sequence_expected": 7,
+    "predecessor_order_expected": 41
+  },
+  "input_custody": {
+    "purchase-agreement": {
+      "expected": {
+        "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+        "size_bytes": 152828,
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+      },
+      "observed": {
+        "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+        "size_bytes": 152828,
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+      },
+      "exact_match": true
+    },
+    "postal-10k": {
+      "expected": {
+        "path": "benchmark-expertmodeldata/postal-10k.pdf",
+        "size_bytes": 83589,
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74"
+      },
+      "observed": {
+        "path": "benchmark-expertmodeldata/postal-10k.pdf",
+        "size_bytes": 83589,
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74"
+      },
+      "exact_match": true
+    },
+    "finance-10k": {
+      "expected": {
+        "path": "benchmark-expertmodeldata/finance-10k.pdf",
+        "size_bytes": 87105,
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086"
+      },
+      "observed": {
+        "path": "benchmark-expertmodeldata/finance-10k.pdf",
+        "size_bytes": 87105,
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086"
+      },
+      "exact_match": true
+    },
+    "uber-earnings": {
+      "expected": {
+        "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+        "size_bytes": 7584019,
+        "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+      },
+      "observed": {
+        "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+        "size_bytes": 7584019,
+        "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+      },
+      "exact_match": true
+    }
+  },
+  "control_matrix": {
+    "cases": {
+      "purchase-agreement": {
+        "summary": {
+          "item_count": 12,
+          "items_with_projection": 9,
+          "run_count": 28,
+          "deleted_run_count": 9,
+          "deleted_logical_group_count": 6,
+          "deleted_group_rule_edge_count": 7,
+          "deleted_run_rule_link_count": 9,
+          "blue_run_count": 2,
+          "blue_rule_link_count": 4,
+          "inserted_or_replacement_count": 0,
+          "false_deletion_controls": {
+            "EXECUTION VERSION": false,
+            "Background": false,
+            "Exhibit A": false
+          },
+          "postal_italic_targets": {},
+          "active_projection_item_count": 9
+        },
+        "semantic_json_size_bytes": 82421,
+        "markdown_size_bytes": 3426
+      },
+      "postal-10k": {
+        "summary": {
+          "item_count": 14,
+          "items_with_projection": 3,
+          "run_count": 8,
+          "deleted_run_count": 0,
+          "deleted_logical_group_count": 0,
+          "deleted_group_rule_edge_count": 0,
+          "deleted_run_rule_link_count": 0,
+          "blue_run_count": 0,
+          "blue_rule_link_count": 0,
+          "inserted_or_replacement_count": 0,
+          "false_deletion_controls": {
+            "EXECUTION VERSION": false,
+            "Background": false,
+            "Exhibit A": false
+          },
+          "postal_italic_targets": {
+            "CARES Act": [
+              "cells",
+              20,
+              "text"
+            ],
+            "Coronavirus Aid, Relief, and Economic Security Act": [
+              "cells",
+              21,
+              "text"
+            ],
+            "Exchange Act": [
+              "cells",
+              66,
+              "text"
+            ],
+            "Securities and Exchange Act of 1934": [
+              "cells",
+              67,
+              "text"
+            ]
+          },
+          "active_projection_item_count": 1
+        },
+        "semantic_json_size_bytes": 387409,
+        "markdown_size_bytes": 11109
+      },
+      "finance-10k": {
+        "summary": {
+          "item_count": 18,
+          "items_with_projection": 9,
+          "run_count": 26,
+          "deleted_run_count": 0,
+          "deleted_logical_group_count": 0,
+          "deleted_group_rule_edge_count": 0,
+          "deleted_run_rule_link_count": 0,
+          "blue_run_count": 0,
+          "blue_rule_link_count": 0,
+          "inserted_or_replacement_count": 0,
+          "false_deletion_controls": {
+            "EXECUTION VERSION": false,
+            "Background": false,
+            "Exhibit A": false
+          },
+          "postal_italic_targets": {},
+          "active_projection_item_count": 5
+        },
+        "semantic_json_size_bytes": 428029,
+        "markdown_size_bytes": 12622
+      }
+    },
+    "matrix_results": {
+      "target": {
+        "claim_id": "p00-us06:purchase-agreement:expert-row-01",
+        "case": "purchase-agreement",
+        "role": "target",
+        "pass": true
+      },
+      "related_positive": {
+        "claim_id": "p00-us08:postal-10k:expert-row-03",
+        "case": "postal-10k",
+        "role": "related_positive",
+        "pass": true
+      },
+      "non_target_regression": {
+        "claim_id": "p00-us06:finance-10k:expert-row-01",
+        "case": "finance-10k",
+        "role": "non_target_regression",
+        "pass": true
+      },
+      "negative_ambiguous_claim": {
+        "claim_id": "p00-us06:purchase-agreement:expert-row-05",
+        "case": "purchase-agreement",
+        "role": "negative_ambiguous_claim",
+        "pass": true
+      }
+    }
+  },
+  "relationship_order_retention": {
+    "oracle": {
+      "path": "tracker/phase-03-layout/evidence/P03-US04-reading-order-metrics.json",
+      "raw_sha256": "826af5de42950c11e4fa2bcbf8a24f5adc2ad2c62d7a09cb760c4e08bc591154",
+      "semantic_sha256": "46cef72e08707cc57fd54834c7ff4369a59558b4e2de1a47155da23b66803ab1",
+      "reviewed_case_count": 9,
+      "slice_count": 10
+    },
+    "source_custody": {
+      "catastrophe-recap": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "size_bytes": 58779,
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "size_bytes": 58779,
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e"
+        },
+        "exact_match": true
+      },
+      "clinical-study": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/clinical-study.pdf",
+          "size_bytes": 750004,
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/clinical-study.pdf",
+          "size_bytes": 750004,
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2"
+        },
+        "exact_match": true
+      },
+      "component-datasheet": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+          "size_bytes": 329199,
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+          "size_bytes": 329199,
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4"
+        },
+        "exact_match": true
+      },
+      "esg-metrics": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+          "size_bytes": 60516,
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+          "size_bytes": 60516,
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9"
+        },
+        "exact_match": true
+      },
+      "manufacturing-report": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+          "size_bytes": 380274,
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+          "size_bytes": 380274,
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f"
+        },
+        "exact_match": true
+      },
+      "purchase-agreement": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+          "size_bytes": 152828,
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+          "size_bytes": 152828,
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+        },
+        "exact_match": true
+      },
+      "ny-timetable": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+          "size_bytes": 26109,
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+          "size_bytes": 26109,
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+        },
+        "exact_match": true
+      },
+      "clean-energy": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "size_bytes": 122014,
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "size_bytes": 122014,
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d"
+        },
+        "exact_match": true
+      },
+      "finance-10k": {
+        "expected": {
+          "path": "benchmark-expertmodeldata/finance-10k.pdf",
+          "size_bytes": 87105,
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086"
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/finance-10k.pdf",
+          "size_bytes": 87105,
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086"
+        },
+        "exact_match": true
+      }
+    },
+    "cases": {
+      "catastrophe-recap": {
+        "top_level_expected": 7,
+        "top_level_matched": 7
+      },
+      "clinical-study": {
+        "top_level_expected": 5,
+        "top_level_matched": 5
+      },
+      "component-datasheet": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "esg-metrics": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "manufacturing-report": {
+        "top_level_expected": 6,
+        "top_level_matched": 6
+      },
+      "purchase-agreement": {
+        "top_level_expected": 3,
+        "top_level_matched": 3
+      },
+      "ny-timetable": {
+        "top_level_expected": 2,
+        "top_level_matched": 2
+      },
+      "clean-energy": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "finance-10k": {
+        "top_level_expected": 5,
+        "top_level_matched": 5
+      }
+    },
+    "top_level_results": [
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "p1-i2",
+        "after_id": "el-91373a72a9c9e4e6f91d",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "el-91373a72a9c9e4e6f91d",
+        "after_id": "p1-i3",
+        "before_position": 2,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "p1-i3",
+        "after_id": "p1-i4",
+        "before_position": 3,
+        "after_position": 4,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "p1-i4",
+        "after_id": "layout-caption-5a6f8b41401544adeb2a",
+        "before_position": 4,
+        "after_position": 5,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "layout-caption-5a6f8b41401544adeb2a",
+        "after_id": "p1-i5",
+        "before_position": 5,
+        "after_position": 6,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "p1-i5",
+        "after_id": "layout-note-af58a03da292b26ce13f",
+        "before_position": 6,
+        "after_position": 7,
+        "matched": true
+      },
+      {
+        "case": "catastrophe-recap",
+        "page_index": 1,
+        "before_id": "layout-note-af58a03da292b26ce13f",
+        "after_id": "p1-i6",
+        "before_position": 7,
+        "after_position": 8,
+        "matched": true
+      },
+      {
+        "case": "clinical-study",
+        "page_index": 1,
+        "before_id": "p1-i15",
+        "after_id": "p1-i4",
+        "before_position": 1,
+        "after_position": 7,
+        "matched": true
+      },
+      {
+        "case": "clinical-study",
+        "page_index": 1,
+        "before_id": "p1-i18",
+        "after_id": "p1-i4",
+        "before_position": 6,
+        "after_position": 7,
+        "matched": true
+      },
+      {
+        "case": "clinical-study",
+        "page_index": 1,
+        "before_id": "p1-i14",
+        "after_id": "p1-i19",
+        "before_position": 17,
+        "after_position": 18,
+        "matched": true
+      },
+      {
+        "case": "clinical-study",
+        "page_index": 2,
+        "before_id": "p2-i3",
+        "after_id": "p2-i4",
+        "before_position": 7,
+        "after_position": 8,
+        "matched": true
+      },
+      {
+        "case": "clinical-study",
+        "page_index": 2,
+        "before_id": "p2-i4",
+        "after_id": "p2-i5",
+        "before_position": 8,
+        "after_position": 9,
+        "matched": true
+      },
+      {
+        "case": "component-datasheet",
+        "page_index": 1,
+        "before_id": "p1-i3",
+        "after_id": "p1-i4",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "component-datasheet",
+        "page_index": 1,
+        "before_id": "p1-i4",
+        "after_id": "p1-i2",
+        "before_position": 2,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "component-datasheet",
+        "page_index": 1,
+        "before_id": "p1-i2",
+        "after_id": "p1-i5",
+        "before_position": 3,
+        "after_position": 4,
+        "matched": true
+      },
+      {
+        "case": "component-datasheet",
+        "page_index": 1,
+        "before_id": "p1-i5",
+        "after_id": "p1-i6",
+        "before_position": 4,
+        "after_position": 5,
+        "matched": true
+      },
+      {
+        "case": "esg-metrics",
+        "page_index": 1,
+        "before_id": "p1-i10",
+        "after_id": "p1-i12",
+        "before_position": 9,
+        "after_position": 10,
+        "matched": true
+      },
+      {
+        "case": "esg-metrics",
+        "page_index": 1,
+        "before_id": "p1-i18",
+        "after_id": "p1-i11",
+        "before_position": 16,
+        "after_position": 17,
+        "matched": true
+      },
+      {
+        "case": "esg-metrics",
+        "page_index": 1,
+        "before_id": "p1-i11",
+        "after_id": "p1-i19",
+        "before_position": 17,
+        "after_position": 18,
+        "matched": true
+      },
+      {
+        "case": "esg-metrics",
+        "page_index": 1,
+        "before_id": "p1-i19",
+        "after_id": "p1-i20",
+        "before_position": 18,
+        "after_position": 19,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "p2-i1",
+        "after_id": "layout-caption-c89f2384aa740f5d02ce",
+        "before_position": 0,
+        "after_position": 1,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "layout-caption-c89f2384aa740f5d02ce",
+        "after_id": "p2-i2",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "p2-i2",
+        "after_id": "p2-i3",
+        "before_position": 2,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "p2-i3",
+        "after_id": "layout-caption-daceff6ae2f2ee83c6d0",
+        "before_position": 3,
+        "after_position": 4,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "layout-caption-daceff6ae2f2ee83c6d0",
+        "after_id": "p2-i4",
+        "before_position": 4,
+        "after_position": 5,
+        "matched": true
+      },
+      {
+        "case": "manufacturing-report",
+        "page_index": 2,
+        "before_id": "p2-i4",
+        "after_id": "p2-i5",
+        "before_position": 5,
+        "after_position": 6,
+        "matched": true
+      },
+      {
+        "case": "purchase-agreement",
+        "page_index": 1,
+        "before_id": "p1-i9",
+        "after_id": "p1-i10",
+        "before_position": 0,
+        "after_position": 1,
+        "matched": true
+      },
+      {
+        "case": "purchase-agreement",
+        "page_index": 1,
+        "before_id": "p1-i10",
+        "after_id": "p1-i11",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "purchase-agreement",
+        "page_index": 1,
+        "before_id": "p1-i11",
+        "after_id": "p1-i1",
+        "before_position": 2,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "ny-timetable",
+        "page_index": 2,
+        "before_id": "p2-i2",
+        "after_id": "p2-i4",
+        "before_position": 0,
+        "after_position": 1,
+        "matched": true
+      },
+      {
+        "case": "ny-timetable",
+        "page_index": 2,
+        "before_id": "p2-i4",
+        "after_id": "p2-i1",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "clean-energy",
+        "page_index": 1,
+        "before_id": "p1-i1",
+        "after_id": "p1-i2",
+        "before_position": 0,
+        "after_position": 1,
+        "matched": true
+      },
+      {
+        "case": "clean-energy",
+        "page_index": 1,
+        "before_id": "p1-i2",
+        "after_id": "p1-i3",
+        "before_position": 1,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "clean-energy",
+        "page_index": 1,
+        "before_id": "p1-i3",
+        "after_id": "p1-i7",
+        "before_position": 3,
+        "after_position": 4,
+        "matched": true
+      },
+      {
+        "case": "clean-energy",
+        "page_index": 1,
+        "before_id": "p1-i7",
+        "after_id": "p1-i8",
+        "before_position": 4,
+        "after_position": 8,
+        "matched": true
+      },
+      {
+        "case": "finance-10k",
+        "page_index": 1,
+        "before_id": "p1-i1",
+        "after_id": "p1-i2",
+        "before_position": 0,
+        "after_position": 1,
+        "matched": true
+      },
+      {
+        "case": "finance-10k",
+        "page_index": 1,
+        "before_id": "p1-i2",
+        "after_id": "p1-i3",
+        "before_position": 1,
+        "after_position": 2,
+        "matched": true
+      },
+      {
+        "case": "finance-10k",
+        "page_index": 1,
+        "before_id": "p1-i3",
+        "after_id": "p1-i4",
+        "before_position": 2,
+        "after_position": 3,
+        "matched": true
+      },
+      {
+        "case": "finance-10k",
+        "page_index": 1,
+        "before_id": "p1-i4",
+        "after_id": "p1-i5",
+        "before_position": 3,
+        "after_position": 4,
+        "matched": true
+      },
+      {
+        "case": "finance-10k",
+        "page_index": 1,
+        "before_id": "p1-i5",
+        "after_id": "p1-i6",
+        "before_position": 4,
+        "after_position": 5,
+        "matched": true
+      }
+    ],
+    "top_level_expected": 40,
+    "top_level_matched": 40,
+    "nested_expected": 1,
+    "nested_matched": 1,
+    "nested_result": {
+      "case": "clean-energy",
+      "page_index": 1,
+      "owner_id": "p1-i1",
+      "before_value": "Clean Energy Market Monitor - March 2024",
+      "after_value": "Overview",
+      "observed_values": [
+        "Clean Energy Market Monitor - March 2024",
+        "Overview"
+      ],
+      "public_matched": true,
+      "canonical_field_matched": {
+        "markdown": true,
+        "text": true
+      },
+      "matched": true
+    },
+    "total_expected": 41,
+    "total_matched": 41,
+    "purchase_source_sequence": {
+      "expected_count": 7,
+      "observed_count": 7,
+      "expected": [
+        [
+          "deleted",
+          "Draft of 6/1/20"
+        ],
+        [
+          "deleted",
+          "This is a draft document. Certain updates will be needed prior to finalizing this."
+        ],
+        [
+          "deleted",
+          "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+        ],
+        [
+          "deleted",
+          "This is Confidential to The City of Johnstown"
+        ],
+        [
+          "item",
+          "p1-i11"
+        ],
+        [
+          "item",
+          "p1-i1"
+        ],
+        [
+          "item",
+          "p1-i2"
+        ]
+      ],
+      "observed": [
+        [
+          "deleted",
+          "Draft of 6/1/20"
+        ],
+        [
+          "deleted",
+          "This is a draft document. Certain updates will be needed prior to finalizing this."
+        ],
+        [
+          "deleted",
+          "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+        ],
+        [
+          "deleted",
+          "This is Confidential to The City of Johnstown"
+        ],
+        [
+          "item",
+          "p1-i11"
+        ],
+        [
+          "item",
+          "p1-i1"
+        ],
+        [
+          "item",
+          "p1-i2"
+        ]
+      ],
+      "entries": [
+        {
+          "locator": [
+            0,
+            0
+          ],
+          "observed": [
+            "deleted",
+            "Draft of 6/1/20"
+          ],
+          "item_id": "p1-i9",
+          "target_path": [
+            "value"
+          ],
+          "start": 0,
+          "end": 15
+        },
+        {
+          "locator": [
+            1,
+            0
+          ],
+          "observed": [
+            "deleted",
+            "This is a draft document. Certain updates will be needed prior to finalizing this."
+          ],
+          "item_id": "p1-i10",
+          "target_path": [
+            "value"
+          ],
+          "start": 0,
+          "end": 82
+        },
+        {
+          "locator": [
+            1,
+            83
+          ],
+          "observed": [
+            "deleted",
+            "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+          ],
+          "item_id": "p1-i10",
+          "target_path": [
+            "value"
+          ],
+          "start": 83,
+          "end": 162
+        },
+        {
+          "locator": [
+            1,
+            163
+          ],
+          "observed": [
+            "deleted",
+            "This is Confidential to The City of Johnstown"
+          ],
+          "item_id": "p1-i10",
+          "target_path": [
+            "value"
+          ],
+          "start": 163,
+          "end": 208
+        },
+        {
+          "locator": [
+            2,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i11"
+          ],
+          "item_id": "p1-i11",
+          "target_path": [
+            "value"
+          ],
+          "start": 0,
+          "end": 17,
+          "text_match_kind": "exact",
+          "expected_text": "EXECUTION VERSION",
+          "source_text": "EXECUTION VERSION",
+          "source_text_sha256": "6d012cf2b42a6344f9ad485589b303a30cfb343967dc7d82d29da828b6d628a3"
+        },
+        {
+          "locator": [
+            3,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i1"
+          ],
+          "item_id": "p1-i1",
+          "target_path": [
+            "value"
+          ],
+          "start": 0,
+          "end": 24,
+          "text_match_kind": "exact",
+          "expected_text": "ASSET PURCHASE AGREEMENT",
+          "source_text": "ASSET PURCHASE AGREEMENT",
+          "source_text_sha256": "2f2ee69a85d85cee2a8a8da52a2a8c5f97ba5dccc5c156cfef5ca2aa4660504c"
+        },
+        {
+          "locator": [
+            4,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i2"
+          ],
+          "item_id": "p1-i2",
+          "target_path": [
+            "value"
+          ],
+          "start": 0,
+          "end": 482,
+          "text_match_kind": "prefix",
+          "expected_text": "THIS ASSET PURCHASE AGREEMENT",
+          "source_text": "THIS ASSET PURCHASE AGREEMENT (this ' Agreement '), dated as of [June 23_______], 2020 (the ' Effective Date '), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the ' Seller '), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the ' Buyer ' and together with Seller, the ' Parties ').",
+          "source_text_sha256": "73695c3796d8768a5f202065ee5e7857b6077aae5ddd87e329c67cbc0be67026"
+        }
+      ],
+      "strictly_ordered": true,
+      "exact": true
+    },
+    "all_pass": true
+  },
+  "synthetic_fixture_custody": {
+    "synthetic:p03-us05:plain-legal-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:plain-legal-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "74742f45a4228677d8421a6f26c45284f3c58c04fd910af9b05b64dcc7165d57"
+    },
+    "synthetic:p03-us05:table-rule-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:table-rule-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "8f1ed77de572bf0d392a6e5f957b21b50fdea8bb6998e1dba1337de67538da64"
+    },
+    "synthetic:p03-us05:decorative-rule-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:decorative-rule-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "1eab8155914b1795251ecbc4b78aa49d4ab7c7956baf35ec4c787cd3a92f6c10"
+    },
+    "synthetic:p03-us05:ambiguous-overlap-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:ambiguous-overlap-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "57c70fe1cd62e46237a54d642f7a7f2ce64fa9363b820654554f90cdad96a3ed"
+    },
+    "synthetic:p03-us05:markup-injection-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:markup-injection-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "b73e189d83869c12d0cefddb67182e97f7d2a6901a8479b6e54da95d2f6927ee"
+    },
+    "synthetic:p03-us05:thresholds-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:thresholds-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "42d2a1c475f5b1cdf7a0b9ec547abddc95dbe27c8b3465dc2affdaab21698990"
+    },
+    "synthetic:p03-us05:transforms-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:transforms-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py"
+      },
+      "payload_sha256": "f0caac224c0a34c669e94861d21b5e8098a278facbb98e4abb390413cba33d43"
+    },
+    "synthetic:p03-us05:limits-v1": {
+      "payload": {
+        "fixture_id": "synthetic:p03-us05:limits-v1",
+        "policy_id": "p03-text-run-semantics-v1",
+        "generator_path": "tests/stories/phase_03/test_p03_us05_adversarial.py",
+        "exact_maximum": 64,
+        "maximum_plus_one": 65,
+        "exact_source_sha256": "ac652aa26e0c6cac10ae85e85b2a314464b01165bf1446015f2b3287cfefbd80",
+        "maximum_plus_one_source_sha256": "dd93e9d8794056708177a7c0eee64eb6fe44e68824dec8a876fd8098372e40ca"
+      },
+      "payload_sha256": "701baa75f5b841c862cef068d17691ab665af15cf6e4c9f496c8cd10fcbefec6"
+    }
+  },
+  "predecessor_custody": {
+    "path": "tracker/phase-03-layout/evidence/P03-US04-reading-order-metrics.json",
+    "size_bytes": 373160,
+    "raw_sha256": "826af5de42950c11e4fa2bcbf8a24f5adc2ad2c62d7a09cb760c4e08bc591154",
+    "semantic_sha256": "46cef72e08707cc57fd54834c7ff4369a59558b4e2de1a47155da23b66803ab1",
+    "reviewed_pair_expected": 41,
+    "reviewed_pair_matched": 41
+  },
+  "code_sha256": {
+    ".env.example": {
+      "path": ".env.example",
+      "size_bytes": 3904,
+      "sha256": "fd3acdbdd89de3ec7b44a49d43f62db602fae8d11bbc183d1754bb4483ed5efb"
+    },
+    "README.md": {
+      "path": "README.md",
+      "size_bytes": 31478,
+      "sha256": "be0b9d42092e890d19c25d071f86308995a202bb065056fd1cde352fcd32b086"
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "size_bytes": 734,
+      "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7"
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "size_bytes": 606113,
+      "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316"
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "size_bytes": 14109,
+      "sha256": "80d0d5ba49aaf8e05bdea4b63ef581bfe1de2c138f0bd642ed595165ef9a161f"
+    },
+    "app/models.py": {
+      "path": "app/models.py",
+      "size_bytes": 2310,
+      "sha256": "553d6a6040f926fbd894d6337c866a64dd82857375510d86633f318cc7f24afa"
+    },
+    "app/services/ir.py": {
+      "path": "app/services/ir.py",
+      "size_bytes": 186960,
+      "sha256": "4f1aed28ff43568dc9c02640615bbd1a74ecfed5272292961ae02e09ce233d87"
+    },
+    "app/services/layout.py": {
+      "path": "app/services/layout.py",
+      "size_bytes": 150780,
+      "sha256": "a09884660a33abf7fcdcf1edf1e713d77178d20946814b19fac0bdb7b52fd907"
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 151542,
+      "sha256": "be07872459fd2c554b234f0eaf8711e018d5ea1b7efd05debf0fc3873941b4b3"
+    },
+    "app/services/presentation.py": {
+      "path": "app/services/presentation.py",
+      "size_bytes": 160726,
+      "sha256": "d23dc2d809c16f70a4cc99489b33270908395605a0ebdec4ef691cb2f0746dfb"
+    },
+    "app/services/serializer.py": {
+      "path": "app/services/serializer.py",
+      "size_bytes": 5026,
+      "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9"
+    },
+    "app/services/text_run_semantics.py": {
+      "path": "app/services/text_run_semantics.py",
+      "size_bytes": 129521,
+      "sha256": "804222626a6970257a2a344fbdfa3dfb80bf3446c3eeb9f79d2da5e6a48da93b"
+    },
+    "frontend/app/clearleaf-workspace.tsx": {
+      "path": "frontend/app/clearleaf-workspace.tsx",
+      "size_bytes": 58786,
+      "sha256": "19b8809e631a7dcd18cedff905a5b8c4fe504a14b1cfdde5aa5dfe46e197a279"
+    },
+    "frontend/lib/canonical-presentation.ts": {
+      "path": "frontend/lib/canonical-presentation.ts",
+      "size_bytes": 21704,
+      "sha256": "9a2a012533001802abaad2037fd7aa1fdbbb71cf6d8225dba2fd123629ddb9c7"
+    },
+    "frontend/lib/normalize-document-json.ts": {
+      "path": "frontend/lib/normalize-document-json.ts",
+      "size_bytes": 15397,
+      "sha256": "4363084964890d1f22fb4eff0ae9238d115607025cce9eb8c3186a5be0f77bd6"
+    },
+    "frontend/lib/serialize-output.ts": {
+      "path": "frontend/lib/serialize-output.ts",
+      "size_bytes": 2911,
+      "sha256": "a3b98088569d2533bfb2ac87fcd5893bd63d372208aecdaaa54b48bd4d739659"
+    },
+    "frontend/lib/text-run-semantics.ts": {
+      "path": "frontend/lib/text-run-semantics.ts",
+      "size_bytes": 27302,
+      "sha256": "3a6fb9aaeb8be86bd8348f5eddaf8dcd116f2e31689ff467d34af94d79365262"
+    },
+    "frontend/lib/types.ts": {
+      "path": "frontend/lib/types.ts",
+      "size_bytes": 9501,
+      "sha256": "af07e8f273e5994b2de6bc19e3a535b06f20be0e628f30735bcdc453f26a7dcb"
+    },
+    "frontend/package-lock.json": {
+      "path": "frontend/package-lock.json",
+      "size_bytes": 346488,
+      "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e"
+    },
+    "frontend/tests/p03-us05-redline-runs.test.mts": {
+      "path": "frontend/tests/p03-us05-redline-runs.test.mts",
+      "size_bytes": 18741,
+      "sha256": "5975c8d1924cd18023c616c20d81659d9bd40f4c1a2810a00a4eff5605595a6a"
+    },
+    "tests/benchmarks/text_run_semantics_metrics.py": {
+      "path": "tests/benchmarks/text_run_semantics_metrics.py",
+      "size_bytes": 66720,
+      "sha256": "b6f2151a6d1c927ab48fcb2ef3b86edb0e604703ff48c14e95c2820125c4e84b"
+    },
+    "tests/contract/test_p03_us05_target_path_order_interop.py": {
+      "path": "tests/contract/test_p03_us05_target_path_order_interop.py",
+      "size_bytes": 661,
+      "sha256": "0e14fd06ba3201a6290585ae15fcefe625ce300c622904f88e803bda3bde206b"
+    },
+    "tests/contract/test_p03_us05_text_run_contract.py": {
+      "path": "tests/contract/test_p03_us05_text_run_contract.py",
+      "size_bytes": 25819,
+      "sha256": "b839d487276470dfc064a21eb59d6e5fb2474b1d1b35748f81114b6170b5becb"
+    },
+    "tests/fixtures/p03_us05_target_path_order.json": {
+      "path": "tests/fixtures/p03_us05_target_path_order.json",
+      "size_bytes": 245,
+      "sha256": "3cc607e827de78efd86ff0456b0d7da383a7430bffed3855051f7099daf45e8d"
+    },
+    "tests/performance/test_p03_us05_text_run_performance.py": {
+      "path": "tests/performance/test_p03_us05_text_run_performance.py",
+      "size_bytes": 13628,
+      "sha256": "59fb1ce242ec83a817f98d1547d457fc2cfcc2cfd155218cc0f68edff5128448"
+    },
+    "tests/regression/phase_03/test_p03_us04_real_reading_order.py": {
+      "path": "tests/regression/phase_03/test_p03_us04_real_reading_order.py",
+      "size_bytes": 21885,
+      "sha256": "eba3fd2e3af31ef5ea0040d77935137e2f637f256cff3110bf137c2d78aceda1"
+    },
+    "tests/regression/phase_03/test_p03_us05_real_redline_runs.py": {
+      "path": "tests/regression/phase_03/test_p03_us05_real_redline_runs.py",
+      "size_bytes": 26361,
+      "sha256": "ce8ee0d451bf35ef5bfa7f1810cb1af375e9f26e35a8cd34593ddfd4db7354ea"
+    },
+    "tests/stories/phase_03/test_p03_us05_adversarial.py": {
+      "path": "tests/stories/phase_03/test_p03_us05_adversarial.py",
+      "size_bytes": 34307,
+      "sha256": "870f9d0dfa60037fa4fa839277eb53524210a8be32870e4ba27129aeb861c3e7"
+    },
+    "tests/stories/phase_03/test_p03_us05_algorithm_hardening.py": {
+      "path": "tests/stories/phase_03/test_p03_us05_algorithm_hardening.py",
+      "size_bytes": 30611,
+      "sha256": "87a983ae37fb012162a93efb4d2e9e4f8165d478168f9948c59ef0fe238e1707"
+    },
+    "tests/stories/phase_03/test_p03_us05_redline_runs.py": {
+      "path": "tests/stories/phase_03/test_p03_us05_redline_runs.py",
+      "size_bytes": 14690,
+      "sha256": "bc7cb337154054afe7be3ddf2193fa6e74c73de3f581c2493b83a1c2a798cf33"
+    },
+    "tracker/phase-03-layout/decisions/P03-text-run-semantics-policy.md": {
+      "path": "tracker/phase-03-layout/decisions/P03-text-run-semantics-policy.md",
+      "size_bytes": 29711,
+      "sha256": "5086caffb334b16d934c8e640bc890c9bb587983ca703182b384e2d05475e0d4"
+    }
+  },
+  "dependency_custody": {
+    "python_packages": {
+      "docling": "2.114.0",
+      "docling-core": "2.88.0",
+      "pdfplumber": "0.11.10",
+      "pydantic": "2.13.4"
+    },
+    "dependency_manifest_sha256": {
+      "pyproject.toml": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+      "uv.lock": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+      "frontend/package-lock.json": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e"
+    },
+    "local_tool_identity": {
+      "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "python_version": "3.13.5",
+      "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+      "tesseract": {
+        "path": "/opt/homebrew/Cellar/tesseract/5.5.3/bin/tesseract",
+        "version": "tesseract 5.5.3",
+        "size_bytes": 69184,
+        "sha256": "16020f485da1f534089d82608797d98f71322c67dee772438fb755ad9b4f79b5"
+      }
+    }
+  },
+  "source_extraction": {
+    "warmup_count": 2,
+    "sample_count": 20,
+    "quantile_method": "empirical_p95_inclusive",
+    "timing_tracemalloc_enabled": false,
+    "allocation_measured_in_separate_call": true,
+    "gc_collection_outside_timed_interval": true,
+    "samples_seconds": [
+      0.1037435,
+      0.104744125,
+      0.106710709,
+      0.104680709,
+      0.103789833,
+      0.107143542,
+      0.107341083,
+      0.107938459,
+      0.104361417,
+      0.107042083,
+      0.106077917,
+      0.1074515,
+      0.11775775,
+      0.13489325,
+      0.106405417,
+      0.110994917,
+      0.1071565,
+      0.106772083,
+      0.109175959,
+      0.108404167
+    ],
+    "p50_seconds": 0.107092813,
+    "p95_seconds": 0.118614525,
+    "min_seconds": 0.1037435,
+    "max_seconds": 0.13489325,
+    "p95_ceiling_seconds": 0.15,
+    "within_p95_ceiling": true,
+    "peak_allocated_bytes": 9753721,
+    "peak_allocation_ceiling_bytes": 67108864,
+    "within_peak_allocation_ceiling": true,
+    "report_size_bytes": 27170,
+    "report_size_ceiling_bytes": 8388608,
+    "within_report_size_ceiling": true,
+    "usable": true,
+    "semantic_deterministic": true,
+    "character_count": 3338,
+    "candidate_rule_count": 13,
+    "run_count": 28,
+    "retained_rule_count": 13,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "association_projection": {
+    "warmup_count": 2,
+    "sample_count": 20,
+    "quantile_method": "empirical_p95_inclusive",
+    "timing_tracemalloc_enabled": false,
+    "allocation_measured_in_separate_call": true,
+    "gc_collection_outside_timed_interval": true,
+    "samples_seconds": [
+      0.008380875,
+      0.01099575,
+      0.00896375,
+      0.009553208,
+      0.008973833,
+      0.009233375,
+      0.009356417,
+      0.008876042,
+      0.008465791,
+      0.0089185,
+      0.009108458,
+      0.009119459,
+      0.008468083,
+      0.009396542,
+      0.009825792,
+      0.009326292,
+      0.009396041,
+      0.009479958,
+      0.009555375,
+      0.009237
+    ],
+    "p50_seconds": 0.009235187,
+    "p95_seconds": 0.00988429,
+    "min_seconds": 0.008380875,
+    "max_seconds": 0.01099575,
+    "p95_ceiling_seconds": 0.05,
+    "within_p95_ceiling": true,
+    "peak_allocated_bytes": 1222889,
+    "peak_allocation_ceiling_bytes": 33554432,
+    "within_peak_allocation_ceiling": true,
+    "projected_ir_size_bytes": 124533,
+    "projected_ir_size_ceiling_bytes": 8388608,
+    "within_projected_ir_size_ceiling": true,
+    "run_count": 28,
+    "rule_count": 13,
+    "semantic_deterministic": true,
+    "predecessor_unmodified": true,
+    "repeated_projection_idempotent": true,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "maximum_boundary": {
+    "boundary": "maximum_rules_per_run",
+    "exact_maximum": 64,
+    "maximum_plus_one": 65,
+    "exact_fixture_sha256": "ac652aa26e0c6cac10ae85e85b2a314464b01165bf1446015f2b3287cfefbd80",
+    "maximum_plus_one_fixture_sha256": "dd93e9d8794056708177a7c0eee64eb6fe44e68824dec8a876fd8098372e40ca",
+    "exact_usable": true,
+    "exact_rule_link_count": 64,
+    "exact_completed": true,
+    "elapsed_seconds": 0.0061725,
+    "ceiling_seconds": 0.25,
+    "within_ceiling": true,
+    "maximum_plus_one_usable": true,
+    "maximum_plus_one_refusal_code": null,
+    "maximum_plus_one_page_status": "unavailable",
+    "maximum_plus_one_page_concern_code": "text_run_rule_limit",
+    "maximum_plus_one_run_count": 0,
+    "maximum_plus_one_rule_count": 0,
+    "maximum_plus_one_elapsed_seconds": 0.005664333,
+    "maximum_plus_one_within_ceiling": true,
+    "maximum_plus_one_failed_closed": true,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "paired_parser": {
+    "purchase_parser_budget": {
+      "execution_order": [
+        [
+          "off",
+          "on"
+        ],
+        [
+          "on",
+          "off"
+        ],
+        [
+          "off",
+          "on"
+        ],
+        [
+          "on",
+          "off"
+        ],
+        [
+          "off",
+          "on"
+        ]
+      ],
+      "flag_off_samples": [
+        {
+          "case": "purchase-agreement",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 7.428094,
+          "peak_rss_bytes": 1424195584,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "caa531c92ff6fea8b7c186f29ff0be917a0fb03dbdbac7dcbc326b1a0ba32bbf",
+          "semantic_json_size_bytes": 49579,
+          "raw_json_sha256": "006514cfc28e0ef090dcf4ab4f4b34b7e16368a9bd1e1cdcdcc862dc27ac8fae",
+          "raw_json_size_bytes": 49598,
+          "markdown_sha256": "3c047c85c9f2bb8a30da5ed55391e5ff07bb804ec8c6ba05e6c654ef0064cf41",
+          "markdown_size_bytes": 3370,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.169992,
+          "peak_rss_bytes": 1477836800,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "caa531c92ff6fea8b7c186f29ff0be917a0fb03dbdbac7dcbc326b1a0ba32bbf",
+          "semantic_json_size_bytes": 49579,
+          "raw_json_sha256": "4f5a9e5349374cdad5243f8104fcb9cf0fa29d708a22b74f060d884e6192d681",
+          "raw_json_size_bytes": 49598,
+          "markdown_sha256": "3c047c85c9f2bb8a30da5ed55391e5ff07bb804ec8c6ba05e6c654ef0064cf41",
+          "markdown_size_bytes": 3370,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.203529,
+          "peak_rss_bytes": 1475674112,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "caa531c92ff6fea8b7c186f29ff0be917a0fb03dbdbac7dcbc326b1a0ba32bbf",
+          "semantic_json_size_bytes": 49579,
+          "raw_json_sha256": "74f7b1589a525baab2f21ea59a3b616bd2dccba4bab97c9b3a1576996fa7591c",
+          "raw_json_size_bytes": 49598,
+          "markdown_sha256": "3c047c85c9f2bb8a30da5ed55391e5ff07bb804ec8c6ba05e6c654ef0064cf41",
+          "markdown_size_bytes": 3370,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.28956,
+          "peak_rss_bytes": 1478098944,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "caa531c92ff6fea8b7c186f29ff0be917a0fb03dbdbac7dcbc326b1a0ba32bbf",
+          "semantic_json_size_bytes": 49579,
+          "raw_json_sha256": "f9d5aa386b347bcbf9f072e4e504d9e28662043bd1dc97d5282121bced3f799d",
+          "raw_json_size_bytes": 49598,
+          "markdown_sha256": "3c047c85c9f2bb8a30da5ed55391e5ff07bb804ec8c6ba05e6c654ef0064cf41",
+          "markdown_size_bytes": 3370,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.161149,
+          "peak_rss_bytes": 1472741376,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "caa531c92ff6fea8b7c186f29ff0be917a0fb03dbdbac7dcbc326b1a0ba32bbf",
+          "semantic_json_size_bytes": 49579,
+          "raw_json_sha256": "937957e36912886d24fd441d102db22d6593b71190bf1b473d5ade601dbf68ce",
+          "raw_json_size_bytes": 49598,
+          "markdown_sha256": "3c047c85c9f2bb8a30da5ed55391e5ff07bb804ec8c6ba05e6c654ef0064cf41",
+          "markdown_size_bytes": 3370,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        }
+      ],
+      "flag_on_samples": [
+        {
+          "case": "purchase-agreement",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.626299,
+          "peak_rss_bytes": 1482620928,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2dc3dfb0751504ee13f266ec111edf378c819b6853cb4e66762c957a8e7b8a42",
+          "semantic_json_size_bytes": 82421,
+          "raw_json_sha256": "7c5b6d0efb9de570f703c0a7484396d552c11cb35e0189dfc42f8da8b17b477f",
+          "raw_json_size_bytes": 82440,
+          "markdown_sha256": "c9df6ff2463eaa1a6167a095f2925a68c558556b3f94888a7ff6cc3b02b01d82",
+          "markdown_size_bytes": 3426,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 9,
+            "run_count": 28,
+            "deleted_run_count": 9,
+            "deleted_logical_group_count": 6,
+            "deleted_group_rule_edge_count": 7,
+            "deleted_run_rule_link_count": 9,
+            "blue_run_count": 2,
+            "blue_rule_link_count": 4,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 9
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.29368,
+          "peak_rss_bytes": 1487421440,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2dc3dfb0751504ee13f266ec111edf378c819b6853cb4e66762c957a8e7b8a42",
+          "semantic_json_size_bytes": 82421,
+          "raw_json_sha256": "6ac4bee1e257d5364051a38b45ba5baf09dafee798e553817475b7d903e76d3c",
+          "raw_json_size_bytes": 82440,
+          "markdown_sha256": "c9df6ff2463eaa1a6167a095f2925a68c558556b3f94888a7ff6cc3b02b01d82",
+          "markdown_size_bytes": 3426,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 9,
+            "run_count": 28,
+            "deleted_run_count": 9,
+            "deleted_logical_group_count": 6,
+            "deleted_group_rule_edge_count": 7,
+            "deleted_run_rule_link_count": 9,
+            "blue_run_count": 2,
+            "blue_rule_link_count": 4,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 9
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.324927,
+          "peak_rss_bytes": 1484161024,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2dc3dfb0751504ee13f266ec111edf378c819b6853cb4e66762c957a8e7b8a42",
+          "semantic_json_size_bytes": 82421,
+          "raw_json_sha256": "8431373ee3952833a831924caa5d8371f68f13579f19c5962c07ada9692595f1",
+          "raw_json_size_bytes": 82440,
+          "markdown_sha256": "c9df6ff2463eaa1a6167a095f2925a68c558556b3f94888a7ff6cc3b02b01d82",
+          "markdown_size_bytes": 3426,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 9,
+            "run_count": 28,
+            "deleted_run_count": 9,
+            "deleted_logical_group_count": 6,
+            "deleted_group_rule_edge_count": 7,
+            "deleted_run_rule_link_count": 9,
+            "blue_run_count": 2,
+            "blue_rule_link_count": 4,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 9
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.460903,
+          "peak_rss_bytes": 1489289216,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2dc3dfb0751504ee13f266ec111edf378c819b6853cb4e66762c957a8e7b8a42",
+          "semantic_json_size_bytes": 82421,
+          "raw_json_sha256": "380fd58ba6ece19994980ce2872096fee35e2feb691e638085f725a1ad3c6b36",
+          "raw_json_size_bytes": 82440,
+          "markdown_sha256": "c9df6ff2463eaa1a6167a095f2925a68c558556b3f94888a7ff6cc3b02b01d82",
+          "markdown_size_bytes": 3426,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 9,
+            "run_count": 28,
+            "deleted_run_count": 9,
+            "deleted_logical_group_count": 6,
+            "deleted_group_rule_edge_count": 7,
+            "deleted_run_rule_link_count": 9,
+            "blue_run_count": 2,
+            "blue_rule_link_count": 4,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 9
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "purchase-agreement",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+            "size_bytes": 152828,
+            "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+          },
+          "wall_seconds": 6.231049,
+          "peak_rss_bytes": 1483079680,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2dc3dfb0751504ee13f266ec111edf378c819b6853cb4e66762c957a8e7b8a42",
+          "semantic_json_size_bytes": 82421,
+          "raw_json_sha256": "f5ee967bde1c7906c290306ff5fb0277e0772a53d475a96199b0b5d6932f87a6",
+          "raw_json_size_bytes": 82440,
+          "markdown_sha256": "c9df6ff2463eaa1a6167a095f2925a68c558556b3f94888a7ff6cc3b02b01d82",
+          "markdown_size_bytes": 3426,
+          "text_run_summary": {
+            "item_count": 12,
+            "items_with_projection": 9,
+            "run_count": 28,
+            "deleted_run_count": 9,
+            "deleted_logical_group_count": 6,
+            "deleted_group_rule_edge_count": 7,
+            "deleted_run_rule_link_count": 9,
+            "blue_run_count": 2,
+            "blue_rule_link_count": 4,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 9
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        }
+      ],
+      "all_flag_off_extractor_counts_zero": true,
+      "all_flag_on_extractor_counts_one": true,
+      "flag_off_semantic_deterministic": true,
+      "flag_on_semantic_deterministic": true,
+      "paired_performance": {
+        "pair_count": 5,
+        "execution_order_alternated": true,
+        "process_model": "fresh_process_per_flag_state",
+        "cache_state": "operating-system caches were not explicitly flushed",
+        "quantile_method": "empirical_p95_inclusive",
+        "gate_value": "p95_of_clipped_nonnegative_paired_overhead",
+        "flag_off_wall_seconds": [
+          7.428094,
+          6.169992,
+          6.203529,
+          6.28956,
+          6.161149
+        ],
+        "flag_on_wall_seconds": [
+          6.626299,
+          6.29368,
+          6.324927,
+          6.460903,
+          6.231049
+        ],
+        "paired_signed_wall_seconds_deltas": [
+          -0.801795,
+          0.123688,
+          0.121398,
+          0.171343,
+          0.0699
+        ],
+        "paired_nonnegative_overhead_seconds": [
+          0.0,
+          0.123688,
+          0.121398,
+          0.171343,
+          0.0699
+        ],
+        "p50_signed_delta_seconds": 0.121398,
+        "p95_signed_delta_seconds": 0.161812,
+        "max_signed_delta_seconds": 0.171343,
+        "p50_nonnegative_overhead_seconds": 0.121398,
+        "p95_nonnegative_overhead_seconds": 0.161812,
+        "max_nonnegative_overhead_seconds": 0.171343,
+        "current_paired_predecessor_p95_seconds": 7.200387,
+        "five_percent_ceiling_seconds": 0.360019,
+        "absolute_ceiling_seconds": 0.309,
+        "effective_ceiling_seconds": 0.309,
+        "within_five_percent_ceiling": true,
+        "within_absolute_ceiling": true,
+        "within_both_ceilings": true,
+        "m0_reference": {
+          "label": "M0_reference_context_not_paired_predecessor",
+          "wall_seconds": 6.18,
+          "peak_rss_mib": 1401.0
+        },
+        "hosted_requests": 0,
+        "hosted_tokens": 0,
+        "hosted_cost_usd": 0
+      }
+    },
+    "uber_memory_guard": {
+      "execution_order": [
+        [
+          "off",
+          "on"
+        ],
+        [
+          "on",
+          "off"
+        ],
+        [
+          "off",
+          "on"
+        ],
+        [
+          "on",
+          "off"
+        ],
+        [
+          "off",
+          "on"
+        ]
+      ],
+      "flag_off_samples": [
+        {
+          "case": "uber-earnings",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 30.088672,
+          "peak_rss_bytes": 2763358208,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "32ec9dfc39f27a50a475a6b321d17de5c94def40d74cd1b77181c030b77deab4",
+          "semantic_json_size_bytes": 186160,
+          "raw_json_sha256": "d4582f3fe9f694c7661d7527ad64a60a2aebc7f57410bc40e64eab62914fd70e",
+          "raw_json_size_bytes": 186180,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.51747,
+          "peak_rss_bytes": 3431907328,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "32ec9dfc39f27a50a475a6b321d17de5c94def40d74cd1b77181c030b77deab4",
+          "semantic_json_size_bytes": 186160,
+          "raw_json_sha256": "e4986d80588a050a608f733cc7963890db6f67f722d7dd08c081dc4a16b01e0f",
+          "raw_json_size_bytes": 186180,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.73918,
+          "peak_rss_bytes": 3444752384,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "32ec9dfc39f27a50a475a6b321d17de5c94def40d74cd1b77181c030b77deab4",
+          "semantic_json_size_bytes": 186160,
+          "raw_json_sha256": "5a8bc2e2a229dfa3e9aa99bb8f14ba24972f1b4acdc7e06ab6efeeb651dd9a6d",
+          "raw_json_size_bytes": 186180,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.973311,
+          "peak_rss_bytes": 3428909056,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "32ec9dfc39f27a50a475a6b321d17de5c94def40d74cd1b77181c030b77deab4",
+          "semantic_json_size_bytes": 186160,
+          "raw_json_sha256": "072a954e7f3f8f0337bbafd80e50b71b51e267528a9f61fe038b05c2bf5afbf7",
+          "raw_json_size_bytes": 186180,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": false,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 30.056504,
+          "peak_rss_bytes": 3444916224,
+          "extractor_call_count": 0,
+          "semantic_json_sha256": "32ec9dfc39f27a50a475a6b321d17de5c94def40d74cd1b77181c030b77deab4",
+          "semantic_json_size_bytes": 186160,
+          "raw_json_sha256": "3344612a4edc846c965dfe8815a3641216b4191c62dc176d778ca0afc6904b1d",
+          "raw_json_size_bytes": 186180,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 0,
+            "run_count": 0,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 0
+          },
+          "flag_off_projection_absent": true,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        }
+      ],
+      "flag_on_samples": [
+        {
+          "case": "uber-earnings",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.723043,
+          "peak_rss_bytes": 3444490240,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2b20b83090c8cc6b1a694228a11b015958ee70ea454117729af12d051027f835",
+          "semantic_json_size_bytes": 186979,
+          "raw_json_sha256": "69c1fc9041c5d141258266cacc44d597563577294b01a83855f440121f0d0345",
+          "raw_json_size_bytes": 186999,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 1,
+            "run_count": 1,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 1
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 30.112065,
+          "peak_rss_bytes": 3425419264,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2b20b83090c8cc6b1a694228a11b015958ee70ea454117729af12d051027f835",
+          "semantic_json_size_bytes": 186979,
+          "raw_json_sha256": "b55e675e030e6b71e1449c8b7fc3bcd9a3bf4b252c338a8508af08b3cae7804b",
+          "raw_json_size_bytes": 186999,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 1,
+            "run_count": 1,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 1
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 30.038007,
+          "peak_rss_bytes": 3436560384,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2b20b83090c8cc6b1a694228a11b015958ee70ea454117729af12d051027f835",
+          "semantic_json_size_bytes": 186979,
+          "raw_json_sha256": "62907b9725ca17ebc57215671c9f04cbb33547400ebdb1348df9710d2cb1ad97",
+          "raw_json_size_bytes": 186999,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 1,
+            "run_count": 1,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 1
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.013676,
+          "peak_rss_bytes": 3443687424,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2b20b83090c8cc6b1a694228a11b015958ee70ea454117729af12d051027f835",
+          "semantic_json_size_bytes": 186979,
+          "raw_json_sha256": "371a91c5c9a3f66957ffc0a9cf105c4ef1e9d86c64310330344eb94c3297995a",
+          "raw_json_size_bytes": 186999,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 1,
+            "run_count": 1,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 1
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        },
+        {
+          "case": "uber-earnings",
+          "enabled": true,
+          "input_identity": {
+            "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+            "size_bytes": 7584019,
+            "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+          },
+          "wall_seconds": 29.42834,
+          "peak_rss_bytes": 3442556928,
+          "extractor_call_count": 1,
+          "semantic_json_sha256": "2b20b83090c8cc6b1a694228a11b015958ee70ea454117729af12d051027f835",
+          "semantic_json_size_bytes": 186979,
+          "raw_json_sha256": "f1600b4832eb7f25f6d34d28ec109261123aa3e3dd5529f6b0dd3a66074224a7",
+          "raw_json_size_bytes": 186999,
+          "markdown_sha256": "a4dcfb92928d0518599e73ee79ca75a2ad43dd6c5cded64b259f101042bc6d05",
+          "markdown_size_bytes": 1152,
+          "text_run_summary": {
+            "item_count": 36,
+            "items_with_projection": 1,
+            "run_count": 1,
+            "deleted_run_count": 0,
+            "deleted_logical_group_count": 0,
+            "deleted_group_rule_edge_count": 0,
+            "deleted_run_rule_link_count": 0,
+            "blue_run_count": 0,
+            "blue_rule_link_count": 0,
+            "inserted_or_replacement_count": 0,
+            "false_deletion_controls": {
+              "EXECUTION VERSION": false,
+              "Background": false,
+              "Exhibit A": false
+            },
+            "postal_italic_targets": {},
+            "active_projection_item_count": 1
+          },
+          "flag_off_projection_absent": false,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "hosted_cost_usd": 0
+        }
+      ],
+      "all_flag_off_extractor_counts_zero": true,
+      "all_flag_on_extractor_counts_one": true,
+      "flag_off_semantic_deterministic": true,
+      "flag_on_semantic_deterministic": true,
+      "memory_guard": {
+        "case": "uber-earnings",
+        "pair_count": 5,
+        "execution_order_alternated": true,
+        "process_model": "fresh_process_per_flag_state",
+        "peak_rss_semantics": "worker_process_high_water_mark",
+        "flag_off_peak_rss_bytes": [
+          2763358208,
+          3431907328,
+          3444752384,
+          3428909056,
+          3444916224
+        ],
+        "flag_on_peak_rss_bytes": [
+          3444490240,
+          3425419264,
+          3436560384,
+          3443687424,
+          3442556928
+        ],
+        "paired_peak_rss_bytes_deltas": [
+          681132032,
+          -6488064,
+          -8192000,
+          14778368,
+          -2359296
+        ],
+        "max_flag_on_peak_rss_bytes": 3444490240,
+        "all_measurements_positive": true,
+        "hosted_requests": 0,
+        "hosted_tokens": 0,
+        "hosted_cost_usd": 0
+      }
+    }
+  },
+  "output_sizes": {
+    "purchase-agreement": {
+      "semantic_json_size_bytes": 82421,
+      "markdown_size_bytes": 3426
+    },
+    "postal-10k": {
+      "semantic_json_size_bytes": 387409,
+      "markdown_size_bytes": 11109
+    },
+    "finance-10k": {
+      "semantic_json_size_bytes": 428029,
+      "markdown_size_bytes": 12622
+    }
+  },
+  "rollback": {
+    "flag_off_extractor_count": 0,
+    "flag_off_projection_absent": true,
+    "only_us05_setting_toggled": true,
+    "repeated_projection_idempotent": true
+  },
+  "aggregate": {
+    "deleted_logical_group_count": 6,
+    "deleted_group_rule_edge_count": 7,
+    "deleted_run_rule_link_count": 9,
+    "blue_run_count": 2,
+    "blue_rule_link_count": 4,
+    "source_proven_inserted_replacement_count": 0,
+    "false_deletion_count": 0,
+    "all_control_matrix_rows_pass": true,
+    "source_extraction_p95_within_150ms": true,
+    "source_extraction_peak_within_64mib": true,
+    "projection_p95_within_50ms": true,
+    "projection_peak_within_32mib": true,
+    "maximum_boundary_within_250ms": true,
+    "maximum_plus_one_failed_closed": true,
+    "maximum_plus_one_within_250ms": true,
+    "paired_parser_within_five_percent": true,
+    "paired_parser_within_309ms": true,
+    "paired_parser_within_both_ceilings": true,
+    "flag_off_extractor_count": 0,
+    "idempotence": true,
+    "purchase_source_sequence_expected": 7,
+    "purchase_source_sequence_matched": 7,
+    "relationship_order_retention_all_pass": true,
+    "predecessor_order_expected": 41,
+    "predecessor_order_matched": 41,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "hosted_requests": 0,
+  "hosted_tokens": 0,
+  "hosted_cost_usd": 0,
+  "semantic_sha256": "e432ce80d6351d1d161010aec7f8b32a1622a54cf1b14e14bfccb3411c79c3c3"
+}

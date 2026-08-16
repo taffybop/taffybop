@@ -1,0 +1,143 @@
+{
+  "case_id": "ny-timetable",
+  "completed_at_utc": "2026-07-28T13:49:48.160917+00:00",
+  "elapsed_seconds": 46.7583517919993,
+  "error": null,
+  "operating_mode": {
+    "image_captioning_enabled": false,
+    "network_services_enabled": false,
+    "optional_model_configuration": null,
+    "parser_invocation": "direct app.services.pipeline.parse_document",
+    "pdf_visual_analysis_enabled": true
+  },
+  "output": {
+    "detected_image_count": 3,
+    "document_warnings": [],
+    "item_type_counts": {
+      "footer": 3,
+      "table": 3,
+      "text": 5
+    },
+    "json_sha256": "144e10be35772526f92d1fc7c80831adf7ad2f46e4a6c13f5f0023889231fe35",
+    "json_size_bytes": 2313602,
+    "markdown_sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+    "markdown_size_bytes": 40319,
+    "page_count": 3,
+    "pages": [
+      {
+        "detected_image_count": 1,
+        "item_count": 4,
+        "item_type_counts": {
+          "footer": 1,
+          "table": 1,
+          "text": 2
+        },
+        "page_index": 1,
+        "page_number": 2,
+        "success": true,
+        "warnings": []
+      },
+      {
+        "detected_image_count": 1,
+        "item_count": 5,
+        "item_type_counts": {
+          "footer": 1,
+          "table": 1,
+          "text": 3
+        },
+        "page_index": 2,
+        "page_number": 3,
+        "success": true,
+        "warnings": []
+      },
+      {
+        "detected_image_count": 1,
+        "item_count": 2,
+        "item_type_counts": {
+          "footer": 1,
+          "table": 1
+        },
+        "page_index": 3,
+        "page_number": 4,
+        "success": true,
+        "warnings": []
+      }
+    ],
+    "processing": {
+      "duration_ms": 46732,
+      "engine": "docling",
+      "input_format": "pdf",
+      "local_processing": true,
+      "native_text_engine": "pypdfium2",
+      "ocr_engine": "tesseract",
+      "ocr_languages": [
+        "eng"
+      ],
+      "picture_captioning": {
+        "local_model_available": false,
+        "requested": false
+      },
+      "table_engines": [
+        "docling",
+        "pdfplumber"
+      ],
+      "visual_analysis": {
+        "heading_height_ratio": 1.8,
+        "heading_min_confidence": 0.75,
+        "low_confidence_min_alnum_chars": 8,
+        "pdf_selective_rendering_enabled": true,
+        "picture_classification_threshold": 0.6,
+        "primary_ocr_min_confidence": 0.45,
+        "shared_pipeline": true
+      }
+    },
+    "total_item_count": 11
+  },
+  "peak_rss_bytes": 2038382592,
+  "process_cpu_seconds": 53.230371,
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "source_filename": "ny-timetable.pdf",
+  "source_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+  "source_size_bytes": 26109,
+  "started_at_utc": "2026-07-28T13:49:01.401304+00:00",
+  "status": "success",
+  "versions": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "pypdfium2": "5.12.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "source_tree_sha256": "ff2e4656dcb9f6eefb5c2e3b94919c5eb080aad7a8cf6dc09463e9f86d87d98c",
+    "tesseract": "tesseract 5.5.3"
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-artifact-manifest-v1",
+  "artifact_count": 93,
+  "artifacts": [
+    {
+      "path": "attempt-status.json",
+      "size_bytes": 267,
+      "sha256": "f14df405aebb6f95bd044f34b4ca2e1aa635ca149c48069e3d9b9d5ce864dbf5"
+    },
+    {
+      "path": "commands-results.md",
+      "size_bytes": 2730,
+      "sha256": "cb46f3c6f6a99c9d3252ab01015fe35d9f8b6d9b6b484415e12965f0150c4501"
+    },
+    {
+      "path": "report.md",
+      "size_bytes": 1670,
+      "sha256": "65fc46cc2471d1762ff7f86f20e0ed428197bb5cc49d1441385e24f3d65c7874"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/activation.json",
+      "size_bytes": 3240,
+      "sha256": "10dbb6afd36144060b66bed28758eda12779249fe1e3b1fd801aeac172f4d94f"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/canonical-full.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/command.txt",
+      "size_bytes": 275,
+      "sha256": "c21087b5c4dd37ae7c0195794583cd10ffb8583063649aa3202ec9d48fe595bd"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/diagnostic.json",
+      "size_bytes": 13290,
+      "sha256": "8450e41416475a4cdbeb8c7ea82f550ad6e22cf54c18d143bd70a15557eed8bb"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/pages/page-1/rendered-dom.json",
+      "size_bytes": 10952,
+      "sha256": "37d98fb68cf487f0c85b38c2e911f761a7efe72d8e7f3da64b1856b0c426ee63"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/pages/page-2/rendered-dom.json",
+      "size_bytes": 8295,
+      "sha256": "aaa1843ba336b9bf0ea82a141d4439e6cf05cae75160745c37eba06aa195b0e6"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/pages/page-3/rendered-dom.json",
+      "size_bytes": 3012,
+      "sha256": "2264513994c59889e8ac8f2ad66b37978c0ba15e76b964f77ec35b435a63a749"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/pages/page-4/rendered-dom.json",
+      "size_bytes": 10326,
+      "sha256": "cb371b2296c3930dcd30308ba48b82610fb637fbccdef85d57902fcc1c70326e"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/rendered-capture.json",
+      "size_bytes": 1839,
+      "sha256": "42e3d78965d54c6d3df12a5bd339c4cf57c7ad24d3ce8d1002f41b65a6ab28e4"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/response.json",
+      "size_bytes": 739701,
+      "sha256": "997ad5c2cda987eba833b3f762033b086a6c1a1ab9e85fcbea992f8e9487dd1d"
+    },
+    {
+      "path": "sweep/budget-005/clinical-study/response.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/activation.json",
+      "size_bytes": 3231,
+      "sha256": "db93706eac729c9e54eef19d7cf612348ec250873f4954c27916a9d8612ac627"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/canonical-full.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/command.txt",
+      "size_bytes": 271,
+      "sha256": "59479af987d25eae1beaf17bb18eaa0e3d8505a68b613a94c69f8860e71901d7"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/diagnostic.json",
+      "size_bytes": 15003,
+      "sha256": "1f8e357a59c589a1a71b2b2d32d4966c1dfa130ffedbb98b40b066a1e12ba40b"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/pages/page-1/rendered-dom.json",
+      "size_bytes": 68720,
+      "sha256": "a3ac5790c1b829899a59f4b82b6aec38c20dde81ccce71db40d25b1fea562054"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/pages/page-2/rendered-dom.json",
+      "size_bytes": 68099,
+      "sha256": "c3ebc51fe57f720576ed8fe07156e3c1f6611664fefc768d38ef2eb70ea366dc"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/pages/page-3/rendered-dom.json",
+      "size_bytes": 68759,
+      "sha256": "00c1824d4c28633c5fb694295c9a14180dd91548c685042aadc5fe92d18ca6e7"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/rendered-capture.json",
+      "size_bytes": 1478,
+      "sha256": "2d19ca4cc9eaf4a61f9adf00b2fdb3ccf6ec939bb3c7365e604c436d1c703f03"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/response.json",
+      "size_bytes": 6507693,
+      "sha256": "028f01b2d161991e26f2a0c47a75f17f8e79eadc90962bf533a9a9e301ce97b4"
+    },
+    {
+      "path": "sweep/budget-005/ny-timetable/response.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/activation.json",
+      "size_bytes": 3242,
+      "sha256": "c4dc4b327d283b92d1f05c8d755fad66cf04ed761f2db148c5894520a0dd59ae"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/canonical-full.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/command.txt",
+      "size_bytes": 276,
+      "sha256": "4cd821f710fe8f402bf80a927244f8f8dbb24830bbc6c88e2986b9800296c805"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/diagnostic.json",
+      "size_bytes": 13292,
+      "sha256": "7332cc84ef17378b162ad9aa7c912838a8c982249479acf61d03e8a5573a07bb"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/pages/page-1/rendered-dom.json",
+      "size_bytes": 10952,
+      "sha256": "37d98fb68cf487f0c85b38c2e911f761a7efe72d8e7f3da64b1856b0c426ee63"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/pages/page-2/rendered-dom.json",
+      "size_bytes": 8295,
+      "sha256": "aaa1843ba336b9bf0ea82a141d4439e6cf05cae75160745c37eba06aa195b0e6"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/pages/page-3/rendered-dom.json",
+      "size_bytes": 3012,
+      "sha256": "2264513994c59889e8ac8f2ad66b37978c0ba15e76b964f77ec35b435a63a749"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/pages/page-4/rendered-dom.json",
+      "size_bytes": 10326,
+      "sha256": "cb371b2296c3930dcd30308ba48b82610fb637fbccdef85d57902fcc1c70326e"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/rendered-capture.json",
+      "size_bytes": 1839,
+      "sha256": "b5bb79cbb5261c74f52a4472ef8d7cbf72f48ac80c006f0015b617c8bd7c375b"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/response.json",
+      "size_bytes": 739700,
+      "sha256": "3602d29de5788be0a49313da53b6ff6c6c3c643bfc500f42ba112507e4496585"
+    },
+    {
+      "path": "sweep/budget-010/clinical-study/response.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/activation.json",
+      "size_bytes": 3233,
+      "sha256": "03983909806725480fa29f5d2acb368cd35b682e8ab1d5b1ba569d105ea11d35"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/canonical-full.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/command.txt",
+      "size_bytes": 272,
+      "sha256": "4d009fdbe6d2968b9e244e1c98ac050713aa35b071a0dc52359b9e0c85c81521"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/diagnostic.json",
+      "size_bytes": 15362,
+      "sha256": "57369d84fd530cc54bf26af065d351c48e81a19ec1305bd75b751fddc5f41027"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/pages/page-1/rendered-dom.json",
+      "size_bytes": 68720,
+      "sha256": "a3ac5790c1b829899a59f4b82b6aec38c20dde81ccce71db40d25b1fea562054"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/pages/page-2/rendered-dom.json",
+      "size_bytes": 72844,
+      "sha256": "5573ce6ef0c31a4102b7ef073ea7729362269ff8cfac188bde4a85278b52900c"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/pages/page-3/rendered-dom.json",
+      "size_bytes": 73549,
+      "sha256": "b929272b7ac367a21169b6839905ca095831d591aa31c76da41f0ed2d6ccf65b"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/rendered-capture.json",
+      "size_bytes": 1478,
+      "sha256": "6d4d6236f918ff43e86dba26d468af3e08001d480ce7fe8d7265f2789877daf5"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/response.json",
+      "size_bytes": 7725572,
+      "sha256": "33d0bd92372fd14104a3e4d9b5a856e47d5f92628eef7a0ae28cdadc53b8e110"
+    },
+    {
+      "path": "sweep/budget-010/ny-timetable/response.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/activation.json",
+      "size_bytes": 3242,
+      "sha256": "99802b5d6cad3e57e952cb94bb215709b45fd4e725518a031aeb6120f9a78309"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/canonical-full.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/command.txt",
+      "size_bytes": 276,
+      "sha256": "77fb882a44cb4041c543cd59e1259b5def59082e10681aebbc8dc42499a9f186"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/diagnostic.json",
+      "size_bytes": 13286,
+      "sha256": "372a47965e4c72fb42310b80c795395bb43637072471eab647bd54ee08d73c38"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/pages/page-1/rendered-dom.json",
+      "size_bytes": 10952,
+      "sha256": "37d98fb68cf487f0c85b38c2e911f761a7efe72d8e7f3da64b1856b0c426ee63"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/pages/page-2/rendered-dom.json",
+      "size_bytes": 8295,
+      "sha256": "aaa1843ba336b9bf0ea82a141d4439e6cf05cae75160745c37eba06aa195b0e6"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/pages/page-3/rendered-dom.json",
+      "size_bytes": 3012,
+      "sha256": "2264513994c59889e8ac8f2ad66b37978c0ba15e76b964f77ec35b435a63a749"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/pages/page-4/rendered-dom.json",
+      "size_bytes": 10326,
+      "sha256": "cb371b2296c3930dcd30308ba48b82610fb637fbccdef85d57902fcc1c70326e"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/rendered-capture.json",
+      "size_bytes": 1839,
+      "sha256": "3eb36c61fa42c993002b3cce0441619a9ef78745e90fcaec83e84e1a9c92366e"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/response.json",
+      "size_bytes": 739699,
+      "sha256": "095ee629e0012b50fbad7ab7ebd54309ac9a7d270e8f84e42dd9c5d49dba15b9"
+    },
+    {
+      "path": "sweep/budget-015/clinical-study/response.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/activation.json",
+      "size_bytes": 3233,
+      "sha256": "8f002e0585ddbb143dd0e47c2818a5d50ffc4b3c3136e8c3ff8aaead38edd34d"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/canonical-full.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/command.txt",
+      "size_bytes": 272,
+      "sha256": "50f14669fdee6b54440504e4640d66d22353500b8edaabf7a93b379e70aea088"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/diagnostic.json",
+      "size_bytes": 15381,
+      "sha256": "93e09d0dcc5feaa78b41ce3b5a13563aa6e0151cee5ec4ddcf5d8334f9563a10"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/pages/page-1/rendered-dom.json",
+      "size_bytes": 68720,
+      "sha256": "a3ac5790c1b829899a59f4b82b6aec38c20dde81ccce71db40d25b1fea562054"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/pages/page-2/rendered-dom.json",
+      "size_bytes": 72844,
+      "sha256": "5573ce6ef0c31a4102b7ef073ea7729362269ff8cfac188bde4a85278b52900c"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/pages/page-3/rendered-dom.json",
+      "size_bytes": 73549,
+      "sha256": "b929272b7ac367a21169b6839905ca095831d591aa31c76da41f0ed2d6ccf65b"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/rendered-capture.json",
+      "size_bytes": 1478,
+      "sha256": "5417a7870f457110fd655a1c13ca14936b8849a1da18dcb6db7b61733f3b3eed"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/response.json",
+      "size_bytes": 7725572,
+      "sha256": "d11efafe2ec64b32cd8098ef01f4b259b40dcc8a98313139cae50bb51fbd06b5"
+    },
+    {
+      "path": "sweep/budget-015/ny-timetable/response.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/activation.json",
+      "size_bytes": 3242,
+      "sha256": "8c92786b452c0ecb1e40abd0b9e107286878763d08417dd7b060ff3a17d06f69"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/canonical-full.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/command.txt",
+      "size_bytes": 276,
+      "sha256": "e88bfeabbfc9e4fce75750a5564a55063645223e4d37be5946e123d14b3fc1f3"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/diagnostic.json",
+      "size_bytes": 13289,
+      "sha256": "56bc9c8d1160084d72e014115e0cc3a1494acc9af9e69ad7628c77e3afae2124"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/pages/page-1/rendered-dom.json",
+      "size_bytes": 10952,
+      "sha256": "37d98fb68cf487f0c85b38c2e911f761a7efe72d8e7f3da64b1856b0c426ee63"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/pages/page-2/rendered-dom.json",
+      "size_bytes": 8295,
+      "sha256": "aaa1843ba336b9bf0ea82a141d4439e6cf05cae75160745c37eba06aa195b0e6"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/pages/page-3/rendered-dom.json",
+      "size_bytes": 3012,
+      "sha256": "2264513994c59889e8ac8f2ad66b37978c0ba15e76b964f77ec35b435a63a749"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/pages/page-4/rendered-dom.json",
+      "size_bytes": 10326,
+      "sha256": "cb371b2296c3930dcd30308ba48b82610fb637fbccdef85d57902fcc1c70326e"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/rendered-capture.json",
+      "size_bytes": 1839,
+      "sha256": "cad17941d6f88892a61c8fcd189eff3d4fcd8e0526cb4daed9353e1427259179"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/response.json",
+      "size_bytes": 739700,
+      "sha256": "f11fee77ea359ac370fe6b77441cdbb7f91304f537d5ccebbeaa48fd0b4ef6ac"
+    },
+    {
+      "path": "sweep/budget-030/clinical-study/response.md",
+      "size_bytes": 14049,
+      "sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/activation.json",
+      "size_bytes": 3233,
+      "sha256": "9f47a69deb31a3fc313db99497e24b876366b0b8b4c0a41e17704708316e70bf"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/canonical-full.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/command.txt",
+      "size_bytes": 272,
+      "sha256": "10bb8c5134b4eaea5447dc10c63ebb4600f23820365211d36e605726b1d1c0ac"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/diagnostic.json",
+      "size_bytes": 11605,
+      "sha256": "e9daca6e3a1a621188cb5244084c3c722edbf12e58ef4f64b123f5d5d773eeaa"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/pages/page-1/rendered-dom.json",
+      "size_bytes": 68720,
+      "sha256": "a3ac5790c1b829899a59f4b82b6aec38c20dde81ccce71db40d25b1fea562054"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/pages/page-2/rendered-dom.json",
+      "size_bytes": 68099,
+      "sha256": "c3ebc51fe57f720576ed8fe07156e3c1f6611664fefc768d38ef2eb70ea366dc"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/pages/page-3/rendered-dom.json",
+      "size_bytes": 68759,
+      "sha256": "00c1824d4c28633c5fb694295c9a14180dd91548c685042aadc5fe92d18ca6e7"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/rendered-capture.json",
+      "size_bytes": 1478,
+      "sha256": "e0e8bd126cb42d64898b4918938b7b83e84c7734f6f3112c14d1fab26b5369cf"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/response.json",
+      "size_bytes": 6507691,
+      "sha256": "4ec2836569ba0e0e8193138a0a1911ce0cf0cf11674cd56269dab4212539840c"
+    },
+    {
+      "path": "sweep/budget-030/ny-timetable/response.md",
+      "size_bytes": 51625,
+      "sha256": "2ff0d657c57720cbf583df15cf74213def5dd504e85e96fd2d9c46874e42aa66"
+    },
+    {
+      "path": "sweep-command.sh",
+      "size_bytes": 649,
+      "sha256": "c58ad27bd60ae7d07a08eda36514dcc4bf1c457535db0a1ff5ee6a3b589e09a7"
+    },
+    {
+      "path": "sweep-summary.json",
+      "size_bytes": 27388,
+      "sha256": "40edf4cadc4a0d491a836f972173c0a384bd88dfb290e56c4431687dd8f578f7"
+    },
+    {
+      "path": "validation/harness-contract-command.txt",
+      "size_bytes": 362,
+      "sha256": "dc6d417813b29a5b644a9469263a35b363199b9ddcaae4591453e59a9b118284"
+    },
+    {
+      "path": "validation/harness-contract-output.txt",
+      "size_bytes": 110,
+      "sha256": "2e211d9d1b3c59bc11a8638d30cac932828b1c9c66d4a6316561de082fa09d63"
+    },
+    {
+      "path": "validation/production-5s-controls-command.txt",
+      "size_bytes": 474,
+      "sha256": "f5998f517c29d641d9df19dc22a0fcf84acaf1c3cb6293d1980c8fb015f51ef1"
+    },
+    {
+      "path": "validation/production-5s-controls-output.txt",
+      "size_bytes": 1287,
+      "sha256": "ad347c687bb7c3aa462dcfc673a0be9a4e243dc651376d36e77e9233033e30f6"
+    }
+  ]
+}

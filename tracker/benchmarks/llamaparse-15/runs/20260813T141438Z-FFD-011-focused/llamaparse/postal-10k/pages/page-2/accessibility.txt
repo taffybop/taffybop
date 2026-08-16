@@ -1,0 +1,244 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- link:
+  - /url: /
+- button "Toggle Sidebar":
+  - generic: Toggle Sidebar
+- separator
+- list:
+  - button "DE Default Free plan":
+    - generic: DE
+    - generic: Default
+    - generic: Free plan
+- separator
+- list:
+  - link "Home":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780
+    - button "Home":
+      - generic: Home
+  - link "Parse":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse
+    - button "Parse":
+      - generic: Parse
+  - link "Extract":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/extract
+    - button "Extract":
+      - generic: Extract
+  - link "Split":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/split
+    - button "Split":
+      - generic: Split
+  - link "Classify":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/classify
+    - button "Classify":
+      - generic: Classify
+  - link "Sheets":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/sheets
+    - button "Sheets":
+      - generic: Sheets
+  - link "Verify Preview":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/verify
+    - button "Verify Preview":
+      - generic: Verify
+      - generic: Preview
+- separator
+- list:
+  - link "Agents Beta":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/agents
+    - button "Agents Beta":
+      - generic: Agents
+      - generic: Beta
+- generic: Free plan usage
+- generic: 6,213 of 10,000
+- link "Upgrade":
+  - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/plan
+- progressbar
+- list:
+  - link "Documentation":
+    - /url: https://developers.llamaindex.ai/python/cloud
+    - button "Documentation":
+      - generic: Documentation
+  - link "API Keys":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/api-keys
+    - button "API Keys":
+      - generic: API Keys
+  - link "Billing":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/billing/usage
+    - button "Billing":
+      - generic: Billing
+  - link "Settings":
+    - /url: /organization/65a38580-0d38-4f66-af2d-eee37d337396/settings/organization
+    - button "Settings":
+      - generic: Settings
+- separator
+- list:
+  - button "VI Vignesh Prabakaran vignesh.ph10@gmail.com":
+    - generic: VI
+    - generic: Vignesh Prabakaran
+    - generic: vignesh.ph10@gmail.com
+- button "Toggle Sidebar"
+- main:
+  - navigation "breadcrumb":
+    - list:
+      - link "Parse":
+        - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse?
+      - link "pjb-sx7k..." [disabled]
+  - generic: Success
+  - button "Docs":
+    - generic: Docs
+  - button "Configs":
+    - generic: Configs
+  - button "History":
+    - generic: History
+  - button "Feedback":
+    - generic: Feedback
+  - separator
+  - button:
+  - spinbutton: "2"
+  - generic: of
+  - generic: "3"
+  - button:
+  - button "Zoom Out":
+  - generic: 100%
+  - button "Zoom In":
+  - button "Reset Zoom":
+  - button "Download PDF":
+  - button "Fullscreen":
+  - generic: postal-10k.pdf
+  - img "postal-10k.pdf"
+  - separator
+  - tablist:
+    - tab "Build":
+      - generic: Build
+    - tab "Results" [selected]:
+      - generic: Results
+    - tab "Code":
+      - generic: Code
+  - button "Markdown" [pressed]:
+    - text: Markdown
+  - button "Text":
+  - button "JSON":
+  - button "Images":
+  - button "XLSX":
+  - button "PDF":
+  - button "Previous page":
+    - generic: Previous page
+  - textbox: "2"
+  - generic: of 3
+  - button "Next page" [active]:
+    - generic: Next page
+  - button "Copy":
+    - generic: Copy
+  - button "View options":
+    - generic: View options
+  - button "More actions":
+    - generic: More actions
+  - tabpanel:
+    - text: heading
+    - heading "STATEMENTS OF CASH FLOWS" [level=1]
+    - text: text
+    - paragraph: UNITED STATES POSTAL SERVICE STATEMENTS OF OPERATIONS
+    - text: table
+    - table:
+      - rowgroup:
+        - row "Year Ended September 30,":
+          - columnheader
+          - columnheader "Year Ended September 30,"
+        - row "(in millions) 2025 2024 2023":
+          - columnheader "(in millions)"
+          - columnheader "2025"
+          - columnheader "2024"
+          - columnheader "2023"
+      - rowgroup:
+        - row "Revenue":
+          - cell "Revenue"
+          - cell
+          - cell
+          - cell
+        - row "Operating revenue 80,453 79,537 78,186":
+          - cell "Operating revenue"
+          - cell "80,453"
+          - cell "79,537"
+          - cell "78,186"
+        - row "Other revenue 128 10 197":
+          - cell "Other revenue"
+          - cell "128"
+          - cell "10"
+          - cell "197"
+        - row "Total revenue 80,581 79,547 78,383":
+          - cell "Total revenue"
+          - cell "80,581"
+          - cell "79,547"
+          - cell "78,383"
+        - row "Operating expenses":
+          - cell "Operating expenses"
+          - cell
+          - cell
+          - cell
+        - row "Compensation and benefits 55,781 54,078 52,853":
+          - cell "Compensation and benefits"
+          - cell "55,781"
+          - cell "54,078"
+          - cell "52,853"
+        - row "Retirement benefits 10,342 10,427 10,001":
+          - cell "Retirement benefits"
+          - cell "10,342"
+          - cell "10,427"
+          - cell "10,001"
+        - row "Workers' compensation 2,699 3,799 538":
+          - cell "Workers' compensation"
+          - cell "2,699"
+          - cell "3,799"
+          - cell "538"
+        - row "Transportation 8,393 8,815 10,111":
+          - cell "Transportation"
+          - cell "8,393"
+          - cell "8,815"
+          - cell "10,111"
+        - row "Other operating expenses 12,567 12,346 11,884":
+          - cell "Other operating expenses"
+          - cell "12,567"
+          - cell "12,346"
+          - cell "11,884"
+        - row "Total operating expenses 89,782 89,465 85,387":
+          - cell "Total operating expenses"
+          - cell "89,782"
+          - cell "89,465"
+          - cell "85,387"
+        - row "Loss from operations (9,201) (9,918) (7,004)":
+          - cell "Loss from operations"
+          - cell "(9,201)"
+          - cell "(9,918)"
+          - cell "(7,004)"
+        - row "Interest and investment income 771 958 941":
+          - cell "Interest and investment income"
+          - cell "771"
+          - cell "958"
+          - cell "941"
+        - row "Interest expense (548) (560) (415)":
+          - cell "Interest expense"
+          - cell "(548)"
+          - cell "(560)"
+          - cell "(415)"
+        - row "Net loss (8,978) (9,520) (6,478)":
+          - cell "Net loss"
+          - cell "(8,978)"
+          - cell "(9,520)"
+          - cell "(6,478)"
+    - text: text
+    - paragraph: See accompanying notes to the financial statements.
+    - text: footer
+    - paragraph: 2025 Report on Form 10-K United States Postal Service <page_number>46</page_number>
+  - generic: Estimated cost
+  - generic: 1 file (estimate unavailable)
+  - link "Start over":
+    - /url: /project/ec7edb70-8bec-4b1b-9a17-451533884780/parse
+    - button "Start over":
+      - generic: Start over
+  - button "Save config":
+    - generic: Save config
+  - button "Run again":
+    - generic: Run again
+- region "Notifications alt+T"
+- alert
+- document

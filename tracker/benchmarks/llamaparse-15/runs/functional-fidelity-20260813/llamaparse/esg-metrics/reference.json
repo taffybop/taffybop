@@ -1,0 +1,692 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-dnqqsnjbdx1np5utnrt9nx6fcibd",
+    "created_at": "2026-08-12T18:31:40.924240Z",
+    "updated_at": "2026-08-12T18:31:59.606956Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "esg-metrics.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "APPENDIX / PERFORMANCE AT A GLANCE\n\n\n\nPerformance at a glance                                                                                                                                  Energy breakdown by source\nEnvironment\n\n                                                                                                                                                         Purchased cooling             Purchased renewable\n Energy1,2                                                                                                                                               <1%                           electricity\n                                                                                                                                                                                       7%\n Metric                        Unit3                         CY21⁴          CY22                            CY23           FY245                         Purchased steam\n                                                                                                                                                         <1%\n Energy consumption\n Purchased nonrenewable        MWh                           7,540,309      8,342,669                       8,391,233      8,384,845\n electricity                                                                                                                                             Fuel\n Purchased renewable           MWh                           556            200,141                         393,561        783,604                       21%\n electricity                                                                                                                                                                           Purchased\n Renewable electricity         MWh                           86             223                             245            270                                                         nonrenewable\n generated on-site                                                                                                                                                                     electricity\n Purchased steam               MWh                            88,731            87,345                         78,386       79,669                                                     71%\n Purchased cooling             MWh                           113,317           108,524                        108,249      107,832\n Fuel                          MWh                           2,277,126       2,401,140                      2,417,187       2,436,577\n Total energy consumption      MWh                           10,020,124     11,140,042                      11,388,860     11,792,797\n Grid electricity consumed     %                                 75%        77%                             77%            78%                           Energy consumption6,7\n                                                                                                                                                         Purchased steam and cooling   Fuel   Purchased nonrenewable electricity   Purchased renewable electricity\n Renewable electricity         %                             0%             2%                              4%             9%\n consumed                                                                                                                                                FY245     0.2        2.4    8.4                                                                           0.8  11.8\n\n1 Information is collected and reported to CDP annually.                                                                                                 CY23      0.2        2.4    8.4                                                                           0.4  11.4\n2 Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories,\n2019 Re nement.\n$ Energy consumption is in megawatt hours (MWh)                                                                                                          CY22      0.2        2.4    8.3                                                                           0.2  11.1\n% Energy data is revised from prior annual disclosures to re&ect the divestiture of Lehi, Utah, operations.\n' Beginning with  scal year 2024, Micron's environmental, health and safety performance data is reported on a scal year basis to align with emerging     CY21¹     0.2        2.3                                                  7.5                             10.0\nregulatory requirements.\n\n\n(Energy consumption in millions of megawatt hours (M MWh)\n) Renewable electricity purchased and generated prior to CY22 is not shown.\n\n\n\nTABLE OF CONTENTS     MICRON SUSTAINABILITY REPORT 2025  80"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "APPENDIX / PERFORMANCE AT A GLANCE\n\n# Performance at a glance\n\nEnvironment\n\n## Energy<sup>1,2</sup>\n\n<table>\n  <thead>\n    <tr>\n        <th colspan=\"6\">Energy consumption</th>\n    </tr>\n    <tr>\n        <th>Metric</th>\n        <th>Unit<sup>3</sup></th>\n        <th>CY21<sup>4</sup></th>\n        <th>CY22</th>\n        <th>CY23</th>\n        <th>FY24<sup>5</sup></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Purchased nonrenewable electricity</td>\n        <td>MWh</td>\n        <td>7,540,309</td>\n        <td>8,342,669</td>\n        <td>8,391,233</td>\n        <td>8,384,845</td>\n    </tr>\n    <tr>\n        <td>Purchased renewable electricity</td>\n        <td>MWh</td>\n        <td>556</td>\n        <td>200,141</td>\n        <td>393,561</td>\n        <td>783,604</td>\n    </tr>\n    <tr>\n        <td>Renewable electricity generated on-site</td>\n        <td>MWh</td>\n        <td>86</td>\n        <td>223</td>\n        <td>245</td>\n        <td>270</td>\n    </tr>\n    <tr>\n        <td>Purchased steam</td>\n        <td>MWh</td>\n        <td>88,731</td>\n        <td>87,345</td>\n        <td>78,386</td>\n        <td>79,669</td>\n    </tr>\n    <tr>\n        <td>Purchased cooling</td>\n        <td>MWh</td>\n        <td>113,317</td>\n        <td>108,524</td>\n        <td>108,249</td>\n        <td>107,832</td>\n    </tr>\n    <tr>\n        <td>Fuel</td>\n        <td>MWh</td>\n        <td>2,277,126</td>\n        <td>2,401,140</td>\n        <td>2,417,187</td>\n        <td>2,436,577</td>\n    </tr>\n    <tr>\n        <td>Total energy consumption</td>\n        <td>MWh</td>\n        <td>10,020,124</td>\n        <td>11,140,042</td>\n        <td>11,388,860</td>\n        <td>11,792,797</td>\n    </tr>\n    <tr>\n        <td>Grid electricity consumed</td>\n        <td>%</td>\n        <td>75%</td>\n        <td>77%</td>\n        <td>77%</td>\n        <td>78%</td>\n    </tr>\n    <tr>\n        <td>Renewable electricity consumed</td>\n        <td>%</td>\n        <td>0%</td>\n        <td>2%</td>\n        <td>4%</td>\n        <td>9%</td>\n    </tr>\n  </tbody>\n</table>\n\n<sup>1</sup> Information is collected and reported to CDP annually.\n\n<sup>2</sup> Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories, 2019 Refinement.\n\n<sup>3</sup> Energy consumption is in megawatt hours (MWh)\n\n<sup>4</sup> Energy data is revised from prior annual disclosures to reflect the divestiture of Lehi, Utah, operations.\n\n<sup>5</sup> Beginning with fiscal year 2024, Micron's environmental, health and safety performance data is reported on a fiscal year basis to align with emerging regulatory requirements.\n\n## Energy breakdown by source\n\n<table>\n  <tbody>\n    <tr>\n        <td>Source</td>\n        <td>Percentage</td>\n    </tr>\n    <tr>\n        <td>Purchased cooling</td>\n        <td>&lt;1%</td>\n    </tr>\n    <tr>\n        <td>Purchased steam</td>\n        <td>&lt;1%</td>\n    </tr>\n    <tr>\n        <td>Fuel</td>\n        <td>21%</td>\n    </tr>\n    <tr>\n        <td>Purchased nonrenewable electricity</td>\n        <td>71%</td>\n    </tr>\n    <tr>\n        <td>Purchased renewable electricity</td>\n        <td>7%</td>\n    </tr>\n  </tbody>\n</table>\n\n## Energy consumption<sup>6,7</sup>\n\n\\* Purchased steam and cooling \\* Fuel \\* Purchased nonrenewable electricity \\* Purchased renewable electricity\n\n<table>\n  <tbody>\n    <tr>\n        <td>Year</td>\n        <td>Purchased steam and cooling</td>\n        <td>Fuel</td>\n        <td>Purchased nonrenewable electricity</td>\n        <td>Purchased renewable electricity</td>\n        <td>Total</td>\n    </tr>\n    <tr>\n        <td>FY24<sup>5</sup></td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.4</td>\n        <td>0.8</td>\n        <td>11.8</td>\n    </tr>\n    <tr>\n        <td>CY23</td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.4</td>\n        <td>0.4</td>\n        <td>11.4</td>\n    </tr>\n    <tr>\n        <td>CY22</td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.3</td>\n        <td>0.2</td>\n        <td>11.1</td>\n    </tr>\n    <tr>\n        <td>CY21<sup>4</sup></td>\n        <td>0.2</td>\n        <td>2.3</td>\n        <td>7.5</td>\n        <td> </td>\n        <td>10.0</td>\n    </tr>\n  </tbody>\n</table>\n\n<sup>6</sup> Energy consumption in millions of megawatt hours (M MWh)\n\n<sup>7</sup> Renewable electricity purchased and generated prior to CY22 is not shown.",
+        "footer": "[TABLE OF CONTENTS >](https://www.micron.com/sustainability)\n\nMICRON SUSTAINABILITY REPORT 2025\n\n<page_number>80</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "text",
+            "md": "APPENDIX / PERFORMANCE AT A GLANCE",
+            "bbox": [
+              {
+                "x": 132.38,
+                "y": 156.74,
+                "w": 108.99,
+                "h": 5.19,
+                "confidence": 0.86,
+                "start_index": 0,
+                "end_index": 33,
+                "label": "text"
+              }
+            ],
+            "value": "APPENDIX / PERFORMANCE AT A GLANCE"
+          },
+          {
+            "type": "heading",
+            "md": "# Performance at a glance",
+            "bbox": [
+              {
+                "x": 165.88,
+                "y": 156.51,
+                "w": 75.3,
+                "h": 6,
+                "confidence": 0.76,
+                "start_index": 0,
+                "end_index": 24,
+                "label": "text"
+              },
+              {
+                "x": 133.78582937821096,
+                "y": 187.4595824531887,
+                "w": 181.81102080967113,
+                "h": 15.85718909553858,
+                "confidence": 0.76,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Performance at a glance"
+          },
+          {
+            "type": "text",
+            "md": "Environment",
+            "bbox": [
+              {
+                "x": 133.18,
+                "y": 206.11,
+                "w": 42.94,
+                "h": 6.08,
+                "confidence": 0.84,
+                "start_index": 0,
+                "end_index": 10,
+                "label": "text"
+              }
+            ],
+            "value": "Environment"
+          },
+          {
+            "type": "heading",
+            "md": "## Energy<sup>1,2</sup>",
+            "bbox": [
+              {
+                "x": 134.36,
+                "y": 224.44,
+                "w": 33.69,
+                "h": 8.26,
+                "confidence": 0.85,
+                "start_index": 0,
+                "end_index": 22,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Energy<sup>1,2</sup>"
+          },
+          {
+            "type": "table",
+            "md": "| Energy consumption<br/>Metric           | Energy consumption<br/>Unit³ | Energy consumption<br/>CY21⁴ | Energy consumption<br/>CY22 | Energy consumption<br/>CY23 | Energy consumption<br/>FY24⁵ |\n| --------------------------------------- | ---------------------------- | ---------------------------- | --------------------------- | --------------------------- | ---------------------------- |\n| Purchased nonrenewable electricity      | MWh                          | 7,540,309                    | 8,342,669                   | 8,391,233                   | 8,384,845                    |\n| Purchased renewable electricity         | MWh                          | 556                          | 200,141                     | 393,561                     | 783,604                      |\n| Renewable electricity generated on-site | MWh                          | 86                           | 223                         | 245                         | 270                          |\n| Purchased steam                         | MWh                          | 88,731                       | 87,345                      | 78,386                      | 79,669                       |\n| Purchased cooling                       | MWh                          | 113,317                      | 108,524                     | 108,249                     | 107,832                      |\n| Fuel                                    | MWh                          | 2,277,126                    | 2,401,140                   | 2,417,187                   | 2,436,577                    |\n| Total energy consumption                | MWh                          | 10,020,124                   | 11,140,042                  | 11,388,860                  | 11,792,797                   |\n| Grid electricity consumed               | %                            | 75%                          | 77%                         | 77%                         | 78%                          |\n| Renewable electricity consumed          | %                            | 0%                           | 2%                          | 4%                          | 9%                           |",
+            "bbox": [
+              {
+                "x": 131.41,
+                "y": 233.97,
+                "w": 231.07,
+                "h": 129.08,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 2165,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "Energy consumption<br/>Metric",
+                "Energy consumption<br/>Unit³",
+                "Energy consumption<br/>CY21⁴",
+                "Energy consumption<br/>CY22",
+                "Energy consumption<br/>CY23",
+                "Energy consumption<br/>FY24⁵"
+              ],
+              [
+                "Purchased nonrenewable electricity",
+                "MWh",
+                "7,540,309",
+                "8,342,669",
+                "8,391,233",
+                "8,384,845"
+              ],
+              [
+                "Purchased renewable electricity",
+                "MWh",
+                "556",
+                "200,141",
+                "393,561",
+                "783,604"
+              ],
+              [
+                "Renewable electricity generated on-site",
+                "MWh",
+                "86",
+                "223",
+                "245",
+                "270"
+              ],
+              [
+                "Purchased steam",
+                "MWh",
+                "88,731",
+                "87,345",
+                "78,386",
+                "79,669"
+              ],
+              [
+                "Purchased cooling",
+                "MWh",
+                "113,317",
+                "108,524",
+                "108,249",
+                "107,832"
+              ],
+              [
+                "Fuel",
+                "MWh",
+                "2,277,126",
+                "2,401,140",
+                "2,417,187",
+                "2,436,577"
+              ],
+              [
+                "Total energy consumption",
+                "MWh",
+                "10,020,124",
+                "11,140,042",
+                "11,388,860",
+                "11,792,797"
+              ],
+              [
+                "Grid electricity consumed",
+                "%",
+                "75%",
+                "77%",
+                "77%",
+                "78%"
+              ],
+              [
+                "Renewable electricity consumed",
+                "%",
+                "0%",
+                "2%",
+                "4%",
+                "9%"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th colspan=\"6\">Energy consumption</th>\n    </tr>\n    <tr>\n        <th>Metric</th>\n        <th>Unit<sup>3</sup></th>\n        <th>CY21<sup>4</sup></th>\n        <th>CY22</th>\n        <th>CY23</th>\n        <th>FY24<sup>5</sup></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Purchased nonrenewable electricity</td>\n        <td>MWh</td>\n        <td>7,540,309</td>\n        <td>8,342,669</td>\n        <td>8,391,233</td>\n        <td>8,384,845</td>\n    </tr>\n    <tr>\n        <td>Purchased renewable electricity</td>\n        <td>MWh</td>\n        <td>556</td>\n        <td>200,141</td>\n        <td>393,561</td>\n        <td>783,604</td>\n    </tr>\n    <tr>\n        <td>Renewable electricity generated on-site</td>\n        <td>MWh</td>\n        <td>86</td>\n        <td>223</td>\n        <td>245</td>\n        <td>270</td>\n    </tr>\n    <tr>\n        <td>Purchased steam</td>\n        <td>MWh</td>\n        <td>88,731</td>\n        <td>87,345</td>\n        <td>78,386</td>\n        <td>79,669</td>\n    </tr>\n    <tr>\n        <td>Purchased cooling</td>\n        <td>MWh</td>\n        <td>113,317</td>\n        <td>108,524</td>\n        <td>108,249</td>\n        <td>107,832</td>\n    </tr>\n    <tr>\n        <td>Fuel</td>\n        <td>MWh</td>\n        <td>2,277,126</td>\n        <td>2,401,140</td>\n        <td>2,417,187</td>\n        <td>2,436,577</td>\n    </tr>\n    <tr>\n        <td>Total energy consumption</td>\n        <td>MWh</td>\n        <td>10,020,124</td>\n        <td>11,140,042</td>\n        <td>11,388,860</td>\n        <td>11,792,797</td>\n    </tr>\n    <tr>\n        <td>Grid electricity consumed</td>\n        <td>%</td>\n        <td>75%</td>\n        <td>77%</td>\n        <td>77%</td>\n        <td>78%</td>\n    </tr>\n    <tr>\n        <td>Renewable electricity consumed</td>\n        <td>%</td>\n        <td>0%</td>\n        <td>2%</td>\n        <td>4%</td>\n        <td>9%</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Energy consumption<br/>Metric\",\"Energy consumption<br/>Unit³\",\"Energy consumption<br/>CY21⁴\",\"Energy consumption<br/>CY22\",\"Energy consumption<br/>CY23\",\"Energy consumption<br/>FY24⁵\"\n\"Purchased nonrenewable electricity\",\"MWh\",\"7,540,309\",\"8,342,669\",\"8,391,233\",\"8,384,845\"\n\"Purchased renewable electricity\",\"MWh\",\"556\",\"200,141\",\"393,561\",\"783,604\"\n\"Renewable electricity generated on-site\",\"MWh\",\"86\",\"223\",\"245\",\"270\"\n\"Purchased steam\",\"MWh\",\"88,731\",\"87,345\",\"78,386\",\"79,669\"\n\"Purchased cooling\",\"MWh\",\"113,317\",\"108,524\",\"108,249\",\"107,832\"\n\"Fuel\",\"MWh\",\"2,277,126\",\"2,401,140\",\"2,417,187\",\"2,436,577\"\n\"Total energy consumption\",\"MWh\",\"10,020,124\",\"11,140,042\",\"11,388,860\",\"11,792,797\"\n\"Grid electricity consumed\",\"%\",\"75%\",\"77%\",\"77%\",\"78%\"\n\"Renewable electricity consumed\",\"%\",\"0%\",\"2%\",\"4%\",\"9%\"",
+            "parse_concerns": [
+              {
+                "type": "multi_table_page",
+                "details": "3 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "<sup>1</sup> Information is collected and reported to CDP annually.",
+            "bbox": [
+              {
+                "x": 132.8,
+                "y": 373.36,
+                "w": 83.39,
+                "h": 3.95,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 66,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>1</sup> Information is collected and reported to CDP annually."
+          },
+          {
+            "type": "text",
+            "md": "<sup>2</sup> Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories, 2019 Refinement.",
+            "bbox": [
+              {
+                "x": 131.71,
+                "y": 379.95,
+                "w": 223.62,
+                "h": 7.6,
+                "confidence": 0.83,
+                "start_index": 0,
+                "end_index": 171,
+                "label": "text"
+              }
+            ],
+            "value": "<sup>2</sup> Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories, 2019 Refinement."
+          },
+          {
+            "type": "text",
+            "md": "<sup>3</sup> Energy consumption is in megawatt hours (MWh)",
+            "bbox": [
+              {
+                "x": 135.83,
+                "y": 390.29,
+                "w": 73.74,
+                "h": 4,
+                "confidence": 0.81,
+                "start_index": 0,
+                "end_index": 57,
+                "label": "footnote"
+              },
+              {
+                "x": 132.35392570495605,
+                "y": 390.67991240128225,
+                "w": 76.36620637644891,
+                "h": 4.083789825439453,
+                "confidence": 0.81,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>3</sup> Energy consumption is in megawatt hours (MWh)"
+          },
+          {
+            "type": "text",
+            "md": "<sup>4</sup> Energy data is revised from prior annual disclosures to reflect the divestiture of Lehi, Utah, operations.",
+            "bbox": [
+              {
+                "x": 135.94,
+                "y": 396.89,
+                "w": 151.11,
+                "h": 4,
+                "confidence": 0.82,
+                "start_index": 0,
+                "end_index": 118,
+                "label": "text"
+              },
+              {
+                "x": 131.80896949768066,
+                "y": 397.0249094755753,
+                "w": 154.8198352482008,
+                "h": 4.217140861179476,
+                "confidence": 0.82,
+                "label": "text"
+              }
+            ],
+            "value": "<sup>4</sup> Energy data is revised from prior annual disclosures to reflect the divestiture of Lehi, Utah, operations."
+          },
+          {
+            "type": "text",
+            "md": "<sup>5</sup> Beginning with fiscal year 2024, Micron's environmental, health and safety performance data is reported on a fiscal year basis to align with emerging regulatory requirements.",
+            "bbox": [
+              {
+                "x": 131.23,
+                "y": 403.94,
+                "w": 224.63,
+                "h": 7.61,
+                "confidence": 0.77,
+                "start_index": 0,
+                "end_index": 186,
+                "label": "text"
+              }
+            ],
+            "value": "<sup>5</sup> Beginning with fiscal year 2024, Micron's environmental, health and safety performance data is reported on a fiscal year basis to align with emerging regulatory requirements."
+          },
+          {
+            "type": "heading",
+            "md": "## Energy breakdown by source",
+            "bbox": [
+              {
+                "x": 389.19,
+                "y": 203.55,
+                "w": 73.45,
+                "h": 5.82,
+                "confidence": 0.86,
+                "start_index": 0,
+                "end_index": 28,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Energy breakdown by source"
+          },
+          {
+            "type": "table",
+            "md": "| Source                             | Percentage |\n| ---------------------------------- | ---------- |\n| Purchased cooling                  | <1%        |\n| Purchased steam                    | <1%        |\n| Fuel                               | 21%        |\n| Purchased nonrenewable electricity | 71%        |\n| Purchased renewable electricity    | 7%         |",
+            "bbox": [
+              {
+                "x": 388.25,
+                "y": 219.75,
+                "w": 115.91,
+                "h": 84.24,
+                "confidence": 0.72,
+                "start_index": 0,
+                "end_index": 362,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Source",
+                "Percentage"
+              ],
+              [
+                "Purchased cooling",
+                "<1%"
+              ],
+              [
+                "Purchased steam",
+                "<1%"
+              ],
+              [
+                "Fuel",
+                "21%"
+              ],
+              [
+                "Purchased nonrenewable electricity",
+                "71%"
+              ],
+              [
+                "Purchased renewable electricity",
+                "7%"
+              ]
+            ],
+            "html": "<table>\n    <tr>\n        <td>Source</td>\n        <td>Percentage</td>\n    </tr>\n    <tr>\n        <td>Purchased cooling</td>\n        <td>&#x3C;1%</td>\n    </tr>\n    <tr>\n        <td>Purchased steam</td>\n        <td>&#x3C;1%</td>\n    </tr>\n    <tr>\n        <td>Fuel</td>\n        <td>21%</td>\n    </tr>\n    <tr>\n        <td>Purchased nonrenewable electricity</td>\n        <td>71%</td>\n    </tr>\n    <tr>\n        <td>Purchased renewable electricity</td>\n        <td>7%</td>\n    </tr>\n</table>",
+            "csv": "\"Source\",\"Percentage\"\n\"Purchased cooling\",\"<1%\"\n\"Purchased steam\",\"<1%\"\n\"Fuel\",\"21%\"\n\"Purchased nonrenewable electricity\",\"71%\"\n\"Purchased renewable electricity\",\"7%\"",
+            "parse_concerns": [
+              {
+                "type": "multi_table_page",
+                "details": "3 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "md": "## Energy consumption<sup>6,7</sup>",
+            "bbox": [
+              {
+                "x": 389.04,
+                "y": 335.62,
+                "w": 56.42,
+                "h": 6.33,
+                "confidence": 0.87,
+                "start_index": 0,
+                "end_index": 34,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Energy consumption<sup>6,7</sup>"
+          },
+          {
+            "type": "text",
+            "md": "\\* Purchased steam and cooling \\* Fuel \\* Purchased nonrenewable electricity \\* Purchased renewable electricity",
+            "bbox": [
+              {
+                "x": 388.71,
+                "y": 343.43,
+                "w": 186.52,
+                "h": 4.54,
+                "confidence": 0.79,
+                "start_index": 0,
+                "end_index": 110,
+                "label": "text"
+              },
+              {
+                "x": 392.079,
+                "y": 343.429,
+                "w": 125.49700000000001,
+                "h": 4,
+                "confidence": 0.79,
+                "label": "text"
+              },
+              {
+                "x": 521.694,
+                "y": 343.429,
+                "w": 53.634000000000015,
+                "h": 4,
+                "confidence": 0.79,
+                "label": "text"
+              }
+            ],
+            "value": "* Purchased steam and cooling * Fuel * Purchased nonrenewable electricity * Purchased renewable electricity"
+          },
+          {
+            "type": "table",
+            "md": "| Year  | Purchased steam and cooling | Fuel | Purchased nonrenewable electricity | Purchased renewable electricity | Total |\n| ----- | --------------------------- | ---- | ---------------------------------- | ------------------------------- | ----- |\n| FY24⁵ | 0.2                         | 2.4  | 8.4                                | 0.8                             | 11.8  |\n| CY23  | 0.2                         | 2.4  | 8.4                                | 0.4                             | 11.4  |\n| CY22  | 0.2                         | 2.4  | 8.3                                | 0.2                             | 11.1  |\n| CY21⁴ | 0.2                         | 2.3  | 7.5                                |                                 | 10.0  |",
+            "bbox": [
+              {
+                "x": 388,
+                "y": 357.48,
+                "w": 270.82,
+                "h": 54.24,
+                "confidence": 0.91,
+                "start_index": 0,
+                "end_index": 754,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Year",
+                "Purchased steam and cooling",
+                "Fuel",
+                "Purchased nonrenewable electricity",
+                "Purchased renewable electricity",
+                "Total"
+              ],
+              [
+                "FY24⁵",
+                "0.2",
+                "2.4",
+                "8.4",
+                "0.8",
+                "11.8"
+              ],
+              [
+                "CY23",
+                "0.2",
+                "2.4",
+                "8.4",
+                "0.4",
+                "11.4"
+              ],
+              [
+                "CY22",
+                "0.2",
+                "2.4",
+                "8.3",
+                "0.2",
+                "11.1"
+              ],
+              [
+                "CY21⁴",
+                "0.2",
+                "2.3",
+                "7.5",
+                "",
+                "10.0"
+              ]
+            ],
+            "html": "<table>\n    <tr>\n        <td>Year</td>\n        <td>Purchased steam and cooling</td>\n        <td>Fuel</td>\n        <td>Purchased nonrenewable electricity</td>\n        <td>Purchased renewable electricity</td>\n        <td>Total</td>\n    </tr>\n    <tr>\n        <td>FY24<sup>5</sup></td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.4</td>\n        <td>0.8</td>\n        <td>11.8</td>\n    </tr>\n    <tr>\n        <td>CY23</td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.4</td>\n        <td>0.4</td>\n        <td>11.4</td>\n    </tr>\n    <tr>\n        <td>CY22</td>\n        <td>0.2</td>\n        <td>2.4</td>\n        <td>8.3</td>\n        <td>0.2</td>\n        <td>11.1</td>\n    </tr>\n    <tr>\n        <td>CY21<sup>4</sup></td>\n        <td>0.2</td>\n        <td>2.3</td>\n        <td>7.5</td>\n        <td> </td>\n        <td>10.0</td>\n    </tr>\n</table>",
+            "csv": "\"Year\",\"Purchased steam and cooling\",\"Fuel\",\"Purchased nonrenewable electricity\",\"Purchased renewable electricity\",\"Total\"\n\"FY24⁵\",\"0.2\",\"2.4\",\"8.4\",\"0.8\",\"11.8\"\n\"CY23\",\"0.2\",\"2.4\",\"8.4\",\"0.4\",\"11.4\"\n\"CY22\",\"0.2\",\"2.4\",\"8.3\",\"0.2\",\"11.1\"\n\"CY21⁴\",\"0.2\",\"2.3\",\"7.5\",,\"10.0\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 0 'Year' expects datetime, got 'FY245' in row 1"
+              },
+              {
+                "type": "multi_table_page",
+                "details": "3 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "<sup>6</sup> Energy consumption in millions of megawatt hours (M MWh)",
+            "bbox": [
+              {
+                "x": 391.62,
+                "y": 423.98,
+                "w": 90.22,
+                "h": 4,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 68,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>6</sup> Energy consumption in millions of megawatt hours (M MWh)"
+          },
+          {
+            "type": "text",
+            "md": "<sup>7</sup> Renewable electricity purchased and generated prior to CY22 is not shown.",
+            "bbox": [
+              {
+                "x": 389.12,
+                "y": 430.96,
+                "w": 114.58,
+                "h": 3.76,
+                "confidence": 0.78,
+                "start_index": 0,
+                "end_index": 85,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>7</sup> Renewable electricity purchased and generated prior to CY22 is not shown."
+          },
+          {
+            "type": "footer",
+            "md": "[TABLE OF CONTENTS >](https://www.micron.com/sustainability)\n\nMICRON SUSTAINABILITY REPORT 2025\n\n<page_number>80</page_number>",
+            "bbox": [
+              {
+                "x": 132.65,
+                "y": 453.32,
+                "w": 525.18,
+                "h": 4
+              }
+            ],
+            "items": [
+              {
+                "type": "link",
+                "md": "[TABLE OF CONTENTS >](https://www.micron.com/sustainability)",
+                "bbox": [
+                  {
+                    "x": 132.65,
+                    "y": 453.65,
+                    "w": 39.65,
+                    "h": 3.47,
+                    "confidence": 0.81,
+                    "start_index": 0,
+                    "end_index": 59,
+                    "label": "footer"
+                  }
+                ],
+                "url": "https://www.micron.com/sustainability",
+                "text": "TABLE OF CONTENTS >"
+              },
+              {
+                "type": "text",
+                "md": "MICRON SUSTAINABILITY REPORT 2025",
+                "bbox": [
+                  {
+                    "x": 570.64,
+                    "y": 453.67,
+                    "w": 67.83,
+                    "h": 3.16,
+                    "confidence": 0.85,
+                    "start_index": 0,
+                    "end_index": 32,
+                    "label": "footer"
+                  }
+                ],
+                "value": "MICRON SUSTAINABILITY REPORT 2025"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>80\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 653.83,
+                    "y": 453.32,
+                    "w": 4,
+                    "h": 4,
+                    "confidence": 0.79,
+                    "start_index": 0,
+                    "end_index": 30,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>80</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 792,
+        "page_height": 612,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.939,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 4,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d3d988a2-0635-4a26-a7b3-b5c1d59d5069/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XT6ASFIBJO&Signature=BncQEszVMqfrjzQotgigQOJhi38%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJGMEQCIAgy2ccIs7dtex3akf%2FmE8x01wsjsq6D8ZYtj1hBlCcWAiAcrqXHFJIrOJhn8U3edaN5HUYNeLi3XsYTHMHHEK7a0CqQBQjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMPOcyizC0KtjN9Yg%2FKuQEysQJrv1PyEzju5EwaYfZSIDkeR1PVD71z6pyOSTtdh3nezTtZwG8GtNxzcfJMZnFLCqClwE2KCP0mBDHaVnFWQ0t%2Fl1hD7GN7jiFglbCX98uwSQnay9Sr6O0BSqAS9bJoB8ujpyNoF2VVaPgGCNB5DZKcb6JcH9qTXa1s0qv541N%2B895pRMUNYOQrIViNBqH76lmAYi1kxtOM1mEY5fRwlLn%2FR5MSenUdHOmqD0PuLkJMkXlbtUwFq%2Fduc4o%2FdGEifI6dhZuw6OUsOCSjqXN22bWb64VrGT01XgXtSLnsSLhDm0M2VII%2FkJitE5PPUrFezW%2BzS%2F7zJGjlWY2abaKT2aWVP9SkzcZ6wK7k5ClJMeTz6oWjsiwp%2FK3mdJRKPmZYG57CEuh3yXwVfw3QRIbzd8MaHbqWh6WCosEiiK8Zjk7fty%2BpHBCTa0U3dZ6Go9fMGLINYe%2Bqu%2BW%2Bh8BNci4sOJX5SUHHZSFfl0sHb0u7H9w10umBwVBuqwtSCXq3yNy9UFqdcGLwG%2BFnEzFmX29hpBQJx8SiDUeae%2BK9AOvnPcvP1ya3Zt9Ue3C9akRJTR8wympITTIeqePjW4Gwltoo1SpnD0qAWcp1yD4hBnAduEFymTIRjl8jFtrvAW%2Bw1w4u15QFap%2FWMKK0iwcO1aCDDUmajym2Ug17Y5B%2BrPvjB972CsD2vgI5199TSsA5EDEOtnIHdeg7wDzH4VCM89M%2BtmwtevvAB%2Fj1yITnr3XC8GHId8CIMLQTXnSJpPC4%2FO4ASIWW9KYlhJLd02Telzro9ld6Zu%2Bla2WuRu1xLBwao6G3dPZMJrr8tMGOpkBwbN65MfKnM%2FlcN9f%2F3Z1TPBiioBcPWFXx03aOlqSHtD%2FEM%2F%2BYvxV5xfKToCv9By58HPT75J1c9D0HmQMnGOdAkVlgDIMWibDHMYSutAY6uTS1BBHJ%2BJK1727F5fxAfGy%2BcWgHquslG6ZMtSj2DtDr3i2RU0gwZVHW08bywjTbzJNNeU5KhgtK1u1Hw6M52%2FAEpEnfGMtIAcp&Expires=1786563859",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 792,
+          "h": 612
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d3d988a2-0635-4a26-a7b3-b5c1d59d5069/page_1_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT6ASFIBJO&Signature=0wRHaRp%2BOhGau%2FvOt2DStrF%2FvYs%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJGMEQCIAgy2ccIs7dtex3akf%2FmE8x01wsjsq6D8ZYtj1hBlCcWAiAcrqXHFJIrOJhn8U3edaN5HUYNeLi3XsYTHMHHEK7a0CqQBQjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMPOcyizC0KtjN9Yg%2FKuQEysQJrv1PyEzju5EwaYfZSIDkeR1PVD71z6pyOSTtdh3nezTtZwG8GtNxzcfJMZnFLCqClwE2KCP0mBDHaVnFWQ0t%2Fl1hD7GN7jiFglbCX98uwSQnay9Sr6O0BSqAS9bJoB8ujpyNoF2VVaPgGCNB5DZKcb6JcH9qTXa1s0qv541N%2B895pRMUNYOQrIViNBqH76lmAYi1kxtOM1mEY5fRwlLn%2FR5MSenUdHOmqD0PuLkJMkXlbtUwFq%2Fduc4o%2FdGEifI6dhZuw6OUsOCSjqXN22bWb64VrGT01XgXtSLnsSLhDm0M2VII%2FkJitE5PPUrFezW%2BzS%2F7zJGjlWY2abaKT2aWVP9SkzcZ6wK7k5ClJMeTz6oWjsiwp%2FK3mdJRKPmZYG57CEuh3yXwVfw3QRIbzd8MaHbqWh6WCosEiiK8Zjk7fty%2BpHBCTa0U3dZ6Go9fMGLINYe%2Bqu%2BW%2Bh8BNci4sOJX5SUHHZSFfl0sHb0u7H9w10umBwVBuqwtSCXq3yNy9UFqdcGLwG%2BFnEzFmX29hpBQJx8SiDUeae%2BK9AOvnPcvP1ya3Zt9Ue3C9akRJTR8wympITTIeqePjW4Gwltoo1SpnD0qAWcp1yD4hBnAduEFymTIRjl8jFtrvAW%2Bw1w4u15QFap%2FWMKK0iwcO1aCDDUmajym2Ug17Y5B%2BrPvjB972CsD2vgI5199TSsA5EDEOtnIHdeg7wDzH4VCM89M%2BtmwtevvAB%2Fj1yITnr3XC8GHId8CIMLQTXnSJpPC4%2FO4ASIWW9KYlhJLd02Telzro9ld6Zu%2Bla2WuRu1xLBwao6G3dPZMJrr8tMGOpkBwbN65MfKnM%2FlcN9f%2F3Z1TPBiioBcPWFXx03aOlqSHtD%2FEM%2F%2BYvxV5xfKToCv9By58HPT75J1c9D0HmQMnGOdAkVlgDIMWibDHMYSutAY6uTS1BBHJ%2BJK1727F5fxAfGy%2BcWgHquslG6ZMtSj2DtDr3i2RU0gwZVHW08bywjTbzJNNeU5KhgtK1u1Hw6M52%2FAEpEnfGMtIAcp&Expires=1786563859",
+        "category": "layout",
+        "bbox": {
+          "x": 388,
+          "y": 220,
+          "w": 116,
+          "h": 84
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_chart_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d3d988a2-0635-4a26-a7b3-b5c1d59d5069/page_1_chart_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT6ASFIBJO&Signature=FD%2FjJ%2F7xJ%2FzIuk%2FFVdQi33EIhO0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJGMEQCIAgy2ccIs7dtex3akf%2FmE8x01wsjsq6D8ZYtj1hBlCcWAiAcrqXHFJIrOJhn8U3edaN5HUYNeLi3XsYTHMHHEK7a0CqQBQjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMPOcyizC0KtjN9Yg%2FKuQEysQJrv1PyEzju5EwaYfZSIDkeR1PVD71z6pyOSTtdh3nezTtZwG8GtNxzcfJMZnFLCqClwE2KCP0mBDHaVnFWQ0t%2Fl1hD7GN7jiFglbCX98uwSQnay9Sr6O0BSqAS9bJoB8ujpyNoF2VVaPgGCNB5DZKcb6JcH9qTXa1s0qv541N%2B895pRMUNYOQrIViNBqH76lmAYi1kxtOM1mEY5fRwlLn%2FR5MSenUdHOmqD0PuLkJMkXlbtUwFq%2Fduc4o%2FdGEifI6dhZuw6OUsOCSjqXN22bWb64VrGT01XgXtSLnsSLhDm0M2VII%2FkJitE5PPUrFezW%2BzS%2F7zJGjlWY2abaKT2aWVP9SkzcZ6wK7k5ClJMeTz6oWjsiwp%2FK3mdJRKPmZYG57CEuh3yXwVfw3QRIbzd8MaHbqWh6WCosEiiK8Zjk7fty%2BpHBCTa0U3dZ6Go9fMGLINYe%2Bqu%2BW%2Bh8BNci4sOJX5SUHHZSFfl0sHb0u7H9w10umBwVBuqwtSCXq3yNy9UFqdcGLwG%2BFnEzFmX29hpBQJx8SiDUeae%2BK9AOvnPcvP1ya3Zt9Ue3C9akRJTR8wympITTIeqePjW4Gwltoo1SpnD0qAWcp1yD4hBnAduEFymTIRjl8jFtrvAW%2Bw1w4u15QFap%2FWMKK0iwcO1aCDDUmajym2Ug17Y5B%2BrPvjB972CsD2vgI5199TSsA5EDEOtnIHdeg7wDzH4VCM89M%2BtmwtevvAB%2Fj1yITnr3XC8GHId8CIMLQTXnSJpPC4%2FO4ASIWW9KYlhJLd02Telzro9ld6Zu%2Bla2WuRu1xLBwao6G3dPZMJrr8tMGOpkBwbN65MfKnM%2FlcN9f%2F3Z1TPBiioBcPWFXx03aOlqSHtD%2FEM%2F%2BYvxV5xfKToCv9By58HPT75J1c9D0HmQMnGOdAkVlgDIMWibDHMYSutAY6uTS1BBHJ%2BJK1727F5fxAfGy%2BcWgHquslG6ZMtSj2DtDr3i2RU0gwZVHW08bywjTbzJNNeU5KhgtK1u1Hw6M52%2FAEpEnfGMtIAcp&Expires=1786563859",
+        "category": "layout",
+        "bbox": {
+          "x": 388,
+          "y": 357,
+          "w": 271,
+          "h": 54
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_1_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d3d988a2-0635-4a26-a7b3-b5c1d59d5069/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT6ASFIBJO&Signature=2lzbOqAczeCizxFeypuH%2FU9NoTE%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJGMEQCIAgy2ccIs7dtex3akf%2FmE8x01wsjsq6D8ZYtj1hBlCcWAiAcrqXHFJIrOJhn8U3edaN5HUYNeLi3XsYTHMHHEK7a0CqQBQjT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMPOcyizC0KtjN9Yg%2FKuQEysQJrv1PyEzju5EwaYfZSIDkeR1PVD71z6pyOSTtdh3nezTtZwG8GtNxzcfJMZnFLCqClwE2KCP0mBDHaVnFWQ0t%2Fl1hD7GN7jiFglbCX98uwSQnay9Sr6O0BSqAS9bJoB8ujpyNoF2VVaPgGCNB5DZKcb6JcH9qTXa1s0qv541N%2B895pRMUNYOQrIViNBqH76lmAYi1kxtOM1mEY5fRwlLn%2FR5MSenUdHOmqD0PuLkJMkXlbtUwFq%2Fduc4o%2FdGEifI6dhZuw6OUsOCSjqXN22bWb64VrGT01XgXtSLnsSLhDm0M2VII%2FkJitE5PPUrFezW%2BzS%2F7zJGjlWY2abaKT2aWVP9SkzcZ6wK7k5ClJMeTz6oWjsiwp%2FK3mdJRKPmZYG57CEuh3yXwVfw3QRIbzd8MaHbqWh6WCosEiiK8Zjk7fty%2BpHBCTa0U3dZ6Go9fMGLINYe%2Bqu%2BW%2Bh8BNci4sOJX5SUHHZSFfl0sHb0u7H9w10umBwVBuqwtSCXq3yNy9UFqdcGLwG%2BFnEzFmX29hpBQJx8SiDUeae%2BK9AOvnPcvP1ya3Zt9Ue3C9akRJTR8wympITTIeqePjW4Gwltoo1SpnD0qAWcp1yD4hBnAduEFymTIRjl8jFtrvAW%2Bw1w4u15QFap%2FWMKK0iwcO1aCDDUmajym2Ug17Y5B%2BrPvjB972CsD2vgI5199TSsA5EDEOtnIHdeg7wDzH4VCM89M%2BtmwtevvAB%2Fj1yITnr3XC8GHId8CIMLQTXnSJpPC4%2FO4ASIWW9KYlhJLd02Telzro9ld6Zu%2Bla2WuRu1xLBwao6G3dPZMJrr8tMGOpkBwbN65MfKnM%2FlcN9f%2F3Z1TPBiioBcPWFXx03aOlqSHtD%2FEM%2F%2BYvxV5xfKToCv9By58HPT75J1c9D0HmQMnGOdAkVlgDIMWibDHMYSutAY6uTS1BBHJ%2BJK1727F5fxAfGy%2BcWgHquslG6ZMtSj2DtDr3i2RU0gwZVHW08bywjTbzJNNeU5KhgtK1u1Hw6M52%2FAEpEnfGMtIAcp&Expires=1786563859",
+        "category": "layout",
+        "bbox": {
+          "x": 131,
+          "y": 234,
+          "w": 231,
+          "h": 129
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

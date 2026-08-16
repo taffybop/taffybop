@@ -1,0 +1,1 @@
+.venv/bin/python3 -m tests.benchmarks.corpus_runner capture --workspace . --run-dir tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03 --run-id p00-us10-corpus-20260729-03 --corpus-registry tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json --control-registry tracker/phase-00-baseline/evidence/P00-US09-control-registry.json --timeout-seconds 420.0

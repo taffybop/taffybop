@@ -1,0 +1,647 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-0rg2k3rbny72og3fly5vukjfwb2u",
+    "created_at": "2026-07-28T12:21:58.764183Z",
+    "updated_at": "2026-07-28T12:22:19.218407Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "catastrophe-recap.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "AON\n\n\n\n\n    Insured losses were driven by the destructive California wildfires in January, with total insured losses to\n    be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States,\n    surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was\n    the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of\n    approximately $900 million (AUD1.4 billion).                   É w  in Ireland and the UK followed with $690\n    million (€                  ).\n\n    EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025\n\n      Date(s)         Event                            Location         Fatalities         Insured Loss ($B)\n      01/07-01/28     Palisades Fire                   United States            12                       23.0\n      01/07-01/28     Eaton Fire                       United States            18                       17.5\n      03/14-03/16     Severe Convective Storm          United States            43                        8.0\n      05/14-05/16     Severe Convective Storm          United States            30                        8.0\n      05/17-05/20     Severe Convective Storm          United States             0                        4.0\n\n    Natural catastrophes in the United States accounted for more than 90 percent of global insured losses\n    in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other\n    regions were significantly lower compared to their long-term averages.\n\n    EXHIBIT 8: 1H Insured Losses by Region (2025 $B)\n\n                      er cas                     C                      EMEA               USA\n   125\n   100\n     75\n     50\n     25\n\n       2015          2020         2025 2015      2020  2025 2015        2020    2025 2015  2020  2025\n     Annual total     1H\n   Data: Aon Catastrophe Insight\n\n\n\n\n\n\n\n\n\n\n   1H 2025 Global Catastrophe Recap    7"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "AON logo\n\n---\n\nInsured losses were driven by the destructive California wildfires in January, with total insured losses to be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States, surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of approximately $900 million (AUD1.4 billion). Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).\n\nEXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025\n\n<table>\n  <thead>\n    <tr>\n        <th>Date(s)</th>\n        <th>Event</th>\n        <th>Location</th>\n        <th>Fatalities</th>\n        <th>Insured Loss ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>01/07-01/28</td>\n        <td>Palisades Fire</td>\n        <td>United States</td>\n        <td>12</td>\n        <td>23.0</td>\n    </tr>\n    <tr>\n        <td>01/07-01/28</td>\n        <td>Eaton Fire</td>\n        <td>United States</td>\n        <td>18</td>\n        <td>17.5</td>\n    </tr>\n    <tr>\n        <td>03/14-03/16</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>43</td>\n        <td>8.0</td>\n    </tr>\n    <tr>\n        <td>05/14-05/16</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>30</td>\n        <td>8.0</td>\n    </tr>\n    <tr>\n        <td>05/17-05/20</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>0</td>\n        <td>4.0</td>\n    </tr>\n  </tbody>\n</table>\n\nNatural catastrophes in the United States accounted for more than 90 percent of global insured losses in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other regions were significantly lower compared to their long-term averages.\n\nEXHIBIT 8: 1H Insured Losses by Region (2025 $B)\n\n<table>\n  <thead>\n    <tr>\n        <th>Region</th>\n        <th>Year</th>\n        <th>Annual total</th>\n        <th>1H</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Americas</td>\n        <td>2015</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2016</td>\n        <td>55</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2017</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2018</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2019</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2020</td>\n        <td>10</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2021</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2022</td>\n        <td>8</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2023</td>\n        <td>12</td>\n        <td>4</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2024</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2025</td>\n        <td>2</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2015</td>\n        <td>10</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2016</td>\n        <td>20</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2017</td>\n        <td>15</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2018</td>\n        <td>35</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2019</td>\n        <td>30</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2020</td>\n        <td>10</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2021</td>\n        <td>12</td>\n        <td>7</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2022</td>\n        <td>18</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2023</td>\n        <td>15</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2024</td>\n        <td>5</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2025</td>\n        <td>2</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2015</td>\n        <td>5</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2016</td>\n        <td>15</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2017</td>\n        <td>18</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2018</td>\n        <td>15</td>\n        <td>8</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2019</td>\n        <td>15</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2020</td>\n        <td>20</td>\n        <td>12</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2021</td>\n        <td>35</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2022</td>\n        <td>22</td>\n        <td>20</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2023</td>\n        <td>33</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2024</td>\n        <td>20</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2025</td>\n        <td>5</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2015</td>\n        <td>35</td>\n        <td>22</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2016</td>\n        <td>45</td>\n        <td>30</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2017</td>\n        <td>125</td>\n        <td>22</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2018</td>\n        <td>80</td>\n        <td>25</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2019</td>\n        <td>50</td>\n        <td>30</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2020</td>\n        <td>102</td>\n        <td>35</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2021</td>\n        <td>112</td>\n        <td>45</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2022</td>\n        <td>48</td>\n        <td>40</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2023</td>\n        <td>120</td>\n        <td>55</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2024</td>\n        <td>88</td>\n        <td>58</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2025</td>\n        <td>120</td>\n        <td>92</td>\n    </tr>\n  </tbody>\n</table>\n\nData: Aon Catastrophe Insight",
+        "footer": "1H 2025 Global Catastrophe Recap <page_number>7</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "text",
+            "md": "AON logo",
+            "bbox": [
+              {
+                "x": 26.48,
+                "y": 23.02,
+                "w": 80.18,
+                "h": 36.63,
+                "confidence": 0.4,
+                "start_index": 0,
+                "end_index": 7,
+                "label": "image"
+              }
+            ],
+            "value": "AON logo"
+          },
+          {
+            "type": "text",
+            "md": "Insured losses were driven by the destructive California wildfires in January, with total insured losses to be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States, surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of approximately $900 million (AUD1.4 billion). Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million).",
+            "bbox": [
+              {
+                "x": 99.85,
+                "y": 118.83,
+                "w": 441.88,
+                "h": 76.16,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 545,
+                "label": "text"
+              },
+              {
+                "x": 100.7,
+                "y": 169.43,
+                "w": 188.661,
+                "h": 12,
+                "confidence": 0.99,
+                "label": "text"
+              },
+              {
+                "x": 337.838,
+                "y": 169.43,
+                "w": 206.022,
+                "h": 12,
+                "confidence": 0.99,
+                "label": "text"
+              },
+              {
+                "x": 100.7,
+                "y": 182.75,
+                "w": 45.11999999999999,
+                "h": 12,
+                "confidence": 0.99,
+                "label": "text"
+              },
+              {
+                "x": 186.98,
+                "y": 182.75,
+                "w": 6,
+                "h": 12,
+                "confidence": 0.99,
+                "label": "text"
+              }
+            ],
+            "value": "Insured losses were driven by the destructive California wildfires in January, with total insured losses to be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States, surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of approximately $900 million (AUD1.4 billion). Windstorm Éowyn in Ireland and the UK followed with $690 million (€620 million)."
+          },
+          {
+            "type": "text",
+            "md": "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025",
+            "bbox": [
+              {
+                "x": 100.11,
+                "y": 210.54,
+                "w": 248.68,
+                "h": 9.01,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 56,
+                "label": "caption"
+              }
+            ],
+            "value": "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025"
+          },
+          {
+            "type": "table",
+            "md": "| Date(s)     | Event                   | Location      | Fatalities | Insured Loss ($B) |\n| ----------- | ----------------------- | ------------- | ---------- | ----------------- |\n| 01/07-01/28 | Palisades Fire          | United States | 12         | 23.0              |\n| 01/07-01/28 | Eaton Fire              | United States | 18         | 17.5              |\n| 03/14-03/16 | Severe Convective Storm | United States | 43         | 8.0               |\n| 05/14-05/16 | Severe Convective Storm | United States | 30         | 8.0               |\n| 05/17-05/20 | Severe Convective Storm | United States | 0          | 4.0               |",
+            "bbox": [
+              {
+                "x": 99.71,
+                "y": 231.04,
+                "w": 444.79,
+                "h": 99.5,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 635,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "Date(s)",
+                "Event",
+                "Location",
+                "Fatalities",
+                "Insured Loss ($B)"
+              ],
+              [
+                "01/07-01/28",
+                "Palisades Fire",
+                "United States",
+                "12",
+                "23.0"
+              ],
+              [
+                "01/07-01/28",
+                "Eaton Fire",
+                "United States",
+                "18",
+                "17.5"
+              ],
+              [
+                "03/14-03/16",
+                "Severe Convective Storm",
+                "United States",
+                "43",
+                "8.0"
+              ],
+              [
+                "05/14-05/16",
+                "Severe Convective Storm",
+                "United States",
+                "30",
+                "8.0"
+              ],
+              [
+                "05/17-05/20",
+                "Severe Convective Storm",
+                "United States",
+                "0",
+                "4.0"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Date(s)</th>\n        <th>Event</th>\n        <th>Location</th>\n        <th>Fatalities</th>\n        <th>Insured Loss ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>01/07-01/28</td>\n        <td>Palisades Fire</td>\n        <td>United States</td>\n        <td>12</td>\n        <td>23.0</td>\n    </tr>\n    <tr>\n        <td>01/07-01/28</td>\n        <td>Eaton Fire</td>\n        <td>United States</td>\n        <td>18</td>\n        <td>17.5</td>\n    </tr>\n    <tr>\n        <td>03/14-03/16</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>43</td>\n        <td>8.0</td>\n    </tr>\n    <tr>\n        <td>05/14-05/16</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>30</td>\n        <td>8.0</td>\n    </tr>\n    <tr>\n        <td>05/17-05/20</td>\n        <td>Severe Convective Storm</td>\n        <td>United States</td>\n        <td>0</td>\n        <td>4.0</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Date(s)\",\"Event\",\"Location\",\"Fatalities\",\"Insured Loss ($B)\"\n\"01/07-01/28\",\"Palisades Fire\",\"United States\",\"12\",\"23.0\"\n\"01/07-01/28\",\"Eaton Fire\",\"United States\",\"18\",\"17.5\"\n\"03/14-03/16\",\"Severe Convective Storm\",\"United States\",\"43\",\"8.0\"\n\"05/14-05/16\",\"Severe Convective Storm\",\"United States\",\"30\",\"8.0\"\n\"05/17-05/20\",\"Severe Convective Storm\",\"United States\",\"0\",\"4.0\"",
+            "parse_concerns": [
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Natural catastrophes in the United States accounted for more than 90 percent of global insured losses in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other regions were significantly lower compared to their long-term averages.",
+            "bbox": [
+              {
+                "x": 99.98,
+                "y": 349.68,
+                "w": 435.23,
+                "h": 36.27,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 276,
+                "label": "text"
+              }
+            ],
+            "value": "Natural catastrophes in the United States accounted for more than 90 percent of global insured losses in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other regions were significantly lower compared to their long-term averages."
+          },
+          {
+            "type": "text",
+            "md": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)",
+            "bbox": [
+              {
+                "x": 100.25,
+                "y": 401.5,
+                "w": 216.51,
+                "h": 9.45,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 47,
+                "label": "caption"
+              }
+            ],
+            "value": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)"
+          },
+          {
+            "type": "table",
+            "md": "| Region   | Year | Annual total | 1H |\n| -------- | ---- | ------------ | -- |\n| Americas | 2015 | 5            | 2  |\n| Americas | 2016 | 55           | 3  |\n| Americas | 2017 | 5            | 2  |\n| Americas | 2018 | 5            | 2  |\n| Americas | 2019 | 5            | 2  |\n| Americas | 2020 | 10           | 3  |\n| Americas | 2021 | 5            | 2  |\n| Americas | 2022 | 8            | 3  |\n| Americas | 2023 | 12           | 4  |\n| Americas | 2024 | 5            | 2  |\n| Americas | 2025 | 2            | 2  |\n| APAC     | 2015 | 10           | 5  |\n| APAC     | 2016 | 20           | 15 |\n| APAC     | 2017 | 15           | 5  |\n| APAC     | 2018 | 35           | 5  |\n| APAC     | 2019 | 30           | 5  |\n| APAC     | 2020 | 10           | 5  |\n| APAC     | 2021 | 12           | 7  |\n| APAC     | 2022 | 18           | 10 |\n| APAC     | 2023 | 15           | 5  |\n| APAC     | 2024 | 5            | 3  |\n| APAC     | 2025 | 2            | 2  |\n| EMEA     | 2015 | 5            | 3  |\n| EMEA     | 2016 | 15           | 10 |\n| EMEA     | 2017 | 18           | 5  |\n| EMEA     | 2018 | 15           | 8  |\n| EMEA     | 2019 | 15           | 10 |\n| EMEA     | 2020 | 20           | 12 |\n| EMEA     | 2021 | 35           | 15 |\n| EMEA     | 2022 | 22           | 20 |\n| EMEA     | 2023 | 33           | 15 |\n| EMEA     | 2024 | 20           | 10 |\n| EMEA     | 2025 | 5            | 5  |\n| USA      | 2015 | 35           | 22 |\n| USA      | 2016 | 45           | 30 |\n| USA      | 2017 | 125          | 22 |\n| USA      | 2018 | 80           | 25 |\n| USA      | 2019 | 50           | 30 |\n| USA      | 2020 | 102          | 35 |\n| USA      | 2021 | 112          | 45 |\n| USA      | 2022 | 48           | 40 |\n| USA      | 2023 | 120          | 55 |\n| USA      | 2024 | 88           | 58 |\n| USA      | 2025 | 120          | 92 |",
+            "bbox": [
+              {
+                "x": 99.27,
+                "y": 436.77,
+                "w": 445.04,
+                "h": 147.92,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 1838,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Region",
+                "Year",
+                "Annual total",
+                "1H"
+              ],
+              [
+                "Americas",
+                "2015",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2016",
+                "55",
+                "3"
+              ],
+              [
+                "Americas",
+                "2017",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2018",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2019",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2020",
+                "10",
+                "3"
+              ],
+              [
+                "Americas",
+                "2021",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2022",
+                "8",
+                "3"
+              ],
+              [
+                "Americas",
+                "2023",
+                "12",
+                "4"
+              ],
+              [
+                "Americas",
+                "2024",
+                "5",
+                "2"
+              ],
+              [
+                "Americas",
+                "2025",
+                "2",
+                "2"
+              ],
+              [
+                "APAC",
+                "2015",
+                "10",
+                "5"
+              ],
+              [
+                "APAC",
+                "2016",
+                "20",
+                "15"
+              ],
+              [
+                "APAC",
+                "2017",
+                "15",
+                "5"
+              ],
+              [
+                "APAC",
+                "2018",
+                "35",
+                "5"
+              ],
+              [
+                "APAC",
+                "2019",
+                "30",
+                "5"
+              ],
+              [
+                "APAC",
+                "2020",
+                "10",
+                "5"
+              ],
+              [
+                "APAC",
+                "2021",
+                "12",
+                "7"
+              ],
+              [
+                "APAC",
+                "2022",
+                "18",
+                "10"
+              ],
+              [
+                "APAC",
+                "2023",
+                "15",
+                "5"
+              ],
+              [
+                "APAC",
+                "2024",
+                "5",
+                "3"
+              ],
+              [
+                "APAC",
+                "2025",
+                "2",
+                "2"
+              ],
+              [
+                "EMEA",
+                "2015",
+                "5",
+                "3"
+              ],
+              [
+                "EMEA",
+                "2016",
+                "15",
+                "10"
+              ],
+              [
+                "EMEA",
+                "2017",
+                "18",
+                "5"
+              ],
+              [
+                "EMEA",
+                "2018",
+                "15",
+                "8"
+              ],
+              [
+                "EMEA",
+                "2019",
+                "15",
+                "10"
+              ],
+              [
+                "EMEA",
+                "2020",
+                "20",
+                "12"
+              ],
+              [
+                "EMEA",
+                "2021",
+                "35",
+                "15"
+              ],
+              [
+                "EMEA",
+                "2022",
+                "22",
+                "20"
+              ],
+              [
+                "EMEA",
+                "2023",
+                "33",
+                "15"
+              ],
+              [
+                "EMEA",
+                "2024",
+                "20",
+                "10"
+              ],
+              [
+                "EMEA",
+                "2025",
+                "5",
+                "5"
+              ],
+              [
+                "USA",
+                "2015",
+                "35",
+                "22"
+              ],
+              [
+                "USA",
+                "2016",
+                "45",
+                "30"
+              ],
+              [
+                "USA",
+                "2017",
+                "125",
+                "22"
+              ],
+              [
+                "USA",
+                "2018",
+                "80",
+                "25"
+              ],
+              [
+                "USA",
+                "2019",
+                "50",
+                "30"
+              ],
+              [
+                "USA",
+                "2020",
+                "102",
+                "35"
+              ],
+              [
+                "USA",
+                "2021",
+                "112",
+                "45"
+              ],
+              [
+                "USA",
+                "2022",
+                "48",
+                "40"
+              ],
+              [
+                "USA",
+                "2023",
+                "120",
+                "55"
+              ],
+              [
+                "USA",
+                "2024",
+                "88",
+                "58"
+              ],
+              [
+                "USA",
+                "2025",
+                "120",
+                "92"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Region</th>\n        <th>Year</th>\n        <th>Annual total</th>\n        <th>1H</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Americas</td>\n        <td>2015</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2016</td>\n        <td>55</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2017</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2018</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2019</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2020</td>\n        <td>10</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2021</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2022</td>\n        <td>8</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2023</td>\n        <td>12</td>\n        <td>4</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2024</td>\n        <td>5</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>Americas</td>\n        <td>2025</td>\n        <td>2</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2015</td>\n        <td>10</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2016</td>\n        <td>20</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2017</td>\n        <td>15</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2018</td>\n        <td>35</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2019</td>\n        <td>30</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2020</td>\n        <td>10</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2021</td>\n        <td>12</td>\n        <td>7</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2022</td>\n        <td>18</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2023</td>\n        <td>15</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2024</td>\n        <td>5</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>APAC</td>\n        <td>2025</td>\n        <td>2</td>\n        <td>2</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2015</td>\n        <td>5</td>\n        <td>3</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2016</td>\n        <td>15</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2017</td>\n        <td>18</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2018</td>\n        <td>15</td>\n        <td>8</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2019</td>\n        <td>15</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2020</td>\n        <td>20</td>\n        <td>12</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2021</td>\n        <td>35</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2022</td>\n        <td>22</td>\n        <td>20</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2023</td>\n        <td>33</td>\n        <td>15</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2024</td>\n        <td>20</td>\n        <td>10</td>\n    </tr>\n    <tr>\n        <td>EMEA</td>\n        <td>2025</td>\n        <td>5</td>\n        <td>5</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2015</td>\n        <td>35</td>\n        <td>22</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2016</td>\n        <td>45</td>\n        <td>30</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2017</td>\n        <td>125</td>\n        <td>22</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2018</td>\n        <td>80</td>\n        <td>25</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2019</td>\n        <td>50</td>\n        <td>30</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2020</td>\n        <td>102</td>\n        <td>35</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2021</td>\n        <td>112</td>\n        <td>45</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2022</td>\n        <td>48</td>\n        <td>40</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2023</td>\n        <td>120</td>\n        <td>55</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2024</td>\n        <td>88</td>\n        <td>58</td>\n    </tr>\n    <tr>\n        <td>USA</td>\n        <td>2025</td>\n        <td>120</td>\n        <td>92</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Region\",\"Year\",\"Annual total\",\"1H\"\n\"Americas\",\"2015\",\"5\",\"2\"\n\"Americas\",\"2016\",\"55\",\"3\"\n\"Americas\",\"2017\",\"5\",\"2\"\n\"Americas\",\"2018\",\"5\",\"2\"\n\"Americas\",\"2019\",\"5\",\"2\"\n\"Americas\",\"2020\",\"10\",\"3\"\n\"Americas\",\"2021\",\"5\",\"2\"\n\"Americas\",\"2022\",\"8\",\"3\"\n\"Americas\",\"2023\",\"12\",\"4\"\n\"Americas\",\"2024\",\"5\",\"2\"\n\"Americas\",\"2025\",\"2\",\"2\"\n\"APAC\",\"2015\",\"10\",\"5\"\n\"APAC\",\"2016\",\"20\",\"15\"\n\"APAC\",\"2017\",\"15\",\"5\"\n\"APAC\",\"2018\",\"35\",\"5\"\n\"APAC\",\"2019\",\"30\",\"5\"\n\"APAC\",\"2020\",\"10\",\"5\"\n\"APAC\",\"2021\",\"12\",\"7\"\n\"APAC\",\"2022\",\"18\",\"10\"\n\"APAC\",\"2023\",\"15\",\"5\"\n\"APAC\",\"2024\",\"5\",\"3\"\n\"APAC\",\"2025\",\"2\",\"2\"\n\"EMEA\",\"2015\",\"5\",\"3\"\n\"EMEA\",\"2016\",\"15\",\"10\"\n\"EMEA\",\"2017\",\"18\",\"5\"\n\"EMEA\",\"2018\",\"15\",\"8\"\n\"EMEA\",\"2019\",\"15\",\"10\"\n\"EMEA\",\"2020\",\"20\",\"12\"\n\"EMEA\",\"2021\",\"35\",\"15\"\n\"EMEA\",\"2022\",\"22\",\"20\"\n\"EMEA\",\"2023\",\"33\",\"15\"\n\"EMEA\",\"2024\",\"20\",\"10\"\n\"EMEA\",\"2025\",\"5\",\"5\"\n\"USA\",\"2015\",\"35\",\"22\"\n\"USA\",\"2016\",\"45\",\"30\"\n\"USA\",\"2017\",\"125\",\"22\"\n\"USA\",\"2018\",\"80\",\"25\"\n\"USA\",\"2019\",\"50\",\"30\"\n\"USA\",\"2020\",\"102\",\"35\"\n\"USA\",\"2021\",\"112\",\"45\"\n\"USA\",\"2022\",\"48\",\"40\"\n\"USA\",\"2023\",\"120\",\"55\"\n\"USA\",\"2024\",\"88\",\"58\"\n\"USA\",\"2025\",\"120\",\"92\"",
+            "parse_concerns": [
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Data: Aon Catastrophe Insight",
+            "bbox": [
+              {
+                "x": 100.48,
+                "y": 591.1,
+                "w": 75.32,
+                "h": 6.77,
+                "confidence": 0.88,
+                "start_index": 0,
+                "end_index": 28,
+                "label": "text"
+              }
+            ],
+            "value": "Data: Aon Catastrophe Insight"
+          },
+          {
+            "type": "footer",
+            "md": "1H 2025 Global Catastrophe Recap <page_number>7</page_number>",
+            "bbox": [
+              {
+                "x": 100.7,
+                "y": 740.46,
+                "w": 100.39,
+                "h": 8
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "1H 2025 Global Catastrophe Recap \\<page_number>7\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 100.7,
+                    "y": 740.46,
+                    "w": 100.39,
+                    "h": 8,
+                    "confidence": 1,
+                    "start_index": 0,
+                    "end_index": 31,
+                    "label": "footer"
+                  }
+                ],
+                "value": "1H 2025 Global Catastrophe Recap <page_number>7</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.725,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 4,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/11310011-439b-40f0-8efc-a652ce4db9d2/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTRNWYU6EA&Signature=RJbFJvw1I1RAP7ESi1qS6kzLgNA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBJiaL24NhipFXfYmNExL6MV7MZWLClAqS%2FUgqc9yl0nAiEAudv4fGedtf9O1RiXfhLxcM6Qt7pfqx%2FwXybdwBbGdBoqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDPe8Y2ip9oUgKEHu6CrkBC7GYsZWxFN%2BzzE9d2YlpXxvTdinCXzDkMzjGS0v0nlK%2BssbYqlJj1AMW3UaJ9V7J8hTwHhuICsXRUOeer0ahsDqrOSQPlxBXGtcclacpeYz3YP2xV%2FjJIrlWCUyK7YZUrinwsiRPRrpTabJffpS%2BxCduu0TMIWdoumck8TLrp9%2FsQ7kEyYGgtUXVaRra%2BX0X4DZ182msrOizdNeIKGu9Q57%2F%2FGpQANAXe7YWc7AsPx4hu4rZw0W%2FcZmJeX5V3hf8bLJId44tZpbaDYbnD45xjBenDa%2FrTgOkZgpDK553ej9OEy1BnjaRi566MA2h%2BfdmzNVEvCdv4mk130jbytgkhsx9yPC79BtZQJ%2Ba7S2gKG5c7ajJr2B6r8zvNZPUNzodzsEqBL4cUDRd5OhfFNWhsVoJ1nSNou7nTs8Oflgk3Ilpf%2BmPttkwERfGiNoIlv7MUh16awXHJNr5jw0oDuAV%2F2sbmLCOcQnr45Jh6mqrmfPot8o%2FQAXiuhud77bRiN5XrgrsFfA8mD0m8Ex0f8flohGP0izw607x5AgatoesTVDuSUzYfn%2FyzpjoRXgx6yM7HKFFymzzixRETf3e8SCdaqNY429WnkOOB3dJFK7SN0ydx0Pyn2GJ52CZva8dzzgTm7FzHfzmHvdS53M%2FmMLPUjT1%2BWQXDCZwxrRXF7LdUjSE1hP%2FJlHsX8ERY%2FZXXlihyrXty5TQHqHU4i8bHEZvqVDsHnyPI93CeYPYP7a2W35pqBe%2BKHeE%2FfXokT9Kx%2F6%2B5UBgrt96vZtCepYCR2YDOPNDKgdGL2Sm%2F4dhjdLSYt2E86Y4zC1s6LTBjqYAdALGLX31N7OK1NlkO2yw%2F1qqiZamGJXKYZ6S05QE2E%2BkH6XsWP4xAAC6sDD2mFVTSBETUiSP9SJA3NOYyullY2EXRKFN0QF3YBksXw%2Ffmzi5jVrre%2B4oOl8L%2BmJTIGN84QjPHhocqmFf%2BVJNPHRw9CBB098dif6G1s9wpM%2BjjPG7u9AexgMTsXkNa4lrvG4OPhk0SkNMzw%2F&Expires=1785244944",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/11310011-439b-40f0-8efc-a652ce4db9d2/page_1_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRNWYU6EA&Signature=tW%2Fk7SciJPoYXw344lIIcyYfijk%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBJiaL24NhipFXfYmNExL6MV7MZWLClAqS%2FUgqc9yl0nAiEAudv4fGedtf9O1RiXfhLxcM6Qt7pfqx%2FwXybdwBbGdBoqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDPe8Y2ip9oUgKEHu6CrkBC7GYsZWxFN%2BzzE9d2YlpXxvTdinCXzDkMzjGS0v0nlK%2BssbYqlJj1AMW3UaJ9V7J8hTwHhuICsXRUOeer0ahsDqrOSQPlxBXGtcclacpeYz3YP2xV%2FjJIrlWCUyK7YZUrinwsiRPRrpTabJffpS%2BxCduu0TMIWdoumck8TLrp9%2FsQ7kEyYGgtUXVaRra%2BX0X4DZ182msrOizdNeIKGu9Q57%2F%2FGpQANAXe7YWc7AsPx4hu4rZw0W%2FcZmJeX5V3hf8bLJId44tZpbaDYbnD45xjBenDa%2FrTgOkZgpDK553ej9OEy1BnjaRi566MA2h%2BfdmzNVEvCdv4mk130jbytgkhsx9yPC79BtZQJ%2Ba7S2gKG5c7ajJr2B6r8zvNZPUNzodzsEqBL4cUDRd5OhfFNWhsVoJ1nSNou7nTs8Oflgk3Ilpf%2BmPttkwERfGiNoIlv7MUh16awXHJNr5jw0oDuAV%2F2sbmLCOcQnr45Jh6mqrmfPot8o%2FQAXiuhud77bRiN5XrgrsFfA8mD0m8Ex0f8flohGP0izw607x5AgatoesTVDuSUzYfn%2FyzpjoRXgx6yM7HKFFymzzixRETf3e8SCdaqNY429WnkOOB3dJFK7SN0ydx0Pyn2GJ52CZva8dzzgTm7FzHfzmHvdS53M%2FmMLPUjT1%2BWQXDCZwxrRXF7LdUjSE1hP%2FJlHsX8ERY%2FZXXlihyrXty5TQHqHU4i8bHEZvqVDsHnyPI93CeYPYP7a2W35pqBe%2BKHeE%2FfXokT9Kx%2F6%2B5UBgrt96vZtCepYCR2YDOPNDKgdGL2Sm%2F4dhjdLSYt2E86Y4zC1s6LTBjqYAdALGLX31N7OK1NlkO2yw%2F1qqiZamGJXKYZ6S05QE2E%2BkH6XsWP4xAAC6sDD2mFVTSBETUiSP9SJA3NOYyullY2EXRKFN0QF3YBksXw%2Ffmzi5jVrre%2B4oOl8L%2BmJTIGN84QjPHhocqmFf%2BVJNPHRw9CBB098dif6G1s9wpM%2BjjPG7u9AexgMTsXkNa4lrvG4OPhk0SkNMzw%2F&Expires=1785244944",
+        "category": "layout",
+        "bbox": {
+          "x": 32,
+          "y": 28,
+          "w": 70,
+          "h": 27
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/11310011-439b-40f0-8efc-a652ce4db9d2/page_1_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRNWYU6EA&Signature=XloI331T27k2ItG1Hf10ccJKb%2Fo%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBJiaL24NhipFXfYmNExL6MV7MZWLClAqS%2FUgqc9yl0nAiEAudv4fGedtf9O1RiXfhLxcM6Qt7pfqx%2FwXybdwBbGdBoqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDPe8Y2ip9oUgKEHu6CrkBC7GYsZWxFN%2BzzE9d2YlpXxvTdinCXzDkMzjGS0v0nlK%2BssbYqlJj1AMW3UaJ9V7J8hTwHhuICsXRUOeer0ahsDqrOSQPlxBXGtcclacpeYz3YP2xV%2FjJIrlWCUyK7YZUrinwsiRPRrpTabJffpS%2BxCduu0TMIWdoumck8TLrp9%2FsQ7kEyYGgtUXVaRra%2BX0X4DZ182msrOizdNeIKGu9Q57%2F%2FGpQANAXe7YWc7AsPx4hu4rZw0W%2FcZmJeX5V3hf8bLJId44tZpbaDYbnD45xjBenDa%2FrTgOkZgpDK553ej9OEy1BnjaRi566MA2h%2BfdmzNVEvCdv4mk130jbytgkhsx9yPC79BtZQJ%2Ba7S2gKG5c7ajJr2B6r8zvNZPUNzodzsEqBL4cUDRd5OhfFNWhsVoJ1nSNou7nTs8Oflgk3Ilpf%2BmPttkwERfGiNoIlv7MUh16awXHJNr5jw0oDuAV%2F2sbmLCOcQnr45Jh6mqrmfPot8o%2FQAXiuhud77bRiN5XrgrsFfA8mD0m8Ex0f8flohGP0izw607x5AgatoesTVDuSUzYfn%2FyzpjoRXgx6yM7HKFFymzzixRETf3e8SCdaqNY429WnkOOB3dJFK7SN0ydx0Pyn2GJ52CZva8dzzgTm7FzHfzmHvdS53M%2FmMLPUjT1%2BWQXDCZwxrRXF7LdUjSE1hP%2FJlHsX8ERY%2FZXXlihyrXty5TQHqHU4i8bHEZvqVDsHnyPI93CeYPYP7a2W35pqBe%2BKHeE%2FfXokT9Kx%2F6%2B5UBgrt96vZtCepYCR2YDOPNDKgdGL2Sm%2F4dhjdLSYt2E86Y4zC1s6LTBjqYAdALGLX31N7OK1NlkO2yw%2F1qqiZamGJXKYZ6S05QE2E%2BkH6XsWP4xAAC6sDD2mFVTSBETUiSP9SJA3NOYyullY2EXRKFN0QF3YBksXw%2Ffmzi5jVrre%2B4oOl8L%2BmJTIGN84QjPHhocqmFf%2BVJNPHRw9CBB098dif6G1s9wpM%2BjjPG7u9AexgMTsXkNa4lrvG4OPhk0SkNMzw%2F&Expires=1785244944",
+        "category": "layout",
+        "bbox": {
+          "x": 99,
+          "y": 437,
+          "w": 445,
+          "h": 148
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_1_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/11310011-439b-40f0-8efc-a652ce4db9d2/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRNWYU6EA&Signature=JNSwV2%2FTTCWgd7csvmaHckokqWY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIBJiaL24NhipFXfYmNExL6MV7MZWLClAqS%2FUgqc9yl0nAiEAudv4fGedtf9O1RiXfhLxcM6Qt7pfqx%2FwXybdwBbGdBoqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDPe8Y2ip9oUgKEHu6CrkBC7GYsZWxFN%2BzzE9d2YlpXxvTdinCXzDkMzjGS0v0nlK%2BssbYqlJj1AMW3UaJ9V7J8hTwHhuICsXRUOeer0ahsDqrOSQPlxBXGtcclacpeYz3YP2xV%2FjJIrlWCUyK7YZUrinwsiRPRrpTabJffpS%2BxCduu0TMIWdoumck8TLrp9%2FsQ7kEyYGgtUXVaRra%2BX0X4DZ182msrOizdNeIKGu9Q57%2F%2FGpQANAXe7YWc7AsPx4hu4rZw0W%2FcZmJeX5V3hf8bLJId44tZpbaDYbnD45xjBenDa%2FrTgOkZgpDK553ej9OEy1BnjaRi566MA2h%2BfdmzNVEvCdv4mk130jbytgkhsx9yPC79BtZQJ%2Ba7S2gKG5c7ajJr2B6r8zvNZPUNzodzsEqBL4cUDRd5OhfFNWhsVoJ1nSNou7nTs8Oflgk3Ilpf%2BmPttkwERfGiNoIlv7MUh16awXHJNr5jw0oDuAV%2F2sbmLCOcQnr45Jh6mqrmfPot8o%2FQAXiuhud77bRiN5XrgrsFfA8mD0m8Ex0f8flohGP0izw607x5AgatoesTVDuSUzYfn%2FyzpjoRXgx6yM7HKFFymzzixRETf3e8SCdaqNY429WnkOOB3dJFK7SN0ydx0Pyn2GJ52CZva8dzzgTm7FzHfzmHvdS53M%2FmMLPUjT1%2BWQXDCZwxrRXF7LdUjSE1hP%2FJlHsX8ERY%2FZXXlihyrXty5TQHqHU4i8bHEZvqVDsHnyPI93CeYPYP7a2W35pqBe%2BKHeE%2FfXokT9Kx%2F6%2B5UBgrt96vZtCepYCR2YDOPNDKgdGL2Sm%2F4dhjdLSYt2E86Y4zC1s6LTBjqYAdALGLX31N7OK1NlkO2yw%2F1qqiZamGJXKYZ6S05QE2E%2BkH6XsWP4xAAC6sDD2mFVTSBETUiSP9SJA3NOYyullY2EXRKFN0QF3YBksXw%2Ffmzi5jVrre%2B4oOl8L%2BmJTIGN84QjPHhocqmFf%2BVJNPHRw9CBB098dif6G1s9wpM%2BjjPG7u9AexgMTsXkNa4lrvG4OPhk0SkNMzw%2F&Expires=1785244944",
+        "category": "layout",
+        "bbox": {
+          "x": 100,
+          "y": 231,
+          "w": 445,
+          "h": 99
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

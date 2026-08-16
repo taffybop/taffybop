@@ -1,0 +1,10 @@
+{
+  "stable_semantic_equal": true,
+  "table_rows_equal": true,
+  "canonical_equal": true,
+  "cold_wall_ns": 60966013750,
+  "warm_wall_ns": 53054691250,
+  "cold_to_warm_wall_ratio": 1.149116,
+  "attempt_count": 2,
+  "retry_count": 0
+}

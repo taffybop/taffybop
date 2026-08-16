@@ -1,0 +1,2531 @@
+{
+  "document": {
+    "content_region_count": 2,
+    "content_region_types": {
+      "chart": 1,
+      "image": 1
+    },
+    "filename": "catastrophe-recap.pdf",
+    "image_count": 0,
+    "mime_type": "application/pdf",
+    "page_count": 1,
+    "page_source_region_count": 0,
+    "rendered_visual_region_count": 2,
+    "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+    "source_format": "PDF"
+  },
+  "pages": [
+    {
+      "detected_images": [
+        {
+          "area_ratio": 0.003814,
+          "bbox": {
+            "h": 26.702,
+            "height": 26.702,
+            "unit": "pt",
+            "w": 69.24,
+            "width": 69.24,
+            "x": 31.901,
+            "y": 28.089
+          },
+          "cleaned_ocr_text": "AON",
+          "confidence": 0.967,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image1",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 25.2,
+                "height": 25.2,
+                "unit": "pt",
+                "w": 67.4,
+                "width": 67.4,
+                "x": 33.101,
+                "y": 29.289
+              },
+              "confidence": 0.967,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "AON",
+              "value": "AON",
+              "word_count": 1
+            }
+          ],
+          "md": "AON",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "AON",
+          "pixel_height": 164,
+          "pixel_width": 376,
+          "raw_ocr_text": "AON",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 25.2,
+                "height": 25.2,
+                "unit": "pt",
+                "w": 67.4,
+                "width": 67.4,
+                "x": 33.101,
+                "y": 29.289
+              },
+              "confidence": 0.967,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "AON",
+              "source": "ocr",
+              "text": "AON",
+              "word_count": 1
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "AON",
+          "warnings": []
+        },
+        {
+          "area_ratio": 0.136549,
+          "bbox": {
+            "h": 149.057,
+            "height": 149.057,
+            "unit": "pt",
+            "w": 444.032,
+            "width": 444.032,
+            "x": 100.221,
+            "y": 437.31
+          },
+          "cleaned_ocr_text": "Americas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\nAnnual total",
+          "confidence": 0.8357,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image2",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 340.4,
+                "width": 340.4,
+                "x": 161.021,
+                "y": 438.71
+              },
+              "confidence": 0.9573,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Americas APAC EMEA USA",
+              "value": "Americas APAC EMEA USA",
+              "word_count": 4
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 451.71
+              },
+              "confidence": 0.9679,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "125",
+              "value": "125",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 472.31
+              },
+              "confidence": 0.9682,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "100",
+              "value": "100",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 79.8,
+                "height": 79.8,
+                "unit": "pt",
+                "w": 407.6,
+                "width": 407.6,
+                "x": 128.821,
+                "y": 481.51
+              },
+              "confidence": 0.2492,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eee Peet) eee ttt || Pe ‘nal",
+              "value": "eee Peet) eee ttt || Pe ‘nal",
+              "word_count": 7
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 6.8,
+                "width": 6.8,
+                "x": 104.821,
+                "y": 492.91
+              },
+              "confidence": 0.9038,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "75",
+              "value": "75",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 7.0,
+                "width": 7.0,
+                "x": 105.021,
+                "y": 513.31
+              },
+              "confidence": 0.9688,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "50",
+              "value": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 7.0,
+                "width": 7.0,
+                "x": 105.021,
+                "y": 534.31
+              },
+              "confidence": 0.9694,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "25",
+              "value": "25",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 417.2,
+                "width": 417.2,
+                "x": 125.021,
+                "y": 562.51
+              },
+              "confidence": 0.9469,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "201520202025201520202025201520202025201520202025",
+              "value": "201520202025201520202025201520202025201520202025",
+              "word_count": 12
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 125.021,
+                "y": 562.51
+              },
+              "confidence": 0.9633,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 165.421,
+                "y": 562.51
+              },
+              "confidence": 0.9666,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.4,
+                "width": 14.4,
+                "x": 206.621,
+                "y": 562.51
+              },
+              "confidence": 0.965,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 232.021,
+                "y": 562.51
+              },
+              "confidence": 0.962,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 272.421,
+                "y": 562.51
+              },
+              "confidence": 0.9685,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 313.621,
+                "y": 562.51
+              },
+              "confidence": 0.9654,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 339.021,
+                "y": 562.51
+              },
+              "confidence": 0.9618,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 379.621,
+                "y": 562.51
+              },
+              "confidence": 0.9689,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 420.621,
+                "y": 562.51
+              },
+              "confidence": 0.9657,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 446.221,
+                "y": 562.51
+              },
+              "confidence": 0.9633,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 486.621,
+                "y": 562.51
+              },
+              "confidence": 0.9666,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 527.621,
+                "y": 562.51
+              },
+              "confidence": 0.9688,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 157.421,
+                "y": 575.71
+              },
+              "confidence": 0.4437,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "iH",
+              "value": "iH",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.2,
+                "height": 4.2,
+                "unit": "pt",
+                "w": 33.8,
+                "width": 33.8,
+                "x": 109.421,
+                "y": 577.11
+              },
+              "confidence": 0.9608,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Annual total",
+              "value": "Annual total",
+              "word_count": 2
+            }
+          ],
+          "md": "Americas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\nAnnual total",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "Americas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\nAnnual total",
+          "pixel_height": 775,
+          "pixel_width": 2250,
+          "raw_ocr_text": "Americas APAC EMEA USA\n125\n100\neee Peet) eee ttt || Pe ‘nal\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\niH\nAnnual total",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 26.6,
+                "width": 26.6,
+                "x": 161.021,
+                "y": 439.51
+              },
+              "confidence": 0.9646,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Americas APAC EMEA USA",
+              "source": "ocr",
+              "text": "Americas",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 15.4,
+                "width": 15.4,
+                "x": 273.221,
+                "y": 439.31
+              },
+              "confidence": 0.9169,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Americas APAC EMEA USA",
+              "source": "ocr",
+              "text": "APAC",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.2,
+                "height": 4.2,
+                "unit": "pt",
+                "w": 16.2,
+                "width": 16.2,
+                "x": 380.421,
+                "y": 439.51
+              },
+              "confidence": 0.9619,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Americas APAC EMEA USA",
+              "source": "ocr",
+              "text": "EMEA",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 11.8,
+                "width": 11.8,
+                "x": 489.621,
+                "y": 439.31
+              },
+              "confidence": 0.9611,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Americas APAC EMEA USA",
+              "source": "ocr",
+              "text": "USA",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 451.71
+              },
+              "confidence": 0.9643,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "125",
+              "source": "ocr",
+              "text": "125",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 472.31
+              },
+              "confidence": 0.9682,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "100",
+              "source": "ocr",
+              "text": "100",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 6.8,
+                "width": 6.8,
+                "x": 104.821,
+                "y": 492.91
+              },
+              "confidence": 0.8658,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "75",
+              "source": "ocr",
+              "text": "75",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 7.0,
+                "width": 7.0,
+                "x": 105.021,
+                "y": 513.31
+              },
+              "confidence": 0.9688,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "50",
+              "source": "ocr",
+              "text": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 62.6,
+                "width": 62.6,
+                "x": 109.421,
+                "y": 575.71
+              },
+              "confidence": 0.8878,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Annual total",
+              "source": "ocr",
+              "text": "Annual total iH",
+              "word_count": 3
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "Americas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\nAnnual total",
+          "warnings": []
+        }
+      ],
+      "items": [
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "logo",
+                  "confidence": 0.9954
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0024
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0011
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0007
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0003
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 26.702,
+            "height": 26.702,
+            "unit": "pt",
+            "w": 69.24,
+            "width": 69.24,
+            "x": 31.901,
+            "y": 28.089
+          },
+          "caption": null,
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": null,
+          "classification": {
+            "class_name": "logo",
+            "confidence": 0.9954
+          },
+          "confidence": 0.967,
+          "content_type": "image",
+          "detected_text": true,
+          "id": "p1-i1",
+          "include_ocr_in_primary": false,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 25.2,
+                "height": 25.2,
+                "unit": "pt",
+                "w": 67.4,
+                "width": 67.4,
+                "x": 33.101,
+                "y": 29.289
+              },
+              "confidence": 0.967,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "AON",
+              "value": "AON",
+              "word_count": 1
+            }
+          ],
+          "md": "[Image detected; no reliable text extracted.]",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "logo",
+                  "confidence": 0.9954,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0024,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0011,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0007,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0003,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "AON",
+          "parse_concerns": [],
+          "raw_ocr_text": "AON",
+          "reading_order": 0,
+          "region_role": "content_region",
+          "source": "derived",
+          "type": "image",
+          "value": "",
+          "warnings": [
+            "OCR detected inside this visual region and was retained as image-level metadata."
+          ]
+        },
+        {
+          "bbox": {
+            "h": 75.591,
+            "height": 75.591,
+            "unit": "pt",
+            "w": 443.63,
+            "width": 443.63,
+            "x": 100.7,
+            "y": 118.625
+          },
+          "confidence": null,
+          "id": "p1-i2",
+          "label": "text",
+          "md": "Insured losses were driven by the destructive California wildfires in January, with total insured losses to be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States, surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of approximately $900 million (AUD1.4 billion). É w in Ireland and the UK followed with $690 million ( € ).",
+          "reading_order": 1,
+          "source": "native",
+          "type": "text",
+          "value": "Insured losses were driven by the destructive California wildfires in January, with total insured losses to be estimated at more than $40 billion. At least 19 events, 18 of which occurred in the United States, surpassed $1 billion in insured losses. Outside the U.S. region, European SCS outbreak in late June was the only event that exceeded this threshold. Cyclone Alfred in Australia resulted in the insured losses of approximately $900 million (AUD1.4 billion). É w in Ireland and the UK followed with $690 million ( € )."
+        },
+        {
+          "bbox": {
+            "h": 100.097,
+            "height": 100.097,
+            "unit": "pt",
+            "w": 444.141,
+            "width": 444.141,
+            "x": 99.759,
+            "y": 230.143
+          },
+          "cells": [
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 27.417,
+                "width": 27.417,
+                "x": 106.34,
+                "y": 235.415
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Date(s)"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 21.218,
+                "width": 21.218,
+                "x": 169.22,
+                "y": 235.415
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Event"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 32.457,
+                "width": 32.457,
+                "x": 290.93,
+                "y": 235.415
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Location"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 34.331,
+                "width": 34.331,
+                "x": 408.67,
+                "y": 235.415
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Fatalities"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 66.58,
+                "width": 66.58,
+                "x": 472.27,
+                "y": 235.415
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Insured Loss ($B)"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 48.569,
+                "width": 48.569,
+                "x": 106.34,
+                "y": 251.855
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "01/07-01/28"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 52.501,
+                "width": 52.501,
+                "x": 169.22,
+                "y": 251.855
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Palisades Fire"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 51.319,
+                "width": 51.319,
+                "x": 290.93,
+                "y": 251.855
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "United States"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 8.746,
+                "width": 8.746,
+                "x": 434.11,
+                "y": 251.855
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "12"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 17.746,
+                "width": 17.746,
+                "x": 521.14,
+                "y": 251.855
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "23.0"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 48.574,
+                "width": 48.574,
+                "x": 106.34,
+                "y": 268.295
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "01/07-01/28"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 38.857,
+                "width": 38.857,
+                "x": 169.22,
+                "y": 268.295
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Eaton Fire"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 51.319,
+                "width": 51.319,
+                "x": 290.93,
+                "y": 268.295
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "United States"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 8.746,
+                "width": 8.746,
+                "x": 434.11,
+                "y": 268.295
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "18"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 16.176,
+                "width": 16.176,
+                "x": 522.7,
+                "y": 268.295
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "17.5"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 48.593,
+                "width": 48.593,
+                "x": 106.34,
+                "y": 284.855
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "03/14-03/16"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 96.046,
+                "width": 96.046,
+                "x": 169.22,
+                "y": 284.855
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Severe Convective Storm"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 51.319,
+                "width": 51.319,
+                "x": 290.93,
+                "y": 284.855
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "United States"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 10.306,
+                "width": 10.306,
+                "x": 432.67,
+                "y": 284.855
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "43"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 12.586,
+                "width": 12.586,
+                "x": 526.3,
+                "y": 284.855
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "8.0"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 48.593,
+                "width": 48.593,
+                "x": 106.34,
+                "y": 301.295
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "05/14-05/16"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 96.046,
+                "width": 96.046,
+                "x": 169.22,
+                "y": 301.295
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Severe Convective Storm"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 51.319,
+                "width": 51.319,
+                "x": 290.93,
+                "y": 301.295
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "United States"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 10.306,
+                "width": 10.306,
+                "x": 432.67,
+                "y": 301.295
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "30"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 12.586,
+                "width": 12.586,
+                "x": 526.3,
+                "y": 301.295
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "8.0"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 50.025,
+                "width": 50.025,
+                "x": 106.34,
+                "y": 317.735
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "05/17-05/20"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 96.046,
+                "width": 96.046,
+                "x": 169.22,
+                "y": 317.735
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Severe Convective Storm"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 51.319,
+                "width": 51.319,
+                "x": 290.93,
+                "y": 317.735
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "United States"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 5.146,
+                "width": 5.146,
+                "x": 437.71,
+                "y": 317.735
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "0"
+            },
+            {
+              "bbox": {
+                "h": 8.353,
+                "height": 8.353,
+                "unit": "pt",
+                "w": 12.595,
+                "width": 12.595,
+                "x": 526.3,
+                "y": 317.735
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "4.0"
+            }
+          ],
+          "column_count": 5,
+          "confidence": null,
+          "csv": "Date(s),Event,Location,Fatalities,Insured Loss ($B)\n01/07-01/28,Palisades Fire,United States,12,23.0\n01/07-01/28,Eaton Fire,United States,18,17.5\n03/14-03/16,Severe Convective Storm,United States,43,8.0\n05/14-05/16,Severe Convective Storm,United States,30,8.0\n05/17-05/20,Severe Convective Storm,United States,0,4.0",
+          "embedded_images": [],
+          "engine": "docling",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th>Date(s)</th>\n      <th>Event</th>\n      <th>Location</th>\n      <th>Fatalities</th>\n      <th>Insured Loss ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>01/07-01/28</td>\n      <td>Palisades Fire</td>\n      <td>United States</td>\n      <td>12</td>\n      <td>23.0</td>\n    </tr>\n    <tr>\n      <td>01/07-01/28</td>\n      <td>Eaton Fire</td>\n      <td>United States</td>\n      <td>18</td>\n      <td>17.5</td>\n    </tr>\n    <tr>\n      <td>03/14-03/16</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>43</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>05/14-05/16</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>30</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>05/17-05/20</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>0</td>\n      <td>4.0</td>\n    </tr>\n  </tbody>\n</table>",
+          "id": "p1-i3",
+          "md": "<table>\n  <thead>\n    <tr>\n      <th>Date(s)</th>\n      <th>Event</th>\n      <th>Location</th>\n      <th>Fatalities</th>\n      <th>Insured Loss ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>01/07-01/28</td>\n      <td>Palisades Fire</td>\n      <td>United States</td>\n      <td>12</td>\n      <td>23.0</td>\n    </tr>\n    <tr>\n      <td>01/07-01/28</td>\n      <td>Eaton Fire</td>\n      <td>United States</td>\n      <td>18</td>\n      <td>17.5</td>\n    </tr>\n    <tr>\n      <td>03/14-03/16</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>43</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>05/14-05/16</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>30</td>\n      <td>8.0</td>\n    </tr>\n    <tr>\n      <td>05/17-05/20</td>\n      <td>Severe Convective Storm</td>\n      <td>United States</td>\n      <td>0</td>\n      <td>4.0</td>\n    </tr>\n  </tbody>\n</table>",
+          "parse_concerns": [],
+          "reading_order": 2,
+          "row_count": 6,
+          "rows": [
+            [
+              "Date(s)",
+              "Event",
+              "Location",
+              "Fatalities",
+              "Insured Loss ($B)"
+            ],
+            [
+              "01/07-01/28",
+              "Palisades Fire",
+              "United States",
+              "12",
+              "23.0"
+            ],
+            [
+              "01/07-01/28",
+              "Eaton Fire",
+              "United States",
+              "18",
+              "17.5"
+            ],
+            [
+              "03/14-03/16",
+              "Severe Convective Storm",
+              "United States",
+              "43",
+              "8.0"
+            ],
+            [
+              "05/14-05/16",
+              "Severe Convective Storm",
+              "United States",
+              "30",
+              "8.0"
+            ],
+            [
+              "05/17-05/20",
+              "Severe Convective Storm",
+              "United States",
+              "0",
+              "4.0"
+            ]
+          ],
+          "source": "native",
+          "type": "table",
+          "value": [
+            [
+              "Date(s)",
+              "Event",
+              "Location",
+              "Fatalities",
+              "Insured Loss ($B)"
+            ],
+            [
+              "01/07-01/28",
+              "Palisades Fire",
+              "United States",
+              "12",
+              "23.0"
+            ],
+            [
+              "01/07-01/28",
+              "Eaton Fire",
+              "United States",
+              "18",
+              "17.5"
+            ],
+            [
+              "03/14-03/16",
+              "Severe Convective Storm",
+              "United States",
+              "43",
+              "8.0"
+            ],
+            [
+              "05/14-05/16",
+              "Severe Convective Storm",
+              "United States",
+              "30",
+              "8.0"
+            ],
+            [
+              "05/17-05/20",
+              "Severe Convective Storm",
+              "United States",
+              "0",
+              "4.0"
+            ]
+          ]
+        },
+        {
+          "bbox": {
+            "h": 35.891,
+            "height": 35.891,
+            "unit": "pt",
+            "w": 436.28,
+            "width": 436.28,
+            "x": 100.7,
+            "y": 349.535
+          },
+          "confidence": null,
+          "id": "p1-i4",
+          "label": "text",
+          "md": "Natural catastrophes in the United States accounted for more than 90 percent of global insured losses in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other regions were significantly lower compared to their long-term averages.",
+          "reading_order": 3,
+          "source": "native",
+          "type": "text",
+          "value": "Natural catastrophes in the United States accounted for more than 90 percent of global insured losses in the first half of 2025, reaching approximately $92 billion. Meanwhile, 1H insured losses in all other regions were significantly lower compared to their long-term averages."
+        },
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.9654
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0337
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0003
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0003
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 149.057,
+            "height": 149.057,
+            "unit": "pt",
+            "w": 444.032,
+            "width": 444.032,
+            "x": 100.221,
+            "y": 437.31
+          },
+          "caption": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)\ner cas\nC",
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": "document_caption",
+          "classification": {
+            "class_name": "bar_chart",
+            "confidence": 0.9654
+          },
+          "confidence": 0.9565,
+          "content_type": "chart",
+          "detected_text": true,
+          "id": "p1-i5",
+          "include_ocr_in_primary": true,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 340.4,
+                "width": 340.4,
+                "x": 161.021,
+                "y": 438.71
+              },
+              "confidence": 0.9573,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Americas APAC EMEA USA",
+              "value": "Americas APAC EMEA USA",
+              "word_count": 4
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 451.71
+              },
+              "confidence": 0.9679,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "125",
+              "value": "125",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 102.221,
+                "y": 472.31
+              },
+              "confidence": 0.9682,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "100",
+              "value": "100",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 79.8,
+                "height": 79.8,
+                "unit": "pt",
+                "w": 407.6,
+                "width": 407.6,
+                "x": 128.821,
+                "y": 481.51
+              },
+              "confidence": 0.2492,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eee Peet) eee ttt || Pe ‘nal",
+              "value": "eee Peet) eee ttt || Pe ‘nal",
+              "word_count": 7
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 6.8,
+                "width": 6.8,
+                "x": 104.821,
+                "y": 492.91
+              },
+              "confidence": 0.9038,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "75",
+              "value": "75",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 7.0,
+                "width": 7.0,
+                "x": 105.021,
+                "y": 513.31
+              },
+              "confidence": 0.9688,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "50",
+              "value": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 7.0,
+                "width": 7.0,
+                "x": 105.021,
+                "y": 534.31
+              },
+              "confidence": 0.9694,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "25",
+              "value": "25",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 417.2,
+                "width": 417.2,
+                "x": 125.021,
+                "y": 562.51
+              },
+              "confidence": 0.9469,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "201520202025201520202025201520202025201520202025",
+              "value": "201520202025201520202025201520202025201520202025",
+              "word_count": 12
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 125.021,
+                "y": 562.51
+              },
+              "confidence": 0.9633,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 165.421,
+                "y": 562.51
+              },
+              "confidence": 0.9666,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.4,
+                "width": 14.4,
+                "x": 206.621,
+                "y": 562.51
+              },
+              "confidence": 0.965,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 232.021,
+                "y": 562.51
+              },
+              "confidence": 0.962,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 272.421,
+                "y": 562.51
+              },
+              "confidence": 0.9685,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 313.621,
+                "y": 562.51
+              },
+              "confidence": 0.9654,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 339.021,
+                "y": 562.51
+              },
+              "confidence": 0.9618,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 379.621,
+                "y": 562.51
+              },
+              "confidence": 0.9689,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 420.621,
+                "y": 562.51
+              },
+              "confidence": 0.9657,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 13.4,
+                "width": 13.4,
+                "x": 446.221,
+                "y": 562.51
+              },
+              "confidence": 0.9633,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2015",
+              "value": "2015",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.4,
+                "height": 4.4,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 486.621,
+                "y": 562.51
+              },
+              "confidence": 0.9666,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2020",
+              "value": "2020",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 527.621,
+                "y": 562.51
+              },
+              "confidence": 0.9688,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2025",
+              "value": "2025",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 14.6,
+                "width": 14.6,
+                "x": 157.421,
+                "y": 575.71
+              },
+              "confidence": 0.4437,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "iH",
+              "value": "iH",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.2,
+                "height": 4.2,
+                "unit": "pt",
+                "w": 33.8,
+                "width": 33.8,
+                "x": 109.421,
+                "y": 577.11
+              },
+              "confidence": 0.9608,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Annual total",
+              "value": "Annual total",
+              "word_count": 2
+            }
+          ],
+          "md": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)\ner cas\nC\nAmericas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\nAnnual total",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.9654,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0337,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0003,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0003,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "Americas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\nAnnual total",
+          "parse_concerns": [
+            "chart_values_not_structured"
+          ],
+          "raw_ocr_text": "Americas APAC EMEA USA\n125\n100\neee Peet) eee ttt || Pe ‘nal\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\niH\nAnnual total",
+          "reading_order": 4,
+          "region_role": "content_region",
+          "source": "ocr",
+          "type": "chart",
+          "value": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)\ner cas\nC\nAmericas APAC EMEA USA\n125\n100\n75\n50\n25\n201520202025201520202025201520202025201520202025\n2015\n2020\n2025\nAnnual total",
+          "warnings": []
+        },
+        {
+          "bbox": {
+            "h": 6.234,
+            "height": 6.234,
+            "unit": "pt",
+            "w": 442.7,
+            "width": 442.7,
+            "x": 100.7,
+            "y": 741.87
+          },
+          "confidence": null,
+          "id": "p1-i6",
+          "items": [
+            {
+              "bbox": {
+                "h": 6.234,
+                "height": 6.234,
+                "unit": "pt",
+                "w": 102.18,
+                "width": 102.18,
+                "x": 100.7,
+                "y": 741.87
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "1H 2025 Global Catastrophe Recap",
+              "source": "native",
+              "type": "text",
+              "value": "1H 2025 Global Catastrophe Recap"
+            },
+            {
+              "bbox": {
+                "h": 6.234,
+                "height": 6.234,
+                "unit": "pt",
+                "w": 5.46,
+                "width": 5.46,
+                "x": 537.94,
+                "y": 741.87
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "7",
+              "source": "native",
+              "type": "text",
+              "value": "7"
+            }
+          ],
+          "md": "1H 2025 Global Catastrophe Recap\n\n7",
+          "reading_order": 5,
+          "source": "native",
+          "type": "footer",
+          "value": "1H 2025 Global Catastrophe Recap\n7"
+        }
+      ],
+      "page_height": 792.0,
+      "page_index": 1,
+      "page_label": "1",
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true,
+      "unit": "pt",
+      "warnings": []
+    }
+  ],
+  "processing": {
+    "duration_ms": 8213,
+    "engine": "docling",
+    "input_format": "pdf",
+    "local_processing": true,
+    "native_text_engine": "pypdfium2",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "picture_captioning": {
+      "local_model_available": false,
+      "requested": false
+    },
+    "table_engines": [
+      "docling",
+      "pdfplumber"
+    ],
+    "visual_analysis": {
+      "heading_height_ratio": 1.8,
+      "heading_min_confidence": 0.75,
+      "low_confidence_min_alnum_chars": 8,
+      "pdf_selective_rendering_enabled": true,
+      "picture_classification_threshold": 0.6,
+      "primary_ocr_min_confidence": 0.45,
+      "shared_pipeline": true
+    }
+  },
+  "schema_version": "1.0",
+  "warnings": []
+}

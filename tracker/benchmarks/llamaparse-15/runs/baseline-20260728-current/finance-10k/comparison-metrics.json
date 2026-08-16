@@ -1,0 +1,1160 @@
+{
+  "case_id": "finance-10k",
+  "document": {
+    "expert_page_count": 3,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 3,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "finance-10k.pdf",
+    "source_page_count": 3
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 51,
+        "line": "<td></td>"
+      },
+      {
+        "count": 12,
+        "line": "<th></th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>september 30,</th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>september 24,</th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>2023</th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>2022</th>"
+      },
+      {
+        "count": 3,
+        "line": "</thead>"
+      },
+      {
+        "count": 3,
+        "line": "</tbody>"
+      },
+      {
+        "count": 3,
+        "line": "</table>"
+      },
+      {
+        "count": 3,
+        "line": "see accompanying notes to consolidated financial statements."
+      },
+      {
+        "count": 3,
+        "line": "<td>other</td>"
+      },
+      {
+        "count": 2,
+        "line": "<th>years ended</th>"
+      },
+      {
+        "count": 2,
+        "line": "<th>september 25,</th>"
+      },
+      {
+        "count": 2,
+        "line": "<th>2021</th>"
+      },
+      {
+        "count": 2,
+        "line": "<td>products</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>services</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>net income</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>96,995</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>99,803</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>94,680</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>basic</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>diluted</td>"
+      },
+      {
+        "count": 2,
+        "line": "# apple inc."
+      },
+      {
+        "count": 2,
+        "line": "<td>marketable securities</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>accounts receivable, net</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>vendor non-trade receivables</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>inventories</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>352,583</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>352,755</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>accounts payable</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 48,
+        "line": "<td></td>"
+      },
+      {
+        "count": 5,
+        "line": "<th></th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>september 30, 2023</th>"
+      },
+      {
+        "count": 3,
+        "line": "<th>september 24, 2022</th>"
+      },
+      {
+        "count": 3,
+        "line": "</thead>"
+      },
+      {
+        "count": 3,
+        "line": "</tbody>"
+      },
+      {
+        "count": 3,
+        "line": "</table>"
+      },
+      {
+        "count": 3,
+        "line": "see accompanying notes to consolidated financial statements."
+      },
+      {
+        "count": 3,
+        "line": "<td>other</td>"
+      },
+      {
+        "count": 2,
+        "line": "<th colspan=\"3\">years ended</th>"
+      },
+      {
+        "count": 2,
+        "line": "<th>september 25, 2021</th>"
+      },
+      {
+        "count": 2,
+        "line": "<td>products</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>services</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>net income</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>basic</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>diluted</td>"
+      },
+      {
+        "count": 2,
+        "line": "# apple inc."
+      },
+      {
+        "count": 2,
+        "line": "<td>marketable securities</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>accounts receivable, net</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>vendor non-trade receivables</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>inventories</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ 352,583</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ 352,755</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>accounts payable</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>term debt</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ 24,977</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>$ 35,929</td>"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8333333333333334,
+      "item_count": 18,
+      "parse_concern_count": 2,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [
+            {
+              "details": "col 2 'Years ended' expects datetime, got '316,199' in row 4",
+              "type": "header_value_type_mismatch"
+            }
+          ],
+          "row_count": 25
+        },
+        {
+          "column_count": 3,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 10,
+          "parse_concerns": [],
+          "row_count": 37
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 16,
+          "parse_concerns": [
+            {
+              "details": "col 2 'Years ended' expects datetime, got '35,929' in row 3",
+              "type": "header_value_type_mismatch"
+            }
+          ],
+          "row_count": 37
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "heading": 4,
+        "table": 3,
+        "text": 8
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8333333333333334,
+      "item_count": 18,
+      "parse_concern_count": 0,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [],
+          "row_count": 26
+        },
+        {
+          "column_count": 3,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 10,
+          "parse_concerns": [],
+          "row_count": 36
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 16,
+          "parse_concerns": [],
+          "row_count": 38
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "header": 1,
+        "heading": 5,
+        "table": 3,
+        "text": 6
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 3359,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3311,
+        "candidate_tokens": 489,
+        "extra_token_counts": [
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "28",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "th",
+            12
+          ],
+          [
+            "tr",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9030437411812134,
+        "reference_chars": 3359,
+        "reference_tokens": 494,
+        "token_f1": 0.9766022380467955,
+        "token_multiset_overlap": 480,
+        "token_precision": 0.9815950920245399,
+        "token_recall": 0.97165991902834
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 3311,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1192,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 3359,
+        "candidate_tokens": 494,
+        "extra_token_counts": [
+          [
+            "td",
+            192
+          ],
+          [
+            "tr",
+            54
+          ],
+          [
+            "th",
+            24
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "28",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.49142857142857144,
+        "reference_chars": 1192,
+        "reference_tokens": 225,
+        "token_f1": 0.6063977746870653,
+        "token_multiset_overlap": 218,
+        "token_precision": 0.44129554655870445,
+        "token_recall": 0.9688888888888889
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3311,
+        "candidate_tokens": 489,
+        "extra_token_counts": [
+          [
+            "td",
+            192
+          ],
+          [
+            "tr",
+            52
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.5095367847411444,
+        "reference_chars": 1192,
+        "reference_tokens": 225,
+        "token_f1": 0.6302521008403361,
+        "token_multiset_overlap": 225,
+        "token_precision": 0.4601226993865031,
+        "token_recall": 1.0
+      }
+    },
+    {
+      "expert_body_chars": 4085,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 4019,
+        "candidate_tokens": 569,
+        "extra_token_counts": [
+          [
+            "x27",
+            4
+          ],
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "30",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            8
+          ],
+          [
+            "th",
+            6
+          ],
+          [
+            "tr",
+            4
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9686739165719851,
+        "reference_chars": 4085,
+        "reference_tokens": 574,
+        "token_f1": 0.9728783902012249,
+        "token_multiset_overlap": 556,
+        "token_precision": 0.9771528998242531,
+        "token_recall": 0.9686411149825784
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 4019,
+      "our_success": true,
+      "page_number": 2,
+      "source_chars": 1614,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 4085,
+        "candidate_tokens": 574,
+        "extra_token_counts": [
+          [
+            "td",
+            216
+          ],
+          [
+            "tr",
+            76
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "30",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "k",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.5997020642689934,
+        "reference_chars": 1614,
+        "reference_tokens": 271,
+        "token_f1": 0.6248520710059172,
+        "token_multiset_overlap": 264,
+        "token_precision": 0.45993031358885017,
+        "token_recall": 0.974169741697417
+      },
+      "source_vs_ours": {
+        "candidate_chars": 4019,
+        "candidate_tokens": 569,
+        "extra_token_counts": [
+          [
+            "td",
+            208
+          ],
+          [
+            "tr",
+            72
+          ],
+          [
+            "th",
+            6
+          ],
+          [
+            "x27",
+            4
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "2",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.6081023454157782,
+        "reference_chars": 1614,
+        "reference_tokens": 271,
+        "token_f1": 0.6452380952380953,
+        "token_multiset_overlap": 271,
+        "token_precision": 0.47627416520210897,
+        "token_recall": 1.0
+      }
+    },
+    {
+      "expert_body_chars": 5330,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 5287,
+        "candidate_tokens": 770,
+        "extra_token_counts": [
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "32",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "th",
+            12
+          ],
+          [
+            "tr",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9764127764127765,
+        "reference_chars": 5330,
+        "reference_tokens": 775,
+        "token_f1": 0.9851132686084142,
+        "token_multiset_overlap": 761,
+        "token_precision": 0.9883116883116884,
+        "token_recall": 0.9819354838709677
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 5287,
+      "our_success": true,
+      "page_number": 3,
+      "source_chars": 2215,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 5330,
+        "candidate_tokens": 775,
+        "extra_token_counts": [
+          [
+            "td",
+            288
+          ],
+          [
+            "tr",
+            78
+          ],
+          [
+            "th",
+            24
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "apple",
+            1
+          ],
+          [
+            "inc",
+            1
+          ],
+          [
+            "2023",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "form",
+            1
+          ],
+          [
+            "k",
+            1
+          ],
+          [
+            "32",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.5995226730310262,
+        "reference_chars": 2215,
+        "reference_tokens": 386,
+        "token_f1": 0.652885443583118,
+        "token_multiset_overlap": 379,
+        "token_precision": 0.4890322580645161,
+        "token_recall": 0.9818652849740933
+      },
+      "source_vs_ours": {
+        "candidate_chars": 5287,
+        "candidate_tokens": 770,
+        "extra_token_counts": [
+          [
+            "td",
+            288
+          ],
+          [
+            "tr",
+            76
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "3",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.6281622911694511,
+        "reference_chars": 2215,
+        "reference_tokens": 386,
+        "token_f1": 0.6678200692041523,
+        "token_multiset_overlap": 386,
+        "token_precision": 0.5012987012987012,
+        "token_recall": 1.0
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 12622,
+      "candidate_tokens": 1828,
+      "extra_token_counts": [
+        [
+          "x27",
+          4
+        ],
+        [
+          "apple",
+          3
+        ],
+        [
+          "inc",
+          3
+        ],
+        [
+          "colspan",
+          3
+        ],
+        [
+          "2023",
+          3
+        ],
+        [
+          "form",
+          3
+        ],
+        [
+          "10",
+          3
+        ],
+        [
+          "k",
+          3
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "30",
+          1
+        ],
+        [
+          "28",
+          1
+        ],
+        [
+          "32",
+          1
+        ],
+        [
+          "2",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "th",
+          30
+        ],
+        [
+          "tr",
+          8
+        ],
+        [
+          "td",
+          8
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9704142011834319,
+      "reference_chars": 12778,
+      "reference_tokens": 1843,
+      "token_f1": 0.9790247888858622,
+      "token_multiset_overlap": 1797,
+      "token_precision": 0.9830415754923414,
+      "token_recall": 0.9750406945198047
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 12622,
+      "candidate_tokens": 1828,
+      "extra_token_counts": [
+        [
+          "x27",
+          4
+        ],
+        [
+          "colspan",
+          3
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "2",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "th",
+          30
+        ],
+        [
+          "tr",
+          8
+        ],
+        [
+          "td",
+          8
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "page",
+          6
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9347937879255374,
+      "reference_chars": 12961,
+      "reference_tokens": 1876,
+      "token_f1": 0.9816414686825055,
+      "token_multiset_overlap": 1818,
+      "token_precision": 0.9945295404814004,
+      "token_recall": 0.9690831556503199
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 12961,
+      "candidate_tokens": 1876,
+      "extra_token_counts": [
+        [
+          "td",
+          696
+        ],
+        [
+          "tr",
+          208
+        ],
+        [
+          "th",
+          60
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "table",
+          6
+        ],
+        [
+          "thead",
+          6
+        ],
+        [
+          "tbody",
+          6
+        ],
+        [
+          "page",
+          6
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.5861348783938557,
+      "reference_chars": 5025,
+      "reference_tokens": 882,
+      "token_f1": 0.6395939086294417,
+      "token_multiset_overlap": 882,
+      "token_precision": 0.4701492537313433,
+      "token_recall": 1.0
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 12622,
+      "candidate_tokens": 1828,
+      "extra_token_counts": [
+        [
+          "td",
+          688
+        ],
+        [
+          "tr",
+          200
+        ],
+        [
+          "th",
+          30
+        ],
+        [
+          "table",
+          6
+        ],
+        [
+          "thead",
+          6
+        ],
+        [
+          "tbody",
+          6
+        ],
+        [
+          "x27",
+          4
+        ],
+        [
+          "colspan",
+          3
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "2",
+          1
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.6273465765581269,
+      "reference_chars": 5025,
+      "reference_tokens": 882,
+      "token_f1": 0.6509225092250922,
+      "token_multiset_overlap": 882,
+      "token_precision": 0.4824945295404814,
+      "token_recall": 1.0
+    }
+  }
+}

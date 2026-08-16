@@ -1,0 +1,297 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-9rcz16ip1b60j3lm5hz20lhl44sr",
+    "created_at": "2026-08-12T18:31:45.591760Z",
+    "updated_at": "2026-08-12T18:32:02.684555Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "settlement-agreement.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "Incentive BC Subdivision Population  achieved by the Settling State as of the Third\nSubdivision Participation Date.       Incentive Payment D shall be equal to between three\npercent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation\nPercentage of the Global Settlement Remediation Amount. The Incentive Payment D may\nbe earned in each of Payment Years 3 through 6.    Eligibility for Incentive Payment D is\nas follows:\n           a.      A Settling State is eligible for Incentive Payment D if there has been\n no Later Litigating Subdivision (for purposes of Incentive Payment D, Later\n Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district\n with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population,\n whichever is greater; (iii) a health district or hospital district that has at least one\n hundred twenty-five (125) hospital beds in one or more hospitals rendering services\n in that district; and (iv) Primary Fire Districts) in that State that has had a Claim\n against a Released Entity survive more than six (6) months after denial in whole or\n in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an\n “Incentive Payment D Look-Back Date”).\n           b.  To the extent a Settling State achieves a Percentage of Incentive BC\n Subdivision Population of 95% or above as of the Third Subdivision Participation\n Date, the level of Incentive Payment D is reduced according to the schedule below.\n The following portions of Incentive Payment D are paid in equal installments in\n Payment Years 3 through 6:\n Percentage of Incentive BC Subdivision          Incentive Payment D Amount as\n Population as of the Third Subdivision    a Percentage of Settling State’s\n               Participation Date          Overall Allocation Percentage of\n                                                 the Global Settlement\n                                                 Remediation Amount\n         Participation below 95%                          15%\n  Participation of 95% but less than 96%                  13%\n  Participation of 96% but less than 97%                  11%\n  Participation of 97% but less than 98%                   9%\n  Participation of 98% but less than 99%                   7%\n Participation of 99% but less than 100%                   5%\n          Participation of 100%                            3%\n\n           c.  The Settlement Fund Administrator shall determine a Settling\n State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-\n Back Date in Payment Years 3 through 6.              If a Later Litigating Subdivision’s\n lawsuit in that Settling State survives more than six (6) months after denial in whole\n or in part of a Threshold Motion, that State shall not be eligible for Incentive\n Payment D for the Payment Year in which that occurs and any subsequent Payment\n Year.                 Prior to the Incentive Payment D Look-Back Date in Payment Years 3\n through 6, Walmart may provide the Settlement Fund Administrator and the\n\n                                    24"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:\n\na. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”).\n\nb. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:\n\n<table>\n  <thead>\n    <tr>\n        <th>Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date</th>\n        <th>Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Participation below 95%</td>\n        <td>15%</td>\n    </tr>\n    <tr>\n        <td>Participation of 95% but less than 96%</td>\n        <td>13%</td>\n    </tr>\n    <tr>\n        <td>Participation of 96% but less than 97%</td>\n        <td>11%</td>\n    </tr>\n    <tr>\n        <td>Participation of 97% but less than 98%</td>\n        <td>9%</td>\n    </tr>\n    <tr>\n        <td>Participation of 98% but less than 99%</td>\n        <td>7%</td>\n    </tr>\n    <tr>\n        <td>Participation of 99% but less than 100%</td>\n        <td>5%</td>\n    </tr>\n    <tr>\n        <td>Participation of 100%</td>\n        <td>3%</td>\n    </tr>\n  </tbody>\n</table>\n\nc. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the",
+        "footer": "<page_number>24</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "text",
+            "md": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:",
+            "bbox": [
+              {
+                "x": 107.3,
+                "y": 73.6,
+                "w": 433.96,
+                "h": 79.77,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 437,
+                "label": "text"
+              }
+            ],
+            "value": "Incentive BC Subdivision Population achieved by the Settling State as of the Third Subdivision Participation Date. Incentive Payment D shall be equal to between three percent (3%) and fifteen percent (15%) of the of the Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount. The Incentive Payment D may be earned in each of Payment Years 3 through 6. Eligibility for Incentive Payment D is as follows:"
+          },
+          {
+            "type": "text",
+            "md": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”).",
+            "bbox": [
+              {
+                "x": 142.78,
+                "y": 168.74,
+                "w": 398.84,
+                "h": 136.57,
+                "confidence": 0.89,
+                "start_index": 0,
+                "end_index": 783,
+                "label": "text"
+              },
+              {
+                "x": 180,
+                "y": 165.48,
+                "w": 8,
+                "h": 16,
+                "confidence": 0.89,
+                "label": "text"
+              },
+              {
+                "x": 216,
+                "y": 165.48,
+                "w": 327.188,
+                "h": 16,
+                "confidence": 0.89,
+                "label": "text"
+              }
+            ],
+            "value": "a. A Settling State is eligible for Incentive Payment D if there has been no Later Litigating Subdivision (for purposes of Incentive Payment D, Later Litigating Subdivisions are limited to (i) a Primary Subdivision; (ii) a school district with a K-12 student enrollment of at least 25,000 or 0.10% of the State’s population, whichever is greater; (iii) a health district or hospital district that has at least one hundred twenty-five (125) hospital beds in one or more hospitals rendering services in that district; and (iv) Primary Fire Districts) in that State that has had a Claim against a Released Entity survive more than six (6) months after denial in whole or in part of a Threshold Motion as of July 15 of Payment Years 3 to 6 (each, an “Incentive Payment D Look-Back Date”)."
+          },
+          {
+            "type": "text",
+            "md": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:",
+            "bbox": [
+              {
+                "x": 143.27,
+                "y": 318.63,
+                "w": 399.08,
+                "h": 67.73,
+                "confidence": 0.85,
+                "start_index": 0,
+                "end_index": 341,
+                "label": "text"
+              },
+              {
+                "x": 179.988,
+                "y": 315.48,
+                "w": 9,
+                "h": 16,
+                "confidence": 0.85,
+                "label": "text"
+              },
+              {
+                "x": 216,
+                "y": 315.48,
+                "w": 323.91999999999996,
+                "h": 16,
+                "confidence": 0.85,
+                "label": "text"
+              }
+            ],
+            "value": "b. To the extent a Settling State achieves a Percentage of Incentive BC Subdivision Population of 95% or above as of the Third Subdivision Participation Date, the level of Incentive Payment D is reduced according to the schedule below. The following portions of Incentive Payment D are paid in equal installments in Payment Years 3 through 6:"
+          },
+          {
+            "type": "table",
+            "md": "| Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date | Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount |\n| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |\n| Participation below 95%                                                                          | 15%                                                                                                                                      |\n| Participation of 95% but less than 96%                                                           | 13%                                                                                                                                      |\n| Participation of 96% but less than 97%                                                           | 11%                                                                                                                                      |\n| Participation of 97% but less than 98%                                                           | 9%                                                                                                                                       |\n| Participation of 98% but less than 99%                                                           | 7%                                                                                                                                       |\n| Participation of 99% but less than 100%                                                          | 5%                                                                                                                                       |\n| Participation of 100%                                                                            | 3%                                                                                                                                       |",
+            "bbox": [
+              {
+                "x": 145.29,
+                "y": 398.67,
+                "w": 402.97,
+                "h": 172.06,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 2158,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date",
+                "Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount"
+              ],
+              [
+                "Participation below 95%",
+                "15%"
+              ],
+              [
+                "Participation of 95% but less than 96%",
+                "13%"
+              ],
+              [
+                "Participation of 96% but less than 97%",
+                "11%"
+              ],
+              [
+                "Participation of 97% but less than 98%",
+                "9%"
+              ],
+              [
+                "Participation of 98% but less than 99%",
+                "7%"
+              ],
+              [
+                "Participation of 99% but less than 100%",
+                "5%"
+              ],
+              [
+                "Participation of 100%",
+                "3%"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date</th>\n        <th>Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Participation below 95%</td>\n        <td>15%</td>\n    </tr>\n    <tr>\n        <td>Participation of 95% but less than 96%</td>\n        <td>13%</td>\n    </tr>\n    <tr>\n        <td>Participation of 96% but less than 97%</td>\n        <td>11%</td>\n    </tr>\n    <tr>\n        <td>Participation of 97% but less than 98%</td>\n        <td>9%</td>\n    </tr>\n    <tr>\n        <td>Participation of 98% but less than 99%</td>\n        <td>7%</td>\n    </tr>\n    <tr>\n        <td>Participation of 99% but less than 100%</td>\n        <td>5%</td>\n    </tr>\n    <tr>\n        <td>Participation of 100%</td>\n        <td>3%</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date\",\"Incentive Payment D Amount as a Percentage of Settling State’s Overall Allocation Percentage of the Global Settlement Remediation Amount\"\n\"Participation below 95%\",\"15%\"\n\"Participation of 95% but less than 96%\",\"13%\"\n\"Participation of 96% but less than 97%\",\"11%\"\n\"Participation of 97% but less than 98%\",\"9%\"\n\"Participation of 98% but less than 99%\",\"7%\"\n\"Participation of 99% but less than 100%\",\"5%\"\n\"Participation of 100%\",\"3%\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 0 'Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date' expects datetime, got 'Participation below 95%' in row 1"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the",
+            "bbox": [
+              {
+                "x": 143.25,
+                "y": 597.53,
+                "w": 398.89,
+                "h": 109.04,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 610,
+                "label": "text"
+              },
+              {
+                "x": 180,
+                "y": 594.36,
+                "w": 8,
+                "h": 16,
+                "confidence": 0.9,
+                "label": "text"
+              },
+              {
+                "x": 216,
+                "y": 594.36,
+                "w": 326.55999999999995,
+                "h": 16,
+                "confidence": 0.9,
+                "label": "text"
+              }
+            ],
+            "value": "c. The Settlement Fund Administrator shall determine a Settling State’s eligibility for Incentive Payment D as of the Incentive Payment D Look-Back Date in Payment Years 3 through 6. If a Later Litigating Subdivision’s lawsuit in that Settling State survives more than six (6) months after denial in whole or in part of a Threshold Motion, that State shall not be eligible for Incentive Payment D for the Payment Year in which that occurs and any subsequent Payment Year. Prior to the Incentive Payment D Look-Back Date in Payment Years 3 through 6, Walmart may provide the Settlement Fund Administrator and the"
+          },
+          {
+            "type": "footer",
+            "md": "<page_number>24</page_number>",
+            "bbox": [
+              {
+                "x": 299.64,
+                "y": 732.29,
+                "w": 12,
+                "h": 9.39
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "\\<page_number>24\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 299.64,
+                    "y": 732.29,
+                    "w": 12,
+                    "h": 9.39,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 30,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>24</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.998,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 2,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5a708b26-e21a-4062-b81e-c8a81e6146a1/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTTMZGOX6Y&Signature=U3Uj51pg6otTUdL%2B%2BHbsaYyQSQo%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIEFJXglSO%2FP%2BwQeornDVTcxcUW0AIbWO%2FDYXRwdrU4FiAiEAqixrR6e71ySz5IHjCGJmto2Fn45dT%2FTnBiUspDwPOZgqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDEH9RGsJnWo0iqtOkyrkBK2jk0k4L6DCKij%2FofffsDy4h3HuJV6K0Dzrw86fgYByXT7ZqmNoTrgoOqhYU21QhleeM5Hzy%2FrwcL1CAzQTEtp8PTaqzO5paBkjUrO7gbu5igvgwZ2Wu4ilZyPQo5Or%2BgfWKd5jOxCkY%2FNT%2FxBq8BL0wYj0pxP6lGxpXmrTbKYR6r6C0dJaCDsRa5rwYHtNlgkn8%2B7fWjB4H50RDJvKWlaA%2FrbGrrfyDNGOBAnq0Ffn6uxpzv2f1MVUWamoaGZAdPzX00%2FfJVvPLse1Qiq7bCJGM9DIW2MjHFiIYPuroMChvZpBYu2PP3599h6jPxeW5cxJn8LKDm5WccHWSFuZf%2BJIMQqzv3CHfiXgClxprJ0kYRqRD%2Bm5K25oiBl%2BOMJ5m3C18QoXbxTKTU43PMg0viGL9T4pqucBQNnQiieQa2S%2Bhop7AWP678W%2B64KlxG15rPKCqI%2BDmPHKT2EkDiNoCk3xWgOiGabhZ08KyiLPDuwJi4EVFTkajVq6Yq5tzFD3tfMOvuMVnWTt3h%2FFfFd2yXTGBdPxOyEP83%2BqlKKsp7bbFrVnd6DZ0cWv1lmhalwN4D%2BXku%2F%2BMTIoOGjxZCyDAqvG8YSKNllTdq1%2BJZbcVq0wAE4uvj8zxCxZ39K2xqdzKrNmE9p6jU3uktWpH4ij1GfiNf47zjLJnN1nhcfuz%2Fw7Xky%2Fft3B8U5iBuFXLAyMVZjv%2BjUKazc%2FyBBiONGl4%2FbfyBWl2m4wgQqI7fqMrh72UwvYuurHVyPUzaASMTJ8fmJv68FOxK2xVARAOY9D3eX%2FV37UVSvsIsrnC12ECMnN0WSlZjCI8%2FLTBjqYAVoeDeyzhU80p6x3SUjLGXOmLzwUP0sIJnE5to2gyefG5viI55mdtTJyAjmvqHcYmnUiQyOizCOJ84x%2BOfkNh9QmM5rth47nVOUXeBzXrf%2FUHMnBCzArLvEW8b1sMbLpQvzrIaAaqEDUS9lYyVzn6qqU0UlDr64EKq5SzJw0ItfbD%2B7alzHtP0mM8Ht1%2BE%2Fb1OP7IyL9b3py&Expires=1786563769",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5a708b26-e21a-4062-b81e-c8a81e6146a1/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTTMZGOX6Y&Signature=Uexgl6PJ63%2BcdKYOGsBYII0%2BbRw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAsaCXVzLWVhc3QtMSJHMEUCIEFJXglSO%2FP%2BwQeornDVTcxcUW0AIbWO%2FDYXRwdrU4FiAiEAqixrR6e71ySz5IHjCGJmto2Fn45dT%2FTnBiUspDwPOZgqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDEH9RGsJnWo0iqtOkyrkBK2jk0k4L6DCKij%2FofffsDy4h3HuJV6K0Dzrw86fgYByXT7ZqmNoTrgoOqhYU21QhleeM5Hzy%2FrwcL1CAzQTEtp8PTaqzO5paBkjUrO7gbu5igvgwZ2Wu4ilZyPQo5Or%2BgfWKd5jOxCkY%2FNT%2FxBq8BL0wYj0pxP6lGxpXmrTbKYR6r6C0dJaCDsRa5rwYHtNlgkn8%2B7fWjB4H50RDJvKWlaA%2FrbGrrfyDNGOBAnq0Ffn6uxpzv2f1MVUWamoaGZAdPzX00%2FfJVvPLse1Qiq7bCJGM9DIW2MjHFiIYPuroMChvZpBYu2PP3599h6jPxeW5cxJn8LKDm5WccHWSFuZf%2BJIMQqzv3CHfiXgClxprJ0kYRqRD%2Bm5K25oiBl%2BOMJ5m3C18QoXbxTKTU43PMg0viGL9T4pqucBQNnQiieQa2S%2Bhop7AWP678W%2B64KlxG15rPKCqI%2BDmPHKT2EkDiNoCk3xWgOiGabhZ08KyiLPDuwJi4EVFTkajVq6Yq5tzFD3tfMOvuMVnWTt3h%2FFfFd2yXTGBdPxOyEP83%2BqlKKsp7bbFrVnd6DZ0cWv1lmhalwN4D%2BXku%2F%2BMTIoOGjxZCyDAqvG8YSKNllTdq1%2BJZbcVq0wAE4uvj8zxCxZ39K2xqdzKrNmE9p6jU3uktWpH4ij1GfiNf47zjLJnN1nhcfuz%2Fw7Xky%2Fft3B8U5iBuFXLAyMVZjv%2BjUKazc%2FyBBiONGl4%2FbfyBWl2m4wgQqI7fqMrh72UwvYuurHVyPUzaASMTJ8fmJv68FOxK2xVARAOY9D3eX%2FV37UVSvsIsrnC12ECMnN0WSlZjCI8%2FLTBjqYAVoeDeyzhU80p6x3SUjLGXOmLzwUP0sIJnE5to2gyefG5viI55mdtTJyAjmvqHcYmnUiQyOizCOJ84x%2BOfkNh9QmM5rth47nVOUXeBzXrf%2FUHMnBCzArLvEW8b1sMbLpQvzrIaAaqEDUS9lYyVzn6qqU0UlDr64EKq5SzJw0ItfbD%2B7alzHtP0mM8Ht1%2BE%2Fb1OP7IyL9b3py&Expires=1786563769",
+        "category": "layout",
+        "bbox": {
+          "x": 145,
+          "y": 399,
+          "w": 403,
+          "h": 172
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

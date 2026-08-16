@@ -1,0 +1,66 @@
+{
+  "acceptable_or_harmless_differences": 0,
+  "case_count": 2,
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "evidence_path": "catastrophe-recap/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 0,
+        "discrepancy_count": 2,
+        "evidence_gaps": 1,
+        "functional_regressions": 1,
+        "missing_rendered_dom_pages": [
+          1
+        ],
+        "severity_counts": {
+          "critical": 2,
+          "major": 0,
+          "minor": 0
+        }
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "evidence_path": "postal-10k/evidence.json",
+      "release_ready": false,
+      "status": "discrepancy_found",
+      "summary": {
+        "acceptable_or_harmless_differences": 0,
+        "discrepancy_count": 2,
+        "evidence_gaps": 1,
+        "functional_regressions": 1,
+        "missing_rendered_dom_pages": [
+          1,
+          2,
+          3
+        ],
+        "severity_counts": {
+          "critical": 2,
+          "major": 0,
+          "minor": 0
+        }
+      }
+    }
+  ],
+  "evidence_gaps": 2,
+  "functional_regressions": 2,
+  "release_ready": false,
+  "resolved_discrepancies": 0,
+  "run_id": "functional-fidelity-20260813",
+  "schema_version": "functional-fidelity-comparison-v1",
+  "status_counts": {
+    "acceptable_difference": 0,
+    "discrepancy_found": 2,
+    "fixed": 0,
+    "match": 0,
+    "pending": 0
+  },
+  "story_matrix": {
+    "mapped_gap_count": 25,
+    "path": "tracker/benchmarks/llamaparse-15/gap-to-story-matrix.md",
+    "sha256": "b89373d7a790de3edac5a38ade1af36ae45085b7f056c2515f1b463b5592542c"
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "attempted_case_count": 2,
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "case_latency_ms": 11014.497875003144,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "catastrophe-recap",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/catastrophe-recap",
+        "--run-id",
+        "p00-us10-integration-20260729-01",
+        "--order",
+        "1",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:40:00.065707+00:00",
+      "cpu_ms": 7630.330000000001,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 1,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/catastrophe-recap/our-output.md",
+          "role": "markdown",
+          "sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "size_bytes": 2008
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/catastrophe-recap/our-output.json",
+          "role": "raw_json",
+          "sha256": "43b992f5c5add792dd7089eafe5f47f1f7cbe798c6201504e1cb41b2b57db575",
+          "size_bytes": 79005
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/catastrophe-recap/our-output.json",
+          "role": "semantic_json",
+          "sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "size_bytes": 38325
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 9847.136708209291,
+      "peak_rss_bytes": 1445740544,
+      "reference_comparison": {
+        "case_id": "catastrophe-recap",
+        "current_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "current_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "reference_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-integration-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "role": "source",
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+          "size_bytes": 58779
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.md",
+          "role": "expert_markdown",
+          "sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+          "size_bytes": 6755
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.json",
+          "role": "expert_json",
+          "sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+          "size_bytes": 42573
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:39:50.213109+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "clean-energy",
+      "case_latency_ms": 8637.945333030075,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "clean-energy",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/clean-energy",
+        "--run-id",
+        "p00-us10-integration-20260729-01",
+        "--order",
+        "2",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:40:08.703356+00:00",
+      "cpu_ms": 5980.290999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 2,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/clean-energy/our-output.md",
+          "role": "markdown",
+          "sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "size_bytes": 886
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/clean-energy/our-output.json",
+          "role": "raw_json",
+          "sha256": "4e2358a2dfe47f89cab539adaf5310571a9e7941ea206141012252dff44bbffb",
+          "size_bytes": 107628
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01/clean-energy/our-output.json",
+          "role": "semantic_json",
+          "sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "size_bytes": 52165
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 7546.473792055622,
+      "peak_rss_bytes": 1500823552,
+      "reference_comparison": {
+        "case_id": "clean-energy",
+        "current_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+        "current_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+        "reference_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-integration-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "role": "source",
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+          "size_bytes": 122014
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.md",
+          "role": "expert_markdown",
+          "sha256": "746cc8d471e85c988dbfcf88b3940e2e001716b38359f9dc8d67fd6ca081ee4a",
+          "size_bytes": 1258
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.json",
+          "role": "expert_json",
+          "sha256": "9252f22f0301ef8097c19667064dfaae4d374617a1784159c812f86b0cd9d1e9",
+          "size_bytes": 14730
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:40:01.149775+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    }
+  ],
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "capture",
+    "--workspace",
+    ".",
+    "--run-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01",
+    "--run-id",
+    "p00-us10-integration-20260729-01",
+    "--timeout-seconds",
+    "420.0",
+    "--cases",
+    "catastrophe-recap",
+    "clean-energy"
+  ],
+  "completed_at_utc": "2026-07-29T08:40:09.381474+00:00",
+  "cwd": ".",
+  "diagnostics": [],
+  "environment": {
+    "application_source_sha256": "72e3e1bfd2c3efe9abca2d916cb683d3c2c24e4e110014a034320ceff164a4fc",
+    "application_version": "0.1.0",
+    "engines": [
+      {
+        "name": "docling",
+        "version": "2.114.0"
+      },
+      {
+        "name": "docling-core",
+        "version": "2.87.1"
+      },
+      {
+        "name": "pdfplumber",
+        "version": "0.11.10"
+      },
+      {
+        "name": "pypdfium2",
+        "version": "5.12.1"
+      },
+      {
+        "name": "pillow",
+        "version": "12.3.0"
+      },
+      {
+        "name": "tesseract",
+        "version": "tesseract 5.5.3"
+      }
+    ],
+    "logical_cpu_count": 10,
+    "machine": "arm64",
+    "physical_cpu_count": 10,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python3",
+    "python_version": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "runner_source_sha256": "52ba5f920913e8b2d2487eda86f9564abd52ec386b4866d09a6434c61a086f59",
+    "total_memory_bytes": 34359738368
+  },
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error_count": 0,
+  "execution_policy": {
+    "hf_hub_offline": true,
+    "hosted_services": "disabled",
+    "image_captioning": false,
+    "network_access": "disabled",
+    "optional_models": "disabled",
+    "tokenizers_parallelism": false,
+    "transformers_offline": true
+  },
+  "expected_page_count": 2,
+  "frozen_inputs": {
+    "control_registry": {
+      "file_sha256": "a383938d41d067e0b3e01729d12def7b573764092100ef76228e4c23707c86b5",
+      "identity": "p00-us09-benchmark-control-registry",
+      "path": "tracker/phase-00-baseline/evidence/P00-US09-control-registry.json",
+      "semantic_sha256": "d3c734957b507f07508f8eeffe43ac450f50f53d5f42f8cf63e354fe60738fce"
+    },
+    "corpus_registry": {
+      "file_sha256": "f8024ab7a47df2cedf2d10b996fc8eb140404cdafea0b0a0a9ae2bb059263ceb",
+      "identity": "llamaparse-15",
+      "path": "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+      "semantic_sha256": "f7c3bdf460f64c51a7d7e29765ab1e621dc5f59224ddeba8c8a66959c901e4ca"
+    },
+    "legacy_comparison_sha256": "2a23aabc812e6723621174f9c66027c2cf3e852de31a8481262e7a2708710e7b",
+    "legacy_metadata_sha256": "386c333bff8ec0678d1194fff5899f82ec9475d29be7d72999a58c3817e3128f",
+    "review_batches": [
+      {
+        "file_sha256": "f987d84ca1b0d08dfd304d7ea3164a78366643f4b42ef03bc4975d4d09548de4",
+        "identity": "p00-us06-reviewed-claims-batch-a",
+        "path": "tracker/phase-00-baseline/evidence/P00-US06-reviewed-claims-batch-a.json",
+        "semantic_sha256": "f6f0ef58f4cb1379f808e8d5bb7253f260a8f643a83e98e75e4d2e1a3fff01ee"
+      },
+      {
+        "file_sha256": "7e4728c1c5d76a6453d42c640de8a25c24989ed3a160cac2fe4640b22a55814e",
+        "identity": "p00-us07-reviewed-claims-batch-b",
+        "path": "tracker/phase-00-baseline/evidence/P00-US07-reviewed-claims-batch-b.json",
+        "semantic_sha256": "9afe6c098adcd32e3a8370af5ecb2b27ac4730f098e39128e787eef991990d0f"
+      },
+      {
+        "file_sha256": "1411d75d2701e51b815f9f3c0e0e5ba5f799f6ec32ca2788cd31ee4f69f05be1",
+        "identity": "p00-us08-reviewed-claims-batch-c",
+        "path": "tracker/phase-00-baseline/evidence/P00-US08-reviewed-claims-batch-c.json",
+        "semantic_sha256": "69c58b8ab7a3b9bdd21bc49183fb5334ee88bee1a4850061820b551ae416eb89"
+      }
+    ]
+  },
+  "partial_count": 0,
+  "record_kind": "p00-us10-corpus-run",
+  "requested_case_count": 2,
+  "run_dir": "tracker/phase-00-baseline/evidence/P00-US10-integration-20260729-01",
+  "run_id": "p00-us10-integration-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "selected_case_ids": [
+    "catastrophe-recap",
+    "clean-energy"
+  ],
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skipped_count": 0,
+  "started_at_utc": "2026-07-29T08:39:49.719608+00:00",
+  "status": "success",
+  "success_count": 2,
+  "successful_page_count": 2,
+  "timeout_count": 0
+}

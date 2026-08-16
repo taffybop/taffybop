@@ -1,0 +1,1593 @@
+{
+  "schema_version": "1.0",
+  "story": "P03-US03",
+  "generated_at": "2026-07-31T01:09:47.048190+00:00",
+  "measurement": {
+    "full_parser_process_model": "one fresh subprocess per case and flag state",
+    "performance_case_pair_count": 5,
+    "performance_cases": [
+      "catastrophe-recap",
+      "clinical-study"
+    ],
+    "quality_only_case_snapshot_count_per_flag": 1,
+    "performance_execution_order": "alternating off/on then on/off within paired indexes",
+    "performance_quantile": "empirical p95, statistics.quantiles inclusive method",
+    "performance_gate_value": "p95 of max(flag_on - flag_off, 0) paired overhead",
+    "cache_disclaimer": "operating-system caches were not explicitly flushed; no cold-cache claim is made",
+    "peak_rss_semantics": "per-worker parse-and-snapshot high-water mark",
+    "layout_stage_isolated_from_full_parser": true,
+    "hosted_requests": 0
+  },
+  "policy": {
+    "feature_flag": "PARSER_LAYOUT_SOURCE_NOTES_ENABLED",
+    "default_enabled": false,
+    "eligible_owner_types": [
+      "table",
+      "image",
+      "chart",
+      "diagram"
+    ],
+    "relationship_types": [
+      "source_note_of",
+      "footnote_of"
+    ],
+    "maximum_gap_points": 72.0,
+    "maximum_references_per_owner": 64,
+    "maximum_owners_per_page": 256,
+    "maximum_candidates_per_page": 512,
+    "maximum_same_text_candidates_per_page": 128,
+    "maximum_note_bytes": 16384,
+    "maximum_uri_bytes": 2048,
+    "maximum_annotations_per_page": 256,
+    "maximum_annotations_per_document": 1024,
+    "maximum_render_bands_per_page": 16
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O"
+  },
+  "dependency_custody": {
+    "python_packages": {
+      "docling": "2.114.0",
+      "docling-core": "2.88.0",
+      "pydantic": "2.13.4",
+      "pdfplumber": "0.11.10"
+    },
+    "tesseract": {
+      "path": "/opt/homebrew/Cellar/tesseract/5.5.3/bin/tesseract",
+      "version": "tesseract 5.5.3",
+      "sha256": "16020f485da1f534089d82608797d98f71322c67dee772438fb755ad9b4f79b5",
+      "size_bytes": 69184
+    }
+  },
+  "phase_02_performance_baselines": {
+    "catastrophe-recap": {
+      "wall_seconds": 8.5,
+      "peak_rss_mib": 1427.5
+    },
+    "clinical-study": {
+      "wall_seconds": 13.96,
+      "peak_rss_mib": 1561.9
+    }
+  },
+  "code_sha256": {
+    ".env.example": {
+      "path": ".env.example",
+      "sha256": "1d1103a55b63f233e21f4d8e00ea977c885fca17850824f4d5fec11b2bc4690e",
+      "size_bytes": 3446
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "935f52f9b2e06cfd9911d74e58c9d9eccdf4918bafe7d2f8b7b3f5f02a44e0a7",
+      "size_bytes": 29509
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "sha256": "8e24a7dedf55dda0f39e2dc3846bcd72612260ad7014db60616b270a30a6bfe5",
+      "size_bytes": 13177
+    },
+    "app/services/ir.py": {
+      "path": "app/services/ir.py",
+      "sha256": "bae68d5db9fe204e91a75df6837b7f4e21197164464cdcb0bef1de62c82e44fd",
+      "size_bytes": 151385
+    },
+    "app/services/layout.py": {
+      "path": "app/services/layout.py",
+      "sha256": "1b8cf5f0c24e4a3ab9caa4a63c2e6bb15fb6b4250708882217352b531d96d15b",
+      "size_bytes": 149191
+    },
+    "app/services/layout_source_notes.py": {
+      "path": "app/services/layout_source_notes.py",
+      "sha256": "d19e6b232b2c94c2c0f2a14f9412dd791df59c895b43e21698800a5c245c63fc",
+      "size_bytes": 49315
+    },
+    "app/services/ocr.py": {
+      "path": "app/services/ocr.py",
+      "sha256": "d13d70c931f4f034d7b598d86c14b54bc4ff5f1bf8aea035acbd9662374476a1",
+      "size_bytes": 55940
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "sha256": "d043acea9149ad324ec1230d32edc0f31e5b5486cb4e780478c776024766f459",
+      "size_bytes": 149907
+    },
+    "app/services/presentation.py": {
+      "path": "app/services/presentation.py",
+      "sha256": "337a4a74a45d95cf0f55df76aea7377f8361ab50f5146b0f2c9a446a23049714",
+      "size_bytes": 158486
+    },
+    "app/services/serializer.py": {
+      "path": "app/services/serializer.py",
+      "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+      "size_bytes": 5026
+    },
+    "frontend/app/clearleaf-workspace.tsx": {
+      "path": "frontend/app/clearleaf-workspace.tsx",
+      "sha256": "10c952f75fbe6143687291a138e0d2db52ea2e48ad382c50e1e1451e7320819f",
+      "size_bytes": 55580
+    },
+    "frontend/app/globals.css": {
+      "path": "frontend/app/globals.css",
+      "sha256": "fce439d500bfb46c78bc0aa0c60cdc102b37da8aa1a5eb9b17588d5a976be3a2",
+      "size_bytes": 33898
+    },
+    "frontend/lib/layout-relationships.ts": {
+      "path": "frontend/lib/layout-relationships.ts",
+      "sha256": "17c7c9fd65015eb2410e1ee2a9d56ae38182712f194b5bcc78be34b0ef523147",
+      "size_bytes": 8741
+    },
+    "frontend/lib/types.ts": {
+      "path": "frontend/lib/types.ts",
+      "sha256": "6caa10177cb308f7fecc0d407d533c6397ed2f6b6b7f6fc12e9ef1534726d339",
+      "size_bytes": 7842
+    },
+    "frontend/tests/p03-us03-source-notes.test.mts": {
+      "path": "frontend/tests/p03-us03-source-notes.test.mts",
+      "sha256": "c098b68e1777c85b5ab2a7b0e5bb52e5976f2f28cf694fbbbf33f52f8c944ede",
+      "size_bytes": 10880
+    },
+    "tests/benchmarks/layout_source_note_metrics.py": {
+      "path": "tests/benchmarks/layout_source_note_metrics.py",
+      "sha256": "98a060f4052f3bdb37b0c980ba31b5c8fec50afd57942e3e9fc9051d5b40a097",
+      "size_bytes": 47228
+    },
+    "tests/contract/test_p03_us03_source_note_contract.py": {
+      "path": "tests/contract/test_p03_us03_source_note_contract.py",
+      "sha256": "2f951dc0a4697118f7e986a2217230720661fd8505b48dd0412d2999c2c1bfb2",
+      "size_bytes": 6205
+    },
+    "tests/performance/test_p03_us03_source_note_performance.py": {
+      "path": "tests/performance/test_p03_us03_source_note_performance.py",
+      "sha256": "fc1b60f2a8661c9cd108e030577a141bb8c554021f71369db4d812efdb2cfe60",
+      "size_bytes": 6085
+    },
+    "tests/regression/phase_03/test_p03_us03_real_source_notes.py": {
+      "path": "tests/regression/phase_03/test_p03_us03_real_source_notes.py",
+      "sha256": "ba9e53e158473e2c565d3705fc4ced6d17fd502ffea1bc9869ef1bd2cd1829f5",
+      "size_bytes": 10026
+    },
+    "tests/stories/phase_03/test_p03_us03_source_note_evidence.py": {
+      "path": "tests/stories/phase_03/test_p03_us03_source_note_evidence.py",
+      "sha256": "7427664f0b00d4c7bba30fd4ef754a171a90744f750c89127e15345119fb0d60",
+      "size_bytes": 19928
+    },
+    "tests/stories/phase_03/test_p03_us03_source_notes.py": {
+      "path": "tests/stories/phase_03/test_p03_us03_source_notes.py",
+      "sha256": "7583c2216950c9780c05af049c4ce40f6be64b3c9f692b1052e3420628c83e70",
+      "size_bytes": 27241
+    },
+    "tracker/phase-03-layout/decisions/P03-source-note-association-policy.md": {
+      "path": "tracker/phase-03-layout/decisions/P03-source-note-association-policy.md",
+      "sha256": "b0321238fbea77114e0b593f73b0b9273ebab8e43bd60e7d4f428b740871618e",
+      "size_bytes": 4930
+    }
+  },
+  "cases": {
+    "catastrophe-recap": {
+      "input_path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "input_size_bytes": 58779,
+      "input_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "reviewed_note_expected": 1,
+      "reviewed_note_matched": 1,
+      "reviewed_note_recall": 1.0,
+      "expected_link_targets": [],
+      "expected_emitted_note_count": 1,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 8.759649,
+        "processing_duration_ms": 8723,
+        "peak_rss_bytes": 1449312256,
+        "json_size_bytes": 68172,
+        "json_sha256": "1c365669c93d3ba2aa671362c00e7763e1c5cca6888c22c128f89f38a30e07e2",
+        "semantic_json_size_bytes": 68153,
+        "semantic_json_sha256": "2f82ab1de65de8adaadf3f3c826da3221c310fcdb5033c898e28063355df69d3",
+        "markdown_size_bytes": 2012,
+        "markdown_sha256": "ede51601e61902430a96a069e40a762a177bf2849fb9368aba536a535055975d",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [],
+        "layout_note_projection_absent": true,
+        "reviewed_note_occurrences": {
+          "Data: Aon Catastrophe Insight": 0
+        },
+        "markdown_reviewed_occurrences": {
+          "Data: Aon Catastrophe Insight": 0
+        },
+        "canonical_reviewed_occurrences": {
+          "Data: Aon Catastrophe Insight": 0
+        },
+        "markdown_expected_emitted_occurrences": {
+          "Data: Aon Catastrophe Insight": 0
+        },
+        "canonical_expected_emitted_occurrences": {
+          "Data: Aon Catastrophe Insight": 0
+        },
+        "markdown_link_target_occurrences": {},
+        "canonical_link_target_occurrences": {},
+        "expected_emitted_note_count": 1,
+        "classified_emitted_note_count": 0,
+        "missing_expected_note_count": 1,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": false,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 7.186661,
+        "processing_duration_ms": 7140,
+        "peak_rss_bytes": 1507852288,
+        "json_size_bytes": 69608,
+        "json_sha256": "65cc82bc13fcc774defc7f0b891413ca72e10f3b82cb980cd3b5afc391b95fd1",
+        "semantic_json_size_bytes": 69589,
+        "semantic_json_sha256": "435eeef78d2032cade24d1caec24d50fffb8490d72bb52bc6e79c593ea4bfdcb",
+        "markdown_size_bytes": 2043,
+        "markdown_sha256": "195da921c8d7be134690ef5477230b51e2767fdd73eb238b20258d9822074aca",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [
+          {
+            "page_index": 1,
+            "id": "layout-note-af58a03da292b26ce13f",
+            "type": "source_note",
+            "value": "Data: Aon Catastrophe Insight",
+            "bbox": {
+              "x": 101.221,
+              "y": 592.567,
+              "width": 73.8,
+              "height": 5.0,
+              "unit": "pt"
+            },
+            "source": "ocr",
+            "confidence": 0.9658,
+            "owner_id": "p1-i5",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 100.221,
+              "y": 437.31,
+              "width": 444.032,
+              "height": 149.057,
+              "unit": "pt",
+              "w": 444.032,
+              "h": 149.057
+            },
+            "relationship_id": "layout-rel-fe112549bdffeb811ddf",
+            "relationship_type": "source_note_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          }
+        ],
+        "layout_note_projection_absent": false,
+        "reviewed_note_occurrences": {
+          "Data: Aon Catastrophe Insight": 1
+        },
+        "markdown_reviewed_occurrences": {
+          "Data: Aon Catastrophe Insight": 1
+        },
+        "canonical_reviewed_occurrences": {
+          "Data: Aon Catastrophe Insight": 1
+        },
+        "markdown_expected_emitted_occurrences": {
+          "Data: Aon Catastrophe Insight": 1
+        },
+        "canonical_expected_emitted_occurrences": {
+          "Data: Aon Catastrophe Insight": 1
+        },
+        "markdown_link_target_occurrences": {},
+        "canonical_link_target_occurrences": {},
+        "expected_emitted_note_count": 1,
+        "classified_emitted_note_count": 1,
+        "missing_expected_note_count": 0,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": true,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_off_note_count": 0,
+      "flag_on_note_count": 1,
+      "semantic_flag_on_off_equal": false,
+      "markdown_flag_on_off_equal": false,
+      "json_size_bytes_delta": 1436,
+      "peak_rss_bytes_delta": 58540032,
+      "all_flag_on_samples_quality_consistent": true,
+      "all_flag_off_samples_projection_absent": true,
+      "resource_samples": {
+        "flag_off_peak_rss_bytes": [
+          1449312256,
+          1505165312,
+          1508196352,
+          1504411648,
+          1507344384
+        ],
+        "flag_on_peak_rss_bytes": [
+          1507852288,
+          1504673792,
+          1499447296,
+          1503707136,
+          1503707136
+        ],
+        "paired_peak_rss_bytes_deltas": [
+          58540032,
+          -491520,
+          -8749056,
+          -704512,
+          -3637248
+        ],
+        "max_flag_on_peak_rss_bytes": 1507852288,
+        "max_flag_on_peak_rss_percent_of_phase_02_baseline": 100.7356,
+        "flag_off_semantic_json_size_bytes": [
+          68153,
+          68153,
+          68153,
+          68153,
+          68153
+        ],
+        "flag_on_semantic_json_size_bytes": [
+          69589,
+          69589,
+          69589,
+          69589,
+          69589
+        ],
+        "flag_off_markdown_size_bytes": [
+          2012,
+          2012,
+          2012,
+          2012,
+          2012
+        ],
+        "flag_on_markdown_size_bytes": [
+          2043,
+          2043,
+          2043,
+          2043,
+          2043
+        ]
+      },
+      "paired_performance": {
+        "pair_count": 5,
+        "execution_order_alternated": true,
+        "process_model": "fresh_process_per_flag_state",
+        "cache_state": "operating-system caches were not explicitly flushed",
+        "quantile_method": "empirical_p95_inclusive",
+        "flag_off_wall_seconds": [
+          8.759649,
+          6.866599,
+          6.778871,
+          6.871548,
+          6.870088
+        ],
+        "flag_on_wall_seconds": [
+          7.186661,
+          6.940884,
+          6.908201,
+          6.965146,
+          7.094399
+        ],
+        "paired_signed_wall_seconds_deltas": [
+          -1.572988,
+          0.074285,
+          0.12933,
+          0.093598,
+          0.224311
+        ],
+        "paired_nonnegative_overhead_seconds": [
+          0.0,
+          0.074285,
+          0.12933,
+          0.093598,
+          0.224311
+        ],
+        "p50_signed_delta_seconds": 0.093598,
+        "p95_signed_delta_seconds": 0.205315,
+        "max_signed_delta_seconds": 0.224311,
+        "p50_nonnegative_overhead_seconds": 0.093598,
+        "p95_nonnegative_overhead_seconds": 0.205315,
+        "max_nonnegative_overhead_seconds": 0.224311,
+        "five_percent_ceiling_seconds": 0.42500000000000004,
+        "p95_overhead_percent_of_baseline": 2.4155,
+        "within_five_percent_ceiling": true
+      }
+    },
+    "clinical-study": {
+      "input_path": "benchmark-expertmodeldata/clinical-study.pdf",
+      "input_size_bytes": 750004,
+      "input_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "reviewed_note_expected": 7,
+      "reviewed_note_matched": 7,
+      "reviewed_note_recall": 1.0,
+      "expected_link_targets": [
+        "https://doi.org/10.1371/journal.pmed.1004460.t001",
+        "https://doi.org/10.1371/journal.pmed.1004460.g001",
+        "https://doi.org/10.1371/journal.pmed.1004460.t002"
+      ],
+      "expected_emitted_note_count": 10,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 13.148528,
+        "processing_duration_ms": 12737,
+        "peak_rss_bytes": 1776779264,
+        "json_size_bytes": 459092,
+        "json_sha256": "edb68012d9b2509390ba15ae374784df575c3e88f64b25916441fed79dd5aeed",
+        "semantic_json_size_bytes": 459072,
+        "semantic_json_sha256": "ea7f056d28e67ba56459b9fd52c06c5d91846337a3219df603cbbaa58ca1592b",
+        "markdown_size_bytes": 17117,
+        "markdown_sha256": "107a02340bfd124f5e0a28bce104e28af24f0cebae17292bc2e679c8fc4ee2cf",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [],
+        "layout_note_projection_absent": true,
+        "reviewed_note_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 0,
+          "2 Less than 4 SbS sessions completed.": 0,
+          "3 Highest education level started.": 0,
+          "1 Pooled descriptive statistics across all imputed datasets.": 0,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 0,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 0,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 0
+        },
+        "markdown_reviewed_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 0,
+          "2 Less than 4 SbS sessions completed.": 0,
+          "3 Highest education level started.": 0,
+          "1 Pooled descriptive statistics across all imputed datasets.": 0,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 0,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 0,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 0
+        },
+        "canonical_reviewed_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 0,
+          "2 Less than 4 SbS sessions completed.": 0,
+          "3 Highest education level started.": 0,
+          "1 Pooled descriptive statistics across all imputed datasets.": 0,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 0,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 0,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 0
+        },
+        "markdown_expected_emitted_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 0,
+          "2 Less than 4 SbS sessions completed.": 0,
+          "3 Highest education level started.": 0,
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 1,
+          "1 Pooled descriptive statistics across all imputed datasets.": 0,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 0,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 0,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 0,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "canonical_expected_emitted_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 0,
+          "2 Less than 4 SbS sessions completed.": 0,
+          "3 Highest education level started.": 0,
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 1,
+          "1 Pooled descriptive statistics across all imputed datasets.": 0,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 0,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 0,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 0,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "markdown_link_target_occurrences": {
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "canonical_link_target_occurrences": {
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "expected_emitted_note_count": 10,
+        "classified_emitted_note_count": 0,
+        "missing_expected_note_count": 10,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": false,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 3,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": false,
+        "all_emitted_links_exactly_classified": false,
+        "all_relationships_valid": true
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 13.473246,
+        "processing_duration_ms": 12906,
+        "peak_rss_bytes": 1790459904,
+        "json_size_bytes": 452337,
+        "json_sha256": "99d871a27f802c058f0cb4288050e37d300c5d1ba3eaa33d9997d413dc36ed03",
+        "semantic_json_size_bytes": 452317,
+        "semantic_json_sha256": "3741fee83c7fd44280c8086aba5d7526076851e7b6efecdff32cd387ad1cc160",
+        "markdown_size_bytes": 13337,
+        "markdown_sha256": "a66b46f0224b5e70564362e5420879a5e6964742b61ba44772b7f1260b7c68bc",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [
+          {
+            "page_index": 2,
+            "id": "layout-note-ca0a0a22cfdec3a0f57a",
+            "type": "footnote",
+            "value": "1 At least 4 out of 5 SbS sessions completed.",
+            "bbox": {
+              "x": 36.0,
+              "y": 506.72,
+              "width": 137.379,
+              "height": 8.485,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p2-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.237,
+              "y": 86.521,
+              "width": 541.581,
+              "height": 411.516,
+              "unit": "pt",
+              "w": 541.581,
+              "h": 411.516
+            },
+            "relationship_id": "layout-rel-f937eadadb4cd67dd497",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 2,
+            "id": "layout-note-825392ca5dec8ebda361",
+            "type": "footnote",
+            "value": "2 Less than 4 SbS sessions completed.",
+            "bbox": {
+              "x": 36.0,
+              "y": 518.739,
+              "width": 116.804,
+              "height": 8.485,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p2-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.237,
+              "y": 86.521,
+              "width": 541.581,
+              "height": 411.516,
+              "unit": "pt",
+              "w": 541.581,
+              "h": 411.516
+            },
+            "relationship_id": "layout-rel-7b11a912df63f60336a4",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 2,
+            "id": "layout-note-b9bb78099197332c5992",
+            "type": "footnote",
+            "value": "3 Highest education level started.",
+            "bbox": {
+              "x": 36.0,
+              "y": 530.758,
+              "width": 103.388,
+              "height": 8.428,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p2-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.237,
+              "y": 86.521,
+              "width": 541.581,
+              "height": 411.516,
+              "unit": "pt",
+              "w": 541.581,
+              "h": 411.516
+            },
+            "relationship_id": "layout-rel-82d19bc4561561fa0054",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 2,
+            "id": "layout-note-220a63f77f2f6e421e7a",
+            "type": "footnote",
+            "value": "https://doi.org/10.1371/journal.pmed.1004460.t001",
+            "bbox": {
+              "x": 36.0,
+              "y": 549.865,
+              "width": 153.014,
+              "height": 7.993,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p2-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.237,
+              "y": 86.521,
+              "width": 541.581,
+              "height": 411.516,
+              "unit": "pt",
+              "w": 541.581,
+              "h": 411.516
+            },
+            "relationship_id": "layout-rel-2650b62e3992a7989f1d",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "annotation_and_geometry",
+            "links": [
+              {
+                "kind": "hyperlink",
+                "target": "https://doi.org/10.1371/journal.pmed.1004460.t001"
+              }
+            ],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 3,
+            "id": "layout-note-b9b7e1060f593ca6f8ad",
+            "type": "footnote",
+            "value": "https://doi.org/10.1371/journal.pmed.1004460.g001",
+            "bbox": {
+              "x": 123.364,
+              "y": 673.398,
+              "width": 154.771,
+              "height": 7.994,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p3-i2",
+            "owner_type": "diagram",
+            "owner_bbox": {
+              "x": 127.655,
+              "y": 89.107,
+              "width": 447.351,
+              "height": 565.211,
+              "unit": "pt",
+              "w": 447.351,
+              "h": 565.211
+            },
+            "relationship_id": "layout-rel-06ba2ee8eee198a40a1b",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "annotation_and_geometry",
+            "links": [
+              {
+                "kind": "hyperlink",
+                "target": "https://doi.org/10.1371/journal.pmed.1004460.g001"
+              }
+            ],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 4,
+            "id": "layout-note-be2caa76b588d49a0dda",
+            "type": "footnote",
+            "value": "1 Pooled descriptive statistics across all imputed datasets.",
+            "bbox": {
+              "x": 36.0,
+              "y": 297.24,
+              "width": 179.759,
+              "height": 8.484,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p4-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.164,
+              "y": 88.276,
+              "width": 541.436,
+              "height": 200.702,
+              "unit": "pt",
+              "w": 541.436,
+              "h": 200.702
+            },
+            "relationship_id": "layout-rel-42d401ff86897d2fa5b4",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 4,
+            "id": "layout-note-5d0c6188cba1a1bc0c0b",
+            "type": "footnote",
+            "value": "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.",
+            "bbox": {
+              "x": 36.0,
+              "y": 309.259,
+              "width": 442.595,
+              "height": 8.427,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p4-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.164,
+              "y": 88.276,
+              "width": 541.436,
+              "height": 200.702,
+              "unit": "pt",
+              "w": 541.436,
+              "h": 200.702
+            },
+            "relationship_id": "layout-rel-29ac32e3bbc327e6517d",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 4,
+            "id": "layout-note-3e6b8f5389943a9c36ae",
+            "type": "footnote",
+            "value": "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).",
+            "bbox": {
+              "x": 36.0,
+              "y": 321.221,
+              "width": 453.711,
+              "height": 8.484,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p4-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.164,
+              "y": 88.276,
+              "width": 541.436,
+              "height": 200.702,
+              "unit": "pt",
+              "w": 541.436,
+              "h": 200.702
+            },
+            "relationship_id": "layout-rel-83a48e511acb6fb2e306",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 4,
+            "id": "layout-note-2e87ebaba31777dc4eee",
+            "type": "footnote",
+            "value": "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.",
+            "bbox": {
+              "x": 36.0,
+              "y": 333.24,
+              "width": 322.244,
+              "height": 8.484,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p4-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.164,
+              "y": 88.276,
+              "width": 541.436,
+              "height": 200.702,
+              "unit": "pt",
+              "w": 541.436,
+              "h": 200.702
+            },
+            "relationship_id": "layout-rel-cb4e3036a69733d5c92b",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "graph_and_geometry",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 4,
+            "id": "p4-i3",
+            "type": "footnote",
+            "value": "https://doi.org/10.1371/journal.pmed.1004460.t002",
+            "bbox": {
+              "x": 36.0,
+              "y": 352.346,
+              "width": 153.014,
+              "height": 7.994,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p4-i2",
+            "owner_type": "table",
+            "owner_bbox": {
+              "x": 35.164,
+              "y": 88.276,
+              "width": 541.436,
+              "height": 200.702,
+              "unit": "pt",
+              "w": 541.436,
+              "h": 200.702
+            },
+            "relationship_id": "layout-rel-0395e6d789a529b042b1",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "annotation_and_geometry",
+            "links": [
+              {
+                "kind": "hyperlink",
+                "target": "https://doi.org/10.1371/journal.pmed.1004460.t002"
+              }
+            ],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          }
+        ],
+        "layout_note_projection_absent": false,
+        "reviewed_note_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 1,
+          "2 Less than 4 SbS sessions completed.": 1,
+          "3 Highest education level started.": 1,
+          "1 Pooled descriptive statistics across all imputed datasets.": 1,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 1,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 1,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 1
+        },
+        "markdown_reviewed_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 1,
+          "2 Less than 4 SbS sessions completed.": 1,
+          "3 Highest education level started.": 1,
+          "1 Pooled descriptive statistics across all imputed datasets.": 1,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 1,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 1,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 1
+        },
+        "canonical_reviewed_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 1,
+          "2 Less than 4 SbS sessions completed.": 1,
+          "3 Highest education level started.": 1,
+          "1 Pooled descriptive statistics across all imputed datasets.": 1,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 1,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 1,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 1
+        },
+        "markdown_expected_emitted_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 1,
+          "2 Less than 4 SbS sessions completed.": 1,
+          "3 Highest education level started.": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 2,
+          "1 Pooled descriptive statistics across all imputed datasets.": 1,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 1,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 1,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "canonical_expected_emitted_occurrences": {
+          "1 At least 4 out of 5 SbS sessions completed.": 1,
+          "2 Less than 4 SbS sessions completed.": 1,
+          "3 Highest education level started.": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 2,
+          "1 Pooled descriptive statistics across all imputed datasets.": 1,
+          "2 As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.": 1,
+          "3 Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).": 1,
+          "4 Hedges' g effect sizes were derived by combining multiple imputation estimates using Rubin's rules.": 1,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "markdown_link_target_occurrences": {
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "canonical_link_target_occurrences": {
+          "https://doi.org/10.1371/journal.pmed.1004460.t001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.g001": 2,
+          "https://doi.org/10.1371/journal.pmed.1004460.t002": 1
+        },
+        "expected_emitted_note_count": 10,
+        "classified_emitted_note_count": 10,
+        "missing_expected_note_count": 0,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": true,
+        "observed_link_targets": [
+          "https://doi.org/10.1371/journal.pmed.1004460.g001",
+          "https://doi.org/10.1371/journal.pmed.1004460.t001",
+          "https://doi.org/10.1371/journal.pmed.1004460.t002"
+        ],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_off_note_count": 0,
+      "flag_on_note_count": 10,
+      "semantic_flag_on_off_equal": false,
+      "markdown_flag_on_off_equal": false,
+      "json_size_bytes_delta": -6755,
+      "peak_rss_bytes_delta": 13680640,
+      "all_flag_on_samples_quality_consistent": true,
+      "all_flag_off_samples_projection_absent": true,
+      "resource_samples": {
+        "flag_off_peak_rss_bytes": [
+          1776779264,
+          1786396672,
+          1795997696,
+          1801682944,
+          1776435200
+        ],
+        "flag_on_peak_rss_bytes": [
+          1790459904,
+          1801699328,
+          1799536640,
+          1778581504,
+          1788149760
+        ],
+        "paired_peak_rss_bytes_deltas": [
+          13680640,
+          15302656,
+          3538944,
+          -23101440,
+          11714560
+        ],
+        "max_flag_on_peak_rss_bytes": 1801699328,
+        "max_flag_on_peak_rss_percent_of_phase_02_baseline": 110.0092,
+        "flag_off_semantic_json_size_bytes": [
+          459072,
+          459072,
+          459072,
+          459072,
+          459072
+        ],
+        "flag_on_semantic_json_size_bytes": [
+          452317,
+          452317,
+          452317,
+          452317,
+          452317
+        ],
+        "flag_off_markdown_size_bytes": [
+          17117,
+          17117,
+          17117,
+          17117,
+          17117
+        ],
+        "flag_on_markdown_size_bytes": [
+          13337,
+          13337,
+          13337,
+          13337,
+          13337
+        ]
+      },
+      "paired_performance": {
+        "pair_count": 5,
+        "execution_order_alternated": true,
+        "process_model": "fresh_process_per_flag_state",
+        "cache_state": "operating-system caches were not explicitly flushed",
+        "quantile_method": "empirical_p95_inclusive",
+        "flag_off_wall_seconds": [
+          13.148528,
+          12.950159,
+          13.434645,
+          13.34758,
+          13.133916
+        ],
+        "flag_on_wall_seconds": [
+          13.473246,
+          13.36798,
+          13.342874,
+          13.302751,
+          13.499827
+        ],
+        "paired_signed_wall_seconds_deltas": [
+          0.324718,
+          0.417821,
+          -0.091771,
+          -0.044829,
+          0.365911
+        ],
+        "paired_nonnegative_overhead_seconds": [
+          0.324718,
+          0.417821,
+          0.0,
+          0.0,
+          0.365911
+        ],
+        "p50_signed_delta_seconds": 0.324718,
+        "p95_signed_delta_seconds": 0.407439,
+        "max_signed_delta_seconds": 0.417821,
+        "p50_nonnegative_overhead_seconds": 0.324718,
+        "p95_nonnegative_overhead_seconds": 0.407439,
+        "max_nonnegative_overhead_seconds": 0.417821,
+        "five_percent_ceiling_seconds": 0.6980000000000001,
+        "p95_overhead_percent_of_baseline": 2.9186,
+        "within_five_percent_ceiling": true
+      }
+    },
+    "health-report": {
+      "input_path": "benchmark-expertmodeldata/health-report.pdf",
+      "input_size_bytes": 222282,
+      "input_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "reviewed_note_expected": 0,
+      "reviewed_note_matched": 0,
+      "reviewed_note_recall": 1.0,
+      "expected_link_targets": [
+        "https://stat.link/hufsd5",
+        "https://stat.link/styxji"
+      ],
+      "expected_emitted_note_count": 3,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 7.330973,
+        "processing_duration_ms": 7268,
+        "peak_rss_bytes": 1516617728,
+        "json_size_bytes": 110975,
+        "json_sha256": "38c8f2d69c93469bc5d7a0b60b5cd5f39d195ba5259240faae5235893af6b856",
+        "semantic_json_size_bytes": 110956,
+        "semantic_json_sha256": "79cc5c631a03a2967f32f427751135fce9e1a975e97bb5625e878f0e0ac7d956",
+        "markdown_size_bytes": 1191,
+        "markdown_sha256": "e02a1b967c74a50d81940b1ef2098f75d666ab08e281190f60b27600de4df040",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [],
+        "layout_note_projection_absent": true,
+        "reviewed_note_occurrences": {},
+        "markdown_reviewed_occurrences": {},
+        "canonical_reviewed_occurrences": {},
+        "markdown_expected_emitted_occurrences": {
+          "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).": 1,
+          "StatLink 2 https://stat.link/hufsd5": 1,
+          "StatLink 2 https://stat.link/styxji": 1
+        },
+        "canonical_expected_emitted_occurrences": {
+          "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).": 1,
+          "StatLink 2 https://stat.link/hufsd5": 1,
+          "StatLink 2 https://stat.link/styxji": 1
+        },
+        "markdown_link_target_occurrences": {
+          "https://stat.link/hufsd5": 1,
+          "https://stat.link/styxji": 1
+        },
+        "canonical_link_target_occurrences": {
+          "https://stat.link/hufsd5": 1,
+          "https://stat.link/styxji": 1
+        },
+        "expected_emitted_note_count": 3,
+        "classified_emitted_note_count": 0,
+        "missing_expected_note_count": 3,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": false,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 2,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": false,
+        "all_emitted_links_exactly_classified": false,
+        "all_relationships_valid": true
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 7.525709,
+        "processing_duration_ms": 7445,
+        "peak_rss_bytes": 1525809152,
+        "json_size_bytes": 112181,
+        "json_sha256": "57c7f21aff8ef24ed3af0c14c30abade2b7ad2f4e81455d49d663563eae67852",
+        "semantic_json_size_bytes": 112162,
+        "semantic_json_sha256": "9b93b8c308603be5563b58a5fa89566f744c43169eddfffc77c5c0840f443548",
+        "markdown_size_bytes": 1191,
+        "markdown_sha256": "938e61774e5bb93285cfdbd670db9d7c52b416f2ad2ea9db179694ee672d3164",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [
+          {
+            "page_index": 1,
+            "id": "p1-i3",
+            "type": "footnote",
+            "value": "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).",
+            "bbox": {
+              "x": 42.556,
+              "y": 286.681,
+              "width": 367.773,
+              "height": 18.155,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p1-i2",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 44.802,
+              "y": 79.088,
+              "width": 496.73,
+              "height": 197.596,
+              "unit": "pt",
+              "w": 496.73,
+              "h": 197.596
+            },
+            "relationship_id": "layout-rel-4ed881bb3e31841df23b",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "geometry_and_source_evidence",
+            "links": [],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i4",
+            "type": "footnote",
+            "value": "StatLink 2 https://stat.link/hufsd5",
+            "bbox": {
+              "x": 407.066,
+              "y": 310.134,
+              "width": 145.719,
+              "height": 9.0,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p1-i2",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 44.802,
+              "y": 79.088,
+              "width": 496.73,
+              "height": 197.596,
+              "unit": "pt",
+              "w": 496.73,
+              "h": 197.596
+            },
+            "relationship_id": "layout-rel-a6e520cefa365a2c022b",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "annotation_and_geometry",
+            "links": [
+              {
+                "kind": "hyperlink",
+                "target": "https://stat.link/hufsd5"
+              }
+            ],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i9",
+            "type": "footnote",
+            "value": "StatLink 2 https://stat.link/styxji",
+            "bbox": {
+              "x": 412.826,
+              "y": 605.264,
+              "width": 140.094,
+              "height": 9.0,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "owner_id": "p1-i5",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 50.629,
+              "y": 352.723,
+              "width": 491.64,
+              "height": 201.81,
+              "unit": "pt",
+              "w": 491.64,
+              "h": 201.81
+            },
+            "relationship_id": "layout-rel-daaac0253801790a1366",
+            "relationship_type": "footnote_of",
+            "relationship_basis": "annotation_and_geometry",
+            "links": [
+              {
+                "kind": "hyperlink",
+                "target": "https://stat.link/styxji"
+              }
+            ],
+            "owner_resolved": true,
+            "owner_linked_back": true,
+            "descriptor_exact": true,
+            "relationship_type_exact": true,
+            "order_after_owner": true,
+            "bbox_external": true,
+            "bbox_positive": true,
+            "bbox_below_aligned_within_gap": true,
+            "links_grounded": true,
+            "canonical_block_present": true,
+            "canonical_owner_block_present": true,
+            "canonical_relationship_block_count": 2
+          }
+        ],
+        "layout_note_projection_absent": false,
+        "reviewed_note_occurrences": {},
+        "markdown_reviewed_occurrences": {},
+        "canonical_reviewed_occurrences": {},
+        "markdown_expected_emitted_occurrences": {
+          "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).": 1,
+          "StatLink 2 https://stat.link/hufsd5": 1,
+          "StatLink 2 https://stat.link/styxji": 1
+        },
+        "canonical_expected_emitted_occurrences": {
+          "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).": 1,
+          "StatLink 2 https://stat.link/hufsd5": 1,
+          "StatLink 2 https://stat.link/styxji": 1
+        },
+        "markdown_link_target_occurrences": {
+          "https://stat.link/hufsd5": 1,
+          "https://stat.link/styxji": 1
+        },
+        "canonical_link_target_occurrences": {
+          "https://stat.link/hufsd5": 1,
+          "https://stat.link/styxji": 1
+        },
+        "expected_emitted_note_count": 3,
+        "classified_emitted_note_count": 3,
+        "missing_expected_note_count": 0,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": true,
+        "observed_link_targets": [
+          "https://stat.link/hufsd5",
+          "https://stat.link/styxji"
+        ],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_off_note_count": 0,
+      "flag_on_note_count": 3,
+      "semantic_flag_on_off_equal": false,
+      "markdown_flag_on_off_equal": false,
+      "json_size_bytes_delta": 1206,
+      "peak_rss_bytes_delta": 9191424,
+      "all_flag_on_samples_quality_consistent": true,
+      "all_flag_off_samples_projection_absent": true,
+      "resource_samples": {
+        "flag_off_peak_rss_bytes": [
+          1516617728
+        ],
+        "flag_on_peak_rss_bytes": [
+          1525809152
+        ],
+        "paired_peak_rss_bytes_deltas": [
+          9191424
+        ],
+        "max_flag_on_peak_rss_bytes": 1525809152,
+        "max_flag_on_peak_rss_percent_of_phase_02_baseline": null,
+        "flag_off_semantic_json_size_bytes": [
+          110956
+        ],
+        "flag_on_semantic_json_size_bytes": [
+          112162
+        ],
+        "flag_off_markdown_size_bytes": [
+          1191
+        ],
+        "flag_on_markdown_size_bytes": [
+          1191
+        ]
+      }
+    },
+    "finance-10k": {
+      "input_path": "benchmark-expertmodeldata/finance-10k.pdf",
+      "input_size_bytes": 87105,
+      "input_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "reviewed_note_expected": 0,
+      "reviewed_note_matched": 0,
+      "reviewed_note_recall": 1.0,
+      "expected_link_targets": [],
+      "expected_emitted_note_count": 0,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 18.676079,
+        "processing_duration_ms": 18534,
+        "peak_rss_bytes": 2068594688,
+        "json_size_bytes": 409526,
+        "json_sha256": "d1c65a169d43e50b82cece8247cbeeba6e2221490c4e62d6dd83d04d5eefe651",
+        "semantic_json_size_bytes": 409506,
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [],
+        "layout_note_projection_absent": true,
+        "reviewed_note_occurrences": {},
+        "markdown_reviewed_occurrences": {},
+        "canonical_reviewed_occurrences": {},
+        "markdown_expected_emitted_occurrences": {},
+        "canonical_expected_emitted_occurrences": {},
+        "markdown_link_target_occurrences": {},
+        "canonical_link_target_occurrences": {},
+        "expected_emitted_note_count": 0,
+        "classified_emitted_note_count": 0,
+        "missing_expected_note_count": 0,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": true,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 18.781199,
+        "processing_duration_ms": 18617,
+        "peak_rss_bytes": 2071625728,
+        "json_size_bytes": 409526,
+        "json_sha256": "460a9a15ae3a95c7869408efee2f49479eaa42fdd7bb5e14de690eabc69aeba6",
+        "semantic_json_size_bytes": 409506,
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "json_round_trip_equal": true,
+        "markdown_serialized": true,
+        "note_records": [],
+        "layout_note_projection_absent": true,
+        "reviewed_note_occurrences": {},
+        "markdown_reviewed_occurrences": {},
+        "canonical_reviewed_occurrences": {},
+        "markdown_expected_emitted_occurrences": {},
+        "canonical_expected_emitted_occurrences": {},
+        "markdown_link_target_occurrences": {},
+        "canonical_link_target_occurrences": {},
+        "expected_emitted_note_count": 0,
+        "classified_emitted_note_count": 0,
+        "missing_expected_note_count": 0,
+        "unexpected_note_count": 0,
+        "all_emitted_notes_exactly_classified": true,
+        "observed_link_targets": [],
+        "missing_expected_link_count": 0,
+        "unexpected_link_count": 0,
+        "expected_link_targets_present": true,
+        "all_emitted_links_exactly_classified": true,
+        "all_relationships_valid": true
+      },
+      "flag_off_note_count": 0,
+      "flag_on_note_count": 0,
+      "semantic_flag_on_off_equal": true,
+      "markdown_flag_on_off_equal": true,
+      "json_size_bytes_delta": 0,
+      "peak_rss_bytes_delta": 3031040,
+      "all_flag_on_samples_quality_consistent": true,
+      "all_flag_off_samples_projection_absent": true,
+      "resource_samples": {
+        "flag_off_peak_rss_bytes": [
+          2068594688
+        ],
+        "flag_on_peak_rss_bytes": [
+          2071625728
+        ],
+        "paired_peak_rss_bytes_deltas": [
+          3031040
+        ],
+        "max_flag_on_peak_rss_bytes": 2071625728,
+        "max_flag_on_peak_rss_percent_of_phase_02_baseline": null,
+        "flag_off_semantic_json_size_bytes": [
+          409506
+        ],
+        "flag_on_semantic_json_size_bytes": [
+          409506
+        ],
+        "flag_off_markdown_size_bytes": [
+          12622
+        ],
+        "flag_on_markdown_size_bytes": [
+          12622
+        ]
+      }
+    }
+  },
+  "layout_stage": {
+    "warmup_count": 5,
+    "sample_count": 100,
+    "note_count": 8,
+    "p50_seconds": 0.012270479,
+    "p95_seconds": 0.013423948,
+    "max_seconds": 0.013693916,
+    "min_seconds": 0.012076875,
+    "peak_allocated_bytes": 458305,
+    "projected_ir_size_bytes": 33904,
+    "five_percent_ceiling_seconds": 0.42500000000000004,
+    "within_five_percent_ceiling": true
+  },
+  "aggregate": {
+    "reviewed_note_expected": 8,
+    "reviewed_note_matched": 8,
+    "reviewed_note_recall": 1.0,
+    "false_association_count": 0,
+    "missing_expected_control_count": 0,
+    "all_emitted_notes_exactly_classified": true,
+    "all_emitted_links_exactly_classified": true,
+    "all_relationships_valid": true,
+    "all_performance_sample_quality_consistent": true,
+    "all_flag_off_samples_projection_absent": true,
+    "all_reviewed_markdown_once": true,
+    "all_reviewed_canonical_once": true,
+    "health_link_targets_once_in_output": true,
+    "performance_p95_within_five_percent": true,
+    "finance_semantic_flag_parity": true,
+    "finance_markdown_flag_parity": true
+  },
+  "semantic_sha256": "6f52064c2b7edce268edf2ba5443274019c25ab89a277283fd0fa7ffd1e2987d"
+}

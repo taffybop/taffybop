@@ -1,0 +1,375 @@
+{
+  "result_content_metadata": {
+    "grounded_items": {
+      "size_bytes": 19659,
+      "exists": true,
+      "presigned_url": "/assets/demos/parse/results/clean-energy.sidecar.jsonl"
+    },
+    "xlsx": {
+      "size_bytes": 17085,
+      "exists": true,
+      "presigned_url": "/assets/demos/parse/results/clean-energy.xlsx"
+    }
+  },
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "Clean Energy Market Monitor – March 2024                                                                                   Overview\n\nAs clean energy deployment climbed new heights for some key technologies\n                                            Annual deployment of selected clean energy technologies, 2022 and 2023\n     Solar PV                               Wind             Nuclear          Electric cars            Heat pumps          Electrolysers\n500    (GW)           125                   (GW)           10  (GW)     15     (Million)        125    (GW)           700  (MW)\n\n       <u>+85%</u>                          <u>+60%</u>                        <u>+35%</u>             -3%                 <u>+360%</u>\n400                   100                                  8   -30%     12                      100                   560\n\n\n300    75    6    9    75    420\n\n\n200    50    4    6    50    280\n\n\n100    25    2    3    25    140\n\n\n\n2022  2023    2022 2023    2022 2023    2022 2023    2022  2023    2022 2023\n                                                                   IEA 2024. CC BY 4.0.\nNote: “Annual deployment” refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.\n\n                                                                                                             IEA. CC BY 4.0.\n                                PAGE | 11                                                                    Iea"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "markdown": "# As clean energy deployment climbed new heights for some key technologies\n\nAnnual deployment of selected clean energy technologies, 2022 and 2023\n\n<table>\n  <thead>\n    <tr>\n        <th>Technology</th>\n        <th>Unit</th>\n        <th>2022</th>\n        <th>2023</th>\n        <th>Growth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Solar PV</td>\n        <td>GW</td>\n        <td>230</td>\n        <td>425</td>\n        <td>+85%</td>\n    </tr>\n    <tr>\n        <td>Wind</td>\n        <td>GW</td>\n        <td>75</td>\n        <td>120</td>\n        <td>+60%</td>\n    </tr>\n    <tr>\n        <td>Nuclear</td>\n        <td>GW</td>\n        <td>8</td>\n        <td>5.6</td>\n        <td>-30%</td>\n    </tr>\n    <tr>\n        <td>Electric cars</td>\n        <td>Million</td>\n        <td>10.5</td>\n        <td>14</td>\n        <td>+35%</td>\n    </tr>\n    <tr>\n        <td>Heat pumps</td>\n        <td>GW</td>\n        <td>115</td>\n        <td>112</td>\n        <td>-3%</td>\n    </tr>\n    <tr>\n        <td>Electrolysers</td>\n        <td>MW</td>\n        <td>140</td>\n        <td>640</td>\n        <td>+360%</td>\n    </tr>\n  </tbody>\n</table>\n\nIEA 2024. CC BY 4.0.\n\nNote: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.",
+        "page_number": 1,
+        "success": true,
+        "footer": "PAGE | 11\n\nIEA logo\n\nIEA. CC BY 4.0.",
+        "header": "Clean Energy Market Monitor – March 2024\n\nOverview"
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "items": [
+          {
+            "items": [
+              {
+                "md": "Clean Energy Market Monitor – March 2024",
+                "value": "Clean Energy Market Monitor – March 2024",
+                "bbox": [
+                  {
+                    "h": 8.9,
+                    "w": 156.71,
+                    "x": 57.71,
+                    "y": 51.96,
+                    "confidence": 0.95,
+                    "end_index": 39,
+                    "label": "header",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "md": "Overview",
+                "value": "Overview",
+                "bbox": [
+                  {
+                    "h": 9.09,
+                    "w": 42.8,
+                    "x": 734.34,
+                    "y": 47.63,
+                    "confidence": 0.92,
+                    "end_index": 7,
+                    "label": "header",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              }
+            ],
+            "md": "Clean Energy Market Monitor – March 2024\n\nOverview",
+            "bbox": [
+              {
+                "h": 13.23,
+                "w": 719.43,
+                "x": 57.71,
+                "y": 47.63,
+                "confidence": null,
+                "end_index": null,
+                "label": null,
+                "start_index": null
+              }
+            ],
+            "type": "header"
+          },
+          {
+            "level": 1,
+            "md": "# As clean energy deployment climbed new heights for some key technologies",
+            "value": "As clean energy deployment climbed new heights for some key technologies",
+            "bbox": [
+              {
+                "h": 16.14,
+                "w": 585.56,
+                "x": 55.8,
+                "y": 87.82,
+                "confidence": 0.97,
+                "end_index": 73,
+                "label": "paragraph_title",
+                "start_index": 0
+              }
+            ],
+            "type": "heading"
+          },
+          {
+            "md": "Annual deployment of selected clean energy technologies, 2022 and 2023",
+            "value": "Annual deployment of selected clean energy technologies, 2022 and 2023",
+            "bbox": [
+              {
+                "h": 12.36,
+                "w": 395.56,
+                "x": 223.14,
+                "y": 123.55,
+                "confidence": 0.83,
+                "end_index": 69,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "csv": "\"Technology\",\"Unit\",\"2022\",\"2023\",\"Growth\"\n\"Solar PV\",\"GW\",\"230\",\"425\",\"+85%\"\n\"Wind\",\"GW\",\"75\",\"120\",\"+60%\"\n\"Nuclear\",\"GW\",\"8\",\"5.6\",\"-30%\"\n\"Electric cars\",\"Million\",\"10.5\",\"14\",\"+35%\"\n\"Heat pumps\",\"GW\",\"115\",\"112\",\"-3%\"\n\"Electrolysers\",\"MW\",\"140\",\"640\",\"+360%\"",
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Technology</th>\n        <th>Unit</th>\n        <th>2022</th>\n        <th>2023</th>\n        <th>Growth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Solar PV</td>\n        <td>GW</td>\n        <td>230</td>\n        <td>425</td>\n        <td>+85%</td>\n    </tr>\n    <tr>\n        <td>Wind</td>\n        <td>GW</td>\n        <td>75</td>\n        <td>120</td>\n        <td>+60%</td>\n    </tr>\n    <tr>\n        <td>Nuclear</td>\n        <td>GW</td>\n        <td>8</td>\n        <td>5.6</td>\n        <td>-30%</td>\n    </tr>\n    <tr>\n        <td>Electric cars</td>\n        <td>Million</td>\n        <td>10.5</td>\n        <td>14</td>\n        <td>+35%</td>\n    </tr>\n    <tr>\n        <td>Heat pumps</td>\n        <td>GW</td>\n        <td>115</td>\n        <td>112</td>\n        <td>-3%</td>\n    </tr>\n    <tr>\n        <td>Electrolysers</td>\n        <td>MW</td>\n        <td>140</td>\n        <td>640</td>\n        <td>+360%</td>\n    </tr>\n  </tbody>\n</table>",
+            "md": "| Technology    | Unit    | 2022 | 2023 | Growth |\n| ------------- | ------- | ---- | ---- | ------ |\n| Solar PV      | GW      | 230  | 425  | +85%   |\n| Wind          | GW      | 75   | 120  | +60%   |\n| Nuclear       | GW      | 8    | 5.6  | -30%   |\n| Electric cars | Million | 10.5 | 14   | +35%   |\n| Heat pumps    | GW      | 115  | 112  | -3%    |\n| Electrolysers | MW      | 140  | 640  | +360%  |",
+            "rows": [
+              [
+                "Technology",
+                "Unit",
+                "2022",
+                "2023",
+                "Growth"
+              ],
+              [
+                "Solar PV",
+                "GW",
+                "230",
+                "425",
+                "+85%"
+              ],
+              [
+                "Wind",
+                "GW",
+                "75",
+                "120",
+                "+60%"
+              ],
+              [
+                "Nuclear",
+                "GW",
+                "8",
+                "5.6",
+                "-30%"
+              ],
+              [
+                "Electric cars",
+                "Million",
+                "10.5",
+                "14",
+                "+35%"
+              ],
+              [
+                "Heat pumps",
+                "GW",
+                "115",
+                "112",
+                "-3%"
+              ],
+              [
+                "Electrolysers",
+                "MW",
+                "140",
+                "640",
+                "+360%"
+              ]
+            ],
+            "bbox": [
+              {
+                "h": 337.47,
+                "w": 673.39,
+                "x": 86.43,
+                "y": 148.58,
+                "confidence": 0.97,
+                "end_index": 406,
+                "label": "chart",
+                "start_index": 0
+              }
+            ],
+            "merged_from_pages": null,
+            "merged_into_page": null,
+            "parse_concerns": [
+              {
+                "details": "layout detected [chart, paragraph_title, footer, image, header, text] but no table/form",
+                "type": "layout_lvm_disagreement"
+              }
+            ],
+            "type": "table"
+          },
+          {
+            "md": "IEA 2024. CC BY 4.0.",
+            "value": "IEA 2024. CC BY 4.0.",
+            "bbox": [
+              {
+                "h": 7.97,
+                "w": 77.89,
+                "x": 708.3,
+                "y": 494.57,
+                "confidence": 0.9,
+                "end_index": 19,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "Note: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.",
+            "value": "Note: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.",
+            "bbox": [
+              {
+                "h": 10.89,
+                "w": 490.61,
+                "x": 56.05,
+                "y": 510.68,
+                "confidence": 0.94,
+                "end_index": 107,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "items": [
+              {
+                "md": "PAGE | 11",
+                "value": "PAGE | 11",
+                "bbox": [
+                  {
+                    "h": 8.61,
+                    "w": 33.06,
+                    "x": 404.32,
+                    "y": 557.66,
+                    "confidence": 0.96,
+                    "end_index": 8,
+                    "label": "footer",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "md": "IEA logo",
+                "value": "IEA logo",
+                "bbox": [
+                  {
+                    "h": 20,
+                    "w": 48,
+                    "x": 737,
+                    "y": 549,
+                    "confidence": 0.75,
+                    "end_index": 7,
+                    "label": "image",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "md": "IEA. CC BY 4.0.",
+                "value": "IEA. CC BY 4.0.",
+                "bbox": [
+                  {
+                    "h": 36.07,
+                    "w": 5.89,
+                    "x": 814.93,
+                    "y": 537.88,
+                    "confidence": 0.89,
+                    "end_index": 14,
+                    "label": "footer",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              }
+            ],
+            "md": "PAGE | 11\n\nIEA logo\n\nIEA. CC BY 4.0.",
+            "bbox": [
+              {
+                "h": 36.07,
+                "w": 416.5,
+                "x": 404.32,
+                "y": 537.88,
+                "confidence": null,
+                "end_index": null,
+                "label": null,
+                "start_index": null
+              }
+            ],
+            "type": "footer"
+          }
+        ],
+        "page_height": 595.32,
+        "page_number": 1,
+        "page_width": 841.92,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.778,
+        "cost_optimized": false,
+        "original_orientation_angle": 0,
+        "printed_page_number": null,
+        "slide_section_name": null,
+        "speaker_notes": null,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "images": [
+      {
+        "filename": "page_1.jpg",
+        "index": 1,
+        "bbox": {
+          "h": 595,
+          "w": 842,
+          "x": 0,
+          "y": 0
+        },
+        "category": "screenshot",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/clean-energy/page_1.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_image_1_v2.jpg",
+        "index": 2,
+        "bbox": {
+          "h": 21,
+          "w": 48,
+          "x": 738,
+          "y": 550
+        },
+        "category": "embedded",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/clean-energy/page_1_image_1_v2.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_chart_1_v2.jpg",
+        "index": 3,
+        "bbox": {
+          "h": 337,
+          "w": 673,
+          "x": 86,
+          "y": 149
+        },
+        "category": "embedded",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/clean-energy/page_1_chart_1_v2.jpg",
+        "size_bytes": null
+      }
+    ],
+    "total_count": 3
+  }
+}

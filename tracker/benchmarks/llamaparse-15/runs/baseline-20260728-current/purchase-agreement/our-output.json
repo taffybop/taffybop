@@ -1,0 +1,308 @@
+{
+  "document": {
+    "content_region_count": 0,
+    "content_region_types": {},
+    "filename": "purchase-agreement.pdf",
+    "image_count": 0,
+    "mime_type": "application/pdf",
+    "page_count": 1,
+    "page_source_region_count": 0,
+    "rendered_visual_region_count": 0,
+    "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+    "source_format": "PDF"
+  },
+  "pages": [
+    {
+      "detected_images": [],
+      "items": [
+        {
+          "bbox": {
+            "h": 9.475,
+            "height": 9.475,
+            "unit": "pt",
+            "w": 183.84,
+            "width": 183.84,
+            "x": 215.52,
+            "y": 116.334
+          },
+          "confidence": null,
+          "id": "p1-i1",
+          "label": "section_header",
+          "level": 1,
+          "md": "# ASSET PURCHASE AGREEMENT",
+          "reading_order": 0,
+          "source": "native",
+          "type": "heading",
+          "value": "ASSET PURCHASE AGREEMENT"
+        },
+        {
+          "bbox": {
+            "h": 75.595,
+            "height": 75.595,
+            "unit": "pt",
+            "w": 469.961,
+            "width": 469.961,
+            "x": 72.0,
+            "y": 142.733
+          },
+          "confidence": null,
+          "id": "p1-i2",
+          "label": "text",
+          "md": "THIS ASSET PURCHASE AGREEMENT (this ' Agreement '), dated as of [June 23_______], 2020 (the ' Effective Date '), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the ' Seller '), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the ' Buyer ' and together with Seller, the ' Parties ').",
+          "reading_order": 1,
+          "source": "native",
+          "type": "text",
+          "value": "THIS ASSET PURCHASE AGREEMENT (this ' Agreement '), dated as of [June 23_______], 2020 (the ' Effective Date '), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the ' Seller '), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the ' Buyer ' and together with Seller, the ' Parties ')."
+        },
+        {
+          "bbox": {
+            "h": 9.475,
+            "height": 9.475,
+            "unit": "pt",
+            "w": 63.584,
+            "width": 63.584,
+            "x": 275.64,
+            "y": 235.373
+          },
+          "confidence": null,
+          "id": "p1-i3",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Background",
+          "reading_order": 2,
+          "source": "native",
+          "type": "heading",
+          "value": "Background"
+        },
+        {
+          "bbox": {
+            "h": 88.794,
+            "height": 88.794,
+            "unit": "pt",
+            "w": 466.566,
+            "width": 466.566,
+            "x": 72.0,
+            "y": 261.773
+          },
+          "confidence": null,
+          "id": "p1-i4",
+          "label": "text",
+          "md": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the ' Service Area '), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the ' Sanitary Sewer Collection Assets ');",
+          "reading_order": 3,
+          "source": "native",
+          "type": "text",
+          "value": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the ' Service Area '), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the ' Sanitary Sewer Collection Assets ');"
+        },
+        {
+          "bbox": {
+            "h": 102.115,
+            "height": 102.115,
+            "unit": "pt",
+            "w": 470.525,
+            "width": 470.525,
+            "x": 72.0,
+            "y": 366.294
+          },
+          "confidence": null,
+          "id": "p1-i5",
+          "label": "text",
+          "md": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the ' JRA '), the Dornick Point Sewage Treatment Plant (the ' Dornick Plant ') and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the ' JRA Interceptor System '), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto);",
+          "reading_order": 4,
+          "source": "native",
+          "type": "text",
+          "value": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the ' JRA '), the Dornick Point Sewage Treatment Plant (the ' Dornick Plant ') and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the ' JRA Interceptor System '), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto);"
+        },
+        {
+          "bbox": {
+            "h": 88.793,
+            "height": 88.793,
+            "unit": "pt",
+            "w": 465.122,
+            "width": 465.122,
+            "x": 72.0,
+            "y": 484.134
+          },
+          "confidence": null,
+          "id": "p1-i6",
+          "label": "text",
+          "md": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, ' MS4 System '); and",
+          "reading_order": 5,
+          "source": "native",
+          "type": "text",
+          "value": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, ' MS4 System '); and"
+        },
+        {
+          "bbox": {
+            "h": 49.195,
+            "height": 49.195,
+            "unit": "pt",
+            "w": 448.26,
+            "width": 448.26,
+            "x": 72.001,
+            "y": 588.652
+          },
+          "confidence": null,
+          "id": "p1-i7",
+          "label": "text",
+          "md": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances.",
+          "reading_order": 6,
+          "source": "native",
+          "type": "text",
+          "value": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances."
+        },
+        {
+          "bbox": {
+            "h": 49.195,
+            "height": 49.195,
+            "unit": "pt",
+            "w": 468.719,
+            "width": 468.719,
+            "x": 72.001,
+            "y": 653.572
+          },
+          "confidence": null,
+          "id": "p1-i8",
+          "label": "text",
+          "md": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:",
+          "reading_order": 7,
+          "source": "native",
+          "type": "text",
+          "value": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:"
+        },
+        {
+          "bbox": {
+            "h": 9.08,
+            "height": 9.08,
+            "unit": "pt",
+            "w": 66.107,
+            "width": 66.107,
+            "x": 474.0,
+            "y": 38.892
+          },
+          "confidence": null,
+          "id": "p1-i9",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Draft of 6/1/20",
+          "reading_order": 8,
+          "source": "native",
+          "type": "heading",
+          "value": "Draft of 6/1/20"
+        },
+        {
+          "bbox": {
+            "h": 34.957,
+            "height": 34.957,
+            "unit": "pt",
+            "w": 352.684,
+            "width": 352.684,
+            "x": 190.2,
+            "y": 51.492
+          },
+          "confidence": null,
+          "id": "p1-i10",
+          "label": "text",
+          "md": "This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '[ ]' indicate a known open/non-final item. This is Confidential to The City of Johnstown",
+          "reading_order": 9,
+          "source": "native",
+          "type": "text",
+          "value": "This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '[ ]' indicate a known open/non-final item. This is Confidential to The City of Johnstown"
+        },
+        {
+          "bbox": {
+            "h": 9.475,
+            "height": 9.475,
+            "unit": "pt",
+            "w": 116.274,
+            "width": 116.274,
+            "x": 426.6,
+            "y": 89.694
+          },
+          "confidence": null,
+          "id": "p1-i11",
+          "label": "text",
+          "md": "EXECUTION VERSION",
+          "reading_order": 10,
+          "source": "native",
+          "type": "text",
+          "value": "EXECUTION VERSION"
+        },
+        {
+          "bbox": {
+            "h": 9.081,
+            "height": 9.081,
+            "unit": "pt",
+            "w": 36.475,
+            "width": 36.475,
+            "x": 72.0,
+            "y": 747.011
+          },
+          "confidence": null,
+          "id": "p1-i12",
+          "items": [
+            {
+              "bbox": {
+                "h": 9.081,
+                "height": 9.081,
+                "unit": "pt",
+                "w": 36.475,
+                "width": 36.475,
+                "x": 72.0,
+                "y": 747.011
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "A7310832",
+              "source": "native",
+              "type": "text",
+              "value": "A7310832"
+            }
+          ],
+          "md": "A7310832",
+          "reading_order": 11,
+          "source": "native",
+          "type": "footer",
+          "value": "A7310832"
+        }
+      ],
+      "page_height": 792.0,
+      "page_index": 1,
+      "page_label": "1",
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true,
+      "unit": "pt",
+      "warnings": []
+    }
+  ],
+  "processing": {
+    "duration_ms": 6182,
+    "engine": "docling",
+    "input_format": "pdf",
+    "local_processing": true,
+    "native_text_engine": "pypdfium2",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "picture_captioning": {
+      "local_model_available": false,
+      "requested": false
+    },
+    "table_engines": [
+      "docling",
+      "pdfplumber"
+    ],
+    "visual_analysis": {
+      "heading_height_ratio": 1.8,
+      "heading_min_confidence": 0.75,
+      "low_confidence_min_alnum_chars": 8,
+      "pdf_selective_rendering_enabled": true,
+      "picture_classification_threshold": 0.6,
+      "primary_ocr_min_confidence": 0.45,
+      "shared_pipeline": true
+    }
+  },
+  "schema_version": "1.0",
+  "warnings": []
+}

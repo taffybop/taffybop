@@ -1,0 +1,1919 @@
+{
+  "schema_version": "1.0",
+  "generated_at_utc": "2026-07-28T14:07:12.442929+00:00",
+  "corpus_root": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata",
+  "source_files_immutable": true,
+  "expected_case_count": 15,
+  "case_count": 15,
+  "all_expected_triplets_present": true,
+  "pairing_issues": [],
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "source_filename": "catastrophe-recap.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "catastrophe-recap.md",
+      "benchmark_json_filename": "catastrophe-recap.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "size_bytes": 58779,
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/catastrophe-recap.md",
+          "size_bytes": 6755,
+          "sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/catastrophe-recap.json",
+          "size_bytes": 42573,
+          "sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "insurance catastrophe recap",
+      "layout_characteristics": [
+        "single-column narrative",
+        "ruled table",
+        "four-panel vector chart",
+        "running footer"
+      ],
+      "known_complex_elements": [
+        "malformed embedded-font Unicode mapping",
+        "external captions",
+        "source note",
+        "vector-measured chart values",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {
+          "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+          "ModDate": "D:20260408015540Z",
+          "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+          "CreationDate": "D:20260408015540Z"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1269,
+            "native_word_count": 203,
+            "character_objects": 1414,
+            "image_objects": 0,
+            "line_objects": 21,
+            "rect_objects": 157,
+            "curve_objects": 95,
+            "fonts": [
+              "ArialMT",
+              "BCDEEE+HelveticaNowText-Regular",
+              "BCDFEE+HelveticaNowText-Bold",
+              "BCDGEE+HelveticaNowText-Bold",
+              "BCDHEE+HelveticaNowText-Regular"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 6752,
+        "joined_markdown_pages_chars": 6689,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 2006,
+        "text_full_chars": null,
+        "item_count": 9
+      }
+    },
+    {
+      "case_id": "clean-energy",
+      "source_filename": "clean-energy.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "clean-energy.md",
+      "benchmark_json_filename": "clean-energy.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clean-energy.pdf",
+          "size_bytes": 122014,
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clean-energy.md",
+          "size_bytes": 1258,
+          "sha256": "746cc8d471e85c988dbfcf88b3940e2e001716b38359f9dc8d67fd6ca081ee4a"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clean-energy.json",
+          "size_bytes": 14730,
+          "sha256": "9252f22f0301ef8097c19667064dfaae4d374617a1784159c812f86b0cd9d1e9"
+        }
+      },
+      "corpus_validation_issues": [],
+      "document_category": "clean-energy infographic",
+      "layout_characteristics": [
+        "landscape page",
+        "six horizontal small-multiple panels",
+        "running header and footer"
+      ],
+      "known_complex_elements": [
+        "six independent chart scales and units",
+        "printed growth labels",
+        "vector-measured bar values",
+        "embedded logo image"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {},
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 841.92,
+            "height_pt": 595.32,
+            "rotation": 0,
+            "native_text_chars": 632,
+            "native_word_count": 122,
+            "character_objects": 611,
+            "image_objects": 1,
+            "line_objects": 48,
+            "rect_objects": 15,
+            "curve_objects": 9,
+            "fonts": [
+              "CERPBO+Calibri",
+              "MTRCLU+Arial-BoldMT",
+              "WIRKVA+ArialMT"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "images_content_metadata",
+          "items",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": true,
+        "markdown_file_chars": 1258,
+        "joined_markdown_pages_chars": 1258,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 1465,
+        "text_full_chars": null,
+        "item_count": 7
+      }
+    },
+    {
+      "case_id": "clinical-study",
+      "source_filename": "clinical-study.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "clinical-study.md",
+      "benchmark_json_filename": "clinical-study.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clinical-study.pdf",
+          "size_bytes": 750004,
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clinical-study.md",
+          "size_bytes": 19996,
+          "sha256": "25e32291b2f2c477b64ba4185a0c10c8931b5823be9f8c38810c24680bacd43a"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clinical-study.json",
+          "size_bytes": 163250,
+          "sha256": "ab19827f9b0dad0b38d7c15e879e209152c54d1c198c2a571b093b0a32d6f056"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "clinical research article excerpt",
+      "layout_characteristics": [
+        "main column with sidebar",
+        "dense scientific tables",
+        "flowchart page",
+        "headers, footers, and printed page labels"
+      ],
+      "known_complex_elements": [
+        "multi-column reading order",
+        "merged and multiline table cells",
+        "table footnotes",
+        "diagram nodes and connectors",
+        "scientific symbols and inline links"
+      ],
+      "source": {
+        "page_count": 4,
+        "metadata": {
+          "Producer": "pypdf"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3828,
+            "native_word_count": 104,
+            "character_objects": 3636,
+            "image_objects": 1,
+            "line_objects": 6,
+            "rect_objects": 258,
+            "curve_objects": 55,
+            "fonts": [
+              "AJFVMN+ArialMT",
+              "Helvetica",
+              "Helvetica-Bold",
+              "Helvetica-Condensed",
+              "Helvetica-Condensed-Bold",
+              "Helvetica-Oblique",
+              "ICWABQ+UniversATT-Bold",
+              "KZWLEX+Gotham-Medium",
+              "MinionPro-Regular",
+              "OpenSans",
+              "RSJOGE+Univers",
+              "RZKRSC+ArialNarrow",
+              "UBNJVU+SegoeUI"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 2900,
+            "native_word_count": 193,
+            "character_objects": 2580,
+            "image_objects": 0,
+            "line_objects": 2,
+            "rect_objects": 0,
+            "curve_objects": 356,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Condensed",
+              "KZWLEX+Gotham-Medium",
+              "MinionPro-Bold",
+              "MinionPro-Regular",
+              "OZZOJY+MinionPro-BoldIt"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 218,
+            "native_word_count": 8,
+            "character_objects": 211,
+            "image_objects": 1,
+            "line_objects": 2,
+            "rect_objects": 0,
+            "curve_objects": 3,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Condensed",
+              "KZWLEX+Gotham-Medium",
+              "MinionPro-Bold"
+            ]
+          },
+          {
+            "page_number": 4,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3841,
+            "native_word_count": 143,
+            "character_objects": 3380,
+            "image_objects": 0,
+            "line_objects": 3,
+            "rect_objects": 0,
+            "curve_objects": 250,
+            "fonts": [
+              "HSUTHK+YuGothic-Light",
+              "Helvetica",
+              "Helvetica-Condensed",
+              "KHFTQQ+MinionPro-It",
+              "KZWLEX+Gotham-Medium",
+              "MinionPro-Bold",
+              "MinionPro-Regular",
+              "OZZOJY+MinionPro-BoldIt",
+              "QBAPAL+MinionPro-Regular"
+            ]
+          }
+        ],
+        "native_text_page_count": 4,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 4,
+          "text": 4,
+          "items": 4
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 19930,
+        "joined_markdown_pages_chars": 19009,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 18681,
+        "text_full_chars": null,
+        "item_count": 51
+      }
+    },
+    {
+      "case_id": "component-datasheet",
+      "source_filename": "component-datasheet.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "component-datasheet.md",
+      "benchmark_json_filename": "component-datasheet.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/component-datasheet.pdf",
+          "size_bytes": 329199,
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/component-datasheet.md",
+          "size_bytes": 3845,
+          "sha256": "73c00a11c9d719ef6413e51bb20de690a7beb5b69eb031839e537ace11e8e7b4"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/component-datasheet.json",
+          "size_bytes": 105212,
+          "sha256": "be6790098274c52e6b1267822fb8a3f72ae3b5de6470a1955da7250982348573"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "technical component datasheet excerpt",
+      "layout_characteristics": [
+        "single-column technical prose",
+        "margin captions",
+        "nested lists",
+        "callout box",
+        "key-value groups"
+      ],
+      "known_complex_elements": [
+        "board photograph",
+        "pin-numbering diagram",
+        "borderless key-value tables",
+        "technical symbols and units",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {
+          "Producer": "pypdf"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 595.28,
+            "height_pt": 841.89,
+            "rotation": 0,
+            "native_text_chars": 1383,
+            "native_word_count": 226,
+            "character_objects": 1341,
+            "image_objects": 2,
+            "line_objects": 2,
+            "rect_objects": 1,
+            "curve_objects": 0,
+            "fonts": [
+              "0bb038+Roboto-Regular",
+              "43e40c+RobotoSlab-Regular",
+              "816553+Roboto-Regular",
+              "a32d9b+mplus-1p-regular",
+              "c23f80+Roboto-Bold",
+              "fbab99+RobotoSlab-Bold",
+              "ff1334+RobotoCondensed-Italic"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 595.28,
+            "height_pt": 841.89,
+            "rotation": 0,
+            "native_text_chars": 1211,
+            "native_word_count": 224,
+            "character_objects": 1171,
+            "image_objects": 0,
+            "line_objects": 263,
+            "rect_objects": 2,
+            "curve_objects": 374,
+            "fonts": [
+              "0bb038+Roboto-Regular",
+              "189fbb+FontAwesome5Free-Solid",
+              "43e40c+RobotoSlab-Regular",
+              "816553+Roboto-Regular",
+              "c23f80+Roboto-Bold",
+              "fbab99+RobotoSlab-Bold",
+              "ff1334+RobotoCondensed-Italic"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 595.28,
+            "height_pt": 841.89,
+            "rotation": 0,
+            "native_text_chars": 514,
+            "native_word_count": 78,
+            "character_objects": 497,
+            "image_objects": 0,
+            "line_objects": 2,
+            "rect_objects": 0,
+            "curve_objects": 0,
+            "fonts": [
+              "0bb038+Roboto-Regular",
+              "43e40c+RobotoSlab-Regular",
+              "c23f80+Roboto-Bold",
+              "fbab99+RobotoSlab-Bold"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 3839,
+        "joined_markdown_pages_chars": 3555,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 4529,
+        "text_full_chars": null,
+        "item_count": 31
+      }
+    },
+    {
+      "case_id": "egov-survey",
+      "source_filename": "egov-survey.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "egov-survey.md",
+      "benchmark_json_filename": "egov-survey.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/egov-survey.pdf",
+          "size_bytes": 82800,
+          "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/egov-survey.md",
+          "size_bytes": 3563,
+          "sha256": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/egov-survey.json",
+          "size_bytes": 28081,
+          "sha256": "fd541826cd9236c2b9ff2528154863b9c13c9b3ddfb111fe1167f368392cd292"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "government survey report",
+      "layout_characteristics": [
+        "single-column narrative",
+        "stacked bar chart",
+        "running chapter marker and footer"
+      ],
+      "known_complex_elements": [
+        "printed chart data labels",
+        "legend and categories",
+        "caption and source note",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {},
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 2817,
+            "native_word_count": 469,
+            "character_objects": 2756,
+            "image_objects": 0,
+            "line_objects": 9,
+            "rect_objects": 30,
+            "curve_objects": 0,
+            "fonts": [
+              "BOZMNA+ArialMT",
+              "QUTYPW+FrutigerLTStd-Bold",
+              "QUTYPW+FrutigerLTStd-Light",
+              "QUTYPW+FrutigerLTStd-LightItalic",
+              "QUTYPW+FrutigerLTStd-Roman"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 3561,
+        "joined_markdown_pages_chars": 3476,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 3538,
+        "text_full_chars": null,
+        "item_count": 8
+      }
+    },
+    {
+      "case_id": "esg-metrics",
+      "source_filename": "esg-metrics.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "esg-metrics.md",
+      "benchmark_json_filename": "esg-metrics.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/esg-metrics.pdf",
+          "size_bytes": 60516,
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/esg-metrics.md",
+          "size_bytes": 4487,
+          "sha256": "1e0e78589126107452148d49983a731134e3f63496f680fd2c1e35ab4ee109d4"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/esg-metrics.json",
+          "size_bytes": 43703,
+          "sha256": "ae423f8405a926c132fd5278bbaf8823d4eaf94889cd8da095fa815c949c533f"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "ESG and sustainability metrics report",
+      "layout_characteristics": [
+        "landscape dashboard",
+        "two-column composition",
+        "dense data table",
+        "donut and stacked-bar charts"
+      ],
+      "known_complex_elements": [
+        "small text",
+        "table footnotes",
+        "chart labels and leaders",
+        "mixed table-and-chart reading order",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {
+          "Producer": "pypdf"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 792.0,
+            "height_pt": 612.0,
+            "rotation": 90,
+            "native_text_chars": 1877,
+            "native_word_count": 367,
+            "character_objects": 1685,
+            "image_objects": 0,
+            "line_objects": 56,
+            "rect_objects": 16,
+            "curve_objects": 32,
+            "fonts": [
+              "AAAAAB+MicronBasis-Bold",
+              "AAAAAC+MicronBasis-Regular",
+              "AAAAAE+MicronBasis-Bold",
+              "AAAAAG+MicronBasis-Regular",
+              "AAAAAH+MicronBasis-Medium",
+              "AAAAAI+MicronBasis-Black",
+              "AAAAAK+MicronBasis-Medium",
+              "AAAAAL+MicronBasis-Medium"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 4487,
+        "joined_markdown_pages_chars": 4359,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 4903,
+        "text_full_chars": null,
+        "item_count": 18
+      }
+    },
+    {
+      "case_id": "finance-10k",
+      "source_filename": "finance-10k.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "finance-10k.md",
+      "benchmark_json_filename": "finance-10k.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/finance-10k.pdf",
+          "size_bytes": 87105,
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/finance-10k.md",
+          "size_bytes": 12969,
+          "sha256": "0cada5fe6e5406e38ebe8251399e0ee61bce3127a378232bacb01771ff060517"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/finance-10k.json",
+          "size_bytes": 103631,
+          "sha256": "d426ac3542880372421023bf75acfe414fe604182383ab38723efb271d3f177a"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "financial statement from annual report",
+      "layout_characteristics": [
+        "three portrait pages",
+        "dense financial tables",
+        "hierarchical row labels",
+        "running footers"
+      ],
+      "known_complex_elements": [
+        "borderless and lightly ruled tables",
+        "accounting negatives",
+        "multi-level column headers",
+        "subtotal and total semantics",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {},
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1192,
+            "native_word_count": 176,
+            "character_objects": 1214,
+            "image_objects": 0,
+            "line_objects": 34,
+            "rect_objects": 28,
+            "curve_objects": 0,
+            "fonts": [
+              "AAAGYH+HelveticaLTStd-Bold",
+              "AAAXNJ+HelveticaLTStd-Roman"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1614,
+            "native_word_count": 212,
+            "character_objects": 1617,
+            "image_objects": 0,
+            "line_objects": 28,
+            "rect_objects": 42,
+            "curve_objects": 0,
+            "fonts": [
+              "AAAGYH+HelveticaLTStd-Bold",
+              "AAAXNJ+HelveticaLTStd-Roman"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 2215,
+            "native_word_count": 306,
+            "character_objects": 2246,
+            "image_objects": 0,
+            "line_objects": 34,
+            "rect_objects": 41,
+            "curve_objects": 0,
+            "fonts": [
+              "AAAGYH+HelveticaLTStd-Bold",
+              "AAAXNJ+HelveticaLTStd-Roman"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 12961,
+        "joined_markdown_pages_chars": 12778,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 13012,
+        "text_full_chars": null,
+        "item_count": 18
+      }
+    },
+    {
+      "case_id": "health-report",
+      "source_filename": "health-report.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "health-report.md",
+      "benchmark_json_filename": "health-report.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/health-report.pdf",
+          "size_bytes": 222282,
+          "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/health-report.md",
+          "size_bytes": 6271,
+          "sha256": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/health-report.json",
+          "size_bytes": 43114,
+          "sha256": "e1b7c94e8eefc1eac9611222848cd2680eb70a4993a8a7d1710fa0b3783f45dc"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "public-health statistical report",
+      "layout_characteristics": [
+        "two vertically stacked charts",
+        "rotated category labels",
+        "captions, notes, and source lines"
+      ],
+      "known_complex_elements": [
+        "bar and point chart",
+        "bubble chart",
+        "printed and geometry-derived values",
+        "legend symbols",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {},
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 595.276,
+            "height_pt": 793.701,
+            "rotation": 0,
+            "native_text_chars": 1245,
+            "native_word_count": 246,
+            "character_objects": 1154,
+            "image_objects": 0,
+            "line_objects": 148,
+            "rect_objects": 0,
+            "curve_objects": 502,
+            "fonts": [
+              "BCDEEE+ArialNarrow-Bold",
+              "BCDFEE+ArialNarrow",
+              "BCDGEE+ArialNarrow",
+              "BCDLEE+StatLink",
+              "CHRQHE+Arial-BoldMT",
+              "SymbolMT",
+              "UXGGIY+ArialMT"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 6261,
+        "joined_markdown_pages_chars": 6194,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 2024,
+        "text_full_chars": null,
+        "item_count": 15
+      }
+    },
+    {
+      "case_id": "insurance-acord",
+      "source_filename": "insurance-acord.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "insurance-acord.md",
+      "benchmark_json_filename": "insurance-acord.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/insurance-acord.pdf",
+          "size_bytes": 17086,
+          "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/insurance-acord.md",
+          "size_bytes": 5523,
+          "sha256": "7d2379b35fb2a6bbc566d0b6549f0804e4a3166cd7b113303811fa662eee4e54"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/insurance-acord.json",
+          "size_bytes": 54844,
+          "sha256": "2c507394d3452d73e1cf341611cd0a803b48628d588cd95481a678600bc37652"
+        }
+      },
+      "corpus_validation_issues": [],
+      "document_category": "blank insurance certificate form",
+      "layout_characteristics": [
+        "dense ruled form",
+        "merged cells",
+        "key-value regions",
+        "checkbox controls"
+      ],
+      "known_complex_elements": [
+        "form field relationships",
+        "empty values",
+        "checkbox state",
+        "multiline cells",
+        "small text"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {
+          "CreationDate": "D:20110505094617-05'00'",
+          "Author": "Department of Buildings",
+          "Creator": "PScript5.dll Version 5.2.2",
+          "Producer": "Acrobat Distiller 9.4.2 (Windows)",
+          "ModDate": "D:20110614120030-04'00'",
+          "Title": "Sample of the ACORD CERTIFICATE OF LIABILITY INSURANCE"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3000,
+            "native_word_count": 495,
+            "character_objects": 2843,
+            "image_objects": 1,
+            "line_objects": 125,
+            "rect_objects": 20,
+            "curve_objects": 0,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Bold"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "images_content_metadata",
+          "items",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": true,
+        "markdown_file_chars": 5523,
+        "joined_markdown_pages_chars": 5523,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 7663,
+        "text_full_chars": null,
+        "item_count": 15
+      }
+    },
+    {
+      "case_id": "manufacturing-report",
+      "source_filename": "manufacturing-report.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "manufacturing-report.md",
+      "benchmark_json_filename": "manufacturing-report.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/manufacturing-report.pdf",
+          "size_bytes": 380274,
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/manufacturing-report.md",
+          "size_bytes": 13763,
+          "sha256": "c33f1b327e2cf2c6176a64598ea20bb65beebbdede348201e2bb614f1aa68d1c"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/manufacturing-report.json",
+          "size_bytes": 112176,
+          "sha256": "dbe5763deaf9a31864cbf0d962282f9d05d1a4dabff78d892f021b8c987505e0"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "manufacturing and economic analysis report",
+      "layout_characteristics": [
+        "multiple charts per page",
+        "callout labels",
+        "captions and source notes",
+        "running headers and footers"
+      ],
+      "known_complex_elements": [
+        "ranked scatter curves",
+        "labeled points",
+        "percentile guides",
+        "chart-to-table reconstruction",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {
+          "Producer": "pypdf"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1027,
+            "native_word_count": 139,
+            "character_objects": 990,
+            "image_objects": 0,
+            "line_objects": 10,
+            "rect_objects": 2,
+            "curve_objects": 1042,
+            "fonts": [
+              "GXPTWM+TimesNewRomanPSMT",
+              "VMYAYI+Calibri",
+              "VUWVYI+ArialMT"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1850,
+            "native_word_count": 333,
+            "character_objects": 1650,
+            "image_objects": 0,
+            "line_objects": 7,
+            "rect_objects": 87,
+            "curve_objects": 4,
+            "fonts": [
+              "GXPTWM+TimesNewRomanPSMT",
+              "VMYAYI+Calibri",
+              "VUWVYI+ArialMT"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1864,
+            "native_word_count": 301,
+            "character_objects": 1841,
+            "image_objects": 1,
+            "line_objects": 5,
+            "rect_objects": 1,
+            "curve_objects": 4,
+            "fonts": [
+              "GFNOWM+Arial-BoldMT",
+              "GXPTWM+TimesNewRomanPSMT",
+              "VMYAYI+Calibri",
+              "VUWVYI+ArialMT"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 13751,
+        "joined_markdown_pages_chars": 13565,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 7400,
+        "text_full_chars": null,
+        "item_count": 29
+      }
+    },
+    {
+      "case_id": "ny-timetable",
+      "source_filename": "ny-timetable.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "ny-timetable.md",
+      "benchmark_json_filename": "ny-timetable.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/ny-timetable.pdf",
+          "size_bytes": 26109,
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/ny-timetable.md",
+          "size_bytes": 47316,
+          "sha256": "cc939684182ad5220dddba6bdf3f60f3bbfd8e14977900c1814b129e0df7d396"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/ny-timetable.json",
+          "size_bytes": 239491,
+          "sha256": "075e663d4cf4af674bf518343b4fabea6e281efc4606cb77bc2f854931af463d"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "public-transport timetable",
+      "layout_characteristics": [
+        "three full-page dense tables",
+        "rotated column headers",
+        "repeated schedule blocks",
+        "running page labels"
+      ],
+      "known_complex_elements": [
+        "high cell count",
+        "blank and repeated cells",
+        "row-group separators",
+        "time-value fidelity",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {
+          "Producer": "iLovePDF",
+          "ModDate": "D:20251212004403Z"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3205,
+            "native_word_count": 634,
+            "character_objects": 2600,
+            "image_objects": 0,
+            "line_objects": 199,
+            "rect_objects": 665,
+            "curve_objects": 0,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Bold"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3566,
+            "native_word_count": 636,
+            "character_objects": 2959,
+            "image_objects": 0,
+            "line_objects": 199,
+            "rect_objects": 665,
+            "curve_objects": 0,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Bold"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3224,
+            "native_word_count": 644,
+            "character_objects": 2609,
+            "image_objects": 0,
+            "line_objects": 199,
+            "rect_objects": 665,
+            "curve_objects": 0,
+            "fonts": [
+              "Helvetica",
+              "Helvetica-Bold"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 47316,
+        "joined_markdown_pages_chars": 47147,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 17315,
+        "text_full_chars": null,
+        "item_count": 9
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "source_filename": "postal-10k.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "postal-10k.md",
+      "benchmark_json_filename": "postal-10k.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/postal-10k.pdf",
+          "size_bytes": 83589,
+          "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/postal-10k.md",
+          "size_bytes": 11472,
+          "sha256": "49513ae511062bd4ad54ef281b696bb87dd6bb84a20100fd0a055b15c5fd9f05"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/postal-10k.json",
+          "size_bytes": 86821,
+          "sha256": "c312e77b9cc9ae0d90d1f20f67dd485f085497d7131ceb9342c4066deb2f7966"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "financial statement from annual report",
+      "layout_characteristics": [
+        "three portrait pages",
+        "dense financial tables",
+        "hierarchical rows and totals",
+        "running footers"
+      ],
+      "known_complex_elements": [
+        "multi-level headers",
+        "accounting negatives",
+        "multiline labels",
+        "subtotal and total semantics",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {
+          "Producer": "pypdf"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 1906,
+            "native_word_count": 274,
+            "character_objects": 1824,
+            "image_objects": 0,
+            "line_objects": 2,
+            "rect_objects": 40,
+            "curve_objects": 0,
+            "fonts": [
+              "AAACCQ+Arial-ItalicMT",
+              "AAALHN+Arial-BoldMT",
+              "AAXXEC+ArialMT"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 762,
+            "native_word_count": 112,
+            "character_objects": 772,
+            "image_objects": 0,
+            "line_objects": 23,
+            "rect_objects": 18,
+            "curve_objects": 0,
+            "fonts": [
+              "AAACCQ+Arial-ItalicMT",
+              "AAALHN+Arial-BoldMT",
+              "AAXXEC+ArialMT"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 2099,
+            "native_word_count": 317,
+            "character_objects": 2134,
+            "image_objects": 0,
+            "line_objects": 22,
+            "rect_objects": 42,
+            "curve_objects": 0,
+            "fonts": [
+              "AAACCQ+Arial-ItalicMT",
+              "AAALHN+Arial-BoldMT",
+              "AAXXEC+ArialMT"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 11464,
+        "joined_markdown_pages_chars": 11210,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 10173,
+        "text_full_chars": null,
+        "item_count": 13
+      }
+    },
+    {
+      "case_id": "purchase-agreement",
+      "source_filename": "purchase-agreement.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "purchase-agreement.md",
+      "benchmark_json_filename": "purchase-agreement.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/purchase-agreement.pdf",
+          "size_bytes": 152828,
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/purchase-agreement.md",
+          "size_bytes": 3473,
+          "sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/purchase-agreement.json",
+          "size_bytes": 22943,
+          "sha256": "6b8437b4763cfbb1c1d3daed2d496d881fc96afc5ffba16acd71061d2037e869"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "legal purchase-agreement redline",
+      "layout_characteristics": [
+        "single-column legal prose",
+        "centered headings",
+        "recital structure",
+        "redline banner"
+      ],
+      "known_complex_elements": [
+        "strikethrough deletion",
+        "underlined insertion and placeholder",
+        "text color",
+        "legally material text-decoration semantics"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {
+          "ModDate": "D:20260626164021Z00'00'",
+          "Producer": "macOS Version 26.5 (Build 25F71) Quartz PDFContext",
+          "Author": "Shalin Mehta",
+          "Title": "https:/file.notion.com/f/f/cdda8da0-73f4-4b74-ac64-d8366c656b69/e9af9056-f338-470c-a156-67dabce0a7fc/2_agreement.pdf?table=block&id=38adb4b7-d41a-80e5-b497-f3265c454f3c&spaceId=cdda8da0-73f4-4b74-ac64-d8366c656b69&expirationTimestamp=1782518400000&signature=EYyV8vniRBB-LA8T2Iqng_4Fr-yL1rHmj_IWnE5GJ90&downloadName=2_agreement",
+          "Creator": "Safari",
+          "CreationDate": "D:20260626164021Z00'00'"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 3330,
+            "native_word_count": 489,
+            "character_objects": 3338,
+            "image_objects": 0,
+            "line_objects": 0,
+            "rect_objects": 13,
+            "curve_objects": 0,
+            "fonts": [
+              "AAAAAB+TimesNewRoman",
+              "AAAAAD+TimesNewRoman,Italic",
+              "AAAAAE+TimesNewRoman,Bold",
+              "AAAAAF+Calibri"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 3425,
+        "joined_markdown_pages_chars": 3415,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 3597,
+        "text_full_chars": null,
+        "item_count": 10
+      }
+    },
+    {
+      "case_id": "settlement-agreement",
+      "source_filename": "settlement-agreement.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "settlement-agreement.md",
+      "benchmark_json_filename": "settlement-agreement.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/settlement-agreement.pdf",
+          "size_bytes": 164483,
+          "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/settlement-agreement.md",
+          "size_bytes": 3210,
+          "sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/settlement-agreement.json",
+          "size_bytes": 25242,
+          "sha256": "cca63534b7853e8ea64ce106dc82629ce3172bfdaba8353cf7b7881d7af137ae"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "legal settlement-agreement excerpt",
+      "layout_characteristics": [
+        "single-column legal prose",
+        "lettered clauses",
+        "embedded percentage table",
+        "running page number"
+      ],
+      "known_complex_elements": [
+        "legal clause hierarchy",
+        "table-interrupted prose",
+        "percentage values",
+        "source page ending mid-sentence",
+        "physical-versus-printed page identity"
+      ],
+      "source": {
+        "page_count": 1,
+        "metadata": {
+          "Producer": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+          "ModDate": "D:20260408015543Z",
+          "Creator": "pdf-lib (https://github.com/Hopding/pdf-lib)",
+          "CreationDate": "D:20260408015543Z"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 612.0,
+            "height_pt": 792.0,
+            "rotation": 0,
+            "native_text_chars": 2682,
+            "native_word_count": 444,
+            "character_objects": 2699,
+            "image_objects": 0,
+            "line_objects": 0,
+            "rect_objects": 73,
+            "curve_objects": 0,
+            "fonts": [
+              "CJBINP+ArialMT",
+              "IKFSTD+TimesNewRomanPSMT",
+              "OGACZR+TimesNewRomanPS-ItalicMT",
+              "VTRSTD+TimesNewRomanPS-BoldMT"
+            ]
+          }
+        ],
+        "native_text_page_count": 1,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 1,
+          "text": 1,
+          "items": 1
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 3196,
+        "joined_markdown_pages_chars": 3165,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 3123,
+        "text_full_chars": null,
+        "item_count": 6
+      }
+    },
+    {
+      "case_id": "uber-earnings",
+      "source_filename": "uber-earnings.pdf",
+      "source_format": "PDF",
+      "benchmark_markdown_filename": "uber-earnings.md",
+      "benchmark_json_filename": "uber-earnings.json",
+      "expected_files_present": true,
+      "file_presence": {
+        ".pdf": true,
+        ".md": true,
+        ".json": true
+      },
+      "files": {
+        ".pdf": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/uber-earnings.pdf",
+          "size_bytes": 7584019,
+          "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5"
+        },
+        ".md": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/uber-earnings.md",
+          "size_bytes": 2677,
+          "sha256": "1b0d635b20cd7d6244109516606ad50ff8fee463ea266ddda13236cda9e03a7e"
+        },
+        ".json": {
+          "path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/uber-earnings.json",
+          "size_bytes": 77213,
+          "sha256": "eb2800cb910789901261fb585aa80176c975b11403534a488f3b02dfcec44c34"
+        }
+      },
+      "corpus_validation_issues": [
+        "benchmark Markdown file differs from concatenated expert JSON markdown pages"
+      ],
+      "document_category": "investor earnings presentation excerpt",
+      "layout_characteristics": [
+        "three landscape slides",
+        "photographic cover",
+        "flag grid and charts",
+        "two topology diagrams with sidebar"
+      ],
+      "known_complex_elements": [
+        "generated image description",
+        "small flag identification",
+        "printed and vector-derived chart values",
+        "diagram nodes and connector direction",
+        "parallel visual and structured representations"
+      ],
+      "source": {
+        "page_count": 3,
+        "metadata": {
+          "Title": "Uber-Q1-25-Earnings-Supplemental-Data",
+          "Producer": "macOS Version 15.3.1 (Build 24D70) Quartz PDFContext",
+          "Creator": "Keynote",
+          "CreationDate": "D:20251212002543Z00'00'",
+          "ModDate": "D:20251212002543Z00'00'"
+        },
+        "page_stats": [
+          {
+            "page_number": 1,
+            "width_pt": 1920.0,
+            "height_pt": 1080.0,
+            "rotation": 0,
+            "native_text_chars": 72,
+            "native_word_count": 12,
+            "character_objects": 70,
+            "image_objects": 1,
+            "line_objects": 0,
+            "rect_objects": 1,
+            "curve_objects": 2,
+            "fonts": [
+              "AAAAAB+UberMove-Medium",
+              "AAAAAC+UberMove-Light",
+              "AAAAAD+UberMove-Regular"
+            ]
+          },
+          {
+            "page_number": 2,
+            "width_pt": 1920.0,
+            "height_pt": 1080.0,
+            "rotation": 0,
+            "native_text_chars": 665,
+            "native_word_count": 114,
+            "character_objects": 626,
+            "image_objects": 11,
+            "line_objects": 7,
+            "rect_objects": 24,
+            "curve_objects": 7,
+            "fonts": [
+              "AAAAAB+UberMove-Medium",
+              "AAAAAD+UberMove-Regular",
+              "AAAAAE+UberMove-Bold"
+            ]
+          },
+          {
+            "page_number": 3,
+            "width_pt": 1920.0,
+            "height_pt": 1080.0,
+            "rotation": 0,
+            "native_text_chars": 415,
+            "native_word_count": 59,
+            "character_objects": 393,
+            "image_objects": 15,
+            "line_objects": 4,
+            "rect_objects": 11,
+            "curve_objects": 30,
+            "fonts": [
+              "AAAAAB+UberMove-Medium",
+              "AAAAAD+UberMove-Regular",
+              "AAAAAE+UberMove-Bold"
+            ]
+          }
+        ],
+        "native_text_page_count": 3,
+        "scanned_candidate": false,
+        "mixed_native_and_scanned_candidate": false
+      },
+      "expert_output": {
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "page_counts": {
+          "markdown": 3,
+          "text": 3,
+          "items": 3
+        },
+        "markdown_file_matches_markdown_full_exactly": null,
+        "markdown_file_matches_markdown_full_trimmed": null,
+        "markdown_file_matches_joined_pages_trimmed": false,
+        "markdown_file_chars": 2673,
+        "joined_markdown_pages_chars": 2537,
+        "markdown_full_chars": null,
+        "joined_text_pages_chars": 2356,
+        "text_full_chars": null,
+        "item_count": 40
+      }
+    }
+  ]
+}

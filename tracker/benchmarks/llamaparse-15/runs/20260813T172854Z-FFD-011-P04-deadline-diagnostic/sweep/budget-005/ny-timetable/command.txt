@@ -1,0 +1,1 @@
+.venv/bin/python -m tests.benchmarks.p04_deadline_diagnostic --case ny-timetable --budget-seconds 5.0 --output-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260813T172854Z-FFD-011-P04-deadline-diagnostic/sweep/budget-005/ny-timetable

@@ -1,0 +1,23 @@
+{
+  "schema_id": "ny-timetable-diagnostic-bootstrap-failure-v1",
+  "started_at": "2026-08-15T09:33:31Z",
+  "failed_at": "2026-08-15T09:33:45Z",
+  "phase": "pre_run_host_snapshot",
+  "attempts_started": 0,
+  "requests_sent": 0,
+  "ports_touched": [],
+  "exception_type": "OSError",
+  "exception_origin": "psutil.swap_memory",
+  "disposition": "retained_no_retry_in_this_run_directory",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "tests.benchmarks.ny_timetable_stage_diagnostic",
+    "--source",
+    "benchmark-expertmodeldata/ny-timetable.pdf",
+    "--profile-script",
+    "start-ui-backend-8042.sh",
+    "--output-dir",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T093311Z-NY-timetable-stage-diagnostic"
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-a97cbzz7kcwjfk5n2n51r6jkyljc",
+    "created_at": "2026-08-13T05:04:45.558548Z",
+    "updated_at": "2026-08-13T05:05:00.442779Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "postal-10k.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "GLOSSARY OF ACRONYMS AND DEFINED TERMS\n\nThe following are definitions of some of the terms or acronyms that may be used throughout this report:\n Term or Acronym        Definition\n AED                    Advanced Electronic Data\n Annual Report          Annual Report on Form 10-K\n AFC                    Audit and Finance Committee of the Board of Governors\n AFL-CIO                American Federation of Labor and Congress of Industrial Organizations\n APWU                   American Postal Workers Union, AFL-CIO\n ASC                    Accounting Standards Codification\n ASU                    Accounting Standards Update\n Board                  Board of Governors of the United States Postal Service\n Board of Actuaries     Board of Actuaries of the Civil Service Retirement System\n CARES Act              Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136\n CBP                    U.S. Customs and Border Protection\n CEO                    Chief Executive Officer\n CFO                    Chief Financial Officer\n CHRO                   Chief Human Resources Officer\n CIO                    Chief Information Officer\n CISO                   Chief Information Security Office\n COFA                   Compacts of Free Association\n COLA(s)                Cost-of-living adjustment(s)\n COO                    Chief Operating Officer\n COR                    House Committee on Oversight and Reform\n COVID-19               Coronavirus\n CPI                    Consumer Price Index\n CPI-U                  Consumer Price Index for All Urban Consumers\n CPI-W                  Consumer Price Index for Urban Wage Earners and Clerical Workers\n CSRDF                  Civil Service Retirement and Disability Fund\n CSRS                   Civil Service Retirement System\n DOL                    U.S. Department of Labor\n DPMG                   Deputy Postmaster General\n ECRC                   Executive Cyber Risk Committee\n EEOC                   U.S. Equal Employment Opportunity Commission\n EIS                    Environmental Impact Statement\n EPA                    Environmental Protection Agency\n Exchange Act           Securities and Exchange Act of 1934, enacted as Public Law 73-291\n FAS                    Freely Associated States\n FASB                   Financial Accounting Standards Board\n FECA                   Federal Employees' Compensation Act\n FEGLI                  Federal Employees Group Life Insurance\n FEHB                   Federal Employees Health Benefits\n FERS                   Federal Employees Retirement System\n\n\n\n2025 Report on Form 10-K United States Postal Service 2"
+      },
+      {
+        "page_number": 2,
+        "text": "\n<table>\n  <thead>\n    <tr>\n      <th>UNITED STATES POSTAL</th>\n      <th>SERVICE</th>\n      <th></th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>STATEMENTS</th>\n      <th>OF OPERATIONS</th>\n      <th></th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Year Ended September 30,</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>(in millions) 2025</th>\n      <th></th>\n      <th>2024</th>\n      <th>2023</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Revenue</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Operating revenue</td>\n      <td>80,453</td>\n      <td>79,537</td>\n      <td>78,186</td>\n    </tr>\n    <tr>\n      <td>Other revenue</td>\n      <td>128</td>\n      <td>10</td>\n      <td>197</td>\n    </tr>\n    <tr>\n      <td>Total revenue</td>\n      <td>80,581</td>\n      <td>79,547</td>\n      <td>78,383</td>\n    </tr>\n    <tr>\n      <td>Operating expenses</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Compensation and benefits</td>\n      <td>55,781</td>\n      <td>54,078</td>\n      <td>52,853</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>10,342</td>\n      <td>10,427</td>\n      <td>10,001</td>\n    </tr>\n    <tr>\n      <td>Workers' compensation</td>\n      <td>2,699</td>\n      <td>3,799</td>\n      <td>538</td>\n    </tr>\n    <tr>\n      <td>Transportation</td>\n      <td>8,393</td>\n      <td>8,815</td>\n      <td>10,111</td>\n    </tr>\n    <tr>\n      <td>Other operating expenses</td>\n      <td>12,567</td>\n      <td>12,346</td>\n      <td>11,884</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>89,782</td>\n      <td>89,465</td>\n      <td>85,387</td>\n    </tr>\n    <tr>\n      <td>Loss from operations</td>\n      <td>(9,201)</td>\n      <td>(9,918)</td>\n      <td>(7,004)</td>\n    </tr>\n    <tr>\n      <td>Interest and investment income</td>\n      <td>771</td>\n      <td>958</td>\n      <td>941</td>\n    </tr>\n    <tr>\n      <td>Interest expense</td>\n      <td>(548)</td>\n      <td>(560)</td>\n      <td>(415)</td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n  </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n\n\nSee accompanying notes to the financial statements.\n\n\n\n\n\n\n\n\n\n\n2025 Report on Form 10-K United States Postal Service 46"
+      },
+      {
+        "page_number": 3,
+        "text": "UNITED STATES POSTAL SERVICE\n  STATEMENTS OF CASH FLOWS\n\n    \n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Years Ended September</th>\n      <th></th>\n      <th>30,</th>\n    </tr>\n    <tr>\n      <th>(in millions)</th>\n      <th>2025</th>\n      <th>2024</th>\n      <th>2023</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash flows from operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net loss to net cash (used in) provided by</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>2,238</td>\n      <td>1,997</td>\n      <td>1,786</td>\n    </tr>\n    <tr>\n      <td>Other, net</td>\n      <td>4</td>\n      <td>(14)</td>\n      <td>(402)</td>\n    </tr>\n    <tr>\n      <td>(Increase) decrease in operating lease right-of-use assets</td>\n      <td>(126)</td>\n      <td>(97)</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Increase (decrease) in noncurrent workers' compensation</td>\n      <td>975</td>\n      <td>2,208</td>\n      <td>(880)</td>\n    </tr>\n    <tr>\n      <td>Increase in noncurrent operating lease liabilities</td>\n      <td>126</td>\n      <td>139</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Increase in other noncurrent liabilities</td>\n      <td>3</td>\n      <td>14</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Changes in current assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Receivables, net</td>\n      <td>62</td>\n      <td>40</td>\n      <td>(101)</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>(102)</td>\n      <td>(28)</td>\n      <td>(29)</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>3,807</td>\n      <td>4,556</td>\n      <td>4,574</td>\n    </tr>\n    <tr>\n      <td>Payables, accrued expenses, and other</td>\n      <td>292</td>\n      <td>306</td>\n      <td>(869)</td>\n    </tr>\n    <tr>\n      <td>Operating lease liabilities</td>\n      <td>30</td>\n      <td>(20)</td>\n      <td>(97)</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue-prepaid postage and other deferred revenue</td>\n      <td>(182)</td>\n      <td>487</td>\n      <td>(117)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by operating activities</td>\n      <td>(1,851)</td>\n      <td>68</td>\n      <td>(2,462)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of property and equipment</td>\n      <td>(3,585)</td>\n      <td>(4,199)</td>\n      <td>(3,000)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of property and equipment</td>\n      <td>128</td>\n      <td>6</td>\n      <td>287</td>\n    </tr>\n    <tr>\n      <td>Purchases of investments</td>\n      <td>(3,000)</td>\n      <td>(15,300)</td>\n      <td>(13,637)</td>\n    </tr>\n    <tr>\n      <td>Purchases of restricted investments</td>\n      <td>(566)</td>\n      <td>(3,275)</td>\n      <td>(3,145)</td>\n    </tr>\n    <tr>\n      <td>Redemption of investments</td>\n      <td>12,300</td>\n      <td>14,637</td>\n      <td>5,000</td>\n    </tr>\n    <tr>\n      <td>Redemption of restricted investments</td>\n      <td>3,275</td>\n      <td>3,145</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Net cash provided by (used in) investing activities</td>\n      <td>8,552</td>\n      <td>(4,986)</td>\n      <td>(14,495)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Proceeds from borrowings</td>\n      <td>—</td>\n      <td>3,000</td>\n      <td>3,000</td>\n    </tr>\n    <tr>\n      <td>Repayments of borrowings</td>\n      <td>—</td>\n      <td>(1,000)</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Payments on finance lease obligations</td>\n      <td>(34)</td>\n      <td>(28)</td>\n      <td>(27)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by financing activities</td>\n      <td>(34)</td>\n      <td>1,972</td>\n      <td>2,973</td>\n    </tr>\n    <tr>\n      <td>Net increase (decrease) in cash, cash equivalents & restricted cash</td>\n      <td>6,667</td>\n      <td>(2,946)</td>\n      <td>(13,984)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents & restricted cash - beginning of year</td>\n      <td>6,688</td>\n      <td>9,634</td>\n      <td>23,618</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents & restricted cash - end of year</td>\n      <td>$ 13,355</td>\n      <td>6,688</td>\n      <td>9,634</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flows disclosures:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>607</td>\n      <td>569</td>\n      <td>379</td>\n    </tr>\n  </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n\n\n    See accompanying notes to the financial statements.\n\n\n\n\n\n\n\n    2025 Report on Form 10-K United States Postal Service 49"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "# GLOSSARY OF ACRONYMS AND DEFINED TERMS\n\nThe following are definitions of some of the terms or acronyms that may be used throughout this report:\n\n<table>\n  <thead>\n    <tr>\n        <th>Term or Acronym</th>\n        <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>AED</td>\n        <td>Advanced Electronic Data</td>\n    </tr>\n    <tr>\n        <td>Annual Report</td>\n        <td>Annual Report on Form 10-K</td>\n    </tr>\n    <tr>\n        <td>AFC</td>\n        <td>Audit and Finance Committee of the Board of Governors</td>\n    </tr>\n    <tr>\n        <td>AFL-CIO</td>\n        <td>American Federation of Labor and Congress of Industrial Organizations</td>\n    </tr>\n    <tr>\n        <td>APWU</td>\n        <td>American Postal Workers Union, AFL-CIO</td>\n    </tr>\n    <tr>\n        <td>ASC</td>\n        <td>Accounting Standards Codification</td>\n    </tr>\n    <tr>\n        <td>ASU</td>\n        <td>Accounting Standards Update</td>\n    </tr>\n    <tr>\n        <td>Board</td>\n        <td>Board of Governors of the United States Postal Service</td>\n    </tr>\n    <tr>\n        <td>Board of Actuaries</td>\n        <td>Board of Actuaries of the Civil Service Retirement System</td>\n    </tr>\n    <tr>\n        <td><em>CARES Act</em></td>\n        <td><em>Coronavirus Aid, Relief, and Economic Security Act</em>, enacted as Public Law 116-136</td>\n    </tr>\n    <tr>\n        <td>CBP</td>\n        <td>U.S. Customs and Border Protection</td>\n    </tr>\n    <tr>\n        <td>CEO</td>\n        <td>Chief Executive Officer</td>\n    </tr>\n    <tr>\n        <td>CFO</td>\n        <td>Chief Financial Officer</td>\n    </tr>\n    <tr>\n        <td>CHRO</td>\n        <td>Chief Human Resources Officer</td>\n    </tr>\n    <tr>\n        <td>CIO</td>\n        <td>Chief Information Officer</td>\n    </tr>\n    <tr>\n        <td>CISO</td>\n        <td>Chief Information Security Office</td>\n    </tr>\n    <tr>\n        <td>COFA</td>\n        <td>Compacts of Free Association</td>\n    </tr>\n    <tr>\n        <td>COLA(s)</td>\n        <td>Cost-of-living adjustment(s)</td>\n    </tr>\n    <tr>\n        <td>COO</td>\n        <td>Chief Operating Officer</td>\n    </tr>\n    <tr>\n        <td>COR</td>\n        <td>House Committee on Oversight and Reform</td>\n    </tr>\n    <tr>\n        <td>COVID-19</td>\n        <td>Coronavirus</td>\n    </tr>\n    <tr>\n        <td>CPI</td>\n        <td>Consumer Price Index</td>\n    </tr>\n    <tr>\n        <td>CPI-U</td>\n        <td>Consumer Price Index for All Urban Consumers</td>\n    </tr>\n    <tr>\n        <td>CPI-W</td>\n        <td>Consumer Price Index for Urban Wage Earners and Clerical Workers</td>\n    </tr>\n    <tr>\n        <td>CSRDF</td>\n        <td>Civil Service Retirement and Disability Fund</td>\n    </tr>\n    <tr>\n        <td>CSRS</td>\n        <td>Civil Service Retirement System</td>\n    </tr>\n    <tr>\n        <td>DOL</td>\n        <td>U.S. Department of Labor</td>\n    </tr>\n    <tr>\n        <td>DPMG</td>\n        <td>Deputy Postmaster General</td>\n    </tr>\n    <tr>\n        <td>ECRC</td>\n        <td>Executive Cyber Risk Committee</td>\n    </tr>\n    <tr>\n        <td>EEOC</td>\n        <td>U.S. Equal Employment Opportunity Commission</td>\n    </tr>\n    <tr>\n        <td>EIS</td>\n        <td>Environmental Impact Statement</td>\n    </tr>\n    <tr>\n        <td>EPA</td>\n        <td>Environmental Protection Agency</td>\n    </tr>\n    <tr>\n        <td><em>Exchange Act</em></td>\n        <td><em>Securities and Exchange Act of 1934</em>, enacted as Public Law 73-291</td>\n    </tr>\n    <tr>\n        <td>FAS</td>\n        <td>Freely Associated States</td>\n    </tr>\n    <tr>\n        <td>FASB</td>\n        <td>Financial Accounting Standards Board</td>\n    </tr>\n    <tr>\n        <td>FECA</td>\n        <td>Federal Employees' Compensation Act</td>\n    </tr>\n    <tr>\n        <td>FEGLI</td>\n        <td>Federal Employees Group Life Insurance</td>\n    </tr>\n    <tr>\n        <td>FEHB</td>\n        <td>Federal Employees Health Benefits</td>\n    </tr>\n    <tr>\n        <td>FERS</td>\n        <td>Federal Employees Retirement System</td>\n    </tr>\n  </tbody>\n</table>",
+        "footer": "2025 Report on Form 10-K United States Postal Service <page_number>2</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "# STATEMENTS OF CASH FLOWS\n\nUNITED STATES POSTAL SERVICE\nSTATEMENTS OF OPERATIONS\n\n<table>\n  <thead><tr><th></th><th colspan=\"3\">Year Ended September 30,</th></tr><tr><th>(in millions)</th><th>2025</th><th>2024</th><th>2023</th></tr></thead>\n  <tbody>\n    <tr>\n      <td>Revenue</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Operating revenue</td>\n      <td>80,453</td>\n      <td>79,537</td>\n      <td>78,186</td>\n    </tr>\n    <tr>\n      <td>Other revenue</td>\n      <td>128</td>\n      <td>10</td>\n      <td>197</td>\n    </tr>\n    <tr>\n      <td>Total revenue</td>\n      <td>80,581</td>\n      <td>79,547</td>\n      <td>78,383</td>\n    </tr>\n    <tr>\n      <td>Operating expenses</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Compensation and benefits</td>\n      <td>55,781</td>\n      <td>54,078</td>\n      <td>52,853</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>10,342</td>\n      <td>10,427</td>\n      <td>10,001</td>\n    </tr>\n    <tr>\n      <td>Workers' compensation</td>\n      <td>2,699</td>\n      <td>3,799</td>\n      <td>538</td>\n    </tr>\n    <tr>\n      <td>Transportation</td>\n      <td>8,393</td>\n      <td>8,815</td>\n      <td>10,111</td>\n    </tr>\n    <tr>\n      <td>Other operating expenses</td>\n      <td>12,567</td>\n      <td>12,346</td>\n      <td>11,884</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>89,782</td>\n      <td>89,465</td>\n      <td>85,387</td>\n    </tr>\n    <tr>\n      <td>Loss from operations</td>\n      <td>(9,201)</td>\n      <td>(9,918)</td>\n      <td>(7,004)</td>\n    </tr>\n    <tr>\n      <td>Interest and investment income</td>\n      <td>771</td>\n      <td>958</td>\n      <td>941</td>\n    </tr>\n    <tr>\n      <td>Interest expense</td>\n      <td>(548)</td>\n      <td>(560)</td>\n      <td>(415)</td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n  </tbody>\n</table>\n\nSee accompanying notes to the financial statements.",
+        "footer": "2025 Report on Form 10-K United States Postal Service <page_number>46</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "markdown": "# UNITED STATES POSTAL SERVICE\n# STATEMENTS OF CASH FLOWS\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Years Ended September</th>\n      <th></th>\n      <th>30,</th>\n    </tr>\n    <tr>\n      <th>(in millions)</th>\n      <th>2025</th>\n      <th>2024</th>\n      <th>2023</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash flows from operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net loss to net cash (used in) provided by</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>2,238</td>\n      <td>1,997</td>\n      <td>1,786</td>\n    </tr>\n    <tr>\n      <td>Other, net</td>\n      <td>4</td>\n      <td>(14)</td>\n      <td>(402)</td>\n    </tr>\n    <tr>\n      <td>(Increase) decrease in operating lease right-of-use assets</td>\n      <td>(126)</td>\n      <td>(97)</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Increase (decrease) in noncurrent workers' compensation</td>\n      <td>975</td>\n      <td>2,208</td>\n      <td>(880)</td>\n    </tr>\n    <tr>\n      <td>Increase in noncurrent operating lease liabilities</td>\n      <td>126</td>\n      <td>139</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Increase in other noncurrent liabilities</td>\n      <td>3</td>\n      <td>14</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Changes in current assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Receivables, net</td>\n      <td>62</td>\n      <td>40</td>\n      <td>(101)</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>(102)</td>\n      <td>(28)</td>\n      <td>(29)</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>3,807</td>\n      <td>4,556</td>\n      <td>4,574</td>\n    </tr>\n    <tr>\n      <td>Payables, accrued expenses, and other</td>\n      <td>292</td>\n      <td>306</td>\n      <td>(869)</td>\n    </tr>\n    <tr>\n      <td>Operating lease liabilities</td>\n      <td>30</td>\n      <td>(20)</td>\n      <td>(97)</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue-prepaid postage and other deferred revenue</td>\n      <td>(182)</td>\n      <td>487</td>\n      <td>(117)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by operating activities</td>\n      <td>(1,851)</td>\n      <td>68</td>\n      <td>(2,462)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of property and equipment</td>\n      <td>(3,585)</td>\n      <td>(4,199)</td>\n      <td>(3,000)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of property and equipment</td>\n      <td>128</td>\n      <td>6</td>\n      <td>287</td>\n    </tr>\n    <tr>\n      <td>Purchases of investments</td>\n      <td>(3,000)</td>\n      <td>(15,300)</td>\n      <td>(13,637)</td>\n    </tr>\n    <tr>\n      <td>Purchases of restricted investments</td>\n      <td>(566)</td>\n      <td>(3,275)</td>\n      <td>(3,145)</td>\n    </tr>\n    <tr>\n      <td>Redemption of investments</td>\n      <td>12,300</td>\n      <td>14,637</td>\n      <td>5,000</td>\n    </tr>\n    <tr>\n      <td>Redemption of restricted investments</td>\n      <td>3,275</td>\n      <td>3,145</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Net cash provided by (used in) investing activities</td>\n      <td>8,552</td>\n      <td>(4,986)</td>\n      <td>(14,495)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Proceeds from borrowings</td>\n      <td>—</td>\n      <td>3,000</td>\n      <td>3,000</td>\n    </tr>\n    <tr>\n      <td>Repayments of borrowings</td>\n      <td>—</td>\n      <td>(1,000)</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Payments on finance lease obligations</td>\n      <td>(34)</td>\n      <td>(28)</td>\n      <td>(27)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by financing activities</td>\n      <td>(34)</td>\n      <td>1,972</td>\n      <td>2,973</td>\n    </tr>\n    <tr>\n      <td>Net increase (decrease) in cash, cash equivalents & restricted cash</td>\n      <td>6,667</td>\n      <td>(2,946)</td>\n      <td>(13,984)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents & restricted cash - beginning of year</td>\n      <td>6,688</td>\n      <td>9,634</td>\n      <td>23,618</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents & restricted cash - end of year</td>\n      <td>$ 13,355</td>\n      <td>6,688</td>\n      <td>9,634</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flows disclosures:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>607</td>\n      <td>569</td>\n      <td>379</td>\n    </tr>\n  </tbody>\n</table>\n\nSee accompanying notes to the financial statements.",
+        "footer": "2025 Report on Form 10-K United States Postal Service <page_number>49</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# GLOSSARY OF ACRONYMS AND DEFINED TERMS",
+            "bbox": [
+              {
+                "x": 58.15,
+                "y": 57.45,
+                "w": 242.9,
+                "h": 9.1,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 39,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "GLOSSARY OF ACRONYMS AND DEFINED TERMS"
+          },
+          {
+            "type": "text",
+            "md": "The following are definitions of some of the terms or acronyms that may be used throughout this report:",
+            "bbox": [
+              {
+                "x": 57.9,
+                "y": 81.49,
+                "w": 456.55,
+                "h": 10.79,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 102,
+                "label": "text"
+              }
+            ],
+            "value": "The following are definitions of some of the terms or acronyms that may be used throughout this report:"
+          },
+          {
+            "type": "table",
+            "md": "| Term or Acronym    | Definition                                                                          |\n| ------------------ | ----------------------------------------------------------------------------------- |\n| AED                | Advanced Electronic Data                                                            |\n| Annual Report      | Annual Report on Form 10-K                                                          |\n| AFC                | Audit and Finance Committee of the Board of Governors                               |\n| AFL-CIO            | American Federation of Labor and Congress of Industrial Organizations               |\n| APWU               | American Postal Workers Union, AFL-CIO                                              |\n| ASC                | Accounting Standards Codification                                                   |\n| ASU                | Accounting Standards Update                                                         |\n| Board              | Board of Governors of the United States Postal Service                              |\n| Board of Actuaries | Board of Actuaries of the Civil Service Retirement System                           |\n| *CARES Act*        | *Coronavirus Aid, Relief, and Economic Security Act*, enacted as Public Law 116-136 |\n| CBP                | U.S. Customs and Border Protection                                                  |\n| CEO                | Chief Executive Officer                                                             |\n| CFO                | Chief Financial Officer                                                             |\n| CHRO               | Chief Human Resources Officer                                                       |\n| CIO                | Chief Information Officer                                                           |\n| CISO               | Chief Information Security Office                                                   |\n| COFA               | Compacts of Free Association                                                        |\n| COLA(s)            | Cost-of-living adjustment(s)                                                        |\n| COO                | Chief Operating Officer                                                             |\n| COR                | House Committee on Oversight and Reform                                             |\n| COVID-19           | Coronavirus                                                                         |\n| CPI                | Consumer Price Index                                                                |\n| CPI-U              | Consumer Price Index for All Urban Consumers                                        |\n| CPI-W              | Consumer Price Index for Urban Wage Earners and Clerical Workers                    |\n| CSRDF              | Civil Service Retirement and Disability Fund                                        |\n| CSRS               | Civil Service Retirement System                                                     |\n| DOL                | U.S. Department of Labor                                                            |\n| DPMG               | Deputy Postmaster General                                                           |\n| ECRC               | Executive Cyber Risk Committee                                                      |\n| EEOC               | U.S. Equal Employment Opportunity Commission                                        |\n| EIS                | Environmental Impact Statement                                                      |\n| EPA                | Environmental Protection Agency                                                     |\n| *Exchange Act*     | *Securities and Exchange Act of 1934*, enacted as Public Law 73-291                 |\n| FAS                | Freely Associated States                                                            |\n| FASB               | Financial Accounting Standards Board                                                |\n| FECA               | Federal Employees' Compensation Act                                                 |\n| FEGLI              | Federal Employees Group Life Insurance                                              |\n| FEHB               | Federal Employees Health Benefits                                                   |\n| FERS               | Federal Employees Retirement System                                                 |",
+            "bbox": [
+              {
+                "x": 56.3,
+                "y": 98.34,
+                "w": 498.76,
+                "h": 626.99,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 4467,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "Term or Acronym",
+                "Definition"
+              ],
+              [
+                "AED",
+                "Advanced Electronic Data"
+              ],
+              [
+                "Annual Report",
+                "Annual Report on Form 10-K"
+              ],
+              [
+                "AFC",
+                "Audit and Finance Committee of the Board of Governors"
+              ],
+              [
+                "AFL-CIO",
+                "American Federation of Labor and Congress of Industrial Organizations"
+              ],
+              [
+                "APWU",
+                "American Postal Workers Union, AFL-CIO"
+              ],
+              [
+                "ASC",
+                "Accounting Standards Codification"
+              ],
+              [
+                "ASU",
+                "Accounting Standards Update"
+              ],
+              [
+                "Board",
+                "Board of Governors of the United States Postal Service"
+              ],
+              [
+                "Board of Actuaries",
+                "Board of Actuaries of the Civil Service Retirement System"
+              ],
+              [
+                "CARES Act",
+                "Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136"
+              ],
+              [
+                "CBP",
+                "U.S. Customs and Border Protection"
+              ],
+              [
+                "CEO",
+                "Chief Executive Officer"
+              ],
+              [
+                "CFO",
+                "Chief Financial Officer"
+              ],
+              [
+                "CHRO",
+                "Chief Human Resources Officer"
+              ],
+              [
+                "CIO",
+                "Chief Information Officer"
+              ],
+              [
+                "CISO",
+                "Chief Information Security Office"
+              ],
+              [
+                "COFA",
+                "Compacts of Free Association"
+              ],
+              [
+                "COLA(s)",
+                "Cost-of-living adjustment(s)"
+              ],
+              [
+                "COO",
+                "Chief Operating Officer"
+              ],
+              [
+                "COR",
+                "House Committee on Oversight and Reform"
+              ],
+              [
+                "COVID-19",
+                "Coronavirus"
+              ],
+              [
+                "CPI",
+                "Consumer Price Index"
+              ],
+              [
+                "CPI-U",
+                "Consumer Price Index for All Urban Consumers"
+              ],
+              [
+                "CPI-W",
+                "Consumer Price Index for Urban Wage Earners and Clerical Workers"
+              ],
+              [
+                "CSRDF",
+                "Civil Service Retirement and Disability Fund"
+              ],
+              [
+                "CSRS",
+                "Civil Service Retirement System"
+              ],
+              [
+                "DOL",
+                "U.S. Department of Labor"
+              ],
+              [
+                "DPMG",
+                "Deputy Postmaster General"
+              ],
+              [
+                "ECRC",
+                "Executive Cyber Risk Committee"
+              ],
+              [
+                "EEOC",
+                "U.S. Equal Employment Opportunity Commission"
+              ],
+              [
+                "EIS",
+                "Environmental Impact Statement"
+              ],
+              [
+                "EPA",
+                "Environmental Protection Agency"
+              ],
+              [
+                "Exchange Act",
+                "Securities and Exchange Act of 1934, enacted as Public Law 73-291"
+              ],
+              [
+                "FAS",
+                "Freely Associated States"
+              ],
+              [
+                "FASB",
+                "Financial Accounting Standards Board"
+              ],
+              [
+                "FECA",
+                "Federal Employees' Compensation Act"
+              ],
+              [
+                "FEGLI",
+                "Federal Employees Group Life Insurance"
+              ],
+              [
+                "FEHB",
+                "Federal Employees Health Benefits"
+              ],
+              [
+                "FERS",
+                "Federal Employees Retirement System"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Term or Acronym</th>\n        <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>AED</td>\n        <td>Advanced Electronic Data</td>\n    </tr>\n    <tr>\n        <td>Annual Report</td>\n        <td>Annual Report on Form 10-K</td>\n    </tr>\n    <tr>\n        <td>AFC</td>\n        <td>Audit and Finance Committee of the Board of Governors</td>\n    </tr>\n    <tr>\n        <td>AFL-CIO</td>\n        <td>American Federation of Labor and Congress of Industrial Organizations</td>\n    </tr>\n    <tr>\n        <td>APWU</td>\n        <td>American Postal Workers Union, AFL-CIO</td>\n    </tr>\n    <tr>\n        <td>ASC</td>\n        <td>Accounting Standards Codification</td>\n    </tr>\n    <tr>\n        <td>ASU</td>\n        <td>Accounting Standards Update</td>\n    </tr>\n    <tr>\n        <td>Board</td>\n        <td>Board of Governors of the United States Postal Service</td>\n    </tr>\n    <tr>\n        <td>Board of Actuaries</td>\n        <td>Board of Actuaries of the Civil Service Retirement System</td>\n    </tr>\n    <tr>\n        <td><em>CARES Act</em></td>\n        <td><em>Coronavirus Aid, Relief, and Economic Security Act</em>, enacted as Public Law 116-136</td>\n    </tr>\n    <tr>\n        <td>CBP</td>\n        <td>U.S. Customs and Border Protection</td>\n    </tr>\n    <tr>\n        <td>CEO</td>\n        <td>Chief Executive Officer</td>\n    </tr>\n    <tr>\n        <td>CFO</td>\n        <td>Chief Financial Officer</td>\n    </tr>\n    <tr>\n        <td>CHRO</td>\n        <td>Chief Human Resources Officer</td>\n    </tr>\n    <tr>\n        <td>CIO</td>\n        <td>Chief Information Officer</td>\n    </tr>\n    <tr>\n        <td>CISO</td>\n        <td>Chief Information Security Office</td>\n    </tr>\n    <tr>\n        <td>COFA</td>\n        <td>Compacts of Free Association</td>\n    </tr>\n    <tr>\n        <td>COLA(s)</td>\n        <td>Cost-of-living adjustment(s)</td>\n    </tr>\n    <tr>\n        <td>COO</td>\n        <td>Chief Operating Officer</td>\n    </tr>\n    <tr>\n        <td>COR</td>\n        <td>House Committee on Oversight and Reform</td>\n    </tr>\n    <tr>\n        <td>COVID-19</td>\n        <td>Coronavirus</td>\n    </tr>\n    <tr>\n        <td>CPI</td>\n        <td>Consumer Price Index</td>\n    </tr>\n    <tr>\n        <td>CPI-U</td>\n        <td>Consumer Price Index for All Urban Consumers</td>\n    </tr>\n    <tr>\n        <td>CPI-W</td>\n        <td>Consumer Price Index for Urban Wage Earners and Clerical Workers</td>\n    </tr>\n    <tr>\n        <td>CSRDF</td>\n        <td>Civil Service Retirement and Disability Fund</td>\n    </tr>\n    <tr>\n        <td>CSRS</td>\n        <td>Civil Service Retirement System</td>\n    </tr>\n    <tr>\n        <td>DOL</td>\n        <td>U.S. Department of Labor</td>\n    </tr>\n    <tr>\n        <td>DPMG</td>\n        <td>Deputy Postmaster General</td>\n    </tr>\n    <tr>\n        <td>ECRC</td>\n        <td>Executive Cyber Risk Committee</td>\n    </tr>\n    <tr>\n        <td>EEOC</td>\n        <td>U.S. Equal Employment Opportunity Commission</td>\n    </tr>\n    <tr>\n        <td>EIS</td>\n        <td>Environmental Impact Statement</td>\n    </tr>\n    <tr>\n        <td>EPA</td>\n        <td>Environmental Protection Agency</td>\n    </tr>\n    <tr>\n        <td><em>Exchange Act</em></td>\n        <td><em>Securities and Exchange Act of 1934</em>, enacted as Public Law 73-291</td>\n    </tr>\n    <tr>\n        <td>FAS</td>\n        <td>Freely Associated States</td>\n    </tr>\n    <tr>\n        <td>FASB</td>\n        <td>Financial Accounting Standards Board</td>\n    </tr>\n    <tr>\n        <td>FECA</td>\n        <td>Federal Employees' Compensation Act</td>\n    </tr>\n    <tr>\n        <td>FEGLI</td>\n        <td>Federal Employees Group Life Insurance</td>\n    </tr>\n    <tr>\n        <td>FEHB</td>\n        <td>Federal Employees Health Benefits</td>\n    </tr>\n    <tr>\n        <td>FERS</td>\n        <td>Federal Employees Retirement System</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Term or Acronym\",\"Definition\"\n\"AED\",\"Advanced Electronic Data\"\n\"Annual Report\",\"Annual Report on Form 10-K\"\n\"AFC\",\"Audit and Finance Committee of the Board of Governors\"\n\"AFL-CIO\",\"American Federation of Labor and Congress of Industrial Organizations\"\n\"APWU\",\"American Postal Workers Union, AFL-CIO\"\n\"ASC\",\"Accounting Standards Codification\"\n\"ASU\",\"Accounting Standards Update\"\n\"Board\",\"Board of Governors of the United States Postal Service\"\n\"Board of Actuaries\",\"Board of Actuaries of the Civil Service Retirement System\"\n\"CARES Act\",\"Coronavirus Aid, Relief, and Economic Security Act, enacted as Public Law 116-136\"\n\"CBP\",\"U.S. Customs and Border Protection\"\n\"CEO\",\"Chief Executive Officer\"\n\"CFO\",\"Chief Financial Officer\"\n\"CHRO\",\"Chief Human Resources Officer\"\n\"CIO\",\"Chief Information Officer\"\n\"CISO\",\"Chief Information Security Office\"\n\"COFA\",\"Compacts of Free Association\"\n\"COLA(s)\",\"Cost-of-living adjustment(s)\"\n\"COO\",\"Chief Operating Officer\"\n\"COR\",\"House Committee on Oversight and Reform\"\n\"COVID-19\",\"Coronavirus\"\n\"CPI\",\"Consumer Price Index\"\n\"CPI-U\",\"Consumer Price Index for All Urban Consumers\"\n\"CPI-W\",\"Consumer Price Index for Urban Wage Earners and Clerical Workers\"\n\"CSRDF\",\"Civil Service Retirement and Disability Fund\"\n\"CSRS\",\"Civil Service Retirement System\"\n\"DOL\",\"U.S. Department of Labor\"\n\"DPMG\",\"Deputy Postmaster General\"\n\"ECRC\",\"Executive Cyber Risk Committee\"\n\"EEOC\",\"U.S. Equal Employment Opportunity Commission\"\n\"EIS\",\"Environmental Impact Statement\"\n\"EPA\",\"Environmental Protection Agency\"\n\"Exchange Act\",\"Securities and Exchange Act of 1934, enacted as Public Law 73-291\"\n\"FAS\",\"Freely Associated States\"\n\"FASB\",\"Financial Accounting Standards Board\"\n\"FECA\",\"Federal Employees' Compensation Act\"\n\"FEGLI\",\"Federal Employees Group Life Insurance\"\n\"FEHB\",\"Federal Employees Health Benefits\"\n\"FERS\",\"Federal Employees Retirement System\""
+          },
+          {
+            "type": "footer",
+            "md": "2025 Report on Form 10-K United States Postal Service <page_number>2</page_number>",
+            "bbox": [
+              {
+                "x": 343.96,
+                "y": 769.58,
+                "w": 209.18,
+                "h": 9
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "2025 Report on Form 10-K United States Postal Service \\<page_number>2\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 343.96,
+                    "y": 769.58,
+                    "w": 209.18,
+                    "h": 9,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 83,
+                    "label": "footer"
+                  }
+                ],
+                "value": "2025 Report on Form 10-K United States Postal Service <page_number>2</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# STATEMENTS OF CASH FLOWS",
+            "bbox": [
+              {
+                "x": 221.43,
+                "y": 56.93,
+                "w": 170.29,
+                "h": 23.18,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 25,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "STATEMENTS OF CASH FLOWS"
+          },
+          {
+            "type": "text",
+            "md": "UNITED STATES POSTAL SERVICE\nSTATEMENTS OF OPERATIONS",
+            "bbox": [
+              {
+                "x": 221.37,
+                "y": 56.73,
+                "w": 169.26999999999998,
+                "h": 11.160000000000004,
+                "confidence": 0.74,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 229.41,
+                "y": 68.73,
+                "w": 153.17999999999998,
+                "h": 11.159999999999997,
+                "confidence": 0.74,
+                "label": "paragraph_title"
+              }
+            ],
+            "value": "UNITED STATES POSTAL SERVICE\nSTATEMENTS OF OPERATIONS"
+          },
+          {
+            "type": "table",
+            "md": "| (in millions)                  | Year Ended September 30,<br/>2025 | Year Ended September 30,<br/>2024 | Year Ended September 30,<br/>2023 |\n| ------------------------------ | --------------------------------- | --------------------------------- | --------------------------------- |\n| Revenue                        |                                   |                                   |                                   |\n| Operating revenue              | 80,453                            | 79,537                            | 78,186                            |\n| Other revenue                  | 128                               | 10                                | 197                               |\n| Total revenue                  | 80,581                            | 79,547                            | 78,383                            |\n| Operating expenses             |                                   |                                   |                                   |\n| Compensation and benefits      | 55,781                            | 54,078                            | 52,853                            |\n| Retirement benefits            | 10,342                            | 10,427                            | 10,001                            |\n| Workers' compensation          | 2,699                             | 3,799                             | 538                               |\n| Transportation                 | 8,393                             | 8,815                             | 10,111                            |\n| Other operating expenses       | 12,567                            | 12,346                            | 11,884                            |\n| Total operating expenses       | 89,782                            | 89,465                            | 85,387                            |\n| Loss from operations           | (9,201)                           | (9,918)                           | (7,004)                           |\n| Interest and investment income | 771                               | 958                               | 941                               |\n| Interest expense               | (548)                             | (560)                             | (415)                             |\n| Net loss                       | (8,978)                           | (9,520)                           | (6,478)                           |",
+            "bbox": [
+              {
+                "x": 56.4,
+                "y": 90.49,
+                "w": 499.54,
+                "h": 241.99,
+                "confidence": 0.91,
+                "start_index": 0,
+                "end_index": 2429,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "(in millions)",
+                "Year Ended September 30,<br/>2025",
+                "Year Ended September 30,<br/>2024",
+                "Year Ended September 30,<br/>2023"
+              ],
+              [
+                "Revenue",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Operating revenue",
+                "80,453",
+                "79,537",
+                "78,186"
+              ],
+              [
+                "Other revenue",
+                "128",
+                "10",
+                "197"
+              ],
+              [
+                "Total revenue",
+                "80,581",
+                "79,547",
+                "78,383"
+              ],
+              [
+                "Operating expenses",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Compensation and benefits",
+                "55,781",
+                "54,078",
+                "52,853"
+              ],
+              [
+                "Retirement benefits",
+                "10,342",
+                "10,427",
+                "10,001"
+              ],
+              [
+                "Workers' compensation",
+                "2,699",
+                "3,799",
+                "538"
+              ],
+              [
+                "Transportation",
+                "8,393",
+                "8,815",
+                "10,111"
+              ],
+              [
+                "Other operating expenses",
+                "12,567",
+                "12,346",
+                "11,884"
+              ],
+              [
+                "Total operating expenses",
+                "89,782",
+                "89,465",
+                "85,387"
+              ],
+              [
+                "Loss from operations",
+                "(9,201)",
+                "(9,918)",
+                "(7,004)"
+              ],
+              [
+                "Interest and investment income",
+                "771",
+                "958",
+                "941"
+              ],
+              [
+                "Interest expense",
+                "(548)",
+                "(560)",
+                "(415)"
+              ],
+              [
+                "Net loss",
+                "(8,978)",
+                "(9,520)",
+                "(6,478)"
+              ]
+            ],
+            "html": "<table>\n  <thead><tr><th></th><th colspan=\"3\">Year Ended September 30,</th></tr><tr><th>(in millions)</th><th>2025</th><th>2024</th><th>2023</th></tr></thead>\n  <tbody>\n    <tr>\n      <td>Revenue</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Operating revenue</td>\n      <td>80,453</td>\n      <td>79,537</td>\n      <td>78,186</td>\n    </tr>\n    <tr>\n      <td>Other revenue</td>\n      <td>128</td>\n      <td>10</td>\n      <td>197</td>\n    </tr>\n    <tr>\n      <td>Total revenue</td>\n      <td>80,581</td>\n      <td>79,547</td>\n      <td>78,383</td>\n    </tr>\n    <tr>\n      <td>Operating expenses</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Compensation and benefits</td>\n      <td>55,781</td>\n      <td>54,078</td>\n      <td>52,853</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>10,342</td>\n      <td>10,427</td>\n      <td>10,001</td>\n    </tr>\n    <tr>\n      <td>Workers' compensation</td>\n      <td>2,699</td>\n      <td>3,799</td>\n      <td>538</td>\n    </tr>\n    <tr>\n      <td>Transportation</td>\n      <td>8,393</td>\n      <td>8,815</td>\n      <td>10,111</td>\n    </tr>\n    <tr>\n      <td>Other operating expenses</td>\n      <td>12,567</td>\n      <td>12,346</td>\n      <td>11,884</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>89,782</td>\n      <td>89,465</td>\n      <td>85,387</td>\n    </tr>\n    <tr>\n      <td>Loss from operations</td>\n      <td>(9,201)</td>\n      <td>(9,918)</td>\n      <td>(7,004)</td>\n    </tr>\n    <tr>\n      <td>Interest and investment income</td>\n      <td>771</td>\n      <td>958</td>\n      <td>941</td>\n    </tr>\n    <tr>\n      <td>Interest expense</td>\n      <td>(548)</td>\n      <td>(560)</td>\n      <td>(415)</td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"(in millions)\",\"Year Ended September 30,<br/>2025\",\"Year Ended September 30,<br/>2024\",\"Year Ended September 30,<br/>2023\"\n\"Revenue\",,,\n\"Operating revenue\",\"80,453\",\"79,537\",\"78,186\"\n\"Other revenue\",\"128\",\"10\",\"197\"\n\"Total revenue\",\"80,581\",\"79,547\",\"78,383\"\n\"Operating expenses\",,,\n\"Compensation and benefits\",\"55,781\",\"54,078\",\"52,853\"\n\"Retirement benefits\",\"10,342\",\"10,427\",\"10,001\"\n\"Workers' compensation\",\"2,699\",\"3,799\",\"538\"\n\"Transportation\",\"8,393\",\"8,815\",\"10,111\"\n\"Other operating expenses\",\"12,567\",\"12,346\",\"11,884\"\n\"Total operating expenses\",\"89,782\",\"89,465\",\"85,387\"\n\"Loss from operations\",\"(9,201)\",\"(9,918)\",\"(7,004)\"\n\"Interest and investment income\",\"771\",\"958\",\"941\"\n\"Interest expense\",\"(548)\",\"(560)\",\"(415)\"\n\"Net loss\",\"(8,978)\",\"(9,520)\",\"(6,478)\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 1 'Year Ended September 30,' expects datetime, got '80,453' in row 3"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "See accompanying notes to the financial statements.",
+            "bbox": [
+              {
+                "x": 57.57,
+                "y": 333.5,
+                "w": 188.1,
+                "h": 9.08,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 50,
+                "label": "text"
+              }
+            ],
+            "value": "See accompanying notes to the financial statements."
+          },
+          {
+            "type": "footer",
+            "md": "2025 Report on Form 10-K United States Postal Service <page_number>46</page_number>",
+            "bbox": [
+              {
+                "x": 339.52,
+                "y": 769.58,
+                "w": 214.18,
+                "h": 9
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "2025 Report on Form 10-K United States Postal Service \\<page_number>46\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 339.52,
+                    "y": 769.58,
+                    "w": 214.18,
+                    "h": 9,
+                    "confidence": 0.93,
+                    "start_index": 0,
+                    "end_index": 84,
+                    "label": "footer"
+                  }
+                ],
+                "value": "2025 Report on Form 10-K United States Postal Service <page_number>46</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# UNITED STATES POSTAL SERVICE",
+            "bbox": [
+              {
+                "x": 221.37,
+                "y": 56.73,
+                "w": 169.41,
+                "h": 11,
+                "confidence": 1,
+                "start_index": 2,
+                "end_index": 29,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "UNITED STATES POSTAL SERVICE"
+          },
+          {
+            "type": "heading",
+            "md": "# STATEMENTS OF CASH FLOWS",
+            "bbox": [
+              {
+                "x": 228.86,
+                "y": 68.73,
+                "w": 154.21,
+                "h": 11,
+                "confidence": 0.74,
+                "start_index": 0,
+                "end_index": 25,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 221.65573634272036,
+                "y": 57.00888621288797,
+                "w": 169.9496652354365,
+                "h": 22.89167864426322,
+                "confidence": 0.74,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "STATEMENTS OF CASH FLOWS"
+          },
+          {
+            "type": "table",
+            "md": "| (in millions)                                                       | Years Ended September<br/>2025 | 2024     | 30,<br/>2023 |\n| ------------------------------------------------------------------- | ------------------------------ | -------- | ------------ |\n| Cash flows from operating activities:                               |                                |          |              |\n| Net loss                                                            | (8,978)                        | (9,520)  | (6,478)      |\n| Adjustments to reconcile net loss to net cash (used in) provided by |                                |          |              |\n| operating activities:                                               |                                |          |              |\n| Depreciation and amortization                                       | 2,238                          | 1,997    | 1,786        |\n| Other, net                                                          | 4                              | (14)     | (402)        |\n| (Increase) decrease in operating lease right-of-use assets          | (126)                          | (97)     | 22           |\n| Increase (decrease) in noncurrent workers' compensation             | 975                            | 2,208    | (880)        |\n| Increase in noncurrent operating lease liabilities                  | 126                            | 139      | 89           |\n| Increase in other noncurrent liabilities                            | 3                              | 14       | 40           |\n| Changes in current assets and liabilities:                          |                                |          |              |\n| Receivables, net                                                    | 62                             | 40       | (101)        |\n| Other current assets                                                | (102)                          | (28)     | (29)         |\n| Retirement benefits                                                 | 3,807                          | 4,556    | 4,574        |\n| Payables, accrued expenses, and other                               | 292                            | 306      | (869)        |\n| Operating lease liabilities                                         | 30                             | (20)     | (97)         |\n| Deferred revenue-prepaid postage and other deferred revenue         | (182)                          | 487      | (117)        |\n| Net cash (used in) provided by operating activities                 | (1,851)                        | 68       | (2,462)      |\n| Cash flows from investing activities:                               |                                |          |              |\n| Purchases of property and equipment                                 | (3,585)                        | (4,199)  | (3,000)      |\n| Proceeds from sales of property and equipment                       | 128                            | 6        | 287          |\n| Purchases of investments                                            | (3,000)                        | (15,300) | (13,637)     |\n| Purchases of restricted investments                                 | (566)                          | (3,275)  | (3,145)      |\n| Redemption of investments                                           | 12,300                         | 14,637   | 5,000        |\n| Redemption of restricted investments                                | 3,275                          | 3,145    | —            |\n| Net cash provided by (used in) investing activities                 | 8,552                          | (4,986)  | (14,495)     |\n| Cash flows from financing activities:                               |                                |          |              |\n| Proceeds from borrowings                                            | —                              | 3,000    | 3,000        |\n| Repayments of borrowings                                            | —                              | (1,000)  | —            |\n| Payments on finance lease obligations                               | (34)                           | (28)     | (27)         |\n| Net cash (used in) provided by financing activities                 | (34)                           | 1,972    | 2,973        |\n| Net increase (decrease) in cash, cash equivalents & restricted cash | 6,667                          | (2,946)  | (13,984)     |\n| Cash, cash equivalents & restricted cash - beginning of year        | 6,688                          | 9,634    | 23,618       |\n| Cash, cash equivalents & restricted cash - end of year              | $ 13,355                       | 6,688    | 9,634        |\n| Supplemental cash flows disclosures:                                |                                |          |              |\n| Cash paid for interest                                              | 607                            | 569      | 379          |",
+            "bbox": [
+              {
+                "x": 60.41,
+                "y": 90.19,
+                "w": 491.14,
+                "h": 591.91,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 4976,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "(in millions)",
+                "Years Ended September<br/>2025",
+                "2024",
+                "30,<br/>2023"
+              ],
+              [
+                "Cash flows from operating activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Net loss",
+                "(8,978)",
+                "(9,520)",
+                "(6,478)"
+              ],
+              [
+                "Adjustments to reconcile net loss to net cash (used in) provided by",
+                "",
+                "",
+                ""
+              ],
+              [
+                "operating activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Depreciation and amortization",
+                "2,238",
+                "1,997",
+                "1,786"
+              ],
+              [
+                "Other, net",
+                "4",
+                "(14)",
+                "(402)"
+              ],
+              [
+                "(Increase) decrease in operating lease right-of-use assets",
+                "(126)",
+                "(97)",
+                "22"
+              ],
+              [
+                "Increase (decrease) in noncurrent workers' compensation",
+                "975",
+                "2,208",
+                "(880)"
+              ],
+              [
+                "Increase in noncurrent operating lease liabilities",
+                "126",
+                "139",
+                "89"
+              ],
+              [
+                "Increase in other noncurrent liabilities",
+                "3",
+                "14",
+                "40"
+              ],
+              [
+                "Changes in current assets and liabilities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Receivables, net",
+                "62",
+                "40",
+                "(101)"
+              ],
+              [
+                "Other current assets",
+                "(102)",
+                "(28)",
+                "(29)"
+              ],
+              [
+                "Retirement benefits",
+                "3,807",
+                "4,556",
+                "4,574"
+              ],
+              [
+                "Payables, accrued expenses, and other",
+                "292",
+                "306",
+                "(869)"
+              ],
+              [
+                "Operating lease liabilities",
+                "30",
+                "(20)",
+                "(97)"
+              ],
+              [
+                "Deferred revenue-prepaid postage and other deferred revenue",
+                "(182)",
+                "487",
+                "(117)"
+              ],
+              [
+                "Net cash (used in) provided by operating activities",
+                "(1,851)",
+                "68",
+                "(2,462)"
+              ],
+              [
+                "Cash flows from investing activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Purchases of property and equipment",
+                "(3,585)",
+                "(4,199)",
+                "(3,000)"
+              ],
+              [
+                "Proceeds from sales of property and equipment",
+                "128",
+                "6",
+                "287"
+              ],
+              [
+                "Purchases of investments",
+                "(3,000)",
+                "(15,300)",
+                "(13,637)"
+              ],
+              [
+                "Purchases of restricted investments",
+                "(566)",
+                "(3,275)",
+                "(3,145)"
+              ],
+              [
+                "Redemption of investments",
+                "12,300",
+                "14,637",
+                "5,000"
+              ],
+              [
+                "Redemption of restricted investments",
+                "3,275",
+                "3,145",
+                "—"
+              ],
+              [
+                "Net cash provided by (used in) investing activities",
+                "8,552",
+                "(4,986)",
+                "(14,495)"
+              ],
+              [
+                "Cash flows from financing activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Proceeds from borrowings",
+                "—",
+                "3,000",
+                "3,000"
+              ],
+              [
+                "Repayments of borrowings",
+                "—",
+                "(1,000)",
+                "—"
+              ],
+              [
+                "Payments on finance lease obligations",
+                "(34)",
+                "(28)",
+                "(27)"
+              ],
+              [
+                "Net cash (used in) provided by financing activities",
+                "(34)",
+                "1,972",
+                "2,973"
+              ],
+              [
+                "Net increase (decrease) in cash, cash equivalents & restricted cash",
+                "6,667",
+                "(2,946)",
+                "(13,984)"
+              ],
+              [
+                "Cash, cash equivalents & restricted cash - beginning of year",
+                "6,688",
+                "9,634",
+                "23,618"
+              ],
+              [
+                "Cash, cash equivalents & restricted cash - end of year",
+                "$ 13,355",
+                "6,688",
+                "9,634"
+              ],
+              [
+                "Supplemental cash flows disclosures:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Cash paid for interest",
+                "607",
+                "569",
+                "379"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Years Ended September</th>\n      <th></th>\n      <th>30,</th>\n    </tr>\n    <tr>\n      <th>(in millions)</th>\n      <th>2025</th>\n      <th>2024</th>\n      <th>2023</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash flows from operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net loss</td>\n      <td>(8,978)</td>\n      <td>(9,520)</td>\n      <td>(6,478)</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net loss to net cash (used in) provided by</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>2,238</td>\n      <td>1,997</td>\n      <td>1,786</td>\n    </tr>\n    <tr>\n      <td>Other, net</td>\n      <td>4</td>\n      <td>(14)</td>\n      <td>(402)</td>\n    </tr>\n    <tr>\n      <td>(Increase) decrease in operating lease right-of-use assets</td>\n      <td>(126)</td>\n      <td>(97)</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>Increase (decrease) in noncurrent workers' compensation</td>\n      <td>975</td>\n      <td>2,208</td>\n      <td>(880)</td>\n    </tr>\n    <tr>\n      <td>Increase in noncurrent operating lease liabilities</td>\n      <td>126</td>\n      <td>139</td>\n      <td>89</td>\n    </tr>\n    <tr>\n      <td>Increase in other noncurrent liabilities</td>\n      <td>3</td>\n      <td>14</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>Changes in current assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Receivables, net</td>\n      <td>62</td>\n      <td>40</td>\n      <td>(101)</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>(102)</td>\n      <td>(28)</td>\n      <td>(29)</td>\n    </tr>\n    <tr>\n      <td>Retirement benefits</td>\n      <td>3,807</td>\n      <td>4,556</td>\n      <td>4,574</td>\n    </tr>\n    <tr>\n      <td>Payables, accrued expenses, and other</td>\n      <td>292</td>\n      <td>306</td>\n      <td>(869)</td>\n    </tr>\n    <tr>\n      <td>Operating lease liabilities</td>\n      <td>30</td>\n      <td>(20)</td>\n      <td>(97)</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue-prepaid postage and other deferred revenue</td>\n      <td>(182)</td>\n      <td>487</td>\n      <td>(117)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by operating activities</td>\n      <td>(1,851)</td>\n      <td>68</td>\n      <td>(2,462)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of property and equipment</td>\n      <td>(3,585)</td>\n      <td>(4,199)</td>\n      <td>(3,000)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of property and equipment</td>\n      <td>128</td>\n      <td>6</td>\n      <td>287</td>\n    </tr>\n    <tr>\n      <td>Purchases of investments</td>\n      <td>(3,000)</td>\n      <td>(15,300)</td>\n      <td>(13,637)</td>\n    </tr>\n    <tr>\n      <td>Purchases of restricted investments</td>\n      <td>(566)</td>\n      <td>(3,275)</td>\n      <td>(3,145)</td>\n    </tr>\n    <tr>\n      <td>Redemption of investments</td>\n      <td>12,300</td>\n      <td>14,637</td>\n      <td>5,000</td>\n    </tr>\n    <tr>\n      <td>Redemption of restricted investments</td>\n      <td>3,275</td>\n      <td>3,145</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Net cash provided by (used in) investing activities</td>\n      <td>8,552</td>\n      <td>(4,986)</td>\n      <td>(14,495)</td>\n    </tr>\n    <tr>\n      <td>Cash flows from financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Proceeds from borrowings</td>\n      <td>—</td>\n      <td>3,000</td>\n      <td>3,000</td>\n    </tr>\n    <tr>\n      <td>Repayments of borrowings</td>\n      <td>—</td>\n      <td>(1,000)</td>\n      <td>—</td>\n    </tr>\n    <tr>\n      <td>Payments on finance lease obligations</td>\n      <td>(34)</td>\n      <td>(28)</td>\n      <td>(27)</td>\n    </tr>\n    <tr>\n      <td>Net cash (used in) provided by financing activities</td>\n      <td>(34)</td>\n      <td>1,972</td>\n      <td>2,973</td>\n    </tr>\n    <tr>\n      <td>Net increase (decrease) in cash, cash equivalents &#x26; restricted cash</td>\n      <td>6,667</td>\n      <td>(2,946)</td>\n      <td>(13,984)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents &#x26; restricted cash - beginning of year</td>\n      <td>6,688</td>\n      <td>9,634</td>\n      <td>23,618</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents &#x26; restricted cash - end of year</td>\n      <td>$ 13,355</td>\n      <td>6,688</td>\n      <td>9,634</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flows disclosures:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>607</td>\n      <td>569</td>\n      <td>379</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"(in millions)\",\"Years Ended September<br/>2025\",\"2024\",\"30,<br/>2023\"\n\"Cash flows from operating activities:\",,,\n\"Net loss\",\"(8,978)\",\"(9,520)\",\"(6,478)\"\n\"Adjustments to reconcile net loss to net cash (used in) provided by\",,,\n\"operating activities:\",,,\n\"Depreciation and amortization\",\"2,238\",\"1,997\",\"1,786\"\n\"Other, net\",\"4\",\"(14)\",\"(402)\"\n\"(Increase) decrease in operating lease right-of-use assets\",\"(126)\",\"(97)\",\"22\"\n\"Increase (decrease) in noncurrent workers' compensation\",\"975\",\"2,208\",\"(880)\"\n\"Increase in noncurrent operating lease liabilities\",\"126\",\"139\",\"89\"\n\"Increase in other noncurrent liabilities\",\"3\",\"14\",\"40\"\n\"Changes in current assets and liabilities:\",,,\n\"Receivables, net\",\"62\",\"40\",\"(101)\"\n\"Other current assets\",\"(102)\",\"(28)\",\"(29)\"\n\"Retirement benefits\",\"3,807\",\"4,556\",\"4,574\"\n\"Payables, accrued expenses, and other\",\"292\",\"306\",\"(869)\"\n\"Operating lease liabilities\",\"30\",\"(20)\",\"(97)\"\n\"Deferred revenue-prepaid postage and other deferred revenue\",\"(182)\",\"487\",\"(117)\"\n\"Net cash (used in) provided by operating activities\",\"(1,851)\",\"68\",\"(2,462)\"\n\"Cash flows from investing activities:\",,,\n\"Purchases of property and equipment\",\"(3,585)\",\"(4,199)\",\"(3,000)\"\n\"Proceeds from sales of property and equipment\",\"128\",\"6\",\"287\"\n\"Purchases of investments\",\"(3,000)\",\"(15,300)\",\"(13,637)\"\n\"Purchases of restricted investments\",\"(566)\",\"(3,275)\",\"(3,145)\"\n\"Redemption of investments\",\"12,300\",\"14,637\",\"5,000\"\n\"Redemption of restricted investments\",\"3,275\",\"3,145\",\"—\"\n\"Net cash provided by (used in) investing activities\",\"8,552\",\"(4,986)\",\"(14,495)\"\n\"Cash flows from financing activities:\",,,\n\"Proceeds from borrowings\",\"—\",\"3,000\",\"3,000\"\n\"Repayments of borrowings\",\"—\",\"(1,000)\",\"—\"\n\"Payments on finance lease obligations\",\"(34)\",\"(28)\",\"(27)\"\n\"Net cash (used in) provided by financing activities\",\"(34)\",\"1,972\",\"2,973\"\n\"Net increase (decrease) in cash, cash equivalents & restricted cash\",\"6,667\",\"(2,946)\",\"(13,984)\"\n\"Cash, cash equivalents & restricted cash - beginning of year\",\"6,688\",\"9,634\",\"23,618\"\n\"Cash, cash equivalents & restricted cash - end of year\",\"$ 13,355\",\"6,688\",\"9,634\"\n\"Supplemental cash flows disclosures:\",,,\n\"Cash paid for interest\",\"607\",\"569\",\"379\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 1 'Years Ended September' expects datetime, got '(8,978)' in row 3"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "See accompanying notes to the financial statements.",
+            "bbox": [
+              {
+                "x": 58.3,
+                "y": 685.21,
+                "w": 187.88,
+                "h": 9.08,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 50,
+                "label": "text"
+              }
+            ],
+            "value": "See accompanying notes to the financial statements."
+          },
+          {
+            "type": "footer",
+            "md": "2025 Report on Form 10-K United States Postal Service <page_number>49</page_number>",
+            "bbox": [
+              {
+                "x": 339.52,
+                "y": 769.58,
+                "w": 214.18,
+                "h": 9
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "2025 Report on Form 10-K United States Postal Service \\<page_number>49\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 339.52,
+                    "y": 769.58,
+                    "w": 214.18,
+                    "h": 9,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 84,
+                    "label": "footer"
+                  }
+                ],
+                "value": "2025 Report on Form 10-K United States Postal Service <page_number>49</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.993,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 2,
+        "confidence": 0.081,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 3,
+        "confidence": 0.675,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 6,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=4YbGsrY4iYXR25NRY0nQ9Rc5Kcg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=aZnUsX1287RbS4wvdtQFW1ThFj0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "layout",
+        "bbox": {
+          "x": 56,
+          "y": 98,
+          "w": 499,
+          "h": 627
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=Uq1HyGF4snuYflqUSgPGSBYv8lg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_2_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_2_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=ugQbveMcpkqTds8SE4LqMKEdK50%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "layout",
+        "bbox": {
+          "x": 56,
+          "y": 90,
+          "w": 500,
+          "h": 242
+        }
+      },
+      {
+        "index": 4,
+        "filename": "page_3.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=ufZ2TFbCRzCu%2B%2BuXmY2VDzdEX1A%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 5,
+        "filename": "page_3_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/5f4d831e-d580-472a-b777-e7b9ca016e47/page_3_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTU4ZEMHHX&Signature=%2BNQAoSaKLRdTwZDlWH0IqY%2BYEew%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJGMEQCIHbtA7KPaIWdSPfUx8PGFVGgmZDd5uHFx8r7gnYOzZ9eAiBXMVbyr%2FM3hOkBo5T3Iio2KQyVTi6mkfHjSHsttgCuyyqQBQje%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDUwNjk1NDk2NjUwMyIMSr4GRVdwnTWAWanBKuQEh%2BRPIA9O0I3io%2Bf4kxzzMJ1XlPxRWdNXLQ%2F7dxKDdyb4qxJjcowTE1y0N%2FtGFtZWJukO3tMdsFWw7EKz7Rw%2FDrIJT%2BWmSCEvQc3TqpR6a%2FuY%2Bue3ad%2FaXDTi2qTnb0EmhxTza0zVyJp5Zi9aEAxfdoy8SXNhUnAS2ykVrJxXsHCUnsxmBmZCzXY78uvmCSrBsi4J7vU4R6%2F3c2%2ByWucbFtfHaj6SaebXKKLEItCee4u65WE4xNCpX6xOpbhCgpLXs8Q0M5m0zi3pOoFDbnKF9x1%2F5hxGoW96Mq3rTodI1HYfqTkFlzGLhkGZ0Ld5CpczV79PuCtpWohEi23MM1xPn2SNawKUmb2nYtTFavsm8yIPAGZBUGrq2vHTXRsn9EgwyYh8tCqiHaOpus0tvAPZSGoo29tT2h82oI0xPEDw91uYXn4t8NHWwe7NrWWh%2BDIrrPzUvi2M23DeHYDuT8Gzv3NxQYvwYWtnAb4UXWUU4sPtIwXIAyRLCq6D%2FoL0nz08mNgnmZOQyf1gYTUsQrt92vlkBpLW6VN%2FpLnq0n2oI6n%2BsmnzGLGwSMCsG3wicrtjln8NKwVa84HMVxLE0B6gS6fByJcyBCmQGfuZWBv5Qnux0SXB1mdJbw54H5tajPFeT%2FMYEXk7odC6wUD9B71thNnnC0ubaFmxHyFkp9RWdJmIQOAw96CgGzH7Fknrc47Mnn6sCmSUrvSAIoFL0fTVFtqpoJzgKi%2B7v%2BgqgbNgGAG6rMqtbL4jU6F0RWLZAqqGpAc%2F0vCqwLD06snvBvr2RA6%2Bv6XZQzp3X%2BnzVTfwoZ3rGI9CML6Y9dMGOpkBebL%2B%2B2Xvm61aMZxhiOAIenvg53tRvEYwqMhLxKqrtOHxMHEeDSb44v2mj%2FtP%2Bl6bJwp3lOfsZl6jlSAfihU9B02AzHtklIcxd9gISvL7uWgWRPok2W2acJ7DF3rpJj5rKOeUVCVaWscdr2LTll4f8COkLoRjolYNU4gDzirpXfEMfijJuU4uCdbBvGhHwqlFiK6bKd9e%2FjA%2F&Expires=1786601104",
+        "category": "layout",
+        "bbox": {
+          "x": 60,
+          "y": 90,
+          "w": 491,
+          "h": 592
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

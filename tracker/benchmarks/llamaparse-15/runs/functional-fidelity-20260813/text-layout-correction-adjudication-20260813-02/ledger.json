@@ -1,0 +1,282 @@
+{
+  "schema_version": "functional-fidelity-text-layout-adjudication-v1",
+  "created_at": "2026-08-13",
+  "authority": "benchmark PDF source, with LlamaParse as the comparison baseline",
+  "scope": [
+    "catastrophe-recap",
+    "finance-10k",
+    "ny-timetable",
+    "postal-10k",
+    "purchase-agreement",
+    "settlement-agreement"
+  ],
+  "capture": {
+    "service_run": "../service-text-layout-correction-20260813-02",
+    "service_run_manifest": {
+      "path": "../service-text-layout-correction-20260813-02/run.json",
+      "sha256": "d50d633748f75bca71fe0222a19f7cd481be69ed1c9b050d5bee940373f54011"
+    },
+    "capture_command": {
+      "path": "../service-text-layout-correction-20260813-02/run-command.sh",
+      "sha256": "3e524f6197c6ef76bcdf681a40b6887e595b2412e16f1e876aec974480734f6c"
+    },
+    "capture_mode": "fresh server per HTTP output; repository-native rendered body DOM",
+    "http_outputs": 8,
+    "rendered_pages": 10,
+    "status": "success"
+  },
+  "llamaparse_recapture": {
+    "performed": false,
+    "reason": "No signed-in LlamaParse browser session was available to this worker.",
+    "policy": "Newest immutable signed-in LlamaParse references were reused and hash-bound; no reference artifact was overwritten."
+  },
+  "superseded_capture_attempt": {
+    "path": "../service-text-layout-correction-20260813-01",
+    "status": "non_final_partial_attempt",
+    "mutated_or_overwritten": false
+  },
+  "story_mapping": {
+    "P02-US04": "source-grounded text integrity and table-owned supplemental OCR",
+    "P03-US05": "text-run semantics, deletion presentation, emphasis, and hierarchy",
+    "P03-US07": "legal clause hierarchy",
+    "P03-US08": "running-region taxonomy, ordering, and serializer custody"
+  },
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+        "size_bytes": 58779
+      },
+      "status": "match_already_correct",
+      "stories": ["P02-US04"],
+      "adjudication": "Source, LlamaParse, and the existing immutable service-final Markdown all retain the exact event name and euro recovery: Windstorm Éowyn; $690 million (€620 million). No production change or affected-case recapture was warranted.",
+      "discrepancies": [],
+      "llamaparse": {
+        "root": "../llamaparse/catastrophe-recap",
+        "reference_json_sha256": "d63e5789f7b80a35a74eb99ad1b0a833d64e804f672527a39000e493acd52c00",
+        "reference_markdown_sha256": "c7da15539d9fde0645cc83f63cafb17a1448d33cb7931b9acc12042e300f3dee",
+        "rendered_dom_sha256": "41ad6ad85973160d2993791b423724705ce51fc490ce993786411d552c2845f2"
+      },
+      "service": {
+        "root": "../service-final-20260813/catastrophe-recap",
+        "response_json_sha256": "5c26946635be47020647a69f6b2ebda2e5238dba0abdabd4712d852dd42da45d",
+        "response_markdown_sha256": "d293f534cafa9de630a7e3d6039797aa60029a56f12d001dd0fd3497c9f78f72",
+        "rendered_capture_sha256": "667887eb2ad7778ad303c74d12995e764439886a71fc9a567afed3838130eb38"
+      }
+    },
+    {
+      "case_id": "finance-10k",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/finance-10k.pdf",
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+        "size_bytes": 87105
+      },
+      "status": "fixed_with_accepted_json_residue",
+      "stories": ["P03-US08"],
+      "discrepancies": [
+        {
+          "pages": [1, 2, 3],
+          "output_types": ["JSON", "raw Markdown", "rendered DOM"],
+          "severity": "functional_user_visible",
+          "expected": "Apple Inc. has the same repeated running-header role on all three source pages and must not become a document H1.",
+          "before": "The repeated label had inconsistent header/heading taxonomy and could serialize as an H1 on pages 2-3.",
+          "actual_after": "All three JSON components are type=header; canonical/raw Markdown and rendered DOM contain no Apple Inc. H1; statement titles remain headings.",
+          "resolution": "fixed",
+          "evidence": "response.json, response.md, and pages/page-{1,2,3}/rendered-dom.json in the affected service run"
+        },
+        {
+          "pages": [2, 3],
+          "output_types": ["JSON item md scalar"],
+          "severity": "accepted_non_rendering_serialization_difference",
+          "expected": "A header scalar ideally has no heading marker.",
+          "actual_after": "The public item md scalar retains '# Apple Inc.' under existing direct-owner hash custody, while canonical/raw Markdown and UI correctly strip it.",
+          "resolution": "accepted_remaining_difference"
+        }
+      ],
+      "llamaparse": {
+        "root": "../llamaparse/finance-10k",
+        "reference_json_sha256": "fbbe0ac5823b648bee81c0ca53aeee9d79bab06b9ee87a62ff5c00f850924da0",
+        "reference_markdown_sha256": "0cada5fe6e5406e38ebe8251399e0ee61bce3127a378232bacb01771ff060517",
+        "rendered_dom_sha256_by_page": [
+          "f376a9cec77292934cb31649fc8f2402fba9bd7503835dc63bcd79fa2ad804d6",
+          "87878c4838243fde38794cc9b9da7db4e1e8d234a5ae84cc5cab07b8ee6f8807",
+          "2e5857bccc46ac9cd8106c705edaec557ac42ce3e81d6e3fbd35e2a19eed04bb"
+        ]
+      },
+      "service": {
+        "root": "../service-text-layout-correction-20260813-02/finance-10k",
+        "response_json_sha256": "98882e7c9c99c6931f3030001c1131f77640a0d36fd80e5afce7798f40553f0d",
+        "response_markdown_sha256": "8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389",
+        "rendered_capture_sha256": "344b6bd5956161dd065c92475a5d64e6d6627ec792f580b297de96e4f5a4f491"
+      }
+    },
+    {
+      "case_id": "ny-timetable",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/ny-timetable.pdf",
+        "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+        "size_bytes": 26109
+      },
+      "status": "fixed",
+      "stories": ["P02-US04", "P03-US08"],
+      "discrepancies": [
+        {
+          "pages": [1, 2, 3],
+          "output_types": ["JSON", "raw Markdown", "rendered DOM"],
+          "severity": "functional_user_visible",
+          "expected": "Each page begins with one 13-column table whose first merged header row is 'Weekdays to The Bronx', followed by the Notes/station row; no detached OCR fragments.",
+          "before": "Supplemental page-source OCR emitted detached 'ew' and '741' lines and page 2 ordering was degraded.",
+          "actual_after": "All three pages contain one ordered 13-column table with the title row first; 'ew' and '741' are absent from JSON, raw Markdown, and rendered text.",
+          "resolution": "fixed"
+        }
+      ],
+      "llamaparse": {
+        "root": "../llamaparse-table-fix-20260813/ny-timetable",
+        "reference_json_sha256": "467b91d50deb7c039395e31994f5bd266beb33fcb5b34749d0b6f7b8cf878458",
+        "reference_markdown_sha256": "36bdfda7e550bef7204a530589b6452ed9cabf5794c7b31099e0bc9724afcc03",
+        "rendered_dom_sha256_by_page": [
+          "3095afaf06da6ef262891b08bbf2350593eaf432f2072eaf559bfca9fcf7eb73",
+          "ece3ded4c47c55a9080dae2fe36501836a8c75433eeb299f81015ffca8fec478",
+          "47aada37fa4aa2bc66daf63921bd84c571b6854ee496e6ba8a0b2c10a64c1536"
+        ]
+      },
+      "service": {
+        "root": "../service-text-layout-correction-20260813-02/ny-timetable",
+        "response_json_sha256": "6832f4b66dc6c04b11b09bf368f9cb10f475126d5588d9e6db1785caf0503c49",
+        "response_markdown_sha256": "16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef",
+        "rendered_capture_sha256": "837305fd5ee34cb520658c78b94ac69346f975388c478a0d1a67459692d3ad16"
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/postal-10k.pdf",
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+        "size_bytes": 83589
+      },
+      "status": "partially_fixed_remaining_functional_gaps",
+      "stories": ["P02-US04", "P03-US05"],
+      "discrepancies": [
+        {
+          "pages": [1],
+          "output_types": ["JSON", "raw Markdown", "rendered DOM"],
+          "severity": "functional_user_visible",
+          "expected": "The glossary contains table rows CIO / Chief Information Officer and FERS / Federal Employees Retirement System with no detached OCR duplicates.",
+          "before": "Detached false 'ClO' and 'FERS' fallback lines appeared outside the table.",
+          "actual_after": "The exact CIO and FERS table rows are retained and 'ClO' is absent. A detached complete 'FERS Federal Employees Retirement System' paragraph remains after source alignment.",
+          "resolution": "partially_fixed",
+          "remaining_test": "strict xfail in test_p02_us04_table_owned_ocr_regression.py"
+        },
+        {
+          "pages": [1],
+          "output_types": ["raw Markdown", "rendered DOM"],
+          "severity": "user_visible_formatting",
+          "expected": "Four source-italic table spans are presented as italic.",
+          "actual_after": "The JSON text-run sidecars retain italic=true for CARES Act, its expanded name, Exchange Act, and its expanded name, but table Markdown/DOM does not serialize the emphasis.",
+          "resolution": "remaining_gap"
+        },
+        {
+          "pages": [3],
+          "output_types": ["JSON", "raw Markdown", "rendered DOM"],
+          "severity": "minor_user_visible_formatting",
+          "expected": "Four zero-value table cells use source/Llama em dashes.",
+          "actual_after": "Those cells serialize ASCII hyphens.",
+          "resolution": "remaining_gap"
+        }
+      ],
+      "llamaparse": {
+        "root": "../llamaparse/postal-10k",
+        "reference_json_sha256": "00759abb20269353750a1542b971c11424f84aca78d0c81a014d4f3121eb2348",
+        "reference_markdown_sha256": "50f2590c2b74ff6d71f74a59723582c0f5eba978b8efdaa5fae92cc6ea8f0ad4",
+        "rendered_dom_sha256_by_page": [
+          "de8fc910fe259db75f8dda716b3c37894751ce1c6485e4b8d90e0d14681e9340",
+          "675db17c919a28aca9bb41ddbd6a33d5b9798cb8f613be5ebc919380158a4006",
+          "c18f18362f5ce189d21663d36b9d4d6eab4c60b23279e6ba4467aeac02c927e1"
+        ]
+      },
+      "service": {
+        "root": "../service-text-layout-correction-20260813-02/postal-10k",
+        "response_json_sha256": "9ad95eddd78478528e5b6f2ee30b99064ed3747b93d073786ccc9d35083c65ba",
+        "response_markdown_sha256": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+        "rendered_capture_sha256": "54a5fc0e734b8acbff009ef4440551e8dd8e2b3565402f3fecede58ab0eb98b2"
+      }
+    },
+    {
+      "case_id": "purchase-agreement",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/purchase-agreement.pdf",
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+        "size_bytes": 152828
+      },
+      "status": "fixed_source_grounded_acceptable_difference",
+      "stories": ["P02-US04", "P03-US05"],
+      "discrepancies": [
+        {
+          "pages": [1],
+          "output_types": ["JSON", "raw Markdown", "rendered DOM"],
+          "severity": "functional_user_visible",
+          "expected": "The deleted draft banner is ordinary deleted text; ASSET PURCHASE AGREEMENT is H1; the same-size underlined Background subordinate is H2; exact paired source smart quotes surround defined terms.",
+          "before": "The draft banner was a false heading, Background was not subordinate, and low-density smart-quote pairs were degraded.",
+          "actual_after": "The banner is type=text and rendered del, the title is H1, Background is H2, and source smart quotes are restored without changing interiors.",
+          "resolution": "fixed",
+          "note": "LlamaParse leaves the short draft label plain while the source marks the whole run deleted; the service's deletion rendering is the source-grounded accepted difference."
+        }
+      ],
+      "llamaparse": {
+        "root": "../llamaparse-text-render-fix/purchase-agreement",
+        "reference_json_sha256": "a6db0458fc32a6216374a775333665322185a4205f457e157d078c79aaaa6aaa",
+        "reference_markdown_sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+        "rendered_dom_sha256": "5215d201970a5b559cb2e9c382e77bec974594664285b7224107b03366c190d2"
+      },
+      "service": {
+        "root": "../service-text-layout-correction-20260813-02/purchase-agreement",
+        "response_json_sha256": "81843f0c7f8a7c3afc7ac70133ba0bd57d650cb1502e5de7121c1fb2421eafb1",
+        "response_markdown_sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+        "rendered_capture_sha256": "fa0e5486ceffc6048785ebeb467967c70efb6ccde85b3f32a89a50fc5d6d4dce"
+      }
+    },
+    {
+      "case_id": "settlement-agreement",
+      "source": {
+        "path": "../../../../../../benchmark-expertmodeldata/settlement-agreement.pdf",
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      },
+      "status": "acceptable_difference_already_correct",
+      "stories": ["P03-US07"],
+      "adjudication": "The service-final output retains all three source/Llama occurrences of 'Look-Back Date'. The a./b./c. and nested (i)-(iv) clause sequence is source-ordered and covered by the existing legal-clause graph regression. Quotation styling around the first defined term differs, but the delegated hyphen and hierarchy target is functionally correct.",
+      "discrepancies": [],
+      "llamaparse": {
+        "root": "../llamaparse/settlement-agreement",
+        "reference_json_sha256": "f6896470093d239d03d65fe40afec120da25a13826332928f0823e7a040e8ff8",
+        "reference_markdown_sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+        "rendered_dom_sha256": "11eb3c16c176a00cb8951b0bb8499de5c238b4375faecfb1942f2a8326baf3f6"
+      },
+      "service": {
+        "root": "../service-final-20260813/settlement-agreement",
+        "response_json_sha256": "396af68be349e41f2e3adf9680fddd23fd9401dbc3f0de8ba17e72222d7c742a",
+        "response_markdown_sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+        "rendered_capture_sha256": "7fddf6be1414c4764e9f614baf47d295bffc586e60de52244184c024511da5b0"
+      }
+    }
+  ],
+  "release_readiness": {
+    "bounded_cases_ready": false,
+    "resolved": [
+      "catastrophe event name/euro recovery confirmed already correct",
+      "finance repeated-header taxonomy and rendered hierarchy",
+      "NY title order and detached false OCR",
+      "Postal false ClO suppression with table cells retained",
+      "purchase deleted-banner semantics, title/Background hierarchy, and paired smart quotes",
+      "settlement Look-Back spelling and clause order confirmed already correct"
+    ],
+    "remaining": [
+      "Postal page 1 detached complete FERS duplicate",
+      "Postal page 1 table-cell italic runs are not serialized/rendered",
+      "Postal page 3 four source em dashes serialize as ASCII hyphens",
+      "Finance pages 2-3 public JSON item md retains a non-rendering heading marker"
+    ]
+  }
+}

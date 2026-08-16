@@ -1,0 +1,80 @@
+{
+  "base_url": "http://127.0.0.1:8042",
+  "cases": [
+    {
+      "case_id": "clinical-study",
+      "completed_at_utc": "2026-08-14T08:23:52.268394+00:00",
+      "order": 1,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "b1a5dc088d86eb4ed0af0c93f073c4142b869f4d427230b38078bdf44303c103",
+          "size_bytes": 1444051,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "dcddb3bd7d7dc7e49e481fbb94d4dcd4cae1dfc6192a61375ca1157444b50435",
+          "size_bytes": 17651,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clinical-study.pdf",
+      "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "source_size_bytes": 750004,
+      "started_at_utc": "2026-08-14T08:22:57.165191+00:00"
+    }
+  ],
+  "completed_at_utc": "2026-08-14T08:23:52.269439+00:00",
+  "corpus": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata",
+  "profile": {
+    "environment": {
+      "DOCLING_ARTIFACTS_PATH": ".models/docling",
+      "HF_HUB_OFFLINE": "1",
+      "PARSER_CANONICAL_SERIALIZATION_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURED_OUTPUT_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_VALUES_ENABLED": "true",
+      "PARSER_DIAGRAMS_TOPOLOGY_ENABLED": "true",
+      "PARSER_LAYOUT_FORMS_ENABLED": "true",
+      "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED": "true",
+      "PARSER_LAYOUT_RELATIONSHIP_ORDER_ENABLED": "true",
+      "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED": "true",
+      "PARSER_LAYOUT_SOURCE_NOTES_ENABLED": "true",
+      "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED": "true",
+      "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED": "true",
+      "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED": "true",
+      "PARSER_OCR_NUMERIC_CLEANUP_V2_ENABLED": "true",
+      "PARSER_OCR_SPATIAL_TOKEN_PRESERVATION_ENABLED": "true",
+      "PARSER_SHARED_IR_ENABLED": "true",
+      "PARSER_SHARED_IR_NORMALIZATION_ENABLED": "true",
+      "PARSER_TABLES_CANDIDATE_GATE_ENABLED": "true",
+      "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED": "true",
+      "PARSER_TABLES_MULTI_PAGE_MERGE_ENABLED": "true",
+      "PARSER_TABLES_SPAN_FIDELITY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_AUDIT_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_RECOVERY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SELECTIVE_SPAN_OCR_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SOURCE_ALIGNMENT_ENABLED": "true",
+      "PARSER_TEXT_RECONCILIATION_ENABLED": "true",
+      "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED": "true",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "hosted_models": "disabled",
+    "image_captioning": false,
+    "local_optional_visual_models": "disabled",
+    "network_services": "disabled",
+    "profile_id": "release-fidelity-local-deterministic-v1",
+    "purpose": "Exercise all shipped PDF text, layout, table, chart, diagram, canonical JSON and Markdown capabilities whose dependencies are local and available.",
+    "schema_version": "functional-fidelity-service-profile-v1"
+  },
+  "schema_version": "functional-fidelity-service-run-v1",
+  "started_at_utc": "2026-08-14T08:22:57.111167+00:00",
+  "status": "success"
+}

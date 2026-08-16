@@ -1,0 +1,520 @@
+{
+  "case_id": "settlement-agreement",
+  "document": {
+    "expert_page_count": 1,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 1,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "settlement-agreement.pdf",
+    "source_page_count": 1
+  },
+  "duplicates": {
+    "expert": [],
+    "ours": []
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8333333333333334,
+      "item_count": 6,
+      "parse_concern_count": 1,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [
+            {
+              "details": "col 0 'Percentage of Incentive BC Subdivision Population as of the Third Subdivision Participation Date' expects datetime, got 'Participation below 95%' in row 1",
+              "type": "header_value_type_mismatch"
+            }
+          ],
+          "row_count": 8
+        }
+      ],
+      "type_counts": {
+        "footer": 1,
+        "table": 1,
+        "text": 4
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.0,
+      "item_count": 6,
+      "parse_concern_count": 0,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [],
+          "row_count": 8
+        }
+      ],
+      "type_counts": {
+        "footer": 1,
+        "table": 1,
+        "text": 4
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 3165,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3143,
+        "candidate_tokens": 505,
+        "extra_token_counts": [
+          [
+            "state's",
+            3
+          ],
+          [
+            "state",
+            1
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "s",
+            1
+          ],
+          [
+            "lookback",
+            1
+          ],
+          [
+            "subdivision's",
+            1
+          ],
+          [
+            "24",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            4
+          ],
+          [
+            "look",
+            1
+          ],
+          [
+            "back",
+            1
+          ],
+          [
+            "subdivision’s",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9957848592142977,
+        "reference_chars": 3165,
+        "reference_tokens": 503,
+        "token_f1": 0.9841269841269841,
+        "token_multiset_overlap": 496,
+        "token_precision": 0.9821782178217822,
+        "token_recall": 0.9860834990059643
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 3143,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 2682,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 3165,
+        "candidate_tokens": 503,
+        "extra_token_counts": [
+          [
+            "td",
+            28
+          ],
+          [
+            "tr",
+            16
+          ],
+          [
+            "th",
+            4
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "24",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8736487683856105,
+        "reference_chars": 2682,
+        "reference_tokens": 450,
+        "token_f1": 0.9422875131164743,
+        "token_multiset_overlap": 449,
+        "token_precision": 0.8926441351888668,
+        "token_recall": 0.9977777777777778
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3143,
+        "candidate_tokens": 505,
+        "extra_token_counts": [
+          [
+            "td",
+            28
+          ],
+          [
+            "tr",
+            16
+          ],
+          [
+            "th",
+            4
+          ],
+          [
+            "state's",
+            3
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "state",
+            1
+          ],
+          [
+            "x27",
+            1
+          ],
+          [
+            "s",
+            1
+          ],
+          [
+            "lookback",
+            1
+          ],
+          [
+            "subdivision's",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "state’s",
+            4
+          ],
+          [
+            "look",
+            1
+          ],
+          [
+            "back",
+            1
+          ],
+          [
+            "subdivision’s",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8588110403397028,
+        "reference_chars": 2682,
+        "reference_tokens": 450,
+        "token_f1": 0.9277486910994764,
+        "token_multiset_overlap": 443,
+        "token_precision": 0.8772277227722772,
+        "token_recall": 0.9844444444444445
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 3144,
+      "candidate_tokens": 505,
+      "extra_token_counts": [
+        [
+          "state's",
+          3
+        ],
+        [
+          "state",
+          1
+        ],
+        [
+          "x27",
+          1
+        ],
+        [
+          "s",
+          1
+        ],
+        [
+          "lookback",
+          1
+        ],
+        [
+          "subdivision's",
+          1
+        ],
+        [
+          "24",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "state’s",
+          4
+        ],
+        [
+          "look",
+          1
+        ],
+        [
+          "back",
+          1
+        ],
+        [
+          "subdivision’s",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9957848592142977,
+      "reference_chars": 3165,
+      "reference_tokens": 503,
+      "token_f1": 0.9841269841269841,
+      "token_multiset_overlap": 496,
+      "token_precision": 0.9821782178217822,
+      "token_recall": 0.9860834990059643
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 3144,
+      "candidate_tokens": 505,
+      "extra_token_counts": [
+        [
+          "state's",
+          3
+        ],
+        [
+          "state",
+          1
+        ],
+        [
+          "x27",
+          1
+        ],
+        [
+          "s",
+          1
+        ],
+        [
+          "lookback",
+          1
+        ],
+        [
+          "subdivision's",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "state’s",
+          4
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "number",
+          2
+        ],
+        [
+          "look",
+          1
+        ],
+        [
+          "back",
+          1
+        ],
+        [
+          "subdivision’s",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.9917799027008891,
+      "reference_chars": 3196,
+      "reference_tokens": 508,
+      "token_f1": 0.9812438302073051,
+      "token_multiset_overlap": 497,
+      "token_precision": 0.9841584158415841,
+      "token_recall": 0.9783464566929134
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 3196,
+      "candidate_tokens": 508,
+      "extra_token_counts": [
+        [
+          "td",
+          28
+        ],
+        [
+          "tr",
+          16
+        ],
+        [
+          "th",
+          4
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "number",
+          2
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.8700863740525295,
+      "reference_chars": 2682,
+      "reference_tokens": 450,
+      "token_f1": 0.9394572025052192,
+      "token_multiset_overlap": 450,
+      "token_precision": 0.8858267716535433,
+      "token_recall": 1.0
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 3144,
+      "candidate_tokens": 505,
+      "extra_token_counts": [
+        [
+          "td",
+          28
+        ],
+        [
+          "tr",
+          16
+        ],
+        [
+          "th",
+          4
+        ],
+        [
+          "state's",
+          3
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "state",
+          1
+        ],
+        [
+          "x27",
+          1
+        ],
+        [
+          "s",
+          1
+        ],
+        [
+          "lookback",
+          1
+        ],
+        [
+          "subdivision's",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "state’s",
+          4
+        ],
+        [
+          "look",
+          1
+        ],
+        [
+          "back",
+          1
+        ],
+        [
+          "subdivision’s",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.8588110403397028,
+      "reference_chars": 2682,
+      "reference_tokens": 450,
+      "token_f1": 0.9277486910994764,
+      "token_multiset_overlap": 443,
+      "token_precision": 0.8772277227722772,
+      "token_recall": 0.9844444444444445
+    }
+  }
+}

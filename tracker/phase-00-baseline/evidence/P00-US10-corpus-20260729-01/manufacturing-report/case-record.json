@@ -1,0 +1,102 @@
+{
+  "case_id": "manufacturing-report",
+  "case_latency_ms": 10885.955334175378,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "manufacturing-report",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report",
+    "--run-id",
+    "p00-us10-corpus-20260729-01",
+    "--order",
+    "10",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+  ],
+  "completed_at_utc": "2026-07-29T08:43:10.244366+00:00",
+  "cpu_ms": 8138.450000000001,
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error": null,
+  "order": 10,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.md",
+      "role": "markdown",
+      "sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+      "size_bytes": 6296
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.json",
+      "role": "raw_json",
+      "sha256": "04c1802f7b57196b492d9c9c52765434e60982d727a23582b83c2afe87ad6827",
+      "size_bytes": 456364
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.json",
+      "role": "semantic_json",
+      "sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+      "size_bytes": 218509
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 10863.770333118737,
+  "peak_rss_bytes": 1826603008,
+  "reference_comparison": {
+    "case_id": "manufacturing-report",
+    "current_markdown_sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+    "current_semantic_json_sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+    "reference_semantic_json_sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+      "role": "source",
+      "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "size_bytes": 380274
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/manufacturing-report.md",
+      "role": "expert_markdown",
+      "sha256": "c33f1b327e2cf2c6176a64598ea20bb65beebbdede348201e2bb614f1aa68d1c",
+      "size_bytes": 13763
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/manufacturing-report.json",
+      "role": "expert_json",
+      "sha256": "dbe5763deaf9a31864cbf0d962282f9d05d1a4dabff78d892f021b8c987505e0",
+      "size_bytes": 112176
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:42:59.367959+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

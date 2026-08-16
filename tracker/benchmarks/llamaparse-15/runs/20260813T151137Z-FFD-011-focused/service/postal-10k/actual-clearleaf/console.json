@@ -1,0 +1,11 @@
+[
+  {
+    "adjudication": "browser-extension sandbox warning; no content/capture failure",
+    "level": "error",
+    "message": "Access to storage is not allowed from this context."
+  },
+  {
+    "level": "log",
+    "message": "Extension: Message listener registered successfully"
+  }
+]

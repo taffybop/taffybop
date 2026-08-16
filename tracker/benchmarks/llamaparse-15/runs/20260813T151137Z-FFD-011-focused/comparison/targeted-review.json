@@ -1,0 +1,495 @@
+{
+  "checks": {
+    "all_39_glossary_body_rows_preserve_content_and_order": true,
+    "cares_exact": true,
+    "cio_exact_and_false_clo_absent": true,
+    "clearleaf_40_table_rows_total": true,
+    "clearleaf_exactly_once_fers_row": true,
+    "clearleaf_zero_detached_collateral_paragraphs": true,
+    "clearleaf_zero_detached_fers_paragraph": true,
+    "complete_three_page_source": true,
+    "exchange_exact": true,
+    "fers_cells_exact": true,
+    "fers_row_exact": true,
+    "fers_suppression_provenance_complete": true,
+    "llama_actual_ui_exactly_once_fers_row": true,
+    "llama_actual_ui_item_sequence_exact": true,
+    "llama_actual_ui_zero_post_table_text_item": true,
+    "llama_fresh_markdown_matches_selected": true,
+    "llama_markdown_zero_detached_fers_paragraph": true,
+    "llama_one_fers_row": true,
+    "llama_semantic_payload_matches_selected": true,
+    "llama_zero_detached_fers_item": true,
+    "markdown_one_fers_row": true,
+    "markdown_zero_detached_collateral_paragraphs": true,
+    "markdown_zero_detached_fers_paragraph": true,
+    "one_authoritative_page_one_table": true,
+    "postal_page_three_table_object_unchanged": true,
+    "postal_page_two_table_object_unchanged": true,
+    "raw_canonical_markdown_byte_identical": true,
+    "service_markdown_diff_is_only_detached_fers_removal": true,
+    "source_sha256_matches": true,
+    "two_fers_cell_suppressions_retained": true,
+    "zero_detached_collateral_items": true,
+    "zero_detached_fers_items": true
+  },
+  "declared_collateral": {
+    "page_three": {
+      "cells": 127,
+      "columns": 4,
+      "rows": 37
+    },
+    "page_two": {
+      "cells": 59,
+      "columns": 4,
+      "rows": 17
+    },
+    "rows": {
+      "CARES": [
+        "CARES Act",
+        "Coronavirus Aid, Relief, and Economic Security Act , enacted as Public Law 116-136"
+      ],
+      "CIO": [
+        "CIO",
+        "Chief Information Officer"
+      ],
+      "Exchange": [
+        "Exchange Act",
+        "Securities and Exchange Act of 1934 , enacted as Public Law 73-291"
+      ],
+      "FECA": [
+        "FECA",
+        "Federal Employees' Compensation Act"
+      ],
+      "FEGLI": [
+        "FEGLI",
+        "Federal Employees Group Life Insurance"
+      ],
+      "FEHB": [
+        "FEHB",
+        "Federal Employees Health Benefits"
+      ]
+    }
+  },
+  "drift_adjudication": {
+    "llama_dom": "Fresh actual UI captures preserve all three pages and show the page-1 table through FERS with no post-table text item.",
+    "llama_json": "Only fresh job identity/timestamps and newly issued asset identities/URLs differ; debug/forms/items/job_metadata/Markdown/metadata/parameters/result metadata/text are byte-for-byte data-equivalent after JSON decoding.",
+    "llama_markdown": "Byte-identical to the selected reference.",
+    "service_dom": "Expected removal of detached target block; fresh actual Clearleaf contains the canonical table and no post-table duplicate paragraph.",
+    "service_json": "Expected source-alignment suppression ledger, contributor provenance, item/IR renumbering, and removal of the detached owner; target/collateral projections pass exact assertions.",
+    "service_markdown": "Only the pre-fix detached FERS paragraph was removed.",
+    "unexpected_material_changes": []
+  },
+  "failed_checks": [],
+  "generated_at_utc": "2026-08-13T15:54:38.664606+00:00",
+  "public_page_one_items": [
+    {
+      "id": "p1-i1",
+      "reading_order": 0,
+      "text": "GLOSSARY OF ACRONYMS AND DEFINED TERMS",
+      "type": "heading"
+    },
+    {
+      "id": "p1-i2",
+      "reading_order": 1,
+      "text": "The following are definitions of some of the terms or acronyms that may be used throughout this report:",
+      "type": "text"
+    },
+    {
+      "id": "p1-i5",
+      "reading_order": 2,
+      "text": "Term or Acronym Definition AED Advanced Electronic Data Annual Report Annual Report on Form 10-K AFC Audit and Finance Committee of the Board of Governors AFL-CIO American Federation of Labor and Congress of Industrial Organizations APWU American Postal Workers Union, AFL-CIO ASC Accounting Standards Codification ASU Accounting Standards Update Board Board of Governors of the United States Postal Service Board of Actuaries Board of Actuaries of the Civil Service Retirement System CARES Act Coronavirus Aid, Relief, and Economic Security Act , enacted as Public Law 116-136 CBP U.S. Customs and Border Protection CEO Chief Executive Officer CFO Chief Financial Officer CHRO Chief Human Resources Officer CIO Chief Information Officer CISO Chief Information Security Office COFA Compacts of Free Association COLA(s) Cost-of-living adjustment(s) COO Chief Operating Officer COR House Committee on Oversight and Reform COVID-19 Coronavirus CPI Consumer Price Index CPI-U Consumer Price Index for All Urban Consumers CPI-W Consumer Price Index for Urban Wage Earners and Clerical Workers CSRDF Civil Service Retirement and Disability Fund CSRS Civil Service Retirement System DOL U.S. Department of Labor DPMG Deputy Postmaster General ECRC Executive Cyber Risk Committee EEOC U.S. Equal Employment Opportunity Commission EIS Environmental Impact Statement EPA Environmental Protection Agency Exchange Act Securities and Exchange Act of 1934 , enacted as Public Law 73-291 FAS Freely Associated States FASB Financial Accounting Standards Board FECA Federal Employees' Compensation Act FEGLI Federal Employees Group Life Insurance FEHB Federal Employees Health Benefits FERS Federal Employees Retirement System",
+      "type": "table"
+    },
+    {
+      "id": "p1-i83",
+      "reading_order": 3,
+      "text": "2025 Report on Form 10-K United States Postal Service 2",
+      "type": "footer"
+    }
+  ],
+  "schema_version": "ffd-011-targeted-review-v1",
+  "status": "pass",
+  "surface_counts": {
+    "llama_actual_ui_items": 4,
+    "llama_actual_ui_table_rows": 40,
+    "llama_page_one_items": 4,
+    "service_actual_clearleaf_paragraphs": 1,
+    "service_actual_clearleaf_table_rows": 40,
+    "service_public_page_one_items": 4
+  },
+  "target": {
+    "candidate_id": "6838b18e4a757dbc34d11d448fad64f752c5bdb86689da8b96c1db91bc781a1b",
+    "cell_bboxes": [
+      {
+        "height": 10.0,
+        "unit": "pt",
+        "width": 26.65,
+        "x": 61.13,
+        "y": 713.0191606
+      },
+      {
+        "height": 10.0,
+        "unit": "pt",
+        "width": 173.85000000000002,
+        "x": 160.13,
+        "y": 713.0191606
+      }
+    ],
+    "cell_ids": [
+      "865098cc805668a9a8b7a278ce66ebded5492e1347062aef3196e3fe859a0c48",
+      "d34f5e49f02224e766f36ef2d2464f0f7fe426086dc927e53219efc5f08ee6b5"
+    ],
+    "evidence_ids": [
+      "07e9f92ea0a90df0e5f75dbe86e28c2211309931869905a207ea6f3fe46d7672",
+      "2615349a4a5fc2513e14925f57d9b7faf9da32666225e2537d95a85e5cece1a4",
+      "94493605090ff3b8d1f9bdcaac1c8f67c81ad4bab1125783f45956ba63f35e53",
+      "509d2ee65bd6cb1a719a8eaf98d3888b6c388e3cda2f7daeeec5cdd65301ba81",
+      "5b3e8b7a44d343723825692e70168f0171d7ef286fdb57cb4ba325d7c71cfcb7",
+      "94493605090ff3b8d1f9bdcaac1c8f67c81ad4bab1125783f45956ba63f35e53"
+    ],
+    "row": [
+      "FERS",
+      "Federal Employees Retirement System"
+    ],
+    "row_index": 39,
+    "service_table_item_id": "p1-i5",
+    "source_object_ids": [
+      "ac507bb86a23731698a3d9a5b338f9237e5a3c05ac289747934d32a4ce750748",
+      "8c00658bbc89f3353b6711b1b6ab2e660e457fcfb7cbc83084fbe984e69aa0c6"
+    ],
+    "suppression_records": [
+      {
+        "checks": {
+          "bounded_candidate": true,
+          "canonical_table_authority": true,
+          "complete_table_cell_content_coverage": true,
+          "finite_geometry": true,
+          "native_token_overlap": true,
+          "ocr_evidence_retained": true,
+          "printable_unicode": true,
+          "same_page_coordinate_unit": true,
+          "single_page": true,
+          "source_character_geometry_coverage": true,
+          "source_hash_bound": true,
+          "table_cell_source_lineage": true,
+          "unique_complete_line": true,
+          "unique_table_row_owner": true
+        },
+        "id": "alignment-a598b184222b47f87b6f0434",
+        "method": "source_safe_native_token",
+        "original_text": "FERS",
+        "owner_bbox": {
+          "height": 7.6,
+          "unit": "pt",
+          "width": 25.4,
+          "x": 61.8,
+          "y": 713.6
+        },
+        "owner_id": "p1-i42",
+        "owner_type": "text",
+        "page_index": 1,
+        "rejected_ocr_alternative": {
+          "bbox": {
+            "height": 7.6,
+            "unit": "pt",
+            "width": 25.4,
+            "x": 61.8,
+            "y": 713.6
+          },
+          "canonical_owner": {
+            "candidate_id": "6838b18e4a757dbc34d11d448fad64f752c5bdb86689da8b96c1db91bc781a1b",
+            "cell_ids": [
+              "865098cc805668a9a8b7a278ce66ebded5492e1347062aef3196e3fe859a0c48",
+              "d34f5e49f02224e766f36ef2d2464f0f7fe426086dc927e53219efc5f08ee6b5"
+            ],
+            "content_coverage": 1.0,
+            "coordinate_unit": "pt",
+            "evidence_ids": [
+              "07e9f92ea0a90df0e5f75dbe86e28c2211309931869905a207ea6f3fe46d7672",
+              "2615349a4a5fc2513e14925f57d9b7faf9da32666225e2537d95a85e5cece1a4",
+              "94493605090ff3b8d1f9bdcaac1c8f67c81ad4bab1125783f45956ba63f35e53",
+              "509d2ee65bd6cb1a719a8eaf98d3888b6c388e3cda2f7daeeec5cdd65301ba81",
+              "5b3e8b7a44d343723825692e70168f0171d7ef286fdb57cb4ba325d7c71cfcb7"
+            ],
+            "page_index": 1,
+            "policy_id": "p02-table-owned-supplemental-reconciliation-v1",
+            "row_bbox": {
+              "height": 10.0,
+              "unit": "pt",
+              "width": 272.85,
+              "x": 61.13,
+              "y": 713.019161
+            },
+            "row_index": 39,
+            "source_character_geometry_coverage": 1.0,
+            "source_line_bbox": {
+              "height": 9.479996,
+              "unit": "pt",
+              "width": 271.390026,
+              "x": 61.950001,
+              "y": 713.510017
+            },
+            "source_object_ids": [
+              "ac507bb86a23731698a3d9a5b338f9237e5a3c05ac289747934d32a4ce750748",
+              "8c00658bbc89f3353b6711b1b6ab2e660e457fcfb7cbc83084fbe984e69aa0c6"
+            ],
+            "suppression_reason": "table_owned_complete_source_line_duplicate",
+            "table_bbox": {
+              "height": 624.842,
+              "unit": "pt",
+              "width": 496.96,
+              "x": 56.981,
+              "y": 99.888
+            },
+            "table_id": "e110a036b4244f19d6584fc170a1801ddb5c321c9c243aff84970f4ddad667eb",
+            "table_item_id": "p1-i5",
+            "table_order": 4
+          },
+          "confidence": 0.965,
+          "ocr_contributor": {
+            "bbox": {
+              "height": 7.6,
+              "unit": "pt",
+              "width": 25.4,
+              "x": 61.8,
+              "y": 713.6
+            },
+            "confidence": 0.965,
+            "coordinate_unit": "pt",
+            "id": "ocr-contributor-96b4ec0214973260ad7ccf4a7b4b637993b6b969e486174c2e79cb4712879206",
+            "line_index": 80,
+            "ocr_pass": "standard",
+            "page_index": 1,
+            "policy_id": "p02-supplemental-ocr-contributor-v1",
+            "raw_text": "FERS",
+            "region_object_index": 0,
+            "region_origin": "pdf_page_render",
+            "region_role": "page_source",
+            "schema_version": "1.0",
+            "source_document_identity": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74"
+          },
+          "reason": "table_owned_complete_source_line_duplicate",
+          "source": "ocr",
+          "text": "FERS"
+        },
+        "selected_source": "pdf_source_text",
+        "selected_text": "",
+        "source_character_ids": [
+          "char-3938847c3c76835b6692bbe5",
+          "char-9297444c8cab237f2c1cd8e8",
+          "char-78f4f06a482779680ae843c8",
+          "char-24228c562fa1de89457802ba",
+          "char-d8d969b5afc298d1a2fb8708",
+          "char-77a82c37a0d0ca02030cc5e9",
+          "char-ebef53cdb76d8dd3ae72621e",
+          "char-36130934171d70faa71c878e",
+          "char-e1409e887c2a42f6b257e702",
+          "char-66db25e88e57e8526b85b3f0",
+          "char-f9a1457ea37d67dcad0c3929",
+          "char-2966767b236caf494639a324",
+          "char-97fd36f1a5d3937c0a7c7739",
+          "char-d9c38eb3bed5f57fb7d0fc82",
+          "char-69e913ad2b7d51f20e3b89ed",
+          "char-5847723b3f4bf819896c212c",
+          "char-d166af5cb74b1cc5d9d0d207",
+          "char-569feeada781034a135e8983",
+          "char-6513899e91fde24947087e98",
+          "char-83ce6d364ec75832bc5707ed",
+          "char-d9f0eea5843625ed3a1f04a4",
+          "char-95b291bacb5803d63816e07c",
+          "char-e4b5d3f3fd4828962fae1510",
+          "char-f43006c0e271b77c7b95cd10",
+          "char-38eb6f171d67399540eea5da",
+          "char-cd3a67912ce0592892899746",
+          "char-07bda9d80e90645839b9fc20",
+          "char-70e4d135b7fd4b5b5179fa47",
+          "char-11f86dcc5dbc882de2e54eba",
+          "char-c1b2f91640020bd604729907",
+          "char-4c4257b6fc4e699d53483834",
+          "char-86ff0b9ad62a4f1b15902e3d",
+          "char-f8e07f55111d2bad4b33f194",
+          "char-aa230b91117bbc4432aa724b",
+          "char-b53bc71212e1f9b591139b1e",
+          "char-b42828d265e9a0059de9e458",
+          "char-5b4f333edd6c66c6b5c15d66",
+          "char-4152e72debda3508996abda3",
+          "char-3208bd2bca677377dd2adc6d",
+          "char-98c4e78661ab9c44ef9d66e5"
+        ],
+        "source_line_ids": [
+          "line-735bfdb348e8f9f08b73a518"
+        ],
+        "source_roles": [],
+        "terminal_reason": "table_owned_complete_source_line_duplicate",
+        "type1_mapping_ids": []
+      },
+      {
+        "checks": {
+          "bounded_candidate": true,
+          "canonical_table_authority": true,
+          "complete_table_cell_content_coverage": true,
+          "finite_geometry": true,
+          "native_token_overlap": true,
+          "ocr_evidence_retained": true,
+          "printable_unicode": true,
+          "same_page_coordinate_unit": true,
+          "single_page": true,
+          "source_character_geometry_coverage": true,
+          "source_hash_bound": true,
+          "table_cell_source_lineage": true,
+          "unique_complete_line": true,
+          "unique_table_row_owner": true
+        },
+        "id": "alignment-921f1c305551dd131e179ad3",
+        "method": "source_safe_native_token",
+        "original_text": "Federal Employees Retirement System",
+        "owner_bbox": {
+          "height": 9.6,
+          "unit": "pt",
+          "width": 172.6,
+          "x": 160.8,
+          "y": 713.6
+        },
+        "owner_id": "p1-i81",
+        "owner_type": "text",
+        "page_index": 1,
+        "rejected_ocr_alternative": {
+          "bbox": {
+            "height": 9.6,
+            "unit": "pt",
+            "width": 172.6,
+            "x": 160.8,
+            "y": 713.6
+          },
+          "canonical_owner": {
+            "candidate_id": "6838b18e4a757dbc34d11d448fad64f752c5bdb86689da8b96c1db91bc781a1b",
+            "cell_ids": [
+              "865098cc805668a9a8b7a278ce66ebded5492e1347062aef3196e3fe859a0c48",
+              "d34f5e49f02224e766f36ef2d2464f0f7fe426086dc927e53219efc5f08ee6b5"
+            ],
+            "content_coverage": 1.0,
+            "coordinate_unit": "pt",
+            "evidence_ids": [
+              "07e9f92ea0a90df0e5f75dbe86e28c2211309931869905a207ea6f3fe46d7672",
+              "2615349a4a5fc2513e14925f57d9b7faf9da32666225e2537d95a85e5cece1a4",
+              "94493605090ff3b8d1f9bdcaac1c8f67c81ad4bab1125783f45956ba63f35e53",
+              "509d2ee65bd6cb1a719a8eaf98d3888b6c388e3cda2f7daeeec5cdd65301ba81",
+              "5b3e8b7a44d343723825692e70168f0171d7ef286fdb57cb4ba325d7c71cfcb7"
+            ],
+            "page_index": 1,
+            "policy_id": "p02-table-owned-supplemental-reconciliation-v1",
+            "row_bbox": {
+              "height": 10.0,
+              "unit": "pt",
+              "width": 272.85,
+              "x": 61.13,
+              "y": 713.019161
+            },
+            "row_index": 39,
+            "source_character_geometry_coverage": 1.0,
+            "source_line_bbox": {
+              "height": 9.479996,
+              "unit": "pt",
+              "width": 271.390026,
+              "x": 61.950001,
+              "y": 713.510017
+            },
+            "source_object_ids": [
+              "ac507bb86a23731698a3d9a5b338f9237e5a3c05ac289747934d32a4ce750748",
+              "8c00658bbc89f3353b6711b1b6ab2e660e457fcfb7cbc83084fbe984e69aa0c6"
+            ],
+            "suppression_reason": "table_owned_complete_source_line_duplicate",
+            "table_bbox": {
+              "height": 624.842,
+              "unit": "pt",
+              "width": 496.96,
+              "x": 56.981,
+              "y": 99.888
+            },
+            "table_id": "e110a036b4244f19d6584fc170a1801ddb5c321c9c243aff84970f4ddad667eb",
+            "table_item_id": "p1-i5",
+            "table_order": 4
+          },
+          "confidence": 0.9652,
+          "ocr_contributor": {
+            "bbox": {
+              "height": 9.6,
+              "unit": "pt",
+              "width": 172.6,
+              "x": 160.8,
+              "y": 713.6
+            },
+            "confidence": 0.9652,
+            "coordinate_unit": "pt",
+            "id": "ocr-contributor-b18718cba4843a09a128e640c5ef52f8c24b60f419cfa87c4cf6162728317b47",
+            "line_index": 81,
+            "ocr_pass": "standard",
+            "page_index": 1,
+            "policy_id": "p02-supplemental-ocr-contributor-v1",
+            "raw_text": "Federal Employees Retirement System",
+            "region_object_index": 0,
+            "region_origin": "pdf_page_render",
+            "region_role": "page_source",
+            "schema_version": "1.0",
+            "source_document_identity": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74"
+          },
+          "reason": "table_owned_complete_source_line_duplicate",
+          "source": "ocr",
+          "text": "Federal Employees Retirement System"
+        },
+        "selected_source": "pdf_source_text",
+        "selected_text": "",
+        "source_character_ids": [
+          "char-3938847c3c76835b6692bbe5",
+          "char-9297444c8cab237f2c1cd8e8",
+          "char-78f4f06a482779680ae843c8",
+          "char-24228c562fa1de89457802ba",
+          "char-d8d969b5afc298d1a2fb8708",
+          "char-77a82c37a0d0ca02030cc5e9",
+          "char-ebef53cdb76d8dd3ae72621e",
+          "char-36130934171d70faa71c878e",
+          "char-e1409e887c2a42f6b257e702",
+          "char-66db25e88e57e8526b85b3f0",
+          "char-f9a1457ea37d67dcad0c3929",
+          "char-2966767b236caf494639a324",
+          "char-97fd36f1a5d3937c0a7c7739",
+          "char-d9c38eb3bed5f57fb7d0fc82",
+          "char-69e913ad2b7d51f20e3b89ed",
+          "char-5847723b3f4bf819896c212c",
+          "char-d166af5cb74b1cc5d9d0d207",
+          "char-569feeada781034a135e8983",
+          "char-6513899e91fde24947087e98",
+          "char-83ce6d364ec75832bc5707ed",
+          "char-d9f0eea5843625ed3a1f04a4",
+          "char-95b291bacb5803d63816e07c",
+          "char-e4b5d3f3fd4828962fae1510",
+          "char-f43006c0e271b77c7b95cd10",
+          "char-38eb6f171d67399540eea5da",
+          "char-cd3a67912ce0592892899746",
+          "char-07bda9d80e90645839b9fc20",
+          "char-70e4d135b7fd4b5b5179fa47",
+          "char-11f86dcc5dbc882de2e54eba",
+          "char-c1b2f91640020bd604729907",
+          "char-4c4257b6fc4e699d53483834",
+          "char-86ff0b9ad62a4f1b15902e3d",
+          "char-f8e07f55111d2bad4b33f194",
+          "char-aa230b91117bbc4432aa724b",
+          "char-b53bc71212e1f9b591139b1e",
+          "char-b42828d265e9a0059de9e458",
+          "char-5b4f333edd6c66c6b5c15d66",
+          "char-4152e72debda3508996abda3",
+          "char-3208bd2bca677377dd2adc6d",
+          "char-98c4e78661ab9c44ef9d66e5"
+        ],
+        "source_line_ids": [
+          "line-735bfdb348e8f9f08b73a518"
+        ],
+        "source_roles": [],
+        "terminal_reason": "table_owned_complete_source_line_duplicate",
+        "type1_mapping_ids": []
+      }
+    ],
+    "table_id": "e110a036b4244f19d6584fc170a1801ddb5c321c9c243aff84970f4ddad667eb"
+  }
+}

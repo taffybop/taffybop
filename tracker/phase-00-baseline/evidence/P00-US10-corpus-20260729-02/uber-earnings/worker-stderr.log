@@ -1,0 +1,13 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/360 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 360/360 [00:00<00:00, 12823.68it/s]
+
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 770/770 [00:00<00:00, 15652.06it/s]
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x130465e50>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x130465bd0>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x130333490>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
