@@ -27,6 +27,9 @@ tmp/
 parsed.json
 parsed.md
 
+# Generated latency benchmark ledgers and profiling evidence (kept locally)
+tracker/phase-latency/evidence/LAT-US01-final-candidate-*.json
+
 # Private sample and reference artifacts
 /Original document.pdf
 /markdown.md
@@ -36,4 +39,3 @@ parsed.md
 .DS_Store
 .idea/
 .vscode/
-
