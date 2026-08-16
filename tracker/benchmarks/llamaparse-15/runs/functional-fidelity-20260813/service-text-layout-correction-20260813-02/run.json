@@ -1,0 +1,141 @@
+{
+  "base_url": "http://127.0.0.1:8027",
+  "capture_mode": "fresh_server_per_http_output",
+  "cases": [
+    {
+      "case_id": "finance-10k",
+      "order": 1,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "98882e7c9c99c6931f3030001c1131f77640a0d36fd80e5afce7798f40553f0d",
+          "size_bytes": 1754861,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389",
+          "size_bytes": 12618,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/finance-10k.pdf",
+      "source_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "source_size_bytes": 87105
+    },
+    {
+      "case_id": "ny-timetable",
+      "order": 2,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "6832f4b66dc6c04b11b09bf368f9cb10f475126d5588d9e6db1785caf0503c49",
+          "size_bytes": 2670240,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef",
+          "size_bytes": 43231,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/ny-timetable.pdf",
+      "source_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "source_size_bytes": 26109
+    },
+    {
+      "case_id": "postal-10k",
+      "order": 3,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "9ad95eddd78478528e5b6f2ee30b99064ed3747b93d073786ccc9d35083c65ba",
+          "size_bytes": 1792174,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+          "size_bytes": 11275,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/postal-10k.pdf",
+      "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "source_size_bytes": 83589
+    },
+    {
+      "case_id": "purchase-agreement",
+      "order": 4,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "81843f0c7f8a7c3afc7ac70133ba0bd57d650cb1502e5de7121c1fb2421eafb1",
+          "size_bytes": 258183,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+          "size_bytes": 3503,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/purchase-agreement.pdf",
+      "source_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "source_size_bytes": 152828
+    }
+  ],
+  "completed_at_utc": "2026-08-13T08:16:58.799639+00:00",
+  "corpus": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata",
+  "profile": {
+    "environment": {
+      "DOCLING_ARTIFACTS_PATH": ".models/docling",
+      "HF_HUB_OFFLINE": "1",
+      "PARSER_CANONICAL_SERIALIZATION_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURED_OUTPUT_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_VALUES_ENABLED": "true",
+      "PARSER_DIAGRAMS_TOPOLOGY_ENABLED": "true",
+      "PARSER_LAYOUT_FORMS_ENABLED": "true",
+      "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED": "true",
+      "PARSER_LAYOUT_RELATIONSHIP_ORDER_ENABLED": "true",
+      "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED": "true",
+      "PARSER_LAYOUT_SOURCE_NOTES_ENABLED": "true",
+      "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED": "true",
+      "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED": "true",
+      "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED": "true",
+      "PARSER_OCR_NUMERIC_CLEANUP_V2_ENABLED": "true",
+      "PARSER_OCR_SPATIAL_TOKEN_PRESERVATION_ENABLED": "true",
+      "PARSER_SHARED_IR_ENABLED": "true",
+      "PARSER_SHARED_IR_NORMALIZATION_ENABLED": "true",
+      "PARSER_TABLES_CANDIDATE_GATE_ENABLED": "true",
+      "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED": "true",
+      "PARSER_TABLES_MULTI_PAGE_MERGE_ENABLED": "true",
+      "PARSER_TABLES_SPAN_FIDELITY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_AUDIT_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_RECOVERY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SELECTIVE_SPAN_OCR_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SOURCE_ALIGNMENT_ENABLED": "true",
+      "PARSER_TEXT_RECONCILIATION_ENABLED": "true",
+      "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED": "true",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "hosted_models": "disabled",
+    "image_captioning": false,
+    "local_optional_visual_models": "disabled",
+    "network_services": "disabled",
+    "profile_id": "release-fidelity-local-deterministic-v1",
+    "purpose": "Exercise all shipped PDF text, layout, table, chart, diagram, canonical JSON and Markdown capabilities whose dependencies are local and available.",
+    "schema_version": "functional-fidelity-service-profile-v1"
+  },
+  "schema_version": "functional-fidelity-service-run-v1",
+  "status": "success"
+}

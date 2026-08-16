@@ -1,0 +1,21 @@
+# Phase 01 Metrics
+
+| Metric | Before | Target | After |
+|---|---:|---:|---:|
+| Elements with stable evidence links | Partial/ad hoc | 100% of transformed elements | P01-US01: 3,799/3,799 retained-corpus IR elements have typed evidence links or typed child evidence; IDs are deterministic and source-array-position independent |
+| Caption/source relationship retention | Inconsistent | 100% on phase fixtures | P01-US02: 13/13 focused raw nodes and 195/195 real Docling collection refs retained; captions, source notes, footnotes, comments, annotations, references, and nested cell refs remain typed and distinct |
+| Mixed-source items with accurate source breakdown | 0% on chart item | 100% | P01-US02: source method is inferred per evidence record; mixed native/OCR owners, Unicode native matches, and conservative short/numeric OCR marks pass |
+| Backend/frontend Markdown parity | Divergent | Byte-equivalent canonical output | P01-US04: 15/15 documents and 30/30 pages are byte-equivalent from the stored canonical views; 15/15 flag-off documents retain frozen legacy Markdown |
+| Duplicate canonical elements | Exhibit 8 risk | 0 on phase fixtures | P01-US03: 0 duplicates across 3,009 contributing element IDs in 274 included canonical blocks |
+| Public v1 contract failures | 0 baseline | 0 | P01-US04: 0; present canonical contracts validate strictly, absent-only responses use the frozen legacy path, and the endpoint/schema remain unchanged |
+| Added serialization latency | Unmeasured | p95 ≤ 5% over Phase 00 | P01-US04 canonical frontend normalization p50/p95/max: 0.085208/0.443750/1.303083 ms; conservative Phase 1 cumulative p95 655.055750 ms = 1.402480% of Phase 0 |
+| Top-level item bbox/source coverage | 100% across 291 baseline items | Preserve 100%; add typed child/field evidence where a structured claim is emitted | P01-US01: 15/15 cases and all 291 primary items round-trip exactly; 3,508 subordinate/diagnostic elements add typed child/field evidence |
+| Top-level confidence coverage | 23.02% | 100% of transformed elements expose typed confidence or an explicit unavailable reason | P01-US01 IR: 100% of 3,805 evidence records carry a bounded score or `not_reported_by_source` reason |
+| Text outside owning item bbox | Confirmed in health-report p1 charts, manufacturing-report pp1–3 charts, and uber-earnings p1 subtitle/date | 0 unmodeled cases on phase fixtures; external captions/date spans use relationships and their own bboxes | P01-US02: referenced captions/children retain their own bboxes and coordinate origins; provenance-free nodes produce explicit geometry concerns |
+| Source-supported PDF annotations retained as links | Flattened to text in health-report p1 (2 StatLinks) and manufacturing-report p3 | 100% retain target plus annotation/native/model provenance | P01-US02: hyperlinks and embedded annotation metadata remain inert structured properties; comment/annotation/reference edges and `FineRef` ranges are retained |
+| Unsupported link targets promoted as source truth | Expert-only Micron URL on esg-metrics p1 | 0; visible text without an annotation keeps a null target and provenance | P01-US04: 0; frontend preserves canonical evidence and views without deriving or dereferencing link targets |
+| Full-document/page-body/header/footer inclusion policy | Expert standalone differs from JSON page body in 13/15 cases; insurance-acord omits a verified JSON footer | 100% of views declare and satisfy one versioned inclusion contract | P01-US03: contract `1.0` declares all four views; 15/15 documents and 30/30 pages have full/body views, with 13 source-supported headers and 28 footers |
+| Our JSON-item/standalone Markdown projection | 15/15 exact ordered projection | Preserve 15/15 while canonical semantics remove reviewed duplicate representations | P01-US03: legacy flag-off projection remains exact; flag-on manifest records 10 reviewed canonical changes and 5 byte-stable cases with 0 unreviewed differences |
+| Silent raw-reference loss | Referenced graph content could be skipped or flattened | 0 | P01-US02: 0; 13/13 focused and 195/195 real collection refs retained, with malformed/unresolved cases represented as concerns |
+
+After values are recorded story by story and summarized at phase exit.

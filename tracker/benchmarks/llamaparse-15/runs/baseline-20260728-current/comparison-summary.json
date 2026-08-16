@@ -1,0 +1,167 @@
+[
+  {
+    "case_id": "catastrophe-recap",
+    "expert_items": 9,
+    "expert_our_token_f1": 0.473851030110935,
+    "expert_pages": 1,
+    "our_items": 6,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.3747870528109029,
+    "source_proxy_our_token_f1": 0.7992565055762083
+  },
+  {
+    "case_id": "clean-energy",
+    "expert_items": 7,
+    "expert_our_token_f1": 0.4307692307692308,
+    "expert_pages": 1,
+    "our_items": 8,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.48109965635738833,
+    "source_proxy_our_token_f1": 0.8014705882352942
+  },
+  {
+    "case_id": "clinical-study",
+    "expert_items": 51,
+    "expert_our_token_f1": 0.9171784232365146,
+    "expert_pages": 4,
+    "our_items": 39,
+    "our_pages": 4,
+    "source_pages": 4,
+    "source_proxy_expert_token_f1": 0.6164754953076121,
+    "source_proxy_our_token_f1": 0.6449781659388647
+  },
+  {
+    "case_id": "component-datasheet",
+    "expert_items": 31,
+    "expert_our_token_f1": 0.832579185520362,
+    "expert_pages": 3,
+    "our_items": 60,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.938671209540034,
+    "source_proxy_our_token_f1": 0.8771929824561404
+  },
+  {
+    "case_id": "egov-survey",
+    "expert_items": 8,
+    "expert_our_token_f1": 0.8419243986254296,
+    "expert_pages": 1,
+    "our_items": 8,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.8896925858951176,
+    "source_proxy_our_token_f1": 0.9264705882352943
+  },
+  {
+    "case_id": "esg-metrics",
+    "expert_items": 18,
+    "expert_our_token_f1": 0.8411712511091393,
+    "expert_pages": 1,
+    "our_items": 20,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.5318138651471985,
+    "source_proxy_our_token_f1": 0.6128318584070795
+  },
+  {
+    "case_id": "finance-10k",
+    "expert_items": 18,
+    "expert_our_token_f1": 0.9816414686825055,
+    "expert_pages": 3,
+    "our_items": 18,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.6395939086294417,
+    "source_proxy_our_token_f1": 0.6509225092250922
+  },
+  {
+    "case_id": "health-report",
+    "expert_items": 15,
+    "expert_our_token_f1": 0.359626802374894,
+    "expert_pages": 1,
+    "our_items": 10,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.3155996393146979,
+    "source_proxy_our_token_f1": 0.6342281879194631
+  },
+  {
+    "case_id": "insurance-acord",
+    "expert_items": 15,
+    "expert_our_token_f1": 0.8192019950124688,
+    "expert_pages": 1,
+    "our_items": 21,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.6138032305433185,
+    "source_proxy_our_token_f1": 0.6583747927031509
+  },
+  {
+    "case_id": "manufacturing-report",
+    "expert_items": 29,
+    "expert_our_token_f1": 0.5197670855041373,
+    "expert_pages": 3,
+    "our_items": 22,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.46686848301379075,
+    "source_proxy_our_token_f1": 0.7026239067055393
+  },
+  {
+    "case_id": "ny-timetable",
+    "expert_items": 9,
+    "expert_our_token_f1": 0.9744541904091171,
+    "expert_pages": 3,
+    "our_items": 11,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.6131599212800547,
+    "source_proxy_our_token_f1": 0.6341118188251946
+  },
+  {
+    "case_id": "postal-10k",
+    "expert_items": 13,
+    "expert_our_token_f1": 0.9825783972125435,
+    "expert_pages": 3,
+    "our_items": 14,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.6511824324324325,
+    "source_proxy_our_token_f1": 0.658086658086658
+  },
+  {
+    "case_id": "purchase-agreement",
+    "expert_items": 10,
+    "expert_our_token_f1": 0.9940476190476192,
+    "expert_pages": 1,
+    "our_items": 12,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.9940476190476192,
+    "source_proxy_our_token_f1": 1.0
+  },
+  {
+    "case_id": "settlement-agreement",
+    "expert_items": 6,
+    "expert_our_token_f1": 0.9812438302073051,
+    "expert_pages": 1,
+    "our_items": 6,
+    "our_pages": 1,
+    "source_pages": 1,
+    "source_proxy_expert_token_f1": 0.9394572025052192,
+    "source_proxy_our_token_f1": 0.9277486910994764
+  },
+  {
+    "case_id": "uber-earnings",
+    "expert_items": 40,
+    "expert_our_token_f1": 0.5760517799352751,
+    "expert_pages": 3,
+    "our_items": 36,
+    "our_pages": 3,
+    "source_pages": 3,
+    "source_proxy_expert_token_f1": 0.5968028419182949,
+    "source_proxy_our_token_f1": 0.8435374149659864
+  }
+]

@@ -1,0 +1,3466 @@
+{
+  "artifact_inventory": {
+    "candidate_dom_pages": [
+      1
+    ],
+    "candidate_json": {
+      "path": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+      "present": true,
+      "sha256": "80de9f66e3a6e589a62d8791c2d161f56235c08bed3a3a0888f0690c215bf9c4",
+      "size_bytes": 258183
+    },
+    "candidate_markdown": {
+      "path": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+      "present": true,
+      "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+      "size_bytes": 3503
+    },
+    "reference_dom_pages": [
+      1
+    ],
+    "reference_json": {
+      "path": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+      "present": true,
+      "sha256": "a6db0458fc32a6216374a775333665322185a4205f457e157d078c79aaaa6aaa",
+      "size_bytes": 22964
+    },
+    "reference_markdown": {
+      "path": "llamaparse-text-render-fix/purchase-agreement/reference.md",
+      "present": true,
+      "sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+      "size_bytes": 3473
+    },
+    "service_http": {
+      "json": {
+        "content_type": "application/json",
+        "sha256": "80de9f66e3a6e589a62d8791c2d161f56235c08bed3a3a0888f0690c215bf9c4",
+        "size_bytes": 258183,
+        "status_code": 200
+      },
+      "markdown": {
+        "content_type": "text/markdown; charset=utf-8",
+        "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+        "size_bytes": 3503,
+        "status_code": 200
+      }
+    }
+  },
+  "case_id": "purchase-agreement",
+  "discrepancies": [
+    {
+      "actual": {
+        "text_excerpt": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '\\[ \\]' indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VE…",
+        "token_count": 501
+      },
+      "category": "text_integrity",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 3333,
+        "actual_duplicate_lines": [],
+        "actual_tokens": 501,
+        "added_segments": [],
+        "added_token_counts": [],
+        "expected_chars": 3328,
+        "expected_duplicate_lines": [],
+        "expected_tokens": 501,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": false,
+        "replaced_segments": [],
+        "token_f1": 1.0,
+        "token_precision": 1.0,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 1.0
+      },
+      "expected": {
+        "text_excerpt": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with “[ ]” indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERS…",
+        "token_count": 501
+      },
+      "id": "FID-PURCHASE-AGREEMENT-c9d604e6190d",
+      "output_type": "markdown",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/0"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "No baseline text token is missing, added, duplicated, truncated, or moved out of reading order beyond an explicitly reviewed exception.",
+        "dedicated_test_anchor": "test_p02_us04_text_reconciliation.py",
+        "gap_id": "GAP-TEXT-001",
+        "milestone": "M1",
+        "primary_story": "P02-US04",
+        "secondary_stories": "P02-US03/US06",
+        "story_action": "Existing; evidence/acceptance expanded"
+      },
+      "summary": "Raw Markdown has missing, added, replaced, duplicated, or reordered visible text."
+    },
+    {
+      "actual": {
+        "strong_markers": 14
+      },
+      "category": "markdown_structure",
+      "classification": "functional_regression",
+      "evidence": {
+        "strong_markers": {
+          "actual": 14,
+          "expected": 13
+        }
+      },
+      "expected": {
+        "strong_markers": 13
+      },
+      "id": "FID-PURCHASE-AGREEMENT-132d920fd467",
+      "output_type": "markdown",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/1"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Canonical Markdown preserves render-significant block boundaries and syntax without losing or duplicating content.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "User-visible Markdown emphasis or code syntax differs."
+    },
+    {
+      "actual": [
+        "text",
+        "text",
+        "text",
+        "heading",
+        "text",
+        "heading",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "footer"
+      ],
+      "category": "json_structure",
+      "classification": "acceptable_difference",
+      "evidence": {
+        "actual_anchors": [
+          "Draft of 6/1/20",
+          "This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with …",
+          "EXECUTION VERSION",
+          "ASSET PURCHASE AGREEMENT",
+          "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and …",
+          "Background",
+          "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater with…",
+          "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporate…",
+          "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor Syst…",
+          "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally c…",
+          "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and …",
+          "A7310832"
+        ],
+        "actual_types": [
+          "text",
+          "text",
+          "text",
+          "heading",
+          "text",
+          "heading",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "footer"
+        ],
+        "expected_anchors": [
+          "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, brack…",
+          "ASSET PURCHASE AGREEMENT",
+          "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and …",
+          "<u>Background</u>",
+          "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater with…",
+          "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporate…",
+          "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor Syst…",
+          "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally c…",
+          "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and …",
+          "A7310832"
+        ],
+        "expected_types": [
+          "text",
+          "heading",
+          "text",
+          "heading",
+          "text",
+          "text",
+          "text",
+          "text",
+          "text",
+          "footer"
+        ],
+        "semantic_content_and_order_compared_separately": true,
+        "sequence_ratio": 0.9090909090909091,
+        "wire_schema_parity_required": false
+      },
+      "expected": [
+        "text",
+        "heading",
+        "text",
+        "heading",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "footer"
+      ],
+      "id": "FID-PURCHASE-AGREEMENT-0c347902955c",
+      "output_type": "json",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/2"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Pages and components retain stable types, order, nesting, page association, semantic fields, and canonical serialized content.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Cross-envelope component decomposition or taxonomy differs on the page."
+    },
+    {
+      "actual": {
+        "excerpt": "~~Draft of 6/1/20~~ ~~This is a draft document. Certain updates will be needed prior to finalizing this.~~ ~~In particular, bracketed items with '\\[ \\]' indicate a known open/non-final item.~~ ~~This is Confidential to The City of Johnstow…",
+        "page_number": 1,
+        "token_count": 501
+      },
+      "category": "text_integrity",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 3333,
+        "actual_duplicate_lines": [],
+        "actual_tokens": 501,
+        "added_segments": [
+          {
+            "text": "a7310832",
+            "token_end": 501,
+            "token_start": 500
+          }
+        ],
+        "added_token_counts": [
+          [
+            "a7310832",
+            1
+          ]
+        ],
+        "expected_chars": 3319,
+        "expected_duplicate_lines": [],
+        "expected_tokens": 500,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": false,
+        "physical_page": 1,
+        "replaced_segments": [],
+        "token_f1": 0.9990009990009989,
+        "token_precision": 0.998003992015968,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 0.999000999000999
+      },
+      "expected": {
+        "excerpt": "Draft of 6/1/20 ~~This is a draft document. Certain updates will be needed prior to finalizing this.~~ ~~In particular, bracketed items with “[ ]” indicate a known open/non-final item.~~ ~~This is **Confidential** to The City of Johnstown~…",
+        "page_number": 1,
+        "token_count": 500
+      },
+      "id": "FID-PURCHASE-AGREEMENT-7a4b4f232159",
+      "output_type": "json",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/3"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "No baseline text token is missing, added, duplicated, truncated, or moved out of reading order beyond an explicitly reviewed exception.",
+        "dedicated_test_anchor": "test_p02_us04_text_reconciliation.py",
+        "gap_id": "GAP-TEXT-001",
+        "milestone": "M1",
+        "primary_story": "P02-US04",
+        "secondary_stories": "P02-US03/US06",
+        "story_action": "Existing; evidence/acceptance expanded"
+      },
+      "summary": "Page-associated JSON component content differs from LlamaParse."
+    },
+    {
+      "actual": {
+        "excerpt": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '[ ]' indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERS…",
+        "token_count": 500
+      },
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_chars": 3346,
+        "actual_tokens": 500,
+        "added_segments": [],
+        "added_token_counts": [],
+        "expected_chars": 3352,
+        "expected_tokens": 501,
+        "missing_segments": [
+          {
+            "text": "a7310832",
+            "token_end": 501,
+            "token_start": 500
+          }
+        ],
+        "missing_token_counts": [
+          [
+            "a7310832",
+            1
+          ]
+        ],
+        "normalized_exact": false,
+        "replaced_segments": [],
+        "token_f1": 0.9990009990009989,
+        "token_precision": 1.0,
+        "token_recall": 0.998003992015968,
+        "token_sequence_ratio": 0.999000999000999
+      },
+      "expected": {
+        "excerpt": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with “[ ]” indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERS…",
+        "token_count": 501
+      },
+      "id": "FID-PURCHASE-AGREEMENT-e906938c16e7",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/4"
+      },
+      "severity": "minor",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered Markdown visible semantic text differs from LlamaParse."
+    },
+    {
+      "actual": {
+        "h1": 1,
+        "h2": 1,
+        "p": 9,
+        "strong": 17
+      },
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "actual_headings": [
+          {
+            "level": 1,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "level": 2,
+            "text": "Background"
+          }
+        ],
+        "actual_structure": [
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "h1"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "h1",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "h2"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "h2",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          }
+        ],
+        "actual_tag_sequence": [
+          "p",
+          "p",
+          "strong",
+          "p",
+          "h1",
+          "strong",
+          "p",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "h2",
+          "strong",
+          "p",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "p",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "p",
+          "strong",
+          "p",
+          "p"
+        ],
+        "expected_headings": [
+          {
+            "level": 1,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "level": 2,
+            "text": "Background"
+          }
+        ],
+        "expected_structure": [
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "h1"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "h2"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 1,
+            "parent_tag": "p",
+            "tag": "strong"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          },
+          {
+            "attributes": {},
+            "depth": 0,
+            "parent_tag": null,
+            "tag": "p"
+          }
+        ],
+        "expected_tag_sequence": [
+          "p",
+          "strong",
+          "h1",
+          "p",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "strong",
+          "h2",
+          "p",
+          "strong",
+          "strong",
+          "p",
+          "strong",
+          "strong",
+          "strong",
+          "p",
+          "strong",
+          "p",
+          "p",
+          "p"
+        ],
+        "sequence_ratio": 0.84
+      },
+      "expected": {
+        "h1": 1,
+        "h2": 1,
+        "p": 8,
+        "strong": 12
+      },
+      "id": "FID-PURCHASE-AGREEMENT-623dbd06076c",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/5"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered semantic tag hierarchy or order differs from LlamaParse."
+    },
+    {
+      "actual": [
+        "text",
+        "text",
+        "text",
+        "heading",
+        "text",
+        "heading",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text"
+      ],
+      "category": "rendered_dom",
+      "classification": "functional_regression",
+      "evidence": {
+        "sequence_ratio": 0.8571428571428571
+      },
+      "expected": [
+        "text",
+        "heading",
+        "text",
+        "heading",
+        "text",
+        "text",
+        "text",
+        "text",
+        "text",
+        "footer"
+      ],
+      "id": "FID-PURCHASE-AGREEMENT-0fd7b217a73e",
+      "output_type": "rendered_dom",
+      "pages": [
+        1
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service-final-source-grounded-20260813-v2/purchase-agreement/response.json",
+          "candidate_markdown": "service-final-source-grounded-20260813-v2/purchase-agreement/response.md",
+          "reference_json": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "reference_markdown": "llamaparse-text-render-fix/purchase-agreement/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+        "json_pointer": "/discrepancies/6"
+      },
+      "severity": "major",
+      "story": {
+        "acceptance_criterion": "Rendered Markdown preserves semantic tags, text, ordering, grouping, links, emphasis, code, and table structure page by page.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "Rendered item grouping/type sequence differs from LlamaParse."
+    }
+  ],
+  "metrics": {
+    "json": {
+      "actual": {
+        "canonical_sha256": "4e27d9132c0382c905f42d2830e21945967e2e123e937907acebd1eccd838bb9",
+        "items": {
+          "family_counts": {
+            "footer": 1,
+            "heading": 2,
+            "text": 9
+          },
+          "field_counts": {
+            "active_text": 9,
+            "active_text_omitted_run_ids": 9,
+            "active_text_policy": 9,
+            "bbox": 13,
+            "confidence": 13,
+            "id": 12,
+            "items": 1,
+            "label": 12,
+            "layout_running_region_projected": 1,
+            "level": 2,
+            "md": 13,
+            "reading_order": 12,
+            "redline_markdown": 9,
+            "running_region": 1,
+            "running_region_policy": 1,
+            "source": 13,
+            "source_alignment": 4,
+            "text_rules": 9,
+            "text_run_policy": 9,
+            "text_runs": 9,
+            "type": 13,
+            "value": 13
+          },
+          "field_coverage": {
+            "bbox": 1.0,
+            "confidence": 0.0,
+            "content": 1.0,
+            "provenance": 1.0
+          },
+          "item_count": 13,
+          "page_count": 1,
+          "page_numbers": [
+            1
+          ],
+          "pages": [
+            {
+              "content_anchors": [
+                "Draft of 6/1/20",
+                "This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with …",
+                "EXECUTION VERSION",
+                "ASSET PURCHASE AGREEMENT",
+                "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and …",
+                "Background",
+                "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater with…",
+                "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporate…",
+                "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor Syst…",
+                "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally c…",
+                "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and …",
+                "A7310832"
+              ],
+              "item_trees": [
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "heading",
+                  "type": "heading"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "heading",
+                  "type": "heading"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "family": "text",
+                      "type": "text"
+                    }
+                  ],
+                  "family": "footer",
+                  "type": "footer"
+                }
+              ],
+              "max_nesting_depth": 1,
+              "nested_item_count": 1,
+              "page_label": "1",
+              "page_number": 1,
+              "printed_page_numbers": [
+                "1"
+              ],
+              "reading_order_monotonic": true,
+              "reading_order_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "top_level_family_sequence": [
+                "text",
+                "text",
+                "text",
+                "heading",
+                "text",
+                "heading",
+                "text",
+                "text",
+                "text",
+                "text",
+                "text",
+                "footer"
+              ],
+              "top_level_item_count": 12,
+              "top_level_type_sequence": [
+                "text",
+                "text",
+                "text",
+                "heading",
+                "text",
+                "heading",
+                "text",
+                "text",
+                "text",
+                "text",
+                "text",
+                "footer"
+              ]
+            }
+          ],
+          "top_level_family_sequence": [
+            "text",
+            "text",
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text",
+            "footer"
+          ],
+          "top_level_type_sequence": [
+            "text",
+            "text",
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text",
+            "footer"
+          ],
+          "type_counts": {
+            "footer": 1,
+            "heading": 2,
+            "text": 9
+          }
+        },
+        "markdown_pages": [
+          {
+            "markdown": "~~Draft of 6/1/20~~\n\n~~This is a draft document. Certain updates will be needed prior to finalizing this.~~ ~~In particular, bracketed items with '\\[ \\]' indicate a known open/non-final item.~~ ~~This is Confidential to The City of Johnstown~~\n\n<u>EXECUTION VERSION</u>\n\n# ASSET PURCHASE AGREEMENT\n\nTHIS ASSET PURCHASE AGREEMENT (this “**Agreement**”), dated as of \\[~~June~~ ~~23~~<u>_______</u>\\], 2020 (the “**Effective Date**”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “**Seller**”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “**Buyer**” and together with Seller, the “**Parties**”).\n\n## <u>Background</u>\n\nWHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “**Service Area**”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “**Sanitary Sewer** **Collection** **Assets**”);\n\nWHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “**JRA**”), the Dornick Point Sewage Treatment Plant (the “**Dornick Plant**”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “**JRA Interceptor** **System**”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in <u>Exhibit A</u> hereto);\n\nWHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “**MS4 System**”); and\n\nWHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances.\n\nNOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:\n\nA7310832",
+            "page_number": 1,
+            "printed_page_label": "1"
+          }
+        ],
+        "schema_paths": {
+          "$": [
+            "object"
+          ],
+          "canonical_presentation": [
+            "object"
+          ],
+          "canonical_presentation.body": [
+            "object"
+          ],
+          "canonical_presentation.body.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.body.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.body.markdown": [
+            "string"
+          ],
+          "canonical_presentation.body.text": [
+            "string"
+          ],
+          "canonical_presentation.footer": [
+            "object"
+          ],
+          "canonical_presentation.footer.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.footer.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.footer.markdown": [
+            "string"
+          ],
+          "canonical_presentation.footer.text": [
+            "string"
+          ],
+          "canonical_presentation.full": [
+            "object"
+          ],
+          "canonical_presentation.full.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.full.block_ids[]": [
+            "string"
+          ],
+          "canonical_presentation.full.markdown": [
+            "string"
+          ],
+          "canonical_presentation.full.text": [
+            "string"
+          ],
+          "canonical_presentation.header": [
+            "object"
+          ],
+          "canonical_presentation.header.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.header.markdown": [
+            "string"
+          ],
+          "canonical_presentation.header.text": [
+            "string"
+          ],
+          "canonical_presentation.pages": [
+            "array"
+          ],
+          "canonical_presentation.pages[]": [
+            "object"
+          ],
+          "canonical_presentation.pages[].blocks": [
+            "array"
+          ],
+          "canonical_presentation.pages[].blocks[]": [
+            "object"
+          ],
+          "canonical_presentation.pages[].body": [
+            "object"
+          ],
+          "canonical_presentation.pages[].body.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].body.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].body.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].footer": [
+            "object"
+          ],
+          "canonical_presentation.pages[].footer.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].footer.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].footer.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].full": [
+            "object"
+          ],
+          "canonical_presentation.pages[].full.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].full.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].full.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].header": [
+            "object"
+          ],
+          "canonical_presentation.pages[].header.block_ids": [
+            "array"
+          ],
+          "canonical_presentation.pages[].header.markdown": [
+            "string"
+          ],
+          "canonical_presentation.pages[].header.text": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.concern_codes": [
+            "array"
+          ],
+          "canonical_presentation.pages[].page_identity.confidence": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.detected_printed_label": [
+            "null"
+          ],
+          "canonical_presentation.pages[].page_identity.display_label": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.display_source": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.embedded_label": [
+            "null"
+          ],
+          "canonical_presentation.pages[].page_identity.evidence_bbox": [
+            "null"
+          ],
+          "canonical_presentation.pages[].page_identity.evidence_source": [
+            "object"
+          ],
+          "canonical_presentation.pages[].page_identity.page_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.physical_page_index": [
+            "integer"
+          ],
+          "canonical_presentation.pages[].page_identity.policy_id": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.schema_version": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_identity.visible_text": [
+            "null"
+          ],
+          "canonical_presentation.pages[].page_index": [
+            "integer"
+          ],
+          "canonical_presentation.pages[].page_label": [
+            "string"
+          ],
+          "canonical_presentation.pages[].page_number": [
+            "integer"
+          ],
+          "canonical_presentation.policy_id": [
+            "string"
+          ],
+          "canonical_presentation.schema_version": [
+            "string"
+          ],
+          "canonical_presentation.source_ir_version": [
+            "string"
+          ],
+          "document": [
+            "object"
+          ],
+          "document.content_region_count": [
+            "integer"
+          ],
+          "document.content_region_types": [
+            "object"
+          ],
+          "document.filename": [
+            "string"
+          ],
+          "document.image_count": [
+            "integer"
+          ],
+          "document.mime_type": [
+            "string"
+          ],
+          "document.page_count": [
+            "integer"
+          ],
+          "document.page_source_region_count": [
+            "integer"
+          ],
+          "document.rendered_visual_region_count": [
+            "integer"
+          ],
+          "document.sha256": [
+            "string"
+          ],
+          "document.source_format": [
+            "string"
+          ],
+          "pages": [
+            "array"
+          ],
+          "pages[]": [
+            "object"
+          ],
+          "pages[].detected_images": [
+            "array"
+          ],
+          "pages[].items": [
+            "array"
+          ],
+          "pages[].items[]": [
+            "object"
+          ],
+          "pages[].items[].active_text": [
+            "string"
+          ],
+          "pages[].items[].active_text_omitted_run_ids": [
+            "array"
+          ],
+          "pages[].items[].active_text_policy": [
+            "string"
+          ],
+          "pages[].items[].bbox": [
+            "object"
+          ],
+          "pages[].items[].confidence": [
+            "null"
+          ],
+          "pages[].items[].id": [
+            "string"
+          ],
+          "pages[].items[].items": [
+            "array"
+          ],
+          "pages[].items[].label": [
+            "string"
+          ],
+          "pages[].items[].layout_running_region_projected": [
+            "boolean"
+          ],
+          "pages[].items[].level": [
+            "integer"
+          ],
+          "pages[].items[].md": [
+            "string"
+          ],
+          "pages[].items[].reading_order": [
+            "integer"
+          ],
+          "pages[].items[].redline_markdown": [
+            "string"
+          ],
+          "pages[].items[].running_region": [
+            "object"
+          ],
+          "pages[].items[].running_region_policy": [
+            "string"
+          ],
+          "pages[].items[].source": [
+            "string"
+          ],
+          "pages[].items[].source_alignment": [
+            "object"
+          ],
+          "pages[].items[].text_rules": [
+            "array"
+          ],
+          "pages[].items[].text_run_policy": [
+            "string"
+          ],
+          "pages[].items[].text_runs": [
+            "array"
+          ],
+          "pages[].items[].type": [
+            "string"
+          ],
+          "pages[].items[].value": [
+            "string"
+          ],
+          "pages[].page_height": [
+            "number"
+          ],
+          "pages[].page_identity": [
+            "object"
+          ],
+          "pages[].page_identity.concern_codes": [
+            "array"
+          ],
+          "pages[].page_identity.confidence": [
+            "object"
+          ],
+          "pages[].page_identity.confidence.scope": [
+            "string"
+          ],
+          "pages[].page_identity.confidence.score": [
+            "null"
+          ],
+          "pages[].page_identity.confidence.unavailable_reason": [
+            "string"
+          ],
+          "pages[].page_identity.detected_printed_label": [
+            "null"
+          ],
+          "pages[].page_identity.display_label": [
+            "string"
+          ],
+          "pages[].page_identity.display_source": [
+            "string"
+          ],
+          "pages[].page_identity.embedded_label": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_bbox": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source": [
+            "object"
+          ],
+          "pages[].page_identity.evidence_source.bbox_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.element_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.evidence_ids": [
+            "array"
+          ],
+          "pages[].page_identity.evidence_source.method": [
+            "string"
+          ],
+          "pages[].page_identity.evidence_source.page_index": [
+            "integer"
+          ],
+          "pages[].page_identity.evidence_source.public_item_id": [
+            "null"
+          ],
+          "pages[].page_identity.evidence_source.public_path": [
+            "array"
+          ],
+          "pages[].page_identity.evidence_source.reader": [
+            "string"
+          ],
+          "pages[].page_identity.evidence_source.source_object_ids": [
+            "array"
+          ],
+          "pages[].page_identity.page_id": [
+            "string"
+          ],
+          "pages[].page_identity.physical_page_index": [
+            "integer"
+          ],
+          "pages[].page_identity.policy_id": [
+            "string"
+          ],
+          "pages[].page_identity.schema_version": [
+            "string"
+          ],
+          "pages[].page_identity.visible_text": [
+            "null"
+          ],
+          "pages[].page_index": [
+            "integer"
+          ],
+          "pages[].page_label": [
+            "string"
+          ],
+          "pages[].page_number": [
+            "integer"
+          ],
+          "pages[].page_width": [
+            "number"
+          ],
+          "pages[].success": [
+            "boolean"
+          ],
+          "pages[].unit": [
+            "string"
+          ],
+          "pages[].warnings": [
+            "array"
+          ],
+          "processing": [
+            "object"
+          ],
+          "processing.duration_ms": [
+            "integer"
+          ],
+          "processing.engine": [
+            "string"
+          ],
+          "processing.form_semantics": [
+            "object"
+          ],
+          "processing.form_semantics.extraction_ms": [
+            "number"
+          ],
+          "processing.form_semantics.projection_ms": [
+            "number"
+          ],
+          "processing.form_semantics.total_ms": [
+            "number"
+          ],
+          "processing.input_format": [
+            "string"
+          ],
+          "processing.local_processing": [
+            "boolean"
+          ],
+          "processing.native_text_engine": [
+            "string"
+          ],
+          "processing.ocr_engine": [
+            "string"
+          ],
+          "processing.ocr_languages": [
+            "array"
+          ],
+          "processing.ocr_languages[]": [
+            "string"
+          ],
+          "processing.outline_structure": [
+            "object"
+          ],
+          "processing.outline_structure.concern_count": [
+            "integer"
+          ],
+          "processing.outline_structure.extraction_ms": [
+            "number"
+          ],
+          "processing.outline_structure.group_count": [
+            "integer"
+          ],
+          "processing.outline_structure.node_count": [
+            "integer"
+          ],
+          "processing.outline_structure.policy_id": [
+            "string"
+          ],
+          "processing.outline_structure.projection_ms": [
+            "number"
+          ],
+          "processing.outline_structure.reason": [
+            "null"
+          ],
+          "processing.outline_structure.relationship_count": [
+            "integer"
+          ],
+          "processing.outline_structure.status": [
+            "string"
+          ],
+          "processing.outline_structure.total_ms": [
+            "number"
+          ],
+          "processing.picture_captioning": [
+            "object"
+          ],
+          "processing.picture_captioning.local_model_available": [
+            "boolean"
+          ],
+          "processing.picture_captioning.requested": [
+            "boolean"
+          ],
+          "processing.running_regions": [
+            "object"
+          ],
+          "processing.running_regions.bottom_navigation_count": [
+            "integer"
+          ],
+          "processing.running_regions.candidate_count": [
+            "integer"
+          ],
+          "processing.running_regions.comparison_count": [
+            "integer"
+          ],
+          "processing.running_regions.concern_count": [
+            "integer"
+          ],
+          "processing.running_regions.detected_label_count": [
+            "integer"
+          ],
+          "processing.running_regions.embedded_label_count": [
+            "integer"
+          ],
+          "processing.running_regions.extraction_ms": [
+            "number"
+          ],
+          "processing.running_regions.footer_count": [
+            "integer"
+          ],
+          "processing.running_regions.header_count": [
+            "integer"
+          ],
+          "processing.running_regions.identity_count": [
+            "integer"
+          ],
+          "processing.running_regions.legacy_fallback_count": [
+            "integer"
+          ],
+          "processing.running_regions.policy_id": [
+            "string"
+          ],
+          "processing.running_regions.projection_ms": [
+            "number"
+          ],
+          "processing.running_regions.reason": [
+            "null"
+          ],
+          "processing.running_regions.running_region_count": [
+            "integer"
+          ],
+          "processing.running_regions.source_page_count": [
+            "integer"
+          ],
+          "processing.running_regions.status": [
+            "string"
+          ],
+          "processing.running_regions.top_navigation_count": [
+            "integer"
+          ],
+          "processing.running_regions.total_ms": [
+            "number"
+          ],
+          "processing.source_text_alignment": [
+            "object"
+          ],
+          "processing.source_text_alignment.concerns": [
+            "array"
+          ],
+          "processing.source_text_alignment.considered_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.elapsed_ms": [
+            "number"
+          ],
+          "processing.source_text_alignment.policy_id": [
+            "string"
+          ],
+          "processing.source_text_alignment.schema_version": [
+            "string"
+          ],
+          "processing.source_text_alignment.selected_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.selections": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[]": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].checks": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].id": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].method": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].original_text": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].owner_bbox": [
+            "object"
+          ],
+          "processing.source_text_alignment.selections[].owner_id": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].owner_type": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].page_index": [
+            "integer"
+          ],
+          "processing.source_text_alignment.selections[].rejected_ocr_alternative": [
+            "null"
+          ],
+          "processing.source_text_alignment.selections[].selected_source": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].selected_text": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].source_character_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].source_line_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].source_roles": [
+            "array"
+          ],
+          "processing.source_text_alignment.selections[].terminal_reason": [
+            "string"
+          ],
+          "processing.source_text_alignment.selections[].type1_mapping_ids": [
+            "array"
+          ],
+          "processing.source_text_alignment.source_sha256": [
+            "string"
+          ],
+          "processing.source_text_alignment.status": [
+            "string"
+          ],
+          "processing.source_text_alignment.unchanged_count": [
+            "integer"
+          ],
+          "processing.source_text_alignment.unresolved_count": [
+            "integer"
+          ],
+          "processing.table_engines": [
+            "array"
+          ],
+          "processing.table_engines[]": [
+            "string"
+          ],
+          "processing.visual_analysis": [
+            "object"
+          ],
+          "processing.visual_analysis.heading_height_ratio": [
+            "number"
+          ],
+          "processing.visual_analysis.heading_min_confidence": [
+            "number"
+          ],
+          "processing.visual_analysis.low_confidence_min_alnum_chars": [
+            "integer"
+          ],
+          "processing.visual_analysis.pdf_selective_rendering_enabled": [
+            "boolean"
+          ],
+          "processing.visual_analysis.picture_classification_threshold": [
+            "number"
+          ],
+          "processing.visual_analysis.primary_ocr_min_confidence": [
+            "number"
+          ],
+          "processing.visual_analysis.shared_pipeline": [
+            "boolean"
+          ],
+          "schema_version": [
+            "string"
+          ],
+          "warnings": [
+            "array"
+          ],
+          "warnings[]": [
+            "string"
+          ]
+        },
+        "serialized_chars": 265959,
+        "tables": [],
+        "top_level_keys": [
+          "canonical_presentation",
+          "document",
+          "pages",
+          "processing",
+          "schema_version",
+          "warnings"
+        ],
+        "visuals": []
+      },
+      "expected": {
+        "canonical_sha256": "2dfe04e5f7393ec12a8adf7ef660685859fb4125d29bfab7ccead45cbab2acc9",
+        "items": {
+          "family_counts": {
+            "footer": 1,
+            "heading": 2,
+            "text": 7
+          },
+          "field_counts": {
+            "bbox": 11,
+            "items": 1,
+            "level": 2,
+            "md": 11,
+            "type": 11,
+            "value": 10
+          },
+          "field_coverage": {
+            "bbox": 1.0,
+            "confidence": 0.0,
+            "content": 1.0,
+            "provenance": 0.0
+          },
+          "item_count": 11,
+          "page_count": 1,
+          "page_numbers": [
+            1
+          ],
+          "pages": [
+            {
+              "content_anchors": [
+                "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, brack…",
+                "ASSET PURCHASE AGREEMENT",
+                "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and …",
+                "<u>Background</u>",
+                "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater with…",
+                "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporate…",
+                "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor Syst…",
+                "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally c…",
+                "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and …",
+                "A7310832"
+              ],
+              "item_trees": [
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "heading",
+                  "type": "heading"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "heading",
+                  "type": "heading"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [],
+                  "family": "text",
+                  "type": "text"
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "family": "text",
+                      "type": "text"
+                    }
+                  ],
+                  "family": "footer",
+                  "type": "footer"
+                }
+              ],
+              "max_nesting_depth": 1,
+              "nested_item_count": 1,
+              "page_label": null,
+              "page_number": 1,
+              "printed_page_numbers": [],
+              "reading_order_monotonic": null,
+              "reading_order_values": [],
+              "top_level_family_sequence": [
+                "text",
+                "heading",
+                "text",
+                "heading",
+                "text",
+                "text",
+                "text",
+                "text",
+                "text",
+                "footer"
+              ],
+              "top_level_item_count": 10,
+              "top_level_type_sequence": [
+                "text",
+                "heading",
+                "text",
+                "heading",
+                "text",
+                "text",
+                "text",
+                "text",
+                "text",
+                "footer"
+              ]
+            }
+          ],
+          "top_level_family_sequence": [
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text",
+            "footer"
+          ],
+          "top_level_type_sequence": [
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text",
+            "footer"
+          ],
+          "type_counts": {
+            "footer": 1,
+            "heading": 2,
+            "text": 7
+          }
+        },
+        "markdown_pages": [
+          {
+            "markdown": "Draft of 6/1/20\n~~This is a draft document. Certain updates will be needed prior to finalizing this.~~\n~~In particular, bracketed items with “[ ]” indicate a known open/non-final item.~~\n~~This is **Confidential** to The City of Johnstown~~\n<u>EXECUTION VERSION</u>\n\n# ASSET PURCHASE AGREEMENT\n\nTHIS ASSET PURCHASE AGREEMENT (this “**Agreement**”), dated as of [June 23_______], 2020 (the “**Effective Date**”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “**Seller**”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “**Buyer**” and together with Seller, the “**Parties**”).\n\n## <u>Background</u>\n\nWHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “**Service Area**”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “**Sanitary Sewer Collection Assets**”);\n\nWHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “**JRA**”), the Dornick Point Sewage Treatment Plant (the “**Dornick Plant**”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “**JRA Interceptor System**”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in <u>Exhibit A</u> hereto);\n\nWHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “**MS4 System**”); and\n\nWHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances.\n\nNOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:",
+            "page_number": 1
+          }
+        ],
+        "schema_paths": {
+          "$": [
+            "object"
+          ],
+          "debug": [
+            "null"
+          ],
+          "forms": [
+            "null"
+          ],
+          "images_content_metadata": [
+            "object"
+          ],
+          "images_content_metadata.images": [
+            "array"
+          ],
+          "images_content_metadata.images[]": [
+            "object"
+          ],
+          "images_content_metadata.images[].bbox": [
+            "object"
+          ],
+          "images_content_metadata.images[].bbox.h": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.w": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.x": [
+            "integer"
+          ],
+          "images_content_metadata.images[].bbox.y": [
+            "integer"
+          ],
+          "images_content_metadata.images[].category": [
+            "string"
+          ],
+          "images_content_metadata.images[].content_type": [
+            "string"
+          ],
+          "images_content_metadata.images[].filename": [
+            "string"
+          ],
+          "images_content_metadata.images[].index": [
+            "integer"
+          ],
+          "images_content_metadata.images[].presigned_url": [
+            "string"
+          ],
+          "images_content_metadata.total_count": [
+            "integer"
+          ],
+          "items": [
+            "object"
+          ],
+          "items.pages": [
+            "array"
+          ],
+          "items.pages[]": [
+            "object"
+          ],
+          "items.pages[].items": [
+            "array"
+          ],
+          "items.pages[].items[]": [
+            "object"
+          ],
+          "items.pages[].page_height": [
+            "integer"
+          ],
+          "items.pages[].page_number": [
+            "integer"
+          ],
+          "items.pages[].page_width": [
+            "integer"
+          ],
+          "items.pages[].success": [
+            "boolean"
+          ],
+          "job": [
+            "object"
+          ],
+          "job.created_at": [
+            "string"
+          ],
+          "job.error_message": [
+            "null"
+          ],
+          "job.id": [
+            "string"
+          ],
+          "job.name": [
+            "string"
+          ],
+          "job.project_id": [
+            "string"
+          ],
+          "job.status": [
+            "string"
+          ],
+          "job.tier": [
+            "string"
+          ],
+          "job.updated_at": [
+            "string"
+          ],
+          "job.user_metadata": [
+            "null"
+          ],
+          "job_metadata": [
+            "null"
+          ],
+          "markdown": [
+            "object"
+          ],
+          "markdown.pages": [
+            "array"
+          ],
+          "markdown.pages[]": [
+            "object"
+          ],
+          "markdown.pages[].footer": [
+            "string"
+          ],
+          "markdown.pages[].markdown": [
+            "string"
+          ],
+          "markdown.pages[].page_number": [
+            "integer"
+          ],
+          "markdown.pages[].success": [
+            "boolean"
+          ],
+          "markdown_full": [
+            "null"
+          ],
+          "metadata": [
+            "object"
+          ],
+          "metadata.pages": [
+            "array"
+          ],
+          "metadata.pages[]": [
+            "object"
+          ],
+          "metadata.pages[].confidence": [
+            "integer"
+          ],
+          "metadata.pages[].cost_optimized": [
+            "boolean"
+          ],
+          "metadata.pages[].original_orientation_angle": [
+            "integer"
+          ],
+          "metadata.pages[].page_number": [
+            "integer"
+          ],
+          "metadata.pages[].triggered_auto_mode": [
+            "boolean"
+          ],
+          "raw_parameters": [
+            "null"
+          ],
+          "result_content_metadata": [
+            "null"
+          ],
+          "text": [
+            "object"
+          ],
+          "text.pages": [
+            "array"
+          ],
+          "text.pages[]": [
+            "object"
+          ],
+          "text.pages[].page_number": [
+            "integer"
+          ],
+          "text.pages[].text": [
+            "string"
+          ],
+          "text_full": [
+            "null"
+          ]
+        },
+        "serialized_chars": 18987,
+        "tables": [],
+        "top_level_keys": [
+          "debug",
+          "forms",
+          "images_content_metadata",
+          "items",
+          "job",
+          "job_metadata",
+          "markdown",
+          "markdown_full",
+          "metadata",
+          "raw_parameters",
+          "result_content_metadata",
+          "text",
+          "text_full"
+        ],
+        "visuals": []
+      },
+      "ocr_text": {
+        "actual_chars": 0,
+        "actual_tokens": 0,
+        "added_segments": [],
+        "added_token_counts": [],
+        "expected_chars": 0,
+        "expected_tokens": 0,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": true,
+        "replaced_segments": [],
+        "token_f1": 1.0,
+        "token_precision": 1.0,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 1.0
+      },
+      "page_text": [
+        {
+          "actual_chars": 3333,
+          "actual_page_number": 1,
+          "actual_tokens": 501,
+          "added_segments": [
+            {
+              "text": "a7310832",
+              "token_end": 501,
+              "token_start": 500
+            }
+          ],
+          "added_token_counts": [
+            [
+              "a7310832",
+              1
+            ]
+          ],
+          "expected_chars": 3319,
+          "expected_page_number": 1,
+          "expected_tokens": 500,
+          "missing_segments": [],
+          "missing_token_counts": [],
+          "normalized_exact": false,
+          "physical_page": 1,
+          "replaced_segments": [],
+          "token_f1": 0.9990009990009989,
+          "token_precision": 0.998003992015968,
+          "token_recall": 1.0,
+          "token_sequence_ratio": 0.999000999000999
+        }
+      ]
+    },
+    "markdown": {
+      "actual": {
+        "block_kinds": [
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "heading",
+          "paragraph",
+          "heading",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph"
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "line_end": 1,
+            "line_start": 1,
+            "text": "~~Draft of 6/1/20~~"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 3,
+            "line_start": 3,
+            "text": "~~This is a draft document. Certain updates will be needed prior to finalizing this.~~ ~~In particular, bracketed items with '\\[ \\]' indicate a known open/non-final item.~~ ~~This is Confidential to The City of Johnstown~~"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 5,
+            "line_start": 5,
+            "text": "<u>EXECUTION VERSION</u>"
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "line": 7,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 9,
+            "line_start": 9,
+            "text": "THIS ASSET PURCHASE AGREEMENT (this “**Agreement**”), dated as of \\[~~June~~ ~~23~~<u>_______</u>\\], 2020 (the “**Effective Date**”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania oper…"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "line": 11,
+            "text": "<u>Background</u>"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 13,
+            "line_start": 13,
+            "text": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “**Service Area**”), comprising approximately 425,000 linear feet of sanitary sewer pipes …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 15,
+            "line_start": 15,
+            "text": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “**JRA**”), the Dornick Point Sewage Treatm…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 17,
+            "line_start": 17,
+            "text": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separ…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 19,
+            "line_start": 19,
+            "text": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 21,
+            "line_start": 21,
+            "text": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and in…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 23,
+            "line_start": 23,
+            "text": "A7310832"
+          }
+        ],
+        "duplicate_lines": [],
+        "feature_counts": {
+          "emphasis_markers": 0,
+          "fenced_code_blocks": 0,
+          "hard_break_lines": 0,
+          "headings": 2,
+          "images": 0,
+          "links": 0,
+          "list_items": 0,
+          "strong_markers": 14,
+          "tables": 0
+        },
+        "headings": [
+          {
+            "level": 1,
+            "line": 7,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "level": 2,
+            "line": 11,
+            "text": "<u>Background</u>"
+          }
+        ],
+        "links": [],
+        "list_items": [],
+        "raw_bytes": 3503,
+        "raw_chars": 3459,
+        "raw_sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+        "tables": [],
+        "visible_text": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '\\[ \\]' indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERSION # ASSET PURCHASE AGREEMENT THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of \\[June 23 \\], 2020 (the “Effective Date”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “Seller”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “Buyer” and together with Seller, the “Parties”). ## Background WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “Service Area”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “Sanitary Sewer Collection Assets”); WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “JRA”), the Dornick Point Sewage Treatment Plant (the “Dornick Plant”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “JRA Interceptor System”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto); WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “MS4 System”); and WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances. NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows: A7310832",
+        "visible_text_digest": "968b03b5db195ac387d3f7ea20f75b863efa365a0c795d723baf1c028c0d99b2",
+        "whitespace": {
+          "blank_line_runs": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "final_newline": true,
+          "line_ending": "lf",
+          "max_blank_run": 2,
+          "tab_count": 0,
+          "trailing_space_lines": 0
+        }
+      },
+      "expected": {
+        "block_kinds": [
+          "paragraph",
+          "heading",
+          "paragraph",
+          "heading",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph",
+          "paragraph"
+        ],
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "line_end": 5,
+            "line_start": 1,
+            "text": "Draft of 6/1/20 ~~This is a draft document. Certain updates will be needed prior to finalizing this.~~ ~~In particular, bracketed items with “[ ]” indicate a known open/non-final item.~~ ~~This is **Confidential** to The City of Johnstown~…"
+          },
+          {
+            "kind": "heading",
+            "level": 1,
+            "line": 7,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 9,
+            "line_start": 9,
+            "text": "THIS ASSET PURCHASE AGREEMENT (this “**Agreement**”), dated as of [June 23_______], 2020 (the “**Effective Date**”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third …"
+          },
+          {
+            "kind": "heading",
+            "level": 2,
+            "line": 11,
+            "text": "<u>Background</u>"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 13,
+            "line_start": 13,
+            "text": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “**Service Area**”), comprising approximately 425,000 linear feet of sanitary sewer pipes …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 15,
+            "line_start": 15,
+            "text": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “**JRA**”), the Dornick Point Sewage Treatm…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 17,
+            "line_start": 17,
+            "text": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separ…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 19,
+            "line_start": 19,
+            "text": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey …"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 21,
+            "line_start": 21,
+            "text": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and in…"
+          },
+          {
+            "kind": "paragraph",
+            "line_end": 23,
+            "line_start": 23,
+            "text": "A7310832"
+          }
+        ],
+        "duplicate_lines": [],
+        "feature_counts": {
+          "emphasis_markers": 0,
+          "fenced_code_blocks": 0,
+          "hard_break_lines": 0,
+          "headings": 2,
+          "images": 0,
+          "links": 0,
+          "list_items": 0,
+          "strong_markers": 13,
+          "tables": 0
+        },
+        "headings": [
+          {
+            "level": 1,
+            "line": 7,
+            "text": "ASSET PURCHASE AGREEMENT"
+          },
+          {
+            "level": 2,
+            "line": 11,
+            "text": "<u>Background</u>"
+          }
+        ],
+        "links": [],
+        "list_items": [],
+        "raw_bytes": 3473,
+        "raw_chars": 3425,
+        "raw_sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+        "tables": [],
+        "visible_text": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with “[ ]” indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERSION # ASSET PURCHASE AGREEMENT THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23], 2020 (the “Effective Date”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “Seller”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “Buyer” and together with Seller, the “Parties”). ## Background WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “Service Area”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “Sanitary Sewer Collection Assets”); WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “JRA”), the Dornick Point Sewage Treatment Plant (the “Dornick Plant”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “JRA Interceptor System”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto); WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “MS4 System”); and WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances. NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows: A7310832",
+        "visible_text_digest": "13ba3cc1e5d1174d11ca194bbe6ad1c83ad27a8e78af70ca0861f79a49fce22b",
+        "whitespace": {
+          "blank_line_runs": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "final_newline": false,
+          "line_ending": "lf",
+          "max_blank_run": 2,
+          "tab_count": 0,
+          "trailing_space_lines": 0
+        }
+      },
+      "text": {
+        "actual_chars": 3333,
+        "actual_tokens": 501,
+        "added_segments": [],
+        "added_token_counts": [],
+        "expected_chars": 3328,
+        "expected_tokens": 501,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": false,
+        "replaced_segments": [],
+        "token_f1": 1.0,
+        "token_precision": 1.0,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 1.0
+      }
+    },
+    "rendered_dom": {
+      "actual_pages": [
+        {
+          "headings": [
+            {
+              "level": 1,
+              "text": "ASSET PURCHASE AGREEMENT"
+            },
+            {
+              "level": 2,
+              "text": "Background"
+            }
+          ],
+          "html_chars": 6874,
+          "html_sha256": "0c98a68b67cd53097ae037e21fdeea119a51a1d895bb643be6b31ce3662a2da7",
+          "images": [],
+          "item_types": [
+            "text",
+            "text",
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text"
+          ],
+          "layout_classes": {},
+          "links": [],
+          "page_number": 1,
+          "semantic_elements": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "Draft of 6/1/20"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '[ ]' indicate a known open/non-final item. This is Confidential to The City of Johnstown"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Confidential"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "EXECUTION VERSION"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "h1",
+              "text": "ASSET PURCHASE AGREEMENT"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "h1",
+              "tag": "strong",
+              "text": "ASSET PURCHASE AGREEMENT"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “Seller”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “Buyer” and together with Seller, the “Parties”)."
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Agreement"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Effective Date"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Seller"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Buyer"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Parties"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "h2",
+              "text": "Background"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "h2",
+              "tag": "strong",
+              "text": "Background"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “Service Area”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “Sanitary Sewer Collection Assets”);"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Service Area"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Sanitary Sewer"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Collection"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Assets"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “JRA”), the Dornick Point Sewage Treatment Plant (the “Dornick Plant”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “JRA Interceptor System”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto);"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "JRA"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Dornick Plant"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "JRA Interceptor"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "System"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “MS4 System”); and"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "MS4 System"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances."
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:"
+            }
+          ],
+          "semantic_tags": [
+            "p",
+            "p",
+            "strong",
+            "p",
+            "h1",
+            "strong",
+            "p",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "h2",
+            "strong",
+            "p",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "p",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "p",
+            "strong",
+            "p",
+            "p"
+          ],
+          "semantic_text": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with '[ ]' indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERSION ASSET PURCHASE AGREEMENT THIS ASSET PURCHASE AGREEMENT (this “ Agreement ”), dated as of [ June 23 _______ ], 2020 (the “ Effective Date ”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “ Seller ”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “ Buyer ” and together with Seller, the “ Parties ”). Background WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “ Service Area ”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “ Sanitary Sewer Collection Assets ”); WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “ JRA ”), the Dornick Point Sewage Treatment Plant (the “ Dornick Plant ”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “ JRA Interceptor System ”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto); WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “ MS4 System ”); and WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances. NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:",
+          "structural_sequence": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "h1"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "h1",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "h2"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "h2",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            }
+          ],
+          "tables": [],
+          "tag_counts": {
+            "h1": 1,
+            "h2": 1,
+            "p": 9,
+            "strong": 17
+          }
+        }
+      ],
+      "expected_pages": [
+        {
+          "headings": [
+            {
+              "level": 1,
+              "text": "ASSET PURCHASE AGREEMENT"
+            },
+            {
+              "level": 2,
+              "text": "Background"
+            }
+          ],
+          "html_chars": 6633,
+          "html_sha256": "59367681aac4da71ecf2426163727c4ad02db3f49dc4e7e85f907606c5262153",
+          "images": [],
+          "item_types": [
+            "text",
+            "heading",
+            "text",
+            "heading",
+            "text",
+            "text",
+            "text",
+            "text",
+            "text",
+            "footer"
+          ],
+          "layout_classes": {
+            "mb-4": 10
+          },
+          "links": [],
+          "page_number": 1,
+          "semantic_elements": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with “[ ]” indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERSION"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Confidential"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "h1",
+              "text": "ASSET PURCHASE AGREEMENT"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "THIS ASSET PURCHASE AGREEMENT (this “Agreement”), dated as of [June 23_______], 2020 (the “Effective Date”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “Seller”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “Buyer” and together with Seller, the “Parties”)."
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Agreement"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Effective Date"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Seller"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Buyer"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Parties"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "h2",
+              "text": "Background"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “Service Area”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “Sanitary Sewer Collection Assets”);"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Service Area"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Sanitary Sewer Collection Assets"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “JRA”), the Dornick Point Sewage Treatment Plant (the “Dornick Plant”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “JRA Interceptor System”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto);"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "JRA"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "Dornick Plant"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "JRA Interceptor System"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “MS4 System”); and"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "layout_classes": [],
+              "parent_tag": "p",
+              "tag": "strong",
+              "text": "MS4 System"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances."
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows:"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "layout_classes": [
+                "mb-4"
+              ],
+              "parent_tag": null,
+              "tag": "p",
+              "text": "A7310832"
+            }
+          ],
+          "semantic_tags": [
+            "p",
+            "strong",
+            "h1",
+            "p",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "strong",
+            "h2",
+            "p",
+            "strong",
+            "strong",
+            "p",
+            "strong",
+            "strong",
+            "strong",
+            "p",
+            "strong",
+            "p",
+            "p",
+            "p"
+          ],
+          "semantic_text": "Draft of 6/1/20 This is a draft document. Certain updates will be needed prior to finalizing this. In particular, bracketed items with “[ ]” indicate a known open/non-final item. This is Confidential to The City of Johnstown EXECUTION VERSION ASSET PURCHASE AGREEMENT THIS ASSET PURCHASE AGREEMENT (this “ Agreement ”), dated as of [June 23_______], 2020 (the “ Effective Date ”), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the “ Seller ”), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the “ Buyer ” and together with Seller, the “ Parties ”). Background WHEREAS, Seller owns that certain the sanitary sewer collection system, which are the pipes that convey wastewater within The City of Johnstown (the “ Service Area ”), comprising approximately 425,000 linear feet of sanitary sewer pipes ranging in size from 6 to 18 inches in diameter, the Prospect Pump Station, approximately 160,695 linear feet of lateral pipes, approximately 3,108 sanitary utility holes accessing such pipes, related mainline taps, of which there are approximately 8,156, and related viewport castings, of which there are approximately 7,004, serving residential, commercial and industrial customers (the “ Sanitary Sewer Collection Assets ”); WHEREAS, previously in 2004, Seller sold to The Redevelopment Authority of The City of Johnstown, an agency incorporated under the Urban Redevelopment Law of the Commonwealth of Pennsylvania (the “ JRA ”), the Dornick Point Sewage Treatment Plant (the “ Dornick Plant ”) and the interceptor sewer system owned by the JRA, comprising approximately 256,000 linear feet of interceptor sanitary sewer pipe ranging in size from 10 to 63 inches in diameter and approximately 770 interceptor utility holes accessing such pipes, all as owned by the JRA (the “ JRA Interceptor System ”), pursuant to 2004 Dornick Plant and Interceptor Sale Agreements (as defined in Exhibit A hereto); WHEREAS, Sanitary Sewer Collection Assets to be sold pursuant to this Agreement do not include the JRA Interceptor System, the Dornick Plant or the separate municipal stormwater system, comprising approximately 379,000 linear feet of separate stormwater pipe ranging in size from 6 to 60 inches in diameter, approximately 40,000 linear feet of flood protection channels, approximately 3,000 catch basins and approximately 1,098 stormwater utility holes accessing such pipes and such flood protection channels, all within the Service Area (such separate municipal stormwater system, “ MS4 System ”); and WHEREAS, after the Closing, as Buyer implements compliance with the Assigned DEP Consent Order, it will incrementally convert portions of the Sanitary Sewer System into assets integrated and connected into the MS4 System and will reconvey them incrementally back to the Seller, and the Parties herein provide for such reconveyances. NOW, THEREFORE, for and in consideration of the foregoing and of the mutual representations, warranties, covenants and agreements herein and other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, and intending to be legally bound hereby, the Parties agree as follows: A7310832",
+          "structural_sequence": [
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "h1"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "h2"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 1,
+              "parent_tag": "p",
+              "tag": "strong"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            },
+            {
+              "attributes": {},
+              "depth": 0,
+              "parent_tag": null,
+              "tag": "p"
+            }
+          ],
+          "tables": [],
+          "tag_counts": {
+            "h1": 1,
+            "h2": 1,
+            "p": 8,
+            "strong": 12
+          }
+        }
+      ],
+      "snapshots": [
+        {
+          "actual": {
+            "dimensions": null,
+            "present": false,
+            "sha256": null
+          },
+          "expected": {
+            "dimensions": null,
+            "present": true,
+            "sha256": "8b6d8c7b7c016856e080e1003dc9cce991327a1ff7a21436046a6bb88830c59b"
+          },
+          "page_number": 1,
+          "pixel_comparison": null
+        }
+      ]
+    }
+  },
+  "page_results": [
+    {
+      "candidate_dom_captured": true,
+      "discrepancy_ids": [
+        "FID-PURCHASE-AGREEMENT-c9d604e6190d",
+        "FID-PURCHASE-AGREEMENT-132d920fd467",
+        "FID-PURCHASE-AGREEMENT-0c347902955c",
+        "FID-PURCHASE-AGREEMENT-7a4b4f232159",
+        "FID-PURCHASE-AGREEMENT-e906938c16e7",
+        "FID-PURCHASE-AGREEMENT-623dbd06076c",
+        "FID-PURCHASE-AGREEMENT-0fd7b217a73e"
+      ],
+      "json_text_metrics": {
+        "actual_chars": 3333,
+        "actual_page_number": 1,
+        "actual_tokens": 501,
+        "added_segments": [
+          {
+            "text": "a7310832",
+            "token_end": 501,
+            "token_start": 500
+          }
+        ],
+        "added_token_counts": [
+          [
+            "a7310832",
+            1
+          ]
+        ],
+        "expected_chars": 3319,
+        "expected_page_number": 1,
+        "expected_tokens": 500,
+        "missing_segments": [],
+        "missing_token_counts": [],
+        "normalized_exact": false,
+        "physical_page": 1,
+        "replaced_segments": [],
+        "token_f1": 0.9990009990009989,
+        "token_precision": 0.998003992015968,
+        "token_recall": 1.0,
+        "token_sequence_ratio": 0.999000999000999
+      },
+      "physical_page": 1,
+      "reference_dom_captured": true,
+      "severity_counts": {
+        "major": 2,
+        "minor": 5
+      },
+      "status": "discrepancy_found"
+    }
+  ],
+  "release_ready": false,
+  "reproduce": {
+    "candidate_root": "service-final-source-grounded-20260813-v2/purchase-agreement",
+    "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --service-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2 --cases purchase-agreement --reference-selection <retained-reference-selection.json>",
+    "reference_root": "llamaparse-text-render-fix/purchase-agreement"
+  },
+  "schema_version": "functional-fidelity-comparison-v1",
+  "source_context": {
+    "document_category": "legal purchase-agreement redline",
+    "known_complex_elements": [
+      "strikethrough deletion",
+      "underlined insertion and placeholder",
+      "text color",
+      "legally material text-decoration semantics"
+    ],
+    "layout_characteristics": [
+      "single-column legal prose",
+      "centered headings",
+      "recital structure",
+      "redline banner"
+    ],
+    "mixed_native_and_scanned_candidate": false,
+    "scanned_candidate": false,
+    "source_page_count": 1
+  },
+  "status": "discrepancy_found",
+  "summary": {
+    "acceptable_or_harmless_differences": 1,
+    "discrepancy_count": 7,
+    "evidence_gaps": 0,
+    "functional_regressions": 6,
+    "missing_rendered_dom_pages": [],
+    "review_required": 0,
+    "severity_counts": {
+      "critical": 0,
+      "major": 2,
+      "minor": 5
+    }
+  }
+}

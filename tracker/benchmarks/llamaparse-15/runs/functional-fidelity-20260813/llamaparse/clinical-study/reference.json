@@ -1,0 +1,2411 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-j1mudyx7nuoubfmkdwf216vgq78l",
+    "created_at": "2026-08-12T18:31:39.094706Z",
+    "updated_at": "2026-08-12T18:32:06.895645Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "clinical-study.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "PLOS MEDICINE\n\n\n\n\n                                                           RESEARCH ARTICLE\n                                                           Effects of a self-guided digital mental health\n                                                           self-help intervention for Syrian refugees in\n                                                           Egypt: A pragmatic randomized controlled\n                                                           trial\n\n                                                           Sebastian BurchertID¹*, Mhd Salem Alkneme¹, Ammar Alsaod¹, Pim CuijpersID2,3,\n                                                           Eva HeimID⁴, Jonas Hessling¹, Nadine HosnyID4,5, Marit SijbrandijID², Edith van’t Hof⁶,\n                                                           Pieter Ventevogel⁷, Christine Knaevelsrud¹, on behalf of the STRENGTHS Consortium\n a1111111111\n a1111111111                                               1 Department of Education and Psychology, Division of Clinical Psychological Intervention, Freie Universita¨t\n a1111111111                                               Berlin, Berlin, Germany, 2 Department of Clinical, Neuro and Developmental Psychology, WHO\n                                                           Collaborating Center for Research and Dissemination of Psychological Interventions, Amsterdam Public\n a1111111111                                               Health Research Institute, Vrije Universiteit Amsterdam, Amsterdam, the Netherlands, 3 Babeș-Bolyai\n <u>a1111111111</u>                                        University, International Institute for Psychotherapy, Cluj-Napoca, Romania, 4 Department of Psychology,\n                                                           University of Lausanne, Lausanne, Switzerland, 5 Department of Psychology, The American University in\n                                                           Cairo, New Cairo, Egypt, 6 Independent researcher, 7 Public Health Section, Division of Resilience and\n                                                           Solutions, United Nations High Commissioner for Refugees, Geneva, Switzerland\n\n 6                                                         * <u>s.burchert@fu-berlin.de</u>\n OPEN ACCESS\n\n Citation: Burchert S, Alkneme MS, Alsaod A,\n Cuijpers P, Heim E, Hessling J, et al. (2024) Effects     Abstract\n of a self-guided digital mental health self-help\n intervention for Syrian refugees in Egypt: A\n pragmatic randomized controlled trial. PLoS Med\n 21(9): e1004460. https://doi.org/10.1371/journal.         Background\n <u>pmed.1004460</u>                                       Digital mental health interventions for smartphones, such as the World Health Organization\n\n Academic Editor: Charlotte Hanlon, The University         (WHO) Step-by-Step (SbS) program, are potentially scalable solutions to improve access to\n of Edinburgh, UNITED KINGDOM OF GREAT                     mental health and psychosocial support in refugee populations. Our study objective was to\n BRITAIN AND NORTHERN IRELAND                              evaluate the effectiveness of SbS as self-guided intervention with optional message-based\n\n Received: January 9, 2024                                 contact-on-demand (COD) support on reducing psychological distress, functional\n\n Accepted: August 14, 2024                                 impairment, symptoms of posttraumatic stress disorder (PTSD), and self-identified prob-\n\n Published: September 9, 2024                              lems in a sample of Syrian refugees residing in Egypt.\n\n Peer Review History: PLOS recognizes the\n benefits of transparency in the peer review               Methods and findings\n process; therefore, we enable the publication of          We conducted a 2-arm pragmatic randomized controlled trial. A total of 538 Syrians residing\n all of the content of peer review and author\n responses alongside final, published articles. The        in Egypt with elevated levels of psychological distress (Kessler Psychological Distress\n editorial history of this article is available here:      Scale; K10 > 15) and reduced psychosocial functioning (WHODAS 2.0 > 16) were ran om-\n https://doi.org/10.1371/journal.pmed.1004460              ized into SbS + CAU (N = 266) or CAU only (N = 272). Primary outcomes were psychological\n\n Copyright: © 2024 Burchert et al. This is an open         distress (Hopkins Symptom Checklist 25) and impaired functioning (WHO Disability Assess-\n access article distributed under the terms of the         ment Schedule 2.0) at 3-month follow-up. Secondary outcomes were symptoms of PTSD\n <u>Creative Commons Attribution License,</u>which         (PTSD Checklist for DSM-5 short form, PCL-5 short) and self-identified problems (Psycho-\n permits unrestricted use, distribution, and\n reproduction in any medium, provided the original         logical Outcomes Profiles Scale, PSYCHLOPS). Intention-to-treat (ITT) analyses showed\n author and source are credited.                           significant but small effects of condition on psychological distress (mean difference: −0.15;\n\n Data Availability Statement: The data collected for       95% CI: −0.28, −0.02; p = .02) and functioning (mean difference: −2.04; 95% CI: −3.87,\n this study involves sensitive information obtained        −0.22; p = .02) at 3-month follow-up. There were no significant differences between groups\n\n\n\n\n PLOS Medicine |<u>https://doi.org/10.1371/journal.pmed.1004460</u>  September 9, 2024    1 / 21"
+      },
+      {
+        "page_number": 2,
+        "text": "PLOS MEDICINE    Digital mental health for Syrian refugees in Egypt: A pragmatic RCT\n\n\n\nTable 1. Demographic and baseline characteristics.\n\n                    CAU                                     SbS + CAU                     Completer¹            Dropouts²        Total\n                    (n = 272)                               (n = 266)                     (n = 98)              (n = 168)        (n = 538)\n    M (SD)\n       Age                                  33.98 (10.54)                33.29 (11.20)          33.52 (10.13)    33.16 (11.81)            33.64 (10.87)\n       HSCL-25                               2.39 (0.61)                  2.46  (0.61)           2.42 (0.64)      2.49 (0.60)              2.42  (0.61)\n        WHODAS                              30.77 (8.03)                 31.94  (8.67)          31.90 (9.23)     31.96 (8.35)             31.35  (8.36)\n     PCL-5                                  14.84 (7.52)                 15.18  (7.32)          14.50  (7.8)     15.58 (7.02)             15.01  (7.42)\n PSYCHLOPS                                  15.40 (4.52)                 15.02  (4.53)          14.96 (4.38)     15.06 (4.63)             15.21  (4.52)\n     % (n)\n    Female                                   69.1% (188)      65.4% (174)                     75.5% (74)          59.5% (100)          67.3% (362)\nMarital status\n Never married                                 15.8% (43)       24.4% (65)                     16.3% (16)           29.2% (49)           20.1% (108)\n   Married                                     70.2% (191)      64.3% (171)                    77.6% (76)           56.5% (95)           67.3% (362)\n Separated                                      4.4% (12)        3.8% (10)                      4.1% (4)             3.6% (6)             4.1% (22)\n      Divorced                                  5.1% (14)        3.4% (9)                       1.0% (1)             4.8% (8)             4.3% (23)\n   Widowed                                      4.0% (11)        2.6% (7)                       1.0% (1)             3.6% (6)             3.3% (18)\n     Other                                      0.4% (1)         1.5% (4)                         0% (0)             2.4% (4)             0.9% (5)\n    Education3\n  No education                                  6.6% (18)        7.5% (20)                      9.2% (9)             6.5% (11)            7.1% (38)\n         Primary                               35.7% (97)       27.8% (74)                     23.5% (23)           30.4% (51)           31.8% (171)\n     Secondary                                 42.3% (115)      46.2% (123)                    50.0% (49)           44.0% (74)           44.2% (238)\n    University                                 11.0% (30)       14.3% (38)                     13.3% (13)           14.9% (25)           12.6% (68)\n Technical                                      2.6% (7)         2.6% (7)                         0% (0)             4.2% (7)             2.6% (14)\n     Other                                      1.8% (5)         1.5% (4)                       4.1% (4)               0% (0)             1.7% (9)\nOccupation\n     Paid work                                 16.5% (45)       21.4% (57)                     21.5% (21)           21.4% (36)           19.0% (102)\n Self-employed                                 12.5% (34)       11.3% (30)                     10.2% (10)           11.9% (20)           11.9% (64)\n   Unpaid work                                  0.4% (1)         0.8% (2)                         0% (0)             1.2% (2)             0.6% (3)\n   Student                                      5.5% (15)       10.9% (29)                      7.1% (7)            13.1% (22)            8.2% (44)\n     Homemaker                                 39.0% (106)      27.4% (73)                     33.7% (33)           23.8% (40)           33.3% (179)\n       Retired                                  0.4% (1)         0.4% (1)                       1.0% (1)               0% (0)             0.4% (2)\n    Unemployed                                 21.3% (58)       21.8% (58)                     21.4% (21)           22.0% (37)           21.6% (116)\n     Other                                      4.4% (12)        6.0% (16)                      5.1% (5)             6.5% (11)            5.2% (28)\n\n1At least 4 out of 5 SbS sessions completed.\n\n2Less than 4 SbS sessions completed.\n\n3Highest education level started.\n\n<u>https://doi.org/10.1371/journal.pmed.1004460.t001</u>\n\n\nweekly phone calls to reduce this overhead and to increase the scalability of the approach.\nIntervention completion was defined as completion of a minimum of 4 out of 5 sessions\nbecause the fifth session essentially focused on repetition of previously learned techniques.\nCOD was provided by trained and supervised nonspecialist research assistants called  -\nhelpers”, using the in-app messaging system. The e-helper team consisted of male Syrian   -\nbic-native speakers with an educational background in psychology and were refugees.       -\npants could at any time reach out to e-helpers for help with the intervention, app functionality,\ntechnical issues, or other topics, including referral to other services. The in-app messaging   -\nture was data efficient and incurred no additional costs, although it required an internet   -\nnection to send and receive messages. E-helpers responded within 48 hours, which means that\n\n\n\n\n\nPLOS Medicine |<u>https://doi.org/10.1371/journal.pmed.1004460</u>  September 9, 2024    7 / 21"
+      },
+      {
+        "page_number": 3,
+        "text": "PLOS MEDICINE    Digital mental health for Syrian refugees in Egypt: A pragmatic RCT\n\n\n\nAssessed for eligibility (n = 826)\n\n\nExcluded (n = 230)\nAcute suicidality (n = 83)\nLow symptoms (n = 73)\n Age < 18 (n = 73)\n Duplicate account (n = 1)\n\n\nIncluded (n = 596)\n\n                  baseline non-completion (n = 58)\n\n\nRandomized (n = 538)\n\n\n\nAllocated to SbS + CAU (n = 266)    Allocated to CAU (n = 272)\n\n\nNon-completer (n = 168)             Non-completer (n = 65)\nNon-starter (n = 21)                 Non-starter (n = 21)\nCompleted introduction (n = 209)     Completed information\nCompleted session 1 (n = 177)        session (n = 207)\nCompleted session 2 (n = 133)\nCompleted session 3 (n = 102)\nCompleted session 4 (n = 98)\nCompleted session 5 (n = 68)\n\n\n\nCompleted post-assessment (n = 207)    Completed post-assessment (n = 186)\n\n\nCompleted follow-up (n = 174)    Completed follow-up (n = 170)\n\n\nIntention-to-treat sample (n = 266)                     Intention-to-treat sample (n = 272)\n\nFig 1. Flowchart.\n<u>https://doi.org/10.1371/journal.pmed.1004460.g001</u>\n\n\n\n\n\n\nPLOS Medicine |<u>https://doi.org/10.1371/journal.pmed.1004460</u>  September 9, 2024    10 / 21"
+      },
+      {
+        "page_number": 4,
+        "text": "PLOS MEDICINE    Digital mental health for Syrian refugees in Egypt: A pragmatic RCT\n\n\nTable 2. Pooled results from linear mixed models for primary and secondary outcomes (N = 538, based on multiple imputation).\n                                                           Descriptive statistics, Pooled¹ M (SD)              Linear mixed model analysis2, Pooled results3\n        Outcomes    Time point                          SbS + CAU          n      CAU                       n  Mean diff. (95% CI)            p-value  Effect size 4\n        Primary\n        HSCL-25             Baseline                       2.46 (0.61)     266     2.39       272 (0.61)\n   (psych. distress)        Post                           2.29 (0.68)     207     2.36       186 (0.65)       −0.15 (−0.27, −0.02)           .021*     0.23\n                            Follow-up                      2.18 (0.67)     174     2.26       170 (0.70)       −0.15 (−0.28, −0.02)           .022*     0.22\n         WHODAS             Baseline                      31.90 (8.67)     266    30.80       272 (8.03)\n     (functioning)          Post                          29.80 (8.92)     207    30.90       186 (8.74)       −2.23 (−3.94, −0.53)           .011*     0.25\n                            Follow-up                     29.40 (9.11)     174    30.30       170 (9.40)       −2.04 (−3.87, −0.22)           .023*     0.22\n       Secondary\n     PCL-5 (short)          Baseline                      15.20 (7.32)     266    14.80       272 (7.52)\n    (PTSD symptoms)         Post                          13.40 (7.78)     207    13.30       186 (7.65)       −0.19 (−1.51, 1.14)            .780      0.03\n                            Follow-up                     12.70 (7.98)     174    13.10       170 (7.95)       −0.76 (−2,26, 0.74)            .320      0.10\n       PSYCHLOPS            Baseline                      15.00 (4.53)     266    15.40       272 (4.52)\n(self-defined problems)     Post                          12.80 (5.51)     207    14.00       186 (5.18)       −0.76 (−1.65, 0.14)            .099      0.14\n                            Follow-up                     12.60 (5.43)     174     13.8       170 (5.33)       −0.85 (−1.78, 0.09)            .075      0.15\n\n1Pooled descriptive statistics across all imputed datasets.\n2As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.\n3Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).\n4Hedges‘ g effect sizes were derived by combining multiple imputation estimates using Rubin’s rules.\n\n<u>https://doi.org/10.1371/journal.pmed.1004460.t002</u>\n\n                                                        of +3% in the HSCL-25 scores (indicating higher psychological distress) and +2% in the\n                                                        WHODAS scores (indicating lower functioning) were sufficient to render the results not\n                                                        significant.\n                                                        Analyses on remission rates for the HSCL-25 were conducted for the subsamples of       -\n                                                        pants who scored above the cutoff for remission at baseline assessment, which was the case in\n                                                        71.4% (SbS + CAU group) and 69.9% (CAU group) of the participants. In these subsamples,\n                                                        full remission on the HSCL-25 was found in 20.0% (SbS + CAU group) and 15.8% (CAU\n                                                        group) of participants. The study conditions did not differ in their remission rates, OR = 1.33;\n                                                        95% CI 0.76, 2.35; p = 0.35. For the WHODAS, all participants scored above the cutoff for\n                                                        remission at baseline. Here, 9.8% (SbS + CAU group) and 7.1% (CAU group) were fully     -\n                                                        ted, OR = 1.42; 95% CI 0.62, 3.38; p = 0.44.\n                                                        <u>Table 3</u>summarizes the types of services used by study participants in both conditions\n                                                        throughout the intervention period of 6 weeks. More than half (58.5%) of the participants\n                                                        reported using at least 1 type of service during this period. Participants mainly utilized primary\n                                                        healthcare services by visiting a general practitioner (30.5%) or going to a health worker/nurse\n                                                        (23.4%). A minority reported using specialized mental healthcare services and visited a   -\n                                                        chologist (4.1%) or a psychiatrist (3.6%), as well as taking medication for mood problems\n                                                        (7.1%), anxiety (11.2%), and sleep problems (14.2%). During the trial, no serious adverse\n                                                        events were reported to the e-helper team. Upon trial completion, analysis of the service use\n                                                        questionnaire indicated that 4.8% of the participants were in contact with external CAU crisis\n                                                        services. Hospitalization in a psychiatric hospital or a psychiatric ward in a public hospital was\n                                                        reported by 3 participants (0.8%). Outpatient services at a hospital were utilized by 1.5%, while\n                                                        0.8% indicated a visit to an emergency room. There were no substantial differences in CAU\n                                                        utilization between the SbS + CAU and the CAU conditions. However, there were statistically\n                                                        significant differences in baseline, post, and follow-up symptom severity on the HSCL-25,\n\n\n\n\nPLOS Medicine |<u>https://doi.org/10.1371/journal.pmed.1004460</u>  September 9, 2024    11 / 21"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "RESEARCH ARTICLE\n\n# Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial\n\n**Sebastian Burchert**<sup>1</sup>\\*, **Mhd Salem Alkneme**<sup>1</sup>, **Ammar Alsaod**<sup>1</sup>, **Pim Cuijpers**<sup>2,3</sup>, **Eva Heim**<sup>4</sup>, **Jonas Hessling**<sup>1</sup>, **Nadine Hosny**<sup>4,5</sup>, **Marit Sijbrandij**<sup>2</sup>, **Edith van’t Hof**<sup>6</sup>, **Pieter Ventevogel**<sup>7</sup>, **Christine Knaevelsrud**<sup>1</sup>, **on behalf of the STRENGTHS Consortium**\n\n**1** Department of Education and Psychology, Division of Clinical Psychological Intervention, Freie Universität Berlin, Berlin, Germany, **2** Department of Clinical, Neuro and Developmental Psychology, WHO Collaborating Center for Research and Dissemination of Psychological Interventions, Amsterdam Public Health Research Institute, Vrije Universiteit Amsterdam, Amsterdam, the Netherlands, **3** Babeș-Bolyai University, International Institute for Psychotherapy, Cluj-Napoca, Romania, **4** Department of Psychology, University of Lausanne, Lausanne, Switzerland, **5** Department of Psychology, The American University in Cairo, New Cairo, Egypt, **6** Independent researcher, **7** Public Health Section, Division of Resilience and Solutions, United Nations High Commissioner for Refugees, Geneva, Switzerland\n\n\\* s.burchert@fu-berlin.de\n\nCheck for updates logo\n\nOpen Access icon OPEN ACCESS\n\n**Citation:** Burchert S, Alkneme MS, Alsaod A, Cuijpers P, Heim E, Hessling J, et al. (2024) Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial. PLoS Med 21(9): e1004460. [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460)\n\n**Academic Editor:** Charlotte Hanlon, The University of Edinburgh, UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND\n\n**Received:** January 9, 2024\n**Accepted:** August 14, 2024\n**Published:** September 9, 2024\n\n**Peer Review History:** PLOS recognizes the benefits of transparency in the peer review process; therefore, we enable the publication of all of the content of peer review and author responses alongside final, published articles. The editorial history of this article is available here: [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460)\n\n**Copyright:** © 2024 Burchert et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.\n\n**Data Availability Statement:** The data collected for this study involves sensitive information obtained\n\n## Abstract\n\n### Background\n\nDigital mental health interventions for smartphones, such as the World Health Organization (WHO) Step-by-Step (SbS) program, are potentially scalable solutions to improve access to mental health and psychosocial support in refugee populations. Our study objective was to evaluate the effectiveness of SbS as self-guided intervention with optional message-based contact-on-demand (COD) support on reducing psychological distress, functional impairment, symptoms of posttraumatic stress disorder (PTSD), and self-identified problems in a sample of Syrian refugees residing in Egypt.\n\n### Methods and findings\n\nWe conducted a 2-arm pragmatic randomized controlled trial. A total of 538 Syrians residing in Egypt with elevated levels of psychological distress (Kessler Psychological Distress Scale; K10 > 15) and reduced psychosocial functioning (WHODAS 2.0 > 16) were randomized into SbS + CAU (*N* = 266) or CAU only (*N* = 272). Primary outcomes were psychological distress (Hopkins Symptom Checklist 25) and impaired functioning (WHO Disability Assessment Schedule 2.0) at 3-month follow-up. Secondary outcomes were symptoms of PTSD (PTSD Checklist for DSM-5 short form, PCL-5 short) and self-identified problems (Psychological Outcomes Profiles Scale, PSYCHLOPS). Intention-to-treat (ITT) analyses showed significant but small effects of condition on psychological distress (mean difference: −0.15; 95% CI: −0.28, −0.02; *p* = .02) and functioning (mean difference: −2.04; 95% CI: −3.87, −0.22; *p* = .02) at 3-month follow-up. There were no significant differences between groups",
+        "header": "PLOS MEDICINE",
+        "footer": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024 <page_number>1 / 21</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "Table 1. Demographic and baseline characteristics.\n\n<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th>CAU<br/>(n = 272)</th>\n        <th>SbS + CAU<br/>(n = 266)</th>\n        <th>Completer¹<br/>(n = 98)</th>\n        <th>Dropouts²<br/>(n = 168)</th>\n        <th>Total<br/>(n = 538)</th>\n    </tr>\n    <tr>\n        <th colspan=\"6\">M (SD)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Age</td>\n        <td>33.98 (10.54)</td>\n        <td>33.29 (11.20)</td>\n        <td>33.52 (10.13)</td>\n        <td>33.16 (11.81)</td>\n        <td>33.64 (10.87)</td>\n    </tr>\n    <tr>\n        <td>HSCL-25</td>\n        <td>2.39 (0.61)</td>\n        <td>2.46 (0.61)</td>\n        <td>2.42 (0.64)</td>\n        <td>2.49 (0.60)</td>\n        <td>2.42 (0.61)</td>\n    </tr>\n    <tr>\n        <td>WHODAS</td>\n        <td>30.77 (8.03)</td>\n        <td>31.94 (8.67)</td>\n        <td>31.90 (9.23)</td>\n        <td>31.96 (8.35)</td>\n        <td>31.35 (8.36)</td>\n    </tr>\n    <tr>\n        <td>PCL-5</td>\n        <td>14.84 (7.52)</td>\n        <td>15.18 (7.32)</td>\n        <td>14.50 (7.8)</td>\n        <td>15.58 (7.02)</td>\n        <td>15.01 (7.42)</td>\n    </tr>\n    <tr>\n        <td>PSYCHLOPS</td>\n        <td>15.40 (4.52)</td>\n        <td>15.02 (4.53)</td>\n        <td>14.96 (4.38)</td>\n        <td>15.06 (4.63)</td>\n        <td>15.21 (4.52)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">% (n)</th>\n    </tr>\n    <tr>\n        <td>Female</td>\n        <td>69.1% (188)</td>\n        <td>65.4% (174)</td>\n        <td>75.5% (74)</td>\n        <td>59.5% (100)</td>\n        <td>67.3% (362)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Marital status</th>\n    </tr>\n    <tr>\n        <td>Never married</td>\n        <td>15.8% (43)</td>\n        <td>24.4% (65)</td>\n        <td>16.3% (16)</td>\n        <td>29.2% (49)</td>\n        <td>20.1% (108)</td>\n    </tr>\n    <tr>\n        <td>Married</td>\n        <td>70.2% (191)</td>\n        <td>64.3% (171)</td>\n        <td>77.6% (76)</td>\n        <td>56.5% (95)</td>\n        <td>67.3% (362)</td>\n    </tr>\n    <tr>\n        <td>Separated</td>\n        <td>4.4% (12)</td>\n        <td>3.8% (10)</td>\n        <td>4.1% (4)</td>\n        <td>3.6% (6)</td>\n        <td>4.1% (22)</td>\n    </tr>\n    <tr>\n        <td>Divorced</td>\n        <td>5.1% (14)</td>\n        <td>3.4% (9)</td>\n        <td>1.0% (1)</td>\n        <td>4.8% (8)</td>\n        <td>4.3% (23)</td>\n    </tr>\n    <tr>\n        <td>Widowed</td>\n        <td>4.0% (11)</td>\n        <td>2.6% (7)</td>\n        <td>1.0% (1)</td>\n        <td>3.6% (6)</td>\n        <td>3.3% (18)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>0.4% (1)</td>\n        <td>1.5% (4)</td>\n        <td>0% (0)</td>\n        <td>2.4% (4)</td>\n        <td>0.9% (5)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Education³</th>\n    </tr>\n    <tr>\n        <td>No education</td>\n        <td>6.6% (18)</td>\n        <td>7.5% (20)</td>\n        <td>9.2% (9)</td>\n        <td>6.5% (11)</td>\n        <td>7.1% (38)</td>\n    </tr>\n    <tr>\n        <td>Primary</td>\n        <td>35.7% (97)</td>\n        <td>27.8% (74)</td>\n        <td>23.5% (23)</td>\n        <td>30.4% (51)</td>\n        <td>31.8% (171)</td>\n    </tr>\n    <tr>\n        <td>Secondary</td>\n        <td>42.3% (115)</td>\n        <td>46.2% (123)</td>\n        <td>50.0% (49)</td>\n        <td>44.0% (74)</td>\n        <td>44.2% (238)</td>\n    </tr>\n    <tr>\n        <td>University</td>\n        <td>11.0% (30)</td>\n        <td>14.3% (38)</td>\n        <td>13.3% (13)</td>\n        <td>14.9% (25)</td>\n        <td>12.6% (68)</td>\n    </tr>\n    <tr>\n        <td>Technical</td>\n        <td>2.6% (7)</td>\n        <td>2.6% (7)</td>\n        <td>0% (0)</td>\n        <td>4.2% (7)</td>\n        <td>2.6% (14)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>1.8% (5)</td>\n        <td>1.5% (4)</td>\n        <td>4.1% (4)</td>\n        <td>0% (0)</td>\n        <td>1.7% (9)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Occupation</th>\n    </tr>\n    <tr>\n        <td>Paid work</td>\n        <td>16.5% (45)</td>\n        <td>21.4% (57)</td>\n        <td>21.5% (21)</td>\n        <td>21.4% (36)</td>\n        <td>19.0% (102)</td>\n    </tr>\n    <tr>\n        <td>Self-employed</td>\n        <td>12.5% (34)</td>\n        <td>11.3% (30)</td>\n        <td>10.2% (10)</td>\n        <td>11.9% (20)</td>\n        <td>11.9% (64)</td>\n    </tr>\n    <tr>\n        <td>Unpaid work</td>\n        <td>0.4% (1)</td>\n        <td>0.8% (2)</td>\n        <td>0% (0)</td>\n        <td>1.2% (2)</td>\n        <td>0.6% (3)</td>\n    </tr>\n    <tr>\n        <td>Student</td>\n        <td>5.5% (15)</td>\n        <td>10.9% (29)</td>\n        <td>7.1% (7)</td>\n        <td>13.1% (22)</td>\n        <td>8.2% (44)</td>\n    </tr>\n    <tr>\n        <td>Homemaker</td>\n        <td>39.0% (106)</td>\n        <td>27.4% (73)</td>\n        <td>33.7% (33)</td>\n        <td>23.8% (40)</td>\n        <td>33.3% (179)</td>\n    </tr>\n    <tr>\n        <td>Retired</td>\n        <td>0.4% (1)</td>\n        <td>0.4% (1)</td>\n        <td>1.0% (1)</td>\n        <td>0% (0)</td>\n        <td>0.4% (2)</td>\n    </tr>\n    <tr>\n        <td>Unemployed</td>\n        <td>21.3% (58)</td>\n        <td>21.8% (58)</td>\n        <td>21.4% (21)</td>\n        <td>22.0% (37)</td>\n        <td>21.6% (116)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>4.4% (12)</td>\n        <td>6.0% (16)</td>\n        <td>5.1% (5)</td>\n        <td>6.5% (11)</td>\n        <td>5.2% (28)</td>\n    </tr>\n  </tbody>\n</table>\n\n<sup>1</sup>At least 4 out of 5 SbS sessions completed.\n\n<sup>2</sup>Less than 4 SbS sessions completed.\n\n<sup>3</sup>Highest education level started.\n\n[https://doi.org/10.1371/journal.pmed.1004460.t001](https://doi.org/10.1371/journal.pmed.1004460.t001)\n\nweekly phone calls to reduce this overhead and to increase the scalability of the approach. Intervention completion was defined as completion of a minimum of 4 out of 5 sessions because the fifth session essentially focused on repetition of previously learned techniques.\n\nCOD was provided by trained and supervised nonspecialist research assistants called \"e-helpers\", using the in-app messaging system. The e-helper team consisted of male Syrian Arabic-native speakers with an educational background in psychology and were refugees. Participants could at any time reach out to e-helpers for help with the intervention, app functionality, technical issues, or other topics, including referral to other services. The in-app messaging feature was data efficient and incurred no additional costs, although it required an internet connection to send and receive messages. E-helpers responded within 48 hours, which means that",
+        "header": "PLOS MEDICINE\n\nDigital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+        "footer": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) <page_number>7 / 21</page_number> September 9, 2024",
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "markdown": "```mermaid\ngraph TD\n    A[Assessed for eligibility \\(n = 826\\)] --> B[Included \\(n = 596\\)]\n    A --> C[Excluded \\(n = 230\\)* Acute suicidality \\(n = 83\\)* Low symptoms \\(n = 73\\)* Age < 18 \\(n = 73\\)* Duplicate account \\(n = 1\\)]\n    B --> D[Randomized \\(n = 538\\)]\n    B --> E[baseline non-completion \\(n = 58\\)]\n    D --> F[Allocated to SbS + CAU \\(n = 266\\)]\n    D --> G[Allocated to CAU \\(n = 272\\)]\n    F --> H[Non-completer \\(n = 168\\)* Non-starter \\(n = 21\\)* Completed introduction \\(n = 209\\)* Completed session 1 \\(n = 177\\)* Completed session 2 \\(n = 133\\)* Completed session 3 \\(n = 102\\)* Completed session 4 \\(n = 98\\)* Completed session 5 \\(n = 68\\)]\n    G --> I[Non-completer \\(n = 65\\)* Non-starter \\(n = 21\\)* Completed informationsession \\(n = 207\\)]\n    F --> J[Completed post-assessment \\(n = 207\\)]\n    G --> K[Completed post-assessment \\(n = 186\\)]\n    J --> L[Completed follow-up \\(n = 174\\)]\n    K --> M[Completed follow-up \\(n = 170\\)]\n    L --> N[Intention-to-treat sample \\(n = 266\\)]\n    M --> O[Intention-to-treat sample \\(n = 272\\)]\n```\n\n**Fig 1. Flowchart.**\n\n[https://doi.org/10.1371/journal.pmed.1004460.g001](https://doi.org/10.1371/journal.pmed.1004460.g001)",
+        "header": "PLOS MEDICINE | Digital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+        "footer": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024\n\n<page_number>10 / 21</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 4,
+        "markdown": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ($N = 538$, based on multiple imputation).\n\n<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th> </th>\n        <th colspan=\"4\">Descriptive statistics, Pooled¹ M (SD)</th>\n        <th colspan=\"3\">Linear mixed model analysis², Pooled results³</th>\n    </tr>\n    <tr>\n        <th>Outcomes</th>\n        <th>Time point</th>\n        <th>SbS + CAU</th>\n        <th>n</th>\n        <th>CAU</th>\n        <th>n</th>\n        <th>Mean diff. (95% CI)</th>\n        <th>p-value</th>\n        <th>Effect size⁴</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td colspan=\"9\">Primary</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">HSCL-25<br/>(psych. distress)</td>\n        <td>Baseline</td>\n        <td>2.46 (0.61)</td>\n        <td>266</td>\n        <td>2.39 (0.61)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>2.29 (0.68)</td>\n        <td>207</td>\n        <td>2.36 (0.65)</td>\n        <td>186</td>\n        <td>−0.15 (−0.27, −0.02)</td>\n        <td>.021*</td>\n        <td>0.23</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>2.18 (0.67)</td>\n        <td>174</td>\n        <td>2.26 (0.70)</td>\n        <td>170</td>\n        <td>−0.15 (−0.28, −0.02)</td>\n        <td>.022*</td>\n        <td>0.22</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">WHODAS<br/>(functioning)</td>\n        <td>Baseline</td>\n        <td>31.90 (8.67)</td>\n        <td>266</td>\n        <td>30.80 (8.03)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>29.80 (8.92)</td>\n        <td>207</td>\n        <td>30.90 (8.74)</td>\n        <td>186</td>\n        <td>−2.23 (−3.94, −0.53)</td>\n        <td>.011*</td>\n        <td>0.25</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>29.40 (9.11)</td>\n        <td>174</td>\n        <td>30.30 (9.40)</td>\n        <td>170</td>\n        <td>−2.04 (−3.87, −0.22)</td>\n        <td>.023*</td>\n        <td>0.22</td>\n    </tr>\n    <tr>\n        <td colspan=\"9\">Secondary</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">PCL-5 (short)<br/>(PTSD symptoms)</td>\n        <td>Baseline</td>\n        <td>15.20 (7.32)</td>\n        <td>266</td>\n        <td>14.80 (7.52)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>13.40 (7.78)</td>\n        <td>207</td>\n        <td>13.30 (7.65)</td>\n        <td>186</td>\n        <td>−0.19 (−1.51, 1.14)</td>\n        <td>.780</td>\n        <td>0.03</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>12.70 (7.98)</td>\n        <td>174</td>\n        <td>13.10 (7.95)</td>\n        <td>170</td>\n        <td>−0.76 (−2.26, 0.74)</td>\n        <td>.320</td>\n        <td>0.10</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">PSYCHLOPS<br/>(self-defined problems)</td>\n        <td>Baseline</td>\n        <td>15.00 (4.53)</td>\n        <td>266</td>\n        <td>15.40 (4.52)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>12.80 (5.51)</td>\n        <td>207</td>\n        <td>14.00 (5.18)</td>\n        <td>186</td>\n        <td>−0.76 (−1.65, 0.14)</td>\n        <td>.099</td>\n        <td>0.14</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>12.60 (5.43)</td>\n        <td>174</td>\n        <td>13.8 (5.33)</td>\n        <td>170</td>\n        <td>−0.85 (−1.78, 0.09)</td>\n        <td>.075</td>\n        <td>0.15</td>\n    </tr>\n  </tbody>\n</table>\n\n<sup>1</sup>Pooled descriptive statistics across all imputed datasets.\n\n<sup>2</sup>As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.\n\n<sup>3</sup>Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).\n\n<sup>4</sup>Hedges‘ g effect sizes were derived by combining multiple imputation estimates using Rubin’s rules.\n\n[https://doi.org/10.1371/journal.pmed.1004460.t002](https://doi.org/10.1371/journal.pmed.1004460.t002)\n\nof +3% in the HSCL-25 scores (indicating higher psychological distress) and +2% in the WHODAS scores (indicating lower functioning) were sufficient to render the results not significant.\n\nAnalyses on remission rates for the HSCL-25 were conducted for the subsamples of participants who scored above the cutoff for remission at baseline assessment, which was the case in 71.4% (SbS + CAU group) and 69.9% (CAU group) of the participants. In these subsamples, full remission on the HSCL-25 was found in 20.0% (SbS + CAU group) and 15.8% (CAU group) of participants. The study conditions did not differ in their remission rates, OR = 1.33; 95% CI 0.76, 2.35; p = 0.35. For the WHODAS, all participants scored above the cutoff for remission at baseline. Here, 9.8% (SbS + CAU group) and 7.1% (CAU group) were fully remitted, OR = 1.42; 95% CI 0.62, 3.38; p = 0.44.\n\nTable 3 summarizes the types of services used by study participants in both conditions throughout the intervention period of 6 weeks. More than half (58.5%) of the participants reported using at least 1 type of service during this period. Participants mainly utilized primary healthcare services by visiting a general practitioner (30.5%) or going to a health worker/nurse (23.4%). A minority reported using specialized mental healthcare services and visited a psychologist (4.1%) or a psychiatrist (3.6%), as well as taking medication for mood problems (7.1%), anxiety (11.2%), and sleep problems (14.2%). During the trial, no serious adverse events were reported to the e-helper team. Upon trial completion, analysis of the service use questionnaire indicated that 4.8% of the participants were in contact with external CAU crisis services. Hospitalization in a psychiatric hospital or a psychiatric ward in a public hospital was reported by 3 participants (0.8%). Outpatient services at a hospital were utilized by 1.5%, while 0.8% indicated a visit to an emergency room. There were no substantial differences in CAU utilization between the SbS + CAU and the CAU conditions. However, there were statistically significant differences in baseline, post, and follow-up symptom severity on the HSCL-25,",
+        "header": "PLOS MEDICINE\n\nDigital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+        "footer": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024 <page_number>11 / 21</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "header",
+            "md": "PLOS MEDICINE",
+            "bbox": [
+              {
+                "x": 35.53,
+                "y": 32.13,
+                "w": 161.16,
+                "h": 16.71
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS MEDICINE",
+                "bbox": [
+                  {
+                    "x": 35.53,
+                    "y": 32.13,
+                    "w": 161.16,
+                    "h": 16.71,
+                    "confidence": 0.9,
+                    "start_index": 0,
+                    "end_index": 12,
+                    "label": "header"
+                  }
+                ],
+                "value": "PLOS MEDICINE"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "RESEARCH ARTICLE",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 95.47,
+                "w": 78.64,
+                "h": 7,
+                "confidence": 0.87,
+                "start_index": 0,
+                "end_index": 15,
+                "label": "text"
+              }
+            ],
+            "value": "RESEARCH ARTICLE"
+          },
+          {
+            "type": "heading",
+            "md": "# Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial",
+            "bbox": [
+              {
+                "x": 199.81,
+                "y": 108.76,
+                "w": 354.17,
+                "h": 82.97,
+                "confidence": 0.87,
+                "start_index": 0,
+                "end_index": 140,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial"
+          },
+          {
+            "type": "text",
+            "md": "**Sebastian Burchert**<sup>1</sup>\\*, **Mhd Salem Alkneme**<sup>1</sup>, **Ammar Alsaod**<sup>1</sup>, **Pim Cuijpers**<sup>2,3</sup>, **Eva Heim**<sup>4</sup>, **Jonas Hessling**<sup>1</sup>, **Nadine Hosny**<sup>4,5</sup>, **Marit Sijbrandij**<sup>2</sup>, **Edith van’t Hof**<sup>6</sup>, **Pieter Ventevogel**<sup>7</sup>, **Christine Knaevelsrud**<sup>1</sup>, **on behalf of the STRENGTHS Consortium**",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 208.05,
+                "w": 358.58,
+                "h": 31.8,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              }
+            ],
+            "value": "Sebastian Burchert<sup>1</sup>*, Mhd Salem Alkneme<sup>1</sup>, Ammar Alsaod<sup>1</sup>, Pim Cuijpers<sup>2,3</sup>, Eva Heim<sup>4</sup>, Jonas Hessling<sup>1</sup>, Nadine Hosny<sup>4,5</sup>, Marit Sijbrandij<sup>2</sup>, Edith van’t Hof<sup>6</sup>, Pieter Ventevogel<sup>7</sup>, Christine Knaevelsrud<sup>1</sup>, on behalf of the STRENGTHS Consortium"
+          },
+          {
+            "type": "text",
+            "md": "**1** Department of Education and Psychology, Division of Clinical Psychological Intervention, Freie Universität Berlin, Berlin, Germany, **2** Department of Clinical, Neuro and Developmental Psychology, WHO Collaborating Center for Research and Dissemination of Psychological Interventions, Amsterdam Public Health Research Institute, Vrije Universiteit Amsterdam, Amsterdam, the Netherlands, **3** Babeș-Bolyai University, International Institute for Psychotherapy, Cluj-Napoca, Romania, **4** Department of Psychology, University of Lausanne, Lausanne, Switzerland, **5** Department of Psychology, The American University in Cairo, New Cairo, Egypt, **6** Independent researcher, **7** Public Health Section, Division of Resilience and Solutions, United Nations High Commissioner for Refugees, Geneva, Switzerland",
+            "bbox": [
+              {
+                "x": 199.31,
+                "y": 249.75,
+                "w": 372.05,
+                "h": 78.79,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 815,
+                "label": "text"
+              }
+            ],
+            "value": "1 Department of Education and Psychology, Division of Clinical Psychological Intervention, Freie Universität Berlin, Berlin, Germany, 2 Department of Clinical, Neuro and Developmental Psychology, WHO Collaborating Center for Research and Dissemination of Psychological Interventions, Amsterdam Public Health Research Institute, Vrije Universiteit Amsterdam, Amsterdam, the Netherlands, 3 Babeș-Bolyai University, International Institute for Psychotherapy, Cluj-Napoca, Romania, 4 Department of Psychology, University of Lausanne, Lausanne, Switzerland, 5 Department of Psychology, The American University in Cairo, New Cairo, Egypt, 6 Independent researcher, 7 Public Health Section, Division of Resilience and Solutions, United Nations High Commissioner for Refugees, Geneva, Switzerland"
+          },
+          {
+            "type": "text",
+            "md": "\\* ",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 340.01,
+                "w": 4.45,
+                "h": 8,
+                "confidence": 0.4,
+                "start_index": 0,
+                "end_index": 2,
+                "label": "footnote"
+              }
+            ],
+            "value": "* "
+          },
+          {
+            "type": "link",
+            "md": "<s.burchert@fu-berlin.de>",
+            "bbox": [
+              {
+                "x": 199.95,
+                "y": 339.29,
+                "w": 88.9,
+                "h": 7.82,
+                "confidence": 0.73,
+                "start_index": 0,
+                "end_index": 24,
+                "label": "footnote"
+              }
+            ],
+            "url": "mailto:s.burchert@fu-berlin.de",
+            "text": "s.burchert@fu-berlin.de"
+          },
+          {
+            "type": "text",
+            "md": "Check for updates logo",
+            "bbox": [
+              {
+                "x": 35.05,
+                "y": 241.97,
+                "w": 55.81,
+                "h": 55.46,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 21,
+                "label": "image"
+              }
+            ],
+            "value": "Check for updates logo"
+          },
+          {
+            "type": "text",
+            "md": "Open Access icon OPEN ACCESS",
+            "bbox": [
+              {
+                "x": 47.19,
+                "y": 346.63,
+                "w": 57.07,
+                "h": 7.6,
+                "confidence": 0.79,
+                "start_index": 0,
+                "end_index": 27,
+                "label": "paragraph_title"
+              }
+            ],
+            "value": "Open Access icon OPEN ACCESS"
+          },
+          {
+            "type": "text",
+            "md": "**Citation:** Burchert S, Alkneme MS, Alsaod A, Cuijpers P, Heim E, Hessling J, et al. (2024) Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial. PLoS Med 21(9): e1004460. ",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 363.83,
+                "w": 149.94,
+                "h": 63.14,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 260,
+                "label": "text"
+              },
+              {
+                "x": 35.34358816561492,
+                "y": 362.79890143353003,
+                "w": 150.26548539037287,
+                "h": 74.39498669168225,
+                "confidence": 0.93,
+                "label": "text"
+              }
+            ],
+            "value": "Citation: Burchert S, Alkneme MS, Alsaod A, Cuijpers P, Heim E, Hessling J, et al. (2024) Effects of a self-guided digital mental health self-help intervention for Syrian refugees in Egypt: A pragmatic randomized controlled trial. PLoS Med 21(9): e1004460. "
+          },
+          {
+            "type": "link",
+            "md": "https://doi.org/10.1371/journal.pmed.1004460",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 407.97,
+                "w": 146.29,
+                "h": 29.05,
+                "confidence": 0.69,
+                "start_index": 0,
+                "end_index": 43,
+                "label": "text"
+              }
+            ],
+            "url": "https://doi.org/10.1371/journal.pmed.1004460",
+            "text": "https://doi.org/10.1371/journal.pmed.1004460"
+          },
+          {
+            "type": "text",
+            "md": "**Academic Editor:** Charlotte Hanlon, The University of Edinburgh, UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND",
+            "bbox": [
+              {
+                "x": 35.05,
+                "y": 445.55,
+                "w": 150.28,
+                "h": 29.96,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 119,
+                "label": "text"
+              }
+            ],
+            "value": "Academic Editor: Charlotte Hanlon, The University of Edinburgh, UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND"
+          },
+          {
+            "type": "text",
+            "md": "**Received:** January 9, 2024\n**Accepted:** August 14, 2024\n**Published:** September 9, 2024",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 485.98,
+                "w": 90.91,
+                "h": 41.9,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 91,
+                "label": "key-value-region"
+              },
+              {
+                "x": 68.55846367711607,
+                "y": 485.06251691735304,
+                "w": 48.29198642399001,
+                "h": 8.873382568359375,
+                "confidence": 0.96,
+                "label": "key-value-region"
+              }
+            ],
+            "value": "Received: January 9, 2024\nAccepted: August 14, 2024\nPublished: September 9, 2024"
+          },
+          {
+            "type": "text",
+            "md": "**Peer Review History:** PLOS recognizes the benefits of transparency in the peer review process; therefore, we enable the publication of all of the content of peer review and author responses alongside final, published articles. The editorial history of this article is available here: ",
+            "bbox": [
+              {
+                "x": 35.08,
+                "y": 535.86,
+                "w": 152.14,
+                "h": 74.69,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 286,
+                "label": "text"
+              }
+            ],
+            "value": "Peer Review History: PLOS recognizes the benefits of transparency in the peer review process; therefore, we enable the publication of all of the content of peer review and author responses alongside final, published articles. The editorial history of this article is available here: "
+          },
+          {
+            "type": "link",
+            "md": "https://doi.org/10.1371/journal.pmed.1004460",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 602.99,
+                "w": 144,
+                "h": 8,
+                "confidence": 0.68,
+                "start_index": 0,
+                "end_index": 43,
+                "label": "text"
+              },
+              {
+                "x": 35.67315300651219,
+                "y": 748.8960312553074,
+                "w": 293.182300982268,
+                "h": 9.412017158839936,
+                "confidence": 0.68,
+                "label": "footer"
+              }
+            ],
+            "url": "https://doi.org/10.1371/journal.pmed.1004460",
+            "text": "https://doi.org/10.1371/journal.pmed.1004460"
+          },
+          {
+            "type": "text",
+            "md": "**Copyright:** © 2024 Burchert et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+            "bbox": [
+              {
+                "x": 35.03,
+                "y": 618.78,
+                "w": 149.31,
+                "h": 62.88,
+                "confidence": 0.82,
+                "start_index": 0,
+                "end_index": 272,
+                "label": "text"
+              }
+            ],
+            "value": "Copyright: © 2024 Burchert et al. This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited."
+          },
+          {
+            "type": "text",
+            "md": "**Data Availability Statement:** The data collected for this study involves sensitive information obtained",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 691.86,
+                "w": 151.69,
+                "h": 19.14,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 105,
+                "label": "text"
+              }
+            ],
+            "value": "Data Availability Statement: The data collected for this study involves sensitive information obtained"
+          },
+          {
+            "type": "heading",
+            "md": "## Abstract",
+            "bbox": [
+              {
+                "x": 199.35,
+                "y": 374.59,
+                "w": 55.5,
+                "h": 12.33,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 10,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Abstract"
+          },
+          {
+            "type": "heading",
+            "md": "### Background",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 414.48,
+                "w": 67,
+                "h": 11,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 13,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 3,
+            "value": "Background"
+          },
+          {
+            "type": "text",
+            "md": "Digital mental health interventions for smartphones, such as the World Health Organization (WHO) Step-by-Step (SbS) program, are potentially scalable solutions to improve access to mental health and psychosocial support in refugee populations. Our study objective was to evaluate the effectiveness of SbS as self-guided intervention with optional message-based contact-on-demand (COD) support on reducing psychological distress, functional impairment, symptoms of posttraumatic stress disorder (PTSD), and self-identified problems in a sample of Syrian refugees residing in Egypt.",
+            "bbox": [
+              {
+                "x": 199.24,
+                "y": 431.85,
+                "w": 376.57,
+                "h": 94.34,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 579,
+                "label": "text"
+              }
+            ],
+            "value": "Digital mental health interventions for smartphones, such as the World Health Organization (WHO) Step-by-Step (SbS) program, are potentially scalable solutions to improve access to mental health and psychosocial support in refugee populations. Our study objective was to evaluate the effectiveness of SbS as self-guided intervention with optional message-based contact-on-demand (COD) support on reducing psychological distress, functional impairment, symptoms of posttraumatic stress disorder (PTSD), and self-identified problems in a sample of Syrian refugees residing in Egypt."
+          },
+          {
+            "type": "heading",
+            "md": "### Methods and findings",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 543.66,
+                "w": 117.4,
+                "h": 11,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 23,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 3,
+            "value": "Methods and findings"
+          },
+          {
+            "type": "text",
+            "md": "We conducted a 2-arm pragmatic randomized controlled trial. A total of 538 Syrians residing in Egypt with elevated levels of psychological distress (Kessler Psychological Distress Scale; K10 > 15) and reduced psychosocial functioning (WHODAS 2.0 > 16) were randomized into SbS + CAU (*N* = 266) or CAU only (*N* = 272). Primary outcomes were psychological distress (Hopkins Symptom Checklist 25) and impaired functioning (WHO Disability Assessment Schedule 2.0) at 3-month follow-up. Secondary outcomes were symptoms of PTSD (PTSD Checklist for DSM-5 short form, PCL-5 short) and self-identified problems (Psychological Outcomes Profiles Scale, PSYCHLOPS). Intention-to-treat (ITT) analyses showed significant but small effects of condition on psychological distress (mean difference: −0.15; 95% CI: −0.28, −0.02; *p* = .02) and functioning (mean difference: −2.04; 95% CI: −3.87, −0.22; *p* = .02) at 3-month follow-up. There were no significant differences between groups",
+            "bbox": [
+              {
+                "x": 199.08,
+                "y": 560.87,
+                "w": 377.43,
+                "h": 150.57,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 972,
+                "label": "text"
+              }
+            ],
+            "value": "We conducted a 2-arm pragmatic randomized controlled trial. A total of 538 Syrians residing in Egypt with elevated levels of psychological distress (Kessler Psychological Distress Scale; K10 > 15) and reduced psychosocial functioning (WHODAS 2.0 > 16) were randomized into SbS + CAU (N = 266) or CAU only (N = 272). Primary outcomes were psychological distress (Hopkins Symptom Checklist 25) and impaired functioning (WHO Disability Assessment Schedule 2.0) at 3-month follow-up. Secondary outcomes were symptoms of PTSD (PTSD Checklist for DSM-5 short form, PCL-5 short) and self-identified problems (Psychological Outcomes Profiles Scale, PSYCHLOPS). Intention-to-treat (ITT) analyses showed significant but small effects of condition on psychological distress (mean difference: −0.15; 95% CI: −0.28, −0.02; p = .02) and functioning (mean difference: −2.04; 95% CI: −3.87, −0.22; p = .02) at 3-month follow-up. There were no significant differences between groups"
+          },
+          {
+            "type": "footer",
+            "md": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024 <page_number>1 / 21</page_number>",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 519.88,
+                "w": 540.21,
+                "h": 237.36
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS Medicine | ",
+                "bbox": [
+                  {
+                    "x": 36,
+                    "y": 750.1,
+                    "w": 54.85,
+                    "h": 7.14,
+                    "confidence": 0.63,
+                    "start_index": 0,
+                    "end_index": 15,
+                    "label": "footer"
+                  }
+                ],
+                "value": "PLOS Medicine | "
+              },
+              {
+                "type": "link",
+                "md": "https://doi.org/10.1371/journal.pmed.1004460",
+                "bbox": [
+                  {
+                    "x": 36,
+                    "y": 602.99,
+                    "w": 144.11,
+                    "h": 7.5,
+                    "confidence": 0.65,
+                    "label": "text"
+                  }
+                ],
+                "url": "https://doi.org/10.1371/journal.pmed.1004460",
+                "text": "https://doi.org/10.1371/journal.pmed.1004460"
+              },
+              {
+                "type": "text",
+                "md": " September 9, 2024 \\<page_number>1 / 21\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 70.41,
+                    "y": 519.88,
+                    "w": 56.5,
+                    "h": 8,
+                    "confidence": 0.92,
+                    "start_index": 1,
+                    "end_index": 17,
+                    "label": "text"
+                  },
+                  {
+                    "x": 557.12,
+                    "y": 750.24,
+                    "w": 19.09,
+                    "h": 7,
+                    "confidence": 0.82,
+                    "start_index": 33,
+                    "end_index": 38,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 69.6907548075137,
+                    "y": 518.7663564267366,
+                    "w": 57.53724798948868,
+                    "h": 8.951836295749796,
+                    "confidence": 0.92,
+                    "label": "text"
+                  },
+                  {
+                    "x": 262.0571922633959,
+                    "y": 749.1689937425696,
+                    "w": 66.64773111758024,
+                    "h": 8.981030671492892,
+                    "confidence": 0.92,
+                    "label": "footer"
+                  }
+                ],
+                "value": " September 9, 2024 <page_number>1 / 21</page_number>"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 35.0640521671461,
+                "y": 341.1582502282184,
+                "w": 10.7092078872349,
+                "h": 13.119965594747796,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "items": [
+          {
+            "type": "header",
+            "md": "PLOS MEDICINE\n\nDigital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+            "bbox": [
+              {
+                "x": 35.29,
+                "y": 37.53,
+                "w": 540.43,
+                "h": 10.91
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS MEDICINE",
+                "bbox": [
+                  {
+                    "x": 35.29,
+                    "y": 37.53,
+                    "w": 86.24,
+                    "h": 9.23,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 12,
+                    "label": "header"
+                  }
+                ],
+                "value": "PLOS MEDICINE"
+              },
+              {
+                "type": "text",
+                "md": "Digital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+                "bbox": [
+                  {
+                    "x": 345.15,
+                    "y": 40.31,
+                    "w": 230.58,
+                    "h": 8.14,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 66,
+                    "label": "header"
+                  },
+                  {
+                    "x": 344.78913912565815,
+                    "y": 39.226974528768785,
+                    "w": 231.46420619798747,
+                    "h": 9.191343473351518,
+                    "confidence": 0.97,
+                    "label": "header"
+                  }
+                ],
+                "value": "Digital mental health for Syrian refugees in Egypt: A pragmatic RCT"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Table 1. Demographic and baseline characteristics.",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 77.52,
+                "w": 169.79,
+                "h": 8,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 49,
+                "label": "caption"
+              }
+            ],
+            "value": "Table 1. Demographic and baseline characteristics."
+          },
+          {
+            "type": "table",
+            "md": "| M (SD)         | CAU(n = 272)<br/>M (SD) | SbS + CAU(n = 266)<br/>M (SD) | Completer¹(n = 98)<br/>M (SD) | Dropouts²(n = 168)<br/>M (SD) | Total(n = 538)<br/>M (SD) |\n| -------------- | ----------------------- | ----------------------------- | ----------------------------- | ----------------------------- | ------------------------- |\n| Age            | 33.98 (10.54)           | 33.29 (11.20)                 | 33.52 (10.13)                 | 33.16 (11.81)                 | 33.64 (10.87)             |\n| HSCL-25        | 2.39 (0.61)             | 2.46 (0.61)                   | 2.42 (0.64)                   | 2.49 (0.60)                   | 2.42 (0.61)               |\n| WHODAS         | 30.77 (8.03)            | 31.94 (8.67)                  | 31.90 (9.23)                  | 31.96 (8.35)                  | 31.35 (8.36)              |\n| PCL-5          | 14.84 (7.52)            | 15.18 (7.32)                  | 14.50 (7.8)                   | 15.58 (7.02)                  | 15.01 (7.42)              |\n| PSYCHLOPS      | 15.40 (4.52)            | 15.02 (4.53)                  | 14.96 (4.38)                  | 15.06 (4.63)                  | 15.21 (4.52)              |\n| % (n)          |                         |                               |                               |                               |                           |\n| Female         | 69.1% (188)             | 65.4% (174)                   | 75.5% (74)                    | 59.5% (100)                   | 67.3% (362)               |\n| Marital status |                         |                               |                               |                               |                           |\n| Never married  | 15.8% (43)              | 24.4% (65)                    | 16.3% (16)                    | 29.2% (49)                    | 20.1% (108)               |\n| Married        | 70.2% (191)             | 64.3% (171)                   | 77.6% (76)                    | 56.5% (95)                    | 67.3% (362)               |\n| Separated      | 4.4% (12)               | 3.8% (10)                     | 4.1% (4)                      | 3.6% (6)                      | 4.1% (22)                 |\n| Divorced       | 5.1% (14)               | 3.4% (9)                      | 1.0% (1)                      | 4.8% (8)                      | 4.3% (23)                 |\n| Widowed        | 4.0% (11)               | 2.6% (7)                      | 1.0% (1)                      | 3.6% (6)                      | 3.3% (18)                 |\n| Other          | 0.4% (1)                | 1.5% (4)                      | 0% (0)                        | 2.4% (4)                      | 0.9% (5)                  |\n| Education³     |                         |                               |                               |                               |                           |\n| No education   | 6.6% (18)               | 7.5% (20)                     | 9.2% (9)                      | 6.5% (11)                     | 7.1% (38)                 |\n| Primary        | 35.7% (97)              | 27.8% (74)                    | 23.5% (23)                    | 30.4% (51)                    | 31.8% (171)               |\n| Secondary      | 42.3% (115)             | 46.2% (123)                   | 50.0% (49)                    | 44.0% (74)                    | 44.2% (238)               |\n| University     | 11.0% (30)              | 14.3% (38)                    | 13.3% (13)                    | 14.9% (25)                    | 12.6% (68)                |\n| Technical      | 2.6% (7)                | 2.6% (7)                      | 0% (0)                        | 4.2% (7)                      | 2.6% (14)                 |\n| Other          | 1.8% (5)                | 1.5% (4)                      | 4.1% (4)                      | 0% (0)                        | 1.7% (9)                  |\n| Occupation     |                         |                               |                               |                               |                           |\n| Paid work      | 16.5% (45)              | 21.4% (57)                    | 21.5% (21)                    | 21.4% (36)                    | 19.0% (102)               |\n| Self-employed  | 12.5% (34)              | 11.3% (30)                    | 10.2% (10)                    | 11.9% (20)                    | 11.9% (64)                |\n| Unpaid work    | 0.4% (1)                | 0.8% (2)                      | 0% (0)                        | 1.2% (2)                      | 0.6% (3)                  |\n| Student        | 5.5% (15)               | 10.9% (29)                    | 7.1% (7)                      | 13.1% (22)                    | 8.2% (44)                 |\n| Homemaker      | 39.0% (106)             | 27.4% (73)                    | 33.7% (33)                    | 23.8% (40)                    | 33.3% (179)               |\n| Retired        | 0.4% (1)                | 0.4% (1)                      | 1.0% (1)                      | 0% (0)                        | 0.4% (2)                  |\n| Unemployed     | 21.3% (58)              | 21.8% (58)                    | 21.4% (21)                    | 22.0% (37)                    | 21.6% (116)               |\n| Other          | 4.4% (12)               | 6.0% (16)                     | 5.1% (5)                      | 6.5% (11)                     | 5.2% (28)                 |",
+            "bbox": [
+              {
+                "x": 34.1,
+                "y": 86.34,
+                "w": 542.81,
+                "h": 411.92,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 5406,
+                "label": "table"
+              },
+              {
+                "x": 555.88,
+                "y": 749.31,
+                "w": 19.8,
+                "h": 7.4,
+                "confidence": 1,
+                "start_index": 4109,
+                "end_index": 4135,
+                "label": "footer"
+              }
+            ],
+            "rows": [
+              [
+                "M (SD)",
+                "CAU(n = 272)<br/>M (SD)",
+                "SbS + CAU(n = 266)<br/>M (SD)",
+                "Completer¹(n = 98)<br/>M (SD)",
+                "Dropouts²(n = 168)<br/>M (SD)",
+                "Total(n = 538)<br/>M (SD)"
+              ],
+              [
+                "Age",
+                "33.98 (10.54)",
+                "33.29 (11.20)",
+                "33.52 (10.13)",
+                "33.16 (11.81)",
+                "33.64 (10.87)"
+              ],
+              [
+                "HSCL-25",
+                "2.39 (0.61)",
+                "2.46 (0.61)",
+                "2.42 (0.64)",
+                "2.49 (0.60)",
+                "2.42 (0.61)"
+              ],
+              [
+                "WHODAS",
+                "30.77 (8.03)",
+                "31.94 (8.67)",
+                "31.90 (9.23)",
+                "31.96 (8.35)",
+                "31.35 (8.36)"
+              ],
+              [
+                "PCL-5",
+                "14.84 (7.52)",
+                "15.18 (7.32)",
+                "14.50 (7.8)",
+                "15.58 (7.02)",
+                "15.01 (7.42)"
+              ],
+              [
+                "PSYCHLOPS",
+                "15.40 (4.52)",
+                "15.02 (4.53)",
+                "14.96 (4.38)",
+                "15.06 (4.63)",
+                "15.21 (4.52)"
+              ],
+              [
+                "% (n)",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Female",
+                "69.1% (188)",
+                "65.4% (174)",
+                "75.5% (74)",
+                "59.5% (100)",
+                "67.3% (362)"
+              ],
+              [
+                "Marital status",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Never married",
+                "15.8% (43)",
+                "24.4% (65)",
+                "16.3% (16)",
+                "29.2% (49)",
+                "20.1% (108)"
+              ],
+              [
+                "Married",
+                "70.2% (191)",
+                "64.3% (171)",
+                "77.6% (76)",
+                "56.5% (95)",
+                "67.3% (362)"
+              ],
+              [
+                "Separated",
+                "4.4% (12)",
+                "3.8% (10)",
+                "4.1% (4)",
+                "3.6% (6)",
+                "4.1% (22)"
+              ],
+              [
+                "Divorced",
+                "5.1% (14)",
+                "3.4% (9)",
+                "1.0% (1)",
+                "4.8% (8)",
+                "4.3% (23)"
+              ],
+              [
+                "Widowed",
+                "4.0% (11)",
+                "2.6% (7)",
+                "1.0% (1)",
+                "3.6% (6)",
+                "3.3% (18)"
+              ],
+              [
+                "Other",
+                "0.4% (1)",
+                "1.5% (4)",
+                "0% (0)",
+                "2.4% (4)",
+                "0.9% (5)"
+              ],
+              [
+                "Education³",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "No education",
+                "6.6% (18)",
+                "7.5% (20)",
+                "9.2% (9)",
+                "6.5% (11)",
+                "7.1% (38)"
+              ],
+              [
+                "Primary",
+                "35.7% (97)",
+                "27.8% (74)",
+                "23.5% (23)",
+                "30.4% (51)",
+                "31.8% (171)"
+              ],
+              [
+                "Secondary",
+                "42.3% (115)",
+                "46.2% (123)",
+                "50.0% (49)",
+                "44.0% (74)",
+                "44.2% (238)"
+              ],
+              [
+                "University",
+                "11.0% (30)",
+                "14.3% (38)",
+                "13.3% (13)",
+                "14.9% (25)",
+                "12.6% (68)"
+              ],
+              [
+                "Technical",
+                "2.6% (7)",
+                "2.6% (7)",
+                "0% (0)",
+                "4.2% (7)",
+                "2.6% (14)"
+              ],
+              [
+                "Other",
+                "1.8% (5)",
+                "1.5% (4)",
+                "4.1% (4)",
+                "0% (0)",
+                "1.7% (9)"
+              ],
+              [
+                "Occupation",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Paid work",
+                "16.5% (45)",
+                "21.4% (57)",
+                "21.5% (21)",
+                "21.4% (36)",
+                "19.0% (102)"
+              ],
+              [
+                "Self-employed",
+                "12.5% (34)",
+                "11.3% (30)",
+                "10.2% (10)",
+                "11.9% (20)",
+                "11.9% (64)"
+              ],
+              [
+                "Unpaid work",
+                "0.4% (1)",
+                "0.8% (2)",
+                "0% (0)",
+                "1.2% (2)",
+                "0.6% (3)"
+              ],
+              [
+                "Student",
+                "5.5% (15)",
+                "10.9% (29)",
+                "7.1% (7)",
+                "13.1% (22)",
+                "8.2% (44)"
+              ],
+              [
+                "Homemaker",
+                "39.0% (106)",
+                "27.4% (73)",
+                "33.7% (33)",
+                "23.8% (40)",
+                "33.3% (179)"
+              ],
+              [
+                "Retired",
+                "0.4% (1)",
+                "0.4% (1)",
+                "1.0% (1)",
+                "0% (0)",
+                "0.4% (2)"
+              ],
+              [
+                "Unemployed",
+                "21.3% (58)",
+                "21.8% (58)",
+                "21.4% (21)",
+                "22.0% (37)",
+                "21.6% (116)"
+              ],
+              [
+                "Other",
+                "4.4% (12)",
+                "6.0% (16)",
+                "5.1% (5)",
+                "6.5% (11)",
+                "5.2% (28)"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th>CAU<br />(n = 272)</th>\n        <th>SbS + CAU<br />(n = 266)</th>\n        <th>Completer¹<br />(n = 98)</th>\n        <th>Dropouts²<br />(n = 168)</th>\n        <th>Total<br />(n = 538)</th>\n    </tr>\n    <tr>\n        <th colspan=\"6\">M (SD)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Age</td>\n        <td>33.98 (10.54)</td>\n        <td>33.29 (11.20)</td>\n        <td>33.52 (10.13)</td>\n        <td>33.16 (11.81)</td>\n        <td>33.64 (10.87)</td>\n    </tr>\n    <tr>\n        <td>HSCL-25</td>\n        <td>2.39 (0.61)</td>\n        <td>2.46 (0.61)</td>\n        <td>2.42 (0.64)</td>\n        <td>2.49 (0.60)</td>\n        <td>2.42 (0.61)</td>\n    </tr>\n    <tr>\n        <td>WHODAS</td>\n        <td>30.77 (8.03)</td>\n        <td>31.94 (8.67)</td>\n        <td>31.90 (9.23)</td>\n        <td>31.96 (8.35)</td>\n        <td>31.35 (8.36)</td>\n    </tr>\n    <tr>\n        <td>PCL-5</td>\n        <td>14.84 (7.52)</td>\n        <td>15.18 (7.32)</td>\n        <td>14.50 (7.8)</td>\n        <td>15.58 (7.02)</td>\n        <td>15.01 (7.42)</td>\n    </tr>\n    <tr>\n        <td>PSYCHLOPS</td>\n        <td>15.40 (4.52)</td>\n        <td>15.02 (4.53)</td>\n        <td>14.96 (4.38)</td>\n        <td>15.06 (4.63)</td>\n        <td>15.21 (4.52)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">% (n)</th>\n    </tr>\n    <tr>\n        <td>Female</td>\n        <td>69.1% (188)</td>\n        <td>65.4% (174)</td>\n        <td>75.5% (74)</td>\n        <td>59.5% (100)</td>\n        <td>67.3% (362)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Marital status</th>\n    </tr>\n    <tr>\n        <td>Never married</td>\n        <td>15.8% (43)</td>\n        <td>24.4% (65)</td>\n        <td>16.3% (16)</td>\n        <td>29.2% (49)</td>\n        <td>20.1% (108)</td>\n    </tr>\n    <tr>\n        <td>Married</td>\n        <td>70.2% (191)</td>\n        <td>64.3% (171)</td>\n        <td>77.6% (76)</td>\n        <td>56.5% (95)</td>\n        <td>67.3% (362)</td>\n    </tr>\n    <tr>\n        <td>Separated</td>\n        <td>4.4% (12)</td>\n        <td>3.8% (10)</td>\n        <td>4.1% (4)</td>\n        <td>3.6% (6)</td>\n        <td>4.1% (22)</td>\n    </tr>\n    <tr>\n        <td>Divorced</td>\n        <td>5.1% (14)</td>\n        <td>3.4% (9)</td>\n        <td>1.0% (1)</td>\n        <td>4.8% (8)</td>\n        <td>4.3% (23)</td>\n    </tr>\n    <tr>\n        <td>Widowed</td>\n        <td>4.0% (11)</td>\n        <td>2.6% (7)</td>\n        <td>1.0% (1)</td>\n        <td>3.6% (6)</td>\n        <td>3.3% (18)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>0.4% (1)</td>\n        <td>1.5% (4)</td>\n        <td>0% (0)</td>\n        <td>2.4% (4)</td>\n        <td>0.9% (5)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Education³</th>\n    </tr>\n    <tr>\n        <td>No education</td>\n        <td>6.6% (18)</td>\n        <td>7.5% (20)</td>\n        <td>9.2% (9)</td>\n        <td>6.5% (11)</td>\n        <td>7.1% (38)</td>\n    </tr>\n    <tr>\n        <td>Primary</td>\n        <td>35.7% (97)</td>\n        <td>27.8% (74)</td>\n        <td>23.5% (23)</td>\n        <td>30.4% (51)</td>\n        <td>31.8% (171)</td>\n    </tr>\n    <tr>\n        <td>Secondary</td>\n        <td>42.3% (115)</td>\n        <td>46.2% (123)</td>\n        <td>50.0% (49)</td>\n        <td>44.0% (74)</td>\n        <td>44.2% (238)</td>\n    </tr>\n    <tr>\n        <td>University</td>\n        <td>11.0% (30)</td>\n        <td>14.3% (38)</td>\n        <td>13.3% (13)</td>\n        <td>14.9% (25)</td>\n        <td>12.6% (68)</td>\n    </tr>\n    <tr>\n        <td>Technical</td>\n        <td>2.6% (7)</td>\n        <td>2.6% (7)</td>\n        <td>0% (0)</td>\n        <td>4.2% (7)</td>\n        <td>2.6% (14)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>1.8% (5)</td>\n        <td>1.5% (4)</td>\n        <td>4.1% (4)</td>\n        <td>0% (0)</td>\n        <td>1.7% (9)</td>\n    </tr>\n    <tr>\n        <th colspan=\"6\">Occupation</th>\n    </tr>\n    <tr>\n        <td>Paid work</td>\n        <td>16.5% (45)</td>\n        <td>21.4% (57)</td>\n        <td>21.5% (21)</td>\n        <td>21.4% (36)</td>\n        <td>19.0% (102)</td>\n    </tr>\n    <tr>\n        <td>Self-employed</td>\n        <td>12.5% (34)</td>\n        <td>11.3% (30)</td>\n        <td>10.2% (10)</td>\n        <td>11.9% (20)</td>\n        <td>11.9% (64)</td>\n    </tr>\n    <tr>\n        <td>Unpaid work</td>\n        <td>0.4% (1)</td>\n        <td>0.8% (2)</td>\n        <td>0% (0)</td>\n        <td>1.2% (2)</td>\n        <td>0.6% (3)</td>\n    </tr>\n    <tr>\n        <td>Student</td>\n        <td>5.5% (15)</td>\n        <td>10.9% (29)</td>\n        <td>7.1% (7)</td>\n        <td>13.1% (22)</td>\n        <td>8.2% (44)</td>\n    </tr>\n    <tr>\n        <td>Homemaker</td>\n        <td>39.0% (106)</td>\n        <td>27.4% (73)</td>\n        <td>33.7% (33)</td>\n        <td>23.8% (40)</td>\n        <td>33.3% (179)</td>\n    </tr>\n    <tr>\n        <td>Retired</td>\n        <td>0.4% (1)</td>\n        <td>0.4% (1)</td>\n        <td>1.0% (1)</td>\n        <td>0% (0)</td>\n        <td>0.4% (2)</td>\n    </tr>\n    <tr>\n        <td>Unemployed</td>\n        <td>21.3% (58)</td>\n        <td>21.8% (58)</td>\n        <td>21.4% (21)</td>\n        <td>22.0% (37)</td>\n        <td>21.6% (116)</td>\n    </tr>\n    <tr>\n        <td>Other</td>\n        <td>4.4% (12)</td>\n        <td>6.0% (16)</td>\n        <td>5.1% (5)</td>\n        <td>6.5% (11)</td>\n        <td>5.2% (28)</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"M (SD)\",\"CAU(n = 272)<br/>M (SD)\",\"SbS + CAU(n = 266)<br/>M (SD)\",\"Completer¹(n = 98)<br/>M (SD)\",\"Dropouts²(n = 168)<br/>M (SD)\",\"Total(n = 538)<br/>M (SD)\"\n\"Age\",\"33.98 (10.54)\",\"33.29 (11.20)\",\"33.52 (10.13)\",\"33.16 (11.81)\",\"33.64 (10.87)\"\n\"HSCL-25\",\"2.39 (0.61)\",\"2.46 (0.61)\",\"2.42 (0.64)\",\"2.49 (0.60)\",\"2.42 (0.61)\"\n\"WHODAS\",\"30.77 (8.03)\",\"31.94 (8.67)\",\"31.90 (9.23)\",\"31.96 (8.35)\",\"31.35 (8.36)\"\n\"PCL-5\",\"14.84 (7.52)\",\"15.18 (7.32)\",\"14.50 (7.8)\",\"15.58 (7.02)\",\"15.01 (7.42)\"\n\"PSYCHLOPS\",\"15.40 (4.52)\",\"15.02 (4.53)\",\"14.96 (4.38)\",\"15.06 (4.63)\",\"15.21 (4.52)\"\n\"% (n)\",,,,,\n\"Female\",\"69.1% (188)\",\"65.4% (174)\",\"75.5% (74)\",\"59.5% (100)\",\"67.3% (362)\"\n\"Marital status\",,,,,\n\"Never married\",\"15.8% (43)\",\"24.4% (65)\",\"16.3% (16)\",\"29.2% (49)\",\"20.1% (108)\"\n\"Married\",\"70.2% (191)\",\"64.3% (171)\",\"77.6% (76)\",\"56.5% (95)\",\"67.3% (362)\"\n\"Separated\",\"4.4% (12)\",\"3.8% (10)\",\"4.1% (4)\",\"3.6% (6)\",\"4.1% (22)\"\n\"Divorced\",\"5.1% (14)\",\"3.4% (9)\",\"1.0% (1)\",\"4.8% (8)\",\"4.3% (23)\"\n\"Widowed\",\"4.0% (11)\",\"2.6% (7)\",\"1.0% (1)\",\"3.6% (6)\",\"3.3% (18)\"\n\"Other\",\"0.4% (1)\",\"1.5% (4)\",\"0% (0)\",\"2.4% (4)\",\"0.9% (5)\"\n\"Education³\",,,,,\n\"No education\",\"6.6% (18)\",\"7.5% (20)\",\"9.2% (9)\",\"6.5% (11)\",\"7.1% (38)\"\n\"Primary\",\"35.7% (97)\",\"27.8% (74)\",\"23.5% (23)\",\"30.4% (51)\",\"31.8% (171)\"\n\"Secondary\",\"42.3% (115)\",\"46.2% (123)\",\"50.0% (49)\",\"44.0% (74)\",\"44.2% (238)\"\n\"University\",\"11.0% (30)\",\"14.3% (38)\",\"13.3% (13)\",\"14.9% (25)\",\"12.6% (68)\"\n\"Technical\",\"2.6% (7)\",\"2.6% (7)\",\"0% (0)\",\"4.2% (7)\",\"2.6% (14)\"\n\"Other\",\"1.8% (5)\",\"1.5% (4)\",\"4.1% (4)\",\"0% (0)\",\"1.7% (9)\"\n\"Occupation\",,,,,\n\"Paid work\",\"16.5% (45)\",\"21.4% (57)\",\"21.5% (21)\",\"21.4% (36)\",\"19.0% (102)\"\n\"Self-employed\",\"12.5% (34)\",\"11.3% (30)\",\"10.2% (10)\",\"11.9% (20)\",\"11.9% (64)\"\n\"Unpaid work\",\"0.4% (1)\",\"0.8% (2)\",\"0% (0)\",\"1.2% (2)\",\"0.6% (3)\"\n\"Student\",\"5.5% (15)\",\"10.9% (29)\",\"7.1% (7)\",\"13.1% (22)\",\"8.2% (44)\"\n\"Homemaker\",\"39.0% (106)\",\"27.4% (73)\",\"33.7% (33)\",\"23.8% (40)\",\"33.3% (179)\"\n\"Retired\",\"0.4% (1)\",\"0.4% (1)\",\"1.0% (1)\",\"0% (0)\",\"0.4% (2)\"\n\"Unemployed\",\"21.3% (58)\",\"21.8% (58)\",\"21.4% (21)\",\"22.0% (37)\",\"21.6% (116)\"\n\"Other\",\"4.4% (12)\",\"6.0% (16)\",\"5.1% (5)\",\"6.5% (11)\",\"5.2% (28)\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 5 'Total(n = 538)' expects numeric, got '33.64 (10.87)' in row 2"
+              },
+              {
+                "type": "possible_merged_columns",
+                "details": "col 1 'CAU(n = 272)': 26/26 (100%) have interior whitespace"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "<sup>1</sup>At least 4 out of 5 SbS sessions completed.",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 506.45,
+                "w": 137.82,
+                "h": 9.65,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 54,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>1</sup>At least 4 out of 5 SbS sessions completed."
+          },
+          {
+            "type": "text",
+            "md": "<sup>2</sup>Less than 4 SbS sessions completed.",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 518.47,
+                "w": 116.35,
+                "h": 9.65,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 46,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>2</sup>Less than 4 SbS sessions completed."
+          },
+          {
+            "type": "text",
+            "md": "<sup>3</sup>Highest education level started.",
+            "bbox": [
+              {
+                "x": 35.28,
+                "y": 530.35,
+                "w": 103.66,
+                "h": 9.7,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 43,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>3</sup>Highest education level started."
+          },
+          {
+            "type": "link",
+            "md": "https://doi.org/10.1371/journal.pmed.1004460.t001",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 549.87,
+                "w": 153,
+                "h": 8,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 48,
+                "label": "text"
+              },
+              {
+                "x": 35.176030241924785,
+                "y": 548.7082592508067,
+                "w": 153.40314263882846,
+                "h": 8.760808530061205,
+                "confidence": 0.94,
+                "label": "text"
+              }
+            ],
+            "url": "https://doi.org/10.1371/journal.pmed.1004460.t001",
+            "text": "https://doi.org/10.1371/journal.pmed.1004460.t001"
+          },
+          {
+            "type": "text",
+            "md": "weekly phone calls to reduce this overhead and to increase the scalability of the approach. Intervention completion was defined as completion of a minimum of 4 out of 5 sessions because the fifth session essentially focused on repetition of previously learned techniques.",
+            "bbox": [
+              {
+                "x": 199.42,
+                "y": 581.45,
+                "w": 357.9,
+                "h": 36.58,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 270,
+                "label": "text"
+              }
+            ],
+            "value": "weekly phone calls to reduce this overhead and to increase the scalability of the approach. Intervention completion was defined as completion of a minimum of 4 out of 5 sessions because the fifth session essentially focused on repetition of previously learned techniques."
+          },
+          {
+            "type": "text",
+            "md": "COD was provided by trained and supervised nonspecialist research assistants called \"e-helpers\", using the in-app messaging system. The e-helper team consisted of male Syrian Arabic-native speakers with an educational background in psychology and were refugees. Participants could at any time reach out to e-helpers for help with the intervention, app functionality, technical issues, or other topics, including referral to other services. The in-app messaging feature was data efficient and incurred no additional costs, although it required an internet connection to send and receive messages. E-helpers responded within 48 hours, which means that",
+            "bbox": [
+              {
+                "x": 199.25,
+                "y": 620.15,
+                "w": 376.41,
+                "h": 89.42,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 648,
+                "label": "text"
+              }
+            ],
+            "value": "COD was provided by trained and supervised nonspecialist research assistants called \"e-helpers\", using the in-app messaging system. The e-helper team consisted of male Syrian Arabic-native speakers with an educational background in psychology and were refugees. Participants could at any time reach out to e-helpers for help with the intervention, app functionality, technical issues, or other topics, including referral to other services. The in-app messaging feature was data efficient and incurred no additional costs, although it required an internet connection to send and receive messages. E-helpers responded within 48 hours, which means that"
+          },
+          {
+            "type": "footer",
+            "md": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) <page_number>7 / 21</page_number> September 9, 2024",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 750.1,
+                "w": 293.02,
+                "h": 8
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS Medicine | ",
+                "bbox": [
+                  {
+                    "x": 36,
+                    "y": 750.1,
+                    "w": 54.85,
+                    "h": 7.14,
+                    "confidence": 0.63,
+                    "start_index": 0,
+                    "end_index": 15,
+                    "label": "footer"
+                  }
+                ],
+                "value": "PLOS Medicine | "
+              },
+              {
+                "type": "link",
+                "md": "https://doi.org/10.1371/journal.pmed.1004460",
+                "bbox": [
+                  {
+                    "x": 95.81,
+                    "y": 750.1,
+                    "w": 158.73,
+                    "h": 7.64,
+                    "confidence": 0.65,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 35.816768646240234,
+                    "y": 748.9565874182659,
+                    "w": 292.9413428928541,
+                    "h": 9.306996221127703,
+                    "confidence": 0.65,
+                    "label": "footer"
+                  }
+                ],
+                "url": "https://doi.org/10.1371/journal.pmed.1004460",
+                "text": "https://doi.org/10.1371/journal.pmed.1004460"
+              },
+              {
+                "type": "text",
+                "md": " \\<page_number>7 / 21\\</page_number> September 9, 2024",
+                "bbox": [
+                  {
+                    "x": 262.37,
+                    "y": 750.1,
+                    "w": 66.64,
+                    "h": 8,
+                    "confidence": 0.79,
+                    "start_index": 37,
+                    "end_index": 53,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 261.9883724710216,
+                    "y": 749.2015705937924,
+                    "w": 66.69881306523865,
+                    "h": 8.850329191788358,
+                    "confidence": 0.79,
+                    "label": "footer"
+                  }
+                ],
+                "value": " <page_number>7 / 21</page_number> September 9, 2024"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "items": [
+          {
+            "type": "header",
+            "md": "PLOS MEDICINE | Digital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+            "bbox": [
+              {
+                "x": 34.98,
+                "y": 35.85,
+                "w": 540.75,
+                "h": 13
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS MEDICINE | Digital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+                "bbox": [
+                  {
+                    "x": 34.98,
+                    "y": 35.85,
+                    "w": 86.98,
+                    "h": 13,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 12,
+                    "label": "header"
+                  },
+                  {
+                    "x": 345.15,
+                    "y": 40.31,
+                    "w": 230.58,
+                    "h": 8.14,
+                    "confidence": 0.97,
+                    "start_index": 16,
+                    "end_index": 82,
+                    "label": "header"
+                  },
+                  {
+                    "x": 344.81588546089506,
+                    "y": 39.33159318177596,
+                    "w": 231.42436583145803,
+                    "h": 9.024497944375746,
+                    "confidence": 0.97,
+                    "label": "header"
+                  }
+                ],
+                "value": "PLOS MEDICINE | Digital mental health for Syrian refugees in Egypt: A pragmatic RCT"
+              }
+            ]
+          },
+          {
+            "type": "code",
+            "md": "```mermaid\ngraph TD\n    A[Assessed for eligibility \\(n = 826\\)] --> B[Included \\(n = 596\\)]\n    A --> C[Excluded \\(n = 230\\)* Acute suicidality \\(n = 83\\)* Low symptoms \\(n = 73\\)* Age < 18 \\(n = 73\\)* Duplicate account \\(n = 1\\)]\n    B --> D[Randomized \\(n = 538\\)]\n    B --> E[baseline non-completion \\(n = 58\\)]\n    D --> F[Allocated to SbS + CAU \\(n = 266\\)]\n    D --> G[Allocated to CAU \\(n = 272\\)]\n    F --> H[Non-completer \\(n = 168\\)* Non-starter \\(n = 21\\)* Completed introduction \\(n = 209\\)* Completed session 1 \\(n = 177\\)* Completed session 2 \\(n = 133\\)* Completed session 3 \\(n = 102\\)* Completed session 4 \\(n = 98\\)* Completed session 5 \\(n = 68\\)]\n    G --> I[Non-completer \\(n = 65\\)* Non-starter \\(n = 21\\)* Completed informationsession \\(n = 207\\)]\n    F --> J[Completed post-assessment \\(n = 207\\)]\n    G --> K[Completed post-assessment \\(n = 186\\)]\n    J --> L[Completed follow-up \\(n = 174\\)]\n    K --> M[Completed follow-up \\(n = 170\\)]\n    L --> N[Intention-to-treat sample \\(n = 266\\)]\n    M --> O[Intention-to-treat sample \\(n = 272\\)]\n```",
+            "bbox": [
+              {
+                "x": 131.6,
+                "y": 410.22,
+                "w": 106.17,
+                "h": 10.44,
+                "confidence": 0.64,
+                "start_index": 11,
+                "end_index": 1063,
+                "label": "text"
+              },
+              {
+                "x": 131.67,
+                "y": 425.19,
+                "w": 166.8,
+                "h": 10.96,
+                "confidence": 0.63,
+                "start_index": 478,
+                "end_index": 510,
+                "label": "text"
+              },
+              {
+                "x": 131.51,
+                "y": 440.46,
+                "w": 152.29,
+                "h": 10.59,
+                "confidence": 0.63,
+                "start_index": 514,
+                "end_index": 543,
+                "label": "text"
+              },
+              {
+                "x": 131.53,
+                "y": 455.47,
+                "w": 152.21,
+                "h": 10.7,
+                "confidence": 0.63,
+                "start_index": 547,
+                "end_index": 576,
+                "label": "text"
+              },
+              {
+                "x": 131.62,
+                "y": 470.37,
+                "w": 152.08,
+                "h": 10.79,
+                "confidence": 0.62,
+                "start_index": 580,
+                "end_index": 609,
+                "label": "text"
+              },
+              {
+                "x": 131.75,
+                "y": 485.64,
+                "w": 146.11,
+                "h": 10.39,
+                "confidence": 0.62,
+                "start_index": 613,
+                "end_index": 641,
+                "label": "text"
+              },
+              {
+                "x": 131.75,
+                "y": 500.85,
+                "w": 146.33,
+                "h": 10.44,
+                "confidence": 0.62,
+                "start_index": 635,
+                "end_index": 665,
+                "label": "text"
+              },
+              {
+                "x": 276.47470177921554,
+                "y": 86.9034375,
+                "w": 139.9727210119288,
+                "h": 10.729124999999996,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 389.042237414072,
+                "y": 124.45537499999999,
+                "w": 81.62619730590382,
+                "h": 10.729124999999996,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 406.42832276081685,
+                "y": 139.95299999999997,
+                "w": 109.62074150828948,
+                "h": 10.133062499999994,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 406.42832276081685,
+                "y": 154.25849999999997,
+                "w": 103.1377944298423,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 407.01768158613027,
+                "y": 169.756125,
+                "w": 75.14325022745652,
+                "h": 10.729124999999982,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 407.01768158613027,
+                "y": 185.25374999999997,
+                "w": 110.2101003336029,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 306.2373224575415,
+                "y": 222.80568749999998,
+                "w": 80.447479655277,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 389.042237414072,
+                "y": 257.37731249999996,
+                "w": 146.16098867771927,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 299.7543753790942,
+                "y": 294.33318749999995,
+                "w": 96.36016793873836,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 195.43786329862516,
+                "y": 348.57487499999996,
+                "w": 307.3506274009301,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 130.90307192680956,
+                "y": 393.27956249999994,
+                "w": 379.8417629144764,
+                "h": 11.92124999999993,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.2891572735544,
+                "y": 408.77718749999997,
+                "w": 364.8131128689851,
+                "h": 11.32518749999997,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 423.6787499999999,
+                "w": 380.13644232713307,
+                "h": 11.921250000000043,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.2891572735544,
+                "y": 438.58031249999993,
+                "w": 351.55253929943393,
+                "h": 11.921249999999986,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 454.6739999999999,
+                "w": 133.4897739334816,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 469.57556249999993,
+                "w": 132.31105628285488,
+                "h": 10.133062499999994,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 485.07318749999996,
+                "w": 127.59618568034776,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 500.57081249999993,
+                "w": 127.0068268550344,
+                "h": 10.133062499999994,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 169.80075439749294,
+                "y": 546.467625,
+                "w": 371.88541877274565,
+                "h": 10.133062499999937,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 185.7134426809543,
+                "y": 588.7880624999999,
+                "w": 340.3547216184796,
+                "h": 10.133062500000051,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 176.28370147594018,
+                "y": 631.1084999999999,
+                "w": 359.5088834411645,
+                "h": 10.729125000000067,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 195.43786329862516,
+                "y": 348.57487499999996,
+                "w": 142.33015631318236,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 387.2741609381319,
+                "y": 348.57487499999996,
+                "w": 115.51432976142337,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 130.90307192680956,
+                "y": 394.4716875,
+                "w": 109.03138268297613,
+                "h": 10.729124999999897,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 407.01768158613027,
+                "y": 393.27956249999994,
+                "w": 103.72715325515571,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.2891572735544,
+                "y": 409.96931249999994,
+                "w": 88.69850320966438,
+                "h": 10.133062499999994,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 424.6984463455318,
+                "y": 408.77718749999997,
+                "w": 88.4038237970077,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.87851609886778,
+                "y": 424.87087499999996,
+                "w": 147.33970632834618,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 424.6984463455318,
+                "y": 423.6787499999999,
+                "w": 104.31651208046901,
+                "h": 10.133062499999994,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 148.2891572735544,
+                "y": 439.77243749999997,
+                "w": 134.07913275879497,
+                "h": 10.729124999999954,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 424.6984463455318,
+                "y": 438.58031249999993,
+                "w": 75.14325022745652,
+                "h": 10.72912500000001,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 169.80075439749294,
+                "y": 546.467625,
+                "w": 166.19918873837446,
+                "h": 10.133062499999937,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 375.48698443186413,
+                "y": 546.467625,
+                "w": 166.19918873837446,
+                "h": 10.133062499999937,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 185.7134426809543,
+                "y": 588.7880624999999,
+                "w": 134.07913275879497,
+                "h": 10.133062500000051,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 391.39967271532555,
+                "y": 588.7880624999999,
+                "w": 134.66849158410832,
+                "h": 10.133062500000051,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 176.28370147594018,
+                "y": 631.1084999999999,
+                "w": 153.82265340679334,
+                "h": 10.729125000000067,
+                "confidence": 0.64,
+                "label": "text"
+              },
+              {
+                "x": 381.380572684998,
+                "y": 631.1084999999999,
+                "w": 154.4120122321067,
+                "h": 10.133062500000051,
+                "confidence": 0.64,
+                "label": "text"
+              }
+            ],
+            "value": "graph TD\n    A[Assessed for eligibility \\(n = 826\\)] --> B[Included \\(n = 596\\)]\n    A --> C[Excluded \\(n = 230\\)* Acute suicidality \\(n = 83\\)* Low symptoms \\(n = 73\\)* Age < 18 \\(n = 73\\)* Duplicate account \\(n = 1\\)]\n    B --> D[Randomized \\(n = 538\\)]\n    B --> E[baseline non-completion \\(n = 58\\)]\n    D --> F[Allocated to SbS + CAU \\(n = 266\\)]\n    D --> G[Allocated to CAU \\(n = 272\\)]\n    F --> H[Non-completer \\(n = 168\\)* Non-starter \\(n = 21\\)* Completed introduction \\(n = 209\\)* Completed session 1 \\(n = 177\\)* Completed session 2 \\(n = 133\\)* Completed session 3 \\(n = 102\\)* Completed session 4 \\(n = 98\\)* Completed session 5 \\(n = 68\\)]\n    G --> I[Non-completer \\(n = 65\\)* Non-starter \\(n = 21\\)* Completed informationsession \\(n = 207\\)]\n    F --> J[Completed post-assessment \\(n = 207\\)]\n    G --> K[Completed post-assessment \\(n = 186\\)]\n    J --> L[Completed follow-up \\(n = 174\\)]\n    K --> M[Completed follow-up \\(n = 170\\)]\n    L --> N[Intention-to-treat sample \\(n = 266\\)]\n    M --> O[Intention-to-treat sample \\(n = 272\\)]",
+            "language": "mermaid"
+          },
+          {
+            "type": "text",
+            "md": "**Fig 1. Flowchart.**",
+            "bbox": [
+              {
+                "x": 123.36,
+                "y": 658.11,
+                "w": 56.81,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 20,
+                "label": "caption"
+              }
+            ],
+            "value": "Fig 1. Flowchart."
+          },
+          {
+            "type": "link",
+            "md": "https://doi.org/10.1371/journal.pmed.1004460.g001",
+            "bbox": [
+              {
+                "x": 123.36,
+                "y": 673.41,
+                "w": 155,
+                "h": 8,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 48,
+                "label": "text"
+              },
+              {
+                "x": 122.38867975317915,
+                "y": 672.1718325407608,
+                "w": 155.16336996658987,
+                "h": 9.195144653320312,
+                "confidence": 0.93,
+                "label": "text"
+              }
+            ],
+            "url": "https://doi.org/10.1371/journal.pmed.1004460.g001",
+            "text": "https://doi.org/10.1371/journal.pmed.1004460.g001"
+          },
+          {
+            "type": "footer",
+            "md": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024\n\n<page_number>10 / 21</page_number>",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 749.48,
+                "w": 539.64,
+                "h": 8.63
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS Medicine | ",
+                "bbox": [
+                  {
+                    "x": 36,
+                    "y": 750.1,
+                    "w": 54.85,
+                    "h": 7.14,
+                    "confidence": 0.66,
+                    "start_index": 0,
+                    "end_index": 15,
+                    "label": "footer"
+                  }
+                ],
+                "value": "PLOS Medicine | "
+              },
+              {
+                "type": "link",
+                "md": "https://doi.org/10.1371/journal.pmed.1004460",
+                "bbox": [
+                  {
+                    "x": 95.81,
+                    "y": 750.1,
+                    "w": 158.73,
+                    "h": 7.64,
+                    "confidence": 0.65,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 35.765515410381816,
+                    "y": 749.0679135529891,
+                    "w": 293.13584381601083,
+                    "h": 9.136296147885515,
+                    "confidence": 0.65,
+                    "label": "footer"
+                  }
+                ],
+                "url": "https://doi.org/10.1371/journal.pmed.1004460",
+                "text": "https://doi.org/10.1371/journal.pmed.1004460"
+              },
+              {
+                "type": "text",
+                "md": " September 9, 2024",
+                "bbox": [
+                  {
+                    "x": 262.37,
+                    "y": 750.1,
+                    "w": 66.64,
+                    "h": 8,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 17,
+                    "label": "footer"
+                  }
+                ],
+                "value": " September 9, 2024"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>10 / 21\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 553.47,
+                    "y": 749.48,
+                    "w": 22.17,
+                    "h": 7.1,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 35,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>10 / 21</page_number>"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 124.71091635330863,
+                "y": 82.9088252523671,
+                "w": 455.3599481168,
+                "h": 573.2881338700004,
+                "confidence": 0.5,
+                "label": "chart"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 4,
+        "items": [
+          {
+            "type": "header",
+            "md": "PLOS MEDICINE\n\nDigital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+            "bbox": [
+              {
+                "x": 35.23,
+                "y": 37.55,
+                "w": 540.5,
+                "h": 10.89
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS MEDICINE",
+                "bbox": [
+                  {
+                    "x": 35.23,
+                    "y": 37.55,
+                    "w": 86.13,
+                    "h": 9.2,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 12,
+                    "label": "header"
+                  }
+                ],
+                "value": "PLOS MEDICINE"
+              },
+              {
+                "type": "text",
+                "md": "Digital mental health for Syrian refugees in Egypt: A pragmatic RCT",
+                "bbox": [
+                  {
+                    "x": 345.15,
+                    "y": 40.31,
+                    "w": 230.58,
+                    "h": 8.14,
+                    "confidence": 0.97,
+                    "start_index": 0,
+                    "end_index": 66,
+                    "label": "header"
+                  },
+                  {
+                    "x": 344.73069812940514,
+                    "y": 39.24753209818964,
+                    "w": 231.48280682771102,
+                    "h": 9.135852813720703,
+                    "confidence": 0.97,
+                    "label": "header"
+                  }
+                ],
+                "value": "Digital mental health for Syrian refugees in Egypt: A pragmatic RCT"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ($N = 538$, based on multiple imputation).",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 77.47,
+                "w": 424.11,
+                "h": 8.06,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 125,
+                "label": "caption"
+              }
+            ],
+            "value": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ($N = 538$, based on multiple imputation)."
+          },
+          {
+            "type": "table",
+            "md": "| Outcomes                              | Time point | Descriptive statistics, Pooled¹ M (SD)<br/>SbS + CAU | Descriptive statistics, Pooled¹ M (SD)<br/>n | Descriptive statistics, Pooled¹ M (SD)<br/>CAU | Descriptive statistics, Pooled¹ M (SD)<br/>n | Linear mixed model analysis², Pooled results³<br/>Mean diff. (95% CI) | Linear mixed model analysis², Pooled results³<br/>p-value | Linear mixed model analysis², Pooled results³<br/>Effect size⁴ |\n| ------------------------------------- | ---------- | ---------------------------------------------------- | -------------------------------------------- | ---------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------- |\n| Primary                               |            |                                                      |                                              |                                                |                                              |                                                                       |                                                           |                                                                |\n| HSCL-25<br/>(psych. distress)         | Baseline   | 2.46 (0.61)                                          | 266                                          | 2.39 (0.61)                                    | 272                                          |                                                                       |                                                           |                                                                |\n|                                       | Post       | 2.29 (0.68)                                          | 207                                          | 2.36 (0.65)                                    | 186                                          | −0.15 (−0.27, −0.02)                                                  | .021\\*                                                    | 0.23                                                           |\n|                                       | Follow-up  | 2.18 (0.67)                                          | 174                                          | 2.26 (0.70)                                    | 170                                          | −0.15 (−0.28, −0.02)                                                  | .022\\*                                                    | 0.22                                                           |\n| WHODAS<br/>(functioning)              | Baseline   | 31.90 (8.67)                                         | 266                                          | 30.80 (8.03)                                   | 272                                          |                                                                       |                                                           |                                                                |\n|                                       | Post       | 29.80 (8.92)                                         | 207                                          | 30.90 (8.74)                                   | 186                                          | −2.23 (−3.94, −0.53)                                                  | .011\\*                                                    | 0.25                                                           |\n|                                       | Follow-up  | 29.40 (9.11)                                         | 174                                          | 30.30 (9.40)                                   | 170                                          | −2.04 (−3.87, −0.22)                                                  | .023\\*                                                    | 0.22                                                           |\n| Secondary                             |            |                                                      |                                              |                                                |                                              |                                                                       |                                                           |                                                                |\n| PCL-5 (short)<br/>(PTSD symptoms)     | Baseline   | 15.20 (7.32)                                         | 266                                          | 14.80 (7.52)                                   | 272                                          |                                                                       |                                                           |                                                                |\n|                                       | Post       | 13.40 (7.78)                                         | 207                                          | 13.30 (7.65)                                   | 186                                          | −0.19 (−1.51, 1.14)                                                   | .780                                                      | 0.03                                                           |\n|                                       | Follow-up  | 12.70 (7.98)                                         | 174                                          | 13.10 (7.95)                                   | 170                                          | −0.76 (−2.26, 0.74)                                                   | .320                                                      | 0.10                                                           |\n| PSYCHLOPS<br/>(self-defined problems) | Baseline   | 15.00 (4.53)                                         | 266                                          | 15.40 (4.52)                                   | 272                                          |                                                                       |                                                           |                                                                |\n|                                       | Post       | 12.80 (5.51)                                         | 207                                          | 14.00 (5.18)                                   | 186                                          | −0.76 (−1.65, 0.14)                                                   | .099                                                      | 0.14                                                           |\n|                                       | Follow-up  | 12.60 (5.43)                                         | 174                                          | 13.8 (5.33)                                    | 170                                          | −0.85 (−1.78, 0.09)                                                   | .075                                                      | 0.15                                                           |",
+            "bbox": [
+              {
+                "x": 34.25,
+                "y": 87.94,
+                "w": 542.68,
+                "h": 201.25,
+                "confidence": 0.88,
+                "start_index": 0,
+                "end_index": 7198,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "Outcomes",
+                "Time point",
+                "Descriptive statistics, Pooled¹ M (SD)<br/>SbS + CAU",
+                "Descriptive statistics, Pooled¹ M (SD)<br/>n",
+                "Descriptive statistics, Pooled¹ M (SD)<br/>CAU",
+                "Descriptive statistics, Pooled¹ M (SD)<br/>n",
+                "Linear mixed model analysis², Pooled results³<br/>Mean diff. (95% CI)",
+                "Linear mixed model analysis², Pooled results³<br/>p-value",
+                "Linear mixed model analysis², Pooled results³<br/>Effect size⁴"
+              ],
+              [
+                "Primary",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "HSCL-25<br/>(psych. distress)",
+                "Baseline",
+                "2.46 (0.61)",
+                "266",
+                "2.39 (0.61)",
+                "272",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "Post",
+                "2.29 (0.68)",
+                "207",
+                "2.36 (0.65)",
+                "186",
+                "−0.15 (−0.27, −0.02)",
+                ".021*",
+                "0.23"
+              ],
+              [
+                "",
+                "Follow-up",
+                "2.18 (0.67)",
+                "174",
+                "2.26 (0.70)",
+                "170",
+                "−0.15 (−0.28, −0.02)",
+                ".022*",
+                "0.22"
+              ],
+              [
+                "WHODAS<br/>(functioning)",
+                "Baseline",
+                "31.90 (8.67)",
+                "266",
+                "30.80 (8.03)",
+                "272",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "Post",
+                "29.80 (8.92)",
+                "207",
+                "30.90 (8.74)",
+                "186",
+                "−2.23 (−3.94, −0.53)",
+                ".011*",
+                "0.25"
+              ],
+              [
+                "",
+                "Follow-up",
+                "29.40 (9.11)",
+                "174",
+                "30.30 (9.40)",
+                "170",
+                "−2.04 (−3.87, −0.22)",
+                ".023*",
+                "0.22"
+              ],
+              [
+                "Secondary",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "PCL-5 (short)<br/>(PTSD symptoms)",
+                "Baseline",
+                "15.20 (7.32)",
+                "266",
+                "14.80 (7.52)",
+                "272",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "Post",
+                "13.40 (7.78)",
+                "207",
+                "13.30 (7.65)",
+                "186",
+                "−0.19 (−1.51, 1.14)",
+                ".780",
+                "0.03"
+              ],
+              [
+                "",
+                "Follow-up",
+                "12.70 (7.98)",
+                "174",
+                "13.10 (7.95)",
+                "170",
+                "−0.76 (−2.26, 0.74)",
+                ".320",
+                "0.10"
+              ],
+              [
+                "PSYCHLOPS<br/>(self-defined problems)",
+                "Baseline",
+                "15.00 (4.53)",
+                "266",
+                "15.40 (4.52)",
+                "272",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "Post",
+                "12.80 (5.51)",
+                "207",
+                "14.00 (5.18)",
+                "186",
+                "−0.76 (−1.65, 0.14)",
+                ".099",
+                "0.14"
+              ],
+              [
+                "",
+                "Follow-up",
+                "12.60 (5.43)",
+                "174",
+                "13.8 (5.33)",
+                "170",
+                "−0.85 (−1.78, 0.09)",
+                ".075",
+                "0.15"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th> </th>\n        <th> </th>\n        <th colspan=\"4\">Descriptive statistics, Pooled¹ M (SD)</th>\n        <th colspan=\"3\">Linear mixed model analysis², Pooled results³</th>\n    </tr>\n    <tr>\n        <th>Outcomes</th>\n        <th>Time point</th>\n        <th>SbS + CAU</th>\n        <th>n</th>\n        <th>CAU</th>\n        <th>n</th>\n        <th>Mean diff. (95% CI)</th>\n        <th>p-value</th>\n        <th>Effect size⁴</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td colspan=\"9\">Primary</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">HSCL-25<br />(psych. distress)</td>\n        <td>Baseline</td>\n        <td>2.46 (0.61)</td>\n        <td>266</td>\n        <td>2.39 (0.61)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>2.29 (0.68)</td>\n        <td>207</td>\n        <td>2.36 (0.65)</td>\n        <td>186</td>\n        <td>−0.15 (−0.27, −0.02)</td>\n        <td>.021*</td>\n        <td>0.23</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>2.18 (0.67)</td>\n        <td>174</td>\n        <td>2.26 (0.70)</td>\n        <td>170</td>\n        <td>−0.15 (−0.28, −0.02)</td>\n        <td>.022*</td>\n        <td>0.22</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">WHODAS<br />(functioning)</td>\n        <td>Baseline</td>\n        <td>31.90 (8.67)</td>\n        <td>266</td>\n        <td>30.80 (8.03)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>29.80 (8.92)</td>\n        <td>207</td>\n        <td>30.90 (8.74)</td>\n        <td>186</td>\n        <td>−2.23 (−3.94, −0.53)</td>\n        <td>.011*</td>\n        <td>0.25</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>29.40 (9.11)</td>\n        <td>174</td>\n        <td>30.30 (9.40)</td>\n        <td>170</td>\n        <td>−2.04 (−3.87, −0.22)</td>\n        <td>.023*</td>\n        <td>0.22</td>\n    </tr>\n    <tr>\n        <td colspan=\"9\">Secondary</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">PCL-5 (short)<br />(PTSD symptoms)</td>\n        <td>Baseline</td>\n        <td>15.20 (7.32)</td>\n        <td>266</td>\n        <td>14.80 (7.52)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>13.40 (7.78)</td>\n        <td>207</td>\n        <td>13.30 (7.65)</td>\n        <td>186</td>\n        <td>−0.19 (−1.51, 1.14)</td>\n        <td>.780</td>\n        <td>0.03</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>12.70 (7.98)</td>\n        <td>174</td>\n        <td>13.10 (7.95)</td>\n        <td>170</td>\n        <td>−0.76 (−2.26, 0.74)</td>\n        <td>.320</td>\n        <td>0.10</td>\n    </tr>\n    <tr>\n        <td rowspan=\"3\">PSYCHLOPS<br />(self-defined problems)</td>\n        <td>Baseline</td>\n        <td>15.00 (4.53)</td>\n        <td>266</td>\n        <td>15.40 (4.52)</td>\n        <td>272</td>\n        <td> </td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Post</td>\n        <td>12.80 (5.51)</td>\n        <td>207</td>\n        <td>14.00 (5.18)</td>\n        <td>186</td>\n        <td>−0.76 (−1.65, 0.14)</td>\n        <td>.099</td>\n        <td>0.14</td>\n    </tr>\n    <tr>\n        <td>Follow-up</td>\n        <td>12.60 (5.43)</td>\n        <td>174</td>\n        <td>13.8 (5.33)</td>\n        <td>170</td>\n        <td>−0.85 (−1.78, 0.09)</td>\n        <td>.075</td>\n        <td>0.15</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Outcomes\",\"Time point\",\"Descriptive statistics, Pooled¹ M (SD)<br/>SbS + CAU\",\"Descriptive statistics, Pooled¹ M (SD)<br/>n\",\"Descriptive statistics, Pooled¹ M (SD)<br/>CAU\",\"Descriptive statistics, Pooled¹ M (SD)<br/>n\",\"Linear mixed model analysis², Pooled results³<br/>Mean diff. (95% CI)\",\"Linear mixed model analysis², Pooled results³<br/>p-value\",\"Linear mixed model analysis², Pooled results³<br/>Effect size⁴\"\n\"Primary\",,,,,,,,\n\"HSCL-25<br/>(psych. distress)\",\"Baseline\",\"2.46 (0.61)\",\"266\",\"2.39 (0.61)\",\"272\",,,\n,\"Post\",\"2.29 (0.68)\",\"207\",\"2.36 (0.65)\",\"186\",\"−0.15 (−0.27, −0.02)\",\".021*\",\"0.23\"\n,\"Follow-up\",\"2.18 (0.67)\",\"174\",\"2.26 (0.70)\",\"170\",\"−0.15 (−0.28, −0.02)\",\".022*\",\"0.22\"\n\"WHODAS<br/>(functioning)\",\"Baseline\",\"31.90 (8.67)\",\"266\",\"30.80 (8.03)\",\"272\",,,\n,\"Post\",\"29.80 (8.92)\",\"207\",\"30.90 (8.74)\",\"186\",\"−2.23 (−3.94, −0.53)\",\".011*\",\"0.25\"\n,\"Follow-up\",\"29.40 (9.11)\",\"174\",\"30.30 (9.40)\",\"170\",\"−2.04 (−3.87, −0.22)\",\".023*\",\"0.22\"\n\"Secondary\",,,,,,,,\n\"PCL-5 (short)<br/>(PTSD symptoms)\",\"Baseline\",\"15.20 (7.32)\",\"266\",\"14.80 (7.52)\",\"272\",,,\n,\"Post\",\"13.40 (7.78)\",\"207\",\"13.30 (7.65)\",\"186\",\"−0.19 (−1.51, 1.14)\",\".780\",\"0.03\"\n,\"Follow-up\",\"12.70 (7.98)\",\"174\",\"13.10 (7.95)\",\"170\",\"−0.76 (−2.26, 0.74)\",\".320\",\"0.10\"\n\"PSYCHLOPS<br/>(self-defined problems)\",\"Baseline\",\"15.00 (4.53)\",\"266\",\"15.40 (4.52)\",\"272\",,,\n,\"Post\",\"12.80 (5.51)\",\"207\",\"14.00 (5.18)\",\"186\",\"−0.76 (−1.65, 0.14)\",\".099\",\"0.14\"\n,\"Follow-up\",\"12.60 (5.43)\",\"174\",\"13.8 (5.33)\",\"170\",\"−0.85 (−1.78, 0.09)\",\".075\",\"0.15\"",
+            "parse_concerns": [
+              {
+                "type": "possible_merged_columns",
+                "details": "col 3 'Linear mixed model analysis², Pooled results³': 8/13 (62%) have interior whitespace"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "<sup>1</sup>Pooled descriptive statistics across all imputed datasets.",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 296.97,
+                "w": 179.62,
+                "h": 9.65,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 69,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>1</sup>Pooled descriptive statistics across all imputed datasets."
+          },
+          {
+            "type": "text",
+            "md": "<sup>2</sup>As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties.",
+            "bbox": [
+              {
+                "x": 34.81,
+                "y": 308.77,
+                "w": 443.87,
+                "h": 9.71,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 152,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>2</sup>As covariates the models included: baseline score, gender, age, marital status, education, occupation, and postmigration living difficulties."
+          },
+          {
+            "type": "text",
+            "md": "<sup>3</sup>Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM).",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 320.96,
+                "w": 453.58,
+                "h": 9.65,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 144,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>3</sup>Treatment effects were pooled based on multiple imputations (100), assuming missing at random, using progressive mean matching (PMM)."
+          },
+          {
+            "type": "text",
+            "md": "<sup>4</sup>Hedges‘ g effect sizes were derived by combining multiple imputation estimates using Rubin’s rules.",
+            "bbox": [
+              {
+                "x": 35.03,
+                "y": 333.05,
+                "w": 323.39,
+                "h": 9.72,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 110,
+                "label": "footnote"
+              }
+            ],
+            "value": "<sup>4</sup>Hedges‘ g effect sizes were derived by combining multiple imputation estimates using Rubin’s rules."
+          },
+          {
+            "type": "link",
+            "md": "https://doi.org/10.1371/journal.pmed.1004460.t002",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 352.36,
+                "w": 153,
+                "h": 8,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 48,
+                "label": "text"
+              },
+              {
+                "x": 35.188946641009785,
+                "y": 351.2404572860054,
+                "w": 154.29371439892313,
+                "h": 8.792991306470805,
+                "confidence": 0.94,
+                "label": "text"
+              }
+            ],
+            "url": "https://doi.org/10.1371/journal.pmed.1004460.t002",
+            "text": "https://doi.org/10.1371/journal.pmed.1004460.t002"
+          },
+          {
+            "type": "text",
+            "md": "of +3% in the HSCL-25 scores (indicating higher psychological distress) and +2% in the WHODAS scores (indicating lower functioning) were sufficient to render the results not significant.",
+            "bbox": [
+              {
+                "x": 200.01,
+                "y": 382.79,
+                "w": 351.94,
+                "h": 36.02,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 185,
+                "label": "text"
+              }
+            ],
+            "value": "of +3% in the HSCL-25 scores (indicating higher psychological distress) and +2% in the WHODAS scores (indicating lower functioning) were sufficient to render the results not significant."
+          },
+          {
+            "type": "text",
+            "md": "Analyses on remission rates for the HSCL-25 were conducted for the subsamples of participants who scored above the cutoff for remission at baseline assessment, which was the case in 71.4% (SbS + CAU group) and 69.9% (CAU group) of the participants. In these subsamples, full remission on the HSCL-25 was found in 20.0% (SbS + CAU group) and 15.8% (CAU group) of participants. The study conditions did not differ in their remission rates, OR = 1.33; 95% CI 0.76, 2.35; p = 0.35. For the WHODAS, all participants scored above the cutoff for remission at baseline. Here, 9.8% (SbS + CAU group) and 7.1% (CAU group) were fully remitted, OR = 1.42; 95% CI 0.62, 3.38; p = 0.44.",
+            "bbox": [
+              {
+                "x": 199.28,
+                "y": 420.89,
+                "w": 376.06,
+                "h": 101.41,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 671,
+                "label": "text"
+              }
+            ],
+            "value": "Analyses on remission rates for the HSCL-25 were conducted for the subsamples of participants who scored above the cutoff for remission at baseline assessment, which was the case in 71.4% (SbS + CAU group) and 69.9% (CAU group) of the participants. In these subsamples, full remission on the HSCL-25 was found in 20.0% (SbS + CAU group) and 15.8% (CAU group) of participants. The study conditions did not differ in their remission rates, OR = 1.33; 95% CI 0.76, 2.35; p = 0.35. For the WHODAS, all participants scored above the cutoff for remission at baseline. Here, 9.8% (SbS + CAU group) and 7.1% (CAU group) were fully remitted, OR = 1.42; 95% CI 0.62, 3.38; p = 0.44."
+          },
+          {
+            "type": "text",
+            "md": "Table 3 summarizes the types of services used by study participants in both conditions throughout the intervention period of 6 weeks. More than half (58.5%) of the participants reported using at least 1 type of service during this period. Participants mainly utilized primary healthcare services by visiting a general practitioner (30.5%) or going to a health worker/nurse (23.4%). A minority reported using specialized mental healthcare services and visited a psychologist (4.1%) or a psychiatrist (3.6%), as well as taking medication for mood problems (7.1%), anxiety (11.2%), and sleep problems (14.2%). During the trial, no serious adverse events were reported to the e-helper team. Upon trial completion, analysis of the service use questionnaire indicated that 4.8% of the participants were in contact with external CAU crisis services. Hospitalization in a psychiatric hospital or a psychiatric ward in a public hospital was reported by 3 participants (0.8%). Outpatient services at a hospital were utilized by 1.5%, while 0.8% indicated a visit to an emergency room. There were no substantial differences in CAU utilization between the SbS + CAU and the CAU conditions. However, there were statistically significant differences in baseline, post, and follow-up symptom severity on the HSCL-25,",
+            "bbox": [
+              {
+                "x": 199.38,
+                "y": 524.58,
+                "w": 376.58,
+                "h": 180.32,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 1300,
+                "label": "text"
+              }
+            ],
+            "value": "Table 3 summarizes the types of services used by study participants in both conditions throughout the intervention period of 6 weeks. More than half (58.5%) of the participants reported using at least 1 type of service during this period. Participants mainly utilized primary healthcare services by visiting a general practitioner (30.5%) or going to a health worker/nurse (23.4%). A minority reported using specialized mental healthcare services and visited a psychologist (4.1%) or a psychiatrist (3.6%), as well as taking medication for mood problems (7.1%), anxiety (11.2%), and sleep problems (14.2%). During the trial, no serious adverse events were reported to the e-helper team. Upon trial completion, analysis of the service use questionnaire indicated that 4.8% of the participants were in contact with external CAU crisis services. Hospitalization in a psychiatric hospital or a psychiatric ward in a public hospital was reported by 3 participants (0.8%). Outpatient services at a hospital were utilized by 1.5%, while 0.8% indicated a visit to an emergency room. There were no substantial differences in CAU utilization between the SbS + CAU and the CAU conditions. However, there were statistically significant differences in baseline, post, and follow-up symptom severity on the HSCL-25,"
+          },
+          {
+            "type": "footer",
+            "md": "PLOS Medicine | [https://doi.org/10.1371/journal.pmed.1004460](https://doi.org/10.1371/journal.pmed.1004460) September 9, 2024 <page_number>11 / 21</page_number>",
+            "bbox": [
+              {
+                "x": 36,
+                "y": 749.54,
+                "w": 539.61,
+                "h": 8.56
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PLOS Medicine | ",
+                "bbox": [
+                  {
+                    "x": 36,
+                    "y": 750.1,
+                    "w": 54.85,
+                    "h": 7.14,
+                    "confidence": 0.56,
+                    "start_index": 0,
+                    "end_index": 15,
+                    "label": "footer"
+                  }
+                ],
+                "value": "PLOS Medicine | "
+              },
+              {
+                "type": "link",
+                "md": "https://doi.org/10.1371/journal.pmed.1004460",
+                "bbox": [
+                  {
+                    "x": 95.81,
+                    "y": 750.1,
+                    "w": 159,
+                    "h": 8,
+                    "confidence": 1,
+                    "start_index": 0,
+                    "end_index": 43,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 35.61329412460327,
+                    "y": 749.0629219386888,
+                    "w": 218.88940336393273,
+                    "h": 9.130385025687907,
+                    "confidence": 1,
+                    "label": "footer"
+                  }
+                ],
+                "url": "https://doi.org/10.1371/journal.pmed.1004460",
+                "text": "https://doi.org/10.1371/journal.pmed.1004460"
+              },
+              {
+                "type": "text",
+                "md": " September 9, 2024 \\<page_number>11 / 21\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 262.37,
+                    "y": 750.1,
+                    "w": 66.64,
+                    "h": 8,
+                    "confidence": 0.81,
+                    "start_index": 1,
+                    "end_index": 17,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 553.13,
+                    "y": 749.54,
+                    "w": 22.48,
+                    "h": 7.12,
+                    "confidence": 0.85,
+                    "start_index": 33,
+                    "end_index": 39,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 261.89448116136634,
+                    "y": 749.1883034084153,
+                    "w": 66.7761084515115,
+                    "h": 8.871018119480377,
+                    "confidence": 0.81,
+                    "label": "footer"
+                  }
+                ],
+                "value": " September 9, 2024 <page_number>11 / 21</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.907,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 2,
+        "confidence": 0.986,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 3,
+        "confidence": 0.844,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 4,
+        "confidence": 0.984,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 9,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=NM5pmiSR5rabVEbVFbg8RSTcZX0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_image_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_1_image_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=4u5IOQG193s6Xl1wLhqJ8rhGetc%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "layout",
+        "bbox": {
+          "x": 35,
+          "y": 341,
+          "w": 11,
+          "h": 13
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_1_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=JIn6ldvTHN2s5sEi%2FDl%2BT0pFLlY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "layout",
+        "bbox": {
+          "x": 35,
+          "y": 242,
+          "w": 56,
+          "h": 55
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=BC4k9CiCo0bG1IpFc3YbTBxi3XU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 4,
+        "filename": "page_2_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_2_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=oDQTIhn6t6v7Yd33%2BqB5z%2B9KnGM%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "layout",
+        "bbox": {
+          "x": 34,
+          "y": 86,
+          "w": 543,
+          "h": 412
+        }
+      },
+      {
+        "index": 5,
+        "filename": "page_3.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=3la3na3UBH%2F98Sp6yluPgdlkFUo%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 6,
+        "filename": "page_3_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_3_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=ExgWS8HvcweGnitAbitNwv1opCs%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "layout",
+        "bbox": {
+          "x": 125,
+          "y": 83,
+          "w": 455,
+          "h": 573
+        }
+      },
+      {
+        "index": 7,
+        "filename": "page_4.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_4.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=PLiqWZc7%2BasyZi0B4DwZ%2FoO3KQ0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 8,
+        "filename": "page_4_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/aaa978f4-c386-43b7-b93f-409c114355fd/page_4_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTS25XYRIV&Signature=t7Zi6lHhD8h4CewVU4vhekLPPIQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEAoaCXVzLWVhc3QtMSJHMEUCIFAk27dsBNEr9aFVA19iKWSwCqtgCkUwDCD0SAaRk%2BdGAiEAz9Y7PlD4Fk%2F5uT6lcn1uLPN4QunovJfez8wN9Zq9kyYqkAUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDJjGjkjKfBa7riGSrirkBJhPYoxMtnZ2cYsvJqPMuDHZ5Hn25%2BUlGNpUkP1wyHnZ6Lyi8aO6TB12A8JpMwlBTc5BTT4A3wXw3gdCLfaOYEb19Y2YFy1eal86Gll4XhQilSEdQRU5wtX4%2BPjKV9y8IfMvuVRODceneI3nWKqEzlE9UZxV7eOzaNrvEOsCA5i%2F9yf2Q5OR%2Fb4LxLwPqwUHRy0ZrJMvCKS8jAhDVSO%2BimwmOcUKL%2FgNcHyqwHfS7VPOTNswFr%2FREI5mcOfA7QXcJe4w2e64g7sD8pyACuixzEpBQjYXyupIvF5FENUP63jiuAVwdwK6IETjNoopgzl%2BgYzjArUU5UBN7gqAUETiPnqf0AH%2BPVyVOhK3%2F2VqgyjPUmpbVdVJ1id7rVnV3ACBqnbvnFo%2FdSxLuWFOX2sdJF%2For7C8G4oRfCJGViLQH7JZgeS5wAvL8j9S1xb%2F%2Fae2ES6OZlpbzqgDFuMso%2F%2Fke321EIdvj111axNFb9fN79WQrfBUUoJYz9Nz9zXUHQbebgYyOdfmZXjXAyMflrMXdC4sK5Z2hr3oA8XqhjIGlZ9XRdtOl3gufJVaa4qSlL8Gmo9M0PvBE4BS4JcDGxg7guhMc6P9iywAbIgQwXfJhzp9BrP22YmravvOdudGEd9AacUpu2itp%2FG%2F3KDOSmobV%2FLCYwyXh1eFi3EfiII5ogtf3DaW%2Bx%2FfhzLEkejZtQ6RcgUWhzBFLGqsxet%2B5f%2BAf2SlD6HL7gw0A5i51QBc2yesvoEJxIRQoiZ%2Btv9SW4NSgOkPbZ6fZrcJfPuIhwyM19p9nY2TixAEpiXC6cMeecNZJpf%2BmzCI6%2FLTBjqYASJ7kj8QtHNbCcCA7vPrp4f3l%2F2XTSWjDiAsyxpTkzHC%2BR9CwRiGVOcH%2BQOQloYhd9qEXzzUmtUVa7Qxg6q%2FB5XlEFym0rzRI8AfI9q7WQvEP5b7Y7dganVtIQXJDYKhcfFcQtQVry72nOKT3CwXn8IHJV2KE0gSt7XJdEDF%2Bmo4YfqNIIm%2FarMKibU3myePy4P2tzsvHb%2Bt&Expires=1786563898",
+        "category": "layout",
+        "bbox": {
+          "x": 34,
+          "y": 88,
+          "w": 543,
+          "h": 201
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

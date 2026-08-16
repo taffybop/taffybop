@@ -1,0 +1,93 @@
+{
+  "schema_version": "parser-release-runbook-v1",
+  "runbook_id": "p08-release-nonprod-v1",
+  "kind": "release",
+  "environment": "non_production",
+  "known_good_release_id": "p08-known-good-nonprod-v1",
+  "known_good_release_pin_sha256": "5c6ceed753e958b0bc039f00641ba4118abf5d13c676fa416d028b99fecf7ee9",
+  "candidate_release_id": "p08-candidate-nonprod-v1",
+  "candidate_release_pin_sha256": "6da6b31aebb5e3957674cfded3330fa49117d85a3283152dfc50223a2310e9a0",
+  "smoke_gate_id": "p08-functional-smoke-v1",
+  "steps": [
+    {
+      "step_id": "release.preflight",
+      "owner": "release_owner",
+      "prerequisites": [],
+      "action": "release_preflight",
+      "expected_result": "Exact candidate and known-good release pins are locally resolvable.",
+      "abort_condition": "Either pin, owner, approval, or rollback target is unavailable.",
+      "evidence_key": "release.preflight",
+      "next_approval": "artifact_owner"
+    },
+    {
+      "step_id": "release.artifacts",
+      "owner": "artifact_owner",
+      "prerequisites": ["release.preflight"],
+      "action": "verify_artifacts",
+      "expected_result": "The candidate artifact manifest passes its authoritative release profile.",
+      "abort_condition": "A required artifact, digest, source, or license record fails closed.",
+      "evidence_key": "release.artifacts",
+      "next_approval": "privacy_owner"
+    },
+    {
+      "step_id": "release.hosted_policy",
+      "owner": "privacy_owner",
+      "prerequisites": ["release.artifacts"],
+      "action": "verify_hosted_policy",
+      "expected_result": "Hosted processing is manifest-bound and denied unless every policy gate passes.",
+      "abort_condition": "Policy, manifest verification, minimization, secret exclusion, or no-egress proof fails.",
+      "evidence_key": "release.hosted_policy",
+      "next_approval": "release_owner"
+    },
+    {
+      "step_id": "release.safe_defaults",
+      "owner": "release_owner",
+      "prerequisites": ["release.hosted_policy"],
+      "action": "verify_safe_defaults",
+      "expected_result": "Telemetry, review, hosted, confidence, and optional routes remain default off.",
+      "abort_condition": "A default, dependency, capability kill switch, or global rollback control is unsafe.",
+      "evidence_key": "release.safe_defaults",
+      "next_approval": "release_owner"
+    },
+    {
+      "step_id": "release.smoke_gate",
+      "owner": "release_owner",
+      "prerequisites": ["release.safe_defaults"],
+      "action": "verify_smoke_gate",
+      "expected_result": "The exact pinned P08-US10 functional smoke decision selects the candidate.",
+      "abort_condition": "Any parsing, schema, content, artifact, policy, coverage, or rollback check blocks.",
+      "evidence_key": "release.smoke_gate",
+      "next_approval": "release_owner"
+    },
+    {
+      "step_id": "release.select_candidate",
+      "owner": "release_owner",
+      "prerequisites": ["release.smoke_gate"],
+      "action": "select_candidate_nonprod",
+      "expected_result": "The dry-run selects only the pinned non-production candidate identity.",
+      "abort_condition": "The selection differs from the candidate pin or implies a real deployment action.",
+      "evidence_key": "release.select_candidate",
+      "next_approval": "api_owner"
+    },
+    {
+      "step_id": "release.candidate_flows",
+      "owner": "api_owner",
+      "prerequisites": ["release.select_candidate"],
+      "action": "verify_candidate_flows",
+      "expected_result": "Representative public success, ordinary failure, schema, and serializers remain compatible.",
+      "abort_condition": "A required flow, error, schema, JSON, Markdown, or text check differs.",
+      "evidence_key": "release.candidate_flows",
+      "next_approval": "release_owner"
+    },
+    {
+      "step_id": "release.record",
+      "owner": "release_owner",
+      "prerequisites": ["release.candidate_flows"],
+      "action": "record_release_evidence",
+      "expected_result": "Bounded dry-run evidence records the candidate selection and known-good rollback target.",
+      "abort_condition": "Evidence is missing, unbound, content-bearing, or exceeds its declared bounds.",
+      "evidence_key": "release.record",
+      "next_approval": "complete"
+    }
+  ]
+}

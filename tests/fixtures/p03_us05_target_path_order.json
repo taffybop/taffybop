@@ -1,0 +1,12 @@
+{
+  "policy_id": "p03-text-run-semantics-v1",
+  "ordered_paths": [
+    ["cells", 0, "text"],
+    ["cells", 2, "text"],
+    ["items", 0, "text"],
+    ["items", 0, "value"],
+    ["items", 2, "text"],
+    ["items", 2, "value"],
+    ["value"]
+  ]
+}

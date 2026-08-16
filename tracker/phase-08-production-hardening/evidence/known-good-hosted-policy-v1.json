@@ -1,0 +1,8 @@
+{
+  "schema_version": "parser-nonproduction-hosted-policy-selection-v1",
+  "profile_id": "p08-known-good-hosted-denied-v1",
+  "environment": "non_production",
+  "hosted_enabled": false,
+  "default_decision": "deny",
+  "maximum_transport_calls_on_denial": 0
+}

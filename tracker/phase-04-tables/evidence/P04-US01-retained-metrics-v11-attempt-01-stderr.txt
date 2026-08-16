@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "<string>", line 102, in <module>
+    exit_code = metrics.main([
+        "--workspace",
+        str(metrics.WORKSPACE),
+        "--generate-retained-report",
+    ])
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 13100, in main
+    report = generate_retained_metrics_report(
+        workspace,
+        terminal_approval_path=arguments.terminal_approval_path,
+    )
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 13008, in generate_retained_metrics_report
+    paired = generate_paired_metrics(workspace)
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 11046, in generate_paired_metrics
+    pair[state] = fresh_snapshot(workspace, case_id, state)
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10950, in fresh_snapshot
+    return_code, stdout_raw, stderr_raw = _run_worker_process_bounded(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        worker_command(
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        monitor_binding=monitor_binding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10920, in _run_worker_process_bounded
+    return _run_acquired_worker_process_bounded(
+        guard,
+    ...<4 lines>...
+        monitor_binding=monitor_binding,
+    )
+    ^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10755, in _run_acquired_worker_process_bounded
+    raise RuntimeError(
+    ...<4 lines>...
+    ) from None
+RuntimeError: fresh P04-US01 worker category=external_monitor_failure error_type=RuntimeError failure_code=rss_sampling_cadence_exceeded observed_gap_ns=17815500 hard_gap_ns=10000000 accepted_continuous_count=2009

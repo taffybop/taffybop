@@ -1,0 +1,102 @@
+{
+  "case_id": "insurance-acord",
+  "case_latency_ms": 8442.967915907502,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "insurance-acord",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord",
+    "--run-id",
+    "p00-us10-corpus-20260729-01",
+    "--order",
+    "9",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+  ],
+  "completed_at_utc": "2026-07-29T08:42:58.234371+00:00",
+  "cpu_ms": 10204.006,
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error": null,
+  "order": 9,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.md",
+      "role": "markdown",
+      "sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+      "size_bytes": 5127
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.json",
+      "role": "raw_json",
+      "sha256": "830c8e4a9929014d351ca705b2b5b701f6e625d106fddf799f574ad947d30ec2",
+      "size_bytes": 71729
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.json",
+      "role": "semantic_json",
+      "sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+      "size_bytes": 37750
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 8438.320916844532,
+  "peak_rss_bytes": 1499873280,
+  "reference_comparison": {
+    "case_id": "insurance-acord",
+    "current_markdown_sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+    "current_semantic_json_sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+    "reference_semantic_json_sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+      "role": "source",
+      "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "size_bytes": 17086
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/insurance-acord.md",
+      "role": "expert_markdown",
+      "sha256": "7d2379b35fb2a6bbc566d0b6549f0804e4a3166cd7b113303811fa662eee4e54",
+      "size_bytes": 5523
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/insurance-acord.json",
+      "role": "expert_json",
+      "sha256": "2c507394d3452d73e1cf341611cd0a803b48628d588cd95481a678600bc37652",
+      "size_bytes": 54844
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:42:49.790832+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

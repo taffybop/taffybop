@@ -1,0 +1,64 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-run-v1",
+  "classification": "diagnostic_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "source": {
+    "case_id": "clinical-study",
+    "path": "benchmark-expertmodeldata/clinical-study.pdf",
+    "size_bytes": 750004,
+    "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+    "page_count": 4
+  },
+  "requested_document_seconds": 10.0,
+  "production_document_seconds": 5.0,
+  "page_seconds": 0.5,
+  "hard_max_document_seconds": 30.0,
+  "public_request_control": false,
+  "process_isolation": {
+    "pid": 95052,
+    "single_case_budget_pair": true,
+    "parser_cache_shared_across_pairs": false
+  },
+  "settings": {
+    "table_span_fidelity_enabled": true,
+    "text_integrity_source_alignment_enabled": false,
+    "predecessor_configuration": {
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true,
+      "canonical_serialization_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true
+    }
+  },
+  "code_identity": [
+    {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 349485,
+      "sha256": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9"
+    },
+    {
+      "path": "app/services/table_semantics.py",
+      "size_bytes": 349176,
+      "sha256": "1b1581896149ef6559c619de36f99084618b15791d2bcdd3bc051e9282335957"
+    },
+    {
+      "path": "tests/fixtures/phase_04/tables/diagnostic_budget.py",
+      "size_bytes": 12836,
+      "sha256": "411e7ed80b8c12384ad55ceaf475aae70ba44a7146ae6431843ecb2ff7224554"
+    },
+    {
+      "path": "tests/benchmarks/p04_deadline_diagnostic.py",
+      "size_bytes": 16970,
+      "sha256": "7cee968c23db3065f1c43b181333660af5713d525700f35fdb506d64571b34e0"
+    }
+  ],
+  "started_at_utc": "2026-08-13T17:43:19.492931Z",
+  "command": ".venv/bin/python -m tests.benchmarks.p04_deadline_diagnostic --case clinical-study --budget-seconds 10.0 --output-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260813T172854Z-FFD-011-P04-deadline-diagnostic/sweep/budget-010/clinical-study"
+}

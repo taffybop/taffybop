@@ -1,0 +1,98 @@
+{
+  "attempt": 1,
+  "attempt_id": "P04-US01-retained-metrics-v11-attempt-01",
+  "campaign_progression_stopped": true,
+  "canonical_campaign": true,
+  "claims": {
+    "completion_claimed": false,
+    "current_metrics_pass_claimed": false,
+    "partial_measurements_retained": false,
+    "phase03_strict_current_artifact_pass_claimed": false,
+    "production_or_hosted_use_approved": false,
+    "relabelled_or_reused": false,
+    "terminal_approval_claimed": false
+  },
+  "command": {
+    "exit_code": 1,
+    "explicit_environment": {
+      "HF_HUB_OFFLINE": "1",
+      "P04_US01_RUN_REAL_METRICS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPATH": ".",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "metrics_main_call_count": 1,
+    "predeclared_command_executed_once": true,
+    "stdout_bytes": 0,
+    "working_directory": "/Users/vignesh/Downloads/taffybop"
+  },
+  "failed_history_custody": {
+    "expected_identity_count": 11,
+    "pre_worker_check_completed": true,
+    "separate_post_failure_read_only_recheck_matches": true,
+    "wrapper_post_success_check_reached": false
+  },
+  "failure": {
+    "accepted_continuous_count": 2009,
+    "case_id": "ny-timetable",
+    "enabled": false,
+    "error_type": "RuntimeError",
+    "failure_code": "rss_sampling_cadence_exceeded",
+    "hard_gap_ns": 10000000,
+    "message": "fresh P04-US01 worker category=external_monitor_failure error_type=RuntimeError failure_code=rss_sampling_cadence_exceeded observed_gap_ns=17815500 hard_gap_ns=10000000 accepted_continuous_count=2009",
+    "observed_gap_ns": 17815500,
+    "pair_index": 0,
+    "position_basis": "fixed PERFORMANCE_CASES and paired_states(0) iteration order",
+    "snapshot_returned": false
+  },
+  "final_artifact": {
+    "path": "tracker/phase-04-tables/evidence/P04-US01-final-metrics.json",
+    "present_after_failure": false,
+    "present_before_attempt": false
+  },
+  "fresh_monitor_environment_design_review_required": true,
+  "frozen_final_code_surface": {
+    "file_count": 70,
+    "identity_aggregate_sha256": "b4da1b818f0acfa1b3c1ef527861699bceae2869a8c06b19b21dc9ee962f7cff",
+    "pre_worker_check_completed": true,
+    "separate_post_failure_read_only_recheck_matches": true,
+    "total_bytes": 5747758,
+    "wrapper_post_success_check_reached": false
+  },
+  "independent_preexecution_review": {
+    "open_blocking_or_major_findings": 0,
+    "predeclaration_sha256": "0ea5c73722f093fa4265b075571c1be71153ac20bca0253a10891abdd6a6df34",
+    "result": "approved"
+  },
+  "later_executions_started": false,
+  "no_same_design_retry": true,
+  "observed_date": "2026-08-07",
+  "phase05_authorized": false,
+  "predeclaration": {
+    "inline_source_size_bytes": 8178,
+    "path": "tracker/phase-04-tables/evidence/P04-US01-retained-metrics-v11-attempt-01-predeclaration.md",
+    "sha256": "0ea5c73722f093fa4265b075571c1be71153ac20bca0253a10891abdd6a6df34",
+    "size_bytes": 19362
+  },
+  "process_cleanup": {
+    "matching_metrics_worker_processes_after_failure": 0,
+    "matching_rss_lane_processes_after_failure": 0,
+    "read_only_process_list_recheck_completed": true
+  },
+  "schema_id": "p04-us01-retained-metrics-v11-canonical-failed-attempt-v1",
+  "story_id": "P04-US01",
+  "story_status": "In Progress",
+  "terminal_transcript": {
+    "line_count": 39,
+    "path": "tracker/phase-04-tables/evidence/P04-US01-retained-metrics-v11-attempt-01-stderr.txt",
+    "sha256": "e5f83dd0c3117787dffdbbd7ff4ca71436e6df0f75a36bae7931f4534bbf6b0c",
+    "size_bytes": 2005,
+    "source": "verbatim tool-returned Python stderr transcribed without normalization"
+  },
+  "unchanged_limits": {
+    "current_rss_hard_maximum_gap_ns": 10000000,
+    "current_rss_target_interval_ns": 1000000,
+    "threshold_or_gate_waiver_applied": false
+  }
+}

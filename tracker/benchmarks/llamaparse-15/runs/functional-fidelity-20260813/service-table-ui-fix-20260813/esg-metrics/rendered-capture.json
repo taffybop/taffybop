@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "esg-metrics",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "ac0a727aa8b8973d355b4abca9957fe9ced9697afeb748c0eb92a341752c1c47",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "1ed646875bce6a2e69e5fbbee63c8f08ccae10f81109664e9907aa5baa64419b",
+      "html_sha256": "61a8188a8df53eb72aae25a32deeacf105da7378f4bf31b3635cfe730773d131",
+      "text_sha256": "4ab7b82502149af5c32a04796c743efe95eb7d4e6cf7b96a77024fa8a0ab6546"
+    }
+  ]
+}

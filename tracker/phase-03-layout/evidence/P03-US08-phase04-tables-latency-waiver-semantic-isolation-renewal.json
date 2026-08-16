@@ -1,0 +1,1048 @@
+{
+  "administrative_update": {
+    "authorized_on": "2026-08-06",
+    "owner": "project owner/requester",
+    "policy_effect": "none; every inherited ceiling, non-waived gate, default-off rollback, expiry, and terminal approval requirement is unchanged",
+    "prior_focused_test_identity": {
+      "path": "tests/performance/test_p03_us08_provisional_latency_exception.py",
+      "raw_sha256": "b2f9b1ee319a0be1ac8168342177de4f2a2da77c98e45292d22d39c1b0359a43",
+      "size_bytes": 351684
+    },
+    "prior_guard_identity": {
+      "path": "tests/fixtures/phase_03/running_regions/performance_exception.py",
+      "raw_sha256": "069ed24ac9cd01d379d9fa045633ce075413db07765cdab5e18b8b7e0645a528",
+      "size_bytes": 679965
+    },
+    "scope": "exact frozen P04-US01 external-controller measurement closure and acyclic gate-input identity refresh only; the dev-only dependency bridge is unchanged",
+    "source": "active Codex thread",
+    "superseded_decision_identity": {
+      "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-semantic-isolation-renewal.md",
+      "raw_sha256": "1d82cffae2d81ae1fb8ec3b803c1b72fe1aaba43be16552777f97437742ad11d",
+      "size_bytes": 30186
+    },
+    "superseded_record_identity": {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-renewal.json",
+      "raw_sha256": "0b985e3c6a9f4a3142d1c61bb9f0ded5b2f659ae82f18eac45005de02ac85c03",
+      "semantic_sha256": "2acfa68e610878a1411888f7aa76f22e92bd05c24cd4fe3673468d522d87c4e9",
+      "size_bytes": 47969
+    }
+  },
+  "approval": {
+    "authorized_on": "2026-08-05",
+    "owner": "project owner/requester",
+    "source": "active Codex thread",
+    "statements": [
+      "I explicitly authorize autonomous execution of Phase 04 — Tables only.",
+      "I also authorize the narrow administrative renewal of the existing P03-US08 latency exception required to permit unrelated Phase 04 table changes."
+    ]
+  },
+  "closed_phase04_scope": {
+    "administrative_candidate_paths": [
+      "tests/fixtures/phase_03/running_regions/performance_exception.py",
+      "tests/performance/test_p03_us08_provisional_latency_exception.py"
+    ],
+    "allowed_nonproduction_patterns": [
+      "tests/fixtures/phase_04/tables/**",
+      "tests/contract/test_p04_us(01|02|04|03)_*.py",
+      "tests/performance/test_p04_us(01|02|04|03)_*.py",
+      "tests/regression/phase_04/test_p04_us(01|02|04|03)_*.py",
+      "tests/stories/phase_04/test_p04_us(01|02|04|03)_*.py",
+      "frontend/tests/p04-us(01|02|04|03)-*.test.mts",
+      "tracker/phase-04-tables/**"
+    ],
+    "configuration_paths": [
+      ".env.example",
+      "app/config.py"
+    ],
+    "dedicated_frontend_paths": [
+      "frontend/lib/table-semantics.ts"
+    ],
+    "dedicated_python_paths": [
+      "app/services/opaque_group_custody.py",
+      "app/services/table_semantics.py",
+      "app/services/tables.py"
+    ],
+    "dependency_changes_authorized": false,
+    "exact_protected_compatibility_paths": [
+      "app/api.py",
+      "app/services/serializer.py",
+      "frontend/lib/canonical-presentation.ts",
+      "frontend/lib/document-api.ts",
+      "frontend/lib/normalize-document-json.ts",
+      "frontend/lib/page-results.ts",
+      "frontend/lib/serialize-output.ts",
+      "frontend/lib/types.ts"
+    ],
+    "new_production_paths_authorized": false,
+    "phase04_only": true,
+    "phase05_authorized": false,
+    "public_capability_expansion_authorized": false,
+    "scanner_relaxation_authorized": false,
+    "shared_frontend_paths": [
+      "frontend/app/clearleaf-workspace.tsx"
+    ],
+    "shared_python_paths": [
+      "app/models.py",
+      "app/services/ir.py",
+      "app/services/pipeline.py",
+      "app/services/presentation.py",
+      "app/services/source_text_alignment.py",
+      "app/services/text_reconciliation.py"
+    ],
+    "stories_in_dependency_order": [
+      "P04-US01",
+      "P04-US02",
+      "P04-US04",
+      "P04-US03"
+    ]
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-semantic-isolation-renewal.md",
+    "raw_sha256": "36e8fd988135130b995c4462d4e1edd020aa302ddf407515c05ed845d5f3f798",
+    "size_bytes": 32689
+  },
+  "deferred_work": {
+    "required_outcome": "replace this exception with a strict current-code final campaign or explicitly renew it",
+    "scope": [
+      "near-boundary projection latency",
+      "fresh-process RSS measurement stability"
+    ]
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "maximum_overrun_fraction": 0.05,
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "expired_effect": "P03-US08 returns to In Progress and dependent exit claims are blocked",
+    "expires_before": [
+      "production enablement",
+      "running-region semantic or runtime behavior change",
+      "relevant running-region custody change",
+      "relevant runtime dependency or lockfile custody change",
+      "authorized Phase 04 scope or path expansion",
+      "hardened grammar or scanner relaxation"
+    ],
+    "review_due_on": "2026-09-02"
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "hosted_usage": {
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0
+  },
+  "identity_dag": {
+    "direction": "prior evidence -> decision -> renewal JSON; preapproval US01 execution evidence -> P04-US01 final-code story gate; (renewal JSON + guard + focused tests + P04-US01 final-code story gate + focused gate execution) -> verification -> independent review artifacts -> terminal approval",
+    "final_retained_metrics_evidence_is_downstream": true,
+    "self_or_mutual_hash_authorized": false,
+    "terminal_independent_approval_present": false,
+    "upstream_contains_downstream_digest": false
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_compatibility",
+    "code_dependency_input_and_fixture_custody",
+    "correctness_and_quality",
+    "deadlines_and_resource_boundaries",
+    "hosted_usage",
+    "output_sizes",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "feature_flag_default": false,
+    "rollback": "disable the flag to skip US08 work and return the exact configured predecessor"
+  },
+  "prior_amendment_approval_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment-approval.md",
+    "raw_sha256": "2c820a0e8c0027dcf986473a974a3db69002c0fd1f5aed2e3f62dba1acc3d389",
+    "size_bytes": 6026
+  },
+  "prior_amendment_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment.md",
+    "raw_sha256": "4a411bad9e605c3c4644c826c05d497474ce7c45c52b546b8c6e97eda9f841bc",
+    "size_bytes": 6672
+  },
+  "prior_hardened_decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-hardened-renewal.md",
+    "raw_sha256": "bb3107b29f5a01876a64ee0179e1bff32b16bb93ecffa51da2f54c2d65510682",
+    "size_bytes": 25343
+  },
+  "prior_hardened_renewal_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-hardened-renewal.json",
+    "raw_sha256": "5d0ac8411fd785eda1db1cbc01d2082ea09d65482ddba4796982cf0f60db4655",
+    "semantic_sha256": "a8e38c8269e5faf1e03f5bff942dd97b74bea87f6ae26f9c6c175e50ed6eba87",
+    "size_bytes": 22113
+  },
+  "prior_independent_approval_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-independent-approval.md",
+    "raw_sha256": "a57f537c7636a5dc918e819f916ee4c9234af5bdee6b375fd1956bf1492e7715",
+    "size_bytes": 5573
+  },
+  "prior_verification_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-verification.md",
+    "raw_sha256": "90e7623f6868d413001208bbb037f7526008fa241937171d9d9d41025f5d5100",
+    "size_bytes": 16517
+  },
+  "record_kind": "p03_us08_phase04_tables_semantic_isolation_latency_exception_renewal",
+  "renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260805-PHASE04-TABLES-SEMANTIC-ISOLATION",
+  "renews_renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-PHASE04-TABLES-HARDENED",
+  "schema_version": "1.1",
+  "semantic_isolation": {
+    "activation_policy": {
+      "fixed_focused_gate_path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-focused-gate.json",
+      "fixed_review_paths": {
+        "metrics_custody": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-metrics-custody-review.json",
+        "production_security": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-production-security-review.json"
+      },
+      "fixed_terminal_approval_path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-independent-approval.json",
+      "fixed_us01_story_gate_path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-P04-US01-final-gates.json",
+      "fixed_verification_path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-verification.json",
+      "future_syntax_authorized_by_scanner": false,
+      "live_gate_date_policy": {
+        "historical_fixed_dates_preserved": true,
+        "live_override_supplied": false,
+        "timezone": "UTC"
+      },
+      "mode": "terminal_exact_freeze",
+      "non_authoritative_status_summary_paths": [
+        "tracker/phase-04-tables/metrics.md",
+        "tracker/phase-04-tables/phase-regression.md"
+      ],
+      "operative_between_freezes": false,
+      "reissue_after_each_story_or_code_freeze": true,
+      "terminal_configuration_paths": [
+        ".env.example",
+        "Dockerfile",
+        "app/config.py",
+        "frontend/.env.example",
+        "frontend/.openai/hosting.json",
+        "frontend/app/expertmodel.json",
+        "frontend/eslint.config.mjs",
+        "frontend/next.config.ts",
+        "frontend/package-lock.json",
+        "frontend/package.json",
+        "frontend/postcss.config.mjs",
+        "frontend/tsconfig.json",
+        "frontend/vite.config.ts",
+        "pyproject.toml",
+        "uv.lock"
+      ],
+      "terminal_identity_requirements": [
+        "every current required code identity",
+        "every closed Phase 04 production, configuration, and frontend identity",
+        "executable guard identity",
+        "focused test identity",
+        "P04-US01 final-code gate evidence identity",
+        "P04-US01 exact gate-input identity manifest",
+        "verification identity",
+        "dependency custody",
+        "exact current non-authoritative reconciliation summary identities",
+        "protected P03 manifest",
+        "Phase 05 Proposed-state boundary",
+        "expiry and exact exception scope"
+      ],
+      "terminal_status_owner_paths": [
+        "tracker/README.md",
+        "tracker/dependencies.md",
+        "tracker/roadmap.md",
+        "tracker/phase-04-tables/README.md",
+        "tracker/phase-04-tables/backlog.md",
+        "tracker/phase-04-tables/metrics.md",
+        "tracker/phase-04-tables/phase-regression.md",
+        "tracker/phase-04-tables/stories/P04-US01.md",
+        "tracker/phase-04-tables/stories/P04-US02.md",
+        "tracker/phase-04-tables/stories/P04-US03.md",
+        "tracker/phase-04-tables/stories/P04-US04.md",
+        "tracker/phase-05-charts-diagrams/README.md",
+        "tracker/phase-05-charts-diagrams/backlog.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US01.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US02.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US03.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US04.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US05.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US06.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US07.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US08.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US09.md",
+        "tracker/phase-05-charts-diagrams/stories/P05-US10.md"
+      ],
+      "us01_preapproval_evidence_root": "tracker/phase-04-tables/evidence/P04-US01-preapproval"
+    },
+    "dependency_custody_bridge": {
+      "change_scope": "exact direct dev declaration of the already-resolved psutil 7.2.2 for P04-US01 current-process RSS measurement only",
+      "claims": {
+        "compatibility_gate_waived": false,
+        "dependency_custody_gate_waived": false,
+        "further_manifest_change_authorized": false,
+        "new_resolved_package_authorized": false,
+        "runtime_or_production_dependency_change_authorized": false
+      },
+      "current_dependency_custody_sha256": "0ce1630f9a0f64c6bb80b04a04c995ff91dc8ed6bb112fc53bcbfe628a6f70e7",
+      "current_manifest_identities": {
+        "frontend/package-lock.json": {
+          "path": "frontend/package-lock.json",
+          "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+          "size_bytes": 346488
+        },
+        "frontend/package.json": {
+          "path": "frontend/package.json",
+          "sha256": "40b23bd6c3c4ed51c01d10cccc41e02575467046df23462444f5b0273b7c8c5c",
+          "size_bytes": 1522
+        },
+        "pyproject.toml": {
+          "path": "pyproject.toml",
+          "sha256": "a9c66f17d92ea9fae623a7d6d953c91b103fbbe96b8fa98d122651d87cfb2cd8",
+          "size_bytes": 755
+        },
+        "uv.lock": {
+          "path": "uv.lock",
+          "sha256": "acd97c526138e247c54272b250c784b311de17b05ef3a28990b86b548f205b11",
+          "size_bytes": 606213
+        }
+      },
+      "historical_dependency_custody_sha256": "2f5711a6e13f3b47d3b76c0960f8b3de0387cc0ad6f8e6610d1116b3c024f2ab",
+      "historical_manifest_identities": {
+        "frontend/package-lock.json": {
+          "path": "frontend/package-lock.json",
+          "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+          "size_bytes": 346488
+        },
+        "frontend/package.json": {
+          "path": "frontend/package.json",
+          "sha256": "40b23bd6c3c4ed51c01d10cccc41e02575467046df23462444f5b0273b7c8c5c",
+          "size_bytes": 1522
+        },
+        "pyproject.toml": {
+          "path": "pyproject.toml",
+          "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+          "size_bytes": 734
+        },
+        "uv.lock": {
+          "path": "uv.lock",
+          "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+          "size_bytes": 606113
+        }
+      },
+      "pyproject_semantic": {
+        "allowed_dev_requirement": "psutil==7.2.2",
+        "current_toml_semantic_sha256": "9a02539d5ac7e93c81ab5f09f902fb9840fab990bb382fce28fe9c79a0710757",
+        "historical_toml_semantic_sha256": "a0d11bd00d4d8d4349860328413ae856573182a8100304611c6fb24c084ac320",
+        "production_dependencies_unchanged": true,
+        "removing_allowed_record_reconstructs_historical_bytes": true,
+        "section": "project.optional-dependencies.dev"
+      },
+      "runtime_import_policy": {
+        "direct_app_psutil_imports": [],
+        "scanner_authorization_effect": "none"
+      },
+      "schema_id": "p03-us08-phase04-us01-dev-only-dependency-custody-bridge-v1",
+      "unchanged_custody_sections": [
+        "local_tools",
+        "offline_environment",
+        "python_packages",
+        "runtime"
+      ],
+      "unchanged_manifest_paths": [
+        "frontend/package-lock.json",
+        "frontend/package.json"
+      ],
+      "uv_lock_semantic": {
+        "allowed_root_records": [
+          {
+            "record": {
+              "name": "psutil"
+            },
+            "section": "package[document-parse-api].optional-dependencies.dev"
+          },
+          {
+            "record": {
+              "marker": "extra == 'dev'",
+              "name": "psutil",
+              "specifier": "==7.2.2"
+            },
+            "section": "package[document-parse-api].metadata.requires-dist"
+          }
+        ],
+        "current_toml_semantic_sha256": "aa5879a4be72e3e887a010f89eb145e9ec4519422645aa428953d479cdc96078",
+        "historical_toml_semantic_sha256": "8850737812725ecff0625ecd1e0b0f76d68f2f40407c9fb11dac07c8954956e1",
+        "package_artifact_projection_sha256": "0113789f41dc371ea589378cc166c85d11a05bbc30e8326e42f5f6d11d013f64",
+        "package_count": 140,
+        "preexisting_transitive_parent": {
+          "dependency_record": {
+            "name": "psutil"
+          },
+          "name": "accelerate",
+          "version": "1.14.0"
+        },
+        "psutil_artifact_sha256": "88ad59c6147332d9fb977b681c3483f2d44e2bcc8ece4c627ea37f0a3f3d8d33",
+        "removing_allowed_records_reconstructs_historical_bytes": true,
+        "resolved_package_set_unchanged": true,
+        "root_production_dependency_projection_sha256": "434266ab649ec9181fb8f72c561ae636515e2df9aa7474b18b087a187c063de6"
+      }
+    },
+    "allowed_app_imports": {
+      "app/services/opaque_group_custody.py": [
+        {
+          "asname": null,
+          "module": "app.models",
+          "name": "CanonicalSourceCustody"
+        },
+        {
+          "asname": null,
+          "module": "app.services.ir",
+          "name": "DocumentIR"
+        },
+        {
+          "asname": null,
+          "module": "app.services.ir",
+          "name": "ElementRecord"
+        },
+        {
+          "asname": null,
+          "module": "app.services.ir",
+          "name": "RelationshipRecord"
+        }
+      ],
+      "app/services/table_semantics.py": [
+        {
+          "asname": null,
+          "module": "app.services.pipeline",
+          "name": "_build_docling_table_predecessor"
+        },
+        {
+          "asname": null,
+          "module": "app.services.tables",
+          "name": "RawTable"
+        }
+      ],
+      "app/services/tables.py": []
+    },
+    "candidate_specific_table_projection_sha256": {
+      "app/models.py": "8b2163ca9e758c7690bc442ed85b578bb2fbccfb6acff72232caec1052f1ff1d",
+      "app/services/pipeline.py": "6b07a35782d59988f1b3516e19b8085aae1e74997ba5cb73de2a459a098eecbc"
+    },
+    "closed_table_public_classes": {
+      "app/services/opaque_group_custody.py": [
+        "DetachedOpaqueGroupEdges",
+        "FrozenRawAssertion",
+        "FrozenRawDefinition",
+        "FrozenRelevantRawClosure",
+        "OpaqueGroupCustodyIntegrityError",
+        "OpaqueGroupCustodyResourceError",
+        "OpaqueGroupCustodyTimeoutError"
+      ],
+      "app/services/table_semantics.py": [],
+      "app/services/tables.py": [
+        "RawTable"
+      ]
+    },
+    "closed_table_public_constants": {
+      "app/services/opaque_group_custody.py": [
+        "AUTHORITY",
+        "MAX_CONTENT_DOCUMENT_BYTES",
+        "MAX_CONTENT_ITEM_BYTES",
+        "MAX_RAW_DEFINITIONS_SCANNED",
+        "MAX_RECORDS",
+        "POLICY_ID",
+        "ROOT_SINGLETON_POLICY",
+        "SCHEMA_VERSION"
+      ],
+      "app/services/table_semantics.py": [],
+      "app/services/tables.py": []
+    },
+    "closed_table_public_roots": [
+      "capture_opaque_group_edges",
+      "detach_opaque_group_edges",
+      "detach_table_overlays_for_phase03",
+      "empty_group_content_sha256",
+      "extract_vector_tables",
+      "finalize_table_pages",
+      "gate_table_candidates",
+      "has_literal_table_marker",
+      "member_content_sha256",
+      "merge_continued_tables",
+      "prepare_docling_table",
+      "prepare_docling_table_input",
+      "prepare_docling_table_inputs",
+      "prepare_vector_table",
+      "rebind_table_overlays_after_phase03",
+      "reconcile_table_candidates",
+      "record_id",
+      "records_sha256",
+      "replace_marked_table_text",
+      "replay_table_semantics",
+      "restore_diagnostic_group_edges",
+      "seal_diagnostic_custody",
+      "seal_table_pages",
+      "stable_id",
+      "table_span_fidelity_document_deadline",
+      "table_span_fidelity_page_deadline",
+      "validate_table_semantics"
+    ],
+    "exact_running_region_paths": {
+      "app/services/running_regions.py": {
+        "sha256": "1824d3eaa9a9e1ee7545164dce0712e95f695d23c73d1a16ca5a9cc565714b62",
+        "size_bytes": 375077
+      },
+      "frontend/lib/running-regions.ts": {
+        "sha256": "1dfac1d71e34136267e2a1432261510b5785ac06a1c001da737eda27129be7af",
+        "size_bytes": 50738
+      },
+      "frontend/tests/p03-us08-running-regions.test.mts": {
+        "sha256": "f6ab8b7c2ebaf6a8dd2cd58febb90b0647a7223017481042e6ba7d20fbb93ffc",
+        "size_bytes": 34495
+      },
+      "tests/benchmarks/running_region_metrics.py": {
+        "sha256": "467065b59d8ae45c27b6a74f5cfa90a112a2e12112b1b2f5a4de883cb9fa98f8",
+        "size_bytes": 307852
+      },
+      "tests/fixtures/phase_03/running_regions/contract.py": {
+        "sha256": "4607722c2c846496a6a5d336b5096f559360272250b3384076f8cc998cb11730",
+        "size_bytes": 476883
+      },
+      "tests/fixtures/phase_03/running_regions/oracle.py": {
+        "sha256": "5e70b5df58284f544b43a6189055044c80c2a9a6404f143758be550e3879b563",
+        "size_bytes": 160147
+      },
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py": {
+        "sha256": "3862f5d386f0bf4440da646d1cc7603dedb7f14cf694d275da49a6d9d0c97e75",
+        "size_bytes": 165157
+      }
+    },
+    "existing_public_app_imports": {
+      "app/services/opaque_group_custody.py": [],
+      "app/services/table_semantics.py": [
+        {
+          "asname": null,
+          "module": "app.services.tables",
+          "name": "RawTable"
+        }
+      ],
+      "app/services/tables.py": []
+    },
+    "final_p04_us01_code_identities": {
+      "app/models.py": {
+        "ast_sha256": "2d66bed0e4481fa8319bb9c917993081556fe5d4a92e3701517493c375f0e622",
+        "path": "app/models.py",
+        "raw_sha256": "0dd48d41018de2e225ff10bf5c1f926685ada4032368d8d76e33d4482a8f0493",
+        "size_bytes": 354120
+      },
+      "app/services/pipeline.py": {
+        "ast_sha256": "e285f0b301f7d76ec1be6cdd0dc23865b7557d58e2b0cd377011b68cd2b395cd",
+        "path": "app/services/pipeline.py",
+        "raw_sha256": "a79a22b0324d17e28ede2d31c76a67bbbe89f859110521beae48fd9f1b03f6a8",
+        "size_bytes": 311099
+      },
+      "app/services/table_semantics.py": {
+        "ast_sha256": "1cc29d32acab1ed73b1479b3fb7e03b9cbb05045b460f63df7a190b21f99fb65",
+        "path": "app/services/table_semantics.py",
+        "raw_sha256": "e9b67d23fd7146b92f348f6423cf36754ebb7976d55e88e9f06e710f7d74268f",
+        "size_bytes": 250308
+      }
+    },
+    "forbidden_capabilities": [
+      "running-region import, call, alias, flag, or mutation",
+      "Phase 05 reference",
+      "dynamic import, eval, exec, or compilation",
+      "filesystem, network, browser storage, or subprocess access",
+      "new dependency or production path",
+      "default-on or forced-on table execution",
+      "unbounded output, resource growth, or deadline reset",
+      "canonical authority for diagnostic-only opaque custody"
+    ],
+    "models_validator_delta": {
+      "candidate_identity": {
+        "ast_sha256": "2d66bed0e4481fa8319bb9c917993081556fe5d4a92e3701517493c375f0e622",
+        "path": "app/models.py",
+        "raw_sha256": "0dd48d41018de2e225ff10bf5c1f926685ada4032368d8d76e33d4482a8f0493",
+        "size_bytes": 354120
+      },
+      "candidate_projection_sha256": "8b2163ca9e758c7690bc442ed85b578bb2fbccfb6acff72232caec1052f1ff1d",
+      "normalization_direction": "exact_candidate_to_unchanged_protected_only",
+      "protected_projection_sha256": "1976ba6f20ea6be8c8a7179a8500e442f5e62f31f8a3516ab429fa220f8275a5",
+      "validator_vector": {
+        "call_ast_sha256": "a04960e4bc2b20abaa15a0ba41379bd29bc2bb98bd30774a69541101fa404404",
+        "call_count": 2,
+        "call_sites": [
+          {
+            "enclosing_class": "ParseResult",
+            "enclosing_functions": [
+              "_validate_table_evidence_custody_impl"
+            ],
+            "parent_ast_sha256": "d5d7705f04a00dda4daeecedc7858e482d8da18eb9f2db4bc141436b23e33281",
+            "predicate_ast_sha256": "11c345f912e62315ca6b40b8ee082b6ee0fd689605fc83915c7928cf847c31fe"
+          },
+          {
+            "enclosing_class": "ParseResult",
+            "enclosing_functions": [
+              "inert_raw_group_remnant_record",
+              "_validate_table_evidence_custody_impl"
+            ],
+            "parent_ast_sha256": "d5d7705f04a00dda4daeecedc7858e482d8da18eb9f2db4bc141436b23e33281",
+            "predicate_ast_sha256": "126ab6c9add8fa2c5f7a1761414b8d2d7b598e2e983f17a5dc81cd96f15584e9"
+          }
+        ],
+        "helper_ast_sha256": "793cad12b5fdf027856c00d3bd2b489e976b139be9145779d5313b8cd187a2fa",
+        "helper_name": "_context_free_inert_raw_group_owner_is_closed",
+        "helper_reference_load_count": 2
+      }
+    },
+    "p04_us01_administrative_freeze": {
+      "excluded_administrative_paths": [
+        "tests/fixtures/phase_03/running_regions/performance_exception.py",
+        "tests/performance/test_p03_us08_provisional_latency_exception.py"
+      ],
+      "gate_input_count": 59,
+      "gate_input_identities": {
+        ".env.example": {
+          "path": ".env.example",
+          "raw_sha256": "cb66f175e38197552258d095d8dc0a70522ec5bb7911b1414750499d6f9c7c3f",
+          "size_bytes": 4878
+        },
+        "app/api.py": {
+          "path": "app/api.py",
+          "raw_sha256": "253eda64be75df1d22ad57db9db62b6c92dcc283575b791be8ddadd976e9b72d",
+          "size_bytes": 5774
+        },
+        "app/config.py": {
+          "path": "app/config.py",
+          "raw_sha256": "863695112bace175f12ae5e0e4294c9292a5b9c884b140e4a6a6cb506284f85d",
+          "size_bytes": 18195
+        },
+        "app/models.py": {
+          "path": "app/models.py",
+          "raw_sha256": "0dd48d41018de2e225ff10bf5c1f926685ada4032368d8d76e33d4482a8f0493",
+          "size_bytes": 354120
+        },
+        "app/services/opaque_group_custody.py": {
+          "path": "app/services/opaque_group_custody.py",
+          "raw_sha256": "2de517c1ac9a64946011c44319a56152e386fd4ef0c8a83d7fae298dd5a8283f",
+          "size_bytes": 112863
+        },
+        "app/services/pipeline.py": {
+          "path": "app/services/pipeline.py",
+          "raw_sha256": "a79a22b0324d17e28ede2d31c76a67bbbe89f859110521beae48fd9f1b03f6a8",
+          "size_bytes": 311099
+        },
+        "app/services/serializer.py": {
+          "path": "app/services/serializer.py",
+          "raw_sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+          "size_bytes": 5026
+        },
+        "app/services/source_text_alignment.py": {
+          "path": "app/services/source_text_alignment.py",
+          "raw_sha256": "862d7d615c8d8a2f9420f2310d1398b2293fd4f3260678a18cf7160c1c6d9cbb",
+          "size_bytes": 137967
+        },
+        "app/services/table_semantics.py": {
+          "path": "app/services/table_semantics.py",
+          "raw_sha256": "e9b67d23fd7146b92f348f6423cf36754ebb7976d55e88e9f06e710f7d74268f",
+          "size_bytes": 250308
+        },
+        "app/services/tables.py": {
+          "path": "app/services/tables.py",
+          "raw_sha256": "12101a10fc5344a820bafbe581f122504b230cae45c28b25519a2265f317aaf3",
+          "size_bytes": 22573
+        },
+        "app/services/text_reconciliation.py": {
+          "path": "app/services/text_reconciliation.py",
+          "raw_sha256": "be3a6568a859903a8439f576c43910c22d766ff60edc26e72ec4f1ea6b2faf5d",
+          "size_bytes": 180094
+        },
+        "frontend/app/clearleaf-workspace.tsx": {
+          "path": "frontend/app/clearleaf-workspace.tsx",
+          "raw_sha256": "4c6ad4c89639f76f0ac953edfd9ea2c322593c20690928c25bb9935148b31fa1",
+          "size_bytes": 70618
+        },
+        "frontend/eslint.config.mjs": {
+          "path": "frontend/eslint.config.mjs",
+          "raw_sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+          "size_bytes": 465
+        },
+        "frontend/lib/table-semantics.ts": {
+          "path": "frontend/lib/table-semantics.ts",
+          "raw_sha256": "812a2179712f02c1ecf0bcdcfc9605d76fc94901c1cac1feed15668230cf742c",
+          "size_bytes": 91635
+        },
+        "frontend/lib/types.ts": {
+          "path": "frontend/lib/types.ts",
+          "raw_sha256": "33e23cd0567ef3f11b47d1efb3ef79eb13a20ed2311250983abb515f0f7abd63",
+          "size_bytes": 22396
+        },
+        "frontend/next.config.ts": {
+          "path": "frontend/next.config.ts",
+          "raw_sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+          "size_bytes": 133
+        },
+        "frontend/package-lock.json": {
+          "path": "frontend/package-lock.json",
+          "raw_sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+          "size_bytes": 346488
+        },
+        "frontend/package.json": {
+          "path": "frontend/package.json",
+          "raw_sha256": "40b23bd6c3c4ed51c01d10cccc41e02575467046df23462444f5b0273b7c8c5c",
+          "size_bytes": 1522
+        },
+        "frontend/tests/p04-us01-responsive.test.mts": {
+          "path": "frontend/tests/p04-us01-responsive.test.mts",
+          "raw_sha256": "474952bcdf6238883cb799afcc8616f7b410904d978d09bfa4e36800276932f1",
+          "size_bytes": 14257
+        },
+        "frontend/tests/p04-us01-table-readiness.test.mts": {
+          "path": "frontend/tests/p04-us01-table-readiness.test.mts",
+          "raw_sha256": "ffc15e1ed0511b20a34bdead5342345b521f25e644b705806e2d9060a7d1f817",
+          "size_bytes": 2156
+        },
+        "frontend/tests/p04-us01-table-span-fidelity.test.mts": {
+          "path": "frontend/tests/p04-us01-table-span-fidelity.test.mts",
+          "raw_sha256": "0d392b40167bf469fc60be026e36350ea9b83616ceda4a7dc28d72826a26d688",
+          "size_bytes": 91450
+        },
+        "frontend/tests/workspace-canonical-ui.test.mts": {
+          "path": "frontend/tests/workspace-canonical-ui.test.mts",
+          "raw_sha256": "79ccaaef6ede2afa0c1ba94bb2167f0ff5f768b963bd863ba819fc28bf2fb58f",
+          "size_bytes": 3819
+        },
+        "frontend/tsconfig.json": {
+          "path": "frontend/tsconfig.json",
+          "raw_sha256": "62d0d2eca4478afcb862226e3585b7f2e10a47397a195e6aae63c9550d66ec61",
+          "size_bytes": 734
+        },
+        "frontend/vite.config.ts": {
+          "path": "frontend/vite.config.ts",
+          "raw_sha256": "f7c14b8a38546bb6a7ec93cba22f8e8f131da9fbfe8b39327422ed5bb98d4613",
+          "size_bytes": 1697
+        },
+        "pyproject.toml": {
+          "path": "pyproject.toml",
+          "raw_sha256": "a9c66f17d92ea9fae623a7d6d953c91b103fbbe96b8fa98d122651d87cfb2cd8",
+          "size_bytes": 755
+        },
+        "tests/contract/test_p04_us01_opaque_group_custody.py": {
+          "path": "tests/contract/test_p04_us01_opaque_group_custody.py",
+          "raw_sha256": "d79976e76e86e737f1377b296c345be66c5f31dc2047477db58b9856deb42642",
+          "size_bytes": 94671
+        },
+        "tests/contract/test_p04_us01_optimization_c_models.py": {
+          "path": "tests/contract/test_p04_us01_optimization_c_models.py",
+          "raw_sha256": "96353e0183a3fd26c51d1628e5900bc49fc492fc364b3a06832ffd867ab7935d",
+          "size_bytes": 7076
+        },
+        "tests/contract/test_p04_us01_optimization_c_pipeline.py": {
+          "path": "tests/contract/test_p04_us01_optimization_c_pipeline.py",
+          "raw_sha256": "3f217c261e987b572536ddf8b4c84b2d57e298c5f6e51514dcfc6e4a5d820e66",
+          "size_bytes": 8079
+        },
+        "tests/contract/test_p04_us01_optimization_c_table_semantics.py": {
+          "path": "tests/contract/test_p04_us01_optimization_c_table_semantics.py",
+          "raw_sha256": "741124e23416932337cb66576c97a534d7db23a748652cc0aac4e043a51a3d8e",
+          "size_bytes": 4367
+        },
+        "tests/contract/test_p04_us01_p03_boundary.py": {
+          "path": "tests/contract/test_p04_us01_p03_boundary.py",
+          "raw_sha256": "18fc41b9c57c766610d45094ebb45951d8f13da7cf0fba4b5a1f26caa71d8d93",
+          "size_bytes": 140393
+        },
+        "tests/contract/test_p04_us01_table_api_schema.py": {
+          "path": "tests/contract/test_p04_us01_table_api_schema.py",
+          "raw_sha256": "6a2489bc25631de37fcd356b20a7487867452308eccb097b970c47f22c41baeb",
+          "size_bytes": 93137
+        },
+        "tests/contract/test_p04_us01_table_contract.py": {
+          "path": "tests/contract/test_p04_us01_table_contract.py",
+          "raw_sha256": "af6819ff7df3ec698ca005552d736d7313affbd63ced9cb9fee4a2ac89a3ac23",
+          "size_bytes": 7159
+        },
+        "tests/contract/test_p04_us01_table_semantics_runtime_contract.py": {
+          "path": "tests/contract/test_p04_us01_table_semantics_runtime_contract.py",
+          "raw_sha256": "0531d342d531da4354fd2a7288601358c1b3bf7b2b0cf4aa5849889211aa01ef",
+          "size_bytes": 98453
+        },
+        "tests/contract/test_p04_us01_terminal_alignment_contract.py": {
+          "path": "tests/contract/test_p04_us01_terminal_alignment_contract.py",
+          "raw_sha256": "9b1f54543bd8639ee146af83d209973b26bdb58540d2f103f127c36fdba69e23",
+          "size_bytes": 2640
+        },
+        "tests/fixtures/phase_04/__init__.py": {
+          "path": "tests/fixtures/phase_04/__init__.py",
+          "raw_sha256": "abbecc08d2706d9345b9c10809b02ee787ee6e310d246ebd02575aa6b93f1074",
+          "size_bytes": 40
+        },
+        "tests/fixtures/phase_04/tables/__init__.py": {
+          "path": "tests/fixtures/phase_04/tables/__init__.py",
+          "raw_sha256": "d475f22d170d885685369cbb5bd457a8ac2a84630dc3bd6f6e5c63f2ceca8769",
+          "size_bytes": 742
+        },
+        "tests/fixtures/phase_04/tables/content_bbox_oracle.py": {
+          "path": "tests/fixtures/phase_04/tables/content_bbox_oracle.py",
+          "raw_sha256": "46e1723d55231e569661ef2173075523653b75bf899630893098e7a94ba9205b",
+          "size_bytes": 20734
+        },
+        "tests/fixtures/phase_04/tables/contract.py": {
+          "path": "tests/fixtures/phase_04/tables/contract.py",
+          "raw_sha256": "809e5f1849122cd34fc5801e940a80ad08fe2f9a2267628a6404b4dd96ecce93",
+          "size_bytes": 36176
+        },
+        "tests/fixtures/phase_04/tables/metrics.py": {
+          "path": "tests/fixtures/phase_04/tables/metrics.py",
+          "raw_sha256": "955383dd2b9ed4b778623fee652b72850a916713614e39f200cbff234c7cf28f",
+          "size_bytes": 397444
+        },
+        "tests/fixtures/phase_04/tables/oracle.py": {
+          "path": "tests/fixtures/phase_04/tables/oracle.py",
+          "raw_sha256": "41fd4b6b4330d9f13d9aa8c48ede4a43f2bc807767a80790fc893acebbd84ae6",
+          "size_bytes": 21532
+        },
+        "tests/fixtures/phase_04/tables/synthetic.py": {
+          "path": "tests/fixtures/phase_04/tables/synthetic.py",
+          "raw_sha256": "a67037f72dce9153c934aa3234fbad3daf3580c35ad4e6b4479c53594104b094",
+          "size_bytes": 26992
+        },
+        "tests/performance/test_p04_us01_table_metrics.py": {
+          "path": "tests/performance/test_p04_us01_table_metrics.py",
+          "raw_sha256": "61a83c0b00e96e168eaf34cfd1a00f2f02a2f9bfbc9a701cb71158ff81080393",
+          "size_bytes": 281525
+        },
+        "tests/regression/phase_04/test_p04_us01_all_corpus_drift.py": {
+          "path": "tests/regression/phase_04/test_p04_us01_all_corpus_drift.py",
+          "raw_sha256": "900f5e78dfd3877638f2febef3777b03eeb7a21aa090c399817a2ae55f9f92b6",
+          "size_bytes": 72191
+        },
+        "tests/stories/phase_04/__init__.py": {
+          "path": "tests/stories/phase_04/__init__.py",
+          "raw_sha256": "39200efe95f080311a76a90c495a8b86e5561eae0a2b0148c1a88390850bd05d",
+          "size_bytes": 28
+        },
+        "tests/stories/phase_04/test_p04_us01_production_benchmarks.py": {
+          "path": "tests/stories/phase_04/test_p04_us01_production_benchmarks.py",
+          "raw_sha256": "9008c1867d1058de579282c8c9c82d504f054621fcf77668ff5b18b4a71c4e30",
+          "size_bytes": 37871
+        },
+        "tests/stories/phase_04/test_p04_us01_span_fidelity.py": {
+          "path": "tests/stories/phase_04/test_p04_us01_span_fidelity.py",
+          "raw_sha256": "fec0d31b373848cd44a47587d2045d2a332bf769005a48b22cf87868852239b4",
+          "size_bytes": 27958
+        },
+        "tests/stories/phase_04/test_p04_us01_table_input_recovery.py": {
+          "path": "tests/stories/phase_04/test_p04_us01_table_input_recovery.py",
+          "raw_sha256": "0cfe15eb2b7964cb96470a2675bdedf9e95d465ab41a631e7e1a75e7745b378b",
+          "size_bytes": 65190
+        },
+        "tests/stories/phase_04/test_p04_us01_table_repair_word_bounds.py": {
+          "path": "tests/stories/phase_04/test_p04_us01_table_repair_word_bounds.py",
+          "raw_sha256": "3ff4bb2a6f669a848ad3d5ab52115b854296deb74e1d19d85ad9fbe836b2773c",
+          "size_bytes": 28146
+        },
+        "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-hardened-renewal.md": {
+          "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-hardened-renewal.md",
+          "raw_sha256": "bb3107b29f5a01876a64ee0179e1bff32b16bb93ecffa51da2f54c2d65510682",
+          "size_bytes": 25343
+        },
+        "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment-approval.md": {
+          "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment-approval.md",
+          "raw_sha256": "2c820a0e8c0027dcf986473a974a3db69002c0fd1f5aed2e3f62dba1acc3d389",
+          "size_bytes": 6026
+        },
+        "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment.md": {
+          "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-implementation-state-amendment.md",
+          "raw_sha256": "4a411bad9e605c3c4644c826c05d497474ce7c45c52b546b8c6e97eda9f841bc",
+          "size_bytes": 6672
+        },
+        "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-hardened-renewal.json": {
+          "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-hardened-renewal.json",
+          "raw_sha256": "5d0ac8411fd785eda1db1cbc01d2082ea09d65482ddba4796982cf0f60db4655",
+          "size_bytes": 22113
+        },
+        "tracker/phase-04-tables/decisions/P04-US01-exact-bbox-metrics-controlled-supersession.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-US01-exact-bbox-metrics-controlled-supersession.md",
+          "raw_sha256": "1477e2ee4d8464adc28b9da5f68235496f54d3d432f6b194ebbca23fe0fea257",
+          "size_bytes": 4974
+        },
+        "tracker/phase-04-tables/decisions/P04-US01-phase04-stage-peak-rss-controlled-supersession.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-US01-phase04-stage-peak-rss-controlled-supersession.md",
+          "raw_sha256": "f067b841843142c0822c1dbdef31c4639ed7aa88ddd042c4dfea3fa0ef26aefd",
+          "size_bytes": 43040
+        },
+        "tracker/phase-04-tables/decisions/P04-US01-source-bound-recovery-amendment.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-US01-source-bound-recovery-amendment.md",
+          "raw_sha256": "1b4a4368ce32a9ce47202d56d473781f79d8a33d73a9604cdc0173784d48246d",
+          "size_bytes": 2308
+        },
+        "tracker/phase-04-tables/decisions/P04-US01-table-stage-overhead-controlled-supersession.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-US01-table-stage-overhead-controlled-supersession.md",
+          "raw_sha256": "b45c2667047fa5f3ac4820bf1922fa74fe8e97eaaeb02fcab3ff4f0e2973790f",
+          "size_bytes": 10461
+        },
+        "tracker/phase-04-tables/decisions/P04-US01-valid-only-table-authority.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-US01-valid-only-table-authority.md",
+          "raw_sha256": "9656999aa77bac1dce6060b6a5d918a6f00f525ec2e2205315f5ea0d0eaaab67",
+          "size_bytes": 2716
+        },
+        "tracker/phase-04-tables/decisions/P04-table-evidence-policy.md": {
+          "path": "tracker/phase-04-tables/decisions/P04-table-evidence-policy.md",
+          "raw_sha256": "49c4fb8117a21b754681f6c4625bc7291b338947bc48f4e1ff7b3962f0eae08e",
+          "size_bytes": 39292
+        },
+        "uv.lock": {
+          "path": "uv.lock",
+          "raw_sha256": "acd97c526138e247c54272b250c784b311de17b05ef3a28990b86b548f205b11",
+          "size_bytes": 606213
+        }
+      },
+      "gate_input_manifest_sha256": "fd49b22916ffa677ccaf3c50431e8ea896fee6facf848e7435c3c36d86c8d862",
+      "gate_input_total_bytes": 4292724,
+      "schema_id": "p03-us08-phase04-p04-us01-administrative-freeze-v1",
+      "scope": "exact current P04-US01 required final-code gate inputs; the administrative guard and focused test are excluded to preserve an acyclic identity DAG"
+    },
+    "phase04_flags": {
+      "table_candidate_gate_enabled": false,
+      "table_evidence_reconciliation_enabled": false,
+      "table_multi_page_merge_enabled": false,
+      "table_span_fidelity_enabled": false
+    },
+    "phase05_boundary_identities": {
+      "tracker/phase-05-charts-diagrams/README.md": {
+        "path": "tracker/phase-05-charts-diagrams/README.md",
+        "raw_sha256": "41c48309d67d145e042533ee61a1859172171f01cb2befcf767320f19d53f9b9",
+        "size_bytes": 2412
+      },
+      "tracker/phase-05-charts-diagrams/backlog.md": {
+        "path": "tracker/phase-05-charts-diagrams/backlog.md",
+        "raw_sha256": "e1cc8ee4fad637a972cf3b0788fef25252fd7883f29bbcf27de428e040c80c05",
+        "size_bytes": 2542
+      },
+      "tracker/phase-05-charts-diagrams/metrics.md": {
+        "path": "tracker/phase-05-charts-diagrams/metrics.md",
+        "raw_sha256": "9172583fda2dec92915e79e710ca785532e0b2211b24d7d785e2f5cf18f4e3ab",
+        "size_bytes": 2780
+      },
+      "tracker/phase-05-charts-diagrams/phase-regression.md": {
+        "path": "tracker/phase-05-charts-diagrams/phase-regression.md",
+        "raw_sha256": "eb2a74fc866a8cfd041412c55d86b36d54e2c27336479cfd407ceaa4189f5463",
+        "size_bytes": 2749
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US01.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US01.md",
+        "raw_sha256": "1bf062c7b7b2076be733b8a77e6dae1f4bace0840d6cba181faea56bf4dbd1c0",
+        "size_bytes": 4383
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US02.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US02.md",
+        "raw_sha256": "ec72a14fb866a7b38aa37e18cf1252ee84832883166869045514e9a815ffa11a",
+        "size_bytes": 4009
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US03.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US03.md",
+        "raw_sha256": "67a1012baabd5be3ac30417e2c5aa0f5e2ff90c6fe291059b192402a1f2c015e",
+        "size_bytes": 4079
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US04.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US04.md",
+        "raw_sha256": "36c6ce58912c649a61910f743d790403d2ed1f4a448bd5e8c7ce99145e0d3b42",
+        "size_bytes": 4165
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US05.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US05.md",
+        "raw_sha256": "f57d5c997224f64a2c5f648b047f6e1cf81bfceb3410f0421fcd58665cb63ba5",
+        "size_bytes": 4282
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US06.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US06.md",
+        "raw_sha256": "6806cbf6c575d4795a95e80bd512a62bcc6401edccd65ef3fc9857a7ea9d4aee",
+        "size_bytes": 4965
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US07.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US07.md",
+        "raw_sha256": "bd028a14c741a20af9cfd2bf9199f0a9f19e1f23aabb6d12602c436c7e85ab85",
+        "size_bytes": 5180
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US08.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US08.md",
+        "raw_sha256": "887f15d9eb6becdbc5610ab69d555ea4db4853d1efedf88fca476b060b4d2bf2",
+        "size_bytes": 5463
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US09.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US09.md",
+        "raw_sha256": "511a158c627639a43f922c9d0c04580d0272acc197476869e393569a61b5e856",
+        "size_bytes": 5710
+      },
+      "tracker/phase-05-charts-diagrams/stories/P05-US10.md": {
+        "path": "tracker/phase-05-charts-diagrams/stories/P05-US10.md",
+        "raw_sha256": "a950c4f118c350effd33e95f7386d4057f0a6cbba9d1fdb8bdb0522a357661d1",
+        "size_bytes": 4212
+      }
+    },
+    "protected_code_manifest_sha256": "6e4c010d561ed550b4e54af802d7cc96c405fc776222cc4da22018cbe35a4bb1",
+    "protected_code_path_count": 77,
+    "runtime_code_roots": [
+      "app",
+      "frontend/app",
+      "frontend/build",
+      "frontend/lib",
+      "frontend/public",
+      "frontend/worker"
+    ],
+    "runtime_code_suffixes": [
+      ".cjs",
+      ".css",
+      ".js",
+      ".jsx",
+      ".mjs",
+      ".py",
+      ".ts",
+      ".tsx"
+    ],
+    "scanner_assurance": {
+      "authorization_effect": "none",
+      "comprehensive_capability_detection_claimed": false,
+      "comprehensive_resource_or_termination_detection_claimed": false,
+      "missed_or_accepted_syntax_authorizes_bytes": false,
+      "mutated_bytes_require_new_terminal_freeze": true,
+      "nonwaived_gate_authority": "exact_pinned_execution_and_independent_review_only",
+      "role": "non_authorizing_best_effort_telemetry",
+      "sound_sandbox_claimed": false
+    },
+    "schema_id": "p03-us08-phase04-table-semantic-isolation-v2",
+    "shared_frontend_projection_sha256": {
+      "frontend/app/clearleaf-workspace.tsx": "72c7f32057e4ff4ee0cc20be857cab748355f9256ba82ef7d3001e8bc7ca43f3"
+    },
+    "shared_python_projection_sha256": {
+      "app/models.py": "1976ba6f20ea6be8c8a7179a8500e442f5e62f31f8a3516ab429fa220f8275a5",
+      "app/services/ir.py": "530bb8408dde720cf765543167d7d8b10b60f838c827e196fee517416fc9d171",
+      "app/services/pipeline.py": "31e3284e822a736a514ce008e4c1764c9a5dabc70cf71795ebec90fc4b8abd62",
+      "app/services/presentation.py": "64e3a11e13e2816d578fcd187362ad0d9198ed8f104bff1873266475a9577dc3",
+      "app/services/source_text_alignment.py": "9715463d83f41a257da5833ae908b98b7706bd11215a06d7e5fb00114177b932",
+      "app/services/text_reconciliation.py": "3c1263f212ee6cebd603fb95a06e656ef1c2fafbb6391dedbdfd1962fd8c68d6"
+    },
+    "table_semantics_max_ast_nodes": 40000
+  },
+  "semantic_sha256": "4c41e162cb395a7d07dce79e417c21f17f2c0ef39fd0bef8cee3f8fdb8755a61",
+  "status": "requester_authorized_pending_independent_approval",
+  "story": "P03-US08",
+  "verification_state": {
+    "independent_approval_required": true,
+    "operative": false,
+    "phase05_authorized": false,
+    "production_use_authorized": false,
+    "state": "pending_final_code_and_test_identity"
+  }
+}

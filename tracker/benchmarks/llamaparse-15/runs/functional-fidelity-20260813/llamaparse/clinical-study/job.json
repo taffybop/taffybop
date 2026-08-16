@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-j1mudyx7nuoubfmkdwf216vgq78l",
+    "created_at": "2026-08-12T18:31:39.094706Z",
+    "updated_at": "2026-08-12T18:32:06.895645Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "clinical-study.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 4,
+  "captured_at": "2026-08-12T18:45:06.062Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-j1mudyx7nuoubfmkdwf216vgq78l?fileName=clinical-study.pdf"
+}

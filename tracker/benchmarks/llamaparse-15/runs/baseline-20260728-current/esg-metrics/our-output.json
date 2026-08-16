@@ -1,0 +1,3779 @@
+{
+  "document": {
+    "content_region_count": 2,
+    "content_region_types": {
+      "chart": 2
+    },
+    "filename": "esg-metrics.pdf",
+    "image_count": 0,
+    "mime_type": "application/pdf",
+    "page_count": 1,
+    "page_source_region_count": 0,
+    "rendered_visual_region_count": 2,
+    "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+    "source_format": "PDF"
+  },
+  "pages": [
+    {
+      "detected_images": [
+        {
+          "area_ratio": 0.019851,
+          "bbox": {
+            "h": 83.933,
+            "height": 83.933,
+            "unit": "pt",
+            "w": 114.637,
+            "width": 114.637,
+            "x": 387.858,
+            "y": 219.534
+          },
+          "cleaned_ocr_text": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "confidence": 0.9521,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image1",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 111.4,
+                "width": 111.4,
+                "x": 389.658,
+                "y": 220.734
+              },
+              "confidence": 0.9648,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased cooling Purchased renewable",
+              "value": "Purchased cooling Purchased renewable",
+              "word_count": 4
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 111.8,
+                "width": 111.8,
+                "x": 389.458,
+                "y": 225.334
+              },
+              "confidence": 0.9436,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "<1% electricity",
+              "value": "<1% electricity",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 5.8,
+                "width": 5.8,
+                "x": 495.258,
+                "y": 231.334
+              },
+              "confidence": 0.775,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "7%",
+              "value": "7%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 33.0,
+                "width": 33.0,
+                "x": 389.658,
+                "y": 236.934
+              },
+              "confidence": 0.9636,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased steam",
+              "value": "Purchased steam",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.458,
+                "y": 242.934
+              },
+              "confidence": 0.9291,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "<1%",
+              "value": "<1%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.658,
+                "y": 264.134
+              },
+              "confidence": 0.969,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Fuel",
+              "value": "Fuel",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.6,
+                "width": 7.6,
+                "x": 389.458,
+                "y": 270.134
+              },
+              "confidence": 0.9572,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "21%",
+              "value": "21%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 20.2,
+                "width": 20.2,
+                "x": 480.858,
+                "y": 281.734
+              },
+              "confidence": 0.9655,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased",
+              "value": "Purchased",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 26.8,
+                "width": 26.8,
+                "x": 474.258,
+                "y": 287.134
+              },
+              "confidence": 0.92,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "nonrenewable",
+              "value": "nonrenewable",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 19.2,
+                "width": 19.2,
+                "x": 482.058,
+                "y": 292.534
+              },
+              "confidence": 0.9635,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "electricity",
+              "value": "electricity",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.4,
+                "width": 7.4,
+                "x": 493.658,
+                "y": 299.534
+              },
+              "confidence": 0.9408,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "71%",
+              "value": "71%",
+              "word_count": 1
+            }
+          ],
+          "md": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "pixel_height": 450,
+          "pixel_width": 603,
+          "raw_ocr_text": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 35.6,
+                "width": 35.6,
+                "x": 389.658,
+                "y": 220.734
+              },
+              "confidence": 0.965,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Purchased cooling Purchased renewable",
+              "source": "ocr",
+              "text": "Purchased cooling",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 41.2,
+                "width": 41.2,
+                "x": 459.858,
+                "y": 220.734
+              },
+              "confidence": 0.9646,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Purchased cooling Purchased renewable",
+              "source": "ocr",
+              "text": "Purchased renewable",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.458,
+                "y": 226.734
+              },
+              "confidence": 0.9291,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "<1% electricity",
+              "source": "ocr",
+              "text": "<1%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 19.2,
+                "width": 19.2,
+                "x": 482.058,
+                "y": 225.334
+              },
+              "confidence": 0.9645,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "<1% electricity",
+              "source": "ocr",
+              "text": "electricity",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 5.8,
+                "width": 5.8,
+                "x": 495.258,
+                "y": 231.334
+              },
+              "confidence": 0.6303,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "7%",
+              "source": "ocr",
+              "text": "7%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 33.0,
+                "width": 33.0,
+                "x": 389.658,
+                "y": 236.934
+              },
+              "confidence": 0.9612,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Purchased steam",
+              "source": "ocr",
+              "text": "Purchased steam",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.458,
+                "y": 242.934
+              },
+              "confidence": 0.9291,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "<1%",
+              "source": "ocr",
+              "text": "<1%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.658,
+                "y": 264.134
+              },
+              "confidence": 0.969,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Fuel",
+              "source": "ocr",
+              "text": "Fuel",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.6,
+                "width": 7.6,
+                "x": 389.458,
+                "y": 270.134
+              },
+              "confidence": 0.9558,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "21%",
+              "source": "ocr",
+              "text": "21%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 20.2,
+                "width": 20.2,
+                "x": 480.858,
+                "y": 281.734
+              },
+              "confidence": 0.9599,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Purchased",
+              "source": "ocr",
+              "text": "Purchased",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 26.8,
+                "width": 26.8,
+                "x": 474.258,
+                "y": 287.134
+              },
+              "confidence": 0.92,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "nonrenewable",
+              "source": "ocr",
+              "text": "nonrenewable",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 19.2,
+                "width": 19.2,
+                "x": 482.058,
+                "y": 292.534
+              },
+              "confidence": 0.9635,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "electricity",
+              "source": "ocr",
+              "text": "electricity",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.4,
+                "width": 7.4,
+                "x": 493.658,
+                "y": 299.534
+              },
+              "confidence": 0.9377,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "71%",
+              "source": "ocr",
+              "text": "71%",
+              "word_count": 1
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "warnings": []
+        },
+        {
+          "area_ratio": 0.030933,
+          "bbox": {
+            "h": 55.363,
+            "height": 55.363,
+            "unit": "pt",
+            "w": 270.819,
+            "width": 270.819,
+            "x": 387.261,
+            "y": 356.814
+          },
+          "cleaned_ocr_text": "eos) 11.8\n2.4\ncy23 @E\neo) 11.4\n2.4\n2.4\na 10.0\n2.3",
+          "confidence": 0.5403,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image2",
+          "items": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.4,
+                "width": 27.4,
+                "x": 389.661,
+                "y": 358.414
+              },
+              "confidence": 0.4062,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "FY24° GE",
+              "value": "FY24° GE",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 191.2,
+                "width": 191.2,
+                "x": 466.061,
+                "y": 358.414
+              },
+              "confidence": 0.6422,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "eos) 11.8",
+              "value": "eos) 11.8",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 360.014
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 373.614
+              },
+              "confidence": 0.4845,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "cy23 @E",
+              "value": "cy23 @E",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 373.614
+              },
+              "confidence": 0.392,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy23 @@j",
+              "value": "cy23 @@j",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 185.4,
+                "width": 185.4,
+                "x": 466.061,
+                "y": 373.814
+              },
+              "confidence": 0.524,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "eo) 11.4",
+              "value": "eo) 11.4",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 375.414
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 389.014
+              },
+              "confidence": 0.2522,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy22 @j",
+              "value": "cy22 @j",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 174.6,
+                "width": 174.6,
+                "x": 466.061,
+                "y": 389.014
+              },
+              "confidence": 0.4461,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eo?) 11.1",
+              "value": "eo?) 11.1",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 390.614
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 404.214
+              },
+              "confidence": 0.3493,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy21 Gey",
+              "value": "cy21 Gey",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 154.0,
+                "width": 154.0,
+                "x": 464.461,
+                "y": 404.414
+              },
+              "confidence": 0.8173,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "a 10.0",
+              "value": "a 10.0",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 437.661,
+                "y": 406.014
+              },
+              "confidence": 0.8763,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.3",
+              "value": "2.3",
+              "word_count": 1
+            }
+          ],
+          "md": "eos) 11.8\n2.4\ncy23 @E\neo) 11.4\n2.4\n2.4\na 10.0\n2.3",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "eos) 11.8\n2.4\ncy23 @E\neo) 11.4\n2.4\n2.4\na 10.0\n2.3",
+          "pixel_height": 307,
+          "pixel_width": 1384,
+          "raw_ocr_text": "FY24° GE\neos) 11.8\n2.4\ncy23 @E\ncy23 @@j\neo) 11.4\n2.4\ncy22 @j\neo?) 11.1\n2.4\ncy21 Gey\na 10.0\n2.3",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.4,
+                "width": 27.4,
+                "x": 389.661,
+                "y": 358.414
+              },
+              "confidence": 0.3611,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "FY24° GE",
+              "source": "ocr",
+              "text": "FY24° GE",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 360.014
+              },
+              "confidence": 0.9385,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "2.4",
+              "source": "ocr",
+              "text": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.8,
+                "height": 9.8,
+                "unit": "pt",
+                "w": 192.0,
+                "width": 192.0,
+                "x": 466.061,
+                "y": 357.614
+              },
+              "confidence": 0.6422,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "eos) 11.8",
+              "source": "ocr",
+              "text": "eos) 11.8",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 375.414
+              },
+              "confidence": 0.9385,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "2.4",
+              "source": "ocr",
+              "text": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.8,
+                "height": 9.8,
+                "unit": "pt",
+                "w": 186.4,
+                "width": 186.4,
+                "x": 466.061,
+                "y": 373.014
+              },
+              "confidence": 0.524,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "eo) 11.4",
+              "source": "ocr",
+              "text": "eo) 11.4",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 390.614
+              },
+              "confidence": 0.9385,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "2.4",
+              "source": "ocr",
+              "text": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 389.014
+              },
+              "confidence": 0.2522,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "cy22 @j",
+              "source": "ocr",
+              "text": "cy22 @j",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.8,
+                "height": 9.8,
+                "unit": "pt",
+                "w": 174.8,
+                "width": 174.8,
+                "x": 466.061,
+                "y": 388.214
+              },
+              "confidence": 0.4461,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "eo?) 11.1",
+              "source": "ocr",
+              "text": "eo?) 11.1",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 437.661,
+                "y": 406.014
+              },
+              "confidence": 0.8763,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "2.3",
+              "source": "ocr",
+              "text": "2.3",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 404.214
+              },
+              "confidence": 0.3493,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "cy21 Gey",
+              "source": "ocr",
+              "text": "cy21 Gey",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 154.0,
+                "width": 154.0,
+                "x": 464.461,
+                "y": 404.414
+              },
+              "confidence": 0.8173,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "a 10.0",
+              "source": "ocr",
+              "text": "a 10.0",
+              "word_count": 2
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "eos) 11.8\n2.4\ncy23 @E\neo) 11.4\n2.4\n2.4\na 10.0\n2.3",
+          "warnings": []
+        }
+      ],
+      "items": [
+        {
+          "bbox": {
+            "h": 5.243,
+            "height": 5.243,
+            "unit": "pt",
+            "w": 107.534,
+            "width": 107.534,
+            "x": 133.8,
+            "y": 157.013
+          },
+          "confidence": null,
+          "id": "p1-i1",
+          "label": "text",
+          "md": "APPENDIX / PERFORMANCE AT A GLANCE",
+          "reading_order": 0,
+          "source": "native",
+          "type": "text",
+          "value": "APPENDIX / PERFORMANCE AT A GLANCE"
+        },
+        {
+          "bbox": {
+            "h": 17.966,
+            "height": 17.966,
+            "unit": "pt",
+            "w": 186.446,
+            "width": 186.446,
+            "x": 133.8,
+            "y": 186.354
+          },
+          "confidence": null,
+          "id": "p1-i2",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Performance at a glance",
+          "reading_order": 1,
+          "source": "native",
+          "type": "heading",
+          "value": "Performance at a glance"
+        },
+        {
+          "bbox": {
+            "h": 8.38,
+            "height": 8.38,
+            "unit": "pt",
+            "w": 42.416,
+            "width": 42.416,
+            "x": 133.8,
+            "y": 205.326
+          },
+          "confidence": null,
+          "id": "p1-i3",
+          "label": "text",
+          "md": "Environment",
+          "reading_order": 2,
+          "source": "native",
+          "type": "text",
+          "value": "Environment"
+        },
+        {
+          "bbox": {
+            "h": 8.983,
+            "height": 8.983,
+            "unit": "pt",
+            "w": 32.15,
+            "width": 32.15,
+            "x": 135.0,
+            "y": 224.277
+          },
+          "confidence": null,
+          "id": "p1-i4",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Energy 1,2",
+          "reading_order": 3,
+          "source": "native",
+          "type": "heading",
+          "value": "Energy 1,2"
+        },
+        {
+          "bbox": {
+            "h": 129.228,
+            "height": 129.228,
+            "unit": "pt",
+            "w": 229.521,
+            "width": 229.521,
+            "x": 132.959,
+            "y": 233.609
+          },
+          "cells": [
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 14.333,
+                "width": 14.333,
+                "x": 135.3,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Metric"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 10.867,
+                "width": 10.867,
+                "x": 203.983,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Unit 3"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 12.847,
+                "width": 12.847,
+                "x": 235.802,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "CY21 4"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 12.053,
+                "width": 12.053,
+                "x": 267.919,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "CY22"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 11.981,
+                "width": 11.981,
+                "x": 300.256,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "CY23"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 13.094,
+                "width": 13.094,
+                "x": 334.5,
+                "y": 237.254
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "FY24 5"
+            },
+            {
+              "bbox": {
+                "h": 5.323,
+                "height": 5.323,
+                "unit": "pt",
+                "w": 46.204,
+                "width": 46.204,
+                "x": 135.3,
+                "y": 247.271
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": true,
+              "row_span": 1,
+              "source": "native",
+              "text": "Energy consumption"
+            },
+            {
+              "bbox": {
+                "h": 10.557,
+                "height": 10.557,
+                "unit": "pt",
+                "w": 54.979,
+                "width": 54.979,
+                "x": 135.3,
+                "y": 257.25
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 2,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Purchased nonrenewable electricity"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 259.953
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 21.878,
+                "width": 21.878,
+                "x": 235.802,
+                "y": 259.953
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "7,540,309"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 21.518,
+                "width": 21.518,
+                "x": 267.919,
+                "y": 259.953
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "8,342,669"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 20.151,
+                "width": 20.151,
+                "x": 300.256,
+                "y": 259.953
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "8,391,233"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 21.254,
+                "width": 21.254,
+                "x": 334.5,
+                "y": 259.953
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "8,384,845"
+            },
+            {
+              "bbox": {
+                "h": 10.557,
+                "height": 10.557,
+                "unit": "pt",
+                "w": 46.665,
+                "width": 46.665,
+                "x": 135.3,
+                "y": 272.255
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 3,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Purchased renewable electricity"
+            },
+            {
+              "bbox": {
+                "h": 5.158,
+                "height": 5.158,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 274.957
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.158,
+                "height": 5.158,
+                "unit": "pt",
+                "w": 8.592,
+                "width": 8.592,
+                "x": 235.802,
+                "y": 274.957
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "556"
+            },
+            {
+              "bbox": {
+                "h": 5.158,
+                "height": 5.158,
+                "unit": "pt",
+                "w": 15.979,
+                "width": 15.979,
+                "x": 267.919,
+                "y": 274.957
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "200,141"
+            },
+            {
+              "bbox": {
+                "h": 5.158,
+                "height": 5.158,
+                "unit": "pt",
+                "w": 16.623,
+                "width": 16.623,
+                "x": 300.256,
+                "y": 274.957
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "393,561"
+            },
+            {
+              "bbox": {
+                "h": 5.158,
+                "height": 5.158,
+                "unit": "pt",
+                "w": 17.654,
+                "width": 17.654,
+                "x": 334.5,
+                "y": 274.957
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "783,604"
+            },
+            {
+              "bbox": {
+                "h": 10.557,
+                "height": 10.557,
+                "unit": "pt",
+                "w": 46.18,
+                "width": 46.18,
+                "x": 135.3,
+                "y": 287.26
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 4,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Renewable electricity generated on-site"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 289.962
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 5.654,
+                "width": 5.654,
+                "x": 235.802,
+                "y": 289.962
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "86"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 8.169,
+                "width": 8.169,
+                "x": 267.919,
+                "y": 289.962
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "223"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 8.127,
+                "width": 8.127,
+                "x": 300.256,
+                "y": 289.962
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "245"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 8.39,
+                "width": 8.39,
+                "x": 334.5,
+                "y": 289.962
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "270"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 37.526,
+                "width": 37.526,
+                "x": 135.3,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 5,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Purchased steam"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 12.936,
+                "width": 12.936,
+                "x": 235.802,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "88,731"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 13.973,
+                "width": 13.973,
+                "x": 267.919,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "87,345"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 14.52,
+                "width": 14.52,
+                "x": 300.256,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "78,386"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 14.755,
+                "width": 14.755,
+                "x": 334.5,
+                "y": 302.265
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "79,669"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 40.444,
+                "width": 40.444,
+                "x": 135.3,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 6,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Purchased cooling"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 13.963,
+                "width": 13.963,
+                "x": 235.802,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "113,317"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 16.771,
+                "width": 16.771,
+                "x": 267.919,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "108,524"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 16.988,
+                "width": 16.988,
+                "x": 300.256,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "108,249"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 16.156,
+                "width": 16.156,
+                "x": 334.5,
+                "y": 311.865
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "107,832"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 9.268,
+                "width": 9.268,
+                "x": 135.3,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 7,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Fuel"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 18.754,
+                "width": 18.754,
+                "x": 235.802,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "2,277,126"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 20.025,
+                "width": 20.025,
+                "x": 267.919,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "2,401,140"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 17.592,
+                "width": 17.592,
+                "x": 300.256,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "2,417,187"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 20.716,
+                "width": 20.716,
+                "x": 334.5,
+                "y": 321.465
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "2,436,577"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 55.881,
+                "width": 55.881,
+                "x": 135.3,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 8,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Total energy consumption"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 11.155,
+                "width": 11.155,
+                "x": 203.983,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "MWh"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 22.598,
+                "width": 22.598,
+                "x": 235.802,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "10,020,124"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 21.614,
+                "width": 21.614,
+                "x": 267.919,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "11,140,042"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 22.608,
+                "width": 22.608,
+                "x": 300.256,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "11,388,860"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 20.75,
+                "width": 20.75,
+                "x": 334.5,
+                "y": 331.065
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "11,792,797"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 55.909,
+                "width": 55.909,
+                "x": 135.3,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 9,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Grid electricity consumed"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 4.228,
+                "width": 4.228,
+                "x": 205.308,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 9.648,
+                "width": 9.648,
+                "x": 235.802,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "75%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 9.374,
+                "width": 9.374,
+                "x": 267.919,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "77%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 9.375,
+                "width": 9.375,
+                "x": 300.256,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "77%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 9.436,
+                "width": 9.436,
+                "x": 334.5,
+                "y": 340.665
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "78%"
+            },
+            {
+              "bbox": {
+                "h": 10.557,
+                "height": 10.557,
+                "unit": "pt",
+                "w": 46.18,
+                "width": 46.18,
+                "x": 135.3,
+                "y": 350.265
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": false,
+              "row": 10,
+              "row_header": true,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "Renewable electricity consumed"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 4.228,
+                "width": 4.228,
+                "x": 205.308,
+                "y": 352.967
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 7.642,
+                "width": 7.642,
+                "x": 235.802,
+                "y": 352.967
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "0%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 7.003,
+                "width": 7.003,
+                "x": 267.919,
+                "y": 352.967
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "2%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 7.018,
+                "width": 7.018,
+                "x": 300.256,
+                "y": 352.967
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "4%"
+            },
+            {
+              "bbox": {
+                "h": 5.157,
+                "height": 5.157,
+                "unit": "pt",
+                "w": 7.128,
+                "width": 7.128,
+                "x": 334.5,
+                "y": 352.967
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "9%"
+            }
+          ],
+          "column_count": 6,
+          "confidence": null,
+          "csv": "Metric,Unit 3,CY21 4,CY22,CY23,FY24 5\nEnergy consumption,,,,,\nPurchased nonrenewable electricity,MWh,\"7,540,309\",\"8,342,669\",\"8,391,233\",\"8,384,845\"\nPurchased renewable electricity,MWh,556,\"200,141\",\"393,561\",\"783,604\"\nRenewable electricity generated on-site,MWh,86,223,245,270\nPurchased steam,MWh,\"88,731\",\"87,345\",\"78,386\",\"79,669\"\nPurchased cooling,MWh,\"113,317\",\"108,524\",\"108,249\",\"107,832\"\nFuel,MWh,\"2,277,126\",\"2,401,140\",\"2,417,187\",\"2,436,577\"\nTotal energy consumption,MWh,\"10,020,124\",\"11,140,042\",\"11,388,860\",\"11,792,797\"\nGrid electricity consumed,%,75%,77%,77%,78%\nRenewable electricity consumed,%,0%,2%,4%,9%",
+          "embedded_images": [],
+          "engine": "docling",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Unit 3</th>\n      <th>CY21 4</th>\n      <th>CY22</th>\n      <th>CY23</th>\n      <th>FY24 5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Energy consumption</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchased nonrenewable electricity</td>\n      <td>MWh</td>\n      <td>7,540,309</td>\n      <td>8,342,669</td>\n      <td>8,391,233</td>\n      <td>8,384,845</td>\n    </tr>\n    <tr>\n      <td>Purchased renewable electricity</td>\n      <td>MWh</td>\n      <td>556</td>\n      <td>200,141</td>\n      <td>393,561</td>\n      <td>783,604</td>\n    </tr>\n    <tr>\n      <td>Renewable electricity generated on-site</td>\n      <td>MWh</td>\n      <td>86</td>\n      <td>223</td>\n      <td>245</td>\n      <td>270</td>\n    </tr>\n    <tr>\n      <td>Purchased steam</td>\n      <td>MWh</td>\n      <td>88,731</td>\n      <td>87,345</td>\n      <td>78,386</td>\n      <td>79,669</td>\n    </tr>\n    <tr>\n      <td>Purchased cooling</td>\n      <td>MWh</td>\n      <td>113,317</td>\n      <td>108,524</td>\n      <td>108,249</td>\n      <td>107,832</td>\n    </tr>\n    <tr>\n      <td>Fuel</td>\n      <td>MWh</td>\n      <td>2,277,126</td>\n      <td>2,401,140</td>\n      <td>2,417,187</td>\n      <td>2,436,577</td>\n    </tr>\n    <tr>\n      <td>Total energy consumption</td>\n      <td>MWh</td>\n      <td>10,020,124</td>\n      <td>11,140,042</td>\n      <td>11,388,860</td>\n      <td>11,792,797</td>\n    </tr>\n    <tr>\n      <td>Grid electricity consumed</td>\n      <td>%</td>\n      <td>75%</td>\n      <td>77%</td>\n      <td>77%</td>\n      <td>78%</td>\n    </tr>\n    <tr>\n      <td>Renewable electricity consumed</td>\n      <td>%</td>\n      <td>0%</td>\n      <td>2%</td>\n      <td>4%</td>\n      <td>9%</td>\n    </tr>\n  </tbody>\n</table>",
+          "id": "p1-i5",
+          "md": "<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Unit 3</th>\n      <th>CY21 4</th>\n      <th>CY22</th>\n      <th>CY23</th>\n      <th>FY24 5</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Energy consumption</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchased nonrenewable electricity</td>\n      <td>MWh</td>\n      <td>7,540,309</td>\n      <td>8,342,669</td>\n      <td>8,391,233</td>\n      <td>8,384,845</td>\n    </tr>\n    <tr>\n      <td>Purchased renewable electricity</td>\n      <td>MWh</td>\n      <td>556</td>\n      <td>200,141</td>\n      <td>393,561</td>\n      <td>783,604</td>\n    </tr>\n    <tr>\n      <td>Renewable electricity generated on-site</td>\n      <td>MWh</td>\n      <td>86</td>\n      <td>223</td>\n      <td>245</td>\n      <td>270</td>\n    </tr>\n    <tr>\n      <td>Purchased steam</td>\n      <td>MWh</td>\n      <td>88,731</td>\n      <td>87,345</td>\n      <td>78,386</td>\n      <td>79,669</td>\n    </tr>\n    <tr>\n      <td>Purchased cooling</td>\n      <td>MWh</td>\n      <td>113,317</td>\n      <td>108,524</td>\n      <td>108,249</td>\n      <td>107,832</td>\n    </tr>\n    <tr>\n      <td>Fuel</td>\n      <td>MWh</td>\n      <td>2,277,126</td>\n      <td>2,401,140</td>\n      <td>2,417,187</td>\n      <td>2,436,577</td>\n    </tr>\n    <tr>\n      <td>Total energy consumption</td>\n      <td>MWh</td>\n      <td>10,020,124</td>\n      <td>11,140,042</td>\n      <td>11,388,860</td>\n      <td>11,792,797</td>\n    </tr>\n    <tr>\n      <td>Grid electricity consumed</td>\n      <td>%</td>\n      <td>75%</td>\n      <td>77%</td>\n      <td>77%</td>\n      <td>78%</td>\n    </tr>\n    <tr>\n      <td>Renewable electricity consumed</td>\n      <td>%</td>\n      <td>0%</td>\n      <td>2%</td>\n      <td>4%</td>\n      <td>9%</td>\n    </tr>\n  </tbody>\n</table>",
+          "parse_concerns": [],
+          "reading_order": 4,
+          "row_count": 11,
+          "rows": [
+            [
+              "Metric",
+              "Unit 3",
+              "CY21 4",
+              "CY22",
+              "CY23",
+              "FY24 5"
+            ],
+            [
+              "Energy consumption",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Purchased nonrenewable electricity",
+              "MWh",
+              "7,540,309",
+              "8,342,669",
+              "8,391,233",
+              "8,384,845"
+            ],
+            [
+              "Purchased renewable electricity",
+              "MWh",
+              "556",
+              "200,141",
+              "393,561",
+              "783,604"
+            ],
+            [
+              "Renewable electricity generated on-site",
+              "MWh",
+              "86",
+              "223",
+              "245",
+              "270"
+            ],
+            [
+              "Purchased steam",
+              "MWh",
+              "88,731",
+              "87,345",
+              "78,386",
+              "79,669"
+            ],
+            [
+              "Purchased cooling",
+              "MWh",
+              "113,317",
+              "108,524",
+              "108,249",
+              "107,832"
+            ],
+            [
+              "Fuel",
+              "MWh",
+              "2,277,126",
+              "2,401,140",
+              "2,417,187",
+              "2,436,577"
+            ],
+            [
+              "Total energy consumption",
+              "MWh",
+              "10,020,124",
+              "11,140,042",
+              "11,388,860",
+              "11,792,797"
+            ],
+            [
+              "Grid electricity consumed",
+              "%",
+              "75%",
+              "77%",
+              "77%",
+              "78%"
+            ],
+            [
+              "Renewable electricity consumed",
+              "%",
+              "0%",
+              "2%",
+              "4%",
+              "9%"
+            ]
+          ],
+          "source": "native",
+          "type": "table",
+          "value": [
+            [
+              "Metric",
+              "Unit 3",
+              "CY21 4",
+              "CY22",
+              "CY23",
+              "FY24 5"
+            ],
+            [
+              "Energy consumption",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Purchased nonrenewable electricity",
+              "MWh",
+              "7,540,309",
+              "8,342,669",
+              "8,391,233",
+              "8,384,845"
+            ],
+            [
+              "Purchased renewable electricity",
+              "MWh",
+              "556",
+              "200,141",
+              "393,561",
+              "783,604"
+            ],
+            [
+              "Renewable electricity generated on-site",
+              "MWh",
+              "86",
+              "223",
+              "245",
+              "270"
+            ],
+            [
+              "Purchased steam",
+              "MWh",
+              "88,731",
+              "87,345",
+              "78,386",
+              "79,669"
+            ],
+            [
+              "Purchased cooling",
+              "MWh",
+              "113,317",
+              "108,524",
+              "108,249",
+              "107,832"
+            ],
+            [
+              "Fuel",
+              "MWh",
+              "2,277,126",
+              "2,401,140",
+              "2,417,187",
+              "2,436,577"
+            ],
+            [
+              "Total energy consumption",
+              "MWh",
+              "10,020,124",
+              "11,140,042",
+              "11,388,860",
+              "11,792,797"
+            ],
+            [
+              "Grid electricity consumed",
+              "%",
+              "75%",
+              "77%",
+              "77%",
+              "78%"
+            ],
+            [
+              "Renewable electricity consumed",
+              "%",
+              "0%",
+              "2%",
+              "4%",
+              "9%"
+            ]
+          ]
+        },
+        {
+          "bbox": {
+            "h": 3.546,
+            "height": 3.546,
+            "unit": "pt",
+            "w": 83.13,
+            "width": 83.13,
+            "x": 133.8,
+            "y": 373.532
+          },
+          "confidence": null,
+          "id": "p1-i6",
+          "label": "text",
+          "md": "1 Information is collected and reported to CDP annually.",
+          "reading_order": 5,
+          "source": "native",
+          "type": "text",
+          "value": "1 Information is collected and reported to CDP annually."
+        },
+        {
+          "bbox": {
+            "h": 7.446,
+            "height": 7.446,
+            "unit": "pt",
+            "w": 221.865,
+            "width": 221.865,
+            "x": 133.8,
+            "y": 380.132
+          },
+          "confidence": null,
+          "id": "p1-i7",
+          "label": "text",
+          "md": "2 Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories, 2019 Refinement.",
+          "reading_order": 6,
+          "source": "ocr",
+          "type": "text",
+          "value": "2 Data assumptions and calculations are consistent with the Greenhouse Gas Protocol and IPCC Guidelines for National Greenhouse Gas Inventories, 2019 Refinement."
+        },
+        {
+          "bbox": {
+            "h": 3.545,
+            "height": 3.545,
+            "unit": "pt",
+            "w": 75.573,
+            "width": 75.573,
+            "x": 133.8,
+            "y": 390.633
+          },
+          "confidence": null,
+          "id": "p1-i8",
+          "label": "text",
+          "md": "$ Energy consumption is in megawatt hours (MWh)",
+          "reading_order": 7,
+          "source": "native",
+          "type": "text",
+          "value": "$ Energy consumption is in megawatt hours (MWh)"
+        },
+        {
+          "bbox": {
+            "h": 3.545,
+            "height": 3.545,
+            "unit": "pt",
+            "w": 153.625,
+            "width": 153.625,
+            "x": 133.8,
+            "y": 397.233
+          },
+          "confidence": null,
+          "id": "p1-i9",
+          "label": "text",
+          "md": "% Energy data is revised from prior annual disclosures to re & ect the divestiture of Lehi, Utah, operations.",
+          "reading_order": 8,
+          "source": "native",
+          "type": "text",
+          "value": "% Energy data is revised from prior annual disclosures to re & ect the divestiture of Lehi, Utah, operations."
+        },
+        {
+          "bbox": {
+            "h": 7.446,
+            "height": 7.446,
+            "unit": "pt",
+            "w": 222.327,
+            "width": 222.327,
+            "x": 133.8,
+            "y": 403.833
+          },
+          "confidence": null,
+          "id": "p1-i10",
+          "label": "text",
+          "md": "' Beginning with fiscal year 2024, Micron's environmental, health and safety performance data is reported on a fiscal year basis to align with emerging regulatory requirements.",
+          "reading_order": 9,
+          "source": "ocr",
+          "type": "text",
+          "value": "' Beginning with fiscal year 2024, Micron's environmental, health and safety performance data is reported on a fiscal year basis to align with emerging regulatory requirements."
+        },
+        {
+          "bbox": {
+            "h": 3.44,
+            "height": 3.44,
+            "unit": "pt",
+            "w": 36.833,
+            "width": 36.833,
+            "x": 133.8,
+            "y": 453.883
+          },
+          "confidence": null,
+          "id": "p1-i11",
+          "label": "text",
+          "md": "TABLE OF CONTENTS",
+          "reading_order": 10,
+          "source": "native",
+          "type": "text",
+          "value": "TABLE OF CONTENTS"
+        },
+        {
+          "bbox": {
+            "h": 5.989,
+            "height": 5.989,
+            "unit": "pt",
+            "w": 73.267,
+            "width": 73.267,
+            "x": 389.55,
+            "y": 203.418
+          },
+          "confidence": null,
+          "id": "p1-i12",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Energy breakdown by source",
+          "reading_order": 11,
+          "source": "native",
+          "type": "heading",
+          "value": "Energy breakdown by source"
+        },
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.9888
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0079
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0015
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0005
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0004
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 83.933,
+            "height": 83.933,
+            "unit": "pt",
+            "w": 114.637,
+            "width": 114.637,
+            "x": 387.858,
+            "y": 219.534
+          },
+          "caption": "Purchased\nnonrenewable\nelectricity\n71%\nFuel\n21%\nPurchased renewable\n7%\nPurchased steam\n<1%\nPurchased cooling",
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": "document_caption",
+          "classification": {
+            "class_name": "pie_chart",
+            "confidence": 0.9888
+          },
+          "confidence": 0.9434,
+          "content_type": "chart",
+          "detected_text": true,
+          "id": "p1-i13",
+          "include_ocr_in_primary": true,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 111.4,
+                "width": 111.4,
+                "x": 389.658,
+                "y": 220.734
+              },
+              "confidence": 0.9648,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased cooling Purchased renewable",
+              "value": "Purchased cooling Purchased renewable",
+              "word_count": 4
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.6,
+                "height": 4.6,
+                "unit": "pt",
+                "w": 111.8,
+                "width": 111.8,
+                "x": 389.458,
+                "y": 225.334
+              },
+              "confidence": 0.9436,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "<1% electricity",
+              "value": "<1% electricity",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 5.8,
+                "width": 5.8,
+                "x": 495.258,
+                "y": 231.334
+              },
+              "confidence": 0.775,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "7%",
+              "value": "7%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 33.0,
+                "width": 33.0,
+                "x": 389.658,
+                "y": 236.934
+              },
+              "confidence": 0.9636,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased steam",
+              "value": "Purchased steam",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.458,
+                "y": 242.934
+              },
+              "confidence": 0.9291,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "<1%",
+              "value": "<1%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 7.8,
+                "width": 7.8,
+                "x": 389.658,
+                "y": 264.134
+              },
+              "confidence": 0.969,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Fuel",
+              "value": "Fuel",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.6,
+                "width": 7.6,
+                "x": 389.458,
+                "y": 270.134
+              },
+              "confidence": 0.9572,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "21%",
+              "value": "21%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 20.2,
+                "width": 20.2,
+                "x": 480.858,
+                "y": 281.734
+              },
+              "confidence": 0.9655,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Purchased",
+              "value": "Purchased",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 26.8,
+                "width": 26.8,
+                "x": 474.258,
+                "y": 287.134
+              },
+              "confidence": 0.92,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "nonrenewable",
+              "value": "nonrenewable",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 4.0,
+                "height": 4.0,
+                "unit": "pt",
+                "w": 19.2,
+                "width": 19.2,
+                "x": 482.058,
+                "y": 292.534
+              },
+              "confidence": 0.9635,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "electricity",
+              "value": "electricity",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 7.4,
+                "width": 7.4,
+                "x": 493.658,
+                "y": 299.534
+              },
+              "confidence": 0.9408,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "71%",
+              "value": "71%",
+              "word_count": 1
+            }
+          ],
+          "md": "Purchased\nnonrenewable\nelectricity\n71%\nFuel\n21%\nPurchased renewable\n7%\nPurchased steam\n<1%\nPurchased cooling\nPurchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.9888,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0079,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0015,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0005,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0004,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "parse_concerns": [
+            "chart_values_not_structured"
+          ],
+          "raw_ocr_text": "Purchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "reading_order": 12,
+          "region_role": "content_region",
+          "source": "ocr",
+          "type": "chart",
+          "value": "Purchased\nnonrenewable\nelectricity\n71%\nFuel\n21%\nPurchased renewable\n7%\nPurchased steam\n<1%\nPurchased cooling\nPurchased cooling Purchased renewable\n<1% electricity\n7%\nPurchased steam\n<1%\nFuel\n21%\nPurchased\nnonrenewable\nelectricity\n71%",
+          "warnings": []
+        },
+        {
+          "bbox": {
+            "h": 5.989,
+            "height": 5.989,
+            "unit": "pt",
+            "w": 56.073,
+            "width": 56.073,
+            "x": 389.55,
+            "y": 335.891
+          },
+          "confidence": null,
+          "id": "p1-i14",
+          "label": "section_header",
+          "level": 1,
+          "md": "# Energy consumption 6,7",
+          "reading_order": 13,
+          "source": "native",
+          "type": "heading",
+          "value": "Energy consumption 6,7"
+        },
+        {
+          "bbox": {
+            "h": 3.932,
+            "height": 3.932,
+            "unit": "pt",
+            "w": 186.675,
+            "width": 186.675,
+            "x": 391.085,
+            "y": 343.803
+          },
+          "confidence": null,
+          "id": "p1-i15",
+          "label": "text",
+          "md": "Purchased steam and cooling Fuel Purchased nonrenewable electricity Purchased renewable electricity",
+          "reading_order": 14,
+          "source": "native",
+          "type": "text",
+          "value": "Purchased steam and cooling Fuel Purchased nonrenewable electricity Purchased renewable electricity"
+        },
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.942
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0339
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0132
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0042
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0019
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0017
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.001
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0004
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0004
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0003
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 55.363,
+            "height": 55.363,
+            "unit": "pt",
+            "w": 270.819,
+            "width": 270.819,
+            "x": 387.261,
+            "y": 356.814
+          },
+          "caption": "0.2\nCY21 1\n10.0\n2.3\n7.5\nCY22\n11.1\n2.4\n8.3\nCY23\n11.4\n8.4\n0.4\nFY24\n5\n11.8\n0.8",
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": "document_caption",
+          "classification": {
+            "class_name": "bar_chart",
+            "confidence": 0.942
+          },
+          "confidence": 0.719,
+          "content_type": "chart",
+          "detected_text": true,
+          "id": "p1-i16",
+          "include_ocr_in_primary": true,
+          "items": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.4,
+                "width": 27.4,
+                "x": 389.661,
+                "y": 358.414
+              },
+              "confidence": 0.4062,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "FY24° GE",
+              "value": "FY24° GE",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 191.2,
+                "width": 191.2,
+                "x": 466.061,
+                "y": 358.414
+              },
+              "confidence": 0.6422,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "eos) 11.8",
+              "value": "eos) 11.8",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 360.014
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 373.614
+              },
+              "confidence": 0.4845,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "cy23 @E",
+              "value": "cy23 @E",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 373.614
+              },
+              "confidence": 0.392,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy23 @@j",
+              "value": "cy23 @@j",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 185.4,
+                "width": 185.4,
+                "x": 466.061,
+                "y": 373.814
+              },
+              "confidence": 0.524,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "eo) 11.4",
+              "value": "eo) 11.4",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 375.414
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 389.014
+              },
+              "confidence": 0.2522,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy22 @j",
+              "value": "cy22 @j",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 174.6,
+                "width": 174.6,
+                "x": 466.061,
+                "y": 389.014
+              },
+              "confidence": 0.4461,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eo?) 11.1",
+              "value": "eo?) 11.1",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.0,
+                "height": 3.0,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 438.461,
+                "y": 390.614
+              },
+              "confidence": 0.9385,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.4",
+              "value": "2.4",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 6.2,
+                "height": 6.2,
+                "unit": "pt",
+                "w": 27.6,
+                "width": 27.6,
+                "x": 389.461,
+                "y": 404.214
+              },
+              "confidence": 0.3493,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "cy21 Gey",
+              "value": "cy21 Gey",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 6.0,
+                "height": 6.0,
+                "unit": "pt",
+                "w": 154.0,
+                "width": 154.0,
+                "x": 464.461,
+                "y": 404.414
+              },
+              "confidence": 0.8173,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "a 10.0",
+              "value": "a 10.0",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 3.2,
+                "height": 3.2,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 437.661,
+                "y": 406.014
+              },
+              "confidence": 0.8763,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "2.3",
+              "value": "2.3",
+              "word_count": 1
+            }
+          ],
+          "md": "0.2\nCY21 1\n10.0\n2.3\n7.5\nCY22\n11.1\n2.4\n8.3\nCY23\n11.4\n8.4\n0.4\nFY24\n5\n11.8\n0.8\neos) 11.8\n2.4\ncy23 @E\neo) 11.4\na 10.0\n2.3",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.942,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0339,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0132,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0042,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0019,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0017,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0004,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0004,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0003,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "eos) 11.8\n2.4\ncy23 @E\neo) 11.4\na 10.0\n2.3",
+          "parse_concerns": [
+            "chart_values_not_structured"
+          ],
+          "raw_ocr_text": "FY24° GE\neos) 11.8\n2.4\ncy23 @E\ncy23 @@j\neo) 11.4\ncy22 @j\neo?) 11.1\ncy21 Gey\na 10.0\n2.3",
+          "reading_order": 15,
+          "region_role": "content_region",
+          "source": "ocr",
+          "type": "chart",
+          "value": "0.2\nCY21 1\n10.0\n2.3\n7.5\nCY22\n11.1\n2.4\n8.3\nCY23\n11.4\n8.4\n0.4\nFY24\n5\n11.8\n0.8\neos) 11.8\n2.4\ncy23 @E\neo) 11.4\na 10.0\n2.3",
+          "warnings": []
+        },
+        {
+          "bbox": {
+            "h": 3.545,
+            "height": 3.545,
+            "unit": "pt",
+            "w": 91.977,
+            "width": 91.977,
+            "x": 389.55,
+            "y": 424.318
+          },
+          "confidence": null,
+          "id": "p1-i17",
+          "label": "text",
+          "md": "( Energy consumption in millions of megawatt hours (M MWh)",
+          "reading_order": 16,
+          "source": "native",
+          "type": "text",
+          "value": "( Energy consumption in millions of megawatt hours (M MWh)"
+        },
+        {
+          "bbox": {
+            "h": 3.545,
+            "height": 3.545,
+            "unit": "pt",
+            "w": 114.83,
+            "width": 114.83,
+            "x": 389.55,
+            "y": 430.918
+          },
+          "confidence": null,
+          "id": "p1-i18",
+          "label": "text",
+          "md": ") Renewable electricity purchased and generated prior to CY22 is not shown.",
+          "reading_order": 17,
+          "source": "native",
+          "type": "text",
+          "value": ") Renewable electricity purchased and generated prior to CY22 is not shown."
+        },
+        {
+          "bbox": {
+            "h": 3.44,
+            "height": 3.44,
+            "unit": "pt",
+            "w": 66.036,
+            "width": 66.036,
+            "x": 572.252,
+            "y": 453.648
+          },
+          "confidence": null,
+          "id": "p1-i19",
+          "label": "text",
+          "md": "MICRON SUSTAINABILITY REPORT 2025",
+          "reading_order": 18,
+          "source": "native",
+          "type": "text",
+          "value": "MICRON SUSTAINABILITY REPORT 2025"
+        },
+        {
+          "bbox": {
+            "h": 3.493,
+            "height": 3.493,
+            "unit": "pt",
+            "w": 4.366,
+            "width": 4.366,
+            "x": 653.834,
+            "y": 453.648
+          },
+          "confidence": null,
+          "id": "p1-i20",
+          "label": "text",
+          "md": "80",
+          "reading_order": 19,
+          "source": "native",
+          "type": "text",
+          "value": "80"
+        }
+      ],
+      "page_height": 612.0,
+      "page_index": 1,
+      "page_label": "1",
+      "page_number": 1,
+      "page_width": 792.0,
+      "success": true,
+      "unit": "pt",
+      "warnings": []
+    }
+  ],
+  "processing": {
+    "duration_ms": 7775,
+    "engine": "docling",
+    "input_format": "pdf",
+    "local_processing": true,
+    "native_text_engine": "pypdfium2",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "picture_captioning": {
+      "local_model_available": false,
+      "requested": false
+    },
+    "table_engines": [
+      "docling",
+      "pdfplumber"
+    ],
+    "visual_analysis": {
+      "heading_height_ratio": 1.8,
+      "heading_min_confidence": 0.75,
+      "low_confidence_min_alnum_chars": 8,
+      "pdf_selective_rendering_enabled": true,
+      "picture_classification_threshold": 0.6,
+      "primary_ocr_min_confidence": 0.45,
+      "shared_pipeline": true
+    }
+  },
+  "schema_version": "1.0",
+  "warnings": []
+}

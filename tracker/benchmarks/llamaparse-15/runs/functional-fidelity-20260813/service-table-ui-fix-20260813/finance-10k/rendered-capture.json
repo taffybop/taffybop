@@ -1,0 +1,33 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "finance-10k",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "35e7db246eb09e82581af7d7a6c0ea23f747b2ac32076fe2d8711a412ed04e2d",
+  "page_count": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "603aad315c60c5cba1cb574defa35000c80daa748b67f0061ca13864b1f9b489",
+      "html_sha256": "d41ff4ac475f435541f005ddfb3d6b00e35fbdbde7851c162797ed96e45d7724",
+      "text_sha256": "3548e02b3fd815e88fb083ccb10d1607f6e02f97d2437658e10a4ff5ee57752e"
+    },
+    {
+      "page_number": 2,
+      "artifact": "pages/page-2/rendered-dom.json",
+      "artifact_sha256": "043f6f31292acc4f34235c787fb13da74ee91b15bcafe47e018fd55b5033477b",
+      "html_sha256": "72bef1ab3c18355af75df32e24de9544fb01c9e4bae86949c0114370d8dcced4",
+      "text_sha256": "73b85c5406d029edbb5d53a752a343e8592407e3346ecfb908b1a0b8949baf77"
+    },
+    {
+      "page_number": 3,
+      "artifact": "pages/page-3/rendered-dom.json",
+      "artifact_sha256": "e5b836769959d994f1d48fdc6a42ef76e8371eab064c7a11f7f5da013700a6cb",
+      "html_sha256": "9b727fb71b495c4af3f72de8147bd41ef5237086d1438c0d1aa01a26e8f2b165",
+      "text_sha256": "6c09aaaf3a8e86d33d6b477cda2a836f1799da621ee6f8e68a07cc055aab5e3d"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-run-v1",
+  "classification": "diagnostic_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "source": {
+    "case_id": "clinical-study",
+    "path": "benchmark-expertmodeldata/clinical-study.pdf",
+    "size_bytes": 750004,
+    "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+    "page_count": 4
+  },
+  "requested_document_seconds": 10.0,
+  "production_document_seconds": 5.0,
+  "page_seconds": 0.5,
+  "hard_max_document_seconds": 30.0,
+  "public_request_control": false,
+  "process_isolation": {
+    "pid": 95052,
+    "single_case_budget_pair": true,
+    "parser_cache_shared_across_pairs": false
+  },
+  "settings": {
+    "table_span_fidelity_enabled": true,
+    "text_integrity_source_alignment_enabled": false,
+    "predecessor_configuration": {
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true,
+      "canonical_serialization_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true
+    }
+  },
+  "code_identity": [
+    {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 349485,
+      "sha256": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9"
+    },
+    {
+      "path": "app/services/table_semantics.py",
+      "size_bytes": 349176,
+      "sha256": "1b1581896149ef6559c619de36f99084618b15791d2bcdd3bc051e9282335957"
+    },
+    {
+      "path": "tests/fixtures/phase_04/tables/diagnostic_budget.py",
+      "size_bytes": 12836,
+      "sha256": "411e7ed80b8c12384ad55ceaf475aae70ba44a7146ae6431843ecb2ff7224554"
+    },
+    {
+      "path": "tests/benchmarks/p04_deadline_diagnostic.py",
+      "size_bytes": 16970,
+      "sha256": "7cee968c23db3065f1c43b181333660af5713d525700f35fdb506d64571b34e0"
+    }
+  ],
+  "started_at_utc": "2026-08-13T17:43:19.492931Z",
+  "command": ".venv/bin/python -m tests.benchmarks.p04_deadline_diagnostic --case clinical-study --budget-seconds 10.0 --output-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260813T172854Z-FFD-011-P04-deadline-diagnostic/sweep/budget-010/clinical-study",
+  "budget_policy": {
+    "schema_version": "1.0",
+    "policy_id": "p04-diagnostic-document-budget-v1",
+    "classification": "diagnostic_non_closure",
+    "production_document_seconds": 5.0,
+    "diagnostic_document_seconds": 10.0,
+    "page_seconds": 0.5,
+    "public_request_control": false,
+    "closure_evidence": false
+  },
+  "completed_at_utc": "2026-08-13T17:43:37.899744Z",
+  "wall_ms": 18406.216624891385,
+  "memory": {
+    "rss_before_bytes": 88145920,
+    "rss_after_bytes": 1232879616,
+    "ru_maxrss_before": 88145920,
+    "ru_maxrss_after": 1798635520,
+    "ru_maxrss_platform_semantics": "bytes"
+  },
+  "result": {
+    "parse_result_valid": true,
+    "context_free_json_round_trip_exact": true,
+    "response_json_sha256": "87897e16b847b95a28455064b21d75450eeab43daae6080b2a358f56cdda142a",
+    "response_markdown_sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d",
+    "canonical_markdown_sha256": "77fc2040e40458a6eedfa20d38415d9d017e89cbfa2c0fe5e23fd748d8b91f7d",
+    "raw_canonical_markdown_byte_identical": true,
+    "stable_payload_sha256": "e9a075dc82acc46e9648bf9a0c097286296cb2b8c1682ad1022ed12165c25551",
+    "warnings": [],
+    "page_count": 4,
+    "table_count": 2,
+    "predecessor_table_count": 2,
+    "all_table_projections_match_predecessor": true,
+    "table_evidence_count": 0,
+    "canonical_source_custody_present": false,
+    "canonical_source_custody_sha256": null,
+    "tables": [
+      {
+        "page_index": 2,
+        "table_ordinal": 0,
+        "item_id": "p2-i2",
+        "reading_order": 2,
+        "row_count": 32,
+        "column_count": 6,
+        "cell_count": 166,
+        "rows_sha256": "d184c0b1e353a1dcbd38ad56c19eeb59e136cc9fb6419139ec20472f04f602b5",
+        "cells_sha256": "02b3fa5a94fe8c4778dd838fea2dcfd091fdbc9bd2e5a39717644afecf1e10bc",
+        "markdown_sha256": "1e57ca106ecd87bdb7f68ac88801802f17822c2d3e472f5a1e4c25b37ddf520b",
+        "html_sha256": "1e57ca106ecd87bdb7f68ac88801802f17822c2d3e472f5a1e4c25b37ddf520b",
+        "projection_sha256": "c19f1eadd4b438a2bf97bea539b65c0e50b6fd2a823355bfea280ac097fdd692",
+        "predecessor_projection_sha256": "c19f1eadd4b438a2bf97bea539b65c0e50b6fd2a823355bfea280ac097fdd692",
+        "predecessor_projection_exact": true,
+        "table_evidence": null
+      },
+      {
+        "page_index": 4,
+        "table_ordinal": 0,
+        "item_id": "p4-i2",
+        "reading_order": 2,
+        "row_count": 16,
+        "column_count": 9,
+        "cell_count": 101,
+        "rows_sha256": "7ce8537d4bc5a77754d740108c845d03436333cce008b9cb65aacd8a758c8af1",
+        "cells_sha256": "9ca26d2864edb05c109eb7c97ad3e16ca4ede7722ec6a8f108b93b5fefef88af",
+        "markdown_sha256": "1d82410e796886248199071cb2cb9d41875d0745582972d7995671c906660e9e",
+        "html_sha256": "1d82410e796886248199071cb2cb9d41875d0745582972d7995671c906660e9e",
+        "projection_sha256": "df1a119df80d12c89c3f944212eec5cd32dbfe893951b4c3d93e3f6ea32b9bcd",
+        "predecessor_projection_sha256": "df1a119df80d12c89c3f944212eec5cd32dbfe893951b4c3d93e3f6ea32b9bcd",
+        "predecessor_projection_exact": true,
+        "table_evidence": null
+      }
+    ]
+  },
+  "terminal": {
+    "outcome": "rolled_back_integrity_or_resource",
+    "pre_cleanup_state": {
+      "custody_rejected": true
+    },
+    "errors": [
+      {
+        "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+        "status": "error:ValueError",
+        "error": "terminal table visual overlay block shape differs"
+      },
+      {
+        "stage": "pipeline.terminal_table_canonical_splice",
+        "status": "error:ValueError",
+        "error": "terminal table visual overlay block shape differs"
+      },
+      {
+        "stage": "pipeline.table_custody_document_segment",
+        "status": "error:OpaqueGroupCustodyIntegrityError",
+        "error": "terminal table canonical splice differs"
+      }
+    ]
+  },
+  "stage_timings": [
+    {
+      "stage": "pipeline.partitioned_table_repair_words",
+      "status": "ok",
+      "elapsed_ms": 157.17162494547665,
+      "sequence": 0
+    },
+    {
+      "stage": "pipeline.normalize_docling_body",
+      "status": "ok",
+      "elapsed_ms": 110.5795418843627,
+      "sequence": 1
+    },
+    {
+      "stage": "table.seal_pages",
+      "status": "ok",
+      "elapsed_ms": 55.163915967568755,
+      "sequence": 2
+    },
+    {
+      "stage": "pipeline.shared_page_analysis",
+      "status": "ok",
+      "elapsed_ms": 172.70608386024833,
+      "sequence": 3
+    },
+    {
+      "stage": "table.detach_overlays",
+      "status": "ok",
+      "elapsed_ms": 29.609667137265205,
+      "sequence": 4
+    },
+    {
+      "stage": "pipeline.table_custody_document_segment",
+      "status": "ok",
+      "elapsed_ms": 29.624749906361103,
+      "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+      "state_after": {},
+      "passed_document_deadline": 1137012.482984292,
+      "page_deadline_count": 2,
+      "sequence": 5
+    },
+    {
+      "stage": "ir.build_document",
+      "status": "ok",
+      "elapsed_ms": 418.08812506496906,
+      "sequence": 6
+    },
+    {
+      "stage": "presentation.build_canonical",
+      "status": "ok",
+      "elapsed_ms": 34.84533284790814,
+      "sequence": 7
+    },
+    {
+      "stage": "presentation.build_canonical",
+      "status": "ok",
+      "elapsed_ms": 35.154375014826655,
+      "sequence": 8
+    },
+    {
+      "stage": "pipeline.shared_ir_compatibility_projection",
+      "status": "ok",
+      "elapsed_ms": 1297.1139170695096,
+      "sequence": 9
+    },
+    {
+      "stage": "pipeline.terminal_source_text_alignment",
+      "status": "ok",
+      "elapsed_ms": 0.0017499551177024841,
+      "sequence": 10
+    },
+    {
+      "stage": "table.rebind_overlays",
+      "status": "ok",
+      "elapsed_ms": 29.437458142638206,
+      "sequence": 11
+    },
+    {
+      "stage": "table.finalize_pages",
+      "status": "ok",
+      "elapsed_ms": 59.876666869968176,
+      "sequence": 12
+    },
+    {
+      "stage": "ir.build_document",
+      "status": "ok",
+      "elapsed_ms": 30.283291824162006,
+      "sequence": 13
+    },
+    {
+      "stage": "custody.capture_opaque_edges",
+      "status": "ok",
+      "elapsed_ms": 0.4176660440862179,
+      "sequence": 14
+    },
+    {
+      "stage": "custody.seal_diagnostic",
+      "status": "ok",
+      "elapsed_ms": 8.308917051181197,
+      "sequence": 15
+    },
+    {
+      "stage": "presentation.build_canonical",
+      "status": "ok",
+      "elapsed_ms": 20.834875060245395,
+      "sequence": 16
+    },
+    {
+      "stage": "ir.build_document",
+      "status": "ok",
+      "elapsed_ms": 183.36220807395875,
+      "sequence": 17
+    },
+    {
+      "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+      "status": "error:ValueError",
+      "elapsed_ms": 0.06262515671551228,
+      "error": "terminal table visual overlay block shape differs",
+      "sequence": 18
+    },
+    {
+      "stage": "pipeline.terminal_table_canonical_splice",
+      "status": "error:ValueError",
+      "elapsed_ms": 204.50720796361566,
+      "error": "terminal table visual overlay block shape differs",
+      "sequence": 19
+    },
+    {
+      "stage": "pipeline.table_custody_document_segment",
+      "status": "error:OpaqueGroupCustodyIntegrityError",
+      "elapsed_ms": 372.2939579747617,
+      "error": "terminal table canonical splice differs",
+      "operation": "_apply_terminal_table_authority.<locals>.commit",
+      "state_after": {},
+      "passed_document_deadline": 1137012.482984292,
+      "page_deadline_count": 2,
+      "sequence": 20
+    },
+    {
+      "stage": "pipeline.terminal_table_authority",
+      "status": "ok",
+      "elapsed_ms": 390.31729102134705,
+      "state_after": {
+        "custody_rejected": true,
+        "validated_parse_result_type": "ParseResult"
+      },
+      "sequence": 21
+    },
+    {
+      "stage": "pipeline.table_budget_pre_cleanup_state",
+      "status": "observed",
+      "elapsed_ms": 0.0,
+      "state": {
+        "custody_rejected": true
+      },
+      "sequence": 22
+    }
+  ],
+  "environment": {
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "psutil": "7.2.2"
+  }
+}

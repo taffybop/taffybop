@@ -1,0 +1,1958 @@
+{
+  "schema_version": "1.0",
+  "story": "P03-US02",
+  "generated_at": "2026-07-30T22:33:45.343437+00:00",
+  "policy": {
+    "feature_flag": "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED",
+    "default_enabled": false,
+    "rollback_value": false,
+    "eligible_owner_types": [
+      "image",
+      "chart",
+      "diagram"
+    ],
+    "relationship_types": [
+      "caption_of",
+      "contains"
+    ],
+    "minimum_horizontal_overlap": 0.2,
+    "maximum_gap_points": 72.0,
+    "maximum_internal_overlap": 0.2,
+    "minimum_child_containment": 0.8,
+    "maximum_caption_references_per_owner": 64,
+    "maximum_child_references_per_owner": 256,
+    "maximum_visual_owners_per_page": 512,
+    "maximum_caption_candidates_per_page": 512,
+    "maximum_same_text_candidates_per_page": 128,
+    "maximum_caption_bytes": 65536,
+    "maximum_contained_items_bytes": 262144,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "docling": "2.114.0",
+    "docling_core": "2.88.0",
+    "pydantic": "2.13.4"
+  },
+  "measurement": {
+    "full_parser_process_model": "one fresh subprocess per case and flag state",
+    "full_parser_cache_state": "no in-process converter or model reuse between snapshots",
+    "peak_rss_semantics": "per-worker parse-and-snapshot high-water mark before evidence-file serialization",
+    "full_parser_deltas_are_paired_process_snapshots": true,
+    "layout_stage_isolated_from_full_parser": true
+  },
+  "phase_02_performance_baselines": {
+    "manufacturing-report": {
+      "wall_seconds": 11.58,
+      "peak_rss_mib": 1825.8
+    },
+    "uber-earnings": {
+      "wall_seconds": 29.15,
+      "peak_rss_mib": 2589.5
+    }
+  },
+  "code_sha256": {
+    ".env.example": "8a0255749027f404ce4b04dbc7e2e741f66585d78c15ab7c16847c429021f980",
+    "README.md": "312d1154014f099bb8d86c85d5034c9a4df920bc76c3241f8ff46af9c432a8da",
+    "app/config.py": "79bbbd6145689a770671352df8f1c81ebf7c2b4d886921823a5f4e29093c5e63",
+    "app/models.py": "553d6a6040f926fbd894d6337c866a64dd82857375510d86633f318cc7f24afa",
+    "app/services/ir.py": "ca02dac103773f94c6cb2d921e2a42f283d5d6fc7e490b7fef9d3567dddb0722",
+    "app/services/layout.py": "c12f238914eeec94b4f154b0da0ec1619e93423fd6401274c57ea094a376140f",
+    "app/services/pipeline.py": "467b3aa6650c6e7d4e2630480ff9694d01bce6ac0c260a1a6e91ddd21f50148b",
+    "app/services/presentation.py": "60faaf6f8d6bb207602b52660f08a99505deb1594c5921d931893442c5e1bbd3",
+    "app/services/serializer.py": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+    "tests/stories/phase_03/test_p03_us01_table_captions.py": "90dd4f9ed065b328dd7910e1900dcc283d3e6d192010ff6df2ea8454d1d626ec",
+    "tests/stories/phase_03/test_p03_us02_visual_children.py": "a96bd0b3a6db74f99212c775eaeb41f2c3c1c789aa48369d089e00652e8ca176",
+    "tests/contract/test_p03_us01_table_caption_contract.py": "f8e63547edc7355d106a4365b693d16f8f21bb9f3cff66060d97510a25790b8d",
+    "tests/contract/test_p03_us02_visual_relationship_contract.py": "ac39a8fdfbe0aa54c83e3ee2ed79fd8a3c9c03cfaaffb10530982f4a12634f93",
+    "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py": "756ef114545f809abcb15b6f35d5cd285103cb55582b4017a94343ceb1e2d5d0",
+    "tests/performance/test_p03_us02_visual_relationship_performance.py": "861b655209a916e1bf2f5f17f2280d3d2459c30181b643f0eef4a5918ce989a6",
+    "tests/benchmarks/layout_visual_relationship_metrics.py": "dfd201d2d13f73701d3a4a6944458a3e11ab1ac3fa546be7f8351b7fc42d5096",
+    "frontend/lib/types.ts": "15a4333b1dd969352bcb13def709eaa3e9a0bf66b4ad2e6ced6e714db52488de",
+    "frontend/lib/canonical-presentation.ts": "9a2a012533001802abaad2037fd7aa1fdbbb71cf6d8225dba2fd123629ddb9c7",
+    "frontend/lib/layout-relationships.ts": "997318aa6ac778d2dc7b0b3a2071ee602f7cf74ebf48c5b6ddb0689f0a709f73",
+    "frontend/lib/normalize-document-json.ts": "4363084964890d1f22fb4eff0ae9238d115607025cce9eb8c3186a5be0f77bd6",
+    "frontend/lib/primary-item-text.ts": "eeb9a016d99bdb48f1f4b42301ce8c27c51659695f3d4ef2d06e56715bf2d018",
+    "frontend/lib/serialize-output.ts": "a3b98088569d2533bfb2ac87fcd5893bd63d372208aecdaaa54b48bd4d739659",
+    "frontend/app/clearleaf-workspace.tsx": "ed496629a9f049b2aacfd41e675dd5cf1aecfa4298c64db8078835085b7541b9",
+    "frontend/app/globals.css": "8322674820f09d712626d704083b3b7e8dfca0f7bab3cf4698583f5cbaab6c2f",
+    "frontend/README.md": "ef4881efbecd07c9a4b26981216b71e88e2a7b682565ca145cdf1f78a3eff549",
+    "frontend/tests/p03-us01-table-captions.test.mts": "7e45d3dc1261fb23634b27c9108409e773b69c0287803dbee29912b835ce4e2b",
+    "frontend/tests/p03-us02-visual-relationships.test.mts": "d08f8388cd1ce4f614fd979a64730fd98cb1774d3d4c013f95754fa8bb0a8bd9",
+    "tracker/phase-03-layout/decisions/P03-visual-relationship-policy.md": "abd2df4fdd0edd4e5aaedc6f4a97c31e30b7c3dd412736041234141f397fb451"
+  },
+  "cases": {
+    "catastrophe-recap": {
+      "input_path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "input_size_bytes": 58779,
+      "input_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "expected_caption_count": 1,
+      "expected_caption_records": [
+        {
+          "page_index": 1,
+          "value": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)",
+          "bbox": {
+            "x": 100.7,
+            "y": 401.275,
+            "width": 218.16,
+            "height": 9.351
+          },
+          "owner_bbox": {
+            "x": 100.221,
+            "y": 437.31,
+            "width": 444.032,
+            "height": 149.057
+          },
+          "side": "above"
+        }
+      ],
+      "expected_caption_texts": [
+        "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)"
+      ],
+      "actual_caption_count": 1,
+      "actual_caption_records": [
+        {
+          "page_index": 1,
+          "value": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)",
+          "bbox": {
+            "x": 100.7,
+            "y": 401.275,
+            "width": 218.16,
+            "height": 9.351
+          },
+          "owner_bbox": {
+            "x": 100.221,
+            "y": 437.31,
+            "width": 444.032,
+            "height": 149.057
+          },
+          "side": "above"
+        }
+      ],
+      "actual_caption_texts": [
+        "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)"
+      ],
+      "matched_caption_count": 1,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {
+        "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)": 1
+      },
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": -0.059698,
+      "processing_duration_ms_delta": -75,
+      "peak_rss_bytes_delta": 9633792,
+      "json_size_bytes_delta": 2458,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 6.80709,
+        "processing_duration_ms": 6785,
+        "peak_rss_bytes": 1502265344,
+        "json_size_bytes": 61716,
+        "json_sha256": "e544afbc61d21059e660d15f9d4af9bc8135e3dbc07a1ccbb87644d415eab8b6",
+        "semantic_json_sha256": "a113f167d67aac8793282a92ceb66191e40a6a207ead2ef80e645ac0bb79bacf",
+        "markdown_size_bytes": 1434,
+        "markdown_sha256": "15194c3cfc7fa4d0313f9e42c805d5549e7ee61f0d910a88fca9466c550da495",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i1",
+            "type": "image",
+            "bbox": {
+              "x": 31.901,
+              "y": 28.089,
+              "width": 69.24,
+              "height": 26.702,
+              "unit": "pt",
+              "w": 69.24,
+              "h": 26.702
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i5",
+            "type": "chart",
+            "bbox": {
+              "x": 100.221,
+              "y": 437.31,
+              "width": 444.032,
+              "height": 149.057,
+              "unit": "pt",
+              "w": 444.032,
+              "h": 149.057
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "expected_exhibit_8_children": [
+            {
+              "value": "er cas",
+              "bbox": {
+                "x": 161.061,
+                "y": 438.535,
+                "width": 26.962,
+                "height": 6.259
+              }
+            },
+            {
+              "value": "C",
+              "bbox": {
+                "x": 273.276,
+                "y": 438.535,
+                "width": 15.836,
+                "height": 6.259
+              }
+            }
+          ],
+          "actual_exhibit_8_children": [
+            {
+              "value": "er cas",
+              "bbox": null
+            },
+            {
+              "value": "C",
+              "bbox": null
+            }
+          ],
+          "exact_exhibit_8_children": false,
+          "caption_fragment_leak_count": 0
+        },
+        "table_content_sha256": "a7cdc5c6367f59b5e3468aa040a74a6385c88da94b66204d99736abd31ca31a2"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 6.747392,
+        "processing_duration_ms": 6710,
+        "peak_rss_bytes": 1511899136,
+        "json_size_bytes": 64174,
+        "json_sha256": "8b1604f34926b7de7d53ce85826ea87f9f85fec7654d8033f02f28528d321bb6",
+        "semantic_json_sha256": "ea0d1e18b0f7d5e2c89c72ecfde5397203f8dc0bfca88040c6b241de31fb3283",
+        "markdown_size_bytes": 1493,
+        "markdown_sha256": "11fcc44aad6435bbdb6d8684eff28cadbf0ba777f8c8ff933b668fbcea3e0799",
+        "caption_records": [
+          {
+            "page_index": 1,
+            "id": "layout-caption-5a6f8b41401544adeb2a",
+            "value": "EXHIBIT 8: 1H Insured Losses by Region (2025 $B)",
+            "bbox": {
+              "x": 100.7,
+              "y": 401.275,
+              "width": 218.16,
+              "height": 9.351,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p1-i5",
+            "relationship_id": "layout-rel-9621bb4cf5d3af7d862c",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 100.221,
+              "y": 437.31,
+              "width": 444.032,
+              "height": 149.057,
+              "unit": "pt",
+              "w": 444.032,
+              "h": 149.057
+            },
+            "owner_linked_back": true,
+            "side": "above",
+            "side_order_correct": true,
+            "owner_external_text_clean": true
+          }
+        ],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i1",
+            "type": "image",
+            "bbox": {
+              "x": 31.901,
+              "y": 28.089,
+              "width": 69.24,
+              "height": 26.702,
+              "unit": "pt",
+              "w": 69.24,
+              "h": 26.702
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i5",
+            "type": "chart",
+            "bbox": {
+              "x": 100.221,
+              "y": 437.31,
+              "width": 444.032,
+              "height": 149.057,
+              "unit": "pt",
+              "w": 444.032,
+              "h": 149.057
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 1,
+            "contains_count": 2,
+            "contained_item_count": 2,
+            "contained_value_sha256": "7e600b3497334509fe222c47b151c9ec485b0bcb4096c67b00e3c50bfafe5cc0"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 3,
+          "caption_relationship_count": 1,
+          "contains_relationship_count": 2,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "expected_exhibit_8_children": [
+            {
+              "value": "er cas",
+              "bbox": {
+                "x": 161.061,
+                "y": 438.535,
+                "width": 26.962,
+                "height": 6.259
+              }
+            },
+            {
+              "value": "C",
+              "bbox": {
+                "x": 273.276,
+                "y": 438.535,
+                "width": 15.836,
+                "height": 6.259
+              }
+            }
+          ],
+          "actual_exhibit_8_children": [
+            {
+              "value": "er cas",
+              "bbox": {
+                "x": 161.061,
+                "y": 438.535,
+                "width": 26.962,
+                "height": 6.259
+              }
+            },
+            {
+              "value": "C",
+              "bbox": {
+                "x": 273.276,
+                "y": 438.535,
+                "width": 15.836,
+                "height": 6.259
+              }
+            }
+          ],
+          "exact_exhibit_8_children": true,
+          "caption_fragment_leak_count": 0
+        },
+        "table_content_sha256": "a7cdc5c6367f59b5e3468aa040a74a6385c88da94b66204d99736abd31ca31a2"
+      }
+    },
+    "manufacturing-report": {
+      "input_path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+      "input_size_bytes": 380274,
+      "input_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "expected_caption_count": 4,
+      "expected_caption_records": [
+        {
+          "page_index": 1,
+          "value": "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better",
+          "bbox": {
+            "x": 102.24,
+            "y": 663.309,
+            "width": 410.151,
+            "height": 20.883
+          },
+          "owner_bbox": {
+            "x": 92.235,
+            "y": 403.53,
+            "width": 418.89,
+            "height": 242.893
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 2,
+          "value": "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars",
+          "bbox": {
+            "x": 139.8,
+            "y": 236.829,
+            "width": 335.154,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 90.325,
+            "y": 37.601,
+            "width": 408.357,
+            "height": 179.583
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 2,
+          "value": "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)",
+          "bbox": {
+            "x": 117.36,
+            "y": 670.509,
+            "width": 382.912,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 98.456,
+            "y": 286.447,
+            "width": 417.317,
+            "height": 370.763
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 3,
+          "value": "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)",
+          "bbox": {
+            "x": 139.2,
+            "y": 422.709,
+            "width": 336.359,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 89.097,
+            "y": 146.063,
+            "width": 430.534,
+            "height": 259.492
+          },
+          "side": "below"
+        }
+      ],
+      "expected_caption_texts": [
+        "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better",
+        "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars",
+        "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)",
+        "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)"
+      ],
+      "actual_caption_count": 4,
+      "actual_caption_records": [
+        {
+          "page_index": 1,
+          "value": "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better",
+          "bbox": {
+            "x": 102.24,
+            "y": 663.309,
+            "width": 410.151,
+            "height": 20.883
+          },
+          "owner_bbox": {
+            "x": 92.235,
+            "y": 403.53,
+            "width": 418.89,
+            "height": 242.893
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 2,
+          "value": "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars",
+          "bbox": {
+            "x": 139.8,
+            "y": 236.829,
+            "width": 335.154,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 90.325,
+            "y": 37.601,
+            "width": 408.357,
+            "height": 179.583
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 2,
+          "value": "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)",
+          "bbox": {
+            "x": 117.36,
+            "y": 670.509,
+            "width": 382.912,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 98.456,
+            "y": 286.447,
+            "width": 417.317,
+            "height": 370.763
+          },
+          "side": "below"
+        },
+        {
+          "page_index": 3,
+          "value": "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)",
+          "bbox": {
+            "x": 139.2,
+            "y": 422.709,
+            "width": 336.359,
+            "height": 9.36
+          },
+          "owner_bbox": {
+            "x": 89.097,
+            "y": 146.063,
+            "width": 430.534,
+            "height": 259.492
+          },
+          "side": "below"
+        }
+      ],
+      "actual_caption_texts": [
+        "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better",
+        "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars",
+        "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)",
+        "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)"
+      ],
+      "matched_caption_count": 4,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {
+        "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better": 1,
+        "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars": 1,
+        "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)": 1,
+        "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)": 1
+      },
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": 0.205844,
+      "processing_duration_ms_delta": 103,
+      "peak_rss_bytes_delta": 10387456,
+      "json_size_bytes_delta": 133140,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 10.914131,
+        "processing_duration_ms": 10686,
+        "peak_rss_bytes": 2050277376,
+        "json_size_bytes": 334549,
+        "json_sha256": "f8caea47eb4357ea4fc8f29bab93fbdd1eda349642cea58cd106fb5bbe77bbee",
+        "semantic_json_sha256": "101b39640b3a4e5e001f75d5a7317ae5620868ae726578784850f4d3d867cb52",
+        "markdown_size_bytes": 4863,
+        "markdown_sha256": "a3d3b78ea6ab94dbf467d1078fa39559bd7510f3d51751544f0dd2622a1b4cfb",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i2",
+            "type": "chart",
+            "bbox": {
+              "x": 93.097,
+              "y": 92.516,
+              "width": 419.573,
+              "height": 209.076,
+              "unit": "pt",
+              "w": 419.573,
+              "h": 209.076
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i6",
+            "type": "chart",
+            "bbox": {
+              "x": 92.235,
+              "y": 403.53,
+              "width": 418.89,
+              "height": 242.893,
+              "unit": "pt",
+              "w": 418.89,
+              "h": 242.893
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i1",
+            "type": "chart",
+            "bbox": {
+              "x": 90.325,
+              "y": 37.601,
+              "width": 408.357,
+              "height": 179.583,
+              "unit": "pt",
+              "w": 408.357,
+              "h": 179.583
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i3",
+            "type": "chart",
+            "bbox": {
+              "x": 98.456,
+              "y": 286.447,
+              "width": 417.317,
+              "height": 370.763,
+              "unit": "pt",
+              "w": 417.317,
+              "h": 370.763
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i3",
+            "type": "chart",
+            "bbox": {
+              "x": 89.097,
+              "y": 146.063,
+              "width": 430.534,
+              "height": 259.492,
+              "unit": "pt",
+              "w": 430.534,
+              "h": 259.492
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i5",
+            "type": "image",
+            "bbox": {
+              "x": 71.88,
+              "y": 472.68,
+              "width": 19.68,
+              "height": 9.36,
+              "unit": "pt",
+              "w": 19.68,
+              "h": 9.36
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {},
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 11.119975,
+        "processing_duration_ms": 10789,
+        "peak_rss_bytes": 2060664832,
+        "json_size_bytes": 467689,
+        "json_sha256": "e9bcf5c8f60b4047ae4746bb8059102ee837ffa6be443bac11093e751a95f6e6",
+        "semantic_json_sha256": "1632d7bcf93fc9c40a557e38b41a30e7582cf5d990233374ae46243f2f11a845",
+        "markdown_size_bytes": 4148,
+        "markdown_sha256": "7ee1667522adad269c763e547b2c657208489674838628debf57871cff3262a0",
+        "caption_records": [
+          {
+            "page_index": 1,
+            "id": "layout-caption-01ad6b327b5202ddadf8",
+            "value": "Figure 2.2: National 5-Year Compound Annual Growth, by Country (2018 to 2023): Higher is Better",
+            "bbox": {
+              "x": 102.24,
+              "y": 663.309,
+              "width": 410.151,
+              "height": 20.883,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p1-i6",
+            "relationship_id": "layout-rel-3de095e711087dee0595",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 92.235,
+              "y": 403.53,
+              "width": 418.89,
+              "height": 242.893,
+              "unit": "pt",
+              "w": 418.89,
+              "h": 242.893
+            },
+            "owner_linked_back": true,
+            "side": "below",
+            "side_order_correct": true,
+            "owner_external_text_clean": true
+          },
+          {
+            "page_index": 2,
+            "id": "layout-caption-c89f2384aa740f5d02ce",
+            "value": "Figure 2.7: U.S. Manufacturing Share of GDP, Constant vs. Current Dollars",
+            "bbox": {
+              "x": 139.8,
+              "y": 236.829,
+              "width": 335.154,
+              "height": 9.36,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p2-i1",
+            "relationship_id": "layout-rel-98a159d61ae9b9f78f97",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 90.325,
+              "y": 37.601,
+              "width": 408.357,
+              "height": 179.583,
+              "unit": "pt",
+              "w": 408.357,
+              "h": 179.583
+            },
+            "owner_linked_back": true,
+            "side": "below",
+            "side_order_correct": true,
+            "owner_external_text_clean": true
+          },
+          {
+            "page_index": 2,
+            "id": "layout-caption-daceff6ae2f2ee83c6d0",
+            "value": "Figure 2.8: Global Manufacturing Value Added by Industry, by Country/Region (2020)",
+            "bbox": {
+              "x": 117.36,
+              "y": 670.509,
+              "width": 382.912,
+              "height": 9.36,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p2-i3",
+            "relationship_id": "layout-rel-d2467c30c0eb2d5f51d6",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 98.456,
+              "y": 286.447,
+              "width": 417.317,
+              "height": 370.763,
+              "unit": "pt",
+              "w": 417.317,
+              "h": 370.763
+            },
+            "owner_linked_back": true,
+            "side": "below",
+            "side_order_correct": true,
+            "owner_external_text_clean": true
+          },
+          {
+            "page_index": 3,
+            "id": "layout-caption-57e9587134988e629130",
+            "value": "Figure 4.3: Average Weekly Hours for All Employees (Seasonally Adjusted)",
+            "bbox": {
+              "x": 139.2,
+              "y": 422.709,
+              "width": 336.359,
+              "height": 9.36,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p3-i3",
+            "relationship_id": "layout-rel-23df92414722e79b46d6",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_type": "chart",
+            "owner_bbox": {
+              "x": 89.097,
+              "y": 146.063,
+              "width": 430.534,
+              "height": 259.492,
+              "unit": "pt",
+              "w": 430.534,
+              "h": 259.492
+            },
+            "owner_linked_back": true,
+            "side": "below",
+            "side_order_correct": true,
+            "owner_external_text_clean": true
+          }
+        ],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i2",
+            "type": "chart",
+            "bbox": {
+              "x": 93.097,
+              "y": 92.516,
+              "width": 419.573,
+              "height": 209.076,
+              "unit": "pt",
+              "w": 419.573,
+              "h": 209.076
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 23,
+            "contained_item_count": 23,
+            "contained_value_sha256": "a3d32c00b1dc5d1e6f5f124ef0393d04ad0b5ce366028b30c095891efc5d49e0"
+          },
+          {
+            "page_index": 1,
+            "id": "p1-i6",
+            "type": "chart",
+            "bbox": {
+              "x": 92.235,
+              "y": 403.53,
+              "width": 418.89,
+              "height": 242.893,
+              "unit": "pt",
+              "w": 418.89,
+              "h": 242.893
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 1,
+            "contains_count": 29,
+            "contained_item_count": 29,
+            "contained_value_sha256": "93fce433d652da9ffa570bac6336bd07d519d195b8facbffcef18f2c37635490"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i1",
+            "type": "chart",
+            "bbox": {
+              "x": 90.325,
+              "y": 37.601,
+              "width": 408.357,
+              "height": 179.583,
+              "unit": "pt",
+              "w": 408.357,
+              "h": 179.583
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 1,
+            "contains_count": 62,
+            "contained_item_count": 62,
+            "contained_value_sha256": "62522067b9c01f846d227d7cf0f9c3758ecc8bce5c5d89fbf73072f43af1464c"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i3",
+            "type": "chart",
+            "bbox": {
+              "x": 98.456,
+              "y": 286.447,
+              "width": 417.317,
+              "height": 370.763,
+              "unit": "pt",
+              "w": 417.317,
+              "h": 370.763
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 1,
+            "contains_count": 108,
+            "contained_item_count": 108,
+            "contained_value_sha256": "ac35bc23c61b173835fc81adff9ac064dc7cfc4043e0be538f4f788a8dc0b750"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i3",
+            "type": "chart",
+            "bbox": {
+              "x": 89.097,
+              "y": 146.063,
+              "width": 430.534,
+              "height": 259.492,
+              "unit": "pt",
+              "w": 430.534,
+              "h": 259.492
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 1,
+            "contains_count": 31,
+            "contained_item_count": 31,
+            "contained_value_sha256": "51203b6775fc935f9a1cfc87909bf82d2e400b7bb30be4251eebf18141bc9855"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i5",
+            "type": "image",
+            "bbox": {
+              "x": 71.88,
+              "y": 472.68,
+              "width": 19.68,
+              "height": 9.36,
+              "unit": "pt",
+              "w": 19.68,
+              "h": 9.36
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 257,
+          "caption_relationship_count": 4,
+          "contains_relationship_count": 253,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {},
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "uber-earnings": {
+      "input_path": "benchmark-expertmodeldata/uber-earnings.pdf",
+      "input_size_bytes": 7584019,
+      "input_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "expected_caption_count": 0,
+      "expected_caption_records": [],
+      "expected_caption_texts": [],
+      "actual_caption_count": 0,
+      "actual_caption_records": [],
+      "actual_caption_texts": [],
+      "matched_caption_count": 0,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {},
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": 0.24387,
+      "processing_duration_ms_delta": 201,
+      "peak_rss_bytes_delta": 325730304,
+      "json_size_bytes_delta": 32694,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 26.378408,
+        "processing_duration_ms": 26307,
+        "peak_rss_bytes": 2678079488,
+        "json_size_bytes": 153999,
+        "json_sha256": "c8adc715b5a0b43cfcf3c555b820aa96f0fa550daac926d4e1de54904efd8b66",
+        "semantic_json_sha256": "ea82fd67832a69ce6346294a8fd04a62ab7fe7b456ecc02b88e30e28ad423c5a",
+        "markdown_size_bytes": 991,
+        "markdown_sha256": "3d60e12a80f655cd61d0eb7d514dbafe8e83898bf5e4bb4c1fa3536bdfccbce4",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i1",
+            "type": "image",
+            "bbox": {
+              "x": 68.978,
+              "y": 69.672,
+              "width": 1781.229,
+              "height": 522.914,
+              "unit": "pt",
+              "w": 1781.229,
+              "h": 522.914
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i4",
+            "type": "image",
+            "bbox": {
+              "x": 142.071,
+              "y": 477.741,
+              "width": 334.979,
+              "height": 193.863,
+              "unit": "pt",
+              "w": 334.979,
+              "h": 193.863
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i5",
+            "type": "image",
+            "bbox": {
+              "x": 77.897,
+              "y": 719.091,
+              "width": 482.747,
+              "height": 135.312,
+              "unit": "pt",
+              "w": 482.747,
+              "h": 135.312
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i8",
+            "type": "chart",
+            "bbox": {
+              "x": 700.779,
+              "y": 485.696,
+              "width": 514.952,
+              "height": 377.095,
+              "unit": "pt",
+              "w": 514.952,
+              "h": 377.095
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i11",
+            "type": "chart",
+            "bbox": {
+              "x": 1334.819,
+              "y": 441.81,
+              "width": 516.774,
+              "height": 477.252,
+              "unit": "pt",
+              "w": 516.774,
+              "h": 477.252
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i22",
+            "type": "image",
+            "bbox": {
+              "x": 61.255,
+              "y": 1027.251,
+              "width": 52.887,
+              "height": 32.194,
+              "unit": "pt",
+              "w": 52.887,
+              "h": 32.194
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i2",
+            "type": "image",
+            "bbox": {
+              "x": 66.922,
+              "y": 249.824,
+              "width": 1250.206,
+              "height": 333.005,
+              "unit": "pt",
+              "w": 1250.206,
+              "h": 333.005
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i3",
+            "type": "image",
+            "bbox": {
+              "x": 83.232,
+              "y": 662.242,
+              "width": 1232.421,
+              "height": 338.638,
+              "unit": "pt",
+              "w": 1232.421,
+              "h": 338.638
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i8",
+            "type": "image",
+            "bbox": {
+              "x": 61.255,
+              "y": 1027.251,
+              "width": 52.887,
+              "height": 32.194,
+              "unit": "pt",
+              "w": 52.887,
+              "h": 32.194
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "photo_found": true,
+          "photo_bbox": {
+            "x": 68.978,
+            "y": 69.672,
+            "width": 1781.229,
+            "height": 522.914,
+            "unit": "pt"
+          },
+          "include_ocr_in_primary": false,
+          "caption_fields_empty": false,
+          "linked_caption_count": 0,
+          "contained_item_count": 0,
+          "contained_values": [],
+          "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "contained_values_exact": false,
+          "contained_values_are_strict_source_subset": true,
+          "minimum_containment_ratio": 0.0,
+          "false_ocr_value_coverage": 0.0,
+          "false_ocr_primary_leak_count": 19
+        },
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 26.622278,
+        "processing_duration_ms": 26508,
+        "peak_rss_bytes": 3003809792,
+        "json_size_bytes": 186693,
+        "json_sha256": "762741e5d707a2dfcd55d0b1b87c1794d5b07ccd169813d322568441b17d3f84",
+        "semantic_json_sha256": "ff75bdc00a7121be0234a1619ea7296de4c62fcb36bc5f5b55ce514d9ce6206b",
+        "markdown_size_bytes": 1152,
+        "markdown_sha256": "cc9a025e9239522e9821c6d9501351afbefd370ff0284f191334c2c6220716f5",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i1",
+            "type": "image",
+            "bbox": {
+              "x": 68.978,
+              "y": 69.672,
+              "width": 1781.229,
+              "height": 522.914,
+              "unit": "pt",
+              "w": 1781.229,
+              "h": 522.914
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 15,
+            "contained_item_count": 15,
+            "contained_value_sha256": "459ab313b2309c951fb41189a7cec8d5e63130147628cdb45fcc27b86f2eced2"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i4",
+            "type": "image",
+            "bbox": {
+              "x": 142.071,
+              "y": 477.741,
+              "width": 334.979,
+              "height": 193.863,
+              "unit": "pt",
+              "w": 334.979,
+              "h": 193.863
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 2,
+            "contained_item_count": 2,
+            "contained_value_sha256": "3c9d802a4746f790c84bf0dba7d2c3522098a54fb227572d99ebccb9a743c928"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i5",
+            "type": "image",
+            "bbox": {
+              "x": 77.897,
+              "y": 719.091,
+              "width": 482.747,
+              "height": 135.312,
+              "unit": "pt",
+              "w": 482.747,
+              "h": 135.312
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i8",
+            "type": "chart",
+            "bbox": {
+              "x": 700.779,
+              "y": 485.696,
+              "width": 514.952,
+              "height": 377.095,
+              "unit": "pt",
+              "w": 514.952,
+              "h": 377.095
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 6,
+            "contained_item_count": 6,
+            "contained_value_sha256": "00c8c1215df6c83d7436d0242970552940f055294bbfc8b06a5f39b29e6b89d9"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i11",
+            "type": "chart",
+            "bbox": {
+              "x": 1334.819,
+              "y": 441.81,
+              "width": 516.774,
+              "height": 477.252,
+              "unit": "pt",
+              "w": 516.774,
+              "h": 477.252
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 15,
+            "contained_item_count": 15,
+            "contained_value_sha256": "65dcbc107aba55eaad898babb45dab8f378383566168313c78004b51a2c94975"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i22",
+            "type": "image",
+            "bbox": {
+              "x": 61.255,
+              "y": 1027.251,
+              "width": 52.887,
+              "height": 32.194,
+              "unit": "pt",
+              "w": 52.887,
+              "h": 32.194
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i2",
+            "type": "image",
+            "bbox": {
+              "x": 66.922,
+              "y": 249.824,
+              "width": 1250.206,
+              "height": 333.005,
+              "unit": "pt",
+              "w": 1250.206,
+              "h": 333.005
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 9,
+            "contained_item_count": 9,
+            "contained_value_sha256": "29f9e11baa6de207a3c835c9304627e293e9b235971a4d2624ac6614a2ca4cf4"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i3",
+            "type": "image",
+            "bbox": {
+              "x": 83.232,
+              "y": 662.242,
+              "width": 1232.421,
+              "height": 338.638,
+              "unit": "pt",
+              "w": 1232.421,
+              "h": 338.638
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 9,
+            "contained_item_count": 9,
+            "contained_value_sha256": "39674729282d5246e3062de46397ef655a0372911791393d8aae50dac3623232"
+          },
+          {
+            "page_index": 3,
+            "id": "p3-i8",
+            "type": "image",
+            "bbox": {
+              "x": 61.255,
+              "y": 1027.251,
+              "width": 52.887,
+              "height": 32.194,
+              "unit": "pt",
+              "w": 52.887,
+              "h": 32.194
+            },
+            "include_ocr_in_primary": null,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 56,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 56,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "photo_found": true,
+          "photo_bbox": {
+            "x": 68.978,
+            "y": 69.672,
+            "width": 1781.229,
+            "height": 522.914,
+            "unit": "pt"
+          },
+          "include_ocr_in_primary": false,
+          "caption_fields_empty": true,
+          "linked_caption_count": 0,
+          "contained_item_count": 15,
+          "contained_values": [
+            "/",
+            "4",
+            "7",
+            ";",
+            "La",
+            "Ne",
+            "a",
+            "ate",
+            "aus",
+            "hen",
+            "o",
+            "or",
+            "rN",
+            "é",
+            "“if"
+          ],
+          "contained_value_sha256": "459ab313b2309c951fb41189a7cec8d5e63130147628cdb45fcc27b86f2eced2",
+          "contained_values_exact": true,
+          "contained_values_are_strict_source_subset": true,
+          "minimum_containment_ratio": 0.9999999999998392,
+          "false_ocr_value_coverage": 0.7894736842105263,
+          "false_ocr_primary_leak_count": 0
+        },
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "component-datasheet": {
+      "input_path": "benchmark-expertmodeldata/component-datasheet.pdf",
+      "input_size_bytes": 329199,
+      "input_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "expected_caption_count": 0,
+      "expected_caption_records": [],
+      "expected_caption_texts": [],
+      "actual_caption_count": 0,
+      "actual_caption_records": [],
+      "actual_caption_texts": [],
+      "matched_caption_count": 0,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {},
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": -0.274916,
+      "processing_duration_ms_delta": -321,
+      "peak_rss_bytes_delta": -4341760,
+      "json_size_bytes_delta": 22558,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 9.882344,
+        "processing_duration_ms": 9772,
+        "peak_rss_bytes": 2037415936,
+        "json_size_bytes": 214516,
+        "json_sha256": "f0913faaab2dcaa4dc39d504caed56ed0febfe23a58849ee736107a1a3590e01",
+        "semantic_json_sha256": "00d31e7e4f656bdeaa6ef7fa31b9871aba3fa2c473661dad042db498a56c7274",
+        "markdown_size_bytes": 3595,
+        "markdown_sha256": "44cc4eec95eea1f84b6072d2fe3b1bf165c0bfe286bc32e4bb2689fccc098ac5",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i5",
+            "type": "image",
+            "bbox": {
+              "x": 114.983,
+              "y": 151.646,
+              "width": 295.742,
+              "height": 265.243,
+              "unit": "pt",
+              "w": 295.742,
+              "h": 265.243
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": true,
+            "caption_source_field_present": true,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i3",
+            "type": "diagram",
+            "bbox": {
+              "x": 133.843,
+              "y": 94.483,
+              "width": 133.628,
+              "height": 261.194,
+              "unit": "pt",
+              "w": 133.628,
+              "h": 261.194
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i4",
+            "type": "image",
+            "bbox": {
+              "x": 114.264,
+              "y": 383.988,
+              "width": 10.447,
+              "height": 11.484,
+              "unit": "pt",
+              "w": 10.447,
+              "h": 11.484
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "photo_found": true,
+          "source_caption_page_item_count": 1,
+          "source_caption_unowned": true,
+          "source_caption_markdown_count": 1,
+          "invented_caption_link_count": 0
+        },
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 9.607428,
+        "processing_duration_ms": 9451,
+        "peak_rss_bytes": 2033074176,
+        "json_size_bytes": 237074,
+        "json_sha256": "8aec79dde688369332c1033597cf76621b24f7eb7a7dde4264e9fa943f78ff68",
+        "semantic_json_sha256": "a697083558ccfc2f5b491aa35d0c1f3a112c44360c8b72f6ff5c15626df4c91f",
+        "markdown_size_bytes": 3642,
+        "markdown_sha256": "db36d9df77f3da037b5a5ec370443c590d4d11e257bef0a55453a5fce5802d26",
+        "caption_records": [],
+        "visual_owner_summaries": [
+          {
+            "page_index": 1,
+            "id": "p1-i5",
+            "type": "image",
+            "bbox": {
+              "x": 114.983,
+              "y": 151.646,
+              "width": 295.742,
+              "height": 265.243,
+              "unit": "pt",
+              "w": 295.742,
+              "h": 265.243
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 38,
+            "contained_item_count": 38,
+            "contained_value_sha256": "2ecc6fe9c5c4b26031acecb7417569b8c4460632524f4e9af44f41a43101f914"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i3",
+            "type": "diagram",
+            "bbox": {
+              "x": 133.843,
+              "y": 94.483,
+              "width": 133.628,
+              "height": 261.194,
+              "unit": "pt",
+              "w": 133.628,
+              "h": 261.194
+            },
+            "include_ocr_in_primary": true,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          },
+          {
+            "page_index": 2,
+            "id": "p2-i4",
+            "type": "image",
+            "bbox": {
+              "x": 114.264,
+              "y": 383.988,
+              "width": 10.447,
+              "height": 11.484,
+              "unit": "pt",
+              "w": 10.447,
+              "h": 11.484
+            },
+            "include_ocr_in_primary": false,
+            "caption_field_present": false,
+            "caption_source_field_present": false,
+            "caption_count": 0,
+            "contains_count": 0,
+            "contained_item_count": 0,
+            "contained_value_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          }
+        ],
+        "relationship_summary": {
+          "relationship_count": 38,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 38,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "photo_found": true,
+          "source_caption_page_item_count": 1,
+          "source_caption_unowned": true,
+          "source_caption_markdown_count": 1,
+          "invented_caption_link_count": 0
+        },
+        "table_content_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "finance-10k": {
+      "input_path": "benchmark-expertmodeldata/finance-10k.pdf",
+      "input_size_bytes": 87105,
+      "input_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "expected_caption_count": 0,
+      "expected_caption_records": [],
+      "expected_caption_texts": [],
+      "actual_caption_count": 0,
+      "actual_caption_records": [],
+      "actual_caption_texts": [],
+      "matched_caption_count": 0,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {},
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": true,
+      "wall_seconds_delta": 0.027996,
+      "processing_duration_ms_delta": -18,
+      "peak_rss_bytes_delta": -16973824,
+      "json_size_bytes_delta": 0,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 18.454049,
+        "processing_duration_ms": 18360,
+        "peak_rss_bytes": 2083127296,
+        "json_size_bytes": 409526,
+        "json_sha256": "bb33b6f5d444409d8e24722034762365097dc0228e63fa8a57c1c4176d7b188b",
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "caption_records": [],
+        "visual_owner_summaries": [],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "visual_owner_count": 0,
+          "visual_caption_count": 0
+        },
+        "table_content_sha256": "ccf0e444de8727750836be0cf8f818e6519079a5ebf25f6235054653e1410db6"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 18.482045,
+        "processing_duration_ms": 18342,
+        "peak_rss_bytes": 2066153472,
+        "json_size_bytes": 409526,
+        "json_sha256": "b70082235a3bb5f9872d317a809fc0375691f9dfd2c0daeb925245c41a51df57",
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "caption_records": [],
+        "visual_owner_summaries": [],
+        "relationship_summary": {
+          "relationship_count": 0,
+          "caption_relationship_count": 0,
+          "contains_relationship_count": 0,
+          "unresolved_endpoint_count": 0,
+          "duplicate_page_item_id_count": 0,
+          "duplicate_contained_item_id_count": 0,
+          "duplicate_relationship_id_count": 0,
+          "invalid_caption_relationship_count": 0,
+          "invalid_contains_relationship_count": 0,
+          "caption_backlink_failure_count": 0,
+          "contains_backlink_failure_count": 0,
+          "contained_semantics_failure_count": 0,
+          "contained_page_item_leak_count": 0,
+          "contained_canonical_primary_leak_count": 0,
+          "missing_canonical_presentation_count": 0,
+          "missing_canonical_page_count": 0,
+          "duplicate_canonical_page_index_count": 0,
+          "missing_canonical_blocks_count": 0,
+          "extra_canonical_page_count": 0
+        },
+        "controls": {
+          "visual_owner_count": 0,
+          "visual_caption_count": 0
+        },
+        "table_content_sha256": "ccf0e444de8727750836be0cf8f818e6519079a5ebf25f6235054653e1410db6"
+      }
+    }
+  },
+  "layout_stage": {
+    "warmup_count": 5,
+    "sample_count": 100,
+    "p50_seconds": 0.004691146,
+    "p95_seconds": 0.004895577,
+    "max_seconds": 0.00576375,
+    "min_seconds": 0.004619084,
+    "peak_allocated_bytes": 302576,
+    "phase_02_reference_seconds": 11.58,
+    "five_percent_ceiling_seconds": 0.5790000000000001
+  },
+  "aggregate": {
+    "reviewed_caption_expected": 5,
+    "reviewed_caption_actual": 5,
+    "reviewed_caption_matched": 5,
+    "reviewed_caption_recall": 1.0,
+    "reviewed_caption_precision": 1.0,
+    "exact_caption_identities_all_cases": true,
+    "duplicate_markdown_caption_count": 0,
+    "caption_bbox_coverage": 1.0,
+    "caption_relationship_coverage": 1.0,
+    "side_order_coverage": 1.0,
+    "owner_external_text_clean_coverage": 1.0,
+    "unresolved_relationship_endpoint_count": 0,
+    "caption_relationship_count": 5,
+    "contains_relationship_count": 349,
+    "contained_page_item_leak_count": 0,
+    "contained_canonical_primary_leak_count": 0,
+    "table_content_equal_all_cases": true,
+    "catastrophe_exact_children": true,
+    "catastrophe_caption_fragment_leak_count": 0,
+    "uber_false_ocr_primary_leak_count": 0,
+    "uber_false_ocr_value_coverage": 0.7894736842105263,
+    "uber_contained_value_sha256": "459ab313b2309c951fb41189a7cec8d5e63130147628cdb45fcc27b86f2eced2",
+    "component_source_caption_count": 1,
+    "component_invented_caption_link_count": 0,
+    "finance_control_semantic_equal": true
+  },
+  "semantic_sha256": "28e692ad8efda5a65543197e6c30351a7dead219aea91b8cfc13baf592770647"
+}

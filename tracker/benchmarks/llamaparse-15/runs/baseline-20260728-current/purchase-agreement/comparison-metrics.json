@@ -1,0 +1,198 @@
+{
+  "case_id": "purchase-agreement",
+  "document": {
+    "expert_page_count": 1,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 1,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "purchase-agreement.pdf",
+    "source_page_count": 1
+  },
+  "duplicates": {
+    "expert": [],
+    "ours": []
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.9,
+      "item_count": 10,
+      "parse_concern_count": 0,
+      "provenance_coverage": 0.0,
+      "tables": [],
+      "type_counts": {
+        "footer": 1,
+        "heading": 2,
+        "text": 7
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.0,
+      "item_count": 12,
+      "parse_concern_count": 0,
+      "provenance_coverage": 1.0,
+      "tables": [],
+      "type_counts": {
+        "footer": 1,
+        "heading": 3,
+        "text": 8
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 3415,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3369,
+        "candidate_tokens": 501,
+        "extra_token_counts": [
+          [
+            "a7310832",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "u",
+            6
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8792313377679232,
+        "reference_chars": 3415,
+        "reference_tokens": 506,
+        "token_f1": 0.9930486593843098,
+        "token_multiset_overlap": 500,
+        "token_precision": 0.998003992015968,
+        "token_recall": 0.9881422924901185
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 3369,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 3330,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 3415,
+        "candidate_tokens": 506,
+        "extra_token_counts": [
+          [
+            "u",
+            6
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "a7310832",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.9630399287516699,
+        "reference_chars": 3330,
+        "reference_tokens": 501,
+        "token_f1": 0.9930486593843098,
+        "token_multiset_overlap": 500,
+        "token_precision": 0.9881422924901185,
+        "token_recall": 0.998003992015968
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3369,
+        "candidate_tokens": 501,
+        "extra_token_counts": [],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.8914473684210527,
+        "reference_chars": 3330,
+        "reference_tokens": 501,
+        "token_f1": 1.0,
+        "token_multiset_overlap": 501,
+        "token_precision": 1.0,
+        "token_recall": 1.0
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 3370,
+      "candidate_tokens": 501,
+      "extra_token_counts": [
+        [
+          "a7310832",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "u",
+          6
+        ]
+      ],
+      "normalized_sequence_ratio": 0.8792313377679232,
+      "reference_chars": 3415,
+      "reference_tokens": 506,
+      "token_f1": 0.9930486593843098,
+      "token_multiset_overlap": 500,
+      "token_precision": 0.998003992015968,
+      "token_recall": 0.9881422924901185
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 3370,
+      "candidate_tokens": 501,
+      "extra_token_counts": [],
+      "missing_token_counts": [
+        [
+          "u",
+          6
+        ]
+      ],
+      "normalized_sequence_ratio": 0.880720401535282,
+      "reference_chars": 3425,
+      "reference_tokens": 507,
+      "token_f1": 0.9940476190476192,
+      "token_multiset_overlap": 501,
+      "token_precision": 1.0,
+      "token_recall": 0.9881656804733728
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 3425,
+      "candidate_tokens": 507,
+      "extra_token_counts": [
+        [
+          "u",
+          6
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.9644233619922917,
+      "reference_chars": 3330,
+      "reference_tokens": 501,
+      "token_f1": 0.9940476190476192,
+      "token_multiset_overlap": 501,
+      "token_precision": 0.9881656804733728,
+      "token_recall": 1.0
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 3370,
+      "candidate_tokens": 501,
+      "extra_token_counts": [],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.8914473684210527,
+      "reference_chars": 3330,
+      "reference_tokens": 501,
+      "token_f1": 1.0,
+      "token_multiset_overlap": 501,
+      "token_precision": 1.0,
+      "token_recall": 1.0
+    }
+  }
+}

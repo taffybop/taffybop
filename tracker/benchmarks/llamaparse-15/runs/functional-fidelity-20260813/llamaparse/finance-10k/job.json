@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-ox77y3mhu50h3935nlqwlljniqho",
+    "created_at": "2026-08-12T18:31:41.573332Z",
+    "updated_at": "2026-08-12T18:32:55.703228Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "finance-10k.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 3,
+  "captured_at": "2026-08-12T18:44:16.186Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-ox77y3mhu50h3935nlqwlljniqho?fileName=finance-10k.pdf"
+}

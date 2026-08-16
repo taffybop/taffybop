@@ -1,0 +1,33 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "manufacturing-report",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "0713f8f8cbc605bf01543d7ad5d96d0ced9f3ad39295649c0d7b378eb1254e41",
+  "page_count": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "73b963eddb7b1097bf7d745dbaff54e1ca951943200e95ca443a5e9433826528",
+      "html_sha256": "c6b53fd2a1d3a91154b4bb8790deeb14d9707a99e7d750899512bf63af592f7f",
+      "text_sha256": "f5dfd7c789ff6e5ac96d11c953138e7bb07c1fceb991799b6740a387ef2cac06"
+    },
+    {
+      "page_number": 2,
+      "artifact": "pages/page-2/rendered-dom.json",
+      "artifact_sha256": "eb372a765dce020faf1725838f7aa938a771c733c7773812a8c72ecdf4147ab3",
+      "html_sha256": "292cd2021d0e038aa56b61b42179c72a3814e69e0c67fb6ce5419bb2afbe4398",
+      "text_sha256": "51c607600c5c94eed75f9937eeeda335e6b1a5f8f2dc74b96c1bc81125350e6d"
+    },
+    {
+      "page_number": 3,
+      "artifact": "pages/page-3/rendered-dom.json",
+      "artifact_sha256": "17cf6b0baae363facd6db66e285e2c4d3433b8149fc0ab267e6e5887a4321084",
+      "html_sha256": "e6aed9158298c9490bc0dea0002970112d8f85071183c5d8053b87a5c31684cf",
+      "text_sha256": "926022b043c15d8b27f23cee9f711e27666eaa36c6c7430dc403baca4a2e2f90"
+    }
+  ]
+}

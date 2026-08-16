@@ -1,0 +1,71 @@
+{
+  "schema_version": "functional-fidelity-resolution-ledger-v1",
+  "cases": {
+    "catastrophe-recap": {
+      "prior_discrepancy_ids": [
+        "FID-CATASTROPHE-RECAP-80d905db1393"
+      ],
+      "validated_artifact_sha256": {
+        "reference_markdown": "ae13b7417fd230b7ed727f78b863a09a0a77c5451b428be2392dfd893ffe1db3",
+        "reference_json": "272286e328081551b9a50e939d967ea4870e1ac1ec10aed8e089a6547822dd2a",
+        "candidate_markdown": "6b4a99e24a1925d2f8885b24eda699bbea778866a6c31da81597703098708f5d",
+        "candidate_json": "5e7c7f4b124216524dfc77e21adff8ad76778d2e7e83ea3afd9eb80a51c6873a"
+      },
+      "code_changes": [
+        "app/services/pipeline.py: rebind non-target visual canonical blocks to exact public layout relationships and exclusions",
+        "app/models.py: require complete context-free public overlay validation"
+      ],
+      "validation": [
+        "Final frozen-tree public HTTP JSON and Markdown returned 200",
+        "Final JSON independently revalidated as ParseResult",
+        "Final raw Markdown is byte-identical to canonical JSON Markdown",
+        "Final Clearleaf rendered DOM captured for the physical page",
+        "Focused real-PDF public projection regression passed"
+      ],
+      "validation_scope": "The prior public API parse-blocking failure is resolved; unrelated current chart/OCR fidelity differences remain open.",
+      "remaining_evidence": [
+        "comparison-final-source-grounded/catastrophe-recap/evidence.json",
+        "visual-source-semantics-resolution-ledger.json"
+      ],
+      "resolved_discrepancies": [
+        {
+          "prior_id": "FID-CATASTROPHE-RECAP-80d905db1393",
+          "category": "api_parse_failure"
+        }
+      ]
+    },
+    "postal-10k": {
+      "prior_discrepancy_ids": [
+        "FID-POSTAL-10K-805dd524ea4c"
+      ],
+      "validated_artifact_sha256": {
+        "reference_markdown": "50f2590c2b74ff6d71f74a59723582c0f5eba978b8efdaa5fae92cc6ea8f0ad4",
+        "reference_json": "00759abb20269353750a1542b971c11424f84aca78d0c81a014d4f3121eb2348",
+        "candidate_markdown": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+        "candidate_json": "b01b967103802ffd07598687ae50b2ae5f4a7ec8ab633ae126582905a4467a2a"
+      },
+      "code_changes": [
+        "app/services/pipeline.py: rebind non-target running-region canonical blocks to singleton public custody",
+        "app/models.py: require complete context-free public overlay validation"
+      ],
+      "validation": [
+        "Final frozen-tree public HTTP JSON and Markdown returned 200",
+        "Final JSON independently revalidated as ParseResult",
+        "Final raw Markdown is byte-identical to canonical JSON Markdown",
+        "Final Clearleaf rendered DOM captured for all three physical pages",
+        "Focused real-PDF public projection regression passed"
+      ],
+      "validation_scope": "The prior public API parse-blocking failure is resolved; unrelated current Postal text/presentation fidelity differences remain open.",
+      "remaining_evidence": [
+        "comparison-final-source-grounded/postal-10k/evidence.json",
+        "text-layout-correction-adjudication-20260813-02/ledger.json"
+      ],
+      "resolved_discrepancies": [
+        {
+          "prior_id": "FID-POSTAL-10K-805dd524ea4c",
+          "category": "api_parse_failure"
+        }
+      ]
+    }
+  }
+}

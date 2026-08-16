@@ -1,0 +1,102 @@
+{
+  "case_id": "purchase-agreement",
+  "case_latency_ms": 6291.5952920448035,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "purchase-agreement",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement",
+    "--run-id",
+    "p00-us10-corpus-20260729-01",
+    "--order",
+    "13",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+  ],
+  "completed_at_utc": "2026-07-29T08:44:23.574857+00:00",
+  "cpu_ms": 5851.397999999999,
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error": null,
+  "order": 13,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.md",
+      "role": "markdown",
+      "sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+      "size_bytes": 3370
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.json",
+      "role": "raw_json",
+      "sha256": "c29047bcb7c9c958985e2cddfac5d866ff328347eb545e6dab7c9bea42f002fe",
+      "size_bytes": 14093
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.json",
+      "role": "semantic_json",
+      "sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+      "size_bytes": 10567
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 6289.367208024487,
+  "peak_rss_bytes": 1469169664,
+  "reference_comparison": {
+    "case_id": "purchase-agreement",
+    "current_markdown_sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+    "current_semantic_json_sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+    "reference_semantic_json_sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-corpus-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+      "role": "source",
+      "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "size_bytes": 152828
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/purchase-agreement.md",
+      "role": "expert_markdown",
+      "sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+      "size_bytes": 3473
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/purchase-agreement.json",
+      "role": "expert_json",
+      "sha256": "6b8437b4763cfbb1c1d3daed2d496d881fc96afc5ffba16acd71061d2037e869",
+      "size_bytes": 22943
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:44:17.283102+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

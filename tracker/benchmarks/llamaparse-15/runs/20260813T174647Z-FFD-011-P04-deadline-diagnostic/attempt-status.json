@@ -1,0 +1,9 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-attempt-status-v1",
+  "status": "diagnostic_complete_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "summary": "sweep-summary.json",
+  "report": "report.md"
+}

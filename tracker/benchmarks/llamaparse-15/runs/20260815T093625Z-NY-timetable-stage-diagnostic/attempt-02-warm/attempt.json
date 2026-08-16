@@ -1,0 +1,125 @@
+{
+  "schema_id": "ny-timetable-cold-warm-stage-diagnostic-v1",
+  "attempt_id": "attempt-02-warm",
+  "lane": "warm",
+  "no_retry": true,
+  "success": true,
+  "started_monotonic_ns": 1280932467414833,
+  "ended_monotonic_ns": 1281254753217666,
+  "request_wall_ns": 322285802833,
+  "request_resource_delta": {
+    "self": {
+      "user_cpu_ns": 313123067000,
+      "system_cpu_ns": 7831105000,
+      "minor_faults": 649243,
+      "major_faults": 0,
+      "voluntary_context_switches": 24,
+      "involuntary_context_switches": 713136,
+      "max_rss_before_bytes": 2164588544,
+      "max_rss_after_bytes": 2164588544
+    },
+    "children": {
+      "user_cpu_ns": 12828074000,
+      "system_cpu_ns": 408405000,
+      "minor_faults": 96783,
+      "major_faults": 82,
+      "voluntary_context_switches": 33,
+      "involuntary_context_switches": 11885,
+      "max_rss_before_bytes": 245448704,
+      "max_rss_after_bytes": 247218176
+    },
+    "total_cpu_ns": 334190651000
+  },
+  "response_evidence": {
+    "valid": true,
+    "checks": {
+      "page_count_is_3": true,
+      "document_page_count_is_3": true,
+      "three_tables": true,
+      "all_tables_52_by_13": true,
+      "source_grounded_row_hashes_match": true,
+      "canonical_presentation_present": true,
+      "markdown_nonempty": true
+    },
+    "raw_payload_sha256": "926e1bb3596f3d8de0b9929e8fb3cf401da016f8d446f62dcb102912314f48a3",
+    "stable_semantic_sha256": "c98405549392aa6512928113e0d25c8a757f200972cda4be505c96633587afce",
+    "stable_semantic_policy": {
+      "basis": "exact-payload-with-recursive-processing-timing-leaves-removed-v1",
+      "scope": "/processing only",
+      "excluded_key_rule": "duration_ms, elapsed_ms, or any key ending _ms",
+      "excluded_pointers": [
+        "/processing/duration_ms",
+        "/processing/form_semantics/extraction_ms",
+        "/processing/form_semantics/projection_ms",
+        "/processing/form_semantics/total_ms",
+        "/processing/outline_structure/extraction_ms",
+        "/processing/outline_structure/projection_ms",
+        "/processing/outline_structure/total_ms",
+        "/processing/running_regions/extraction_ms",
+        "/processing/running_regions/projection_ms",
+        "/processing/running_regions/total_ms",
+        "/processing/source_text_alignment/elapsed_ms"
+      ]
+    },
+    "pages_sha256": "73a5238929627df6900e12eef8851c5d273145e92fdf5ab8c7413ea790c0f782",
+    "canonical_presentation_sha256": "152d03edf668520d8c4a290397beb54d2d3b55065f993d70c601c6aff564b7d1",
+    "markdown_sha256": "ffccfe4ac68d338283bb86e06deb21e969c60fa633419a9a3d8e18beef4737fb",
+    "markdown_bytes": 54574,
+    "table_row_sha256": [
+      "08a23117540bc200d4ca8c5bd80340db8aeef186843592f469c84a589a44bb3a",
+      "095590b16e3e96079d76d151e4166a5294e407d26d32ee320ec17051ed566fcd",
+      "1eb9f2cff9fe121930c19acbfb740ec66a9d2f4993150c157a3ae53aef97cace"
+    ],
+    "tables": [
+      {
+        "row_count": 52,
+        "column_count": 13,
+        "cell_count": 0,
+        "rows_sha256": "08a23117540bc200d4ca8c5bd80340db8aeef186843592f469c84a589a44bb3a",
+        "markdown_sha256": "911a156b948bcb258debfda9f7365a962852c3d21485a6b499c79d43fd3cd19f"
+      },
+      {
+        "row_count": 52,
+        "column_count": 13,
+        "cell_count": 0,
+        "rows_sha256": "095590b16e3e96079d76d151e4166a5294e407d26d32ee320ec17051ed566fcd",
+        "markdown_sha256": "201ef7184018772b9def5a67ff97af53c03a923b5107182a2b1d20973cfe6a8e"
+      },
+      {
+        "row_count": 52,
+        "column_count": 13,
+        "cell_count": 0,
+        "rows_sha256": "1eb9f2cff9fe121930c19acbfb740ec66a9d2f4993150c157a3ae53aef97cace",
+        "markdown_sha256": "c6ef1cbe3ef4848a9a5d18f36edb5d84ebd85cf83a3c73ba4f95be2693be9bbe"
+      }
+    ],
+    "http_status": 200,
+    "content_type": "application/json",
+    "response_bytes": 4976555,
+    "post_response_markdown_validation_ns": 40603541,
+    "processing_duration_ms": 47091
+  },
+  "timing_closure": {
+    "request_total_ns": 322285802833,
+    "disjoint_top_level_union_ns": 322270339707,
+    "explicit_residual_ns": 15463126,
+    "observer_reported_top_level_union_ns": 322270339707,
+    "observer_reported_residual_ns": 15463126,
+    "checks": {
+      "computed_union_matches_observer": true,
+      "computed_residual_matches_observer": true,
+      "residual_nonnegative": true,
+      "all_nonroot_spans_bounded_by_request": true,
+      "union_plus_residual_equals_total": true
+    },
+    "valid": true
+  },
+  "observer_manifest_sha256": "91d206534fbe12afc0cd9a66648d43f19f604971283f60f460bdbd5faf3be8e2",
+  "errors": {
+    "setup": null,
+    "request": null,
+    "supplemental_close": null,
+    "observer_close": null,
+    "validation": null
+  }
+}

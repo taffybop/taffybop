@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-a97cbzz7kcwjfk5n2n51r6jkyljc",
+    "created_at": "2026-08-13T05:04:45.558548Z",
+    "updated_at": "2026-08-13T05:05:00.442779Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "postal-10k.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 3,
+  "captured_at": "2026-08-13T05:06:00Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-a97cbzz7kcwjfk5n2n51r6jkyljc?fileName=postal-10k.pdf"
+}

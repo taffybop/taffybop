@@ -1,0 +1,316 @@
+{
+  "artifact_inventory": {
+    "candidate_dom_pages": [],
+    "candidate_json": {
+      "path": "service/postal-10k/response.json",
+      "present": true,
+      "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+      "size_bytes": 135
+    },
+    "candidate_markdown": {
+      "path": "service/postal-10k/response.md",
+      "present": true,
+      "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+      "size_bytes": 135
+    },
+    "reference_dom_pages": [
+      1,
+      2,
+      3
+    ],
+    "reference_json": {
+      "path": "llamaparse/postal-10k/reference.json",
+      "present": true,
+      "sha256": "19e25393e03c7c78386bc667c722a4c743f9d3b9981bfb0794322fdcbbd000cf",
+      "size_bytes": 87342
+    },
+    "reference_markdown": {
+      "path": "llamaparse/postal-10k/reference.md",
+      "present": true,
+      "sha256": "50f2590c2b74ff6d71f74a59723582c0f5eba978b8efdaa5fae92cc6ea8f0ad4",
+      "size_bytes": 11500
+    },
+    "service_http": {
+      "json": {
+        "content_type": "application/json",
+        "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+        "size_bytes": 135,
+        "status_code": 500
+      },
+      "markdown": {
+        "content_type": "application/json",
+        "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+        "size_bytes": 135,
+        "status_code": 500
+      }
+    }
+  },
+  "case_id": "postal-10k",
+  "discrepancies": [
+    {
+      "actual": [
+        {
+          "content_type": "application/json",
+          "output": "json",
+          "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+          "status_code": 500
+        },
+        {
+          "content_type": "application/json",
+          "output": "markdown",
+          "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+          "status_code": 500
+        }
+      ],
+      "category": "api_parse_failure",
+      "classification": "functional_regression",
+      "evidence": {
+        "outputs": [
+          {
+            "content_type": "application/json",
+            "output": "json",
+            "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+            "status_code": 500
+          },
+          {
+            "content_type": "application/json",
+            "output": "markdown",
+            "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+            "status_code": 500
+          }
+        ],
+        "response_excerpt": "{\"error\":{\"code\":\"document_processing_failed\",\"message\":\"The document could not be processed.\",\"details\":{\"reason\":\"ValidationError\"}}}",
+        "service_http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+            "size_bytes": 135,
+            "status_code": 500
+          },
+          "markdown": {
+            "content_type": "application/json",
+            "sha256": "e4d27ee36b13f37d997ac9b25c12964a78fedd4c8c60f09066dea2fbebbf220b",
+            "size_bytes": 135,
+            "status_code": 500
+          }
+        }
+      },
+      "expected": {
+        "json_pages": "array",
+        "json_status": 200,
+        "markdown_status": 200
+      },
+      "id": "FID-POSTAL-10K-805dd524ea4c",
+      "output_type": "service_api",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service/postal-10k/response.json",
+          "candidate_markdown": "service/postal-10k/response.md",
+          "reference_json": "llamaparse/postal-10k/reference.json",
+          "reference_markdown": "llamaparse/postal-10k/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --cases postal-10k",
+        "json_pointer": "/discrepancies/0"
+      },
+      "severity": "critical",
+      "story": {
+        "acceptance_criterion": "Both public output modes return HTTP 200 with valid Markdown/full JSON for every accepted benchmark PDF.",
+        "dedicated_test_anchor": "test_p01_us03_canonical_presentation.py",
+        "gap_id": "GAP-SERIALIZATION-001",
+        "milestone": "M1–M6",
+        "primary_story": "P01-US03",
+        "secondary_stories": "P01-US04, P03-US08, P04/P05",
+        "story_action": "Existing; body/full and duplicate contracts expanded"
+      },
+      "summary": "The public parse API did not return successful, valid Markdown and JSON outputs."
+    },
+    {
+      "actual": [],
+      "category": "artifact_capture",
+      "classification": "evidence_gap",
+      "evidence": {
+        "extra_candidate_pages": [],
+        "missing_candidate_pages": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": [
+        1,
+        2,
+        3
+      ],
+      "id": "FID-POSTAL-10K-d6869828e07e",
+      "output_type": "rendered_dom",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "reproduce": {
+        "artifact_paths": {
+          "candidate_json": "service/postal-10k/response.json",
+          "candidate_markdown": "service/postal-10k/response.md",
+          "reference_json": "llamaparse/postal-10k/reference.json",
+          "reference_markdown": "llamaparse/postal-10k/reference.md"
+        },
+        "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --cases postal-10k",
+        "json_pointer": "/discrepancies/1"
+      },
+      "severity": "critical",
+      "story": {
+        "acceptance_criterion": "The rerun retains raw Markdown, full JSON, and one rendered DOM capture per source page for both systems.",
+        "dedicated_test_anchor": "test_p00_us10_corpus_runner.py",
+        "gap_id": "GAP-BENCHMARK-002",
+        "milestone": "M0–M6",
+        "primary_story": "P00-US10",
+        "secondary_stories": "P00-US03",
+        "story_action": "Approved 5-point runner story"
+      },
+      "summary": "Rendered DOM page capture set is incomplete or has unexpected pages."
+    }
+  ],
+  "metrics": {
+    "rendered_dom": {
+      "actual_pages": [],
+      "expected_pages": [],
+      "snapshots": [
+        {
+          "actual": {
+            "dimensions": null,
+            "present": false,
+            "sha256": null
+          },
+          "expected": {
+            "dimensions": null,
+            "present": true,
+            "sha256": "5885fafde8acb7ba7f69329ea4e69509912463722f3682f44bf6b9281d1bafdf"
+          },
+          "page_number": 1,
+          "pixel_comparison": null
+        },
+        {
+          "actual": {
+            "dimensions": null,
+            "present": false,
+            "sha256": null
+          },
+          "expected": {
+            "dimensions": null,
+            "present": true,
+            "sha256": "1e8571b945288cbb42063d00ab8a67a569b3199073bfa6ad3dd82312c04be4bd"
+          },
+          "page_number": 2,
+          "pixel_comparison": null
+        },
+        {
+          "actual": {
+            "dimensions": null,
+            "present": false,
+            "sha256": null
+          },
+          "expected": {
+            "dimensions": null,
+            "present": true,
+            "sha256": "c6bb9077c10ab1d185b8a64051dcbb855ae7805db41894effedd9afe98060143"
+          },
+          "page_number": 3,
+          "pixel_comparison": null
+        }
+      ]
+    }
+  },
+  "page_results": [
+    {
+      "candidate_dom_captured": false,
+      "discrepancy_ids": [
+        "FID-POSTAL-10K-805dd524ea4c",
+        "FID-POSTAL-10K-d6869828e07e"
+      ],
+      "json_text_metrics": null,
+      "physical_page": 1,
+      "reference_dom_captured": true,
+      "severity_counts": {
+        "critical": 2
+      },
+      "status": "discrepancy_found"
+    },
+    {
+      "candidate_dom_captured": false,
+      "discrepancy_ids": [
+        "FID-POSTAL-10K-805dd524ea4c",
+        "FID-POSTAL-10K-d6869828e07e"
+      ],
+      "json_text_metrics": null,
+      "physical_page": 2,
+      "reference_dom_captured": true,
+      "severity_counts": {
+        "critical": 2
+      },
+      "status": "discrepancy_found"
+    },
+    {
+      "candidate_dom_captured": false,
+      "discrepancy_ids": [
+        "FID-POSTAL-10K-805dd524ea4c",
+        "FID-POSTAL-10K-d6869828e07e"
+      ],
+      "json_text_metrics": null,
+      "physical_page": 3,
+      "reference_dom_captured": true,
+      "severity_counts": {
+        "critical": 2
+      },
+      "status": "discrepancy_found"
+    }
+  ],
+  "release_ready": false,
+  "reproduce": {
+    "candidate_root": "service/postal-10k",
+    "command": "python3 tracker/benchmarks/llamaparse-15/tools/functional_fidelity.py /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813 --cases postal-10k",
+    "reference_root": "llamaparse/postal-10k"
+  },
+  "schema_version": "functional-fidelity-comparison-v1",
+  "source_context": {
+    "document_category": "financial statement from annual report",
+    "known_complex_elements": [
+      "multi-level headers",
+      "accounting negatives",
+      "multiline labels",
+      "subtotal and total semantics",
+      "physical-versus-printed page identity"
+    ],
+    "layout_characteristics": [
+      "three portrait pages",
+      "dense financial tables",
+      "hierarchical rows and totals",
+      "running footers"
+    ],
+    "mixed_native_and_scanned_candidate": false,
+    "scanned_candidate": false,
+    "source_page_count": 3
+  },
+  "status": "discrepancy_found",
+  "summary": {
+    "acceptable_or_harmless_differences": 0,
+    "discrepancy_count": 2,
+    "evidence_gaps": 1,
+    "functional_regressions": 1,
+    "missing_rendered_dom_pages": [
+      1,
+      2,
+      3
+    ],
+    "severity_counts": {
+      "critical": 2,
+      "major": 0,
+      "minor": 0
+    }
+  }
+}

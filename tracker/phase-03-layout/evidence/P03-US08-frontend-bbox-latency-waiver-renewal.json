@@ -1,0 +1,127 @@
+{
+  "approval": {
+    "authorized_on": "2026-08-03",
+    "owner": "project owner/requester",
+    "source": "active Codex thread",
+    "statement": "I approve renewing the P03-US08 latency exception for this frontend-only bbox compatibility fix, retaining the same 1.8935% latency exception, 2026-09-02 review date, default-off rollback, and no other waivers."
+  },
+  "authorized_change": {
+    "all_other_required_code_paths_match_original": true,
+    "difference_scope": "frontend-only bbox compatibility fix",
+    "differing_paths": [
+      "frontend/lib/running-regions.ts",
+      "frontend/tests/p03-us08-running-regions.test.mts"
+    ],
+    "measured_backend_parser_runtime_paths_match_original": true,
+    "original_code_manifest_sha256": "30e6025c3d5f02f2797476cb56ecbdb2349ddc0a57b730fc01e35a9667ce1e3f",
+    "original_files": {
+      "frontend/lib/running-regions.ts": {
+        "path": "frontend/lib/running-regions.ts",
+        "sha256": "73bad8a2ac6ce143ae69f9dc50dc61e955a42c56f0f8476d8bba12de3edf786d",
+        "size_bytes": 49506
+      },
+      "frontend/tests/p03-us08-running-regions.test.mts": {
+        "path": "frontend/tests/p03-us08-running-regions.test.mts",
+        "sha256": "20772d1f5a34b4c3834af6b4dea5becacbf91cac33f60dca41bf7ed4fef3549d",
+        "size_bytes": 33483
+      }
+    },
+    "renewed_code_manifest_sha256": "b5bfab2739f231a57abddf787a6c566c5fddec5b2128bd4892f3682622a06fcc",
+    "renewed_files": {
+      "frontend/lib/running-regions.ts": {
+        "path": "frontend/lib/running-regions.ts",
+        "sha256": "1dfac1d71e34136267e2a1432261510b5785ac06a1c001da737eda27129be7af",
+        "size_bytes": 50738
+      },
+      "frontend/tests/p03-us08-running-regions.test.mts": {
+        "path": "frontend/tests/p03-us08-running-regions.test.mts",
+        "sha256": "f6ab8b7c2ebaf6a8dd2cd58febb90b0647a7223017481042e6ba7d20fbb93ffc",
+        "size_bytes": 34495
+      }
+    },
+    "required_code_path_count": 86
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-frontend-bbox-latency-exception-renewal.md",
+    "raw_sha256": "6c1ac4c74a97f847122dd38877c6e44466795eddf1b73b26c84850ef775137e0",
+    "size_bytes": 3456
+  },
+  "deferred_work": {
+    "required_outcome": "replace this exception with a strict current-code final campaign or explicitly renew it",
+    "scope": [
+      "near-boundary projection latency",
+      "fresh-process RSS measurement stability"
+    ]
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "maximum_overrun_fraction": 0.05,
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "expired_effect": "P03-US08 returns to In Progress and dependent exit claims are blocked",
+    "expires_before": [
+      "production enablement",
+      "Phase 04 exit"
+    ],
+    "expires_on_any_further_required_code_change": true,
+    "review_due_on": "2026-09-02"
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "hosted_usage": {
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_compatibility",
+    "code_dependency_input_and_fixture_custody",
+    "correctness_and_quality",
+    "deadlines_and_resource_boundaries",
+    "hosted_usage",
+    "output_sizes",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "feature_flag_default": false,
+    "rollback": "disable the flag to skip US08 work and return the exact configured predecessor"
+  },
+  "original_decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-provisional-latency-exception.md",
+    "raw_sha256": "7bea63acad8403e442362edd8aabe0f4db084e6abd0cdd59e2b148b40a8b0d25",
+    "size_bytes": 3476
+  },
+  "original_waiver_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-provisional-latency-waiver.json",
+    "raw_sha256": "1fe75bc3d749730938653030052d463340eb2e856b810e0586e9afb12e9a72c8",
+    "semantic_sha256": "0d3cd13942dd465c537dd7075baf0d2e8b30bc5dd891af55622c07f493610554",
+    "size_bytes": 4873,
+    "waiver_id": "P03-US08-LATENCY-EXCEPTION-20260803"
+  },
+  "record_kind": "p03_us08_frontend_only_latency_exception_renewal",
+  "renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-FRONTEND-BBOX",
+  "renews_waiver_id": "P03-US08-LATENCY-EXCEPTION-20260803",
+  "schema_version": "1.0",
+  "semantic_sha256": "c650af287d8010d5a94c4c572f41538e3249c4acf4653531f2e37eab208d39e8",
+  "status": "accepted_with_time_bounded_metrics_exception_renewal",
+  "story": "P03-US08"
+}

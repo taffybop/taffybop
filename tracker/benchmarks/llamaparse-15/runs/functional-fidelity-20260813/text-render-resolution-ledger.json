@@ -1,0 +1,131 @@
+{
+  "schema_version": "functional-fidelity-text-render-resolution-ledger-v1",
+  "generated_at_utc": "2026-08-13T06:45:00Z",
+  "policy": {
+    "scope": "Text integrity, reading order, Markdown syntax and hierarchy, canonical rendered UI, and primary-text projection at the visual-owner serialization seam.",
+    "source_grounding": "The hash-bound source PDF is authoritative. LlamaParse remains the requested baseline, but generated descriptions, inferred values, and source-contradicted structure are not forced into parity.",
+    "immutability": "service-post-fix was not modified. Focused service and LlamaParse reruns were written to new sibling artifact roots.",
+    "resolution_gate": "A resolved user-visible discrepancy requires tests plus fresh JSON, raw Markdown, canonical Markdown, and rendered-DOM validation for the affected PDF."
+  },
+  "resolutions": [
+    {
+      "resolution_id": "TEXT-RES-PURCHASE-EMPHASIS-UI-001",
+      "status": "resolved_with_remaining_extraction_gaps",
+      "case_id": "purchase-agreement",
+      "pages": [
+        1
+      ],
+      "story_ids": [
+        "P03-US05",
+        "P01-US04"
+      ],
+      "source_pdf_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "severity": "high",
+      "defect": "Source-supported bold/italic scalar runs survived in JSON evidence but were omitted from raw/canonical Markdown; canonical UI flattened uniquely sourced headings to paragraphs and styled emphasis without semantic strong/em nodes or top-level item-type custody.",
+      "source_truth": "The rendered agreement visibly bolds the defined terms Agreement, Effective Date, Seller, Buyer, and Parties, retains the struck draft banner, and has explicit heading/subsection structure.",
+      "fix": [
+        "Backend text-run projection serializes non-overlapping source-supported bold, italic, and bold-italic spans while preserving deletion/underline precedence and Markdown escaping.",
+        "Frontend projection mirrors the same strict graph and emits semantic strong/em nodes.",
+        "Canonical rendering emits a source heading at its exact validated h1-h6 level only when one contributor/item match is unique, and exposes authoritative data-item-type in canonical order."
+      ],
+      "before": {
+        "artifact_root": "service-post-fix/purchase-agreement",
+        "service_json_sha256": "cdd791562a870e83f3ba240df3d06982d32c54d39f62ae926206a8735ca836da",
+        "service_markdown_sha256": "1459191243b109722fd1a320c6dde7a139e2a845231a8d7090a37d438e76b6fc",
+        "service_page_1_dom_sha256": "06ba38cd7d99c26dddf5b5f25ce278feeaf8e56f21c62a64c1d3bfe3e0249783",
+        "rendered_assertion": "11 paragraphs; no heading, strong, or top-level data-item-type representation."
+      },
+      "after": {
+        "artifact_root": "service-text-render-fix/purchase-agreement",
+        "profile_id": "release-fidelity-local-deterministic-v1",
+        "docling_artifacts_path": "/Users/vignesh/Downloads/taffybop/.models/docling",
+        "service_json_sha256": "5ec541699f97fbb161f189dc15ab84540fbad953c9a13655edd99a6f08591378",
+        "service_markdown_sha256": "a0d1dfc2eeb80b537365daaf01200713c998a8918ab76f3c1f6b2deb3da5fac8",
+        "rendered_capture_sha256": "2ca4838fbc44fc574204a51cfef293285d4c1d8b627d7cda46647c8437c7637f",
+        "service_page_1_dom_sha256": "356fe9201ec4888c7bb64513eadafad5b56cc421528988d99c13ccdecf7a8f68",
+        "rendered_html_sha256": "1c8a3feedb56042c81d33bdc5e2b3543c9d531803d1679d6819c4f1558459151",
+        "assertion": "Final Markdown contains all five reviewed bold defined terms. DOM contains 17 source-backed strong nodes, three currently extracted heading nodes, and the complete 12-item canonical type sequence."
+      },
+      "fresh_llamaparse": {
+        "artifact_root": "llamaparse-text-render-fix/purchase-agreement",
+        "job_id": "pjb-637vhqamkp2x2p0tzgd1xve8iqc5",
+        "status": "COMPLETED",
+        "reference_json_sha256": "a6db0458fc32a6216374a775333665322185a4205f457e157d078c79aaaa6aaa",
+        "reference_markdown_sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+        "rendered_dom_sha256": "5215d201970a5b559cb2e9c382e77bec974594664285b7224107b03366c190d2",
+        "rendered_png_sha256": "8b6d8c7b7c016856e080e1003dc9cce991327a1ff7a21436046a6bb88830c59b"
+      },
+      "validation": [
+        "Backend P03-US05 unit/adversarial/contract slice: 102 passed.",
+        "Backend real-corpus P03-US05 regression: 10 passed with the absolute local Docling artifact root.",
+        "Frontend unit suite: 160 passed.",
+        "Frontend TypeScript, ESLint, and production vinext build: passed.",
+        "Fresh service JSON, raw Markdown, canonical Markdown, and rendered DOM inspected."
+      ],
+      "remaining_gaps": [
+        "The struck Draft of 6/1/20 banner is still assigned a heading role.",
+        "Background is extracted at heading level 1 instead of its visible subsection level.",
+        "Later quotation glyph normalization differs from the baseline/source style."
+      ]
+    },
+    {
+      "resolution_id": "TEXT-RES-PRIMARY-VISUAL-OCR-CROP-001",
+      "status": "resolved",
+      "case_ids": [
+        "clinical-study",
+        "manufacturing-report"
+      ],
+      "pages": {
+        "clinical-study": [
+          3
+        ],
+        "manufacturing-report": [
+          1
+        ]
+      },
+      "story_ids": [
+        "P03-US02"
+      ],
+      "severity": "high",
+      "defect": "The terminal visual-layout projection discarded an entire already-approved owner OCR ledger when one accepted line crossed the independently rounded source crop by less than one point. Public JSON became value-empty, raw/canonical Markdown showed a placeholder, and the rendered UI hid the source text.",
+      "source_truth": {
+        "clinical-study": "The accepted p3 flowchart OCR is visibly printed and independently retained in the owner OCR ledger. Its first line starts 0.898 point above the image crop; every other accepted line is inside.",
+        "manufacturing-report": "The accepted p1 chart labels are visibly printed and retained in the owner OCR ledger. The final -15.0% label ends 0.124 point below the image crop."
+      },
+      "fix": "Already accepted, include_ocr_in_primary=true, same-owner OCR permits an inclusive 1.0-point margin only for pt-to-pt crop containment. More than 1 point, cross-unit geometry, foreign ownership, and include_ocr_in_primary=false remain fail-closed.",
+      "negative_gates": [
+        "more than 1.0 point outside any owner edge",
+        "cross-unit OCR/owner geometry",
+        "OCR geometrically inside another owner",
+        "natural photograph with include_ocr_in_primary=false",
+        "missing, rejected, or incomplete accepted OCR diagnostics"
+      ],
+      "after": {
+        "artifact_root": "service-visual-ocr-final",
+        "profile_id": "release-fidelity-local-deterministic-v1",
+        "http_status": "Both JSON and both Markdown responses were 200; all seven physical pages have rendered DOM captures.",
+        "clinical-study": {
+          "source_pdf_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+          "service_json_sha256": "ad1e8ba564f2bf719a2759871026caca44843915efb1fda44346d1467f8fd9be",
+          "service_markdown_sha256": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2",
+          "service_page_3_dom_sha256": "36a25e704845430a4d291d59d51c39c5ade38ead8f577ad8c0d0a3a742047fbb",
+          "assertion": "p3-i2 value == md == ocr_text, source=ocr, detected/include true; 802-character OCR block occurs once in raw Markdown, canonical Markdown, and DOM; the external caption occurs once; placeholder absent."
+        },
+        "manufacturing-report": {
+          "source_pdf_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+          "service_json_sha256": "6029852e9b662ab2f9897da6f9965e98f2730ceedc4e890e6d9e6e11e911699f",
+          "service_markdown_sha256": "6aef58c75d563a3ed714c1d0b245fb8879e3a55e452cc8614bf1f76d7fd7a483",
+          "service_page_1_dom_sha256": "3ca5309d30a69fc37552154fc5b640af1558f74b518c433d324304dd1c4a1762",
+          "assertion": "p1-i2 value == md == ocr_text, source=ocr, detected/include true; 244-character OCR block including -15.0% occurs once in raw Markdown, canonical Markdown, and DOM; placeholder absent."
+        }
+      },
+      "validation": [
+        "P03-US02 story suite: 64 passed.",
+        "Exact-profile clinical/manufacturing/Uber corpus slice: 3 passed in 57.07 seconds.",
+        "Uber classifier-unavailable photograph remained value-empty with diagnostic OCR excluded from primary Markdown.",
+        "Fresh HTTP JSON, raw Markdown, canonical Markdown, and rendered DOM inspected for both positive cases."
+      ]
+    }
+  ],
+  "release_disposition": "These two user-visible clusters are resolved and hash-bound. The consolidated release remains conditional because the per-PDF review retains independent text recovery, reading-order, heading-taxonomy, table, chart, and diagram gaps outside these resolutions."
+}

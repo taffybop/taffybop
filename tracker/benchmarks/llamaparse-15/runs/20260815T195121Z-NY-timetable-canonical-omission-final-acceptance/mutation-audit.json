@@ -1,0 +1,117 @@
+{
+  "app_tree_unchanged": true,
+  "app_before_sha256": "9c671fbece3ee3828a42745db38073b95a13f2204756cf8aa940aae460bd4caf",
+  "app_after_sha256": "9c671fbece3ee3828a42745db38073b95a13f2204756cf8aa940aae460bd4caf",
+  "app_before_file_count": 99,
+  "app_after_file_count": 99,
+  "source_unchanged": true,
+  "source_before": {
+    "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+    "size_bytes": 26109,
+    "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+  },
+  "source_after": {
+    "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+    "size_bytes": 26109,
+    "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+  },
+  "profile_unchanged": true,
+  "profile_before": {
+    "path": "start-ui-backend-8042.sh",
+    "size_bytes": 2062,
+    "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+  },
+  "profile_after": {
+    "path": "start-ui-backend-8042.sh",
+    "size_bytes": 2062,
+    "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+  },
+  "diagnostic_harness_unchanged": true,
+  "diagnostic_harness_before": {
+    "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+    "size_bytes": 148065,
+    "sha256": "85e5b827e51b3808671f6a0524e481a095450ccd6146627af7486d0cbe86202c"
+  },
+  "diagnostic_harness_after": {
+    "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+    "size_bytes": 148065,
+    "sha256": "85e5b827e51b3808671f6a0524e481a095450ccd6146627af7486d0cbe86202c"
+  },
+  "model_tree_stat_unchanged": true,
+  "model_before_stat_sha256": "5d44a460a3f0ad6f2dfac3f6ef4db50518113b7e068b3dbf7cbcc8f81bd8b069",
+  "model_after_stat_sha256": "5d44a460a3f0ad6f2dfac3f6ef4db50518113b7e068b3dbf7cbcc8f81bd8b069",
+  "model_artifacts_sha256_post": "a204f7eaeb2cac3d30ea9618d7ebe1afdfab74646a4c2b47ba0897d386b764f5",
+  "model_artifacts_identity_error": null,
+  "protected_files_unchanged": true,
+  "protected_files_before": {
+    "benchmark-expertmodeldata/ny-timetable.pdf": {
+      "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+      "size_bytes": 26109,
+      "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+    },
+    "start-ui-backend-8042.sh": {
+      "path": "start-ui-backend-8042.sh",
+      "size_bytes": 2062,
+      "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+    },
+    "tests/benchmarks/ny_timetable_stage_diagnostic.py": {
+      "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+      "size_bytes": 148065,
+      "sha256": "85e5b827e51b3808671f6a0524e481a095450ccd6146627af7486d0cbe86202c"
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "size_bytes": 1066,
+      "sha256": "6afc551e04e72ff590cddb418b290d475aa6b9034f553a85f67f44d97df4d9f2"
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "size_bytes": 606263,
+      "sha256": "0ccb2b55f198fa9e35ab508687cbcc209eb2a21913ee1cfe7597eb24cc0a26c2"
+    },
+    "frontend/.dev.vars": {
+      "path": "frontend/.dev.vars",
+      "size_bytes": 117,
+      "sha256": "30a294405c508227ef0ec9ea7b923584beba0fcfa8c200d8ad9d1e41f7ca9464"
+    }
+  },
+  "protected_files_after": {
+    "benchmark-expertmodeldata/ny-timetable.pdf": {
+      "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+      "size_bytes": 26109,
+      "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+    },
+    "start-ui-backend-8042.sh": {
+      "path": "start-ui-backend-8042.sh",
+      "size_bytes": 2062,
+      "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+    },
+    "tests/benchmarks/ny_timetable_stage_diagnostic.py": {
+      "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+      "size_bytes": 148065,
+      "sha256": "85e5b827e51b3808671f6a0524e481a095450ccd6146627af7486d0cbe86202c"
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "size_bytes": 1066,
+      "sha256": "6afc551e04e72ff590cddb418b290d475aa6b9034f553a85f67f44d97df4d9f2"
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "size_bytes": 606263,
+      "sha256": "0ccb2b55f198fa9e35ab508687cbcc209eb2a21913ee1cfe7597eb24cc0a26c2"
+    },
+    "frontend/.dev.vars": {
+      "path": "frontend/.dev.vars",
+      "size_bytes": 117,
+      "sha256": "30a294405c508227ef0ec9ea7b923584beba0fcfa8c200d8ad9d1e41f7ca9464"
+    }
+  },
+  "authored_harness": {
+    "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+    "size_bytes": 148065,
+    "sha256": "85e5b827e51b3808671f6a0524e481a095450ccd6146627af7486d0cbe86202c"
+  },
+  "generated_artifact_root": "/Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260815T195121Z-NY-timetable-canonical-omission-final-acceptance",
+  "production_app_files_written_by_harness": []
+}

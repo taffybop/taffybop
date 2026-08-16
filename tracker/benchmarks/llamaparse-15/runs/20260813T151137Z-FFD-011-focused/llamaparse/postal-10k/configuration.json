@@ -1,0 +1,10 @@
+{
+  "capture_method": "signed-in actual LlamaParse browser UI",
+  "configuration_name": "Playground",
+  "cost_optimizer": false,
+  "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+  "raw_json_method": "actual UI JSON tab and Copy control",
+  "raw_markdown_method": "actual UI Markdown tab and Copy control",
+  "render_method": "actual LlamaParse Markdown UI; no reconstructed renderer",
+  "tier": "agentic"
+}

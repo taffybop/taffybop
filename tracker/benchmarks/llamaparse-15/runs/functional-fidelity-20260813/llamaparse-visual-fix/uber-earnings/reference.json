@@ -1,0 +1,1315 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-skyvq5noznjko41p3fs2vxgfgptg",
+    "created_at": "2026-08-13T05:47:21.263990Z",
+    "updated_at": "2026-08-13T05:47:42.311430Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "uber-earnings.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "  Uuber\n  Eats\n\nUber Technologies, Inc.   May 7, 2025\nQ1 2025 Earnings\nSupplemental Data\n                          1"
+      },
+      {
+        "page_number": 2,
+        "text": "Uber is best positioned to capitalize on the global\non-demand local commerce opportunity\n\nMarket leadership                           Growth                               Profitability\nGlobal leading delivery player     $82B Gross Bookings ARR1                      $3.1B Adjusted EBITDA ARR1\noperating in >30 countries           (+18% YoY in Q1’25)2                        (+45% YoY in Q1’25)\n                                                                                                    3.7%\n8                             90000                   $82B  4000     0.040.03                       $3.1B\n                              67500         $56B            3000\nCategory leading positions in                                        0.02\ntop 10 countries                   45000                    2000    1.0%\n\n\nXK    22500    1000  $0.6B\n\n      161    0  2022    2023    2024  Q1'25 ARR1    0  2022    2023    2024  Q1'25 ARR 1\n\n                                                               Adj. EBITDA ($)  Adj. EBITDA Margin3\n\n\n                           Note 1: Annual run rate.\n                           Note 2: Growth rate shown on a constant currency basis.\nUber  Q1 2025 Earnings     Note 3: Adjusted EBITDA as a % of Gross Bookings.       5"
+      },
+      {
+        "page_number": 3,
+        "text": "Pursuing massive opportunities in local commerce\nthrough new products and tech\n\n           Grocery  Convenience  Alcohol                       Q1 highlights\nConsumers  Restaurants                                         17% YoY merchant\n                          Pet    Home     Electronics          growth\n                                 Improvement\n\n                                                               18% of Delivery\n                                                               MAPCs ordering from\n                                                               Grocery & Retail\n                          Direct    Pickup    Dine-In\nMerchants  Uber Eats                                           ~$10 billion run-rate\n           Marketplace                        Data &           Grocery & Retail Gross\n                          Advertising    Offers  Analytics     Bookings\n\nUber  Q1 2025 Earnings                                                                6"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "Photograph of an Uber Eats delivery bag on a doorstep\n\nMay 7, 2025\n\n# Uber Technologies, Inc.\n# Q1 2025 Earnings\n\nSupplemental Data\n\n1",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "# Uber is best positioned to capitalize on the global on-demand local commerce opportunity\n\n## Market leadership\n\nGlobal leading delivery player operating in >30 countries\n\n8 Category leading positions in top 10 countries\n\nCategory leading positions in top 10 countries\n\nAustralia flag Canada flag Chile flag France flag Japan flag\nMexico flag Spain flag Taiwan flag United Kingdom flag United States flag\n\n## Growth\n\n$82B Gross Bookings ARR<sup>1</sup>\n(+18% YoY in Q1’25)<sup>2</sup>\n\n<table>\n  <thead>\n    <tr>\n        <th>Period</th>\n        <th>Gross Bookings ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2022</td>\n        <td>56</td>\n    </tr>\n    <tr>\n        <td>2023</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Q1'25 ARR<sup>1</sup></td>\n        <td>82</td>\n    </tr>\n  </tbody>\n</table>\n\n## Profitability\n\n$3.1B Adjusted EBITDA ARR<sup>1</sup>\n(+45% YoY in Q1’25)\n\n<table>\n  <thead>\n    <tr>\n        <th>Period</th>\n        <th>Adj. EBITDA ($B)</th>\n        <th>Adj. EBITDA Margin<sup>3</sup> (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2022</td>\n        <td>0.6</td>\n        <td>1.0</td>\n    </tr>\n    <tr>\n        <td>2023</td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Q1'25 ARR<sup>1</sup></td>\n        <td>3.1</td>\n        <td>3.7</td>\n    </tr>\n  </tbody>\n</table>",
+        "footer": "\\*Note 1: Annual run rate.\n\\*Note 2: Growth rate shown on a constant currency basis.\n\\*Note 3: Adjusted EBITDA as a % of Gross Bookings.\n\nUber Q1 2025 Earnings\n\n<page_number>5</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "markdown": "# Pursuing massive opportunities in local commerce through new products and tech\n\n```mermaid\ngraph LR\n    subgraph Consumers\n        A((Restaurants)) --> B((Grocery))\n        A --> C((Pet))\n        B --> D((Convenience))\n        B --> E((Home Improvement))\n        D --> F((Alcohol))\n        E --> G((Electronics))\n    end\n```\n\n```mermaid\ngraph LR\n    subgraph Merchants\n        H((Uber Eats Marketplace)) --> I((Direct))\n        H --> J((Advertising))\n        I --> K((Pickup))\n        I --> L((Offers))\n        K --> M((Dine-In))\n        L --> N((Data & Analytics))\n    end\n```\n\n## Q1 highlights\n\n17% YoY merchant growth\n\n18% of Delivery MAPCs ordering from Grocery & Retail\n\n~$10 billion run-rate Grocery & Retail Gross Bookings",
+        "footer": "Uber Q1 2025 Earnings\n\n<page_number>6</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "text",
+            "md": "Photograph of an Uber Eats delivery bag on a doorstep",
+            "bbox": [
+              {
+                "x": 68.24,
+                "y": 69.52,
+                "w": 1782.58,
+                "h": 523.92,
+                "confidence": 0.88,
+                "start_index": 0,
+                "end_index": 52,
+                "label": "image"
+              }
+            ],
+            "value": "Photograph of an Uber Eats delivery bag on a doorstep"
+          },
+          {
+            "type": "text",
+            "md": "May 7, 2025",
+            "bbox": [
+              {
+                "x": 1680.19,
+                "y": 629.94,
+                "w": 169.16,
+                "h": 32.78,
+                "confidence": 0.86,
+                "start_index": 0,
+                "end_index": 10,
+                "label": "text"
+              }
+            ],
+            "value": "May 7, 2025"
+          },
+          {
+            "type": "heading",
+            "md": "# Uber Technologies, Inc.",
+            "bbox": [
+              {
+                "x": 66.66,
+                "y": 595.4,
+                "w": 1490.32,
+                "h": 175,
+                "confidence": 1,
+                "start_index": 2,
+                "end_index": 24,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 67.51756419306216,
+                "y": 627.1560934315556,
+                "w": 1462.508548239003,
+                "h": 295.69645425547725,
+                "confidence": 1,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Uber Technologies, Inc."
+          },
+          {
+            "type": "heading",
+            "md": "# Q1 2025 Earnings",
+            "bbox": [
+              {
+                "x": 275.4,
+                "y": 752.9,
+                "w": 883.95,
+                "h": 175,
+                "confidence": 0.74,
+                "start_index": 0,
+                "end_index": 17,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Q1 2025 Earnings"
+          },
+          {
+            "type": "text",
+            "md": "Supplemental Data",
+            "bbox": [
+              {
+                "x": 67.41,
+                "y": 939.94,
+                "w": 511.05,
+                "h": 61.33,
+                "confidence": 0.89,
+                "start_index": 0,
+                "end_index": 16,
+                "label": "text"
+              }
+            ],
+            "value": "Supplemental Data"
+          },
+          {
+            "type": "text",
+            "md": "1",
+            "bbox": [
+              {
+                "x": 1841.62,
+                "y": 1021.93,
+                "w": 8,
+                "h": 21,
+                "confidence": 1,
+                "start_index": 0,
+                "end_index": 0,
+                "label": "text"
+              }
+            ],
+            "value": "1"
+          }
+        ],
+        "page_width": 1920,
+        "page_height": 1080,
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# Uber is best positioned to capitalize on the global on-demand local commerce opportunity",
+            "bbox": [
+              {
+                "x": 69.4,
+                "y": 60.95,
+                "w": 1604.24,
+                "h": 145.14,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 89,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Uber is best positioned to capitalize on the global on-demand local commerce opportunity"
+          },
+          {
+            "type": "heading",
+            "md": "## Market leadership",
+            "bbox": [
+              {
+                "x": 154.42,
+                "y": 287.23,
+                "w": 331.03,
+                "h": 39.33,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 19,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Market leadership"
+          },
+          {
+            "type": "text",
+            "md": "Global leading delivery player operating in >30 countries",
+            "bbox": [
+              {
+                "x": 123.89,
+                "y": 354.94,
+                "w": 391.25,
+                "h": 65.38,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 56,
+                "label": "text"
+              }
+            ],
+            "value": "Global leading delivery player operating in >30 countries"
+          },
+          {
+            "type": "text",
+            "md": "8 Category leading positions in top 10 countries",
+            "bbox": [
+              {
+                "x": 141.4,
+                "y": 476.74,
+                "w": 335.77,
+                "h": 194.95,
+                "confidence": 0.73,
+                "start_index": 0,
+                "end_index": 47,
+                "label": "image"
+              }
+            ],
+            "value": "8 Category leading positions in top 10 countries"
+          },
+          {
+            "type": "text",
+            "md": "Category leading positions in top 10 countries",
+            "bbox": [
+              {
+                "x": 141.59,
+                "y": 614.46,
+                "w": 335.01,
+                "h": 57.27,
+                "confidence": 0.8,
+                "start_index": 0,
+                "end_index": 45,
+                "label": "text"
+              }
+            ],
+            "value": "Category leading positions in top 10 countries"
+          },
+          {
+            "type": "text",
+            "md": "Australia flag Canada flag Chile flag France flag Japan flag\nMexico flag Spain flag Taiwan flag United Kingdom flag United States flag",
+            "value": "Australia flag Canada flag Chile flag France flag Japan flag\nMexico flag Spain flag Taiwan flag United Kingdom flag United States flag"
+          },
+          {
+            "type": "heading",
+            "md": "## Growth",
+            "bbox": [
+              {
+                "x": 886.8,
+                "y": 286.92,
+                "w": 140.02,
+                "h": 36.14,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 8,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Growth"
+          },
+          {
+            "type": "text",
+            "md": "$82B Gross Bookings ARR<sup>1</sup>\n(+18% YoY in Q1’25)<sup>2</sup>",
+            "bbox": [
+              {
+                "x": 781.34,
+                "y": 354.22,
+                "w": 352.32,
+                "h": 63.84,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 66,
+                "label": "text"
+              }
+            ],
+            "value": "$82B Gross Bookings ARR<sup>1</sup>\n(+18% YoY in Q1’25)<sup>2</sup>"
+          },
+          {
+            "type": "table",
+            "md": "| Period     | Gross Bookings ($B) |\n| ---------- | ------------------- |\n| 2022       | 56                  |\n| 2023       |                     |\n| 2024       |                     |\n| Q1'25 ARR¹ | 82                  |",
+            "bbox": [
+              {
+                "x": 698.4,
+                "y": 484.06,
+                "w": 516.55,
+                "h": 379.37,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 220,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Period",
+                "Gross Bookings ($B)"
+              ],
+              [
+                "2022",
+                "56"
+              ],
+              [
+                "2023",
+                ""
+              ],
+              [
+                "2024",
+                ""
+              ],
+              [
+                "Q1'25 ARR¹",
+                "82"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Period</th>\n        <th>Gross Bookings ($B)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2022</td>\n        <td>56</td>\n    </tr>\n    <tr>\n        <td>2023</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Q1'25 ARR<sup>1</sup></td>\n        <td>82</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Period\",\"Gross Bookings ($B)\"\n\"2022\",\"56\"\n\"2023\",\n\"2024\",\n\"Q1'25 ARR¹\",\"82\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [paragraph_title, chart, text, footer, image] but no table/form"
+              },
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "md": "## Profitability",
+            "bbox": [
+              {
+                "x": 1489.13,
+                "y": 286.67,
+                "w": 212.6,
+                "h": 40.03,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 15,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Profitability"
+          },
+          {
+            "type": "text",
+            "md": "$3.1B Adjusted EBITDA ARR<sup>1</sup>\n(+45% YoY in Q1’25)",
+            "bbox": [
+              {
+                "x": 1409.22,
+                "y": 354.66,
+                "w": 371.15,
+                "h": 63.8,
+                "confidence": 0.91,
+                "start_index": 0,
+                "end_index": 56,
+                "label": "text"
+              }
+            ],
+            "value": "$3.1B Adjusted EBITDA ARR<sup>1</sup>\n(+45% YoY in Q1’25)"
+          },
+          {
+            "type": "table",
+            "md": "| Period     | Adj. EBITDA ($B) | Adj. EBITDA Margin³ (%) |\n| ---------- | ---------------- | ----------------------- |\n| 2022       | 0.6              | 1.0                     |\n| 2023       |                  |                         |\n| 2024       |                  |                         |\n| Q1'25 ARR¹ | 3.1              | 3.7                     |",
+            "bbox": [
+              {
+                "x": 1336.78,
+                "y": 440.65,
+                "w": 516.14,
+                "h": 479.48,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 358,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Period",
+                "Adj. EBITDA ($B)",
+                "Adj. EBITDA Margin³ (%)"
+              ],
+              [
+                "2022",
+                "0.6",
+                "1.0"
+              ],
+              [
+                "2023",
+                "",
+                ""
+              ],
+              [
+                "2024",
+                "",
+                ""
+              ],
+              [
+                "Q1'25 ARR¹",
+                "3.1",
+                "3.7"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Period</th>\n        <th>Adj. EBITDA ($B)</th>\n        <th>Adj. EBITDA Margin<sup>3</sup> (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2022</td>\n        <td>0.6</td>\n        <td>1.0</td>\n    </tr>\n    <tr>\n        <td>2023</td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td> </td>\n        <td> </td>\n    </tr>\n    <tr>\n        <td>Q1'25 ARR<sup>1</sup></td>\n        <td>3.1</td>\n        <td>3.7</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Period\",\"Adj. EBITDA ($B)\",\"Adj. EBITDA Margin³ (%)\"\n\"2022\",\"0.6\",\"1.0\"\n\"2023\",,\n\"2024\",,\n\"Q1'25 ARR¹\",\"3.1\",\"3.7\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [paragraph_title, chart, text, footer, image] but no table/form"
+              },
+              {
+                "type": "multi_table_page",
+                "details": "2 tables on page"
+              }
+            ]
+          },
+          {
+            "type": "footer",
+            "md": "\\*Note 1: Annual run rate.\n\\*Note 2: Growth rate shown on a constant currency basis.\n\\*Note 3: Adjusted EBITDA as a % of Gross Bookings.\n\nUber Q1 2025 Earnings\n\n<page_number>5</page_number>",
+            "bbox": [
+              {
+                "x": 69.6,
+                "y": 1003.34,
+                "w": 1778.25,
+                "h": 49.06
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "\\*Note 1: Annual run rate.\n\\*Note 2: Growth rate shown on a constant currency basis.\n\\*Note 3: Adjusted EBITDA as a % of Gross Bookings.",
+                "bbox": [
+                  {
+                    "x": 274.19,
+                    "y": 1003.34,
+                    "w": 136.03,
+                    "h": 17,
+                    "confidence": 0.88,
+                    "start_index": 0,
+                    "end_index": 25,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 274.19,
+                    "y": 1003.34,
+                    "w": 330.16,
+                    "h": 49,
+                    "confidence": 0.88,
+                    "start_index": 0,
+                    "end_index": 135,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 274.19,
+                    "y": 1035.34,
+                    "w": 297.34,
+                    "h": 17,
+                    "confidence": 0.88,
+                    "start_index": 85,
+                    "end_index": 135,
+                    "label": "footer"
+                  }
+                ],
+                "value": "*Note 1: Annual run rate.\n*Note 2: Growth rate shown on a constant currency basis.\n*Note 3: Adjusted EBITDA as a % of Gross Bookings."
+              },
+              {
+                "type": "text",
+                "md": "Uber Q1 2025 Earnings",
+                "bbox": [
+                  {
+                    "x": 69.6,
+                    "y": 1036.8,
+                    "w": 34.8,
+                    "h": 15.6,
+                    "confidence": 0.85,
+                    "start_index": 0,
+                    "end_index": 3,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 132.56,
+                    "y": 1035.89,
+                    "w": 102.93,
+                    "h": 15.24,
+                    "confidence": 0.85,
+                    "start_index": 5,
+                    "end_index": 20,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Uber Q1 2025 Earnings"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>5\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 1838.2,
+                    "y": 1036,
+                    "w": 9.65,
+                    "h": 13.54,
+                    "confidence": 0.91,
+                    "start_index": 0,
+                    "end_index": 29,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>5</page_number>"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 77.88379669189453,
+                "y": 718.8,
+                "w": 84.55833932627803,
+                "h": 61.64797150985055,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 179.38826851222825,
+                "y": 719.2693345443063,
+                "w": 84.08766373344086,
+                "h": 60.457300932511,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 279.11047230596125,
+                "y": 719.1978637031887,
+                "w": 82.20251332158627,
+                "h": 60.59898874034056,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 374.46485436480975,
+                "y": 719.0077226058297,
+                "w": 85.7108340056046,
+                "h": 60.55349101190973,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 478.68749203889263,
+                "y": 719.7110565848973,
+                "w": 81.64652948794155,
+                "h": 60.14230976934013,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 78.24716153352155,
+                "y": 794.3316749904466,
+                "w": 84.24828404965606,
+                "h": 60.331331335980025,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 178.07034699813178,
+                "y": 794.6189017917799,
+                "w": 84.8634338378906,
+                "h": 59.96090101159132,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 277.3516049592391,
+                "y": 795.032142970873,
+                "w": 82.33596138332202,
+                "h": 59.56628882366681,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 374.66344418733013,
+                "y": 794.078840172809,
+                "w": 88.33230723505433,
+                "h": 61.09888159710431,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 475.8345098080842,
+                "y": 794.4722880487856,
+                "w": 83.62072488536002,
+                "h": 60.83906090777864,
+                "confidence": 0.5,
+                "label": "image"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          }
+        ],
+        "page_width": 1920,
+        "page_height": 1080,
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# Pursuing massive opportunities in local commerce through new products and tech",
+            "bbox": [
+              {
+                "x": 69.68,
+                "y": 60.99,
+                "w": 1625.53,
+                "h": 144.45,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 79,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Pursuing massive opportunities in local commerce through new products and tech"
+          },
+          {
+            "type": "code",
+            "md": "```mermaid\ngraph LR\n    subgraph Consumers\n        A((Restaurants)) --> B((Grocery))\n        A --> C((Pet))\n        B --> D((Convenience))\n        B --> E((Home Improvement))\n        D --> F((Alcohol))\n        E --> G((Electronics))\n    end\n```",
+            "bbox": [
+              {
+                "x": 66.23,
+                "y": 387.43,
+                "w": 262,
+                "h": 60,
+                "confidence": 0.92,
+                "start_index": 33,
+                "end_index": 41,
+                "label": "chart"
+              },
+              {
+                "x": 442.51,
+                "y": 395.53,
+                "w": 178,
+                "h": 42,
+                "confidence": 0.92,
+                "start_index": 54,
+                "end_index": 64,
+                "label": "chart"
+              },
+              {
+                "x": 765.51,
+                "y": 317.93,
+                "w": 94,
+                "h": 198.42,
+                "confidence": 0.92,
+                "start_index": 75,
+                "end_index": 81,
+                "label": "chart"
+              },
+              {
+                "x": 935.97,
+                "y": 321.05,
+                "w": 119,
+                "h": 202.64,
+                "confidence": 0.92,
+                "start_index": 125,
+                "end_index": 135,
+                "label": "chart"
+              },
+              {
+                "x": 1130.76,
+                "y": 317.84,
+                "w": 96,
+                "h": 194.96,
+                "confidence": 0.92,
+                "start_index": 219,
+                "end_index": 229,
+                "label": "chart"
+              }
+            ],
+            "value": "graph LR\n    subgraph Consumers\n        A((Restaurants)) --> B((Grocery))\n        A --> C((Pet))\n        B --> D((Convenience))\n        B --> E((Home Improvement))\n        D --> F((Alcohol))\n        E --> G((Electronics))\n    end",
+            "language": "mermaid"
+          },
+          {
+            "type": "code",
+            "md": "```mermaid\ngraph LR\n    subgraph Merchants\n        H((Uber Eats Marketplace)) --> I((Direct))\n        H --> J((Advertising))\n        I --> K((Pickup))\n        I --> L((Offers))\n        K --> M((Dine-In))\n        L --> N((Data & Analytics))\n    end\n```",
+            "bbox": [
+              {
+                "x": 85.43,
+                "y": 807.97,
+                "w": 243,
+                "h": 60,
+                "confidence": 0.88,
+                "start_index": 33,
+                "end_index": 41,
+                "label": "chart"
+              },
+              {
+                "x": 435.8,
+                "y": 795.95,
+                "w": 191,
+                "h": 83,
+                "confidence": 0.88,
+                "start_index": 64,
+                "end_index": 74,
+                "label": "chart"
+              },
+              {
+                "x": 752.68,
+                "y": 738.46,
+                "w": 111,
+                "h": 195.58,
+                "confidence": 0.88,
+                "start_index": 111,
+                "end_index": 121,
+                "label": "chart"
+              },
+              {
+                "x": 953.13,
+                "y": 737.7,
+                "w": 76,
+                "h": 199.42,
+                "confidence": 0.88,
+                "start_index": 142,
+                "end_index": 147,
+                "label": "chart"
+              },
+              {
+                "x": 1122.36,
+                "y": 737.81,
+                "w": 104,
+                "h": 213.04,
+                "confidence": 0.88,
+                "start_index": 228,
+                "end_index": 236,
+                "label": "chart"
+              }
+            ],
+            "value": "graph LR\n    subgraph Merchants\n        H((Uber Eats Marketplace)) --> I((Direct))\n        H --> J((Advertising))\n        I --> K((Pickup))\n        I --> L((Offers))\n        K --> M((Dine-In))\n        L --> N((Data & Analytics))\n    end",
+            "language": "mermaid"
+          },
+          {
+            "type": "heading",
+            "md": "## Q1 highlights",
+            "bbox": [
+              {
+                "x": 1423.04,
+                "y": 294.82,
+                "w": 325.63,
+                "h": 54.08,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 15,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "Q1 highlights"
+          },
+          {
+            "type": "text",
+            "md": "17% YoY merchant growth",
+            "bbox": [
+              {
+                "x": 1422.74,
+                "y": 426.52,
+                "w": 299.57,
+                "h": 82.77,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 22,
+                "label": "text"
+              }
+            ],
+            "value": "17% YoY merchant growth"
+          },
+          {
+            "type": "text",
+            "md": "18% of Delivery MAPCs ordering from Grocery & Retail",
+            "bbox": [
+              {
+                "x": 1422.39,
+                "y": 593.52,
+                "w": 350.91,
+                "h": 127.01,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 51,
+                "label": "text"
+              }
+            ],
+            "value": "18% of Delivery MAPCs ordering from Grocery & Retail"
+          },
+          {
+            "type": "text",
+            "md": "\\~$10 billion run-rate Grocery & Retail Gross Bookings",
+            "bbox": [
+              {
+                "x": 1422.33,
+                "y": 817.04,
+                "w": 360.28,
+                "h": 127.29,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 53,
+                "label": "text"
+              }
+            ],
+            "value": "~$10 billion run-rate Grocery & Retail Gross Bookings"
+          },
+          {
+            "type": "footer",
+            "md": "Uber Q1 2025 Earnings\n\n<page_number>6</page_number>",
+            "bbox": [
+              {
+                "x": 69.6,
+                "y": 1035.84,
+                "w": 1778.25,
+                "h": 16.56
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Uber Q1 2025 Earnings",
+                "bbox": [
+                  {
+                    "x": 69.6,
+                    "y": 1036.8,
+                    "w": 34.8,
+                    "h": 15.6,
+                    "confidence": 0.91,
+                    "start_index": 0,
+                    "end_index": 3,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 132.63,
+                    "y": 1035.99,
+                    "w": 103.96,
+                    "h": 15.18,
+                    "confidence": 0.91,
+                    "start_index": 5,
+                    "end_index": 20,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Uber Q1 2025 Earnings"
+              },
+              {
+                "type": "text",
+                "md": "\\<page_number>6\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 1838.67,
+                    "y": 1035.84,
+                    "w": 9.17,
+                    "h": 13.5,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 29,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>6</page_number>"
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 65.6947492516559,
+                "y": 246.15162227464756,
+                "w": 1251.2899813444717,
+                "h": 339.18408767036766,
+                "confidence": 0.5,
+                "label": "chart"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          },
+          {
+            "type": "image",
+            "md": "",
+            "bbox": [
+              {
+                "x": 84.54287985096806,
+                "y": 663.6762602432914,
+                "w": 1230.9703196649964,
+                "h": 337.2777059803838,
+                "confidence": 0.5,
+                "label": "chart"
+              }
+            ],
+            "caption": "",
+            "url": ""
+          }
+        ],
+        "page_width": 1920,
+        "page_height": 1080,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.55,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 2,
+        "confidence": 0.726,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 3,
+        "confidence": 0.621,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 21,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=gZoYqbgEPMssTQ7TF%2B6aW1vKgBc%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_1_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=BcEH8OcITMRrgG8wFFsjzL%2ByuE4%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 68,
+          "y": 70,
+          "w": 1783,
+          "h": 524
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=%2Fs52KcJyoukMDt7QC0B7fJm6S6o%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_2_image_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=mBX%2BnLS5NjSTbEp8yBaTNZxA5Tc%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 78,
+          "y": 719,
+          "w": 85,
+          "h": 62
+        }
+      },
+      {
+        "index": 4,
+        "filename": "page_2_image_3_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_3_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=O2TCeH62Mec4rykZIFJwi4liqhw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 277,
+          "y": 795,
+          "w": 82,
+          "h": 60
+        }
+      },
+      {
+        "index": 5,
+        "filename": "page_2_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=O5rD%2FlYWfNzXKDxewb5igDyU4i8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 77,
+          "y": 718,
+          "w": 486,
+          "h": 138
+        }
+      },
+      {
+        "index": 6,
+        "filename": "page_2_image_5_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_5_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=3WuRHDMjBwFunpvxMt2smggR%2FMs%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 476,
+          "y": 794,
+          "w": 84,
+          "h": 61
+        }
+      },
+      {
+        "index": 7,
+        "filename": "page_2_image_4_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_4_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=PZ0p4JJ4ztNtWpNNkaxfuffcr64%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 141,
+          "y": 477,
+          "w": 336,
+          "h": 195
+        }
+      },
+      {
+        "index": 8,
+        "filename": "page_2_image_6_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_6_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=2iUD%2F%2FfO%2BtyUPR7dkaumxEgGdjM%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 178,
+          "y": 795,
+          "w": 85,
+          "h": 60
+        }
+      },
+      {
+        "index": 9,
+        "filename": "page_2_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=7utsIg%2FbVXAWfrxm%2BjHASGnmOT8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 698,
+          "y": 484,
+          "w": 517,
+          "h": 379
+        }
+      },
+      {
+        "index": 10,
+        "filename": "page_2_image_9_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_9_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=mzgx79kPsEHN69ZowR6FyYCVorU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 279,
+          "y": 719,
+          "w": 82,
+          "h": 61
+        }
+      },
+      {
+        "index": 11,
+        "filename": "page_2_image_7_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_7_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=i7uUAXHGxPywXyqO1FYTtqa7mu8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 179,
+          "y": 719,
+          "w": 84,
+          "h": 60
+        }
+      },
+      {
+        "index": 12,
+        "filename": "page_2_image_8_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_8_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=newEZjzAsOKdJ1Hocrr4gP06CLM%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 78,
+          "y": 794,
+          "w": 84,
+          "h": 60
+        }
+      },
+      {
+        "index": 13,
+        "filename": "page_2_image_10_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_10_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=f42JOr4EmPPv1ut7w5iXn2q9UIU%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 375,
+          "y": 794,
+          "w": 88,
+          "h": 61
+        }
+      },
+      {
+        "index": 14,
+        "filename": "page_2_image_11_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_11_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=31qu1gOSG99sxOmS2BBMNkgtD%2Bw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 479,
+          "y": 720,
+          "w": 82,
+          "h": 60
+        }
+      },
+      {
+        "index": 15,
+        "filename": "page_2_image_12_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_12_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=VK2Mgz0alxjYgQX0M6Qc%2B7R2YXI%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 278,
+          "y": 477,
+          "w": 85,
+          "h": 113
+        }
+      },
+      {
+        "index": 16,
+        "filename": "page_2_chart_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_chart_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=FDRKFFkeTFFDc5AeKDquRM1y8%2Bs%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 1337,
+          "y": 441,
+          "w": 516,
+          "h": 479
+        }
+      },
+      {
+        "index": 17,
+        "filename": "page_2_image_13_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_2_image_13_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=oJwz3l8QGXvgBSYAw%2FDdBnSvMho%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 374,
+          "y": 719,
+          "w": 86,
+          "h": 61
+        }
+      },
+      {
+        "index": 18,
+        "filename": "page_3.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=ZquzfveSczqVtYvwtQ134IeUu4Y%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 1080
+        }
+      },
+      {
+        "index": 19,
+        "filename": "page_3_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_3_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=YU%2F8BmG0IMntXv4nJItZ43Q2zGk%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 66,
+          "y": 246,
+          "w": 1251,
+          "h": 339
+        }
+      },
+      {
+        "index": 20,
+        "filename": "page_3_chart_2_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/6d89dc52-647e-426e-8384-859b135eb14c/page_3_chart_2_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTQP4DE66M&Signature=BhuSCj3XeOFtozS6EUPYZ%2BgbvfQ%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBYaCXVzLWVhc3QtMSJHMEUCIFvnJXlcFSEXIp6cPsnXknHAKqp76db4tyy9Q%2FEf8yzyAiEA3l2KihE9hEYdkLhyPLqIauQcM%2BVrHc04kRxYt822oUUqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDBN%2B6r2VXT%2BqluicESrkBDtKxeU3Y4TJyIx4ToIb31K1w5wHsAx%2F8fsR8OP29wSO8BJsZ8lp0mRbT2kr%2FrhxlyCVAVYAUH7DBIC3BV8LxDZaBmclE4rvmWlnX45IeOg2J%2BOkmh5BbHcaVCPxA3jqyjwgRXM4AIQN3kVbqaMcLtP3oR4eUWwR9MJpxi9mZN3Rgj6RztIDZHkhJdxlQEwVRnx8xohlWxTjnU9Wkcx9WMMHZPBch%2FPDX5TVCXSj2HNJUl63DTrPJOHssJZv3KMjQyTRJpkmtBDZd0uWkZ4i0WP9Q%2FflOgQ2bV6etOAq0cdIJw%2F%2BUyVGB2EIG4fbQSGPjItcdbrghPCdHYCMQYTy7nFlTNwS169Mq5t6%2BovUA5VH%2FlrsecVlpi4jgMWJdx3ccTfP265OS%2FRfXry3IEZ1sbqijIPhwjjn%2FRyCXB8nwK0HQsagyMuPs5BbizjLqiczbQ8uemi12v53Ht9OqV6MZnnwjwOJJ0aJBjdbK4zvYJhDf2tnlpJfse%2FgaNylrRF%2BiiF51OINW3qSHAPOtnLpY0MF%2FxsgLjj4Bx8GGbKxSupsxoBtv9D35wcSpw3KnZ5qrugiM1AD4sQHOUk%2FARyz%2FNMLYIVJbtR0vBhLARvoX9wdArGhBacKMCEdg2P3DE22zS4%2FWIe43j3ezj534NcWn63F1r22s2uNmGbLCH8ZeyzIjX43smFejJbJCQCwwWU5OLBUd3%2B39%2F0e0lrYsdpO7gUA1Q9lka%2Fq%2FFLB%2FtTNmJ4Ad%2BeCZOkDy9CKOeulRc7MS3xOsS19RRauE9bEUzSHLwDzY63oHWlKDXohIT8ULhJwK4Q5iDC8q%2FXTBjqYAYfiPnjAzklHIQ2hDYZ9BWnS0JJAZDueYS8feIcakw7O5%2B7TpJglgsNjYZLg1V22SXydFIjsYDeU1tFw72JitpsJPOaoVoW%2Fn1LXdaEdFyMH1t263t0xySccdOGjPtFR6Km1L3WguN4C7HyKDIsvS502Kl7WFsAnTIfVpLZOiXh%2Bhf1u658swELfQwJ%2Bf3Gbm0DPVd4X1us2&Expires=1786603993",
+        "category": "layout",
+        "bbox": {
+          "x": 85,
+          "y": 664,
+          "w": 1231,
+          "h": 337
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

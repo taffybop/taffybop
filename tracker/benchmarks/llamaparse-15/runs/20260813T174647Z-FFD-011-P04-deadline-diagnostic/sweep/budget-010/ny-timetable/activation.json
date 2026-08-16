@@ -1,0 +1,89 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-run-v1",
+  "classification": "diagnostic_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "source": {
+    "case_id": "ny-timetable",
+    "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+    "size_bytes": 26109,
+    "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+    "page_count": 3
+  },
+  "requested_document_seconds": 10.0,
+  "production_document_seconds": 5.0,
+  "page_seconds": 0.5,
+  "hard_max_document_seconds": 30.0,
+  "public_request_control": false,
+  "process_isolation": {
+    "pid": 97532,
+    "single_case_budget_pair": true,
+    "parser_cache_shared_across_pairs": false
+  },
+  "settings": {
+    "table_span_fidelity_enabled": true,
+    "text_integrity_source_alignment_enabled": false,
+    "predecessor_configuration": {
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true,
+      "canonical_serialization_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true
+    }
+  },
+  "code_identity": [
+    {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 349485,
+      "sha256": "2c841e2f3fc3b75bff52abc1e96b06bdee253f4c629f5c11eae8b09284e95bb9"
+    },
+    {
+      "path": "app/services/table_semantics.py",
+      "size_bytes": 349176,
+      "sha256": "1b1581896149ef6559c619de36f99084618b15791d2bcdd3bc051e9282335957"
+    },
+    {
+      "path": "app/services/opaque_group_custody.py",
+      "size_bytes": 112863,
+      "sha256": "2de517c1ac9a64946011c44319a56152e386fd4ef0c8a83d7fae298dd5a8283f"
+    },
+    {
+      "path": "app/services/ir.py",
+      "size_bytes": 262807,
+      "sha256": "8d7347ae3022a8826f13681046c2e4c66288fb8d3ed2734f86c9504ac2abd9aa"
+    },
+    {
+      "path": "app/services/presentation.py",
+      "size_bytes": 191222,
+      "sha256": "754b0c03002cd1c5c1203057ac2f9bab0e7ceab564151ac0295b66cf934d528b"
+    },
+    {
+      "path": "app/models.py",
+      "size_bytes": 382483,
+      "sha256": "5d8b9cf1efa85edebb5a104d8e20aac6da01be27cb04f6c967114b85d310d472"
+    },
+    {
+      "path": "app/config.py",
+      "size_bytes": 101261,
+      "sha256": "0fa0e5d87afbf126ab6c5d8527b6136c08f7a9fb9bb63b342b8933ff3c433db2"
+    },
+    {
+      "path": "tests/fixtures/phase_04/tables/diagnostic_budget.py",
+      "size_bytes": 14814,
+      "sha256": "5ede1ab5f2a735c10930ead06c6887cf319eb7d66cf28aab097cbae0ca9944f8"
+    },
+    {
+      "path": "tests/benchmarks/p04_deadline_diagnostic.py",
+      "size_bytes": 18175,
+      "sha256": "9e771ed543d981846068af1e42ac9a1c94553683c8e92acd18340baef742b09f"
+    }
+  ],
+  "started_at_utc": "2026-08-13T17:48:46.051463Z",
+  "command": ".venv/bin/python -m tests.benchmarks.p04_deadline_diagnostic --case ny-timetable --budget-seconds 10.0 --output-dir /Users/vignesh/Downloads/taffybop/tracker/benchmarks/llamaparse-15/runs/20260813T174647Z-FFD-011-P04-deadline-diagnostic/sweep/budget-010/ny-timetable"
+}

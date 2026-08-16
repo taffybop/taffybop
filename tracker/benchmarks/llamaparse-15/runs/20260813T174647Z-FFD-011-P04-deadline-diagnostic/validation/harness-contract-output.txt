@@ -1,0 +1,4 @@
+182 passed, 1 warning in 2.75s
+
+Exit status: 0
+Warning: existing Starlette TestClient/httpx deprecation only.

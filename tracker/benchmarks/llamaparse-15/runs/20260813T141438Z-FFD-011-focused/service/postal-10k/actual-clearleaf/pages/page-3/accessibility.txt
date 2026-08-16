@@ -1,0 +1,254 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - strong: Clearleaf
+  - generic: Document workspace
+  - generic: postal-10k.pdf
+  - emphasis: 81.6 KB
+  - 'generic "Transport: Same-origin API proxy"':
+    - text: Parsed
+  - button "New document":
+    - text: New document
+- button "Choose File"
+- main:
+  - strong: Page-by-page view
+  - generic: Preview and Markdown stay synchronized
+  - navigation "Document pages":
+    - button "Previous page":
+    - spinbutton "Current page number": "3"
+    - generic: of 3
+    - button "Next page" [disabled]:
+    - generic: Printed 49
+  - generic: 3 canonical blocks
+  - region "Document":
+    - generic: Original
+    - heading "Document" [level=2]
+    - button "Zoom out":
+    - generic: Width
+    - button "Zoom in":
+    - button "Fit page to width" [pressed]:
+    - button "Fit entire page":
+    - link "Open original document":
+      - /url: blob:http://localhost:3000/f23346ab-7492-4c99-9973-eff5daf24adc
+    - generic "PDF page 3":
+      - generic: "UNITED STATES POSTAL SERVICE STATEMENTS OF CASH FLOWS Years Ended September 30, (in millions) 2025 2024 2023 Cash flows from operating activities: Net loss $ (8,978) $ (9,520) $ (6,478) Adjustments to reconcile net loss to net cash (used in) provided by operating activities: Depreciation and amortization 2,238 1,997 1,786 Other, net 4 (14) (402) (Increase) decrease in operating lease right-of-use assets (126) (97) 22 Increase (decrease) in noncurrent workers' compensation 975 2,208 (880) Increase in noncurrent operating lease liabilities 126 139 89 Increase in other noncurrent liabilities 3 14 40 Changes in current assets and liabilities: Receivables, net 62 40 (101) Other current assets (102) (28) (29) Retirement benefits 3,807 4,556 4,574 Payables, accrued expenses, and other 292 306 (869) Operating lease liabilities 30 (20) (97) Deferred revenue-prepaid postage and other deferred revenue (182) 487 (117) Net cash (used in) provided by operating activities (1,851) 68 (2,462) Cash flows from investing activities: Purchases of property and equipment (3,585) (4,199) (3,000) Proceeds from sales of property and equipment 128 6 287 Purchases of investments (3,000) (15,300) (13,637) Purchases of restricted investments (566) (3,275) (3,145) Redemption of investments 12,300 14,637 5,000 Redemption of restricted investments 3,275 3,145 — Net cash provided by (used in) investing activities 8,552 (4,986) (14,495) Cash flows from financing activities: Proceeds from borrowings — 3,000 3,000 Repayments of borrowings — (1,000) — Payments on finance lease obligations (34) (28) (27) Net cash (used in) provided by financing activities (34) 1,972 2,973 Net increase (decrease) in cash, cash equivalents & restricted cash 6,667 (2,946) (13,984) Cash, cash equivalents & restricted cash - beginning of year 6,688 9,634 23,618 Cash, cash equivalents & restricted cash - end of year $ 13,355 $ 6,688 $ 9,634 Supplemental cash flows disclosures: Cash paid for interest $ 607 $ 569 $ 379 See accompanying notes to the financial statements. 2025 Report on Form 10-K United States Postal Service 49"
+    - generic: postal-10k.pdf
+    - button "Choose another"
+  - separator "Resize document and results panes"
+  - region "Results":
+    - generic: Structured
+    - heading "Results" [level=2]
+    - tablist "Result format":
+      - tab "Markdown" [selected]:
+        - text: Markdown
+      - tab "JSON":
+        - text: JSON
+    - button "Copy":
+      - generic: Copy
+    - button "Download":
+      - generic: Download
+    - generic "Page content scope":
+      - button "Body" [pressed]
+      - button "Full"
+    - generic "Markdown view":
+      - button "Rendered" [pressed]:
+        - text: Rendered
+      - button "Source":
+        - text: Source
+    - tabpanel "Markdown":
+      - article "Canonical content for physical page 3":
+        - heading "UNITED STATES POSTAL SERVICE STATEMENTS OF CASH FLOWS" [level=1]
+        - table:
+          - rowgroup:
+            - row "Years Ended September 30,":
+              - columnheader
+              - columnheader "Years Ended September 30,"
+              - columnheader
+              - columnheader
+          - rowgroup:
+            - row "(in millions) 2025 2024 2023":
+              - cell "(in millions)"
+              - cell "2025"
+              - cell "2024"
+              - cell "2023"
+            - row "Cash flows from operating activities:":
+              - cell "Cash flows from operating activities:"
+              - cell
+              - cell
+              - cell
+            - row "Net loss $ (8,978) $ (9,520) $ (6,478)":
+              - cell "Net loss"
+              - cell "$ (8,978)"
+              - cell "$ (9,520)"
+              - cell "$ (6,478)"
+            - row "Adjustments to reconcile net loss to net cash (used in) provided by operating activities:":
+              - cell "Adjustments to reconcile net loss to net cash (used in) provided by operating activities:"
+              - cell
+              - cell
+              - cell
+            - row "Depreciation and amortization 2,238 1,997 1,786":
+              - cell "Depreciation and amortization"
+              - cell "2,238"
+              - cell "1,997"
+              - cell "1,786"
+            - row "Other, net 4 (14) (402)":
+              - cell "Other, net"
+              - cell "4"
+              - cell "(14)"
+              - cell "(402)"
+            - row "(Increase) decrease in operating lease right-of-use assets (126) (97) 22":
+              - cell "(Increase) decrease in operating lease right-of-use assets"
+              - cell "(126)"
+              - cell "(97)"
+              - cell "22"
+            - row "Increase (decrease) in noncurrent workers' compensation 975 2,208 (880)":
+              - cell "Increase (decrease) in noncurrent workers' compensation"
+              - cell "975"
+              - cell "2,208"
+              - cell "(880)"
+            - row "Increase in noncurrent operating lease liabilities 126 139 89":
+              - cell "Increase in noncurrent operating lease liabilities"
+              - cell "126"
+              - cell "139"
+              - cell "89"
+            - row "Increase in other noncurrent liabilities 3 14 40":
+              - cell "Increase in other noncurrent liabilities"
+              - cell "3"
+              - cell "14"
+              - cell "40"
+            - row "Changes in current assets and liabilities:":
+              - cell "Changes in current assets and liabilities:"
+              - cell
+              - cell
+              - cell
+            - row "Receivables, net 62 40 (101)":
+              - cell "Receivables, net"
+              - cell "62"
+              - cell "40"
+              - cell "(101)"
+            - row "Other current assets (102) (28) (29)":
+              - cell "Other current assets"
+              - cell "(102)"
+              - cell "(28)"
+              - cell "(29)"
+            - row "Retirement benefits 3,807 4,556 4,574":
+              - cell "Retirement benefits"
+              - cell "3,807"
+              - cell "4,556"
+              - cell "4,574"
+            - row "Payables, accrued expenses, and other 292 306 (869)":
+              - cell "Payables, accrued expenses, and other"
+              - cell "292"
+              - cell "306"
+              - cell "(869)"
+            - row "Operating lease liabilities 30 (20) (97)":
+              - cell "Operating lease liabilities"
+              - cell "30"
+              - cell "(20)"
+              - cell "(97)"
+            - row "Deferred revenue-prepaid postage and other deferred revenue (182) 487 (117)":
+              - cell "Deferred revenue-prepaid postage and other deferred revenue"
+              - cell "(182)"
+              - cell "487"
+              - cell "(117)"
+            - row "Net cash (used in) provided by operating activities (1,851) 68 (2,462)":
+              - cell "Net cash (used in) provided by operating activities"
+              - cell "(1,851)"
+              - cell "68"
+              - cell "(2,462)"
+            - row "Cash flows from investing activities:":
+              - cell "Cash flows from investing activities:"
+              - cell
+              - cell
+              - cell
+            - row "Purchases of property and equipment (3,585) (4,199) (3,000)":
+              - cell "Purchases of property and equipment"
+              - cell "(3,585)"
+              - cell "(4,199)"
+              - cell "(3,000)"
+            - row "Proceeds from sales of property and equipment 128 6 287":
+              - cell "Proceeds from sales of property and equipment"
+              - cell "128"
+              - cell "6"
+              - cell "287"
+            - row "Purchases of investments (3,000) (15,300) (13,637)":
+              - cell "Purchases of investments"
+              - cell "(3,000)"
+              - cell "(15,300)"
+              - cell "(13,637)"
+            - row "Purchases of restricted investments (566) (3,275) (3,145)":
+              - cell "Purchases of restricted investments"
+              - cell "(566)"
+              - cell "(3,275)"
+              - cell "(3,145)"
+            - row "Redemption of investments 12,300 14,637 5,000":
+              - cell "Redemption of investments"
+              - cell "12,300"
+              - cell "14,637"
+              - cell "5,000"
+            - row "Redemption of restricted investments 3,275 3,145 -":
+              - cell "Redemption of restricted investments"
+              - cell "3,275"
+              - cell "3,145"
+              - cell "-"
+            - row "Net cash provided by (used in) investing activities 8,552 (4,986) (14,495)":
+              - cell "Net cash provided by (used in) investing activities"
+              - cell "8,552"
+              - cell "(4,986)"
+              - cell "(14,495)"
+            - row "Cash flows from financing activities:":
+              - cell "Cash flows from financing activities:"
+              - cell
+              - cell
+              - cell
+            - row "Proceeds from borrowings - 3,000 3,000":
+              - cell "Proceeds from borrowings"
+              - cell "-"
+              - cell "3,000"
+              - cell "3,000"
+            - row "Repayments of borrowings - (1,000) -":
+              - cell "Repayments of borrowings"
+              - cell "-"
+              - cell "(1,000)"
+              - cell "-"
+            - row "Payments on finance lease obligations (34) (28) (27)":
+              - cell "Payments on finance lease obligations"
+              - cell "(34)"
+              - cell "(28)"
+              - cell "(27)"
+            - row "Net cash (used in) provided by financing activities (34) 1,972 2,973":
+              - cell "Net cash (used in) provided by financing activities"
+              - cell "(34)"
+              - cell "1,972"
+              - cell "2,973"
+            - row "Net increase (decrease) in cash, cash equivalents & restricted cash 6,667 (2,946) (13,984)":
+              - cell "Net increase (decrease) in cash, cash equivalents & restricted cash"
+              - cell "6,667"
+              - cell "(2,946)"
+              - cell "(13,984)"
+            - row "Cash, cash equivalents & restricted cash - beginning of year 6,688 9,634 23,618":
+              - cell "Cash, cash equivalents & restricted cash - beginning of year"
+              - cell "6,688"
+              - cell "9,634"
+              - cell "23,618"
+            - row "Cash, cash equivalents & restricted cash - end of year $ 13,355 $ 6,688 $ 9,634":
+              - cell "Cash, cash equivalents & restricted cash - end of year"
+              - cell "$ 13,355"
+              - cell "$ 6,688"
+              - cell "$ 9,634"
+            - row "Supplemental cash flows disclosures:":
+              - cell "Supplemental cash flows disclosures:"
+              - cell
+              - cell
+              - cell
+            - row "Cash paid for interest $ 607 $ 569 $ 379":
+              - cell "Cash paid for interest"
+              - cell "$ 607"
+              - cell "$ 569"
+              - cell "$ 379"
+        - paragraph: See accompanying notes to the financial statements.
+    - generic: Physical page 3 · printed 49
+    - generic: •3 canonical blocks
+    - generic: •Processed in 22.6s
+- generic: Physical page 3 of 3, printed label 49
+- document

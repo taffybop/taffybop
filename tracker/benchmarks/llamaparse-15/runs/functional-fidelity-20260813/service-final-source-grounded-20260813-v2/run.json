@@ -1,0 +1,402 @@
+{
+  "base_url": "http://127.0.0.1:8034",
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "completed_at_utc": "2026-08-13T09:00:53.918704+00:00",
+      "order": 1,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "8e87f0c7b2681483304122f92dce48dca698ff536a8e061168b8751627287551",
+          "size_bytes": 315150,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "d293f534cafa9de630a7e3d6039797aa60029a56f12d001dd0fd3497c9f78f72",
+          "size_bytes": 2120,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "source_size_bytes": 58779,
+      "started_at_utc": "2026-08-13T09:00:36.061236+00:00"
+    },
+    {
+      "case_id": "clean-energy",
+      "completed_at_utc": "2026-08-13T09:01:01.167881+00:00",
+      "order": 2,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "d668a141b9d655901a8d9c27c8ab42a1a19a23d9643f98be18b9db28c10b79e0",
+          "size_bytes": 433720,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+          "size_bytes": 629,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clean-energy.pdf",
+      "source_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "source_size_bytes": 122014,
+      "started_at_utc": "2026-08-13T09:00:53.919719+00:00"
+    },
+    {
+      "case_id": "clinical-study",
+      "completed_at_utc": "2026-08-13T09:01:48.594811+00:00",
+      "order": 3,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "e854c6f37bc9df1ffa8e88956b8aeb82ed77f0bb11e499c67aab102e7cd72262",
+          "size_bytes": 1429264,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2",
+          "size_bytes": 17695,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clinical-study.pdf",
+      "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "source_size_bytes": 750004,
+      "started_at_utc": "2026-08-13T09:01:01.169309+00:00"
+    },
+    {
+      "case_id": "component-datasheet",
+      "completed_at_utc": "2026-08-13T09:02:14.455336+00:00",
+      "order": 4,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "75d381f7e5bc52a50a3425da683de51bbf2101430a095940ddd1dcdb12a8f0d5",
+          "size_bytes": 742279,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "4e00f4db0ba84ff89ca12e56dbfd6db87f20fbd24006510122bcfbd15a0b9f49",
+          "size_bytes": 5736,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/component-datasheet.pdf",
+      "source_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "source_size_bytes": 329199,
+      "started_at_utc": "2026-08-13T09:01:48.595988+00:00"
+    },
+    {
+      "case_id": "egov-survey",
+      "completed_at_utc": "2026-08-13T09:02:21.025315+00:00",
+      "order": 5,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "0b6b636778c2f5af28ad7b90d5570d4d8643943dbdef16f6cd54c9a4a3b005dc",
+          "size_bytes": 317119,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c",
+          "size_bytes": 2830,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/egov-survey.pdf",
+      "source_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "source_size_bytes": 82800,
+      "started_at_utc": "2026-08-13T09:02:14.456501+00:00"
+    },
+    {
+      "case_id": "esg-metrics",
+      "completed_at_utc": "2026-08-13T09:02:31.974793+00:00",
+      "order": 6,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "e44f3e477ced9bd6e75b4c7c746c93d714c728ea934516f6cb8afc568dce0e21",
+          "size_bytes": 426740,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+          "size_bytes": 3012,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/esg-metrics.pdf",
+      "source_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "source_size_bytes": 60516,
+      "started_at_utc": "2026-08-13T09:02:21.026465+00:00"
+    },
+    {
+      "case_id": "finance-10k",
+      "completed_at_utc": "2026-08-13T09:03:16.234054+00:00",
+      "order": 7,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "658c81570d089491ca7939c1620c9b4d6fa66497482c479c3d9046ac34410552",
+          "size_bytes": 1754861,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389",
+          "size_bytes": 12618,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/finance-10k.pdf",
+      "source_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "source_size_bytes": 87105,
+      "started_at_utc": "2026-08-13T09:02:31.975892+00:00"
+    },
+    {
+      "case_id": "health-report",
+      "completed_at_utc": "2026-08-13T09:03:35.151489+00:00",
+      "order": 8,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "1141de7d2073d8011dbb7b457a466d3736589b04f38fdae61c3287561bbc35b9",
+          "size_bytes": 546283,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0",
+          "size_bytes": 1482,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/health-report.pdf",
+      "source_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "source_size_bytes": 222282,
+      "started_at_utc": "2026-08-13T09:03:16.237624+00:00"
+    },
+    {
+      "case_id": "insurance-acord",
+      "completed_at_utc": "2026-08-13T09:03:55.650349+00:00",
+      "order": 9,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "2c7d3920e7bd70c337fd021434a583e7ea138f7f4bea03e4004f4616c5a605c1",
+          "size_bytes": 351105,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1",
+          "size_bytes": 10006,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/insurance-acord.pdf",
+      "source_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "source_size_bytes": 17086,
+      "started_at_utc": "2026-08-13T09:03:35.152364+00:00"
+    },
+    {
+      "case_id": "manufacturing-report",
+      "completed_at_utc": "2026-08-13T09:04:28.866266+00:00",
+      "order": 10,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "6da11545d36ff46ece7b60ca34238e4626f92e6a86d4757141fd6c15b4e996c5",
+          "size_bytes": 1916331,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599",
+          "size_bytes": 4479,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/manufacturing-report.pdf",
+      "source_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "source_size_bytes": 380274,
+      "started_at_utc": "2026-08-13T09:03:55.651796+00:00"
+    },
+    {
+      "case_id": "ny-timetable",
+      "completed_at_utc": "2026-08-13T09:06:59.888743+00:00",
+      "order": 11,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "30dd5861ba8fb3b1b2f60c6282c4120b6467dce4191e845be924029207a6cb54",
+          "size_bytes": 2670237,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef",
+          "size_bytes": 43231,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/ny-timetable.pdf",
+      "source_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "source_size_bytes": 26109,
+      "started_at_utc": "2026-08-13T09:04:28.868472+00:00"
+    },
+    {
+      "case_id": "postal-10k",
+      "completed_at_utc": "2026-08-13T09:07:55.941241+00:00",
+      "order": 12,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "b257415acf17ba8611ec2e5c869ecd7be5cfe423f42fbe578db6acd149534f09",
+          "size_bytes": 1792177,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+          "size_bytes": 11275,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/postal-10k.pdf",
+      "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "source_size_bytes": 83589,
+      "started_at_utc": "2026-08-13T09:06:59.889931+00:00"
+    },
+    {
+      "case_id": "purchase-agreement",
+      "completed_at_utc": "2026-08-13T09:08:01.998129+00:00",
+      "order": 13,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "80de9f66e3a6e589a62d8791c2d161f56235c08bed3a3a0888f0690c215bf9c4",
+          "size_bytes": 258183,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+          "size_bytes": 3503,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/purchase-agreement.pdf",
+      "source_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "source_size_bytes": 152828,
+      "started_at_utc": "2026-08-13T09:07:55.942446+00:00"
+    },
+    {
+      "case_id": "settlement-agreement",
+      "completed_at_utc": "2026-08-13T09:08:09.806289+00:00",
+      "order": 14,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "1a54671b094259494687aeed066f582f0b1bca8ab2c3b5b2916854034a0820f7",
+          "size_bytes": 137839,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+          "size_bytes": 3173,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/settlement-agreement.pdf",
+      "source_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "source_size_bytes": 164483,
+      "started_at_utc": "2026-08-13T09:08:02.000158+00:00"
+    },
+    {
+      "case_id": "uber-earnings",
+      "completed_at_utc": "2026-08-13T09:09:09.481657+00:00",
+      "order": 15,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "c0f4edabd96760fc06056b15e170139cfa474172f30180bfe3db5130a1e27273",
+          "size_bytes": 505705,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094",
+          "size_bytes": 1235,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/uber-earnings.pdf",
+      "source_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "source_size_bytes": 7584019,
+      "started_at_utc": "2026-08-13T09:08:09.815004+00:00"
+    }
+  ],
+  "completed_at_utc": "2026-08-13T09:09:09.482294+00:00",
+  "corpus": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata",
+  "profile": {
+    "environment": {
+      "DOCLING_ARTIFACTS_PATH": ".models/docling",
+      "HF_HUB_OFFLINE": "1",
+      "PARSER_CANONICAL_SERIALIZATION_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURED_OUTPUT_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_VALUES_ENABLED": "true",
+      "PARSER_DIAGRAMS_TOPOLOGY_ENABLED": "true",
+      "PARSER_LAYOUT_FORMS_ENABLED": "true",
+      "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED": "true",
+      "PARSER_LAYOUT_RELATIONSHIP_ORDER_ENABLED": "true",
+      "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED": "true",
+      "PARSER_LAYOUT_SOURCE_NOTES_ENABLED": "true",
+      "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED": "true",
+      "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED": "true",
+      "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED": "true",
+      "PARSER_OCR_NUMERIC_CLEANUP_V2_ENABLED": "true",
+      "PARSER_OCR_SPATIAL_TOKEN_PRESERVATION_ENABLED": "true",
+      "PARSER_SHARED_IR_ENABLED": "true",
+      "PARSER_SHARED_IR_NORMALIZATION_ENABLED": "true",
+      "PARSER_TABLES_CANDIDATE_GATE_ENABLED": "true",
+      "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED": "true",
+      "PARSER_TABLES_MULTI_PAGE_MERGE_ENABLED": "true",
+      "PARSER_TABLES_SPAN_FIDELITY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_AUDIT_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_RECOVERY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SELECTIVE_SPAN_OCR_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SOURCE_ALIGNMENT_ENABLED": "true",
+      "PARSER_TEXT_RECONCILIATION_ENABLED": "true",
+      "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED": "true",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "hosted_models": "disabled",
+    "image_captioning": false,
+    "local_optional_visual_models": "disabled",
+    "network_services": "disabled",
+    "profile_id": "release-fidelity-local-deterministic-v1",
+    "purpose": "Exercise all shipped PDF text, layout, table, chart, diagram, canonical JSON and Markdown capabilities whose dependencies are local and available.",
+    "schema_version": "functional-fidelity-service-profile-v1"
+  },
+  "schema_version": "functional-fidelity-service-run-v1",
+  "started_at_utc": "2026-08-13T09:00:36.009740+00:00",
+  "status": "success"
+}

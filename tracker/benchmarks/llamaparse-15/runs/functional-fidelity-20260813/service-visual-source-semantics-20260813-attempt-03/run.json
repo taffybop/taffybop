@@ -1,0 +1,195 @@
+{
+  "base_url": "http://127.0.0.1:8024",
+  "cases": [
+    {
+      "case_id": "clean-energy",
+      "completed_at_utc": "2026-08-13T08:11:04.672306+00:00",
+      "order": 1,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "1b74b37be53c55040384d7c7d28bb70e6a5c281a25606c4138d4213504b89f91",
+          "size_bytes": 433722,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+          "size_bytes": 629,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/clean-energy.pdf",
+      "source_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "source_size_bytes": 122014,
+      "started_at_utc": "2026-08-13T08:10:48.117666+00:00"
+    },
+    {
+      "case_id": "egov-survey",
+      "completed_at_utc": "2026-08-13T08:11:10.129698+00:00",
+      "order": 2,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "978ffd209b1d1f78016bbf9f020bd95d3293fd61105f22d7bc4461e54c682635",
+          "size_bytes": 317509,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c",
+          "size_bytes": 2830,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/egov-survey.pdf",
+      "source_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "source_size_bytes": 82800,
+      "started_at_utc": "2026-08-13T08:11:04.673477+00:00"
+    },
+    {
+      "case_id": "esg-metrics",
+      "completed_at_utc": "2026-08-13T08:11:21.511838+00:00",
+      "order": 3,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "010690328f10e09fe1d8af46f7f23534672df1cb9536ab5d4e2e3fc691cf2659",
+          "size_bytes": 426740,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+          "size_bytes": 3012,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/esg-metrics.pdf",
+      "source_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "source_size_bytes": 60516,
+      "started_at_utc": "2026-08-13T08:11:10.130650+00:00"
+    },
+    {
+      "case_id": "health-report",
+      "completed_at_utc": "2026-08-13T08:11:36.172381+00:00",
+      "order": 4,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "8101e53be037b93d77a2e33190cee98b4980816b20b21ec9566b59d0d5699584",
+          "size_bytes": 546404,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0",
+          "size_bytes": 1482,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/health-report.pdf",
+      "source_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "source_size_bytes": 222282,
+      "started_at_utc": "2026-08-13T08:11:21.512889+00:00"
+    },
+    {
+      "case_id": "manufacturing-report",
+      "completed_at_utc": "2026-08-13T08:12:04.418788+00:00",
+      "order": 5,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "5bc18b7c3067231643be1819c55f4b6f94db416c54d14ea33a310cef43c35585",
+          "size_bytes": 1917075,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599",
+          "size_bytes": 4479,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/manufacturing-report.pdf",
+      "source_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "source_size_bytes": 380274,
+      "started_at_utc": "2026-08-13T08:11:36.173585+00:00"
+    },
+    {
+      "case_id": "uber-earnings",
+      "completed_at_utc": "2026-08-13T08:12:57.779129+00:00",
+      "order": 6,
+      "outputs": {
+        "json": {
+          "content_type": "application/json",
+          "sha256": "ff51e0757d6d05886470d989d13f7c063deccb08f5520d227e4a7a324f8c7bc6",
+          "size_bytes": 505904,
+          "status_code": 200
+        },
+        "markdown": {
+          "content_type": "text/markdown; charset=utf-8",
+          "sha256": "b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094",
+          "size_bytes": 1235,
+          "status_code": 200
+        }
+      },
+      "source_path": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata/uber-earnings.pdf",
+      "source_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "source_size_bytes": 7584019,
+      "started_at_utc": "2026-08-13T08:12:04.425939+00:00"
+    }
+  ],
+  "completed_at_utc": "2026-08-13T08:12:57.779737+00:00",
+  "corpus": "/Users/vignesh/Downloads/taffybop/benchmark-expertmodeldata",
+  "profile": {
+    "environment": {
+      "DOCLING_ARTIFACTS_PATH": ".models/docling",
+      "HF_HUB_OFFLINE": "1",
+      "PARSER_CANONICAL_SERIALIZATION_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURED_OUTPUT_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_VALUES_ENABLED": "true",
+      "PARSER_DIAGRAMS_TOPOLOGY_ENABLED": "true",
+      "PARSER_LAYOUT_FORMS_ENABLED": "true",
+      "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED": "true",
+      "PARSER_LAYOUT_RELATIONSHIP_ORDER_ENABLED": "true",
+      "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED": "true",
+      "PARSER_LAYOUT_SOURCE_NOTES_ENABLED": "true",
+      "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED": "true",
+      "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED": "true",
+      "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED": "true",
+      "PARSER_OCR_NUMERIC_CLEANUP_V2_ENABLED": "true",
+      "PARSER_OCR_SPATIAL_TOKEN_PRESERVATION_ENABLED": "true",
+      "PARSER_SHARED_IR_ENABLED": "true",
+      "PARSER_SHARED_IR_NORMALIZATION_ENABLED": "true",
+      "PARSER_TABLES_CANDIDATE_GATE_ENABLED": "true",
+      "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED": "true",
+      "PARSER_TABLES_MULTI_PAGE_MERGE_ENABLED": "true",
+      "PARSER_TABLES_SPAN_FIDELITY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_AUDIT_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_RECOVERY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SELECTIVE_SPAN_OCR_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SOURCE_ALIGNMENT_ENABLED": "true",
+      "PARSER_TEXT_RECONCILIATION_ENABLED": "true",
+      "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED": "true",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "hosted_models": "disabled",
+    "image_captioning": false,
+    "local_optional_visual_models": "disabled",
+    "network_services": "disabled",
+    "profile_id": "release-fidelity-local-deterministic-v1",
+    "purpose": "Exercise all shipped PDF text, layout, table, chart, diagram, canonical JSON and Markdown capabilities whose dependencies are local and available.",
+    "schema_version": "functional-fidelity-service-profile-v1"
+  },
+  "schema_version": "functional-fidelity-service-run-v1",
+  "started_at_utc": "2026-08-13T08:10:48.050846+00:00",
+  "status": "success"
+}

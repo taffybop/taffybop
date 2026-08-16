@@ -1,0 +1,4224 @@
+{
+  "case_id": "clinical-study",
+  "document": {
+    "expert_page_count": 4,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 4,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "clinical-study.pdf",
+    "source_page_count": 4
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 12,
+        "line": "<td> </td>"
+      },
+      {
+        "count": 12,
+        "line": "<td></td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>0% (0)</td>"
+      },
+      {
+        "count": 4,
+        "line": "plos medicine"
+      },
+      {
+        "count": 4,
+        "line": "<td>0.4% (1)</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>baseline</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>266</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>272</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>post</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>207</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>186</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>follow-up</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>174</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>170</td>"
+      },
+      {
+        "count": 3,
+        "line": "digital mental health for syrian refugees in egypt: a pragmatic rct"
+      },
+      {
+        "count": 3,
+        "line": "<td>1.0% (1)</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>2.6% (7)</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>other</td>"
+      },
+      {
+        "count": 3,
+        "line": "direction tb"
+      },
+      {
+        "count": 2,
+        "line": "<td>2.39 (0.61)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>2.46 (0.61)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>15.40 (4.52)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>67.3% (362)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>4.4% (12)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>4.1% (4)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>3.6% (6)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>1.5% (4)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>6.5% (11)</td>"
+      },
+      {
+        "count": 2,
+        "line": "</tbody>"
+      },
+      {
+        "count": 2,
+        "line": "</table>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 53,
+        "line": "<td></td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>0% (0)</td>"
+      },
+      {
+        "count": 4,
+        "line": "plos medicine"
+      },
+      {
+        "count": 4,
+        "line": "plosmedicine | https://doi.org/10.1371/journal.pmed.1004460 september 9, 2024"
+      },
+      {
+        "count": 4,
+        "line": "<td>0.4% (1)</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>baseline</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>266</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>272</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>post</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>207</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>186</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>follow-up</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>174</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>170</td>"
+      },
+      {
+        "count": 3,
+        "line": "digital mental health for syrian refugees in egypt: a pragmatic rct"
+      },
+      {
+        "count": 3,
+        "line": "<th></th>"
+      },
+      {
+        "count": 3,
+        "line": "<td>1.0% (1)</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>2.6% (7)</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>other</td>"
+      },
+      {
+        "count": 2,
+        "line": "</thead>"
+      },
+      {
+        "count": 2,
+        "line": "<td>2.39 (0.61)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>2.46 (0.61)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>15.40 (4.52)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>67.3% (362)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>4.4% (12)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>4.1% (4)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>3.6% (6)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>1.5% (4)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>6.5% (11)</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>primary</td>"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8431372549019608,
+      "item_count": 51,
+      "parse_concern_count": 3,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 6,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 27,
+          "parse_concerns": [
+            {
+              "details": "col 5 'Total(n = 538)' expects numeric, got '33.64 (10.87)' in row 2",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "col 1 'CAU(n = 272)': 26/26 (100%) have interior whitespace",
+              "type": "possible_merged_columns"
+            }
+          ],
+          "row_count": 31
+        },
+        {
+          "column_count": 10,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 42,
+          "parse_concerns": [
+            {
+              "details": "row 2 has 9 cols, expected 10",
+              "type": "inconsistent_row_cell_count"
+            }
+          ],
+          "row_count": 14
+        }
+      ],
+      "type_counts": {
+        "code": 1,
+        "footer": 4,
+        "header": 4,
+        "heading": 4,
+        "image": 1,
+        "link": 6,
+        "table": 2,
+        "text": 29
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.05128205128205128,
+      "item_count": 39,
+      "parse_concern_count": 1,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 6,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 26,
+          "parse_concerns": [],
+          "row_count": 32
+        },
+        {
+          "column_count": 9,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 34,
+          "parse_concerns": [],
+          "row_count": 16
+        }
+      ],
+      "type_counts": {
+        "diagram": 1,
+        "footer": 4,
+        "header": 4,
+        "heading": 4,
+        "image": 2,
+        "table": 2,
+        "text": 22
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 4367,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 4239,
+        "candidate_tokens": 613,
+        "extra_token_counts": [
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "a1111111111",
+            1
+          ],
+          [
+            "openaccess",
+            1
+          ],
+          [
+            "2024",
+            1
+          ],
+          [
+            "21",
+            1
+          ],
+          [
+            "9",
+            1
+          ],
+          [
+            "september",
+            1
+          ],
+          [
+            "researcharticle",
+            1
+          ],
+          [
+            "burchertid",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "cuijpersid",
+            1
+          ],
+          [
+            "heimid",
+            1
+          ],
+          [
+            "hosnyid",
+            1
+          ],
+          [
+            "sijbrandijid",
+            1
+          ],
+          [
+            "van't",
+            1
+          ],
+          [
+            "universita",
+            1
+          ],
+          [
+            "t",
+            1
+          ],
+          [
+            "babe",
+            1
+          ],
+          [
+            "ș",
+            1
+          ],
+          [
+            "weconducted",
+            1
+          ],
+          [
+            "t001",
+            1
+          ],
+          [
+            "plosmedicine",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "sup",
+            22
+          ],
+          [
+            "open",
+            2
+          ],
+          [
+            "access",
+            2
+          ],
+          [
+            "research",
+            1
+          ],
+          [
+            "article",
+            1
+          ],
+          [
+            "for",
+            1
+          ],
+          [
+            "burchert",
+            1
+          ],
+          [
+            "cuijpers",
+            1
+          ],
+          [
+            "heim",
+            1
+          ],
+          [
+            "hosny",
+            1
+          ],
+          [
+            "sijbrandij",
+            1
+          ],
+          [
+            "van’t",
+            1
+          ],
+          [
+            "universität",
+            1
+          ],
+          [
+            "babeș",
+            1
+          ],
+          [
+            "check",
+            1
+          ],
+          [
+            "updates",
+            1
+          ],
+          [
+            "logo",
+            1
+          ],
+          [
+            "icon",
+            1
+          ],
+          [
+            "we",
+            1
+          ],
+          [
+            "conducted",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.10624635143023935,
+        "reference_chars": 4367,
+        "reference_tokens": 633,
+        "token_f1": 0.9470304975922954,
+        "token_multiset_overlap": 590,
+        "token_precision": 0.9624796084828712,
+        "token_recall": 0.9320695102685624
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 4239,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 3828,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 4367,
+        "candidate_tokens": 633,
+        "extra_token_counts": [
+          [
+            "sup",
+            22
+          ],
+          [
+            "of",
+            20
+          ],
+          [
+            "the",
+            13
+          ],
+          [
+            "and",
+            13
+          ],
+          [
+            "for",
+            8
+          ],
+          [
+            "psychological",
+            8
+          ],
+          [
+            "health",
+            6
+          ],
+          [
+            "in",
+            6
+          ],
+          [
+            "self",
+            4
+          ],
+          [
+            "department",
+            4
+          ],
+          [
+            "psychology",
+            4
+          ],
+          [
+            "access",
+            4
+          ],
+          [
+            "distress",
+            4
+          ],
+          [
+            "were",
+            4
+          ],
+          [
+            "research",
+            3
+          ],
+          [
+            "article",
+            3
+          ],
+          [
+            "a",
+            3
+          ],
+          [
+            "mental",
+            3
+          ],
+          [
+            "intervention",
+            3
+          ],
+          [
+            "refugees",
+            3
+          ],
+          [
+            "randomized",
+            3
+          ],
+          [
+            "burchert",
+            3
+          ],
+          [
+            "1",
+            3
+          ],
+          [
+            "on",
+            3
+          ],
+          [
+            "university",
+            3
+          ],
+          [
+            "open",
+            3
+          ],
+          [
+            "peer",
+            3
+          ],
+          [
+            "review",
+            3
+          ],
+          [
+            "this",
+            3
+          ],
+          [
+            "functioning",
+            3
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "a1111111111",
+            5
+          ],
+          [
+            "departmentofpsychology",
+            2
+          ],
+          [
+            "pragmaticrandomizedcontrolledtrial",
+            2
+          ],
+          [
+            "andself",
+            2
+          ],
+          [
+            "september9",
+            2
+          ],
+          [
+            "psychologicaldistress",
+            2
+          ],
+          [
+            "meandifference",
+            2
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "researcharticle",
+            1
+          ],
+          [
+            "sebastianburchertid",
+            1
+          ],
+          [
+            "mhdsalemalkneme1",
+            1
+          ],
+          [
+            "ammaralsaod1",
+            1
+          ],
+          [
+            "pimcuijpersid",
+            1
+          ],
+          [
+            "evaheimid",
+            1
+          ],
+          [
+            "jonashessling1",
+            1
+          ],
+          [
+            "nadinehosnyid",
+            1
+          ],
+          [
+            "maritsijbrandijid",
+            1
+          ],
+          [
+            "van’thof6",
+            1
+          ],
+          [
+            "pieterventevogel7",
+            1
+          ],
+          [
+            "christineknaevelsrud1",
+            1
+          ],
+          [
+            "onbehalfofthestrengthsconsortium",
+            1
+          ],
+          [
+            "departmentofeducationandpsychology",
+            1
+          ],
+          [
+            "divisionofclinicalpsychologicalintervention",
+            1
+          ],
+          [
+            "freieuniversita",
+            1
+          ],
+          [
+            "t",
+            1
+          ],
+          [
+            "departmentofclinical",
+            1
+          ],
+          [
+            "neuroanddevelopmentalpsychology",
+            1
+          ],
+          [
+            "collaboratingcenterforresearchanddisseminationofpsychologicalinterventions",
+            1
+          ],
+          [
+            "amsterdampublic",
+            1
+          ],
+          [
+            "healthresearchinstitute",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.19146594938256511,
+        "reference_chars": 3828,
+        "reference_tokens": 352,
+        "token_f1": 0.43654822335025384,
+        "token_multiset_overlap": 215,
+        "token_precision": 0.33965244865718797,
+        "token_recall": 0.6107954545454546
+      },
+      "source_vs_ours": {
+        "candidate_chars": 4239,
+        "candidate_tokens": 613,
+        "extra_token_counts": [
+          [
+            "of",
+            20
+          ],
+          [
+            "the",
+            13
+          ],
+          [
+            "and",
+            13
+          ],
+          [
+            "psychological",
+            8
+          ],
+          [
+            "for",
+            7
+          ],
+          [
+            "health",
+            6
+          ],
+          [
+            "in",
+            6
+          ],
+          [
+            "self",
+            4
+          ],
+          [
+            "1",
+            4
+          ],
+          [
+            "department",
+            4
+          ],
+          [
+            "psychology",
+            4
+          ],
+          [
+            "distress",
+            4
+          ],
+          [
+            "were",
+            4
+          ],
+          [
+            "a",
+            3
+          ],
+          [
+            "mental",
+            3
+          ],
+          [
+            "intervention",
+            3
+          ],
+          [
+            "refugees",
+            3
+          ],
+          [
+            "randomized",
+            3
+          ],
+          [
+            "9",
+            3
+          ],
+          [
+            "university",
+            3
+          ],
+          [
+            "peer",
+            3
+          ],
+          [
+            "review",
+            3
+          ],
+          [
+            "this",
+            3
+          ],
+          [
+            "on",
+            3
+          ],
+          [
+            "functioning",
+            3
+          ],
+          [
+            "outcomes",
+            3
+          ],
+          [
+            "plos",
+            2
+          ],
+          [
+            "burchert",
+            2
+          ],
+          [
+            "alkneme",
+            2
+          ],
+          [
+            "alsaod",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "a1111111111",
+            4
+          ],
+          [
+            "departmentofpsychology",
+            2
+          ],
+          [
+            "pragmaticrandomizedcontrolledtrial",
+            2
+          ],
+          [
+            "andself",
+            2
+          ],
+          [
+            "september9",
+            2
+          ],
+          [
+            "psychologicaldistress",
+            2
+          ],
+          [
+            "meandifference",
+            2
+          ],
+          [
+            "sebastianburchertid",
+            1
+          ],
+          [
+            "mhdsalemalkneme1",
+            1
+          ],
+          [
+            "ammaralsaod1",
+            1
+          ],
+          [
+            "pimcuijpersid",
+            1
+          ],
+          [
+            "evaheimid",
+            1
+          ],
+          [
+            "jonashessling1",
+            1
+          ],
+          [
+            "nadinehosnyid",
+            1
+          ],
+          [
+            "maritsijbrandijid",
+            1
+          ],
+          [
+            "van’thof6",
+            1
+          ],
+          [
+            "pieterventevogel7",
+            1
+          ],
+          [
+            "christineknaevelsrud1",
+            1
+          ],
+          [
+            "onbehalfofthestrengthsconsortium",
+            1
+          ],
+          [
+            "departmentofeducationandpsychology",
+            1
+          ],
+          [
+            "divisionofclinicalpsychologicalintervention",
+            1
+          ],
+          [
+            "freieuniversita",
+            1
+          ],
+          [
+            "departmentofclinical",
+            1
+          ],
+          [
+            "neuroanddevelopmentalpsychology",
+            1
+          ],
+          [
+            "collaboratingcenterforresearchanddisseminationofpsychologicalinterventions",
+            1
+          ],
+          [
+            "amsterdampublic",
+            1
+          ],
+          [
+            "healthresearchinstitute",
+            1
+          ],
+          [
+            "vrijeuniversiteitamsterdam",
+            1
+          ],
+          [
+            "thenetherlands",
+            1
+          ],
+          [
+            "babeș",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.182496270512183,
+        "reference_chars": 3828,
+        "reference_tokens": 352,
+        "token_f1": 0.45803108808290155,
+        "token_multiset_overlap": 221,
+        "token_precision": 0.3605220228384992,
+        "token_recall": 0.6278409090909091
+      }
+    },
+    {
+      "expert_body_chars": 6623,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 6490,
+        "candidate_tokens": 1098,
+        "extra_token_counts": [
+          [
+            "td",
+            60
+          ],
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "mental",
+            1
+          ],
+          [
+            "health",
+            1
+          ],
+          [
+            "for",
+            1
+          ],
+          [
+            "syrian",
+            1
+          ],
+          [
+            "refugees",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "egypt",
+            1
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "pragmatic",
+            1
+          ],
+          [
+            "rct",
+            1
+          ],
+          [
+            "9",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "21",
+            1
+          ],
+          [
+            "codwas",
+            1
+          ],
+          [
+            "ehelpers",
+            1
+          ],
+          [
+            "g001",
+            1
+          ],
+          [
+            "plosmedicine",
+            1
+          ],
+          [
+            "september",
+            1
+          ],
+          [
+            "2024",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "sup",
+            12
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "br",
+            5
+          ],
+          [
+            "colspan",
+            5
+          ],
+          [
+            "6",
+            5
+          ],
+          [
+            "1",
+            2
+          ],
+          [
+            "sbs",
+            2
+          ],
+          [
+            "4",
+            2
+          ],
+          [
+            "sessions",
+            2
+          ],
+          [
+            "completed",
+            2
+          ],
+          [
+            "t001",
+            2
+          ],
+          [
+            "table",
+            1
+          ],
+          [
+            "demographic",
+            1
+          ],
+          [
+            "and",
+            1
+          ],
+          [
+            "baseline",
+            1
+          ],
+          [
+            "characteristics",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "5",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "education",
+            1
+          ],
+          [
+            "at",
+            1
+          ],
+          [
+            "least",
+            1
+          ],
+          [
+            "out",
+            1
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "less",
+            1
+          ],
+          [
+            "than",
+            1
+          ],
+          [
+            "highest",
+            1
+          ],
+          [
+            "level",
+            1
+          ],
+          [
+            "started",
+            1
+          ],
+          [
+            "was",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.3710829036096787,
+        "reference_chars": 6623,
+        "reference_tokens": 1087,
+        "token_f1": 0.9299771167048054,
+        "token_multiset_overlap": 1016,
+        "token_precision": 0.9253187613843351,
+        "token_recall": 0.9346826126954921
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 6490,
+      "our_success": true,
+      "page_number": 2,
+      "source_chars": 2900,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 6623,
+        "candidate_tokens": 1087,
+        "extra_token_counts": [
+          [
+            "td",
+            312
+          ],
+          [
+            "tr",
+            64
+          ],
+          [
+            "th",
+            22
+          ],
+          [
+            "sup",
+            12
+          ],
+          [
+            "br",
+            5
+          ],
+          [
+            "colspan",
+            5
+          ],
+          [
+            "6",
+            5
+          ],
+          [
+            "table",
+            3
+          ],
+          [
+            "1",
+            3
+          ],
+          [
+            "education",
+            3
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "sbs",
+            2
+          ],
+          [
+            "2",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "4",
+            2
+          ],
+          [
+            "3",
+            2
+          ],
+          [
+            "work",
+            2
+          ],
+          [
+            "sessions",
+            2
+          ],
+          [
+            "completed",
+            2
+          ],
+          [
+            "demographic",
+            1
+          ],
+          [
+            "and",
+            1
+          ],
+          [
+            "baseline",
+            1
+          ],
+          [
+            "characteristics",
+            1
+          ],
+          [
+            "completer",
+            1
+          ],
+          [
+            "dropouts",
+            1
+          ],
+          [
+            "5",
+            1
+          ],
+          [
+            "marital",
+            1
+          ],
+          [
+            "status",
+            1
+          ],
+          [
+            "never",
+            1
+          ],
+          [
+            "married",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "table1",
+            1
+          ],
+          [
+            "demographicandbaselinecharacteristics",
+            1
+          ],
+          [
+            "completer1",
+            1
+          ],
+          [
+            "dropouts2",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "21",
+            1
+          ],
+          [
+            "maritalstatus",
+            1
+          ],
+          [
+            "nevermarried",
+            1
+          ],
+          [
+            "education3",
+            1
+          ],
+          [
+            "noeducation",
+            1
+          ],
+          [
+            "paidwork",
+            1
+          ],
+          [
+            "unpaidwork",
+            1
+          ],
+          [
+            "1atleast4outof5sbssessionscompleted",
+            1
+          ],
+          [
+            "2lessthan4sbssessionscompleted",
+            1
+          ],
+          [
+            "3highesteducationlevelstarted",
+            1
+          ],
+          [
+            "ara",
+            1
+          ],
+          [
+            "bic",
+            1
+          ],
+          [
+            "partici",
+            1
+          ],
+          [
+            "pants",
+            1
+          ],
+          [
+            "fea",
+            1
+          ],
+          [
+            "ture",
+            1
+          ],
+          [
+            "con",
+            1
+          ],
+          [
+            "nection",
+            1
+          ],
+          [
+            "plosmedicine",
+            1
+          ],
+          [
+            "september9",
+            1
+          ],
+          [
+            "2024",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.00833754421424962,
+        "reference_chars": 2900,
+        "reference_tokens": 637,
+        "token_f1": 0.7041763341067285,
+        "token_multiset_overlap": 607,
+        "token_precision": 0.5584176632934683,
+        "token_recall": 0.9529042386185244
+      },
+      "source_vs_ours": {
+        "candidate_chars": 6490,
+        "candidate_tokens": 1098,
+        "extra_token_counts": [
+          [
+            "td",
+            372
+          ],
+          [
+            "tr",
+            64
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "education",
+            2
+          ],
+          [
+            "work",
+            2
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "mental",
+            1
+          ],
+          [
+            "health",
+            1
+          ],
+          [
+            "for",
+            1
+          ],
+          [
+            "syrian",
+            1
+          ],
+          [
+            "refugees",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "egypt",
+            1
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "pragmatic",
+            1
+          ],
+          [
+            "rct",
+            1
+          ],
+          [
+            "completer",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "dropouts",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "9",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "marital",
+            1
+          ],
+          [
+            "status",
+            1
+          ],
+          [
+            "never",
+            1
+          ],
+          [
+            "married",
+            1
+          ],
+          [
+            "no",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "table1",
+            1
+          ],
+          [
+            "demographicandbaselinecharacteristics",
+            1
+          ],
+          [
+            "completer1",
+            1
+          ],
+          [
+            "dropouts2",
+            1
+          ],
+          [
+            "maritalstatus",
+            1
+          ],
+          [
+            "nevermarried",
+            1
+          ],
+          [
+            "education3",
+            1
+          ],
+          [
+            "noeducation",
+            1
+          ],
+          [
+            "paidwork",
+            1
+          ],
+          [
+            "unpaidwork",
+            1
+          ],
+          [
+            "1atleast4outof5sbssessionscompleted",
+            1
+          ],
+          [
+            "2lessthan4sbssessionscompleted",
+            1
+          ],
+          [
+            "3highesteducationlevelstarted",
+            1
+          ],
+          [
+            "t001",
+            1
+          ],
+          [
+            "was",
+            1
+          ],
+          [
+            "cod",
+            1
+          ],
+          [
+            "e",
+            1
+          ],
+          [
+            "helpers",
+            1
+          ],
+          [
+            "ara",
+            1
+          ],
+          [
+            "bic",
+            1
+          ],
+          [
+            "partici",
+            1
+          ],
+          [
+            "pants",
+            1
+          ],
+          [
+            "fea",
+            1
+          ],
+          [
+            "ture",
+            1
+          ],
+          [
+            "con",
+            1
+          ],
+          [
+            "nection",
+            1
+          ],
+          [
+            "september9",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.40813253012048195,
+        "reference_chars": 2900,
+        "reference_tokens": 637,
+        "token_f1": 0.700864553314121,
+        "token_multiset_overlap": 608,
+        "token_precision": 0.5537340619307832,
+        "token_recall": 0.9544740973312402
+      }
+    },
+    {
+      "expert_body_chars": 1546,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 1379,
+        "candidate_tokens": 224,
+        "extra_token_counts": [
+          [
+            "for",
+            2
+          ],
+          [
+            "1",
+            2
+          ],
+          [
+            "non",
+            2
+          ],
+          [
+            "to",
+            2
+          ],
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "mental",
+            1
+          ],
+          [
+            "health",
+            1
+          ],
+          [
+            "syrian",
+            1
+          ],
+          [
+            "refugees",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "egypt",
+            1
+          ],
+          [
+            "pragmatic",
+            1
+          ],
+          [
+            "rct",
+            1
+          ],
+          [
+            "assessed",
+            1
+          ],
+          [
+            "eligibility",
+            1
+          ],
+          [
+            "826",
+            1
+          ],
+          [
+            "230",
+            1
+          ],
+          [
+            "acute",
+            1
+          ],
+          [
+            "suicidality",
+            1
+          ],
+          [
+            "83",
+            1
+          ],
+          [
+            "low",
+            1
+          ],
+          [
+            "symptoms",
+            1
+          ],
+          [
+            "73",
+            1
+          ],
+          [
+            "age",
+            1
+          ],
+          [
+            "18",
+            1
+          ],
+          [
+            "duplicate",
+            1
+          ],
+          [
+            "account",
+            1
+          ],
+          [
+            "included",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "c",
+            3
+          ],
+          [
+            "subgraph",
+            3
+          ],
+          [
+            "details",
+            3
+          ],
+          [
+            "direction",
+            3
+          ],
+          [
+            "tb",
+            3
+          ],
+          [
+            "end",
+            3
+          ],
+          [
+            "f",
+            3
+          ],
+          [
+            "g",
+            3
+          ],
+          [
+            "j",
+            2
+          ],
+          [
+            "k",
+            2
+          ],
+          [
+            "l",
+            2
+          ],
+          [
+            "m",
+            2
+          ],
+          [
+            "g001",
+            2
+          ],
+          [
+            "mermaid",
+            1
+          ],
+          [
+            "graph",
+            1
+          ],
+          [
+            "td",
+            1
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "b",
+            1
+          ],
+          [
+            "b1",
+            1
+          ],
+          [
+            "b2",
+            1
+          ],
+          [
+            "b3",
+            1
+          ],
+          [
+            "b4",
+            1
+          ],
+          [
+            "d",
+            1
+          ],
+          [
+            "h",
+            1
+          ],
+          [
+            "h1",
+            1
+          ],
+          [
+            "h2",
+            1
+          ],
+          [
+            "h3",
+            1
+          ],
+          [
+            "h4",
+            1
+          ],
+          [
+            "h5",
+            1
+          ],
+          [
+            "h6",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.07458866544789762,
+        "reference_chars": 1546,
+        "reference_tokens": 211,
+        "token_f1": 0.6804597701149425,
+        "token_multiset_overlap": 148,
+        "token_precision": 0.6607142857142857,
+        "token_recall": 0.7014218009478673
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 1379,
+      "our_success": true,
+      "page_number": 3,
+      "source_chars": 218,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 1546,
+        "candidate_tokens": 211,
+        "extra_token_counts": [
+          [
+            "n",
+            29
+          ],
+          [
+            "completed",
+            11
+          ],
+          [
+            "session",
+            6
+          ],
+          [
+            "non",
+            5
+          ],
+          [
+            "to",
+            4
+          ],
+          [
+            "c",
+            3
+          ],
+          [
+            "subgraph",
+            3
+          ],
+          [
+            "details",
+            3
+          ],
+          [
+            "direction",
+            3
+          ],
+          [
+            "tb",
+            3
+          ],
+          [
+            "1",
+            3
+          ],
+          [
+            "end",
+            3
+          ],
+          [
+            "e",
+            3
+          ],
+          [
+            "f",
+            3
+          ],
+          [
+            "cau",
+            3
+          ],
+          [
+            "g",
+            3
+          ],
+          [
+            "a",
+            2
+          ],
+          [
+            "excluded",
+            2
+          ],
+          [
+            "73",
+            2
+          ],
+          [
+            "allocated",
+            2
+          ],
+          [
+            "sbs",
+            2
+          ],
+          [
+            "266",
+            2
+          ],
+          [
+            "272",
+            2
+          ],
+          [
+            "completer",
+            2
+          ],
+          [
+            "starter",
+            2
+          ],
+          [
+            "207",
+            2
+          ],
+          [
+            "j",
+            2
+          ],
+          [
+            "post",
+            2
+          ],
+          [
+            "assessment",
+            2
+          ],
+          [
+            "k",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "fig1",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "plosmedicine",
+            1
+          ],
+          [
+            "september9",
+            1
+          ],
+          [
+            "2024",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.1482889733840304,
+        "reference_chars": 218,
+        "reference_tokens": 28,
+        "token_f1": 0.1589958158995816,
+        "token_multiset_overlap": 19,
+        "token_precision": 0.09004739336492891,
+        "token_recall": 0.6785714285714286
+      },
+      "source_vs_ours": {
+        "candidate_chars": 1379,
+        "candidate_tokens": 224,
+        "extra_token_counts": [
+          [
+            "n",
+            29
+          ],
+          [
+            "completed",
+            12
+          ],
+          [
+            "non",
+            7
+          ],
+          [
+            "session",
+            7
+          ],
+          [
+            "to",
+            6
+          ],
+          [
+            "1",
+            5
+          ],
+          [
+            "for",
+            3
+          ],
+          [
+            "e",
+            3
+          ],
+          [
+            "73",
+            3
+          ],
+          [
+            "completer",
+            3
+          ],
+          [
+            "allocated",
+            3
+          ],
+          [
+            "cau",
+            3
+          ],
+          [
+            "266",
+            3
+          ],
+          [
+            "272",
+            3
+          ],
+          [
+            "207",
+            3
+          ],
+          [
+            "post",
+            3
+          ],
+          [
+            "assessment",
+            3
+          ],
+          [
+            "follow",
+            3
+          ],
+          [
+            "up",
+            3
+          ],
+          [
+            "intention",
+            3
+          ],
+          [
+            "treat",
+            3
+          ],
+          [
+            "sample",
+            3
+          ],
+          [
+            "assessed",
+            2
+          ],
+          [
+            "eligibility",
+            2
+          ],
+          [
+            "826",
+            2
+          ],
+          [
+            "excluded",
+            2
+          ],
+          [
+            "230",
+            2
+          ],
+          [
+            "acute",
+            2
+          ],
+          [
+            "suicidality",
+            2
+          ],
+          [
+            "83",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "fig1",
+            1
+          ],
+          [
+            "https",
+            1
+          ],
+          [
+            "doi",
+            1
+          ],
+          [
+            "org",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "1371",
+            1
+          ],
+          [
+            "journal",
+            1
+          ],
+          [
+            "pmed",
+            1
+          ],
+          [
+            "1004460",
+            1
+          ],
+          [
+            "g001",
+            1
+          ],
+          [
+            "september9",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.1807909604519774,
+        "reference_chars": 218,
+        "reference_tokens": 28,
+        "token_f1": 0.11904761904761904,
+        "token_multiset_overlap": 15,
+        "token_precision": 0.06696428571428571,
+        "token_recall": 0.5357142857142857
+      }
+    },
+    {
+      "expert_body_chars": 6467,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 5892,
+        "candidate_tokens": 970,
+        "extra_token_counts": [
+          [
+            "td",
+            12
+          ],
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "mental",
+            1
+          ],
+          [
+            "health",
+            1
+          ],
+          [
+            "syrian",
+            1
+          ],
+          [
+            "refugees",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "egypt",
+            1
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "pragmatic",
+            1
+          ],
+          [
+            "rct",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "analysis",
+            1
+          ],
+          [
+            "size",
+            1
+          ],
+          [
+            "9",
+            1
+          ],
+          [
+            "11",
+            1
+          ],
+          [
+            "whodasscores",
+            1
+          ],
+          [
+            "plosmedicine",
+            1
+          ],
+          [
+            "september",
+            1
+          ],
+          [
+            "2024",
+            1
+          ],
+          [
+            "21",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "sup",
+            8
+          ],
+          [
+            "2",
+            4
+          ],
+          [
+            "br",
+            4
+          ],
+          [
+            "multiple",
+            3
+          ],
+          [
+            "colspan",
+            3
+          ],
+          [
+            "pooled",
+            2
+          ],
+          [
+            "models",
+            2
+          ],
+          [
+            "and",
+            2
+          ],
+          [
+            "based",
+            2
+          ],
+          [
+            "on",
+            2
+          ],
+          [
+            "imputation",
+            2
+          ],
+          [
+            "th",
+            2
+          ],
+          [
+            "rowspan",
+            2
+          ],
+          [
+            "were",
+            2
+          ],
+          [
+            "using",
+            2
+          ],
+          [
+            "table",
+            1
+          ],
+          [
+            "from",
+            1
+          ],
+          [
+            "linear",
+            1
+          ],
+          [
+            "mixed",
+            1
+          ],
+          [
+            "primary",
+            1
+          ],
+          [
+            "secondary",
+            1
+          ],
+          [
+            "outcomes",
+            1
+          ],
+          [
+            "n",
+            1
+          ],
+          [
+            "538",
+            1
+          ],
+          [
+            "4",
+            1
+          ],
+          [
+            "descriptive",
+            1
+          ],
+          [
+            "statistics",
+            1
+          ],
+          [
+            "pooled1",
+            1
+          ],
+          [
+            "analysis2",
+            1
+          ],
+          [
+            "results3",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.17528349029406112,
+        "reference_chars": 6467,
+        "reference_tokens": 1040,
+        "token_f1": 0.9313432835820895,
+        "token_multiset_overlap": 936,
+        "token_precision": 0.9649484536082474,
+        "token_recall": 0.9
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 5892,
+      "our_success": true,
+      "page_number": 4,
+      "source_chars": 3841,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 6467,
+        "candidate_tokens": 1040,
+        "extra_token_counts": [
+          [
+            "td",
+            224
+          ],
+          [
+            "tr",
+            32
+          ],
+          [
+            "th",
+            28
+          ],
+          [
+            "sup",
+            8
+          ],
+          [
+            "rowspan",
+            6
+          ],
+          [
+            "2",
+            5
+          ],
+          [
+            "colspan",
+            5
+          ],
+          [
+            "3",
+            5
+          ],
+          [
+            "pooled",
+            4
+          ],
+          [
+            "br",
+            4
+          ],
+          [
+            "table",
+            3
+          ],
+          [
+            "multiple",
+            3
+          ],
+          [
+            "4",
+            3
+          ],
+          [
+            "linear",
+            2
+          ],
+          [
+            "mixed",
+            2
+          ],
+          [
+            "models",
+            2
+          ],
+          [
+            "and",
+            2
+          ],
+          [
+            "based",
+            2
+          ],
+          [
+            "on",
+            2
+          ],
+          [
+            "imputation",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "descriptive",
+            2
+          ],
+          [
+            "statistics",
+            2
+          ],
+          [
+            "mean",
+            2
+          ],
+          [
+            "effect",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "were",
+            2
+          ],
+          [
+            "using",
+            2
+          ],
+          [
+            "results",
+            1
+          ],
+          [
+            "from",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "plos",
+            1
+          ],
+          [
+            "medicine",
+            1
+          ],
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "table2",
+            1
+          ],
+          [
+            "pooledresultsfromlinearmixedmodelsforprimaryandsecondaryoutcomes",
+            1
+          ],
+          [
+            "basedonmultipleimputation",
+            1
+          ],
+          [
+            "descriptivestatistics",
+            1
+          ],
+          [
+            "pooled1m",
+            1
+          ],
+          [
+            "linearmixedmodelanalysis2",
+            1
+          ],
+          [
+            "pooledresults3",
+            1
+          ],
+          [
+            "timepoint",
+            1
+          ],
+          [
+            "meandiff",
+            1
+          ],
+          [
+            "effectsize4",
+            1
+          ],
+          [
+            "11",
+            1
+          ],
+          [
+            "ptsdsymptoms",
+            1
+          ],
+          [
+            "definedproblems",
+            1
+          ],
+          [
+            "1pooleddescriptivestatisticsacrossallimputeddatasets",
+            1
+          ],
+          [
+            "2ascovariatesthemodelsincluded",
+            1
+          ],
+          [
+            "baselinescore",
+            1
+          ],
+          [
+            "maritalstatus",
+            1
+          ],
+          [
+            "andpostmigrationlivingdifficulties",
+            1
+          ],
+          [
+            "3treatmenteffectswerepooledbasedonmultipleimputations",
+            1
+          ],
+          [
+            "assumingmissingatrandom",
+            1
+          ],
+          [
+            "usingprogressivemeanmatching",
+            1
+          ],
+          [
+            "4hedges",
+            1
+          ],
+          [
+            "geffectsizeswerederivedbycombiningmultipleimputationestimatesusingrubin’srules",
+            1
+          ],
+          [
+            "partici",
+            1
+          ],
+          [
+            "pants",
+            1
+          ],
+          [
+            "remit",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.6765751211631664,
+        "reference_chars": 3841,
+        "reference_tokens": 658,
+        "token_f1": 0.7314487632508834,
+        "token_multiset_overlap": 621,
+        "token_precision": 0.5971153846153846,
+        "token_recall": 0.9437689969604863
+      },
+      "source_vs_ours": {
+        "candidate_chars": 5892,
+        "candidate_tokens": 970,
+        "extra_token_counts": [
+          [
+            "td",
+            236
+          ],
+          [
+            "tr",
+            32
+          ],
+          [
+            "th",
+            26
+          ],
+          [
+            "3",
+            6
+          ],
+          [
+            "rowspan",
+            4
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "colspan",
+            2
+          ],
+          [
+            "4",
+            2
+          ],
+          [
+            "pooled",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "digital",
+            1
+          ],
+          [
+            "mental",
+            1
+          ],
+          [
+            "health",
+            1
+          ],
+          [
+            "for",
+            1
+          ],
+          [
+            "syrian",
+            1
+          ],
+          [
+            "refugees",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "egypt",
+            1
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "pragmatic",
+            1
+          ],
+          [
+            "rct",
+            1
+          ],
+          [
+            "descriptive",
+            1
+          ],
+          [
+            "statistics",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "m",
+            1
+          ],
+          [
+            "linear",
+            1
+          ],
+          [
+            "mixed",
+            1
+          ],
+          [
+            "model",
+            1
+          ],
+          [
+            "analysis",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "digitalmentalhealthforsyrianrefugeesinegypt",
+            1
+          ],
+          [
+            "apragmaticrct",
+            1
+          ],
+          [
+            "table2",
+            1
+          ],
+          [
+            "pooledresultsfromlinearmixedmodelsforprimaryandsecondaryoutcomes",
+            1
+          ],
+          [
+            "n",
+            1
+          ],
+          [
+            "538",
+            1
+          ],
+          [
+            "basedonmultipleimputation",
+            1
+          ],
+          [
+            "descriptivestatistics",
+            1
+          ],
+          [
+            "pooled1m",
+            1
+          ],
+          [
+            "linearmixedmodelanalysis2",
+            1
+          ],
+          [
+            "pooledresults3",
+            1
+          ],
+          [
+            "timepoint",
+            1
+          ],
+          [
+            "meandiff",
+            1
+          ],
+          [
+            "effectsize4",
+            1
+          ],
+          [
+            "whodas",
+            1
+          ],
+          [
+            "ptsdsymptoms",
+            1
+          ],
+          [
+            "definedproblems",
+            1
+          ],
+          [
+            "1pooleddescriptivestatisticsacrossallimputeddatasets",
+            1
+          ],
+          [
+            "2ascovariatesthemodelsincluded",
+            1
+          ],
+          [
+            "baselinescore",
+            1
+          ],
+          [
+            "gender",
+            1
+          ],
+          [
+            "age",
+            1
+          ],
+          [
+            "maritalstatus",
+            1
+          ],
+          [
+            "education",
+            1
+          ],
+          [
+            "occupation",
+            1
+          ],
+          [
+            "andpostmigrationlivingdifficulties",
+            1
+          ],
+          [
+            "3treatmenteffectswerepooledbasedonmultipleimputations",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "assumingmissingatrandom",
+            1
+          ],
+          [
+            "usingprogressivemeanmatching",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.6740883789617176,
+        "reference_chars": 3841,
+        "reference_tokens": 658,
+        "token_f1": 0.7579852579852578,
+        "token_multiset_overlap": 617,
+        "token_precision": 0.6360824742268041,
+        "token_recall": 0.9376899696048632
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 18007,
+      "candidate_tokens": 2905,
+      "extra_token_counts": [
+        [
+          "td",
+          71
+        ],
+        [
+          "plos",
+          4
+        ],
+        [
+          "medicine",
+          4
+        ],
+        [
+          "2024",
+          4
+        ],
+        [
+          "21",
+          4
+        ],
+        [
+          "9",
+          4
+        ],
+        [
+          "september",
+          4
+        ],
+        [
+          "plosmedicine",
+          4
+        ],
+        [
+          "digital",
+          3
+        ],
+        [
+          "mental",
+          3
+        ],
+        [
+          "health",
+          3
+        ],
+        [
+          "syrian",
+          3
+        ],
+        [
+          "refugees",
+          3
+        ],
+        [
+          "in",
+          3
+        ],
+        [
+          "egypt",
+          3
+        ],
+        [
+          "pragmatic",
+          3
+        ],
+        [
+          "rct",
+          3
+        ],
+        [
+          "for",
+          2
+        ],
+        [
+          "to",
+          2
+        ],
+        [
+          "non",
+          2
+        ],
+        [
+          "a1111111111",
+          1
+        ],
+        [
+          "openaccess",
+          1
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "randomized",
+          1
+        ],
+        [
+          "information",
+          1
+        ],
+        [
+          "researcharticle",
+          1
+        ],
+        [
+          "burchertid",
+          1
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "cuijpersid",
+          1
+        ],
+        [
+          "3",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "sup",
+          42
+        ],
+        [
+          "th",
+          12
+        ],
+        [
+          "br",
+          9
+        ],
+        [
+          "colspan",
+          8
+        ],
+        [
+          "6",
+          5
+        ],
+        [
+          "2",
+          4
+        ],
+        [
+          "g",
+          4
+        ],
+        [
+          "and",
+          3
+        ],
+        [
+          "c",
+          3
+        ],
+        [
+          "subgraph",
+          3
+        ],
+        [
+          "details",
+          3
+        ],
+        [
+          "direction",
+          3
+        ],
+        [
+          "tb",
+          3
+        ],
+        [
+          "end",
+          3
+        ],
+        [
+          "f",
+          3
+        ],
+        [
+          "multiple",
+          3
+        ],
+        [
+          "4",
+          2
+        ],
+        [
+          "on",
+          2
+        ],
+        [
+          "education",
+          2
+        ],
+        [
+          "open",
+          2
+        ],
+        [
+          "access",
+          2
+        ],
+        [
+          "j",
+          2
+        ],
+        [
+          "sbs",
+          2
+        ],
+        [
+          "based",
+          2
+        ],
+        [
+          "were",
+          2
+        ],
+        [
+          "at",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "m",
+          2
+        ],
+        [
+          "sessions",
+          2
+        ],
+        [
+          "using",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.4810668008554535,
+      "reference_chars": 19009,
+      "reference_tokens": 2971,
+      "token_f1": 0.9210347174948944,
+      "token_multiset_overlap": 2706,
+      "token_precision": 0.9314974182444062,
+      "token_recall": 0.9108044429485022
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 18007,
+      "candidate_tokens": 2905,
+      "extra_token_counts": [
+        [
+          "td",
+          71
+        ],
+        [
+          "plosmedicine",
+          4
+        ],
+        [
+          "to",
+          2
+        ],
+        [
+          "non",
+          2
+        ],
+        [
+          "a1111111111",
+          1
+        ],
+        [
+          "openaccess",
+          1
+        ],
+        [
+          "randomized",
+          1
+        ],
+        [
+          "information",
+          1
+        ],
+        [
+          "researcharticle",
+          1
+        ],
+        [
+          "burchertid",
+          1
+        ],
+        [
+          "cuijpersid",
+          1
+        ],
+        [
+          "3",
+          1
+        ],
+        [
+          "heimid",
+          1
+        ],
+        [
+          "hosnyid",
+          1
+        ],
+        [
+          "sijbrandijid",
+          1
+        ],
+        [
+          "van't",
+          1
+        ],
+        [
+          "universita",
+          1
+        ],
+        [
+          "t",
+          1
+        ],
+        [
+          "babe",
+          1
+        ],
+        [
+          "ș",
+          1
+        ],
+        [
+          "symptoms",
+          1
+        ],
+        [
+          "sample",
+          1
+        ],
+        [
+          "weconducted",
+          1
+        ],
+        [
+          "266",
+          1
+        ],
+        [
+          "272",
+          1
+        ],
+        [
+          "assessment",
+          1
+        ],
+        [
+          "follow",
+          1
+        ],
+        [
+          "up",
+          1
+        ],
+        [
+          "intention",
+          1
+        ],
+        [
+          "treat",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "sup",
+          42
+        ],
+        [
+          "th",
+          12
+        ],
+        [
+          "10",
+          10
+        ],
+        [
+          "https",
+          9
+        ],
+        [
+          "doi",
+          9
+        ],
+        [
+          "org",
+          9
+        ],
+        [
+          "1371",
+          9
+        ],
+        [
+          "journal",
+          9
+        ],
+        [
+          "pmed",
+          9
+        ],
+        [
+          "1004460",
+          9
+        ],
+        [
+          "br",
+          9
+        ],
+        [
+          "page",
+          8
+        ],
+        [
+          "number",
+          8
+        ],
+        [
+          "colspan",
+          8
+        ],
+        [
+          "6",
+          5
+        ],
+        [
+          "plos",
+          4
+        ],
+        [
+          "medicine",
+          4
+        ],
+        [
+          "2",
+          4
+        ],
+        [
+          "g",
+          4
+        ],
+        [
+          "and",
+          3
+        ],
+        [
+          "c",
+          3
+        ],
+        [
+          "subgraph",
+          3
+        ],
+        [
+          "details",
+          3
+        ],
+        [
+          "direction",
+          3
+        ],
+        [
+          "tb",
+          3
+        ],
+        [
+          "end",
+          3
+        ],
+        [
+          "f",
+          3
+        ],
+        [
+          "multiple",
+          3
+        ],
+        [
+          "a",
+          2
+        ],
+        [
+          "4",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.4687786679713779,
+      "reference_chars": 19930,
+      "reference_tokens": 3120,
+      "token_f1": 0.9171784232365146,
+      "token_multiset_overlap": 2763,
+      "token_precision": 0.9511187607573149,
+      "token_recall": 0.885576923076923
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 19930,
+      "candidate_tokens": 3120,
+      "extra_token_counts": [
+        [
+          "td",
+          537
+        ],
+        [
+          "tr",
+          96
+        ],
+        [
+          "th",
+          50
+        ],
+        [
+          "sup",
+          42
+        ],
+        [
+          "n",
+          29
+        ],
+        [
+          "of",
+          21
+        ],
+        [
+          "and",
+          16
+        ],
+        [
+          "the",
+          14
+        ],
+        [
+          "for",
+          13
+        ],
+        [
+          "completed",
+          13
+        ],
+        [
+          "1",
+          11
+        ],
+        [
+          "10",
+          10
+        ],
+        [
+          "colspan",
+          10
+        ],
+        [
+          "health",
+          9
+        ],
+        [
+          "in",
+          9
+        ],
+        [
+          "2",
+          9
+        ],
+        [
+          "https",
+          9
+        ],
+        [
+          "doi",
+          9
+        ],
+        [
+          "org",
+          9
+        ],
+        [
+          "1371",
+          9
+        ],
+        [
+          "journal",
+          9
+        ],
+        [
+          "pmed",
+          9
+        ],
+        [
+          "1004460",
+          9
+        ],
+        [
+          "br",
+          9
+        ],
+        [
+          "a",
+          8
+        ],
+        [
+          "3",
+          8
+        ],
+        [
+          "psychological",
+          8
+        ],
+        [
+          "page",
+          8
+        ],
+        [
+          "number",
+          8
+        ],
+        [
+          "plos",
+          6
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "a1111111111",
+          5
+        ],
+        [
+          "september9",
+          5
+        ],
+        [
+          "plosmedicine",
+          4
+        ],
+        [
+          "digitalmentalhealthforsyrianrefugeesinegypt",
+          3
+        ],
+        [
+          "apragmaticrct",
+          3
+        ],
+        [
+          "departmentofpsychology",
+          2
+        ],
+        [
+          "pragmaticrandomizedcontrolledtrial",
+          2
+        ],
+        [
+          "andself",
+          2
+        ],
+        [
+          "psychologicaldistress",
+          2
+        ],
+        [
+          "meandifference",
+          2
+        ],
+        [
+          "maritalstatus",
+          2
+        ],
+        [
+          "partici",
+          2
+        ],
+        [
+          "pants",
+          2
+        ],
+        [
+          "researcharticle",
+          1
+        ],
+        [
+          "sebastianburchertid",
+          1
+        ],
+        [
+          "mhdsalemalkneme1",
+          1
+        ],
+        [
+          "ammaralsaod1",
+          1
+        ],
+        [
+          "pimcuijpersid",
+          1
+        ],
+        [
+          "evaheimid",
+          1
+        ],
+        [
+          "jonashessling1",
+          1
+        ],
+        [
+          "nadinehosnyid",
+          1
+        ],
+        [
+          "maritsijbrandijid",
+          1
+        ],
+        [
+          "van’thof6",
+          1
+        ],
+        [
+          "pieterventevogel7",
+          1
+        ],
+        [
+          "christineknaevelsrud1",
+          1
+        ],
+        [
+          "onbehalfofthestrengthsconsortium",
+          1
+        ],
+        [
+          "departmentofeducationandpsychology",
+          1
+        ],
+        [
+          "divisionofclinicalpsychologicalintervention",
+          1
+        ],
+        [
+          "freieuniversita",
+          1
+        ],
+        [
+          "t",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.11460351632579835,
+      "reference_chars": 10793,
+      "reference_tokens": 1675,
+      "token_f1": 0.6164754953076121,
+      "token_multiset_overlap": 1478,
+      "token_precision": 0.4737179487179487,
+      "token_recall": 0.8823880597014926
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 18007,
+      "candidate_tokens": 2905,
+      "extra_token_counts": [
+        [
+          "td",
+          608
+        ],
+        [
+          "tr",
+          96
+        ],
+        [
+          "th",
+          38
+        ],
+        [
+          "n",
+          28
+        ],
+        [
+          "of",
+          20
+        ],
+        [
+          "the",
+          13
+        ],
+        [
+          "and",
+          13
+        ],
+        [
+          "for",
+          12
+        ],
+        [
+          "completed",
+          12
+        ],
+        [
+          "1",
+          11
+        ],
+        [
+          "health",
+          9
+        ],
+        [
+          "in",
+          9
+        ],
+        [
+          "3",
+          9
+        ],
+        [
+          "psychological",
+          8
+        ],
+        [
+          "to",
+          7
+        ],
+        [
+          "session",
+          7
+        ],
+        [
+          "non",
+          7
+        ],
+        [
+          "a",
+          6
+        ],
+        [
+          "mental",
+          6
+        ],
+        [
+          "refugees",
+          6
+        ],
+        [
+          "9",
+          6
+        ],
+        [
+          "digital",
+          5
+        ],
+        [
+          "syrian",
+          5
+        ],
+        [
+          "pragmatic",
+          5
+        ],
+        [
+          "randomized",
+          5
+        ],
+        [
+          "september",
+          5
+        ],
+        [
+          "2",
+          5
+        ],
+        [
+          "self",
+          4
+        ],
+        [
+          "egypt",
+          4
+        ],
+        [
+          "4",
+          4
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "september9",
+          5
+        ],
+        [
+          "a1111111111",
+          4
+        ],
+        [
+          "digitalmentalhealthforsyrianrefugeesinegypt",
+          3
+        ],
+        [
+          "apragmaticrct",
+          3
+        ],
+        [
+          "departmentofpsychology",
+          2
+        ],
+        [
+          "pragmaticrandomizedcontrolledtrial",
+          2
+        ],
+        [
+          "andself",
+          2
+        ],
+        [
+          "psychologicaldistress",
+          2
+        ],
+        [
+          "meandifference",
+          2
+        ],
+        [
+          "maritalstatus",
+          2
+        ],
+        [
+          "partici",
+          2
+        ],
+        [
+          "pants",
+          2
+        ],
+        [
+          "sebastianburchertid",
+          1
+        ],
+        [
+          "mhdsalemalkneme1",
+          1
+        ],
+        [
+          "ammaralsaod1",
+          1
+        ],
+        [
+          "pimcuijpersid",
+          1
+        ],
+        [
+          "evaheimid",
+          1
+        ],
+        [
+          "jonashessling1",
+          1
+        ],
+        [
+          "nadinehosnyid",
+          1
+        ],
+        [
+          "maritsijbrandijid",
+          1
+        ],
+        [
+          "van’thof6",
+          1
+        ],
+        [
+          "pieterventevogel7",
+          1
+        ],
+        [
+          "christineknaevelsrud1",
+          1
+        ],
+        [
+          "onbehalfofthestrengthsconsortium",
+          1
+        ],
+        [
+          "departmentofeducationandpsychology",
+          1
+        ],
+        [
+          "divisionofclinicalpsychologicalintervention",
+          1
+        ],
+        [
+          "freieuniversita",
+          1
+        ],
+        [
+          "departmentofclinical",
+          1
+        ],
+        [
+          "neuroanddevelopmentalpsychology",
+          1
+        ],
+        [
+          "collaboratingcenterforresearchanddisseminationofpsychologicalinterventions",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.10517149996214128,
+      "reference_chars": 10793,
+      "reference_tokens": 1675,
+      "token_f1": 0.6449781659388647,
+      "token_multiset_overlap": 1477,
+      "token_precision": 0.5084337349397591,
+      "token_recall": 0.8817910447761194
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "insurance-acord",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "b4f25d85215f6ba33ef847f4b160c78a799d61bd80bc8fb54b85415d00ae943f",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "9078a1088c6a7e3e0bd22376356329d40097b1454440c25f85e907fb9d600ea1",
+      "html_sha256": "04b6ecb058e80caf5972ac2cb0200c94c63d0843a6f15627a964dd260b7fc677",
+      "text_sha256": "cd8a588fe3672715abc03d3d31760733f894e521fe64c8d21e3a5c90512b33c1"
+    }
+  ]
+}

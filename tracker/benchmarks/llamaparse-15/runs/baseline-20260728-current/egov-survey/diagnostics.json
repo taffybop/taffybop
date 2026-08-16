@@ -1,0 +1,120 @@
+{
+  "case_id": "egov-survey",
+  "completed_at_utc": "2026-07-28T13:47:57.906879+00:00",
+  "elapsed_seconds": 6.847777416929603,
+  "error": null,
+  "operating_mode": {
+    "image_captioning_enabled": false,
+    "network_services_enabled": false,
+    "optional_model_configuration": null,
+    "parser_invocation": "direct app.services.pipeline.parse_document",
+    "pdf_visual_analysis_enabled": true
+  },
+  "output": {
+    "detected_image_count": 1,
+    "document_warnings": [],
+    "item_type_counts": {
+      "chart": 1,
+      "footer": 1,
+      "header": 1,
+      "text": 5
+    },
+    "json_sha256": "9aefab6b3fed1965775b4b243509f1c1c9aacfa340ce703cd66fdbd5a7c58e82",
+    "json_size_bytes": 58400,
+    "markdown_sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+    "markdown_size_bytes": 3056,
+    "page_count": 1,
+    "pages": [
+      {
+        "detected_image_count": 1,
+        "item_count": 8,
+        "item_type_counts": {
+          "chart": 1,
+          "footer": 1,
+          "header": 1,
+          "text": 5
+        },
+        "page_index": 1,
+        "page_number": 1,
+        "success": true,
+        "warnings": []
+      }
+    ],
+    "processing": {
+      "duration_ms": 6846,
+      "engine": "docling",
+      "input_format": "pdf",
+      "local_processing": true,
+      "native_text_engine": "pypdfium2",
+      "ocr_engine": "tesseract",
+      "ocr_languages": [
+        "eng"
+      ],
+      "picture_captioning": {
+        "local_model_available": false,
+        "requested": false
+      },
+      "table_engines": [
+        "docling",
+        "pdfplumber"
+      ],
+      "visual_analysis": {
+        "heading_height_ratio": 1.8,
+        "heading_min_confidence": 0.75,
+        "low_confidence_min_alnum_chars": 8,
+        "pdf_selective_rendering_enabled": true,
+        "picture_classification_threshold": 0.6,
+        "primary_ocr_min_confidence": 0.45,
+        "shared_pipeline": true
+      }
+    },
+    "total_item_count": 8
+  },
+  "peak_rss_bytes": 1496268800,
+  "process_cpu_seconds": 6.107039,
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "source_filename": "egov-survey.pdf",
+  "source_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+  "source_size_bytes": 82800,
+  "started_at_utc": "2026-07-28T13:47:51.058315+00:00",
+  "status": "success",
+  "versions": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "pypdfium2": "5.12.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "source_tree_sha256": "ff2e4656dcb9f6eefb5c2e3b94919c5eb080aad7a8cf6dc09463e9f86d87d98c",
+    "tesseract": "tesseract 5.5.3"
+  }
+}

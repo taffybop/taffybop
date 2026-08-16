@@ -1,0 +1,148 @@
+{
+  "case_id": "postal-10k",
+  "completed_at_utc": "2026-07-28T13:50:09.374889+00:00",
+  "elapsed_seconds": 19.840761166997254,
+  "error": null,
+  "operating_mode": {
+    "image_captioning_enabled": false,
+    "network_services_enabled": false,
+    "optional_model_configuration": null,
+    "parser_invocation": "direct app.services.pipeline.parse_document",
+    "pdf_visual_analysis_enabled": true
+  },
+  "output": {
+    "detected_image_count": 3,
+    "document_warnings": [],
+    "item_type_counts": {
+      "footer": 3,
+      "heading": 3,
+      "table": 3,
+      "text": 5
+    },
+    "json_sha256": "024aecb3fe4f110faee9e147bfdb5b30ba6cb4e7033bd0e277b0aadaf4e19fac",
+    "json_size_bytes": 541018,
+    "markdown_sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+    "markdown_size_bytes": 11109,
+    "page_count": 3,
+    "pages": [
+      {
+        "detected_image_count": 1,
+        "item_count": 6,
+        "item_type_counts": {
+          "footer": 1,
+          "heading": 1,
+          "table": 1,
+          "text": 3
+        },
+        "page_index": 1,
+        "page_number": 1,
+        "success": true,
+        "warnings": []
+      },
+      {
+        "detected_image_count": 1,
+        "item_count": 4,
+        "item_type_counts": {
+          "footer": 1,
+          "heading": 1,
+          "table": 1,
+          "text": 1
+        },
+        "page_index": 2,
+        "page_number": 2,
+        "success": true,
+        "warnings": []
+      },
+      {
+        "detected_image_count": 1,
+        "item_count": 4,
+        "item_type_counts": {
+          "footer": 1,
+          "heading": 1,
+          "table": 1,
+          "text": 1
+        },
+        "page_index": 3,
+        "page_number": 3,
+        "success": true,
+        "warnings": []
+      }
+    ],
+    "processing": {
+      "duration_ms": 19832,
+      "engine": "docling",
+      "input_format": "pdf",
+      "local_processing": true,
+      "native_text_engine": "pypdfium2",
+      "ocr_engine": "tesseract",
+      "ocr_languages": [
+        "eng"
+      ],
+      "picture_captioning": {
+        "local_model_available": false,
+        "requested": false
+      },
+      "table_engines": [
+        "docling",
+        "pdfplumber"
+      ],
+      "visual_analysis": {
+        "heading_height_ratio": 1.8,
+        "heading_min_confidence": 0.75,
+        "low_confidence_min_alnum_chars": 8,
+        "pdf_selective_rendering_enabled": true,
+        "picture_classification_threshold": 0.6,
+        "primary_ocr_min_confidence": 0.45,
+        "shared_pipeline": true
+      }
+    },
+    "total_item_count": 14
+  },
+  "peak_rss_bytes": 2010890240,
+  "process_cpu_seconds": 15.338234,
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "source_filename": "postal-10k.pdf",
+  "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+  "source_size_bytes": 83589,
+  "started_at_utc": "2026-07-28T13:49:49.533295+00:00",
+  "status": "success",
+  "versions": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "pypdfium2": "5.12.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "source_tree_sha256": "ff2e4656dcb9f6eefb5c2e3b94919c5eb080aad7a8cf6dc09463e9f86d87d98c",
+    "tesseract": "tesseract 5.5.3"
+  }
+}

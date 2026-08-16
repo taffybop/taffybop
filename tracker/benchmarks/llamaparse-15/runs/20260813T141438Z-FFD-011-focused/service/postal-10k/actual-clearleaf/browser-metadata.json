@@ -1,0 +1,16 @@
+{
+  "schema_version": "ffd-011-browser-capture-v1",
+  "browser": "Chrome",
+  "browser_family": "chrome",
+  "browser_surface": "extension",
+  "viewport": {
+    "width": 1920,
+    "height": 802
+  },
+  "language": "en",
+  "timezone": "Asia/Kolkata",
+  "source_url": "http://localhost:3000/",
+  "captured_at_utc": "2026-08-13T14:40:49.147Z",
+  "device_pixel_ratio": "not exposed by browser-control surface",
+  "theme": "light (visually observed)"
+}

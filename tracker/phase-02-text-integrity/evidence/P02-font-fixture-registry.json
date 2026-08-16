@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "p02-font-audit-fixtures",
+  "builder": "tests/fixtures/phase_02/font_audit/builder.py",
+  "storage": "deterministic-in-memory-only",
+  "contains_third_party_font_programs": false,
+  "fixtures": [
+    {
+      "fixture_id": "healthy-winansi-intentional-spaces",
+      "sha256": "819fc73a96a087ddbf1770a41bd02c9908bc1eaee9ff237fa29e511aaa40818d",
+      "expected_classification": "healthy",
+      "expected_native_text": "ALPHA BETA"
+    },
+    {
+      "fixture_id": "type0-missing-tounicode",
+      "sha256": "3027ce2495606718d10fddf0d34263aaa96f4082c2ec0e7d816bfb7957da9ce2",
+      "expected_classification": "unresolved",
+      "expected_reason_codes": [
+        "to_unicode_missing"
+      ]
+    },
+    {
+      "fixture_id": "type0-nonidentity-cidtogid",
+      "sha256": "b8c8db65d5249da32bdc1e8bb737477872ad917a3070ed652663875dc93d6563",
+      "expected_classification": "healthy",
+      "expected_native_text": "AB",
+      "expected_cid_to_gid": "non_identity"
+    },
+    {
+      "fixture_id": "standard14-no-embedded-font",
+      "sha256": "8267a3344a9dc3d373657c97bee73838f5b562d8bf3f222434c872f50bf12c8b",
+      "expected_classification": "healthy",
+      "expected_native_text": "STANDARD FOURTEEN",
+      "expected_embedded_program": false
+    }
+  ]
+}

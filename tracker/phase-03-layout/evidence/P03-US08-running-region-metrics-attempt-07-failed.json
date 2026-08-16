@@ -1,0 +1,3804 @@
+{
+  "aggregate": {
+    "all_pass": false,
+    "code_custody": true,
+    "comparison_ledgers": true,
+    "control_matrix": true,
+    "deadline_boundaries": true,
+    "dependency_custody": true,
+    "failure_free": false,
+    "fixture_custody": true,
+    "hosted_usage": true,
+    "input_custody": true,
+    "m0_reference": true,
+    "measurement_protocol": true,
+    "output_sizes": false,
+    "paired_parser": false,
+    "policy_contract": true,
+    "predecessor_custody": true,
+    "quality": true,
+    "resource_boundaries": true,
+    "rollback": true,
+    "running_region_projection": true,
+    "settings_custody": true,
+    "source_extraction": false
+  },
+  "code_sha256": {
+    "manifest_sha256": "ba2055c350a3998166724c641d5604ecf0cd93eff46756f70753e678c52ac1dc",
+    "post": {
+      "app/__init__.py": {
+        "path": "app/__init__.py",
+        "sha256": "6d190e0772a6f801b9b10ac36069748d069a6ce169576a99b0f7192285915ae9",
+        "size_bytes": 59
+      },
+      "app/api.py": {
+        "path": "app/api.py",
+        "sha256": "4f67f0cb2a13f50c258701a12e7fa8102ea11ac8be8d9df82859348234c28069",
+        "size_bytes": 4871
+      },
+      "app/config.py": {
+        "path": "app/config.py",
+        "sha256": "3903a634160e5c48f54092f820dbc7129ed941a39d6984212dd635415d0292f3",
+        "size_bytes": 16344
+      },
+      "app/errors.py": {
+        "path": "app/errors.py",
+        "sha256": "8623f175dbfcc0de12ab5ca656759ecca15a3fb30984ae2420d3161a14b4ad76",
+        "size_bytes": 3887
+      },
+      "app/main.py": {
+        "path": "app/main.py",
+        "sha256": "a442131225fd47c40405a54204830938826201164e92922dbcafdd2dbbbba833",
+        "size_bytes": 608
+      },
+      "app/models.py": {
+        "path": "app/models.py",
+        "sha256": "a74d5eb3a31a5a42a473cbbf10b8e5e37c026ff81b9e5687a97b4e13e22dfca0",
+        "size_bytes": 70591
+      },
+      "app/services/__init__.py": {
+        "path": "app/services/__init__.py",
+        "sha256": "37d8f591bfe0276a14109168fca331f71581034a1e9d1c159d584fce88c2af06",
+        "size_bytes": 48
+      },
+      "app/services/acroform.py": {
+        "path": "app/services/acroform.py",
+        "sha256": "d7df50a8eabaf9ac00a438196a05c217ec294526bb1fefdbdadfddc526b44a2c",
+        "size_bytes": 70061
+      },
+      "app/services/acroform_raw.py": {
+        "path": "app/services/acroform_raw.py",
+        "sha256": "3657a3e96bfb59041b47626a54753c8f2c5adfb1d0ab839ff015ffe050c709d7",
+        "size_bytes": 62689
+      },
+      "app/services/font_audit.py": {
+        "path": "app/services/font_audit.py",
+        "sha256": "e6684d1ef61256659a7a3fca721cd984a64c60cdadd7f37c999899b543383ffe",
+        "size_bytes": 40466
+      },
+      "app/services/font_recovery.py": {
+        "path": "app/services/font_recovery.py",
+        "sha256": "f63b882404ebc28c9e5fa2133b96e5787b8badb6721e3a1cfacf6591b00e173a",
+        "size_bytes": 56353
+      },
+      "app/services/form_semantics.py": {
+        "path": "app/services/form_semantics.py",
+        "sha256": "ac0cb9cdc7490b19126e46094e1ed150aa5da228db4ab887ee7465b6ba970e0d",
+        "size_bytes": 314287
+      },
+      "app/services/input_documents.py": {
+        "path": "app/services/input_documents.py",
+        "sha256": "c9a28cceeb5739b1e48bb4490ee899c89873c7f902938df72aefe77bd3c7575b",
+        "size_bytes": 15010
+      },
+      "app/services/ir.py": {
+        "path": "app/services/ir.py",
+        "sha256": "ae5a6d7ed093bb7c962dfbfcaf1f9ce439dc2540316d0ca55e5371048378ba43",
+        "size_bytes": 260032
+      },
+      "app/services/layout.py": {
+        "path": "app/services/layout.py",
+        "sha256": "abef846da18a8528210a97d375ccf92490d4bf7bd9e69c5bb42f3d5f145d24d9",
+        "size_bytes": 152546
+      },
+      "app/services/layout_order.py": {
+        "path": "app/services/layout_order.py",
+        "sha256": "74aebd662a7ef1ec17be1aeb5022f45c94b46ce4c18d589f22d2fd50d9a79928",
+        "size_bytes": 62088
+      },
+      "app/services/layout_source_notes.py": {
+        "path": "app/services/layout_source_notes.py",
+        "sha256": "d19e6b232b2c94c2c0f2a14f9412dd791df59c895b43e21698800a5c245c63fc",
+        "size_bytes": 49315
+      },
+      "app/services/ocr.py": {
+        "path": "app/services/ocr.py",
+        "sha256": "d13d70c931f4f034d7b598d86c14b54bc4ff5f1bf8aea035acbd9662374476a1",
+        "size_bytes": 55940
+      },
+      "app/services/outline_structure.py": {
+        "path": "app/services/outline_structure.py",
+        "sha256": "6dcdce2777f578a1b92081e0a1cc68c35ce678582c517cdb6eadc5dddd9958d3",
+        "size_bytes": 157308
+      },
+      "app/services/pipeline.py": {
+        "path": "app/services/pipeline.py",
+        "sha256": "a23b8cb3aa5aad362b5b0354e6fa79cbcb84f76211a1735f5b804c827914dcb1",
+        "size_bytes": 170628
+      },
+      "app/services/presentation.py": {
+        "path": "app/services/presentation.py",
+        "sha256": "630791197efb3f1bcee974a992c5051680d10186a31e4208edfbdb4af16cfb64",
+        "size_bytes": 169901
+      },
+      "app/services/running_regions.py": {
+        "path": "app/services/running_regions.py",
+        "sha256": "1824d3eaa9a9e1ee7545164dce0712e95f695d23c73d1a16ca5a9cc565714b62",
+        "size_bytes": 375077
+      },
+      "app/services/selective_span_ocr.py": {
+        "path": "app/services/selective_span_ocr.py",
+        "sha256": "05f618bbc011a174a20544c8149ecaabd7adb60fbfdf633d6fec8efbaeba5065",
+        "size_bytes": 75692
+      },
+      "app/services/serializer.py": {
+        "path": "app/services/serializer.py",
+        "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+        "size_bytes": 5026
+      },
+      "app/services/source_text_alignment.py": {
+        "path": "app/services/source_text_alignment.py",
+        "sha256": "8294ca5258db5f8dfb6d70f87e4ccefc132bb3b60eb6c979490533758d62976b",
+        "size_bytes": 137284
+      },
+      "app/services/spatial_tokens.py": {
+        "path": "app/services/spatial_tokens.py",
+        "sha256": "7e3b125e3b417764cfadf8213f4461305126c1e9fba4e998815f133849c0e773",
+        "size_bytes": 27582
+      },
+      "app/services/tables.py": {
+        "path": "app/services/tables.py",
+        "sha256": "dc889c00eea03ee3506093c6e806966e16f76f02ff941e6476e61c32545d0d42",
+        "size_bytes": 18319
+      },
+      "app/services/text_reconciliation.py": {
+        "path": "app/services/text_reconciliation.py",
+        "sha256": "58d2d3275827d10681b0075d8c6572ca56a290a249276fec27c138245ae9b479",
+        "size_bytes": 179657
+      },
+      "app/services/text_run_semantics.py": {
+        "path": "app/services/text_run_semantics.py",
+        "sha256": "804222626a6970257a2a344fbdfa3dfb80bf3446c3eeb9f79d2da5e6a48da93b",
+        "size_bytes": 129521
+      },
+      "frontend/app/api/parse/route.ts": {
+        "path": "frontend/app/api/parse/route.ts",
+        "sha256": "c36f31b269b9f7451f5d876c8be4162b18d7bc4c7d4414a06df65fe237db11cd",
+        "size_bytes": 3721
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "path": "frontend/app/clearleaf-workspace.tsx",
+        "sha256": "260c00eda83f115695da08aa4294824689fc99cb377f947814e3f4c1cc5f1d94",
+        "size_bytes": 66939
+      },
+      "frontend/app/globals.css": {
+        "path": "frontend/app/globals.css",
+        "sha256": "c312a7a3e7583154ef203a0fae8ca21cd307e41dc0853f6dcf0b00eb47c09d6d",
+        "size_bytes": 37386
+      },
+      "frontend/app/image-page-preview.tsx": {
+        "path": "frontend/app/image-page-preview.tsx",
+        "sha256": "f4466031b661a44592ffa0f6f31d77b849ee343aad4ef40336927e9f8f3b391f",
+        "size_bytes": 4202
+      },
+      "frontend/app/json-document-view.tsx": {
+        "path": "frontend/app/json-document-view.tsx",
+        "sha256": "fe40ee7b75d57aaf24c07b4f38bffbe9b6a571a5b0c4982feaace5e942cec00b",
+        "size_bytes": 7883
+      },
+      "frontend/app/layout.tsx": {
+        "path": "frontend/app/layout.tsx",
+        "sha256": "c972baf4394cdb0d77d0e3a85f6a2f2170b7b0f5c1d7f6d28ce5b7fa951fc2e6",
+        "size_bytes": 1834
+      },
+      "frontend/app/page.tsx": {
+        "path": "frontend/app/page.tsx",
+        "sha256": "17386e6fa7d093009faec9455800e57db0903f8bac2a095dcea3a107b9a5ad8a",
+        "size_bytes": 129
+      },
+      "frontend/app/pdf-page-preview.tsx": {
+        "path": "frontend/app/pdf-page-preview.tsx",
+        "sha256": "53e2204640b4e26eb25864fc87655a43edad3099ca7a622302fb767b03adf5ab",
+        "size_bytes": 4094
+      },
+      "frontend/build/sites-vite-plugin.ts": {
+        "path": "frontend/build/sites-vite-plugin.ts",
+        "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b",
+        "size_bytes": 1254
+      },
+      "frontend/eslint.config.mjs": {
+        "path": "frontend/eslint.config.mjs",
+        "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+        "size_bytes": 465
+      },
+      "frontend/lib/canonical-presentation.ts": {
+        "path": "frontend/lib/canonical-presentation.ts",
+        "sha256": "0cc5d85e171bfccea76804ab9a84c3389f367a05202a15249f8bee7767bbe94f",
+        "size_bytes": 21734
+      },
+      "frontend/lib/document-api.ts": {
+        "path": "frontend/lib/document-api.ts",
+        "sha256": "46e28859de9f61ee4cb337f6af48d308a32e7e39087730fc9fa949aec79497c7",
+        "size_bytes": 16508
+      },
+      "frontend/lib/form-semantics.ts": {
+        "path": "frontend/lib/form-semantics.ts",
+        "sha256": "3c0d633cba318b593636bb69f16a4a83a8d1fe1eb6fee6c7369edaf6fb305434",
+        "size_bytes": 39903
+      },
+      "frontend/lib/json-view-lines.ts": {
+        "path": "frontend/lib/json-view-lines.ts",
+        "sha256": "0ed122a8df7765456e2988b033470b76226286306aa2ce39313a25735e83c25e",
+        "size_bytes": 1561
+      },
+      "frontend/lib/layout-relationships.ts": {
+        "path": "frontend/lib/layout-relationships.ts",
+        "sha256": "17c7c9fd65015eb2410e1ee2a9d56ae38182712f194b5bcc78be34b0ef523147",
+        "size_bytes": 8741
+      },
+      "frontend/lib/normalize-document-json.ts": {
+        "path": "frontend/lib/normalize-document-json.ts",
+        "sha256": "0a4c8763b9987b85f10da9e075563c4c793369ae2e3203b62fa88ad99cb01859",
+        "size_bytes": 16064
+      },
+      "frontend/lib/outline-structure.ts": {
+        "path": "frontend/lib/outline-structure.ts",
+        "sha256": "351da83fae87f31c240f8d518e592b82de4f37079757b3ec8212b472f22d44a4",
+        "size_bytes": 51416
+      },
+      "frontend/lib/page-results.ts": {
+        "path": "frontend/lib/page-results.ts",
+        "sha256": "e989dfc07db869feca07df159c8e7c36c29fe70a53cef3d523f6bf8db6cb0576",
+        "size_bytes": 1798
+      },
+      "frontend/lib/primary-item-text.ts": {
+        "path": "frontend/lib/primary-item-text.ts",
+        "sha256": "eeb9a016d99bdb48f1f4b42301ce8c27c51659695f3d4ef2d06e56715bf2d018",
+        "size_bytes": 1106
+      },
+      "frontend/lib/running-regions.ts": {
+        "path": "frontend/lib/running-regions.ts",
+        "sha256": "73bad8a2ac6ce143ae69f9dc50dc61e955a42c56f0f8476d8bba12de3edf786d",
+        "size_bytes": 49506
+      },
+      "frontend/lib/serialize-output.ts": {
+        "path": "frontend/lib/serialize-output.ts",
+        "sha256": "0b1af2734a1114f3c20d5bef199d41b98b2f3267e7f89c16846ee0ee61f584ce",
+        "size_bytes": 3020
+      },
+      "frontend/lib/text-run-semantics.ts": {
+        "path": "frontend/lib/text-run-semantics.ts",
+        "sha256": "3a6fb9aaeb8be86bd8348f5eddaf8dcd116f2e31689ff467d34af94d79365262",
+        "size_bytes": 27302
+      },
+      "frontend/lib/types.ts": {
+        "path": "frontend/lib/types.ts",
+        "sha256": "33e23cd0567ef3f11b47d1efb3ef79eb13a20ed2311250983abb515f0f7abd63",
+        "size_bytes": 22396
+      },
+      "frontend/next.config.ts": {
+        "path": "frontend/next.config.ts",
+        "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+        "size_bytes": 133
+      },
+      "frontend/postcss.config.mjs": {
+        "path": "frontend/postcss.config.mjs",
+        "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+        "size_bytes": 94
+      },
+      "frontend/public/pdf.worker.min.mjs": {
+        "path": "frontend/public/pdf.worker.min.mjs",
+        "sha256": "dbcae78a691b3c501508f74b774c6066a57a14a76cefdc9e25ad86b651bb75d5",
+        "size_bytes": 1046214
+      },
+      "frontend/tests/built-output.test.mjs": {
+        "path": "frontend/tests/built-output.test.mjs",
+        "sha256": "220e5866a54caaaac52a844e3ad871ada85c0f884af585b5fb037b11aef9cea6",
+        "size_bytes": 1839
+      },
+      "frontend/tests/document-api.test.mts": {
+        "path": "frontend/tests/document-api.test.mts",
+        "sha256": "461efbe55101d99e8eee5db22a98288d8d69f5906eb49be7abdaf0f1e89751af",
+        "size_bytes": 7784
+      },
+      "frontend/tests/fixtures.mts": {
+        "path": "frontend/tests/fixtures.mts",
+        "sha256": "2724f73ee6eb5145ca9a2122916ec53847bc0aa5baeacac6529d7c1013fd0758",
+        "size_bytes": 3763
+      },
+      "frontend/tests/json-view-lines.test.mts": {
+        "path": "frontend/tests/json-view-lines.test.mts",
+        "sha256": "4dbc5e054c131c5f32f1a9f7ff59c6a1cfc8aabeb25afd60bbf2dbf11cafe9ac",
+        "size_bytes": 921
+      },
+      "frontend/tests/normalize-document-json.test.mts": {
+        "path": "frontend/tests/normalize-document-json.test.mts",
+        "sha256": "ef5f1595670e80f200fd4a1eecfbed3523f33d25f5667b052d5907fc9526eea2",
+        "size_bytes": 9651
+      },
+      "frontend/tests/p01-us04-serializer-parity.test.mts": {
+        "path": "frontend/tests/p01-us04-serializer-parity.test.mts",
+        "sha256": "2dd1d713e704a03d664760ef46617b98c5ee0bf35f2a12787f3648832762dfa4",
+        "size_bytes": 6212
+      },
+      "frontend/tests/p03-us01-table-captions.test.mts": {
+        "path": "frontend/tests/p03-us01-table-captions.test.mts",
+        "sha256": "7e45d3dc1261fb23634b27c9108409e773b69c0287803dbee29912b835ce4e2b",
+        "size_bytes": 7402
+      },
+      "frontend/tests/p03-us02-visual-relationships.test.mts": {
+        "path": "frontend/tests/p03-us02-visual-relationships.test.mts",
+        "sha256": "d08f8388cd1ce4f614fd979a64730fd98cb1774d3d4c013f95754fa8bb0a8bd9",
+        "size_bytes": 17815
+      },
+      "frontend/tests/p03-us03-source-notes.test.mts": {
+        "path": "frontend/tests/p03-us03-source-notes.test.mts",
+        "sha256": "c098b68e1777c85b5ab2a7b0e5bb52e5976f2f28cf694fbbbf33f52f8c944ede",
+        "size_bytes": 10880
+      },
+      "frontend/tests/p03-us04-reading-order.test.mts": {
+        "path": "frontend/tests/p03-us04-reading-order.test.mts",
+        "sha256": "e5853cbdc380b0cca38758af44d849b6510ec6b8fcf533b68b89d2a3a96104cc",
+        "size_bytes": 13691
+      },
+      "frontend/tests/p03-us05-redline-runs.test.mts": {
+        "path": "frontend/tests/p03-us05-redline-runs.test.mts",
+        "sha256": "5975c8d1924cd18023c616c20d81659d9bd40f4c1a2810a00a4eff5605595a6a",
+        "size_bytes": 18741
+      },
+      "frontend/tests/p03-us06-form-semantics.test.mts": {
+        "path": "frontend/tests/p03-us06-form-semantics.test.mts",
+        "sha256": "1e80bdf1c176dbd5e7f9b4f477214083b1567c7c2040c535183cfdba91f2a1da",
+        "size_bytes": 16527
+      },
+      "frontend/tests/p03-us07-outline-structure.test.mts": {
+        "path": "frontend/tests/p03-us07-outline-structure.test.mts",
+        "sha256": "826b5fa2d46023744740862755d02d8eb6cdd9558e9951983504ac51cb01ab76",
+        "size_bytes": 23355
+      },
+      "frontend/tests/p03-us08-running-regions.test.mts": {
+        "path": "frontend/tests/p03-us08-running-regions.test.mts",
+        "sha256": "20772d1f5a34b4c3834af6b4dea5becacbf91cac33f60dca41bf7ed4fef3549d",
+        "size_bytes": 33483
+      },
+      "frontend/tests/page-results.test.mts": {
+        "path": "frontend/tests/page-results.test.mts",
+        "sha256": "fe61de4bb6e8b37af9e7a5ec3b7e3bd37ee1fe3fbef1b69f008817346484a2b3",
+        "size_bytes": 2712
+      },
+      "frontend/tests/parse-route.test.mts": {
+        "path": "frontend/tests/parse-route.test.mts",
+        "sha256": "d90cbd7b4fcb0cbdb78dead5640a8127088c295818431c9333613fcd02964801",
+        "size_bytes": 3649
+      },
+      "frontend/tests/serialize-output.test.mts": {
+        "path": "frontend/tests/serialize-output.test.mts",
+        "sha256": "5115da7ebdf57a51ddf79c55b4b521f8b4bd5a762bdf386e9e520ad8a11f5bb0",
+        "size_bytes": 3157
+      },
+      "frontend/tests/workspace-canonical-ui.test.mts": {
+        "path": "frontend/tests/workspace-canonical-ui.test.mts",
+        "sha256": "50551ebc402b5a295741f1669853b7b00bbdf35fdca7f5443273d2894489af6a",
+        "size_bytes": 3231
+      },
+      "frontend/tests/workspace-layout.test.mts": {
+        "path": "frontend/tests/workspace-layout.test.mts",
+        "sha256": "0551214217a51a6def3cd6443bc9add3f99781237602ae1b8f2f066bef026ccf",
+        "size_bytes": 3793
+      },
+      "frontend/vite.config.ts": {
+        "path": "frontend/vite.config.ts",
+        "sha256": "f7c14b8a38546bb6a7ec93cba22f8e8f131da9fbfe8b39327422ed5bb98d4613",
+        "size_bytes": 1697
+      },
+      "frontend/worker/index.ts": {
+        "path": "frontend/worker/index.ts",
+        "sha256": "08c6223b797b44342a7c39bd567d9146fe8ea7bf8777b5da98dc043e6a1a1d67",
+        "size_bytes": 1719
+      },
+      "tests/benchmarks/running_region_metrics.py": {
+        "path": "tests/benchmarks/running_region_metrics.py",
+        "sha256": "81a2d4bac020b7f8c0d2807df60580a4aa421a8e023770999ceed7dbb72c06ab",
+        "size_bytes": 304898
+      },
+      "tests/contract/test_p03_us08_api_model_strictness.py": {
+        "path": "tests/contract/test_p03_us08_api_model_strictness.py",
+        "sha256": "341a4f4b598c0bf2079ab6eab7a07d5ea56e9b7539466fc90731ab6b589cd2dc",
+        "size_bytes": 7181
+      },
+      "tests/contract/test_p03_us08_running_region_contract.py": {
+        "path": "tests/contract/test_p03_us08_running_region_contract.py",
+        "sha256": "b252b1321830a37819617dccf66ac672b6c334f32b1b9a310bce3c6ceee3c425",
+        "size_bytes": 99936
+      },
+      "tests/fixtures/phase_03/running_regions/contract.py": {
+        "path": "tests/fixtures/phase_03/running_regions/contract.py",
+        "sha256": "4607722c2c846496a6a5d336b5096f559360272250b3384076f8cc998cb11730",
+        "size_bytes": 476883
+      },
+      "tests/fixtures/phase_03/running_regions/oracle.py": {
+        "path": "tests/fixtures/phase_03/running_regions/oracle.py",
+        "sha256": "5e70b5df58284f544b43a6189055044c80c2a9a6404f143758be550e3879b563",
+        "size_bytes": 160147
+      },
+      "tests/fixtures/phase_03/running_regions/synthetic.py": {
+        "path": "tests/fixtures/phase_03/running_regions/synthetic.py",
+        "sha256": "f2a45566e3a7e64bf8caa819854dd9240c4a5e88a7a5ae260c09fe021f1746bb",
+        "size_bytes": 399146
+      },
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py": {
+        "path": "tests/performance/test_p03_us08_running_region_metrics_contract.py",
+        "sha256": "966a0e31e1c7833d47d611897536092619a6764958d90a35b7b7174748453878",
+        "size_bytes": 158925
+      },
+      "tests/regression/phase_03/test_p03_us08_real_running_regions.py": {
+        "path": "tests/regression/phase_03/test_p03_us08_real_running_regions.py",
+        "sha256": "5f49bb1cb800c1ef3fa36f944584eea18ef2411d4b33caa90f25be74d8105505",
+        "size_bytes": 19001
+      },
+      "tests/stories/phase_03/test_p03_us08_running_regions.py": {
+        "path": "tests/stories/phase_03/test_p03_us08_running_regions.py",
+        "sha256": "6f7859e4902c58a17f7eadcff85bba1072b752831962d2872ac2855861c63fe3",
+        "size_bytes": 51225
+      },
+      "tracker/phase-03-layout/decisions/P03-running-regions-and-page-identity-policy.md": {
+        "path": "tracker/phase-03-layout/decisions/P03-running-regions-and-page-identity-policy.md",
+        "sha256": "13cca3d23014f931574a1eb8f42f21bab4528a38a67ed0af6ac7e676e414c0c8",
+        "size_bytes": 91744
+      }
+    },
+    "pre": {
+      "app/__init__.py": {
+        "path": "app/__init__.py",
+        "sha256": "6d190e0772a6f801b9b10ac36069748d069a6ce169576a99b0f7192285915ae9",
+        "size_bytes": 59
+      },
+      "app/api.py": {
+        "path": "app/api.py",
+        "sha256": "4f67f0cb2a13f50c258701a12e7fa8102ea11ac8be8d9df82859348234c28069",
+        "size_bytes": 4871
+      },
+      "app/config.py": {
+        "path": "app/config.py",
+        "sha256": "3903a634160e5c48f54092f820dbc7129ed941a39d6984212dd635415d0292f3",
+        "size_bytes": 16344
+      },
+      "app/errors.py": {
+        "path": "app/errors.py",
+        "sha256": "8623f175dbfcc0de12ab5ca656759ecca15a3fb30984ae2420d3161a14b4ad76",
+        "size_bytes": 3887
+      },
+      "app/main.py": {
+        "path": "app/main.py",
+        "sha256": "a442131225fd47c40405a54204830938826201164e92922dbcafdd2dbbbba833",
+        "size_bytes": 608
+      },
+      "app/models.py": {
+        "path": "app/models.py",
+        "sha256": "a74d5eb3a31a5a42a473cbbf10b8e5e37c026ff81b9e5687a97b4e13e22dfca0",
+        "size_bytes": 70591
+      },
+      "app/services/__init__.py": {
+        "path": "app/services/__init__.py",
+        "sha256": "37d8f591bfe0276a14109168fca331f71581034a1e9d1c159d584fce88c2af06",
+        "size_bytes": 48
+      },
+      "app/services/acroform.py": {
+        "path": "app/services/acroform.py",
+        "sha256": "d7df50a8eabaf9ac00a438196a05c217ec294526bb1fefdbdadfddc526b44a2c",
+        "size_bytes": 70061
+      },
+      "app/services/acroform_raw.py": {
+        "path": "app/services/acroform_raw.py",
+        "sha256": "3657a3e96bfb59041b47626a54753c8f2c5adfb1d0ab839ff015ffe050c709d7",
+        "size_bytes": 62689
+      },
+      "app/services/font_audit.py": {
+        "path": "app/services/font_audit.py",
+        "sha256": "e6684d1ef61256659a7a3fca721cd984a64c60cdadd7f37c999899b543383ffe",
+        "size_bytes": 40466
+      },
+      "app/services/font_recovery.py": {
+        "path": "app/services/font_recovery.py",
+        "sha256": "f63b882404ebc28c9e5fa2133b96e5787b8badb6721e3a1cfacf6591b00e173a",
+        "size_bytes": 56353
+      },
+      "app/services/form_semantics.py": {
+        "path": "app/services/form_semantics.py",
+        "sha256": "ac0cb9cdc7490b19126e46094e1ed150aa5da228db4ab887ee7465b6ba970e0d",
+        "size_bytes": 314287
+      },
+      "app/services/input_documents.py": {
+        "path": "app/services/input_documents.py",
+        "sha256": "c9a28cceeb5739b1e48bb4490ee899c89873c7f902938df72aefe77bd3c7575b",
+        "size_bytes": 15010
+      },
+      "app/services/ir.py": {
+        "path": "app/services/ir.py",
+        "sha256": "ae5a6d7ed093bb7c962dfbfcaf1f9ce439dc2540316d0ca55e5371048378ba43",
+        "size_bytes": 260032
+      },
+      "app/services/layout.py": {
+        "path": "app/services/layout.py",
+        "sha256": "abef846da18a8528210a97d375ccf92490d4bf7bd9e69c5bb42f3d5f145d24d9",
+        "size_bytes": 152546
+      },
+      "app/services/layout_order.py": {
+        "path": "app/services/layout_order.py",
+        "sha256": "74aebd662a7ef1ec17be1aeb5022f45c94b46ce4c18d589f22d2fd50d9a79928",
+        "size_bytes": 62088
+      },
+      "app/services/layout_source_notes.py": {
+        "path": "app/services/layout_source_notes.py",
+        "sha256": "d19e6b232b2c94c2c0f2a14f9412dd791df59c895b43e21698800a5c245c63fc",
+        "size_bytes": 49315
+      },
+      "app/services/ocr.py": {
+        "path": "app/services/ocr.py",
+        "sha256": "d13d70c931f4f034d7b598d86c14b54bc4ff5f1bf8aea035acbd9662374476a1",
+        "size_bytes": 55940
+      },
+      "app/services/outline_structure.py": {
+        "path": "app/services/outline_structure.py",
+        "sha256": "6dcdce2777f578a1b92081e0a1cc68c35ce678582c517cdb6eadc5dddd9958d3",
+        "size_bytes": 157308
+      },
+      "app/services/pipeline.py": {
+        "path": "app/services/pipeline.py",
+        "sha256": "a23b8cb3aa5aad362b5b0354e6fa79cbcb84f76211a1735f5b804c827914dcb1",
+        "size_bytes": 170628
+      },
+      "app/services/presentation.py": {
+        "path": "app/services/presentation.py",
+        "sha256": "630791197efb3f1bcee974a992c5051680d10186a31e4208edfbdb4af16cfb64",
+        "size_bytes": 169901
+      },
+      "app/services/running_regions.py": {
+        "path": "app/services/running_regions.py",
+        "sha256": "1824d3eaa9a9e1ee7545164dce0712e95f695d23c73d1a16ca5a9cc565714b62",
+        "size_bytes": 375077
+      },
+      "app/services/selective_span_ocr.py": {
+        "path": "app/services/selective_span_ocr.py",
+        "sha256": "05f618bbc011a174a20544c8149ecaabd7adb60fbfdf633d6fec8efbaeba5065",
+        "size_bytes": 75692
+      },
+      "app/services/serializer.py": {
+        "path": "app/services/serializer.py",
+        "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+        "size_bytes": 5026
+      },
+      "app/services/source_text_alignment.py": {
+        "path": "app/services/source_text_alignment.py",
+        "sha256": "8294ca5258db5f8dfb6d70f87e4ccefc132bb3b60eb6c979490533758d62976b",
+        "size_bytes": 137284
+      },
+      "app/services/spatial_tokens.py": {
+        "path": "app/services/spatial_tokens.py",
+        "sha256": "7e3b125e3b417764cfadf8213f4461305126c1e9fba4e998815f133849c0e773",
+        "size_bytes": 27582
+      },
+      "app/services/tables.py": {
+        "path": "app/services/tables.py",
+        "sha256": "dc889c00eea03ee3506093c6e806966e16f76f02ff941e6476e61c32545d0d42",
+        "size_bytes": 18319
+      },
+      "app/services/text_reconciliation.py": {
+        "path": "app/services/text_reconciliation.py",
+        "sha256": "58d2d3275827d10681b0075d8c6572ca56a290a249276fec27c138245ae9b479",
+        "size_bytes": 179657
+      },
+      "app/services/text_run_semantics.py": {
+        "path": "app/services/text_run_semantics.py",
+        "sha256": "804222626a6970257a2a344fbdfa3dfb80bf3446c3eeb9f79d2da5e6a48da93b",
+        "size_bytes": 129521
+      },
+      "frontend/app/api/parse/route.ts": {
+        "path": "frontend/app/api/parse/route.ts",
+        "sha256": "c36f31b269b9f7451f5d876c8be4162b18d7bc4c7d4414a06df65fe237db11cd",
+        "size_bytes": 3721
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "path": "frontend/app/clearleaf-workspace.tsx",
+        "sha256": "260c00eda83f115695da08aa4294824689fc99cb377f947814e3f4c1cc5f1d94",
+        "size_bytes": 66939
+      },
+      "frontend/app/globals.css": {
+        "path": "frontend/app/globals.css",
+        "sha256": "c312a7a3e7583154ef203a0fae8ca21cd307e41dc0853f6dcf0b00eb47c09d6d",
+        "size_bytes": 37386
+      },
+      "frontend/app/image-page-preview.tsx": {
+        "path": "frontend/app/image-page-preview.tsx",
+        "sha256": "f4466031b661a44592ffa0f6f31d77b849ee343aad4ef40336927e9f8f3b391f",
+        "size_bytes": 4202
+      },
+      "frontend/app/json-document-view.tsx": {
+        "path": "frontend/app/json-document-view.tsx",
+        "sha256": "fe40ee7b75d57aaf24c07b4f38bffbe9b6a571a5b0c4982feaace5e942cec00b",
+        "size_bytes": 7883
+      },
+      "frontend/app/layout.tsx": {
+        "path": "frontend/app/layout.tsx",
+        "sha256": "c972baf4394cdb0d77d0e3a85f6a2f2170b7b0f5c1d7f6d28ce5b7fa951fc2e6",
+        "size_bytes": 1834
+      },
+      "frontend/app/page.tsx": {
+        "path": "frontend/app/page.tsx",
+        "sha256": "17386e6fa7d093009faec9455800e57db0903f8bac2a095dcea3a107b9a5ad8a",
+        "size_bytes": 129
+      },
+      "frontend/app/pdf-page-preview.tsx": {
+        "path": "frontend/app/pdf-page-preview.tsx",
+        "sha256": "53e2204640b4e26eb25864fc87655a43edad3099ca7a622302fb767b03adf5ab",
+        "size_bytes": 4094
+      },
+      "frontend/build/sites-vite-plugin.ts": {
+        "path": "frontend/build/sites-vite-plugin.ts",
+        "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b",
+        "size_bytes": 1254
+      },
+      "frontend/eslint.config.mjs": {
+        "path": "frontend/eslint.config.mjs",
+        "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+        "size_bytes": 465
+      },
+      "frontend/lib/canonical-presentation.ts": {
+        "path": "frontend/lib/canonical-presentation.ts",
+        "sha256": "0cc5d85e171bfccea76804ab9a84c3389f367a05202a15249f8bee7767bbe94f",
+        "size_bytes": 21734
+      },
+      "frontend/lib/document-api.ts": {
+        "path": "frontend/lib/document-api.ts",
+        "sha256": "46e28859de9f61ee4cb337f6af48d308a32e7e39087730fc9fa949aec79497c7",
+        "size_bytes": 16508
+      },
+      "frontend/lib/form-semantics.ts": {
+        "path": "frontend/lib/form-semantics.ts",
+        "sha256": "3c0d633cba318b593636bb69f16a4a83a8d1fe1eb6fee6c7369edaf6fb305434",
+        "size_bytes": 39903
+      },
+      "frontend/lib/json-view-lines.ts": {
+        "path": "frontend/lib/json-view-lines.ts",
+        "sha256": "0ed122a8df7765456e2988b033470b76226286306aa2ce39313a25735e83c25e",
+        "size_bytes": 1561
+      },
+      "frontend/lib/layout-relationships.ts": {
+        "path": "frontend/lib/layout-relationships.ts",
+        "sha256": "17c7c9fd65015eb2410e1ee2a9d56ae38182712f194b5bcc78be34b0ef523147",
+        "size_bytes": 8741
+      },
+      "frontend/lib/normalize-document-json.ts": {
+        "path": "frontend/lib/normalize-document-json.ts",
+        "sha256": "0a4c8763b9987b85f10da9e075563c4c793369ae2e3203b62fa88ad99cb01859",
+        "size_bytes": 16064
+      },
+      "frontend/lib/outline-structure.ts": {
+        "path": "frontend/lib/outline-structure.ts",
+        "sha256": "351da83fae87f31c240f8d518e592b82de4f37079757b3ec8212b472f22d44a4",
+        "size_bytes": 51416
+      },
+      "frontend/lib/page-results.ts": {
+        "path": "frontend/lib/page-results.ts",
+        "sha256": "e989dfc07db869feca07df159c8e7c36c29fe70a53cef3d523f6bf8db6cb0576",
+        "size_bytes": 1798
+      },
+      "frontend/lib/primary-item-text.ts": {
+        "path": "frontend/lib/primary-item-text.ts",
+        "sha256": "eeb9a016d99bdb48f1f4b42301ce8c27c51659695f3d4ef2d06e56715bf2d018",
+        "size_bytes": 1106
+      },
+      "frontend/lib/running-regions.ts": {
+        "path": "frontend/lib/running-regions.ts",
+        "sha256": "73bad8a2ac6ce143ae69f9dc50dc61e955a42c56f0f8476d8bba12de3edf786d",
+        "size_bytes": 49506
+      },
+      "frontend/lib/serialize-output.ts": {
+        "path": "frontend/lib/serialize-output.ts",
+        "sha256": "0b1af2734a1114f3c20d5bef199d41b98b2f3267e7f89c16846ee0ee61f584ce",
+        "size_bytes": 3020
+      },
+      "frontend/lib/text-run-semantics.ts": {
+        "path": "frontend/lib/text-run-semantics.ts",
+        "sha256": "3a6fb9aaeb8be86bd8348f5eddaf8dcd116f2e31689ff467d34af94d79365262",
+        "size_bytes": 27302
+      },
+      "frontend/lib/types.ts": {
+        "path": "frontend/lib/types.ts",
+        "sha256": "33e23cd0567ef3f11b47d1efb3ef79eb13a20ed2311250983abb515f0f7abd63",
+        "size_bytes": 22396
+      },
+      "frontend/next.config.ts": {
+        "path": "frontend/next.config.ts",
+        "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+        "size_bytes": 133
+      },
+      "frontend/postcss.config.mjs": {
+        "path": "frontend/postcss.config.mjs",
+        "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+        "size_bytes": 94
+      },
+      "frontend/public/pdf.worker.min.mjs": {
+        "path": "frontend/public/pdf.worker.min.mjs",
+        "sha256": "dbcae78a691b3c501508f74b774c6066a57a14a76cefdc9e25ad86b651bb75d5",
+        "size_bytes": 1046214
+      },
+      "frontend/tests/built-output.test.mjs": {
+        "path": "frontend/tests/built-output.test.mjs",
+        "sha256": "220e5866a54caaaac52a844e3ad871ada85c0f884af585b5fb037b11aef9cea6",
+        "size_bytes": 1839
+      },
+      "frontend/tests/document-api.test.mts": {
+        "path": "frontend/tests/document-api.test.mts",
+        "sha256": "461efbe55101d99e8eee5db22a98288d8d69f5906eb49be7abdaf0f1e89751af",
+        "size_bytes": 7784
+      },
+      "frontend/tests/fixtures.mts": {
+        "path": "frontend/tests/fixtures.mts",
+        "sha256": "2724f73ee6eb5145ca9a2122916ec53847bc0aa5baeacac6529d7c1013fd0758",
+        "size_bytes": 3763
+      },
+      "frontend/tests/json-view-lines.test.mts": {
+        "path": "frontend/tests/json-view-lines.test.mts",
+        "sha256": "4dbc5e054c131c5f32f1a9f7ff59c6a1cfc8aabeb25afd60bbf2dbf11cafe9ac",
+        "size_bytes": 921
+      },
+      "frontend/tests/normalize-document-json.test.mts": {
+        "path": "frontend/tests/normalize-document-json.test.mts",
+        "sha256": "ef5f1595670e80f200fd4a1eecfbed3523f33d25f5667b052d5907fc9526eea2",
+        "size_bytes": 9651
+      },
+      "frontend/tests/p01-us04-serializer-parity.test.mts": {
+        "path": "frontend/tests/p01-us04-serializer-parity.test.mts",
+        "sha256": "2dd1d713e704a03d664760ef46617b98c5ee0bf35f2a12787f3648832762dfa4",
+        "size_bytes": 6212
+      },
+      "frontend/tests/p03-us01-table-captions.test.mts": {
+        "path": "frontend/tests/p03-us01-table-captions.test.mts",
+        "sha256": "7e45d3dc1261fb23634b27c9108409e773b69c0287803dbee29912b835ce4e2b",
+        "size_bytes": 7402
+      },
+      "frontend/tests/p03-us02-visual-relationships.test.mts": {
+        "path": "frontend/tests/p03-us02-visual-relationships.test.mts",
+        "sha256": "d08f8388cd1ce4f614fd979a64730fd98cb1774d3d4c013f95754fa8bb0a8bd9",
+        "size_bytes": 17815
+      },
+      "frontend/tests/p03-us03-source-notes.test.mts": {
+        "path": "frontend/tests/p03-us03-source-notes.test.mts",
+        "sha256": "c098b68e1777c85b5ab2a7b0e5bb52e5976f2f28cf694fbbbf33f52f8c944ede",
+        "size_bytes": 10880
+      },
+      "frontend/tests/p03-us04-reading-order.test.mts": {
+        "path": "frontend/tests/p03-us04-reading-order.test.mts",
+        "sha256": "e5853cbdc380b0cca38758af44d849b6510ec6b8fcf533b68b89d2a3a96104cc",
+        "size_bytes": 13691
+      },
+      "frontend/tests/p03-us05-redline-runs.test.mts": {
+        "path": "frontend/tests/p03-us05-redline-runs.test.mts",
+        "sha256": "5975c8d1924cd18023c616c20d81659d9bd40f4c1a2810a00a4eff5605595a6a",
+        "size_bytes": 18741
+      },
+      "frontend/tests/p03-us06-form-semantics.test.mts": {
+        "path": "frontend/tests/p03-us06-form-semantics.test.mts",
+        "sha256": "1e80bdf1c176dbd5e7f9b4f477214083b1567c7c2040c535183cfdba91f2a1da",
+        "size_bytes": 16527
+      },
+      "frontend/tests/p03-us07-outline-structure.test.mts": {
+        "path": "frontend/tests/p03-us07-outline-structure.test.mts",
+        "sha256": "826b5fa2d46023744740862755d02d8eb6cdd9558e9951983504ac51cb01ab76",
+        "size_bytes": 23355
+      },
+      "frontend/tests/p03-us08-running-regions.test.mts": {
+        "path": "frontend/tests/p03-us08-running-regions.test.mts",
+        "sha256": "20772d1f5a34b4c3834af6b4dea5becacbf91cac33f60dca41bf7ed4fef3549d",
+        "size_bytes": 33483
+      },
+      "frontend/tests/page-results.test.mts": {
+        "path": "frontend/tests/page-results.test.mts",
+        "sha256": "fe61de4bb6e8b37af9e7a5ec3b7e3bd37ee1fe3fbef1b69f008817346484a2b3",
+        "size_bytes": 2712
+      },
+      "frontend/tests/parse-route.test.mts": {
+        "path": "frontend/tests/parse-route.test.mts",
+        "sha256": "d90cbd7b4fcb0cbdb78dead5640a8127088c295818431c9333613fcd02964801",
+        "size_bytes": 3649
+      },
+      "frontend/tests/serialize-output.test.mts": {
+        "path": "frontend/tests/serialize-output.test.mts",
+        "sha256": "5115da7ebdf57a51ddf79c55b4b521f8b4bd5a762bdf386e9e520ad8a11f5bb0",
+        "size_bytes": 3157
+      },
+      "frontend/tests/workspace-canonical-ui.test.mts": {
+        "path": "frontend/tests/workspace-canonical-ui.test.mts",
+        "sha256": "50551ebc402b5a295741f1669853b7b00bbdf35fdca7f5443273d2894489af6a",
+        "size_bytes": 3231
+      },
+      "frontend/tests/workspace-layout.test.mts": {
+        "path": "frontend/tests/workspace-layout.test.mts",
+        "sha256": "0551214217a51a6def3cd6443bc9add3f99781237602ae1b8f2f066bef026ccf",
+        "size_bytes": 3793
+      },
+      "frontend/vite.config.ts": {
+        "path": "frontend/vite.config.ts",
+        "sha256": "f7c14b8a38546bb6a7ec93cba22f8e8f131da9fbfe8b39327422ed5bb98d4613",
+        "size_bytes": 1697
+      },
+      "frontend/worker/index.ts": {
+        "path": "frontend/worker/index.ts",
+        "sha256": "08c6223b797b44342a7c39bd567d9146fe8ea7bf8777b5da98dc043e6a1a1d67",
+        "size_bytes": 1719
+      },
+      "tests/benchmarks/running_region_metrics.py": {
+        "path": "tests/benchmarks/running_region_metrics.py",
+        "sha256": "81a2d4bac020b7f8c0d2807df60580a4aa421a8e023770999ceed7dbb72c06ab",
+        "size_bytes": 304898
+      },
+      "tests/contract/test_p03_us08_api_model_strictness.py": {
+        "path": "tests/contract/test_p03_us08_api_model_strictness.py",
+        "sha256": "341a4f4b598c0bf2079ab6eab7a07d5ea56e9b7539466fc90731ab6b589cd2dc",
+        "size_bytes": 7181
+      },
+      "tests/contract/test_p03_us08_running_region_contract.py": {
+        "path": "tests/contract/test_p03_us08_running_region_contract.py",
+        "sha256": "b252b1321830a37819617dccf66ac672b6c334f32b1b9a310bce3c6ceee3c425",
+        "size_bytes": 99936
+      },
+      "tests/fixtures/phase_03/running_regions/contract.py": {
+        "path": "tests/fixtures/phase_03/running_regions/contract.py",
+        "sha256": "4607722c2c846496a6a5d336b5096f559360272250b3384076f8cc998cb11730",
+        "size_bytes": 476883
+      },
+      "tests/fixtures/phase_03/running_regions/oracle.py": {
+        "path": "tests/fixtures/phase_03/running_regions/oracle.py",
+        "sha256": "5e70b5df58284f544b43a6189055044c80c2a9a6404f143758be550e3879b563",
+        "size_bytes": 160147
+      },
+      "tests/fixtures/phase_03/running_regions/synthetic.py": {
+        "path": "tests/fixtures/phase_03/running_regions/synthetic.py",
+        "sha256": "f2a45566e3a7e64bf8caa819854dd9240c4a5e88a7a5ae260c09fe021f1746bb",
+        "size_bytes": 399146
+      },
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py": {
+        "path": "tests/performance/test_p03_us08_running_region_metrics_contract.py",
+        "sha256": "966a0e31e1c7833d47d611897536092619a6764958d90a35b7b7174748453878",
+        "size_bytes": 158925
+      },
+      "tests/regression/phase_03/test_p03_us08_real_running_regions.py": {
+        "path": "tests/regression/phase_03/test_p03_us08_real_running_regions.py",
+        "sha256": "5f49bb1cb800c1ef3fa36f944584eea18ef2411d4b33caa90f25be74d8105505",
+        "size_bytes": 19001
+      },
+      "tests/stories/phase_03/test_p03_us08_running_regions.py": {
+        "path": "tests/stories/phase_03/test_p03_us08_running_regions.py",
+        "sha256": "6f7859e4902c58a17f7eadcff85bba1072b752831962d2872ac2855861c63fe3",
+        "size_bytes": 51225
+      },
+      "tracker/phase-03-layout/decisions/P03-running-regions-and-page-identity-policy.md": {
+        "path": "tracker/phase-03-layout/decisions/P03-running-regions-and-page-identity-policy.md",
+        "sha256": "13cca3d23014f931574a1eb8f42f21bab4528a38a67ed0af6ac7e676e414c0c8",
+        "size_bytes": 91744
+      }
+    },
+    "pre_post_match": true
+  },
+  "comparison_ledgers": {
+    "all_pass": true,
+    "targets": {
+      "ny-timetable": {
+        "comparison_count": 81,
+        "document_ceiling": 65536,
+        "indexed_algorithm": true,
+        "instrumentation_untimed": true,
+        "maximum_page_comparisons": 43,
+        "page_ceiling": 4096,
+        "page_count": 3,
+        "passed": true,
+        "target_id": "ny-timetable"
+      },
+      "uber-earnings": {
+        "comparison_count": 276,
+        "document_ceiling": 65536,
+        "indexed_algorithm": true,
+        "instrumentation_untimed": true,
+        "maximum_page_comparisons": 181,
+        "page_ceiling": 4096,
+        "page_count": 3,
+        "passed": true,
+        "target_id": "uber-earnings"
+      }
+    }
+  },
+  "contract_custody": {
+    "expected_semantic_sha256": "17a79f64f0c1eb68f11fac29b42752a4bbb767cc8708ee20d4a672381738d866",
+    "match": true,
+    "path": "tests/fixtures/phase_03/running_regions/contract.py",
+    "semantic_sha256": "17a79f64f0c1eb68f11fac29b42752a4bbb767cc8708ee20d4a672381738d866",
+    "sha256": "4607722c2c846496a6a5d336b5096f559360272250b3384076f8cc998cb11730",
+    "size_bytes": 476883
+  },
+  "control_matrix": {
+    "all_pass": true,
+    "cases": {
+      "catastrophe-recap": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "catastrophe-recap",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 1,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 1,
+        "page_count": 1,
+        "passed": true
+      },
+      "clean-energy": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "clean-energy",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 2,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 2,
+        "page_count": 1,
+        "passed": true
+      },
+      "clinical-study": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "clinical-study",
+        "expected_detected_labels": 4,
+        "expected_running_regions": 8,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 4,
+        "observed_running_regions": 8,
+        "page_count": 4,
+        "passed": true
+      },
+      "component-datasheet": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "component-datasheet",
+        "expected_detected_labels": 3,
+        "expected_running_regions": 6,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 3,
+        "observed_running_regions": 6,
+        "page_count": 3,
+        "passed": true
+      },
+      "egov-survey": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "egov-survey",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 2,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 2,
+        "page_count": 1,
+        "passed": true
+      },
+      "esg-metrics": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "esg-metrics",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 3,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 3,
+        "page_count": 1,
+        "passed": true
+      },
+      "finance-10k": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "finance-10k",
+        "expected_detected_labels": 3,
+        "expected_running_regions": 6,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 3,
+        "observed_running_regions": 6,
+        "page_count": 3,
+        "passed": true
+      },
+      "health-report": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "health-report",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 2,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 2,
+        "page_count": 1,
+        "passed": true
+      },
+      "insurance-acord": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "insurance-acord",
+        "expected_detected_labels": 0,
+        "expected_running_regions": 1,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 0,
+        "observed_running_regions": 1,
+        "page_count": 1,
+        "passed": true
+      },
+      "manufacturing-report": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "manufacturing-report",
+        "expected_detected_labels": 3,
+        "expected_running_regions": 6,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 3,
+        "observed_running_regions": 6,
+        "page_count": 3,
+        "passed": true
+      },
+      "ny-timetable": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "ny-timetable",
+        "expected_detected_labels": 3,
+        "expected_running_regions": 3,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 3,
+        "observed_running_regions": 3,
+        "page_count": 3,
+        "passed": true
+      },
+      "postal-10k": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "postal-10k",
+        "expected_detected_labels": 3,
+        "expected_running_regions": 3,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 3,
+        "observed_running_regions": 3,
+        "page_count": 3,
+        "passed": true
+      },
+      "purchase-agreement": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "purchase-agreement",
+        "expected_detected_labels": 0,
+        "expected_running_regions": 1,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 0,
+        "observed_running_regions": 1,
+        "page_count": 1,
+        "passed": true
+      },
+      "settlement-agreement": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "settlement-agreement",
+        "expected_detected_labels": 1,
+        "expected_running_regions": 1,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 1,
+        "observed_running_regions": 1,
+        "page_count": 1,
+        "passed": true
+      },
+      "uber-earnings": {
+        "canonical_body_match": true,
+        "canonical_full_match": true,
+        "case_id": "uber-earnings",
+        "expected_detected_labels": 2,
+        "expected_running_regions": 2,
+        "flag_off_byte_match": true,
+        "legacy_identity_match": true,
+        "observed_detected_labels": 2,
+        "observed_running_regions": 2,
+        "page_count": 3,
+        "passed": true
+      }
+    }
+  },
+  "deadline_boundaries": {
+    "all_pass": true,
+    "cases": {
+      "projection_document_deadline": {
+        "exact_accepted": true,
+        "exact_clock_calls": 2,
+        "exact_outcome": "accepted",
+        "limit_ns": 2000000000,
+        "limit_seconds": 2.0,
+        "maximum_plus_one_clock_calls": 2,
+        "maximum_plus_one_delta_ns": 1000,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "name": "projection_document_deadline",
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_deadline"
+      },
+      "projection_page_deadline": {
+        "exact_accepted": true,
+        "exact_clock_calls": 2,
+        "exact_outcome": "accepted",
+        "limit_ns": 250000000,
+        "limit_seconds": 0.25,
+        "maximum_plus_one_clock_calls": 2,
+        "maximum_plus_one_delta_ns": 1000,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "name": "projection_page_deadline",
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_deadline"
+      },
+      "source_extraction_deadline": {
+        "exact_accepted": true,
+        "exact_clock_calls": 2,
+        "exact_outcome": "accepted",
+        "limit_ns": 2000000000,
+        "limit_seconds": 2.0,
+        "maximum_plus_one_clock_calls": 2,
+        "maximum_plus_one_delta_ns": 1000,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "name": "source_extraction_deadline",
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_deadline"
+      }
+    }
+  },
+  "dependency_custody": {
+    "local_tools": {
+      "tesseract": {
+        "name": "tesseract",
+        "version": "5.5.3"
+      }
+    },
+    "manifests": {
+      "frontend/package-lock.json": {
+        "path": "frontend/package-lock.json",
+        "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+        "size_bytes": 346488
+      },
+      "frontend/package.json": {
+        "path": "frontend/package.json",
+        "sha256": "40b23bd6c3c4ed51c01d10cccc41e02575467046df23462444f5b0273b7c8c5c",
+        "size_bytes": 1522
+      },
+      "pyproject.toml": {
+        "path": "pyproject.toml",
+        "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+        "size_bytes": 734
+      },
+      "uv.lock": {
+        "path": "uv.lock",
+        "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+        "size_bytes": 606113
+      }
+    },
+    "offline_environment": {
+      "HF_HUB_OFFLINE": "1",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "python_packages": {
+      "docling": {
+        "distribution": "docling",
+        "version": "2.114.0"
+      },
+      "docling-core": {
+        "distribution": "docling-core",
+        "version": "2.88.0"
+      },
+      "pdfminer.six": {
+        "distribution": "pdfminer.six",
+        "version": "20260107"
+      },
+      "pdfplumber": {
+        "distribution": "pdfplumber",
+        "version": "0.11.10"
+      },
+      "pydantic": {
+        "distribution": "pydantic",
+        "version": "2.13.4"
+      },
+      "pypdfium2": {
+        "distribution": "pypdfium2",
+        "version": "5.12.1"
+      }
+    },
+    "runtime": {
+      "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+      "python_version": "3.13.5"
+    }
+  },
+  "failures": [
+    {
+      "pair_index": null,
+      "stage": "source_extraction",
+      "state": null,
+      "target_id": "ny-timetable",
+      "type": "stage_failed"
+    }
+  ],
+  "generated_at": "2026-08-02T23:05:27+05:30",
+  "hosted_cost_usd": 0,
+  "hosted_requests": 0,
+  "hosted_tokens": 0,
+  "input_custody": {
+    "all_expected_match": true,
+    "corpus_registry": {
+      "case_count": 15,
+      "page_count": 30,
+      "path": "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+      "sha256": "f8024ab7a47df2cedf2d10b996fc8eb140404cdafea0b0a0a9ae2bb059263ceb",
+      "size_bytes": 20744,
+      "source_files_immutable": true
+    },
+    "page_count": 30,
+    "post": {
+      "catastrophe-recap": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+        "size_bytes": 58779
+      },
+      "clean-energy": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/clean-energy.pdf",
+        "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+        "size_bytes": 122014
+      },
+      "clinical-study": {
+        "page_count": 4,
+        "path": "benchmark-expertmodeldata/clinical-study.pdf",
+        "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+        "size_bytes": 750004
+      },
+      "component-datasheet": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      },
+      "egov-survey": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/egov-survey.pdf",
+        "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+        "size_bytes": 82800
+      },
+      "esg-metrics": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+        "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+        "size_bytes": 60516
+      },
+      "finance-10k": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/finance-10k.pdf",
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+        "size_bytes": 87105
+      },
+      "health-report": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/health-report.pdf",
+        "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+        "size_bytes": 222282
+      },
+      "insurance-acord": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      },
+      "manufacturing-report": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+        "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+        "size_bytes": 380274
+      },
+      "ny-timetable": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+        "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+        "size_bytes": 26109
+      },
+      "postal-10k": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/postal-10k.pdf",
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+        "size_bytes": 83589
+      },
+      "purchase-agreement": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+        "size_bytes": 152828
+      },
+      "settlement-agreement": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      },
+      "uber-earnings": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+        "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+        "size_bytes": 7584019
+      }
+    },
+    "pre": {
+      "catastrophe-recap": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+        "size_bytes": 58779
+      },
+      "clean-energy": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/clean-energy.pdf",
+        "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+        "size_bytes": 122014
+      },
+      "clinical-study": {
+        "page_count": 4,
+        "path": "benchmark-expertmodeldata/clinical-study.pdf",
+        "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+        "size_bytes": 750004
+      },
+      "component-datasheet": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      },
+      "egov-survey": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/egov-survey.pdf",
+        "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+        "size_bytes": 82800
+      },
+      "esg-metrics": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+        "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+        "size_bytes": 60516
+      },
+      "finance-10k": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/finance-10k.pdf",
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+        "size_bytes": 87105
+      },
+      "health-report": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/health-report.pdf",
+        "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+        "size_bytes": 222282
+      },
+      "insurance-acord": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      },
+      "manufacturing-report": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+        "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+        "size_bytes": 380274
+      },
+      "ny-timetable": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+        "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+        "size_bytes": 26109
+      },
+      "postal-10k": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/postal-10k.pdf",
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+        "size_bytes": 83589
+      },
+      "purchase-agreement": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+        "size_bytes": 152828
+      },
+      "settlement-agreement": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      },
+      "uber-earnings": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+        "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+        "size_bytes": 7584019
+      }
+    },
+    "pre_post_match": true,
+    "source_count": 15,
+    "total_size_bytes": 10121087
+  },
+  "m0_reference": {
+    "path": "tracker/benchmarks/llamaparse-15/baseline-summary.md",
+    "sha256": "e4bf5583bfd7833d1f84fab631e6492e58699b8f26b03b3fcee37bf4a0e2a29a",
+    "size_bytes": 10127,
+    "targets": {
+      "ny-timetable": {
+        "five_percent_ceiling_seconds": 2.338,
+        "label": "M0_reference_context_not_paired_predecessor",
+        "peak_rss_mib": 1944.0,
+        "wall_seconds": 46.76
+      },
+      "uber-earnings": {
+        "five_percent_ceiling_seconds": 1.4575,
+        "label": "M0_reference_context_not_paired_predecessor",
+        "peak_rss_mib": 2589.5,
+        "wall_seconds": 29.15
+      }
+    }
+  },
+  "measurement": {
+    "cache_disclaimer": "operating-system caches were not explicitly flushed; no cold-cache claim is made",
+    "execution_order_policy": "off/on alternates by pair index",
+    "isolated_allocation_samples": 5,
+    "isolated_allocation_warmups": 1,
+    "isolated_latency_samples": 20,
+    "isolated_latency_warmups": 2,
+    "maximum_page_workload": {
+      "accepted_running_region_count": 64,
+      "boundary_candidate_count": 512,
+      "concern_count": 64,
+      "deadline_seconds": 0.25,
+      "extracted_contribution_count": 8,
+      "extracted_intervals_per_contribution": 8,
+      "extracted_residual_plan_bytes": 16384,
+      "fixture_id": "synthetic:p03-us08:maximum-page-performance-v1",
+      "indexed_comparison_count": 4096,
+      "label_candidate_count": 64,
+      "physical_page_index": 1,
+      "policy_id": "p03-running-regions-page-identity-v1",
+      "source_character_count": 500000,
+      "source_word_count": 100000
+    },
+    "pair_count_per_case": 5,
+    "performance_cases": [
+      "uber-earnings",
+      "ny-timetable"
+    ],
+    "whole_parser_clock": "time.perf_counter_ns",
+    "whole_parser_scope": "parse_document(source_bytes, filename, settings)",
+    "worker_process_count": 20
+  },
+  "oracle_custody": {
+    "expected_semantic_sha256": "ab7ce318bf390da82306c627ef1eee0352ded574245c4cdb901422e67bf26d7f",
+    "match": true,
+    "path": "tests/fixtures/phase_03/running_regions/oracle.py",
+    "semantic_sha256": "ab7ce318bf390da82306c627ef1eee0352ded574245c4cdb901422e67bf26d7f",
+    "sha256": "5e70b5df58284f544b43a6189055044c80c2a9a6404f143758be550e3879b563",
+    "size_bytes": 160147
+  },
+  "output_sizes": {
+    "all_within_limits": true,
+    "isolated_projection_outputs": {
+      "ny-timetable": {
+        "sha256": "0b5a1b908954b6e26213f4dd8890decbf786abd9f7d56c66db3d23ff58122aac",
+        "size_bytes": 1463776
+      },
+      "uber-earnings": {
+        "sha256": "44b078d368cb4bc95731d082cfa2cbf5cfe21670470f1b89d1d83d77d403a22a",
+        "size_bytes": 197894
+      }
+    },
+    "maximum_page_identity_json_bytes": 2288,
+    "maximum_running_descriptor_json_bytes": 3527,
+    "maximum_source_report_json_bytes": 9847,
+    "paired_samples": {},
+    "source_reports": {
+      "ny-timetable": {
+        "sha256": "084a9dd6a10443981f031829f39108d4cd489ad30148a271a869fec105316df2",
+        "size_bytes": 9847
+      },
+      "uber-earnings": {
+        "sha256": "4e3c2d0b9903c572508b4a819c70705e10856fbe114b4d32449651cff2e44132",
+        "size_bytes": 6663
+      }
+    }
+  },
+  "paired_parser": {
+    "all_pass": false,
+    "runner_pid": 38924,
+    "targets": {},
+    "worker_plan": [],
+    "workers": []
+  },
+  "policy": {
+    "artifact_semantic_fields_removed": [
+      "generated_at",
+      "semantic_sha256"
+    ],
+    "paired_fixed_ceilings_seconds": {
+      "ny-timetable": 2.338,
+      "uber-earnings": 1.4575
+    },
+    "peak_allocation_ceiling_bytes": 67108864,
+    "peak_rss_delta_ceiling_bytes": 67108864,
+    "policy_id": "p03-running-regions-page-identity-v1",
+    "projection_p95_ceiling_seconds": 0.05,
+    "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+    "quantile_method": "empirical_p95_inclusive_nearest_rank",
+    "relative_ceiling_fraction": 0.05,
+    "source_extraction_p95_ceiling_seconds": 0.25,
+    "source_report_size_ceiling_bytes": 8388608,
+    "source_report_timing_paths_removed": [
+      "extraction_ms"
+    ],
+    "timing_paths_removed": [
+      "processing.duration_ms",
+      "processing.form_semantics.extraction_ms",
+      "processing.form_semantics.projection_ms",
+      "processing.form_semantics.total_ms",
+      "processing.outline_structure.extraction_ms",
+      "processing.outline_structure.projection_ms",
+      "processing.outline_structure.total_ms",
+      "processing.running_regions.extraction_ms",
+      "processing.running_regions.projection_ms",
+      "processing.running_regions.total_ms"
+    ]
+  },
+  "predecessor_custody": {
+    "all_expected_match": true,
+    "configuration": {
+      "canonical_serialization_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true
+    },
+    "output_count": 15,
+    "outputs": {
+      "catastrophe-recap": {
+        "sha256": "f9db554d1975d498a6f9e3d53c0058716847335ee661c3fb3cd6c0c0acc8a4a3",
+        "size_bytes": 69758
+      },
+      "clean-energy": {
+        "sha256": "21050d7af267019ba6720093651074c1931552907246a3a154c102181d5df0ca",
+        "size_bytes": 111243
+      },
+      "clinical-study": {
+        "sha256": "3ec1d78b593407c9812b0ac76178eb104f655320f3a70b4ee30a733e4ba35187",
+        "size_bytes": 451585
+      },
+      "component-datasheet": {
+        "sha256": "00fcf0dfbaa2f8f1da24750b2b5918e781d2a71d05dd0e1b387bcc3951b97e94",
+        "size_bytes": 369155
+      },
+      "egov-survey": {
+        "sha256": "c402d688e7f7511aaf4a59fdb091402f63009dd8eb14ce397f7f777f8f6b8044",
+        "size_bytes": 96709
+      },
+      "esg-metrics": {
+        "sha256": "36136da8e64cdd476491c9ca9953e5df1171d252836f456a7f5af55580871086",
+        "size_bytes": 119728
+      },
+      "finance-10k": {
+        "sha256": "66f03479bbcd4f5529c0b1b411676930c383782c3628fc0f6a9ad8fb8bdf34ca",
+        "size_bytes": 428370
+      },
+      "health-report": {
+        "sha256": "e483d0a060041bf80c3324cc4c8479fd9fa1096b4972d851d2b5cf8bfb6e6f08",
+        "size_bytes": 112320
+      },
+      "insurance-acord": {
+        "sha256": "406abe4b9c103f1eff0d4d0dcc6d66a5a12a09b7df1c9ce5c3c8d41c17607d01",
+        "size_bytes": 217546
+      },
+      "manufacturing-report": {
+        "sha256": "bd64984f748aab212a8e17d6a871bcd0dde45ca782d76467a7545c126d4cdfd4",
+        "size_bytes": 468065
+      },
+      "ny-timetable": {
+        "sha256": "e722f937a1dc5cf878640b6cecaa3faf259d290653aeb3b669d0c60956b8b824",
+        "size_bytes": 1445395
+      },
+      "postal-10k": {
+        "sha256": "85d9f0719879e0cf2647bd717a88e5227489673730ebbf8961238497849fab6e",
+        "size_bytes": 387747
+      },
+      "purchase-agreement": {
+        "sha256": "c39203bd6ba6ff60d4eb38927e770cfe51629c90ea756e3f0510e359f9ec210f",
+        "size_bytes": 82756
+      },
+      "settlement-agreement": {
+        "sha256": "e3ef50fcad4f7212c5354cb29bc2ff85dfa50794fc063f90fa317874abdb0405",
+        "size_bytes": 66341
+      },
+      "uber-earnings": {
+        "sha256": "66fe7588ba8cbe1f1284d60be4241e462b984ffeb82cc659fa236a61192849f3",
+        "size_bytes": 187317
+      }
+    },
+    "root": "tracker/phase-03-layout/evidence/P03-US08-post-US07-predecessor-20260801",
+    "total_size_bytes": 4614035
+  },
+  "prior_failed_candidates": [
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+      "semantic_sha256": "82646354239cf508d86fac0846517d7bb9d91f24b1e9eb3db90a9153de24221c",
+      "sha256": "6f9391ec9263b3d8e61729bc3e3ecfb610b595488134984459a72e96401decab",
+      "size_bytes": 141519,
+      "status": "failed_measurement_candidate"
+    },
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-02-failed.json",
+      "semantic_sha256": "d43fb71313af7e8e122888cf816954f65b9ff396cdb4bf56c1f041faee759d7d",
+      "sha256": "8825481b9d6801591ce42433c4a2ba3978ab0ff9ced74e5e2132fc845388d1ec",
+      "size_bytes": 145703,
+      "status": "failed_measurement_candidate"
+    },
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-03-failed.json",
+      "semantic_sha256": "ce893caeaefd8a86ea6edecb89288f886bfa5acabf3ec0ed42695dc28e6ac097",
+      "sha256": "f5accbf394d986bd7abb3099940cde84de146c7328f3ff98870a16866644e14e",
+      "size_bytes": 219970,
+      "status": "failed_measurement_candidate"
+    },
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-04-failed.json",
+      "semantic_sha256": "6082046ac9650023f6efa90ea7efecb0596aa2b08590bc2b915cdd1ae764938e",
+      "sha256": "7979caa88b7bdaf6272a77c4fc88a2f90914c6e5b3013077c60706630f13db71",
+      "size_bytes": 220340,
+      "status": "failed_measurement_candidate"
+    },
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-05-failed.json",
+      "semantic_sha256": "79d94473e49bf5bbcd01f583741667e3f0db04c0966fd026f88d7faf3351a095",
+      "sha256": "1af49aa18411182f8d73e9db2c391806c2a99fb191b382b0f7c543c2ede9451d",
+      "size_bytes": 220667,
+      "status": "failed_measurement_candidate"
+    },
+    {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-06-failed.json",
+      "semantic_sha256": "d3429158b4a328257f30c5802365d8b74929522f2077043df92433f47995d23f",
+      "sha256": "7a07e1e2d18b6b3ce06391b5593376e0e46b4d3b235ea241d69c85e3183f2ffc",
+      "size_bytes": 221039,
+      "status": "failed_measurement_candidate"
+    }
+  ],
+  "quality": {
+    "all_pass": true,
+    "determinism_failures": 0,
+    "duplicate_canonical_contributions": 0,
+    "esg_cluster_exact": true,
+    "false_printed_label_promotions": 0,
+    "legacy_identity_mismatches": 0,
+    "manufacturing_fused_contribution_exact": true,
+    "manufacturing_header_denominator": 3,
+    "manufacturing_header_exact_count": 3,
+    "manufacturing_public_owner_unchanged": true,
+    "manufacturing_source_reconstruction_exact": true,
+    "missing_canonical_contributions": 0,
+    "page_identity_denominator": 30,
+    "page_identity_exact_count": 30,
+    "pairwise_order_denominator": 47,
+    "pairwise_order_exact_count": 47,
+    "reviewed_page_count": 30,
+    "running_region_denominator": 47,
+    "running_region_exact_count": 47
+  },
+  "record_kind": "p03_us08_running_region_metrics",
+  "resource_boundaries": {
+    "all_pass": true,
+    "cases": {
+      "boundary_candidates_per_document": {
+        "counter": "boundary_candidates_per_document",
+        "exact_accepted": true,
+        "exact_observed": 10000,
+        "exact_outcome": "accepted",
+        "limit": 10000,
+        "maximum_plus_one_observed": 10001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "boundary_candidates_per_page": {
+        "counter": "boundary_candidates_per_page",
+        "exact_accepted": true,
+        "exact_observed": 512,
+        "exact_outcome": "accepted",
+        "limit": 512,
+        "maximum_plus_one_observed": 513,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "candidate_text_utf8_bytes": {
+        "counter": "candidate_text_utf8_bytes",
+        "exact_accepted": true,
+        "exact_observed": 16384,
+        "exact_outcome": "accepted",
+        "limit": 16384,
+        "maximum_plus_one_observed": 16385,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "comparisons_per_document": {
+        "counter": "comparisons_per_document",
+        "exact_accepted": true,
+        "exact_observed": 65536,
+        "exact_outcome": "accepted",
+        "limit": 65536,
+        "maximum_plus_one_observed": 65537,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "comparisons_per_page": {
+        "counter": "comparisons_per_page",
+        "exact_accepted": true,
+        "exact_observed": 4096,
+        "exact_outcome": "accepted",
+        "limit": 4096,
+        "maximum_plus_one_observed": 4097,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "concerns_per_document": {
+        "counter": "concerns_per_document",
+        "exact_accepted": true,
+        "exact_observed": 256,
+        "exact_outcome": "accepted",
+        "limit": 256,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "concerns_per_page": {
+        "counter": "concerns_per_page",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "evidence_ids_per_record": {
+        "counter": "evidence_ids_per_record",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_contribution_utf8_bytes": {
+        "counter": "extracted_contribution_utf8_bytes",
+        "exact_accepted": true,
+        "exact_observed": 4096,
+        "exact_outcome": "accepted",
+        "limit": 4096,
+        "maximum_plus_one_observed": 4097,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_contributions_per_document": {
+        "counter": "extracted_contributions_per_document",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_contributions_per_page": {
+        "counter": "extracted_contributions_per_page",
+        "exact_accepted": true,
+        "exact_observed": 8,
+        "exact_outcome": "accepted",
+        "limit": 8,
+        "maximum_plus_one_observed": 9,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_intervals_per_contribution": {
+        "counter": "extracted_intervals_per_contribution",
+        "exact_accepted": true,
+        "exact_observed": 8,
+        "exact_outcome": "accepted",
+        "limit": 8,
+        "maximum_plus_one_observed": 9,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_residual_plan_bytes_per_document": {
+        "counter": "extracted_residual_plan_bytes_per_document",
+        "exact_accepted": true,
+        "exact_observed": 262144,
+        "exact_outcome": "accepted",
+        "limit": 262144,
+        "maximum_plus_one_observed": 262145,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "extracted_residual_plan_bytes_per_page": {
+        "counter": "extracted_residual_plan_bytes_per_page",
+        "exact_accepted": true,
+        "exact_observed": 16384,
+        "exact_outcome": "accepted",
+        "limit": 16384,
+        "maximum_plus_one_observed": 16385,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "label_candidates_per_page": {
+        "counter": "label_candidates_per_page",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "label_utf8_bytes": {
+        "counter": "label_utf8_bytes",
+        "exact_accepted": true,
+        "exact_observed": 256,
+        "exact_outcome": "accepted",
+        "limit": 256,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "live_source_projection_authorities": {
+        "counter": "live_source_projection_authorities",
+        "exact_accepted": true,
+        "exact_observed": 8,
+        "exact_outcome": "accepted",
+        "limit": 8,
+        "maximum_plus_one_observed": 9,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "page_identity_json_bytes": {
+        "counter": "page_identity_json_bytes",
+        "exact_accepted": true,
+        "exact_observed": 65536,
+        "exact_outcome": "accepted",
+        "limit": 65536,
+        "maximum_plus_one_observed": 65537,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "pages_per_document": {
+        "counter": "pages_per_document",
+        "exact_accepted": true,
+        "exact_observed": 100,
+        "exact_outcome": "accepted",
+        "limit": 100,
+        "maximum_plus_one_observed": 101,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_form_depth": {
+        "counter": "printed_label_form_depth",
+        "exact_accepted": true,
+        "exact_observed": 8,
+        "exact_outcome": "accepted",
+        "limit": 8,
+        "maximum_plus_one_observed": 9,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_non_stroking_fills": {
+        "counter": "printed_label_non_stroking_fills",
+        "exact_accepted": true,
+        "exact_observed": 256,
+        "exact_outcome": "accepted",
+        "limit": 256,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_page_dimension_points": {
+        "counter": "printed_label_page_dimension_points",
+        "exact_accepted": true,
+        "exact_observed": 20000,
+        "exact_outcome": "accepted",
+        "limit": 20000,
+        "maximum_plus_one_observed": 20001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_render_dimension_pixels": {
+        "counter": "printed_label_render_dimension_pixels",
+        "exact_accepted": true,
+        "exact_observed": 2048,
+        "exact_outcome": "accepted",
+        "limit": 2048,
+        "maximum_plus_one_observed": 2049,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_render_pixels": {
+        "counter": "printed_label_render_pixels",
+        "exact_accepted": true,
+        "exact_observed": 262144,
+        "exact_outcome": "accepted",
+        "limit": 262144,
+        "maximum_plus_one_observed": 262145,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_text_object_scan": {
+        "counter": "printed_label_text_object_scan",
+        "exact_accepted": true,
+        "exact_observed": 10000,
+        "exact_outcome": "accepted",
+        "limit": 10000,
+        "maximum_plus_one_observed": 10001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "printed_label_text_objects": {
+        "counter": "printed_label_text_objects",
+        "exact_accepted": true,
+        "exact_observed": 256,
+        "exact_outcome": "accepted",
+        "limit": 256,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "public_path_segments": {
+        "counter": "public_path_segments",
+        "exact_accepted": true,
+        "exact_observed": 16,
+        "exact_outcome": "accepted",
+        "limit": 16,
+        "maximum_plus_one_observed": 17,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "repetition_groups_per_document": {
+        "counter": "repetition_groups_per_document",
+        "exact_accepted": true,
+        "exact_observed": 2048,
+        "exact_outcome": "accepted",
+        "limit": 2048,
+        "maximum_plus_one_observed": 2049,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "repetition_members": {
+        "counter": "repetition_members",
+        "exact_accepted": true,
+        "exact_observed": 100,
+        "exact_outcome": "accepted",
+        "limit": 100,
+        "maximum_plus_one_observed": 101,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "report_json_bytes": {
+        "counter": "report_json_bytes",
+        "exact_accepted": true,
+        "exact_observed": 8388608,
+        "exact_outcome": "accepted",
+        "limit": 8388608,
+        "maximum_plus_one_observed": 8388609,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "running_descriptor_json_bytes": {
+        "counter": "running_descriptor_json_bytes",
+        "exact_accepted": true,
+        "exact_observed": 262144,
+        "exact_outcome": "accepted",
+        "limit": 262144,
+        "maximum_plus_one_observed": 262145,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "running_regions_per_document": {
+        "counter": "running_regions_per_document",
+        "exact_accepted": true,
+        "exact_observed": 2048,
+        "exact_outcome": "accepted",
+        "limit": 2048,
+        "maximum_plus_one_observed": 2049,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "running_regions_per_page": {
+        "counter": "running_regions_per_page",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_characters_per_document": {
+        "counter": "source_characters_per_document",
+        "exact_accepted": true,
+        "exact_observed": 2000000,
+        "exact_outcome": "accepted",
+        "limit": 2000000,
+        "maximum_plus_one_observed": 2000001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_characters_per_page": {
+        "counter": "source_characters_per_page",
+        "exact_accepted": true,
+        "exact_observed": 500000,
+        "exact_outcome": "accepted",
+        "limit": 500000,
+        "maximum_plus_one_observed": 500001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_object_ids_per_record": {
+        "counter": "source_object_ids_per_record",
+        "exact_accepted": true,
+        "exact_observed": 64,
+        "exact_outcome": "accepted",
+        "limit": 64,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_pdf_bytes": {
+        "counter": "source_pdf_bytes",
+        "exact_accepted": true,
+        "exact_observed": 26214400,
+        "exact_outcome": "accepted",
+        "limit": 26214400,
+        "maximum_plus_one_observed": 26214401,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_words_per_document": {
+        "counter": "source_words_per_document",
+        "exact_accepted": true,
+        "exact_observed": 500000,
+        "exact_outcome": "accepted",
+        "limit": 500000,
+        "maximum_plus_one_observed": 500001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "source_words_per_page": {
+        "counter": "source_words_per_page",
+        "exact_accepted": true,
+        "exact_observed": 100000,
+        "exact_outcome": "accepted",
+        "limit": 100000,
+        "maximum_plus_one_observed": 100001,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      },
+      "visible_text_utf8_bytes": {
+        "counter": "visible_text_utf8_bytes",
+        "exact_accepted": true,
+        "exact_observed": 512,
+        "exact_outcome": "accepted",
+        "limit": 512,
+        "maximum_plus_one_observed": 513,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "passed": true,
+        "production_hook": "app.services.running_regions.validate_running_region_resource_count"
+      }
+    },
+    "maximum_page_execution": {
+      "accounted_workload": {
+        "accepted_running_region_count": 64,
+        "boundary_candidate_count": 512,
+        "concern_count": 64,
+        "deadline_seconds": 0.25,
+        "extracted_contribution_count": 8,
+        "extracted_intervals_per_contribution": 8,
+        "extracted_residual_plan_bytes": 16384,
+        "fixture_id": "synthetic:p03-us08:maximum-page-performance-v1",
+        "indexed_comparison_count": 4096,
+        "label_candidate_count": 64,
+        "physical_page_index": 1,
+        "policy_id": "p03-running-regions-page-identity-v1",
+        "source_character_count": 500000,
+        "source_word_count": 100000
+      },
+      "page_deadline": {
+        "exact_accepted": true,
+        "exact_clock_calls": 2,
+        "exact_outcome": "accepted",
+        "limit_ns": 250000000,
+        "limit_seconds": 0.25,
+        "maximum_plus_one_clock_calls": 2,
+        "maximum_plus_one_delta_ns": 1000,
+        "maximum_plus_one_outcome": "returned_false",
+        "maximum_plus_one_refused": true,
+        "name": "projection_page_deadline",
+        "passed": true,
+        "production_hook": "app.services.running_regions.project_maximum_page_workload"
+      },
+      "page_deadline_hook": "app.services.running_regions.project_maximum_page_workload",
+      "passed": true,
+      "resource_accounting_accepted": true,
+      "resource_accounting_hook": "app.services.running_regions.account_maximum_page_workload",
+      "workload": {
+        "accepted_running_region_count": 64,
+        "boundary_candidate_count": 512,
+        "concern_count": 64,
+        "deadline_seconds": 0.25,
+        "extracted_contribution_count": 8,
+        "extracted_intervals_per_contribution": 8,
+        "extracted_residual_plan_bytes": 16384,
+        "fixture_id": "synthetic:p03-us08:maximum-page-performance-v1",
+        "indexed_comparison_count": 4096,
+        "label_candidate_count": 64,
+        "physical_page_index": 1,
+        "policy_id": "p03-running-regions-page-identity-v1",
+        "source_character_count": 500000,
+        "source_word_count": 100000
+      }
+    }
+  },
+  "retained_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-07-failed.json",
+  "rollback": {
+    "all_pass": true,
+    "canonical_failure_rollback_passed": true,
+    "direct_strip_refused": true,
+    "document_rollback_passed": true,
+    "extracted_strip_refused": true,
+    "flag_off_byte_identical": true,
+    "idempotence_passed": true,
+    "page_rollback_passed": true,
+    "stripped_projection_matches_predecessor": true,
+    "terminal_replay_passed": true
+  },
+  "running_region_projection": {
+    "all_pass": true,
+    "targets": {
+      "ny-timetable": {
+        "allocation_bytes": [
+          30719902,
+          30719902,
+          30719902,
+          30719902,
+          30719902
+        ],
+        "idempotent": true,
+        "latency_seconds": [
+          0.044247166,
+          0.04443625,
+          0.043407166,
+          0.043315042,
+          0.043090583,
+          0.043855583,
+          0.04509525,
+          0.046806666,
+          0.043642334,
+          0.044458875,
+          0.044183792,
+          0.043114875,
+          0.045699,
+          0.042646958,
+          0.042001542,
+          0.043016833,
+          0.043679834,
+          0.060313416,
+          0.044421375,
+          0.044373583
+        ],
+        "measured_output_successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "measured_outputs": [
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "4e41606099324ceadab4b9547b354e4e9af3201f239ffd5af887b24c61277c3c",
+              "size_bytes": 1463775
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "bb29601a3957ad81f2eb14160c33076de86c766b5a57b428b4e66d5f640c76b2",
+              "size_bytes": 1463775
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "34ba3bbc2630e853b801e6ee3480768af46c996310e7e4f9391b4f7d5e2c4ce2",
+              "size_bytes": 1463775
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a9168bdd31eb1ba77858f3115a0ec8c9965d69ff3386e30f82f630534bbb1e15",
+              "size_bytes": 1463774
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e789c62bf11f5105f66ef8fce6c2faf125841eed02e43b5cd5dc351674e6d685",
+              "size_bytes": 1463775
+            },
+            "sample_index": 4
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "b52485e7d30c160bab1d7a1d8d2cb96d6b00e9172d07b6ce0d1bb1d0d8c1735a",
+              "size_bytes": 1463773
+            },
+            "sample_index": 5
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "c245ec71a146b52cb068fb28bb276c679b364ff2b94b30ccc099aa336a165858",
+              "size_bytes": 1463775
+            },
+            "sample_index": 6
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e633b01ff47967dcb94509cd2935f9447484faa2e0c0426162e606e112b23721",
+              "size_bytes": 1463775
+            },
+            "sample_index": 7
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "430e8628cfa95366ce3d5a2507ccd5148fee16ad68f5500ae94150390fdc6ad6",
+              "size_bytes": 1463775
+            },
+            "sample_index": 8
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "df6c9f4aca50330c3403d3bd48fe8858604f3c30ad0518652bce73ff07ed2d4f",
+              "size_bytes": 1463775
+            },
+            "sample_index": 9
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "23d8095954e4a8e1f854851c555fe82ea72ae35578d29677c86646181c1bfd08",
+              "size_bytes": 1463774
+            },
+            "sample_index": 10
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "b26688d34200e4cc06c5a225b5be576b1820475feda0fc9c3a11e890922f36b5",
+              "size_bytes": 1463775
+            },
+            "sample_index": 11
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "8821a67b0a59cd495f7072f85639c0450015eb9f0cb3bf6b225742d8fdae341e",
+              "size_bytes": 1463775
+            },
+            "sample_index": 12
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "73b59d8d083902342913ce8b7b8a255aba09d8bfc6095618a895cc8626b93b8b",
+              "size_bytes": 1463775
+            },
+            "sample_index": 13
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "ace4981b238cba4ea99818eeb3df44841aaacf85bc42e0847a00b45b244267ad",
+              "size_bytes": 1463775
+            },
+            "sample_index": 14
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "b72b5de0a45a5bbbc2ac55cfcf9dac7582fce633ce9c875f6a9c81d7d4dc0029",
+              "size_bytes": 1463775
+            },
+            "sample_index": 15
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "cb857618933207deb91db13e604b13141b4e3d941deb08fff69fa85c09be3f61",
+              "size_bytes": 1463775
+            },
+            "sample_index": 16
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "4d9d455913d05b6abe9441d8fe43cf8b5ba019f0082f61e122cdede7e400965d",
+              "size_bytes": 1463775
+            },
+            "sample_index": 17
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "fd154b4f7476540d953af838ed2863d1983c361e6c9571f179fcdd7aef6956a1",
+              "size_bytes": 1463774
+            },
+            "sample_index": 18
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "768fd8662ec83943d6f233a808613cc94f5ea2f67b78391deb8a69176ae8e552",
+              "size_bytes": 1463775
+            },
+            "sample_index": 19
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "7c7d438c4562b14417b02791cf0d310030daa561d075582c24d6ce8804d9cbcd",
+              "size_bytes": 1463775
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "0a38dd05bb7e3bd9f39bf0ead28bbadf17cf356059d6abe29499ea78e67b753a",
+              "size_bytes": 1463775
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "df2dda01aea8ecd7caf705acff2a51d5fd809d396a067340e1b7d99d836c3a40",
+              "size_bytes": 1463776
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "33450d660c89a5bd5426f5e7ff2a7ed7971e2865bd7e9ebd891ff63e1010fc31",
+              "size_bytes": 1463775
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": 2288,
+            "maximum_running_descriptor_json_bytes": 1220,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "0b5a1b908954b6e26213f4dd8890decbf786abd9f7d56c66db3d23ff58122aac",
+              "size_bytes": 1463776
+            },
+            "sample_index": 4
+          }
+        ],
+        "predecessor_unchanged": true,
+        "protocol": {
+          "allocation_ceiling_bytes": 67108864,
+          "allocation_reset_peak_each_sample": true,
+          "allocation_samples": 5,
+          "allocation_start_each_sample": true,
+          "allocation_stop_each_sample": true,
+          "allocation_timing_claim": false,
+          "allocation_warmups": 1,
+          "comparison_instrumentation": "third_untimed_projection_call",
+          "failure_scope": "complete_measurement_candidate",
+          "gc_outside_timing": true,
+          "input_prepared_outside_timing": true,
+          "latency_clock": "time.perf_counter_ns",
+          "latency_p95_ceiling_seconds": 0.05,
+          "latency_samples": 20,
+          "latency_warmups": 2,
+          "output_release_outside_timing": true,
+          "replacement_samples": 0,
+          "report_size_ceiling_bytes": null,
+          "stage": "running_region_projection",
+          "target_id": "ny-timetable",
+          "tracemalloc_during_latency": false
+        },
+        "report_sizes": [],
+        "retained_output": {
+          "sha256": "0b5a1b908954b6e26213f4dd8890decbf786abd9f7d56c66db3d23ff58122aac",
+          "size_bytes": 1463776
+        },
+        "summary": {
+          "comparison_count": 81,
+          "latency_p95_seconds": 0.046806666,
+          "maximum_page_comparisons": 43,
+          "page_count": 3,
+          "passed": true,
+          "peak_allocation_bytes": 30719902,
+          "stage": "running_region_projection",
+          "target_id": "ny-timetable"
+        },
+        "warmup_successes": [
+          true,
+          true,
+          true
+        ]
+      },
+      "uber-earnings": {
+        "allocation_bytes": [
+          3490169,
+          3490169,
+          3490169,
+          3490169,
+          3490169
+        ],
+        "idempotent": true,
+        "latency_seconds": [
+          0.006184083,
+          0.006596667,
+          0.006591,
+          0.006250541,
+          0.006003,
+          0.006833875,
+          0.006755083,
+          0.006397667,
+          0.00681,
+          0.007134083,
+          0.00667575,
+          0.006821583,
+          0.0060715,
+          0.006470083,
+          0.006725625,
+          0.007182791,
+          0.007129375,
+          0.006742292,
+          0.008089791,
+          0.00746675
+        ],
+        "measured_output_successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "measured_outputs": [
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "9b7dfa255535107f8157fb335ce2bda9436c1993740a1c71449af18e6861244d",
+              "size_bytes": 197891
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "74cc751b31dab6f45c27b82beaa547f7046525660a83e0167e52f32351cd3278",
+              "size_bytes": 197893
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "669e6512c9cab5fb3453ce8192bb238cfd6528169cfb13a6f3d225022bb013d2",
+              "size_bytes": 197892
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "90c65129bda84210e4316174d53772c1243e73337ae0e616d7644eaaca648652",
+              "size_bytes": 197893
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "3a32285629bf3218d0860349a9b942ab6eb87e16736ba1cb2135636392c2de54",
+              "size_bytes": 197893
+            },
+            "sample_index": 4
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a355e0747264b7fd58fab66ae1ae3729c1c7ec18153a355d98a2dde12d2e869d",
+              "size_bytes": 197893
+            },
+            "sample_index": 5
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "ab7380c4bc5e3b87a29e3692107d0d4874ca83dde6900ac14c8d8c33e28b26d8",
+              "size_bytes": 197893
+            },
+            "sample_index": 6
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a588bbada5a33b9506bb0284450d8ccaa784fe176a59fbbf10e1d5e3a1e49656",
+              "size_bytes": 197891
+            },
+            "sample_index": 7
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "5288007782205be1d1711745ba8a80dd450819dc8ed79d5cf390e5fae50fb814",
+              "size_bytes": 197892
+            },
+            "sample_index": 8
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "ad5c7e801add2b711741fbbee2940bd37422564ac9e9d9801885d92abadcdf2b",
+              "size_bytes": 197893
+            },
+            "sample_index": 9
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "7b4def4e16474aaac55822651bb11ee636930fb3de1ab507cc80c38eb8c1c919",
+              "size_bytes": 197893
+            },
+            "sample_index": 10
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "84f41e56ddb9d03819162b9c6d9fcbe46accb9ea25fb64e12abf777a926d6653",
+              "size_bytes": 197893
+            },
+            "sample_index": 11
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "2de660991ccf3b8f98a67f27152e2cf6a05df04cffca59a4cba45140674c2327",
+              "size_bytes": 197893
+            },
+            "sample_index": 12
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "fc9c6f7bdc64051448b78deae7fd80aa59725c5661f833b2c77bea21551dd71c",
+              "size_bytes": 197893
+            },
+            "sample_index": 13
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a16a1350ece0f65faa9d426c5f004d252a106e23235045ad20352d9e2a90c681",
+              "size_bytes": 197893
+            },
+            "sample_index": 14
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f8156b0a0730be9c8c5881c7cb05473679fffaa2f82678044adbecbd3c736877",
+              "size_bytes": 197893
+            },
+            "sample_index": 15
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "74595762a0716a66fb84fa0007436fba4b534c5d970ec8bbe001397915b6a616",
+              "size_bytes": 197893
+            },
+            "sample_index": 16
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "ba00096b4b2391637e780db4f39f7da3cf07945c16f6806b7461e7f9e815ca3d",
+              "size_bytes": 197893
+            },
+            "sample_index": 17
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "47070cc7b0bdf3425b9e0e5c0f13c723174c72c03378da4988da4096e0589d2e",
+              "size_bytes": 197892
+            },
+            "sample_index": 18
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "2cefeb64cd327b2698fa58ef09c0d14eec5c0bbe4dce66730f363f060fff036a",
+              "size_bytes": 197893
+            },
+            "sample_index": 19
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "252ce68444551c314091bed261d92be07e6f71ab1ca5f28ac65ee7c5eff71a57",
+              "size_bytes": 197894
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "368c97ddea419dac569e14aad1126d8e867a9b186693db7363d4fceabc8486ef",
+              "size_bytes": 197894
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "d0fc1d4daed0bb08430e5f6d4f342a723f1fe51b2fd79ad56b55dcdd73d18884",
+              "size_bytes": 197894
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "70516a6c631ebdcfab7d4af6efca2780b99d952e4343797352253f354dcea3f8",
+              "size_bytes": 197894
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": 885,
+            "maximum_running_descriptor_json_bytes": 3527,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "44b078d368cb4bc95731d082cfa2cbf5cfe21670470f1b89d1d83d77d403a22a",
+              "size_bytes": 197894
+            },
+            "sample_index": 4
+          }
+        ],
+        "predecessor_unchanged": true,
+        "protocol": {
+          "allocation_ceiling_bytes": 67108864,
+          "allocation_reset_peak_each_sample": true,
+          "allocation_samples": 5,
+          "allocation_start_each_sample": true,
+          "allocation_stop_each_sample": true,
+          "allocation_timing_claim": false,
+          "allocation_warmups": 1,
+          "comparison_instrumentation": "third_untimed_projection_call",
+          "failure_scope": "complete_measurement_candidate",
+          "gc_outside_timing": true,
+          "input_prepared_outside_timing": true,
+          "latency_clock": "time.perf_counter_ns",
+          "latency_p95_ceiling_seconds": 0.05,
+          "latency_samples": 20,
+          "latency_warmups": 2,
+          "output_release_outside_timing": true,
+          "replacement_samples": 0,
+          "report_size_ceiling_bytes": null,
+          "stage": "running_region_projection",
+          "target_id": "uber-earnings",
+          "tracemalloc_during_latency": false
+        },
+        "report_sizes": [],
+        "retained_output": {
+          "sha256": "44b078d368cb4bc95731d082cfa2cbf5cfe21670470f1b89d1d83d77d403a22a",
+          "size_bytes": 197894
+        },
+        "summary": {
+          "comparison_count": 276,
+          "latency_p95_seconds": 0.00746675,
+          "maximum_page_comparisons": 181,
+          "page_count": 3,
+          "passed": true,
+          "peak_allocation_bytes": 3490169,
+          "stage": "running_region_projection",
+          "target_id": "uber-earnings"
+        },
+        "warmup_successes": [
+          true,
+          true,
+          true
+        ]
+      }
+    }
+  },
+  "schema_version": "1.0",
+  "semantic_sha256": "383439261e1a09d2bb9b679dc84c86314c1966c5abed06248952c0eb556d1d76",
+  "settings_delta": {
+    "changed_fields": [
+      "layout_running_regions_enabled"
+    ],
+    "flag_off": {
+      "canonical_serialization_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_running_regions_enabled": false,
+      "layout_source_notes_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true
+    },
+    "flag_off_sha256": "5f493da6ad853fa2a69bf51508e13e6e1013eeae0cdcd0500745d2365ce0406e",
+    "flag_on": {
+      "canonical_serialization_enabled": true,
+      "layout_forms_enabled": true,
+      "layout_outline_structure_enabled": true,
+      "layout_relationship_order_enabled": true,
+      "layout_running_regions_enabled": true,
+      "layout_source_notes_enabled": true,
+      "layout_table_captions_enabled": true,
+      "layout_text_run_semantics_enabled": true,
+      "layout_visual_relationships_enabled": true,
+      "shared_ir_enabled": true,
+      "shared_ir_normalization_enabled": true
+    },
+    "flag_on_sha256": "b290ea22fbc1ea08aee36ebddc5517925b4d84bea2712fd47cb36e8417130e6f",
+    "predecessor_flags_match": true
+  },
+  "source_extraction": {
+    "all_pass": false,
+    "targets": {
+      "ny-timetable": {
+        "allocation_bytes": [
+          31179304,
+          31179120,
+          31179120,
+          31179166,
+          31179077
+        ],
+        "idempotent": null,
+        "latency_seconds": [
+          0.221487042,
+          0.21645775,
+          0.283140375,
+          0.215229791,
+          0.222433209,
+          0.21860625,
+          0.218119958,
+          0.229642125,
+          0.269976084,
+          0.211862792,
+          0.211078333,
+          0.212234375,
+          0.212325167,
+          0.2118025,
+          0.210875084,
+          0.210870375,
+          0.20872225,
+          0.210076666,
+          0.210175417,
+          0.2140895
+        ],
+        "measured_output_successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "measured_outputs": [
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "1c67babbbb501593b6d80a8da56894c5e5c12ec36fd58abe4e8de45914d96c1b",
+              "size_bytes": 9846
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "6659782d210de08d05043c0e0f48822174550a251fad32b7bb4a9684076bb443",
+              "size_bytes": 9846
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "b3f0ee32ca58b3af766e596a51e01c8f63f1a6e2da2177ffc17e43ce5bb25390",
+              "size_bytes": 9846
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "864365a52fad4bc2af565b33278a817c8313606228cc09bec6649983b236ff4f",
+              "size_bytes": 9846
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "3e9ced917447fe501e3eaed003ec93d1ecc063052dcc97786c09858c4ade85fb",
+              "size_bytes": 9845
+            },
+            "sample_index": 4
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "6894b1828b3348301cd1c33a66d38d33085984f19d1e696e1674fa6a3eb1ffd9",
+              "size_bytes": 9846
+            },
+            "sample_index": 5
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "1d74593da842bdd0ccafdb98a46578889ab43dde6fae03b4af1d41a22dc26f10",
+              "size_bytes": 9845
+            },
+            "sample_index": 6
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "709b8a900d46232c3bd5c82d94e19be873faeff537331ffc5e7f02453b3982c6",
+              "size_bytes": 9846
+            },
+            "sample_index": 7
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "40bbdb6d1d6be696de3748507fae7b1ca185afee3f6fd42adfd537e8613a7ba4",
+              "size_bytes": 9846
+            },
+            "sample_index": 8
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "c4f594e8599afc2399148c29944c77eba5d1478e02481fe4efbff3ff77a4e638",
+              "size_bytes": 9846
+            },
+            "sample_index": 9
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "61fa0341f94696becbd224151b1be68d851ce5524ebed50da134fbe20575476e",
+              "size_bytes": 9846
+            },
+            "sample_index": 10
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e7fdfb74cbfcf99e2a989fa87e765d1a667279908deb6ad2dc8ad386479a65cc",
+              "size_bytes": 9846
+            },
+            "sample_index": 11
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f7e11a5c2adaa1d1b6ce69e8b1c2733a6f66a0d5ed45dc012575fb66a3509aec",
+              "size_bytes": 9846
+            },
+            "sample_index": 12
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "3d0268a74809c79bb10da6c97d4c80e2db53569c4df4a4752dc7b3910d611b8a",
+              "size_bytes": 9846
+            },
+            "sample_index": 13
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "c57f8f4bb0d6e209a355405061f2090c1fea6f64bf35ff57edc1b60acbca5e63",
+              "size_bytes": 9846
+            },
+            "sample_index": 14
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "8fdcbbe5d22c0e4ae7e521d8d2a377afacb134298b3763d5f02a37365db5ee06",
+              "size_bytes": 9846
+            },
+            "sample_index": 15
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "9c1909ddb7c5fac756be8c8ba9049fc26c817f3c7ae3241726b439de118020cf",
+              "size_bytes": 9846
+            },
+            "sample_index": 16
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "29d5c7a826b99c66e808bd63073ed6f6f7a8669c9b5ba88c73ae2f1bf8efc24f",
+              "size_bytes": 9845
+            },
+            "sample_index": 17
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "8fb6324efc8e254df3e4d2529ec302451a093a19aeb93e6917c89262221b6e20",
+              "size_bytes": 9846
+            },
+            "sample_index": 18
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "d7d3e9a9d9ff41249c048acb4b4340ce76fa5159cffcf1e6418145e01af26575",
+              "size_bytes": 9846
+            },
+            "sample_index": 19
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "fa577a8f0dc723f4d3bb47d84067a2492c81213364bb30e1db8e170d50d0e473",
+              "size_bytes": 9847
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "5b2004376e0268081d7c9b0bc73bf135418d77674137c82e4161e2e7ad4a792a",
+              "size_bytes": 9847
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "dd5a26954ebbc71f5e9b7b843904348edda97a3905e4bbbac5643512e4ff521e",
+              "size_bytes": 9847
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "5694d449f6fffd2089cdef329ba9b3f94984f44729f14934d43ec0550d2a9ac4",
+              "size_bytes": 9847
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "084a9dd6a10443981f031829f39108d4cd489ad30148a271a869fec105316df2",
+              "size_bytes": 9847
+            },
+            "sample_index": 4
+          }
+        ],
+        "predecessor_unchanged": null,
+        "protocol": {
+          "allocation_ceiling_bytes": 67108864,
+          "allocation_reset_peak_each_sample": true,
+          "allocation_samples": 5,
+          "allocation_start_each_sample": true,
+          "allocation_stop_each_sample": true,
+          "allocation_timing_claim": false,
+          "allocation_warmups": 1,
+          "comparison_instrumentation": "third_untimed_projection_call",
+          "failure_scope": "complete_measurement_candidate",
+          "gc_outside_timing": true,
+          "input_prepared_outside_timing": true,
+          "latency_clock": "time.perf_counter_ns",
+          "latency_p95_ceiling_seconds": 0.25,
+          "latency_samples": 20,
+          "latency_warmups": 2,
+          "output_release_outside_timing": true,
+          "replacement_samples": 0,
+          "report_size_ceiling_bytes": 8388608,
+          "stage": "source_extraction",
+          "target_id": "ny-timetable",
+          "tracemalloc_during_latency": false
+        },
+        "report_sizes": [
+          9846,
+          9846,
+          9846,
+          9846,
+          9845,
+          9846,
+          9845,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9846,
+          9845,
+          9846,
+          9846,
+          9847,
+          9847,
+          9847,
+          9847,
+          9847
+        ],
+        "retained_output": {
+          "sha256": "084a9dd6a10443981f031829f39108d4cd489ad30148a271a869fec105316df2",
+          "size_bytes": 9847
+        },
+        "summary": {
+          "comparison_count": null,
+          "latency_p95_seconds": 0.269976084,
+          "maximum_page_comparisons": null,
+          "page_count": 3,
+          "passed": false,
+          "peak_allocation_bytes": 31179304,
+          "stage": "source_extraction",
+          "target_id": "ny-timetable"
+        },
+        "warmup_successes": [
+          true,
+          true,
+          true
+        ]
+      },
+      "uber-earnings": {
+        "allocation_bytes": [
+          34179639,
+          34179559,
+          34179563,
+          34179388,
+          34178994
+        ],
+        "idempotent": null,
+        "latency_seconds": [
+          0.050982875,
+          0.051911125,
+          0.056503833,
+          0.053632917,
+          0.0569785,
+          0.067638458,
+          0.052698375,
+          0.052253792,
+          0.052123084,
+          0.052883958,
+          0.052165708,
+          0.049179791,
+          0.050138125,
+          0.048491916,
+          0.047415833,
+          0.049521084,
+          0.048004875,
+          0.04709575,
+          0.049146667,
+          0.050002584
+        ],
+        "measured_output_successes": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "measured_outputs": [
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e7b7ed8f502ae0679d51263bf89c64b7a455f45bb4ff4ec0716d316cfec8dac6",
+              "size_bytes": 6662
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "8715663adbd69ed7ba858bbc22c36d61199da1c24acb42b411d995fc224db312",
+              "size_bytes": 6662
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "88b21174bb19df9ddb0993903617fd4848eca8646e6a1ec54c26c16e08a0b26d",
+              "size_bytes": 6662
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "06a93429e8d42bf5a9e79bb0092c80f36a003711f7769482b0068715ee00b4d3",
+              "size_bytes": 6662
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "651d261ef81cdfeb4a18078b31131ade2f8a3481726154a0ab3fc7ef087abf1b",
+              "size_bytes": 6662
+            },
+            "sample_index": 4
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "86e49ce18b96b8f0ce249497b26ff2b0aba629fd5ef351a10257daf4a049262a",
+              "size_bytes": 6662
+            },
+            "sample_index": 5
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "7acf2be9120c19037bbf41a1b13cbef41d36793ffc0bc038f35d468dea928570",
+              "size_bytes": 6662
+            },
+            "sample_index": 6
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f6d40e68fd43d42b40af6f7089e8b02cc65dac1fb8e9aa0d9d4a1053c877ab92",
+              "size_bytes": 6662
+            },
+            "sample_index": 7
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "bb64ef0883cf3ed4ff83d9500cd7e4527cbda3b28dc732860bed66f8ce332411",
+              "size_bytes": 6662
+            },
+            "sample_index": 8
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "7e8abe2d43028101f431a8e60adedc538efcf6ce3d24fa8f69b1ace9a9a886b9",
+              "size_bytes": 6662
+            },
+            "sample_index": 9
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e4c5b58a46b91203530afc2f55aea90213f96402ade2c252e69ed376b82751cc",
+              "size_bytes": 6662
+            },
+            "sample_index": 10
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "dcd0879cad7d7273b254e98306106eae208a5f6a33bc56cd999fb3479d7df85b",
+              "size_bytes": 6662
+            },
+            "sample_index": 11
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f19515e6fa9683d374421781d69e478d864fd888670696659f8141d8550aa217",
+              "size_bytes": 6661
+            },
+            "sample_index": 12
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a71c0991d76d037a46a5292458dc4987dda580103a3b82ede71c8425e1027db8",
+              "size_bytes": 6662
+            },
+            "sample_index": 13
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "e094a1c363c6a924171c446ceee4d8060b99a5bd0abd2cb0c26f71cda6ed1a3c",
+              "size_bytes": 6662
+            },
+            "sample_index": 14
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f95d31e1786896d09b5f4cbd11b1d722c2c0584f98e534fd05ce2bf36defde50",
+              "size_bytes": 6661
+            },
+            "sample_index": 15
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a2dc33d7a3525adbe41033003aca51cfbcc1ef91d7e294089a653e68f3eb1e9b",
+              "size_bytes": 6662
+            },
+            "sample_index": 16
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "d55cee594c9a70bddd1b43590c1fb8cc8298f591a05e55d5522a957393eb35c1",
+              "size_bytes": 6662
+            },
+            "sample_index": 17
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "f536b36211cc8ff3606e4fa0749c14d8fa903f1faeb7b5cce954ca9e26931a00",
+              "size_bytes": 6662
+            },
+            "sample_index": 18
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "latency",
+            "output_identity": {
+              "sha256": "a7e639fc39b49a1e6295cd695471c4da6f3195b99f7abab5aa53e3d4da0e7890",
+              "size_bytes": 6662
+            },
+            "sample_index": 19
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "ecbdd6b774720ec69fa03c58eeb0debb4b6a5ea76c0b9f2b30dee4884bf472e0",
+              "size_bytes": 6663
+            },
+            "sample_index": 0
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "854b0731eef1e57e0a103d10333e6b6668caf86d8e9a261c963a7391862cf41d",
+              "size_bytes": 6663
+            },
+            "sample_index": 1
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "7f4fd8477d102d3e1a0b9ae456968587349a557d81f0172d236f2344424ca82b",
+              "size_bytes": 6663
+            },
+            "sample_index": 2
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "85feac353fb614c4c4f67e0dbbee6701fd8bf3acbc96a9620fc9d6e51951818d",
+              "size_bytes": 6663
+            },
+            "sample_index": 3
+          },
+          {
+            "maximum_page_identity_json_bytes": null,
+            "maximum_running_descriptor_json_bytes": null,
+            "measurement_kind": "allocation",
+            "output_identity": {
+              "sha256": "4e3c2d0b9903c572508b4a819c70705e10856fbe114b4d32449651cff2e44132",
+              "size_bytes": 6663
+            },
+            "sample_index": 4
+          }
+        ],
+        "predecessor_unchanged": null,
+        "protocol": {
+          "allocation_ceiling_bytes": 67108864,
+          "allocation_reset_peak_each_sample": true,
+          "allocation_samples": 5,
+          "allocation_start_each_sample": true,
+          "allocation_stop_each_sample": true,
+          "allocation_timing_claim": false,
+          "allocation_warmups": 1,
+          "comparison_instrumentation": "third_untimed_projection_call",
+          "failure_scope": "complete_measurement_candidate",
+          "gc_outside_timing": true,
+          "input_prepared_outside_timing": true,
+          "latency_clock": "time.perf_counter_ns",
+          "latency_p95_ceiling_seconds": 0.25,
+          "latency_samples": 20,
+          "latency_warmups": 2,
+          "output_release_outside_timing": true,
+          "replacement_samples": 0,
+          "report_size_ceiling_bytes": 8388608,
+          "stage": "source_extraction",
+          "target_id": "uber-earnings",
+          "tracemalloc_during_latency": false
+        },
+        "report_sizes": [
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6662,
+          6661,
+          6662,
+          6662,
+          6661,
+          6662,
+          6662,
+          6662,
+          6662,
+          6663,
+          6663,
+          6663,
+          6663,
+          6663
+        ],
+        "retained_output": {
+          "sha256": "4e3c2d0b9903c572508b4a819c70705e10856fbe114b4d32449651cff2e44132",
+          "size_bytes": 6663
+        },
+        "summary": {
+          "comparison_count": null,
+          "latency_p95_seconds": 0.0569785,
+          "maximum_page_comparisons": null,
+          "page_count": 3,
+          "passed": true,
+          "peak_allocation_bytes": 34179639,
+          "stage": "source_extraction",
+          "target_id": "uber-earnings"
+        },
+        "warmup_successes": [
+          true,
+          true,
+          true
+        ]
+      }
+    }
+  },
+  "status": "failed_measurement_candidate",
+  "story": "P03-US08",
+  "synthetic_fixture_custody": {
+    "expected_semantic_sha256": "55a086b4d8d56ea538435c96165fe5571964514ddaec2a4e6986ae89c248133c",
+    "match": true,
+    "path": "tests/fixtures/phase_03/running_regions/synthetic.py",
+    "semantic_sha256": "55a086b4d8d56ea538435c96165fe5571964514ddaec2a4e6986ae89c248133c",
+    "sha256": "f2a45566e3a7e64bf8caa819854dd9240c4a5e88a7a5ae260c09fe021f1746bb",
+    "size_bytes": 399146
+  }
+}

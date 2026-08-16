@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "purchase-agreement",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "81843f0c7f8a7c3afc7ac70133ba0bd57d650cb1502e5de7121c1fb2421eafb1",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "a7f2e2df5895841a387929c7be3aafca123cb97cdadd0f2011866284734135fa",
+      "html_sha256": "0c98a68b67cd53097ae037e21fdeea119a51a1d895bb643be6b31ce3662a2da7",
+      "text_sha256": "8827ae83dea8b2620e130b8d2b6cecc4b3e456b8102cf2cbff52fa7161fbbd14"
+    }
+  ]
+}

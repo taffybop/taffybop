@@ -1,0 +1,20 @@
+{
+  "affected_region_capture": "pages/page-1/affected-fers-region.png",
+  "browser_family": "Google Chrome",
+  "browser_version": "150.0.7871.125",
+  "capture_surface": "browser extension controlled actual UI",
+  "captured_pages": [
+    1,
+    2,
+    3
+  ],
+  "device_pixel_ratio": 1,
+  "language": "en",
+  "storage_console_note": "Browser-extension storage access warnings were present; parsing, rendering, and capture completed successfully.",
+  "timezone": "Asia/Kolkata",
+  "url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-frndkxx9xo4bww7bjg78oxfvhqqe",
+  "viewport_css_px": {
+    "height": 802,
+    "width": 1920
+  }
+}

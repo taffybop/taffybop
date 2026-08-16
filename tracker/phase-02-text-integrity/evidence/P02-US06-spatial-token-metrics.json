@@ -1,0 +1,1483 @@
+{
+  "custody": {
+    "accepted_policy": {
+      "path": "tracker/phase-02-text-integrity/decisions/P02-spatial-token-preservation-policy.md",
+      "sha256": "1d0544f55df543ea010a22ef0379e90abb13256df4c2388032cd975715e10741",
+      "size_bytes": 7772
+    },
+    "pre_post_input_identity_match": true,
+    "retained_catastrophe": {
+      "artifact": {
+        "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json",
+        "sha256": "3f1f0d9b7768e119d65a887e73f54173df633eeca004e9296bcfeb6aebc91abe",
+        "size_bytes": 79005
+      },
+      "chart_owner_bbox": {
+        "h": 149.057,
+        "height": 149.057,
+        "unit": "pt",
+        "w": 444.032,
+        "width": 444.032,
+        "x": 100.221,
+        "y": 437.31
+      },
+      "document_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "ih_evidence": {
+        "mirror_path": "/pages/0/items/4/items/20",
+        "record": {
+          "accepted": false,
+          "bbox": {
+            "h": 5.8,
+            "height": 5.8,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 157.421,
+            "y": 575.71
+          },
+          "confidence": 0.4437,
+          "rejection_reason": "low_confidence",
+          "source": "ocr",
+          "text": "iH",
+          "value": "iH",
+          "word_count": 1
+        },
+        "source_path": "/pages/0/detected_images/1/items/20"
+      },
+      "source": {
+        "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+        "size_bytes": 58779
+      },
+      "year_evidence": [
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 125.021,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "path": "/pages/0/detected_images/1/items/8",
+          "text": "2015",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 165.421,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "path": "/pages/0/detected_images/1/items/9",
+          "text": "2020",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.4,
+            "width": 14.4,
+            "x": 206.621,
+            "y": 562.51
+          },
+          "confidence": 0.965,
+          "path": "/pages/0/detected_images/1/items/10",
+          "text": "2025",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 232.021,
+            "y": 562.51
+          },
+          "confidence": 0.962,
+          "path": "/pages/0/detected_images/1/items/11",
+          "text": "2015",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 272.421,
+            "y": 562.51
+          },
+          "confidence": 0.9685,
+          "path": "/pages/0/detected_images/1/items/12",
+          "text": "2020",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 313.621,
+            "y": 562.51
+          },
+          "confidence": 0.9654,
+          "path": "/pages/0/detected_images/1/items/13",
+          "text": "2025",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 339.021,
+            "y": 562.51
+          },
+          "confidence": 0.9618,
+          "path": "/pages/0/detected_images/1/items/14",
+          "text": "2015",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 379.621,
+            "y": 562.51
+          },
+          "confidence": 0.9689,
+          "path": "/pages/0/detected_images/1/items/15",
+          "text": "2020",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 420.621,
+            "y": 562.51
+          },
+          "confidence": 0.9657,
+          "path": "/pages/0/detected_images/1/items/16",
+          "text": "2025",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 446.221,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "path": "/pages/0/detected_images/1/items/17",
+          "text": "2015",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 486.621,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "path": "/pages/0/detected_images/1/items/18",
+          "text": "2020",
+          "word_count": 1
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 527.621,
+            "y": 562.51
+          },
+          "confidence": 0.9688,
+          "path": "/pages/0/detected_images/1/items/19",
+          "text": "2025",
+          "word_count": 1
+        }
+      ],
+      "year_mirror_paths": [
+        "/pages/0/items/4/items/8",
+        "/pages/0/items/4/items/9",
+        "/pages/0/items/4/items/10",
+        "/pages/0/items/4/items/11",
+        "/pages/0/items/4/items/12",
+        "/pages/0/items/4/items/13",
+        "/pages/0/items/4/items/14",
+        "/pages/0/items/4/items/15",
+        "/pages/0/items/4/items/16",
+        "/pages/0/items/4/items/17",
+        "/pages/0/items/4/items/18",
+        "/pages/0/items/4/items/19"
+      ],
+      "year_mirror_projection": "shared_ir_item",
+      "year_occurrence_count": 12,
+      "year_source_projection": "detected_images"
+    },
+    "retained_p02_us05": {
+      "arithmetic_ceiling_percent": 3.093762274952003,
+      "artifact": {
+        "path": "tracker/phase-02-text-integrity/evidence/P02-US05-numeric-cleanup-metrics.json",
+        "sha256": "5b347a6f98c47d9df3b52cfef40bb5c6bb5824f149cc8da6806cc23d5e3a174c",
+        "size_bytes": 27361
+      },
+      "observed_paired_full_parser_percentile": false
+    }
+  },
+  "measurement_scope": "pure production spatial-token and item projection over exact retained catastrophe evidence plus deterministic synthetic overlap, distant-repetition, grounded-short, negative, healthy, and resource-bound controls; no OCR engine, renderer, document pipeline, layout model, or hosted model is invoked",
+  "metrics": {
+    "canonical_unsupported_short_noise_count": 0,
+    "combined_healthy_p95_ceiling_reference": {
+      "arithmetic_ceiling_percent": 3.0953262013901037,
+      "observed_paired_full_parser_percentile": false,
+      "passes_target": true,
+      "retained_p02_us05_arithmetic_ceiling_percent": 3.093762274952003,
+      "spatial_projection_p95_percent": 0.001563926438101005,
+      "target_percent": 10.0
+    },
+    "distant_repeated_line_value_count": 2,
+    "distant_repeated_selected_token_count": 4,
+    "distant_repeated_token_occurrence_count": 4,
+    "grounded_short_alternative_count": 2,
+    "grounded_short_bbox_confidence_complete_count": 2,
+    "grounded_short_case_count": 2,
+    "grounded_short_primary_selected_count": 0,
+    "healthy_occurrence_count": 20,
+    "healthy_spatial_projection_additive_overhead_percent": 0.001563926438101005,
+    "healthy_spatial_projection_latency_ms": {
+      "max": 0.7312920024560299,
+      "p50": 0.6684580002911389,
+      "p95": 0.7312920024560299
+    },
+    "hosted_model_cost_usd": 0.0,
+    "hosted_model_request_count": 0,
+    "hosted_model_token_count": 0,
+    "invalid_geometry_omitted_count": 1,
+    "max_isolated_peak_rss_increment_bytes": 1032192,
+    "negative_case_count": 4,
+    "negative_short_alternative_count": 0,
+    "overlap_candidate_count": 2,
+    "overlap_duplicate_diagnostic_count": 1,
+    "overlap_duplicate_points_to_winner": true,
+    "overlap_duplicate_primary_token_count": 0,
+    "overlap_primary_selected_token_count": 1,
+    "overlap_selected_representative_count": 1,
+    "oversized_text_omitted_count": 1,
+    "resource_bound_latency_ms": {
+      "max": 98.44679100206122,
+      "p50": 85.16087500174763,
+      "p95": 98.44679100206122
+    },
+    "retained_ih_exact": true,
+    "retained_ih_grounded_short_alternative": true,
+    "retained_ih_occurrence_count": 1,
+    "retained_ih_primary_selected": false,
+    "retained_ih_selected": true,
+    "retained_target_occurrence_count": 13,
+    "retained_target_partition_exact": true,
+    "retained_target_summary_exact": true,
+    "retained_year_occurrence_count": 12,
+    "retained_year_primary_selected_count": 12,
+    "retained_year_selected_count": 12,
+    "retained_year_text_bbox_confidence_exact_count": 12,
+    "retained_year_unique_occurrence_id_count": 12,
+    "semantic_output_sha256": "5deccf8a57f0e97ba119228c9709d537c92ef0b2df186acce87d34742588d7c5",
+    "semantic_output_size_bytes": 23613,
+    "serialized_payload_bound_respected": true,
+    "short_alternative_bound_exact": true,
+    "source_token_bound_exact": true,
+    "stable_target_occurrence_id_count": 13,
+    "synthetic_control_latency_ms": {
+      "max": 0.8758750009292271,
+      "p50": 0.7283750019269064,
+      "p95": 0.8758750009292271
+    },
+    "target_additive_item_size_delta_bytes": 6453,
+    "target_canonical_flag_on_off_parity": true,
+    "target_disabled_item_size_bytes": 3537,
+    "target_enabled_item_size_bytes": 9990,
+    "target_flag_off_additive_keys_absent": true,
+    "target_projection_latency_ms": {
+      "max": 0.9525829991616774,
+      "p50": 0.7467499999620486,
+      "p95": 0.9525829991616774
+    }
+  },
+  "record_kind": "p02_us06_spatial_token_component_metrics",
+  "run_inputs": {
+    ".env.example": {
+      "path": ".env.example",
+      "sha256": "cc211e88d599d0bc64cfe6b287c761036f54e83b32817b6db578a8ce129bcc41",
+      "size_bytes": 2686
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "2fd48d9b7036856f90da17802d5f35dc681a74869025db5ef9730c8a5532f953",
+      "size_bytes": 24949
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "sha256": "047d5188bf37cb6ee0c42539c67b9c63e7b85e22f72980f8661028fd39b51d1e",
+      "size_bytes": 11495
+    },
+    "app/services/ocr.py": {
+      "path": "app/services/ocr.py",
+      "sha256": "84e63bf946dd29de82dd907471478714f1899ef3d47259436578e861a8666b5a",
+      "size_bytes": 54654
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "sha256": "c19e3eb5acccec800b50fb69754c47734c9c2bd7fa4c8cabe06860f21a3effbc",
+      "size_bytes": 133550
+    },
+    "app/services/selective_span_ocr.py": {
+      "path": "app/services/selective_span_ocr.py",
+      "sha256": "05f618bbc011a174a20544c8149ecaabd7adb60fbfdf633d6fec8efbaeba5065",
+      "size_bytes": 75692
+    },
+    "app/services/spatial_tokens.py": {
+      "path": "app/services/spatial_tokens.py",
+      "sha256": "7e3b125e3b417764cfadf8213f4461305126c1e9fba4e998815f133849c0e773",
+      "size_bytes": 27582
+    },
+    "benchmark-expertmodeldata/catastrophe-recap.pdf": {
+      "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "size_bytes": 58779
+    },
+    "tests/benchmarks/spatial_token_metrics.py": {
+      "path": "tests/benchmarks/spatial_token_metrics.py",
+      "sha256": "ac5fede5a3beb0642e83fd7b39b19d8579861a55ea6a08d9f26a32bddbe58461",
+      "size_bytes": 48072
+    },
+    "tests/contract/test_p02_us06_spatial_tokens_contract.py": {
+      "path": "tests/contract/test_p02_us06_spatial_tokens_contract.py",
+      "sha256": "ead86b42e5ff3959b5165673e4c21439822e53943810b9c980ee6a3748e3df81",
+      "size_bytes": 17639
+    },
+    "tests/performance/test_p02_us06_spatial_tokens_performance.py": {
+      "path": "tests/performance/test_p02_us06_spatial_tokens_performance.py",
+      "sha256": "170eb7662cb9d6ecbf9f2355611be3024dcdf882cb6ffcb790ba42ae4f3d9248",
+      "size_bytes": 4791
+    },
+    "tests/regression/phase_02/test_p02_us06_spatial_tokens_regression.py": {
+      "path": "tests/regression/phase_02/test_p02_us06_spatial_tokens_regression.py",
+      "sha256": "a74bf4a12f3de3228583f27dcc358ef169e23fbcbe69f8ce6295e879052418df",
+      "size_bytes": 27172
+    },
+    "tests/stories/phase_02/test_p02_us06_spatial_tokens.py": {
+      "path": "tests/stories/phase_02/test_p02_us06_spatial_tokens.py",
+      "sha256": "1867813a1cc095457286ce2b37d21fb13dd05ef3ad5552b4107b7615308576aa",
+      "size_bytes": 11021
+    },
+    "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json",
+      "sha256": "3f1f0d9b7768e119d65a887e73f54173df633eeca004e9296bcfeb6aebc91abe",
+      "size_bytes": 79005
+    },
+    "tracker/phase-02-text-integrity/decisions/P02-spatial-token-preservation-policy.md": {
+      "path": "tracker/phase-02-text-integrity/decisions/P02-spatial-token-preservation-policy.md",
+      "sha256": "1d0544f55df543ea010a22ef0379e90abb13256df4c2388032cd975715e10741",
+      "size_bytes": 7772
+    },
+    "tracker/phase-02-text-integrity/evidence/P02-US05-numeric-cleanup-metrics.json": {
+      "path": "tracker/phase-02-text-integrity/evidence/P02-US05-numeric-cleanup-metrics.json",
+      "sha256": "5b347a6f98c47d9df3b52cfef40bb5c6bb5824f149cc8da6806cc23d5e3a174c",
+      "size_bytes": 27361
+    }
+  },
+  "samples": 10,
+  "schema_version": "1.0",
+  "semantic_results": {
+    "healthy_control": {
+      "occurrence_sha256": "614785bbfacabc87eb6e785002ee73fe1c8ec6e6236413d4e2834d265f611e7a",
+      "summary": {
+        "duplicate_occurrences": 0,
+        "fail_closed_overflow": false,
+        "invalid_occurrences": 0,
+        "occurrence_limit_reached": false,
+        "overflow_reason": null,
+        "oversized_text_occurrences": 0,
+        "primary_selected_occurrences": 0,
+        "schema_version": "1.0",
+        "selected_occurrences": 20,
+        "serialized_byte_limit_reached": false,
+        "serialized_occurrence_bytes": 10991,
+        "short_alternative_limit_reached": false,
+        "short_alternative_occurrences": 0,
+        "source_token_limit_reached": false,
+        "total_occurrences": 20,
+        "truncated_occurrences": 0
+      }
+    },
+    "resource_bounds": {
+      "declared_bounds": {
+        "max_occurrences": 2048,
+        "max_serialized_occurrence_json_bytes": 1048576,
+        "max_short_alternatives": 256,
+        "max_source_tokens": 4096,
+        "max_token_text_chars": 256
+      },
+      "invalid_and_oversized": {
+        "occurrence_sha256": "ee75d507d2d7543bb7173effe2536ced27f0b2048b9f475dd3950be2a9fba95d",
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 1,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 1,
+          "primary_selected_occurrences": 1,
+          "schema_version": "1.0",
+          "selected_occurrences": 1,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 535,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 0,
+          "source_token_limit_reached": false,
+          "total_occurrences": 1,
+          "truncated_occurrences": 0
+        }
+      },
+      "serialized_byte_limit": {
+        "occurrence_sha256": "f7fe980290e6e29d2ada31b4728d3e7954a836003897a3c5e7648c7dae446383",
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 0,
+          "primary_selected_occurrences": 1161,
+          "schema_version": "1.0",
+          "selected_occurrences": 1161,
+          "serialized_byte_limit_reached": true,
+          "serialized_occurrence_bytes": 915584,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 0,
+          "source_token_limit_reached": false,
+          "total_occurrences": 1161,
+          "truncated_occurrences": 887
+        }
+      },
+      "short_alternative_limit": {
+        "occurrence_sha256": "efe3801293702305bad82e978673dd77ba9f5e74fda1f84d8d10d41df753f82a",
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 0,
+          "primary_selected_occurrences": 0,
+          "schema_version": "1.0",
+          "selected_occurrences": 256,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 138573,
+          "short_alternative_limit_reached": true,
+          "short_alternative_occurrences": 256,
+          "source_token_limit_reached": false,
+          "total_occurrences": 256,
+          "truncated_occurrences": 1
+        }
+      },
+      "source_token_limit": {
+        "occurrence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 4096,
+          "primary_selected_occurrences": 0,
+          "schema_version": "1.0",
+          "selected_occurrences": 0,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 2,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 0,
+          "source_token_limit_reached": true,
+          "total_occurrences": 0,
+          "truncated_occurrences": 1
+        }
+      }
+    },
+    "synthetic_controls": {
+      "distant_repetition": {
+        "geometry_aware_line_values": [
+          "Quarterly update",
+          "Quarterly update"
+        ],
+        "occurrences": [
+          {
+            "bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 60.0,
+              "width": 60.0,
+              "x": 20.0,
+              "y": 10.0
+            },
+            "confidence": 0.98,
+            "crop_pixel_bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "px",
+              "w": 60.0,
+              "width": 60.0,
+              "x": 20.0,
+              "y": 10.0
+            },
+            "line_occurrence_id": "ocr-line-1f0dba62425b3b18daea2be399f71b293e81e44eea6635b8e82c8f39498772e6",
+            "occurrence_id": "ocr-token-a53ab0b4759900efee54ce1a606b9b5f94b8e6e149bd5abeb69850075ef47316",
+            "ocr_pass": "standard",
+            "primary_selected": true,
+            "retention_reason": "primary_ocr_token",
+            "selected": true,
+            "short_alternative": false,
+            "text": "Quarterly",
+            "word_index": 0
+          },
+          {
+            "bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 50.0,
+              "width": 50.0,
+              "x": 84.0,
+              "y": 10.0
+            },
+            "confidence": 0.98,
+            "crop_pixel_bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "px",
+              "w": 50.0,
+              "width": 50.0,
+              "x": 84.0,
+              "y": 10.0
+            },
+            "line_occurrence_id": "ocr-line-1f0dba62425b3b18daea2be399f71b293e81e44eea6635b8e82c8f39498772e6",
+            "occurrence_id": "ocr-token-a0e96fb3bced4c100ab94dc8e84fdf19f08f4e14b35e6f14d78d25f9e193f24d",
+            "ocr_pass": "standard",
+            "primary_selected": true,
+            "retention_reason": "primary_ocr_token",
+            "selected": true,
+            "short_alternative": false,
+            "text": "update",
+            "word_index": 1
+          },
+          {
+            "bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 60.0,
+              "width": 60.0,
+              "x": 20.0,
+              "y": 750.0
+            },
+            "confidence": 0.98,
+            "crop_pixel_bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "px",
+              "w": 60.0,
+              "width": 60.0,
+              "x": 20.0,
+              "y": 750.0
+            },
+            "line_occurrence_id": "ocr-line-40885365c1c7a6e944bf9dfc430888f1615f8021b3eb9880967292dc6820acf9",
+            "occurrence_id": "ocr-token-ae57294a7141617d9da0c2430df8c79b9e8455a656fc84ec36b7fe170918868f",
+            "ocr_pass": "standard",
+            "primary_selected": true,
+            "retention_reason": "primary_ocr_token",
+            "selected": true,
+            "short_alternative": false,
+            "text": "Quarterly",
+            "word_index": 0
+          },
+          {
+            "bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 50.0,
+              "width": 50.0,
+              "x": 84.0,
+              "y": 750.0
+            },
+            "confidence": 0.98,
+            "crop_pixel_bbox": {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "px",
+              "w": 50.0,
+              "width": 50.0,
+              "x": 84.0,
+              "y": 750.0
+            },
+            "line_occurrence_id": "ocr-line-40885365c1c7a6e944bf9dfc430888f1615f8021b3eb9880967292dc6820acf9",
+            "occurrence_id": "ocr-token-f24f5b79ad77b1fe259977794fd6bc64e378adc60dc4ce763b3e20cab5146ebc",
+            "ocr_pass": "standard",
+            "primary_selected": true,
+            "retention_reason": "primary_ocr_token",
+            "selected": true,
+            "short_alternative": false,
+            "text": "update",
+            "word_index": 1
+          }
+        ],
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 0,
+          "primary_selected_occurrences": 4,
+          "schema_version": "1.0",
+          "selected_occurrences": 4,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 2199,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 0,
+          "source_token_limit_reached": false,
+          "total_occurrences": 4,
+          "truncated_occurrences": 0
+        }
+      },
+      "grounded_short_alternatives": {
+        "canonical_surfaces": {
+          "cleaned_ocr_text": "",
+          "md": "",
+          "ocr_text": "",
+          "value": ""
+        },
+        "occurrences": [
+          {
+            "bbox": {
+              "h": 8.0,
+              "height": 8.0,
+              "unit": "pt",
+              "w": 12.0,
+              "width": 12.0,
+              "x": 20.0,
+              "y": 20.0
+            },
+            "confidence": 0.4437,
+            "crop_pixel_bbox": {
+              "h": 8.0,
+              "height": 8.0,
+              "unit": "px",
+              "w": 12.0,
+              "width": 12.0,
+              "x": 20.0,
+              "y": 20.0
+            },
+            "line_occurrence_id": "ocr-line-9be6c78ec1c1496b9c215d73b8695880ec11be4ea84c032cdf72d7edff324591",
+            "occurrence_id": "ocr-token-f2941d9ad989b77860f20f821128300ee2f19f26cef309a8de1f5034ac8526e3",
+            "ocr_pass": "standard",
+            "primary_selected": false,
+            "retention_reason": "grounded_short_alternative",
+            "selected": true,
+            "short_alternative": true,
+            "text": "iH",
+            "word_index": 0
+          },
+          {
+            "bbox": {
+              "h": 8.0,
+              "height": 8.0,
+              "unit": "pt",
+              "w": 12.0,
+              "width": 12.0,
+              "x": 50.0,
+              "y": 20.0
+            },
+            "confidence": 0.41,
+            "crop_pixel_bbox": {
+              "h": 8.0,
+              "height": 8.0,
+              "unit": "px",
+              "w": 12.0,
+              "width": 12.0,
+              "x": 50.0,
+              "y": 20.0
+            },
+            "line_occurrence_id": "ocr-line-b0fb9ed6b85600b9fbc157c7ae2cdb6f3ea7ead62f64d15610bdd86c2fd43941",
+            "occurrence_id": "ocr-token-8dc789c7b7b66fec91f578734d6b437e404e68d43235c0ff702074dadeec6977",
+            "ocr_pass": "standard",
+            "primary_selected": false,
+            "retention_reason": "grounded_short_alternative",
+            "selected": true,
+            "short_alternative": true,
+            "text": "1H",
+            "word_index": 0
+          }
+        ],
+        "summary": {
+          "duplicate_occurrences": 0,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 0,
+          "primary_selected_occurrences": 0,
+          "schema_version": "1.0",
+          "selected_occurrences": 2,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 1099,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 2,
+          "source_token_limit_reached": false,
+          "total_occurrences": 2,
+          "truncated_occurrences": 0
+        }
+      },
+      "negative_cases": [
+        {
+          "case_id": "photo_role",
+          "invalid_occurrence_count": 0,
+          "occurrence_count": 1,
+          "occurrence_sha256": "5008dfafd1b609fcba94bde539666dc181092f5bb1086cc6ff51d951824ef104",
+          "short_alternative_count": 0
+        },
+        {
+          "case_id": "below_confidence_floor",
+          "invalid_occurrence_count": 0,
+          "occurrence_count": 1,
+          "occurrence_sha256": "4f82d1056dfa71470b21165ec95451a89d176b9d44118ee0ca0a26997dbf2898",
+          "short_alternative_count": 0
+        },
+        {
+          "case_id": "unsupported_punctuation",
+          "invalid_occurrence_count": 0,
+          "occurrence_count": 1,
+          "occurrence_sha256": "058ab793fa8ced8d6a8df064885df3ee48433aaa5cf37f1168dbfae39730a285",
+          "short_alternative_count": 0
+        },
+        {
+          "case_id": "invalid_geometry",
+          "invalid_occurrence_count": 1,
+          "occurrence_count": 0,
+          "occurrence_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "short_alternative_count": 0
+        }
+      ],
+      "overlap": {
+        "occurrences": [
+          {
+            "bbox": {
+              "h": 10.0,
+              "height": 10.0,
+              "unit": "pt",
+              "w": 20.0,
+              "width": 20.0,
+              "x": 10.0,
+              "y": 10.0
+            },
+            "confidence": 0.94,
+            "crop_pixel_bbox": {
+              "h": 10.0,
+              "height": 10.0,
+              "unit": "px",
+              "w": 20.0,
+              "width": 20.0,
+              "x": 10.0,
+              "y": 10.0
+            },
+            "line_occurrence_id": "ocr-line-79da854d4abf2e4324cbc91938b1507d7b98b75bc550fec5dd626a46dd71b910",
+            "occurrence_id": "ocr-token-67fc8dc193015433d7aac41d44af5a3966e3f44b67dc2678c25ad8cb481c1ec7",
+            "ocr_pass": "standard",
+            "primary_selected": true,
+            "retention_reason": "primary_ocr_token",
+            "selected": true,
+            "short_alternative": false,
+            "text": "2025",
+            "word_index": 0
+          },
+          {
+            "bbox": {
+              "h": 10.0,
+              "height": 10.0,
+              "unit": "pt",
+              "w": 20.0,
+              "width": 20.0,
+              "x": 10.5,
+              "y": 10.2
+            },
+            "confidence": 0.99,
+            "crop_pixel_bbox": {
+              "h": 10.0,
+              "height": 10.0,
+              "unit": "px",
+              "w": 20.0,
+              "width": 20.0,
+              "x": 10.5,
+              "y": 10.2
+            },
+            "duplicate_of": "ocr-token-67fc8dc193015433d7aac41d44af5a3966e3f44b67dc2678c25ad8cb481c1ec7",
+            "line_occurrence_id": "ocr-line-1c93dbf08f472dc9c3077b7dd8fb3b3ab4d92ad03839c6f32bee496a8f543698",
+            "occurrence_id": "ocr-token-4f019cd4fd1533eed492783d5b675a293b1df0a04d299124da39488d3f77d908",
+            "ocr_pass": "sparse",
+            "primary_selected": false,
+            "retention_reason": "overlapping_equivalent_ocr_diagnostic",
+            "selected": false,
+            "short_alternative": false,
+            "text": "2025",
+            "word_index": 0
+          }
+        ],
+        "summary": {
+          "duplicate_occurrences": 1,
+          "fail_closed_overflow": false,
+          "invalid_occurrences": 0,
+          "occurrence_limit_reached": false,
+          "overflow_reason": null,
+          "oversized_text_occurrences": 0,
+          "primary_selected_occurrences": 1,
+          "schema_version": "1.0",
+          "selected_occurrences": 1,
+          "serialized_byte_limit_reached": false,
+          "serialized_occurrence_bytes": 1203,
+          "short_alternative_limit_reached": false,
+          "short_alternative_occurrences": 0,
+          "source_token_limit_reached": false,
+          "total_occurrences": 2,
+          "truncated_occurrences": 0
+        }
+      }
+    },
+    "target": {
+      "additive_item_size_delta_bytes": 6453,
+      "canonical_flag_off_surfaces": {
+        "cleaned_ocr_text": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "md": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "ocr_text": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "value": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025"
+      },
+      "canonical_surface_parity": true,
+      "canonical_surfaces": {
+        "cleaned_ocr_text": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "md": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "ocr_text": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025",
+        "value": "2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025\n2015\n2020\n2025"
+      },
+      "disabled_item_size_bytes": 3537,
+      "enabled_item_size_bytes": 9990,
+      "flag_off_additive_keys_absent": true,
+      "ih_occurrences": [
+        {
+          "bbox": {
+            "h": 5.8,
+            "height": 5.8,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 157.421,
+            "y": 575.71
+          },
+          "confidence": 0.4437,
+          "line_occurrence_id": "ocr-line-ddf52b9076d51368cfdacfcff4f07566be81e73a1855586aa0a489cf80c91a6c",
+          "occurrence_id": "ocr-token-2f1293ebcf9d14eb1bc97c0cf284e26ef32942876ce754dd609b24a45216c1f0",
+          "ocr_pass": "standard",
+          "primary_selected": false,
+          "retention_reason": "grounded_short_alternative",
+          "selected": true,
+          "short_alternative": true,
+          "text": "iH",
+          "word_index": 0
+        }
+      ],
+      "occurrences": [
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 125.021,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "line_occurrence_id": "ocr-line-37318ba7d3023461722d7a35f478ea25894280dabbacf9a24249a11dfab2e090",
+          "occurrence_id": "ocr-token-32df47edbf979afdf442b29817e7d1f3312765362a7a83cc240c52be97e7491c",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 165.421,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "line_occurrence_id": "ocr-line-375d0f2e357f3b9f966343e891d134e7cb35fb0e79ae5b019f4e9a671f3f71ed",
+          "occurrence_id": "ocr-token-b7291417df4f1d04fd0fdc10c53a0ba76d0621606f359de389693f111e7857e3",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.4,
+            "width": 14.4,
+            "x": 206.621,
+            "y": 562.51
+          },
+          "confidence": 0.965,
+          "line_occurrence_id": "ocr-line-274f87716fcde027f2ed2801a29fb8e0b3524dbeaf60cb0b6ef8622cf54eed9f",
+          "occurrence_id": "ocr-token-f661d0a765926771e528111a440db606b637336d33c74e0776cb81fb4c6c1a1f",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 232.021,
+            "y": 562.51
+          },
+          "confidence": 0.962,
+          "line_occurrence_id": "ocr-line-0478ae65baab3581c3d2cbb03ff44cf25044154a940d317e36ffebb3f3c7a7ae",
+          "occurrence_id": "ocr-token-954380f4376d3ea846cbc3ba552b2136a357b0513b6c6afea1296ff2eacd1df0",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 272.421,
+            "y": 562.51
+          },
+          "confidence": 0.9685,
+          "line_occurrence_id": "ocr-line-ab03a744e376e06698eea1fe4ebd8e273304f2e4035687736d204c467576bd01",
+          "occurrence_id": "ocr-token-789ce3a7c435f9a2c9fc3e05231f29b81f8bd60fca3904c2f665d4518129351d",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 313.621,
+            "y": 562.51
+          },
+          "confidence": 0.9654,
+          "line_occurrence_id": "ocr-line-e710803110777547c9a57e194049600990e58770bce840572902bb52b4633632",
+          "occurrence_id": "ocr-token-119f2e92cc5103b04f53855cfd8178d50dae0cc59f7c806dbb382187c3c15cff",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 339.021,
+            "y": 562.51
+          },
+          "confidence": 0.9618,
+          "line_occurrence_id": "ocr-line-464fef24ec9f8788239f99f6d5fdd5f19d65f04ee96418c81e4dd17cf33834b7",
+          "occurrence_id": "ocr-token-3eb487f2708be99769a0bee13fa8ea64f949ce85bca0a328d5f70a75fe8f8c8a",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 379.621,
+            "y": 562.51
+          },
+          "confidence": 0.9689,
+          "line_occurrence_id": "ocr-line-4fdaf967d77d1de43b7e6cc76f5afe6e4a1591f2d5f1e0d38388e88d9498d087",
+          "occurrence_id": "ocr-token-82ddebcf932f5644491a54c234f3710820ad07b657d997ad076120b8faa4e7df",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 420.621,
+            "y": 562.51
+          },
+          "confidence": 0.9657,
+          "line_occurrence_id": "ocr-line-a1dce59eba0874cee7338cbdb3c495c6a7022482526cfb4deea9111c9436c26f",
+          "occurrence_id": "ocr-token-ddd32746452c0498e37de78373c578303a264bda720cd26e7001e66349118b6b",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 446.221,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "line_occurrence_id": "ocr-line-d1b760692647df4c92a57407b91fe2be114f0aa379bc53c83aef3e6fed77953b",
+          "occurrence_id": "ocr-token-fe3c75587e63e4a3ba0ec7739865c575c2ed16842ea83215810b8b20820c6ed7",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 486.621,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "line_occurrence_id": "ocr-line-ac4006666a17f8ff1c2735bd1333edb45ac9e444c64e78ebc3ae1f890ee59d4f",
+          "occurrence_id": "ocr-token-cfc2c3f3a3ad1fbf9e39132d5c33826043942123a48e0c1b40f4e4358dcd93d4",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 527.621,
+            "y": 562.51
+          },
+          "confidence": 0.9688,
+          "line_occurrence_id": "ocr-line-86d7d03fcbfb00dea02555d6594401e4c8e422bb0663b2487168f8d2698bf1d7",
+          "occurrence_id": "ocr-token-b800adb4f672c771305b2e382ff511b2980cb83c502b1f60d8342a123f5feb51",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 5.8,
+            "height": 5.8,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 157.421,
+            "y": 575.71
+          },
+          "confidence": 0.4437,
+          "line_occurrence_id": "ocr-line-ddf52b9076d51368cfdacfcff4f07566be81e73a1855586aa0a489cf80c91a6c",
+          "occurrence_id": "ocr-token-2f1293ebcf9d14eb1bc97c0cf284e26ef32942876ce754dd609b24a45216c1f0",
+          "ocr_pass": "standard",
+          "primary_selected": false,
+          "retention_reason": "grounded_short_alternative",
+          "selected": true,
+          "short_alternative": true,
+          "text": "iH",
+          "word_index": 0
+        }
+      ],
+      "summary": {
+        "duplicate_occurrences": 0,
+        "fail_closed_overflow": false,
+        "invalid_occurrences": 0,
+        "occurrence_limit_reached": false,
+        "overflow_reason": null,
+        "oversized_text_occurrences": 0,
+        "primary_selected_occurrences": 12,
+        "schema_version": "1.0",
+        "selected_occurrences": 13,
+        "serialized_byte_limit_reached": false,
+        "serialized_occurrence_bytes": 5921,
+        "short_alternative_limit_reached": false,
+        "short_alternative_occurrences": 1,
+        "source_token_limit_reached": false,
+        "total_occurrences": 13,
+        "truncated_occurrences": 0
+      },
+      "unsupported_short_primary_surface_count": 0,
+      "year_occurrences": [
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 125.021,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "line_occurrence_id": "ocr-line-37318ba7d3023461722d7a35f478ea25894280dabbacf9a24249a11dfab2e090",
+          "occurrence_id": "ocr-token-32df47edbf979afdf442b29817e7d1f3312765362a7a83cc240c52be97e7491c",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 165.421,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "line_occurrence_id": "ocr-line-375d0f2e357f3b9f966343e891d134e7cb35fb0e79ae5b019f4e9a671f3f71ed",
+          "occurrence_id": "ocr-token-b7291417df4f1d04fd0fdc10c53a0ba76d0621606f359de389693f111e7857e3",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.4,
+            "width": 14.4,
+            "x": 206.621,
+            "y": 562.51
+          },
+          "confidence": 0.965,
+          "line_occurrence_id": "ocr-line-274f87716fcde027f2ed2801a29fb8e0b3524dbeaf60cb0b6ef8622cf54eed9f",
+          "occurrence_id": "ocr-token-f661d0a765926771e528111a440db606b637336d33c74e0776cb81fb4c6c1a1f",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 232.021,
+            "y": 562.51
+          },
+          "confidence": 0.962,
+          "line_occurrence_id": "ocr-line-0478ae65baab3581c3d2cbb03ff44cf25044154a940d317e36ffebb3f3c7a7ae",
+          "occurrence_id": "ocr-token-954380f4376d3ea846cbc3ba552b2136a357b0513b6c6afea1296ff2eacd1df0",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 272.421,
+            "y": 562.51
+          },
+          "confidence": 0.9685,
+          "line_occurrence_id": "ocr-line-ab03a744e376e06698eea1fe4ebd8e273304f2e4035687736d204c467576bd01",
+          "occurrence_id": "ocr-token-789ce3a7c435f9a2c9fc3e05231f29b81f8bd60fca3904c2f665d4518129351d",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 313.621,
+            "y": 562.51
+          },
+          "confidence": 0.9654,
+          "line_occurrence_id": "ocr-line-e710803110777547c9a57e194049600990e58770bce840572902bb52b4633632",
+          "occurrence_id": "ocr-token-119f2e92cc5103b04f53855cfd8178d50dae0cc59f7c806dbb382187c3c15cff",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 339.021,
+            "y": 562.51
+          },
+          "confidence": 0.9618,
+          "line_occurrence_id": "ocr-line-464fef24ec9f8788239f99f6d5fdd5f19d65f04ee96418c81e4dd17cf33834b7",
+          "occurrence_id": "ocr-token-3eb487f2708be99769a0bee13fa8ea64f949ce85bca0a328d5f70a75fe8f8c8a",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 379.621,
+            "y": 562.51
+          },
+          "confidence": 0.9689,
+          "line_occurrence_id": "ocr-line-4fdaf967d77d1de43b7e6cc76f5afe6e4a1591f2d5f1e0d38388e88d9498d087",
+          "occurrence_id": "ocr-token-82ddebcf932f5644491a54c234f3710820ad07b657d997ad076120b8faa4e7df",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 420.621,
+            "y": 562.51
+          },
+          "confidence": 0.9657,
+          "line_occurrence_id": "ocr-line-a1dce59eba0874cee7338cbdb3c495c6a7022482526cfb4deea9111c9436c26f",
+          "occurrence_id": "ocr-token-ddd32746452c0498e37de78373c578303a264bda720cd26e7001e66349118b6b",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 13.4,
+            "width": 13.4,
+            "x": 446.221,
+            "y": 562.51
+          },
+          "confidence": 0.9633,
+          "line_occurrence_id": "ocr-line-d1b760692647df4c92a57407b91fe2be114f0aa379bc53c83aef3e6fed77953b",
+          "occurrence_id": "ocr-token-fe3c75587e63e4a3ba0ec7739865c575c2ed16842ea83215810b8b20820c6ed7",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2015",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.4,
+            "height": 4.4,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 486.621,
+            "y": 562.51
+          },
+          "confidence": 0.9666,
+          "line_occurrence_id": "ocr-line-ac4006666a17f8ff1c2735bd1333edb45ac9e444c64e78ebc3ae1f890ee59d4f",
+          "occurrence_id": "ocr-token-cfc2c3f3a3ad1fbf9e39132d5c33826043942123a48e0c1b40f4e4358dcd93d4",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2020",
+          "word_index": 0
+        },
+        {
+          "bbox": {
+            "h": 4.6,
+            "height": 4.6,
+            "unit": "pt",
+            "w": 14.6,
+            "width": 14.6,
+            "x": 527.621,
+            "y": 562.51
+          },
+          "confidence": 0.9688,
+          "line_occurrence_id": "ocr-line-86d7d03fcbfb00dea02555d6594401e4c8e422bb0663b2487168f8d2698bf1d7",
+          "occurrence_id": "ocr-token-b800adb4f672c771305b2e382ff511b2980cb83c502b1f60d8342a123f5feb51",
+          "ocr_pass": "standard",
+          "primary_selected": true,
+          "retention_reason": "primary_ocr_token",
+          "selected": true,
+          "short_alternative": false,
+          "text": "2025",
+          "word_index": 0
+        }
+      ]
+    }
+  },
+  "warmups": 2,
+  "workspace": "/Users/vignesh/Downloads/taffybop"
+}

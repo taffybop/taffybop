@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-parse-api"
+version = "0.1.0"
+description = "Local PDF and image extraction API with layout-aware OCR"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "fastapi==0.139.2",
+    "uvicorn[standard]==0.51.0",
+    "python-multipart==0.0.32",
+    "docling==2.114.0",
+    "numpy==2.4.6; python_version < '3.12'",
+    "numpy==2.5.1; python_version >= '3.12'",
+    "opencv-python==5.0.0.93",
+    "Pillow==12.3.0",
+    "pypdfium2==5.12.1",
+    "pdfminer.six==20260107",
+    "pdfplumber==0.11.10",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "httpx==0.28.1",
+    "psutil==7.2.2",
+]
+
+[tool.setuptools.packages.find]
+include = ["app", "app.*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "real_metrics: opt-in governed observer/current-RSS sampling or PREPARE and reviewed-corpus campaign controls; excludes deterministic subprocess lifecycle/cleanup units",
+]

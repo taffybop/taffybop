@@ -1,0 +1,153 @@
+{
+  "schema_version": "functional-fidelity-final-validation-v2",
+  "generated_at_utc": "2026-08-13T09:16:48Z",
+  "scope": "Backend functional fidelity only; latency, CPU, memory, and performance hardening excluded.",
+  "immutable_artifact_binding": {
+    "service_root": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2",
+    "run": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2/run.json",
+      "sha256": "f3d21c4c15734319a5409c85f0b32da77cfbabe5e58c8ee503c176ba524f2386",
+      "size_bytes": 16430,
+      "status": "success",
+      "case_count": 15,
+      "http_200_output_count": 30
+    },
+    "manifest": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/artifact-manifest-final-source-grounded-v2.json",
+      "sha256": "154028aa64a10c15b170c714cab07f9eccf9fb25da5928962b78ea86264df12b",
+      "size_bytes": 70457,
+      "case_count": 15,
+      "source_page_count": 30,
+      "service_http_200_output_count": 30,
+      "service_rendered_dom_count": 30
+    },
+    "service_profile": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-profile.json"
+  },
+  "validated_tree_sha256": {
+    "captured_at_utc": "2026-08-13T09:12:08Z",
+    "command": "shasum -a 256 app/services/pipeline.py app/services/text_run_semantics.py app/services/visual_source_text.py app/models.py tests/regression/phase_04/test_p04_us01_public_projection_regression.py tests/stories/phase_03/test_p03_us05_adversarial.py tests/stories/phase_03/test_p03_us05_redline_runs.py tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py",
+    "files": {
+      "app/services/pipeline.py": "8fe5731fa4142fd00e1801afd394d9743efd542a57275b82e51c445b04e39414",
+      "app/services/text_run_semantics.py": "2b91ab8e4f564b4406a1cd495031725f1e5af41ffb644abdc99f9eb9d9c1ecc5",
+      "app/services/visual_source_text.py": "0bb2590aaccfe801fe3c13468a83b6565e8b7e3cf749f1cf9c775ac5771eaf97",
+      "app/models.py": "5d8b9cf1efa85edebb5a104d8e20aac6da01be27cb04f6c967114b85d310d472",
+      "tests/regression/phase_04/test_p04_us01_public_projection_regression.py": "c28dd8b451b4b7644979557abc4815b0f21262186581ae6f8905274837cd4e38",
+      "tests/stories/phase_03/test_p03_us05_adversarial.py": "04c20670e9512fb3307eb90d9a2c3fc1ae855ae74dbc25910783653135c3d512",
+      "tests/stories/phase_03/test_p03_us05_redline_runs.py": "27909d4db219069edf285ffd2ccee6bc5c076d4980f3bec0c250450904dd20bb",
+      "tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py": "481aa17ac8facac8dfab5b783b9161ffc2d6dcadda633ef80ce56537b9ff4ab6"
+    }
+  },
+  "test_runs": [
+    {
+      "id": "backend-functional-slice-final",
+      "kind": "deterministic",
+      "command": ".venv/bin/python -m pytest -q -m 'not integration' tests/test_api.py tests/test_image_quality.py tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py tests/contract/test_p03_us02_visual_relationship_contract.py tests/stories/phase_03/test_p03_us02_visual_children.py tests/contract/test_p03_us05_target_path_order_interop.py tests/contract/test_p03_us05_text_run_contract.py tests/stories/phase_03/test_p03_us05_adversarial.py tests/stories/phase_03/test_p03_us05_algorithm_hardening.py tests/stories/phase_03/test_p03_us05_redline_runs.py tests/contract/test_p03_us06_form_semantics_contract.py tests/stories/phase_03/test_p03_us06_acroform_raw.py tests/stories/phase_03/test_p03_us06_acroform_security.py tests/stories/phase_03/test_p03_us06_form_source_security.py tests/stories/phase_03/test_p03_us06_forms_key_values.py tests/stories/phase_03/test_p03_us06_group_caps.py tests/contract/test_p03_us08_api_model_strictness.py tests/contract/test_p03_us08_running_region_contract.py tests/stories/phase_03/test_p03_us08_running_regions.py tests/regression/phase_03/test_p03_us08_real_running_regions.py tests/regression/phase_04/test_functional_fidelity_table_regressions.py tests/stories/phase_04/test_p04_us01_span_fidelity.py tests/stories/phase_04/test_p04_us01_table_input_recovery.py tests/stories/phase_04/test_p04_us01_table_repair_word_bounds.py tests/stories/phase_04/test_p04_us02_table_reconciliation.py tests/stories/phase_04/test_p04_us03_continued_tables.py tests/stories/phase_04/test_p04_us04_table_candidate_gate.py tests/stories/phase_05/test_p05_visual_source_text.py tests/stories/phase_05/test_p05_us01_visual_schema.py tests/stories/phase_05/test_p05_us10_diagram_topology.py tests/benchmarks/test_functional_fidelity_analyzer.py tests/benchmarks/test_functional_fidelity_manifest.py",
+      "exit_code": 0,
+      "summary": "850 passed, 10 deselected, 6 warnings in 82.07s (0:01:22)",
+      "passed": 850,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "deselected": 10,
+      "deselection_reason": "Expected: the command explicitly selects -m 'not integration'; the corresponding real-corpus integration tests ran separately.",
+      "warning_disposition": "Six dependency deprecation warnings only; no functional skip, xfail, or failure."
+    },
+    {
+      "id": "backend-real-corpus-slice-final",
+      "kind": "integration",
+      "environment": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1",
+        "TOKENIZERS_PARALLELISM": "false",
+        "DOCLING_ARTIFACTS_PATH": "/Users/vignesh/Downloads/taffybop/.models/docling",
+        "RUN_INTEGRATION": "1"
+      },
+      "command": "env HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 TOKENIZERS_PARALLELISM=false DOCLING_ARTIFACTS_PATH=/Users/vignesh/Downloads/taffybop/.models/docling RUN_INTEGRATION=1 .venv/bin/python -m pytest -q tests/regression/phase_03/test_p03_us02_real_visual_benchmarks.py tests/regression/phase_03/test_p03_us05_real_redline_runs.py tests/regression/phase_03/test_p03_us06_acord_form_read_order.py tests/regression/phase_04/test_p04_us01_public_projection_regression.py tests/regression/phase_05/test_p05_us01_real_visual_routing.py",
+      "exit_code": 0,
+      "summary": "31 passed, 3 warnings in 451.11s (0:07:31)",
+      "passed": 31,
+      "failed": 0,
+      "skipped": 0,
+      "xfailed": 0,
+      "deselected": 0,
+      "warning_disposition": "Three dependency deprecation warnings only; no functional skip, xfail, deselection, or failure."
+    }
+  ],
+  "artifact_validation": {
+    "tooling": ".venv/bin/python using hashlib, json, pdfplumber, and app.models.ParseResult",
+    "invariants_checked_per_case": [
+      "JSON and Markdown run and manifest HTTP status codes are 200",
+      "ParseResult.model_validate succeeds and exact public model_dump equals the stored JSON",
+      "response.md bytes equal canonical_presentation.full.markdown UTF-8 bytes",
+      "response JSON and Markdown hashes and sizes agree with run.json and the v2 artifact manifest",
+      "source hashes, sizes, and physical PDF page counts agree with run.json, manifest, document.page_count, and pages",
+      "rendered-capture hash and size agree with the manifest and source_response_sha256 binds the exact response.json",
+      "each rendered DOM hash, size, and page number agree with both capture and manifest",
+      "each DOM html_sha256 and text_sha256 recomputes from the stored rendered representation",
+      "each source is at most 20 MiB"
+    ],
+    "case_count": 15,
+    "source_page_count": 30,
+    "http_200_output_count": 30,
+    "rendered_dom_count": 30,
+    "all_cases_passed": true,
+    "failed_cases": [],
+    "all_http_200": true,
+    "all_parse_result_model_valid": true,
+    "all_markdown_byte_equal_canonical_full": true,
+    "all_response_hashes_match": true,
+    "all_rendered_capture_hashes_match": true,
+    "all_rendered_dom_hashes_match": true,
+    "all_rendered_html_and_text_hashes_match": true,
+    "all_source_identity_and_page_counts_match": true,
+    "all_sources_within_20mb": true,
+    "largest_source": {
+      "case_id": "uber-earnings",
+      "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "size_bytes": 7584019,
+      "page_count": 3,
+      "limit_bytes": 20971520
+    }
+  },
+  "resolved_defect_confirmation": {
+    "catastrophe_table_evidence": {
+      "status": "fixed_in_v2_artifact",
+      "public_item": "p1-i3",
+      "page_index": 1,
+      "table_evidence_status": "valid",
+      "table_evidence_count": 1,
+      "chart_relationship_count": 16,
+      "chart_exclusion_count": 12,
+      "caption_source_relationship": "rel-c730a7f75ecfecdbefe3",
+      "caption_source_relationship_present": true
+    },
+    "manufacturing_detected_text": {
+      "status": "fixed_in_v2_artifact",
+      "all_projected_visual_detected_text_values_are_boolean": true
+    },
+    "purchase_revision_banner": {
+      "status": "fixed_in_v2_artifact",
+      "public_item": "p1-i9",
+      "type": "text",
+      "markdown": "~~Draft of 6/1/20~~"
+    }
+  },
+  "cases": [
+    {"case_id":"catastrophe-recap","response_json_sha256":"8e87f0c7b2681483304122f92dce48dca698ff536a8e061168b8751627287551","response_markdown_sha256":"d293f534cafa9de630a7e3d6039797aa60029a56f12d001dd0fd3497c9f78f72","rendered_capture_sha256":"6db04749ee89ef5af495af9108e040b53b47a2cb496cbd21d08f0a508c42b377","rendered_dom_sha256":["da68c2b22382d575769905faf3b2519fc26b4302e9faa08914275e3e878789cc"],"all_checks_passed":true},
+    {"case_id":"clean-energy","response_json_sha256":"d668a141b9d655901a8d9c27c8ab42a1a19a23d9643f98be18b9db28c10b79e0","response_markdown_sha256":"86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e","rendered_capture_sha256":"d969e5953042bfdae231091875d75fb5f813861e5d3c67152071612a6d3a8c02","rendered_dom_sha256":["24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46"],"all_checks_passed":true},
+    {"case_id":"clinical-study","response_json_sha256":"e854c6f37bc9df1ffa8e88956b8aeb82ed77f0bb11e499c67aab102e7cd72262","response_markdown_sha256":"8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2","rendered_capture_sha256":"2ccd8147ae17e6c2e88b1f4e97ab86d95f89214b8a0f8b15f6f14ab6fef6a84d","rendered_dom_sha256":["b04956dbf65eed89e77a40522b04ad8839f192fff6210927267e5cd6ce3b45df","78ac06cd1717d1dcd797e771b8ee002277b81d9451d57ebf7d815f1ab448eee5","36a25e704845430a4d291d59d51c39c5ade38ead8f577ad8c0d0a3a742047fbb","d78fadab1c04bb5bffef348060f10cbfe09188dcfac74b274867f951ba50a7a2"],"all_checks_passed":true},
+    {"case_id":"component-datasheet","response_json_sha256":"75d381f7e5bc52a50a3425da683de51bbf2101430a095940ddd1dcdb12a8f0d5","response_markdown_sha256":"4e00f4db0ba84ff89ca12e56dbfd6db87f20fbd24006510122bcfbd15a0b9f49","rendered_capture_sha256":"5a9b8da38959e47e9afd413f56869a6f81e03726848c8f275b9e3b684a45d2d9","rendered_dom_sha256":["63f93bbd685b7409d66780387d5630b2d898cf89a12f23306df3f488bf91c963","94ab7f0663a510d243839bd342551e1e14a7e8931f376652c1526844dcd12576","2ae600267c3664f49358905222e4a4114a0c670825eefc40bfbc26395596d408"],"all_checks_passed":true},
+    {"case_id":"egov-survey","response_json_sha256":"0b6b636778c2f5af28ad7b90d5570d4d8643943dbdef16f6cd54c9a4a3b005dc","response_markdown_sha256":"5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c","rendered_capture_sha256":"8717a8028acb01aa3423e5f58230c406df3fe6055f2290e5f6218476ae485c1c","rendered_dom_sha256":["397bb68ce2990dc3c35a61a120523e3404b4670f84c7a122aba1722d273a388d"],"all_checks_passed":true},
+    {"case_id":"esg-metrics","response_json_sha256":"e44f3e477ced9bd6e75b4c7c746c93d714c728ea934516f6cb8afc568dce0e21","response_markdown_sha256":"987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8","rendered_capture_sha256":"244a7d463a75dfef75f3ce050f3a411fdfbdbb8af74ae7055c18df2887183ec7","rendered_dom_sha256":["a908020838ccf4c9c2865661f968a0c6b57dc824de93ff234aa74897b974df50"],"all_checks_passed":true},
+    {"case_id":"finance-10k","response_json_sha256":"658c81570d089491ca7939c1620c9b4d6fa66497482c479c3d9046ac34410552","response_markdown_sha256":"8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389","rendered_capture_sha256":"8d2b19a3f19411a52ad3de340499bfa9bc7d536232041bd4c4a913e925a98082","rendered_dom_sha256":["603aad315c60c5cba1cb574defa35000c80daa748b67f0061ca13864b1f9b489","043f6f31292acc4f34235c787fb13da74ee91b15bcafe47e018fd55b5033477b","e5b836769959d994f1d48fdc6a42ef76e8371eab064c7a11f7f5da013700a6cb"],"all_checks_passed":true},
+    {"case_id":"health-report","response_json_sha256":"1141de7d2073d8011dbb7b457a466d3736589b04f38fdae61c3287561bbc35b9","response_markdown_sha256":"40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0","rendered_capture_sha256":"fbdf8053c627f45158c54fb94592cf83230a7b9088a99df3e473c3cba4c34652","rendered_dom_sha256":["4e97ee3a513f32a802d9ce6e3b19590083766eca6bb72dc4edee845e180bfb1d"],"all_checks_passed":true},
+    {"case_id":"insurance-acord","response_json_sha256":"2c7d3920e7bd70c337fd021434a583e7ea138f7f4bea03e4004f4616c5a605c1","response_markdown_sha256":"f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1","rendered_capture_sha256":"d883d7ff14f04e852eb7efd75a8ac95cd0864b7992f1ee08330225a14f60dfd1","rendered_dom_sha256":["9078a1088c6a7e3e0bd22376356329d40097b1454440c25f85e907fb9d600ea1"],"all_checks_passed":true},
+    {"case_id":"manufacturing-report","response_json_sha256":"6da11545d36ff46ece7b60ca34238e4626f92e6a86d4757141fd6c15b4e996c5","response_markdown_sha256":"55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599","rendered_capture_sha256":"9b33e4c89fa2eeb8df3cc841f513c7a5eb9b28087a2b7004b4019c48a33005fc","rendered_dom_sha256":["e50b39230ed92eef404f812a866f6d4488e7d4124e40b69366b5a91f949b9db3","614256f247756964f16056020348eff127d31e7f565f1040c9ee359090e45799","35eac8aa104a88393d9c5556af8b4c211a77d38a37ba57f266e45b3387beeea9"],"all_checks_passed":true},
+    {"case_id":"ny-timetable","response_json_sha256":"30dd5861ba8fb3b1b2f60c6282c4120b6467dce4191e845be924029207a6cb54","response_markdown_sha256":"16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef","rendered_capture_sha256":"95694ca2a1561eb9493a25304a0014f855defeab8c4a8f5c604acd459872e449","rendered_dom_sha256":["cb2b4e71f53da84b322e48a57e6c56c68a535c04f0e99d647a4cde6463df1697","912258244934c6dec4dcb6d2c0039b05a09576e16119a479c4ad1f8fa271fd2c","591934902adc44fbaab7f4a918a6d36678b0e733de1c2a7af6c0c5901f7c0187"],"all_checks_passed":true},
+    {"case_id":"postal-10k","response_json_sha256":"b257415acf17ba8611ec2e5c869ecd7be5cfe423f42fbe578db6acd149534f09","response_markdown_sha256":"20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10","rendered_capture_sha256":"7438eec983498f8a27c0e9051762af64f68cd2a7f53f87cf92c486ac21018daf","rendered_dom_sha256":["9340448b3e9ff13dbb999dfd347ce03bb0ddc54efca1395c2e02aac093a82a11","a1b8bda5a73ecd8db69654b21cfa86698fd1e3dacd007693021fc8bded853fc1","e39edce694da8cd4e06ff361f0cf910db7b223d241927356f4ee322257a9e9b2"],"all_checks_passed":true},
+    {"case_id":"purchase-agreement","response_json_sha256":"80de9f66e3a6e589a62d8791c2d161f56235c08bed3a3a0888f0690c215bf9c4","response_markdown_sha256":"cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0","rendered_capture_sha256":"c9db52151195908b500693f90a7d87a22530c985c1ddbbeea4b76834116ddc56","rendered_dom_sha256":["a7f2e2df5895841a387929c7be3aafca123cb97cdadd0f2011866284734135fa"],"all_checks_passed":true},
+    {"case_id":"settlement-agreement","response_json_sha256":"1a54671b094259494687aeed066f582f0b1bca8ab2c3b5b2916854034a0820f7","response_markdown_sha256":"8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d","rendered_capture_sha256":"8268d9e35bc78909d2bff2a33575c5ebadd2a2ae4827e0805f40ff1baff64562","rendered_dom_sha256":["b162dc8ffbdd8646888e6c81d661bb1760cd401b86f336752ae4d39b9ea2afb1"],"all_checks_passed":true},
+    {"case_id":"uber-earnings","response_json_sha256":"c0f4edabd96760fc06056b15e170139cfa474172f30180bfe3db5130a1e27273","response_markdown_sha256":"b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094","rendered_capture_sha256":"ed658bc973fc4c7926ffed4fff4b21a37ff86ab9923998047838048ed536c0b2","rendered_dom_sha256":["18446daff0d52b9ec59ba2dd9c7eac20e7e474e7e77343c6050406d607d8802e","7ad7c6f5e43a612c52df22838827089270093eb3e12fd02e299e00e1d8f63029","50ad989f8edf5b8a4878c9256de46087cc847952db360a2f83176672e1a9bd06"],"all_checks_passed":true}
+  ],
+  "release_validation_status": "backend_functional_fidelity_v2_passed"
+}

@@ -1,0 +1,562 @@
+{
+  "custody": {
+    "accepted_policy": {
+      "path": "tracker/phase-02-text-integrity/decisions/P02-numeric-cleanup-policy.md",
+      "sha256": "aac6e27ac01e81186d94735ca1a842123de86f6a1909565849997d6f60f66cd1",
+      "size_bytes": 3434
+    },
+    "pre_post_input_identity_match": true,
+    "retained_catastrophe": {
+      "artifact": {
+        "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json",
+        "sha256": "3f1f0d9b7768e119d65a887e73f54173df633eeca004e9296bcfeb6aebc91abe",
+        "size_bytes": 79005
+      },
+      "bbox": {
+        "h": 4.6,
+        "height": 4.6,
+        "unit": "pt",
+        "w": 417.2,
+        "width": 417.2,
+        "x": 125.021,
+        "y": 562.51
+      },
+      "legacy_false_join": "201520202025201520202025201520202025201520202025",
+      "matching_diagnostic_surface_count": 2,
+      "observed_source_tokens": [
+        "2015",
+        "2020",
+        "2025",
+        "2015",
+        "2020",
+        "2025",
+        "2015",
+        "2020",
+        "2025",
+        "2015",
+        "2020",
+        "2025"
+      ],
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "word_count": 12
+    },
+    "retained_p02_us04": {
+      "arithmetic_ceiling_percent": 3.093457259977881,
+      "artifact": {
+        "path": "tracker/phase-02-text-integrity/evidence/P02-US04-text-reconciliation-metrics.json",
+        "sha256": "e877a82921b16a071afaade99d4d72fdf6ebfc9e4bb49260bb9c7c08205c1479",
+        "size_bytes": 412636
+      },
+      "observed_paired_full_parser_percentile": false
+    }
+  },
+  "measurement_scope": "pure production OCR line cleanup over one exact retained catastrophe diagnostic binding plus deterministic synthetic digest, numeric non-target, and resource-bound controls; no OCR engine, renderer, document pipeline, layout model, or hosted model is invoked",
+  "metrics": {
+    "approved_digest_case_count": 35,
+    "approved_digest_cleanup_latency_ms": {
+      "max": 0.7143330003600568,
+      "p50": 0.6649589995504357,
+      "p95": 0.7143330003600568
+    },
+    "approved_digest_flag_off_compatibility_count": 35,
+    "approved_digest_join_count": 35,
+    "bound_case_count": 4,
+    "bound_fail_closed_count": 4,
+    "combined_healthy_p95_ceiling_reference": {
+      "arithmetic_ceiling_percent": 3.093762274952003,
+      "numeric_cleanup_p95_percent": 0.0003050149741219683,
+      "observed_paired_full_parser_percentile": false,
+      "passes_target": true,
+      "retained_p02_us04_arithmetic_ceiling_percent": 3.093457259977881,
+      "target_percent": 10.0
+    },
+    "flag_off_observed_legacy_exact": true,
+    "flag_off_sequential_legacy_exact": true,
+    "healthy_numeric_cleanup_additive_overhead_percent": 0.0003050149741219683,
+    "healthy_numeric_cleanup_latency_ms": {
+      "max": 0.1426250018994324,
+      "p50": 0.1326669989794027,
+      "p95": 0.1426250018994324
+    },
+    "hosted_model_cost_usd": 0.0,
+    "hosted_model_request_count": 0,
+    "hosted_model_token_count": 0,
+    "max_isolated_peak_rss_increment_bytes": 98304,
+    "numeric_control_case_count": 16,
+    "numeric_control_exact_count": 16,
+    "observed_48_digit_false_join_count": 0,
+    "observed_year_token_count": 12,
+    "observed_years_exact": true,
+    "resource_bound_cleanup_latency_ms": {
+      "max": 2.1419580007204786,
+      "p50": 1.967041000170866,
+      "p95": 2.1419580007204786
+    },
+    "semantic_output_sha256": "e0febf0c4dbf81e7390efd02db5a149370c69c6c82b358ddeef7099741bcc756",
+    "semantic_output_size_bytes": 15671,
+    "sequential_year_token_count": 12,
+    "sequential_years_exact": true,
+    "target_cleanup_latency_ms": {
+      "max": 0.03362500137882307,
+      "p50": 0.031583000236423686,
+      "p95": 0.03362500137882307
+    }
+  },
+  "record_kind": "p02_us05_numeric_cleanup_component_metrics",
+  "run_inputs": {
+    ".env.example": {
+      "path": ".env.example",
+      "sha256": "9c8cd7a8c9f54ba7ccd8a1e75d9b3387cf4b1459d0e3f2a0416590a22dbabfc2",
+      "size_bytes": 2483
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "8d347f4eeb2252341b38ddc4cc61b5beb460150c33e3be09e6764e62051710aa",
+      "size_bytes": 23992
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "sha256": "7708af4f5266b9081369144ea609948158e29c22a671690168460034a1e16923",
+      "size_bytes": 10962
+    },
+    "app/services/ocr.py": {
+      "path": "app/services/ocr.py",
+      "sha256": "0cae09f25758b2270646359733c90c9c0cbb5c6b7a176411ccd18a89c56e85a2",
+      "size_bytes": 52927
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "sha256": "37237609d8e7e186e5674cfb28cd2a85f668ff1b2fb52d89e35af1b7e833c61e",
+      "size_bytes": 126511
+    },
+    "app/services/selective_span_ocr.py": {
+      "path": "app/services/selective_span_ocr.py",
+      "sha256": "195c4683bc9754c341dee54a6e5c1a0f96c9a6c3b1458b6cd9f74564f56ca64d",
+      "size_bytes": 75428
+    },
+    "tests/benchmarks/numeric_cleanup_metrics.py": {
+      "path": "tests/benchmarks/numeric_cleanup_metrics.py",
+      "sha256": "0151cc2bda3576ce887619ac0b0ea269c472a7f8afea69bd95badc2dc71ed4b3",
+      "size_bytes": 23487
+    },
+    "tests/contract/test_p02_us05_numeric_cleanup_contract.py": {
+      "path": "tests/contract/test_p02_us05_numeric_cleanup_contract.py",
+      "sha256": "d6eaf9075bc18a280b8f0a06d1ef8ef33f73bbd8219305fcb1ab80ef9b1d786f",
+      "size_bytes": 15530
+    },
+    "tests/performance/test_p02_us05_numeric_cleanup_performance.py": {
+      "path": "tests/performance/test_p02_us05_numeric_cleanup_performance.py",
+      "sha256": "f5913591289f6770e0879f16d0e9e0bb4a39a3fdfcf6ddb2c3860620804d5bd9",
+      "size_bytes": 7574
+    },
+    "tests/regression/phase_02/test_p02_us05_numeric_cleanup_adversarial_review.py": {
+      "path": "tests/regression/phase_02/test_p02_us05_numeric_cleanup_adversarial_review.py",
+      "sha256": "385252af1db4648d4e0f54bf83c2cf69a865b47176f5256066d84dbab27a5425",
+      "size_bytes": 1642
+    },
+    "tests/regression/phase_02/test_p02_us05_numeric_cleanup_regression.py": {
+      "path": "tests/regression/phase_02/test_p02_us05_numeric_cleanup_regression.py",
+      "sha256": "da28890e6e460987d755055236b94cd806d5bad6358a1967fe051f46459c051a",
+      "size_bytes": 10297
+    },
+    "tests/stories/phase_02/test_p02_us05_numeric_cleanup.py": {
+      "path": "tests/stories/phase_02/test_p02_us05_numeric_cleanup.py",
+      "sha256": "ee2a46a7b1d96e38053780da12d5723566793cc35af3a3d1cecc0d2d76f64f7b",
+      "size_bytes": 11318
+    },
+    "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/catastrophe-recap/our-output.json",
+      "sha256": "3f1f0d9b7768e119d65a887e73f54173df633eeca004e9296bcfeb6aebc91abe",
+      "size_bytes": 79005
+    },
+    "tracker/phase-02-text-integrity/decisions/P02-numeric-cleanup-policy.md": {
+      "path": "tracker/phase-02-text-integrity/decisions/P02-numeric-cleanup-policy.md",
+      "sha256": "aac6e27ac01e81186d94735ca1a842123de86f6a1909565849997d6f60f66cd1",
+      "size_bytes": 3434
+    },
+    "tracker/phase-02-text-integrity/evidence/P02-US04-text-reconciliation-metrics.json": {
+      "path": "tracker/phase-02-text-integrity/evidence/P02-US04-text-reconciliation-metrics.json",
+      "sha256": "e877a82921b16a071afaade99d4d72fdf6ebfc9e4bb49260bb9c7c08205c1479",
+      "size_bytes": 412636
+    }
+  },
+  "samples": 10,
+  "schema_version": "1.0",
+  "semantic_results": {
+    "bounds": {
+      "cases": [
+        {
+          "case_id": "line_character_limit",
+          "expected_sha256": "8bb1c6bc9f1e2d85d7910de2a87e01dca8f54da9314652af99d81cc2d2dded0d",
+          "flag_on_sha256": "8bb1c6bc9f1e2d85d7910de2a87e01dca8f54da9314652af99d81cc2d2dded0d",
+          "output_size_bytes": 65626
+        },
+        {
+          "case_id": "line_token_limit",
+          "expected_sha256": "f500be07418aaeac1aec0aa291a7269a4dab277933db2abe73f39ec51e928809",
+          "flag_on_sha256": "f500be07418aaeac1aec0aa291a7269a4dab277933db2abe73f39ec51e928809",
+          "output_size_bytes": 8282
+        },
+        {
+          "case_id": "fragment_count_limit",
+          "expected_sha256": "621ff7a1772890e6b57a14400239ce8e756dab67b99228581a234d0eb695b838",
+          "flag_on_sha256": "621ff7a1772890e6b57a14400239ce8e756dab67b99228581a234d0eb695b838",
+          "output_size_bytes": 200
+        },
+        {
+          "case_id": "candidate_character_limit",
+          "expected_sha256": "1f904d2f7515249d0349dfe0eba7c0181426e75faa3ea56afa03bfc9f2fc53f8",
+          "flag_on_sha256": "1f904d2f7515249d0349dfe0eba7c0181426e75faa3ea56afa03bfc9f2fc53f8",
+          "output_size_bytes": 170
+        }
+      ]
+    },
+    "controls": {
+      "cases": [
+        {
+          "case_id": "iso_date_and_time",
+          "expected": "2026 07 30 12 45 59",
+          "flag_on": "2026 07 30 12 45 59"
+        },
+        {
+          "case_id": "money",
+          "expected": "$ 1250 2025 4500 10000 75000 250000",
+          "flag_on": "$ 1250 2025 4500 10000 75000 250000"
+        },
+        {
+          "case_id": "percentages",
+          "expected": "5 10 25 50 75 90 100",
+          "flag_on": "5 10 25 50 75 90 100"
+        },
+        {
+          "case_id": "page_numbers",
+          "expected": "Page 20 21 22 23 24 25 of 120",
+          "flag_on": "Page 20 21 22 23 24 25 of 120"
+        },
+        {
+          "case_id": "ordinary_numeric_list",
+          "expected": "1000 2000 3000 4000 5000 6000",
+          "flag_on": "1000 2000 3000 4000 5000 6000"
+        },
+        {
+          "case_id": "decimal_digest_length_after_hash_label",
+          "expected": "SHA-256: 0000 1111 2222 3333 4444 5555 6666 7777 8888 9999 0000 1111 2222 3333 4444 5555",
+          "flag_on": "SHA-256: 0000 1111 2222 3333 4444 5555 6666 7777 8888 9999 0000 1111 2222 3333 4444 5555"
+        },
+        {
+          "case_id": "bare_known_length_hex",
+          "expected": "ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "generic_id",
+          "expected": "ID: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "ID: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "invoice_identifier",
+          "expected": "Invoice: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "Invoice: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "account_identifier",
+          "expected": "Account: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "Account: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "serial_identifier",
+          "expected": "Serial: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "Serial: ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "distant_digest_label",
+          "expected": "SHA-256: verified value ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "SHA-256: verified value ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "lowercase_candidate",
+          "expected": "SHA-256: abcd ef01 2345 6789 abcd ef01 2345 6789 abcd ef01 2345 6789 abcd ef01 2345 6789",
+          "flag_on": "SHA-256: abcd ef01 2345 6789 abcd ef01 2345 6789 abcd ef01 2345 6789 abcd ef01 2345 6789"
+        },
+        {
+          "case_id": "punctuated_candidate",
+          "expected": "SHA-256: ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789,",
+          "flag_on": "SHA-256: ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789, ABCD, EF01, 2345, 6789,"
+        },
+        {
+          "case_id": "unicode_confusable_candidate",
+          "expected": "SHA-256: АBCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789",
+          "flag_on": "SHA-256: АBCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789 ABCD EF01 2345 6789"
+        },
+        {
+          "case_id": "mixed_ordinary_alphanumeric",
+          "expected": "AB12 CD34 EF56 A789 BC01 DE23 F456 A789 BC01 DE23 F456 A789 BC01 DE23 F456 A789",
+          "flag_on": "AB12 CD34 EF56 A789 BC01 DE23 F456 A789 BC01 DE23 F456 A789 BC01 DE23 F456 A789"
+        }
+      ]
+    },
+    "digests": {
+      "cases": [
+        {
+          "case_id": "md5_32",
+          "expected": "MD5: ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "MD5: ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "MD5: ABCDEF0123456789ABCDEF0123456789",
+          "length": 32
+        },
+        {
+          "case_id": "sha1_40",
+          "expected": "SHA1= ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "SHA1= ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "SHA1= ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "sha_1_40",
+          "expected": "SHA-1: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "SHA-1: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "SHA-1: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "sha224_56",
+          "expected": "SHA224= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "SHA224= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "SHA224= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "sha_224_56",
+          "expected": "SHA-224: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "SHA-224: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "SHA-224: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "sha256_64",
+          "expected": "SHA256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "sha_256_64",
+          "expected": "SHA-256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA-256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA-256: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "sha384_96",
+          "expected": "SHA384= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA384= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA384= ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "sha_384_96",
+          "expected": "SHA-384: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA-384: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA-384: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "sha512_128",
+          "expected": "SHA512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        },
+        {
+          "case_id": "sha_512_128",
+          "expected": "SHA-512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "SHA-512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "SHA-512: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        },
+        {
+          "case_id": "hash-32",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789",
+          "length": 32
+        },
+        {
+          "case_id": "hash-40",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "hash-56",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "hash-64",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "hash-96",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "hash-128",
+          "expected": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "HASH: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        },
+        {
+          "case_id": "checksum-32",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789",
+          "length": 32
+        },
+        {
+          "case_id": "checksum-40",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "checksum-56",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "checksum-64",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "checksum-96",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "checksum-128",
+          "expected": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "CHECKSUM: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        },
+        {
+          "case_id": "digest-32",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789",
+          "length": 32
+        },
+        {
+          "case_id": "digest-40",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "digest-56",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "digest-64",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "digest-96",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "digest-128",
+          "expected": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "DIGEST: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        },
+        {
+          "case_id": "fingerprint-32",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789",
+          "length": 32
+        },
+        {
+          "case_id": "fingerprint-40",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 40
+        },
+        {
+          "case_id": "fingerprint-56",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF01",
+          "length": 56
+        },
+        {
+          "case_id": "fingerprint-64",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 64
+        },
+        {
+          "case_id": "fingerprint-96",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 96
+        },
+        {
+          "case_id": "fingerprint-128",
+          "expected": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_off": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "flag_on": "FINGERPRINT: ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789ABCDEF0123456789",
+          "length": 128
+        }
+      ]
+    },
+    "target": {
+      "observed": {
+        "flag_off": "201520202025201520202025201520202025201520202025",
+        "flag_on": "2015 2020 2025 2015 2020 2025 2015 2020 2025 2015 2020 2025",
+        "input": "2015 2020 2025 2015 2020 2025 2015 2020 2025 2015 2020 2025"
+      },
+      "sequential": {
+        "flag_off": "201020112012201320142015201620172018201920202021",
+        "flag_on": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021",
+        "input": "2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021"
+      }
+    }
+  },
+  "warmups": 2,
+  "workspace": "/Users/vignesh/Downloads/taffybop"
+}

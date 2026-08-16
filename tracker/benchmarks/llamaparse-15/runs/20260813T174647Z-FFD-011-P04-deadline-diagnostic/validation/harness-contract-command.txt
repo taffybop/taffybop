@@ -1,0 +1,1 @@
+PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -p no:cacheprovider -q tests/contract/test_p04_us01_diagnostic_document_budget.py tests/benchmarks/test_p04_deadline_diagnostic.py tests/contract/test_p04_us01_table_contract.py tests/contract/test_p04_us01_table_semantics_runtime_contract.py tests/stories/phase_04/test_p04_us01_table_dependency_rollback.py

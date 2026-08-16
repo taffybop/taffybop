@@ -1,0 +1,1 @@
+.venv/bin/pytest -q tests/regression/phase_02/test_p02_us04_table_owned_ocr_regression.py::test_real_postal_has_no_detached_complete_fers_line -vv

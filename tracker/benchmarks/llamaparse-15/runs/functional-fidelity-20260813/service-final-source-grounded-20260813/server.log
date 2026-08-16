@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 136/770 [00:00<00:01, 569.46it/s]Loading weights:  38%|███▊      | 291/770 [00:00<00:00, 935.88it/s]Loading weights:  79%|███████▉  | 610/770 [00:00<00:00, 1720.60it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1577.81it/s]
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x128f5a690>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x107ced260>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x107ceecf0>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x14a063350>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x14a490230>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x14a491f40>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'

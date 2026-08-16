@@ -1,0 +1,15 @@
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 179/770 [00:00<00:00, 1787.76it/s]Loading weights:  74%|███████▍  | 573/770 [00:00<00:00, 3049.70it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 3147.88it/s]
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x1288ad490>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x1499abbd0>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x1499ab350>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x149fbb050>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x14ab7f2f0>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x14ab7e120>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/multiprocessing/resource_tracker.py:301: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-26jkfszv'}
+  warnings.warn(

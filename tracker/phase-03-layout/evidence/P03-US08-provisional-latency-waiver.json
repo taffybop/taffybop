@@ -1,0 +1,113 @@
+{
+  "approval": {
+    "authorized_on": "2026-08-03",
+    "owner": "project owner/requester",
+    "source": "active Codex thread",
+    "statements": [
+      "latency alone can be fine at the moment - we can work that up later",
+      "Latency alone can be worked updated later - atleast if it is close then fine- not rquired to be precisely within borders at the moment - even of it is very close beyond borders - that should be fine"
+    ]
+  },
+  "complete_companion": {
+    "code_manifest_sha256": "5212a1f27a70053ab93b5c6475cbc87e0dd8c6288a0a7f84e3ef40c0d2c1e436",
+    "generated_at": "2026-08-03T05:12:44+05:30",
+    "internal_retained_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics.json",
+    "paired_worker_count": 20,
+    "physical_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-31-post-seal-invalid.json",
+    "raw_sha256": "925f16fcff8bfe54bf20ec40d19e7395ca2fae2e68f8694b49e5c08b65a9ad50",
+    "semantic_sha256": "59fe4439b0afbcd99b37c4a19fc006ad436ad623772d007e859ef117561f4fe4",
+    "size_bytes": 230069,
+    "status": "final_measurement_candidate"
+  },
+  "custody_bridge": {
+    "all_other_code_paths_match": true,
+    "current_code_manifest_sha256": "30e6025c3d5f02f2797476cb56ecbdb2349ddc0a57b730fc01e35a9667ce1e3f",
+    "difference_scope": "retained-artifact validator and its contract test only",
+    "differing_paths": [
+      "tests/benchmarks/running_region_metrics.py",
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py"
+    ],
+    "product_runtime_paths_match": true
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-provisional-latency-exception.md",
+    "raw_sha256": "7bea63acad8403e442362edd8aabe0f4db084e6abd0cdd59e2b148b40a8b0d25",
+    "size_bytes": 3476
+  },
+  "decision_path": "tracker/phase-03-layout/decisions/P03-US08-provisional-latency-exception.md",
+  "deferred_work": {
+    "required_outcome": "replace this exception with a strict current-code final campaign or explicitly renew it",
+    "scope": [
+      "near-boundary projection latency",
+      "fresh-process RSS measurement stability"
+    ]
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "maximum_overrun_fraction": 0.05,
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "expired_effect": "P03-US08 returns to In Progress and dependent exit claims are blocked",
+    "expires_before": [
+      "production enablement",
+      "Phase 04 exit"
+    ],
+    "expires_on_runtime_code_change": true,
+    "review_due_on": "2026-09-02"
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "hosted_usage": {
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_compatibility",
+    "code_dependency_input_and_fixture_custody",
+    "correctness_and_quality",
+    "deadlines_and_resource_boundaries",
+    "hosted_usage",
+    "output_sizes",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "feature_flag_default": false,
+    "rollback": "disable the flag to skip US08 work and return the exact configured predecessor"
+  },
+  "primary_candidate": {
+    "code_manifest_sha256": "30e6025c3d5f02f2797476cb56ecbdb2349ddc0a57b730fc01e35a9667ce1e3f",
+    "generated_at": "2026-08-03T13:02:11+05:30",
+    "internal_retained_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-48-failed.json",
+    "physical_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-48-failed.json",
+    "raw_sha256": "1289f186c1cd6ee7f99eaa843f66e5416f15c0215e205e0ed5936737cd2a7123",
+    "semantic_sha256": "51433843638d69a2d09ced0d96a44a34323b1f5ece9c890c7c91088bac2df2e5",
+    "size_bytes": 158921,
+    "status": "failed_measurement_candidate"
+  },
+  "record_kind": "p03_us08_user_authorized_latency_exception",
+  "schema_version": "1.0",
+  "semantic_sha256": "0d3cd13942dd465c537dd7075baf0d2e8b30bc5dd891af55622c07f493610554",
+  "status": "accepted_with_time_bounded_metrics_exception",
+  "story": "P03-US08",
+  "waiver_id": "P03-US08-LATENCY-EXCEPTION-20260803"
+}

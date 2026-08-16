@@ -1,0 +1,21 @@
+{
+  "schema_version": "ffd-011-validation-attempt-v1",
+  "status": "rejected",
+  "reason": "llamaparse_content_cache_reused_prior_job",
+  "observed_job": {
+    "user_metadata": null,
+    "id": "pjb-14b0cvq6kxwvp0khz6m4luax0q47",
+    "created_at": "2026-08-12T18:31:44.394536Z",
+    "updated_at": "2026-08-12T18:32:00.665156Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "postal-10k.pdf",
+    "tier": "agentic"
+  },
+  "observed_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-14b0cvq6kxwvp0khz6m4luax0q47",
+  "expected_fresh_after_utc": "2026-08-13T14:07:08Z",
+  "adjudication": "Job created_at predates remediation; artifacts preserved but cannot satisfy fresh-job closure. A new Run again job was required.",
+  "replacement_attempt": "../20260813T141438Z-FFD-011-focused",
+  "preserved_at_utc": "2026-08-13T14:36:21.376Z"
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": "1.0",
+  "document": {
+    "filename": "ubereats-image.png",
+    "mime_type": "image/png",
+    "sha256": "fa32a1fa95c39cbd38b109414458009897d6f779e3a53298ac067c547f7c6a79",
+    "page_count": 1,
+    "image_count": 1,
+    "source_format": "PNG",
+    "orientation_corrected_pages": [],
+    "page_source_image_count": 1,
+    "content_region_count": 1,
+    "content_region_types": {
+      "image": 1
+    }
+  },
+  "pages": [
+    {
+      "page_index": 1,
+      "page_number": 1,
+      "page_label": "1",
+      "page_width": 600.0,
+      "page_height": 800.0,
+      "unit": "px",
+      "success": true,
+      "items": [
+        {
+          "id": "p1-i1",
+          "type": "image",
+          "reading_order": 0,
+          "value": "",
+          "md": "[Image detected; no reliable text extracted.]",
+          "bbox": {
+            "x": 47.211,
+            "y": 266.303,
+            "width": 505.041,
+            "height": 148.888,
+            "unit": "px",
+            "w": 505.041,
+            "h": 148.888
+          },
+          "source": "derived",
+          "confidence": null,
+          "content_type": "image",
+          "ocr_text": "",
+          "raw_ocr_text": "fae",
+          "detected_text": false,
+          "items": [
+            {
+              "value": "fae",
+              "text": "fae",
+              "bbox": {
+                "x": 256.0,
+                "y": 300.0,
+                "w": 35.0,
+                "h": 21.0,
+                "width": 35.0,
+                "height": 21.0,
+                "unit": "px"
+              },
+              "confidence": 0.244,
+              "word_count": 1,
+              "source": "ocr",
+              "accepted": false,
+              "rejection_reason": "low_confidence"
+            }
+          ],
+          "caption": null,
+          "caption_source": null,
+          "caption_generated": false,
+          "caption_confidence": null,
+          "include_ocr_in_primary": false,
+          "region_role": "content_region",
+          "parse_concerns": [],
+          "warnings": [
+            "No reliable text or visual structure was detected."
+          ],
+          "annotations": []
+        },
+        {
+          "id": "p1-i2",
+          "type": "heading",
+          "reading_order": 1,
+          "value": "Uber Technologies, Inc.",
+          "md": "# Uber Technologies, Inc.",
+          "bbox": {
+            "x": 49.0,
+            "y": 395.0,
+            "width": 411.0,
+            "height": 73.0,
+            "unit": "px",
+            "w": 411.0,
+            "h": 73.0
+          },
+          "source": "ocr",
+          "confidence": 0.9603,
+          "label": "inferred_heading",
+          "raw_ocr_text": "Uber Technologies, Inc.",
+          "parse_concerns": [
+            "layout_omission_recovered_by_ocr",
+            "heading_inferred_from_image_geometry"
+          ],
+          "level": 1
+        },
+        {
+          "id": "p1-i3",
+          "type": "text",
+          "reading_order": 2,
+          "value": "May 7, 2025",
+          "md": "May 7, 2025",
+          "bbox": {
+            "x": 505.0,
+            "y": 422.0,
+            "width": 47.0,
+            "height": 15.333,
+            "unit": "px",
+            "w": 47.0,
+            "h": 15.333
+          },
+          "source": "ocr",
+          "confidence": 0.3679,
+          "label": "text",
+          "confidence_source": "matched_page_ocr"
+        },
+        {
+          "id": "p1-i4",
+          "type": "heading",
+          "reading_order": 3,
+          "value": "Q1 2025 Earnings",
+          "md": "# Q1 2025 Earnings",
+          "bbox": {
+            "x": 48.0,
+            "y": 470.0,
+            "width": 307.667,
+            "height": 38.333,
+            "unit": "px",
+            "w": 307.667,
+            "h": 38.333
+          },
+          "source": "ocr",
+          "confidence": 0.9152,
+          "label": "section_header",
+          "level": 1,
+          "confidence_source": "matched_page_ocr"
+        },
+        {
+          "id": "p1-i5",
+          "type": "text",
+          "reading_order": 4,
+          "value": "Supplemental Data",
+          "md": "Supplemental Data",
+          "bbox": {
+            "x": 48.333,
+            "y": 514.0,
+            "width": 143.667,
+            "height": 16.0,
+            "unit": "px",
+            "w": 143.667,
+            "h": 16.0
+          },
+          "source": "ocr",
+          "confidence": 0.9588,
+          "label": "text",
+          "confidence_source": "matched_page_ocr"
+        }
+      ],
+      "warnings": [],
+      "detected_images": [
+        {
+          "type": "image",
+          "value": "fae\nUber Technologies, Inc.\nMay7,2025\nQ1 2025 Earnings\nSupplemental Data",
+          "ocr_text": "fae\nUber Technologies, Inc.\nMay7,2025\nQ1 2025 Earnings\nSupplemental Data",
+          "cleaned_ocr_text": "Uber Technologies, Inc.\nMay7,2025\nQ1 2025 Earnings\nSupplemental Data",
+          "raw_ocr_text": "fae\nUber Technologies, Inc.\nMay7,2025\nQ1 2025 Earnings\nSupplemental Data",
+          "md": "fae\nUber Technologies, Inc.\nMay7,2025\nQ1 2025 Earnings\nSupplemental Data",
+          "bbox": {
+            "x": 0.0,
+            "y": 0.0,
+            "w": 600.0,
+            "h": 800.0,
+            "width": 600.0,
+            "height": 800.0,
+            "unit": "px"
+          },
+          "source": "ocr",
+          "confidence": 0.8393,
+          "detected_text": true,
+          "pixel_width": 600,
+          "pixel_height": 800,
+          "area_ratio": 1.0,
+          "items": [
+            {
+              "value": "fae",
+              "text": "fae",
+              "bbox": {
+                "x": 256.0,
+                "y": 300.0,
+                "w": 35.0,
+                "h": 21.0,
+                "width": 35.0,
+                "height": 21.0,
+                "unit": "px"
+              },
+              "confidence": 0.244,
+              "word_count": 1,
+              "source": "ocr",
+              "accepted": false,
+              "rejection_reason": "low_confidence"
+            },
+            {
+              "value": "Uber Technologies, Inc.",
+              "text": "Uber Technologies, Inc.",
+              "bbox": {
+                "x": 49.0,
+                "y": 395.0,
+                "w": 411.0,
+                "h": 73.0,
+                "width": 411.0,
+                "height": 73.0,
+                "unit": "px"
+              },
+              "confidence": 0.9603,
+              "word_count": 3,
+              "source": "ocr",
+              "accepted": true,
+              "rejection_reason": null
+            },
+            {
+              "value": "May7,2025",
+              "text": "May7,2025",
+              "bbox": {
+                "x": 505.0,
+                "y": 426.0,
+                "w": 47.0,
+                "h": 9.0,
+                "width": 47.0,
+                "height": 9.0,
+                "unit": "px"
+              },
+              "confidence": 0.3679,
+              "word_count": 1,
+              "source": "ocr",
+              "accepted": true,
+              "rejection_reason": null,
+              "acceptance_note": "accepted_informative_low_confidence_text"
+            },
+            {
+              "value": "Q1 2025 Earnings",
+              "text": "Q1 2025 Earnings",
+              "bbox": {
+                "x": 48.0,
+                "y": 470.0,
+                "w": 307.0,
+                "h": 38.0,
+                "width": 307.0,
+                "height": 38.0,
+                "unit": "px"
+              },
+              "confidence": 0.9152,
+              "word_count": 3,
+              "source": "ocr",
+              "accepted": true,
+              "rejection_reason": null
+            },
+            {
+              "value": "Supplemental Data",
+              "text": "Supplemental Data",
+              "bbox": {
+                "x": 48.0,
+                "y": 514.0,
+                "w": 144.0,
+                "h": 16.0,
+                "width": 144.0,
+                "height": 16.0,
+                "unit": "px"
+              },
+              "confidence": 0.9588,
+              "word_count": 2,
+              "source": "ocr",
+              "accepted": true,
+              "rejection_reason": null
+            }
+          ],
+          "warnings": [],
+          "region_role": "page_source",
+          "rejected_ocr_candidates": [
+            {
+              "text": "Uber Technologies, Inc, 7",
+              "bbox": {
+                "x": 49.0,
+                "y": 401.0,
+                "w": 503.0,
+                "h": 67.0,
+                "width": 503.0,
+                "height": 67.0,
+                "unit": "px"
+              },
+              "confidence": 0.8843,
+              "word_count": 4,
+              "ocr_pass": "standard",
+              "accepted": false,
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Uber Technologies, Inc.",
+              "source": "ocr"
+            },
+            {
+              "text": "Q1 2025 Earnings",
+              "bbox": {
+                "x": 48.0,
+                "y": 470.0,
+                "w": 307.0,
+                "h": 38.0,
+                "width": 307.0,
+                "height": 38.0,
+                "unit": "px"
+              },
+              "confidence": 0.9152,
+              "word_count": 3,
+              "ocr_pass": "sparse",
+              "accepted": false,
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Q1 2025 Earnings",
+              "source": "ocr"
+            },
+            {
+              "text": "Supplemental Data",
+              "bbox": {
+                "x": 48.0,
+                "y": 514.0,
+                "w": 144.0,
+                "h": 16.0,
+                "width": 144.0,
+                "height": 16.0,
+                "unit": "px"
+              },
+              "confidence": 0.9588,
+              "word_count": 2,
+              "ocr_pass": "sparse",
+              "accepted": false,
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Supplemental Data",
+              "source": "ocr"
+            }
+          ],
+          "content_type": "page_image",
+          "metadata": {
+            "frame_index": 0,
+            "original_orientation": null,
+            "orientation_applied": false
+          },
+          "id": "p1-image1"
+        }
+      ],
+      "image_metadata": {
+        "frame_index": 0,
+        "pixel_width": 600,
+        "pixel_height": 800,
+        "source_format": "PNG",
+        "original_orientation": null,
+        "orientation_applied": false
+      }
+    }
+  ],
+  "processing": {
+    "engine": "docling",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "duration_ms": 8375,
+    "native_text_engine": null,
+    "table_engines": [
+      "docling"
+    ],
+    "local_processing": true,
+    "input_format": "image",
+    "page_loader": "pillow",
+    "image_quality": {
+      "primary_ocr_min_confidence": 0.45,
+      "low_confidence_min_alnum_chars": 8,
+      "heading_min_confidence": 0.75,
+      "heading_height_ratio": 1.8,
+      "picture_classification_threshold": 0.6
+    },
+    "picture_captioning": {
+      "requested": false,
+      "local_model_available": false
+    }
+  },
+  "warnings": [
+    "Picture classification was skipped because its model is unavailable in the configured local Docling artifacts."
+  ]
+}

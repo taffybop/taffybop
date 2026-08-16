@@ -1,0 +1,102 @@
+{
+  "case_id": "clean-energy",
+  "case_latency_ms": 8466.603707987815,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "clean-energy",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-integration-20260729-03/clean-energy",
+    "--run-id",
+    "p00-us10-integration-20260729-03",
+    "--order",
+    "2",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:51:13.778131+00:00",
+  "cpu_ms": 5890.733,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 2,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 1,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-integration-20260729-03/clean-energy/our-output.md",
+      "role": "markdown",
+      "sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+      "size_bytes": 886
+    },
+    "observed_page_count": 1,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-integration-20260729-03/clean-energy/our-output.json",
+      "role": "raw_json",
+      "sha256": "8cc430cde5aeeeea5048887a3a867d3859b313d6ccd76f75dc5620fb061df15b",
+      "size_bytes": 107628
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-integration-20260729-03/clean-energy/our-output.json",
+      "role": "semantic_json",
+      "sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+      "size_bytes": 52165
+    },
+    "successful_page_count": 1
+  },
+  "parse_latency_ms": 7379.472708096728,
+  "peak_rss_bytes": 1498169344,
+  "reference_comparison": {
+    "case_id": "clean-energy",
+    "current_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+    "current_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+    "reference_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 1,
+  "run_id": "p00-us10-integration-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/clean-energy.pdf",
+      "role": "source",
+      "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "size_bytes": 122014
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/clean-energy.md",
+      "role": "expert_markdown",
+      "sha256": "746cc8d471e85c988dbfcf88b3940e2e001716b38359f9dc8d67fd6ca081ee4a",
+      "size_bytes": 1258
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/clean-energy.json",
+      "role": "expert_json",
+      "sha256": "9252f22f0301ef8097c19667064dfaae4d374617a1784159c812f86b0cd9d1e9",
+      "size_bytes": 14730
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:51:06.391801+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

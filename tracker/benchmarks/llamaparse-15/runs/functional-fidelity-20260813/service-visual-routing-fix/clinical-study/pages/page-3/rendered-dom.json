@@ -1,0 +1,5 @@
+{
+  "page_number": 3,
+  "html": "<article class=\"rendered-page\" aria-label=\"Canonical content for physical page 3\"><p class=\"parsed-paragraph\" data-item-type=\"diagram\" style=\"white-space:pre-wrap\">[Diagram detected; no reliable text extracted.]</p><p class=\"parsed-caption\" data-caption-id=\"layout-caption-1c49cc0c4d0076181d81\" data-caption-of=\"p3-i2\" data-item-type=\"caption\" data-relationship-id=\"layout-rel-8ce1a525eddef676058b\" style=\"white-space:pre-wrap\">Fig 1. Flowchart.</p><p class=\"parsed-note parsed-footnote\" data-item-type=\"footnote\" data-note-id=\"layout-note-b9b7e1060f593ca6f8ad\" data-note-kind=\"footnote\" data-note-of=\"p3-i2\" data-note-relationship-id=\"layout-rel-06ba2ee8eee198a40a1b\" style=\"white-space:pre-wrap\">https://doi.org/10.1371/journal.pmed.1004460.g001</p></article>",
+  "text": "[Diagram detected; no reliable text extracted.]\n\nFig 1. Flowchart.\n\nhttps://doi.org/10.1371/journal.pmed.1004460.g001"
+}

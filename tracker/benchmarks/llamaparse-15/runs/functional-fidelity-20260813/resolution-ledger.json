@@ -1,0 +1,74 @@
+{
+  "cases": {
+    "catastrophe-recap": {
+      "prior_discrepancy_ids": [
+        "FID-CATASTROPHE-RECAP-80d905db1393"
+      ],
+      "validated_artifact_sha256": {
+        "reference_markdown": "ae13b7417fd230b7ed727f78b863a09a0a77c5451b428be2392dfd893ffe1db3",
+        "reference_json": "272286e328081551b9a50e939d967ea4870e1ac1ec10aed8e089a6547822dd2a",
+        "candidate_markdown": "d293f534cafa9de630a7e3d6039797aa60029a56f12d001dd0fd3497c9f78f72",
+        "candidate_json": "5c26946635be47020647a69f6b2ebda2e5238dba0abdabd4712d852dd42da45d"
+      },
+      "code_changes": [
+        "app/services/pipeline.py: rebind non-target visual canonical blocks to exact public layout relationships and exclusions",
+        "app/models.py: require complete context-free public overlay validation"
+      ],
+      "validation": [
+        "local: .venv/bin/pytest -q tests/regression/phase_04/test_p04_us01_public_projection_regression.py -> 2 passed",
+        "agent-verified: P03/P04 custody suites -> 187 passed",
+        "agent-verified: API/model/visual suites -> 139 passed",
+        "agent-verified: opt-in exact two-case corpus drift -> 2 passed",
+        "agent-verified: compileall passed",
+        "fresh LlamaParse Agentic job pjb-7zcmu6esqvbzn6dxsc5lefxs2qa3",
+        "fresh post-fix HTTP JSON and Markdown 200 responses",
+        "fresh reference and service rendered-DOM capture"
+      ],
+      "validation_scope": "Public API parse-blocking defect only; unrelated fidelity differences remain open.",
+      "remaining_evidence": [
+        "See comparison/catastrophe-recap/evidence.json for current Markdown, JSON, visual, table, and rendered differences."
+      ],
+      "resolved_discrepancies": [
+        {
+          "prior_id": "FID-CATASTROPHE-RECAP-80d905db1393",
+          "category": "api_parse_failure"
+        }
+      ]
+    },
+    "postal-10k": {
+      "prior_discrepancy_ids": [
+        "FID-POSTAL-10K-805dd524ea4c"
+      ],
+      "validated_artifact_sha256": {
+        "reference_markdown": "50f2590c2b74ff6d71f74a59723582c0f5eba978b8efdaa5fae92cc6ea8f0ad4",
+        "reference_json": "00759abb20269353750a1542b971c11424f84aca78d0c81a014d4f3121eb2348",
+        "candidate_markdown": "2a85a12036172b25d2347781fc88a89c71a81089712b502ae3010011a5345eca",
+        "candidate_json": "a11192a94c5f395c16be46428a94b93ec0dc7659d075ed4a1a0f55478ae5d2a3"
+      },
+      "code_changes": [
+        "app/services/pipeline.py: rebind non-target running-region canonical blocks to singleton public custody",
+        "app/models.py: require complete context-free public overlay validation"
+      ],
+      "validation": [
+        "local: .venv/bin/pytest -q tests/regression/phase_04/test_p04_us01_public_projection_regression.py -> 2 passed",
+        "agent-verified: P03/P04 custody suites -> 187 passed",
+        "agent-verified: API/model/visual suites -> 139 passed",
+        "agent-verified: opt-in exact two-case corpus drift -> 2 passed",
+        "agent-verified: compileall passed",
+        "fresh LlamaParse Agentic job pjb-a97cbzz7kcwjfk5n2n51r6jkyljc",
+        "fresh post-fix HTTP JSON and Markdown 200 responses",
+        "fresh reference and service rendered-DOM capture"
+      ],
+      "validation_scope": "Public API parse-blocking defect only; unrelated fidelity differences remain open.",
+      "remaining_evidence": [
+        "See comparison/postal-10k/evidence.json for current Markdown, JSON, table, and rendered differences."
+      ],
+      "resolved_discrepancies": [
+        {
+          "prior_id": "FID-POSTAL-10K-805dd524ea4c",
+          "category": "api_parse_failure"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1023 @@
+{
+  "schema_id": "ny-timetable-cold-warm-stage-diagnostic-v2",
+  "classification": "diagnostic-only-non-release-non-closure",
+  "started_at": "2026-08-15T19:25:56.135966Z",
+  "workspace": "/Users/vignesh/Downloads/taffybop",
+  "command": [
+    "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+    "/Users/vignesh/Downloads/taffybop/tests/benchmarks/ny_timetable_stage_diagnostic.py",
+    "--source",
+    "benchmark-expertmodeldata/ny-timetable.pdf",
+    "--profile-script",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt",
+    "--output-dir",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T192541Z-NY-timetable-canonical-omission-e2e-v3",
+    "--predecessor-bootstrap-failure",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T144126Z-NY-timetable-terminal-fix-e2e/bootstrap-failure.json",
+    "--predecessor-traced-e2e-manifest",
+    "tracker/benchmarks/llamaparse-15/runs/20260815T191359Z-NY-timetable-canonical-omission-e2e/artifact-manifest.json"
+  ],
+  "worker": {
+    "pid": 67059,
+    "ppid": 68341,
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O"
+  },
+  "runtime_observers_at_startup": {
+    "sys_trace_present": false,
+    "sys_profile_present": false
+  },
+  "execution_lane": {
+    "process_isolated": true,
+    "host_exclusive": false,
+    "transport": "in-process FastAPI TestClient; no TCP listener",
+    "live_service_targeted": false,
+    "ports_touched": [],
+    "attempts": [
+      "cold",
+      "warm"
+    ],
+    "retry_policy": "none",
+    "network_policy": "offline environment flags; no OS-level denial claimed"
+  },
+  "source": {
+    "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+    "size_bytes": 26109,
+    "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+  },
+  "fidelity_baseline": {
+    "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2/ny-timetable/response.json",
+    "size_bytes": 2670237,
+    "sha256": "30dd5861ba8fb3b1b2f60c6282c4120b6467dce4191e845be924029207a6cb54",
+    "classification": "retained-prior-source-grounded-fidelity-evidence",
+    "table_row_sha256_derived_at_runtime": [
+      "08a23117540bc200d4ca8c5bd80340db8aeef186843592f469c84a589a44bb3a",
+      "095590b16e3e96079d76d151e4166a5294e407d26d32ee320ec17051ed566fcd",
+      "1eb9f2cff9fe121930c19acbfb740ec66a9d2f4993150c157a3ae53aef97cace"
+    ],
+    "is_original_uncaptured_315_9_second_response": false
+  },
+  "predecessor_bootstrap_failure": {
+    "path": "tracker/benchmarks/llamaparse-15/runs/20260815T144126Z-NY-timetable-terminal-fix-e2e/bootstrap-failure.json",
+    "size_bytes": 3355,
+    "sha256": "f151567f1ccfba5dbeb329bef318219b08912dd28980739364361ee9c999557e",
+    "relationship": "replacement after evidence-capture failure; not a parse retry"
+  },
+  "predecessor_traced_e2e_manifest": {
+    "path": "tracker/benchmarks/llamaparse-15/runs/20260815T191359Z-NY-timetable-canonical-omission-e2e/artifact-manifest.json",
+    "size_bytes": 5162,
+    "sha256": "a5ba203ebac73d3e1caea55aecb6433b7c453981fd9d46325b4fa5bbe1e3b87d",
+    "relationship": "replacement after in-deadline diagnostic line tracing invalidated production-equivalent binder timing; not a parse retry"
+  },
+  "profile": {
+    "script": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt",
+      "size_bytes": 2062,
+      "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+    },
+    "applied_exports": {
+      "DOCLING_ARTIFACTS_PATH": "/Users/vignesh/Downloads/taffybop/.models/docling",
+      "HF_HUB_OFFLINE": "1",
+      "PARSER_CANONICAL_SERIALIZATION_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED": "true",
+      "PARSER_CHARTS_RASTER_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURED_OUTPUT_ENABLED": "true",
+      "PARSER_CHARTS_STRUCTURE_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED": "true",
+      "PARSER_CHARTS_VECTOR_VALUES_ENABLED": "true",
+      "PARSER_DIAGRAMS_TOPOLOGY_ENABLED": "true",
+      "PARSER_LAYOUT_FORMS_ENABLED": "true",
+      "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED": "true",
+      "PARSER_LAYOUT_RELATIONSHIP_ORDER_ENABLED": "true",
+      "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED": "true",
+      "PARSER_LAYOUT_SOURCE_NOTES_ENABLED": "true",
+      "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED": "true",
+      "PARSER_LAYOUT_TEXT_RUN_SEMANTICS_ENABLED": "true",
+      "PARSER_LAYOUT_VISUAL_RELATIONSHIPS_ENABLED": "true",
+      "PARSER_OCR_NUMERIC_CLEANUP_V2_ENABLED": "true",
+      "PARSER_OCR_SPATIAL_TOKEN_PRESERVATION_ENABLED": "true",
+      "PARSER_SHARED_IR_ENABLED": "true",
+      "PARSER_SHARED_IR_NORMALIZATION_ENABLED": "true",
+      "PARSER_TABLES_CANDIDATE_GATE_ENABLED": "true",
+      "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED": "true",
+      "PARSER_TABLES_MULTI_PAGE_MERGE_ENABLED": "true",
+      "PARSER_TABLES_SPAN_FIDELITY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_AUDIT_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_FONT_RECOVERY_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SELECTIVE_SPAN_OCR_ENABLED": "true",
+      "PARSER_TEXT_INTEGRITY_SOURCE_ALIGNMENT_ENABLED": "true",
+      "PARSER_TEXT_RECONCILIATION_ENABLED": "true",
+      "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED": "true",
+      "TOKENIZERS_PARALLELISM": "false",
+      "TRANSFORMERS_OFFLINE": "1"
+    }
+  },
+  "selected_files": [
+    {
+      "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+      "size_bytes": 26109,
+      "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+    },
+    {
+      "path": "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt",
+      "size_bytes": 2062,
+      "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+    },
+    {
+      "path": "app/config.py",
+      "size_bytes": 101261,
+      "sha256": "0fa0e5d87afbf126ab6c5d8527b6136c08f7a9fb9bb63b342b8933ff3c433db2"
+    },
+    {
+      "path": "app/api.py",
+      "size_bytes": 12008,
+      "sha256": "f29fe0c952399797f947d44332b8d44ba867cc37caab66bfa53421b5a0e0b439"
+    },
+    {
+      "path": "app/models.py",
+      "size_bytes": 389166,
+      "sha256": "9f8d22a320de9219d179776bcc1079381a022d44c6e7b73af284b7c4391d42b4"
+    },
+    {
+      "path": "app/services/pipeline.py",
+      "size_bytes": 534848,
+      "sha256": "889a5c8b8b53df127d09449ce7d6bd04344e204fd5432fd7f63ae2fe6376d7e6"
+    },
+    {
+      "path": "app/services/table_semantics.py",
+      "size_bytes": 383669,
+      "sha256": "d8c97b2af02b3000c481a7f7a7599f2d8640bbdf3a666246e0f609800cc71ec2"
+    },
+    {
+      "path": "app/services/source_text_alignment.py",
+      "size_bytes": 310528,
+      "sha256": "1544f4dc0c1ffce165d0019054b073b358bd3e32efd27f4fcddceddcf0cd4b37"
+    },
+    {
+      "path": "app/services/canonical_ocr_omission.py",
+      "size_bytes": 127795,
+      "sha256": "a6de4855dd321234cf06c7f71d63ada488fe957ccadcf6c83c82c9bbde6a6796"
+    },
+    {
+      "path": "app/services/presentation.py",
+      "size_bytes": 205247,
+      "sha256": "438cd4762f4e39e4e1d6d159e257475df71484fad4d262426ac12b4b12a2dc41"
+    },
+    {
+      "path": "app/services/running_regions.py",
+      "size_bytes": 419052,
+      "sha256": "cb493d2a5463ad004f8af1c5d23141330e0e5d1dbaabf7364a63623ac55b0d77"
+    },
+    {
+      "path": "app/services/serializer.py",
+      "size_bytes": 13555,
+      "sha256": "bb9f2c78ca7ce68c17bce7757681e03133276ea09e6aaaf325ceb56c7a238a33"
+    },
+    {
+      "path": "tests/benchmarks/latency_contracts.py",
+      "size_bytes": 151656,
+      "sha256": "18e382010bb81fa3ce65679dee8d6f673b4d05ffde0e86c21ffa236700c0ec4d"
+    },
+    {
+      "path": "tests/benchmarks/latency_instrumentation.py",
+      "size_bytes": 76239,
+      "sha256": "4b8e709ca1e46c59dbcaa2fe8642e232bd0fed3ce6bf4bcf24fed78fa5cdf23e"
+    },
+    {
+      "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+      "size_bytes": 148032,
+      "sha256": "24c843503825f9dde8647e1d00a5438860912d48a9b453569a71813e81d41b99"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 1066,
+      "sha256": "6afc551e04e72ff590cddb418b290d475aa6b9034f553a85f67f44d97df4d9f2"
+    },
+    {
+      "path": "uv.lock",
+      "size_bytes": 606263,
+      "sha256": "0ccb2b55f198fa9e35ab508687cbcc209eb2a21913ee1cfe7597eb24cc0a26c2"
+    },
+    {
+      "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813-v2/ny-timetable/response.json",
+      "size_bytes": 2670237,
+      "sha256": "30dd5861ba8fb3b1b2f60c6282c4120b6467dce4191e845be924029207a6cb54"
+    }
+  ],
+  "protected_files_before": {
+    "benchmark-expertmodeldata/ny-timetable.pdf": {
+      "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+      "size_bytes": 26109,
+      "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30"
+    },
+    "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt": {
+      "path": "tracker/benchmarks/llamaparse-15/runs/20260815T093625Z-NY-timetable-stage-diagnostic/profile-script.txt",
+      "size_bytes": 2062,
+      "sha256": "65a88dfcb98b0363c58401832b658a7b89ee44cfc214211342886fef4c302d50"
+    },
+    "tests/benchmarks/ny_timetable_stage_diagnostic.py": {
+      "path": "tests/benchmarks/ny_timetable_stage_diagnostic.py",
+      "size_bytes": 148032,
+      "sha256": "24c843503825f9dde8647e1d00a5438860912d48a9b453569a71813e81d41b99"
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "size_bytes": 1066,
+      "sha256": "6afc551e04e72ff590cddb418b290d475aa6b9034f553a85f67f44d97df4d9f2"
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "size_bytes": 606263,
+      "sha256": "0ccb2b55f198fa9e35ab508687cbcc209eb2a21913ee1cfe7597eb24cc0a26c2"
+    },
+    "frontend/.dev.vars": {
+      "path": "frontend/.dev.vars",
+      "size_bytes": 117,
+      "sha256": "30a294405c508227ef0ec9ea7b923584beba0fcfa8c200d8ad9d1e41f7ca9464"
+    }
+  },
+  "app_tree_before": {
+    "basis": "sorted-sha256sum-style-per-file-records-v1",
+    "file_count": 99,
+    "aggregate_sha256": "8f6d84cf583f8e97557896cb4e4895a1ddb360744290c0d56656c4e1a198bcc7",
+    "files": [
+      {
+        "path": "app/.DS_Store",
+        "size_bytes": 6148,
+        "sha256": "43f92b0283c68608f03d2229ea728aadb2603afb26e91db7efa5f010de184bda"
+      },
+      {
+        "path": "app/__init__.py",
+        "size_bytes": 59,
+        "sha256": "6d190e0772a6f801b9b10ac36069748d069a6ce169576a99b0f7192285915ae9"
+      },
+      {
+        "path": "app/api.py",
+        "size_bytes": 12008,
+        "sha256": "f29fe0c952399797f947d44332b8d44ba867cc37caab66bfa53421b5a0e0b439"
+      },
+      {
+        "path": "app/config.py",
+        "size_bytes": 101261,
+        "sha256": "0fa0e5d87afbf126ab6c5d8527b6136c08f7a9fb9bb63b342b8933ff3c433db2"
+      },
+      {
+        "path": "app/errors.py",
+        "size_bytes": 4249,
+        "sha256": "d394be54e18b5e917b7249454bae186a657616593bbda70d7a79f04ca13cb076"
+      },
+      {
+        "path": "app/main.py",
+        "size_bytes": 3201,
+        "sha256": "b0a4c8df9198f1a6c5337553980277e109c8f4631981366cfff180d4fddb1493"
+      },
+      {
+        "path": "app/models.py",
+        "size_bytes": 389166,
+        "sha256": "9f8d22a320de9219d179776bcc1079381a022d44c6e7b73af284b7c4391d42b4"
+      },
+      {
+        "path": "app/release_start.py",
+        "size_bytes": 1343,
+        "sha256": "a2694fee6a29c7266122bfd50b9d265404d3e2722677018dd4caf792402f1f2d"
+      },
+      {
+        "path": "app/services/__init__.py",
+        "size_bytes": 48,
+        "sha256": "37d8f591bfe0276a14109168fca331f71581034a1e9d1c159d584fce88c2af06"
+      },
+      {
+        "path": "app/services/acroform.py",
+        "size_bytes": 70061,
+        "sha256": "d7df50a8eabaf9ac00a438196a05c217ec294526bb1fefdbdadfddc526b44a2c"
+      },
+      {
+        "path": "app/services/acroform_raw.py",
+        "size_bytes": 62689,
+        "sha256": "3657a3e96bfb59041b47626a54753c8f2c5adfb1d0ab839ff015ffe050c709d7"
+      },
+      {
+        "path": "app/services/adapter_contracts.py",
+        "size_bytes": 45968,
+        "sha256": "ae1f6e15181b9de9ad9ec8d32c0f0935bd2c30f873a71c0bdc4fe1d45a74fea6"
+      },
+      {
+        "path": "app/services/artifact_manifest.py",
+        "size_bytes": 89817,
+        "sha256": "283b0b84a9d6896d533d9a977ac666da4e1a5e7aabba9eecb0987c4733e2a27d"
+      },
+      {
+        "path": "app/services/canonical_ocr_omission.py",
+        "size_bytes": 127795,
+        "sha256": "a6de4855dd321234cf06c7f71d63ada488fe957ccadcf6c83c82c9bbde6a6796"
+      },
+      {
+        "path": "app/services/deterministic_confidence.py",
+        "size_bytes": 17624,
+        "sha256": "0b382e6383097fd7bfbb6afdf0fe4d4330573203eba4b92b1bf96c5569c0e19a"
+      },
+      {
+        "path": "app/services/docx_adapter.py",
+        "size_bytes": 40217,
+        "sha256": "d1c614b8f7a85b3cc9798711b357011665b751993848d0da5907f0bdd98ea631"
+      },
+      {
+        "path": "app/services/feature_flags.py",
+        "size_bytes": 21090,
+        "sha256": "b9c9b06b330d97d264e733ea1e06d28406e7f81488060281c3369243c1624d9a"
+      },
+      {
+        "path": "app/services/font_audit.py",
+        "size_bytes": 40466,
+        "sha256": "e6684d1ef61256659a7a3fca721cd984a64c60cdadd7f37c999899b543383ffe"
+      },
+      {
+        "path": "app/services/font_recovery.py",
+        "size_bytes": 56353,
+        "sha256": "f63b882404ebc28c9e5fa2133b96e5787b8badb6721e3a1cfacf6591b00e173a"
+      },
+      {
+        "path": "app/services/form_semantics.py",
+        "size_bytes": 330149,
+        "sha256": "a1bcec367c518101c2a11c7b810ad15c1c49405f746c378ceea7dd9321e0700f"
+      },
+      {
+        "path": "app/services/future_adapter_gate.py",
+        "size_bytes": 15078,
+        "sha256": "11ecb5415b027c2f4e23973d49db4ae2fdf5af1475fb5e86cd83aec038fcd57c"
+      },
+      {
+        "path": "app/services/hosted_policy.py",
+        "size_bytes": 34370,
+        "sha256": "6687d5f91d2711d419c8be95c15b765572e5e5efadbc5cbbb8599427e1018ed9"
+      },
+      {
+        "path": "app/services/immutable_tree_custody.py",
+        "size_bytes": 23905,
+        "sha256": "85349f797c7957e13af71b56ecc545e08b95d7f0990cddc9c4330b29d128bee4"
+      },
+      {
+        "path": "app/services/input_documents.py",
+        "size_bytes": 19220,
+        "sha256": "33e43bb71ca3bdf38913519ddac7157d465cd9a77e7f73082f2a67fdab0f7cbb"
+      },
+      {
+        "path": "app/services/ir.py",
+        "size_bytes": 323665,
+        "sha256": "0114836692377594e71e8b3a8f635a7670b3573e82bbf8322b8c46f66f9749dd"
+      },
+      {
+        "path": "app/services/layout.py",
+        "size_bytes": 201054,
+        "sha256": "ddf5e4a3fc0f79fffc891ea653e7dfa419e967e514e6a57e37f05498dce7a56b"
+      },
+      {
+        "path": "app/services/layout_order.py",
+        "size_bytes": 59448,
+        "sha256": "ac5445df00c2f7bd2472516b24b026018f7b4a907413788fcf87378cffea543f"
+      },
+      {
+        "path": "app/services/layout_source_notes.py",
+        "size_bytes": 49315,
+        "sha256": "d19e6b232b2c94c2c0f2a14f9412dd791df59c895b43e21698800a5c245c63fc"
+      },
+      {
+        "path": "app/services/ocr.py",
+        "size_bytes": 56783,
+        "sha256": "e8bd10575882a6146d300fc854321b2da700119ed249d6ef29334c6154bd2798"
+      },
+      {
+        "path": "app/services/office_charts.py",
+        "size_bytes": 37782,
+        "sha256": "7ca56ceedaad384d8dc81571be3a0ddd257d824234a63d638c22f4c30fdf7ca9"
+      },
+      {
+        "path": "app/services/office_fallback.py",
+        "size_bytes": 33698,
+        "sha256": "77092872f02ad81ac641d94d8373619c33bc981fcf2edb010d823a5f38ca1f70"
+      },
+      {
+        "path": "app/services/office_native.py",
+        "size_bytes": 27759,
+        "sha256": "8a3b2cb6e2debc3ab58c76a8859039607d0ac31fd7e25d0c9f8f0de82bf3ec4b"
+      },
+      {
+        "path": "app/services/ooxml_intake.py",
+        "size_bytes": 57071,
+        "sha256": "5a7104d2cf283807ef16037ca5ef5e3e48f45bf474d04fee354f2f4b4949d0fa"
+      },
+      {
+        "path": "app/services/opaque_group_custody.py",
+        "size_bytes": 112863,
+        "sha256": "2de517c1ac9a64946011c44319a56152e386fd4ef0c8a83d7fae298dd5a8283f"
+      },
+      {
+        "path": "app/services/outline_structure.py",
+        "size_bytes": 157308,
+        "sha256": "6dcdce2777f578a1b92081e0a1cc68c35ce678582c517cdb6eadc5dddd9958d3"
+      },
+      {
+        "path": "app/services/parser_fork_denial_probe.c",
+        "size_bytes": 2412,
+        "sha256": "ba32f8bf69ac58b5850c081feebb2e380bea72e5a278dd5c6d23096ce1347068"
+      },
+      {
+        "path": "app/services/parser_phase_control.py",
+        "size_bytes": 16905,
+        "sha256": "fc2d454c09a12ea00e145e5d44975b32d9354b35aa3dee44ace69bfae24b2e37"
+      },
+      {
+        "path": "app/services/parser_request_control.py",
+        "size_bytes": 34022,
+        "sha256": "454e7b7ab56b85b43b6bdb2f15a503f6c363f90559fec795ffafe1838ec56226"
+      },
+      {
+        "path": "app/services/parser_sandbox_attempt.py",
+        "size_bytes": 8630,
+        "sha256": "58614cfbdd5ff0b71b16bba9fd08a59f0c43a448c7ca3ea6c70e7e78c96a1a25"
+      },
+      {
+        "path": "app/services/parser_sandbox_materialization.py",
+        "size_bytes": 20998,
+        "sha256": "ee9525fb8c01fcef27552cc271c77ed891e36c8efb63436dba771ff32e3aa4df"
+      },
+      {
+        "path": "app/services/parser_sandbox_network_traps.py",
+        "size_bytes": 21171,
+        "sha256": "b2577939ffb2195d66848d7b6671d1096fdd736ce28cd510918594cf11fde614"
+      },
+      {
+        "path": "app/services/parser_sandbox_probe.c",
+        "size_bytes": 13928,
+        "sha256": "d267f91be3945d8e7203f7acdcd751fe370bf0c6f0843f51544f7888cedff4d4"
+      },
+      {
+        "path": "app/services/parser_sandbox_probe.py",
+        "size_bytes": 31491,
+        "sha256": "be7d85250a4b16ec57c9d9ae2d2546774491fb35d2fbfd2b24f9cd3dca1305b5"
+      },
+      {
+        "path": "app/services/parser_sandbox_role_plan.py",
+        "size_bytes": 16999,
+        "sha256": "8a03ce4b0f5e6634253f11ebf42f40e807edadc60238d570bac61ff7420c893f"
+      },
+      {
+        "path": "app/services/parser_worker.py",
+        "size_bytes": 128823,
+        "sha256": "9860c062fb47ddf994553c57a6ee2a969d6d3a91cdb8f0e83c47d3b7265c7d3c"
+      },
+      {
+        "path": "app/services/parser_worker_supervisor.py",
+        "size_bytes": 31608,
+        "sha256": "f43469c7aaa6e4a68b942cdd6529cbc3cdfa1fd0dae25322eb8912b7204546f1"
+      },
+      {
+        "path": "app/services/pipeline.py",
+        "size_bytes": 534848,
+        "sha256": "889a5c8b8b53df127d09449ce7d6bd04344e204fd5432fd7f63ae2fe6376d7e6"
+      },
+      {
+        "path": "app/services/pptx_adapter.py",
+        "size_bytes": 35262,
+        "sha256": "480654a379ecb015cdec51c8a435222ef7d6a7b26f24a2461eb4f6e0ad69dafc"
+      },
+      {
+        "path": "app/services/presentation.py",
+        "size_bytes": 205247,
+        "sha256": "438cd4762f4e39e4e1d6d159e257475df71484fad4d262426ac12b4b12a2dc41"
+      },
+      {
+        "path": "app/services/quality_telemetry.py",
+        "size_bytes": 20994,
+        "sha256": "183264e6a0b32d12029dac3b9a6b0b35e86a497322973f18643355453a739fbd"
+      },
+      {
+        "path": "app/services/release_runbooks.py",
+        "size_bytes": 29120,
+        "sha256": "31b3feb57b397736d00a1297ed91a40eaad337464ae886fbb48c3ab0e5e8ae2b"
+      },
+      {
+        "path": "app/services/release_smoke_gate.py",
+        "size_bytes": 24363,
+        "sha256": "8ed0e52c694b2f0e91cc749a29a33c4f7c48295cd6755c2a0818aaf5e772d875"
+      },
+      {
+        "path": "app/services/review_routing.py",
+        "size_bytes": 22280,
+        "sha256": "3d17c4d1966ef8f135daa659d6b38a72aaa106d4037fbc474e70f99daee64d0e"
+      },
+      {
+        "path": "app/services/rollback_smoke.py",
+        "size_bytes": 46084,
+        "sha256": "c5f37904a989176f5619448410c0e6765a3d4e24db3923c264703f3992b7e615"
+      },
+      {
+        "path": "app/services/running_regions.py",
+        "size_bytes": 419052,
+        "sha256": "cb493d2a5463ad004f8af1c5d23141330e0e5d1dbaabf7364a63623ac55b0d77"
+      },
+      {
+        "path": "app/services/selective_span_ocr.py",
+        "size_bytes": 75692,
+        "sha256": "05f618bbc011a174a20544c8149ecaabd7adb60fbfdf633d6fec8efbaeba5065"
+      },
+      {
+        "path": "app/services/serializer.py",
+        "size_bytes": 13555,
+        "sha256": "bb9f2c78ca7ce68c17bce7757681e03133276ea09e6aaaf325ceb56c7a238a33"
+      },
+      {
+        "path": "app/services/source_note_contracts.py",
+        "size_bytes": 3074,
+        "sha256": "d942eb2b4267fd887309eceb4d650b36effedaa9f68c6137dad1908ba1736537"
+      },
+      {
+        "path": "app/services/source_text_alignment.py",
+        "size_bytes": 310528,
+        "sha256": "1544f4dc0c1ffce165d0019054b073b358bd3e32efd27f4fcddceddcf0cd4b37"
+      },
+      {
+        "path": "app/services/spatial_tokens.py",
+        "size_bytes": 27582,
+        "sha256": "7e3b125e3b417764cfadf8213f4461305126c1e9fba4e998815f133849c0e773"
+      },
+      {
+        "path": "app/services/stage_telemetry.py",
+        "size_bytes": 4809,
+        "sha256": "0327a9f710fcf28d4ee0e1a1f1b6bc65480d5ce144271bfcb68e3ecee896f498"
+      },
+      {
+        "path": "app/services/table_semantics.py",
+        "size_bytes": 383669,
+        "sha256": "d8c97b2af02b3000c481a7f7a7599f2d8640bbdf3a666246e0f609800cc71ec2"
+      },
+      {
+        "path": "app/services/tables.py",
+        "size_bytes": 33378,
+        "sha256": "fa8c38d2f2e30f654979158eba29caed599d7068acb9114b6f7dc20cf58442fc"
+      },
+      {
+        "path": "app/services/telemetry.py",
+        "size_bytes": 15996,
+        "sha256": "80a5ba9aa3b7f57f0819ac1e8d18b439c69fdeb7375d4eae25ee32e8e845a143"
+      },
+      {
+        "path": "app/services/tesseract_broker.py",
+        "size_bytes": 296391,
+        "sha256": "148a277e9163467edea7e842382f5a0b67c8e2eaf729b13feff24f3724d187e8"
+      },
+      {
+        "path": "app/services/tesseract_broker_client.py",
+        "size_bytes": 81220,
+        "sha256": "3f463be44a6653a36690cfd7730fd84a7e6fef1bbd62279af2a53d5d566a1411"
+      },
+      {
+        "path": "app/services/tesseract_broker_native.py",
+        "size_bytes": 58702,
+        "sha256": "07b4f74e9834b1f72321d9cc1bafe83a3f9065cafa5f6f4440f4b5d780ed248f"
+      },
+      {
+        "path": "app/services/tesseract_broker_protocol.py",
+        "size_bytes": 333851,
+        "sha256": "d94ac3c3904d84994b16e453f84508cb1a894663dd274765503f6124ff01a368"
+      },
+      {
+        "path": "app/services/tesseract_broker_spawn.c",
+        "size_bytes": 12028,
+        "sha256": "d140d90943512d949ea35d669426a42e0e322bf3f829cbbaa4fc6b5a133b8923"
+      },
+      {
+        "path": "app/services/tesseract_child_exec.py",
+        "size_bytes": 48486,
+        "sha256": "5dbb3df721d02ba869896009034dce228db89edfe26bbe1220aba1cc35205d93"
+      },
+      {
+        "path": "app/services/tesseract_child_sandbox_probe.py",
+        "size_bytes": 42058,
+        "sha256": "5327558089e51cad6519be6ee43b6e1fa65e439f44f913d9d8c5f820e81ba648"
+      },
+      {
+        "path": "app/services/tesseract_native_closure.py",
+        "size_bytes": 69352,
+        "sha256": "adb92b662ea8d3c2f1c871ead53744e4f06b989669cc3f4766e8106596991224"
+      },
+      {
+        "path": "app/services/tesseract_runtime_gate.c",
+        "size_bytes": 3333,
+        "sha256": "844b0131ec5e0544588982ff0d08496a500b979a156770116283a327bafceb90"
+      },
+      {
+        "path": "app/services/text_reconciliation.py",
+        "size_bytes": 180094,
+        "sha256": "be3a6568a859903a8439f576c43910c22d766ff60edc26e72ec4f1ea6b2faf5d"
+      },
+      {
+        "path": "app/services/text_run_semantics.py",
+        "size_bytes": 138343,
+        "sha256": "5e679c53f21d72db302a35a07852a638cd0a1caa5083d54be1f239a718453fd8"
+      },
+      {
+        "path": "app/services/visual_chart_structure.py",
+        "size_bytes": 33284,
+        "sha256": "5a4d4adeba5305ff36bc8418d3b719daf13a9b6e547216c3d7f7302cafb9b072"
+      },
+      {
+        "path": "app/services/visual_chart_validation.py",
+        "size_bytes": 21835,
+        "sha256": "5dbbee8c73b0179f16e3f24cf92ed546233357e0ca7865acc8dac33ee41282df"
+      },
+      {
+        "path": "app/services/visual_confidence.py",
+        "size_bytes": 16734,
+        "sha256": "0e9e1229779eda978a189d37c611c7f60c5681ba93ff674b8b7026673aad4410"
+      },
+      {
+        "path": "app/services/visual_contracts.py",
+        "size_bytes": 43786,
+        "sha256": "f8ba362b68b078bfac23d27797bb5e1963afe126788e81bce4309de839885092"
+      },
+      {
+        "path": "app/services/visual_diagram_topology.py",
+        "size_bytes": 112320,
+        "sha256": "53204b520efdd86f13669d63677ab03a92b4f9247100fbea5d10a4bcb6343f68"
+      },
+      {
+        "path": "app/services/visual_model_contracts.py",
+        "size_bytes": 22800,
+        "sha256": "868014a0923dd30ef0e10a06b27ef3e89954dcf45372555306ded1b95eb5fbef"
+      },
+      {
+        "path": "app/services/visual_model_grounding.py",
+        "size_bytes": 16232,
+        "sha256": "b8951c88d5602950cfa0fec160dd6c3a6c3ef1a9262407e2f37a2ba99f330ac1"
+      },
+      {
+        "path": "app/services/visual_model_hosted.py",
+        "size_bytes": 33799,
+        "sha256": "3795627118c300c8073821b75d73decc7458e427343fe5189be0466e9c25e4ac"
+      },
+      {
+        "path": "app/services/visual_model_local.py",
+        "size_bytes": 21781,
+        "sha256": "c295ed1ece23be937a74b8392d9d1fe38b5bf8aa5c5585b94b2b33f887fe20a5"
+      },
+      {
+        "path": "app/services/visual_model_merge.py",
+        "size_bytes": 11777,
+        "sha256": "1fbf99764d4bfc485241c8818f02cd3b6e0637a327e2db794451ac69fa7d0e95"
+      },
+      {
+        "path": "app/services/visual_model_routing.py",
+        "size_bytes": 14978,
+        "sha256": "697d41fc596044811c37300cc6a7036deb6afca1c49d72bc6203b1e3cb981dfe"
+      },
+      {
+        "path": "app/services/visual_models.py",
+        "size_bytes": 25572,
+        "sha256": "6340492135ece1985f04122db56079dc9f45f96aedbdd5e6558062d652ce7042"
+      },
+      {
+        "path": "app/services/visual_parity.py",
+        "size_bytes": 38440,
+        "sha256": "c0a639809c4c6a5070dee21be0026bcbc901c1293e4af584858989bf0edef565"
+      },
+      {
+        "path": "app/services/visual_raster_bars.py",
+        "size_bytes": 27214,
+        "sha256": "094b52489c17d15510b548ab99a0b4ccd8408aaa03b3b95b72b10017e4e36b97"
+      },
+      {
+        "path": "app/services/visual_raster_diagram.py",
+        "size_bytes": 106937,
+        "sha256": "12cc836ca3d681563f5cf2a3ab0923cbb70721bed72509e1ff0637a21f957756"
+      },
+      {
+        "path": "app/services/visual_raster_gate.py",
+        "size_bytes": 8491,
+        "sha256": "c2d1b286dcde17f3dcbb02bff6b90f1d9e5f520361528450571ce97b8fc0c8e7"
+      },
+      {
+        "path": "app/services/visual_raster_lines.py",
+        "size_bytes": 19635,
+        "sha256": "c82f2eeb69b181714e000f7c363c2ec71651e34972dec8c1005c969443486dc9"
+      },
+      {
+        "path": "app/services/visual_raster_source.py",
+        "size_bytes": 40531,
+        "sha256": "cf49d5d96cb27d3fc21abdb34337f2dc653f9ec263219f29c548c428631e1c76"
+      },
+      {
+        "path": "app/services/visual_raster_structure.py",
+        "size_bytes": 35622,
+        "sha256": "216ffd0c2c87c7d1b39b2c65befdea4375cf8a127c2e147fe562b503f32aa39f"
+      },
+      {
+        "path": "app/services/visual_semantics.py",
+        "size_bytes": 77371,
+        "sha256": "2cd9a0f43be01bb258456045e33f154eb37adc2ce2f0bbaeeb302dd663415774"
+      },
+      {
+        "path": "app/services/visual_source_text.py",
+        "size_bytes": 102468,
+        "sha256": "9a66842580039a3468c8cd0a4b24f7392bdebb6c14179bbcfb7e8d5410b8d7cc"
+      },
+      {
+        "path": "app/services/visual_vector.py",
+        "size_bytes": 27330,
+        "sha256": "01650b1c81ec6b025d847094d3057c47f01d274f04036343e81680f1cf42ca4a"
+      },
+      {
+        "path": "app/services/visual_vector_values.py",
+        "size_bytes": 27929,
+        "sha256": "2ebeff0f307cc8d9006b1177e715b38ff334b4e00e39436836135ca2e3dfdf6e"
+      },
+      {
+        "path": "app/services/xlsx_adapter.py",
+        "size_bytes": 34966,
+        "sha256": "23038d516e916df9ae9d5062b6aed7bc984a2856426224cef4238b9d8befa621"
+      }
+    ]
+  },
+  "model_tree_stat_before": {
+    "basis": "path-size-mtime-inventory-v1",
+    "file_count": 48,
+    "aggregate_sha256": "5d44a460a3f0ad6f2dfac3f6ef4db50518113b7e068b3dbf7cbcc8f81bd8b069",
+    "files": [
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/.gitignore",
+        "size_bytes": 1,
+        "mtime_ns": 1785134467007830400
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/CACHEDIR.TAG",
+        "size_bytes": 191,
+        "mtime_ns": 1785134466898962991
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/.gitattributes.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134468043540994
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/.gitattributes.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134468044019410
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/README.md.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134467785690751
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/README.md.metadata",
+        "size_bytes": 101,
+        "mtime_ns": 1785134467786595167
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/config.json.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134467774386802
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/config.json.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134467774892427
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/docling_heron_400.png.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134467857505191
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/docling_heron_400.png.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134467858073608
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/model.safetensors.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134538141959147
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/model.safetensors.metadata",
+        "size_bytes": 123,
+        "mtime_ns": 1785134538142193480
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/preprocessor_config.json.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134467643321120
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/download/preprocessor_config.json.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134467644071453
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.cache/huggingface/trees/8f39ad3c0b4c58e9c2d2c84a38465abf757272d8.json",
+        "size_bytes": 856,
+        "mtime_ns": 1785134466891662372
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/.gitattributes",
+        "size_bytes": 1519,
+        "mtime_ns": 1785134468041085080
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/README.md",
+        "size_bytes": 3219,
+        "mtime_ns": 1785134467781958254
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/config.json",
+        "size_bytes": 3268,
+        "mtime_ns": 1785134467771979263
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/docling_heron_400.png",
+        "size_bytes": 96925,
+        "mtime_ns": 1785134467854385069
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/model.safetensors",
+        "size_bytes": 171658996,
+        "mtime_ns": 1785134538138903608
+      },
+      {
+        "path": ".models/docling/docling-project--docling-layout-heron/preprocessor_config.json",
+        "size_bytes": 444,
+        "mtime_ns": 1785134467640957914
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/.gitignore",
+        "size_bytes": 1,
+        "mtime_ns": 1785134539059779131
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/CACHEDIR.TAG",
+        "size_bytes": 191,
+        "mtime_ns": 1785134538942692145
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/.gitattributes.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134540161319503
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/.gitattributes.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134540161763836
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/.gitignore.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134539893147269
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/.gitignore.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134539893593726
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/README.md.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134539891271603
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/README.md.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134539891957561
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/config.json.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134539696681599
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/config.json.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134539697264599
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134672025110639
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors.metadata",
+        "size_bytes": 125,
+        "mtime_ns": 1785134672025368681
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tm_config.json.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134539902631552
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/accurate/tm_config.json.metadata",
+        "size_bytes": 100,
+        "mtime_ns": 1785134539903040552
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tableformer_fast.safetensors.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134614323902555
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tableformer_fast.safetensors.metadata",
+        "size_bytes": 124,
+        "mtime_ns": 1785134614324189054
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tm_config.json.lock",
+        "size_bytes": 0,
+        "mtime_ns": 1785134539805951216
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/download/model_artifacts/tableformer/fast/tm_config.json.metadata",
+        "size_bytes": 101,
+        "mtime_ns": 1785134539806449383
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.cache/huggingface/trees/fc0f2d45e2218ea24bce5045f58a389aed16dc23.json",
+        "size_bytes": 1403,
+        "mtime_ns": 1785134538936516025
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.gitattributes",
+        "size_bytes": 1905,
+        "mtime_ns": 1785134540158609088
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/.gitignore",
+        "size_bytes": 5180,
+        "mtime_ns": 1785134539890364438
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/README.md",
+        "size_bytes": 3413,
+        "mtime_ns": 1785134539885101067
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/config.json",
+        "size_bytes": 41,
+        "mtime_ns": 1785134539694452518
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors",
+        "size_bytes": 212758388,
+        "mtime_ns": 1785134672022036350
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/model_artifacts/tableformer/accurate/tm_config.json",
+        "size_bytes": 7060,
+        "mtime_ns": 1785134539899673805
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/model_artifacts/tableformer/fast/tableformer_fast.safetensors",
+        "size_bytes": 145453276,
+        "mtime_ns": 1785134614320793265
+      },
+      {
+        "path": ".models/docling/docling-project--docling-models/model_artifacts/tableformer/fast/tm_config.json",
+        "size_bytes": 7060,
+        "mtime_ns": 1785134539803424635
+      }
+    ]
+  },
+  "package_versions": {
+    "docling": "2.114.0",
+    "docling-core": "2.88.0",
+    "fastapi": "0.139.2",
+    "httpx": "0.28.1",
+    "numpy": "2.5.1",
+    "pdfplumber": "0.11.10",
+    "pydantic": "2.13.4",
+    "pypdfium2": "5.12.1",
+    "psutil": "7.2.2",
+    "starlette": "1.3.1",
+    "torch": "2.13.0"
+  },
+  "production_budgets": {
+    "p04_document_seconds": 5.0,
+    "p04_page_seconds": 0.5,
+    "canonical_ocr_omission_seconds": 2.0,
+    "budget_override_applied": false,
+    "document_timeout_seconds_expected": 300.0,
+    "sources": [
+      "app/services/table_semantics.py:192-242",
+      "app/services/canonical_ocr_omission.py"
+    ]
+  },
+  "observer_contract_limitations": {
+    "global_contract_green": false,
+    "failing_test": "tests/performance/test_latency_instrumentation_adversarial.py::test_real_parse_result_callers_are_exhaustively_routed",
+    "extra_caller": "app.services.pipeline._parse_document_without_stage_telemetry",
+    "caller_location": "resolved by qualname; numeric source lines are intentionally not sealed",
+    "ny_pdf_reachable": false,
+    "impact": "global release observer contract red; Office-only result-validation cardinality drift does not omit NY PDF Docling/shared/visual/IR/canonical stages"
+  }
+}

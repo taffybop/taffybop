@@ -1,0 +1,21 @@
+{
+  "schema_version": "ffd014-attempt-status-v1",
+  "attempt_id": "20260814T034433Z-FFD-014-clinical-page1",
+  "status": "page_1_target_pass_pending_user_validation",
+  "closure_eligible": false,
+  "diagnostic_only": false,
+  "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+  "production_document_budget_seconds": 5.0,
+  "production_page_budget_seconds": 0.5,
+  "deadline_override_used": false,
+  "target": "Clinical physical page 1 Crossmark and Open Access visual-placeholder custody",
+  "result": "The page-1 JSON, raw/canonical Markdown, actual Clearleaf DOM, and screenshot agree on exactly two conservative visual placeholders. Encoded native pseudo-text, Mermaid/graph content, and literal escaped newlines are absent.",
+  "release_profile_note": "The full release-fidelity profile keeps the page-2/page-4 objects as unresolved table_candidate items, exactly as the selected pre-fix full-service artifact does. It therefore creates no terminal P04 table transaction and this capture is not evidence that table sidecars committed.",
+  "remaining": [
+    "User validation of the page-1 handoff",
+    "Fresh dual-system closure evidence if FFD-014 is later advanced to Done",
+    "Independent NY resource-boundary disposition before FFD-011 can close",
+    "Wave A all-15 drift gate",
+    "Final frozen all-15 campaign"
+  ]
+}

@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 13120, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 13077, in main
+    report = generate_retained_metrics_report(
+        workspace,
+        terminal_approval_path=arguments.terminal_approval_path,
+    )
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 12985, in generate_retained_metrics_report
+    paired = generate_paired_metrics(workspace)
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 11032, in generate_paired_metrics
+    pair[state] = fresh_snapshot(workspace, case_id, state)
+                  ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10988, in fresh_snapshot
+    _validate_snapshot(
+    ~~~~~~~~~~~~~~~~~~^
+        snapshot,
+        ^^^^^^^^^
+    ...<3 lines>...
+        allow_unattached_external_attestation=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 3047, in _validate_snapshot
+    raise ValueError("worker table-stage component measurement differs")
+ValueError: worker table-stage component measurement differs

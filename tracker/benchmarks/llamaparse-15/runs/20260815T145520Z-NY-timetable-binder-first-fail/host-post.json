@@ -1,0 +1,106 @@
+{
+  "label": "post-run",
+  "captured_at": "2026-08-15T14:56:31.631967Z",
+  "monotonic_ns": 1297658457810583,
+  "host": {
+    "load_average": [
+      5.583984375,
+      5.3701171875,
+      6.4677734375
+    ],
+    "logical_cpu_count": 10,
+    "physical_cpu_count": 10,
+    "memory": {
+      "total": 34359738368,
+      "available": 11993432064,
+      "percent": 65.1,
+      "used": 15681552384,
+      "free": 65191936,
+      "active": 11925635072,
+      "inactive": 11830935552,
+      "wired": 3755917312
+    },
+    "swap": {
+      "unavailable": true,
+      "error_type": "OSError"
+    },
+    "cpu_times": {
+      "user": 2374931.34,
+      "nice": 0.0,
+      "system": 966554.36,
+      "idle": 9567145.34
+    }
+  },
+  "worker": {
+    "pid": 22012,
+    "ppid": 68341,
+    "create_time": 1786805726.15484,
+    "rss_bytes": 1732214784,
+    "thread_count": 15,
+    "cpu_times": {
+      "user": 61.322264576,
+      "system": 5.795286016,
+      "children_user": 0.0,
+      "children_system": 0.0
+    }
+  },
+  "listeners": {
+    "command": [
+      "lsof",
+      "-nP",
+      "-iTCP",
+      "-sTCP:LISTEN"
+    ],
+    "exit_code": 0,
+    "stdout": "COMMAND     PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME\nrapportd    729 vignesh   10u  IPv4 0xbf1959df3e87f9fb      0t0  TCP *:60404 (LISTEN)\nrapportd    729 vignesh   11u  IPv6 0x58685ee0ee3cd77f      0t0  TCP *:60404 (LISTEN)\nControlCe   804 vignesh    9u  IPv4 0x3f34f63a33916db5      0t0  TCP *:7000 (LISTEN)\nControlCe   804 vignesh   10u  IPv6 0x447c202e46187ba3      0t0  TCP *:7000 (LISTEN)\nControlCe   804 vignesh   11u  IPv4 0x9eb9c39a0ceecc87      0t0  TCP *:5000 (LISTEN)\nControlCe   804 vignesh   12u  IPv6 0xa7921dd82c006d54      0t0  TCP *:5000 (LISTEN)\nredis-ser   884 vignesh    6u  IPv4 0xddeb6d465baf2858      0t0  TCP 127.0.0.1:6379 (LISTEN)\nredis-ser   884 vignesh    7u  IPv6 0x57afa28f815da0d0      0t0  TCP [::1]:6379 (LISTEN)\nollama     1287 vignesh    3u  IPv4 0x3b6572bad6a792e6      0t0  TCP 127.0.0.1:11434 (LISTEN)\nidea       5664 vignesh   31u  IPv6 0x4400a76ca08b7905      0t0  TCP 127.0.0.1:63342 (LISTEN)\nidea       5664 vignesh  179u  IPv6 0x594f9adda559184d      0t0  TCP 127.0.0.1:6189 (LISTEN)\nidea       5664 vignesh  212u  IPv6 0x96470af21f013e49      0t0  TCP 127.0.0.1:62638 (LISTEN)\ncef_serve  6547 vignesh   29u  IPv4 0xfeec670d3d340482      0t0  TCP 127.0.0.1:6188 (LISTEN)\nembedding  6793 vignesh    3u  IPv6 0x2fe409f34bcb0891      0t0  TCP 127.0.0.1:62654 (LISTEN)\nCode\\x20H 26650 vignesh   35u  IPv4 0x2856c40ff1be2330      0t0  TCP 127.0.0.1:42204 (LISTEN)\nCode\\x20H 26650 vignesh   47u  IPv4 0xd8992f15774278db      0t0  TCP 127.0.0.1:49164 (LISTEN)\nCode\\x20H 26650 vignesh  105u  IPv6 0x810a791a4a9f64d0      0t0  TCP *:49168 (LISTEN)\nnode      27317 vignesh   16u  IPv6 0x11d777b6a4b4567b      0t0  TCP *:49191 (LISTEN)\nPython    39706 vignesh    3u  IPv4 0x4feaf83770660caf      0t0  TCP 127.0.0.1:9901 (LISTEN)\nPython    44933 vignesh   10u  IPv4 0xf3a3efef4047cc3c      0t0  TCP 127.0.0.1:8043 (LISTEN)\nnode      51303 vignesh   16u  IPv4 0x39e3861404299787      0t0  TCP 127.0.0.1:9229 (LISTEN)\nnode      51303 vignesh   17u  IPv4 0xf7bb1ed797b3c353      0t0  TCP 127.0.0.1:55690 (LISTEN)\nnode      51303 vignesh   23u  IPv6 0x96077eda7dd5bac2      0t0  TCP [::1]:3000 (LISTEN)\nworkerd   52245 vignesh   14u  IPv4 0x94af7ba63b98663e      0t0  TCP 127.0.0.1:55691 (LISTEN)\nworkerd   52245 vignesh   15u  IPv6 0x93c0e4196aef3146      0t0  TCP [::1]:55691 (LISTEN)\nworkerd   52245 vignesh   25u  IPv4 0xea7029d5b71842cd      0t0  TCP 127.0.0.1:55965 (LISTEN)\nworkerd   52245 vignesh   26u  IPv4 0x2b2107bf9e37b093      0t0  TCP 127.0.0.1:55966 (LISTEN)\nworkerd   52246 vignesh   14u  IPv4 0xda62aeae79ac5469      0t0  TCP 127.0.0.1:60179 (LISTEN)\nworkerd   52246 vignesh   15u  IPv6 0xf01440398bd8ac91      0t0  TCP [::1]:60179 (LISTEN)\nworkerd   52246 vignesh   25u  IPv4 0x7e8549a327ee012c      0t0  TCP 127.0.0.1:55968 (LISTEN)\nworkerd   52246 vignesh   26u  IPv4 0x445bfb909232549e      0t0  TCP 127.0.0.1:55969 (LISTEN)\nCode\\x20H 59311 vignesh   49u  IPv4 0xfb643a47b8d1852c      0t0  TCP 127.0.0.1:46954 (LISTEN)\nCode\\x20H 59311 vignesh   50u  IPv4 0xd31a26ba4317c10d      0t0  TCP 127.0.0.1:50736 (LISTEN)\nCode\\x20H 59311 vignesh   58u  IPv6  0xe20556f682dc7fe      0t0  TCP *:50742 (LISTEN)\nnode      59367 vignesh   16u  IPv6 0xd69b539885b37f42      0t0  TCP *:50757 (LISTEN)\nnode      64805 vignesh   19u  IPv4  0xcffb00619f87ca4      0t0  TCP 127.0.0.1:9230 (LISTEN)\nnode      64805 vignesh   20u  IPv4 0x58ba0163619938d4      0t0  TCP 127.0.0.1:61884 (LISTEN)\nnode      64805 vignesh   38u  IPv4 0xf98125ac7aed9eed      0t0  TCP 127.0.0.1:3002 (LISTEN)\nworkerd   64937 vignesh   14u  IPv4 0x1dcd8d5893cebfac      0t0  TCP 127.0.0.1:61887 (LISTEN)\nworkerd   64937 vignesh   15u  IPv6 0x88e4f2fc7563aa65      0t0  TCP [::1]:61888 (LISTEN)\nworkerd   64937 vignesh   25u  IPv4 0xebefda26bbf12546      0t0  TCP 127.0.0.1:61889 (LISTEN)\nworkerd   64937 vignesh   26u  IPv4 0x925a5333cb1fcc6a      0t0  TCP 127.0.0.1:61890 (LISTEN)\nCode\\x20H 68320 vignesh   54u  IPv4 0xe2c8b06ed54484b0      0t0  TCP 127.0.0.1:63120 (LISTEN)\nCode\\x20H 68320 vignesh   59u  IPv4 0x48299306ac1e6462      0t0  TCP 127.0.0.1:53227 (LISTEN)\nCode\\x20H 68320 vignesh   63u  IPv6 0x992e8d48ac7d253c      0t0  TCP *:53237 (LISTEN)\nnode      68736 vignesh   16u  IPv6 0x2c5621ccc72b5f4f      0t0  TCP *:53265 (LISTEN)\nCode\\x20H 68835 vignesh   20u  IPv4 0x1f5a9a359f4636c9      0t0  TCP 127.0.0.1:61479 (LISTEN)\nPython    72839 vignesh   10u  IPv4 0x3cf4f10fb391fda7      0t0  TCP 127.0.0.1:8042 (LISTEN)\nCode\\x20H 78023 vignesh   38u  IPv4 0x75854774c9f0821f      0t0  TCP 127.0.0.1:54704 (LISTEN)\nOneDrive  97808 vignesh   24u  IPv6 0x9d4e869aeb5fe20e      0t0  TCP [::1]:42050 (LISTEN)\n",
+    "stderr": "",
+    "duration_ns": 187629000
+  },
+  "top_processes": {
+    "command": [
+      "ps",
+      "-axo",
+      "pid,ppid,state,%cpu,%mem,rss,etime,command",
+      "-r"
+    ],
+    "error": "PermissionError",
+    "duration_ns": 39023291
+  },
+  "vm_stat": {
+    "command": [
+      "vm_stat"
+    ],
+    "exit_code": 0,
+    "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4166.\nPages active:                                 725978.\nPages inactive:                               718714.\nPages speculative:                              5952.\nPages throttled:                                   0.\nPages wired down:                             229249.\nPages purgeable:                                4145.\n\"Translation faults\":                    18882714033.\nPages copy-on-write:                      1222520387.\nPages zero filled:                        8954106347.\nPages reactivated:                        2617387291.\nPages purged:                              266886893.\nFile-backed pages:                            447459.\nAnonymous pages:                             1003185.\nPages stored in compressor:                  2643766.\nPages occupied by compressor:                 373231.\nDecompressions:                           2059936267.\nCompressions:                             2266519482.\nPageins:                                   698521607.\nPageouts:                                    6095650.\nSwapins:                                    12578376.\nSwapouts:                                   17822191.\n",
+    "stderr": "",
+    "duration_ns": 41216625
+  },
+  "memory_pressure": {
+    "command": [
+      "memory_pressure"
+    ],
+    "exit_code": 0,
+    "stdout": "The system has 34359738368 (2097152 pages with a page size of 16384).\n\nStats: \nPages free: 4692 \nPages purgeable: 4145 \nPages purged: 266886895 \n\nSwap I/O:\nSwapins: 12578376 \nSwapouts: 17822191 \n\nPage Q counts:\nPages active: 725234 \nPages inactive: 718313 \nPages speculative: 5952 \nPages throttled: 0 \nPages wired down: 229249 \n\nCompressor Stats:\nPages used by compressor: 373826 \nPages decompressed: 2059936274 \nPages compressed: 2266521225 \n\nFile I/O:\nPageins: 698521608 \nPageouts: 6095650 \n\nSystem-wide memory free percentage: 70%\n",
+    "stderr": "",
+    "duration_ns": 43757834
+  },
+  "swap_usage": {
+    "command": [
+      "sysctl",
+      "vm.swapusage"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "sysctl: sysctl fmt -1 1024 1: Operation not permitted\n",
+    "duration_ns": 43351792
+  },
+  "hostinfo": {
+    "command": [
+      "hostinfo"
+    ],
+    "exit_code": 0,
+    "stdout": "Mach kernel version:\n\t Darwin Kernel Version 25.5.0: Mon Apr 27 20:39:09 PDT 2026; root:xnu-12377.121.6~2/RELEASE_ARM64_T6020\nKernel configured for up to 10 processors.\n10 processors are physically available.\n10 processors are logically available.\nProcessor type: arm64e (ARM64E)\nProcessors active: 0 1 2 3 4 5 6 7 8 9\nPrimary memory available: 32.00 gigabytes\nDefault processor set: 825 tasks, 6657 threads, 10 processors\nLoad average: 5.37, Mach factor: 4.67\n",
+    "stderr": "",
+    "duration_ns": 38504625
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "case_id": "uber-earnings",
+  "case_latency_ms": 25745.710041141137,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "uber-earnings",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/uber-earnings",
+    "--run-id",
+    "p00-us10-corpus-20260729-02",
+    "--order",
+    "15",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf"
+  ],
+  "completed_at_utc": "2026-07-29T08:49:30.591971+00:00",
+  "cpu_ms": 13728.515,
+  "environment_sha256": "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf",
+  "error": null,
+  "order": 15,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/uber-earnings/our-output.md",
+      "role": "markdown",
+      "sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+      "size_bytes": 1453
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/uber-earnings/our-output.json",
+      "role": "raw_json",
+      "sha256": "cda7f6f20779ddbe1612c7a08fe8e6e90d3a1474c4fa740392d2aef2d2934d76",
+      "size_bytes": 225361
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/uber-earnings/our-output.json",
+      "role": "semantic_json",
+      "sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+      "size_bytes": 108233
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 25733.601624844596,
+  "peak_rss_bytes": 2479947776,
+  "reference_comparison": {
+    "case_id": "uber-earnings",
+    "current_markdown_sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+    "current_semantic_json_sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+    "reference_semantic_json_sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-02",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+      "role": "source",
+      "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "size_bytes": 7584019
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/uber-earnings.md",
+      "role": "expert_markdown",
+      "sha256": "1b0d635b20cd7d6244109516606ad50ff8fee463ea266ddda13236cda9e03a7e",
+      "size_bytes": 2677
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/uber-earnings.json",
+      "role": "expert_json",
+      "sha256": "eb2800cb910789901261fb585aa80176c975b11403534a488f3b02dfcec44c34",
+      "size_bytes": 77213
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:49:04.845804+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

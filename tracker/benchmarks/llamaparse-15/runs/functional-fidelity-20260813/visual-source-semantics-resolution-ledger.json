@@ -1,0 +1,298 @@
+{
+  "schema_version": "functional-fidelity-visual-source-semantics-resolution-ledger-v1",
+  "generated_at_utc": "2026-08-13T13:55:00Z",
+  "policy": {
+    "scope": "Source-grounded chart text, conservative uncaptained chart routing, partial chart organization, and explicit undirected diagram-node grouping.",
+    "source_truth": "Only text and geometry visibly present in the hash-bound PDF/page render are admitted. LlamaParse-interpolated values, generated descriptions, and unsupported arrows are excluded.",
+    "primary_text_gate": "Native PDF-layer text may become primary only for an already routed chart or diagram with nonempty bounded occurrences and lines, exact same-unit owner containment, unique complete lineage, and matching method/count/SHA-256 metadata.",
+    "immutability": "The sandbox-denied first capture, completed attempt-02, and final-code attempt-03 are separate immutable roots. No prior service or LlamaParse artifact was overwritten.",
+    "resolution_gate": "A correction is evidenced by focused tests plus fresh public HTTP JSON/Markdown and repository-native rendered-DOM capture; unit tests alone are insufficient."
+  },
+  "implementation_sha256": {
+    "app/services/visual_source_text.py": "8650fd70debff8636c8d12657c6568df6472a96e3d6c0d1630976568dee2badd",
+    "app/services/visual_semantics.py": "0a2516dd7a942c0fa52cb8b6c2f84b647def235f601a827d6f919eb25a4079c8",
+    "app/services/layout.py": "8a5013bd88418b179f98517aa320f1eaff4e7048685ef1b94182dbfe6de19f69",
+    "tests/stories/phase_05/test_p05_visual_source_text.py": "3983e85d14f93522186760324232d5407c9bbc75035a5d908bd2c40f4d6476c4",
+    "tests/regression/phase_05/test_p05_us01_real_visual_routing.py": "2db38fa8ca62f56270907d658f2c97f9cd4324eef575735941ae9d756d23cf06"
+  },
+  "validation": [
+    "python3 -m py_compile app/services/visual_source_text.py app/services/visual_semantics.py app/services/layout.py: passed",
+    "Final combined focused suite (P05 visual source text, P05-US01 visual schema, P05-US10 diagram topology, and P03-US02 visual children): 108 passed, 1 third-party deprecation warning",
+    "tests/stories/phase_05/test_p05_visual_source_text.py: 13 passed",
+    "tests/stories/phase_05/test_p05_us01_visual_schema.py + test_p05_us10_diagram_topology.py + test_p05_visual_source_text.py: 43 passed before the final additive eligibility checks; the final source-text file separately passed 13",
+    "tests/stories/phase_03/test_p03_us02_visual_children.py: 64 passed",
+    "tests/regression/phase_05/test_p05_us01_real_visual_routing.py: existing five-case slice 5 passed; added ESG/health/manufacturing/clean-energy slice 4 passed",
+    "P05-US10 existing topology suite: 17 passed",
+    "Final public capture: 12/12 HTTP 200 responses, six JSON/Markdown canonical parity checks, and 10/10 rendered-DOM pages"
+  ],
+  "capture": {
+    "artifact_root": "service-visual-source-semantics-20260813-attempt-03",
+    "run_json_sha256": "d214ab65c0f02a81dc631d53ca3b45dc8dfff5432af642c64262742ac8045c62",
+    "run_command_sha256": "def1b38b3f6c757d335a611c74af96f46d2ed23856d8060d807ed9deec957e2a",
+    "status": "success",
+    "case_count": 6,
+    "page_count": 10,
+    "json_http_200_count": 6,
+    "markdown_http_200_count": 6,
+    "markdown_matches_canonical_json_count": 6,
+    "rendered_dom_count": 10,
+    "prior_attempts": {
+      "service-visual-source-semantics-20260813": "Preserved failed attempt; local port bind was denied before any PDF response capture.",
+      "service-visual-source-semantics-20260813-attempt-02": "Preserved completed 12-response/10-DOM capture; superseded by attempt-03 after the final strict-containment eligibility guard."
+    }
+  },
+  "cases": [
+    {
+      "case_id": "clean-energy",
+      "pages": [1],
+      "story_ids": ["P05-US01", "P05-US03"],
+      "source_pdf_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "source_render_sha256": {"1": "5bc0de95b4f4e0193a73f5ba9e11f9427192767cb5051547eb23075d8c8010b9"},
+      "prior_discrepancy_ids": ["FID-CLEAN-ENERGY-22462cda391e"],
+      "status": "partially_fixed",
+      "correction": "Retained 51 exact PDF-layer occurrences as explicit source evidence and added bounded partial chart organization. Native primary promotion is correctly withheld because the PDF text layer omits OCR-visible repeated 2022/2023 categories.",
+      "source_guard": "Primary Markdown/UI remains the more complete approved OCR; no inferred bar values are emitted.",
+      "remaining_gap": "Six-panel organization and some OCR order/rotation remain incomplete.",
+      "before": {
+        "service_json_sha256": "4baad63ad0af1b5b58986e945143ac066f1c177ae016b70f77ddd2957f1b0911",
+        "service_markdown_sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+        "service_dom_sha256": {"1": "24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46"}
+      },
+      "after": {
+        "service_json_sha256": "1b74b37be53c55040384d7c7d28bb70e6a5c281a25606c4138d4213504b89f91",
+        "service_markdown_sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+        "service_dom_sha256": {"1": "24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46"},
+        "semantic_assertion": "p1-i3 is chart; 51 exact source occurrences are retained; source primary is false; series=0; points=0."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse-visual-routing-fix/clean-energy",
+        "job_id": "pjb-rmfslteo6otbhxp9qj7kv61l50p0",
+        "reference_json_sha256": "b52ca25655678729c09ba1802aa7da550bc89e4d16b07a8cdcb44dd9f7780148",
+        "reference_markdown_sha256": "6b26884cca160ac4803763e19bbfcfb868a96acc29a0122d57527834460564af",
+        "rendered_dom_sha256": {"1": "798fc79e2a9f4c82d33830c57a9a770f1edafbf3c25b654eda63c60a4a776b3b"},
+        "rendered_png_sha256": {"1": "a16bda4ed6632bdedef215330aee873146f9de5aa6a1745aee13eb441cc471b9"}
+      }
+    },
+    {
+      "case_id": "egov-survey",
+      "pages": [1],
+      "story_ids": ["P05-US01", "P05-US03"],
+      "source_pdf_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "source_render_sha256": {"1": "71ffd70816cf535824aed669bf67ce0d85d96e9601676e2eddf7fac3a37f72b2"},
+      "prior_discrepancy_ids": ["FID-EGOV-SURVEY-d947042a408e"],
+      "status": "fixed_text_partially_fixed_structure",
+      "correction": "Promoted 74 exact, hash-bound native chart occurrences through the P03 projection. User-visible AO/4A OCR errors are corrected to printed 40/44 in JSON, raw Markdown, canonical Markdown, and rendered UI.",
+      "remaining_gap": "Printed bar labels are not yet associated into complete year/category series; no values are inferred.",
+      "before": {
+        "service_json_sha256": "a264c47fe3d2a2f4d89ea8f88a58b7309224388dc3440585af6956447c940356",
+        "service_markdown_sha256": "1fc3fe667190353ab21652874631e5b25f506b8e87c9773ca750ab2e5e6a1306",
+        "service_dom_sha256": {"1": "3a9d59264eb54d0ff47a4e9afc3c0c1da3a858162fe273cd9c353bc22a379064"}
+      },
+      "after": {
+        "service_json_sha256": "978ffd209b1d1f78016bbf9f020bd95d3293fd61105f22d7bc4461e54c682635",
+        "service_markdown_sha256": "5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c",
+        "service_dom_sha256": {"1": "397bb68ce2990dc3c35a61a120523e3404b4670f84c7a122aba1722d273a388d"},
+        "semantic_assertion": "p1-i3 source=native; layout_visual_source_text_promoted=true; 40 (20.7%) and 44 (22.8%) present; AO and 4A absent from primary/canonical/UI and retained only in OCR diagnostics."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse-visual-routing-fix/egov-survey",
+        "job_id": "pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v",
+        "reference_json_sha256": "30a5bd4b97bb5f4038f8ef5a666f33bf3b2ec7e404400397e5a523508ca8b21e",
+        "reference_markdown_sha256": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01",
+        "rendered_dom_sha256": {"1": "a48e482001fdec5f1efe2cfbed1ee8bc1c28a1a181e3124bbba23a0f53466cf1"},
+        "rendered_png_sha256": {"1": "5ebb79bbc6f944c9c5136c1901e0e0847aff9808eb12e0a2ba7270682ea022a4"}
+      }
+    },
+    {
+      "case_id": "esg-metrics",
+      "pages": [1],
+      "story_ids": ["P05-US01", "P05-US03"],
+      "source_pdf_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "source_render_sha256": {"1": "3e20ef9f69b14fcfc15ac23888b68551f594cc6bc90d07bed4bca5f2cb0538c6"},
+      "prior_discrepancy_ids": ["FID-ESG-METRICS-849a723b603a"],
+      "status": "partially_fixed",
+      "correction": "Both explicit uncaptained chart regions now route as charts from conservative energy-percentage and fiscal-row signatures; exact native occurrences are retained as subordinate evidence.",
+      "source_guard": "Native primary is withheld where a token crosses the owner boundary or a fiscal year is fused with a footnote (FY245/CY211); approved OCR remains user-visible.",
+      "remaining_gap": "The small fiscal-row chart still has noisy user-visible OCR and incomplete series organization.",
+      "before": {
+        "service_json_sha256": "ad28fb4e52b307e3c30b563ee2019ed2b6b53dc23fc6a6df39f37bd2e9f06efd",
+        "service_markdown_sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+        "service_dom_sha256": {"1": "1ed646875bce6a2e69e5fbbee63c8f08ccae10f81109664e9907aa5baa64419b"}
+      },
+      "after": {
+        "service_json_sha256": "010690328f10e09fe1d8af46f7f23534672df1cb9536ab5d4e2e3fc691cf2659",
+        "service_markdown_sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+        "service_dom_sha256": {"1": "a908020838ccf4c9c2865661f968a0c6b57dc824de93ff234aa74897b974df50"},
+        "semantic_assertion": "p1-i13 and p1-i16 are charts; native source primary=false for both; series=0; points=0; no fused FY245/CY211 token reaches primary Markdown/UI."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse/esg-metrics",
+        "job_id": "pjb-dnqqsnjbdx1np5utnrt9nx6fcibd",
+        "reference_json_sha256": "3ed091fb34978ee96461fdf98008aa8165a91c5eeb0f919b489f3d9baf97f827",
+        "reference_markdown_sha256": "d5d29a2f65c9463fc52e3f567baf25ec718fdd0958e649927c8295a61f2c659f",
+        "rendered_dom_sha256": {"1": "b58b37a7df5791178deaa46e35f2b087101ef96242a374b9ad08d77c47b65863"},
+        "rendered_png_sha256": {"1": "a9da8b5b77ec0adb2a962408654c24fe100156b230b7f86384ee01035a6d5755"}
+      }
+    },
+    {
+      "case_id": "health-report",
+      "pages": [1],
+      "story_ids": ["P05-US01", "P05-US03"],
+      "source_pdf_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "source_render_sha256": {"1": "218143763dba631436ac884890fd9630d109e0fdc3fb7b163a04c1818d816262"},
+      "prior_discrepancy_ids": ["FID-HEALTH-REPORT-9e7b81af7932"],
+      "status": "partially_fixed",
+      "correction": "Character-split native glyphs for the first chart are coalesced into authored lines and promoted exactly once; both regions retain chart typing and partial axis evidence.",
+      "remaining_gap": "The second chart retains approved OCR because exact native ownership is not fully contained; some OCR noise and series organization remain.",
+      "before": {
+        "service_json_sha256": "885196696b3935dd7ea67798e3029bda47fa539a058c0495ecdf3d1307506d58",
+        "service_markdown_sha256": "f094dc43b953e8942637a32f331a7143d667ad5b0860ecd497246552631e3122",
+        "service_dom_sha256": {"1": "f57ead36fd6e3a0c0e9331db2f7939b0671722f28726591726ba99e93a09bb37"}
+      },
+      "after": {
+        "service_json_sha256": "8101e53be037b93d77a2e33190cee98b4980816b20b21ec9566b59d0d5699584",
+        "service_markdown_sha256": "40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0",
+        "service_dom_sha256": {"1": "4e97ee3a513f32a802d9ce6e3b19590083766eca6bb72dc4edee845e180bfb1d"},
+        "semantic_assertion": "p1-i2 source=native and starts 'Total Men Women' / 'Age-standardised mortality rate per 100 000 population'; p1-i6 remains a chart; series=0 and points=0 for both."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse-visual-routing-fix/health-report",
+        "job_id": "pjb-g66fg3bwy8plzgmslyhwfhb4taoe",
+        "reference_json_sha256": "84e5ed92de3380cf7216c5fa5d78932d5d761705513c5994248ec54fc0ce646e",
+        "reference_markdown_sha256": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d",
+        "rendered_dom_sha256": {"1": "0ada1a35cda9264e06d88c496dd7cdb7984e76f4fdc59b7ee4e0f084313b18d7"},
+        "rendered_png_sha256": {"1": "353ba9b3d65bafd15c486a22bfdc441541330dc4a46a764d8b122f144b8b04de"}
+      }
+    },
+    {
+      "case_id": "manufacturing-report",
+      "pages": [1, 2, 3],
+      "story_ids": ["P05-US01", "P05-US03"],
+      "source_pdf_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "source_render_sha256": {
+        "1": "ac33e81b57943866b0cc29bd0d0e1aae3cf6232e201e7df566b959448609649d",
+        "2": "af5201b13a2df06e24f950186262185784d9753a3e2c33ed866a411ae14161b8",
+        "3": "30c8f922b948c9231ce0c81a5858dbec7b35d8d13f9eda05c83fd6449f9bc764"
+      },
+      "prior_discrepancy_ids": ["FID-MANUFACTURING-REPORT-21816bd23dd1"],
+      "status": "partially_fixed",
+      "correction": "The first uncaptained page-1 chart now routes from explicit percentile/percent/domain labels; all five visual regions are charts. Safe native labels are ordered and rotated words are restored from PDF direction metadata.",
+      "remaining_gap": "Some page-2 OCR remains primary because native boxes cross owner boundaries; complete series/curve semantics remain unresolved.",
+      "before": {
+        "service_json_sha256": "84b863d7f96a3759372da9f9db82292df9fb6c8b9a24b37b34dc185d31b3bad1",
+        "service_markdown_sha256": "6aef58c75d563a3ed714c1d0b245fb8879e3a55e452cc8614bf1f76d7fd7a483",
+        "service_dom_sha256": {
+          "1": "3ca5309d30a69fc37552154fc5b640af1558f74b518c433d324304dd1c4a1762",
+          "2": "614256f247756964f16056020348eff127d31e7f565f1040c9ee359090e45799",
+          "3": "0a1384e6d1e0309e4f610b737cced5cd1c87f28229f1672eb2900adae3633b33"
+        }
+      },
+      "after": {
+        "service_json_sha256": "5bc18b7c3067231643be1819c55f4b6f94db416c54d14ea33a310cef43c35585",
+        "service_markdown_sha256": "55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599",
+        "service_dom_sha256": {
+          "1": "e50b39230ed92eef404f812a866f6d4488e7d4124e40b69366b5a91f949b9db3",
+          "2": "614256f247756964f16056020348eff127d31e7f565f1040c9ee359090e45799",
+          "3": "35eac8aa104a88393d9c5556af8b4c211a77d38a37ba57f266e45b3387beeea9"
+        },
+        "semantic_assertion": "Five charts are present. p1-i2 source=native contains 'United States, 1.6%' and 'World, 3.8%'; every chart has series=0 and points=0."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse-visual-routing-fix/manufacturing-report",
+        "job_id": "pjb-vpn3e4kt636fnx2y4vlr98otbyic",
+        "reference_json_sha256": "409a8ba52a3051066041540f9e70e56e9edd322a571581755402f164e8e89d08",
+        "reference_markdown_sha256": "771226b27e5a6ad2024adc6acc66f23eda5c89ca105b32cc114bdc619b7a31d6",
+        "rendered_dom_sha256": {
+          "1": "e7b1ca739f58c2fca0b8363f0b6d68c54d21c4b8d47e40eae4a53e5939d7215a",
+          "2": "84fe00b5d5dab909697aa54ad316df2df05dda2a9eff332808d6b8b1ba2a6b14",
+          "3": "281f4d1bd7ce664e6c7d2f3b20d110df63b46af0659710153999de670bc4a58a"
+        },
+        "rendered_png_sha256": {
+          "1": "5eedad36b7e7f31ddfe1a5d0249ace11bef1a03a3e903c7475d1a24a65d5ccfd",
+          "2": "44feaa5f5442b5c2f5ce8a47dfed18e8a580bb2169bcf9f31bc71ea81f8d9b0f",
+          "3": "fd63b598a2b53cb64a71f07eba5810655ce74ebccd97fba05e23033cc320411b"
+        }
+      }
+    },
+    {
+      "case_id": "uber-earnings",
+      "pages": [1, 2, 3],
+      "story_ids": ["P05-US01", "P05-US03", "P05-US10"],
+      "source_pdf_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "source_render_sha256": {
+        "1": "a82a8959a97719166abd86023aa1066e8bf2157510501fdfa11cfcc842ea17ab",
+        "2": "3006e7327ff481f5a08e3fc6381e5b5f3f9ba4cf5429c36d11702d149b2d6e55",
+        "3": "6890146ba1f2ca7714bfff9aa297984e554b2e26f544c9079755f97d9228172f"
+      },
+      "prior_discrepancy_ids": ["FID-UBER-EARNINGS-66a8a6be02e9"],
+      "status": "partially_fixed",
+      "correction": "Both page-2 regions route as charts. Page-3 consumer and merchant regions route as diagrams with seven explicit ellipse nodes each and exactly zero connectors because no source arrowhead exists.",
+      "source_guard": "The left page-2 chart keeps OCR-visible years because the native layer contains only currency callouts. The right chart promotes exact native text. No Llama-interpolated intermediate values or directed Mermaid arrows are reproduced.",
+      "remaining_gap": "Page-2 complete series/value organization and page-3 unlabeled fan geometry remain unresolved; the first page-3 group's primary OCR omits several exact source labels whose boxes cross the owner boundary.",
+      "before": {
+        "service_json_sha256": "6273561169eb6d2c4f77e3af1395c181eb7958f9c7a335f2e0ef751a1701126d",
+        "service_markdown_sha256": "38a70ffc902eb7b15775327f2a90c0c28716256bdfd7c0d7a5def19f3857b62a",
+        "service_dom_sha256": {
+          "1": "18446daff0d52b9ec59ba2dd9c7eac20e7e474e7e77343c6050406d607d8802e",
+          "2": "0b214ae97fbb60587271acf1f2654c4b7931c7628b9b167851386eff63a7b158",
+          "3": "c61a64dfc7db0bf04e9661f836ed26dcde67f739caecc4becbf163341db8e6d3"
+        }
+      },
+      "after": {
+        "service_json_sha256": "ff51e0757d6d05886470d989d13f7c063deccb08f5520d227e4a7a324f8c7bc6",
+        "service_markdown_sha256": "b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094",
+        "service_dom_sha256": {
+          "1": "18446daff0d52b9ec59ba2dd9c7eac20e7e474e7e77343c6050406d607d8802e",
+          "2": "7ad7c6f5e43a612c52df22838827089270093eb3e12fd02e299e00e1d8f63029",
+          "3": "50ad989f8edf5b8a4878c9256de46087cc847952db360a2f83176672e1a9bd06"
+        },
+        "semantic_assertion": "p2-i8 and p2-i11 are charts with series=0/points=0; p3-i2 and p3-i3 are diagrams with seven nodes and zero connectors each; p1-i1 remains an image with diagnostic-only photo OCR."
+      },
+      "llamaparse_reference": {
+        "artifact_root": "llamaparse-visual-fix/uber-earnings",
+        "job_id": "pjb-skyvq5noznjko41p3fs2vxgfgptg",
+        "reference_json_sha256": "922ed2e93a5e7ce84ddcc3750dc1ae3655e3518e3c669cfc3be2b05e2b642d7e",
+        "reference_markdown_sha256": "40caf1fe84fcf30c2b180b06d988f60f8c0c80ff8fd083df3f96950ab8d3f64c",
+        "rendered_dom_sha256": {
+          "1": "edbafe1a31504bd4426856ef40845facf3815be0c103d80eacda086f908e7f41",
+          "2": "a0fb9be04edcc319d5b1f078ca8435638b6db1f588c36446cf8dcd257d365f35",
+          "3": "6a84fdc05573d0d887828896e5e81e60e968681c5feb5aeb0ee04708d78b5d8e"
+        },
+        "rendered_png_sha256": {
+          "1": "e063c484e8b8e8858b79e29ad769cdd5fbf86dc9b4c1919c6826741c0ec8905d",
+          "2": "f87475210f7a55fa9a0ea5dac881cfe967a859e99e20022e0399ff99d289ee17",
+          "3": "ec993257f6bb5343450e6d89a7481f3499d796d599b16f15f77ab4af09c5bd71"
+        }
+      }
+    }
+  ],
+  "reviewed_but_unchanged": [
+    {
+      "case_id": "clinical-study",
+      "pages": [3],
+      "source_pdf_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "source_render_sha256": {"3": "c020e2c18e2b52852429eabd24a67c841499d1fe07fbabbe5cf87e49fbd1f52f"},
+      "status": "remaining_gap",
+      "reason": "The raster flowchart visibly has arrows, but current bounded source evidence cannot prove connector endpoints/direction without unsupported inference. It remains a diagram with zero nodes/connectors."
+    },
+    {
+      "case_id": "component-datasheet",
+      "pages": [1, 2],
+      "source_pdf_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "source_render_sha256": {
+        "1": "e40c3aaebccbf6fff1f28dfbd73a84ba9bd32904722bd5b0303ed8ea1769a16f",
+        "2": "2fa2826bc0aa853dde6a3d8642c9587354d2bd5c992cc00323ba773881fd6802"
+      },
+      "status": "remaining_gap",
+      "reason": "The board photo and pinout have no native PDF text inside their visual bboxes. The board correctly remains an image with diagnostic OCR; no safe generic pinout topology signature was implemented."
+    },
+    {
+      "case_id": "insurance-acord",
+      "pages": [1],
+      "source_pdf_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "source_render_sha256": {"1": "e9b53e3cfdcc1e1b38977aa619ceac343948764e24119992a3adf0805a510a3d"},
+      "status": "untouched",
+      "reason": "No visual-source/chart/diagram correction in this pass applies to the form. Existing P03/P04 form/contact work remains authoritative."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "clinical-study",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "full",
+  "source_response": "response.json",
+  "source_response_sha256": "997ad5c2cda987eba833b3f762033b086a6c1a1ab9e85fcbea992f8e9487dd1d",
+  "page_count": 4,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "37d98fb68cf487f0c85b38c2e911f761a7efe72d8e7f3da64b1856b0c426ee63",
+      "html_sha256": "ec0f094916eabb952a61077d5ea68bbc7aef6fc47532a2d405f34f388a2a52d9",
+      "text_sha256": "580d3afdd622965d507c4c8f091b60c99fcf57aea184b530420d74eded163f72"
+    },
+    {
+      "page_number": 2,
+      "artifact": "pages/page-2/rendered-dom.json",
+      "artifact_sha256": "aaa1843ba336b9bf0ea82a141d4439e6cf05cae75160745c37eba06aa195b0e6",
+      "html_sha256": "8969fd2dda806070280a8b774bee05d7a618d492769830dee4724f702fa99cb0",
+      "text_sha256": "9cc20af973cb779f6077a5af5d33989d71943607a34322b3841302cc2769216f"
+    },
+    {
+      "page_number": 3,
+      "artifact": "pages/page-3/rendered-dom.json",
+      "artifact_sha256": "2264513994c59889e8ac8f2ad66b37978c0ba15e76b964f77ec35b435a63a749",
+      "html_sha256": "cbdf2ed1c5a74ac9e7e87f24e05076f497227e0baae8a3d797974dea90444771",
+      "text_sha256": "76588a998bd3d7c89f4b87f91600a753a4559a2e4cbe63a91017aaef698c536d"
+    },
+    {
+      "page_number": 4,
+      "artifact": "pages/page-4/rendered-dom.json",
+      "artifact_sha256": "cb371b2296c3930dcd30308ba48b82610fb637fbccdef85d57902fcc1c70326e",
+      "html_sha256": "f0b6327be70c72f0c8e52b0f213e561db5d9fe1d69cdf9444076eef7c30731a8",
+      "text_sha256": "5d3a15f7aea51829f7adaf8c1595fde0dd25b80d8dd52e4be7c98ce006acc561"
+    }
+  ]
+}

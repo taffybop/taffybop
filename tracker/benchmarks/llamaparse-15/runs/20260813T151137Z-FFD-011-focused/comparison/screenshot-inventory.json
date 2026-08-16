@@ -1,0 +1,122 @@
+[
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-1/affected-fers-region.png",
+    "sha256": "2431bcc4239d59e48a651c956f0c1f4bea4b0e76ad449b1eb0d49b4aa86feae9",
+    "size_bytes": 101629
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-1/rendered-full-page.png",
+    "sha256": "7323841880a7ec89ae339fbe3bc6a931370c2306043062013fa3f8d5a8e99c65",
+    "size_bytes": 110631
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-1/rendered.png",
+    "sha256": "7323841880a7ec89ae339fbe3bc6a931370c2306043062013fa3f8d5a8e99c65",
+    "size_bytes": 110631
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-2/rendered-full-page.png",
+    "sha256": "fe18d61cacdee9a2d15115fc579591831321edafdf59b186a73304b65c5060f8",
+    "size_bytes": 96273
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-2/rendered.png",
+    "sha256": "fe18d61cacdee9a2d15115fc579591831321edafdf59b186a73304b65c5060f8",
+    "size_bytes": 96273
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-3/rendered-full-page.png",
+    "sha256": "6a55f1ba91f333be14c2e174413fcdc87ae01e705c40204aff26fca538fbbd7b",
+    "size_bytes": 101872
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "llamaparse/postal-10k/pages/page-3/rendered.png",
+    "sha256": "6a55f1ba91f333be14c2e174413fcdc87ae01e705c40204aff26fca538fbbd7b",
+    "size_bytes": 101872
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "service/postal-10k/actual-clearleaf/affected-fers-region.png",
+    "sha256": "b0ed2ce51fb1655452365cde4538ab29f5cf5ce39af5ded1f1f9c7015cede103",
+    "size_bytes": 161786
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "service/postal-10k/actual-clearleaf/full-page.png",
+    "sha256": "abf6ff31806a5132b8d571c6ab0ba89ce7447d71acc43487e9f091735d499d0c",
+    "size_bytes": 175406
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "service/postal-10k/actual-clearleaf/pages/page-1/rendered-full-page.png",
+    "sha256": "abf6ff31806a5132b8d571c6ab0ba89ce7447d71acc43487e9f091735d499d0c",
+    "size_bytes": 175406
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "service/postal-10k/actual-clearleaf/pages/page-2/rendered-full-page.png",
+    "sha256": "4fd02c5d8041e94d426a6fbd2829f48f9adec9a73204ff39ec74556affa3d4dc",
+    "size_bytes": 152238
+  },
+  {
+    "detected_media_type": "image/jpeg",
+    "filename_extension": ".png",
+    "note": "Browser capture preserved original JPEG bytes despite .png filename.",
+    "path": "service/postal-10k/actual-clearleaf/pages/page-3/rendered-full-page.png",
+    "sha256": "c581087829393002199ab70e64971e270f6e6716248de835d46115371302a507",
+    "size_bytes": 169947
+  },
+  {
+    "detected_media_type": "image/png",
+    "filename_extension": ".png",
+    "note": null,
+    "path": "source/pages/page-1.png",
+    "sha256": "63f96cef700897c36fefb22178c4044fa03bf70b1b89e2ebdd68d1f544039dac",
+    "size_bytes": 467246
+  },
+  {
+    "detected_media_type": "image/png",
+    "filename_extension": ".png",
+    "note": null,
+    "path": "source/pages/page-2.png",
+    "sha256": "c0fe428c08193f0c3332fa3a2205726f149f028de76c803254639eb09aa28af0",
+    "size_bytes": 215996
+  },
+  {
+    "detected_media_type": "image/png",
+    "filename_extension": ".png",
+    "note": null,
+    "path": "source/pages/page-3.png",
+    "sha256": "149f6e446aedb7505757c58600590245a4c149736267e9fc9f38bdb9abd7781f",
+    "size_bytes": 529069
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "backend_url": "http://127.0.0.1:8000",
+  "captured_at_utc": "2026-08-13T15:33:24Z",
+  "frontend_url": "http://localhost:3000/",
+  "request_id": null,
+  "request_id_note": "The Clearleaf UI did not expose a request ID.",
+  "request_route": "/v1/parse",
+  "source_filename": "postal-10k-FFD-011-20260813T151137Z.pdf",
+  "source_page_count": 3,
+  "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+  "source_size_bytes": 83589,
+  "ui_processing_time_seconds": 22.0,
+  "ui_result": "Parsing complete. 3 physical pages available."
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "ffd-011-llamaparse-assets-v1",
+  "assets": [
+    {
+      "index": 0,
+      "filename": "page_1.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=tbJ02jxy6jmBRn536No5747%2Bukw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "screenshot",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 612,
+        "h": 792
+      },
+      "local_path": "assets/page_1.jpg",
+      "size_bytes": 858862,
+      "sha256": "0ab85a1d58001c9b4f0a12c1e7dccdc6e84dfde20a00d7a4b19dea1b62f13fe1"
+    },
+    {
+      "index": 1,
+      "filename": "page_1_table_1_v2.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=LcBm9kXcSgmieIjOzJB7cdc0Rv4%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "layout",
+      "bbox": {
+        "x": 56,
+        "y": 98,
+        "w": 499,
+        "h": 627
+      },
+      "local_path": "assets/page_1_table_1_v2.jpg",
+      "size_bytes": 511019,
+      "sha256": "38d19b03d547d5a07feb077ceb9cbf756bde46312847b63da6c693b7adb246f0"
+    },
+    {
+      "index": 2,
+      "filename": "page_2.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=dQopMFZ6Horz0esmmcCcV1sZEto%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "screenshot",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 612,
+        "h": 792
+      },
+      "local_path": "assets/page_2.jpg",
+      "size_bytes": 433832,
+      "sha256": "3a238c0e5aefdad1e6ce8327019520ba0398d38466bb38bf4e6f207140df4934"
+    },
+    {
+      "index": 3,
+      "filename": "page_2_table_1_v2.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_2_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=y7hF8O4eY%2BGlh2ZjqKnxY1ZuqX0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "layout",
+      "bbox": {
+        "x": 56,
+        "y": 90,
+        "w": 500,
+        "h": 242
+      },
+      "local_path": "assets/page_2_table_1_v2.jpg",
+      "size_bytes": 207454,
+      "sha256": "2dee7069d2b57fe32cc5fc4df91de9e9a14b4f6826b2396408be6b25163e5e9f"
+    },
+    {
+      "index": 4,
+      "filename": "page_3.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=5hrcxh0z2noNHh6lhNwR9eZaWIE%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "screenshot",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "w": 612,
+        "h": 792
+      },
+      "local_path": "assets/page_3.jpg",
+      "size_bytes": 884701,
+      "sha256": "fd3610d9dbf01de8ea45e7a97aaf28580a114925541c90c5e9a22010b7d7a4ab"
+    },
+    {
+      "index": 5,
+      "filename": "page_3_table_1_v2.jpg",
+      "content_type": "image/jpeg",
+      "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/0c113496-8295-4d55-b38a-8fb5fa18626b/page_3_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XT7K3PXGEX&Signature=b%2BVIEUY5kT7x3q%2B07xvCnt3W6gk%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEB8aCXVzLWVhc3QtMSJHMEUCIQD4FcxLiEPVD8f%2BbLiWIf%2FVaNqrzhRpXpqDCwFcJMYpeAIgXJN0ZUphbegm9IQ7ufIkM8%2F%2Ba5CAAmFk0uN3Lb8DCh0qkAUI6P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDI7oriIoIBxr6E7PWCrkBBGSkjj6XLvbWEJNMGIyutwYd%2BvH8n587lH0THdEwvSXpP2r4twR5vMT2cwEZLu%2Bc1EEbwOkDH8yO%2F%2Fv%2FsH%2FJxzPYgHQctIFE%2ByXa4bsWJa94Ea6L3f8DDfWvQE9FKrExXQOS7lFokPiEVi3Gdv1iN8uhpWWCWXYF2xPiJQMe3CbPjJ5zEcVCYFXBxP%2B%2BAcVtlAvtdVO1x2hnp%2F73oiyV7LPfntjhT%2BOhBZakfFoIIv7VyZtnNPdGj1gy8ZCpM2B89OLwtximAOCp7qDBTrTUBOrde%2B9GHDKsyHE77Bi6z5Ko%2FLxvuY5NXxnxzgzBvP9jiEYGerUvBe9wNYgSmhKOL2n%2FVrRZVc4X1T%2BmRLlu8Hp4uQkfr1vs2rlBmb4%2BwYpUY6h5UzGNuDyoWh8znnHpXHe7ERhwkZBTgoHAAKahtWNeHnz%2FUR%2B28cX0KE1IK5M3NVkVHA5HY8r%2Bou7EHFsvKa8QJLZdsYhfHPJi37dRnr%2FzXVLH9qfu12K4uDPFEkUsourl79eOtuxJuEkqjIApqzPIMiPdMj2iITGFvlLs3OVkzKyinZ%2F%2FMhTgKj6QV7zK%2Bg%2F67vPZ2cDKSX%2FoOLoBsB2oNZcjVFF1uIS3WP6RtOzOaAu8VIm9OSb1vnFy24Tx%2FKYBZUa%2FqDPuGVlvcAKI2XcZftQCjBoFGQGnIXPcnIQMIJZnqc3cU5WMGhyj1VsnHq8KSBBsS%2FUXX5qbSxo4dVwEuT%2Bf48770Z3FrOqBsRqStTe9YRqyM9QmhZiSaqUilXyGEZmp5YpqZqqSJn16PvHn%2ByiTltrsbbxTFr4cjO%2B%2BVP6mTCcuffTBjqYAQYkSqx9n7EGq2TC7cPSYeguOqVBaBZU8ICkFP45XH4dIgrR1zoXox2Gos9BYNq1gcOoJy4WLcmy7nmv8bNOQ7Al6eutziWHP6cB6SrvoEYlSgCTXAsEAkZT%2B24HMZVT66SBfHYkHY7Fmeo2ZJMAITK6pV87HXew8amMvWrM0sqb6pivrWRD3fmAPbZvA14ONCsnv3%2FE4beM&Expires=1786638209",
+      "category": "layout",
+      "bbox": {
+        "x": 60,
+        "y": 90,
+        "w": 491,
+        "h": 592
+      },
+      "local_path": "assets/page_3_table_1_v2.jpg",
+      "size_bytes": 563638,
+      "sha256": "9facff7ada0d12e4b3567c85cf4987522bc325fd2a1d97610f59dcd986134462"
+    }
+  ]
+}

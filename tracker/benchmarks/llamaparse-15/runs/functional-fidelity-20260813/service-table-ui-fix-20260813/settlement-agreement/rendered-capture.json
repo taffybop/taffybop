@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "settlement-agreement",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "755b1ab965fe3abde76349b504587dbd373133247358a2bf348c11d8a53ca63c",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "b162dc8ffbdd8646888e6c81d661bb1760cd401b86f336752ae4d39b9ea2afb1",
+      "html_sha256": "480e4796be216edf06e6ec13de6eafbfc5c1ace4294e6cb4c3e6f0732d201b08",
+      "text_sha256": "5ba6ec12efb8678e8c36406e8791869a43afdf65297e7fa1404db3fa1a809778"
+    }
+  ]
+}

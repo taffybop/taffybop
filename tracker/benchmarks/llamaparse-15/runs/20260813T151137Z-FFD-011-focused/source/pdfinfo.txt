@@ -1,0 +1,6 @@
+File name: postal-10k-FFD-011-20260813T151137Z.pdf
+File size: 83589 bytes
+Pages: 3
+Page size: 612 x 792 pts (letter)
+Rendered inspection: pypdfium2 at 200 dpi
+Poppler note: the host Poppler binary was unavailable due to a dynamic-library mismatch; the source bytes and page geometry were independently verified.

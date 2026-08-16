@@ -1,0 +1,129 @@
+{
+  "coordinator_results": [
+    {
+      "completed_at_utc": "2026-07-28T18:27:41.199525+00:00",
+      "run_id": "catastrophe-cold-01",
+      "run_record_present": true,
+      "started_at_utc": "2026-07-28T18:27:27.760015+00:00",
+      "status": "success",
+      "worker_exit_code": 0
+    },
+    {
+      "completed_at_utc": "2026-07-28T18:27:51.063229+00:00",
+      "run_id": "catastrophe-cold-02",
+      "run_record_present": true,
+      "started_at_utc": "2026-07-28T18:27:41.199969+00:00",
+      "status": "success",
+      "worker_exit_code": 0
+    },
+    {
+      "completed_at_utc": "2026-07-28T18:28:00.554590+00:00",
+      "run_id": "catastrophe-cold-03",
+      "run_record_present": true,
+      "started_at_utc": "2026-07-28T18:27:51.063585+00:00",
+      "status": "success",
+      "worker_exit_code": 0
+    },
+    {
+      "completed_at_utc": "2026-07-28T18:28:10.089190+00:00",
+      "run_id": "catastrophe-cold-04",
+      "run_record_present": true,
+      "started_at_utc": "2026-07-28T18:28:00.554994+00:00",
+      "status": "success",
+      "worker_exit_code": 0
+    },
+    {
+      "completed_at_utc": "2026-07-28T18:28:19.543926+00:00",
+      "run_id": "catastrophe-cold-05",
+      "run_record_present": true,
+      "started_at_utc": "2026-07-28T18:28:10.089466+00:00",
+      "status": "success",
+      "worker_exit_code": 0
+    }
+  ],
+  "environment": {
+    "application": "0.1.0",
+    "docling": "2.114.0",
+    "docling-core": "2.87.1",
+    "logical_cpu_count": "10",
+    "machine": "arm64",
+    "node": "v24.18.0",
+    "pdfplumber": "0.11.10",
+    "pillow": "12.3.0",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "pydantic": "2.13.4",
+    "pypdfium2": "5.12.1",
+    "pytest": "9.1.1",
+    "python": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python",
+    "source_tree_sha256": "1a24a65b5a9cca959d1d805e8dc169714e0a67a84e0c4cf47c7cb9154ef4bfd7",
+    "tesseract": "tesseract 5.5.3"
+  },
+  "execution_policy": {
+    "hf_hub_offline": true,
+    "hosted_services": "disabled",
+    "image_captioning": false,
+    "optional_models": "disabled",
+    "tokenizers_parallelism": false,
+    "transformers_offline": true
+  },
+  "fixture_id": "catastrophe-recap",
+  "portable_command": [
+    ".venv/bin/python",
+    "-m",
+    "tests.benchmarks.baseline_report",
+    "capture",
+    "--source",
+    "benchmark-expertmodeldata/catastrophe-recap.pdf",
+    "--truth",
+    "tracker/phase-00-baseline/evidence/P00-US02-catastrophe-truth.json",
+    "--runs-root",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728",
+    "--repeat",
+    "5",
+    "--node",
+    "/opt/homebrew/opt/node@24/bin/node"
+  ],
+  "repeat": 5,
+  "run_record_paths": [
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-01/run-record.json",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-02/run-record.json",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-03/run-record.json",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-04/run-record.json",
+    "tracker/phase-00-baseline/evidence/P00-US03-baseline-runs-20260728/catastrophe-cold-05/run-record.json"
+  ],
+  "runner_version": "P00-US03-1.0",
+  "schema_version": "1.0",
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+  "status": "success",
+  "truth_sha256": "d14d9f4bdbbffee24961d731b7bca75227eaec6bac77cce7508ded4252c9b4ac"
+}

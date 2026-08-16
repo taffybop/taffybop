@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/770 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 136/770 [00:00<00:01, 519.82it/s]Loading weights:  54%|█████▍    | 419/770 [00:00<00:00, 1334.52it/s]Loading weights: 100%|██████████| 770/770 [00:00<00:00, 1685.05it/s]
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x135223d90>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x135220e10>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x109c2b950>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 0, processed image file <tempfile._TemporaryFileWrapper object at 0x12a1b20f0>):
+ b'Estimating resolution as 694\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 1, processed image file <tempfile._TemporaryFileWrapper object at 0x14c9d6580>):
+ b'Too few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'
+OSD failed (doc uber-earnings.pdf, page: 1, OCR rectangle: 2, processed image file <tempfile._TemporaryFileWrapper object at 0x14c9d57b0>):
+ b'Estimating resolution as 419\nToo few characters. Skipping this page\nWarning. Invalid resolution 0 dpi. Using 70 instead.\nToo few characters. Skipping this page\nError during processing.\n'

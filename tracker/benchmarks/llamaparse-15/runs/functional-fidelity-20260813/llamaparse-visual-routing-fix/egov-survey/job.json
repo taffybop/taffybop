@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v",
+    "created_at": "2026-08-13T06:22:43.641184Z",
+    "updated_at": "2026-08-13T06:23:02.049225Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "egov-survey.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 1,
+  "captured_at": "2026-08-13T06:25:34.794Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v?fileName=egov-survey.pdf"
+}

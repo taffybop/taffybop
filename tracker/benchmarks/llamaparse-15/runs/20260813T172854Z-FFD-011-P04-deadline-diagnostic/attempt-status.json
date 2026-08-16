@@ -1,0 +1,15 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-attempt-status-v1",
+  "status": "exploratory_superseded_preserved",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "reason": "The first four observations were retained while the test-only harness was being hardened. Subsequent instrumentation added per-table page-deadline attribution, bounded inner-error capture, and explicit predecessor content comparison, changing the harness code identity. These files are preserved and must not be combined with the final sweep.",
+  "completed_pairs": [
+    ["clinical-study", 5.0],
+    ["ny-timetable", 5.0],
+    ["clinical-study", 10.0],
+    ["ny-timetable", 10.0]
+  ],
+  "superseded_by": "a new immutable diagnostic run using one settled harness identity"
+}

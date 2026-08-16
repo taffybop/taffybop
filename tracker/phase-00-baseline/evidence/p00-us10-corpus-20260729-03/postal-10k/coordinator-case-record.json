@@ -1,0 +1,102 @@
+{
+  "case_id": "postal-10k",
+  "case_latency_ms": 20101.45829198882,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "postal-10k",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/postal-10k",
+    "--run-id",
+    "p00-us10-corpus-20260729-03",
+    "--order",
+    "12",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  ],
+  "completed_at_utc": "2026-07-29T08:54:20.803719+00:00",
+  "cpu_ms": 14963.85,
+  "environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634",
+  "error": null,
+  "order": 12,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/postal-10k/our-output.md",
+      "role": "markdown",
+      "sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+      "size_bytes": 11109
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/postal-10k/our-output.json",
+      "role": "raw_json",
+      "sha256": "254981ef41c889ec8607df18162211520f7d400589029a3a874ab6a7096794e7",
+      "size_bytes": 541018
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/p00-us10-corpus-20260729-03/postal-10k/our-output.json",
+      "role": "semantic_json",
+      "sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+      "size_bytes": 277566
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 18974.31983286515,
+  "peak_rss_bytes": 1992048640,
+  "reference_comparison": {
+    "case_id": "postal-10k",
+    "current_markdown_sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+    "current_semantic_json_sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+    "reference_semantic_json_sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-03",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/postal-10k.pdf",
+      "role": "source",
+      "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "size_bytes": 83589
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/postal-10k.md",
+      "role": "expert_markdown",
+      "sha256": "49513ae511062bd4ad54ef281b696bb87dd6bb84a20100fd0a055b15c5fd9f05",
+      "size_bytes": 11472
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/postal-10k.json",
+      "role": "expert_json",
+      "sha256": "c312e77b9cc9ae0d90d1f20f67dd485f085497d7131ceb9342c4066deb2f7966",
+      "size_bytes": 86821
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:54:01.805274+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

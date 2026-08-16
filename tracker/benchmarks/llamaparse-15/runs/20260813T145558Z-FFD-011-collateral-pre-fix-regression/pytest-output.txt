@@ -1,0 +1,12 @@
+FF.................................                                      [100%]
+
+2 failed, 33 passed, 1 warning in 0.28s
+
+Both failures were the predeclared positive variants:
+
+- test_punctuation_adjacent_native_run_boundary_whitespace_is_not_content[leading-cell-owner]
+- test_punctuation_adjacent_native_run_boundary_whitespace_is_not_content[nonleading-cell-owner]
+
+In both cases the current production aligner retained `supplemental-2`.
+All five new punctuation/internal-whitespace/partial-row/ambiguous-owner
+fail-closed adversaries and all 28 existing generic cases passed.

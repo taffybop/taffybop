@@ -1,0 +1,67 @@
+{
+  "failed_next_actual_dom_page_1": {
+    "diff_bytes": 7202,
+    "identical": false,
+    "path": "comparison/drift/failed-next-actual-dom-page-1.diff"
+  },
+  "failed_next_actual_dom_page_2": {
+    "diff_bytes": 0,
+    "identical": true,
+    "path": "comparison/drift/failed-next-actual-dom-page-2.diff"
+  },
+  "failed_next_actual_dom_page_3": {
+    "diff_bytes": 0,
+    "identical": true,
+    "path": "comparison/drift/failed-next-actual-dom-page-3.diff"
+  },
+  "llama_dom_page_1": {
+    "diff_bytes": 239685,
+    "identical": false,
+    "path": "comparison/drift/llama-selected-fresh-dom-page-1.diff"
+  },
+  "llama_dom_page_2": {
+    "diff_bytes": 232048,
+    "identical": false,
+    "path": "comparison/drift/llama-selected-fresh-dom-page-2.diff"
+  },
+  "llama_dom_page_3": {
+    "diff_bytes": 245400,
+    "identical": false,
+    "path": "comparison/drift/llama-selected-fresh-dom-page-3.diff"
+  },
+  "llama_json": {
+    "diff_bytes": 20796,
+    "identical": false,
+    "path": "comparison/drift/llama-selected-fresh-json.diff"
+  },
+  "llama_markdown": {
+    "diff_bytes": 0,
+    "identical": true,
+    "path": "comparison/drift/llama-selected-fresh-markdown.diff"
+  },
+  "service_dom_page_1": {
+    "diff_bytes": 10995,
+    "identical": false,
+    "path": "comparison/drift/service-pre-post-dom-page-1.diff"
+  },
+  "service_dom_page_2": {
+    "diff_bytes": 0,
+    "identical": true,
+    "path": "comparison/drift/service-pre-post-dom-page-2.diff"
+  },
+  "service_dom_page_3": {
+    "diff_bytes": 0,
+    "identical": true,
+    "path": "comparison/drift/service-pre-post-dom-page-3.diff"
+  },
+  "service_json": {
+    "diff_bytes": 664497,
+    "identical": false,
+    "path": "comparison/drift/service-pre-post-json.diff"
+  },
+  "service_markdown": {
+    "diff_bytes": 229,
+    "identical": false,
+    "path": "comparison/drift/service-pre-post-markdown.diff"
+  }
+}

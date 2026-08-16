@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "health-report",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "34e59bc6897ccdbd9fa37b06b228327e1d68d1c9e695e59834a5887ddfded57c",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "4e97ee3a513f32a802d9ce6e3b19590083766eca6bb72dc4edee845e180bfb1d",
+      "html_sha256": "cb414d6c83c5ccd2e53ba87db128a77b3f6af39314b5b0095e105d79a5a56461",
+      "text_sha256": "d0c4819dc3c15001ac69c1b22ad9b55caf3e4f494683352b57abbf5007ab6030"
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0",
+  "story": "P03-US01",
+  "generated_at": "2026-07-30T19:41:53.706376+00:00",
+  "policy": {
+    "feature_flag": "PARSER_LAYOUT_TABLE_CAPTIONS_ENABLED",
+    "default_enabled": false,
+    "rollback_value": false,
+    "relationship_type": "caption_of",
+    "minimum_horizontal_overlap": 0.2,
+    "maximum_gap_points": 72.0,
+    "maximum_internal_overlap": 0.2,
+    "maximum_references_per_table": 64,
+    "maximum_same_text_candidates_per_page": 128,
+    "maximum_caption_candidates_per_page": 512,
+    "physical_equivalence_overlap": 0.8,
+    "raw_bbox_policy": "union_all_usable_same_page_provenance",
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "hosted_cost_usd": 0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "docling": "2.114.0",
+    "docling_core": "2.87.1",
+    "pydantic": "2.13.4"
+  },
+  "measurement": {
+    "full_parser_process_model": "one fresh subprocess per case and flag state",
+    "full_parser_cache_state": "no in-process converter or model reuse between snapshots",
+    "peak_rss_semantics": "per-worker process-lifetime high-water mark",
+    "full_parser_deltas_are_paired_process_snapshots": true,
+    "layout_stage_isolated_from_full_parser": true
+  },
+  "code_sha256": {
+    ".env.example": "d7ac5ee6c4b227858694c9158e6ec59202465226816f412f88985f21900a319e",
+    "README.md": "59bdf115c1e3b6b320b2da4b3e5dfe4ab3ca885ba45780bca986106af3f96cb0",
+    "app/config.py": "2dbe69de4fb089342b3fb2bddc717742d0082fd330264651c6d5bda4919df901",
+    "app/models.py": "553d6a6040f926fbd894d6337c866a64dd82857375510d86633f318cc7f24afa",
+    "app/services/ir.py": "6191cc33c2adda3f9aae8ff7306c58d352ca3a919ef8e93b70ebdd61a8321742",
+    "app/services/layout.py": "1c3b4930da22f4e0948e5d71fc9a27908e713a09b34e76ef9e6d2e4f8d2201fa",
+    "app/services/pipeline.py": "cdd0c90ffcca3ea21d699948fac71b16daace8c6a17ad9b61fcd7772cea4dfe8",
+    "app/services/presentation.py": "0e984eec8e8e7e7a80d0961a63634a055cccbf9122d92379372ed78ccc5113cb",
+    "app/services/serializer.py": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+    "tests/stories/phase_03/test_p03_us01_table_captions.py": "90dd4f9ed065b328dd7910e1900dcc283d3e6d192010ff6df2ea8454d1d626ec",
+    "tests/contract/test_p03_us01_table_caption_contract.py": "f8e63547edc7355d106a4365b693d16f8f21bb9f3cff66060d97510a25790b8d",
+    "tests/benchmarks/layout_caption_metrics.py": "91cb27b79a0ab314c9635b73ca64b60a26554d201ec33de3855119f037abbd91",
+    "tests/regression/phase_03/test_p03_us01_real_benchmarks.py": "4a68975b50c3ae53b6452b97dc49499a8ea8444d370d441ca968836e64a8c8f9",
+    "tests/performance/test_p03_us01_table_caption_performance.py": "13711a85af12bb8224e4a3189141b5dcbb81751d3555dc73c357f417ba98b511",
+    "tests/test_api.py": "d7d5c18fe5b86dbf983b3291568edaace04a0d304bf3c70668bca306941602fa",
+    "frontend/lib/types.ts": "99bf50bed7d9a6642f981e4d85a044741537f55f2def2a2027b31627fe54d66b",
+    "frontend/app/clearleaf-workspace.tsx": "556468777333a19896aad16be2d75cc08e9c2359cc24f4f3cee0051d7d691970",
+    "frontend/app/globals.css": "a51fa567258d8eb168a9a4d2e09e684270befa723f225ab7d0dfb60f019d859c",
+    "frontend/README.md": "109dc6e867dab28733c492945c2c03496ac26498e90f956e5d8d83e6212b27d9",
+    "frontend/tests/p03-us01-table-captions.test.mts": "7e45d3dc1261fb23634b27c9108409e773b69c0287803dbee29912b835ce4e2b"
+  },
+  "cases": {
+    "catastrophe-recap": {
+      "input_path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+      "input_size_bytes": 58779,
+      "input_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "expected_caption_count": 1,
+      "expected_caption_records": [
+        {
+          "page_index": 1,
+          "value": "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025",
+          "bbox": {
+            "x": 100.7,
+            "y": 210.095,
+            "width": 250.22,
+            "height": 9.351
+          }
+        }
+      ],
+      "expected_caption_texts": [
+        "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025"
+      ],
+      "actual_caption_count": 1,
+      "actual_caption_records": [
+        {
+          "page_index": 1,
+          "value": "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025",
+          "bbox": {
+            "x": 100.7,
+            "y": 210.095,
+            "width": 250.22,
+            "height": 9.351
+          }
+        }
+      ],
+      "actual_caption_texts": [
+        "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025"
+      ],
+      "matched_caption_count": 1,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {
+        "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025": 1
+      },
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": -2.23598,
+      "processing_duration_ms_delta": -2245,
+      "peak_rss_bytes_delta": 68534272,
+      "json_size_bytes_delta": 3997,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 10.501213,
+        "processing_duration_ms": 10477,
+        "peak_rss_bytes": 1432633344,
+        "json_size_bytes": 61717,
+        "json_sha256": "150b0fe759cfec1f36fb2b514d0fdbed47bf2a60d9ebd60a02e25ea703c08a7b",
+        "semantic_json_sha256": "a113f167d67aac8793282a92ceb66191e40a6a207ead2ef80e645ac0bb79bacf",
+        "markdown_size_bytes": 1434,
+        "markdown_sha256": "15194c3cfc7fa4d0313f9e42c805d5549e7ee61f0d910a88fca9466c550da495",
+        "caption_records": [],
+        "table_content_sha256": "a7cdc5c6367f59b5e3468aa040a74a6385c88da94b66204d99736abd31ca31a2"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 8.265233,
+        "processing_duration_ms": 8232,
+        "peak_rss_bytes": 1501167616,
+        "json_size_bytes": 65714,
+        "json_sha256": "dab46c57a15d9b06d4315c62d479973e57d3067e6b0b3d616bee42a441827ece",
+        "semantic_json_sha256": "cd984b66d586f94ef2b246a98734ec2d41a8426e9776d5db72da70edbbbc67b4",
+        "markdown_size_bytes": 1953,
+        "markdown_sha256": "52b412d5a915bb85f68c06c63b70f42ab169c775e55f077d8f74fc9782a1a859",
+        "caption_records": [
+          {
+            "page_index": 1,
+            "id": "el-91373a72a9c9e4e6f91d",
+            "value": "EXHIBIT 7: Top 5 Costliest Insured Loss Events in 1H 2025",
+            "bbox": {
+              "x": 100.7,
+              "y": 210.095,
+              "width": 250.22,
+              "height": 9.351,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p1-i3",
+            "relationship_id": "layout-rel-f08770ceb5f66e283946",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_linked_back": true
+          }
+        ],
+        "table_content_sha256": "a7cdc5c6367f59b5e3468aa040a74a6385c88da94b66204d99736abd31ca31a2"
+      }
+    },
+    "clinical-study": {
+      "input_path": "benchmark-expertmodeldata/clinical-study.pdf",
+      "input_size_bytes": 750004,
+      "input_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "expected_caption_count": 2,
+      "expected_caption_records": [
+        {
+          "page_index": 2,
+          "value": "Table 1. Demographic and baseline characteristics.",
+          "bbox": {
+            "x": 36.0,
+            "y": 77.922,
+            "width": 169.539,
+            "height": 6.7
+          }
+        },
+        {
+          "page_index": 4,
+          "value": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation).",
+          "bbox": {
+            "x": 36.0,
+            "y": 77.922,
+            "width": 424.521,
+            "height": 7.316
+          }
+        }
+      ],
+      "expected_caption_texts": [
+        "Table 1. Demographic and baseline characteristics.",
+        "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation)."
+      ],
+      "actual_caption_count": 2,
+      "actual_caption_records": [
+        {
+          "page_index": 2,
+          "value": "Table 1. Demographic and baseline characteristics.",
+          "bbox": {
+            "x": 36.0,
+            "y": 77.922,
+            "width": 169.539,
+            "height": 6.7
+          }
+        },
+        {
+          "page_index": 4,
+          "value": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation).",
+          "bbox": {
+            "x": 36.0,
+            "y": 77.922,
+            "width": 424.521,
+            "height": 7.316
+          }
+        }
+      ],
+      "actual_caption_texts": [
+        "Table 1. Demographic and baseline characteristics.",
+        "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation)."
+      ],
+      "matched_caption_count": 2,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {
+        "Table 1. Demographic and baseline characteristics.": 1,
+        "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation).": 1
+      },
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": false,
+      "wall_seconds_delta": 0.800942,
+      "processing_duration_ms_delta": 747,
+      "peak_rss_bytes_delta": -34816000,
+      "json_size_bytes_delta": 23014,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 15.5372,
+        "processing_duration_ms": 15372,
+        "peak_rss_bytes": 1624342528,
+        "json_size_bytes": 367504,
+        "json_sha256": "cd0a1e27c2d694ec61711fad104a7c2c5b48516985fcbf5febc79e038127fa10",
+        "semantic_json_sha256": "830b7b7ea815031c0961877ddcf28443db4a2b0c795fe2c7ff95fefd2aa86ec8",
+        "markdown_size_bytes": 13147,
+        "markdown_sha256": "ca7eac16ccd227afc6a6039467a36e916ef32dfe65da923176bc7150ec50e412",
+        "caption_records": [],
+        "table_content_sha256": "2254a376a7a5a4ef3904aa55ec9e23e4f52bf1a44ab43694e2bd28479233afd4"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 16.338142,
+        "processing_duration_ms": 16119,
+        "peak_rss_bytes": 1589526528,
+        "json_size_bytes": 390518,
+        "json_sha256": "8c8c483b9626776de7211fa5d927a5af6d83fba000e675f58d530c4287924658",
+        "semantic_json_sha256": "3ba583841219379588f44247c6e30036c85b44702c7953b43aad3618c87f2b45",
+        "markdown_size_bytes": 17422,
+        "markdown_sha256": "22ae29dec8d67978400bf210300aa3a817ab1beb2d37203d9e6b481027d8960b",
+        "caption_records": [
+          {
+            "page_index": 2,
+            "id": "el-f677de07d0e5a8ccb05b",
+            "value": "Table 1. Demographic and baseline characteristics.",
+            "bbox": {
+              "x": 36.0,
+              "y": 77.922,
+              "width": 169.539,
+              "height": 6.7,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p2-i2",
+            "relationship_id": "layout-rel-dceb96bacf4ab0ed202a",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_linked_back": true
+          },
+          {
+            "page_index": 4,
+            "id": "el-b9994d3665bd4a257785",
+            "value": "Table 2. Pooled results from linear mixed models for primary and secondary outcomes ( N = 538, based on multiple imputation).",
+            "bbox": {
+              "x": 36.0,
+              "y": 77.922,
+              "width": 424.521,
+              "height": 7.316,
+              "unit": "pt"
+            },
+            "source": "native",
+            "confidence": null,
+            "caption_of": "p4-i2",
+            "relationship_id": "layout-rel-aa2bb1080c75ad8b7a02",
+            "relationship_type": "caption_of",
+            "relationship_basis": "graph_and_geometry",
+            "owner_linked_back": true
+          }
+        ],
+        "table_content_sha256": "2254a376a7a5a4ef3904aa55ec9e23e4f52bf1a44ab43694e2bd28479233afd4"
+      }
+    },
+    "finance-10k": {
+      "input_path": "benchmark-expertmodeldata/finance-10k.pdf",
+      "input_size_bytes": 87105,
+      "input_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "expected_caption_count": 0,
+      "expected_caption_records": [],
+      "expected_caption_texts": [],
+      "actual_caption_count": 0,
+      "actual_caption_records": [],
+      "actual_caption_texts": [],
+      "matched_caption_count": 0,
+      "unexpected_caption_count": 0,
+      "exact_caption_identities": true,
+      "caption_recall": 1.0,
+      "caption_precision": 1.0,
+      "markdown_caption_occurrences": {},
+      "table_content_equal": true,
+      "semantic_flag_on_off_equal": true,
+      "wall_seconds_delta": -0.677906,
+      "processing_duration_ms_delta": -711,
+      "peak_rss_bytes_delta": -1441792,
+      "json_size_bytes_delta": 0,
+      "flag_off": {
+        "enabled": false,
+        "wall_seconds": 21.894926,
+        "processing_duration_ms": 21795,
+        "peak_rss_bytes": 2005483520,
+        "json_size_bytes": 409526,
+        "json_sha256": "1e4aa8cbca74680b658e2218740463b19d96b64f58df0499d9eeb30315748101",
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "caption_records": [],
+        "table_content_sha256": "ccf0e444de8727750836be0cf8f818e6519079a5ebf25f6235054653e1410db6"
+      },
+      "flag_on": {
+        "enabled": true,
+        "wall_seconds": 21.21702,
+        "processing_duration_ms": 21084,
+        "peak_rss_bytes": 2004041728,
+        "json_size_bytes": 409526,
+        "json_sha256": "d1f08db482774033916dbcc684768e1f2b6caaae26fd258ed037d8d9d16f7a66",
+        "semantic_json_sha256": "e1a71d03fe86bd514fa63dc963ec519468cd6e22a46ef1afb20e09962e7f8cc2",
+        "markdown_size_bytes": 12622,
+        "markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "caption_records": [],
+        "table_content_sha256": "ccf0e444de8727750836be0cf8f818e6519079a5ebf25f6235054653e1410db6"
+      }
+    }
+  },
+  "layout_stage": {
+    "warmup_count": 5,
+    "sample_count": 100,
+    "p50_seconds": 0.001301895,
+    "p95_seconds": 0.001676704,
+    "max_seconds": 0.001983667,
+    "min_seconds": 0.001235875,
+    "peak_allocated_bytes": 88477,
+    "phase_02_catastrophe_ceiling_seconds": 8.5,
+    "five_percent_ceiling_seconds": 0.42500000000000004
+  },
+  "aggregate": {
+    "reviewed_caption_expected": 3,
+    "reviewed_caption_actual": 3,
+    "reviewed_caption_matched": 3,
+    "reviewed_caption_recall": 1.0,
+    "reviewed_caption_precision": 1.0,
+    "exact_caption_identities_all_cases": true,
+    "duplicate_markdown_caption_count": 0,
+    "bbox_coverage": 1.0,
+    "relationship_coverage": 1.0,
+    "table_content_equal_all_targets": true,
+    "finance_control_semantic_equal": true
+  },
+  "semantic_sha256": "5c12918f141d042e258c3e99d79941b3d0261e7338529ec66d3057f76aee4305"
+}

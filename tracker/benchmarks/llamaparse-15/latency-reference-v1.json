@@ -1,0 +1,70 @@
+{
+  "schema": "llamaparse-latency-reference-v1",
+  "status": "canonical_initial_planning_reference",
+  "captured_date": "2026-08-08",
+  "timezone": "Asia/Kolkata",
+  "source": {
+    "service": "LlamaCloud Parse",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "authenticated_account": "vignesh.ph10@gmail.com",
+    "surface": "Parse history / Metrics",
+    "api_version": "v2",
+    "tier": "Agentic",
+    "credits_per_page_displayed": 10,
+    "cost_optimizer": false,
+    "cache_disabled": true,
+    "input_source": "provider built-in public samples",
+    "metric": "Total Latency",
+    "result_retention_hours_displayed": 48
+  },
+  "observations": [
+    {"case_id": "finance-10k", "job_id": "pjb-415ucx2flb2ild9e0nzdsqnxqr6f", "display_value": "29.4s", "normalized_seconds": 29.4, "status": "COMPLETED"},
+    {"case_id": "ny-timetable", "job_id": "pjb-7ljh3v6chmcbpp7qriuwvbbglpat", "display_value": "45.6s", "normalized_seconds": 45.6, "status": "COMPLETED"},
+    {"case_id": "uber-earnings", "job_id": "pjb-g8gebswwjtgtx77b2wmqpc48sjox", "display_value": "23.3s", "normalized_seconds": 23.3, "status": "COMPLETED"},
+    {"case_id": "insurance-acord", "job_id": "pjb-5vhh93gwvnlcl0wpudldf9qw7b8w", "display_value": "36.8s", "normalized_seconds": 36.8, "status": "COMPLETED"},
+    {"case_id": "clean-energy", "job_id": "pjb-14abieg7n30s9n097cvpc3w2uquv", "display_value": "24.7s", "normalized_seconds": 24.7, "status": "COMPLETED"},
+    {"case_id": "catastrophe-recap", "job_id": "pjb-soooy4n3oxl6ag18pldsw19g8xxj", "display_value": "16.5s", "normalized_seconds": 16.5, "status": "COMPLETED"},
+    {"case_id": "clinical-study", "job_id": "pjb-vnbjplhc4ylxnj78c8k21pfodlnw", "display_value": "24.1s", "normalized_seconds": 24.1, "status": "COMPLETED"},
+    {"case_id": "component-datasheet", "job_id": "pjb-d0n8nruy0xdoydlvcqrn3afdhwf3", "display_value": "31.0s", "normalized_seconds": 31.0, "status": "COMPLETED"},
+    {"case_id": "egov-survey", "job_id": "pjb-y0tdbxcc3gx5ttbux75jhob98b1n", "display_value": "15.8s", "normalized_seconds": 15.8, "status": "COMPLETED"},
+    {"case_id": "esg-metrics", "job_id": "pjb-ghgiqgq0c67l0zx26fsmh60xlpzp", "display_value": "30.7s", "normalized_seconds": 30.7, "status": "COMPLETED"},
+    {"case_id": "health-report", "job_id": "pjb-7od9q65l2z9dnr95okl6pfgg89eo", "display_value": "35.0s", "normalized_seconds": 35.0, "status": "COMPLETED"},
+    {"case_id": "manufacturing-report", "job_id": "pjb-x9i4sf12uky1o4elp0ntpdy5j56l", "display_value": "18.8s", "normalized_seconds": 18.8, "status": "COMPLETED"},
+    {"case_id": "postal-10k", "job_id": "pjb-0qtz3dizelo6pu7gv0f4ur8g1bij", "display_value": "25.3s", "normalized_seconds": 25.3, "status": "COMPLETED"},
+    {"case_id": "purchase-agreement", "job_id": "pjb-tejko7iocgaav1wtj7z5tm5lugju", "display_value": "48.8s", "normalized_seconds": 48.8, "status": "COMPLETED"},
+    {"case_id": "settlement-agreement", "job_id": "pjb-ha1zlpsbx1ebb4910oipib1dah3d", "display_value": "1.4m", "normalized_seconds": 84.0, "normalization_note": "Exact unit conversion of UI-rounded 0.1-minute display; no sub-minute precision claimed", "status": "COMPLETED"}
+  ],
+  "excluded_observations": [
+    {
+      "case_id": "ny-timetable",
+      "job_id": "pjb-od0v3uheoxq450tvlsfp1yu70sag",
+      "display_value": "54.9s",
+      "reason": "cache setting not verified"
+    }
+  ],
+  "descriptive_summary": {
+    "case_count": 15,
+    "single_observation_per_case": true,
+    "median_seconds": 29.4,
+    "minimum_seconds": 15.8,
+    "maximum_display_value": "1.4m",
+    "not_an_acceptance_threshold": true
+  },
+  "acceptance_contract": {
+    "minimum_interleaved_samples_per_case_per_system": 5,
+    "percentile_method": "empirical inclusive nearest rank",
+    "candidate_p50_must_be_lte_paired_llamaparse_p50": true,
+    "candidate_p95_must_be_lte_paired_llamaparse_p95": true,
+    "case_level_gate": true,
+    "corpus_average_masking_allowed": false,
+    "dropped_failures_allowed": false,
+    "quality_or_reliability_reduction_allowed": false,
+    "incomparable_disposition": "Unmeasured/Blocked"
+  },
+  "limitations": [
+    "Initial rows are one-sample planning/reference ceilings, not p50 or p95 evidence.",
+    "Provider built-in sample byte identity was not independently proven against local corpus bytes.",
+    "Provider-side RSS is unknown and supplies no candidate resource credit.",
+    "The local network-disabled baseline is not LlamaParse service latency."
+  ]
+}

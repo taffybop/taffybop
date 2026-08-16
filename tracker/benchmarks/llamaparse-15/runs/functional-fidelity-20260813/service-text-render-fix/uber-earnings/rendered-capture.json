@@ -1,0 +1,33 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "uber-earnings",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "full",
+  "source_response": "response.json",
+  "source_response_sha256": "8a9a5daa68703f287472ff9899753ebf742c30df3f094b70c5e8b427a75508e9",
+  "page_count": 3,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "18446daff0d52b9ec59ba2dd9c7eac20e7e474e7e77343c6050406d607d8802e",
+      "html_sha256": "75628bae8d8149c680be9e7ce2873d26a13acf57d27ab87412f77b81e4d5864f",
+      "text_sha256": "85e9998ffa0ac7bbdba5d0a8883c41a0b07b9a39cc629201816f9b23e831e730"
+    },
+    {
+      "page_number": 2,
+      "artifact": "pages/page-2/rendered-dom.json",
+      "artifact_sha256": "83215683ba7ed3033ea4464d0a2cef7b00956d2233f2a4464337573354efb759",
+      "html_sha256": "93b8f1b6bee526ea5e6c7e0916025d8e8f840620b954af6aefd20fba84c655a7",
+      "text_sha256": "f7ad545fa39f6824543b43d2516f179fb2b4e94ff10041a40344bbef19af815a"
+    },
+    {
+      "page_number": 3,
+      "artifact": "pages/page-3/rendered-dom.json",
+      "artifact_sha256": "43267ff1d79c5f3567d09fbab2ae4dc3fb4df0956f4362b1cda581539fc4b832",
+      "html_sha256": "bf94bee1128380f24d26a23eaa1a347cbe7f934053b3394110c2c1de106d2ddb",
+      "text_sha256": "b7c93df8ada035b76e78b53e290e9f3d52b761f157cb0038d758737ced20cd4a"
+    }
+  ]
+}

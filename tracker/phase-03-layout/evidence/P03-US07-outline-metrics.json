@@ -1,0 +1,3614 @@
+{
+  "aggregate": {
+    "deadline_exact_boundaries_pass": true,
+    "deadline_maximum_plus_one_refused": true,
+    "deadline_production_limits_exact": true,
+    "enabled_outline_summaries_exact": true,
+    "enabled_semantic_determinism": true,
+    "flag_off_extractor_count_zero": true,
+    "flag_on_extractor_count_one": true,
+    "flag_on_processing_summaries_present": true,
+    "forms_predecessor_summaries_exact": true,
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "input_custody_exact": true,
+    "paired_parser_within_absolute_ceilings": true,
+    "paired_parser_within_both_ceilings": true,
+    "paired_parser_within_five_percent": true,
+    "paired_rss_delta_within_64mib": true,
+    "projection_comparisons_within_page_cap": true,
+    "projection_p95_within_50ms": true,
+    "projection_peak_within_64mib": true,
+    "projection_summaries_exact": true,
+    "real_control_matrix_all_pass": true,
+    "relationship_order_expected": 41,
+    "relationship_order_matched": 41,
+    "relationship_order_retention_all_pass": true,
+    "resource_boundaries_within_250ms": true,
+    "resource_exact_boundaries_pass": true,
+    "resource_maximum_plus_one_refused": true,
+    "resource_production_limits_exact": true,
+    "source_extraction_p95_within_case_ceilings": true,
+    "source_extraction_peak_within_64mib": true,
+    "source_reports_exact": true,
+    "source_reports_within_8mib": true
+  },
+  "code_sha256": {
+    ".env.example": {
+      "path": ".env.example",
+      "sha256": "80abf6a54e66e2af6b73f83a191c26e6ee266350155bc240a601ba0fc126a9c9",
+      "size_bytes": 4420
+    },
+    "README.md": {
+      "path": "README.md",
+      "sha256": "3ab99986db1a88c57ae325fdd1a7a6b6f29b84caa9229111cf6ab03ef8535e12",
+      "size_bytes": 33413
+    },
+    "app/config.py": {
+      "path": "app/config.py",
+      "sha256": "94c0b22196d55df0ece27c7b63ebdc2275053d029907a1b8dd125c63e1097dd8",
+      "size_bytes": 15583
+    },
+    "app/models.py": {
+      "path": "app/models.py",
+      "sha256": "553d6a6040f926fbd894d6337c866a64dd82857375510d86633f318cc7f24afa",
+      "size_bytes": 2310
+    },
+    "app/services/form_semantics.py": {
+      "path": "app/services/form_semantics.py",
+      "sha256": "ac0cb9cdc7490b19126e46094e1ed150aa5da228db4ab887ee7465b6ba970e0d",
+      "size_bytes": 314287
+    },
+    "app/services/ir.py": {
+      "path": "app/services/ir.py",
+      "sha256": "66feacc5ee7b5a6f796d9f6231262a0acfc961d40b55042234f3e22536740132",
+      "size_bytes": 257098
+    },
+    "app/services/layout.py": {
+      "path": "app/services/layout.py",
+      "sha256": "abef846da18a8528210a97d375ccf92490d4bf7bd9e69c5bb42f3d5f145d24d9",
+      "size_bytes": 152546
+    },
+    "app/services/outline_structure.py": {
+      "path": "app/services/outline_structure.py",
+      "sha256": "482b2798aa6d066dac741565b5f02036f002563f0229e05175544e83ab2b6869",
+      "size_bytes": 156695
+    },
+    "app/services/pipeline.py": {
+      "path": "app/services/pipeline.py",
+      "sha256": "74ce8714bd885bc70dd5e75590e00539c4e49bc44b09eb05a8e7b90827cc512e",
+      "size_bytes": 162496
+    },
+    "app/services/presentation.py": {
+      "path": "app/services/presentation.py",
+      "sha256": "c7923f7bbf9f2e2a01cb8cb68573bc9cc533d8dc6f5d23d5b6832db6d6358c75",
+      "size_bytes": 169431
+    },
+    "app/services/serializer.py": {
+      "path": "app/services/serializer.py",
+      "sha256": "a6e29b66c65b94e1a9595880dfd47cf248d48a270ef0b96ab3cfb9f906183bc9",
+      "size_bytes": 5026
+    },
+    "frontend/app/clearleaf-workspace.tsx": {
+      "path": "frontend/app/clearleaf-workspace.tsx",
+      "sha256": "46ca2affd41a69e3691f2cc03f87695709f9359bc90c536f983974839249c6ac",
+      "size_bytes": 62954
+    },
+    "frontend/lib/canonical-presentation.ts": {
+      "path": "frontend/lib/canonical-presentation.ts",
+      "sha256": "9a2a012533001802abaad2037fd7aa1fdbbb71cf6d8225dba2fd123629ddb9c7",
+      "size_bytes": 21704
+    },
+    "frontend/lib/normalize-document-json.ts": {
+      "path": "frontend/lib/normalize-document-json.ts",
+      "sha256": "d97e044667fc1b60fa7167f9157c23453297c259557c78ae018a9fde7252cf0a",
+      "size_bytes": 15808
+    },
+    "frontend/lib/outline-structure.ts": {
+      "path": "frontend/lib/outline-structure.ts",
+      "sha256": "351da83fae87f31c240f8d518e592b82de4f37079757b3ec8212b472f22d44a4",
+      "size_bytes": 51416
+    },
+    "frontend/lib/serialize-output.ts": {
+      "path": "frontend/lib/serialize-output.ts",
+      "sha256": "a3b98088569d2533bfb2ac87fcd5893bd63d372208aecdaaa54b48bd4d739659",
+      "size_bytes": 2911
+    },
+    "frontend/lib/types.ts": {
+      "path": "frontend/lib/types.ts",
+      "sha256": "97bb2a3a1ae76d0d7ba46ae3759d580aaa888ad269a66a1bd503f57a2af3921d",
+      "size_bytes": 17359
+    },
+    "frontend/package-lock.json": {
+      "path": "frontend/package-lock.json",
+      "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+      "size_bytes": 346488
+    },
+    "frontend/tests/p03-us07-outline-structure.test.mts": {
+      "path": "frontend/tests/p03-us07-outline-structure.test.mts",
+      "sha256": "826b5fa2d46023744740862755d02d8eb6cdd9558e9951983504ac51cb01ab76",
+      "size_bytes": 23355
+    },
+    "pyproject.toml": {
+      "path": "pyproject.toml",
+      "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+      "size_bytes": 734
+    },
+    "tests/benchmarks/outline_structure_metrics.py": {
+      "path": "tests/benchmarks/outline_structure_metrics.py",
+      "sha256": "0a5d045e176e1a9133deaf232306d7bbf38de5d39a1d81ed6c22df3fb5d96dab",
+      "size_bytes": 67807
+    },
+    "tests/contract/test_p03_us07_outline_structure_contract.py": {
+      "path": "tests/contract/test_p03_us07_outline_structure_contract.py",
+      "sha256": "74070a2b53c5d7ec8d95302290ea9d4f47d57c2136d2b7cb7b860b46b5422865",
+      "size_bytes": 15240
+    },
+    "tests/fixtures/phase_03/outline_structure/__init__.py": {
+      "path": "tests/fixtures/phase_03/outline_structure/__init__.py",
+      "sha256": "bc83d30359a4742dd3763f116fbb93ed3e53784865121a1eb2058c260c6240d7",
+      "size_bytes": 77
+    },
+    "tests/fixtures/phase_03/outline_structure/contract.py": {
+      "path": "tests/fixtures/phase_03/outline_structure/contract.py",
+      "sha256": "980e4622105cbe230c23889545cd083f5b88f0919b82b700169196787e655746",
+      "size_bytes": 40938
+    },
+    "tests/fixtures/phase_03/outline_structure/oracle.py": {
+      "path": "tests/fixtures/phase_03/outline_structure/oracle.py",
+      "sha256": "65d6a1a95e5bb76af4220d87a287b30600171b9cc443c4798a7987a544d6a3ad",
+      "size_bytes": 41706
+    },
+    "tests/fixtures/phase_03/outline_structure/synthetic.py": {
+      "path": "tests/fixtures/phase_03/outline_structure/synthetic.py",
+      "sha256": "42200360e918050a4b298bce5736481fdd7495460fca93eed243c103004ac83d",
+      "size_bytes": 25193
+    },
+    "tests/performance/test_p03_us07_outline_performance.py": {
+      "path": "tests/performance/test_p03_us07_outline_performance.py",
+      "sha256": "b58d72c0b6a98a6af68013d0fab0a123dd22250ed098bdee0c9694cfe78ac0b8",
+      "size_bytes": 46982
+    },
+    "tests/regression/phase_03/test_p03_us07_real_outlines.py": {
+      "path": "tests/regression/phase_03/test_p03_us07_real_outlines.py",
+      "sha256": "edf9ab712cac6bdc862f140916aea8d2d4efcf65918e011009d7710d419be410",
+      "size_bytes": 18266
+    },
+    "tests/stories/phase_03/test_p03_us07_outline_structure.py": {
+      "path": "tests/stories/phase_03/test_p03_us07_outline_structure.py",
+      "sha256": "639b54635037ee69b36114323190c8a9a1e76581ea3129e1a2970c7bacbab9e9",
+      "size_bytes": 38704
+    },
+    "tracker/phase-03-layout/decisions/P03-outline-structure-policy.md": {
+      "path": "tracker/phase-03-layout/decisions/P03-outline-structure-policy.md",
+      "sha256": "a3e83de3c1a30ec48029ade8e9d630b4e7433d9c30d1c78bfa3f84db6544377e",
+      "size_bytes": 40917
+    },
+    "uv.lock": {
+      "path": "uv.lock",
+      "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+      "size_bytes": 606113
+    }
+  },
+  "contract_custody": {
+    "contract_file": {
+      "path": "tests/fixtures/phase_03/outline_structure/contract.py",
+      "sha256": "980e4622105cbe230c23889545cd083f5b88f0919b82b700169196787e655746",
+      "size_bytes": 40938
+    },
+    "policy_id": "p03-outline-structure-v1"
+  },
+  "control_matrix": {
+    "all_real_controls_pass": true,
+    "all_targets_exact": true,
+    "finance_non_target": {
+      "case": "finance-10k",
+      "observed": {
+        "continuation_count": 0,
+        "group_count": 0,
+        "node_count": 0,
+        "relationship_count": 0
+      },
+      "role": "non_target_regression",
+      "zero_false_outlines": true
+    },
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "synthetic_registry": {
+      "capability_count": 37,
+      "fixture_count": 11,
+      "pdf_count": 9,
+      "reader_check_passed": true,
+      "self_check_passed": true
+    },
+    "targets": {
+      "component-datasheet": {
+        "case": "component-datasheet",
+        "exact": true,
+        "expected": {
+          "continuation_count": 0,
+          "group_count": 2,
+          "node_count": 16,
+          "relationship_count": 32
+        },
+        "expected_form_summary": {
+          "anchor_count": 3,
+          "control_count": 0,
+          "field_count": 0,
+          "group_count": 3,
+          "key_value_pair_count": 16,
+          "label_count": 16,
+          "value_region_count": 16
+        },
+        "form_predecessor_exact": true,
+        "form_summary": {
+          "anchor_count": 3,
+          "control_count": 0,
+          "field_count": 0,
+          "group_count": 3,
+          "key_value_pair_count": 16,
+          "label_count": 16,
+          "value_region_count": 16
+        },
+        "observed": {
+          "continuation_count": 0,
+          "group_count": 2,
+          "node_count": 16,
+          "relationship_count": 32
+        },
+        "outline_exact": true,
+        "role": "target"
+      },
+      "settlement-agreement": {
+        "case": "settlement-agreement",
+        "exact": true,
+        "expected": {
+          "continuation_count": 1,
+          "group_count": 1,
+          "node_count": 3,
+          "relationship_count": 6
+        },
+        "expected_form_summary": {
+          "anchor_count": 0,
+          "control_count": 0,
+          "field_count": 0,
+          "group_count": 0,
+          "key_value_pair_count": 0,
+          "label_count": 0,
+          "value_region_count": 0
+        },
+        "form_predecessor_exact": true,
+        "form_summary": {
+          "anchor_count": 0,
+          "control_count": 0,
+          "field_count": 0,
+          "group_count": 0,
+          "key_value_pair_count": 0,
+          "label_count": 0,
+          "value_region_count": 0
+        },
+        "observed": {
+          "continuation_count": 1,
+          "group_count": 1,
+          "node_count": 3,
+          "relationship_count": 6
+        },
+        "outline_exact": true,
+        "role": "target"
+      }
+    }
+  },
+  "deadline_boundaries": {
+    "all_exact_accepted": true,
+    "all_maximum_plus_one_refused": true,
+    "all_production_limits_exact": true,
+    "deadline_count": 3,
+    "deadlines": {
+      "projection_document_deadline": {
+        "clock": "injected_monotonic_witness",
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 2.0,
+        "maximum_plus_one_elapsed_seconds": 2.000001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "PROJECTION_DOCUMENT_DEADLINE_SECONDS",
+        "production_limit_exact": true,
+        "production_limit_seconds": 2.0,
+        "registry_limit_seconds": 2.0
+      },
+      "projection_page_deadline": {
+        "clock": "injected_monotonic_witness",
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.25,
+        "maximum_plus_one_elapsed_seconds": 0.250001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "PROJECTION_PAGE_DEADLINE_SECONDS",
+        "production_limit_exact": true,
+        "production_limit_seconds": 0.25,
+        "registry_limit_seconds": 0.25
+      },
+      "source_extraction_deadline": {
+        "clock": "injected_monotonic_witness",
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 2.0,
+        "maximum_plus_one_elapsed_seconds": 2.000001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "SOURCE_EXTRACTION_DEADLINE_SECONDS",
+        "production_limit_exact": true,
+        "production_limit_seconds": 2.0,
+        "registry_limit_seconds": 2.0
+      }
+    }
+  },
+  "dependency_custody": {
+    "dependency_manifests": {
+      "frontend/package-lock.json": {
+        "path": "frontend/package-lock.json",
+        "sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+        "size_bytes": 346488
+      },
+      "pyproject.toml": {
+        "path": "pyproject.toml",
+        "sha256": "b6c8be31b559b398be337ce2443ccd97b72dc40598431cb8c767f9bf31a02fe7",
+        "size_bytes": 734
+      },
+      "uv.lock": {
+        "path": "uv.lock",
+        "sha256": "3af8f8a282f1dd631b1eeaa0b4c897ae5b83a1d7ced29e24d62b8bbdadb1b316",
+        "size_bytes": 606113
+      }
+    },
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "local_tool_identity": {
+      "node": {
+        "path": "/opt/homebrew/Cellar/node@20/20.19.6/bin/node",
+        "sha256": "ce20548a97dc3e6b87a09606701f3dca52a95c2203bd0748b95590b391198943",
+        "size_bytes": 41120960,
+        "version": "v20.19.6"
+      },
+      "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+      "python_executable": "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3.13",
+      "python_version": "3.13.5",
+      "tesseract": {
+        "path": "/opt/homebrew/Cellar/tesseract/5.5.3/bin/tesseract",
+        "sha256": "16020f485da1f534089d82608797d98f71322c67dee772438fb755ad9b4f79b5",
+        "size_bytes": 69184,
+        "version": "tesseract 5.5.3"
+      }
+    },
+    "offline_environment": {
+      "HF_HUB_OFFLINE": null,
+      "TOKENIZERS_PARALLELISM": null,
+      "TRANSFORMERS_OFFLINE": null
+    },
+    "python_packages": {
+      "docling": "2.114.0",
+      "docling-core": "2.88.0",
+      "pdfminer.six": "20260107",
+      "pdfplumber": "0.11.10",
+      "pydantic": "2.13.4",
+      "pypdfium2": "5.12.1"
+    }
+  },
+  "generated_at": "2026-08-01T00:18:09.802456+00:00",
+  "hosted_cost_usd": 0,
+  "hosted_requests": 0,
+  "hosted_tokens": 0,
+  "input_custody": {
+    "component-datasheet": {
+      "exact_match": true,
+      "expected": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "reviewed_page_index": 1,
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      },
+      "observed": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      }
+    },
+    "settlement-agreement": {
+      "exact_match": true,
+      "expected": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+        "reviewed_page_index": 1,
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      },
+      "observed": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      }
+    }
+  },
+  "m0_reference": {
+    "cases": {
+      "component-datasheet": {
+        "label": "M0_reference_context_not_paired_predecessor",
+        "peak_rss_mib": 1840.3,
+        "wall_seconds": 10.56
+      },
+      "settlement-agreement": {
+        "label": "M0_reference_context_not_paired_predecessor",
+        "peak_rss_mib": 1410.7,
+        "wall_seconds": 6.48
+      }
+    },
+    "path": "tracker/benchmarks/llamaparse-15/baseline-summary.md",
+    "role": "historical_context_not_paired_predecessor",
+    "sha256": "e4bf5583bfd7833d1f84fab631e6492e58699b8f26b03b3fcee37bf4a0e2a29a",
+    "size_bytes": 10127
+  },
+  "measurement": {
+    "cache_disclaimer": "operating-system caches were not explicitly flushed; no cold-cache claim is made",
+    "execution_order": "alternating off/on by pair index",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "pair_count_per_case": 5,
+    "performance_cases": [
+      "component-datasheet",
+      "settlement-agreement"
+    ],
+    "pre_post_code_custody_match": true,
+    "pre_post_source_custody_match": true,
+    "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+    "quantile_method": "empirical_p95_inclusive_nearest_rank",
+    "timing_and_traced_allocation_measured_separately": true,
+    "timing_outputs_released_between_samples": true,
+    "worker_process_count": 20
+  },
+  "oracle_custody": {
+    "canonical_expectations_sha256": "c01c66149bc6b34a68b028498ff5ee4951bf1621ba4b88856b13de13b26120e3",
+    "frozen_phase_00_records": {
+      "case_review": {
+        "path": "tracker/benchmarks/llamaparse-15/cases/settlement-agreement.md",
+        "sha256": "1e1680bd2b28eca6c68c364a32e1381d64ae7d5c8155325ac03c10e4d8addba9",
+        "size_bytes": 12863
+      },
+      "comparison_report": {
+        "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/settlement-agreement/comparison-report.md",
+        "sha256": "cf963684ea690c163eafe9bbe742f2cad2cf74431030adb7cdd294873d34e0c3",
+        "size_bytes": 2879
+      }
+    },
+    "oracle_file": {
+      "path": "tests/fixtures/phase_03/outline_structure/oracle.py",
+      "sha256": "65d6a1a95e5bb76af4220d87a287b30600171b9cc443c4798a7987a544d6a3ad",
+      "size_bytes": 41706
+    },
+    "oracle_payload_sha256": "e3bddd0ce86ccbf1089b2e667b4b42922b41daaa20c5051634d21646d4f58bc5",
+    "reviewed_counts": {
+      "component-datasheet": {
+        "contains_relationship_count": 16,
+        "continuation_relationship_count": 0,
+        "group_count": 2,
+        "level_one_count": 5,
+        "level_zero_count": 11,
+        "next_relationship_count": 11,
+        "node_count": 16,
+        "parent_relationship_count": 5,
+        "total_relationship_count": 32
+      },
+      "settlement-agreement": {
+        "contains_relationship_count": 3,
+        "continuation_relationship_count": 1,
+        "group_count": 1,
+        "level_one_count": 0,
+        "level_zero_count": 3,
+        "next_relationship_count": 2,
+        "node_count": 3,
+        "parent_relationship_count": 0,
+        "total_relationship_count": 6
+      }
+    },
+    "settlement_addendum": {
+      "path": "tracker/phase-03-layout/evidence/P03-US07-settlement-marker-addendum.md",
+      "sha256": "86870457e5ecad135f271c6578c8c232299b7986d8bd72d81c09b5dfa085102d",
+      "size_bytes": 2947
+    },
+    "source_identities_exact": true
+  },
+  "outline_projection": {
+    "component-datasheet": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "component-datasheet",
+      "clock": "time.perf_counter_ns",
+      "comparison_ceiling_per_page": 65536,
+      "comparison_instrumentation_separate_from_timing": true,
+      "comparisons_by_page": {
+        "1": 28
+      },
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "instrumented_projection_semantically_equal": true,
+      "max_seconds": 0.033443625,
+      "maximum_comparisons_on_page": 28,
+      "min_seconds": 0.03136775,
+      "outline_summary": {
+        "group_count": 2,
+        "node_count": 16,
+        "relationship_count": 32
+      },
+      "outline_summary_exact": true,
+      "p50_seconds": 0.031626625,
+      "p95_ceiling_seconds": 0.05,
+      "p95_seconds": 0.032115292,
+      "peak_allocated_bytes": 4891543,
+      "peak_allocated_samples_bytes": [
+        4891543,
+        4891543,
+        4891543,
+        4891543,
+        4891543
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "predecessor_unmodified": true,
+      "profile": "isolated_outline_projection",
+      "projected_ir_size_bytes": 598088,
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "repeated_projection_idempotent": true,
+      "sample_count": 20,
+      "samples_seconds": [
+        0.031469416,
+        0.031771417,
+        0.031773125,
+        0.031626625,
+        0.031619625,
+        0.031527583,
+        0.031645583,
+        0.03149925,
+        0.031948791,
+        0.031724542,
+        0.032115292,
+        0.031626625,
+        0.031658459,
+        0.031599291,
+        0.031512875,
+        0.03136775,
+        0.031570625,
+        0.031777333,
+        0.031497084,
+        0.033443625
+      ],
+      "semantic_deterministic": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_comparison_ceiling": true,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true
+    },
+    "settlement-agreement": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "settlement-agreement",
+      "clock": "time.perf_counter_ns",
+      "comparison_ceiling_per_page": 65536,
+      "comparison_instrumentation_separate_from_timing": true,
+      "comparisons_by_page": {
+        "1": 4
+      },
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "instrumented_projection_semantically_equal": true,
+      "max_seconds": 0.005535375,
+      "maximum_comparisons_on_page": 4,
+      "min_seconds": 0.005216208,
+      "outline_summary": {
+        "group_count": 1,
+        "node_count": 3,
+        "relationship_count": 6
+      },
+      "outline_summary_exact": true,
+      "p50_seconds": 0.005343459,
+      "p95_ceiling_seconds": 0.05,
+      "p95_seconds": 0.005528666,
+      "peak_allocated_bytes": 793721,
+      "peak_allocated_samples_bytes": [
+        793721,
+        793721,
+        793721,
+        793721,
+        793721
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "predecessor_unmodified": true,
+      "profile": "isolated_outline_projection",
+      "projected_ir_size_bytes": 77395,
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "repeated_projection_idempotent": true,
+      "sample_count": 20,
+      "samples_seconds": [
+        0.005271167,
+        0.005528666,
+        0.005404167,
+        0.005355375,
+        0.005370292,
+        0.005384166,
+        0.005301584,
+        0.005331542,
+        0.005362792,
+        0.005307666,
+        0.005404875,
+        0.005441916,
+        0.005285542,
+        0.005535375,
+        0.005323,
+        0.0052945,
+        0.005274709,
+        0.005314542,
+        0.005216208,
+        0.005419542
+      ],
+      "semantic_deterministic": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_comparison_ceiling": true,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true
+    }
+  },
+  "output_sizes": {
+    "component-datasheet": {
+      "off": [
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "65373f6fab40e8b961f1acbbe7270e86775f298c469298fc741be57d049b11d2",
+          "raw_json_size_bytes": 320049,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "5b1c554d92ba6912748e43ffa5916f4f0cbb17ef0b569ed2890f1443aee1fd7b",
+          "raw_json_size_bytes": 320048,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "91e2ebe59875edee94861f95ff8dbbf1e48f925fc07e3dc7da1b3886ea6cb498",
+          "raw_json_size_bytes": 320049,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "92b42458d8c9c0855e2ef53159ec240afbb80a6c81d69e1a6aaefa1c1c3538c6",
+          "raw_json_size_bytes": 320049,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        },
+        {
+          "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+          "markdown_size_bytes": 3725,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "779bb98efc0f7583e07abc72f2f4e08eb2239230e97d15d8618d8a1207c30afd",
+          "raw_json_size_bytes": 320049,
+          "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+          "semantic_json_size_bytes": 319964
+        }
+      ],
+      "on": [
+        {
+          "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+          "markdown_size_bytes": 5425,
+          "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+          "outline_semantic_size_bytes": 38335,
+          "raw_json_sha256": "f04156fa04916bbe3a089d005fb390344abe747332f0b435a8f4cb98b1bb7dc8",
+          "raw_json_size_bytes": 369156,
+          "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+          "semantic_json_size_bytes": 369006
+        },
+        {
+          "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+          "markdown_size_bytes": 5425,
+          "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+          "outline_semantic_size_bytes": 38335,
+          "raw_json_sha256": "6460a9c3c93a98abef7e21fd1c9085189db6c77075aae97d4d26b7c26753c6f4",
+          "raw_json_size_bytes": 369157,
+          "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+          "semantic_json_size_bytes": 369006
+        },
+        {
+          "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+          "markdown_size_bytes": 5425,
+          "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+          "outline_semantic_size_bytes": 38335,
+          "raw_json_sha256": "58d6f0d1171d789dcda47308de68c5c228f947a8d784c5d73faaa3ac2f8f8c9d",
+          "raw_json_size_bytes": 369157,
+          "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+          "semantic_json_size_bytes": 369006
+        },
+        {
+          "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+          "markdown_size_bytes": 5425,
+          "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+          "outline_semantic_size_bytes": 38335,
+          "raw_json_sha256": "75446518ebecf3fb1a7ca5c2dfb436c839e421fc4b0bb4d1261e0ac6fd54de39",
+          "raw_json_size_bytes": 369157,
+          "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+          "semantic_json_size_bytes": 369006
+        },
+        {
+          "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+          "markdown_size_bytes": 5425,
+          "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+          "outline_semantic_size_bytes": 38335,
+          "raw_json_sha256": "cb6e4b0ff48604bc0c67da22597600bc4ba9b5a077aa8b15ccd00643912bce34",
+          "raw_json_size_bytes": 369156,
+          "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+          "semantic_json_size_bytes": 369006
+        }
+      ]
+    },
+    "settlement-agreement": {
+      "off": [
+        {
+          "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "markdown_size_bytes": 3144,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "22148079cb5232e89350f67f225aa3cba2b40539329c68dce57270adbf863d7c",
+          "raw_json_size_bytes": 48159,
+          "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+          "semantic_json_size_bytes": 48079
+        },
+        {
+          "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "markdown_size_bytes": 3144,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "9bc4b89dfc4b169cded940002ed76983efa6a02ad4d7b45fedd6e2882a81c242",
+          "raw_json_size_bytes": 48160,
+          "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+          "semantic_json_size_bytes": 48079
+        },
+        {
+          "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "markdown_size_bytes": 3144,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "ee2d58085554f5c7c931f945391bbeb9cbb4b2b64ae4b65f68440c1865a8cde8",
+          "raw_json_size_bytes": 48159,
+          "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+          "semantic_json_size_bytes": 48079
+        },
+        {
+          "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "markdown_size_bytes": 3144,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "670a13842a722a524e362a07b33bf0fc3c2fdb5597160856fc340d74d0b5176a",
+          "raw_json_size_bytes": 48160,
+          "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+          "semantic_json_size_bytes": 48079
+        },
+        {
+          "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "markdown_size_bytes": 3144,
+          "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+          "outline_semantic_size_bytes": 32,
+          "raw_json_sha256": "29c57eeb26d10c8f3546832e39737b89a6441526070b0317b65e7947ca3354f5",
+          "raw_json_size_bytes": 48160,
+          "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+          "semantic_json_size_bytes": 48079
+        }
+      ],
+      "on": [
+        {
+          "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+          "markdown_size_bytes": 3565,
+          "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+          "outline_semantic_size_bytes": 11125,
+          "raw_json_sha256": "99c786827982bf6be8d794f6862866a3bc6bb6450cab2d3fd91358d649d38e23",
+          "raw_json_size_bytes": 66343,
+          "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+          "semantic_json_size_bytes": 66198
+        },
+        {
+          "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+          "markdown_size_bytes": 3565,
+          "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+          "outline_semantic_size_bytes": 11125,
+          "raw_json_sha256": "40d2efbb0b8c3465723b1be018749be423c2aced543a17842a4bcd97b931b7f6",
+          "raw_json_size_bytes": 66343,
+          "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+          "semantic_json_size_bytes": 66198
+        },
+        {
+          "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+          "markdown_size_bytes": 3565,
+          "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+          "outline_semantic_size_bytes": 11125,
+          "raw_json_sha256": "645dbd19054c8842e15dbd317549fdc2039a9f391ccfa1092f089e70fe042265",
+          "raw_json_size_bytes": 66343,
+          "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+          "semantic_json_size_bytes": 66198
+        },
+        {
+          "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+          "markdown_size_bytes": 3565,
+          "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+          "outline_semantic_size_bytes": 11125,
+          "raw_json_sha256": "fde86c7cb0bf2ff401dbd1b710570a4618c4a56938b3d0ffd02a4823e82d44e7",
+          "raw_json_size_bytes": 66342,
+          "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+          "semantic_json_size_bytes": 66198
+        },
+        {
+          "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+          "markdown_size_bytes": 3565,
+          "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+          "outline_semantic_size_bytes": 11125,
+          "raw_json_sha256": "dbbbd051af8b12e076257cb5d9909e26b1d36fd0947acbf0dd0ac9e7237dddfa",
+          "raw_json_size_bytes": 66343,
+          "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+          "semantic_json_size_bytes": 66198
+        }
+      ]
+    }
+  },
+  "paired_parser": {
+    "cases": {
+      "component-datasheet": {
+        "all_flag_off_extractor_counts_zero": true,
+        "all_flag_off_projection_absent": true,
+        "all_flag_on_extractor_counts_one": true,
+        "all_flag_on_outline_summaries_exact": true,
+        "all_flag_on_processing_summaries_present": true,
+        "all_samples_forms_predecessor_present": true,
+        "all_samples_zero_hosted_usage": true,
+        "execution_order": [
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ]
+        ],
+        "flag_off_samples": [
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1990967296,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "65373f6fab40e8b961f1acbbe7270e86775f298c469298fc741be57d049b11d2",
+            "raw_json_size_bytes": 320049,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 10.907702
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 2039676928,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "5b1c554d92ba6912748e43ffa5916f4f0cbb17ef0b569ed2890f1443aee1fd7b",
+            "raw_json_size_bytes": 320048,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 10.505835
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 2035204096,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "91e2ebe59875edee94861f95ff8dbbf1e48f925fc07e3dc7da1b3886ea6cb498",
+            "raw_json_size_bytes": 320049,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 10.586977
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 2039119872,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "92b42458d8c9c0855e2ef53159ec240afbb80a6c81d69e1a6aaefa1c1c3538c6",
+            "raw_json_size_bytes": 320049,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 10.653285
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "d0fb81c44be100dc63d4c335449567fd26bc3ba8231137fcd5348f546fc9eb48",
+            "markdown_size_bytes": 3725,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 2036318208,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "779bb98efc0f7583e07abc72f2f4e08eb2239230e97d15d8618d8a1207c30afd",
+            "raw_json_size_bytes": 320049,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "5ddba8d5a2dd4498d60bd59e86aa89229c1bbbf4db07b30f78141337a4047fd4",
+            "semantic_json_size_bytes": 319964,
+            "wall_seconds": 10.675319
+          }
+        ],
+        "flag_off_semantic_deterministic": true,
+        "flag_on_all_semantic_deterministic": true,
+        "flag_on_first_three_semantic_deterministic": true,
+        "flag_on_outline_semantic_deterministic": true,
+        "flag_on_samples": [
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+            "markdown_size_bytes": 5425,
+            "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+            "outline_semantic_size_bytes": 38335,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 2,
+              "node_count": 16,
+              "relationship_count": 32
+            },
+            "peak_rss_bytes": 2047688704,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 132.41,
+              "group_count": 2,
+              "node_count": 16,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 75.982,
+              "reason": null,
+              "relationship_count": 32,
+              "status": "projected",
+              "total_ms": 208.392
+            },
+            "raw_json_sha256": "f04156fa04916bbe3a089d005fb390344abe747332f0b435a8f4cb98b1bb7dc8",
+            "raw_json_size_bytes": 369156,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+            "semantic_json_size_bytes": 369006,
+            "wall_seconds": 10.829648
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+            "markdown_size_bytes": 5425,
+            "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+            "outline_semantic_size_bytes": 38335,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 2,
+              "node_count": 16,
+              "relationship_count": 32
+            },
+            "peak_rss_bytes": 1999405056,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 132.112,
+              "group_count": 2,
+              "node_count": 16,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 74.225,
+              "reason": null,
+              "relationship_count": 32,
+              "status": "projected",
+              "total_ms": 206.337
+            },
+            "raw_json_sha256": "6460a9c3c93a98abef7e21fd1c9085189db6c77075aae97d4d26b7c26753c6f4",
+            "raw_json_size_bytes": 369157,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+            "semantic_json_size_bytes": 369006,
+            "wall_seconds": 10.987673
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+            "markdown_size_bytes": 5425,
+            "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+            "outline_semantic_size_bytes": 38335,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 2,
+              "node_count": 16,
+              "relationship_count": 32
+            },
+            "peak_rss_bytes": 2051735552,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 128.267,
+              "group_count": 2,
+              "node_count": 16,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 73.578,
+              "reason": null,
+              "relationship_count": 32,
+              "status": "projected",
+              "total_ms": 201.845
+            },
+            "raw_json_sha256": "58d6f0d1171d789dcda47308de68c5c228f947a8d784c5d73faaa3ac2f8f8c9d",
+            "raw_json_size_bytes": 369157,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+            "semantic_json_size_bytes": 369006,
+            "wall_seconds": 10.930182
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+            "markdown_size_bytes": 5425,
+            "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+            "outline_semantic_size_bytes": 38335,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 2,
+              "node_count": 16,
+              "relationship_count": 32
+            },
+            "peak_rss_bytes": 2047426560,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 128.192,
+              "group_count": 2,
+              "node_count": 16,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 74.899,
+              "reason": null,
+              "relationship_count": 32,
+              "status": "projected",
+              "total_ms": 203.091
+            },
+            "raw_json_sha256": "75446518ebecf3fb1a7ca5c2dfb436c839e421fc4b0bb4d1261e0ac6fd54de39",
+            "raw_json_size_bytes": 369157,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+            "semantic_json_size_bytes": 369006,
+            "wall_seconds": 10.733105
+          },
+          {
+            "case": "component-datasheet",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 3,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 3,
+              "key_value_pair_count": 16,
+              "label_count": 16,
+              "value_region_count": 16
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 3,
+              "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+              "size_bytes": 329199
+            },
+            "markdown_sha256": "e64dd21842292c311cb78dad6f4890618c62bc3c0d2a9634677e47e9d9f680ff",
+            "markdown_size_bytes": 5425,
+            "outline_semantic_sha256": "04516ef939502c52e449efe9fc949f73afe41f43ab87d14ecfedd84d585be821",
+            "outline_semantic_size_bytes": 38335,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 2,
+              "node_count": 16,
+              "relationship_count": 32
+            },
+            "peak_rss_bytes": 2057175040,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 127.73,
+              "group_count": 2,
+              "node_count": 16,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 74.666,
+              "reason": null,
+              "relationship_count": 32,
+              "status": "projected",
+              "total_ms": 202.396
+            },
+            "raw_json_sha256": "cb6e4b0ff48604bc0c67da22597600bc4ba9b5a077aa8b15ccd00643912bce34",
+            "raw_json_size_bytes": 369156,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "79752678b4c2f7321da1c39326623bfe145bdb061e23f96d5165e2894395e051",
+            "semantic_json_size_bytes": 369006,
+            "wall_seconds": 10.719497
+          }
+        ],
+        "paired_performance": {
+          "absolute_ceiling_seconds": 0.528,
+          "cache_state": "operating-system caches were not explicitly flushed",
+          "case": "component-datasheet",
+          "current_paired_predecessor_p95_seconds": 10.907702,
+          "effective_ceiling_seconds": 0.528,
+          "execution_order_alternated": true,
+          "five_percent_ceiling_seconds": 0.545385,
+          "flag_off_maximum_peak_rss_bytes": 2039676928,
+          "flag_off_peak_rss_bytes": [
+            1990967296,
+            2039676928,
+            2035204096,
+            2039119872,
+            2036318208
+          ],
+          "flag_off_wall_seconds": [
+            10.907702,
+            10.505835,
+            10.586977,
+            10.653285,
+            10.675319
+          ],
+          "flag_on_maximum_peak_rss_bytes": 2057175040,
+          "flag_on_peak_rss_bytes": [
+            2047688704,
+            1999405056,
+            2051735552,
+            2047426560,
+            2057175040
+          ],
+          "flag_on_wall_seconds": [
+            10.829648,
+            10.987673,
+            10.930182,
+            10.733105,
+            10.719497
+          ],
+          "gate_value": "p95_of_clipped_nonnegative_paired_overhead",
+          "hosted_cost_usd": 0,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "m0_reference": {
+            "label": "M0_reference_context_not_paired_predecessor",
+            "peak_rss_mib": 1840.3,
+            "wall_seconds": 10.56
+          },
+          "maximum_peak_rss_delta_bytes": 17498112,
+          "p50_nonnegative_overhead_seconds": 0.07982,
+          "p50_signed_delta_seconds": 0.07982,
+          "p95_nonnegative_overhead_seconds": 0.481838,
+          "p95_signed_delta_seconds": 0.481838,
+          "pair_count": 5,
+          "paired_nonnegative_overhead_seconds": [
+            0.0,
+            0.481838,
+            0.343205,
+            0.07982,
+            0.044178
+          ],
+          "paired_signed_wall_seconds_deltas": [
+            -0.078054,
+            0.481838,
+            0.343205,
+            0.07982,
+            0.044178
+          ],
+          "peak_rss_delta_ceiling_bytes": 67108864,
+          "process_model": "fresh_process_per_flag_state",
+          "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+          "quantile_method": "empirical_p95_inclusive_nearest_rank",
+          "within_absolute_ceiling": true,
+          "within_both_ceilings": true,
+          "within_five_percent_ceiling": true,
+          "within_peak_rss_delta_ceiling": true
+        },
+        "timing_paths_removed": [
+          "processing.duration_ms",
+          "processing.form_semantics.extraction_ms",
+          "processing.form_semantics.projection_ms",
+          "processing.form_semantics.total_ms",
+          "processing.outline_structure.extraction_ms",
+          "processing.outline_structure.projection_ms",
+          "processing.outline_structure.total_ms"
+        ]
+      },
+      "settlement-agreement": {
+        "all_flag_off_extractor_counts_zero": true,
+        "all_flag_off_projection_absent": true,
+        "all_flag_on_extractor_counts_one": true,
+        "all_flag_on_outline_summaries_exact": true,
+        "all_flag_on_processing_summaries_present": true,
+        "all_samples_forms_predecessor_present": true,
+        "all_samples_zero_hosted_usage": true,
+        "execution_order": [
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ],
+          [
+            "on",
+            "off"
+          ],
+          [
+            "off",
+            "on"
+          ]
+        ],
+        "flag_off_samples": [
+          {
+            "case": "settlement-agreement",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+            "markdown_size_bytes": 3144,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1499742208,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "22148079cb5232e89350f67f225aa3cba2b40539329c68dce57270adbf863d7c",
+            "raw_json_size_bytes": 48159,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+            "semantic_json_size_bytes": 48079,
+            "wall_seconds": 5.984612
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+            "markdown_size_bytes": 3144,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1494646784,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "9bc4b89dfc4b169cded940002ed76983efa6a02ad4d7b45fedd6e2882a81c242",
+            "raw_json_size_bytes": 48160,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+            "semantic_json_size_bytes": 48079,
+            "wall_seconds": 5.94579
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+            "markdown_size_bytes": 3144,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1496154112,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "ee2d58085554f5c7c931f945391bbeb9cbb4b2b64ae4b65f68440c1865a8cde8",
+            "raw_json_size_bytes": 48159,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+            "semantic_json_size_bytes": 48079,
+            "wall_seconds": 5.826834
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+            "markdown_size_bytes": 3144,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1500987392,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "670a13842a722a524e362a07b33bf0fc3c2fdb5597160856fc340d74d0b5176a",
+            "raw_json_size_bytes": 48160,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+            "semantic_json_size_bytes": 48079,
+            "wall_seconds": 5.822471
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": false,
+            "extractor_call_count": 0,
+            "flag_off_projection_absent": true,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+            "markdown_size_bytes": 3144,
+            "outline_semantic_sha256": "a2fe0ceb7e96f04c17286137d434570b32a7e9f75584a1bb149b6999d3c61724",
+            "outline_semantic_size_bytes": 32,
+            "outline_summary": {
+              "continuation_count": 0,
+              "group_count": 0,
+              "node_count": 0,
+              "relationship_count": 0
+            },
+            "peak_rss_bytes": 1497546752,
+            "processing_has_outline_summary": false,
+            "processing_outline_summary": null,
+            "raw_json_sha256": "29c57eeb26d10c8f3546832e39737b89a6441526070b0317b65e7947ca3354f5",
+            "raw_json_size_bytes": 48160,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "3f24c432a4281d64a9a3201c99f63e498974ee11e71a12eabe9819ceada819e0",
+            "semantic_json_size_bytes": 48079,
+            "wall_seconds": 5.877738
+          }
+        ],
+        "flag_off_semantic_deterministic": true,
+        "flag_on_all_semantic_deterministic": true,
+        "flag_on_first_three_semantic_deterministic": true,
+        "flag_on_outline_semantic_deterministic": true,
+        "flag_on_samples": [
+          {
+            "case": "settlement-agreement",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+            "markdown_size_bytes": 3565,
+            "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+            "outline_semantic_size_bytes": 11125,
+            "outline_summary": {
+              "continuation_count": 1,
+              "group_count": 1,
+              "node_count": 3,
+              "relationship_count": 6
+            },
+            "peak_rss_bytes": 1499955200,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 52.974,
+              "group_count": 1,
+              "node_count": 3,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 10.333,
+              "reason": null,
+              "relationship_count": 6,
+              "status": "projected",
+              "total_ms": 63.307
+            },
+            "raw_json_sha256": "99c786827982bf6be8d794f6862866a3bc6bb6450cab2d3fd91358d649d38e23",
+            "raw_json_size_bytes": 66343,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+            "semantic_json_size_bytes": 66198,
+            "wall_seconds": 5.867082
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+            "markdown_size_bytes": 3565,
+            "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+            "outline_semantic_size_bytes": 11125,
+            "outline_summary": {
+              "continuation_count": 1,
+              "group_count": 1,
+              "node_count": 3,
+              "relationship_count": 6
+            },
+            "peak_rss_bytes": 1503117312,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 53.158,
+              "group_count": 1,
+              "node_count": 3,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 10.679,
+              "reason": null,
+              "relationship_count": 6,
+              "status": "projected",
+              "total_ms": 63.837
+            },
+            "raw_json_sha256": "40d2efbb0b8c3465723b1be018749be423c2aced543a17842a4bcd97b931b7f6",
+            "raw_json_size_bytes": 66343,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+            "semantic_json_size_bytes": 66198,
+            "wall_seconds": 5.885941
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+            "markdown_size_bytes": 3565,
+            "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+            "outline_semantic_size_bytes": 11125,
+            "outline_summary": {
+              "continuation_count": 1,
+              "group_count": 1,
+              "node_count": 3,
+              "relationship_count": 6
+            },
+            "peak_rss_bytes": 1511882752,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 53.208,
+              "group_count": 1,
+              "node_count": 3,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 10.285,
+              "reason": null,
+              "relationship_count": 6,
+              "status": "projected",
+              "total_ms": 63.493
+            },
+            "raw_json_sha256": "645dbd19054c8842e15dbd317549fdc2039a9f391ccfa1092f089e70fe042265",
+            "raw_json_size_bytes": 66343,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+            "semantic_json_size_bytes": 66198,
+            "wall_seconds": 5.965424
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+            "markdown_size_bytes": 3565,
+            "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+            "outline_semantic_size_bytes": 11125,
+            "outline_summary": {
+              "continuation_count": 1,
+              "group_count": 1,
+              "node_count": 3,
+              "relationship_count": 6
+            },
+            "peak_rss_bytes": 1505558528,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 53.53,
+              "group_count": 1,
+              "node_count": 3,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 10.284,
+              "reason": null,
+              "relationship_count": 6,
+              "status": "projected",
+              "total_ms": 63.814
+            },
+            "raw_json_sha256": "fde86c7cb0bf2ff401dbd1b710570a4618c4a56938b3d0ffd02a4823e82d44e7",
+            "raw_json_size_bytes": 66342,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+            "semantic_json_size_bytes": 66198,
+            "wall_seconds": 5.908853
+          },
+          {
+            "case": "settlement-agreement",
+            "enabled": true,
+            "extractor_call_count": 1,
+            "flag_off_projection_absent": false,
+            "form_summary": {
+              "anchor_count": 0,
+              "control_count": 0,
+              "field_count": 0,
+              "group_count": 0,
+              "key_value_pair_count": 0,
+              "label_count": 0,
+              "value_region_count": 0
+            },
+            "hosted_cost_usd": 0,
+            "hosted_requests": 0,
+            "hosted_tokens": 0,
+            "input_identity": {
+              "page_count": 1,
+              "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+              "reviewed_page_index": 1,
+              "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+              "size_bytes": 164483
+            },
+            "markdown_sha256": "cd47cd47ae14015821228f2db324adc27beb112397534fbdf9145a484ec7f198",
+            "markdown_size_bytes": 3565,
+            "outline_semantic_sha256": "dc26c90229abb74bb9ed70e0fa61ef82c41f1bacca2a47af78ac5c34f9439626",
+            "outline_semantic_size_bytes": 11125,
+            "outline_summary": {
+              "continuation_count": 1,
+              "group_count": 1,
+              "node_count": 3,
+              "relationship_count": 6
+            },
+            "peak_rss_bytes": 1502265344,
+            "processing_has_outline_summary": true,
+            "processing_outline_summary": {
+              "concern_count": 0,
+              "extraction_ms": 53.467,
+              "group_count": 1,
+              "node_count": 3,
+              "policy_id": "p03-outline-structure-v1",
+              "projection_ms": 10.321,
+              "reason": null,
+              "relationship_count": 6,
+              "status": "projected",
+              "total_ms": 63.788
+            },
+            "raw_json_sha256": "dbbbd051af8b12e076257cb5d9909e26b1d36fd0947acbf0dd0ac9e7237dddfa",
+            "raw_json_size_bytes": 66343,
+            "rss_normalization": "bytes_on_darwin_else_kibibytes_times_1024",
+            "rss_source": "resource.getrusage(RUSAGE_SELF).ru_maxrss",
+            "semantic_json_sha256": "56e6d616383a4f3b0450f19bc12c9503da9bad8dc7ea6907a288c5ba25495159",
+            "semantic_json_size_bytes": 66198,
+            "wall_seconds": 6.013531
+          }
+        ],
+        "paired_performance": {
+          "absolute_ceiling_seconds": 0.324,
+          "cache_state": "operating-system caches were not explicitly flushed",
+          "case": "settlement-agreement",
+          "current_paired_predecessor_p95_seconds": 5.984612,
+          "effective_ceiling_seconds": 0.299231,
+          "execution_order_alternated": true,
+          "five_percent_ceiling_seconds": 0.299231,
+          "flag_off_maximum_peak_rss_bytes": 1500987392,
+          "flag_off_peak_rss_bytes": [
+            1499742208,
+            1494646784,
+            1496154112,
+            1500987392,
+            1497546752
+          ],
+          "flag_off_wall_seconds": [
+            5.984612,
+            5.94579,
+            5.826834,
+            5.822471,
+            5.877738
+          ],
+          "flag_on_maximum_peak_rss_bytes": 1511882752,
+          "flag_on_peak_rss_bytes": [
+            1499955200,
+            1503117312,
+            1511882752,
+            1505558528,
+            1502265344
+          ],
+          "flag_on_wall_seconds": [
+            5.867082,
+            5.885941,
+            5.965424,
+            5.908853,
+            6.013531
+          ],
+          "gate_value": "p95_of_clipped_nonnegative_paired_overhead",
+          "hosted_cost_usd": 0,
+          "hosted_requests": 0,
+          "hosted_tokens": 0,
+          "m0_reference": {
+            "label": "M0_reference_context_not_paired_predecessor",
+            "peak_rss_mib": 1410.7,
+            "wall_seconds": 6.48
+          },
+          "maximum_peak_rss_delta_bytes": 10895360,
+          "p50_nonnegative_overhead_seconds": 0.086382,
+          "p50_signed_delta_seconds": 0.086382,
+          "p95_nonnegative_overhead_seconds": 0.13859,
+          "p95_signed_delta_seconds": 0.13859,
+          "pair_count": 5,
+          "paired_nonnegative_overhead_seconds": [
+            0.0,
+            0.0,
+            0.13859,
+            0.086382,
+            0.135793
+          ],
+          "paired_signed_wall_seconds_deltas": [
+            -0.11753,
+            -0.059849,
+            0.13859,
+            0.086382,
+            0.135793
+          ],
+          "peak_rss_delta_ceiling_bytes": 67108864,
+          "process_model": "fresh_process_per_flag_state",
+          "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+          "quantile_method": "empirical_p95_inclusive_nearest_rank",
+          "within_absolute_ceiling": true,
+          "within_both_ceilings": true,
+          "within_five_percent_ceiling": true,
+          "within_peak_rss_delta_ceiling": true
+        },
+        "timing_paths_removed": [
+          "processing.duration_ms",
+          "processing.form_semantics.extraction_ms",
+          "processing.form_semantics.projection_ms",
+          "processing.form_semantics.total_ms",
+          "processing.outline_structure.extraction_ms",
+          "processing.outline_structure.projection_ms",
+          "processing.outline_structure.total_ms"
+        ]
+      }
+    },
+    "execution_order_policy": "off/on alternates by pair index",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "pair_count_per_case": 5,
+    "performance_cases": [
+      "component-datasheet",
+      "settlement-agreement"
+    ]
+  },
+  "policy": {
+    "default_enabled": false,
+    "feature_flag": "PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED",
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0,
+    "isolated_peak_allocation_ceiling_bytes": 67108864,
+    "maximum_boundary_ceiling_seconds": 0.25,
+    "paired_absolute_ceiling_seconds": {
+      "component-datasheet": 0.528,
+      "settlement-agreement": 0.324
+    },
+    "paired_percent_ceiling": 5.0,
+    "peak_rss_delta_ceiling_bytes": 67108864,
+    "policy_id": "p03-outline-structure-v1",
+    "projection_p95_ceiling_seconds": 0.05,
+    "resource_limits": {
+      "indent_tolerance_pt": 2.0,
+      "maximum_comparisons_per_page": 65536,
+      "maximum_concerns_per_document": 256,
+      "maximum_concerns_per_page": 64,
+      "maximum_depth": 8,
+      "maximum_groups_per_document": 2048,
+      "maximum_groups_per_page": 256,
+      "maximum_interstitials_per_group": 64,
+      "maximum_item_text_bytes": 16384,
+      "maximum_marker_bytes": 64,
+      "maximum_marker_candidates_per_document": 10000,
+      "maximum_marker_candidates_per_page": 2048,
+      "maximum_nodes_per_document": 32768,
+      "maximum_nodes_per_group": 256,
+      "maximum_nodes_per_page": 4096,
+      "maximum_public_group_bytes": 524288,
+      "maximum_relationships_per_document": 65536,
+      "maximum_relationships_per_page": 16384,
+      "maximum_report_bytes": 8388608,
+      "maximum_source_characters_per_document": 2000000,
+      "maximum_source_characters_per_page": 500000,
+      "maximum_source_words_per_document": 500000,
+      "maximum_source_words_per_page": 100000,
+      "minimum_indent_step_pt": 6.0,
+      "projection_document_deadline_seconds": 2.0,
+      "projection_page_deadline_seconds": 0.25,
+      "source_extraction_deadline_seconds": 2.0
+    },
+    "rollback_value": false,
+    "semantic_timing_paths_removed": [
+      "processing.duration_ms",
+      "processing.form_semantics.extraction_ms",
+      "processing.form_semantics.projection_ms",
+      "processing.form_semantics.total_ms",
+      "processing.outline_structure.extraction_ms",
+      "processing.outline_structure.projection_ms",
+      "processing.outline_structure.total_ms"
+    ],
+    "source_extraction_p95_ceiling_seconds": {
+      "component-datasheet": 0.25,
+      "settlement-agreement": 0.15
+    }
+  },
+  "predecessor_custody": {
+    "configured_predecessor_definition": "all P03-US01-US06 flags enabled with US07 disabled",
+    "p03_us06_artifact": {
+      "path": "tracker/phase-03-layout/evidence/P03-US06-form-metrics.json",
+      "raw_sha256": "7e7da0d0d2a2f528b247e560399940e7c091ad765903ef5177381d140a01c290",
+      "semantic_sha256": "7cfff9b19f129ab29f2a14317a479c50ed38397921ef9111b0a4b57f7d557fc7",
+      "sha256": "7e7da0d0d2a2f528b247e560399940e7c091ad765903ef5177381d140a01c290",
+      "size_bytes": 82347,
+      "status": "final_measurement_candidate",
+      "story": "P03-US06"
+    },
+    "reviewed_value_custody": {
+      "component-datasheet": {
+        "exact_match": true,
+        "expected": {
+          "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/component-datasheet/our-output.json",
+          "sha256": "210ee7c7c9016aaba61f758e2cff42829e816c928b5a69e3cb6d7e55cadb8cbd",
+          "size_bytes": 262956
+        },
+        "observed": {
+          "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/component-datasheet/our-output.json",
+          "sha256": "210ee7c7c9016aaba61f758e2cff42829e816c928b5a69e3cb6d7e55cadb8cbd",
+          "size_bytes": 262956
+        },
+        "role": "reviewed_value_custody_not_configured_snapshot"
+      },
+      "settlement-agreement": {
+        "exact_match": true,
+        "expected": {
+          "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/settlement-agreement/our-output.json",
+          "sha256": "617cb996ee2820bb9264a861c538964121ad706c195703f19f4855bcbc8eb07c",
+          "size_bytes": 23135
+        },
+        "observed": {
+          "path": "tracker/benchmarks/llamaparse-15/runs/baseline-20260728-current/settlement-agreement/our-output.json",
+          "sha256": "617cb996ee2820bb9264a861c538964121ad706c195703f19f4855bcbc8eb07c",
+          "size_bytes": 23135
+        },
+        "role": "reviewed_value_custody_not_configured_snapshot"
+      }
+    }
+  },
+  "record_kind": "p03_us07_outline_metrics",
+  "relationship_order_retention": {
+    "all_pass": true,
+    "cases": {
+      "catastrophe-recap": {
+        "top_level_expected": 7,
+        "top_level_matched": 7
+      },
+      "clean-energy": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "clinical-study": {
+        "top_level_expected": 5,
+        "top_level_matched": 5
+      },
+      "component-datasheet": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "esg-metrics": {
+        "top_level_expected": 4,
+        "top_level_matched": 4
+      },
+      "finance-10k": {
+        "top_level_expected": 5,
+        "top_level_matched": 5
+      },
+      "manufacturing-report": {
+        "top_level_expected": 6,
+        "top_level_matched": 6
+      },
+      "ny-timetable": {
+        "top_level_expected": 2,
+        "top_level_matched": 2
+      },
+      "purchase-agreement": {
+        "top_level_expected": 3,
+        "top_level_matched": 3
+      }
+    },
+    "nested_expected": 1,
+    "nested_matched": 1,
+    "nested_result": {
+      "after_value": "Overview",
+      "before_value": "Clean Energy Market Monitor - March 2024",
+      "canonical_field_matched": {
+        "markdown": true,
+        "text": true
+      },
+      "case": "clean-energy",
+      "matched": true,
+      "observed_values": [
+        "Clean Energy Market Monitor - March 2024",
+        "Overview"
+      ],
+      "owner_id": "p1-i1",
+      "page_index": 1,
+      "public_matched": true
+    },
+    "oracle": {
+      "path": "tracker/phase-03-layout/evidence/P03-US04-reading-order-metrics.json",
+      "raw_sha256": "826af5de42950c11e4fa2bcbf8a24f5adc2ad2c62d7a09cb760c4e08bc591154",
+      "reviewed_case_count": 9,
+      "semantic_sha256": "46cef72e08707cc57fd54834c7ff4369a59558b4e2de1a47155da23b66803ab1",
+      "slice_count": 10
+    },
+    "purchase_source_sequence": {
+      "entries": [
+        {
+          "end": 15,
+          "item_id": "p1-i9",
+          "locator": [
+            0,
+            0
+          ],
+          "observed": [
+            "deleted",
+            "Draft of 6/1/20"
+          ],
+          "start": 0,
+          "target_path": [
+            "value"
+          ]
+        },
+        {
+          "end": 82,
+          "item_id": "p1-i10",
+          "locator": [
+            1,
+            0
+          ],
+          "observed": [
+            "deleted",
+            "This is a draft document. Certain updates will be needed prior to finalizing this."
+          ],
+          "start": 0,
+          "target_path": [
+            "value"
+          ]
+        },
+        {
+          "end": 162,
+          "item_id": "p1-i10",
+          "locator": [
+            1,
+            83
+          ],
+          "observed": [
+            "deleted",
+            "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+          ],
+          "start": 83,
+          "target_path": [
+            "value"
+          ]
+        },
+        {
+          "end": 208,
+          "item_id": "p1-i10",
+          "locator": [
+            1,
+            163
+          ],
+          "observed": [
+            "deleted",
+            "This is Confidential to The City of Johnstown"
+          ],
+          "start": 163,
+          "target_path": [
+            "value"
+          ]
+        },
+        {
+          "end": 17,
+          "expected_text": "EXECUTION VERSION",
+          "item_id": "p1-i11",
+          "locator": [
+            2,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i11"
+          ],
+          "source_text": "EXECUTION VERSION",
+          "source_text_sha256": "6d012cf2b42a6344f9ad485589b303a30cfb343967dc7d82d29da828b6d628a3",
+          "start": 0,
+          "target_path": [
+            "value"
+          ],
+          "text_match_kind": "exact"
+        },
+        {
+          "end": 24,
+          "expected_text": "ASSET PURCHASE AGREEMENT",
+          "item_id": "p1-i1",
+          "locator": [
+            3,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i1"
+          ],
+          "source_text": "ASSET PURCHASE AGREEMENT",
+          "source_text_sha256": "2f2ee69a85d85cee2a8a8da52a2a8c5f97ba5dccc5c156cfef5ca2aa4660504c",
+          "start": 0,
+          "target_path": [
+            "value"
+          ],
+          "text_match_kind": "exact"
+        },
+        {
+          "end": 482,
+          "expected_text": "THIS ASSET PURCHASE AGREEMENT",
+          "item_id": "p1-i2",
+          "locator": [
+            4,
+            0
+          ],
+          "observed": [
+            "item",
+            "p1-i2"
+          ],
+          "source_text": "THIS ASSET PURCHASE AGREEMENT (this ' Agreement '), dated as of [June 23_______], 2020 (the ' Effective Date '), is by and between The City of Johnstown, a political subdivision of the Commonwealth of Pennsylvania operating as a Third Class City under a Home Rule Charter (the ' Seller '), and the Greater Johnstown Water Authority, a body corporate and politic organized under the Pennsylvania Municipality Authorities Act (the ' Buyer ' and together with Seller, the ' Parties ').",
+          "source_text_sha256": "73695c3796d8768a5f202065ee5e7857b6077aae5ddd87e329c67cbc0be67026",
+          "start": 0,
+          "target_path": [
+            "value"
+          ],
+          "text_match_kind": "prefix"
+        }
+      ],
+      "exact": true,
+      "expected": [
+        [
+          "deleted",
+          "Draft of 6/1/20"
+        ],
+        [
+          "deleted",
+          "This is a draft document. Certain updates will be needed prior to finalizing this."
+        ],
+        [
+          "deleted",
+          "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+        ],
+        [
+          "deleted",
+          "This is Confidential to The City of Johnstown"
+        ],
+        [
+          "item",
+          "p1-i11"
+        ],
+        [
+          "item",
+          "p1-i1"
+        ],
+        [
+          "item",
+          "p1-i2"
+        ]
+      ],
+      "expected_count": 7,
+      "observed": [
+        [
+          "deleted",
+          "Draft of 6/1/20"
+        ],
+        [
+          "deleted",
+          "This is a draft document. Certain updates will be needed prior to finalizing this."
+        ],
+        [
+          "deleted",
+          "In particular, bracketed items with '[ ]' indicate a known open/non-final item."
+        ],
+        [
+          "deleted",
+          "This is Confidential to The City of Johnstown"
+        ],
+        [
+          "item",
+          "p1-i11"
+        ],
+        [
+          "item",
+          "p1-i1"
+        ],
+        [
+          "item",
+          "p1-i2"
+        ]
+      ],
+      "observed_count": 7,
+      "strictly_ordered": true
+    },
+    "source_custody": {
+      "catastrophe-recap": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+          "size_bytes": 58779
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+          "size_bytes": 58779
+        }
+      },
+      "clean-energy": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+          "size_bytes": 122014
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+          "size_bytes": 122014
+        }
+      },
+      "clinical-study": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/clinical-study.pdf",
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+          "size_bytes": 750004
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/clinical-study.pdf",
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+          "size_bytes": 750004
+        }
+      },
+      "component-datasheet": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+          "size_bytes": 329199
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+          "size_bytes": 329199
+        }
+      },
+      "esg-metrics": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+          "size_bytes": 60516
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+          "size_bytes": 60516
+        }
+      },
+      "finance-10k": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/finance-10k.pdf",
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+          "size_bytes": 87105
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/finance-10k.pdf",
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+          "size_bytes": 87105
+        }
+      },
+      "manufacturing-report": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+          "size_bytes": 380274
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+          "size_bytes": 380274
+        }
+      },
+      "ny-timetable": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+          "size_bytes": 26109
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+          "size_bytes": 26109
+        }
+      },
+      "purchase-agreement": {
+        "exact_match": true,
+        "expected": {
+          "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+          "size_bytes": 152828
+        },
+        "observed": {
+          "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+          "size_bytes": 152828
+        }
+      }
+    },
+    "top_level_expected": 40,
+    "top_level_matched": 40,
+    "top_level_results": [
+      {
+        "after_id": "el-91373a72a9c9e4e6f91d",
+        "after_position": 2,
+        "before_id": "p1-i2",
+        "before_position": 1,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i3",
+        "after_position": 3,
+        "before_id": "el-91373a72a9c9e4e6f91d",
+        "before_position": 2,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i4",
+        "after_position": 4,
+        "before_id": "p1-i3",
+        "before_position": 3,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "layout-caption-5a6f8b41401544adeb2a",
+        "after_position": 5,
+        "before_id": "p1-i4",
+        "before_position": 4,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i5",
+        "after_position": 6,
+        "before_id": "layout-caption-5a6f8b41401544adeb2a",
+        "before_position": 5,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "layout-note-af58a03da292b26ce13f",
+        "after_position": 7,
+        "before_id": "p1-i5",
+        "before_position": 6,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i6",
+        "after_position": 8,
+        "before_id": "layout-note-af58a03da292b26ce13f",
+        "before_position": 7,
+        "case": "catastrophe-recap",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i4",
+        "after_position": 7,
+        "before_id": "p1-i15",
+        "before_position": 1,
+        "case": "clinical-study",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i4",
+        "after_position": 7,
+        "before_id": "p1-i18",
+        "before_position": 6,
+        "case": "clinical-study",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i19",
+        "after_position": 18,
+        "before_id": "p1-i14",
+        "before_position": 17,
+        "case": "clinical-study",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p2-i4",
+        "after_position": 8,
+        "before_id": "p2-i3",
+        "before_position": 7,
+        "case": "clinical-study",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i5",
+        "after_position": 9,
+        "before_id": "p2-i4",
+        "before_position": 8,
+        "case": "clinical-study",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p1-i4",
+        "after_position": 2,
+        "before_id": "p1-i3",
+        "before_position": 1,
+        "case": "component-datasheet",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i2",
+        "after_position": 3,
+        "before_id": "p1-i4",
+        "before_position": 2,
+        "case": "component-datasheet",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i5",
+        "after_position": 4,
+        "before_id": "p1-i2",
+        "before_position": 3,
+        "case": "component-datasheet",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i6",
+        "after_position": 5,
+        "before_id": "p1-i5",
+        "before_position": 4,
+        "case": "component-datasheet",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i12",
+        "after_position": 10,
+        "before_id": "p1-i10",
+        "before_position": 9,
+        "case": "esg-metrics",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i11",
+        "after_position": 17,
+        "before_id": "p1-i18",
+        "before_position": 16,
+        "case": "esg-metrics",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i19",
+        "after_position": 18,
+        "before_id": "p1-i11",
+        "before_position": 17,
+        "case": "esg-metrics",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i20",
+        "after_position": 19,
+        "before_id": "p1-i19",
+        "before_position": 18,
+        "case": "esg-metrics",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "layout-caption-c89f2384aa740f5d02ce",
+        "after_position": 1,
+        "before_id": "p2-i1",
+        "before_position": 0,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i2",
+        "after_position": 2,
+        "before_id": "layout-caption-c89f2384aa740f5d02ce",
+        "before_position": 1,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i3",
+        "after_position": 3,
+        "before_id": "p2-i2",
+        "before_position": 2,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "layout-caption-daceff6ae2f2ee83c6d0",
+        "after_position": 4,
+        "before_id": "p2-i3",
+        "before_position": 3,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i4",
+        "after_position": 5,
+        "before_id": "layout-caption-daceff6ae2f2ee83c6d0",
+        "before_position": 4,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i5",
+        "after_position": 6,
+        "before_id": "p2-i4",
+        "before_position": 5,
+        "case": "manufacturing-report",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p1-i10",
+        "after_position": 1,
+        "before_id": "p1-i9",
+        "before_position": 0,
+        "case": "purchase-agreement",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i11",
+        "after_position": 2,
+        "before_id": "p1-i10",
+        "before_position": 1,
+        "case": "purchase-agreement",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i1",
+        "after_position": 3,
+        "before_id": "p1-i11",
+        "before_position": 2,
+        "case": "purchase-agreement",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p2-i4",
+        "after_position": 1,
+        "before_id": "p2-i2",
+        "before_position": 0,
+        "case": "ny-timetable",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p2-i1",
+        "after_position": 2,
+        "before_id": "p2-i4",
+        "before_position": 1,
+        "case": "ny-timetable",
+        "matched": true,
+        "page_index": 2
+      },
+      {
+        "after_id": "p1-i2",
+        "after_position": 1,
+        "before_id": "p1-i1",
+        "before_position": 0,
+        "case": "clean-energy",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i3",
+        "after_position": 3,
+        "before_id": "p1-i2",
+        "before_position": 1,
+        "case": "clean-energy",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i7",
+        "after_position": 4,
+        "before_id": "p1-i3",
+        "before_position": 3,
+        "case": "clean-energy",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i8",
+        "after_position": 8,
+        "before_id": "p1-i7",
+        "before_position": 4,
+        "case": "clean-energy",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i2",
+        "after_position": 1,
+        "before_id": "p1-i1",
+        "before_position": 0,
+        "case": "finance-10k",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i3",
+        "after_position": 2,
+        "before_id": "p1-i2",
+        "before_position": 1,
+        "case": "finance-10k",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i4",
+        "after_position": 3,
+        "before_id": "p1-i3",
+        "before_position": 2,
+        "case": "finance-10k",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i5",
+        "after_position": 4,
+        "before_id": "p1-i4",
+        "before_position": 3,
+        "case": "finance-10k",
+        "matched": true,
+        "page_index": 1
+      },
+      {
+        "after_id": "p1-i6",
+        "after_position": 5,
+        "before_id": "p1-i5",
+        "before_position": 4,
+        "case": "finance-10k",
+        "matched": true,
+        "page_index": 1
+      }
+    ],
+    "total_expected": 41,
+    "total_matched": 41
+  },
+  "resource_boundaries": {
+    "all_exact_accepted": true,
+    "all_maximum_plus_one_refused": true,
+    "all_production_limits_exact": true,
+    "all_within_boundary_ceiling": true,
+    "boundaries": {
+      "maximum_comparisons_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000654208,
+        "exact_observed": 65536,
+        "maximum_plus_one_elapsed_seconds": 0.000609458,
+        "maximum_plus_one_observed": 65537,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_COMPARISONS_PER_PAGE",
+        "production_limit": 65536,
+        "production_limit_exact": true,
+        "registry_limit": 65536,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_concerns_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 2.625e-06,
+        "exact_observed": 256,
+        "maximum_plus_one_elapsed_seconds": 2.459e-06,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_CONCERNS_PER_DOCUMENT",
+        "production_limit": 256,
+        "production_limit_exact": true,
+        "registry_limit": 256,
+        "scope": "document",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_concerns_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 4.583e-06,
+        "exact_observed": 64,
+        "maximum_plus_one_elapsed_seconds": 1.792e-06,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_CONCERNS_PER_PAGE",
+        "production_limit": 64,
+        "production_limit_exact": true,
+        "registry_limit": 64,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_depth": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 1.666e-06,
+        "exact_observed": 8,
+        "maximum_plus_one_elapsed_seconds": 1.25e-06,
+        "maximum_plus_one_observed": 9,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_DEPTH",
+        "production_limit": 8,
+        "production_limit_exact": true,
+        "registry_limit": 8,
+        "scope": "group",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_groups_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 1.175e-05,
+        "exact_observed": 2048,
+        "maximum_plus_one_elapsed_seconds": 1.1625e-05,
+        "maximum_plus_one_observed": 2049,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_GROUPS_PER_DOCUMENT",
+        "production_limit": 2048,
+        "production_limit_exact": true,
+        "registry_limit": 2048,
+        "scope": "document",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_groups_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 2.666e-06,
+        "exact_observed": 256,
+        "maximum_plus_one_elapsed_seconds": 1.917e-06,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_GROUPS_PER_PAGE",
+        "production_limit": 256,
+        "production_limit_exact": true,
+        "registry_limit": 256,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_interstitials_per_group": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000141709,
+        "exact_observed": 64,
+        "maximum_plus_one_elapsed_seconds": 0.000143042,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_INTERSTITIALS_PER_GROUP",
+        "production_limit": 64,
+        "production_limit_exact": true,
+        "registry_limit": 64,
+        "scope": "group",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_item_text_bytes": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 2.667e-06,
+        "exact_observed": 16384,
+        "maximum_plus_one_elapsed_seconds": 2.208e-06,
+        "maximum_plus_one_observed": 16385,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_ITEM_TEXT_BYTES",
+        "production_limit": 16384,
+        "production_limit_exact": true,
+        "registry_limit": 16384,
+        "scope": "candidate",
+        "unit": "utf8_bytes",
+        "within_boundary_ceiling": true
+      },
+      "maximum_marker_bytes": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 4.6041e-05,
+        "exact_observed": 64,
+        "maximum_plus_one_elapsed_seconds": 4.1459e-05,
+        "maximum_plus_one_observed": 65,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_MARKER_BYTES",
+        "production_limit": 64,
+        "production_limit_exact": true,
+        "registry_limit": 64,
+        "scope": "candidate",
+        "unit": "utf8_bytes",
+        "within_boundary_ceiling": true
+      },
+      "maximum_marker_candidates_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000125667,
+        "exact_observed": 10000,
+        "maximum_plus_one_elapsed_seconds": 9.3333e-05,
+        "maximum_plus_one_observed": 10001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_MARKER_CANDIDATES_PER_DOCUMENT",
+        "production_limit": 10000,
+        "production_limit_exact": true,
+        "registry_limit": 10000,
+        "scope": "document",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_marker_candidates_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.0003155,
+        "exact_observed": 2048,
+        "maximum_plus_one_elapsed_seconds": 0.000322375,
+        "maximum_plus_one_observed": 2049,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_MARKER_CANDIDATES_PER_PAGE",
+        "production_limit": 2048,
+        "production_limit_exact": true,
+        "registry_limit": 2048,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_nodes_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000268917,
+        "exact_observed": 32768,
+        "maximum_plus_one_elapsed_seconds": 0.000222583,
+        "maximum_plus_one_observed": 32769,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_NODES_PER_DOCUMENT",
+        "production_limit": 32768,
+        "production_limit_exact": true,
+        "registry_limit": 32768,
+        "scope": "document",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_nodes_per_group": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 1.917e-06,
+        "exact_observed": 256,
+        "maximum_plus_one_elapsed_seconds": 2.291e-06,
+        "maximum_plus_one_observed": 257,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_NODES_PER_GROUP",
+        "production_limit": 256,
+        "production_limit_exact": true,
+        "registry_limit": 256,
+        "scope": "group",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_nodes_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 3.2708e-05,
+        "exact_observed": 4096,
+        "maximum_plus_one_elapsed_seconds": 3.4209e-05,
+        "maximum_plus_one_observed": 4097,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_NODES_PER_PAGE",
+        "production_limit": 4096,
+        "production_limit_exact": true,
+        "registry_limit": 4096,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_public_group_bytes": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.001155166,
+        "exact_observed": 524288,
+        "maximum_plus_one_elapsed_seconds": 0.001164375,
+        "maximum_plus_one_observed": 524289,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_PUBLIC_GROUP_BYTES",
+        "production_limit": 524288,
+        "production_limit_exact": true,
+        "registry_limit": 524288,
+        "scope": "group",
+        "unit": "json_bytes",
+        "within_boundary_ceiling": true
+      },
+      "maximum_relationships_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000417459,
+        "exact_observed": 65536,
+        "maximum_plus_one_elapsed_seconds": 0.000426125,
+        "maximum_plus_one_observed": 65537,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_RELATIONSHIPS_PER_DOCUMENT",
+        "production_limit": 65536,
+        "production_limit_exact": true,
+        "registry_limit": 65536,
+        "scope": "document",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_relationships_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 9.5833e-05,
+        "exact_observed": 16384,
+        "maximum_plus_one_elapsed_seconds": 0.000207084,
+        "maximum_plus_one_observed": 16385,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_RELATIONSHIPS_PER_PAGE",
+        "production_limit": 16384,
+        "production_limit_exact": true,
+        "registry_limit": 16384,
+        "scope": "page",
+        "unit": "items",
+        "within_boundary_ceiling": true
+      },
+      "maximum_report_bytes": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.015431375,
+        "exact_observed": 8388608,
+        "maximum_plus_one_elapsed_seconds": 0.014148,
+        "maximum_plus_one_observed": 8388609,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_REPORT_BYTES",
+        "production_limit": 8388608,
+        "production_limit_exact": true,
+        "registry_limit": 8388608,
+        "scope": "document",
+        "unit": "json_bytes",
+        "within_boundary_ceiling": true
+      },
+      "maximum_source_characters_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.00013675,
+        "exact_observed": 2000000,
+        "maximum_plus_one_elapsed_seconds": 0.000134334,
+        "maximum_plus_one_observed": 2000001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_SOURCE_CHARACTERS_PER_DOCUMENT",
+        "production_limit": 2000000,
+        "production_limit_exact": true,
+        "registry_limit": 2000000,
+        "scope": "document",
+        "unit": "characters",
+        "within_boundary_ceiling": true
+      },
+      "maximum_source_characters_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 4.075e-05,
+        "exact_observed": 500000,
+        "maximum_plus_one_elapsed_seconds": 4.3208e-05,
+        "maximum_plus_one_observed": 500001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_SOURCE_CHARACTERS_PER_PAGE",
+        "production_limit": 500000,
+        "production_limit_exact": true,
+        "registry_limit": 500000,
+        "scope": "page",
+        "unit": "characters",
+        "within_boundary_ceiling": true
+      },
+      "maximum_source_words_per_document": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 0.000523333,
+        "exact_observed": 500000,
+        "maximum_plus_one_elapsed_seconds": 0.000456333,
+        "maximum_plus_one_observed": 500001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_SOURCE_WORDS_PER_DOCUMENT",
+        "production_limit": 500000,
+        "production_limit_exact": true,
+        "registry_limit": 500000,
+        "scope": "document",
+        "unit": "words",
+        "within_boundary_ceiling": true
+      },
+      "maximum_source_words_per_page": {
+        "binding": "production_constant_and_dedicated_validator_gate",
+        "boundary_ceiling_seconds_each": 0.25,
+        "exact_accepted": true,
+        "exact_elapsed_seconds": 3.2666e-05,
+        "exact_observed": 100000,
+        "maximum_plus_one_elapsed_seconds": 8.3375e-05,
+        "maximum_plus_one_observed": 100001,
+        "maximum_plus_one_refused": true,
+        "production_attribute": "MAX_SOURCE_WORDS_PER_PAGE",
+        "production_limit": 100000,
+        "production_limit_exact": true,
+        "registry_limit": 100000,
+        "scope": "page",
+        "unit": "words",
+        "within_boundary_ceiling": true
+      }
+    },
+    "boundary_count": 22
+  },
+  "retained_path": "tracker/phase-03-layout/evidence/P03-US07-outline-metrics.json",
+  "rollback": {
+    "all_flag_off_extractor_counts_zero": true,
+    "all_flag_off_projection_absent": true,
+    "all_repeated_projections_idempotent": true,
+    "configured_predecessor_flags_unchanged": true,
+    "only_us07_setting_toggled": true,
+    "rollback_value": false
+  },
+  "schema_version": "1.0",
+  "semantic_sha256": "22c208d8f625cb917e3e27097c6c60fc5fb904282ac7ae3e530dbffdf62d2639",
+  "settings_delta": {
+    "accepted_predecessor_flags_enabled": true,
+    "changed_fields": [
+      "layout_outline_structure_enabled"
+    ],
+    "flag_off": {
+      "layout_outline_structure_enabled": false
+    },
+    "flag_on": {
+      "layout_outline_structure_enabled": true
+    }
+  },
+  "source_extraction": {
+    "component-datasheet": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "component-datasheet",
+      "clock": "time.perf_counter_ns",
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "max_seconds": 0.195900834,
+      "min_seconds": 0.1430985,
+      "p50_seconds": 0.145648667,
+      "p95_ceiling_seconds": 0.25,
+      "p95_seconds": 0.171111666,
+      "peak_allocated_bytes": 9341342,
+      "peak_allocated_samples_bytes": [
+        9332467,
+        9337015,
+        9341342,
+        9336725,
+        9340433
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "profile": "isolated_native_outline_extraction",
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "report_size_bytes": 3775,
+      "report_size_ceiling_bytes": 8388608,
+      "reviewed_counts": {
+        "concerns": 0,
+        "marker_candidates": 16,
+        "pages": 1,
+        "source_characters": 1341,
+        "source_words": 226
+      },
+      "sample_count": 20,
+      "samples_seconds": [
+        0.145739709,
+        0.143826167,
+        0.144323625,
+        0.143555334,
+        0.143639791,
+        0.1430985,
+        0.171111666,
+        0.148881625,
+        0.149444167,
+        0.14456825,
+        0.143853,
+        0.145557625,
+        0.146437833,
+        0.146803583,
+        0.147150791,
+        0.147139542,
+        0.148643292,
+        0.195900834,
+        0.14407125,
+        0.144452542
+      ],
+      "semantic_deterministic": true,
+      "source_report_exact": true,
+      "source_sha256_exact": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true,
+      "within_report_size_ceiling": true
+    },
+    "settlement-agreement": {
+      "allocation_measured_in_separate_call": true,
+      "allocation_sample_count": 5,
+      "allocation_warmup_count": 1,
+      "case": "settlement-agreement",
+      "clock": "time.perf_counter_ns",
+      "gc_collection_outside_timed_interval": true,
+      "hosted_cost_usd": 0,
+      "hosted_requests": 0,
+      "hosted_tokens": 0,
+      "max_seconds": 0.059606625,
+      "min_seconds": 0.054819958,
+      "p50_seconds": 0.055505438,
+      "p95_ceiling_seconds": 0.15,
+      "p95_seconds": 0.056917083,
+      "peak_allocated_bytes": 5879692,
+      "peak_allocated_samples_bytes": [
+        5865913,
+        5877151,
+        5878854,
+        5879692,
+        5877448
+      ],
+      "peak_allocation_ceiling_bytes": 67108864,
+      "profile": "isolated_native_outline_extraction",
+      "quantile_formula": "sorted(samples)[ceil(0.95 * n) - 1]",
+      "quantile_method": "empirical_p95_inclusive_nearest_rank",
+      "report_size_bytes": 1133,
+      "report_size_ceiling_bytes": 8388608,
+      "reviewed_counts": {
+        "concerns": 0,
+        "marker_candidates": 3,
+        "pages": 1,
+        "source_characters": 2699,
+        "source_words": 444
+      },
+      "sample_count": 20,
+      "samples_seconds": [
+        0.055706208,
+        0.055269958,
+        0.0550425,
+        0.055144959,
+        0.055115375,
+        0.054937916,
+        0.054935,
+        0.054819958,
+        0.05537175,
+        0.056698667,
+        0.056836,
+        0.056917083,
+        0.055638667,
+        0.056738834,
+        0.059606625,
+        0.056595167,
+        0.056768917,
+        0.055358709,
+        0.055777083,
+        0.055372208
+      ],
+      "semantic_deterministic": true,
+      "source_report_exact": true,
+      "source_sha256_exact": true,
+      "timing_results_retained": false,
+      "timing_tracemalloc_enabled": false,
+      "timing_tracemalloc_state_verified": true,
+      "tracemalloc_reset_between_samples": true,
+      "warmup_count": 2,
+      "within_p95_ceiling": true,
+      "within_peak_allocation_ceiling": true,
+      "within_report_size_ceiling": true
+    }
+  },
+  "status": "final_measurement_candidate",
+  "story": "P03-US07",
+  "synthetic_fixture_custody": {
+    "fixture_count": 11,
+    "fixture_hashes": {
+      "synthetic:p03-us07:ambiguous-indentation-v1": "4fbf7b2ff60da81e966fbad71258f24193633afb2df88172e5eb6cbdfd5e6e0a",
+      "synthetic:p03-us07:broken-sequence-v1": "5fd5f2047cd76fc011fa1012dfb50f5bb43f6348e16bf2f091521d105a909740",
+      "synthetic:p03-us07:financial-rows-v1": "72e571b428446a0e4bd0682097a75c7087e59ff0f9bd60a2d7c9871d963793e1",
+      "synthetic:p03-us07:graph-failures-v1": "7dda64a013a64c5512396346be4aed9cd96df212bac879f5da10674b601a80f9",
+      "synthetic:p03-us07:legal-table-interruption-v1": "1e320b8fd20fc5e545b4c2276f857d0ad0e5df3dc5cf27b5e0db47d265f218b6",
+      "synthetic:p03-us07:marker-injection-v1": "e0c7e756b22186781e201b114a9f4f5e80a389e0eb9ea0c7c0746aa2ae597f1c",
+      "synthetic:p03-us07:nested-unordered-v1": "07fb9aa428bf33bd1223da47c244c2ec2d298939224b0b54b99d1fffb1dcb612",
+      "synthetic:p03-us07:ordered-numeric-v1": "b2c658d74c772ef5805c8ff32ea9b86e0e28a2a2baba3b9dfab385dd7c46a453",
+      "synthetic:p03-us07:parenthesized-alpha-v1": "ec9a77722a0e211cc0dc90cd3d33de93199bbe13a433c725900547fea3e08351",
+      "synthetic:p03-us07:parenthesized-prose-v1": "17adb995ba572a9096587f6c200ba5e34e479683a00c4ea2febba0325891c3c1",
+      "synthetic:p03-us07:resource-boundaries-v1": "ba76bac9ac0276b2f07446eed076156ec20065ef9371b57ddb1f319d7dbceda6"
+    },
+    "generator_file": {
+      "path": "tests/fixtures/phase_03/outline_structure/synthetic.py",
+      "sha256": "42200360e918050a4b298bce5736481fdd7495460fca93eed243c103004ac83d",
+      "size_bytes": 25193
+    },
+    "pdf_reader_verification_scope": "retained test/control gate; omitted from timed profiles",
+    "registry_sha256": "56d1ae95917de879b992030c7d8dddc4e03fada4e1b715974bdd4bde6a6e27c3",
+    "required_capability_count": 37,
+    "self_check_passed": true,
+    "thresholds": {
+      "indent_tolerance_pt": 2.0,
+      "maximum_comparisons_per_page": 65536,
+      "maximum_concerns_per_document": 256,
+      "maximum_concerns_per_page": 64,
+      "maximum_depth": 8,
+      "maximum_groups_per_document": 2048,
+      "maximum_groups_per_page": 256,
+      "maximum_interstitials_per_group": 64,
+      "maximum_item_text_bytes": 16384,
+      "maximum_marker_bytes": 64,
+      "maximum_marker_candidates_per_document": 10000,
+      "maximum_marker_candidates_per_page": 2048,
+      "maximum_nodes_per_document": 32768,
+      "maximum_nodes_per_group": 256,
+      "maximum_nodes_per_page": 4096,
+      "maximum_public_group_bytes": 524288,
+      "maximum_relationships_per_document": 65536,
+      "maximum_relationships_per_page": 16384,
+      "maximum_report_bytes": 8388608,
+      "maximum_source_characters_per_document": 2000000,
+      "maximum_source_characters_per_page": 500000,
+      "maximum_source_words_per_document": 500000,
+      "maximum_source_words_per_page": 100000,
+      "minimum_indent_step_pt": 6.0,
+      "projection_document_deadline_seconds": 2.0,
+      "projection_page_deadline_seconds": 0.25,
+      "source_extraction_deadline_seconds": 2.0
+    }
+  }
+}

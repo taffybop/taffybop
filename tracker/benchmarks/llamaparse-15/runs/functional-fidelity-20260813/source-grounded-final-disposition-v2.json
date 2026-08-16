@@ -1,0 +1,751 @@
+{
+  "schema_version": "functional-fidelity-source-grounded-disposition-v2",
+  "generated_at_utc": "2026-08-13T09:12:41Z",
+  "run_id": "functional-fidelity-20260813",
+  "case_count": 15,
+  "release_ready": false,
+  "status_counts": {
+    "fixed": 3,
+    "acceptable_difference": 1,
+    "discrepancy_found": 11
+  },
+  "final_service_root": {
+    "path": "service-final-source-grounded-20260813-v2",
+    "run_manifest": "service-final-source-grounded-20260813-v2/run.json",
+    "run_manifest_sha256": "f3d21c4c15734319a5409c85f0b32da77cfbabe5e58c8ee503c176ba524f2386"
+  },
+  "raw_comparator": {
+    "path": "comparison-final-source-grounded-v2/summary.json",
+    "sha256": "f080e3f73d598467fdf8fdf6ecb05ec85824b996d4054e2d94c60f4c53a3b97f",
+    "schema_version": "functional-fidelity-comparison-v1",
+    "service_root": "service-final-source-grounded-20260813-v2",
+    "counts": {
+      "case_count": 15,
+      "functional_regressions": 278,
+      "review_required": 9,
+      "acceptable_or_harmless_differences": 54,
+      "resolved_discrepancies": 2,
+      "evidence_gaps": 0,
+      "raw_status_counts": {
+        "discrepancy_found": 15,
+        "fixed": 0,
+        "acceptable_difference": 0,
+        "match": 0,
+        "pending": 0
+      }
+    },
+    "caveat": "The comparator counts correlated cross-surface signals, not independent source-backed defects. It deliberately reports schema-envelope, Markdown, JSON, table, visual-proxy, and DOM differences before source adjudication. LlamaParse is the requested baseline but is not independent source truth: generated descriptions, interpolated chart values, unsupported arrows, different component taxonomies, and raw fragment counts can produce severe raw signals without a user-visible service regression. The case dispositions below are therefore governed by the hash-bound PDF and the resolution/adjudication ledgers while preserving the raw counts for auditability."
+  },
+  "adjudication_policy": {
+    "source_authority": "The hash-bound benchmark PDF and retained page evidence are authoritative; LlamaParse is the comparison baseline.",
+    "surface_gate": "A functional fix requires final public JSON, byte-identical canonical/raw Markdown, and rendered-DOM evidence for the affected output, not unit tests alone.",
+    "status_rule": "fixed means the adjudicated source-backed target has no remaining functional gap; acceptable_difference means the remaining difference is non-functional or baseline/schema-specific; discrepancy_found means at least one independent source-backed functional gap remains.",
+    "release_rule": "Any discrepancy_found case blocks full-corpus LlamaParse-equivalent release readiness."
+  },
+  "source_grounded_authorities": [
+    {
+      "path": "artifact-manifest-final-source-grounded-v2.json",
+      "sha256": "154028aa64a10c15b170c714cab07f9eccf9fb25da5928962b78ea86264df12b",
+      "scope": "final v2 artifact identity, completeness, rendered evidence, and media-type custody"
+    },
+    {
+      "path": "resolution-ledger-final-source-grounded-v2.json",
+      "sha256": "73521f02bfe58f7b6ba635b0ab7806bee0411303ebcaec652d4315090602c000",
+      "scope": "final v2 API projection and terminal table/chart custody resolutions"
+    },
+    {
+      "path": "resolution-ledger.json",
+      "sha256": "f4927a3b272664ef7fb4bbedb4f63e74f92dca26ae7c94748484eb80ea6b6ab1",
+      "scope": "public API projection resolutions"
+    },
+    {
+      "path": "text-render-resolution-ledger.json",
+      "sha256": "75f7bda00f09d3b960f2068229dc3f76c1eaef8d217874863f9589853607d043",
+      "scope": "text-run, Markdown, UI, and visual-owner OCR projection resolutions"
+    },
+    {
+      "path": "visual-resolution-ledger.json",
+      "sha256": "b432644d4adf23856b3542761cf035144b552b6b1e6b52a5f1c5ea65e1574cc6",
+      "scope": "visual routing and photograph OCR resolutions"
+    },
+    {
+      "path": "visual-source-adjudication.json",
+      "sha256": "e12ac847fb4f97e61bbea1e81e47df5811b6f3b63c28c251a0281a1e3554ce10",
+      "scope": "source-versus-baseline chart, diagram, image, and OCR adjudication"
+    },
+    {
+      "path": "visual-source-semantics-resolution-ledger.json",
+      "sha256": "e52361c8967d417d66c74ae388c157ca6b9a3b9b0c30c9c48ea458a27ac5429e",
+      "scope": "final source-text chart and undirected diagram semantics"
+    },
+    {
+      "path": "text-layout-correction-adjudication-20260813-02/ledger.json",
+      "sha256": "ab6675c3de21c80bae7569f7e19316a0bda0ac3dc8291739e5fc6cbb9376a0b8",
+      "scope": "final text integrity, running-region, table-owned OCR, hierarchy, and quote adjudication"
+    },
+    {
+      "path": "service-acord-form-fix-20260813-attempt-03/acord-form-resolution-ledger.json",
+      "sha256": "43ed1dc32af1604811e95b73815850bd3f78cf707e35a50dec99cc71eae48073",
+      "scope": "ACORD producer/contact/insured/insurer form resolution"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "story_ids": [
+        "P02-US06",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "The public API projection failure is fixed.",
+        "Chart typing is source-grounded.",
+        "Windstorm Éowyn and €620 million were confirmed already correct in source, baseline, JSON, Markdown, and UI.",
+        "LlamaParse's exhaustive chart-as-table values are not treated as printed source truth.",
+        "The final terminal table authority preserves only the hash-proven chart-caption containment needed for context-free public reconstruction; the source-supported table_evidence sidecar survives while a forged private raw relationship remains rejected."
+      ],
+      "remaining_functional_gaps": [
+        "The chart's explicit legend, axes, selected years, and panel structure are not fully normalized.",
+        "Some chart-origin text remains noisy or fused in OCR presentation."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 14,
+        "functional_regressions": 10,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 3,
+        "resolved_discrepancies": 1,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 5
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/catastrophe-recap/evidence.json",
+        "comparison_sha256": "ea695ec7985a3c976c978dfa3e867b9dce0ddf40ba22265a8b81049c180989f3",
+        "service": "service-final-source-grounded-20260813-v2/catastrophe-recap",
+        "resolution_paths": [
+          "resolution-ledger-final-source-grounded-v2.json#/cases/catastrophe-recap",
+          "resolution-ledger.json#/cases/catastrophe-recap",
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/0",
+          "visual-source-adjudication.json#/cases/0",
+          "visual-resolution-ledger.json#/resolutions/1"
+        ]
+      },
+      "contract_validations": [
+        {
+          "contract": "terminal_chart_custody",
+          "result": "passed",
+          "evidence": "resolution-ledger-final-source-grounded-v2.json#/cases/catastrophe-recap",
+          "detail": "The chart canonical block retains the exact public-reconstructible 16 relationships and 12 exclusions required by the terminal transaction; unrelated private graph edges remain fail-closed."
+        }
+      ]
+    },
+    {
+      "case_id": "clean-energy",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "story_ids": [
+        "P02-US06",
+        "P03-US04",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "The visual is typed as a chart and 51 exact PDF-layer occurrences are retained as evidence.",
+        "Native primary text is correctly withheld where it would omit OCR-visible year categories.",
+        "Interpolated baseline values and decorative edge fragments are accepted differences."
+      ],
+      "remaining_functional_gaps": [
+        "Six-panel, axis, and legend organization remains incomplete.",
+        "Rotated OCR has residual noise, duplication, and ordering defects."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 13,
+        "functional_regressions": 9,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 3,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 4
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/clean-energy/evidence.json",
+        "comparison_sha256": "38f22eb78401f5ad851b7a9a3ef8589ae48ee393fa3152ae3979d97a06dead3b",
+        "service": "service-final-source-grounded-20260813-v2/clean-energy",
+        "resolution_paths": [
+          "visual-source-semantics-resolution-ledger.json#/cases/0",
+          "visual-source-adjudication.json#/cases/1",
+          "visual-resolution-ledger.json#/resolutions/1"
+        ]
+      }
+    },
+    {
+      "case_id": "clinical-study",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "story_ids": [
+        "P02-US04",
+        "P03-US04",
+        "P03-US07",
+        "P05-US10"
+      ],
+      "resolved_or_accepted": [
+        "The page-3 raster visual is typed as a diagram and its approved OCR is projected exactly once.",
+        "Physical-table UI presentation is fixed.",
+        "Cross-type image-count differences and the aggregate OCR proxy are diagnostic rather than regressions."
+      ],
+      "remaining_functional_gaps": [
+        "The sidebar precedes the title and some body text or diacritics remain damaged.",
+        "Heading and outline hierarchy remain flatter than the source.",
+        "Visible flowchart connector topology remains safely unresolved because endpoint and direction evidence is insufficient."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 43,
+        "functional_regressions": 34,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 8,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 8,
+          "major": 25,
+          "minor": 10
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/clinical-study/evidence.json",
+        "comparison_sha256": "cd9963e276cf777f946cb84c50c567a640157333e0f36ddcc29602f775ce7014",
+        "service": "service-final-source-grounded-20260813-v2/clinical-study",
+        "resolution_paths": [
+          "text-render-resolution-ledger.json#/resolutions/1",
+          "visual-resolution-ledger.json#/resolutions/1",
+          "visual-source-adjudication.json#/cases/2",
+          "visual-source-semantics-resolution-ledger.json#/reviewed_but_unchanged/0"
+        ]
+      }
+    },
+    {
+      "case_id": "component-datasheet",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "story_ids": [
+        "P02-US01",
+        "P02-US06",
+        "P05-US10"
+      ],
+      "resolved_or_accepted": [
+        "Caption/list order, nested lists, and key-value grouping are retained in the final output.",
+        "Generated baseline prose about the board and pinout is not copied as source OCR.",
+        "The board photograph and pinout correctly remain images when no native PDF text exists inside their visual owners."
+      ],
+      "remaining_functional_gaps": [
+        "Diagnostic OCR for the page-1 board photograph remains noisy in JSON.",
+        "Page-2 pin labels are incomplete or noisy and the pinout's spatial topology is unmodeled.",
+        "A source private-use NOTE glyph is not recovered faithfully."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 25,
+        "functional_regressions": 20,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 5,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 10,
+          "major": 9,
+          "minor": 6
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/component-datasheet/evidence.json",
+        "comparison_sha256": "44d3fb29d93886d3592426c7af30fd3ed20a0e1226bd71ef2566432197cfa8d2",
+        "service": "service-final-source-grounded-20260813-v2/component-datasheet",
+        "resolution_paths": [
+          "visual-source-adjudication.json#/cases/3",
+          "visual-source-semantics-resolution-ledger.json#/reviewed_but_unchanged/1"
+        ]
+      }
+    },
+    {
+      "case_id": "egov-survey",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "story_ids": [
+        "P02-US06",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "The visual is typed as a chart.",
+        "Seventy-four exact native occurrences replace AO/4A OCR errors with the printed 40/44 across JSON, Markdown, and UI.",
+        "Chart-not-table representation is an accepted taxonomy difference."
+      ],
+      "remaining_functional_gaps": [
+        "Printed bar labels are not yet associated into complete year/category series."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 13,
+        "functional_regressions": 10,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 2,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 6,
+          "major": 3,
+          "minor": 4
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/egov-survey/evidence.json",
+        "comparison_sha256": "1f95926f7237d1dea24483d0e599cfbf70dadb8702375e2ebc3e9ade55806d5a",
+        "service": "service-final-source-grounded-20260813-v2/egov-survey",
+        "resolution_paths": [
+          "visual-source-semantics-resolution-ledger.json#/cases/1",
+          "visual-source-adjudication.json#/cases/4",
+          "visual-resolution-ledger.json#/resolutions/1"
+        ]
+      }
+    },
+    {
+      "case_id": "esg-metrics",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "story_ids": [
+        "P02-US01",
+        "P02-US06",
+        "P03-US04",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "Both source-evidenced uncaptained visual regions now route as charts.",
+        "Unsafe fused native tokens are withheld from primary Markdown and UI.",
+        "Region fragmentation and title-row chart/table taxonomy differences are accepted after source review."
+      ],
+      "remaining_functional_gaps": [
+        "The small fiscal-row chart retains noisy user-visible OCR and has no complete series organization.",
+        "Some superscript and source column/reading-order presentation remains degraded."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 19,
+        "functional_regressions": 16,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 2,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 5,
+          "major": 10,
+          "minor": 4
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/esg-metrics/evidence.json",
+        "comparison_sha256": "68e6d353938f421de4916dc82e45447a8d0850ad5745336405a01a848b9ba510",
+        "service": "service-final-source-grounded-20260813-v2/esg-metrics",
+        "resolution_paths": [
+          "visual-source-semantics-resolution-ledger.json#/cases/2",
+          "visual-source-adjudication.json#/cases/5",
+          "table-source-truth-audit.md"
+        ]
+      }
+    },
+    {
+      "case_id": "finance-10k",
+      "status": "fixed",
+      "source_pdf_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "story_ids": [
+        "P03-US08"
+      ],
+      "resolved_or_accepted": [
+        "Apple Inc. is consistently typed as a repeated running header on all three pages and never renders as a document H1.",
+        "The pages 2-3 public item md scalar retains a non-rendering '# Apple Inc.' marker under direct-owner custody; this is an accepted JSON serialization residue because canonical/raw Markdown and UI strip it.",
+        "Source-faithful table header bands are accepted where LlamaParse segments them differently."
+      ],
+      "remaining_functional_gaps": [],
+      "raw_comparator": {
+        "discrepancy_count": 28,
+        "functional_regressions": 24,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 4,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 9,
+          "major": 12,
+          "minor": 7
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/finance-10k/evidence.json",
+        "comparison_sha256": "4a7fdaabd30eb4e60e6f2cf6b6545b8573a6fc74ed3538d99a464652418dc6c3",
+        "service": "service-final-source-grounded-20260813-v2/finance-10k",
+        "resolution_paths": [
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/1",
+          "table-source-truth-audit.md"
+        ]
+      }
+    },
+    {
+      "case_id": "health-report",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "story_ids": [
+        "P02-US06",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "Both visual regions are typed as charts and the first chart promotes coalesced native glyphs exactly once.",
+        "A spurious blank table is suppressed.",
+        "LlamaParse's reconstructed matrices are not treated as individually printed values."
+      ],
+      "remaining_functional_gaps": [
+        "The second chart retains residual OCR noise because its native text does not satisfy strict owner containment.",
+        "Axis, category, and series organization remains incomplete for both charts."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 15,
+        "functional_regressions": 12,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 2,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 7,
+          "major": 5,
+          "minor": 3
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/health-report/evidence.json",
+        "comparison_sha256": "7b254a4d944ae808344dba69b0b607b6f8bb3215ae97e79942819eb66c9d91bb",
+        "service": "service-final-source-grounded-20260813-v2/health-report",
+        "resolution_paths": [
+          "visual-source-semantics-resolution-ledger.json#/cases/3",
+          "visual-source-adjudication.json#/cases/6",
+          "visual-resolution-ledger.json#/resolutions/1",
+          "table-source-truth-audit.md"
+        ]
+      }
+    },
+    {
+      "case_id": "insurance-acord",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "story_ids": [
+        "P03-US04",
+        "P03-US06",
+        "P04-US04"
+      ],
+      "resolved_or_accepted": [
+        "The static producer/contact/insured/insurer region is fixed as one source-ordered semantic form table with 18 blank cells and each of 14 labels exactly once.",
+        "Synthetic blank-field prose, PHONE NAME corruption, and unsupported signature text are absent from final Markdown and UI.",
+        "Different JSON form taxonomies and omission of generated logo/signature prose are accepted."
+      ],
+      "remaining_functional_gaps": [
+        "The lower coverage grid and its table-versus-form ownership were explicitly outside the scoped ACORD correction and remain unresolved."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 19,
+        "functional_regressions": 16,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 2,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 11,
+          "major": 4,
+          "minor": 4
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/insurance-acord/evidence.json",
+        "comparison_sha256": "326b63967bc223eb4d7b6ee1ea7fe78fe79872aa8400134ee1bfe9b4e671493c",
+        "service": "service-final-source-grounded-20260813-v2/insurance-acord",
+        "resolution_paths": [
+          "service-acord-form-fix-20260813-attempt-03/acord-form-resolution-ledger.json",
+          "visual-source-adjudication.json#/cases/7",
+          "table-source-truth-audit.md"
+        ]
+      }
+    },
+    {
+      "case_id": "manufacturing-report",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "story_ids": [
+        "P02-US06",
+        "P03-US04",
+        "P03-US07",
+        "P05-US03"
+      ],
+      "resolved_or_accepted": [
+        "All five source visual regions, including the formerly uncaptained page-1 region, now route as charts.",
+        "Safe native labels and rotated PDF-layer words are retained, while no interpolated time-series values are emitted.",
+        "Decorative figure-number fragments and inferred chart tables are accepted differences.",
+        "The final public visual contract keeps promoted source text in value, md, and visual_source_text while detected_text remains the strict boolean true on all five chart owners."
+      ],
+      "remaining_functional_gaps": [
+        "Some page-2 OCR remains primary because source text boxes cross visual-owner boundaries.",
+        "Complete series and curve semantics remain unresolved.",
+        "Residual caption/order and '4.3.' hierarchy presentation differences remain user-visible."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 45,
+        "functional_regressions": 37,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 7,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 16,
+          "major": 20,
+          "minor": 9
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/manufacturing-report/evidence.json",
+        "comparison_sha256": "e74fd6fb5289da2d55371723e4920b4b3f807a4c31b7e2744bd061ad8e0b183d",
+        "service": "service-final-source-grounded-20260813-v2/manufacturing-report",
+        "resolution_paths": [
+          "text-render-resolution-ledger.json#/resolutions/1",
+          "visual-source-semantics-resolution-ledger.json#/cases/4",
+          "visual-source-adjudication.json#/cases/8",
+          "visual-resolution-ledger.json#/resolutions/1"
+        ]
+      },
+      "contract_validations": [
+        {
+          "contract": "detected_text_boolean",
+          "result": "passed",
+          "evidence": "service-final-source-grounded-20260813-v2/manufacturing-report/response.json",
+          "detail": "Every final manufacturing chart has type(detected_text)=boolean and detected_text=true; extracted text remains in value/md/visual_source_text rather than overloading the flag."
+        }
+      ]
+    },
+    {
+      "case_id": "ny-timetable",
+      "status": "fixed",
+      "source_pdf_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "story_ids": [
+        "P02-US04",
+        "P03-US08",
+        "P04-US01"
+      ],
+      "resolved_or_accepted": [
+        "Each page exposes one ordered 13-column table with the merged Weekdays to The Bronx title row first.",
+        "Detached false OCR fragments 'ew' and '741' are absent from JSON, raw Markdown, and rendered UI.",
+        "LlamaParse row/column reconstruction errors are accepted against the source-correct 50-service grid."
+      ],
+      "remaining_functional_gaps": [],
+      "raw_comparator": {
+        "discrepancy_count": 29,
+        "functional_regressions": 24,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 5,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 11,
+          "major": 7,
+          "minor": 11
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/ny-timetable/evidence.json",
+        "comparison_sha256": "da6497828ca3a341c39bc7e46d176d08587f9d28d2f2a6df630e16d54ef3dce4",
+        "service": "service-final-source-grounded-20260813-v2/ny-timetable",
+        "resolution_paths": [
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/2",
+          "table-source-truth-audit.md"
+        ]
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "story_ids": [
+        "P02-US04",
+        "P03-US05"
+      ],
+      "resolved_or_accepted": [
+        "The public API projection failure is fixed.",
+        "The false detached 'ClO' OCR line is suppressed while exact CIO and FERS table rows remain.",
+        "Source-faithful merged financial headers are accepted."
+      ],
+      "remaining_functional_gaps": [
+        "A detached complete 'FERS Federal Employees Retirement System' paragraph still duplicates the glossary row.",
+        "Four source-italic glossary spans are present in JSON sidecars but are not serialized into table Markdown or rendered emphasis.",
+        "Four page-3 source em dashes serialize as ASCII hyphens."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 27,
+        "functional_regressions": 24,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 3,
+        "resolved_discrepancies": 1,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 5,
+          "major": 17,
+          "minor": 5
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/postal-10k/evidence.json",
+        "comparison_sha256": "f0cac255cf1275b3917c87851f55c8bc418219df1b95b4541f3741221900422e",
+        "service": "service-final-source-grounded-20260813-v2/postal-10k",
+        "resolution_paths": [
+          "resolution-ledger-final-source-grounded-v2.json#/cases/postal-10k",
+          "resolution-ledger.json#/cases/postal-10k",
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/3",
+          "text-render-resolution-ledger.json"
+        ]
+      }
+    },
+    {
+      "case_id": "purchase-agreement",
+      "status": "fixed",
+      "source_pdf_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "story_ids": [
+        "P01-US04",
+        "P02-US04",
+        "P03-US05"
+      ],
+      "resolved_or_accepted": [
+        "The deleted draft banner is ordinary deleted text, ASSET PURCHASE AGREEMENT is H1, and the source-underlined Background subsection is H2.",
+        "Exact paired source smart quotes and source-supported bold/italic runs survive JSON, Markdown, and semantic UI rendering.",
+        "The service's whole-run deletion presentation differs from LlamaParse's short plain label but follows the source and is accepted."
+      ],
+      "remaining_functional_gaps": [],
+      "raw_comparator": {
+        "discrepancy_count": 7,
+        "functional_regressions": 6,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 1,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 0,
+          "major": 2,
+          "minor": 5
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/purchase-agreement/evidence.json",
+        "comparison_sha256": "8a30e2f734a20f3f52014d385928fb17a973aea12f47ec89c75711d98f470e81",
+        "service": "service-final-source-grounded-20260813-v2/purchase-agreement",
+        "resolution_paths": [
+          "text-render-resolution-ledger.json#/resolutions/0",
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/4"
+        ]
+      }
+    },
+    {
+      "case_id": "settlement-agreement",
+      "status": "acceptable_difference",
+      "source_pdf_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "story_ids": [
+        "P03-US07"
+      ],
+      "resolved_or_accepted": [
+        "All three source/LlamaParse occurrences of 'Look-Back Date' are retained.",
+        "The a./b./c. and nested (i)-(iv) legal-clause sequence is source-ordered and covered by the legal-clause graph regression.",
+        "Quotation styling around the first defined term differs but does not alter content, hierarchy, or rendered function."
+      ],
+      "remaining_functional_gaps": [],
+      "raw_comparator": {
+        "discrepancy_count": 10,
+        "functional_regressions": 9,
+        "review_required": 0,
+        "acceptable_or_harmless_differences": 1,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 0,
+          "major": 5,
+          "minor": 5
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/settlement-agreement/evidence.json",
+        "comparison_sha256": "2c5548be3edb2b21d4bdde546b59e61808396e6a214703356dd2b2d9b6c7b9ef",
+        "service": "service-final-source-grounded-20260813-v2/settlement-agreement",
+        "resolution_paths": [
+          "text-layout-correction-adjudication-20260813-02/ledger.json#/cases/5"
+        ]
+      }
+    },
+    {
+      "case_id": "uber-earnings",
+      "status": "discrepancy_found",
+      "source_pdf_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "story_ids": [
+        "P02-US06",
+        "P03-US04",
+        "P03-US07",
+        "P03-US08",
+        "P05-US03",
+        "P05-US10"
+      ],
+      "resolved_or_accepted": [
+        "Page-1 photograph OCR gibberish is removed from primary Markdown/UI and retained diagnostically.",
+        "Both page-2 regions are charts; both page-3 association regions are diagrams with seven explicit ellipse nodes and zero unsupported connectors.",
+        "Generated photograph prose, interpolated chart values, directed arrows without source arrowheads, and raw fragment-count differences are accepted."
+      ],
+      "remaining_functional_gaps": [
+        "Page-2 charts lack complete series and printed-value organization.",
+        "Page-3 unlabeled fan geometry remains unresolved, and the first diagram's primary OCR omits source labels whose boxes cross its owner boundary.",
+        "Heading/date/footer ordering and construction-text filtering retain user-visible differences."
+      ],
+      "raw_comparator": {
+        "discrepancy_count": 34,
+        "functional_regressions": 27,
+        "review_required": 1,
+        "acceptable_or_harmless_differences": 6,
+        "evidence_gaps": 0,
+        "severity_counts": {
+          "critical": 13,
+          "major": 13,
+          "minor": 8
+        }
+      },
+      "evidence": {
+        "comparison": "comparison-final-source-grounded-v2/uber-earnings/evidence.json",
+        "comparison_sha256": "54a41a442c9275f64769514e96514feca19abd208ed5d309d45329f2528c1239",
+        "service": "service-final-source-grounded-20260813-v2/uber-earnings",
+        "resolution_paths": [
+          "visual-resolution-ledger.json#/resolutions/0",
+          "visual-source-semantics-resolution-ledger.json#/cases/5",
+          "visual-source-adjudication.json#/cases/9"
+        ]
+      }
+    }
+  ],
+  "artifact_manifest": {
+    "path": "artifact-manifest-final-source-grounded-v2.json",
+    "sha256": "154028aa64a10c15b170c714cab07f9eccf9fb25da5928962b78ea86264df12b",
+    "scope": "Final v2 source, selected LlamaParse reference, service JSON/Markdown/rendered-DOM, and media-type custody"
+  },
+  "final_resolution_ledger": {
+    "path": "resolution-ledger-final-source-grounded-v2.json",
+    "sha256": "73521f02bfe58f7b6ba635b0ab7806bee0411303ebcaec652d4315090602c000",
+    "scope": "Final v2 public projection and terminal table/chart custody resolutions"
+  },
+  "terminal_contract_corrections": [
+    {
+      "case_id": "catastrophe-recap",
+      "story_ids": [
+        "P04-US01",
+        "P05-US01"
+      ],
+      "contract": "terminal_chart_custody",
+      "status": "resolved",
+      "authority": "resolution-ledger-final-source-grounded-v2.json#/cases/catastrophe-recap"
+    },
+    {
+      "case_id": "manufacturing-report",
+      "story_ids": [
+        "P03-US02",
+        "P05-US01"
+      ],
+      "contract": "detected_text_boolean",
+      "status": "resolved",
+      "authority": "service-final-source-grounded-20260813-v2/manufacturing-report/response.json"
+    }
+  ]
+}

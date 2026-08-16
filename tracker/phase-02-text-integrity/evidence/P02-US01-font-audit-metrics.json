@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "p02_us01_font_audit_component_metrics_summary",
+  "generated_at_utc": "2026-07-30T07:04:39.291005+00:00",
+  "measurement_scope": "Isolated additive font audit plus strict report serialization. Complete healthy reports use a verified no-copy IR attachment path. Phase 0 per-case parse records are historical comparators, not paired full-parser samples.",
+  "runner": "tests.benchmarks.font_audit_metrics",
+  "command": ".venv/bin/python -m tests.benchmarks.font_audit_metrics run --workspace /Users/vignesh/Downloads/taffybop --warmups 2 --samples 10",
+  "environment": {
+    "python": "3.13.5",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "phase_0_run_id": "p00-us10-corpus-20260729-03",
+    "phase_0_environment_sha256": "c8e9ecbe7af0c246bc9c833bad4da2f5f1b3f1ee8398c60b67851af72a02f634"
+  },
+  "method": {
+    "case_count": 15,
+    "page_count": 30,
+    "warmups_per_case": 2,
+    "samples_per_case": 10,
+    "percentile": "nearest-rank",
+    "isolation": "one child process per case",
+    "source_identity": "each PDF SHA-256 matched its immutable Phase 0 source record",
+    "rss": "increment in isolated-process peak RSS from before lazy production import through all case samples",
+    "rounding": "per-case latency and overhead values are rounded to 6 decimal places"
+  },
+  "summary": {
+    "statuses": [
+      "complete"
+    ],
+    "deterministic_cases": 15,
+    "bad_font_targets": 2,
+    "bad_font_detections": 2,
+    "bad_font_recall": 1.0,
+    "healthy_cases": 14,
+    "healthy_false_positive_cases": 0,
+    "healthy_false_positive_rate": 0.0,
+    "font_cache_hits": 83,
+    "font_cache_lookups": 178,
+    "font_cache_hit_rate": 0.46629213483146065,
+    "healthy_additive_overhead_percent": {
+      "p50": 0.5351948974534456,
+      "p95": 2.461016869907757,
+      "max": 2.8851643427638756
+    },
+    "max_isolated_peak_rss_increment_bytes": 87080960
+  },
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "source_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [
+        13,
+        25
+      ],
+      "finding_font_refs": [
+        "object:13",
+        "object:25"
+      ],
+      "latency_ms": {
+        "p50": 57.400791,
+        "p95": 57.986375,
+        "max": 57.986375
+      },
+      "p95_additive_overhead_percent": 0.826095,
+      "font_cache_hit_rate": 0.16666666666666666,
+      "peak_rss_increment_bytes": 15040512
+    },
+    {
+      "case_id": "clean-energy",
+      "source_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 22.998583,
+        "p95": 24.151333,
+        "max": 24.151333
+      },
+      "p95_additive_overhead_percent": 0.324204,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 13565952
+    },
+    {
+      "case_id": "clinical-study",
+      "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "pages": 4,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 189.883834,
+        "p95": 196.449708,
+        "max": 196.449708
+      },
+      "p95_additive_overhead_percent": 1.534181,
+      "font_cache_hit_rate": 0.40625,
+      "peak_rss_increment_bytes": 26951680
+    },
+    {
+      "case_id": "component-datasheet",
+      "source_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 123.632584,
+        "p95": 129.879125,
+        "max": 129.879125
+      },
+      "p95_additive_overhead_percent": 1.362752,
+      "font_cache_hit_rate": 0.8666666666666667,
+      "peak_rss_increment_bytes": 21037056
+    },
+    {
+      "case_id": "egov-survey",
+      "source_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 28.934,
+        "p95": 29.674458,
+        "max": 29.674458
+      },
+      "p95_additive_overhead_percent": 0.461695,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 15826944
+    },
+    {
+      "case_id": "esg-metrics",
+      "source_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 39.382375,
+        "p95": 40.758,
+        "max": 40.758
+      },
+      "p95_additive_overhead_percent": 0.535195,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 14729216
+    },
+    {
+      "case_id": "finance-10k",
+      "source_sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 93.323667,
+        "p95": 97.800792,
+        "max": 97.800792
+      },
+      "p95_additive_overhead_percent": 0.526731,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 19021824
+    },
+    {
+      "case_id": "health-report",
+      "source_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 176.643417,
+        "p95": 206.754333,
+        "max": 206.754333
+      },
+      "p95_additive_overhead_percent": 2.885164,
+      "font_cache_hit_rate": 0.2222222222222222,
+      "peak_rss_increment_bytes": 20201472
+    },
+    {
+      "case_id": "insurance-acord",
+      "source_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 27.910833,
+        "p95": 28.942833,
+        "max": 28.942833
+      },
+      "p95_additive_overhead_percent": 0.33441,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 15171584
+    },
+    {
+      "case_id": "manufacturing-report",
+      "source_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 242.622291,
+        "p95": 247.5895,
+        "max": 247.5895
+      },
+      "p95_additive_overhead_percent": 2.009417,
+      "font_cache_hit_rate": 0.6,
+      "peak_rss_increment_bytes": 22396928
+    },
+    {
+      "case_id": "ny-timetable",
+      "source_sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 259.719208,
+        "p95": 294.702333,
+        "max": 294.702333
+      },
+      "p95_additive_overhead_percent": 0.649422,
+      "font_cache_hit_rate": 0.6666666666666666,
+      "peak_rss_increment_bytes": 22773760
+    },
+    {
+      "case_id": "postal-10k",
+      "source_sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 84.439417,
+        "p95": 90.153375,
+        "max": 90.153375
+      },
+      "p95_additive_overhead_percent": 0.475134,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 17891328
+    },
+    {
+      "case_id": "purchase-agreement",
+      "source_sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 40.186458,
+        "p95": 41.285084,
+        "max": 41.285084
+      },
+      "p95_additive_overhead_percent": 0.741393,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 17367040
+    },
+    {
+      "case_id": "settlement-agreement",
+      "source_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "pages": 1,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 36.3935,
+        "p95": 38.134541,
+        "max": 38.134541
+      },
+      "p95_additive_overhead_percent": 0.653124,
+      "font_cache_hit_rate": 0.0,
+      "peak_rss_increment_bytes": 16318464
+    },
+    {
+      "case_id": "uber-earnings",
+      "source_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "pages": 3,
+      "status": "complete",
+      "finding_font_object_ids": [],
+      "latency_ms": {
+        "p50": 40.553917,
+        "p95": 41.662042,
+        "max": 41.662042
+      },
+      "p95_additive_overhead_percent": 0.159574,
+      "font_cache_hit_rate": 0.5555555555555556,
+      "peak_rss_increment_bytes": 87080960
+    }
+  ]
+}

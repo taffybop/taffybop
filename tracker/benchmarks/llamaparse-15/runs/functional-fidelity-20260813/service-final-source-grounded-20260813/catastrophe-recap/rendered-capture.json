@@ -1,0 +1,19 @@
+{
+  "schema_version": "clearleaf-rendered-ui-capture-v1",
+  "case_id": "catastrophe-recap",
+  "renderer": "ClearleafWorkspace/RenderedPageCapture",
+  "renderer_contract": "app/rendered-page-capture.tsx",
+  "presentation_view": "body",
+  "source_response": "response.json",
+  "source_response_sha256": "5e7c7f4b124216524dfc77e21adff8ad76778d2e7e83ea3afd9eb80a51c6873a",
+  "page_count": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "artifact": "pages/page-1/rendered-dom.json",
+      "artifact_sha256": "da68c2b22382d575769905faf3b2519fc26b4302e9faa08914275e3e878789cc",
+      "html_sha256": "b33951f79a783a57890217d0402450c57e52972a7e8f7320b456a6f5f5fefa72",
+      "text_sha256": "06ef122d0b5bdbe4d52fa8c9ec3bfe1456433beb1166f7d08431afb7ae5a86c1"
+    }
+  ]
+}

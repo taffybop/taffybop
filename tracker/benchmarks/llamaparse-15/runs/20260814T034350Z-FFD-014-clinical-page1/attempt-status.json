@@ -1,0 +1,14 @@
+{
+  "schema_version": "ffd014-attempt-status-v1",
+  "attempt_id": "20260814T034350Z-FFD-014-clinical-page1",
+  "status": "failed_attempt_preserved",
+  "closure_eligible": false,
+  "source_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+  "failure": {
+    "stage": "service artifact runner",
+    "error_type": "ConnectError",
+    "message": "[Errno 1] Operation not permitted"
+  },
+  "retained_scope": "The actual Clearleaf page-1 screenshot, rendered article HTML, and DOM verdict are retained as partial evidence only. They must not be combined with a later service response or used for closure.",
+  "superseded_by": "../20260814T034433Z-FFD-014-clinical-page1/"
+}

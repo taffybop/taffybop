@@ -1,0 +1,232 @@
+{
+  "schema_version": "functional-fidelity-visual-source-adjudication-v1",
+  "generated_at_utc": "2026-08-13T06:30:00Z",
+  "review_method": {
+    "inputs": [
+      "hash-bound benchmark PDFs",
+      "retained page renders under tmp/pdfs/visual-fidelity-20260813",
+      "LlamaParse raw Markdown, JSON, and rendered DOM",
+      "service raw Markdown, JSON, and rendered DOM"
+    ],
+    "rule": "Printed text, visibly encoded chart marks, region geometry, and explicit connector arrowheads are source truth. Generated prose descriptions, interpolated chart values, and inferred relationships are baseline model observations and cannot independently establish a service regression.",
+    "analyzer_limitation": "The current aggregate visual-origin proxy combines Llama semantic descriptions/structured chart reconstructions with service OCR. Those review_required proxy rows are not OCR-to-OCR comparisons and must not be promoted to release-blocking regressions without region-level source review.",
+    "hash_binding": "Every row binds the source PDF, retained page render, and Llama reference JSON used during review."
+  },
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "source_pdf_sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+      "source_render_sha256": {"1": "44f43c090d2e29f22168509e341e3dba8b8e878d6f245204f82ddae1ab29cb78"},
+      "llamaparse_reference_json_sha256": "272286e328081551b9a50e939d967ea4870e1ac1ec10aed8e089a6547822dd2a",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-CATASTROPHE-RECAP-3011a7123d6f",
+          "disposition": "mixed_real_gap_and_baseline_inference",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "The region visibly prints title, region legend, y-axis ticks, selected years, Annual total, and source note. Individual annual/1H values are encoded only by bar geometry and are not printed as the exhaustive Llama table claims.",
+          "service_result": "Source-grounded chart type and explicit labels are retained after VIS-RES-CAPTION-ROUTING-001; no inferred values are emitted.",
+          "remaining_gap": "Explicit chart structure/label normalization remains incomplete; Llama's exhaustive value matrix is not accepted as source truth."
+        }
+      ]
+    },
+    {
+      "case_id": "clean-energy",
+      "source_pdf_sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+      "source_render_sha256": {"1": "5bc0de95b4f4e0193a73f5ba9e11f9427192767cb5051547eb23075d8c8010b9"},
+      "llamaparse_reference_json_sha256": "b52ca25655678729c09ba1802aa7da550bc89e4d16b07a8cdcb44dd9f7780148",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-CLEAN-ENERGY-22462cda391e",
+          "disposition": "mixed_real_gap_and_baseline_inference",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "The six panels visibly print technology labels, units, axes, years, and percentage callouts. Many exact Llama table values are reconstructed from bar heights and some disagree with visible geometry.",
+          "service_result": "Chart type, exact region, OCR evidence, and explicit labels are retained; no interpolated values are serialized.",
+          "remaining_gap": "Noisy rotated OCR and missing panel/axis semantics remain genuine."
+        },
+        {
+          "discrepancy_id": "FID-CLEAN-ENERGY-5ffdf7968983",
+          "disposition": "acceptable_difference",
+          "release_classification": "acceptable_difference",
+          "source_truth": "The two small service regions are page-edge/decorative fragments, not independent semantic document visuals."
+        }
+      ]
+    },
+    {
+      "case_id": "clinical-study",
+      "source_pdf_sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+      "source_render_sha256": {
+        "1": "713104be574a6c622e1e9326ac9a5a3f4c27f7a2f27ef4a8126fadf69945f006",
+        "2": "e7f33e21849867f1751513a5b5da0f590f8ee36d8f47540b4b7a9001fce3e360",
+        "3": "c020e2c18e2b52852429eabd24a67c841499d1fe07fbabbe5cf87e49fbd1f52f",
+        "4": "2fcaa49425bc45308e7795d54a5122117a6c0dfcd35b7edca18691e57ee75768"
+      },
+      "llamaparse_reference_json_sha256": "19834aea456a200b1df6fd5cc872b91480909bc9e6987ed80ff3ea8fbb00cb9e",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-CLINICAL-STUDY-bacaca948fc2",
+          "disposition": "invalid_aggregate_ocr_proxy",
+          "release_classification": "diagnostic_only",
+          "source_truth": "The Llama proxy contains a semantic logo phrase while the service proxy aggregates ordinary body and flowchart OCR across four pages. It is not an equivalent-region OCR comparison."
+        },
+        {
+          "discrepancy_id": "FID-CLINICAL-STUDY-0cde0be990a6",
+          "disposition": "cross_type_taxonomy_difference",
+          "release_classification": "acceptable_difference_after_region_match",
+          "source_truth": "The page-3 raster flowchart is one visual region in both systems. Service now refines it to diagram; exact image-type counts therefore do not express a coverage loss."
+        },
+        {
+          "discrepancy_id": "FID-CLINICAL-STUDY-e2b46f08c4ea",
+          "disposition": "resolved_detection_and_projection_open_topology",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "The source contains a page-3 flowchart with explicit node labels and connectors.",
+          "service_result": "Public JSON now exposes one diagram region with 184 label occurrences and no fabricated topology. Its 802-character approved OCR occurs exactly once in JSON, raw Markdown, canonical Markdown, and rendered DOM; the external caption is separately once-only.",
+          "remaining_gap": "Explicit connector topology remains safely unresolved."
+        }
+      ]
+    },
+    {
+      "case_id": "component-datasheet",
+      "source_pdf_sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+      "source_render_sha256": {
+        "1": "e40c3aaebccbf6fff1f28dfbd73a84ba9bd32904722bd5b0303ed8ea1769a16f",
+        "2": "2fa2826bc0aa853dde6a3d8642c9587354d2bd5c992cc00323ba773881fd6802"
+      },
+      "llamaparse_reference_json_sha256": "e065b98991d3e48ee6106018dc721e81e3654a1b41a1094563d6fb73367ce7c8",
+      "adjudication": [
+        {
+          "disposition": "baseline_semantic_description_not_source_ocr",
+          "release_classification": "acceptable_difference",
+          "source_truth": "Llama descriptions of the Raspberry Pi board and pinout include semantic identities and explanations that are not printed in the figures. The service correctly does not invent them."
+        },
+        {
+          "disposition": "genuine_diagram_ocr_gap",
+          "release_classification": "functional_regression",
+          "source_truth": "The page-2 pinout contains many explicit labels and spatial relationships.",
+          "service_result": "The picture has no raw source-declared caption, so the conservative caption router leaves it an image.",
+          "remaining_gap": "Pin labels are incomplete/noisy and diagram structure remains unmodeled; this requires a separate source-grounded diagram detector, not a caption guess."
+        }
+      ]
+    },
+    {
+      "case_id": "egov-survey",
+      "source_pdf_sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+      "source_render_sha256": {"1": "71ffd70816cf535824aed669bf67ce0d85d96e9601676e2eddf7fac3a37f72b2"},
+      "llamaparse_reference_json_sha256": "30a5bd4b97bb5f4038f8ef5a666f33bf3b2ec7e404400397e5a523508ca8b21e",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-EGOV-SURVEY-d947042a408e",
+          "disposition": "genuine_structure_and_ocr_gap",
+          "release_classification": "functional_regression",
+          "source_truth": "The chart prints years, category legend, and bar labels with counts and percentages.",
+          "service_result": "The region is now typed chart with exact geometry and source IDs, and it retains many printed labels.",
+          "remaining_gap": "Some OCR characters are wrong and the printed bar labels are not organized into year/category series."
+        }
+      ]
+    },
+    {
+      "case_id": "esg-metrics",
+      "source_pdf_sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+      "source_render_sha256": {"1": "3e20ef9f69b14fcfc15ac23888b68551f594cc6bc90d07bed4bca5f2cb0538c6"},
+      "llamaparse_reference_json_sha256": "3ed091fb34978ee96461fdf98008aa8165a91c5eeb0f919b489f3d9baf97f827",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-ESG-METRICS-849a723b603a",
+          "disposition": "genuine_chart_structure_gap_with_proxy_contamination",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "Two small chart regions contain explicit printed labels/values, while the aggregate proxy also mixes surrounding prose and semantic reconstruction.",
+          "remaining_gap": "The service retains partly noisy OCR but lacks safe chart typing because no source-declared captions or other conservative type evidence exist."
+        },
+        {
+          "discrepancy_id": "FID-ESG-METRICS-a12a1cdd7fb9",
+          "disposition": "acceptable_difference",
+          "release_classification": "acceptable_difference",
+          "source_truth": "Region grouping/taxonomy differs; raw fragment count is not semantic visual coverage."
+        }
+      ]
+    },
+    {
+      "case_id": "health-report",
+      "source_pdf_sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+      "source_render_sha256": {"1": "218143763dba631436ac884890fd9630d109e0fdc3fb7b163a04c1818d816262"},
+      "llamaparse_reference_json_sha256": "84e5ed92de3380cf7216c5fa5d78932d5d761705513c5994248ec54fc0ce646e",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-HEALTH-REPORT-9e7b81af7932",
+          "disposition": "mixed_real_gap_and_baseline_reconstruction",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "Both figures print titles, axes, categories, and selected values. Llama's large reconstructed matrices contain many values that are not individually printed and require geometric interpolation.",
+          "service_result": "Both regions are now source-grounded charts with explicit OCR labels and no inferred values.",
+          "remaining_gap": "Axis/series organization and some label OCR remain incomplete. An unrelated empty-table block appeared in the current shared-code rerun and is assigned to table custody."
+        }
+      ]
+    },
+    {
+      "case_id": "insurance-acord",
+      "source_pdf_sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+      "source_render_sha256": {"1": "e9b53e3cfdcc1e1b38977aa619ceac343948764e24119992a3adf0805a510a3d"},
+      "llamaparse_reference_json_sha256": "20134cd09606dc210d65fe18f5596f13a94dfba41c4bc498d1d69858e87822b2",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-INSURANCE-ACORD-a8d9f7730332",
+          "disposition": "baseline_description_not_ocr",
+          "release_classification": "acceptable_difference",
+          "source_truth": "The logo region visibly prints ACORD. Llama's phrase 'ACORD logo' is a semantic description, whereas service OCR repeats the printed word.",
+          "remaining_gap": "Logo semantic identity is a minor optional description gap, not an OCR failure. Llama's signature interpretation is also model inference and must not be copied as fact."
+        }
+      ]
+    },
+    {
+      "case_id": "manufacturing-report",
+      "source_pdf_sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+      "source_render_sha256": {
+        "1": "ac33e81b57943866b0cc29bd0d0e1aae3cf6232e201e7df566b959448609649d",
+        "2": "af5201b13a2df06e24f950186262185784d9753a3e2c33ed866a411ae14161b8",
+        "3": "30c8f922b948c9231ce0c81a5858dbec7b35d8d13f9eda05c83fd6449f9bc764"
+      },
+      "llamaparse_reference_json_sha256": "409a8ba52a3051066041540f9e70e56e9edd322a571581755402f164e8e89d08",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-MANUFACTURING-REPORT-21816bd23dd1",
+          "disposition": "mixed_genuine_ocr_gap_and_baseline_interpolation",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "Five large charts are visible. Captions are source-declared for four. Numerous Llama time-series values are interpolated from plotted geometry and several do not agree with source marks.",
+          "service_result": "Four captioned regions are now charts with source provenance and no inferred values. The uncaptained first page-1 region remains an image but its 244-character approved OCR occurs exactly once in JSON, raw Markdown, canonical Markdown, and rendered DOM.",
+          "remaining_gap": "The first page-1 chart lacks a raw declared caption and remains image; rotated/low-resolution labels are noisy, and chart series organization remains incomplete."
+        },
+        {
+          "discrepancy_id": "FID-MANUFACTURING-REPORT-7f967af04d03",
+          "disposition": "acceptable_difference",
+          "release_classification": "acceptable_difference",
+          "source_truth": "The small 4.3 fragment is decorative/figure-number grouping, not an independent semantic image."
+        }
+      ]
+    },
+    {
+      "case_id": "uber-earnings",
+      "source_pdf_sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+      "source_render_sha256": {
+        "1": "a82a8959a97719166abd86023aa1066e8bf2157510501fdfa11cfcc842ea17ab",
+        "2": "3006e7327ff481f5a08e3fc6381e5b5f3f9ba4cf5429c36d11702d149b2d6e55",
+        "3": "6890146ba1f2ca7714bfff9aa297984e554b2e26f544c9079755f97d9228172f"
+      },
+      "llamaparse_reference_json_sha256": "922ed2e93a5e7ce84ddcc3750dc1ae3655e3518e3c669cfc3be2b05e2b642d7e",
+      "llamaparse_job_id": "pjb-skyvq5noznjko41p3fs2vxgfgptg",
+      "adjudication": [
+        {
+          "discrepancy_id": "FID-UBER-EARNINGS-66a8a6be02e9",
+          "disposition": "resolved_photo_ocr_plus_mixed_visual_proxy",
+          "release_classification": "functional_regression_reduced_scope",
+          "source_truth": "Page 1 is a natural photograph. Page 2 contains explicit chart titles/axes/callouts. Page 3 contains labelled association diagrams without visible arrowheads.",
+          "service_result": "Photo gibberish is removed from primary Markdown/UI and retained diagnostically. The fresh Llama prose photo description remains an acceptable semantic-model difference.",
+          "remaining_gap": "Page-2 chart structure and page-3 grouping remain incomplete; Llama interpolated intermediate chart values and directed Mermaid arrows are not accepted as source truth."
+        },
+        {
+          "discrepancy_id": "FID-UBER-EARNINGS-59bfd52367e1",
+          "disposition": "fragment_count_not_semantic_coverage",
+          "release_classification": "acceptable_difference_after_region_match",
+          "source_truth": "Llama exposes many small image fragments on page 2 while the service groups related visible regions. Raw image count is not functional equivalence. Cross-type region matching is required."
+        }
+      ]
+    }
+  ]
+}

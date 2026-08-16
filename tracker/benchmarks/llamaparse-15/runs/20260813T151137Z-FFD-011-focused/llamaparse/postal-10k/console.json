@@ -1,0 +1,15 @@
+[
+  {
+    "level": "log",
+    "message": "setting backend url https://api.cloud.llamaindex.ai"
+  },
+  {
+    "level": "log",
+    "message": "Skip pylon chat"
+  },
+  {
+    "adjudication": "browser-extension sandbox warning; no content/capture failure",
+    "level": "error",
+    "message": "Access to storage is not allowed from this context."
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "p03_us08_phase_latency_live_custody_reconciliation",
+  "renewal_decision_identity": {
+    "path": "tracker/phase-latency/decisions/LAT-P03-US08-latency-continuity-renewal.md",
+    "sha256": "d8736778b84ca9b96c6eee6bd18e3d3e324fa79dab77ceb902c9ad756f97b128",
+    "size_bytes": 7050
+  },
+  "renewal_record_identity": {
+    "path": "tracker/phase-latency/evidence/LAT-P03-US08-latency-continuity-renewal.json",
+    "sha256": "176e2472e6379c7079416f6c887938bbdc2b8b3382c43e566fc24582e08ac2c6",
+    "size_bytes": 3425
+  },
+  "historical_validator_policy": {
+    "sealed_records_modified": false,
+    "historical_validators_weakened": false,
+    "successor_owned_additive_guard": true
+  },
+  "historical_validator_identity": {
+    "path": "tests/fixtures/phase_03/running_regions/performance_exception.py",
+    "sha256": "e1bbb0f83c8a08d1b8093c755601fa3f5fa280d7de34f4053ef8a720f64d4c58",
+    "size_bytes": 679969
+  },
+  "dependency_manifest_identities": {
+    "pyproject_predecessor": {
+      "path": "pyproject.toml",
+      "sha256": "a9c66f17d92ea9fae623a7d6d953c91b103fbbe96b8fa98d122651d87cfb2cd8",
+      "size_bytes": 755
+    },
+    "pyproject_current": {
+      "path": "pyproject.toml",
+      "sha256": "975f9d5cde7e3c618bc201c2ef0df26e6a9ebda73a3322a0bf0d0bd12f36bfe7",
+      "size_bytes": 944
+    },
+    "uv_lock_predecessor_and_current": {
+      "path": "uv.lock",
+      "sha256": "acd97c526138e247c54272b250c784b311de17b05ef3a28990b86b548f205b11",
+      "size_bytes": 606213
+    }
+  },
+  "additive_dependency_delta": {
+    "scope": "pytest marker registration only",
+    "runtime_dependency_change": false,
+    "resolved_package_change": false,
+    "uv_lock_change": false,
+    "gate_waived": false
+  },
+  "exact_predecessor_source_identities": [
+    {
+      "path": "app/api.py",
+      "sha256": "253eda64be75df1d22ad57db9db62b6c92dcc283575b791be8ddadd976e9b72d",
+      "size_bytes": 5774
+    },
+    {
+      "path": "app/config.py",
+      "sha256": "863695112bace175f12ae5e0e4294c9292a5b9c884b140e4a6a6cb506284f85d",
+      "size_bytes": 18195
+    },
+    {
+      "path": "app/services/pipeline.py",
+      "sha256": "a79a22b0324d17e28ede2d31c76a67bbbe89f859110521beae48fd9f1b03f6a8",
+      "size_bytes": 311099
+    }
+  ],
+  "protected_running_region_module_identity": {
+    "path": "app/services/running_regions.py",
+    "sha256": "1824d3eaa9a9e1ee7545164dce0712e95f695d23c73d1a16ca5a9cc565714b62",
+    "size_bytes": 375077
+  },
+  "running_region_integration_projection": {
+    "entry_count": 92,
+    "sha256": "f0ea5e8124eaa9928a4b7e7f47186883ae01ff0fc78792a5b73739448ce80af1"
+  },
+  "default_off_observation": {
+    "production_latency_flags": [],
+    "production_latency_modules": [],
+    "production_latency_runtime_hooks": false,
+    "attribution_scope": "disposable_benchmark_worker_only",
+    "rollback_action": "stop_disposable_benchmark_worker",
+    "running_region_flag": "layout_running_regions_enabled",
+    "running_region_default": false
+  },
+  "claims": {
+    "strict_current_artifact_pass": false,
+    "production_enablement": false,
+    "phase_04_behavior_change": false,
+    "phase_05_authority": false,
+    "non_waived_gate_removed": false
+  }
+}

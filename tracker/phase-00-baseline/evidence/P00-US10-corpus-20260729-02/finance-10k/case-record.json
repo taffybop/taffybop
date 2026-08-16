@@ -1,0 +1,102 @@
+{
+  "case_id": "finance-10k",
+  "case_latency_ms": 18595.794457942247,
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "worker",
+    "--workspace",
+    ".",
+    "--corpus-registry",
+    "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+    "--case-id",
+    "finance-10k",
+    "--output-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/finance-10k",
+    "--run-id",
+    "p00-us10-corpus-20260729-02",
+    "--order",
+    "7",
+    "--settings-sha256",
+    "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+    "--environment-sha256",
+    "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf"
+  ],
+  "completed_at_utc": "2026-07-29T08:47:15.399696+00:00",
+  "cpu_ms": 15640.027,
+  "environment_sha256": "c3fa65d7dbb72d5bd23a065489f8a67ac3bcfb37ff9098e318796b1eff58ecdf",
+  "error": null,
+  "order": 7,
+  "output": {
+    "document_warnings": [],
+    "expected_page_count": 3,
+    "markdown": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/finance-10k/our-output.md",
+      "role": "markdown",
+      "sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+      "size_bytes": 12622
+    },
+    "observed_page_count": 3,
+    "raw_json": {
+      "derivation": null,
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/finance-10k/our-output.json",
+      "role": "raw_json",
+      "sha256": "f96d5c34bcc893da8ad01edb2f80630f6e033305b201e6f61088ca8f6f8c6a40",
+      "size_bytes": 562575
+    },
+    "semantic_json": {
+      "derivation": "canonical JSON excluding /processing/duration_ms",
+      "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-02/finance-10k/our-output.json",
+      "role": "semantic_json",
+      "sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+      "size_bytes": 291808
+    },
+    "successful_page_count": 3
+  },
+  "parse_latency_ms": 18570.013457909226,
+  "peak_rss_bytes": 2003140608,
+  "reference_comparison": {
+    "case_id": "finance-10k",
+    "current_markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+    "current_semantic_json_sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+    "markdown_stable": true,
+    "reference_markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+    "reference_semantic_json_sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+    "semantic_json_stable": true
+  },
+  "registered_page_count": 3,
+  "run_id": "p00-us10-corpus-20260729-02",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skip": null,
+  "source_triplet": [
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/finance-10k.pdf",
+      "role": "source",
+      "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+      "size_bytes": 87105
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/finance-10k.md",
+      "role": "expert_markdown",
+      "sha256": "0cada5fe6e5406e38ebe8251399e0ee61bce3127a378232bacb01771ff060517",
+      "size_bytes": 12969
+    },
+    {
+      "derivation": null,
+      "path": "benchmark-expertmodeldata/finance-10k.json",
+      "role": "expert_json",
+      "sha256": "d426ac3542880372421023bf75acfe414fe604182383ab38723efb271d3f177a",
+      "size_bytes": 103631
+    }
+  ],
+  "started_at_utc": "2026-07-29T08:46:56.803695+00:00",
+  "status": "success",
+  "warnings": [],
+  "worker_exit_code": 0
+}

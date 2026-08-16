@@ -1,0 +1,1220 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-2wiy88xqsqwk5v5ns6efmrionorp",
+    "created_at": "2026-07-28T12:19:10.126257Z",
+    "updated_at": "2026-07-28T12:19:48.591078Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "finance-10k.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "                                           Apple Inc.\n\n                             CONSOLIDATED STATEMENTS OF OPERATIONS\n(In millions, except number of shares, which are reflected in thousands, and per-share amounts)\n\n    \n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Net sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>298,085</td>\n      <td>316,199</td>\n      <td>297,392</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>85,200</td>\n      <td>78,129</td>\n      <td>68,425</td>\n    </tr>\n    <tr>\n      <td>Total net sales</td>\n      <td>383,285</td>\n      <td>394,328</td>\n      <td>365,817</td>\n    </tr>\n    <tr>\n      <td>Cost of sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>189,282</td>\n      <td>201,471</td>\n      <td>192,266</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>24,855</td>\n      <td>22,075</td>\n      <td>20,715</td>\n    </tr>\n    <tr>\n      <td>Total cost of sales</td>\n      <td>214,137</td>\n      <td>223,546</td>\n      <td>212,981</td>\n    </tr>\n    <tr>\n      <td>Gross margin</td>\n      <td>169,148</td>\n      <td>170,782</td>\n      <td>152,836</td>\n    </tr>\n    <tr>\n      <td>Operating expenses:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Research and development</td>\n      <td>29,915</td>\n      <td>26,251</td>\n      <td>21,914</td>\n    </tr>\n    <tr>\n      <td>Selling, general and administrative</td>\n      <td>24,932</td>\n      <td>25,094</td>\n      <td>21,973</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>54,847</td>\n      <td>51,345</td>\n      <td>43,887</td>\n    </tr>\n    <tr>\n      <td>Operating income</td>\n      <td>114,301</td>\n      <td>119,437</td>\n      <td>108,949</td>\n    </tr>\n    <tr>\n      <td>Other income/(expense), net</td>\n      <td>(565)</td>\n      <td>(334)</td>\n      <td>258</td>\n    </tr>\n    <tr>\n      <td>Income before provision for income taxes</td>\n      <td>113,736</td>\n      <td>119,103</td>\n      <td>109,207</td>\n    </tr>\n    <tr>\n      <td>Provision for income taxes</td>\n      <td>16,741</td>\n      <td>19,300</td>\n      <td>14,527</td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>6.16</td>\n      <td>6.15</td>\n      <td>5.67</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>6.13</td>\n      <td>6.11</td>\n      <td>5.61</td>\n    </tr>\n    <tr>\n      <td>Shares used in computing earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>15,744,231</td>\n      <td>16,215,963</td>\n      <td>16,701,272</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>15,812,547</td>\n      <td>16,325,819</td>\n      <td>16,864,919</td>\n    </tr>\n  </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n\n\n    See accompanying Notes to Consolidated Financial Statements.\n\n\n\n\n\n\n\n\n\n\n    Apple Inc. | 2023 Form 10-K | 28"
+      },
+      {
+        "page_number": 2,
+        "text": "                                       Apple Inc.\n\n                              CONSOLIDATED BALANCE SHEETS\n(In millions, except number of shares, which are reflected in thousands, and par value)\n\n    \n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ASSETS:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash and cash equivalents</td>\n      <td>29,965</td>\n      <td>23,646</td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>31,590</td>\n      <td>24,658</td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>29,508</td>\n      <td>28,184</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>31,477</td>\n      <td>32,748</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>6,331</td>\n      <td>4,946</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>14,695</td>\n      <td>21,223</td>\n    </tr>\n    <tr>\n      <td>Total current assets</td>\n      <td>143,566</td>\n      <td>135,405</td>\n    </tr>\n    <tr>\n      <td>Non-current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>100,544</td>\n      <td>120,805</td>\n    </tr>\n    <tr>\n      <td>Property, plant and equipment, net</td>\n      <td>43,715</td>\n      <td>42,117</td>\n    </tr>\n    <tr>\n      <td>Other non-current assets</td>\n      <td>64,758</td>\n      <td>54,428</td>\n    </tr>\n    <tr>\n      <td>Total non-current assets</td>\n      <td>209,017</td>\n      <td>217,350</td>\n    </tr>\n    <tr>\n      <td>Total assets</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n    <tr>\n      <td>LIABILITIES AND SHAREHOLDERS’ EQUITY:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>62,611</td>\n      <td>64,115</td>\n    </tr>\n    <tr>\n      <td>Other current liabilities</td>\n      <td>58,829</td>\n      <td>60,845</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue</td>\n      <td>8,061</td>\n      <td>7,912</td>\n    </tr>\n    <tr>\n      <td>Commercial paper</td>\n      <td>5,985</td>\n      <td>9,982</td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>9,822</td>\n      <td>11,128</td>\n    </tr>\n    <tr>\n      <td>Total current liabilities</td>\n      <td>145,308</td>\n      <td>153,982</td>\n    </tr>\n    <tr>\n      <td>Non-current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>95,281</td>\n      <td>98,959</td>\n    </tr>\n    <tr>\n      <td>Other non-current liabilities</td>\n      <td>49,848</td>\n      <td>49,142</td>\n    </tr>\n    <tr>\n      <td>Total non-current liabilities</td>\n      <td>145,129</td>\n      <td>148,101</td>\n    </tr>\n    <tr>\n      <td>Total liabilities</td>\n      <td>290,437</td>\n      <td>302,083</td>\n    </tr>\n    <tr>\n      <td>Commitments and contingencies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Shareholders’ equity:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively</td>\n      <td>73,812</td>\n      <td>64,849</td>\n    </tr>\n    <tr>\n      <td>Accumulated deficit</td>\n      <td>(214)</td>\n      <td>(3,068)</td>\n    </tr>\n    <tr>\n      <td>Accumulated other comprehensive loss</td>\n      <td>(11,452)</td>\n      <td>(11,109)</td>\n    </tr>\n    <tr>\n      <td>Total shareholders’ equity</td>\n      <td>62,146</td>\n      <td>50,672</td>\n    </tr>\n    <tr>\n      <td>Total liabilities and shareholders’ equity</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n  </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n\n\n    See accompanying Notes to Consolidated Financial Statements.\n\n\n\n\n    Apple Inc. | 2023 Form 10-K | 30"
+      },
+      {
+        "page_number": 3,
+        "text": "              Apple Inc.\n\nCONSOLIDATED STATEMENTS OF CASH FLOWS\n            (In millions)\n\n    \n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, beginning balances</td>\n      <td>24,977</td>\n      <td>35,929</td>\n      <td>39,789</td>\n    </tr>\n    <tr>\n      <td>Operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net income to cash generated by operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>11,519</td>\n      <td>11,104</td>\n      <td>11,284</td>\n    </tr>\n    <tr>\n      <td>Share-based compensation expense</td>\n      <td>10,833</td>\n      <td>9,038</td>\n      <td>7,906</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(2,227)</td>\n      <td>1,006</td>\n      <td>(4,921)</td>\n    </tr>\n    <tr>\n      <td>Changes in operating assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>(1,688)</td>\n      <td>(1,823)</td>\n      <td>(10,125)</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>1,271</td>\n      <td>(7,520)</td>\n      <td>(3,903)</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>(1,618)</td>\n      <td>1,484</td>\n      <td>(2,642)</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current assets</td>\n      <td>(5,684)</td>\n      <td>(6,499)</td>\n      <td>(8,042)</td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>(1,889)</td>\n      <td>9,448</td>\n      <td>12,326</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current liabilities</td>\n      <td>3,031</td>\n      <td>6,110</td>\n      <td>7,475</td>\n    </tr>\n    <tr>\n      <td>Cash generated by operating activities</td>\n      <td>110,543</td>\n      <td>122,151</td>\n      <td>104,038</td>\n    </tr>\n    <tr>\n      <td>Investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of marketable securities</td>\n      <td>(29,513)</td>\n      <td>(76,923)</td>\n      <td>(109,558)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from maturities of marketable securities</td>\n      <td>39,686</td>\n      <td>29,917</td>\n      <td>59,023</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of marketable securities</td>\n      <td>5,828</td>\n      <td>37,446</td>\n      <td>47,460</td>\n    </tr>\n    <tr>\n      <td>Payments for acquisition of property, plant and equipment</td>\n      <td>(10,959)</td>\n      <td>(10,708)</td>\n      <td>(11,085)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(1,337)</td>\n      <td>(2,086)</td>\n      <td>(385)</td>\n    </tr>\n    <tr>\n      <td>Cash generated by/(used in) investing activities</td>\n      <td>3,705</td>\n      <td>(22,354)</td>\n      <td>(14,545)</td>\n    </tr>\n    <tr>\n      <td>Financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Payments for taxes related to net share settlement of equity awards</td>\n      <td>(5,431)</td>\n      <td>(6,223)</td>\n      <td>(6,556)</td>\n    </tr>\n    <tr>\n      <td>Payments for dividends and dividend equivalents</td>\n      <td>(15,025)</td>\n      <td>(14,841)</td>\n      <td>(14,467)</td>\n    </tr>\n    <tr>\n      <td>Repurchases of common stock</td>\n      <td>(77,550)</td>\n      <td>(89,402)</td>\n      <td>(85,971)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from issuance of term debt, net</td>\n      <td>5,228</td>\n      <td>5,465</td>\n      <td>20,393</td>\n    </tr>\n    <tr>\n      <td>Repayments of term debt</td>\n      <td>(11,151)</td>\n      <td>(9,543)</td>\n      <td>(8,750)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from/(Repayments of) commercial paper, net</td>\n      <td>(3,978)</td>\n      <td>3,955</td>\n      <td>1,022</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(581)</td>\n      <td>(160)</td>\n      <td>976</td>\n    </tr>\n    <tr>\n      <td>Cash used in financing activities</td>\n      <td>(108,488)</td>\n      <td>(110,749)</td>\n      <td>(93,353)</td>\n    </tr>\n    <tr>\n      <td>Increase/(Decrease) in cash, cash equivalents and restricted cash</td>\n      <td>5,760</td>\n      <td>(10,952)</td>\n      <td>(3,860)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, ending balances</td>\n      <td>30,737</td>\n      <td>24,977</td>\n      <td>35,929</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flow disclosure:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for income taxes, net</td>\n      <td>18,679</td>\n      <td>19,573</td>\n      <td>25,385</td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>3,803</td>\n      <td>2,865</td>\n      <td>2,687</td>\n    </tr>\n  </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n\n\n    See accompanying Notes to Consolidated Financial Statements.\n\n\n    Apple Inc. | 2023 Form 10-K | 32"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "**Apple Inc.**\n\n**CONSOLIDATED STATEMENTS OF OPERATIONS**\n\n(In millions, except number of shares, which are reflected in thousands, and per-share amounts)\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Net sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>298,085</td>\n      <td>316,199</td>\n      <td>297,392</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>85,200</td>\n      <td>78,129</td>\n      <td>68,425</td>\n    </tr>\n    <tr>\n      <td>Total net sales</td>\n      <td>383,285</td>\n      <td>394,328</td>\n      <td>365,817</td>\n    </tr>\n    <tr>\n      <td>Cost of sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>189,282</td>\n      <td>201,471</td>\n      <td>192,266</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>24,855</td>\n      <td>22,075</td>\n      <td>20,715</td>\n    </tr>\n    <tr>\n      <td>Total cost of sales</td>\n      <td>214,137</td>\n      <td>223,546</td>\n      <td>212,981</td>\n    </tr>\n    <tr>\n      <td>Gross margin</td>\n      <td>169,148</td>\n      <td>170,782</td>\n      <td>152,836</td>\n    </tr>\n    <tr>\n      <td>Operating expenses:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Research and development</td>\n      <td>29,915</td>\n      <td>26,251</td>\n      <td>21,914</td>\n    </tr>\n    <tr>\n      <td>Selling, general and administrative</td>\n      <td>24,932</td>\n      <td>25,094</td>\n      <td>21,973</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>54,847</td>\n      <td>51,345</td>\n      <td>43,887</td>\n    </tr>\n    <tr>\n      <td>Operating income</td>\n      <td>114,301</td>\n      <td>119,437</td>\n      <td>108,949</td>\n    </tr>\n    <tr>\n      <td>Other income/(expense), net</td>\n      <td>(565)</td>\n      <td>(334)</td>\n      <td>258</td>\n    </tr>\n    <tr>\n      <td>Income before provision for income taxes</td>\n      <td>113,736</td>\n      <td>119,103</td>\n      <td>109,207</td>\n    </tr>\n    <tr>\n      <td>Provision for income taxes</td>\n      <td>16,741</td>\n      <td>19,300</td>\n      <td>14,527</td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>6.16</td>\n      <td>6.15</td>\n      <td>5.67</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>6.13</td>\n      <td>6.11</td>\n      <td>5.61</td>\n    </tr>\n    <tr>\n      <td>Shares used in computing earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>15,744,231</td>\n      <td>16,215,963</td>\n      <td>16,701,272</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>15,812,547</td>\n      <td>16,325,819</td>\n      <td>16,864,919</td>\n    </tr>\n  </tbody>\n</table>\n\nSee accompanying Notes to Consolidated Financial Statements.",
+        "footer": "Apple Inc. | 2023 Form 10-K | <page_number>28</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "# Apple Inc.\n\n## CONSOLIDATED BALANCE SHEETS\n\n(In millions, except number of shares, which are reflected in thousands, and par value)\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ASSETS:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash and cash equivalents</td>\n      <td>29,965</td>\n      <td>23,646</td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>31,590</td>\n      <td>24,658</td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>29,508</td>\n      <td>28,184</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>31,477</td>\n      <td>32,748</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>6,331</td>\n      <td>4,946</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>14,695</td>\n      <td>21,223</td>\n    </tr>\n    <tr>\n      <td>Total current assets</td>\n      <td>143,566</td>\n      <td>135,405</td>\n    </tr>\n    <tr>\n      <td>Non-current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>100,544</td>\n      <td>120,805</td>\n    </tr>\n    <tr>\n      <td>Property, plant and equipment, net</td>\n      <td>43,715</td>\n      <td>42,117</td>\n    </tr>\n    <tr>\n      <td>Other non-current assets</td>\n      <td>64,758</td>\n      <td>54,428</td>\n    </tr>\n    <tr>\n      <td>Total non-current assets</td>\n      <td>209,017</td>\n      <td>217,350</td>\n    </tr>\n    <tr>\n      <td>Total assets</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n    <tr>\n      <td>LIABILITIES AND SHAREHOLDERS’ EQUITY:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>62,611</td>\n      <td>64,115</td>\n    </tr>\n    <tr>\n      <td>Other current liabilities</td>\n      <td>58,829</td>\n      <td>60,845</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue</td>\n      <td>8,061</td>\n      <td>7,912</td>\n    </tr>\n    <tr>\n      <td>Commercial paper</td>\n      <td>5,985</td>\n      <td>9,982</td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>9,822</td>\n      <td>11,128</td>\n    </tr>\n    <tr>\n      <td>Total current liabilities</td>\n      <td>145,308</td>\n      <td>153,982</td>\n    </tr>\n    <tr>\n      <td>Non-current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>95,281</td>\n      <td>98,959</td>\n    </tr>\n    <tr>\n      <td>Other non-current liabilities</td>\n      <td>49,848</td>\n      <td>49,142</td>\n    </tr>\n    <tr>\n      <td>Total non-current liabilities</td>\n      <td>145,129</td>\n      <td>148,101</td>\n    </tr>\n    <tr>\n      <td>Total liabilities</td>\n      <td>290,437</td>\n      <td>302,083</td>\n    </tr>\n    <tr>\n      <td>Commitments and contingencies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Shareholders’ equity:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively</td>\n      <td>73,812</td>\n      <td>64,849</td>\n    </tr>\n    <tr>\n      <td>Accumulated deficit</td>\n      <td>(214)</td>\n      <td>(3,068)</td>\n    </tr>\n    <tr>\n      <td>Accumulated other comprehensive loss</td>\n      <td>(11,452)</td>\n      <td>(11,109)</td>\n    </tr>\n    <tr>\n      <td>Total shareholders’ equity</td>\n      <td>62,146</td>\n      <td>50,672</td>\n    </tr>\n    <tr>\n      <td>Total liabilities and shareholders’ equity</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n  </tbody>\n</table>\n\nSee accompanying Notes to Consolidated Financial Statements.",
+        "footer": "Apple Inc. | 2023 Form 10-K | <page_number>30</page_number>",
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "markdown": "# Apple Inc.\n\n## CONSOLIDATED STATEMENTS OF CASH FLOWS\n\n(In millions)\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, beginning balances</td>\n      <td>24,977</td>\n      <td>35,929</td>\n      <td>39,789</td>\n    </tr>\n    <tr>\n      <td>Operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net income to cash generated by operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>11,519</td>\n      <td>11,104</td>\n      <td>11,284</td>\n    </tr>\n    <tr>\n      <td>Share-based compensation expense</td>\n      <td>10,833</td>\n      <td>9,038</td>\n      <td>7,906</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(2,227)</td>\n      <td>1,006</td>\n      <td>(4,921)</td>\n    </tr>\n    <tr>\n      <td>Changes in operating assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>(1,688)</td>\n      <td>(1,823)</td>\n      <td>(10,125)</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>1,271</td>\n      <td>(7,520)</td>\n      <td>(3,903)</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>(1,618)</td>\n      <td>1,484</td>\n      <td>(2,642)</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current assets</td>\n      <td>(5,684)</td>\n      <td>(6,499)</td>\n      <td>(8,042)</td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>(1,889)</td>\n      <td>9,448</td>\n      <td>12,326</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current liabilities</td>\n      <td>3,031</td>\n      <td>6,110</td>\n      <td>7,475</td>\n    </tr>\n    <tr>\n      <td>Cash generated by operating activities</td>\n      <td>110,543</td>\n      <td>122,151</td>\n      <td>104,038</td>\n    </tr>\n    <tr>\n      <td>Investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of marketable securities</td>\n      <td>(29,513)</td>\n      <td>(76,923)</td>\n      <td>(109,558)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from maturities of marketable securities</td>\n      <td>39,686</td>\n      <td>29,917</td>\n      <td>59,023</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of marketable securities</td>\n      <td>5,828</td>\n      <td>37,446</td>\n      <td>47,460</td>\n    </tr>\n    <tr>\n      <td>Payments for acquisition of property, plant and equipment</td>\n      <td>(10,959)</td>\n      <td>(10,708)</td>\n      <td>(11,085)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(1,337)</td>\n      <td>(2,086)</td>\n      <td>(385)</td>\n    </tr>\n    <tr>\n      <td>Cash generated by/(used in) investing activities</td>\n      <td>3,705</td>\n      <td>(22,354)</td>\n      <td>(14,545)</td>\n    </tr>\n    <tr>\n      <td>Financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Payments for taxes related to net share settlement of equity awards</td>\n      <td>(5,431)</td>\n      <td>(6,223)</td>\n      <td>(6,556)</td>\n    </tr>\n    <tr>\n      <td>Payments for dividends and dividend equivalents</td>\n      <td>(15,025)</td>\n      <td>(14,841)</td>\n      <td>(14,467)</td>\n    </tr>\n    <tr>\n      <td>Repurchases of common stock</td>\n      <td>(77,550)</td>\n      <td>(89,402)</td>\n      <td>(85,971)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from issuance of term debt, net</td>\n      <td>5,228</td>\n      <td>5,465</td>\n      <td>20,393</td>\n    </tr>\n    <tr>\n      <td>Repayments of term debt</td>\n      <td>(11,151)</td>\n      <td>(9,543)</td>\n      <td>(8,750)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from/(Repayments of) commercial paper, net</td>\n      <td>(3,978)</td>\n      <td>3,955</td>\n      <td>1,022</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(581)</td>\n      <td>(160)</td>\n      <td>976</td>\n    </tr>\n    <tr>\n      <td>Cash used in financing activities</td>\n      <td>(108,488)</td>\n      <td>(110,749)</td>\n      <td>(93,353)</td>\n    </tr>\n    <tr>\n      <td>Increase/(Decrease) in cash, cash equivalents and restricted cash</td>\n      <td>5,760</td>\n      <td>(10,952)</td>\n      <td>(3,860)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, ending balances</td>\n      <td>30,737</td>\n      <td>24,977</td>\n      <td>35,929</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flow disclosure:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for income taxes, net</td>\n      <td>18,679</td>\n      <td>19,573</td>\n      <td>25,385</td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>3,803</td>\n      <td>2,865</td>\n      <td>2,687</td>\n    </tr>\n  </tbody>\n</table>\n\nSee accompanying Notes to Consolidated Financial Statements.",
+        "footer": "Apple Inc. | 2023 Form 10-K | <page_number>32</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "text",
+            "md": "**Apple Inc.**",
+            "bbox": [
+              {
+                "x": 284.52,
+                "y": 42.65,
+                "w": 43.5,
+                "h": 9,
+                "confidence": 0.84,
+                "start_index": 0,
+                "end_index": 13,
+                "label": "paragraph_title"
+              }
+            ],
+            "value": "Apple Inc."
+          },
+          {
+            "type": "text",
+            "md": "**CONSOLIDATED STATEMENTS OF OPERATIONS**",
+            "bbox": [
+              {
+                "x": 199.84,
+                "y": 62.28,
+                "w": 213.01,
+                "h": 9,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 40,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 199.98192986198092,
+                "y": 60.99460402778957,
+                "w": 213.0769254435664,
+                "h": 10.741732307102371,
+                "confidence": 0.92,
+                "label": "paragraph_title"
+              }
+            ],
+            "value": "CONSOLIDATED STATEMENTS OF OPERATIONS"
+          },
+          {
+            "type": "text",
+            "md": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)",
+            "bbox": [
+              {
+                "x": 115.1,
+                "y": 73.11,
+                "w": 382.65,
+                "h": 9.23,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 94,
+                "label": "text"
+              },
+              {
+                "x": 114.80322622216266,
+                "y": 71.56907620637314,
+                "w": 383.5044466930887,
+                "h": 10.542626007743502,
+                "confidence": 0.94,
+                "label": "text"
+              }
+            ],
+            "value": "(In millions, except number of shares, which are reflected in thousands, and per-share amounts)"
+          },
+          {
+            "type": "table",
+            "md": "|                                              | September 30,<br/>2023 | Years ended<br/>September 24,<br/>2022 | September 25,<br/>2021 |\n| -------------------------------------------- | ---------------------- | -------------------------------------- | ---------------------- |\n| Net sales:                                   |                        |                                        |                        |\n| Products                                     | 298,085                | 316,199                                | 297,392                |\n| Services                                     | 85,200                 | 78,129                                 | 68,425                 |\n| Total net sales                              | 383,285                | 394,328                                | 365,817                |\n| Cost of sales:                               |                        |                                        |                        |\n| Products                                     | 189,282                | 201,471                                | 192,266                |\n| Services                                     | 24,855                 | 22,075                                 | 20,715                 |\n| Total cost of sales                          | 214,137                | 223,546                                | 212,981                |\n| Gross margin                                 | 169,148                | 170,782                                | 152,836                |\n| Operating expenses:                          |                        |                                        |                        |\n| Research and development                     | 29,915                 | 26,251                                 | 21,914                 |\n| Selling, general and administrative          | 24,932                 | 25,094                                 | 21,973                 |\n| Total operating expenses                     | 54,847                 | 51,345                                 | 43,887                 |\n| Operating income                             | 114,301                | 119,437                                | 108,949                |\n| Other income/(expense), net                  | (565)                  | (334)                                  | 258                    |\n| Income before provision for income taxes     | 113,736                | 119,103                                | 109,207                |\n| Provision for income taxes                   | 16,741                 | 19,300                                 | 14,527                 |\n| Net income                                   | 96,995                 | 99,803                                 | 94,680                 |\n| Earnings per share:                          |                        |                                        |                        |\n| Basic                                        | 6.16                   | 6.15                                   | 5.67                   |\n| Diluted                                      | 6.13                   | 6.11                                   | 5.61                   |\n| Shares used in computing earnings per share: |                        |                                        |                        |\n| Basic                                        | 15,744,231             | 16,215,963                             | 16,701,272             |\n| Diluted                                      | 15,812,547             | 16,325,819                             | 16,864,919             |",
+            "bbox": [
+              {
+                "x": 47.73,
+                "y": 99.74,
+                "w": 516.06,
+                "h": 446.99,
+                "confidence": 0.96,
+                "start_index": 0,
+                "end_index": 3638,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "",
+                "September 30,<br/>2023",
+                "Years ended<br/>September 24,<br/>2022",
+                "September 25,<br/>2021"
+              ],
+              [
+                "Net sales:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Products",
+                "298,085",
+                "316,199",
+                "297,392"
+              ],
+              [
+                "Services",
+                "85,200",
+                "78,129",
+                "68,425"
+              ],
+              [
+                "Total net sales",
+                "383,285",
+                "394,328",
+                "365,817"
+              ],
+              [
+                "Cost of sales:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Products",
+                "189,282",
+                "201,471",
+                "192,266"
+              ],
+              [
+                "Services",
+                "24,855",
+                "22,075",
+                "20,715"
+              ],
+              [
+                "Total cost of sales",
+                "214,137",
+                "223,546",
+                "212,981"
+              ],
+              [
+                "Gross margin",
+                "169,148",
+                "170,782",
+                "152,836"
+              ],
+              [
+                "Operating expenses:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Research and development",
+                "29,915",
+                "26,251",
+                "21,914"
+              ],
+              [
+                "Selling, general and administrative",
+                "24,932",
+                "25,094",
+                "21,973"
+              ],
+              [
+                "Total operating expenses",
+                "54,847",
+                "51,345",
+                "43,887"
+              ],
+              [
+                "Operating income",
+                "114,301",
+                "119,437",
+                "108,949"
+              ],
+              [
+                "Other income/(expense), net",
+                "(565)",
+                "(334)",
+                "258"
+              ],
+              [
+                "Income before provision for income taxes",
+                "113,736",
+                "119,103",
+                "109,207"
+              ],
+              [
+                "Provision for income taxes",
+                "16,741",
+                "19,300",
+                "14,527"
+              ],
+              [
+                "Net income",
+                "96,995",
+                "99,803",
+                "94,680"
+              ],
+              [
+                "Earnings per share:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Basic",
+                "6.16",
+                "6.15",
+                "5.67"
+              ],
+              [
+                "Diluted",
+                "6.13",
+                "6.11",
+                "5.61"
+              ],
+              [
+                "Shares used in computing earnings per share:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Basic",
+                "15,744,231",
+                "16,215,963",
+                "16,701,272"
+              ],
+              [
+                "Diluted",
+                "15,812,547",
+                "16,325,819",
+                "16,864,919"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Net sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>298,085</td>\n      <td>316,199</td>\n      <td>297,392</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>85,200</td>\n      <td>78,129</td>\n      <td>68,425</td>\n    </tr>\n    <tr>\n      <td>Total net sales</td>\n      <td>383,285</td>\n      <td>394,328</td>\n      <td>365,817</td>\n    </tr>\n    <tr>\n      <td>Cost of sales:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Products</td>\n      <td>189,282</td>\n      <td>201,471</td>\n      <td>192,266</td>\n    </tr>\n    <tr>\n      <td>Services</td>\n      <td>24,855</td>\n      <td>22,075</td>\n      <td>20,715</td>\n    </tr>\n    <tr>\n      <td>Total cost of sales</td>\n      <td>214,137</td>\n      <td>223,546</td>\n      <td>212,981</td>\n    </tr>\n    <tr>\n      <td>Gross margin</td>\n      <td>169,148</td>\n      <td>170,782</td>\n      <td>152,836</td>\n    </tr>\n    <tr>\n      <td>Operating expenses:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Research and development</td>\n      <td>29,915</td>\n      <td>26,251</td>\n      <td>21,914</td>\n    </tr>\n    <tr>\n      <td>Selling, general and administrative</td>\n      <td>24,932</td>\n      <td>25,094</td>\n      <td>21,973</td>\n    </tr>\n    <tr>\n      <td>Total operating expenses</td>\n      <td>54,847</td>\n      <td>51,345</td>\n      <td>43,887</td>\n    </tr>\n    <tr>\n      <td>Operating income</td>\n      <td>114,301</td>\n      <td>119,437</td>\n      <td>108,949</td>\n    </tr>\n    <tr>\n      <td>Other income/(expense), net</td>\n      <td>(565)</td>\n      <td>(334)</td>\n      <td>258</td>\n    </tr>\n    <tr>\n      <td>Income before provision for income taxes</td>\n      <td>113,736</td>\n      <td>119,103</td>\n      <td>109,207</td>\n    </tr>\n    <tr>\n      <td>Provision for income taxes</td>\n      <td>16,741</td>\n      <td>19,300</td>\n      <td>14,527</td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>6.16</td>\n      <td>6.15</td>\n      <td>5.67</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>6.13</td>\n      <td>6.11</td>\n      <td>5.61</td>\n    </tr>\n    <tr>\n      <td>Shares used in computing earnings per share:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Basic</td>\n      <td>15,744,231</td>\n      <td>16,215,963</td>\n      <td>16,701,272</td>\n    </tr>\n    <tr>\n      <td>Diluted</td>\n      <td>15,812,547</td>\n      <td>16,325,819</td>\n      <td>16,864,919</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": ",\"September 30,<br/>2023\",\"Years ended<br/>September 24,<br/>2022\",\"September 25,<br/>2021\"\n\"Net sales:\",,,\n\"Products\",\"298,085\",\"316,199\",\"297,392\"\n\"Services\",\"85,200\",\"78,129\",\"68,425\"\n\"Total net sales\",\"383,285\",\"394,328\",\"365,817\"\n\"Cost of sales:\",,,\n\"Products\",\"189,282\",\"201,471\",\"192,266\"\n\"Services\",\"24,855\",\"22,075\",\"20,715\"\n\"Total cost of sales\",\"214,137\",\"223,546\",\"212,981\"\n\"Gross margin\",\"169,148\",\"170,782\",\"152,836\"\n\"Operating expenses:\",,,\n\"Research and development\",\"29,915\",\"26,251\",\"21,914\"\n\"Selling, general and administrative\",\"24,932\",\"25,094\",\"21,973\"\n\"Total operating expenses\",\"54,847\",\"51,345\",\"43,887\"\n\"Operating income\",\"114,301\",\"119,437\",\"108,949\"\n\"Other income/(expense), net\",\"(565)\",\"(334)\",\"258\"\n\"Income before provision for income taxes\",\"113,736\",\"119,103\",\"109,207\"\n\"Provision for income taxes\",\"16,741\",\"19,300\",\"14,527\"\n\"Net income\",\"96,995\",\"99,803\",\"94,680\"\n\"Earnings per share:\",,,\n\"Basic\",\"6.16\",\"6.15\",\"5.67\"\n\"Diluted\",\"6.13\",\"6.11\",\"5.61\"\n\"Shares used in computing earnings per share:\",,,\n\"Basic\",\"15,744,231\",\"16,215,963\",\"16,701,272\"\n\"Diluted\",\"15,812,547\",\"16,325,819\",\"16,864,919\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 2 'Years ended' expects datetime, got '316,199' in row 4"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "See accompanying Notes to Consolidated Financial Statements.",
+            "bbox": [
+              {
+                "x": 177.8,
+                "y": 563.03,
+                "w": 256.59,
+                "h": 9.27,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 59,
+                "label": "text"
+              },
+              {
+                "x": 177.4508069079855,
+                "y": 561.5086630116338,
+                "w": 258.9486920729928,
+                "h": 10.992979630179983,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "See accompanying Notes to Consolidated Financial Statements."
+          },
+          {
+            "type": "footer",
+            "md": "Apple Inc. | 2023 Form 10-K | <page_number>28</page_number>",
+            "bbox": [
+              {
+                "x": 250.67,
+                "y": 765.92,
+                "w": 115.3,
+                "h": 8.09
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Apple Inc. | 2023 Form 10-K | \\<page_number>28\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 250.67,
+                    "y": 765.92,
+                    "w": 115.3,
+                    "h": 8.09,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 60,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 250.63046762217647,
+                    "y": 764.084856779679,
+                    "w": 116.16572869342308,
+                    "h": 9.9459228515625,
+                    "confidence": 0.95,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Apple Inc. | 2023 Form 10-K | <page_number>28</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# Apple Inc.",
+            "bbox": [
+              {
+                "x": 284.52,
+                "y": 42.65,
+                "w": 43.5,
+                "h": 9,
+                "confidence": 0.85,
+                "start_index": 0,
+                "end_index": 11,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Apple Inc."
+          },
+          {
+            "type": "heading",
+            "md": "## CONSOLIDATED BALANCE SHEETS",
+            "bbox": [
+              {
+                "x": 227.57,
+                "y": 62.28,
+                "w": 157,
+                "h": 9,
+                "confidence": 0.92,
+                "start_index": 0,
+                "end_index": 29,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 227.6773920473845,
+                "y": 60.86736712248429,
+                "w": 157.2895386737326,
+                "h": 10.707915762196414,
+                "confidence": 0.92,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "CONSOLIDATED BALANCE SHEETS"
+          },
+          {
+            "type": "text",
+            "md": "(In millions, except number of shares, which are reflected in thousands, and par value)",
+            "bbox": [
+              {
+                "x": 134.34,
+                "y": 73.11,
+                "w": 344.14,
+                "h": 9.23,
+                "confidence": 0.93,
+                "start_index": 0,
+                "end_index": 86,
+                "label": "text"
+              },
+              {
+                "x": 133.8520854452382,
+                "y": 71.44749591661535,
+                "w": 344.55707533463186,
+                "h": 10.59981611500616,
+                "confidence": 0.93,
+                "label": "text"
+              }
+            ],
+            "value": "(In millions, except number of shares, which are reflected in thousands, and par value)"
+          },
+          {
+            "type": "table",
+            "md": "|                                                                                    | September 30,<br/>2023 | September 24,<br/>2022 |\n| ---------------------------------------------------------------------------------- | ---------------------- | ---------------------- |\n| ASSETS:                                                                            |                        |                        |\n| Current assets:                                                                    |                        |                        |\n| Cash and cash equivalents                                                          | 29,965                 | 23,646                 |\n| Marketable securities                                                              | 31,590                 | 24,658                 |\n| Accounts receivable, net                                                           | 29,508                 | 28,184                 |\n| Vendor non-trade receivables                                                       | 31,477                 | 32,748                 |\n| Inventories                                                                        | 6,331                  | 4,946                  |\n| Other current assets                                                               | 14,695                 | 21,223                 |\n| Total current assets                                                               | 143,566                | 135,405                |\n| Non-current assets:                                                                |                        |                        |\n| Marketable securities                                                              | 100,544                | 120,805                |\n| Property, plant and equipment, net                                                 | 43,715                 | 42,117                 |\n| Other non-current assets                                                           | 64,758                 | 54,428                 |\n| Total non-current assets                                                           | 209,017                | 217,350                |\n| Total assets                                                                       | 352,583                | 352,755                |\n| LIABILITIES AND SHAREHOLDERS’ EQUITY:                                              |                        |                        |\n| Current liabilities:                                                               |                        |                        |\n| Accounts payable                                                                   | 62,611                 | 64,115                 |\n| Other current liabilities                                                          | 58,829                 | 60,845                 |\n| Deferred revenue                                                                   | 8,061                  | 7,912                  |\n| Commercial paper                                                                   | 5,985                  | 9,982                  |\n| Term debt                                                                          | 9,822                  | 11,128                 |\n| Total current liabilities                                                          | 145,308                | 153,982                |\n| Non-current liabilities:                                                           |                        |                        |\n| Term debt                                                                          | 95,281                 | 98,959                 |\n| Other non-current liabilities                                                      | 49,848                 | 49,142                 |\n| Total non-current liabilities                                                      | 145,129                | 148,101                |\n| Total liabilities                                                                  | 290,437                | 302,083                |\n| Commitments and contingencies                                                      |                        |                        |\n| Shareholders’ equity:                                                              |                        |                        |\n| Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares |                        |                        |\n| authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively  | 73,812                 | 64,849                 |\n| Accumulated deficit                                                                | (214)                  | (3,068)                |\n| Accumulated other comprehensive loss                                               | (11,452)               | (11,109)               |\n| Total shareholders’ equity                                                         | 62,146                 | 50,672                 |\n| Total liabilities and shareholders’ equity                                         | 352,583                | 352,755                |",
+            "bbox": [
+              {
+                "x": 47.93,
+                "y": 99.82,
+                "w": 515.94,
+                "h": 602.46,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 5204,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "",
+                "September 30,<br/>2023",
+                "September 24,<br/>2022"
+              ],
+              [
+                "ASSETS:",
+                "",
+                ""
+              ],
+              [
+                "Current assets:",
+                "",
+                ""
+              ],
+              [
+                "Cash and cash equivalents",
+                "29,965",
+                "23,646"
+              ],
+              [
+                "Marketable securities",
+                "31,590",
+                "24,658"
+              ],
+              [
+                "Accounts receivable, net",
+                "29,508",
+                "28,184"
+              ],
+              [
+                "Vendor non-trade receivables",
+                "31,477",
+                "32,748"
+              ],
+              [
+                "Inventories",
+                "6,331",
+                "4,946"
+              ],
+              [
+                "Other current assets",
+                "14,695",
+                "21,223"
+              ],
+              [
+                "Total current assets",
+                "143,566",
+                "135,405"
+              ],
+              [
+                "Non-current assets:",
+                "",
+                ""
+              ],
+              [
+                "Marketable securities",
+                "100,544",
+                "120,805"
+              ],
+              [
+                "Property, plant and equipment, net",
+                "43,715",
+                "42,117"
+              ],
+              [
+                "Other non-current assets",
+                "64,758",
+                "54,428"
+              ],
+              [
+                "Total non-current assets",
+                "209,017",
+                "217,350"
+              ],
+              [
+                "Total assets",
+                "352,583",
+                "352,755"
+              ],
+              [
+                "LIABILITIES AND SHAREHOLDERS’ EQUITY:",
+                "",
+                ""
+              ],
+              [
+                "Current liabilities:",
+                "",
+                ""
+              ],
+              [
+                "Accounts payable",
+                "62,611",
+                "64,115"
+              ],
+              [
+                "Other current liabilities",
+                "58,829",
+                "60,845"
+              ],
+              [
+                "Deferred revenue",
+                "8,061",
+                "7,912"
+              ],
+              [
+                "Commercial paper",
+                "5,985",
+                "9,982"
+              ],
+              [
+                "Term debt",
+                "9,822",
+                "11,128"
+              ],
+              [
+                "Total current liabilities",
+                "145,308",
+                "153,982"
+              ],
+              [
+                "Non-current liabilities:",
+                "",
+                ""
+              ],
+              [
+                "Term debt",
+                "95,281",
+                "98,959"
+              ],
+              [
+                "Other non-current liabilities",
+                "49,848",
+                "49,142"
+              ],
+              [
+                "Total non-current liabilities",
+                "145,129",
+                "148,101"
+              ],
+              [
+                "Total liabilities",
+                "290,437",
+                "302,083"
+              ],
+              [
+                "Commitments and contingencies",
+                "",
+                ""
+              ],
+              [
+                "Shareholders’ equity:",
+                "",
+                ""
+              ],
+              [
+                "Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares",
+                "",
+                ""
+              ],
+              [
+                "authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively",
+                "73,812",
+                "64,849"
+              ],
+              [
+                "Accumulated deficit",
+                "(214)",
+                "(3,068)"
+              ],
+              [
+                "Accumulated other comprehensive loss",
+                "(11,452)",
+                "(11,109)"
+              ],
+              [
+                "Total shareholders’ equity",
+                "62,146",
+                "50,672"
+              ],
+              [
+                "Total liabilities and shareholders’ equity",
+                "352,583",
+                "352,755"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ASSETS:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash and cash equivalents</td>\n      <td>29,965</td>\n      <td>23,646</td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>31,590</td>\n      <td>24,658</td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>29,508</td>\n      <td>28,184</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>31,477</td>\n      <td>32,748</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>6,331</td>\n      <td>4,946</td>\n    </tr>\n    <tr>\n      <td>Other current assets</td>\n      <td>14,695</td>\n      <td>21,223</td>\n    </tr>\n    <tr>\n      <td>Total current assets</td>\n      <td>143,566</td>\n      <td>135,405</td>\n    </tr>\n    <tr>\n      <td>Non-current assets:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Marketable securities</td>\n      <td>100,544</td>\n      <td>120,805</td>\n    </tr>\n    <tr>\n      <td>Property, plant and equipment, net</td>\n      <td>43,715</td>\n      <td>42,117</td>\n    </tr>\n    <tr>\n      <td>Other non-current assets</td>\n      <td>64,758</td>\n      <td>54,428</td>\n    </tr>\n    <tr>\n      <td>Total non-current assets</td>\n      <td>209,017</td>\n      <td>217,350</td>\n    </tr>\n    <tr>\n      <td>Total assets</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n    <tr>\n      <td>LIABILITIES AND SHAREHOLDERS’ EQUITY:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>62,611</td>\n      <td>64,115</td>\n    </tr>\n    <tr>\n      <td>Other current liabilities</td>\n      <td>58,829</td>\n      <td>60,845</td>\n    </tr>\n    <tr>\n      <td>Deferred revenue</td>\n      <td>8,061</td>\n      <td>7,912</td>\n    </tr>\n    <tr>\n      <td>Commercial paper</td>\n      <td>5,985</td>\n      <td>9,982</td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>9,822</td>\n      <td>11,128</td>\n    </tr>\n    <tr>\n      <td>Total current liabilities</td>\n      <td>145,308</td>\n      <td>153,982</td>\n    </tr>\n    <tr>\n      <td>Non-current liabilities:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Term debt</td>\n      <td>95,281</td>\n      <td>98,959</td>\n    </tr>\n    <tr>\n      <td>Other non-current liabilities</td>\n      <td>49,848</td>\n      <td>49,142</td>\n    </tr>\n    <tr>\n      <td>Total non-current liabilities</td>\n      <td>145,129</td>\n      <td>148,101</td>\n    </tr>\n    <tr>\n      <td>Total liabilities</td>\n      <td>290,437</td>\n      <td>302,083</td>\n    </tr>\n    <tr>\n      <td>Commitments and contingencies</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Shareholders’ equity:</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively</td>\n      <td>73,812</td>\n      <td>64,849</td>\n    </tr>\n    <tr>\n      <td>Accumulated deficit</td>\n      <td>(214)</td>\n      <td>(3,068)</td>\n    </tr>\n    <tr>\n      <td>Accumulated other comprehensive loss</td>\n      <td>(11,452)</td>\n      <td>(11,109)</td>\n    </tr>\n    <tr>\n      <td>Total shareholders’ equity</td>\n      <td>62,146</td>\n      <td>50,672</td>\n    </tr>\n    <tr>\n      <td>Total liabilities and shareholders’ equity</td>\n      <td>352,583</td>\n      <td>352,755</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": ",\"September 30,<br/>2023\",\"September 24,<br/>2022\"\n\"ASSETS:\",,\n\"Current assets:\",,\n\"Cash and cash equivalents\",\"29,965\",\"23,646\"\n\"Marketable securities\",\"31,590\",\"24,658\"\n\"Accounts receivable, net\",\"29,508\",\"28,184\"\n\"Vendor non-trade receivables\",\"31,477\",\"32,748\"\n\"Inventories\",\"6,331\",\"4,946\"\n\"Other current assets\",\"14,695\",\"21,223\"\n\"Total current assets\",\"143,566\",\"135,405\"\n\"Non-current assets:\",,\n\"Marketable securities\",\"100,544\",\"120,805\"\n\"Property, plant and equipment, net\",\"43,715\",\"42,117\"\n\"Other non-current assets\",\"64,758\",\"54,428\"\n\"Total non-current assets\",\"209,017\",\"217,350\"\n\"Total assets\",\"352,583\",\"352,755\"\n\"LIABILITIES AND SHAREHOLDERS’ EQUITY:\",,\n\"Current liabilities:\",,\n\"Accounts payable\",\"62,611\",\"64,115\"\n\"Other current liabilities\",\"58,829\",\"60,845\"\n\"Deferred revenue\",\"8,061\",\"7,912\"\n\"Commercial paper\",\"5,985\",\"9,982\"\n\"Term debt\",\"9,822\",\"11,128\"\n\"Total current liabilities\",\"145,308\",\"153,982\"\n\"Non-current liabilities:\",,\n\"Term debt\",\"95,281\",\"98,959\"\n\"Other non-current liabilities\",\"49,848\",\"49,142\"\n\"Total non-current liabilities\",\"145,129\",\"148,101\"\n\"Total liabilities\",\"290,437\",\"302,083\"\n\"Commitments and contingencies\",,\n\"Shareholders’ equity:\",,\n\"Common stock and additional paid-in capital, $0.00001 par value: 50,400,000 shares\",,\n\"authorized; 15,550,061 and 15,943,425 shares issued and outstanding, respectively\",\"73,812\",\"64,849\"\n\"Accumulated deficit\",\"(214)\",\"(3,068)\"\n\"Accumulated other comprehensive loss\",\"(11,452)\",\"(11,109)\"\n\"Total shareholders’ equity\",\"62,146\",\"50,672\"\n\"Total liabilities and shareholders’ equity\",\"352,583\",\"352,755\""
+          },
+          {
+            "type": "text",
+            "md": "See accompanying Notes to Consolidated Financial Statements.",
+            "bbox": [
+              {
+                "x": 177.8,
+                "y": 716.03,
+                "w": 256.59,
+                "h": 9.27,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 59,
+                "label": "text"
+              },
+              {
+                "x": 177.35343908227009,
+                "y": 714.3088730521824,
+                "w": 258.28188614223313,
+                "h": 10.860767530358375,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "See accompanying Notes to Consolidated Financial Statements."
+          },
+          {
+            "type": "footer",
+            "md": "Apple Inc. | 2023 Form 10-K | <page_number>30</page_number>",
+            "bbox": [
+              {
+                "x": 250.67,
+                "y": 765.92,
+                "w": 115.3,
+                "h": 8.09
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Apple Inc. | 2023 Form 10-K | \\<page_number>30\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 250.67,
+                    "y": 765.92,
+                    "w": 115.3,
+                    "h": 8.09,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 60,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 250.62914806863537,
+                    "y": 763.9814778203549,
+                    "w": 116.06392006252119,
+                    "h": 10.069071230680983,
+                    "confidence": 0.95,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Apple Inc. | 2023 Form 10-K | <page_number>30</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      },
+      {
+        "page_number": 3,
+        "items": [
+          {
+            "type": "heading",
+            "md": "# Apple Inc.",
+            "bbox": [
+              {
+                "x": 284.52,
+                "y": 42.65,
+                "w": 43.5,
+                "h": 9,
+                "confidence": 0.86,
+                "start_index": 0,
+                "end_index": 11,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "Apple Inc."
+          },
+          {
+            "type": "heading",
+            "md": "## CONSOLIDATED STATEMENTS OF CASH FLOWS",
+            "bbox": [
+              {
+                "x": 199.35,
+                "y": 62.28,
+                "w": 213.01,
+                "h": 9,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 39,
+                "label": "paragraph_title"
+              },
+              {
+                "x": 199.28910081282908,
+                "y": 60.980565112570055,
+                "w": 214.06490309342095,
+                "h": 10.566919077997614,
+                "confidence": 0.9,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 2,
+            "value": "CONSOLIDATED STATEMENTS OF CASH FLOWS"
+          },
+          {
+            "type": "text",
+            "md": "(In millions)",
+            "bbox": [
+              {
+                "x": 283.03,
+                "y": 73.11,
+                "w": 46.01,
+                "h": 9,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 12,
+                "label": "text"
+              },
+              {
+                "x": 283.10440113233483,
+                "y": 71.56025878242824,
+                "w": 46.93644332885742,
+                "h": 10.389987696772035,
+                "confidence": 0.9,
+                "label": "text"
+              }
+            ],
+            "value": "(In millions)"
+          },
+          {
+            "type": "table",
+            "md": "|                                                                                | September 30,<br/>2023 | Years ended<br/>September 24,<br/>2022 | September 25,<br/>2021 |\n| ------------------------------------------------------------------------------ | ---------------------- | -------------------------------------- | ---------------------- |\n| Cash, cash equivalents and restricted cash, beginning balances                 | 24,977                 | 35,929                                 | 39,789                 |\n| Operating activities:                                                          |                        |                                        |                        |\n| Net income                                                                     | 96,995                 | 99,803                                 | 94,680                 |\n| Adjustments to reconcile net income to cash generated by operating activities: |                        |                                        |                        |\n| Depreciation and amortization                                                  | 11,519                 | 11,104                                 | 11,284                 |\n| Share-based compensation expense                                               | 10,833                 | 9,038                                  | 7,906                  |\n| Other                                                                          | (2,227)                | 1,006                                  | (4,921)                |\n| Changes in operating assets and liabilities:                                   |                        |                                        |                        |\n| Accounts receivable, net                                                       | (1,688)                | (1,823)                                | (10,125)               |\n| Vendor non-trade receivables                                                   | 1,271                  | (7,520)                                | (3,903)                |\n| Inventories                                                                    | (1,618)                | 1,484                                  | (2,642)                |\n| Other current and non-current assets                                           | (5,684)                | (6,499)                                | (8,042)                |\n| Accounts payable                                                               | (1,889)                | 9,448                                  | 12,326                 |\n| Other current and non-current liabilities                                      | 3,031                  | 6,110                                  | 7,475                  |\n| Cash generated by operating activities                                         | 110,543                | 122,151                                | 104,038                |\n| Investing activities:                                                          |                        |                                        |                        |\n| Purchases of marketable securities                                             | (29,513)               | (76,923)                               | (109,558)              |\n| Proceeds from maturities of marketable securities                              | 39,686                 | 29,917                                 | 59,023                 |\n| Proceeds from sales of marketable securities                                   | 5,828                  | 37,446                                 | 47,460                 |\n| Payments for acquisition of property, plant and equipment                      | (10,959)               | (10,708)                               | (11,085)               |\n| Other                                                                          | (1,337)                | (2,086)                                | (385)                  |\n| Cash generated by/(used in) investing activities                               | 3,705                  | (22,354)                               | (14,545)               |\n| Financing activities:                                                          |                        |                                        |                        |\n| Payments for taxes related to net share settlement of equity awards            | (5,431)                | (6,223)                                | (6,556)                |\n| Payments for dividends and dividend equivalents                                | (15,025)               | (14,841)                               | (14,467)               |\n| Repurchases of common stock                                                    | (77,550)               | (89,402)                               | (85,971)               |\n| Proceeds from issuance of term debt, net                                       | 5,228                  | 5,465                                  | 20,393                 |\n| Repayments of term debt                                                        | (11,151)               | (9,543)                                | (8,750)                |\n| Proceeds from/(Repayments of) commercial paper, net                            | (3,978)                | 3,955                                  | 1,022                  |\n| Other                                                                          | (581)                  | (160)                                  | 976                    |\n| Cash used in financing activities                                              | (108,488)              | (110,749)                              | (93,353)               |\n| Increase/(Decrease) in cash, cash equivalents and restricted cash              | 5,760                  | (10,952)                               | (3,860)                |\n| Cash, cash equivalents and restricted cash, ending balances                    | 30,737                 | 24,977                                 | 35,929                 |\n| Supplemental cash flow disclosure:                                             |                        |                                        |                        |\n| Cash paid for income taxes, net                                                | 18,679                 | 19,573                                 | 25,385                 |\n| Cash paid for interest                                                         | 3,803                  | 2,865                                  | 2,687                  |",
+            "bbox": [
+              {
+                "x": 47.89,
+                "y": 89.34,
+                "w": 516.19,
+                "h": 619.71,
+                "confidence": 0.98,
+                "start_index": 0,
+                "end_index": 6610,
+                "label": "table"
+              }
+            ],
+            "rows": [
+              [
+                "",
+                "September 30,<br/>2023",
+                "Years ended<br/>September 24,<br/>2022",
+                "September 25,<br/>2021"
+              ],
+              [
+                "Cash, cash equivalents and restricted cash, beginning balances",
+                "24,977",
+                "35,929",
+                "39,789"
+              ],
+              [
+                "Operating activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Net income",
+                "96,995",
+                "99,803",
+                "94,680"
+              ],
+              [
+                "Adjustments to reconcile net income to cash generated by operating activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Depreciation and amortization",
+                "11,519",
+                "11,104",
+                "11,284"
+              ],
+              [
+                "Share-based compensation expense",
+                "10,833",
+                "9,038",
+                "7,906"
+              ],
+              [
+                "Other",
+                "(2,227)",
+                "1,006",
+                "(4,921)"
+              ],
+              [
+                "Changes in operating assets and liabilities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Accounts receivable, net",
+                "(1,688)",
+                "(1,823)",
+                "(10,125)"
+              ],
+              [
+                "Vendor non-trade receivables",
+                "1,271",
+                "(7,520)",
+                "(3,903)"
+              ],
+              [
+                "Inventories",
+                "(1,618)",
+                "1,484",
+                "(2,642)"
+              ],
+              [
+                "Other current and non-current assets",
+                "(5,684)",
+                "(6,499)",
+                "(8,042)"
+              ],
+              [
+                "Accounts payable",
+                "(1,889)",
+                "9,448",
+                "12,326"
+              ],
+              [
+                "Other current and non-current liabilities",
+                "3,031",
+                "6,110",
+                "7,475"
+              ],
+              [
+                "Cash generated by operating activities",
+                "110,543",
+                "122,151",
+                "104,038"
+              ],
+              [
+                "Investing activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Purchases of marketable securities",
+                "(29,513)",
+                "(76,923)",
+                "(109,558)"
+              ],
+              [
+                "Proceeds from maturities of marketable securities",
+                "39,686",
+                "29,917",
+                "59,023"
+              ],
+              [
+                "Proceeds from sales of marketable securities",
+                "5,828",
+                "37,446",
+                "47,460"
+              ],
+              [
+                "Payments for acquisition of property, plant and equipment",
+                "(10,959)",
+                "(10,708)",
+                "(11,085)"
+              ],
+              [
+                "Other",
+                "(1,337)",
+                "(2,086)",
+                "(385)"
+              ],
+              [
+                "Cash generated by/(used in) investing activities",
+                "3,705",
+                "(22,354)",
+                "(14,545)"
+              ],
+              [
+                "Financing activities:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Payments for taxes related to net share settlement of equity awards",
+                "(5,431)",
+                "(6,223)",
+                "(6,556)"
+              ],
+              [
+                "Payments for dividends and dividend equivalents",
+                "(15,025)",
+                "(14,841)",
+                "(14,467)"
+              ],
+              [
+                "Repurchases of common stock",
+                "(77,550)",
+                "(89,402)",
+                "(85,971)"
+              ],
+              [
+                "Proceeds from issuance of term debt, net",
+                "5,228",
+                "5,465",
+                "20,393"
+              ],
+              [
+                "Repayments of term debt",
+                "(11,151)",
+                "(9,543)",
+                "(8,750)"
+              ],
+              [
+                "Proceeds from/(Repayments of) commercial paper, net",
+                "(3,978)",
+                "3,955",
+                "1,022"
+              ],
+              [
+                "Other",
+                "(581)",
+                "(160)",
+                "976"
+              ],
+              [
+                "Cash used in financing activities",
+                "(108,488)",
+                "(110,749)",
+                "(93,353)"
+              ],
+              [
+                "Increase/(Decrease) in cash, cash equivalents and restricted cash",
+                "5,760",
+                "(10,952)",
+                "(3,860)"
+              ],
+              [
+                "Cash, cash equivalents and restricted cash, ending balances",
+                "30,737",
+                "24,977",
+                "35,929"
+              ],
+              [
+                "Supplemental cash flow disclosure:",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Cash paid for income taxes, net",
+                "18,679",
+                "19,573",
+                "25,385"
+              ],
+              [
+                "Cash paid for interest",
+                "3,803",
+                "2,865",
+                "2,687"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Years ended</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>September 30,</th>\n      <th>September 24,</th>\n      <th>September 25,</th>\n    </tr>\n    <tr>\n      <th></th>\n      <th>2023</th>\n      <th>2022</th>\n      <th>2021</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, beginning balances</td>\n      <td>24,977</td>\n      <td>35,929</td>\n      <td>39,789</td>\n    </tr>\n    <tr>\n      <td>Operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Net income</td>\n      <td>96,995</td>\n      <td>99,803</td>\n      <td>94,680</td>\n    </tr>\n    <tr>\n      <td>Adjustments to reconcile net income to cash generated by operating activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Depreciation and amortization</td>\n      <td>11,519</td>\n      <td>11,104</td>\n      <td>11,284</td>\n    </tr>\n    <tr>\n      <td>Share-based compensation expense</td>\n      <td>10,833</td>\n      <td>9,038</td>\n      <td>7,906</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(2,227)</td>\n      <td>1,006</td>\n      <td>(4,921)</td>\n    </tr>\n    <tr>\n      <td>Changes in operating assets and liabilities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Accounts receivable, net</td>\n      <td>(1,688)</td>\n      <td>(1,823)</td>\n      <td>(10,125)</td>\n    </tr>\n    <tr>\n      <td>Vendor non-trade receivables</td>\n      <td>1,271</td>\n      <td>(7,520)</td>\n      <td>(3,903)</td>\n    </tr>\n    <tr>\n      <td>Inventories</td>\n      <td>(1,618)</td>\n      <td>1,484</td>\n      <td>(2,642)</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current assets</td>\n      <td>(5,684)</td>\n      <td>(6,499)</td>\n      <td>(8,042)</td>\n    </tr>\n    <tr>\n      <td>Accounts payable</td>\n      <td>(1,889)</td>\n      <td>9,448</td>\n      <td>12,326</td>\n    </tr>\n    <tr>\n      <td>Other current and non-current liabilities</td>\n      <td>3,031</td>\n      <td>6,110</td>\n      <td>7,475</td>\n    </tr>\n    <tr>\n      <td>Cash generated by operating activities</td>\n      <td>110,543</td>\n      <td>122,151</td>\n      <td>104,038</td>\n    </tr>\n    <tr>\n      <td>Investing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Purchases of marketable securities</td>\n      <td>(29,513)</td>\n      <td>(76,923)</td>\n      <td>(109,558)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from maturities of marketable securities</td>\n      <td>39,686</td>\n      <td>29,917</td>\n      <td>59,023</td>\n    </tr>\n    <tr>\n      <td>Proceeds from sales of marketable securities</td>\n      <td>5,828</td>\n      <td>37,446</td>\n      <td>47,460</td>\n    </tr>\n    <tr>\n      <td>Payments for acquisition of property, plant and equipment</td>\n      <td>(10,959)</td>\n      <td>(10,708)</td>\n      <td>(11,085)</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(1,337)</td>\n      <td>(2,086)</td>\n      <td>(385)</td>\n    </tr>\n    <tr>\n      <td>Cash generated by/(used in) investing activities</td>\n      <td>3,705</td>\n      <td>(22,354)</td>\n      <td>(14,545)</td>\n    </tr>\n    <tr>\n      <td>Financing activities:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Payments for taxes related to net share settlement of equity awards</td>\n      <td>(5,431)</td>\n      <td>(6,223)</td>\n      <td>(6,556)</td>\n    </tr>\n    <tr>\n      <td>Payments for dividends and dividend equivalents</td>\n      <td>(15,025)</td>\n      <td>(14,841)</td>\n      <td>(14,467)</td>\n    </tr>\n    <tr>\n      <td>Repurchases of common stock</td>\n      <td>(77,550)</td>\n      <td>(89,402)</td>\n      <td>(85,971)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from issuance of term debt, net</td>\n      <td>5,228</td>\n      <td>5,465</td>\n      <td>20,393</td>\n    </tr>\n    <tr>\n      <td>Repayments of term debt</td>\n      <td>(11,151)</td>\n      <td>(9,543)</td>\n      <td>(8,750)</td>\n    </tr>\n    <tr>\n      <td>Proceeds from/(Repayments of) commercial paper, net</td>\n      <td>(3,978)</td>\n      <td>3,955</td>\n      <td>1,022</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>(581)</td>\n      <td>(160)</td>\n      <td>976</td>\n    </tr>\n    <tr>\n      <td>Cash used in financing activities</td>\n      <td>(108,488)</td>\n      <td>(110,749)</td>\n      <td>(93,353)</td>\n    </tr>\n    <tr>\n      <td>Increase/(Decrease) in cash, cash equivalents and restricted cash</td>\n      <td>5,760</td>\n      <td>(10,952)</td>\n      <td>(3,860)</td>\n    </tr>\n    <tr>\n      <td>Cash, cash equivalents and restricted cash, ending balances</td>\n      <td>30,737</td>\n      <td>24,977</td>\n      <td>35,929</td>\n    </tr>\n    <tr>\n      <td>Supplemental cash flow disclosure:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cash paid for income taxes, net</td>\n      <td>18,679</td>\n      <td>19,573</td>\n      <td>25,385</td>\n    </tr>\n    <tr>\n      <td>Cash paid for interest</td>\n      <td>3,803</td>\n      <td>2,865</td>\n      <td>2,687</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": ",\"September 30,<br/>2023\",\"Years ended<br/>September 24,<br/>2022\",\"September 25,<br/>2021\"\n\"Cash, cash equivalents and restricted cash, beginning balances\",\"24,977\",\"35,929\",\"39,789\"\n\"Operating activities:\",,,\n\"Net income\",\"96,995\",\"99,803\",\"94,680\"\n\"Adjustments to reconcile net income to cash generated by operating activities:\",,,\n\"Depreciation and amortization\",\"11,519\",\"11,104\",\"11,284\"\n\"Share-based compensation expense\",\"10,833\",\"9,038\",\"7,906\"\n\"Other\",\"(2,227)\",\"1,006\",\"(4,921)\"\n\"Changes in operating assets and liabilities:\",,,\n\"Accounts receivable, net\",\"(1,688)\",\"(1,823)\",\"(10,125)\"\n\"Vendor non-trade receivables\",\"1,271\",\"(7,520)\",\"(3,903)\"\n\"Inventories\",\"(1,618)\",\"1,484\",\"(2,642)\"\n\"Other current and non-current assets\",\"(5,684)\",\"(6,499)\",\"(8,042)\"\n\"Accounts payable\",\"(1,889)\",\"9,448\",\"12,326\"\n\"Other current and non-current liabilities\",\"3,031\",\"6,110\",\"7,475\"\n\"Cash generated by operating activities\",\"110,543\",\"122,151\",\"104,038\"\n\"Investing activities:\",,,\n\"Purchases of marketable securities\",\"(29,513)\",\"(76,923)\",\"(109,558)\"\n\"Proceeds from maturities of marketable securities\",\"39,686\",\"29,917\",\"59,023\"\n\"Proceeds from sales of marketable securities\",\"5,828\",\"37,446\",\"47,460\"\n\"Payments for acquisition of property, plant and equipment\",\"(10,959)\",\"(10,708)\",\"(11,085)\"\n\"Other\",\"(1,337)\",\"(2,086)\",\"(385)\"\n\"Cash generated by/(used in) investing activities\",\"3,705\",\"(22,354)\",\"(14,545)\"\n\"Financing activities:\",,,\n\"Payments for taxes related to net share settlement of equity awards\",\"(5,431)\",\"(6,223)\",\"(6,556)\"\n\"Payments for dividends and dividend equivalents\",\"(15,025)\",\"(14,841)\",\"(14,467)\"\n\"Repurchases of common stock\",\"(77,550)\",\"(89,402)\",\"(85,971)\"\n\"Proceeds from issuance of term debt, net\",\"5,228\",\"5,465\",\"20,393\"\n\"Repayments of term debt\",\"(11,151)\",\"(9,543)\",\"(8,750)\"\n\"Proceeds from/(Repayments of) commercial paper, net\",\"(3,978)\",\"3,955\",\"1,022\"\n\"Other\",\"(581)\",\"(160)\",\"976\"\n\"Cash used in financing activities\",\"(108,488)\",\"(110,749)\",\"(93,353)\"\n\"Increase/(Decrease) in cash, cash equivalents and restricted cash\",\"5,760\",\"(10,952)\",\"(3,860)\"\n\"Cash, cash equivalents and restricted cash, ending balances\",\"30,737\",\"24,977\",\"35,929\"\n\"Supplemental cash flow disclosure:\",,,\n\"Cash paid for income taxes, net\",\"18,679\",\"19,573\",\"25,385\"\n\"Cash paid for interest\",\"3,803\",\"2,865\",\"2,687\"",
+            "parse_concerns": [
+              {
+                "type": "header_value_type_mismatch",
+                "details": "col 2 'Years ended' expects datetime, got '35,929' in row 3"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "See accompanying Notes to Consolidated Financial Statements.",
+            "bbox": [
+              {
+                "x": 184.96,
+                "y": 725.64,
+                "w": 242,
+                "h": 9.25,
+                "confidence": 0.95,
+                "start_index": 0,
+                "end_index": 59,
+                "label": "text"
+              },
+              {
+                "x": 183.96257524904996,
+                "y": 724.1258677606997,
+                "w": 244.13936805725098,
+                "h": 10.589249984077716,
+                "confidence": 0.95,
+                "label": "text"
+              }
+            ],
+            "value": "See accompanying Notes to Consolidated Financial Statements."
+          },
+          {
+            "type": "footer",
+            "md": "Apple Inc. | 2023 Form 10-K | <page_number>32</page_number>",
+            "bbox": [
+              {
+                "x": 250.67,
+                "y": 765.92,
+                "w": 115.3,
+                "h": 8.09
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Apple Inc. | 2023 Form 10-K | \\<page_number>32\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 250.67,
+                    "y": 765.92,
+                    "w": 115.3,
+                    "h": 8.09,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 60,
+                    "label": "footer"
+                  },
+                  {
+                    "x": 250.5585519541865,
+                    "y": 763.858526478643,
+                    "w": 116.28223004548443,
+                    "h": 10.155767689580532,
+                    "confidence": 0.95,
+                    "label": "footer"
+                  }
+                ],
+                "value": "Apple Inc. | 2023 Form 10-K | <page_number>32</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.1,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 2,
+        "confidence": 0.717,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      },
+      {
+        "page_number": 3,
+        "confidence": 0.675,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 6,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=4nikE4gwwyanw5kvX07Gyf%2BQ%2BRY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_1_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=PIEDMIBtmaUhNsbkuIHsyM%2BaYFs%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "layout",
+        "bbox": {
+          "x": 48,
+          "y": 100,
+          "w": 516,
+          "h": 447
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_2.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=%2F%2B0Iza9xHa3hj14zemizUHm3hb0%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 3,
+        "filename": "page_2_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_2_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=V0bF9ti%2FtZI9MaO5kjTP0CoqKQY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "layout",
+        "bbox": {
+          "x": 48,
+          "y": 100,
+          "w": 516,
+          "h": 602
+        }
+      },
+      {
+        "index": 4,
+        "filename": "page_3.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_3.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=uCKko4fQo5%2FiEN44U6s8%2B253ZZo%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 5,
+        "filename": "page_3_table_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/c2be26e4-555e-43b2-a1fc-7e1ac0b08c7f/page_3_table_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTRECRA6YM&Signature=YEngFsvb%2F4YREOckcPQJfafM7xE%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGFueL%2BGu7%2FjF63WjO1MDGjf8Elvb7E1RcQkwbqcTyu7AiEA7bIRMF%2BUqB3PlYf6vfQHXvNsYAWdeUQsMOffb2eMn2MqhwUIZRAAGgw1MDY5NTQ5NjY1MDMiDA6hKZrMfKxIcoJH4SrkBM7yJppta8OprB9XVSFn7MXOKwZLvAU7ie%2FeLtO6BMzu9lHHKBy6uo%2Bq5RHWB9NZ%2BgnfVLBhcp8hhAKBRnJiZ%2FTNq81fANfSvkYDCVckrV8gWu4Ak%2BtY1IhgLsowtRd7c3MwC1QVKhLBGztmRiFskjQGVPspJ4Ec2h%2BBFsg9XBIuLeaHp4KZ28Nkib1wi5SyTtGTF%2Fk%2BOAvPCYKDBy460Gb55IwAjGDsM59AiHAaWmNb5soLZOKpu%2Fh56ynAGdz0PoeiuHY69Sbo3oFxO8pUTy%2Fei7uF6masw7DXY8wYtGMh7B2HFlh0SLF6UGV1z7HJ3QfHf9Z%2FGTlv%2F9n2Wz9uEPtZ7jC97dNfoQIlhuA9ou%2BCYZDtADHIPW2H3RL9%2F2%2BcvWDxYxybVxtxKIZRX%2FJ7GvKzv3lS1vOi83S3sXPKlxMKzcU%2BUeV1jevir0DSz2phBd3%2BKb7IrClXHPwbfda2PfdWE%2FveCQR0lpu%2BFiFiwVst3U0xRyZ1o8GZFCSRJweCX0XgZ1VwBYmPTLh%2B%2F3R7yqAsqRLe7mEf2Q%2FOag54wMfYtccbxNl0ws2pZNAcQ7aEzZcqJXz0woCe%2FbvwJNqpPpU%2F3VDXb0qndllzd4Q%2FnbBqXbg4i7JSYdpg4Zu9xmM55nSdRDugh9HubrCC9mNxTP4vT5kEOJkdTZ8KENArz1tWPS8zJ6NdMWo1zmnpYgbrSAQsYXUDw8njBgDlHX0xC2D3%2FI2fDIt1NliZA7uqWzhmnXOeecy95rAYtDdHDRM1bM%2FGaMCpUJIOOKwIG0CYu6ku6TzLllMEyxbQYErBueCh0DP07zDmt6LTBjqYAezzNlIhFj18gClvahOHbueegMcekR0JTyiNWM3cvw654xWQFhOKf5zeN%2FZAQ2f2Gd0ga7HhfcfH9TEO%2BCVv9w1hNjkteXIhE6Npw2AA3rQk4Lya7NLRLpbZ34FN4Ci9UvDE0UXytgDOUG4NEM0%2BHhLm%2BJQ2ZsWata%2FFL3Vvsgk7bWHOQDgx%2BMD14e5HYmk%2BIyxlwJDOg0i4&Expires=1785244791",
+        "category": "layout",
+        "bbox": {
+          "x": 48,
+          "y": 89,
+          "w": 516,
+          "h": 620
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

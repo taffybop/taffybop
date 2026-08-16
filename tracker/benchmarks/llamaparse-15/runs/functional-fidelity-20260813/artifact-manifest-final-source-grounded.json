@@ -1,0 +1,1709 @@
+{
+  "all_sources_within_upload_limit": true,
+  "case_count": 15,
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:21:29.263219Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/catastrophe-recap/reference.json",
+          "sha256": "272286e328081551b9a50e939d967ea4870e1ac1ec10aed8e089a6547822dd2a",
+          "size_bytes": 43169
+        },
+        "job_id": "pjb-28bcomrkzsgzg7uvfwiirhnteu3z",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/catastrophe-recap/job.json",
+          "sha256": "28993910f7cb87251132b9df9750145370c6c29d2608c4a9f5e54aa097f60a32",
+          "size_bytes": 587
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/catastrophe-recap/reference.md",
+          "sha256": "ae13b7417fd230b7ed727f78b863a09a0a77c5451b428be2392dfd893ffe1db3",
+          "size_bytes": 6774
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/catastrophe-recap/pages/page-1/rendered-dom.json",
+            "sha256": "56e2b20b36af1cc4f9d54d849f97b6a1490fd0b5b61d03cff58cb256180f74ad",
+            "size_bytes": 27577
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/catastrophe-recap/pages/page-1/rendered.png",
+            "sha256": "bf290e61a6fa0c215ef27a94a2de1304c919e03a07e032c49f87abeb53b2b207",
+            "size_bytes": 165365
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:21:43.983852Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/catastrophe-recap/response.json",
+          "sha256": "5e7c7f4b124216524dfc77e21adff8ad76778d2e7e83ea3afd9eb80a51c6873a",
+          "size_bytes": 249682
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "5e7c7f4b124216524dfc77e21adff8ad76778d2e7e83ea3afd9eb80a51c6873a",
+            "size_bytes": 249682,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "6b4a99e24a1925d2f8885b24eda699bbea778866a6c31da81597703098708f5d",
+            "size_bytes": 2060,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/catastrophe-recap/response.md",
+          "sha256": "6b4a99e24a1925d2f8885b24eda699bbea778866a6c31da81597703098708f5d",
+          "size_bytes": 2060
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/catastrophe-recap/rendered-capture.json",
+          "sha256": "0357cba2326d0447e2d3f6608b965cca117c54b8104774198275752582e9d0fe",
+          "size_bytes": 765
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/catastrophe-recap/pages/page-1/rendered-dom.json",
+            "sha256": "da68c2b22382d575769905faf3b2519fc26b4302e9faa08914275e3e878789cc",
+            "size_bytes": 3884
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+        "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+        "size_bytes": 58779
+      }
+    },
+    {
+      "case_id": "clean-energy",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:22:08.157894Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/clean-energy/reference.json",
+          "sha256": "b52ca25655678729c09ba1802aa7da550bc89e4d16b07a8cdcb44dd9f7780148",
+          "size_bytes": 24686
+        },
+        "job_id": "pjb-rmfslteo6otbhxp9qj7kv61l50p0",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/clean-energy/job.json",
+          "sha256": "bc7c133494855b7be1fa5f1d8bf33eccc606d54268a3ee157a9d7b4de983538d",
+          "size_bytes": 577
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/clean-energy/reference.md",
+          "sha256": "6b26884cca160ac4803763e19bbfcfb868a96acc29a0122d57527834460564af",
+          "size_bytes": 1350
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/clean-energy/pages/page-1/rendered-dom.json",
+            "sha256": "798fc79e2a9f4c82d33830c57a9a770f1edafbf3c25b654eda63c60a4a776b3b",
+            "size_bytes": 7319
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/clean-energy/pages/page-1/rendered.png",
+            "sha256": "a16bda4ed6632bdedef215330aee873146f9de5aa6a1745aee13eb441cc471b9",
+            "size_bytes": 139854
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:22:19.328943Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/clean-energy/response.json",
+          "sha256": "6d7f5ec31747b61ba18b3228349cc2bee34416f8faf0abfabdf2e526d3107fc6",
+          "size_bytes": 433721
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "6d7f5ec31747b61ba18b3228349cc2bee34416f8faf0abfabdf2e526d3107fc6",
+            "size_bytes": 433721,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+            "size_bytes": 629,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/clean-energy/response.md",
+          "sha256": "86af0380114d113e40fffc0e3350ade6f479cfd501738cf3eaf1165839cc147e",
+          "size_bytes": 629
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/clean-energy/rendered-capture.json",
+          "sha256": "c5bc1bb6bfdf9a663abb2633888f07a3474a0a2d3c1b9d2147d034d7871b5232",
+          "size_bytes": 760
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/clean-energy/pages/page-1/rendered-dom.json",
+            "sha256": "24f4063061af8e9b0149f5d06c2eb40544a2a19a61afdc39e252efd6a83ffd46",
+            "size_bytes": 2066
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/clean-energy.pdf",
+        "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+        "size_bytes": 122014
+      }
+    },
+    {
+      "case_id": "clinical-study",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:22:14.274310Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/clinical-study/reference.json",
+          "sha256": "19834aea456a200b1df6fd5cc872b91480909bc9e6987ed80ff3ea8fbb00cb9e",
+          "size_bytes": 165933
+        },
+        "job_id": "pjb-33emg9582knzmzw35de91sw2y56q",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/clinical-study/job.json",
+          "sha256": "3eef7b330d88e09af9595b859a7cdaae6ebe1d5103ce8ca9ec02c884d6944550",
+          "size_bytes": 581
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/clinical-study/reference.md",
+          "sha256": "035ad5d2c672f5f53cd8f0fbc5d0c6d51d1af629231dc2ce4d195f6fb66a210e",
+          "size_bytes": 19557
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-1/rendered-dom.json",
+            "sha256": "ef941ab0d15dee60f77600280e94963166922ab346f691793017bf91b6a08a18",
+            "size_bytes": 16846
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-2/rendered-dom.json",
+            "sha256": "77094e68e8eadb09979c956c344587f2435e0814c19ba30874dca5458c2a2bb1",
+            "size_bytes": 25833
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-3/rendered-dom.json",
+            "sha256": "6cb296e7756927b3b8005565d0793e986dbb7f8e9a27bbbb3bf299cad4f1fa61",
+            "size_bytes": 5641
+          },
+          {
+            "page_number": 4,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-4/rendered-dom.json",
+            "sha256": "29847f4110b8ab9cda1df2c15ee79692d5d073a1562e1416aaf5b525246efab7",
+            "size_bytes": 23290
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-1/rendered.png",
+            "sha256": "11ba3919c6bb3b5c037840c2bc60fe2666506caa10766d6552efc2aaadafce68",
+            "size_bytes": 254600
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-2/rendered.png",
+            "sha256": "79b24a183f34284f040e461eab5f12cd32dc4882877e06c7c3cb6811688a303a",
+            "size_bytes": 178208
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-3/rendered.png",
+            "sha256": "9bb059c13281b695be99ac0fe765d52ca5f5218c89244afbaaf8128692787d85",
+            "size_bytes": 152331
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 4,
+            "path": "llamaparse-visual-routing-fix/clinical-study/pages/page-4/rendered.png",
+            "sha256": "3ba23d292122484c285200ce9ba806f720c71ed3b8fed3a9fd5fbffecb33a3ef",
+            "size_bytes": 188939
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:22:37.984323Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/clinical-study/response.json",
+          "sha256": "28cde6e007132e63296824d707ed5fe47da52bbe25e79df39ad504e0d8a2f118",
+          "size_bytes": 1429264
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "28cde6e007132e63296824d707ed5fe47da52bbe25e79df39ad504e0d8a2f118",
+            "size_bytes": 1429264,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2",
+            "size_bytes": 17695,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/clinical-study/response.md",
+          "sha256": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2",
+          "size_bytes": 17695
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/clinical-study/rendered-capture.json",
+          "sha256": "cb0efec76063e0664d382dd7aabc23e7edd202954ec43fdf77db5198919f4a1b",
+          "size_bytes": 1839
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/clinical-study/pages/page-1/rendered-dom.json",
+            "sha256": "b04956dbf65eed89e77a40522b04ad8839f192fff6210927267e5cd6ce3b45df",
+            "size_bytes": 10495
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/clinical-study/pages/page-2/rendered-dom.json",
+            "sha256": "78ac06cd1717d1dcd797e771b8ee002277b81d9451d57ebf7d815f1ab448eee5",
+            "size_bytes": 8020
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/clinical-study/pages/page-3/rendered-dom.json",
+            "sha256": "36a25e704845430a4d291d59d51c39c5ade38ead8f577ad8c0d0a3a742047fbb",
+            "size_bytes": 2546
+          },
+          {
+            "page_number": 4,
+            "path": "service-final-source-grounded-20260813/clinical-study/pages/page-4/rendered-dom.json",
+            "sha256": "d78fadab1c04bb5bffef348060f10cbfe09188dcfac74b274867f951ba50a7a2",
+            "size_bytes": 8724
+          }
+        ]
+      },
+      "source": {
+        "page_count": 4,
+        "path": "benchmark-expertmodeldata/clinical-study.pdf",
+        "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+        "size_bytes": 750004
+      }
+    },
+    {
+      "case_id": "component-datasheet",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-12T18:31:39.770449Z",
+        "full_json": {
+          "path": "llamaparse/component-datasheet/reference.json",
+          "sha256": "e065b98991d3e48ee6106018dc721e81e3654a1b41a1094563d6fb73367ce7c8",
+          "size_bytes": 105231
+        },
+        "job_id": "pjb-vwv4utu38pi1splat9jlfba1cqrc",
+        "job_record": {
+          "path": "llamaparse/component-datasheet/job.json",
+          "sha256": "3be96e361faa850427309ca44b2ecdf4b76e79758a24e289db1a45b854761ebe",
+          "size_bytes": 590
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/component-datasheet/reference.md",
+          "sha256": "4a7fd837c483b9432683ed4bd0ce5cf537fbb1375c1014864d6ca6a903303c6f",
+          "size_bytes": 3846
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/component-datasheet/pages/page-1/rendered-dom.json",
+            "sha256": "51163900a98475c5deec3bb17c8eeab4a5e9791d229b9b5fd04577f8e36380da",
+            "size_bytes": 19327
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse/component-datasheet/pages/page-2/rendered-dom.json",
+            "sha256": "f8e39f9162cf9bc37b3eca0b8347c4fe862933bebe1ed8be569d583e70e840ec",
+            "size_bytes": 19998
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse/component-datasheet/pages/page-3/rendered-dom.json",
+            "sha256": "ae4eac22cae2da0d5a847dfcf57578c7dc807a88d3e4be1b845143275a37496e",
+            "size_bytes": 17560
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/component-datasheet/pages/page-1/rendered.png",
+            "sha256": "4b1a08c8b874ed5e8c911b891406cff455cc3c090998afdd387fd0daae3c8bad",
+            "size_bytes": 169254
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse/component-datasheet/pages/page-2/rendered.png",
+            "sha256": "a586470121ea868a6856d73861d5291ff1003aef859a3f8cf29a4feea2699ae9",
+            "size_bytes": 138767
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse/component-datasheet/pages/page-3/rendered.png",
+            "sha256": "c5fb73d3a69e11d80af4e32b38352f22366e13131807d122c7b11fe95ae56305",
+            "size_bytes": 99178
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-12T18:31:55.589444Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/component-datasheet/response.json",
+          "sha256": "c531d1c0dd2848a1ec35a1fd97031b22c32ed63535ac99e5e29fe462c00f58bd",
+          "size_bytes": 742280
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "c531d1c0dd2848a1ec35a1fd97031b22c32ed63535ac99e5e29fe462c00f58bd",
+            "size_bytes": 742280,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "4e00f4db0ba84ff89ca12e56dbfd6db87f20fbd24006510122bcfbd15a0b9f49",
+            "size_bytes": 5736,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/component-datasheet/response.md",
+          "sha256": "4e00f4db0ba84ff89ca12e56dbfd6db87f20fbd24006510122bcfbd15a0b9f49",
+          "size_bytes": 5736
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/component-datasheet/rendered-capture.json",
+          "sha256": "a7636c0cc2ff02fea5beafd1d1be726de735f19e945059b9a7d2ec36e557b3b7",
+          "size_bytes": 1485
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/component-datasheet/pages/page-1/rendered-dom.json",
+            "sha256": "63f93bbd685b7409d66780387d5630b2d898cf89a12f23306df3f488bf91c963",
+            "size_bytes": 6871
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/component-datasheet/pages/page-2/rendered-dom.json",
+            "sha256": "94ab7f0663a510d243839bd342551e1e14a7e8931f376652c1526844dcd12576",
+            "size_bytes": 6710
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/component-datasheet/pages/page-3/rendered-dom.json",
+            "sha256": "2ae600267c3664f49358905222e4a4114a0c670825eefc40bfbc26395596d408",
+            "size_bytes": 2587
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+        "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+        "size_bytes": 329199
+      }
+    },
+    {
+      "case_id": "egov-survey",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:22:43.641184Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/egov-survey/reference.json",
+          "sha256": "30a5bd4b97bb5f4038f8ef5a666f33bf3b2ec7e404400397e5a523508ca8b21e",
+          "size_bytes": 28049
+        },
+        "job_id": "pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/egov-survey/job.json",
+          "sha256": "a1ec91656590ac67d24c33492d1a71cfb9a6c2407e76900ff15f2ae6b08ab188",
+          "size_bytes": 575
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/egov-survey/reference.md",
+          "sha256": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01",
+          "size_bytes": 3563
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/egov-survey/pages/page-1/rendered-dom.json",
+            "sha256": "a48e482001fdec5f1efe2cfbed1ee8bc1c28a1a181e3124bbba23a0f53466cf1",
+            "size_bytes": 11861
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/egov-survey/pages/page-1/rendered.png",
+            "sha256": "5ebb79bbc6f944c9c5136c1901e0e0847aff9808eb12e0a2ba7270682ea022a4",
+            "size_bytes": 216232
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:23:02.049225Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/egov-survey/response.json",
+          "sha256": "392f65ab7124a5dfb00322802b3a2e566981089986e69a44334001957fb74d65",
+          "size_bytes": 317508
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "392f65ab7124a5dfb00322802b3a2e566981089986e69a44334001957fb74d65",
+            "size_bytes": 317508,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c",
+            "size_bytes": 2830,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/egov-survey/response.md",
+          "sha256": "5133aa3fcd27eb07ae1b70b2f7524e398f721fd3340735645e625f78fdc3084c",
+          "size_bytes": 2830
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/egov-survey/rendered-capture.json",
+          "sha256": "75540f97c6bc9d97eea99bc0901cbf78226b6420f22825409c7f2b9aca9ed4c4",
+          "size_bytes": 759
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/egov-survey/pages/page-1/rendered-dom.json",
+            "sha256": "397bb68ce2990dc3c35a61a120523e3404b4670f84c7a122aba1722d273a388d",
+            "size_bytes": 6491
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/egov-survey.pdf",
+        "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+        "size_bytes": 82800
+      }
+    },
+    {
+      "case_id": "esg-metrics",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-12T18:31:40.924240Z",
+        "full_json": {
+          "path": "llamaparse/esg-metrics/reference.json",
+          "sha256": "3ed091fb34978ee96461fdf98008aa8165a91c5eeb0f919b489f3d9baf97f827",
+          "size_bytes": 43723
+        },
+        "job_id": "pjb-dnqqsnjbdx1np5utnrt9nx6fcibd",
+        "job_record": {
+          "path": "llamaparse/esg-metrics/job.json",
+          "sha256": "04e41ac200376397741e181e7477a28a700e94d766294b129f7c19e3624ca061",
+          "size_bytes": 574
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/esg-metrics/reference.md",
+          "sha256": "d5d29a2f65c9463fc52e3f567baf25ec718fdd0958e649927c8295a61f2c659f",
+          "size_bytes": 4487
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/esg-metrics/pages/page-1/rendered-dom.json",
+            "sha256": "b58b37a7df5791178deaa46e35f2b087101ef96242a374b9ad08d77c47b65863",
+            "size_bytes": 30037
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/esg-metrics/pages/page-1/rendered.png",
+            "sha256": "a9da8b5b77ec0adb2a962408654c24fe100156b230b7f86384ee01035a6d5755",
+            "size_bytes": 122105
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-12T18:31:59.606956Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/esg-metrics/response.json",
+          "sha256": "488d6124a8689898676b349e0082fb9cc75c394eee274bc38fee0cc2725775e8",
+          "size_bytes": 426739
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "488d6124a8689898676b349e0082fb9cc75c394eee274bc38fee0cc2725775e8",
+            "size_bytes": 426739,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+            "size_bytes": 3012,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/esg-metrics/response.md",
+          "sha256": "987cb04ddf87719960739bfd96808113a5beb847e9dc3b0f1bc9ae18d6d82aa8",
+          "size_bytes": 3012
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/esg-metrics/rendered-capture.json",
+          "sha256": "c9156839bf53a75d92e004453aac8713c6624575476de74ec42b683f886373f6",
+          "size_bytes": 759
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/esg-metrics/pages/page-1/rendered-dom.json",
+            "sha256": "a908020838ccf4c9c2865661f968a0c6b57dc824de93ff234aa74897b974df50",
+            "size_bytes": 5932
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+        "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+        "size_bytes": 60516
+      }
+    },
+    {
+      "case_id": "finance-10k",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-12T18:31:41.573332Z",
+        "full_json": {
+          "path": "llamaparse/finance-10k/reference.json",
+          "sha256": "fbbe0ac5823b648bee81c0ca53aeee9d79bab06b9ee87a62ff5c00f850924da0",
+          "size_bytes": 103578
+        },
+        "job_id": "pjb-ox77y3mhu50h3935nlqwlljniqho",
+        "job_record": {
+          "path": "llamaparse/finance-10k/job.json",
+          "sha256": "24ce6182e194f2061b235a992bed24f1832f81704a3203b5ac5cd0efcdaf6151",
+          "size_bytes": 574
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/finance-10k/reference.md",
+          "sha256": "0cada5fe6e5406e38ebe8251399e0ee61bce3127a378232bacb01771ff060517",
+          "size_bytes": 12969
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/finance-10k/pages/page-1/rendered-dom.json",
+            "sha256": "f376a9cec77292934cb31649fc8f2402fba9bd7503835dc63bcd79fa2ad804d6",
+            "size_bytes": 27999
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse/finance-10k/pages/page-2/rendered-dom.json",
+            "sha256": "87878c4838243fde38794cc9b9da7db4e1e8d234a5ae84cc5cab07b8ee6f8807",
+            "size_bytes": 29879
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse/finance-10k/pages/page-3/rendered-dom.json",
+            "sha256": "2e5857bccc46ac9cd8106c705edaec557ac42ce3e81d6e3fbd35e2a19eed04bb",
+            "size_bytes": 34556
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/finance-10k/pages/page-1/rendered.png",
+            "sha256": "59f184fda2d47506efbcc588d51f786c748ee5238045512061f30166508df8f9",
+            "size_bytes": 136567
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse/finance-10k/pages/page-2/rendered.png",
+            "sha256": "d6e19b08c96a431f5da6b5881ddee9a4318f1b71d9c876bb21bd7b187a760e8e",
+            "size_bytes": 141443
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse/finance-10k/pages/page-3/rendered.png",
+            "sha256": "ae5e23afe56313d5690bb76349466e454f51b7d2dea64b01845d1b95e8563a8b",
+            "size_bytes": 93020
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-12T18:32:55.703228Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/finance-10k/response.json",
+          "sha256": "e3e5f77cd06ef4887959fe0ece0dbb35a6538fec2de60e8696c92a8668d19ff5",
+          "size_bytes": 1754861
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "e3e5f77cd06ef4887959fe0ece0dbb35a6538fec2de60e8696c92a8668d19ff5",
+            "size_bytes": 1754861,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389",
+            "size_bytes": 12618,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/finance-10k/response.md",
+          "sha256": "8c0ea68d1bb1bfa454bb95d77210ecf2d97dfcdc34414952e97b2f358abd2389",
+          "size_bytes": 12618
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/finance-10k/rendered-capture.json",
+          "sha256": "7daba1286c8a78bb20d955256f8bfa35d7c550607baa67546de288376caec3ae",
+          "size_bytes": 1477
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/finance-10k/pages/page-1/rendered-dom.json",
+            "sha256": "603aad315c60c5cba1cb574defa35000c80daa748b67f0061ca13864b1f9b489",
+            "size_bytes": 4622
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/finance-10k/pages/page-2/rendered-dom.json",
+            "sha256": "043f6f31292acc4f34235c787fb13da74ee91b15bcafe47e018fd55b5033477b",
+            "size_bytes": 5535
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/finance-10k/pages/page-3/rendered-dom.json",
+            "sha256": "e5b836769959d994f1d48fdc6a42ef76e8371eab064c7a11f7f5da013700a6cb",
+            "size_bytes": 7208
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/finance-10k.pdf",
+        "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+        "size_bytes": 87105
+      }
+    },
+    {
+      "case_id": "health-report",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:22:47.801466Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/health-report/reference.json",
+          "sha256": "84e5ed92de3380cf7216c5fa5d78932d5d761705513c5994248ec54fc0ce646e",
+          "size_bytes": 43053
+        },
+        "job_id": "pjb-g66fg3bwy8plzgmslyhwfhb4taoe",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/health-report/job.json",
+          "sha256": "c1e0077da0cb7de7fd0b2c19d2c7622234070cdbc8436777339c47884b537fe8",
+          "size_bytes": 579
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/health-report/reference.md",
+          "sha256": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d",
+          "size_bytes": 6271
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/health-report/pages/page-1/rendered-dom.json",
+            "sha256": "0ada1a35cda9264e06d88c496dd7cdb7984e76f4fdc59b7ee4e0f084313b18d7",
+            "size_bytes": 27551
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/health-report/pages/page-1/rendered.png",
+            "sha256": "353ba9b3d65bafd15c486a22bfdc441541330dc4a46a764d8b122f144b8b04de",
+            "size_bytes": 141328
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:23:04.352451Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/health-report/response.json",
+          "sha256": "34e59bc6897ccdbd9fa37b06b228327e1d68d1c9e695e59834a5887ddfded57c",
+          "size_bytes": 546402
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "34e59bc6897ccdbd9fa37b06b228327e1d68d1c9e695e59834a5887ddfded57c",
+            "size_bytes": 546402,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0",
+            "size_bytes": 1482,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/health-report/response.md",
+          "sha256": "40798e09d8d98918b6e8a1c1ac4217492673223d9c560dba13811ccacfd562d0",
+          "size_bytes": 1482
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/health-report/rendered-capture.json",
+          "sha256": "a3970b9bdb86e21203c042e1d3ef5e6f807913a7362b9eba51595cbc67aecb4f",
+          "size_bytes": 761
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/health-report/pages/page-1/rendered-dom.json",
+            "sha256": "4e97ee3a513f32a802d9ce6e3b19590083766eca6bb72dc4edee845e180bfb1d",
+            "size_bytes": 4595
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/health-report.pdf",
+        "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+        "size_bytes": 222282
+      }
+    },
+    {
+      "case_id": "insurance-acord",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-12T18:31:42.657627Z",
+        "full_json": {
+          "path": "llamaparse/insurance-acord/reference.json",
+          "sha256": "20134cd09606dc210d65fe18f5596f13a94dfba41c4bc498d1d69858e87822b2",
+          "size_bytes": 65736
+        },
+        "job_id": "pjb-e949skk13ihc9wbmdhk348mw2t69",
+        "job_record": {
+          "path": "llamaparse/insurance-acord/job.json",
+          "sha256": "c12ae6772a622902d348e086e3e5da1c6470e85154efaa4ee99f67ab0b51af2d",
+          "size_bytes": 582
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/insurance-acord/reference.md",
+          "sha256": "47dac93cc27ff6adb158974b33e53872e70a9475f4659e2ab6328e7d6ec5288f",
+          "size_bytes": 6984
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/insurance-acord/pages/page-1/rendered-dom.json",
+            "sha256": "5f002098f4df1602796700590359ceed2bc43f672b04492a8ccb1816ea11ee86",
+            "size_bytes": 36283
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/insurance-acord/pages/page-1/rendered.png",
+            "sha256": "0e0fa3771be5dadef50071b1ae58a035b23083dce60a72d1899983bf52728a62",
+            "size_bytes": 210126
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-12T18:32:05.327567Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/insurance-acord/response.json",
+          "sha256": "6c43ba709af44c811010484e3bb24cbb33dd12744b51e642b462a2b85b7b609b",
+          "size_bytes": 351101
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "6c43ba709af44c811010484e3bb24cbb33dd12744b51e642b462a2b85b7b609b",
+            "size_bytes": 351101,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1",
+            "size_bytes": 10006,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/insurance-acord/response.md",
+          "sha256": "f74f955bd0ba3567186a50385e6ba22a37f8fc04cca4d34f3752cdc4d23d0db1",
+          "size_bytes": 10006
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/insurance-acord/rendered-capture.json",
+          "sha256": "92bf0f3af8a5dc79e8292a06dfdcda375100b80fcac709c7ad4303055de9a61e",
+          "size_bytes": 763
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/insurance-acord/pages/page-1/rendered-dom.json",
+            "sha256": "9078a1088c6a7e3e0bd22376356329d40097b1454440c25f85e907fb9d600ea1",
+            "size_bytes": 18329
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+        "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+        "size_bytes": 17086
+      }
+    },
+    {
+      "case_id": "manufacturing-report",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-routing-fix",
+        "created_at": "2026-08-13T06:23:02.279080Z",
+        "full_json": {
+          "path": "llamaparse-visual-routing-fix/manufacturing-report/reference.json",
+          "sha256": "409a8ba52a3051066041540f9e70e56e9edd322a571581755402f164e8e89d08",
+          "size_bytes": 117513
+        },
+        "job_id": "pjb-vpn3e4kt636fnx2y4vlr98otbyic",
+        "job_record": {
+          "path": "llamaparse-visual-routing-fix/manufacturing-report/job.json",
+          "sha256": "42f8f76ef3b0b7274ffb6d4bd374d56a2d07f8631c5e050825c89edbe2d9e4bf",
+          "size_bytes": 593
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-routing-fix/manufacturing-report/reference.md",
+          "sha256": "771226b27e5a6ad2024adc6acc66f23eda5c89ca105b32cc114bdc619b7a31d6",
+          "size_bytes": 14018
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-1/rendered-dom.json",
+            "sha256": "e7b1ca739f58c2fca0b8363f0b6d68c54d21c4b8d47e40eae4a53e5939d7215a",
+            "size_bytes": 10833
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-2/rendered-dom.json",
+            "sha256": "84fe00b5d5dab909697aa54ad316df2df05dda2a9eff332808d6b8b1ba2a6b14",
+            "size_bytes": 30614
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-3/rendered-dom.json",
+            "sha256": "281f4d1bd7ce664e6c7d2f3b20d110df63b46af0659710153999de670bc4a58a",
+            "size_bytes": 17555
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-1/rendered.png",
+            "sha256": "5eedad36b7e7f31ddfe1a5d0249ace11bef1a03a3e903c7475d1a24a65d5ccfd",
+            "size_bytes": 123948
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-2/rendered.png",
+            "sha256": "44feaa5f5442b5c2f5ce8a47dfed18e8a580bb2169bcf9f31bc71ea81f8d9b0f",
+            "size_bytes": 131779
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse-visual-routing-fix/manufacturing-report/pages/page-3/rendered.png",
+            "sha256": "fd63b598a2b53cb64a71f07eba5810655ce74ebccd97fba05e23033cc320411b",
+            "size_bytes": 150639
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:23:24.655491Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/manufacturing-report/response.json",
+          "sha256": "371af6c8a97f5d83affcc1edbd05cc29bdd7bdf94072b13877b896a6edba4052",
+          "size_bytes": 1917077
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "371af6c8a97f5d83affcc1edbd05cc29bdd7bdf94072b13877b896a6edba4052",
+            "size_bytes": 1917077,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599",
+            "size_bytes": 4479,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/manufacturing-report/response.md",
+          "sha256": "55315b814ae09055245bf530b48f401c1d62aff9a10bf4fe0913088b32ebe599",
+          "size_bytes": 4479
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/manufacturing-report/rendered-capture.json",
+          "sha256": "0aa8b71bcbc4fac9626c5762b64d18b797ab8601a5d7922685c1caba95a0fbd2",
+          "size_bytes": 1486
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/manufacturing-report/pages/page-1/rendered-dom.json",
+            "sha256": "e50b39230ed92eef404f812a866f6d4488e7d4124e40b69366b5a91f949b9db3",
+            "size_bytes": 2976
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/manufacturing-report/pages/page-2/rendered-dom.json",
+            "sha256": "614256f247756964f16056020348eff127d31e7f565f1040c9ee359090e45799",
+            "size_bytes": 4463
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/manufacturing-report/pages/page-3/rendered-dom.json",
+            "sha256": "35eac8aa104a88393d9c5556af8b4c211a77d38a37ba57f266e45b3387beeea9",
+            "size_bytes": 4787
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+        "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+        "size_bytes": 380274
+      }
+    },
+    {
+      "case_id": "ny-timetable",
+      "llamaparse": {
+        "artifact_root": "llamaparse-table-fix-20260813",
+        "created_at": "2026-08-13T06:11:34.844528Z",
+        "full_json": {
+          "path": "llamaparse-table-fix-20260813/ny-timetable/reference.json",
+          "sha256": "467b91d50deb7c039395e31994f5bd266beb33fcb5b34749d0b6f7b8cf878458",
+          "size_bytes": 241933
+        },
+        "job_id": "pjb-5uak98qzk8a4nrxaxf8w7ue5k21g",
+        "job_record": {
+          "path": "llamaparse-table-fix-20260813/ny-timetable/job.json",
+          "sha256": "2039a70d5d678bad69a84276c9263427645c0dfc6bc22eca3f076454454a35fd",
+          "size_bytes": 577
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-table-fix-20260813/ny-timetable/reference.md",
+          "sha256": "36bdfda7e550bef7204a530589b6452ed9cabf5794c7b31099e0bc9724afcc03",
+          "size_bytes": 48222
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-1/rendered-dom.json",
+            "sha256": "3095afaf06da6ef262891b08bbf2350593eaf432f2072eaf559bfca9fcf7eb73",
+            "size_bytes": 67702
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-2/rendered-dom.json",
+            "sha256": "ece3ded4c47c55a9080dae2fe36501836a8c75433eeb299f81015ffca8fec478",
+            "size_bytes": 64319
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-3/rendered-dom.json",
+            "sha256": "47aada37fa4aa2bc66daf63921bd84c571b6854ee496e6ba8a0b2c10a64c1536",
+            "size_bytes": 63664
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-1/rendered.png",
+            "sha256": "e7676d477d6113f4b4d7fc373ad3c3783d949bd302920f993987c9d0d56638e8",
+            "size_bytes": 195766
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-2/rendered.png",
+            "sha256": "d967fc67b5857c658f2362ec471be777f70dd3184cccf21bbb7be21d8a230a4f",
+            "size_bytes": 189713
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse-table-fix-20260813/ny-timetable/pages/page-3/rendered.png",
+            "sha256": "d9d74778400a00ea9a83668b6e7f6b423838ea6bec5eefa8b6e0ce3a57f2024d",
+            "size_bytes": 191971
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:12:13.269215Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/ny-timetable/response.json",
+          "sha256": "489c1da4a8dc094d4de98b50dd523a86327a0a4e3421f6ffa720c1bcb99da137",
+          "size_bytes": 2670241
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "489c1da4a8dc094d4de98b50dd523a86327a0a4e3421f6ffa720c1bcb99da137",
+            "size_bytes": 2670241,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef",
+            "size_bytes": 43231,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/ny-timetable/response.md",
+          "sha256": "16848d306917f37b27d89125328b2c8563e6cf9cb1727d2200a0f8013a95fcef",
+          "size_bytes": 43231
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/ny-timetable/rendered-capture.json",
+          "sha256": "940dffbb4b3c3f3492b8be0b54f008ef662684a7d4ce95f87465bd447d57098a",
+          "size_bytes": 1478
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/ny-timetable/pages/page-1/rendered-dom.json",
+            "sha256": "cb2b4e71f53da84b322e48a57e6c56c68a535c04f0e99d647a4cde6463df1697",
+            "size_bytes": 13237
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/ny-timetable/pages/page-2/rendered-dom.json",
+            "sha256": "912258244934c6dec4dcb6d2c0039b05a09576e16119a479c4ad1f8fa271fd2c",
+            "size_bytes": 13979
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/ny-timetable/pages/page-3/rendered-dom.json",
+            "sha256": "591934902adc44fbaab7f4a918a6d36678b0e733de1c2a7af6c0c5901f7c0187",
+            "size_bytes": 13295
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+        "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+        "size_bytes": 26109
+      }
+    },
+    {
+      "case_id": "postal-10k",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-13T05:04:45.558548Z",
+        "full_json": {
+          "path": "llamaparse/postal-10k/reference.json",
+          "sha256": "00759abb20269353750a1542b971c11424f84aca78d0c81a014d4f3121eb2348",
+          "size_bytes": 87314
+        },
+        "job_id": "pjb-a97cbzz7kcwjfk5n2n51r6jkyljc",
+        "job_record": {
+          "path": "llamaparse/postal-10k/job.json",
+          "sha256": "46100c8305f254fef4149c6dd244e8ccf95659c731fae2ece6dfd03f16c79214",
+          "size_bytes": 569
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/postal-10k/reference.md",
+          "sha256": "50f2590c2b74ff6d71f74a59723582c0f5eba978b8efdaa5fae92cc6ea8f0ad4",
+          "size_bytes": 11500
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/postal-10k/pages/page-1/rendered-dom.json",
+            "sha256": "de8fc910fe259db75f8dda716b3c37894751ce1c6485e4b8d90e0d14681e9340",
+            "size_bytes": 13258
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse/postal-10k/pages/page-2/rendered-dom.json",
+            "sha256": "675db17c919a28aca9bb41ddbd6a33d5b9798cb8f613be5ebc919380158a4006",
+            "size_bytes": 8791
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse/postal-10k/pages/page-3/rendered-dom.json",
+            "sha256": "c18f18362f5ce189d21663d36b9d4d6eab4c60b23279e6ba4467aeac02c927e1",
+            "size_bytes": 15162
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/postal-10k/pages/page-1/rendered.png",
+            "sha256": "6db3d3ae097cfefcd2d305bdfaf075cd29ed18393b40916c6a7dfe8720a08d54",
+            "size_bytes": 110512
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse/postal-10k/pages/page-2/rendered.png",
+            "sha256": "3ce0f9dde6a03d3fa250360d127331b36abda8a0b2cfb8053ecc3e1a62e8145e",
+            "size_bytes": 127676
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse/postal-10k/pages/page-3/rendered.png",
+            "sha256": "09a1cee9ecad202c7eadf5af4f60f34be681a428f77986ad696a90317f5ed14b",
+            "size_bytes": 101949
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T05:05:00.442779Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/postal-10k/response.json",
+          "sha256": "b01b967103802ffd07598687ae50b2ae5f4a7ec8ab633ae126582905a4467a2a",
+          "size_bytes": 1792174
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "b01b967103802ffd07598687ae50b2ae5f4a7ec8ab633ae126582905a4467a2a",
+            "size_bytes": 1792174,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+            "size_bytes": 11275,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/postal-10k/response.md",
+          "sha256": "20c10312ac73ce455ba461a25fd0f9ccc98f17da09736a8f3b8e60c648600b10",
+          "size_bytes": 11275
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/postal-10k/rendered-capture.json",
+          "sha256": "ac556d41609b9a6fa322c33cd0ab7c8b331077966bc4eebf43d3ea0314b4248f",
+          "size_bytes": 1476
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/postal-10k/pages/page-1/rendered-dom.json",
+            "sha256": "9340448b3e9ff13dbb999dfd347ce03bb0ddc54efca1395c2e02aac093a82a11",
+            "size_bytes": 5540
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/postal-10k/pages/page-2/rendered-dom.json",
+            "sha256": "a1b8bda5a73ecd8db69654b21cfa86698fd1e3dacd007693021fc8bded853fc1",
+            "size_bytes": 2708
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/postal-10k/pages/page-3/rendered-dom.json",
+            "sha256": "e39edce694da8cd4e06ff361f0cf910db7b223d241927356f4ee322257a9e9b2",
+            "size_bytes": 6294
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/postal-10k.pdf",
+        "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+        "size_bytes": 83589
+      }
+    },
+    {
+      "case_id": "purchase-agreement",
+      "llamaparse": {
+        "artifact_root": "llamaparse-text-render-fix",
+        "created_at": "2026-08-13T06:23:06.238780Z",
+        "full_json": {
+          "path": "llamaparse-text-render-fix/purchase-agreement/reference.json",
+          "sha256": "a6db0458fc32a6216374a775333665322185a4205f457e157d078c79aaaa6aaa",
+          "size_bytes": 22964
+        },
+        "job_id": "pjb-637vhqamkp2x2p0tzgd1xve8iqc5",
+        "job_record": {
+          "path": "llamaparse-text-render-fix/purchase-agreement/job.json",
+          "sha256": "518edaae6386c9cbf810b7e5fa12707086e3ef87c0f0581a9891f45975874f23",
+          "size_bytes": 589
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-text-render-fix/purchase-agreement/reference.md",
+          "sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+          "size_bytes": 3473
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-text-render-fix/purchase-agreement/pages/page-1/rendered-dom.json",
+            "sha256": "5215d201970a5b559cb2e9c382e77bec974594664285b7224107b03366c190d2",
+            "size_bytes": 10299
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-text-render-fix/purchase-agreement/pages/page-1/rendered.png",
+            "sha256": "8b6d8c7b7c016856e080e1003dc9cce991327a1ff7a21436046a6bb88830c59b",
+            "size_bytes": 256809
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T06:23:17.208148Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/purchase-agreement/response.json",
+          "sha256": "607b604f80c7ff9a160d4e34adf1dc083c403cb3ec9746c12ef7a6b6d681cea1",
+          "size_bytes": 258185
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "607b604f80c7ff9a160d4e34adf1dc083c403cb3ec9746c12ef7a6b6d681cea1",
+            "size_bytes": 258185,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+            "size_bytes": 3503,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/purchase-agreement/response.md",
+          "sha256": "cf26920e96611be2eaa5bb774df36a7b4bfbe82b46c2941039404754159ca5d0",
+          "size_bytes": 3503
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/purchase-agreement/rendered-capture.json",
+          "sha256": "82579441198a4440fa94a556a853b4f5273bdb22234b4d34faf91f017b554e10",
+          "size_bytes": 766
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/purchase-agreement/pages/page-1/rendered-dom.json",
+            "sha256": "a7f2e2df5895841a387929c7be3aafca123cb97cdadd0f2011866284734135fa",
+            "size_bytes": 10518
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+        "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+        "size_bytes": 152828
+      }
+    },
+    {
+      "case_id": "settlement-agreement",
+      "llamaparse": {
+        "artifact_root": "llamaparse",
+        "created_at": "2026-08-12T18:31:45.591760Z",
+        "full_json": {
+          "path": "llamaparse/settlement-agreement/reference.json",
+          "sha256": "f6896470093d239d03d65fe40afec120da25a13826332928f0823e7a040e8ff8",
+          "size_bytes": 25246
+        },
+        "job_id": "pjb-9rcz16ip1b60j3lm5hz20lhl44sr",
+        "job_record": {
+          "path": "llamaparse/settlement-agreement/job.json",
+          "sha256": "d641214b2a9df96c4318a08ccb7dc32fc25b6fa5947e63e38516b23d034c9c0a",
+          "size_bytes": 592
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse/settlement-agreement/reference.md",
+          "sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+          "size_bytes": 3210
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse/settlement-agreement/pages/page-1/rendered-dom.json",
+            "sha256": "11eb3c16c176a00cb8951b0bb8499de5c238b4375faecfb1942f2a8326baf3f6",
+            "size_bytes": 19856
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse/settlement-agreement/pages/page-1/rendered.png",
+            "sha256": "4c8eade8724b103b4ada20eaf52b719e0b4b20a2f63e4a85c6462fc4d852729d",
+            "size_bytes": 264290
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-12T18:32:02.684555Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/settlement-agreement/response.json",
+          "sha256": "020248d7b97cab184ba7b5a132b8dc4352c34df9a1db9e5b6e0adf98b57c2625",
+          "size_bytes": 137835
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "020248d7b97cab184ba7b5a132b8dc4352c34df9a1db9e5b6e0adf98b57c2625",
+            "size_bytes": 137835,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+            "size_bytes": 3173,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/settlement-agreement/response.md",
+          "sha256": "8da1efe41ac8b59bc5733e8ed41eee1eb9cc08fe519110a8622c739bccb3af5d",
+          "size_bytes": 3173
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/settlement-agreement/rendered-capture.json",
+          "sha256": "b8b6ec61764aa6d792d0cd541b40d4ccc78804c5f7c138d2d3bb19917216ee4c",
+          "size_bytes": 768
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/settlement-agreement/pages/page-1/rendered-dom.json",
+            "sha256": "b162dc8ffbdd8646888e6c81d661bb1760cd401b86f336752ae4d39b9ea2afb1",
+            "size_bytes": 6297
+          }
+        ]
+      },
+      "source": {
+        "page_count": 1,
+        "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+        "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+        "size_bytes": 164483
+      }
+    },
+    {
+      "case_id": "uber-earnings",
+      "llamaparse": {
+        "artifact_root": "llamaparse-visual-fix",
+        "created_at": "2026-08-13T05:47:21.263990Z",
+        "full_json": {
+          "path": "llamaparse-visual-fix/uber-earnings/reference.json",
+          "sha256": "922ed2e93a5e7ce84ddcc3750dc1ae3655e3518e3c669cfc3be2b05e2b642d7e",
+          "size_bytes": 75977
+        },
+        "job_id": "pjb-skyvq5noznjko41p3fs2vxgfgptg",
+        "job_record": {
+          "path": "llamaparse-visual-fix/uber-earnings/job.json",
+          "sha256": "dda2835900dd21967669a403433da9a1f349c41b206669192184ac2151c41cd4",
+          "size_bytes": 597
+        },
+        "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+        "raw_markdown": {
+          "path": "llamaparse-visual-fix/uber-earnings/reference.md",
+          "sha256": "40caf1fe84fcf30c2b180b06d988f60f8c0c80ff8fd083df3f96950ab8d3f64c",
+          "size_bytes": 2608
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-1/rendered-dom.json",
+            "sha256": "edbafe1a31504bd4426856ef40845facf3815be0c103d80eacda086f908e7f41",
+            "size_bytes": 2455
+          },
+          {
+            "page_number": 2,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-2/rendered-dom.json",
+            "sha256": "a0fb9be04edcc319d5b1f078ca8435638b6db1f588c36446cf8dcd257d365f35",
+            "size_bytes": 11031
+          },
+          {
+            "page_number": 3,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-3/rendered-dom.json",
+            "sha256": "6a84fdc05573d0d887828896e5e81e60e968681c5feb5aeb0ee04708d78b5d8e",
+            "size_bytes": 35472
+          }
+        ],
+        "rendered_png": [
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 1,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-1/rendered.png",
+            "sha256": "e063c484e8b8e8858b79e29ad769cdd5fbf86dc9b4c1919c6826741c0ec8905d",
+            "size_bytes": 130061
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 2,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-2/rendered.png",
+            "sha256": "f87475210f7a55fa9a0ea5dac881cfe967a859e99e20022e0399ff99d289ee17",
+            "size_bytes": 152150
+          },
+          {
+            "detected_media_type": "image/jpeg",
+            "extension_matches_payload": false,
+            "page_number": 3,
+            "path": "llamaparse-visual-fix/uber-earnings/pages/page-3/rendered.png",
+            "sha256": "ec993257f6bb5343450e6d89a7481f3499d796d599b16f15f77ab4af09c5bd71",
+            "size_bytes": 134492
+          }
+        ],
+        "status": "COMPLETED",
+        "tier": "agentic",
+        "updated_at": "2026-08-13T05:47:42.311430Z"
+      },
+      "service": {
+        "full_json": {
+          "path": "service-final-source-grounded-20260813/uber-earnings/response.json",
+          "sha256": "d12dfb86a7171757a9228c97aeccc85a46af758c1ba6a800a9eefe65e5c30ea4",
+          "size_bytes": 505906
+        },
+        "http": {
+          "json": {
+            "content_type": "application/json",
+            "sha256": "d12dfb86a7171757a9228c97aeccc85a46af758c1ba6a800a9eefe65e5c30ea4",
+            "size_bytes": 505906,
+            "status_code": 200
+          },
+          "markdown": {
+            "content_type": "text/markdown; charset=utf-8",
+            "sha256": "b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094",
+            "size_bytes": 1235,
+            "status_code": 200
+          }
+        },
+        "markdown_matches_canonical_json_exactly": true,
+        "raw_markdown": {
+          "path": "service-final-source-grounded-20260813/uber-earnings/response.md",
+          "sha256": "b44048d039e6305b36edf4bb6005517120c75a0f41020efabb7d44fc24cfc094",
+          "size_bytes": 1235
+        },
+        "rendered_capture_manifest": {
+          "path": "service-final-source-grounded-20260813/uber-earnings/rendered-capture.json",
+          "sha256": "6d8de7393446b073b482242adb41da18000f394f4c6d25d9568e5755203472c8",
+          "size_bytes": 1479
+        },
+        "rendered_dom": [
+          {
+            "page_number": 1,
+            "path": "service-final-source-grounded-20260813/uber-earnings/pages/page-1/rendered-dom.json",
+            "sha256": "18446daff0d52b9ec59ba2dd9c7eac20e7e474e7e77343c6050406d607d8802e",
+            "size_bytes": 809
+          },
+          {
+            "page_number": 2,
+            "path": "service-final-source-grounded-20260813/uber-earnings/pages/page-2/rendered-dom.json",
+            "sha256": "7ad7c6f5e43a612c52df22838827089270093eb3e12fd02e299e00e1d8f63029",
+            "size_bytes": 3263
+          },
+          {
+            "page_number": 3,
+            "path": "service-final-source-grounded-20260813/uber-earnings/pages/page-3/rendered-dom.json",
+            "sha256": "50ad989f8edf5b8a4878c9256de46087cc847952db360a2f83176672e1a9bd06",
+            "size_bytes": 1566
+          }
+        ]
+      },
+      "source": {
+        "page_count": 3,
+        "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+        "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+        "size_bytes": 7584019
+      }
+    }
+  ],
+  "corpus_manifest": {
+    "path": "manifest.json",
+    "sha256": "16736d189fa38ed10de9755abc181743d87d3199e8cb6275afa32ee39c96a052",
+    "size_bytes": 62580
+  },
+  "largest_source": {
+    "case_id": "uber-earnings",
+    "size_bytes": 7584019
+  },
+  "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+  "reference_full_json_count": 15,
+  "reference_raw_markdown_count": 15,
+  "reference_rendered_dom_count": 30,
+  "reference_rendered_png_count": 30,
+  "reference_selection": {
+    "path": "reference-selection.json",
+    "sha256": "23895405c459e9f8181090656897f28a5791d0ddb8055d7832b48eac1a2b0015",
+    "size_bytes": 1624
+  },
+  "reference_tier": "agentic",
+  "run_id": "functional-fidelity-20260813",
+  "schema_version": "functional-fidelity-artifact-manifest-v1",
+  "service_full_json_count": 15,
+  "service_http_200_output_count": 30,
+  "service_profile": {
+    "path": "service-profile.json",
+    "sha256": "a3345932212491258d63115e3edbbe1c9d84c8e8497ff16e10f9de949182be42",
+    "size_bytes": 2319
+  },
+  "service_raw_markdown_count": 15,
+  "service_rendered_dom_count": 30,
+  "service_run": {
+    "path": "service-final-source-grounded-20260813/run.json",
+    "sha256": "9dac2846f1d89d20f28c2d6ba279bb68dd62d61f1a493b762c2042a777c63688",
+    "size_bytes": 16430
+  },
+  "source_page_count": 30,
+  "upload_limit_bytes": 20971520
+}

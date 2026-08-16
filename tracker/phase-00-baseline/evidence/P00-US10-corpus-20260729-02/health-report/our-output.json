@@ -1,0 +1,3681 @@
+{
+  "document": {
+    "content_region_count": 2,
+    "content_region_types": {
+      "chart": 2
+    },
+    "filename": "health-report.pdf",
+    "image_count": 0,
+    "mime_type": "application/pdf",
+    "page_count": 1,
+    "page_source_region_count": 0,
+    "rendered_visual_region_count": 2,
+    "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+    "source_format": "PDF"
+  },
+  "pages": [
+    {
+      "detected_images": [
+        {
+          "area_ratio": 0.207741,
+          "bbox": {
+            "h": 197.596,
+            "height": 197.596,
+            "unit": "pt",
+            "w": 496.73,
+            "width": 496.73,
+            "x": 44.802,
+            "y": 79.088
+          },
+          "cleaned_ocr_text": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "confidence": 0.6279,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image1",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 29.6,
+                "width": 29.6,
+                "x": 155.602,
+                "y": 84.288
+              },
+              "confidence": 0.6147,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "a Total",
+              "value": "a Total",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 17.0,
+                "width": 17.0,
+                "x": 289.402,
+                "y": 84.288
+              },
+              "confidence": 0.9403,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "@ Men",
+              "value": "@ Men",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 26.2,
+                "width": 26.2,
+                "x": 410.602,
+                "y": 84.288
+              },
+              "confidence": 0.4615,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Women",
+              "value": "Women",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.2,
+                "height": 7.2,
+                "unit": "pt",
+                "w": 148.6,
+                "width": 148.6,
+                "x": 45.402,
+                "y": 102.088
+              },
+              "confidence": 0.9523,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Age-standardised mortality rate per 100 000 population",
+              "value": "Age-standardised mortality rate per 100 000 population",
+              "word_count": 7
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 112.888
+              },
+              "confidence": 0.9695,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "500",
+              "value": "500",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 47.802,
+                "y": 125.288
+              },
+              "confidence": 0.9672,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "450",
+              "value": "450",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 121.6,
+                "height": 121.6,
+                "unit": "pt",
+                "w": 469.2,
+                "width": 469.2,
+                "x": 68.002,
+                "y": 128.888
+              },
+              "confidence": 0.3952,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "sii i",
+              "value": "sii i",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 128.6,
+                "height": 128.6,
+                "unit": "pt",
+                "w": 472.8,
+                "width": 472.8,
+                "x": 68.002,
+                "y": 128.888
+              },
+              "confidence": 0.432,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "tii i",
+              "value": "tii i",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 47.802,
+                "y": 137.688
+              },
+              "confidence": 0.9675,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "400",
+              "value": "400",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 150.088
+              },
+              "confidence": 0.9533,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "350",
+              "value": "350",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 162.488
+              },
+              "confidence": 0.9679,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "300",
+              "value": "300",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 174.888
+              },
+              "confidence": 0.9683,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "250",
+              "value": "250",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 187.288
+              },
+              "confidence": 0.9701,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "200",
+              "value": "200",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 48.402,
+                "y": 199.488
+              },
+              "confidence": 0.9651,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "150",
+              "value": "150",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 48.402,
+                "y": 211.888
+              },
+              "confidence": 0.967,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "100",
+              "value": "100",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 51.402,
+                "y": 224.288
+              },
+              "confidence": 0.9696,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "50",
+              "value": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 3.0,
+                "width": 3.0,
+                "x": 54.802,
+                "y": 236.688
+              },
+              "confidence": 0.9698,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "0",
+              "value": "0",
+              "word_count": 1
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 20.6,
+                "height": 20.6,
+                "unit": "pt",
+                "w": 64.0,
+                "width": 64.0,
+                "x": 233.202,
+                "y": 241.888
+              },
+              "confidence": 0.3262,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "¥ EF OS Gh “she",
+              "value": "¥ EF OS Gh “she",
+              "word_count": 5
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 23.0,
+                "height": 23.0,
+                "unit": "pt",
+                "w": 113.8,
+                "width": 113.8,
+                "x": 162.202,
+                "y": 242.688
+              },
+              "confidence": 0.3714,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ee cig oe ro se ©",
+              "value": "ee cig oe ro se ©",
+              "word_count": 6
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 19.8,
+                "height": 19.8,
+                "unit": "pt",
+                "w": 39.8,
+                "width": 39.8,
+                "x": 382.402,
+                "y": 242.688
+              },
+              "confidence": 0.1889,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Le ne",
+              "value": "Le ne",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 16.8,
+                "height": 16.8,
+                "unit": "pt",
+                "w": 33.8,
+                "width": 33.8,
+                "x": 300.802,
+                "y": 242.888
+              },
+              "confidence": 0.3605,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "FSS",
+              "value": "FSS",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.8,
+                "height": 7.8,
+                "unit": "pt",
+                "w": 5.2,
+                "width": 5.2,
+                "x": 514.402,
+                "y": 242.888
+              },
+              "confidence": 0.0,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "S",
+              "value": "S",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 9.2,
+                "height": 9.2,
+                "unit": "pt",
+                "w": 21.8,
+                "width": 21.8,
+                "x": 65.402,
+                "y": 243.488
+              },
+              "confidence": 0.5923,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "S ge",
+              "value": "S ge",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 14.8,
+                "height": 14.8,
+                "unit": "pt",
+                "w": 25.8,
+                "width": 25.8,
+                "x": 335.002,
+                "y": 243.488
+              },
+              "confidence": 0.372,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "* Ps",
+              "value": "* Ps",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 25.0,
+                "height": 25.0,
+                "unit": "pt",
+                "w": 54.8,
+                "width": 54.8,
+                "x": 454.602,
+                "y": 243.488
+              },
+              "confidence": 0.2634,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "e ‘ SPs",
+              "value": "e ‘ SPs",
+              "word_count": 3
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 15.6,
+                "height": 15.6,
+                "unit": "pt",
+                "w": 28.4,
+                "width": 28.4,
+                "x": 135.402,
+                "y": 243.688
+              },
+              "confidence": 0.2552,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "& Ss",
+              "value": "& Ss",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 13.0,
+                "height": 13.0,
+                "unit": "pt",
+                "w": 28.4,
+                "width": 28.4,
+                "x": 423.002,
+                "y": 243.888
+              },
+              "confidence": 0.6408,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ow”",
+              "value": "ow”",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 11.6,
+                "height": 11.6,
+                "unit": "pt",
+                "w": 16.2,
+                "width": 16.2,
+                "x": 90.202,
+                "y": 244.088
+              },
+              "confidence": 0.0684,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Se <",
+              "value": "Se <",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.6,
+                "height": 9.6,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 105.202,
+                "y": 244.088
+              },
+              "confidence": 0.1908,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eA",
+              "value": "eA",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.6,
+                "height": 7.6,
+                "unit": "pt",
+                "w": 8.0,
+                "width": 8.0,
+                "x": 177.202,
+                "y": 244.088
+              },
+              "confidence": 0.4905,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "we",
+              "value": "we",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.4,
+                "height": 9.4,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 189.402,
+                "y": 244.088
+              },
+              "confidence": 0.1066,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "ve",
+              "value": "ve",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 14.8,
+                "height": 14.8,
+                "unit": "pt",
+                "w": 31.6,
+                "width": 31.6,
+                "x": 357.202,
+                "y": 244.088
+              },
+              "confidence": 0.3404,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Stig",
+              "value": "Stig",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 10.0,
+                "height": 10.0,
+                "unit": "pt",
+                "w": 19.8,
+                "width": 19.8,
+                "x": 387.002,
+                "y": 244.088
+              },
+              "confidence": 0.3019,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "es",
+              "value": "es",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.4,
+                "height": 7.4,
+                "unit": "pt",
+                "w": 7.2,
+                "width": 7.2,
+                "x": 119.402,
+                "y": 244.888
+              },
+              "confidence": 0.022,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "S",
+              "value": "S",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 10.2,
+                "height": 10.2,
+                "unit": "pt",
+                "w": 17.6,
+                "width": 17.6,
+                "x": 509.602,
+                "y": 248.888
+              },
+              "confidence": 0.2623,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "mS",
+              "value": "mS",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 5.2,
+                "width": 5.2,
+                "x": 298.202,
+                "y": 251.088
+              },
+              "confidence": 0.4938,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ES",
+              "value": "ES",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.6,
+                "height": 7.6,
+                "unit": "pt",
+                "w": 8.6,
+                "width": 8.6,
+                "x": 53.602,
+                "y": 254.488
+              },
+              "confidence": 0.6106,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "w",
+              "value": "w",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 11.2,
+                "height": 11.2,
+                "unit": "pt",
+                "w": 12.0,
+                "width": 12.0,
+                "x": 410.202,
+                "y": 258.688
+              },
+              "confidence": 0.4662,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Ss",
+              "value": "Ss",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 11.0,
+                "height": 11.0,
+                "unit": "pt",
+                "w": 12.8,
+                "width": 12.8,
+                "x": 445.402,
+                "y": 264.888
+              },
+              "confidence": 0.469,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "RN",
+              "value": "RN",
+              "word_count": 1
+            }
+          ],
+          "md": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "pixel_height": 1018,
+          "pixel_width": 2514,
+          "raw_ocr_text": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\nsii i\ntii i\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nLe ne\nFSS\nS\nS ge\n* Ps\ne ‘ SPs\n& Ss\now”\nSe <\neA\nwe\nve\nStig\nes\nS\nmS\nES\nw\nSs\nRN",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 29.6,
+                "width": 29.6,
+                "x": 155.602,
+                "y": 84.288
+              },
+              "confidence": 0.6147,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "a Total",
+              "source": "ocr",
+              "text": "a Total",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 17.0,
+                "width": 17.0,
+                "x": 289.402,
+                "y": 84.288
+              },
+              "confidence": 0.9403,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "@ Men",
+              "source": "ocr",
+              "text": "@ Men",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 26.2,
+                "width": 26.2,
+                "x": 410.602,
+                "y": 84.288
+              },
+              "confidence": 0.4615,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Women",
+              "source": "ocr",
+              "text": "Women",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.2,
+                "height": 7.2,
+                "unit": "pt",
+                "w": 148.6,
+                "width": 148.6,
+                "x": 45.402,
+                "y": 102.088
+              },
+              "confidence": 0.9523,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Age-standardised mortality rate per 100 000 population",
+              "source": "ocr",
+              "text": "Age-standardised mortality rate per 100 000 population",
+              "word_count": 7
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 112.888
+              },
+              "confidence": 0.9695,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "500",
+              "source": "ocr",
+              "text": "500",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 19.0,
+                "width": 19.0,
+                "x": 47.802,
+                "y": 125.288
+              },
+              "confidence": 0.572,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "450",
+              "source": "ocr",
+              "text": "450 -",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 19.0,
+                "width": 19.0,
+                "x": 47.802,
+                "y": 137.688
+              },
+              "confidence": 0.5997,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "400",
+              "source": "ocr",
+              "text": "400 |;",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.8,
+                "width": 18.8,
+                "x": 48.002,
+                "y": 150.088
+              },
+              "confidence": 0.8058,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "350",
+              "source": "ocr",
+              "text": "350 +",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.8,
+                "width": 18.8,
+                "x": 48.002,
+                "y": 162.488
+              },
+              "confidence": 0.8276,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "300",
+              "source": "ocr",
+              "text": "300 +",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.8,
+                "width": 18.8,
+                "x": 48.002,
+                "y": 174.888
+              },
+              "confidence": 0.8645,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "250",
+              "source": "ocr",
+              "text": "250 |",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.8,
+                "width": 18.8,
+                "x": 48.002,
+                "y": 187.288
+              },
+              "confidence": 0.8779,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "200",
+              "source": "ocr",
+              "text": "200 +",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.4,
+                "width": 18.4,
+                "x": 48.402,
+                "y": 199.488
+              },
+              "confidence": 0.7253,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "150",
+              "source": "ocr",
+              "text": "150 +",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 18.4,
+                "width": 18.4,
+                "x": 48.402,
+                "y": 211.888
+              },
+              "confidence": 0.7967,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "100",
+              "source": "ocr",
+              "text": "100 +",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 51.402,
+                "y": 224.288
+              },
+              "confidence": 0.9696,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "50",
+              "source": "ocr",
+              "text": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 3.0,
+                "width": 3.0,
+                "x": 54.802,
+                "y": 236.688
+              },
+              "confidence": 0.9633,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "0",
+              "source": "ocr",
+              "text": "0",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 13.2,
+                "height": 13.2,
+                "unit": "pt",
+                "w": 25.0,
+                "width": 25.0,
+                "x": 122.402,
+                "y": 250.088
+              },
+              "confidence": 0.1136,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "& Ss",
+              "source": "ocr",
+              "text": "ss <",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 10.2,
+                "height": 10.2,
+                "unit": "pt",
+                "w": 20.4,
+                "width": 20.4,
+                "x": 150.602,
+                "y": 242.688
+              },
+              "confidence": 0.4905,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "ee cig oe ro se ©",
+              "source": "ocr",
+              "text": "Ro &",
+              "word_count": 2
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "warnings": []
+        },
+        {
+          "area_ratio": 0.209998,
+          "bbox": {
+            "h": 201.81,
+            "height": 201.81,
+            "unit": "pt",
+            "w": 491.64,
+            "width": 491.64,
+            "x": 50.629,
+            "y": 352.723
+          },
+          "cleaned_ocr_text": "20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "confidence": 0.7427,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image2",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.6,
+                "width": 11.6,
+                "x": 54.029,
+                "y": 354.723
+              },
+              "confidence": 0.9675,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "20%",
+              "value": "20%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 117.4,
+                "width": 117.4,
+                "x": 79.229,
+                "y": 354.723
+              },
+              "confidence": 0.963,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Percentage change in mortality rate 2011-21",
+              "value": "Percentage change in mortality rate 2011-21",
+              "word_count": 6
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.0,
+                "width": 11.0,
+                "x": 54.629,
+                "y": 383.123
+              },
+              "confidence": 0.9639,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "10%",
+              "value": "10%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 68.0,
+                "height": 68.0,
+                "unit": "pt",
+                "w": 186.0,
+                "width": 186.0,
+                "x": 57.429,
+                "y": 388.123
+              },
+              "confidence": 0.0569,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "nw fecneengeneeneene ce :",
+              "value": "nw fecneengeneeneene ce :",
+              "word_count": 4
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 292.4,
+                "width": 292.4,
+                "x": 241.629,
+                "y": 411.323
+              },
+              "confidence": 0.4373,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ee ee ee ee",
+              "value": "ee ee ee ee",
+              "word_count": 4
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 49.4,
+                "height": 49.4,
+                "unit": "pt",
+                "w": 160.6,
+                "width": 160.6,
+                "x": 85.229,
+                "y": 421.523
+              },
+              "confidence": 0.2153,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "@ - y\" » ©@",
+              "value": "@ - y\" » ©@",
+              "word_count": 5
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 440.123
+              },
+              "confidence": 0.8205,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-10%",
+              "value": "-10%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 43.4,
+                "height": 43.4,
+                "unit": "pt",
+                "w": 21.0,
+                "width": 21.0,
+                "x": 147.829,
+                "y": 463.723
+              },
+              "confidence": 0.1831,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "e",
+              "value": "e",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 468.523
+              },
+              "confidence": 0.9206,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-20%",
+              "value": "-20%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 16.0,
+                "width": 16.0,
+                "x": 105.829,
+                "y": 471.323
+              },
+              "confidence": 0.9689,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Ovary",
+              "value": "Ovary",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 16.8,
+                "width": 16.8,
+                "x": 77.229,
+                "y": 476.523
+              },
+              "confidence": 0.9673,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Cervix",
+              "value": "Cervix",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.0,
+                "width": 11.0,
+                "x": 80.029,
+                "y": 484.923
+              },
+              "confidence": 0.9624,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "uteri",
+              "value": "uteri",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 497.123
+              },
+              "confidence": 0.9184,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-30%",
+              "value": "-30%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 525.523
+              },
+              "confidence": 0.529,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "40%",
+              "value": "40%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 162.029,
+                "y": 534.323
+              },
+              "confidence": 0.9674,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "10",
+              "value": "10",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 253.829,
+                "y": 534.323
+              },
+              "confidence": 0.9685,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "20",
+              "value": "20",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 346.229,
+                "y": 534.323
+              },
+              "confidence": 0.9699,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "30",
+              "value": "30",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 98.8,
+                "width": 98.8,
+                "x": 438.429,
+                "y": 534.323
+              },
+              "confidence": 0.9609,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "40 50",
+              "value": "40 50",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 106.4,
+                "width": 106.4,
+                "x": 435.429,
+                "y": 546.123
+              },
+              "confidence": 0.9662,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Mortality in 2021 per 100 000 population",
+              "value": "Mortality in 2021 per 100 000 population",
+              "word_count": 7
+            }
+          ],
+          "md": "20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "metadata": {
+            "render_reason": "layout_visual_without_embedded_raster",
+            "render_scale": 5.0
+          },
+          "ocr_text": "20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "pixel_height": 1039,
+          "pixel_width": 2488,
+          "raw_ocr_text": "20%\nPercentage change in mortality rate 2011-21\n10%\nnw fecneengeneeneene ce :\nee ee ee ee\n@ - y\" » ©@\n-10%\ne\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "region_origin": "pdf_page_render",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.6,
+                "width": 11.6,
+                "x": 54.029,
+                "y": 354.723
+              },
+              "confidence": 0.9675,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "20%",
+              "source": "ocr",
+              "text": "20%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 117.4,
+                "width": 117.4,
+                "x": 79.229,
+                "y": 354.723
+              },
+              "confidence": 0.963,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Percentage change in mortality rate 2011-21",
+              "source": "ocr",
+              "text": "Percentage change in mortality rate 2011-21",
+              "word_count": 6
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 440.123
+              },
+              "confidence": 0.8205,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "-10%",
+              "source": "ocr",
+              "text": "-10%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 468.523
+              },
+              "confidence": 0.9206,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "-20%",
+              "source": "ocr",
+              "text": "-20%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 16.0,
+                "width": 16.0,
+                "x": 105.829,
+                "y": 471.323
+              },
+              "confidence": 0.9689,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Ovary",
+              "source": "ocr",
+              "text": "Ovary",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 16.8,
+                "width": 16.8,
+                "x": 77.229,
+                "y": 476.523
+              },
+              "confidence": 0.9673,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Cervix",
+              "source": "ocr",
+              "text": "Cervix",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.4,
+                "height": 5.4,
+                "unit": "pt",
+                "w": 11.0,
+                "width": 11.0,
+                "x": 80.029,
+                "y": 485.123
+              },
+              "confidence": 0.9542,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "uteri",
+              "source": "ocr",
+              "text": "uteri",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 497.123
+              },
+              "confidence": 0.9184,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "-30%",
+              "source": "ocr",
+              "text": "-30%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 525.523
+              },
+              "confidence": 0.529,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "40%",
+              "source": "ocr",
+              "text": "40%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 253.829,
+                "y": 534.323
+              },
+              "confidence": 0.9685,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "20",
+              "source": "ocr",
+              "text": "20",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 346.229,
+                "y": 534.323
+              },
+              "confidence": 0.9699,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "30",
+              "source": "ocr",
+              "text": "30",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.6,
+                "width": 6.6,
+                "x": 438.429,
+                "y": 534.323
+              },
+              "confidence": 0.9527,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "40 50",
+              "source": "ocr",
+              "text": "40",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.2,
+                "width": 6.2,
+                "x": 531.029,
+                "y": 534.323
+              },
+              "confidence": 0.9689,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "40 50",
+              "source": "ocr",
+              "text": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 106.4,
+                "width": 106.4,
+                "x": 435.429,
+                "y": 546.123
+              },
+              "confidence": 0.9662,
+              "ocr_pass": "sparse",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "Mortality in 2021 per 100 000 population",
+              "source": "ocr",
+              "text": "Mortality in 2021 per 100 000 population",
+              "word_count": 7
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "warnings": []
+        }
+      ],
+      "items": [
+        {
+          "bbox": {
+            "h": 9.902,
+            "height": 9.902,
+            "unit": "pt",
+            "w": 23.778,
+            "width": 23.778,
+            "x": 529.256,
+            "y": 31.357
+          },
+          "confidence": null,
+          "id": "p1-i1",
+          "items": [
+            {
+              "bbox": {
+                "h": 9.902,
+                "height": 9.902,
+                "unit": "pt",
+                "w": 23.778,
+                "width": 23.778,
+                "x": 529.256,
+                "y": 31.357
+              },
+              "confidence": null,
+              "label": "page_header",
+              "md": " 103",
+              "source": "native",
+              "type": "text",
+              "value": " 103"
+            }
+          ],
+          "md": " 103",
+          "reading_order": 0,
+          "source": "native",
+          "type": "header",
+          "value": " 103"
+        },
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.9938
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0049
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0006
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 197.596,
+            "height": 197.596,
+            "unit": "pt",
+            "w": 496.73,
+            "width": 496.73,
+            "x": 44.802,
+            "y": 79.088
+          },
+          "caption": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)\n0\n50\n100\n150\n200\n250\n300\n350\n400\n450\n500\nAge -standardised mortality rate per 100 000 population\nTotal\nMen\nWomen",
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": "document_caption",
+          "classification": {
+            "class_name": "bar_chart",
+            "confidence": 0.9938
+          },
+          "confidence": 0.6926,
+          "content_type": "chart",
+          "detected_text": true,
+          "id": "p1-i2",
+          "include_ocr_in_primary": true,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 29.6,
+                "width": 29.6,
+                "x": 155.602,
+                "y": 84.288
+              },
+              "confidence": 0.6147,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "a Total",
+              "value": "a Total",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 17.0,
+                "width": 17.0,
+                "x": 289.402,
+                "y": 84.288
+              },
+              "confidence": 0.9403,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "@ Men",
+              "value": "@ Men",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 26.2,
+                "width": 26.2,
+                "x": 410.602,
+                "y": 84.288
+              },
+              "confidence": 0.4615,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Women",
+              "value": "Women",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.2,
+                "height": 7.2,
+                "unit": "pt",
+                "w": 148.6,
+                "width": 148.6,
+                "x": 45.402,
+                "y": 102.088
+              },
+              "confidence": 0.9523,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Age-standardised mortality rate per 100 000 population",
+              "value": "Age-standardised mortality rate per 100 000 population",
+              "word_count": 7
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 112.888
+              },
+              "confidence": 0.9695,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "500",
+              "value": "500",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 47.802,
+                "y": 125.288
+              },
+              "confidence": 0.9672,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "450",
+              "value": "450",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 121.6,
+                "height": 121.6,
+                "unit": "pt",
+                "w": 469.2,
+                "width": 469.2,
+                "x": 68.002,
+                "y": 128.888
+              },
+              "confidence": 0.3952,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "sii i",
+              "value": "sii i",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 128.6,
+                "height": 128.6,
+                "unit": "pt",
+                "w": 472.8,
+                "width": 472.8,
+                "x": 68.002,
+                "y": 128.888
+              },
+              "confidence": 0.432,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "tii i",
+              "value": "tii i",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 47.802,
+                "y": 137.688
+              },
+              "confidence": 0.9675,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "400",
+              "value": "400",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 150.088
+              },
+              "confidence": 0.9533,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "350",
+              "value": "350",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 162.488
+              },
+              "confidence": 0.9679,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "300",
+              "value": "300",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 174.888
+              },
+              "confidence": 0.9683,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "250",
+              "value": "250",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.8,
+                "width": 9.8,
+                "x": 48.002,
+                "y": 187.288
+              },
+              "confidence": 0.9701,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "200",
+              "value": "200",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 48.402,
+                "y": 199.488
+              },
+              "confidence": 0.9651,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "150",
+              "value": "150",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 48.402,
+                "y": 211.888
+              },
+              "confidence": 0.967,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "100",
+              "value": "100",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 51.402,
+                "y": 224.288
+              },
+              "confidence": 0.9696,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "50",
+              "value": "50",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.8,
+                "height": 5.8,
+                "unit": "pt",
+                "w": 3.0,
+                "width": 3.0,
+                "x": 54.802,
+                "y": 236.688
+              },
+              "confidence": 0.9698,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "0",
+              "value": "0",
+              "word_count": 1
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 20.6,
+                "height": 20.6,
+                "unit": "pt",
+                "w": 64.0,
+                "width": 64.0,
+                "x": 233.202,
+                "y": 241.888
+              },
+              "confidence": 0.3262,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "¥ EF OS Gh “she",
+              "value": "¥ EF OS Gh “she",
+              "word_count": 5
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 23.0,
+                "height": 23.0,
+                "unit": "pt",
+                "w": 113.8,
+                "width": 113.8,
+                "x": 162.202,
+                "y": 242.688
+              },
+              "confidence": 0.3714,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ee cig oe ro se ©",
+              "value": "ee cig oe ro se ©",
+              "word_count": 6
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 19.8,
+                "height": 19.8,
+                "unit": "pt",
+                "w": 39.8,
+                "width": 39.8,
+                "x": 382.402,
+                "y": 242.688
+              },
+              "confidence": 0.1889,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Le ne",
+              "value": "Le ne",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 16.8,
+                "height": 16.8,
+                "unit": "pt",
+                "w": 33.8,
+                "width": 33.8,
+                "x": 300.802,
+                "y": 242.888
+              },
+              "confidence": 0.3605,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "FSS",
+              "value": "FSS",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.8,
+                "height": 7.8,
+                "unit": "pt",
+                "w": 5.2,
+                "width": 5.2,
+                "x": 514.402,
+                "y": 242.888
+              },
+              "confidence": 0.0,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "S",
+              "value": "S",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 9.2,
+                "height": 9.2,
+                "unit": "pt",
+                "w": 21.8,
+                "width": 21.8,
+                "x": 65.402,
+                "y": 243.488
+              },
+              "confidence": 0.5923,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "S ge",
+              "value": "S ge",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 14.8,
+                "height": 14.8,
+                "unit": "pt",
+                "w": 25.8,
+                "width": 25.8,
+                "x": 335.002,
+                "y": 243.488
+              },
+              "confidence": 0.372,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "* Ps",
+              "value": "* Ps",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 25.0,
+                "height": 25.0,
+                "unit": "pt",
+                "w": 54.8,
+                "width": 54.8,
+                "x": 454.602,
+                "y": 243.488
+              },
+              "confidence": 0.2634,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "e ‘ SPs",
+              "value": "e ‘ SPs",
+              "word_count": 3
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 15.6,
+                "height": 15.6,
+                "unit": "pt",
+                "w": 28.4,
+                "width": 28.4,
+                "x": 135.402,
+                "y": 243.688
+              },
+              "confidence": 0.2552,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "& Ss",
+              "value": "& Ss",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 13.0,
+                "height": 13.0,
+                "unit": "pt",
+                "w": 28.4,
+                "width": 28.4,
+                "x": 423.002,
+                "y": 243.888
+              },
+              "confidence": 0.6408,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ow”",
+              "value": "ow”",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 11.6,
+                "height": 11.6,
+                "unit": "pt",
+                "w": 16.2,
+                "width": 16.2,
+                "x": 90.202,
+                "y": 244.088
+              },
+              "confidence": 0.0684,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Se <",
+              "value": "Se <",
+              "word_count": 2
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.6,
+                "height": 9.6,
+                "unit": "pt",
+                "w": 10.0,
+                "width": 10.0,
+                "x": 105.202,
+                "y": 244.088
+              },
+              "confidence": 0.1908,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "eA",
+              "value": "eA",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.6,
+                "height": 7.6,
+                "unit": "pt",
+                "w": 8.0,
+                "width": 8.0,
+                "x": 177.202,
+                "y": 244.088
+              },
+              "confidence": 0.4905,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "we",
+              "value": "we",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.4,
+                "height": 9.4,
+                "unit": "pt",
+                "w": 9.4,
+                "width": 9.4,
+                "x": 189.402,
+                "y": 244.088
+              },
+              "confidence": 0.1066,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "ve",
+              "value": "ve",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 14.8,
+                "height": 14.8,
+                "unit": "pt",
+                "w": 31.6,
+                "width": 31.6,
+                "x": 357.202,
+                "y": 244.088
+              },
+              "confidence": 0.3404,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "Stig",
+              "value": "Stig",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 10.0,
+                "height": 10.0,
+                "unit": "pt",
+                "w": 19.8,
+                "width": 19.8,
+                "x": 387.002,
+                "y": 244.088
+              },
+              "confidence": 0.3019,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "es",
+              "value": "es",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 7.4,
+                "height": 7.4,
+                "unit": "pt",
+                "w": 7.2,
+                "width": 7.2,
+                "x": 119.402,
+                "y": 244.888
+              },
+              "confidence": 0.022,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "S",
+              "value": "S",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 10.2,
+                "height": 10.2,
+                "unit": "pt",
+                "w": 17.6,
+                "width": 17.6,
+                "x": 509.602,
+                "y": 248.888
+              },
+              "confidence": 0.2623,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "mS",
+              "value": "mS",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 5.2,
+                "width": 5.2,
+                "x": 298.202,
+                "y": 251.088
+              },
+              "confidence": 0.4938,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ES",
+              "value": "ES",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.6,
+                "height": 7.6,
+                "unit": "pt",
+                "w": 8.6,
+                "width": 8.6,
+                "x": 53.602,
+                "y": 254.488
+              },
+              "confidence": 0.6106,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "w",
+              "value": "w",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 11.2,
+                "height": 11.2,
+                "unit": "pt",
+                "w": 12.0,
+                "width": 12.0,
+                "x": 410.202,
+                "y": 258.688
+              },
+              "confidence": 0.4662,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Ss",
+              "value": "Ss",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 11.0,
+                "height": 11.0,
+                "unit": "pt",
+                "w": 12.8,
+                "width": 12.8,
+                "x": 445.402,
+                "y": 264.888
+              },
+              "confidence": 0.469,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "RN",
+              "value": "RN",
+              "word_count": 1
+            }
+          ],
+          "md": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)\n0\n50\n100\n150\n200\n250\n300\n350\n400\n450\n500\nAge -standardised mortality rate per 100 000 population\nTotal\nMen\nWomen\na Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.9938,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0049,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0006,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "parse_concerns": [
+            "chart_values_not_structured"
+          ],
+          "raw_ocr_text": "a Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\nsii i\ntii i\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nLe ne\nFSS\nS\nS ge\n* Ps\ne ‘ SPs\n& Ss\now”\nSe <\neA\nwe\nve\nStig\nes\nmS\nES\nw\nSs\nRN",
+          "reading_order": 1,
+          "region_role": "content_region",
+          "source": "ocr",
+          "type": "chart",
+          "value": "Figure 3.9. Cancer mortality in EU countries by gender, 2021 (or nearest year)\n0\n50\n100\n150\n200\n250\n300\n350\n400\n450\n500\nAge -standardised mortality rate per 100 000 population\nTotal\nMen\nWomen\na Total\n@ Men\nWomen\nAge-standardised mortality rate per 100 000 population\n500\n450\n400\n350\n300\n250\n200\n150\n100\n50\n0\n¥ EF OS Gh “she\nee cig oe ro se ©\nS ge\now”\nwe\nES\nw\nSs\nRN",
+          "warnings": []
+        },
+        {
+          "bbox": {
+            "h": 18.155,
+            "height": 18.155,
+            "unit": "pt",
+            "w": 367.773,
+            "width": 367.773,
+            "x": 42.556,
+            "y": 286.681
+          },
+          "confidence": null,
+          "id": "p1-i3",
+          "label": "text",
+          "md": "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2).",
+          "reading_order": 2,
+          "source": "native",
+          "type": "text",
+          "value": "Note: The EU average is weighted. Data for the United Kingdom refer to 2020 and have been calculated by the OECD. Source: Eurostat (hlth_cd_asdr2)."
+        },
+        {
+          "bbox": {
+            "h": 9.0,
+            "height": 9.0,
+            "unit": "pt",
+            "w": 145.719,
+            "width": 145.719,
+            "x": 407.066,
+            "y": 310.134
+          },
+          "confidence": null,
+          "id": "p1-i4",
+          "label": "text",
+          "md": "StatLink 2 https://stat.link/hufsd5",
+          "reading_order": 3,
+          "source": "native",
+          "type": "text",
+          "value": "StatLink 2 https://stat.link/hufsd5"
+        },
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.9891
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0078
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0012
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0005
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0003
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0002
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0001
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 201.81,
+            "height": 201.81,
+            "unit": "pt",
+            "w": 491.64,
+            "width": 491.64,
+            "x": 50.629,
+            "y": 352.723
+          },
+          "caption": "Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21\nBladder\nBreast\nCervix\nuteri\nColorectum\nLeukaemia\nLiver\nOvary\nPancreas\nProstate\nSkin\nStomach\nBrain\nLung\n-40%\n-30%\n-20%\n-10%\n0%\n10%\n20%\n0\n10\n20\n30\n40\n50\nMortality in 2021 per 100 000 population\nPercentage change in mortality rate 2011\n-21",
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": "document_caption",
+          "classification": {
+            "class_name": "scatter_plot",
+            "confidence": 0.9891
+          },
+          "confidence": 0.8754,
+          "content_type": "chart",
+          "detected_text": true,
+          "id": "p1-i5",
+          "include_ocr_in_primary": true,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.6,
+                "width": 11.6,
+                "x": 54.029,
+                "y": 354.723
+              },
+              "confidence": 0.9675,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "20%",
+              "value": "20%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 117.4,
+                "width": 117.4,
+                "x": 79.229,
+                "y": 354.723
+              },
+              "confidence": 0.963,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Percentage change in mortality rate 2011-21",
+              "value": "Percentage change in mortality rate 2011-21",
+              "word_count": 6
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.0,
+                "width": 11.0,
+                "x": 54.629,
+                "y": 383.123
+              },
+              "confidence": 0.9639,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "10%",
+              "value": "10%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 68.0,
+                "height": 68.0,
+                "unit": "pt",
+                "w": 186.0,
+                "width": 186.0,
+                "x": 57.429,
+                "y": 388.123
+              },
+              "confidence": 0.0569,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "nw fecneengeneeneene ce :",
+              "value": "nw fecneengeneeneene ce :",
+              "word_count": 4
+            },
+            {
+              "acceptance_note": "accepted_informative_low_confidence_text",
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 292.4,
+                "width": 292.4,
+                "x": 241.629,
+                "y": 411.323
+              },
+              "confidence": 0.4373,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ee ee ee ee",
+              "value": "ee ee ee ee",
+              "word_count": 4
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 49.4,
+                "height": 49.4,
+                "unit": "pt",
+                "w": 160.6,
+                "width": 160.6,
+                "x": 85.229,
+                "y": 421.523
+              },
+              "confidence": 0.2153,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "@ - y\" » ©@",
+              "value": "@ - y\" » ©@",
+              "word_count": 5
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 440.123
+              },
+              "confidence": 0.8205,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-10%",
+              "value": "-10%",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 43.4,
+                "height": 43.4,
+                "unit": "pt",
+                "w": 21.0,
+                "width": 21.0,
+                "x": 147.829,
+                "y": 463.723
+              },
+              "confidence": 0.1831,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "e",
+              "value": "e",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 468.523
+              },
+              "confidence": 0.9206,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-20%",
+              "value": "-20%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 16.0,
+                "width": 16.0,
+                "x": 105.829,
+                "y": 471.323
+              },
+              "confidence": 0.9689,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Ovary",
+              "value": "Ovary",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 16.8,
+                "width": 16.8,
+                "x": 77.229,
+                "y": 476.523
+              },
+              "confidence": 0.9673,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Cervix",
+              "value": "Cervix",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 11.0,
+                "width": 11.0,
+                "x": 80.029,
+                "y": 484.923
+              },
+              "confidence": 0.9624,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "uteri",
+              "value": "uteri",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 497.123
+              },
+              "confidence": 0.9184,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "-30%",
+              "value": "-30%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 13.6,
+                "width": 13.6,
+                "x": 52.029,
+                "y": 525.523
+              },
+              "confidence": 0.529,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "40%",
+              "value": "40%",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.0,
+                "width": 6.0,
+                "x": 162.029,
+                "y": 534.323
+              },
+              "confidence": 0.9674,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "10",
+              "value": "10",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 253.829,
+                "y": 534.323
+              },
+              "confidence": 0.9685,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "20",
+              "value": "20",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 6.4,
+                "width": 6.4,
+                "x": 346.229,
+                "y": 534.323
+              },
+              "confidence": 0.9699,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "30",
+              "value": "30",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 5.6,
+                "height": 5.6,
+                "unit": "pt",
+                "w": 98.8,
+                "width": 98.8,
+                "x": 438.429,
+                "y": 534.323
+              },
+              "confidence": 0.9609,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "40 50",
+              "value": "40 50",
+              "word_count": 2
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 7.0,
+                "height": 7.0,
+                "unit": "pt",
+                "w": 106.4,
+                "width": 106.4,
+                "x": 435.429,
+                "y": 546.123
+              },
+              "confidence": 0.9662,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "Mortality in 2021 per 100 000 population",
+              "value": "Mortality in 2021 per 100 000 population",
+              "word_count": 7
+            }
+          ],
+          "md": "Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21\nBladder\nBreast\nCervix\nuteri\nColorectum\nLeukaemia\nLiver\nOvary\nPancreas\nProstate\nSkin\nStomach\nBrain\nLung\n-40%\n-30%\n-20%\n-10%\n0%\n10%\n20%\n0\n10\n20\n30\n40\n50\nMortality in 2021 per 100 000 population\nPercentage change in mortality rate 2011\n-21\n20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.9891,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0078,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0012,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0005,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0003,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0002,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0001,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "logo",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "parse_concerns": [
+            "chart_values_not_structured"
+          ],
+          "raw_ocr_text": "20%\nPercentage change in mortality rate 2011-21\n10%\nnw fecneengeneeneene ce :\nee ee ee ee\n@ - y\" » ©@\n-10%\ne\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "reading_order": 4,
+          "region_role": "content_region",
+          "source": "ocr",
+          "type": "chart",
+          "value": "Figure 3.10. Change in cancer mortality by cancer site in the EU, 2011-21\nBladder\nBreast\nCervix\nuteri\nColorectum\nLeukaemia\nLiver\nOvary\nPancreas\nProstate\nSkin\nStomach\nBrain\nLung\n-40%\n-30%\n-20%\n-10%\n0%\n10%\n20%\n0\n10\n20\n30\n40\n50\nMortality in 2021 per 100 000 population\nPercentage change in mortality rate 2011\n-21\n20%\nPercentage change in mortality rate 2011-21\n10%\nee ee ee ee\n-10%\n-20%\nOvary\nCervix\nuteri\n-30%\n40%\n10\n20\n30\n40 50\nMortality in 2021 per 100 000 population",
+          "warnings": []
+        },
+        {
+          "bbox": {
+            "h": 170.764,
+            "height": 170.764,
+            "unit": "pt",
+            "w": 461.416,
+            "width": 461.416,
+            "x": 72.626,
+            "y": 357.691
+          },
+          "cells": [],
+          "column_count": 1,
+          "confidence": null,
+          "csv": "Percentage change in mortality rate 2011-21\nPancreas\n\"Brain\nSkin\nProstate Breast\"\n\"Liver\nLung\nBladder Colorectum\nLeukaemia\"\n\"Ovary\nCervix\nuteri\nStomach\"\n\"\"",
+          "embedded_images": [],
+          "engine": "pdfplumber",
+          "html": "<table>\n  <tr>\n    <th>Percentage change in mortality rate 2011-21</th>\n  </tr>\n  <tr>\n    <td>Pancreas</td>\n  </tr>\n  <tr>\n    <td>Brain<br>Skin<br>Prostate Breast</td>\n  </tr>\n  <tr>\n    <td>Liver<br>Lung<br>Bladder Colorectum<br>Leukaemia</td>\n  </tr>\n  <tr>\n    <td>Ovary<br>Cervix<br>uteri<br>Stomach</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n</table>",
+          "id": "p1-i6",
+          "md": "<table>\n  <tr>\n    <th>Percentage change in mortality rate 2011-21</th>\n  </tr>\n  <tr>\n    <td>Pancreas</td>\n  </tr>\n  <tr>\n    <td>Brain<br>Skin<br>Prostate Breast</td>\n  </tr>\n  <tr>\n    <td>Liver<br>Lung<br>Bladder Colorectum<br>Leukaemia</td>\n  </tr>\n  <tr>\n    <td>Ovary<br>Cervix<br>uteri<br>Stomach</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n</table>",
+          "parse_concerns": [
+            "contains_empty_visual_rows"
+          ],
+          "reading_order": 5,
+          "row_bboxes": [
+            {
+              "h": 28.48,
+              "height": 28.48,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 357.691
+            },
+            {
+              "h": 28.48,
+              "height": 28.48,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 386.17
+            },
+            {
+              "h": 28.48,
+              "height": 28.48,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 414.65
+            },
+            {
+              "h": 28.366,
+              "height": 28.366,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 443.129
+            },
+            {
+              "h": 28.48,
+              "height": 28.48,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 471.496
+            },
+            {
+              "h": 28.48,
+              "height": 28.48,
+              "unit": "pt",
+              "w": 461.416,
+              "width": 461.416,
+              "x": 72.626,
+              "y": 499.975
+            }
+          ],
+          "row_count": 6,
+          "rows": [
+            [
+              "Percentage change in mortality rate 2011-21"
+            ],
+            [
+              "Pancreas"
+            ],
+            [
+              "Brain\nSkin\nProstate Breast"
+            ],
+            [
+              "Liver\nLung\nBladder Colorectum\nLeukaemia"
+            ],
+            [
+              "Ovary\nCervix\nuteri\nStomach"
+            ],
+            [
+              ""
+            ]
+          ],
+          "source": "native",
+          "type": "table",
+          "value": [
+            [
+              "Percentage change in mortality rate 2011-21"
+            ],
+            [
+              "Pancreas"
+            ],
+            [
+              "Brain\nSkin\nProstate Breast"
+            ],
+            [
+              "Liver\nLung\nBladder Colorectum\nLeukaemia"
+            ],
+            [
+              "Ovary\nCervix\nuteri\nStomach"
+            ],
+            [
+              ""
+            ]
+          ]
+        },
+        {
+          "bbox": {
+            "h": 28.625,
+            "height": 28.625,
+            "unit": "pt",
+            "w": 512.259,
+            "width": 512.259,
+            "x": 42.556,
+            "y": 560.901
+          },
+          "confidence": null,
+          "id": "p1-i7",
+          "label": "text",
+          "md": "Note: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality rate in 2021. 'Lung' includes cancers of the lung, trachea, and bronchus. ' Brain ' refers to both brain cancers and central nervous system cancers. The data correspond to the EU27 weighted averages.",
+          "reading_order": 6,
+          "source": "native",
+          "type": "text",
+          "value": "Note: The red bubble signals an increase in mortality during 2011-21 while the green bubbles signal a decrease. The size of the bubbles is proportional to the mortality rate in 2021. 'Lung' includes cancers of the lung, trachea, and bronchus. ' Brain ' refers to both brain cancers and central nervous system cancers. The data correspond to the EU27 weighted averages."
+        },
+        {
+          "bbox": {
+            "h": 7.595,
+            "height": 7.595,
+            "unit": "pt",
+            "w": 106.243,
+            "width": 106.243,
+            "x": 42.556,
+            "y": 592.491
+          },
+          "confidence": null,
+          "id": "p1-i8",
+          "label": "text",
+          "md": "Source: Eurostat (hlth_cd_asdr2).",
+          "reading_order": 7,
+          "source": "native",
+          "type": "text",
+          "value": "Source: Eurostat (hlth_cd_asdr2)."
+        },
+        {
+          "bbox": {
+            "h": 9.0,
+            "height": 9.0,
+            "unit": "pt",
+            "w": 140.094,
+            "width": 140.094,
+            "x": 412.826,
+            "y": 605.264
+          },
+          "confidence": null,
+          "id": "p1-i9",
+          "label": "text",
+          "md": "StatLink 2 https://stat.link/styxji",
+          "reading_order": 8,
+          "source": "native",
+          "type": "text",
+          "value": "StatLink 2 https://stat.link/styxji"
+        },
+        {
+          "bbox": {
+            "h": 7.211,
+            "height": 7.211,
+            "unit": "pt",
+            "w": 275.905,
+            "width": 275.905,
+            "x": 42.556,
+            "y": 740.197
+          },
+          "confidence": null,
+          "id": "p1-i10",
+          "items": [
+            {
+              "bbox": {
+                "h": 7.211,
+                "height": 7.211,
+                "unit": "pt",
+                "w": 275.905,
+                "width": 275.905,
+                "x": 42.556,
+                "y": 740.197
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024",
+              "source": "native",
+              "type": "text",
+              "value": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024"
+            }
+          ],
+          "md": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024",
+          "reading_order": 9,
+          "source": "native",
+          "type": "footer",
+          "value": "HEALTH AT A GLANCE: EUROPE 2024 © OECD/EUROPEAN UNION 2024"
+        }
+      ],
+      "page_height": 793.7009887695312,
+      "page_index": 1,
+      "page_label": "1",
+      "page_number": 1,
+      "page_width": 595.2760009765625,
+      "success": true,
+      "unit": "pt",
+      "warnings": []
+    }
+  ],
+  "processing": {
+    "duration_ms": 7193,
+    "engine": "docling",
+    "input_format": "pdf",
+    "local_processing": true,
+    "native_text_engine": "pypdfium2",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "picture_captioning": {
+      "local_model_available": false,
+      "requested": false
+    },
+    "table_engines": [
+      "docling",
+      "pdfplumber"
+    ],
+    "visual_analysis": {
+      "heading_height_ratio": 1.8,
+      "heading_min_confidence": 0.75,
+      "low_confidence_min_alnum_chars": 8,
+      "pdf_selective_rendering_enabled": true,
+      "picture_classification_threshold": 0.6,
+      "primary_ocr_min_confidence": 0.45,
+      "shared_pipeline": true
+    }
+  },
+  "schema_version": "1.0",
+  "warnings": []
+}

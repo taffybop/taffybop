@@ -1,0 +1,412 @@
+{
+  "approval": {
+    "authorized_on": "2026-08-03",
+    "owner": "project owner/requester",
+    "source": "active Codex thread",
+    "statement": "I also authorize the narrow administrative renewal of the existing P03-US08 latency exception required to permit unrelated Phase 04 table changes."
+  },
+  "authorized_change": {
+    "added_phase04_paths": [
+      "app/services/table_semantics.py",
+      "frontend/lib/table-semantics.ts",
+      "frontend/tests/p04-us01-table-readiness.test.mts",
+      "frontend/tests/p04-us01-table-span-fidelity.test.mts",
+      "frontend/tests/p04-tables.test.mts"
+    ],
+    "allowed_existing_paths": [
+      ".env.example",
+      "app/config.py",
+      "app/services/pipeline.py",
+      "app/services/source_text_alignment.py",
+      "app/services/tables.py",
+      "app/services/text_reconciliation.py",
+      "frontend/app/clearleaf-workspace.tsx",
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py"
+    ],
+    "baseline_code_manifest_sha256": "b5bfab2739f231a57abddf787a6c566c5fddec5b2128bd4892f3682622a06fcc",
+    "baseline_files": {
+      ".env.example": {
+        "path": ".env.example",
+        "sha256": "75025300b1c04355bde352327dae7352461991c09fc5b3c05908dafa1cb6e886",
+        "size_bytes": 4696
+      },
+      "app/config.py": {
+        "path": "app/config.py",
+        "sha256": "3903a634160e5c48f54092f820dbc7129ed941a39d6984212dd635415d0292f3",
+        "size_bytes": 16344
+      },
+      "app/services/pipeline.py": {
+        "path": "app/services/pipeline.py",
+        "sha256": "b6223e52746e334bbd58cafcaedb1462f44e9a037339daacc88736b305078a76",
+        "size_bytes": 171536
+      },
+      "app/services/source_text_alignment.py": {
+        "path": "app/services/source_text_alignment.py",
+        "sha256": "8294ca5258db5f8dfb6d70f87e4ccefc132bb3b60eb6c979490533758d62976b",
+        "size_bytes": 137284
+      },
+      "app/services/tables.py": {
+        "path": "app/services/tables.py",
+        "sha256": "dc889c00eea03ee3506093c6e806966e16f76f02ff941e6476e61c32545d0d42",
+        "size_bytes": 18319
+      },
+      "app/services/text_reconciliation.py": {
+        "path": "app/services/text_reconciliation.py",
+        "sha256": "58d2d3275827d10681b0075d8c6572ca56a290a249276fec27c138245ae9b479",
+        "size_bytes": 179657
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "path": "frontend/app/clearleaf-workspace.tsx",
+        "sha256": "260c00eda83f115695da08aa4294824689fc99cb377f947814e3f4c1cc5f1d94",
+        "size_bytes": 66939
+      },
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py": {
+        "path": "tests/performance/test_p03_us08_running_region_metrics_contract.py",
+        "sha256": "3604bf403b900970414ce8cc86d40bf806958cb0b1cb2d17e776ee404c2b408e",
+        "size_bytes": 162944
+      }
+    },
+    "difference_scope": "unrelated default-off Phase 04 table implementation, tests, rendering, exact replay hooks, source cell geometry extraction, and exact default-off environment examples only",
+    "phase04_only": true,
+    "protected_surfaces": {
+      ".env.example": {
+        "exact_phase04_suffix": "PARSER_TABLES_SPAN_FIDELITY_ENABLED=false\nPARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED=false\nPARSER_TABLES_CANDIDATE_GATE_ENABLED=false\nPARSER_TABLES_MULTI_PAGE_MERGE_ENABLED=false\n",
+        "normalization": "remove only four unique ordered default-false Phase 04 table lines appended immediately after the unchanged running-region line at end of file",
+        "normalized_raw_sha256": "75025300b1c04355bde352327dae7352461991c09fc5b3c05908dafa1cb6e886"
+      },
+      "app/config.py": {
+        "exact_dependency_guard_ast_sha256": [
+          "ba13a09317312017fcaa6d71ece56e4d3eb7eec2eab8f3dc07460d626571d172",
+          "152f3ca40af03604ae2172591f969b90971f6f5ed23cc9208299a3d97e58a98c",
+          "ae53dd82f277dd4e02ca1629a8ac50c81f16b92333e2ed001fc301e76bb6cb01",
+          "d840a17409470f54d30ebd969fe78dc3a6aeb3e5d8a6aa9cc44cc8013e2bd010"
+        ],
+        "normalization": "remove only the four default-false table Settings fields, four exact ordered dependency guard ASTs, and four exact default-false environment bindings",
+        "normalized_ast_sha256": "5066fbcff36b5b90ce35080bf1d386da73e8e28b0c01d956147258f81aa30be0"
+      },
+      "app/services/pipeline.py": {
+        "allowed_function_names": [
+          "_analyze_shared_pages",
+          "_docling_table_item",
+          "_merge_tables",
+          "_normalize_docling_body",
+          "_parse_loaded_document",
+          "_vector_table_item"
+        ],
+        "allowed_import_module": "app.services.table_semantics",
+        "allowed_signature_keywords": [
+          "table_candidate_gate_enabled",
+          "table_evidence_reconciliation_enabled",
+          "table_multi_page_merge_enabled",
+          "table_span_fidelity_enabled"
+        ],
+        "baseline_function_ast_sha256": {
+          "_analyze_shared_pages": "945801e819f0e17c3fcd560ce724747733e824322f613a05093f61fc46437454",
+          "_docling_table_item": "a03b785efcabe07e3863a661dfa4399f2075e26c05ee746cda82fcad665ee2ef",
+          "_merge_tables": "95d79f23a98a54b1cb9b90c697c17d504f97c04bc0a650c65db2fc7199205849",
+          "_normalize_docling_body": "c05a496c1e51c326f6023650b73af411a3660e6ee3ae81a6f7d2a14df1ac7655",
+          "_vector_table_item": "dad67619729d8910f21681a7e81c7b0a7a170f9a96a86106402047b500fd44ce"
+        },
+        "broad_helper_function_names": [
+          "_analyze_shared_pages",
+          "_docling_table_item",
+          "_merge_tables",
+          "_normalize_docling_body",
+          "_vector_table_item"
+        ],
+        "exact_forwarding_call_graph_sha256": "6c548c5e56c65d36a7900674b36fee85d961267f7e724d6c67ad5b7a28ee33b8",
+        "exact_helper_call_graph_sha256": "f0f5e738033a2a2ace3ab5fc3b2e075fbd9047fd74440f5a123852589e62538b",
+        "exact_vector_geometry_function_name": "_parse_loaded_document",
+        "exact_vector_geometry_try_ast_sha256": "dc4e92d5e81d80feed41f2c5a2885c1c1ecd3445a6e8d1896518946851909335",
+        "glue_contract": "exact local table_semantics imports, exact helper call counts and positions, exact assignment forms, exact local or enumerated context-field positional arguments, and exact default-false table flag forwarding only; unrelated table keywords are never normalized away",
+        "normalized_module_ast_sha256": "c213dad6f3c7474674ad68878586dd7c78f86843b4aa2de44d38e7410f7194f7"
+      },
+      "app/services/source_text_alignment.py": {
+        "allowed_function_name": "_refresh_table",
+        "exact_hook": "    table_evidence = table.get(\"table_evidence\")\n    if isinstance(table_evidence, Mapping):\n        from app.services.table_semantics import replay_table_semantics\n\n        replay_table_semantics(table, table_evidence)\n",
+        "normalized_function_ast_sha256": "a150d4d3451ec3863d0c09359df388762fe946b9ebacb3bef8331c5b0732cabf",
+        "normalized_module_ast_sha256": "c907b27fdd3f57839b15e102e9cdfb17250615267072fad9e5135687a7bf43ba",
+        "normalized_raw_sha256": "8294ca5258db5f8dfb6d70f87e4ccefc132bb3b60eb6c979490533758d62976b"
+      },
+      "app/services/table_semantics.py": {
+        "allowed_standard_library_symbols": {
+          "__future__": [
+            "annotations"
+          ],
+          "app.services.tables": [
+            "RawTable"
+          ],
+          "collections": [
+            "defaultdict"
+          ],
+          "collections.abc": [
+            "Mapping",
+            "Sequence"
+          ],
+          "copy": [
+            "deepcopy"
+          ],
+          "csv": [
+            "writer"
+          ],
+          "decimal": [
+            "Decimal",
+            "InvalidOperation"
+          ],
+          "hashlib": [
+            "sha256"
+          ],
+          "html": [
+            "escape"
+          ],
+          "io": [
+            "StringIO"
+          ],
+          "json": [
+            "dumps"
+          ],
+          "math": [
+            "isfinite"
+          ],
+          "re": [
+            "fullmatch",
+            "search",
+            "sub"
+          ],
+          "time": [
+            "perf_counter"
+          ],
+          "typing": [
+            "Any",
+            "Final",
+            "Literal",
+            "TypeAlias",
+            "TypeGuard",
+            "cast"
+          ],
+          "unicodedata": [
+            "normalize"
+          ]
+        },
+        "exact_argument_validation_policies_sha256": "281cc5405dca4c17027da26730a6d2d8b70b02432558a93b021ecb6bd36da977",
+        "exact_argument_validators_sha256": "143a565b44027d1639504db35a2e7f7a739d60ee3ec93ffee0ed27e5cdb84901",
+        "exact_bounded_helper_ast_sha256": {
+          "_assert_canonical_table_json": "653c16e64cf31ab0c6025a8189f3e1a11656ae56dbc82f775e1697baaf0fad59",
+          "_assert_plain_table_value": "fa642daa453acad7c966b99815f6078a29b4452a5fefcae95cf814b893cc3579",
+          "_assert_source_sha256": "ad0f30748b1600b74c3706850e20836c5affacae4e093ceabdb0c849d7dce922",
+          "_bounded_table_iterable": "e029f5063f28481d50de73e975de128d1d660d7d60ba853d2e5caba076da0b55",
+          "_bounded_table_sha256": "5f3a1fd07b6b92139a137eb03ab15b39a049e4f6530cf5b3f317138f0eefd291",
+          "_bounded_table_text": "c89bea2ec622e28935ac5c8ea8a82df77861e3bf978b6bbff99de40244f33e63",
+          "_canonical_table_json_bytes": "b689c3fa89094c1be0780ea6f72ccac5f5868c626e4333846784c2a8cd9eb5cc",
+          "_canonical_table_sha256": "9dc9a1ddbd0eb7ed81d655226b61241d6ad3ab50dcdbf0d4466ed4e450a25a3a",
+          "_check_table_deadline": "b2db6d4a3d33efd667548b537552af04afc7325f533149af47e81c8d6b9c2086",
+          "_copy_raw_table_graph": "df0a93f73901a3696325356a9ef0ae6f5d812076d882584835d8025b7733c6db",
+          "_copy_table_mapping": "a1fd18fbbd60c8dfcf869afd1f0821ecf02cfdf66a782e3f4f7cbafaf588eecf",
+          "_plain_table_length": "0d2b0c253ea4c3c416d216c4042a7aef4107c1c75a5f98d506b80d5f475768f8",
+          "_validate_plain_table_value": "0010423c1b4739e42cbe00ee5947ef41aa21176d6e5ecbabe9e51dc0bcfa2bcd"
+        },
+        "exact_default_off_guard_ast_sha256": {
+          "gate_table_candidates": "9cbe30fcfea3cbc74c8003ea068bfaad6088a859b46ade459abccc8b498bb18f",
+          "merge_continued_tables": "e4968ba3dd3c907d9afcdfa91cb3743cec3c195911db643ed1661c8e366be87e",
+          "prepare_docling_table": "689f1e3be19e14612c509d511251e5ebfbfe992b873ea12e59b6f18892f67e82",
+          "prepare_docling_table_input": "6f60a1f66f5a6f4c6b0e1d2ec58afc0de1610f480f35d102a93562074bc91e87",
+          "prepare_vector_table": "689f1e3be19e14612c509d511251e5ebfbfe992b873ea12e59b6f18892f67e82",
+          "reconcile_table_candidates": "03e74371b784f791ee687fedc58441c6c57865a5b4f838cb7a2dcd6b65519dca",
+          "seal_table_pages": "1c291fc32ca456e523add2eb94984befdd95b30fb95b5529482e4e0199eede5d"
+        },
+        "exact_public_function_set": [
+          "gate_table_candidates",
+          "merge_continued_tables",
+          "prepare_docling_table",
+          "prepare_docling_table_input",
+          "prepare_vector_table",
+          "reconcile_table_candidates",
+          "replace_marked_table_text",
+          "replay_table_semantics",
+          "seal_table_pages"
+        ],
+        "exact_public_signatures_sha256": "9c3a1a4367f97f5a08cf156839993bd98e07402e5a9f467e3045261f28963a50",
+        "opaque_attribute_allowlist": {
+          "owner": [
+            "markdown",
+            "properties",
+            "value"
+          ],
+          "raw_table": [
+            "bbox",
+            "cell_bboxes",
+            "geometry_inferred",
+            "page_index",
+            "parse_concerns",
+            "row_bboxes",
+            "rows"
+          ]
+        },
+        "project_imports_allowed": [
+          "from app.services.tables import RawTable"
+        ],
+        "scan_contract": "all nine exact public functions and default-off returns; copy-return stages rebind validated copies while enumerated in-place stages validate originals, with story-level atomicity and exact canonical JSON serializer gates remaining non-waived; one shared 250ms deadline per public operation; literal-only module state; no borrowed aliases, decorators, classes, nested definitions, comprehensions, reflection, dynamic execution, project imports except the exact RawTable type, network, subprocess, filesystem, or unknown method receivers/callbacks; plain-data copying has depth/node/string/container/cycle/deadline caps, resource-bearing work cannot amplify beneath loops, explicit allocations and growth are cumulative-bounded, and every loop is bounded"
+      },
+      "app/services/tables.py": {
+        "allowed_top_level_nodes": [
+          "RawTable",
+          "_clean_table",
+          "_page_candidates",
+          "extract_vector_tables"
+        ],
+        "atomic_baseline_node_ast_sha256": {
+          "RawTable": "a2f2ccec51154c76644cb370b79950cf6ad67f64c4ac0b53e57c9d92a0dd8ead",
+          "_clean_table": "38ca877fb4ab0a6192c86dd478065a6eb7349bbc34e8f6561f85329f78085c39",
+          "_page_candidates": "df82e25d10e8dd676a8243f4da922ba8a37002ecb6053dfed0e8a24118ce30a2",
+          "extract_vector_tables": "db346da36f00e93a1c7cfabb75e11407d2a9988c56f6a3ba6d9c5303c817d525"
+        },
+        "atomic_geometry_node_ast_sha256": {
+          "RawTable": "0dafc1586a131a11131db4e0894ea61caa732c522a37c6f48defc57173fd21c8",
+          "_clean_table": "9932b9fe544463ad1f445440f28469706b10eb6b1f665cd876727e5543804adf",
+          "_page_candidates": "0b66c2f7d400731baca041eb1c8ffd8bf8d63f424706647f289035b3218a5624",
+          "extract_vector_tables": "e916c77211e82794ff99c6577821bd32921c4aaca0b642a7a3fac230febbfe00"
+        },
+        "baseline_raw_sha256": "dc889c00eea03ee3506093c6e806966e16f76f02ff941e6476e61c32545d0d42",
+        "normalization": "freeze the retained module and accept only the complete predecessor or complete reviewed geometry node vector; mixed states and whole-function wildcards are rejected",
+        "retained_module_ast_sha256": "d7caf061838240af598fcb2f91108410324d776d2a9a5fe22718402c65638372"
+      },
+      "app/services/text_reconciliation.py": {
+        "allowed_function_name": "_ir_replace_owner_text",
+        "exact_hook": "    legacy = owner.properties.get(\"legacy_item\")\n    if isinstance(legacy, Mapping) and isinstance(\n        legacy.get(\"table_evidence\"), Mapping\n    ):\n        from app.services.table_semantics import replace_marked_table_text\n\n        replace_marked_table_text(\n            owner,\n            selected_text=selected_text,\n            replacement_mode=replacement_mode,\n            original_text=original_text,\n        )\n        return\n",
+        "normalized_function_ast_sha256": "98fa8019f38a0ed189a4aec1c5e27adcd6bd9cd0ac453fff6a44281c5f35947d",
+        "normalized_module_ast_sha256": "b532f37de146ccf0c37f6e32e847c97d4885f3535e27351c2ac1f15ffbe942e9",
+        "normalized_raw_sha256": "58d2d3275827d10681b0075d8c6572ca56a290a249276fec27c138245ae9b479"
+      },
+      "frontend/app/clearleaf-workspace.tsx": {
+        "allowed_canonical_table_delegation": "        const matchingPrimaryItems = sourcePage.items.filter(\n          (item) => item.id === block.primary_element_id,\n        );\n        if (matchingPrimaryItems.length !== 1) return canonicalFallback;\n        const primaryItem = matchingPrimaryItems[0];\n        if (\n          typeof primaryItem.type !== \"string\" ||\n          primaryItem.type.toLowerCase() !== \"table\" ||\n          !Object.hasOwn(primaryItem, \"table_evidence\")\n        ) {\n          return canonicalFallback;\n        }\n        return <ContentItemView key={block.id} item={primaryItem} />;\n",
+        "allowed_helper_import": "import { readTableSemantics } from \"@/lib/table-semantics\";\n",
+        "canonical_table_delegation_contract": "after the exact formSemantics branch only; select exactly one sourcePage item by primary_element_id; require string table type and an own table_evidence property; delegate only that item to ContentItemView; otherwise return the same canonicalFallback",
+        "normalized_source_sha256": "5a4c2eb5f692f4cf30725d14d055b78c40fd60fbdd97c5fd906ed1ddbd02e116",
+        "table_block_end": "  if (type === \"list\") {",
+        "table_block_start": "  if (type === \"table\") {"
+      },
+      "frontend/lib/table-semantics.ts": {
+        "exact_exported_runtime_function": "non-async export function readTableSemantics(item)",
+        "scan_contract": "forbid running-region coupling, computed or optional calls and members, member dispatch on call/parenthesized results, dynamic execution/import, CommonJS module/exports, browser/network/storage/resource APIs, constructors, unsafe HTML, resource or event JSX, JSX spreads, and additional runtime exports"
+      },
+      "frontend/tests/p04-us01-table-readiness.test.mts": {
+        "exact_identity": {
+          "path": "frontend/tests/p04-us01-table-readiness.test.mts",
+          "sha256": "ffc15e1ed0511b20a34bdead5342345b521f25e644b705806e2d9060a7d1f817",
+          "size_bytes": 2156
+        },
+        "scope": "required pre-implementation Phase 04 readiness test; identity-pinned and not a frozen P03 manifest member"
+      },
+      "tests/performance/test_p03_us08_running_region_metrics_contract.py": {
+        "baseline_identity": {
+          "path": "tests/performance/test_p03_us08_running_region_metrics_contract.py",
+          "sha256": "3604bf403b900970414ce8cc86d40bf806958cb0b1cb2d17e776ee404c2b408e",
+          "size_bytes": 162944
+        },
+        "candidate_identity": {
+          "path": "tests/performance/test_p03_us08_running_region_metrics_contract.py",
+          "sha256": "3862f5d386f0bf4440da646d1cc7603dedb7f14cf694d275da49a6d9d0c97e75",
+          "size_bytes": 165157
+        },
+        "normalization": "accept only the exact frozen 86-path P03 contract or the identity-bound administrative candidate that keeps that manifest unchanged and separately closes exactly five Phase 04 table-only paths with sixth-path negatives"
+      }
+    },
+    "running_region_behavior_changed": false,
+    "running_region_custody_changed": false,
+    "sealed_exact_paths": {}
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-hardened-renewal.md",
+    "raw_sha256": "bb3107b29f5a01876a64ee0179e1bff32b16bb93ecffa51da2f54c2d65510682",
+    "size_bytes": 25343
+  },
+  "deferred_work": {
+    "required_outcome": "replace this exception with a strict current-code final campaign or explicitly renew it",
+    "scope": [
+      "near-boundary projection latency",
+      "fresh-process RSS measurement stability"
+    ]
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "maximum_overrun_fraction": 0.05,
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "expired_effect": "P03-US08 returns to In Progress and dependent exit claims are blocked",
+    "expires_before": [
+      "production enablement",
+      "running-region semantic or runtime behavior change",
+      "relevant running-region custody change",
+      "authorized Phase 04 scope or path expansion",
+      "hardened grammar or scanner relaxation"
+    ],
+    "review_due_on": "2026-09-02"
+  },
+  "failed_audit_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-renewal-independent-audit.md",
+    "raw_sha256": "4aa0f7e8c26e2f64775a5635d1b6a367045de960222e3fcbb3e57b56e2e48e9d",
+    "size_bytes": 6082
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "hosted_usage": {
+    "hosted_cost_usd": 0,
+    "hosted_requests": 0,
+    "hosted_tokens": 0
+  },
+  "independent_review_02_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-independent-review-02-blocked.md",
+    "raw_sha256": "81b0dbb97f52814d574928045993f18ebb62a4b38ad6669e07b5bc4830ab1b7c",
+    "size_bytes": 2416
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_compatibility",
+    "code_dependency_input_and_fixture_custody",
+    "correctness_and_quality",
+    "deadlines_and_resource_boundaries",
+    "hosted_usage",
+    "output_sizes",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "feature_flag_default": false,
+    "rollback": "disable the flag to skip US08 work and return the exact configured predecessor"
+  },
+  "prior_renewal_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-renewal.json",
+    "raw_sha256": "5abc6cac91184bbd515ea855f49d168c614b53299f4415a29517e38441b9e02b",
+    "semantic_sha256": "84e95a5992ff45df073eaab500fde1185a6fd65affb3445989c2fc7adee32675",
+    "size_bytes": 6007
+  },
+  "record_kind": "p03_us08_hardened_phase04_tables_latency_exception_renewal",
+  "red_team_blocked_review_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-hardened-renewal-red-team-blocked-review.md",
+    "raw_sha256": "4af6a45c8b2137b16629845cd1a02475b87ccde147057b017ed460394903784c",
+    "size_bytes": 3462
+  },
+  "renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-PHASE04-TABLES-HARDENED",
+  "renews_renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260803-PHASE04-TABLES",
+  "schema_version": "1.0",
+  "semantic_sha256": "a8e38c8269e5faf1e03f5bff942dd97b74bea87f6ae26f9c6c175e50ed6eba87",
+  "status": "accepted_with_time_bounded_metrics_exception_renewal",
+  "story": "P03-US08"
+}

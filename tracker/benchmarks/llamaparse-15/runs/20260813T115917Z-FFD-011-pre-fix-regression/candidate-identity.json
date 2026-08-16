@@ -1,0 +1,27 @@
+{
+  "schema_version": "ffd-011-pre-fix-regression-v1",
+  "captured_at_utc": "2026-08-13T11:59:17Z",
+  "source": {
+    "path": "benchmark-expertmodeldata/postal-10k.pdf",
+    "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+    "page_index": 1,
+    "coordinate_unit": "pt"
+  },
+  "authoritative_owner": {
+    "table_item_id": "p1-i3",
+    "row_index": 39,
+    "cell_ids": [
+      "865098cc805668a9a8b7a278ce66ebded5492e1347062aef3196e3fe859a0c48",
+      "d34f5e49f02224e766f36ef2d2464f0f7fe426086dc927e53219efc5f08ee6b5"
+    ]
+  },
+  "surviving_candidate": {
+    "item_id": "p1-i5",
+    "original_ocr_text": "FERS",
+    "published_text": "FERS Federal Employees Retirement System",
+    "bbox": {"x": 61.8, "y": 713.6, "width": 25.4, "height": 7.6, "unit": "pt"},
+    "source_line_id": "line-735bfdb348e8f9f08b73a518",
+    "alignment_selection_id": "alignment-09d8e1d45b920b9c0ed2512d"
+  },
+  "result": "expected pre-fix failure"
+}

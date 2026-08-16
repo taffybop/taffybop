@@ -1,0 +1,1761 @@
+{
+  "case_id": "esg-metrics",
+  "document": {
+    "expert_page_count": 1,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 1,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "esg-metrics.pdf",
+    "source_page_count": 1
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 7,
+        "line": "<td>mwh</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>0.2</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>purchased nonrenewable electricity</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>purchased renewable electricity</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>fuel</td>"
+      },
+      {
+        "count": 3,
+        "line": "</tbody>"
+      },
+      {
+        "count": 3,
+        "line": "</table>"
+      },
+      {
+        "count": 3,
+        "line": "<td>2.4</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>purchased steam</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>purchased cooling</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>%</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>77%</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>&lt;1%</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>8.4</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 7,
+        "line": "<td>mwh</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td></td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>%</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>77%</td>"
+      },
+      {
+        "count": 2,
+        "line": "purchased"
+      },
+      {
+        "count": 2,
+        "line": "nonrenewable"
+      },
+      {
+        "count": 2,
+        "line": "electricity"
+      },
+      {
+        "count": 2,
+        "line": "purchased steam"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.9444444444444444,
+      "item_count": 18,
+      "parse_concern_count": 4,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 6,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 5,
+          "parse_concerns": [
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 10
+        },
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 12,
+          "parse_concerns": [
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 6
+        },
+        {
+          "column_count": 6,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 15,
+          "parse_concerns": [
+            {
+              "details": "col 0 'Year' expects datetime, got 'FY245' in row 1",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "3 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 5
+        }
+      ],
+      "type_counts": {
+        "footer": 1,
+        "heading": 4,
+        "table": 3,
+        "text": 10
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.1,
+      "item_count": 20,
+      "parse_concern_count": 2,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 6,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 5,
+          "parse_concerns": [],
+          "row_count": 11
+        }
+      ],
+      "type_counts": {
+        "chart": 2,
+        "heading": 4,
+        "table": 1,
+        "text": 13
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 4359,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 3189,
+        "candidate_tokens": 489,
+        "extra_token_counts": [
+          [
+            "1",
+            2
+          ],
+          [
+            "11",
+            2
+          ],
+          [
+            "a",
+            1
+          ],
+          [
+            "cy23",
+            1
+          ],
+          [
+            "purchased",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "re",
+            1
+          ],
+          [
+            "ect",
+            1
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "contents",
+            1
+          ],
+          [
+            "71",
+            1
+          ],
+          [
+            "21",
+            1
+          ],
+          [
+            "eos",
+            1
+          ],
+          [
+            "e",
+            1
+          ],
+          [
+            "eo",
+            1
+          ],
+          [
+            "micron",
+            1
+          ],
+          [
+            "sustainability",
+            1
+          ],
+          [
+            "report",
+            1
+          ],
+          [
+            "2025",
+            1
+          ],
+          [
+            "80",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            72
+          ],
+          [
+            "sup",
+            28
+          ],
+          [
+            "tr",
+            22
+          ],
+          [
+            "2",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "table",
+            3
+          ],
+          [
+            "4",
+            3
+          ],
+          [
+            "0",
+            3
+          ],
+          [
+            "th",
+            2
+          ],
+          [
+            "6",
+            2
+          ],
+          [
+            "lt",
+            2
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "5",
+            1
+          ],
+          [
+            "electricity",
+            1
+          ],
+          [
+            "total",
+            1
+          ],
+          [
+            "and",
+            1
+          ],
+          [
+            "reflect",
+            1
+          ],
+          [
+            "year",
+            1
+          ],
+          [
+            "source",
+            1
+          ],
+          [
+            "percentage",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.5082431307243963,
+        "reference_chars": 4359,
+        "reference_tokens": 621,
+        "token_f1": 0.8414414414414414,
+        "token_multiset_overlap": 467,
+        "token_precision": 0.9550102249488752,
+        "token_recall": 0.7520128824476651
+      },
+      "our_dimensions": {
+        "height": 612.0,
+        "unit": "pt",
+        "width": 792.0
+      },
+      "our_item_markdown_chars": 3189,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1877,
+      "source_dimensions": {
+        "height": 612.0,
+        "unit": "pt",
+        "width": 792.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 4359,
+        "candidate_tokens": 621,
+        "extra_token_counts": [
+          [
+            "td",
+            192
+          ],
+          [
+            "tr",
+            43
+          ],
+          [
+            "sup",
+            28
+          ],
+          [
+            "th",
+            14
+          ],
+          [
+            "tbody",
+            6
+          ],
+          [
+            "electricity",
+            6
+          ],
+          [
+            "table",
+            5
+          ],
+          [
+            "purchased",
+            5
+          ],
+          [
+            "6",
+            3
+          ],
+          [
+            "4",
+            3
+          ],
+          [
+            "5",
+            3
+          ],
+          [
+            "renewable",
+            3
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "3",
+            2
+          ],
+          [
+            "cy21",
+            2
+          ],
+          [
+            "fy24",
+            2
+          ],
+          [
+            "nonrenewable",
+            2
+          ],
+          [
+            "year",
+            2
+          ],
+          [
+            "lt",
+            2
+          ],
+          [
+            "energy",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "colspan",
+            1
+          ],
+          [
+            "consumption",
+            1
+          ],
+          [
+            "unit",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "generated",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "site",
+            1
+          ],
+          [
+            "steam",
+            1
+          ],
+          [
+            "cooling",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "e",
+            22
+          ],
+          [
+            "r",
+            8
+          ],
+          [
+            "c",
+            8
+          ],
+          [
+            "n",
+            8
+          ],
+          [
+            "a",
+            6
+          ],
+          [
+            "u",
+            5
+          ],
+          [
+            "t",
+            5
+          ],
+          [
+            "s",
+            5
+          ],
+          [
+            "y",
+            5
+          ],
+          [
+            "it",
+            4
+          ],
+          [
+            "d",
+            4
+          ],
+          [
+            "w",
+            4
+          ],
+          [
+            "h",
+            3
+          ],
+          [
+            "b",
+            3
+          ],
+          [
+            "le",
+            3
+          ],
+          [
+            "l",
+            3
+          ],
+          [
+            "g",
+            3
+          ],
+          [
+            "fy245",
+            2
+          ],
+          [
+            "p",
+            2
+          ],
+          [
+            "el",
+            2
+          ],
+          [
+            "ri",
+            2
+          ],
+          [
+            "m",
+            2
+          ],
+          [
+            "in",
+            2
+          ],
+          [
+            "re",
+            2
+          ],
+          [
+            "energy1",
+            1
+          ],
+          [
+            "unit3",
+            1
+          ],
+          [
+            "cy214",
+            1
+          ],
+          [
+            "ge",
+            1
+          ],
+          [
+            "te",
+            1
+          ],
+          [
+            "o",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.18216756341275941,
+        "reference_chars": 1877,
+        "reference_tokens": 415,
+        "token_f1": 0.527027027027027,
+        "token_multiset_overlap": 273,
+        "token_precision": 0.4396135265700483,
+        "token_recall": 0.6578313253012048
+      },
+      "source_vs_ours": {
+        "candidate_chars": 3189,
+        "candidate_tokens": 489,
+        "extra_token_counts": [
+          [
+            "td",
+            120
+          ],
+          [
+            "tr",
+            21
+          ],
+          [
+            "th",
+            12
+          ],
+          [
+            "purchased",
+            6
+          ],
+          [
+            "electricity",
+            5
+          ],
+          [
+            "1",
+            3
+          ],
+          [
+            "renewable",
+            3
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "3",
+            2
+          ],
+          [
+            "cy21",
+            2
+          ],
+          [
+            "fy24",
+            2
+          ],
+          [
+            "5",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "nonrenewable",
+            2
+          ],
+          [
+            "11",
+            2
+          ],
+          [
+            "energy",
+            1
+          ],
+          [
+            "unit",
+            1
+          ],
+          [
+            "cy23",
+            1
+          ],
+          [
+            "consumption",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "generated",
+            1
+          ],
+          [
+            "on",
+            1
+          ],
+          [
+            "site",
+            1
+          ],
+          [
+            "steam",
+            1
+          ],
+          [
+            "cooling",
+            1
+          ],
+          [
+            "fuel",
+            1
+          ],
+          [
+            "10",
+            1
+          ],
+          [
+            "consumed",
+            1
+          ],
+          [
+            "with",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "e",
+            21
+          ],
+          [
+            "r",
+            8
+          ],
+          [
+            "c",
+            8
+          ],
+          [
+            "n",
+            8
+          ],
+          [
+            "a",
+            5
+          ],
+          [
+            "u",
+            5
+          ],
+          [
+            "t",
+            5
+          ],
+          [
+            "s",
+            5
+          ],
+          [
+            "y",
+            5
+          ],
+          [
+            "2",
+            4
+          ],
+          [
+            "it",
+            4
+          ],
+          [
+            "d",
+            4
+          ],
+          [
+            "w",
+            4
+          ],
+          [
+            "h",
+            3
+          ],
+          [
+            "b",
+            3
+          ],
+          [
+            "le",
+            3
+          ],
+          [
+            "l",
+            3
+          ],
+          [
+            "0",
+            3
+          ],
+          [
+            "g",
+            3
+          ],
+          [
+            "fy245",
+            2
+          ],
+          [
+            "p",
+            2
+          ],
+          [
+            "el",
+            2
+          ],
+          [
+            "ri",
+            2
+          ],
+          [
+            "m",
+            2
+          ],
+          [
+            "in",
+            2
+          ],
+          [
+            "energy1",
+            1
+          ],
+          [
+            "unit3",
+            1
+          ],
+          [
+            "cy214",
+            1
+          ],
+          [
+            "ge",
+            1
+          ],
+          [
+            "te",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.14884742041712404,
+        "reference_chars": 1877,
+        "reference_tokens": 415,
+        "token_f1": 0.6128318584070795,
+        "token_multiset_overlap": 277,
+        "token_precision": 0.5664621676891616,
+        "token_recall": 0.6674698795180722
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 3190,
+      "candidate_tokens": 489,
+      "extra_token_counts": [
+        [
+          "1",
+          2
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "cy23",
+          1
+        ],
+        [
+          "purchased",
+          1
+        ],
+        [
+          "10",
+          1
+        ],
+        [
+          "re",
+          1
+        ],
+        [
+          "ect",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "contents",
+          1
+        ],
+        [
+          "71",
+          1
+        ],
+        [
+          "21",
+          1
+        ],
+        [
+          "eos",
+          1
+        ],
+        [
+          "e",
+          1
+        ],
+        [
+          "eo",
+          1
+        ],
+        [
+          "micron",
+          1
+        ],
+        [
+          "sustainability",
+          1
+        ],
+        [
+          "report",
+          1
+        ],
+        [
+          "2025",
+          1
+        ],
+        [
+          "80",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          72
+        ],
+        [
+          "sup",
+          28
+        ],
+        [
+          "tr",
+          22
+        ],
+        [
+          "2",
+          4
+        ],
+        [
+          "tbody",
+          4
+        ],
+        [
+          "table",
+          3
+        ],
+        [
+          "4",
+          3
+        ],
+        [
+          "0",
+          3
+        ],
+        [
+          "th",
+          2
+        ],
+        [
+          "6",
+          2
+        ],
+        [
+          "lt",
+          2
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "electricity",
+          1
+        ],
+        [
+          "total",
+          1
+        ],
+        [
+          "and",
+          1
+        ],
+        [
+          "reflect",
+          1
+        ],
+        [
+          "year",
+          1
+        ],
+        [
+          "source",
+          1
+        ],
+        [
+          "percentage",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.5082431307243963,
+      "reference_chars": 4359,
+      "reference_tokens": 621,
+      "token_f1": 0.8414414414414414,
+      "token_multiset_overlap": 467,
+      "token_precision": 0.9550102249488752,
+      "token_recall": 0.7520128824476651
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 3190,
+      "candidate_tokens": 489,
+      "extra_token_counts": [
+        [
+          "1",
+          2
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "a",
+          1
+        ],
+        [
+          "cy23",
+          1
+        ],
+        [
+          "purchased",
+          1
+        ],
+        [
+          "10",
+          1
+        ],
+        [
+          "re",
+          1
+        ],
+        [
+          "ect",
+          1
+        ],
+        [
+          "71",
+          1
+        ],
+        [
+          "21",
+          1
+        ],
+        [
+          "eos",
+          1
+        ],
+        [
+          "e",
+          1
+        ],
+        [
+          "eo",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          72
+        ],
+        [
+          "sup",
+          28
+        ],
+        [
+          "tr",
+          22
+        ],
+        [
+          "2",
+          4
+        ],
+        [
+          "table",
+          4
+        ],
+        [
+          "tbody",
+          4
+        ],
+        [
+          "4",
+          3
+        ],
+        [
+          "0",
+          3
+        ],
+        [
+          "th",
+          2
+        ],
+        [
+          "6",
+          2
+        ],
+        [
+          "lt",
+          2
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "number",
+          2
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "electricity",
+          1
+        ],
+        [
+          "total",
+          1
+        ],
+        [
+          "and",
+          1
+        ],
+        [
+          "reflect",
+          1
+        ],
+        [
+          "year",
+          1
+        ],
+        [
+          "source",
+          1
+        ],
+        [
+          "percentage",
+          1
+        ],
+        [
+          "https",
+          1
+        ],
+        [
+          "www",
+          1
+        ],
+        [
+          "micron",
+          1
+        ],
+        [
+          "com",
+          1
+        ],
+        [
+          "sustainability",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.49853181076672104,
+      "reference_chars": 4487,
+      "reference_tokens": 638,
+      "token_f1": 0.8411712511091393,
+      "token_multiset_overlap": 474,
+      "token_precision": 0.9693251533742331,
+      "token_recall": 0.7429467084639498
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 4487,
+      "candidate_tokens": 638,
+      "extra_token_counts": [
+        [
+          "td",
+          192
+        ],
+        [
+          "tr",
+          43
+        ],
+        [
+          "sup",
+          28
+        ],
+        [
+          "th",
+          14
+        ],
+        [
+          "table",
+          6
+        ],
+        [
+          "tbody",
+          6
+        ],
+        [
+          "electricity",
+          6
+        ],
+        [
+          "purchased",
+          5
+        ],
+        [
+          "6",
+          3
+        ],
+        [
+          "4",
+          3
+        ],
+        [
+          "5",
+          3
+        ],
+        [
+          "renewable",
+          3
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "cy21",
+          2
+        ],
+        [
+          "fy24",
+          2
+        ],
+        [
+          "nonrenewable",
+          2
+        ],
+        [
+          "year",
+          2
+        ],
+        [
+          "lt",
+          2
+        ],
+        [
+          "page",
+          2
+        ],
+        [
+          "number",
+          2
+        ],
+        [
+          "energy",
+          1
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "consumption",
+          1
+        ],
+        [
+          "unit",
+          1
+        ],
+        [
+          "7",
+          1
+        ],
+        [
+          "generated",
+          1
+        ],
+        [
+          "on",
+          1
+        ],
+        [
+          "site",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "e",
+          22
+        ],
+        [
+          "r",
+          8
+        ],
+        [
+          "c",
+          8
+        ],
+        [
+          "n",
+          8
+        ],
+        [
+          "a",
+          6
+        ],
+        [
+          "u",
+          5
+        ],
+        [
+          "t",
+          5
+        ],
+        [
+          "s",
+          5
+        ],
+        [
+          "y",
+          5
+        ],
+        [
+          "it",
+          4
+        ],
+        [
+          "d",
+          4
+        ],
+        [
+          "w",
+          4
+        ],
+        [
+          "h",
+          3
+        ],
+        [
+          "b",
+          3
+        ],
+        [
+          "le",
+          3
+        ],
+        [
+          "l",
+          3
+        ],
+        [
+          "g",
+          3
+        ],
+        [
+          "fy245",
+          2
+        ],
+        [
+          "p",
+          2
+        ],
+        [
+          "el",
+          2
+        ],
+        [
+          "ri",
+          2
+        ],
+        [
+          "m",
+          2
+        ],
+        [
+          "in",
+          2
+        ],
+        [
+          "re",
+          2
+        ],
+        [
+          "energy1",
+          1
+        ],
+        [
+          "unit3",
+          1
+        ],
+        [
+          "cy214",
+          1
+        ],
+        [
+          "ge",
+          1
+        ],
+        [
+          "te",
+          1
+        ],
+        [
+          "o",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.17977106398949147,
+      "reference_chars": 1877,
+      "reference_tokens": 415,
+      "token_f1": 0.5318138651471985,
+      "token_multiset_overlap": 280,
+      "token_precision": 0.438871473354232,
+      "token_recall": 0.6746987951807228
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 3190,
+      "candidate_tokens": 489,
+      "extra_token_counts": [
+        [
+          "td",
+          120
+        ],
+        [
+          "tr",
+          21
+        ],
+        [
+          "th",
+          12
+        ],
+        [
+          "purchased",
+          6
+        ],
+        [
+          "electricity",
+          5
+        ],
+        [
+          "1",
+          3
+        ],
+        [
+          "renewable",
+          3
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "cy21",
+          2
+        ],
+        [
+          "fy24",
+          2
+        ],
+        [
+          "5",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "nonrenewable",
+          2
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "energy",
+          1
+        ],
+        [
+          "unit",
+          1
+        ],
+        [
+          "cy23",
+          1
+        ],
+        [
+          "consumption",
+          1
+        ],
+        [
+          "7",
+          1
+        ],
+        [
+          "generated",
+          1
+        ],
+        [
+          "on",
+          1
+        ],
+        [
+          "site",
+          1
+        ],
+        [
+          "steam",
+          1
+        ],
+        [
+          "cooling",
+          1
+        ],
+        [
+          "fuel",
+          1
+        ],
+        [
+          "10",
+          1
+        ],
+        [
+          "consumed",
+          1
+        ],
+        [
+          "with",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "e",
+          21
+        ],
+        [
+          "r",
+          8
+        ],
+        [
+          "c",
+          8
+        ],
+        [
+          "n",
+          8
+        ],
+        [
+          "a",
+          5
+        ],
+        [
+          "u",
+          5
+        ],
+        [
+          "t",
+          5
+        ],
+        [
+          "s",
+          5
+        ],
+        [
+          "y",
+          5
+        ],
+        [
+          "2",
+          4
+        ],
+        [
+          "it",
+          4
+        ],
+        [
+          "d",
+          4
+        ],
+        [
+          "w",
+          4
+        ],
+        [
+          "h",
+          3
+        ],
+        [
+          "b",
+          3
+        ],
+        [
+          "le",
+          3
+        ],
+        [
+          "l",
+          3
+        ],
+        [
+          "0",
+          3
+        ],
+        [
+          "g",
+          3
+        ],
+        [
+          "fy245",
+          2
+        ],
+        [
+          "p",
+          2
+        ],
+        [
+          "el",
+          2
+        ],
+        [
+          "ri",
+          2
+        ],
+        [
+          "m",
+          2
+        ],
+        [
+          "in",
+          2
+        ],
+        [
+          "energy1",
+          1
+        ],
+        [
+          "unit3",
+          1
+        ],
+        [
+          "cy214",
+          1
+        ],
+        [
+          "ge",
+          1
+        ],
+        [
+          "te",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.14884742041712404,
+      "reference_chars": 1877,
+      "reference_tokens": 415,
+      "token_f1": 0.6128318584070795,
+      "token_multiset_overlap": 277,
+      "token_precision": 0.5664621676891616,
+      "token_recall": 0.6674698795180722
+    }
+  }
+}

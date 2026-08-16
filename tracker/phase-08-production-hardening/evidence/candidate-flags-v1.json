@@ -1,0 +1,15 @@
+{
+  "schema_version": "parser-nonproduction-flag-profile-v1",
+  "profile_id": "p08-candidate-controls-v1",
+  "environment": "non_production",
+  "global_kill_switch": false,
+  "disabled_capabilities": [],
+  "enabled_flags": [
+    "deterministic_confidence_enabled",
+    "review_escalation_enabled",
+    "telemetry_enabled",
+    "telemetry_quality_enabled",
+    "telemetry_resources_enabled",
+    "visual_confidence_enabled"
+  ]
+}

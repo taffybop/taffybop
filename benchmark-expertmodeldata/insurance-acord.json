@@ -1,0 +1,969 @@
+{
+  "result_content_metadata": {
+    "grounded_items": {
+      "size_bytes": 70773,
+      "exists": true,
+      "presigned_url": "/assets/demos/parse/results/insurance-acord.sidecar.jsonl"
+    },
+    "xlsx": {
+      "size_bytes": 23451,
+      "exists": true,
+      "presigned_url": "/assets/demos/parse/results/insurance-acord.xlsx"
+    }
+  },
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "                     R                                                                                                                                    DATE (MM/DD/YYYY)\nACORD                                    CERTIFICATE OF LIABILITY INSURANCE\n\n THIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS\n CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES\n BELOW.                                                             THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED\n REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER.\n IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to\n the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the\n certificate holder in lieu of such endorsement(s).\nPRODUCER                                                                              CONTACT\n                                                                                      NAME:\n                                                                                      PHONE                                               FAX\n                                                                                      (A/C, No, Ext):                                     (A/C, No):\n                                                                                      E-MAIL\n                                                                                      ADDRESS:\n                                                                                                         INSURER(S) AFFORDING COVERAGE                     NAIC #\n                                                                                      INSURER A :\nINSURED                                                                               INSURER B :\n                                                                                      INSURER C :\n                                                                                      INSURER D :\n                                                                                      INSURER E :\n                                                                                      INSURER F :\nCOVERAGES                                         CERTIFICATE NUMBER:                                    REVISION NUMBER:\n THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD\n INDICATED.                                                 NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS\n CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS,\n EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS.\nINSR                TYPE OF INSURANCE                   ADDL SUBR    POLICY NUMBER             POLICY EFF  POLICY EXP                          LIMITS\nLTR                                                     INSR WVD                               (MM/DD/YYYY) (MM/DD/YYYY)\n        GENERAL LIABILITY                                                                                                EACH OCCURRENCE                  $\n           COMMERCIAL GENERAL LIABILITY                                                                                  DAMAGE TO RENTED                 $\n                                                                                                                         PREMISES (Ea occurrence)\n                CLAIMS-MADE              OCCUR                                                                           MED EXP (Any one person)         $\n                                                                                                                         PERSONAL & ADV INJURY            $\n                                                                                                                         GENERAL AGGREGATE                $\n        GEN'L AGGREGATE LIMIT APPLIES PER:                                                                               PRODUCTS - COMP/OP AGG           $\n           POLICY                 PRO-   LOC                                                                                                              $\n                                  JECT\n        AUTOMOBILE LIABILITY                                                                                             COMBINED SINGLE LIMIT\n                                                                                                                         (Ea accident)                    $\n           ANY AUTO                                                                                                      BODILY INJURY (Per person)       $\n           ALL OWNED                    SCHEDULED                                                                        BODILY INJURY (Per accident)     $\n           AUTOS                        AUTOS\n           HIRED AUTOS                  NON-OWNED                                                                        PROPERTY DAMAGE                  $\n                                        AUTOS                                                                            (Per accident)\n                                                                                                                                                          $\n           UMBRELLA LIAB                 OCCUR                                                                           EACH OCCURRENCE                  $\n           EXCESS LIAB                   CLAIMS-MADE                                                                     AGGREGATE                        $\n           DED          RETENTION $                                                                                                                       $\n        WORKERS COMPENSATION                                                                                             WC STATU\u0002             OTH-\n        AND EMPLOYERS' LIABILITY                  Y / N                                                                  TORY LIMITS           ER\n        ANY PROPRIETOR/PARTNER/EXECUTIVE                                                                                 E.L. EACH ACCIDENT               $\n        OFFICER/MEMBER EXCLUDED?                           N / A\n        (Mandatory in NH)                                                                                                E.L. DISEASE - EA EMPLOYEE       $\n        If yes, describe under                                                                                           E.L. DISEASE - POLICY LIMIT      $\n        DESCRIPTION OF OPERATIONS below\n\n\n\n\nDESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)\n\n\n\n\n\n\n\n\n\nCERTIFICATE HOLDER     CANCELLATION\n\n                        SHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE\n                        THE  EXPIRATION  DATE   THEREOF,  NOTICE  WILL  BE  DELIVERED  IN\n                        ACCORDANCE WITH THE POLICY PROVISIONS.\n\n                       AUTHORIZED REPRESENTATIVE\n\n\n© 1988-2010 ACORD CORPORATION. All rights reserved.\nACORD 25 (2010/05)    The ACORD name and logo are registered marks of ACORD"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "markdown": "ACORD logo\n\n# CERTIFICATE OF LIABILITY INSURANCE\n\n**DATE (MM/DD/YYYY)**:     \n\nTHIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES BELOW. THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER.\n\n**IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the certificate holder in lieu of such endorsement(s).**\n\n<table>\n  <thead>\n    <tr>\n        <th colspan=\"2\" rowspan=\"4\">PRODUCER</th>\n        <th>CONTACT NAME:</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th>PHONE (A/C, No, Ext):</th>\n        <th>FAX (A/C, No):</th>\n    </tr>\n    <tr>\n        <th>E-MAIL ADDRESS:</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th>INSURER(S) AFFORDING COVERAGE</th>\n        <th>NAIC #</th>\n    </tr>\n    <tr>\n        <th rowspan=\"6\">INSURED</th>\n        <th colspan=\"2\">INSURER A :</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER B :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER C :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER D :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER E :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER F :</th>\n    </tr>\n  </thead>\n</table>\n\n**COVERAGES** | **CERTIFICATE NUMBER:**      | **REVISION NUMBER:**     \n\nTHIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD INDICATED. NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS, EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS.\n\n<table>\n  <thead><tr><th>INSR LTR</th><th>TYPE OF INSURANCE</th><th>ADDL INSR</th><th>SUBR WVD</th><th>POLICY NUMBER</th><th>POLICY EFF (MM/DD/YYYY)</th><th>POLICY EXP (MM/DD/YYYY)</th><th>LIMITS</th></tr></thead>\n  <tbody>\n    <tr><td><strong>GENERAL LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>EACH OCCURRENCE</td><td>$</td></tr>\n    <tr><td>[ ] COMMERCIAL GENERAL LIABILITY</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>DAMAGE TO RENTED PREMISES (Ea occurrence)</td><td>$</td></tr>\n    <tr><td>[ ] CLAIMS-MADE [ ] OCCUR</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>MED EXP (Any one person)</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PERSONAL &amp; ADV INJURY</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>GENERAL AGGREGATE</td><td>$</td></tr>\n    <tr><td>GEN'L AGGREGATE LIMIT APPLIES PER:</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PRODUCTS - COMP/OP AGG</td><td>$</td></tr>\n    <tr><td>[ ] POLICY [ ] PROJECT [ ] LOC</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td><strong>AUTOMOBILE LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>COMBINED SINGLE LIMIT (Ea accident)</td><td>$</td></tr>\n    <tr><td>[ ] ANY AUTO</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>BODILY INJURY (Per person)</td><td>$</td></tr>\n    <tr><td>[ ] ALL OWNED AUTOS [ ] SCHEDULED AUTOS</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>BODILY INJURY (Per accident)</td><td>$</td></tr>\n    <tr><td>[ ] HIRED AUTOS [ ] NON-OWNED AUTOS</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PROPERTY DAMAGE (Per accident)</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td>[ ] UMBRELLA LIAB [ ] OCCUR</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>EACH OCCURRENCE</td><td>$</td></tr>\n    <tr><td>[ ] EXCESS LIAB [ ] CLAIMS-MADE</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>AGGREGATE</td><td>$</td></tr>\n    <tr><td>[ ] DED [ ] RETENTION $</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td><strong>WORKERS COMPENSATION AND EMPLOYERS' LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>[ ] WC STATUTORY LIMITS [ ] OTH-ER</td><td> </td></tr>\n    <tr><td>ANY PROPRIETOR/PARTNER/EXECUTIVE OFFICER/MEMBER EXCLUDED? (Mandatory in NH) If yes, describe under DESCRIPTION OF OPERATIONS below</td><td>[ ] Y / N</td><td>[ ] N/A</td><td> </td><td> </td><td> </td><td>E.L. EACH ACCIDENT</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>E.L. DISEASE - EA EMPLOYEE</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>E.L. DISEASE - POLICY LIMIT</td><td>$</td></tr>\n  </tbody>\n</table>\n\n**DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)**\n    \n\n**CERTIFICATE HOLDER**\n    \n\n**CANCELLATION**\n\nSHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE THE EXPIRATION DATE THEREOF, NOTICE WILL BE DELIVERED IN ACCORDANCE WITH THE POLICY PROVISIONS.\n\n**AUTHORIZED REPRESENTATIVE**\n[signature]",
+        "page_number": 1,
+        "success": true,
+        "footer": "© 1988-2010 ACORD CORPORATION. All rights reserved.\n\nACORD 25 (2010/05) The ACORD name and logo are registered marks of ACORD",
+        "header": null
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "items": [
+          {
+            "md": "ACORD logo",
+            "value": "ACORD logo",
+            "bbox": [
+              {
+                "h": 29.39,
+                "w": 68.85,
+                "x": 21.44,
+                "y": 17.77,
+                "confidence": 0.69,
+                "end_index": 9,
+                "label": "image",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "level": 1,
+            "md": "# CERTIFICATE OF LIABILITY INSURANCE",
+            "value": "CERTIFICATE OF LIABILITY INSURANCE",
+            "bbox": [
+              {
+                "h": 13.89,
+                "w": 328.31,
+                "x": 134.42,
+                "y": 28.27,
+                "confidence": 0.85,
+                "end_index": 35,
+                "label": "doc_title",
+                "start_index": 0
+              }
+            ],
+            "type": "heading"
+          },
+          {
+            "md": "**DATE (MM/DD/YYYY)**:",
+            "value": "DATE (MM/DD/YYYY):",
+            "bbox": [
+              {
+                "h": 6.59,
+                "w": 58.95,
+                "x": 521.28,
+                "y": 26.58,
+                "confidence": 1,
+                "end_index": 21,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "THIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES BELOW. THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER.",
+            "value": "THIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES BELOW. THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER.",
+            "bbox": [
+              {
+                "h": 37.56,
+                "w": 555.58,
+                "x": 27.91,
+                "y": 49.81,
+                "confidence": 0.96,
+                "end_index": 390,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "**IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the certificate holder in lieu of such endorsement(s).**",
+            "value": "IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the certificate holder in lieu of such endorsement(s).",
+            "bbox": [
+              {
+                "h": 28,
+                "w": 555.06,
+                "x": 27.97,
+                "y": 91.14,
+                "confidence": 0.94,
+                "end_index": 334,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "csv": "\"PRODUCERINSURED\",\"PRODUCERINSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :\",\"CONTACT NAME:<br/>PHONE (A/C, No, Ext):<br/>E-MAIL ADDRESS:<br/>INSURER(S) AFFORDING COVERAGE<br/>INSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :\",\"FAX (A/C, No): NAIC # INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :\"",
+            "html": "<table>\n  <thead>\n    <tr>\n        <th colspan=\"2\" rowspan=\"4\">PRODUCER</th>\n        <th>CONTACT NAME:</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th>PHONE (A/C, No, Ext):</th>\n        <th>FAX (A/C, No):</th>\n    </tr>\n    <tr>\n        <th>E-MAIL ADDRESS:</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th>INSURER(S) AFFORDING COVERAGE</th>\n        <th>NAIC #</th>\n    </tr>\n    <tr>\n        <th rowspan=\"6\">INSURED</th>\n        <th colspan=\"2\">INSURER A :</th>\n        <th> </th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER B :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER C :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER D :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER E :</th>\n    </tr>\n    <tr>\n        <th colspan=\"3\">INSURER F :</th>\n    </tr>\n  </thead>\n</table>",
+            "md": "| PRODUCERINSURED | PRODUCERINSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F : | CONTACT NAME:<br/>PHONE (A/C, No, Ext):<br/>E-MAIL ADDRESS:<br/>INSURER(S) AFFORDING COVERAGE<br/>INSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F : | FAX (A/C, No): NAIC # INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F : |\n| --------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |",
+            "rows": [
+              [
+                "PRODUCERINSURED",
+                "PRODUCERINSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :",
+                "CONTACT NAME:<br/>PHONE (A/C, No, Ext):<br/>E-MAIL ADDRESS:<br/>INSURER(S) AFFORDING COVERAGE<br/>INSURER A :<br/>INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :",
+                "FAX (A/C, No): NAIC # INSURER B :<br/>INSURER C :<br/>INSURER D :<br/>INSURER E :<br/>INSURER F :"
+              ]
+            ],
+            "bbox": [
+              {
+                "h": 119.59,
+                "w": 576.5,
+                "x": 18.36,
+                "y": 120.38,
+                "confidence": 0.51,
+                "end_index": 826,
+                "label": "table",
+                "start_index": 0
+              },
+              {
+                "h": 6.58,
+                "w": 33.74,
+                "x": 21.6,
+                "y": 122.58,
+                "confidence": 0.51,
+                "end_index": 9,
+                "label": "text",
+                "start_index": 2
+              },
+              {
+                "h": 6.59,
+                "w": 26.53,
+                "x": 21.6,
+                "y": 182.58,
+                "confidence": 0.51,
+                "end_index": 16,
+                "label": "text",
+                "start_index": 10
+              },
+              {
+                "h": 6.58,
+                "w": 33.74,
+                "x": 21.6,
+                "y": 122.58,
+                "confidence": 0.51,
+                "end_index": 27,
+                "label": "text",
+                "start_index": 20
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 173.1,
+                "confidence": 0.51,
+                "end_index": 38,
+                "label": "text",
+                "start_index": 28
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 185.1,
+                "confidence": 0.51,
+                "end_index": 54,
+                "label": "text",
+                "start_index": 44
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 197.1,
+                "confidence": 0.51,
+                "end_index": 70,
+                "label": "text",
+                "start_index": 60
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 209.1,
+                "confidence": 0.51,
+                "end_index": 86,
+                "label": "text",
+                "start_index": 76
+              },
+              {
+                "h": 6.59,
+                "w": 33.73,
+                "x": 309.6,
+                "y": 221.1,
+                "confidence": 0.51,
+                "end_index": 102,
+                "label": "text",
+                "start_index": 92
+              },
+              {
+                "h": 6.59,
+                "w": 33.4,
+                "x": 309.6,
+                "y": 233.1,
+                "confidence": 0.51,
+                "end_index": 118,
+                "label": "text",
+                "start_index": 108
+              },
+              {
+                "h": 6.58,
+                "w": 28.82,
+                "x": 309.6,
+                "y": 120.06,
+                "confidence": 0.51,
+                "end_index": 128,
+                "label": "text",
+                "start_index": 122
+              },
+              {
+                "h": 6.59,
+                "w": 20.96,
+                "x": 309.6,
+                "y": 132.54,
+                "confidence": 0.51,
+                "end_index": 144,
+                "label": "text",
+                "start_index": 140
+              },
+              {
+                "h": 6.59,
+                "w": 39.62,
+                "x": 309.6,
+                "y": 138.06,
+                "confidence": 0.51,
+                "end_index": 160,
+                "label": "text",
+                "start_index": 146
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 173.1,
+                "confidence": 0.51,
+                "end_index": 230,
+                "label": "text",
+                "start_index": 220
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 185.1,
+                "confidence": 0.51,
+                "end_index": 246,
+                "label": "text",
+                "start_index": 236
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 197.1,
+                "confidence": 0.51,
+                "end_index": 262,
+                "label": "text",
+                "start_index": 252
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 209.1,
+                "confidence": 0.51,
+                "end_index": 278,
+                "label": "text",
+                "start_index": 268
+              },
+              {
+                "h": 6.59,
+                "w": 33.73,
+                "x": 309.6,
+                "y": 221.1,
+                "confidence": 0.51,
+                "end_index": 294,
+                "label": "text",
+                "start_index": 284
+              },
+              {
+                "h": 6.59,
+                "w": 33.4,
+                "x": 309.6,
+                "y": 233.1,
+                "confidence": 0.51,
+                "end_index": 310,
+                "label": "text",
+                "start_index": 300
+              },
+              {
+                "h": 6.59,
+                "w": 11.79,
+                "x": 486,
+                "y": 132.06,
+                "confidence": 0.51,
+                "end_index": 316,
+                "label": "text",
+                "start_index": 314
+              },
+              {
+                "h": 12.11,
+                "w": 27.18,
+                "x": 486,
+                "y": 132.06,
+                "confidence": 0.51,
+                "end_index": 327,
+                "label": "text",
+                "start_index": 314
+              },
+              {
+                "h": 6.7,
+                "w": 16.32,
+                "x": 557.16,
+                "y": 160.89,
+                "confidence": 0.51,
+                "end_index": 334,
+                "label": "text",
+                "start_index": 329
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 185.1,
+                "confidence": 0.51,
+                "end_index": 346,
+                "label": "text",
+                "start_index": 336
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 197.1,
+                "confidence": 0.51,
+                "end_index": 362,
+                "label": "text",
+                "start_index": 352
+              },
+              {
+                "h": 6.59,
+                "w": 34.06,
+                "x": 309.6,
+                "y": 209.1,
+                "confidence": 0.51,
+                "end_index": 378,
+                "label": "text",
+                "start_index": 368
+              },
+              {
+                "h": 6.59,
+                "w": 33.73,
+                "x": 309.6,
+                "y": 221.1,
+                "confidence": 0.51,
+                "end_index": 394,
+                "label": "text",
+                "start_index": 384
+              },
+              {
+                "h": 6.59,
+                "w": 33.4,
+                "x": 309.6,
+                "y": 233.1,
+                "confidence": 0.51,
+                "end_index": 410,
+                "label": "text",
+                "start_index": 400
+              }
+            ],
+            "merged_from_pages": null,
+            "merged_into_page": null,
+            "parse_concerns": [
+              {
+                "details": "2 tables on page",
+                "type": "multi_table_page"
+              }
+            ],
+            "type": "table"
+          },
+          {
+            "md": "**COVERAGES** | **CERTIFICATE NUMBER:**      | **REVISION NUMBER:**",
+            "value": "COVERAGES | CERTIFICATE NUMBER:      | REVISION NUMBER:",
+            "bbox": [
+              {
+                "h": 7.13,
+                "w": 485.93,
+                "x": 22.03,
+                "y": 242.35,
+                "confidence": 0.83,
+                "end_index": 66,
+                "label": "paragraph_title",
+                "start_index": 0
+              },
+              {
+                "h": 9.38,
+                "w": 97.45,
+                "x": 158.4,
+                "y": 242,
+                "confidence": 1,
+                "end_index": 38,
+                "label": "paragraph_title",
+                "start_index": 16
+              },
+              {
+                "h": 9.38,
+                "w": 82.07,
+                "x": 424.8,
+                "y": 242,
+                "confidence": 1,
+                "end_index": 66,
+                "label": "paragraph_title",
+                "start_index": 47
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD INDICATED. NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS, EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS.",
+            "value": "THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD INDICATED. NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS, EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS.",
+            "bbox": [
+              {
+                "h": 33.48,
+                "w": 555.69,
+                "x": 28.15,
+                "y": 253.02,
+                "confidence": 0.93,
+                "end_index": 472,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "csv": "\"INSR LTR\",\"TYPE OF INSURANCE\",\"ADDL INSR\",\"SUBR WVD\",\"POLICY NUMBER\",\"POLICY EFF (MM/DD/YYYY)\",\"POLICY EXP (MM/DD/YYYY)\",\"LIMITS\"\n\"GENERAL LIABILITY\",,,,,,\"EACH OCCURRENCE\",\"$\"\n\"[ ] COMMERCIAL GENERAL LIABILITY\",,,,,,\"DAMAGE TO RENTED PREMISES (Ea occurrence)\",\"$\"\n\"[ ] CLAIMS-MADE [ ] OCCUR\",,,,,,\"MED EXP (Any one person)\",\"$\"\n,,,,,,\"PERSONAL & ADV INJURY\",\"$\"\n,,,,,,\"GENERAL AGGREGATE\",\"$\"\n\"GEN'L AGGREGATE LIMIT APPLIES PER:\",,,,,,\"PRODUCTS - COMP/OP AGG\",\"$\"\n\"[ ] POLICY [ ] PROJECT [ ] LOC\",,,,,,,\"$\"\n\"AUTOMOBILE LIABILITY\",,,,,,\"COMBINED SINGLE LIMIT (Ea accident)\",\"$\"\n\"[ ] ANY AUTO\",,,,,,\"BODILY INJURY (Per person)\",\"$\"\n\"[ ] ALL OWNED AUTOS [ ] SCHEDULED AUTOS\",,,,,,\"BODILY INJURY (Per accident)\",\"$\"\n\"[ ] HIRED AUTOS [ ] NON-OWNED AUTOS\",,,,,,\"PROPERTY DAMAGE (Per accident)\",\"$\"\n,,,,,,,\"$\"\n\"[ ] UMBRELLA LIAB [ ] OCCUR\",,,,,,\"EACH OCCURRENCE\",\"$\"\n\"[ ] EXCESS LIAB [ ] CLAIMS-MADE\",,,,,,\"AGGREGATE\",\"$\"\n\"[ ] DED [ ] RETENTION $\",,,,,,,\"$\"\n\"WORKERS COMPENSATION AND EMPLOYERS' LIABILITY\",,,,,,\"[ ] WC STATUTORY LIMITS [ ] OTH-ER\",\n\"ANY PROPRIETOR/PARTNER/EXECUTIVE OFFICER/MEMBER EXCLUDED? (Mandatory in NH) If yes, describe under DESCRIPTION OF OPERATIONS below\",\"[ ] Y / N\",\"[ ] N/A\",,,,\"E.L. EACH ACCIDENT\",\"$\"\n,,,,,,\"E.L. DISEASE - EA EMPLOYEE\",\"$\"\n,,,,,,\"E.L. DISEASE - POLICY LIMIT\",\"$\"",
+            "html": "<table>\n  <thead><tr><th>INSR LTR</th><th>TYPE OF INSURANCE</th><th>ADDL INSR</th><th>SUBR WVD</th><th>POLICY NUMBER</th><th>POLICY EFF (MM/DD/YYYY)</th><th>POLICY EXP (MM/DD/YYYY)</th><th>LIMITS</th></tr></thead>\n  <tbody>\n    <tr><td><strong>GENERAL LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>EACH OCCURRENCE</td><td>$</td></tr>\n    <tr><td>[ ] COMMERCIAL GENERAL LIABILITY</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>DAMAGE TO RENTED PREMISES (Ea occurrence)</td><td>$</td></tr>\n    <tr><td>[ ] CLAIMS-MADE [ ] OCCUR</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>MED EXP (Any one person)</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PERSONAL &#x26; ADV INJURY</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>GENERAL AGGREGATE</td><td>$</td></tr>\n    <tr><td>GEN'L AGGREGATE LIMIT APPLIES PER:</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PRODUCTS - COMP/OP AGG</td><td>$</td></tr>\n    <tr><td>[ ] POLICY [ ] PROJECT [ ] LOC</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td><strong>AUTOMOBILE LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>COMBINED SINGLE LIMIT (Ea accident)</td><td>$</td></tr>\n    <tr><td>[ ] ANY AUTO</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>BODILY INJURY (Per person)</td><td>$</td></tr>\n    <tr><td>[ ] ALL OWNED AUTOS [ ] SCHEDULED AUTOS</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>BODILY INJURY (Per accident)</td><td>$</td></tr>\n    <tr><td>[ ] HIRED AUTOS [ ] NON-OWNED AUTOS</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>PROPERTY DAMAGE (Per accident)</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td>[ ] UMBRELLA LIAB [ ] OCCUR</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>EACH OCCURRENCE</td><td>$</td></tr>\n    <tr><td>[ ] EXCESS LIAB [ ] CLAIMS-MADE</td><td> </td><td> </td><td> </td><td> </td><td> </td><td>AGGREGATE</td><td>$</td></tr>\n    <tr><td>[ ] DED [ ] RETENTION $</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>$</td></tr>\n    <tr><td><strong>WORKERS COMPENSATION AND EMPLOYERS' LIABILITY</strong></td><td> </td><td> </td><td> </td><td> </td><td> </td><td>[ ] WC STATUTORY LIMITS [ ] OTH-ER</td><td> </td></tr>\n    <tr><td>ANY PROPRIETOR/PARTNER/EXECUTIVE OFFICER/MEMBER EXCLUDED? (Mandatory in NH) If yes, describe under DESCRIPTION OF OPERATIONS below</td><td>[ ] Y / N</td><td>[ ] N/A</td><td> </td><td> </td><td> </td><td>E.L. EACH ACCIDENT</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>E.L. DISEASE - EA EMPLOYEE</td><td>$</td></tr>\n    <tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td>E.L. DISEASE - POLICY LIMIT</td><td>$</td></tr>\n  </tbody>\n</table>",
+            "md": "| INSR LTR                                                                                                                           | TYPE OF INSURANCE | ADDL INSR | SUBR WVD | POLICY NUMBER | POLICY EFF (MM/DD/YYYY) | POLICY EXP (MM/DD/YYYY)                   | LIMITS |\n| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------- | -------- | ------------- | ----------------------- | ----------------------------------------- | ------ |\n| **GENERAL LIABILITY**                                                                                                              |                   |           |          |               |                         | EACH OCCURRENCE                           | $      |\n| \\[ ] COMMERCIAL GENERAL LIABILITY                                                                                                  |                   |           |          |               |                         | DAMAGE TO RENTED PREMISES (Ea occurrence) | $      |\n| \\[ ] CLAIMS-MADE \\[ ] OCCUR                                                                                                        |                   |           |          |               |                         | MED EXP (Any one person)                  | $      |\n|                                                                                                                                    |                   |           |          |               |                         | PERSONAL & ADV INJURY                     | $      |\n|                                                                                                                                    |                   |           |          |               |                         | GENERAL AGGREGATE                         | $      |\n| GEN'L AGGREGATE LIMIT APPLIES PER:                                                                                                 |                   |           |          |               |                         | PRODUCTS - COMP/OP AGG                    | $      |\n| \\[ ] POLICY \\[ ] PROJECT \\[ ] LOC                                                                                                  |                   |           |          |               |                         |                                           | $      |\n| **AUTOMOBILE LIABILITY**                                                                                                           |                   |           |          |               |                         | COMBINED SINGLE LIMIT (Ea accident)       | $      |\n| \\[ ] ANY AUTO                                                                                                                      |                   |           |          |               |                         | BODILY INJURY (Per person)                | $      |\n| \\[ ] ALL OWNED AUTOS \\[ ] SCHEDULED AUTOS                                                                                          |                   |           |          |               |                         | BODILY INJURY (Per accident)              | $      |\n| \\[ ] HIRED AUTOS \\[ ] NON-OWNED AUTOS                                                                                              |                   |           |          |               |                         | PROPERTY DAMAGE (Per accident)            | $      |\n|                                                                                                                                    |                   |           |          |               |                         |                                           | $      |\n| \\[ ] UMBRELLA LIAB \\[ ] OCCUR                                                                                                      |                   |           |          |               |                         | EACH OCCURRENCE                           | $      |\n| \\[ ] EXCESS LIAB \\[ ] CLAIMS-MADE                                                                                                  |                   |           |          |               |                         | AGGREGATE                                 | $      |\n| \\[ ] DED \\[ ] RETENTION $                                                                                                          |                   |           |          |               |                         |                                           | $      |\n| **WORKERS COMPENSATION AND EMPLOYERS' LIABILITY**                                                                                  |                   |           |          |               |                         | \\[ ] WC STATUTORY LIMITS \\[ ] OTH-ER      |        |\n| ANY PROPRIETOR/PARTNER/EXECUTIVE OFFICER/MEMBER EXCLUDED? (Mandatory in NH) If yes, describe under DESCRIPTION OF OPERATIONS below | \\[ ] Y / N        | \\[ ] N/A  |          |               |                         | E.L. EACH ACCIDENT                        | $      |\n|                                                                                                                                    |                   |           |          |               |                         | E.L. DISEASE - EA EMPLOYEE                | $      |\n|                                                                                                                                    |                   |           |          |               |                         | E.L. DISEASE - POLICY LIMIT               | $      |",
+            "rows": [
+              [
+                "INSR LTR",
+                "TYPE OF INSURANCE",
+                "ADDL INSR",
+                "SUBR WVD",
+                "POLICY NUMBER",
+                "POLICY EFF (MM/DD/YYYY)",
+                "POLICY EXP (MM/DD/YYYY)",
+                "LIMITS"
+              ],
+              [
+                "GENERAL LIABILITY",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "EACH OCCURRENCE",
+                "$"
+              ],
+              [
+                "[ ] COMMERCIAL GENERAL LIABILITY",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "DAMAGE TO RENTED PREMISES (Ea occurrence)",
+                "$"
+              ],
+              [
+                "[ ] CLAIMS-MADE [ ] OCCUR",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "MED EXP (Any one person)",
+                "$"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "PERSONAL & ADV INJURY",
+                "$"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "GENERAL AGGREGATE",
+                "$"
+              ],
+              [
+                "GEN'L AGGREGATE LIMIT APPLIES PER:",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "PRODUCTS - COMP/OP AGG",
+                "$"
+              ],
+              [
+                "[ ] POLICY [ ] PROJECT [ ] LOC",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "$"
+              ],
+              [
+                "AUTOMOBILE LIABILITY",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "COMBINED SINGLE LIMIT (Ea accident)",
+                "$"
+              ],
+              [
+                "[ ] ANY AUTO",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "BODILY INJURY (Per person)",
+                "$"
+              ],
+              [
+                "[ ] ALL OWNED AUTOS [ ] SCHEDULED AUTOS",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "BODILY INJURY (Per accident)",
+                "$"
+              ],
+              [
+                "[ ] HIRED AUTOS [ ] NON-OWNED AUTOS",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "PROPERTY DAMAGE (Per accident)",
+                "$"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "$"
+              ],
+              [
+                "[ ] UMBRELLA LIAB [ ] OCCUR",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "EACH OCCURRENCE",
+                "$"
+              ],
+              [
+                "[ ] EXCESS LIAB [ ] CLAIMS-MADE",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "AGGREGATE",
+                "$"
+              ],
+              [
+                "[ ] DED [ ] RETENTION $",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "$"
+              ],
+              [
+                "WORKERS COMPENSATION AND EMPLOYERS' LIABILITY",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "[ ] WC STATUTORY LIMITS [ ] OTH-ER",
+                ""
+              ],
+              [
+                "ANY PROPRIETOR/PARTNER/EXECUTIVE OFFICER/MEMBER EXCLUDED? (Mandatory in NH) If yes, describe under DESCRIPTION OF OPERATIONS below",
+                "[ ] Y / N",
+                "[ ] N/A",
+                "",
+                "",
+                "",
+                "E.L. EACH ACCIDENT",
+                "$"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "E.L. DISEASE - EA EMPLOYEE",
+                "$"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "E.L. DISEASE - POLICY LIMIT",
+                "$"
+              ]
+            ],
+            "bbox": [
+              {
+                "h": 396.35,
+                "w": 577.67,
+                "x": 17.65,
+                "y": 251.95,
+                "confidence": 0.66,
+                "end_index": 5731,
+                "label": "table",
+                "start_index": 0
+              }
+            ],
+            "merged_from_pages": null,
+            "merged_into_page": null,
+            "parse_concerns": [
+              {
+                "details": "2 tables on page",
+                "type": "multi_table_page"
+              }
+            ],
+            "type": "table"
+          },
+          {
+            "md": "**DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)**",
+            "value": "DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)",
+            "bbox": [
+              {
+                "h": 6.59,
+                "w": 384.5,
+                "x": 21.6,
+                "y": 566.58,
+                "confidence": 0.87,
+                "end_index": 126,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "**CERTIFICATE HOLDER**",
+            "value": "CERTIFICATE HOLDER",
+            "bbox": [
+              {
+                "h": 7.35,
+                "w": 92.71,
+                "x": 22.09,
+                "y": 650.8,
+                "confidence": 0.84,
+                "end_index": 21,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "**CANCELLATION**",
+            "value": "CANCELLATION",
+            "bbox": [
+              {
+                "h": 9.37,
+                "w": 66.21,
+                "x": 309.6,
+                "y": 650.36,
+                "confidence": 0.41,
+                "end_index": 15,
+                "label": "form",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "SHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE THE EXPIRATION DATE THEREOF, NOTICE WILL BE DELIVERED IN ACCORDANCE WITH THE POLICY PROVISIONS.",
+            "value": "SHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE THE EXPIRATION DATE THEREOF, NOTICE WILL BE DELIVERED IN ACCORDANCE WITH THE POLICY PROVISIONS.",
+            "bbox": [
+              {
+                "h": 24.37,
+                "w": 266.12,
+                "x": 316.8,
+                "y": 671.67,
+                "confidence": 1,
+                "end_index": 157,
+                "label": "table",
+                "start_index": 0
+              },
+              {
+                "h": 24.37,
+                "w": 266.12,
+                "x": 316.8,
+                "y": 671.67,
+                "confidence": 1,
+                "end_index": 157,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "md": "**AUTHORIZED REPRESENTATIVE**\n[signature]",
+            "value": "AUTHORIZED REPRESENTATIVE\n[signature]",
+            "bbox": [
+              {
+                "h": 5.97,
+                "w": 94.37,
+                "x": 309.14,
+                "y": 710.71,
+                "confidence": 0.83,
+                "end_index": 40,
+                "label": "text",
+                "start_index": 0
+              }
+            ],
+            "type": "text"
+          },
+          {
+            "items": [
+              {
+                "md": "© 1988-2010 ACORD CORPORATION. All rights reserved.",
+                "value": "© 1988-2010 ACORD CORPORATION. All rights reserved.",
+                "bbox": [
+                  {
+                    "h": 8.71,
+                    "w": 230.48,
+                    "x": 359.58,
+                    "y": 745.8,
+                    "confidence": 0.86,
+                    "end_index": 50,
+                    "label": "footer",
+                    "start_index": 0
+                  }
+                ],
+                "type": "text"
+              },
+              {
+                "md": "ACORD 25 (2010/05) The ACORD name and logo are registered marks of ACORD",
+                "value": "ACORD 25 (2010/05) The ACORD name and logo are registered marks of ACORD",
+                "bbox": [
+                  {
+                    "h": 8.99,
+                    "w": 81.33,
+                    "x": 21.14,
+                    "y": 757.76,
+                    "confidence": 0.77,
+                    "end_index": 17,
+                    "label": "footer",
+                    "start_index": 0
+                  },
+                  {
+                    "h": 9.1,
+                    "w": 238.69,
+                    "x": 186.29,
+                    "y": 757.52,
+                    "confidence": 0.86,
+                    "end_index": 71,
+                    "label": "footer",
+                    "start_index": 19
+                  }
+                ],
+                "type": "text"
+              }
+            ],
+            "md": "© 1988-2010 ACORD CORPORATION. All rights reserved.\n\nACORD 25 (2010/05) The ACORD name and logo are registered marks of ACORD",
+            "bbox": [
+              {
+                "h": 20.95,
+                "w": 568.91,
+                "x": 21.14,
+                "y": 745.8,
+                "confidence": null,
+                "end_index": null,
+                "label": null,
+                "start_index": null
+              }
+            ],
+            "type": "footer"
+          }
+        ],
+        "page_height": 792,
+        "page_number": 1,
+        "page_width": 612,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.963,
+        "cost_optimized": false,
+        "original_orientation_angle": 0,
+        "printed_page_number": null,
+        "slide_section_name": null,
+        "speaker_notes": null,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "images": [
+      {
+        "filename": "page_1.jpg",
+        "index": 1,
+        "bbox": {
+          "h": 792,
+          "w": 612,
+          "x": 0,
+          "y": 0
+        },
+        "category": "screenshot",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_image_1_v2.jpg",
+        "index": 2,
+        "bbox": {
+          "h": 29,
+          "w": 69,
+          "x": 21,
+          "y": 18
+        },
+        "category": "embedded",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1_image_1_v2.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_table_3_v2.jpg",
+        "index": 3,
+        "bbox": {
+          "h": 86,
+          "w": 578,
+          "x": 17,
+          "y": 658
+        },
+        "category": "layout",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1_table_3_v2.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_table_2_v2.jpg",
+        "index": 4,
+        "bbox": {
+          "h": 120,
+          "w": 576,
+          "x": 18,
+          "y": 120
+        },
+        "category": "layout",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1_table_2_v2.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_table_1_v2.jpg",
+        "index": 5,
+        "bbox": {
+          "h": 277,
+          "w": 576,
+          "x": 18,
+          "y": 288
+        },
+        "category": "layout",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1_table_1_v2.jpg",
+        "size_bytes": null
+      },
+      {
+        "filename": "page_1_table_4_v2.jpg",
+        "index": 6,
+        "bbox": {
+          "h": 396,
+          "w": 578,
+          "x": 18,
+          "y": 252
+        },
+        "category": "layout",
+        "content_type": "image/jpeg",
+        "presigned_url": "/assets/demos/parse/images/insurance-acord/page_1_table_4_v2.jpg",
+        "size_bytes": null
+      }
+    ],
+    "total_count": 6
+  }
+}

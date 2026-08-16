@@ -1,0 +1,190 @@
+- link "Skip to workspace":
+  - /url: "#workspace-main"
+- banner:
+  - strong: Clearleaf
+  - generic: Document workspace
+  - generic: postal-10k-FFD-011-20260813T151137Z.pdf
+  - emphasis: 81.6 KB
+  - 'generic "Transport: Same-origin API proxy"':
+    - text: Parsed
+  - button "New document":
+    - text: New document
+- button "Choose File"
+- main:
+  - strong: Page-by-page view
+  - generic: Preview and Markdown stay synchronized
+  - navigation "Document pages":
+    - button "Previous page" [disabled]:
+    - spinbutton "Current page number": "1"
+    - generic: of 3
+    - button "Next page":
+    - generic: Printed 2
+  - generic: 3 canonical blocks
+  - region "Document":
+    - generic: Original
+    - heading "Document" [level=2]
+    - button "Zoom out":
+    - generic: Width
+    - button "Zoom in":
+    - button "Fit page to width" [pressed]:
+    - button "Fit entire page":
+    - link "Open original document":
+      - /url: blob:http://localhost:3000/da956c9b-0ba2-4c0f-9ede-bf92dab5130e
+    - generic "PDF page 1":
+      - generic: "GLOSSARY OF ACRONYMS AND DEFINED TERMS The following are definitions of some of the terms or acronyms that may be used throughout this report: Term or Acronym Definition AED Advanced Electronic Data Annual Report Annual Report on Form 10-K AFC Audit and Finance Committee of the Board of Governors AFL-CIO American Federation of Labor and Congress of Industrial Organizations APWU American Postal Workers Union, AFL-CIO ASC Accounting Standards Codification ASU Accounting Standards Update Board Board of Governors of the United States Postal Service Board of Actuaries Board of Actuaries of the Civil Service Retirement System CARES Act Coronavirus Aid, Relief, and Economic Security Act , enacted as Public Law 116-136 CBP U.S. Customs and Border Protection CEO Chief Executive Officer CFO Chief Financial Officer CHRO Chief Human Resources Officer CIO Chief Information Officer CISO Chief Information Security Office COFA Compacts of Free Association COLA(s) Cost-of-living adjustment(s) COO Chief Operating Officer COR House Committee on Oversight and Reform COVID-19 Coronavirus CPI Consumer Price Index CPI-U Consumer Price Index for All Urban Consumers CPI-W Consumer Price Index for Urban Wage Earners and Clerical Workers CSRDF Civil Service Retirement and Disability Fund CSRS Civil Service Retirement System DOL U.S. Department of Labor DPMG Deputy Postmaster General ECRC Executive Cyber Risk Committee EEOC U.S. Equal Employment Opportunity Commission EIS Environmental Impact Statement EPA Environmental Protection Agency Exchange Act Securities and Exchange Act of 1934 , enacted as Public Law 73-291 FAS Freely Associated States FASB Financial Accounting Standards Board FECA Federal Employees' Compensation Act FEGLI Federal Employees Group Life Insurance FEHB Federal Employees Health Benefits FERS Federal Employees Retirement System 2025 Report on Form 10-K United States Postal Service 2"
+    - generic: postal-10k-FFD-011-20260813T151137Z.pdf
+    - button "Choose another"
+  - separator "Resize document and results panes"
+  - region "Results":
+    - generic: Structured
+    - heading "Results" [active] [level=2]
+    - tablist "Result format":
+      - tab "Markdown" [selected]:
+        - text: Markdown
+      - tab "JSON":
+        - text: JSON
+    - button "Copy":
+      - generic: Copy
+    - button "Download":
+      - generic: Download
+    - generic "Page content scope":
+      - button "Body" [pressed]
+      - button "Full"
+    - generic "Markdown view":
+      - button "Rendered" [pressed]:
+        - text: Rendered
+      - button "Source":
+        - text: Source
+    - tabpanel "Markdown":
+      - article "Canonical content for physical page 1":
+        - heading "GLOSSARY OF ACRONYMS AND DEFINED TERMS" [level=1]:
+          - strong: GLOSSARY OF ACRONYMS AND DEFINED TERMS
+        - paragraph: "The following are definitions of some of the terms or acronyms that may be used throughout this report:"
+        - table:
+          - rowgroup:
+            - row "Term or Acronym Definition":
+              - columnheader "Term or Acronym"
+              - columnheader "Definition"
+          - rowgroup:
+            - row "AED Advanced Electronic Data":
+              - cell "AED"
+              - cell "Advanced Electronic Data"
+            - row "Annual Report Annual Report on Form 10-K":
+              - cell "Annual Report"
+              - cell "Annual Report on Form 10-K"
+            - row "AFC Audit and Finance Committee of the Board of Governors":
+              - cell "AFC"
+              - cell "Audit and Finance Committee of the Board of Governors"
+            - row "AFL-CIO American Federation of Labor and Congress of Industrial Organizations":
+              - cell "AFL-CIO"
+              - cell "American Federation of Labor and Congress of Industrial Organizations"
+            - row "APWU American Postal Workers Union, AFL-CIO":
+              - cell "APWU"
+              - cell "American Postal Workers Union, AFL-CIO"
+            - row "ASC Accounting Standards Codification":
+              - cell "ASC"
+              - cell "Accounting Standards Codification"
+            - row "ASU Accounting Standards Update":
+              - cell "ASU"
+              - cell "Accounting Standards Update"
+            - row "Board Board of Governors of the United States Postal Service":
+              - cell "Board"
+              - cell "Board of Governors of the United States Postal Service"
+            - row "Board of Actuaries Board of Actuaries of the Civil Service Retirement System":
+              - cell "Board of Actuaries"
+              - cell "Board of Actuaries of the Civil Service Retirement System"
+            - row "CARES Act Coronavirus Aid, Relief, and Economic Security Act , enacted as Public Law 116-136":
+              - cell "CARES Act"
+              - cell "Coronavirus Aid, Relief, and Economic Security Act , enacted as Public Law 116-136"
+            - row "CBP U.S. Customs and Border Protection":
+              - cell "CBP"
+              - cell "U.S. Customs and Border Protection"
+            - row "CEO Chief Executive Officer":
+              - cell "CEO"
+              - cell "Chief Executive Officer"
+            - row "CFO Chief Financial Officer":
+              - cell "CFO"
+              - cell "Chief Financial Officer"
+            - row "CHRO Chief Human Resources Officer":
+              - cell "CHRO"
+              - cell "Chief Human Resources Officer"
+            - row "CIO Chief Information Officer":
+              - cell "CIO"
+              - cell "Chief Information Officer"
+            - row "CISO Chief Information Security Office":
+              - cell "CISO"
+              - cell "Chief Information Security Office"
+            - row "COFA Compacts of Free Association":
+              - cell "COFA"
+              - cell "Compacts of Free Association"
+            - row "COLA(s) Cost-of-living adjustment(s)":
+              - cell "COLA(s)"
+              - cell "Cost-of-living adjustment(s)"
+            - row "COO Chief Operating Officer":
+              - cell "COO"
+              - cell "Chief Operating Officer"
+            - row "COR House Committee on Oversight and Reform":
+              - cell "COR"
+              - cell "House Committee on Oversight and Reform"
+            - row "COVID-19 Coronavirus":
+              - cell "COVID-19"
+              - cell "Coronavirus"
+            - row "CPI Consumer Price Index":
+              - cell "CPI"
+              - cell "Consumer Price Index"
+            - row "CPI-U Consumer Price Index for All Urban Consumers":
+              - cell "CPI-U"
+              - cell "Consumer Price Index for All Urban Consumers"
+            - row "CPI-W Consumer Price Index for Urban Wage Earners and Clerical Workers":
+              - cell "CPI-W"
+              - cell "Consumer Price Index for Urban Wage Earners and Clerical Workers"
+            - row "CSRDF Civil Service Retirement and Disability Fund":
+              - cell "CSRDF"
+              - cell "Civil Service Retirement and Disability Fund"
+            - row "CSRS Civil Service Retirement System":
+              - cell "CSRS"
+              - cell "Civil Service Retirement System"
+            - row "DOL U.S. Department of Labor":
+              - cell "DOL"
+              - cell "U.S. Department of Labor"
+            - row "DPMG Deputy Postmaster General":
+              - cell "DPMG"
+              - cell "Deputy Postmaster General"
+            - row "ECRC Executive Cyber Risk Committee":
+              - cell "ECRC"
+              - cell "Executive Cyber Risk Committee"
+            - row "EEOC U.S. Equal Employment Opportunity Commission":
+              - cell "EEOC"
+              - cell "U.S. Equal Employment Opportunity Commission"
+            - row "EIS Environmental Impact Statement":
+              - cell "EIS"
+              - cell "Environmental Impact Statement"
+            - row "EPA Environmental Protection Agency":
+              - cell "EPA"
+              - cell "Environmental Protection Agency"
+            - row "Exchange Act Securities and Exchange Act of 1934 , enacted as Public Law 73-291":
+              - cell "Exchange Act"
+              - cell "Securities and Exchange Act of 1934 , enacted as Public Law 73-291"
+            - row "FAS Freely Associated States":
+              - cell "FAS"
+              - cell "Freely Associated States"
+            - row "FASB Financial Accounting Standards Board":
+              - cell "FASB"
+              - cell "Financial Accounting Standards Board"
+            - row "FECA Federal Employees' Compensation Act":
+              - cell "FECA"
+              - cell "Federal Employees' Compensation Act"
+            - row "FEGLI Federal Employees Group Life Insurance":
+              - cell "FEGLI"
+              - cell "Federal Employees Group Life Insurance"
+            - row "FEHB Federal Employees Health Benefits":
+              - cell "FEHB"
+              - cell "Federal Employees Health Benefits"
+            - row "FERS Federal Employees Retirement System":
+              - cell "FERS"
+              - cell "Federal Employees Retirement System"
+    - generic: Physical page 1 · printed 2
+    - generic: •3 canonical blocks
+    - generic: •Processed in 22.0s
+- generic: Parsing complete. 3 physical pages are available.
+- document

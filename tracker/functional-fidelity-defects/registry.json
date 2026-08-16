@@ -1,0 +1,444 @@
+{
+  "schema_version": "functional-fidelity-defect-registry-v1",
+  "generated_date": "2026-08-14",
+  "evidence_baseline": {
+    "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/source-grounded-final-disposition-v2.json",
+    "sha256": "5bb478ca60486969293ec12e2099987130b33f25b5d37af9bcff649138dd7a17",
+    "remaining_gap_count": 25
+  },
+  "defect_count": 14,
+  "source_gap_count": 25,
+  "closure_validation_policy": {
+    "path": "tracker/functional-fidelity-defects/immediate-affected-benchmark-validation.md",
+    "required_for_every_defect": true,
+    "timing": "after production correction and focused tests, before Done",
+    "scope": "each affected complete benchmark PDF through LlamaParse and the service",
+    "required_surfaces": [
+      "raw_markdown",
+      "actual_rendered_ui_dom_and_snapshots",
+      "full_original_json"
+    ],
+    "comparison_focus": "exact defect oracle, named symptoms, and predeclared collateral boundary",
+    "complete_output_drift_detection_required": true,
+    "complete_output_drift_basis": {
+      "service": "post-fix service artifacts versus bound pre-fix service artifacts",
+      "reference": "fresh LlamaParse artifacts versus selected prior LlamaParse reference"
+    },
+    "manual_review_scope": "the defect boundary and every changed region outside that boundary",
+    "exhaustive_unchanged_whole_pdf_manual_reaudit_required": false,
+    "exhaustive_review_deferred_to": [
+      "applicable_wave_gate",
+      "final_all_15_gate"
+    ],
+    "unit_tests_alone_sufficient": false,
+    "final_all_15_gate_still_required": true
+  },
+  "status_counts": {
+    "Proposed": 12,
+    "Ready": 0,
+    "In Progress": 1,
+    "Validating": 0,
+    "Blocked": 1,
+    "Deferred": 0,
+    "Done": 0,
+    "Superseded": 0
+  },
+  "defects": [
+    {
+      "id": "FFD-001",
+      "title": "Legitimate native visual text is rejected at owner boundaries",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P0",
+      "owners": ["P03-US02", "P02-US06"],
+      "cases": ["health-report", "manufacturing-report", "uber-earnings"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-001-visual-text-owner-boundaries.md",
+      "source_gap_ids": ["SG-014", "SG-017", "SG-024"]
+    },
+    {
+      "id": "FFD-002",
+      "title": "Rotation, fusion, duplication, and ordering defects in visual OCR",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P0",
+      "owners": ["P02-US06"],
+      "cases": ["catastrophe-recap", "clean-energy", "esg-metrics", "component-datasheet"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-002-visual-ocr-normalization.md",
+      "source_gap_ids": ["SG-002", "SG-004", "SG-009", "SG-012"]
+    },
+    {
+      "id": "FFD-003",
+      "title": "Printed chart semantics are not assembled into complete structures",
+      "status": "Proposed",
+      "severity": "Critical",
+      "priority": "P0",
+      "owners": ["P05-US03"],
+      "cases": ["catastrophe-recap", "clean-energy", "egov-survey", "esg-metrics", "health-report", "manufacturing-report", "uber-earnings"],
+      "dependencies": ["FFD-001", "FFD-002"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-003-chart-semantic-assembly.md",
+      "source_gap_ids": ["SG-001", "SG-003", "SG-011", "SG-012", "SG-015", "SG-018", "SG-023"]
+    },
+    {
+      "id": "FFD-004",
+      "title": "Relationship-aware reading order and running/caption ordering are incomplete",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P03-US04", "P03-US08"],
+      "cases": ["clinical-study", "esg-metrics", "manufacturing-report", "uber-earnings"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-004-reading-order-and-running-regions.md",
+      "source_gap_ids": ["SG-005", "SG-013", "SG-019", "SG-025"]
+    },
+    {
+      "id": "FFD-005",
+      "title": "Heading, section, and callout hierarchy is flattened or mistyped",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P03-US07"],
+      "cases": ["clinical-study", "manufacturing-report", "uber-earnings"],
+      "dependencies": ["FFD-004"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-005-heading-and-callout-hierarchy.md",
+      "source_gap_ids": ["SG-006", "SG-019", "SG-025"]
+    },
+    {
+      "id": "FFD-006",
+      "title": "Native inline typography and Unicode semantics are lost",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P02-US01", "P03-US05"],
+      "cases": ["clinical-study", "esg-metrics"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-006-inline-typography-and-unicode.md",
+      "source_gap_ids": ["SG-005", "SG-013"]
+    },
+    {
+      "id": "FFD-007",
+      "title": "Component NOTE private-use glyph lacks safe recovery",
+      "status": "Proposed",
+      "severity": "Minor",
+      "priority": "P3",
+      "owners": ["P02-US01"],
+      "cases": ["component-datasheet"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-007-private-use-glyph-recovery.md",
+      "source_gap_ids": ["SG-010"]
+    },
+    {
+      "id": "FFD-008",
+      "title": "Diagram topology is incomplete for source-visible geometry",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P05-US10", "new-story:component-pinout-topology", "new-story:uber-undirected-grouping"],
+      "cases": ["clinical-study", "component-datasheet", "uber-earnings"],
+      "dependencies": ["FFD-001", "FFD-002", "FFD-005"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-008-diagram-topology.md",
+      "source_gap_ids": ["SG-007", "SG-009", "SG-024"]
+    },
+    {
+      "id": "FFD-009",
+      "title": "Board-photo diagnostic OCR remains noisy in JSON",
+      "status": "Proposed",
+      "severity": "Minor",
+      "priority": "P3",
+      "owners": ["new-story:diagnostic-photo-ocr-if-retained"],
+      "cases": ["component-datasheet"],
+      "dependencies": ["FFD-002"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-009-photo-diagnostic-ocr.md",
+      "source_gap_ids": ["SG-008"]
+    },
+    {
+      "id": "FFD-010",
+      "title": "ACORD lower coverage grid lacks one semantic owner",
+      "status": "Proposed",
+      "severity": "Critical",
+      "priority": "P1",
+      "owners": ["P03-US06", "P04-US04"],
+      "cases": ["insurance-acord"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-010-acord-coverage-grid-ownership.md",
+      "source_gap_ids": ["SG-016"]
+    },
+    {
+      "id": "FFD-011",
+      "title": "Detached FERS paragraph duplicates the glossary row",
+      "status": "Blocked",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P02-US04", "P04-US01"],
+      "cases": ["postal-10k"],
+      "dependencies": ["FFD-014"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-011-postal-detached-fers-duplicate.md",
+      "source_gap_ids": ["SG-020"]
+    },
+    {
+      "id": "FFD-012",
+      "title": "Table-cell italics are not serialized or rendered",
+      "status": "Proposed",
+      "severity": "Minor",
+      "priority": "P2",
+      "owners": ["P03-US05", "P04-US01"],
+      "cases": ["postal-10k"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-012-postal-table-inline-emphasis.md",
+      "source_gap_ids": ["SG-021"]
+    },
+    {
+      "id": "FFD-013",
+      "title": "Source em dashes become ASCII hyphens in table cells",
+      "status": "Proposed",
+      "severity": "Minor",
+      "priority": "P2",
+      "owners": ["P02-US04", "P04-US01"],
+      "cases": ["postal-10k"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-013-postal-table-em-dashes.md",
+      "source_gap_ids": ["SG-022"]
+    },
+    {
+      "id": "FFD-014",
+      "title": "Clinical Crossmark visual overlay blocks terminal table custody",
+      "status": "In Progress",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P04-US01", "P01-US03"],
+      "cases": ["clinical-study"],
+      "dependencies": [],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-014-clinical-crossmark-visual-overlay-custody.md",
+      "source_gap_ids": [],
+      "evidence_classification": "post_baseline_production_control"
+    }
+  ],
+  "source_gaps": [
+    {
+      "id": "SG-001",
+      "case_id": "catastrophe-recap",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/0/remaining_functional_gaps/0",
+      "text": "The chart's explicit legend, axes, selected years, and panel structure are not fully normalized.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/catastrophe-recap/evidence.json"
+    },
+    {
+      "id": "SG-002",
+      "case_id": "catastrophe-recap",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/0/remaining_functional_gaps/1",
+      "text": "Some chart-origin text remains noisy or fused in OCR presentation.",
+      "defect_ids": ["FFD-002"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/catastrophe-recap/evidence.json"
+    },
+    {
+      "id": "SG-003",
+      "case_id": "clean-energy",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/1/remaining_functional_gaps/0",
+      "text": "Six-panel, axis, and legend organization remains incomplete.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/clean-energy/evidence.json"
+    },
+    {
+      "id": "SG-004",
+      "case_id": "clean-energy",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/1/remaining_functional_gaps/1",
+      "text": "Rotated OCR has residual noise, duplication, and ordering defects.",
+      "defect_ids": ["FFD-002"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/clean-energy/evidence.json"
+    },
+    {
+      "id": "SG-005",
+      "case_id": "clinical-study",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/2/remaining_functional_gaps/0",
+      "text": "The sidebar precedes the title and some body text or diacritics remain damaged.",
+      "defect_ids": ["FFD-004", "FFD-006"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/clinical-study/evidence.json"
+    },
+    {
+      "id": "SG-006",
+      "case_id": "clinical-study",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/2/remaining_functional_gaps/1",
+      "text": "Heading and outline hierarchy remain flatter than the source.",
+      "defect_ids": ["FFD-005"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/clinical-study/evidence.json"
+    },
+    {
+      "id": "SG-007",
+      "case_id": "clinical-study",
+      "case_gap_index": 3,
+      "source_pointer": "/cases/2/remaining_functional_gaps/2",
+      "text": "Visible flowchart connector topology remains safely unresolved because endpoint and direction evidence is insufficient.",
+      "defect_ids": ["FFD-008"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/clinical-study/evidence.json"
+    },
+    {
+      "id": "SG-008",
+      "case_id": "component-datasheet",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/3/remaining_functional_gaps/0",
+      "text": "Diagnostic OCR for the page-1 board photograph remains noisy in JSON.",
+      "defect_ids": ["FFD-009"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/component-datasheet/evidence.json"
+    },
+    {
+      "id": "SG-009",
+      "case_id": "component-datasheet",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/3/remaining_functional_gaps/1",
+      "text": "Page-2 pin labels are incomplete or noisy and the pinout's spatial topology is unmodeled.",
+      "defect_ids": ["FFD-002", "FFD-008"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/component-datasheet/evidence.json"
+    },
+    {
+      "id": "SG-010",
+      "case_id": "component-datasheet",
+      "case_gap_index": 3,
+      "source_pointer": "/cases/3/remaining_functional_gaps/2",
+      "text": "A source private-use NOTE glyph is not recovered faithfully.",
+      "defect_ids": ["FFD-007"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/component-datasheet/evidence.json"
+    },
+    {
+      "id": "SG-011",
+      "case_id": "egov-survey",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/4/remaining_functional_gaps/0",
+      "text": "Printed bar labels are not yet associated into complete year/category series.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/egov-survey/evidence.json"
+    },
+    {
+      "id": "SG-012",
+      "case_id": "esg-metrics",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/5/remaining_functional_gaps/0",
+      "text": "The small fiscal-row chart retains noisy user-visible OCR and has no complete series organization.",
+      "defect_ids": ["FFD-002", "FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/esg-metrics/evidence.json"
+    },
+    {
+      "id": "SG-013",
+      "case_id": "esg-metrics",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/5/remaining_functional_gaps/1",
+      "text": "Some superscript and source column/reading-order presentation remains degraded.",
+      "defect_ids": ["FFD-004", "FFD-006"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/esg-metrics/evidence.json"
+    },
+    {
+      "id": "SG-014",
+      "case_id": "health-report",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/7/remaining_functional_gaps/0",
+      "text": "The second chart retains residual OCR noise because its native text does not satisfy strict owner containment.",
+      "defect_ids": ["FFD-001"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/health-report/evidence.json"
+    },
+    {
+      "id": "SG-015",
+      "case_id": "health-report",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/7/remaining_functional_gaps/1",
+      "text": "Axis, category, and series organization remains incomplete for both charts.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/health-report/evidence.json"
+    },
+    {
+      "id": "SG-016",
+      "case_id": "insurance-acord",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/8/remaining_functional_gaps/0",
+      "text": "The lower coverage grid and its table-versus-form ownership were explicitly outside the scoped ACORD correction and remain unresolved.",
+      "defect_ids": ["FFD-010"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/insurance-acord/evidence.json"
+    },
+    {
+      "id": "SG-017",
+      "case_id": "manufacturing-report",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/9/remaining_functional_gaps/0",
+      "text": "Some page-2 OCR remains primary because source text boxes cross visual-owner boundaries.",
+      "defect_ids": ["FFD-001"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/manufacturing-report/evidence.json"
+    },
+    {
+      "id": "SG-018",
+      "case_id": "manufacturing-report",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/9/remaining_functional_gaps/1",
+      "text": "Complete series and curve semantics remain unresolved.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/manufacturing-report/evidence.json"
+    },
+    {
+      "id": "SG-019",
+      "case_id": "manufacturing-report",
+      "case_gap_index": 3,
+      "source_pointer": "/cases/9/remaining_functional_gaps/2",
+      "text": "Residual caption/order and '4.3.' hierarchy presentation differences remain user-visible.",
+      "defect_ids": ["FFD-004", "FFD-005"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/manufacturing-report/evidence.json"
+    },
+    {
+      "id": "SG-020",
+      "case_id": "postal-10k",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/11/remaining_functional_gaps/0",
+      "text": "A detached complete 'FERS Federal Employees Retirement System' paragraph still duplicates the glossary row.",
+      "defect_ids": ["FFD-011"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/postal-10k/evidence.json"
+    },
+    {
+      "id": "SG-021",
+      "case_id": "postal-10k",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/11/remaining_functional_gaps/1",
+      "text": "Four source-italic glossary spans are present in JSON sidecars but are not serialized into table Markdown or rendered emphasis.",
+      "defect_ids": ["FFD-012"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/postal-10k/evidence.json"
+    },
+    {
+      "id": "SG-022",
+      "case_id": "postal-10k",
+      "case_gap_index": 3,
+      "source_pointer": "/cases/11/remaining_functional_gaps/2",
+      "text": "Four page-3 source em dashes serialize as ASCII hyphens.",
+      "defect_ids": ["FFD-013"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/postal-10k/evidence.json"
+    },
+    {
+      "id": "SG-023",
+      "case_id": "uber-earnings",
+      "case_gap_index": 1,
+      "source_pointer": "/cases/14/remaining_functional_gaps/0",
+      "text": "Page-2 charts lack complete series and printed-value organization.",
+      "defect_ids": ["FFD-003"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/uber-earnings/evidence.json"
+    },
+    {
+      "id": "SG-024",
+      "case_id": "uber-earnings",
+      "case_gap_index": 2,
+      "source_pointer": "/cases/14/remaining_functional_gaps/1",
+      "text": "Page-3 unlabeled fan geometry remains unresolved, and the first diagram's primary OCR omits source labels whose boxes cross its owner boundary.",
+      "defect_ids": ["FFD-001", "FFD-008"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/uber-earnings/evidence.json"
+    },
+    {
+      "id": "SG-025",
+      "case_id": "uber-earnings",
+      "case_gap_index": 3,
+      "source_pointer": "/cases/14/remaining_functional_gaps/2",
+      "text": "Heading/date/footer ordering and construction-text filtering retain user-visible differences.",
+      "defect_ids": ["FFD-004", "FFD-005"],
+      "case_evidence_path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/comparison-final-source-grounded-v2/uber-earnings/evidence.json"
+    }
+  ]
+}

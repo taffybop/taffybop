@@ -1,0 +1,569 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-rmfslteo6otbhxp9qj7kv61l50p0",
+    "created_at": "2026-08-13T06:22:08.157894Z",
+    "updated_at": "2026-08-13T06:22:19.328943Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "clean-energy.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "Clean Energy Market Monitor – March 2024                                                                                   Overview\n\nAs clean energy deployment climbed new heights for some key technologies\n                                            Annual deployment of selected clean energy technologies, 2022 and 2023\n     Solar PV                               Wind             Nuclear          Electric cars            Heat pumps          Electrolysers\n500    (GW)           125                   (GW)           10  (GW)     15     (Million)        125    (GW)           700  (MW)\n\n       <u>+85%</u>                          <u>+60%</u>                        <u>+35%</u>             -3%                 <u>+360%</u>\n400                   100                                  8   -30%     12                      100                   560\n\n\n300    75    6    9    75    420\n\n\n200    50    4    6    50    280\n\n\n100    25    2    3    25    140\n\n\n\n2022  2023    2022 2023    2022 2023    2022 2023    2022  2023    2022 2023\n                                                                   IEA 2024. CC BY 4.0.\nNote: “Annual deployment” refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.\n\n                                                                                                             IEA. CC BY 4.0.\n                                PAGE | 11                                                                    Iea"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "# As clean energy deployment climbed new heights for some key technologies\n\nAnnual deployment of selected clean energy technologies, 2022 and 2023\n\n<table>\n  <thead>\n    <tr>\n        <th>Technology</th>\n        <th>Unit</th>\n        <th>2022</th>\n        <th>2023</th>\n        <th>Growth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Solar PV</td>\n        <td>GW</td>\n        <td>227</td>\n        <td>420</td>\n        <td>+85%</td>\n    </tr>\n    <tr>\n        <td>Wind</td>\n        <td>GW</td>\n        <td>75</td>\n        <td>120</td>\n        <td>+60%</td>\n    </tr>\n    <tr>\n        <td>Nuclear</td>\n        <td>GW</td>\n        <td>8</td>\n        <td>5.6</td>\n        <td>-30%</td>\n    </tr>\n    <tr>\n        <td>Electric cars</td>\n        <td>Million</td>\n        <td>10.4</td>\n        <td>14</td>\n        <td>+35%</td>\n    </tr>\n    <tr>\n        <td>Heat pumps</td>\n        <td>GW</td>\n        <td>112</td>\n        <td>109</td>\n        <td>-3%</td>\n    </tr>\n    <tr>\n        <td>Electrolysers</td>\n        <td>MW</td>\n        <td>130</td>\n        <td>600</td>\n        <td>+360%</td>\n    </tr>\n  </tbody>\n</table>\n\nIEA 2024. CC BY 4.0.\n\nNote: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.",
+        "header": "Clean Energy Market Monitor – March 2024\n\nOverview",
+        "footer": "PAGE | 11\n\nIEA logo\n\nIEA. CC BY 4.0.",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "header",
+            "md": "Clean Energy Market Monitor – March 2024\n\nOverview",
+            "bbox": [
+              {
+                "x": 57.71,
+                "y": 47.63,
+                "w": 719.43,
+                "h": 13.23
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "Clean Energy Market Monitor – March 2024",
+                "bbox": [
+                  {
+                    "x": 57.71,
+                    "y": 51.96,
+                    "w": 156.71,
+                    "h": 8.9,
+                    "confidence": 0.95,
+                    "start_index": 0,
+                    "end_index": 39,
+                    "label": "header"
+                  }
+                ],
+                "value": "Clean Energy Market Monitor – March 2024"
+              },
+              {
+                "type": "text",
+                "md": "Overview",
+                "bbox": [
+                  {
+                    "x": 734.34,
+                    "y": 47.63,
+                    "w": 42.8,
+                    "h": 9.09,
+                    "confidence": 0.92,
+                    "start_index": 0,
+                    "end_index": 7,
+                    "label": "header"
+                  }
+                ],
+                "value": "Overview"
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "md": "# As clean energy deployment climbed new heights for some key technologies",
+            "bbox": [
+              {
+                "x": 55.8,
+                "y": 87.82,
+                "w": 585.56,
+                "h": 16.14,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 73,
+                "label": "paragraph_title"
+              }
+            ],
+            "level": 1,
+            "value": "As clean energy deployment climbed new heights for some key technologies"
+          },
+          {
+            "type": "text",
+            "md": "Annual deployment of selected clean energy technologies, 2022 and 2023",
+            "bbox": [
+              {
+                "x": 223.14,
+                "y": 123.55,
+                "w": 395.56,
+                "h": 12.36,
+                "confidence": 0.83,
+                "start_index": 0,
+                "end_index": 69,
+                "label": "text"
+              }
+            ],
+            "value": "Annual deployment of selected clean energy technologies, 2022 and 2023"
+          },
+          {
+            "type": "table",
+            "md": "| Technology    | Unit    | 2022 | 2023 | Growth |\n| ------------- | ------- | ---- | ---- | ------ |\n| Solar PV      | GW      | 227  | 420  | +85%   |\n| Wind          | GW      | 75   | 120  | +60%   |\n| Nuclear       | GW      | 8    | 5.6  | -30%   |\n| Electric cars | Million | 10.4 | 14   | +35%   |\n| Heat pumps    | GW      | 112  | 109  | -3%    |\n| Electrolysers | MW      | 130  | 600  | +360%  |",
+            "bbox": [
+              {
+                "x": 202.66,
+                "y": 171.45,
+                "w": 17,
+                "h": 73.19,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 89.56,
+                "y": 171.67,
+                "w": 18,
+                "h": 73.19,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 89.56,
+                "y": 288.06,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 89.56,
+                "y": 346.25,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 658.11,
+                "y": 346.65,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 89.56,
+                "y": 404.45,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 658.11,
+                "y": 404.65,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 0,
+                "end_index": 406,
+                "label": "text"
+              },
+              {
+                "x": 123.26,
+                "y": 472.68,
+                "w": 60.12,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 235.3,
+                "y": 472.68,
+                "w": 59.95,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 347.54,
+                "y": 472.68,
+                "w": 59.61,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 458.38,
+                "y": 472.68,
+                "w": 59.73,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 570.3,
+                "y": 472.68,
+                "w": 60.1,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 691.68,
+                "y": 472.68,
+                "w": 59.85,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 28,
+                "end_index": 38,
+                "label": "text"
+              },
+              {
+                "x": 431,
+                "y": 149.62,
+                "w": 203.5,
+                "h": 95.25,
+                "confidence": 0.5,
+                "start_index": 38,
+                "end_index": 317,
+                "label": "text"
+              },
+              {
+                "x": 130.87,
+                "y": 149.62,
+                "w": 45.62,
+                "h": 74.6,
+                "confidence": 0.5,
+                "start_index": 104,
+                "end_index": 146,
+                "label": "text"
+              },
+              {
+                "x": 244.89,
+                "y": 149.62,
+                "w": 33.83,
+                "h": 48.72,
+                "confidence": 0.5,
+                "start_index": 120,
+                "end_index": 197,
+                "label": "text"
+              },
+              {
+                "x": 357.57,
+                "y": 149.62,
+                "w": 41,
+                "h": 90.51,
+                "confidence": 0.5,
+                "start_index": 120,
+                "end_index": 248,
+                "label": "text"
+              },
+              {
+                "x": 658.11,
+                "y": 288.66,
+                "w": 18,
+                "h": 15,
+                "confidence": 0.5,
+                "start_index": 137,
+                "end_index": 139,
+                "label": "text"
+              },
+              {
+                "x": 320.21,
+                "y": 171.67,
+                "w": 12.12,
+                "h": 73.19,
+                "confidence": 0.5,
+                "start_index": 145,
+                "end_index": 284,
+                "label": "text"
+              },
+              {
+                "x": 658.11,
+                "y": 149.62,
+                "w": 100.61,
+                "h": 96.05,
+                "confidence": 0.5,
+                "start_index": 359,
+                "end_index": 402,
+                "label": "text"
+              },
+              {
+                "x": 86.42882162674613,
+                "y": 148.5836125771896,
+                "w": 673.3902826956044,
+                "h": 337.4688787253007,
+                "confidence": 0.5,
+                "label": "chart"
+              },
+              {
+                "x": 86.42882162674613,
+                "y": 148.5836125771896,
+                "w": 673.3902826956044,
+                "h": 337.4688787253007,
+                "confidence": 0.5,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Technology",
+                "Unit",
+                "2022",
+                "2023",
+                "Growth"
+              ],
+              [
+                "Solar PV",
+                "GW",
+                "227",
+                "420",
+                "+85%"
+              ],
+              [
+                "Wind",
+                "GW",
+                "75",
+                "120",
+                "+60%"
+              ],
+              [
+                "Nuclear",
+                "GW",
+                "8",
+                "5.6",
+                "-30%"
+              ],
+              [
+                "Electric cars",
+                "Million",
+                "10.4",
+                "14",
+                "+35%"
+              ],
+              [
+                "Heat pumps",
+                "GW",
+                "112",
+                "109",
+                "-3%"
+              ],
+              [
+                "Electrolysers",
+                "MW",
+                "130",
+                "600",
+                "+360%"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Technology</th>\n        <th>Unit</th>\n        <th>2022</th>\n        <th>2023</th>\n        <th>Growth</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>Solar PV</td>\n        <td>GW</td>\n        <td>227</td>\n        <td>420</td>\n        <td>+85%</td>\n    </tr>\n    <tr>\n        <td>Wind</td>\n        <td>GW</td>\n        <td>75</td>\n        <td>120</td>\n        <td>+60%</td>\n    </tr>\n    <tr>\n        <td>Nuclear</td>\n        <td>GW</td>\n        <td>8</td>\n        <td>5.6</td>\n        <td>-30%</td>\n    </tr>\n    <tr>\n        <td>Electric cars</td>\n        <td>Million</td>\n        <td>10.4</td>\n        <td>14</td>\n        <td>+35%</td>\n    </tr>\n    <tr>\n        <td>Heat pumps</td>\n        <td>GW</td>\n        <td>112</td>\n        <td>109</td>\n        <td>-3%</td>\n    </tr>\n    <tr>\n        <td>Electrolysers</td>\n        <td>MW</td>\n        <td>130</td>\n        <td>600</td>\n        <td>+360%</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Technology\",\"Unit\",\"2022\",\"2023\",\"Growth\"\n\"Solar PV\",\"GW\",\"227\",\"420\",\"+85%\"\n\"Wind\",\"GW\",\"75\",\"120\",\"+60%\"\n\"Nuclear\",\"GW\",\"8\",\"5.6\",\"-30%\"\n\"Electric cars\",\"Million\",\"10.4\",\"14\",\"+35%\"\n\"Heat pumps\",\"GW\",\"112\",\"109\",\"-3%\"\n\"Electrolysers\",\"MW\",\"130\",\"600\",\"+360%\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [chart, paragraph_title, footer, image, header, text] but no table/form"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "IEA 2024. CC BY 4.0.",
+            "bbox": [
+              {
+                "x": 708.3,
+                "y": 494.57,
+                "w": 77.89,
+                "h": 7.97,
+                "confidence": 0.9,
+                "start_index": 0,
+                "end_index": 19,
+                "label": "text"
+              }
+            ],
+            "value": "IEA 2024. CC BY 4.0."
+          },
+          {
+            "type": "text",
+            "md": "Note: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million.",
+            "bbox": [
+              {
+                "x": 56.41,
+                "y": 510.78,
+                "w": 490,
+                "h": 10.72,
+                "confidence": 0.94,
+                "start_index": 0,
+                "end_index": 107,
+                "label": "text"
+              }
+            ],
+            "value": "Note: \"Annual deployment\" refers to sales or capacity additions. GW = gigawatt; MW = megawatt; Mn = million."
+          },
+          {
+            "type": "footer",
+            "md": "PAGE | 11\n\nIEA logo\n\nIEA. CC BY 4.0.",
+            "bbox": [
+              {
+                "x": 404.32,
+                "y": 537.88,
+                "w": 416.5,
+                "h": 37.45
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "PAGE | 11",
+                "bbox": [
+                  {
+                    "x": 404.32,
+                    "y": 557.66,
+                    "w": 33.06,
+                    "h": 8.61,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 8,
+                    "label": "footer"
+                  }
+                ],
+                "value": "PAGE | 11"
+              },
+              {
+                "type": "text",
+                "md": "IEA logo",
+                "bbox": [
+                  {
+                    "x": 732.47,
+                    "y": 544.81,
+                    "w": 58.41,
+                    "h": 30.52,
+                    "confidence": 0.4,
+                    "start_index": 0,
+                    "end_index": 7,
+                    "label": "image"
+                  }
+                ],
+                "value": "IEA logo"
+              },
+              {
+                "type": "text",
+                "md": "IEA. CC BY 4.0.",
+                "bbox": [
+                  {
+                    "x": 814.93,
+                    "y": 537.88,
+                    "w": 5.89,
+                    "h": 36.07,
+                    "confidence": 0.89,
+                    "start_index": 0,
+                    "end_index": 14,
+                    "label": "footer"
+                  }
+                ],
+                "value": "IEA. CC BY 4.0."
+              }
+            ]
+          }
+        ],
+        "page_width": 841.92,
+        "page_height": 595.32,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.817,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 3,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/cc7f191a-5156-4611-9cf5-8efebddb15dc/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTYKOMYGDO&Signature=iJsdeVD%2Fu4VMdkTb1Iw9b6N2Gqg%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJIMEYCIQDfFQSVpfpKBeV3z9Dc9slLGOdgPftpR42%2F1KYGzU3UjQIhALLpB22UThl0QIuIm1DMthQHWQAweKcQrIDuSrdA0mFqKpAFCN%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTA2OTU0OTY2NTAzIgwCSy%2FQF8CHlWiOqQIq5ATFk8aP6tzlaeploVkLMeaA8u0cGY%2BssqXJwI6Dum84Q5SDaouQqaAu0nvrwkBSYmTgzKLYX3S%2FjDkJ7xsGnoGYjNhFZleBQHWqyo5ncuCHNGnz0rmqtlPHYSKUlM2b65KkDmzJK94yuH2SJQFiIdEosGne2Ph6wrLjgr0myQPEAQL%2Ffo2PNv7emmJnZTpNfxiIfWnlOMopnakJXfvHAIZOV6%2FOaarnSzCVgrYkICKjwphros8xZ50nA33jNk5RGeLNmo4zbctcUNqCRsOwp821mEtaw6Mp6dyBPI8XyGJ5CfT54a2MHokkaBw1Xmi0422iyWB0%2FcZrHTApINWrQH%2BSoYrQg8JpsJbC7xaXI6A4HBdHhsLncgQIOhDZXwS9j%2FOrLpQQOqh5wnRkmL4S2XCCBEtI94ZfO1kqhlC4i4GKHNJNI4P%2Bzk7ReLLXCEpc67YKJNccQlw2h71nsQPufDmL1Cvy81x3po%2FTToof4nQg4KJGPceM6vbWmtLxgfYDCFAGnC54B0rnTrGoOijS5GgBXK96hEn%2F6yH7nBSK0JcvkxJK%2Br4h9iLgYZcC7%2F6KCPY%2FBfgoEZVAE2moDJ%2FSxrUnEgLXroCLUbBrQ9nJuXapJ%2F7A7lb4Bt6o3XKaxo7W6J3Q8bqmZFKuIDdxE4jLAWpQLHaOBzvm%2BzoXQsQ39Q2DZKNUZsbkT2uHoCMTp8rdcpcxsU85b2jWVkTkESRbrknAa4fH05okz%2Bn9AHHmvBvo2Ay5DHLHLXWwbYiB%2BCBKE%2BvDVzxsthZnmq%2BvCCXVuqhc4joZjqfWfCd51cTt2oJxusTmQ0MwycH10wY6lwF0FyEvl2a%2FwcaPBovQnQ6K9Jn%2F1VqN8Q30QxiC3Wc8QLzHy4PNdTsfWw8%2FJGBBQRB0jGdBdcBIYE%2Bx6%2Fow7DAXb0g8DO9eT6LVMl24draoZ9eEBr8kPmF9mjchpOukllTEgPkPcRxtAFpcYMfsgzo%2FwxnphBf%2FHUpLzJhdxrbixX062LTSo64ORVKgfStpGP3uXmDisn%2Fo&Expires=1786605741",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 842,
+          "h": 595
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_image_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/cc7f191a-5156-4611-9cf5-8efebddb15dc/page_1_image_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTYKOMYGDO&Signature=%2BEpwGJpzTaIfE7v%2FE%2BO6DifFSTY%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJIMEYCIQDfFQSVpfpKBeV3z9Dc9slLGOdgPftpR42%2F1KYGzU3UjQIhALLpB22UThl0QIuIm1DMthQHWQAweKcQrIDuSrdA0mFqKpAFCN%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTA2OTU0OTY2NTAzIgwCSy%2FQF8CHlWiOqQIq5ATFk8aP6tzlaeploVkLMeaA8u0cGY%2BssqXJwI6Dum84Q5SDaouQqaAu0nvrwkBSYmTgzKLYX3S%2FjDkJ7xsGnoGYjNhFZleBQHWqyo5ncuCHNGnz0rmqtlPHYSKUlM2b65KkDmzJK94yuH2SJQFiIdEosGne2Ph6wrLjgr0myQPEAQL%2Ffo2PNv7emmJnZTpNfxiIfWnlOMopnakJXfvHAIZOV6%2FOaarnSzCVgrYkICKjwphros8xZ50nA33jNk5RGeLNmo4zbctcUNqCRsOwp821mEtaw6Mp6dyBPI8XyGJ5CfT54a2MHokkaBw1Xmi0422iyWB0%2FcZrHTApINWrQH%2BSoYrQg8JpsJbC7xaXI6A4HBdHhsLncgQIOhDZXwS9j%2FOrLpQQOqh5wnRkmL4S2XCCBEtI94ZfO1kqhlC4i4GKHNJNI4P%2Bzk7ReLLXCEpc67YKJNccQlw2h71nsQPufDmL1Cvy81x3po%2FTToof4nQg4KJGPceM6vbWmtLxgfYDCFAGnC54B0rnTrGoOijS5GgBXK96hEn%2F6yH7nBSK0JcvkxJK%2Br4h9iLgYZcC7%2F6KCPY%2FBfgoEZVAE2moDJ%2FSxrUnEgLXroCLUbBrQ9nJuXapJ%2F7A7lb4Bt6o3XKaxo7W6J3Q8bqmZFKuIDdxE4jLAWpQLHaOBzvm%2BzoXQsQ39Q2DZKNUZsbkT2uHoCMTp8rdcpcxsU85b2jWVkTkESRbrknAa4fH05okz%2Bn9AHHmvBvo2Ay5DHLHLXWwbYiB%2BCBKE%2BvDVzxsthZnmq%2BvCCXVuqhc4joZjqfWfCd51cTt2oJxusTmQ0MwycH10wY6lwF0FyEvl2a%2FwcaPBovQnQ6K9Jn%2F1VqN8Q30QxiC3Wc8QLzHy4PNdTsfWw8%2FJGBBQRB0jGdBdcBIYE%2Bx6%2Fow7DAXb0g8DO9eT6LVMl24draoZ9eEBr8kPmF9mjchpOukllTEgPkPcRxtAFpcYMfsgzo%2FwxnphBf%2FHUpLzJhdxrbixX062LTSo64ORVKgfStpGP3uXmDisn%2Fo&Expires=1786605741",
+        "category": "layout",
+        "bbox": {
+          "x": 738,
+          "y": 550,
+          "w": 48,
+          "h": 21
+        }
+      },
+      {
+        "index": 2,
+        "filename": "page_1_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/cc7f191a-5156-4611-9cf5-8efebddb15dc/page_1_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTYKOMYGDO&Signature=shLjbQ0tFNtepGyoSQWEWuzr5ec%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJIMEYCIQDfFQSVpfpKBeV3z9Dc9slLGOdgPftpR42%2F1KYGzU3UjQIhALLpB22UThl0QIuIm1DMthQHWQAweKcQrIDuSrdA0mFqKpAFCN%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTA2OTU0OTY2NTAzIgwCSy%2FQF8CHlWiOqQIq5ATFk8aP6tzlaeploVkLMeaA8u0cGY%2BssqXJwI6Dum84Q5SDaouQqaAu0nvrwkBSYmTgzKLYX3S%2FjDkJ7xsGnoGYjNhFZleBQHWqyo5ncuCHNGnz0rmqtlPHYSKUlM2b65KkDmzJK94yuH2SJQFiIdEosGne2Ph6wrLjgr0myQPEAQL%2Ffo2PNv7emmJnZTpNfxiIfWnlOMopnakJXfvHAIZOV6%2FOaarnSzCVgrYkICKjwphros8xZ50nA33jNk5RGeLNmo4zbctcUNqCRsOwp821mEtaw6Mp6dyBPI8XyGJ5CfT54a2MHokkaBw1Xmi0422iyWB0%2FcZrHTApINWrQH%2BSoYrQg8JpsJbC7xaXI6A4HBdHhsLncgQIOhDZXwS9j%2FOrLpQQOqh5wnRkmL4S2XCCBEtI94ZfO1kqhlC4i4GKHNJNI4P%2Bzk7ReLLXCEpc67YKJNccQlw2h71nsQPufDmL1Cvy81x3po%2FTToof4nQg4KJGPceM6vbWmtLxgfYDCFAGnC54B0rnTrGoOijS5GgBXK96hEn%2F6yH7nBSK0JcvkxJK%2Br4h9iLgYZcC7%2F6KCPY%2FBfgoEZVAE2moDJ%2FSxrUnEgLXroCLUbBrQ9nJuXapJ%2F7A7lb4Bt6o3XKaxo7W6J3Q8bqmZFKuIDdxE4jLAWpQLHaOBzvm%2BzoXQsQ39Q2DZKNUZsbkT2uHoCMTp8rdcpcxsU85b2jWVkTkESRbrknAa4fH05okz%2Bn9AHHmvBvo2Ay5DHLHLXWwbYiB%2BCBKE%2BvDVzxsthZnmq%2BvCCXVuqhc4joZjqfWfCd51cTt2oJxusTmQ0MwycH10wY6lwF0FyEvl2a%2FwcaPBovQnQ6K9Jn%2F1VqN8Q30QxiC3Wc8QLzHy4PNdTsfWw8%2FJGBBQRB0jGdBdcBIYE%2Bx6%2Fow7DAXb0g8DO9eT6LVMl24draoZ9eEBr8kPmF9mjchpOukllTEgPkPcRxtAFpcYMfsgzo%2FwxnphBf%2FHUpLzJhdxrbixX062LTSo64ORVKgfStpGP3uXmDisn%2Fo&Expires=1786605741",
+        "category": "layout",
+        "bbox": {
+          "x": 86,
+          "y": 149,
+          "w": 673,
+          "h": 337
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

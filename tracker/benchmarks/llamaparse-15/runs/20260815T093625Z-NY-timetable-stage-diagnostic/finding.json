@@ -1,0 +1,136 @@
+{
+  "schema_id": "ny-timetable-stage-diagnostic-finding-v1",
+  "classification": "diagnostic-only-current-tree-reproduction",
+  "controlled_current_tree_finding": {
+    "status": "root_cause_reproduced",
+    "cause": "Phase 05 visual semantics performs PDF visual-source-text recovery once for every public page item before deciding whether the item is a chart or diagram.",
+    "causal_chain": [
+      "The full UI profile enables PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED.",
+      "apply_visual_semantics iterates every page item.",
+      "For PDF input it calls recover_pdf_visual_source_text before _declared_visual_kind.",
+      "Each recovery call reopens the immutable PDF with pdfplumber and runs page.extract_words.",
+      "NY emits 1778 items but zero chart, diagram, or image items, so all 1778 recoveries are unnecessary for visual classification."
+    ],
+    "code_locations": [
+      "app/services/pipeline.py:9177",
+      "app/services/visual_semantics.py:967",
+      "app/services/visual_semantics.py:992",
+      "app/services/visual_semantics.py:999",
+      "app/services/visual_semantics.py:1015",
+      "app/services/visual_source_text.py:1904",
+      "app/services/visual_source_text.py:1913"
+    ]
+  },
+  "original_observation": {
+    "retained_fact": "frontend development log: POST /api/parse?output_format=json 200 in 315.9s",
+    "missing": [
+      "response body",
+      "stage trace",
+      "request timestamp",
+      "code fingerprint",
+      "configuration fingerprint"
+    ],
+    "relationship_to_controlled_run": "The controlled result is consistent with the earlier event but cannot prove its root cause retroactively."
+  },
+  "attempts": {
+    "cold": {
+      "request_wall_seconds": 336.839385958,
+      "request_cpu_seconds": 346.110051002,
+      "processing_duration_ms": 55066,
+      "visual_semantics_seconds": 273.622843,
+      "visual_source_recovery_calls": 1778,
+      "visual_source_recovery_seconds": 273.458399203,
+      "visual_source_recovery_cpu_seconds": 266.766827,
+      "visual_source_recovery_request_percent": 81.183618,
+      "visual_source_recovery_visual_stage_percent": 99.939901,
+      "visual_source_recovery_mean_ms": 153.801124,
+      "visual_source_recovery_p50_ms": 126.68725,
+      "visual_source_recovery_p95_ms": 395.73425,
+      "visual_source_recovery_max_ms": 1062.002292,
+      "declared_visual_kind_calls": 1778,
+      "declared_visual_kind_seconds": 0.011375627,
+      "docling_conversion_seconds": 35.418117042,
+      "rendered_ocr_seconds": 14.532658375,
+      "tesseract_passes": 6,
+      "tesseract_pass_seconds": 13.702258707,
+      "tesseract_timeouts": 0,
+      "api_json_boundary_seconds": 0.447062167,
+      "closure_valid": true
+    },
+    "warm": {
+      "request_wall_seconds": 322.285802833,
+      "request_cpu_seconds": 334.190651,
+      "processing_duration_ms": 47091,
+      "visual_semantics_seconds": 267.3137105,
+      "visual_source_recovery_calls": 1778,
+      "visual_source_recovery_seconds": 267.155726163,
+      "visual_source_recovery_cpu_seconds": 261.75821,
+      "visual_source_recovery_request_percent": 82.894041,
+      "visual_source_recovery_visual_stage_percent": 99.940899,
+      "visual_source_recovery_mean_ms": 150.256314,
+      "visual_source_recovery_p50_ms": 123.839854,
+      "visual_source_recovery_p95_ms": 441.43375,
+      "visual_source_recovery_max_ms": 741.443208,
+      "declared_visual_kind_calls": 1778,
+      "declared_visual_kind_seconds": 0.010460713,
+      "docling_conversion_seconds": 27.487258459,
+      "rendered_ocr_seconds": 14.753334375,
+      "tesseract_passes": 6,
+      "tesseract_pass_seconds": 13.930999418,
+      "tesseract_timeouts": 0,
+      "api_json_boundary_seconds": 0.328562542,
+      "closure_valid": true
+    }
+  },
+  "request_shape": {
+    "response_item_count": 1778,
+    "response_item_types": {
+      "text": 1745,
+      "heading": 27,
+      "table": 3,
+      "footer": 3,
+      "image": 0,
+      "chart": 0,
+      "diagram": 0
+    },
+    "visual_source_recovery_call_count_equals_response_item_count": true
+  },
+  "alternative_stage_evidence": {
+    "p04_production_budgets_unchanged": {
+      "document_seconds": 5.0,
+      "page_seconds": 0.5
+    },
+    "p04_table_authority_invocations": 0,
+    "table_custody_validation_impl_seconds": {
+      "cold": 0.000757416,
+      "warm": 0.000479625
+    },
+    "rendered_ocr_explanation_rejected": "All six passes succeeded in approximately 14 seconds per attempt; no 30-second timeout occurred.",
+    "docling_only_explanation_rejected": "Warm Docling improved by about 7.9 seconds while end-to-end time improved by only about 14.6 seconds; the 267-second visual recovery loop remained.",
+    "api_serialization_explanation_rejected": "jsonable encoding, public validation, model dump, and response build totalled less than 0.45 seconds per attempt."
+  },
+  "pair_validity": {
+    "attempt_count": 2,
+    "retry_count": 0,
+    "both_successful": true,
+    "both_timing_closures_valid": true,
+    "stable_semantic_equal": true,
+    "table_rows_equal": true,
+    "canonical_equal": true,
+    "cold_to_warm_wall_ratio": 1.045157,
+    "all_tables_source_grounded_52_by_13": true
+  },
+  "mutation_audit": {
+    "app_tree_unchanged": true,
+    "app_tree_sha256": "85862015f03d1d8e284d6b3b1448604f0c83e32da2e5e49bdd67edc193d2fd7f",
+    "model_tree_stat_unchanged": true,
+    "protected_files_unchanged": true,
+    "production_files_written": []
+  },
+  "limitations": [
+    "The diagnostic process was isolated, but the host was neither exclusive nor quiet.",
+    "Inclusive stage spans are nested and must not be summed.",
+    "The shared latency observer has a separate global Office-only caller-inventory contract drift that is unreachable for this PDF.",
+    "No fix or optimized counterfactual was executed in this evidence run."
+  ]
+}

@@ -1,0 +1,1819 @@
+{
+  "case_id": "component-datasheet",
+  "document": {
+    "expert_page_count": 3,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 3,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "component-datasheet.pdf",
+    "source_page_count": 3
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 3,
+        "line": "raspberry pi pico datasheet"
+      }
+    ],
+    "ours": [
+      {
+        "count": 3,
+        "line": "raspberry pi pico datasheet"
+      },
+      {
+        "count": 2,
+        "line": "adc_vref"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8064516129032258,
+      "item_count": 31,
+      "parse_concern_count": 2,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 2,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 28,
+          "parse_concerns": [
+            {
+              "details": "col 0 '**Operating Temp Max**' expects numeric, got '**Operating Temp Min**' in row 1",
+              "type": "header_value_type_mismatch"
+            },
+            {
+              "details": "layout detected [text, footer, paragraph_title, header, key-value-region] but no table/form",
+              "type": "layout_lvm_disagreement"
+            }
+          ],
+          "row_count": 5
+        }
+      ],
+      "type_counts": {
+        "footer": 3,
+        "header": 3,
+        "heading": 2,
+        "image": 1,
+        "list": 4,
+        "table": 1,
+        "text": 17
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.03333333333333333,
+      "item_count": 60,
+      "parse_concern_count": 1,
+      "provenance_coverage": 1.0,
+      "tables": [],
+      "type_counts": {
+        "diagram": 1,
+        "footer": 3,
+        "header": 3,
+        "heading": 3,
+        "image": 2,
+        "list": 2,
+        "text": 46
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 1442,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 1568,
+        "candidate_tokens": 265,
+        "extra_token_counts": [
+          [
+            "raspberry",
+            2
+          ],
+          [
+            "pico",
+            2
+          ],
+          [
+            "e",
+            2
+          ],
+          [
+            "3v3",
+            2
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "chapter",
+            1
+          ],
+          [
+            "about",
+            1
+          ],
+          [
+            "we",
+            1
+          ],
+          [
+            "veus",
+            1
+          ],
+          [
+            "vsys",
+            1
+          ],
+          [
+            "tpl",
+            1
+          ],
+          [
+            "1p4",
+            1
+          ],
+          [
+            "en",
+            1
+          ],
+          [
+            "tps",
+            1
+          ],
+          [
+            "os",
+            1
+          ],
+          [
+            "tp6",
+            1
+          ],
+          [
+            "adc",
+            1
+          ],
+          [
+            "vref",
+            1
+          ],
+          [
+            "gp28",
+            1
+          ],
+          [
+            "a2",
+            1
+          ],
+          [
+            "soo",
+            1
+          ],
+          [
+            "sav",
+            1
+          ],
+          [
+            "oh",
+            1
+          ],
+          [
+            "gp27",
+            1
+          ],
+          [
+            "al",
+            1
+          ],
+          [
+            "gp26",
+            1
+          ],
+          [
+            "a0",
+            1
+          ],
+          [
+            "run",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "board",
+            1
+          ],
+          [
+            "the",
+            1
+          ],
+          [
+            "rev3",
+            1
+          ],
+          [
+            "showing",
+            1
+          ],
+          [
+            "top",
+            1
+          ],
+          [
+            "and",
+            1
+          ],
+          [
+            "bottom",
+            1
+          ],
+          [
+            "views",
+            1
+          ],
+          [
+            "with",
+            1
+          ],
+          [
+            "pinout",
+            1
+          ],
+          [
+            "labels",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7455221358567083,
+        "reference_chars": 1442,
+        "reference_tokens": 229,
+        "token_f1": 0.8825910931174089,
+        "token_multiset_overlap": 218,
+        "token_precision": 0.8226415094339623,
+        "token_recall": 0.9519650655021834
+      },
+      "our_dimensions": {
+        "height": 841.8900146484375,
+        "unit": "pt",
+        "width": 595.280029296875
+      },
+      "our_item_markdown_chars": 1568,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1383,
+      "source_dimensions": {
+        "height": 841.89,
+        "unit": "pt",
+        "width": 595.28
+      },
+      "source_vs_expert": {
+        "candidate_chars": 1442,
+        "candidate_tokens": 229,
+        "extra_token_counts": [
+          [
+            "board",
+            1
+          ],
+          [
+            "the",
+            1
+          ],
+          [
+            "rev3",
+            1
+          ],
+          [
+            "showing",
+            1
+          ],
+          [
+            "top",
+            1
+          ],
+          [
+            "and",
+            1
+          ],
+          [
+            "bottom",
+            1
+          ],
+          [
+            "views",
+            1
+          ],
+          [
+            "with",
+            1
+          ],
+          [
+            "pinout",
+            1
+          ],
+          [
+            "labels",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "chapter",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "about",
+            1
+          ],
+          [
+            "3",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8800287356321839,
+        "reference_chars": 1383,
+        "reference_tokens": 226,
+        "token_f1": 0.9582417582417583,
+        "token_multiset_overlap": 218,
+        "token_precision": 0.9519650655021834,
+        "token_recall": 0.9646017699115044
+      },
+      "source_vs_ours": {
+        "candidate_chars": 1568,
+        "candidate_tokens": 265,
+        "extra_token_counts": [
+          [
+            "e",
+            2
+          ],
+          [
+            "3v3",
+            2
+          ],
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "we",
+            1
+          ],
+          [
+            "veus",
+            1
+          ],
+          [
+            "vsys",
+            1
+          ],
+          [
+            "tpl",
+            1
+          ],
+          [
+            "1p4",
+            1
+          ],
+          [
+            "en",
+            1
+          ],
+          [
+            "tps",
+            1
+          ],
+          [
+            "os",
+            1
+          ],
+          [
+            "tp6",
+            1
+          ],
+          [
+            "adc",
+            1
+          ],
+          [
+            "vref",
+            1
+          ],
+          [
+            "gp28",
+            1
+          ],
+          [
+            "a2",
+            1
+          ],
+          [
+            "soo",
+            1
+          ],
+          [
+            "sav",
+            1
+          ],
+          [
+            "oh",
+            1
+          ],
+          [
+            "gp27",
+            1
+          ],
+          [
+            "al",
+            1
+          ],
+          [
+            "gp26",
+            1
+          ],
+          [
+            "a0",
+            1
+          ],
+          [
+            "run",
+            1
+          ],
+          [
+            "gp22",
+            1
+          ],
+          [
+            "c",
+            1
+          ],
+          [
+            "gnd",
+            1
+          ],
+          [
+            "gp2i",
+            1
+          ],
+          [
+            "gp20",
+            1
+          ]
+        ],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.7922475348520911,
+        "reference_chars": 1383,
+        "reference_tokens": 226,
+        "token_f1": 0.9205702647657842,
+        "token_multiset_overlap": 226,
+        "token_precision": 0.8528301886792453,
+        "token_recall": 1.0
+      }
+    },
+    {
+      "expert_body_chars": 1355,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 1643,
+        "candidate_tokens": 352,
+        "extra_token_counts": [
+          [
+            "po",
+            7
+          ],
+          [
+            "b",
+            6
+          ],
+          [
+            "o",
+            6
+          ],
+          [
+            "4",
+            4
+          ],
+          [
+            "q",
+            4
+          ],
+          [
+            "od",
+            4
+          ],
+          [
+            "on",
+            3
+          ],
+          [
+            "6",
+            3
+          ],
+          [
+            "40",
+            2
+          ],
+          [
+            "oo",
+            2
+          ],
+          [
+            "c4",
+            2
+          ],
+          [
+            "gd",
+            2
+          ],
+          [
+            "do",
+            2
+          ],
+          [
+            "are",
+            2
+          ],
+          [
+            "x",
+            2
+          ],
+          [
+            "5d",
+            2
+          ],
+          [
+            "30",
+            2
+          ],
+          [
+            "28",
+            2
+          ],
+          [
+            "26",
+            2
+          ],
+          [
+            "cd",
+            2
+          ],
+          [
+            "23",
+            2
+          ],
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "rh",
+            1
+          ],
+          [
+            "wp",
+            1
+          ],
+          [
+            "ke",
+            1
+          ],
+          [
+            "pt",
+            1
+          ],
+          [
+            "229",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "the",
+            2
+          ],
+          [
+            "pin",
+            1
+          ],
+          [
+            "numbering",
+            1
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "rev3",
+            1
+          ],
+          [
+            "board",
+            1
+          ],
+          [
+            "engineering",
+            1
+          ],
+          [
+            "drawing",
+            1
+          ],
+          [
+            "note",
+            1
+          ],
+          [
+            "icon",
+            1
+          ],
+          [
+            "100kω",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.4053224155578301,
+        "reference_chars": 1355,
+        "reference_tokens": 242,
+        "token_f1": 0.7744107744107744,
+        "token_multiset_overlap": 230,
+        "token_precision": 0.6534090909090909,
+        "token_recall": 0.9504132231404959
+      },
+      "our_dimensions": {
+        "height": 841.8900146484375,
+        "unit": "pt",
+        "width": 595.280029296875
+      },
+      "our_item_markdown_chars": 1643,
+      "our_success": true,
+      "page_number": 2,
+      "source_chars": 1211,
+      "source_dimensions": {
+        "height": 841.89,
+        "unit": "pt",
+        "width": 595.28
+      },
+      "source_vs_expert": {
+        "candidate_chars": 1355,
+        "candidate_tokens": 242,
+        "extra_token_counts": [
+          [
+            "the",
+            2
+          ],
+          [
+            "pin",
+            1
+          ],
+          [
+            "numbering",
+            1
+          ],
+          [
+            "of",
+            1
+          ],
+          [
+            "rev3",
+            1
+          ],
+          [
+            "board",
+            1
+          ],
+          [
+            "engineering",
+            1
+          ],
+          [
+            "drawing",
+            1
+          ],
+          [
+            "note",
+            1
+          ],
+          [
+            "icon",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "1",
+            1
+          ],
+          [
+            "pinout",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8661666008685354,
+        "reference_chars": 1211,
+        "reference_tokens": 239,
+        "token_f1": 0.9604989604989606,
+        "token_multiset_overlap": 231,
+        "token_precision": 0.9545454545454546,
+        "token_recall": 0.9665271966527197
+      },
+      "source_vs_ours": {
+        "candidate_chars": 1643,
+        "candidate_tokens": 352,
+        "extra_token_counts": [
+          [
+            "po",
+            7
+          ],
+          [
+            "b",
+            6
+          ],
+          [
+            "o",
+            6
+          ],
+          [
+            "4",
+            4
+          ],
+          [
+            "q",
+            4
+          ],
+          [
+            "od",
+            4
+          ],
+          [
+            "on",
+            3
+          ],
+          [
+            "6",
+            3
+          ],
+          [
+            "40",
+            2
+          ],
+          [
+            "oo",
+            2
+          ],
+          [
+            "c4",
+            2
+          ],
+          [
+            "gd",
+            2
+          ],
+          [
+            "do",
+            2
+          ],
+          [
+            "are",
+            2
+          ],
+          [
+            "x",
+            2
+          ],
+          [
+            "5d",
+            2
+          ],
+          [
+            "30",
+            2
+          ],
+          [
+            "28",
+            2
+          ],
+          [
+            "26",
+            2
+          ],
+          [
+            "cd",
+            2
+          ],
+          [
+            "23",
+            2
+          ],
+          [
+            "rh",
+            1
+          ],
+          [
+            "wp",
+            1
+          ],
+          [
+            "ke",
+            1
+          ],
+          [
+            "pt",
+            1
+          ],
+          [
+            "229",
+            1
+          ],
+          [
+            "39",
+            1
+          ],
+          [
+            "38",
+            1
+          ],
+          [
+            "5s",
+            1
+          ],
+          [
+            "y",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "100kω",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.8588652482269503,
+        "reference_chars": 1211,
+        "reference_tokens": 239,
+        "token_f1": 0.805414551607445,
+        "token_multiset_overlap": 238,
+        "token_precision": 0.6761363636363636,
+        "token_recall": 0.99581589958159
+      }
+    },
+    {
+      "expert_body_chars": 754,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 533,
+        "candidate_tokens": 86,
+        "extra_token_counts": [
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "recommended",
+            1
+          ],
+          [
+            "operating",
+            1
+          ],
+          [
+            "conditions",
+            1
+          ],
+          [
+            "11",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            20
+          ],
+          [
+            "tr",
+            10
+          ],
+          [
+            "table",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7201394943330427,
+        "reference_chars": 754,
+        "reference_tokens": 108,
+        "token_f1": 0.7835051546391752,
+        "token_multiset_overlap": 76,
+        "token_precision": 0.8837209302325582,
+        "token_recall": 0.7037037037037037
+      },
+      "our_dimensions": {
+        "height": 841.8900146484375,
+        "unit": "pt",
+        "width": 595.280029296875
+      },
+      "our_item_markdown_chars": 533,
+      "our_success": true,
+      "page_number": 3,
+      "source_chars": 514,
+      "source_dimensions": {
+        "height": 841.89,
+        "unit": "pt",
+        "width": 595.28
+      },
+      "source_vs_expert": {
+        "candidate_chars": 754,
+        "candidate_tokens": 108,
+        "extra_token_counts": [
+          [
+            "td",
+            20
+          ],
+          [
+            "tr",
+            10
+          ],
+          [
+            "table",
+            2
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "raspberry",
+            1
+          ],
+          [
+            "pi",
+            1
+          ],
+          [
+            "pico",
+            1
+          ],
+          [
+            "datasheet",
+            1
+          ],
+          [
+            "2",
+            1
+          ],
+          [
+            "3",
+            1
+          ],
+          [
+            "recommended",
+            1
+          ],
+          [
+            "operating",
+            1
+          ],
+          [
+            "conditions",
+            1
+          ],
+          [
+            "11",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7325174825174825,
+        "reference_chars": 514,
+        "reference_tokens": 86,
+        "token_f1": 0.7835051546391752,
+        "token_multiset_overlap": 76,
+        "token_precision": 0.7037037037037037,
+        "token_recall": 0.8837209302325582
+      },
+      "source_vs_ours": {
+        "candidate_chars": 533,
+        "candidate_tokens": 86,
+        "extra_token_counts": [],
+        "missing_token_counts": [],
+        "normalized_sequence_ratio": 0.997090203685742,
+        "reference_chars": 514,
+        "reference_tokens": 86,
+        "token_f1": 1.0,
+        "token_multiset_overlap": 86,
+        "token_precision": 1.0,
+        "token_recall": 1.0
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 3749,
+      "candidate_tokens": 703,
+      "extra_token_counts": [
+        [
+          "po",
+          7
+        ],
+        [
+          "b",
+          6
+        ],
+        [
+          "o",
+          6
+        ],
+        [
+          "raspberry",
+          4
+        ],
+        [
+          "pico",
+          4
+        ],
+        [
+          "4",
+          4
+        ],
+        [
+          "q",
+          4
+        ],
+        [
+          "od",
+          4
+        ],
+        [
+          "pi",
+          3
+        ],
+        [
+          "datasheet",
+          3
+        ],
+        [
+          "on",
+          3
+        ],
+        [
+          "6",
+          3
+        ],
+        [
+          "1",
+          2
+        ],
+        [
+          "e",
+          2
+        ],
+        [
+          "3v3",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "26",
+          2
+        ],
+        [
+          "3",
+          2
+        ],
+        [
+          "23",
+          2
+        ],
+        [
+          "are",
+          2
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "c4",
+          2
+        ],
+        [
+          "gd",
+          2
+        ],
+        [
+          "do",
+          2
+        ],
+        [
+          "x",
+          2
+        ],
+        [
+          "5d",
+          2
+        ],
+        [
+          "11",
+          2
+        ],
+        [
+          "30",
+          2
+        ],
+        [
+          "28",
+          2
+        ],
+        [
+          "cd",
+          2
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          20
+        ],
+        [
+          "tr",
+          10
+        ],
+        [
+          "the",
+          3
+        ],
+        [
+          "board",
+          2
+        ],
+        [
+          "rev3",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "showing",
+          1
+        ],
+        [
+          "top",
+          1
+        ],
+        [
+          "and",
+          1
+        ],
+        [
+          "bottom",
+          1
+        ],
+        [
+          "views",
+          1
+        ],
+        [
+          "with",
+          1
+        ],
+        [
+          "labels",
+          1
+        ],
+        [
+          "pin",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "numbering",
+          1
+        ],
+        [
+          "engineering",
+          1
+        ],
+        [
+          "drawing",
+          1
+        ],
+        [
+          "note",
+          1
+        ],
+        [
+          "icon",
+          1
+        ],
+        [
+          "100kω",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.674051981252663,
+      "reference_chars": 3555,
+      "reference_tokens": 579,
+      "token_f1": 0.8190327613104523,
+      "token_multiset_overlap": 525,
+      "token_precision": 0.7467994310099573,
+      "token_recall": 0.9067357512953368
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 3749,
+      "candidate_tokens": 703,
+      "extra_token_counts": [
+        [
+          "po",
+          7
+        ],
+        [
+          "b",
+          6
+        ],
+        [
+          "o",
+          6
+        ],
+        [
+          "4",
+          4
+        ],
+        [
+          "q",
+          4
+        ],
+        [
+          "od",
+          4
+        ],
+        [
+          "on",
+          3
+        ],
+        [
+          "6",
+          3
+        ],
+        [
+          "e",
+          2
+        ],
+        [
+          "3v3",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "26",
+          2
+        ],
+        [
+          "23",
+          2
+        ],
+        [
+          "are",
+          2
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "c4",
+          2
+        ],
+        [
+          "gd",
+          2
+        ],
+        [
+          "do",
+          2
+        ],
+        [
+          "x",
+          2
+        ],
+        [
+          "5d",
+          2
+        ],
+        [
+          "30",
+          2
+        ],
+        [
+          "28",
+          2
+        ],
+        [
+          "cd",
+          2
+        ],
+        [
+          "we",
+          1
+        ],
+        [
+          "veus",
+          1
+        ],
+        [
+          "vsys",
+          1
+        ],
+        [
+          "tpl",
+          1
+        ],
+        [
+          "1p4",
+          1
+        ],
+        [
+          "en",
+          1
+        ],
+        [
+          "tps",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          20
+        ],
+        [
+          "tr",
+          10
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "the",
+          3
+        ],
+        [
+          "pi",
+          2
+        ],
+        [
+          "board",
+          2
+        ],
+        [
+          "rev3",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "raspberry",
+          1
+        ],
+        [
+          "pico",
+          1
+        ],
+        [
+          "showing",
+          1
+        ],
+        [
+          "top",
+          1
+        ],
+        [
+          "and",
+          1
+        ],
+        [
+          "bottom",
+          1
+        ],
+        [
+          "views",
+          1
+        ],
+        [
+          "with",
+          1
+        ],
+        [
+          "pinout",
+          1
+        ],
+        [
+          "labels",
+          1
+        ],
+        [
+          "pin",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "numbering",
+          1
+        ],
+        [
+          "engineering",
+          1
+        ],
+        [
+          "drawing",
+          1
+        ],
+        [
+          "note",
+          1
+        ],
+        [
+          "icon",
+          1
+        ],
+        [
+          "100kω",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.7129579004920722,
+      "reference_chars": 3839,
+      "reference_tokens": 623,
+      "token_f1": 0.832579185520362,
+      "token_multiset_overlap": 552,
+      "token_precision": 0.7852062588904695,
+      "token_recall": 0.8860353130016051
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 3839,
+      "candidate_tokens": 623,
+      "extra_token_counts": [
+        [
+          "td",
+          20
+        ],
+        [
+          "tr",
+          10
+        ],
+        [
+          "page",
+          6
+        ],
+        [
+          "number",
+          6
+        ],
+        [
+          "the",
+          3
+        ],
+        [
+          "raspberry",
+          2
+        ],
+        [
+          "pi",
+          2
+        ],
+        [
+          "pico",
+          2
+        ],
+        [
+          "board",
+          2
+        ],
+        [
+          "rev3",
+          2
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "showing",
+          1
+        ],
+        [
+          "top",
+          1
+        ],
+        [
+          "and",
+          1
+        ],
+        [
+          "bottom",
+          1
+        ],
+        [
+          "views",
+          1
+        ],
+        [
+          "with",
+          1
+        ],
+        [
+          "pinout",
+          1
+        ],
+        [
+          "labels",
+          1
+        ],
+        [
+          "pin",
+          1
+        ],
+        [
+          "of",
+          1
+        ],
+        [
+          "numbering",
+          1
+        ],
+        [
+          "engineering",
+          1
+        ],
+        [
+          "drawing",
+          1
+        ],
+        [
+          "note",
+          1
+        ],
+        [
+          "icon",
+          1
+        ]
+      ],
+      "missing_token_counts": [],
+      "normalized_sequence_ratio": 0.8718100890207715,
+      "reference_chars": 3112,
+      "reference_tokens": 551,
+      "token_f1": 0.938671209540034,
+      "token_multiset_overlap": 551,
+      "token_precision": 0.884430176565008,
+      "token_recall": 1.0
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 3749,
+      "candidate_tokens": 703,
+      "extra_token_counts": [
+        [
+          "po",
+          7
+        ],
+        [
+          "b",
+          6
+        ],
+        [
+          "o",
+          6
+        ],
+        [
+          "4",
+          4
+        ],
+        [
+          "q",
+          4
+        ],
+        [
+          "od",
+          4
+        ],
+        [
+          "on",
+          3
+        ],
+        [
+          "6",
+          3
+        ],
+        [
+          "e",
+          2
+        ],
+        [
+          "3v3",
+          2
+        ],
+        [
+          "40",
+          2
+        ],
+        [
+          "26",
+          2
+        ],
+        [
+          "23",
+          2
+        ],
+        [
+          "are",
+          2
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "c4",
+          2
+        ],
+        [
+          "gd",
+          2
+        ],
+        [
+          "do",
+          2
+        ],
+        [
+          "x",
+          2
+        ],
+        [
+          "5d",
+          2
+        ],
+        [
+          "30",
+          2
+        ],
+        [
+          "28",
+          2
+        ],
+        [
+          "cd",
+          2
+        ],
+        [
+          "raspberry",
+          1
+        ],
+        [
+          "pico",
+          1
+        ],
+        [
+          "we",
+          1
+        ],
+        [
+          "veus",
+          1
+        ],
+        [
+          "vsys",
+          1
+        ],
+        [
+          "tpl",
+          1
+        ],
+        [
+          "1p4",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "100kω",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.8231312536786345,
+      "reference_chars": 3112,
+      "reference_tokens": 551,
+      "token_f1": 0.8771929824561404,
+      "token_multiset_overlap": 550,
+      "token_precision": 0.7823613086770982,
+      "token_recall": 0.9981851179673321
+    }
+  }
+}

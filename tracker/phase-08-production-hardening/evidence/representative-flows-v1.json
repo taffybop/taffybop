@@ -1,0 +1,21 @@
+{
+  "schema_version": "parser-nonproduction-flow-contract-v1",
+  "contract_id": "p08-known-good-representative-flows-v1",
+  "environment": "non_production",
+  "flows": [
+    {
+      "flow_id": "public-invalid-input-json",
+      "outcome": "ordinary_failure",
+      "http_status": 415,
+      "response_schema_sha256": "81b0d474eb780a99d1f1939b962b467efe3f5549c8626db1acf4f9392893803f",
+      "canonical_output_sha256": "d3248be3753dfcc41076a9568c5bacb6f2005adb970c387fa49a8bcb997abe4e"
+    },
+    {
+      "flow_id": "public-pdf-json",
+      "outcome": "success",
+      "http_status": 200,
+      "response_schema_sha256": "d9b26fe849170bd64e47eb01eb599428ef45429fd111132792d40aa351d93777",
+      "canonical_output_sha256": "402a12389e74a9fc17e0fa71ee80655749d814f81218d3059545460f225a3245"
+    }
+  ]
+}

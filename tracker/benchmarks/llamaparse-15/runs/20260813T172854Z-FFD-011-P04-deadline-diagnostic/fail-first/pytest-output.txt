@@ -1,0 +1,14 @@
+==================================== ERRORS ====================================
+_ ERROR collecting tests/contract/test_p04_us01_diagnostic_document_budget.py __
+ImportError while importing test module '/Users/vignesh/Downloads/taffybop/tests/contract/test_p04_us01_diagnostic_document_budget.py'.
+Traceback:
+tests/contract/test_p04_us01_diagnostic_document_budget.py:12: in <module>
+    from tests.fixtures.phase_04.tables.diagnostic_budget import (
+E   ModuleNotFoundError: No module named 'tests.fixtures.phase_04.tables.diagnostic_budget'
+=========================== short test summary info ============================
+ERROR tests/contract/test_p04_us01_diagnostic_document_budget.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 warning, 1 error in 0.20s
+
+Exit status: 2
+Recorded UTC: 2026-08-13T17:28:54Z

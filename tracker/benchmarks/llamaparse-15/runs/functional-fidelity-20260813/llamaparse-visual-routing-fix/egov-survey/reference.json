@@ -1,0 +1,416 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-2jw4r4621l4rl4d5tvpzm5r7dx6v",
+    "created_at": "2026-08-13T06:22:43.641184Z",
+    "updated_at": "2026-08-13T06:23:02.049225Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "egov-survey.pdf",
+    "tier": "agentic"
+  },
+  "result_content_metadata": null,
+  "text": {
+    "pages": [
+      {
+        "page_number": 1,
+        "text": "                                                                                                        Chapter 2\n\n                                      Chapter 2 • Global Trends in ᴱ -Government\n\nFor the first time, Member States with very high EGDI values (above 0.75) comprise the largest\nshare, accounting for 39 per cent of the total (76 of the 193 countries assessed). This group is\nfollowed by countries with high EGDI values (ranging from 0.50 to 0.75), which make up 32 per cent\n(62 countries). The number of countries with middle EGDI values (ranging from 0.25 to 0.50) has\ndeclined from 53 in 2022 to 44 (23 per cent) in 2024. However, the number of countries with low\nEGDI values has increased from 7 to 11 (6 per cent) since 2022, primarily due to geopolitical conflicts\nand post-conflict situations that have hindered their digital development. The overall progress\nachieved is consistent with the positive e-government development trend observed over the past\ndecade, as illustrated in figure 2.2.\n\nFigure 2.2  Number and percentage of countries in each EGDI group, 2014 to 2024\n\n\n 200\n 180    25 (13.0%)       29 (15.0%)                    40 (20.7%)     57 (29.5%)  60 (31.1%)     76 (39.4%)\n 160    62 (32.1%)       75 (38.9%)\n 140                                                   73 (37.8%)\n 120                                                                  69 (35.8%)  73 (37.8%)\n 100    74 (38.3%)                                                                               62 (32.1%)\n  80                     57 (29.5%)                    65 (33.7%)\n  60                                                                  59 (30.6%)  53 (27.5%)     44 (22.8%)\n  40\n  20    32 (16.6%)       32 (16.6%)    15 (7.8%)                      8 (4.1%)    7 (3.6%)              11 (5.7%)\n  0\n           2014          2016             2018                          2020        2022                   2024\n                         Low EGDI                      Middle EGDI    High EGDI    Very high EGDI\n\nSources: 2014-2024 United Nations E-Government Surveys.\n\nThe number of countries with very high EGDI values has more than tripled over the past ten years,\nrising from 25 in 2014 to 76 in 2024. The combined number of countries with very high and high\nEGDI values has increased from 87 in 2014 to 138 in 2024. This underscores the growing importance\nand priority Governments have placed on digital transformation over the past decade. It highlights\nthe significant strides made in enhancing e-government services and infrastructure, reflecting a\nglobal commitment to leveraging technology for improved governance and public services delivery.\nAs a result of these     Very high EGDI\n                           gains, the number of countries with middle and low EGDI values has decreased\nsignificantly, falling   High EGDI\n                           from 106 in 2014 to 55 in 2024. This shift is broadening the base of nations\nthat are strengthening their digital capabilities, ensuring that more citizens can benefit from the\n                         Middle EGDI\nefficiencies and conveniences of digital government services.\nFigure 2.3 presents      Low EGDI\n                          the 2024 global and regional average EGDI values and the percentage increases\nin these averages since 2022. Europe has the highest average EGDI value (0.8493), followed by Asia\n(0.6990), the Americas (0.6701), Oceania (0.5289), and Africa (0.4247). Asia has seen the sharpest\nincrease in its average EGDI value (7.7 per cent), followed by Africa, (4.8 per cent), the Americas and\nOceania (4.1 per cent), and Europe (2.3 per cent).\n\n\n\n\n\n\n37"
+      }
+    ]
+  },
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "For the first time, Member States with very high EGDI values (above 0.75) comprise the largest share, accounting for 39 per cent of the total (76 of the 193 countries assessed). This group is followed by countries with high EGDI values (ranging from 0.50 to 0.75), which make up 32 per cent (62 countries). The number of countries with middle EGDI values (ranging from 0.25 to 0.50) has declined from 53 in 2022 to 44 (23 per cent) in 2024. However, the number of countries with low EGDI values has increased from 7 to 11 (6 per cent) since 2022, primarily due to geopolitical conflicts and post-conflict situations that have hindered their digital development. The overall progress achieved is consistent with the positive e-government development trend observed over the past decade, as illustrated in figure 2.2.\n\nFigure 2.2 Number and percentage of countries in each EGDI group, 2014 to 2024\n\n<table>\n  <thead>\n    <tr>\n        <th>Year</th>\n        <th>Low EGDI</th>\n        <th>Middle EGDI</th>\n        <th>High EGDI</th>\n        <th>Very high EGDI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2014</td>\n        <td>32 (16.6%)</td>\n        <td>74 (38.3%)</td>\n        <td>62 (32.1%)</td>\n        <td>25 (13.0%)</td>\n    </tr>\n    <tr>\n        <td>2016</td>\n        <td>32 (16.6%)</td>\n        <td>57 (29.5%)</td>\n        <td>75 (38.9%)</td>\n        <td>29 (15.0%)</td>\n    </tr>\n    <tr>\n        <td>2018</td>\n        <td>15 (7.8%)</td>\n        <td>65 (33.7%)</td>\n        <td>73 (37.8%)</td>\n        <td>40 (20.7%)</td>\n    </tr>\n    <tr>\n        <td>2020</td>\n        <td>8 (4.1%)</td>\n        <td>59 (30.6%)</td>\n        <td>69 (35.8%)</td>\n        <td>57 (29.5%)</td>\n    </tr>\n    <tr>\n        <td>2022</td>\n        <td>7 (3.6%)</td>\n        <td>53 (27.5%)</td>\n        <td>73 (37.8%)</td>\n        <td>60 (31.1%)</td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td>11 (5.7%)</td>\n        <td>44 (22.8%)</td>\n        <td>62 (32.1%)</td>\n        <td>76 (39.4%)</td>\n    </tr>\n  </tbody>\n</table>\n\nSources: 2014-2024 United Nations E-Government Surveys.\n\nThe number of countries with very high EGDI values has more than tripled over the past ten years, rising from 25 in 2014 to 76 in 2024. The combined number of countries with very high and high EGDI values has increased from 87 in 2014 to 138 in 2024. This underscores the growing importance and priority Governments have placed on digital transformation over the past decade. It highlights the significant strides made in enhancing e-government services and infrastructure, reflecting a global commitment to leveraging technology for improved governance and public services delivery. As a result of these gains, the number of countries with middle and low EGDI values has decreased significantly, falling from 106 in 2014 to 55 in 2024. This shift is broadening the base of nations that are strengthening their digital capabilities, ensuring that more citizens can benefit from the efficiencies and conveniences of digital government services.\n\nFigure 2.3 presents the 2024 global and regional average EGDI values and the percentage increases in these averages since 2022. Europe has the highest average EGDI value (0.8493), followed by Asia (0.6990), the Americas (0.6701), Oceania (0.5289), and Africa (0.4247). Asia has seen the sharpest increase in its average EGDI value (7.7 per cent), followed by Africa, (4.8 per cent), the Americas and Oceania (4.1 per cent), and Europe (2.3 per cent).",
+        "header": "CHAPTER 2 • GLOBAL TRENDS IN E-GOVERNMENT\n\nChapter 2",
+        "footer": "<page_number>37</page_number>",
+        "success": true
+      }
+    ]
+  },
+  "items": {
+    "pages": [
+      {
+        "page_number": 1,
+        "items": [
+          {
+            "type": "header",
+            "md": "CHAPTER 2 • GLOBAL TRENDS IN E-GOVERNMENT\n\nChapter 2",
+            "bbox": [
+              {
+                "x": 316.42,
+                "y": 23.13,
+                "w": 287.43,
+                "h": 41.8
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "CHAPTER 2 • GLOBAL TRENDS IN E-GOVERNMENT",
+                "bbox": [
+                  {
+                    "x": 316.42,
+                    "y": 38.99,
+                    "w": 153.59,
+                    "h": 7.43,
+                    "confidence": 0.91,
+                    "start_index": 0,
+                    "end_index": 40,
+                    "label": "header"
+                  }
+                ],
+                "value": "CHAPTER 2 • GLOBAL TRENDS IN E-GOVERNMENT"
+              },
+              {
+                "type": "text",
+                "md": "Chapter 2",
+                "bbox": [
+                  {
+                    "x": 594.39,
+                    "y": 23.13,
+                    "w": 9.46,
+                    "h": 41.8,
+                    "confidence": 0.94,
+                    "start_index": 0,
+                    "end_index": 8,
+                    "label": "header"
+                  }
+                ],
+                "value": "Chapter 2"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "For the first time, Member States with very high EGDI values (above 0.75) comprise the largest share, accounting for 39 per cent of the total (76 of the 193 countries assessed). This group is followed by countries with high EGDI values (ranging from 0.50 to 0.75), which make up 32 per cent (62 countries). The number of countries with middle EGDI values (ranging from 0.25 to 0.50) has declined from 53 in 2022 to 44 (23 per cent) in 2024. However, the number of countries with low EGDI values has increased from 7 to 11 (6 per cent) since 2022, primarily due to geopolitical conflicts and post-conflict situations that have hindered their digital development. The overall progress achieved is consistent with the positive e-government development trend observed over the past decade, as illustrated in figure 2.2.",
+            "bbox": [
+              {
+                "x": 67.31,
+                "y": 64.09,
+                "w": 403.49,
+                "h": 114.52,
+                "confidence": 1,
+                "start_index": 0,
+                "end_index": 814,
+                "label": "text"
+              }
+            ],
+            "value": "For the first time, Member States with very high EGDI values (above 0.75) comprise the largest share, accounting for 39 per cent of the total (76 of the 193 countries assessed). This group is followed by countries with high EGDI values (ranging from 0.50 to 0.75), which make up 32 per cent (62 countries). The number of countries with middle EGDI values (ranging from 0.25 to 0.50) has declined from 53 in 2022 to 44 (23 per cent) in 2024. However, the number of countries with low EGDI values has increased from 7 to 11 (6 per cent) since 2022, primarily due to geopolitical conflicts and post-conflict situations that have hindered their digital development. The overall progress achieved is consistent with the positive e-government development trend observed over the past decade, as illustrated in figure 2.2."
+          },
+          {
+            "type": "text",
+            "md": "Figure 2.2 Number and percentage of countries in each EGDI group, 2014 to 2024",
+            "bbox": [
+              {
+                "x": 67.41,
+                "y": 192.7,
+                "w": 371.48,
+                "h": 10.28,
+                "confidence": 0.97,
+                "start_index": 0,
+                "end_index": 77,
+                "label": "caption"
+              },
+              {
+                "x": 68.032,
+                "y": 191.778,
+                "w": 43.61800000000001,
+                "h": 11,
+                "confidence": 0.97,
+                "label": "caption"
+              },
+              {
+                "x": 124.728,
+                "y": 191.778,
+                "w": 313.98,
+                "h": 11,
+                "confidence": 0.97,
+                "label": "caption"
+              }
+            ],
+            "value": "Figure 2.2 Number and percentage of countries in each EGDI group, 2014 to 2024"
+          },
+          {
+            "type": "table",
+            "md": "| Year | Low EGDI   | Middle EGDI | High EGDI  | Very high EGDI |\n| ---- | ---------- | ----------- | ---------- | -------------- |\n| 2014 | 32 (16.6%) | 74 (38.3%)  | 62 (32.1%) | 25 (13.0%)     |\n| 2016 | 32 (16.6%) | 57 (29.5%)  | 75 (38.9%) | 29 (15.0%)     |\n| 2018 | 15 (7.8%)  | 65 (33.7%)  | 73 (37.8%) | 40 (20.7%)     |\n| 2020 | 8 (4.1%)   | 59 (30.6%)  | 69 (35.8%) | 57 (29.5%)     |\n| 2022 | 7 (3.6%)   | 53 (27.5%)  | 73 (37.8%) | 60 (31.1%)     |\n| 2024 | 11 (5.7%)  | 44 (22.8%)  | 62 (32.1%) | 76 (39.4%)     |",
+            "bbox": [
+              {
+                "x": 130.71,
+                "y": 247.49,
+                "w": 105.36,
+                "h": 181.91,
+                "confidence": 0.5,
+                "start_index": 9,
+                "end_index": 254,
+                "label": "text"
+              },
+              {
+                "x": 246.9,
+                "y": 247.49,
+                "w": 54.23,
+                "h": 181.92,
+                "confidence": 0.5,
+                "start_index": 13,
+                "end_index": 320,
+                "label": "text"
+              },
+              {
+                "x": 325.42,
+                "y": 247.49,
+                "w": 40.79,
+                "h": 181.92,
+                "confidence": 0.5,
+                "start_index": 13,
+                "end_index": 373,
+                "label": "text"
+              },
+              {
+                "x": 390.63,
+                "y": 247.49,
+                "w": 104.7,
+                "h": 181.92,
+                "confidence": 0.5,
+                "start_index": 13,
+                "end_index": 518,
+                "label": "text"
+              },
+              {
+                "x": 98.39,
+                "y": 232.1,
+                "w": 16.04,
+                "h": 171.83,
+                "confidence": 0.5,
+                "start_index": 134,
+                "end_index": 465,
+                "label": "text"
+              },
+              {
+                "x": 67.16094862896463,
+                "y": 220.90456406966499,
+                "w": 476.71486672111183,
+                "h": 216.85974734762436,
+                "confidence": 0.5,
+                "label": "chart"
+              },
+              {
+                "x": 67.16094862896463,
+                "y": 220.90456406966499,
+                "w": 476.71486672111183,
+                "h": 216.85974734762436,
+                "confidence": 0.5,
+                "label": "chart"
+              }
+            ],
+            "rows": [
+              [
+                "Year",
+                "Low EGDI",
+                "Middle EGDI",
+                "High EGDI",
+                "Very high EGDI"
+              ],
+              [
+                "2014",
+                "32 (16.6%)",
+                "74 (38.3%)",
+                "62 (32.1%)",
+                "25 (13.0%)"
+              ],
+              [
+                "2016",
+                "32 (16.6%)",
+                "57 (29.5%)",
+                "75 (38.9%)",
+                "29 (15.0%)"
+              ],
+              [
+                "2018",
+                "15 (7.8%)",
+                "65 (33.7%)",
+                "73 (37.8%)",
+                "40 (20.7%)"
+              ],
+              [
+                "2020",
+                "8 (4.1%)",
+                "59 (30.6%)",
+                "69 (35.8%)",
+                "57 (29.5%)"
+              ],
+              [
+                "2022",
+                "7 (3.6%)",
+                "53 (27.5%)",
+                "73 (37.8%)",
+                "60 (31.1%)"
+              ],
+              [
+                "2024",
+                "11 (5.7%)",
+                "44 (22.8%)",
+                "62 (32.1%)",
+                "76 (39.4%)"
+              ]
+            ],
+            "html": "<table>\n  <thead>\n    <tr>\n        <th>Year</th>\n        <th>Low EGDI</th>\n        <th>Middle EGDI</th>\n        <th>High EGDI</th>\n        <th>Very high EGDI</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n        <td>2014</td>\n        <td>32 (16.6%)</td>\n        <td>74 (38.3%)</td>\n        <td>62 (32.1%)</td>\n        <td>25 (13.0%)</td>\n    </tr>\n    <tr>\n        <td>2016</td>\n        <td>32 (16.6%)</td>\n        <td>57 (29.5%)</td>\n        <td>75 (38.9%)</td>\n        <td>29 (15.0%)</td>\n    </tr>\n    <tr>\n        <td>2018</td>\n        <td>15 (7.8%)</td>\n        <td>65 (33.7%)</td>\n        <td>73 (37.8%)</td>\n        <td>40 (20.7%)</td>\n    </tr>\n    <tr>\n        <td>2020</td>\n        <td>8 (4.1%)</td>\n        <td>59 (30.6%)</td>\n        <td>69 (35.8%)</td>\n        <td>57 (29.5%)</td>\n    </tr>\n    <tr>\n        <td>2022</td>\n        <td>7 (3.6%)</td>\n        <td>53 (27.5%)</td>\n        <td>73 (37.8%)</td>\n        <td>60 (31.1%)</td>\n    </tr>\n    <tr>\n        <td>2024</td>\n        <td>11 (5.7%)</td>\n        <td>44 (22.8%)</td>\n        <td>62 (32.1%)</td>\n        <td>76 (39.4%)</td>\n    </tr>\n  </tbody>\n</table>",
+            "csv": "\"Year\",\"Low EGDI\",\"Middle EGDI\",\"High EGDI\",\"Very high EGDI\"\n\"2014\",\"32 (16.6%)\",\"74 (38.3%)\",\"62 (32.1%)\",\"25 (13.0%)\"\n\"2016\",\"32 (16.6%)\",\"57 (29.5%)\",\"75 (38.9%)\",\"29 (15.0%)\"\n\"2018\",\"15 (7.8%)\",\"65 (33.7%)\",\"73 (37.8%)\",\"40 (20.7%)\"\n\"2020\",\"8 (4.1%)\",\"59 (30.6%)\",\"69 (35.8%)\",\"57 (29.5%)\"\n\"2022\",\"7 (3.6%)\",\"53 (27.5%)\",\"73 (37.8%)\",\"60 (31.1%)\"\n\"2024\",\"11 (5.7%)\",\"44 (22.8%)\",\"62 (32.1%)\",\"76 (39.4%)\"",
+            "parse_concerns": [
+              {
+                "type": "layout_lvm_disagreement",
+                "details": "layout detected [text, chart, caption, footer, header] but no table/form"
+              },
+              {
+                "type": "possible_merged_columns",
+                "details": "col 1 'Low EGDI': 6/6 (100%) have interior whitespace"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "md": "Sources: 2014-2024 United Nations E-Government Surveys.",
+            "bbox": [
+              {
+                "x": 94.87,
+                "y": 444.7,
+                "w": 150.94,
+                "h": 8,
+                "confidence": 1,
+                "start_index": 9,
+                "end_index": 54,
+                "label": "text"
+              },
+              {
+                "x": 67.38075579767641,
+                "y": 444.9499372399371,
+                "w": 177.98322138578996,
+                "h": 7.855421646781602,
+                "confidence": 1,
+                "label": "text"
+              }
+            ],
+            "value": "Sources: 2014-2024 United Nations E-Government Surveys."
+          },
+          {
+            "type": "text",
+            "md": "The number of countries with very high EGDI values has more than tripled over the past ten years, rising from 25 in 2014 to 76 in 2024. The combined number of countries with very high and high EGDI values has increased from 87 in 2014 to 138 in 2024. This underscores the growing importance and priority Governments have placed on digital transformation over the past decade. It highlights the significant strides made in enhancing e-government services and infrastructure, reflecting a global commitment to leveraging technology for improved governance and public services delivery. As a result of these gains, the number of countries with middle and low EGDI values has decreased significantly, falling from 106 in 2014 to 55 in 2024. This shift is broadening the base of nations that are strengthening their digital capabilities, ensuring that more citizens can benefit from the efficiencies and conveniences of digital government services.",
+            "bbox": [
+              {
+                "x": 67.14,
+                "y": 470.13,
+                "w": 403.5,
+                "h": 127.95,
+                "confidence": 1,
+                "start_index": 0,
+                "end_index": 942,
+                "label": "text"
+              }
+            ],
+            "value": "The number of countries with very high EGDI values has more than tripled over the past ten years, rising from 25 in 2014 to 76 in 2024. The combined number of countries with very high and high EGDI values has increased from 87 in 2014 to 138 in 2024. This underscores the growing importance and priority Governments have placed on digital transformation over the past decade. It highlights the significant strides made in enhancing e-government services and infrastructure, reflecting a global commitment to leveraging technology for improved governance and public services delivery. As a result of these gains, the number of countries with middle and low EGDI values has decreased significantly, falling from 106 in 2014 to 55 in 2024. This shift is broadening the base of nations that are strengthening their digital capabilities, ensuring that more citizens can benefit from the efficiencies and conveniences of digital government services."
+          },
+          {
+            "type": "text",
+            "md": "Figure 2.3 presents the 2024 global and regional average EGDI values and the percentage increases in these averages since 2022. Europe has the highest average EGDI value (0.8493), followed by Asia (0.6990), the Americas (0.6701), Oceania (0.5289), and Africa (0.4247). Asia has seen the sharpest increase in its average EGDI value (7.7 per cent), followed by Africa, (4.8 per cent), the Americas and Oceania (4.1 per cent), and Europe (2.3 per cent).",
+            "bbox": [
+              {
+                "x": 67.2,
+                "y": 608.81,
+                "w": 403.44,
+                "h": 62.44,
+                "confidence": 0.99,
+                "start_index": 0,
+                "end_index": 449,
+                "label": "text"
+              }
+            ],
+            "value": "Figure 2.3 presents the 2024 global and regional average EGDI values and the percentage increases in these averages since 2022. Europe has the highest average EGDI value (0.8493), followed by Asia (0.6990), the Americas (0.6701), Oceania (0.5289), and Africa (0.4247). Asia has seen the sharpest increase in its average EGDI value (7.7 per cent), followed by Africa, (4.8 per cent), the Americas and Oceania (4.1 per cent), and Europe (2.3 per cent)."
+          },
+          {
+            "type": "footer",
+            "md": "<page_number>37</page_number>",
+            "bbox": [
+              {
+                "x": 535.08,
+                "y": 745.98,
+                "w": 9.98,
+                "h": 7.99
+              }
+            ],
+            "items": [
+              {
+                "type": "text",
+                "md": "\\<page_number>37\\</page_number>",
+                "bbox": [
+                  {
+                    "x": 535.08,
+                    "y": 745.98,
+                    "w": 9.98,
+                    "h": 7.99,
+                    "confidence": 0.96,
+                    "start_index": 0,
+                    "end_index": 30,
+                    "label": "footer"
+                  }
+                ],
+                "value": "<page_number>37</page_number>"
+              }
+            ]
+          }
+        ],
+        "page_width": 612,
+        "page_height": 792,
+        "success": true
+      }
+    ]
+  },
+  "metadata": {
+    "pages": [
+      {
+        "page_number": 1,
+        "confidence": 0.972,
+        "original_orientation_angle": 0,
+        "cost_optimized": false,
+        "triggered_auto_mode": false
+      }
+    ]
+  },
+  "forms": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": {
+    "total_count": 2,
+    "images": [
+      {
+        "index": 0,
+        "filename": "page_1.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d8009fb6-42a3-4794-b9ed-7709bd46e425/page_1.jpg?AWSAccessKeyId=ASIAXMCG64XTZ4VSTWSC&Signature=o4S9d%2F7aMOi%2FEIUaYiTOL0U1jEw%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJHMEUCIHYgLo5Hjot2iTRMa6rCO%2F2NUH5XUzyCpdt69ddCTSUkAiEAjoXA5yuxg2T%2F1g7DuvK3rEyQ1nQ07rebMbbP%2F5ZohcoqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDK4pWDyL1Ov9SA1KJSrkBCwsRCqkepQRHbBjVqGx9KU9dpgPULgeb2nV77pN9w3riVXSe2229JMboNZ8PDOqYJCTOjQxyUJPTK%2F0or%2FMXqVqdqfl4mTcZLluLaWGWioZ28lv7Af%2B%2FuQ%2BbqUYNVZgsWVWB%2FwzdPCrTgMPZ23mEg2ARFVSikRCg9i12gmAwSNA23qpFWL0WVIq1IHiFHNfTGvL9shLYYurK33UCGC0g6SBJGKrA6QksP3svNNZq5EqjAJuL0sfxIbh4ahsOHpknlrIDvCIZSDSdGr8ypq5YpNRujuwQQxHj%2F1G7%2BtvU6hIrWTL%2F6rBy049DUjTJY%2FDwqYebW%2F6CxdueVd3Rr76UsgN9E4Y%2BH%2BfHR4b2dyMJfgCFdUvwjwk8ny%2BjDwLx0Mg0%2FkOICPm1kcQF5zGv269lkFnM%2FsSvheCTGxmv2EXV687PKTFdFtLGpRRMBWfxzABRvkeCIaF2vIi85kxpDpvbb52PfjrbwgF7vXzr37pTEuEpULwFceYdPpR6zBomk2kyBP36QLUPAcjtbULPlwlWa7YFlmPayWe9Kx1JGzUmIxA%2BT%2FsABvImlq4sczjXrEomTej%2BqGAPry3GmzfsG4rvrojjTPB%2Bdjk%2BCwROAIvn7BEA%2Fltnjm8ScYaMYJ78TkSkbB3xYy83RMnJYCGx4cCtfwJ81PHZ0Vp8SVDEeL0dBluRY1nUGiPcuhzVzvuboTxjFYdNrIQphMcaWSMsBRYhTrKUYi3CoJ9AuPjs5wBkNEAwwDc%2Ba7%2BkJcoqcrCs85nU3eMLvAbjALBfhzD%2Fwr806fL%2FwumWCTWUEbmSOQYVa%2BGffkr%2BTDUwPXTBjqYATqPyVdiIAuHCk8NgVLNDrIWEkgszFeP0aLooYnRE0DiniemxgNl87afDIwsTiTSYykjSWMYlssEXYnLH948u%2F%2BD281zqRZiXhdKvUvlfUUg5XlaRTkDBtQQqvjVsDRWkW9LzGNc9X9dGbIRmEGC7TXU4SGVT678WoiftZhQ3yPhiwvEKZIcv4K%2F04h4iqrG2jMgdH591Tda&Expires=1786605788",
+        "category": "screenshot",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "w": 612,
+          "h": 792
+        }
+      },
+      {
+        "index": 1,
+        "filename": "page_1_chart_1_v2.jpg",
+        "content_type": "image/jpeg",
+        "presigned_url": "https://llama-platform-file-parsing.s3.amazonaws.com/ec7edb70-8bec-4b1b-9a17-451533884780/d8009fb6-42a3-4794-b9ed-7709bd46e425/page_1_chart_1_v2.jpg?AWSAccessKeyId=ASIAXMCG64XTZ4VSTWSC&Signature=yMJgsLTMAK8QXSjQm0%2FjLjtxND8%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEBcaCXVzLWVhc3QtMSJHMEUCIHYgLo5Hjot2iTRMa6rCO%2F2NUH5XUzyCpdt69ddCTSUkAiEAjoXA5yuxg2T%2F1g7DuvK3rEyQ1nQ07rebMbbP%2F5ZohcoqkAUI3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1MDY5NTQ5NjY1MDMiDK4pWDyL1Ov9SA1KJSrkBCwsRCqkepQRHbBjVqGx9KU9dpgPULgeb2nV77pN9w3riVXSe2229JMboNZ8PDOqYJCTOjQxyUJPTK%2F0or%2FMXqVqdqfl4mTcZLluLaWGWioZ28lv7Af%2B%2FuQ%2BbqUYNVZgsWVWB%2FwzdPCrTgMPZ23mEg2ARFVSikRCg9i12gmAwSNA23qpFWL0WVIq1IHiFHNfTGvL9shLYYurK33UCGC0g6SBJGKrA6QksP3svNNZq5EqjAJuL0sfxIbh4ahsOHpknlrIDvCIZSDSdGr8ypq5YpNRujuwQQxHj%2F1G7%2BtvU6hIrWTL%2F6rBy049DUjTJY%2FDwqYebW%2F6CxdueVd3Rr76UsgN9E4Y%2BH%2BfHR4b2dyMJfgCFdUvwjwk8ny%2BjDwLx0Mg0%2FkOICPm1kcQF5zGv269lkFnM%2FsSvheCTGxmv2EXV687PKTFdFtLGpRRMBWfxzABRvkeCIaF2vIi85kxpDpvbb52PfjrbwgF7vXzr37pTEuEpULwFceYdPpR6zBomk2kyBP36QLUPAcjtbULPlwlWa7YFlmPayWe9Kx1JGzUmIxA%2BT%2FsABvImlq4sczjXrEomTej%2BqGAPry3GmzfsG4rvrojjTPB%2Bdjk%2BCwROAIvn7BEA%2Fltnjm8ScYaMYJ78TkSkbB3xYy83RMnJYCGx4cCtfwJ81PHZ0Vp8SVDEeL0dBluRY1nUGiPcuhzVzvuboTxjFYdNrIQphMcaWSMsBRYhTrKUYi3CoJ9AuPjs5wBkNEAwwDc%2Ba7%2BkJcoqcrCs85nU3eMLvAbjALBfhzD%2Fwr806fL%2FwumWCTWUEbmSOQYVa%2BGffkr%2BTDUwPXTBjqYATqPyVdiIAuHCk8NgVLNDrIWEkgszFeP0aLooYnRE0DiniemxgNl87afDIwsTiTSYykjSWMYlssEXYnLH948u%2F%2BD281zqRZiXhdKvUvlfUUg5XlaRTkDBtQQqvjVsDRWkW9LzGNc9X9dGbIRmEGC7TXU4SGVT678WoiftZhQ3yPhiwvEKZIcv4K%2F04h4iqrG2jMgdH591Tda&Expires=1786605788",
+        "category": "layout",
+        "bbox": {
+          "x": 67,
+          "y": 221,
+          "w": 477,
+          "h": 217
+        }
+      }
+    ]
+  },
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}

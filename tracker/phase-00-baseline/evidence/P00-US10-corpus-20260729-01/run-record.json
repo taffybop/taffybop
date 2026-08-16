@@ -1,0 +1,1697 @@
+{
+  "attempted_case_count": 15,
+  "cases": [
+    {
+      "case_id": "catastrophe-recap",
+      "case_latency_ms": 9879.357458092272,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "catastrophe-recap",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "1",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:41:31.502053+00:00",
+      "cpu_ms": 7281.424999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 1,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.md",
+          "role": "markdown",
+          "sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+          "size_bytes": 2008
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.json",
+          "role": "raw_json",
+          "sha256": "d7b5673775fdc005d7b32a24488e3fc0c31a9b587744dc8cca7628f1fd512309",
+          "size_bytes": 79005
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/catastrophe-recap/our-output.json",
+          "role": "semantic_json",
+          "sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+          "size_bytes": 38325
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 8771.374207921326,
+      "peak_rss_bytes": 1423114240,
+      "reference_comparison": {
+        "case_id": "catastrophe-recap",
+        "current_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "current_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "9d5bb7a233e672f928baa5946af8d54c18de2df187d343bc40e826a455a604e1",
+        "reference_semantic_json_sha256": "0d31d1cf81f71317c4ceaf6e317502ced47aa4443932eea4eb1afa4d19e3bbc9",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.pdf",
+          "role": "source",
+          "sha256": "d4d365e06715c4bf9b9ab2159caf79c1ef827234b3bf0b586357e3601795b87e",
+          "size_bytes": 58779
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.md",
+          "role": "expert_markdown",
+          "sha256": "5104172e1d81eed0a001efaec7bec6f05d32a95f58dc169aacdc5842082069e8",
+          "size_bytes": 6755
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/catastrophe-recap.json",
+          "role": "expert_json",
+          "sha256": "cf0e1b11bd4e44b9ac20725e2bdf51a8301ea9bde173bbf1224c1280511381db",
+          "size_bytes": 42573
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:41:22.725003+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "clean-energy",
+      "case_latency_ms": 8325.02150000073,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "clean-energy",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clean-energy",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "2",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:41:39.841996+00:00",
+      "cpu_ms": 5793.476999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 2,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clean-energy/our-output.md",
+          "role": "markdown",
+          "sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+          "size_bytes": 886
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clean-energy/our-output.json",
+          "role": "raw_json",
+          "sha256": "5197c6dd3bab57b61cd32737918742eaad8c7f5aa4132830a5f881b1e1d6e721",
+          "size_bytes": 107628
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clean-energy/our-output.json",
+          "role": "semantic_json",
+          "sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+          "size_bytes": 52165
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 7251.158583909273,
+      "peak_rss_bytes": 1505525760,
+      "reference_comparison": {
+        "case_id": "clean-energy",
+        "current_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+        "current_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "e94fdcfd242a09cd33cc2198e7fca7bbea3e9abd3ef006eeaa833adf7c5264f3",
+        "reference_semantic_json_sha256": "26f222c20ddd2298bb6e37a3bb52f1b9476ff86a6cc04e8638d3ccac45f1c21a",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.pdf",
+          "role": "source",
+          "sha256": "161d513c3ffa53ee3967bac6a7bb420d5d60a2008f79b4f7421b83e9b3a11a7d",
+          "size_bytes": 122014
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.md",
+          "role": "expert_markdown",
+          "sha256": "746cc8d471e85c988dbfcf88b3940e2e001716b38359f9dc8d67fd6ca081ee4a",
+          "size_bytes": 1258
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clean-energy.json",
+          "role": "expert_json",
+          "sha256": "9252f22f0301ef8097c19667064dfaae4d374617a1784159c812f86b0cd9d1e9",
+          "size_bytes": 14730
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:41:32.583855+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "clinical-study",
+      "case_latency_ms": 13954.793125158176,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "clinical-study",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clinical-study",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "3",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:41:53.741017+00:00",
+      "cpu_ms": 15488.734,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 3,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 4,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clinical-study/our-output.md",
+          "role": "markdown",
+          "sha256": "11a5339797e1ed41a164b23ada5386dc7220d32e10633181a76323f06271a160",
+          "size_bytes": 18012
+        },
+        "observed_page_count": 4,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clinical-study/our-output.json",
+          "role": "raw_json",
+          "sha256": "6b0c36a9cb5a0f583693bbf7d1e2a6010ca126881fd63b24e2be5aad6641f080",
+          "size_bytes": 342467
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/clinical-study/our-output.json",
+          "role": "semantic_json",
+          "sha256": "2fb9508e6027b1c2f88341ce92445e5da56bdf805a71a9563b768cbe59bbf863",
+          "size_bytes": 176924
+        },
+        "successful_page_count": 4
+      },
+      "parse_latency_ms": 12820.151041029021,
+      "peak_rss_bytes": 1662058496,
+      "reference_comparison": {
+        "case_id": "clinical-study",
+        "current_markdown_sha256": "11a5339797e1ed41a164b23ada5386dc7220d32e10633181a76323f06271a160",
+        "current_semantic_json_sha256": "2fb9508e6027b1c2f88341ce92445e5da56bdf805a71a9563b768cbe59bbf863",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "11a5339797e1ed41a164b23ada5386dc7220d32e10633181a76323f06271a160",
+        "reference_semantic_json_sha256": "2fb9508e6027b1c2f88341ce92445e5da56bdf805a71a9563b768cbe59bbf863",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 4,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clinical-study.pdf",
+          "role": "source",
+          "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2",
+          "size_bytes": 750004
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clinical-study.md",
+          "role": "expert_markdown",
+          "sha256": "25e32291b2f2c477b64ba4185a0c10c8931b5823be9f8c38810c24680bacd43a",
+          "size_bytes": 19996
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/clinical-study.json",
+          "role": "expert_json",
+          "sha256": "ab19827f9b0dad0b38d7c15e879e209152c54d1c198c2a571b093b0a32d6f056",
+          "size_bytes": 163250
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:41:40.904221+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "component-datasheet",
+      "case_latency_ms": 10608.304959023371,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "component-datasheet",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/component-datasheet",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "4",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:04.400887+00:00",
+      "cpu_ms": 7748.6630000000005,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 4,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/component-datasheet/our-output.md",
+          "role": "markdown",
+          "sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+          "size_bytes": 3771
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/component-datasheet/our-output.json",
+          "role": "raw_json",
+          "sha256": "fc6c8600fc9e1b27fcc750cffd5b8703aa48ff0d5db8395a2b41073da9ad09d2",
+          "size_bytes": 262955
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/component-datasheet/our-output.json",
+          "role": "semantic_json",
+          "sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+          "size_bytes": 124060
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 9510.60604210943,
+      "peak_rss_bytes": 1899085824,
+      "reference_comparison": {
+        "case_id": "component-datasheet",
+        "current_markdown_sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+        "current_semantic_json_sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "76baf4c7ce7206f3adb36427bfa5593e0d72675276d8c0d5d20e74fdd6e081a7",
+        "reference_semantic_json_sha256": "5be1be6bfbdede05a7c29a24d88ee41ed6b9e2b20dd3aa76966a571c9f463204",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/component-datasheet.pdf",
+          "role": "source",
+          "sha256": "5fc8143f33d156d914b0f139177344be6ad2b0a8d2906413424d6dda93fe36a4",
+          "size_bytes": 329199
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/component-datasheet.md",
+          "role": "expert_markdown",
+          "sha256": "73c00a11c9d719ef6413e51bb20de690a7beb5b69eb031839e537ace11e8e7b4",
+          "size_bytes": 3845
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/component-datasheet.json",
+          "role": "expert_json",
+          "sha256": "be6790098274c52e6b1267822fb8a3f72ae3b5de6470a1955da7250982348573",
+          "size_bytes": 105212
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:41:54.876016+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "egov-survey",
+      "case_latency_ms": 7402.93850004673,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "egov-survey",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/egov-survey",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "5",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:11.832651+00:00",
+      "cpu_ms": 5720.228999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 5,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/egov-survey/our-output.md",
+          "role": "markdown",
+          "sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+          "size_bytes": 3056
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/egov-survey/our-output.json",
+          "role": "raw_json",
+          "sha256": "5060d01b112194a34625d91d618b397b7ff16b24123ca596c51024de7f5ccbd4",
+          "size_bytes": 58400
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/egov-survey/our-output.json",
+          "role": "semantic_json",
+          "sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+          "size_bytes": 31731
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 6334.640334127471,
+      "peak_rss_bytes": 1496481792,
+      "reference_comparison": {
+        "case_id": "egov-survey",
+        "current_markdown_sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+        "current_semantic_json_sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "273f2a1256285e0068b7dc3afdc0de9a7001d9c79ccf43ef81dd67ae44c32e09",
+        "reference_semantic_json_sha256": "c47d41c7cb9bf0c27ed1eb13c63a8c71c4778888dbe4fd5b95ab33d5b589c5d4",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/egov-survey.pdf",
+          "role": "source",
+          "sha256": "7b6b95d79149c16297c6f7280caed0e14b7dcd53ad5067cb2657885b90562846",
+          "size_bytes": 82800
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/egov-survey.md",
+          "role": "expert_markdown",
+          "sha256": "073969878134b4a66d2f43fe5456761b3e0a2d7ec06244e4bf4c8e4e2f728a01",
+          "size_bytes": 3563
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/egov-survey.json",
+          "role": "expert_json",
+          "sha256": "fd541826cd9236c2b9ff2528154863b9c13c9b3ddfb111fe1167f368392cd292",
+          "size_bytes": 28081
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:05.493451+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "esg-metrics",
+      "case_latency_ms": 8411.015499848872,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "esg-metrics",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/esg-metrics",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "6",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:20.228965+00:00",
+      "cpu_ms": 7205.782999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 6,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/esg-metrics/our-output.md",
+          "role": "markdown",
+          "sha256": "67efecc558dfbdd15f84eede895e3d4339e9bab39c8e8293bc21d4065586544b",
+          "size_bytes": 3190
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/esg-metrics/our-output.json",
+          "role": "raw_json",
+          "sha256": "9d1b6046738b1ff2204b1e59936d6c9b1c2877fd2bad5e6da9281d75e14043ff",
+          "size_bytes": 116449
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/esg-metrics/our-output.json",
+          "role": "semantic_json",
+          "sha256": "46a10fc5b9324a72e1b681d90d9e70f02ea61df7bab17fc76e5d1a5f330e7a02",
+          "size_bytes": 56587
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 7325.139083201066,
+      "peak_rss_bytes": 1501675520,
+      "reference_comparison": {
+        "case_id": "esg-metrics",
+        "current_markdown_sha256": "67efecc558dfbdd15f84eede895e3d4339e9bab39c8e8293bc21d4065586544b",
+        "current_semantic_json_sha256": "46a10fc5b9324a72e1b681d90d9e70f02ea61df7bab17fc76e5d1a5f330e7a02",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "67efecc558dfbdd15f84eede895e3d4339e9bab39c8e8293bc21d4065586544b",
+        "reference_semantic_json_sha256": "46a10fc5b9324a72e1b681d90d9e70f02ea61df7bab17fc76e5d1a5f330e7a02",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/esg-metrics.pdf",
+          "role": "source",
+          "sha256": "6eda6d5871098ca8d99bc5b5a1fcf869366147a3440e409c63319fb2813799e9",
+          "size_bytes": 60516
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/esg-metrics.md",
+          "role": "expert_markdown",
+          "sha256": "1e0e78589126107452148d49983a731134e3f63496f680fd2c1e35ab4ee109d4",
+          "size_bytes": 4487
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/esg-metrics.json",
+          "role": "expert_json",
+          "sha256": "ae423f8405a926c132fd5278bbaf8823d4eaf94889cd8da095fa815c949c533f",
+          "size_bytes": 43703
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:12.896495+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "finance-10k",
+      "case_latency_ms": 20083.398124901578,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "finance-10k",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/finance-10k",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "7",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:40.283366+00:00",
+      "cpu_ms": 15730.441,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 7,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/finance-10k/our-output.md",
+          "role": "markdown",
+          "sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+          "size_bytes": 12622
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/finance-10k/our-output.json",
+          "role": "raw_json",
+          "sha256": "dfc077588986f8db3499cef6d84c4af16ef03b8c5b94fde06116e5a7f24f6b24",
+          "size_bytes": 562575
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/finance-10k/our-output.json",
+          "role": "semantic_json",
+          "sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+          "size_bytes": 291808
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 18951.037083985284,
+      "peak_rss_bytes": 2000797696,
+      "reference_comparison": {
+        "case_id": "finance-10k",
+        "current_markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "current_semantic_json_sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "c09584ed42ed53f0cf2287bb3bb82e0c4f35d5fe0237e0c8785fc765f9026b3b",
+        "reference_semantic_json_sha256": "ec1d4b327bd0542b8e76e1a9517b8d940df2692f20bf59476536284298ad5abe",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/finance-10k.pdf",
+          "role": "source",
+          "sha256": "e924db5e2dbe8845997093d550b3dcdea5560b5c4a75957b6ef084f556149086",
+          "size_bytes": 87105
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/finance-10k.md",
+          "role": "expert_markdown",
+          "sha256": "0cada5fe6e5406e38ebe8251399e0ee61bce3127a378232bacb01771ff060517",
+          "size_bytes": 12969
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/finance-10k.json",
+          "role": "expert_json",
+          "sha256": "d426ac3542880372421023bf75acfe414fe604182383ab38723efb271d3f177a",
+          "size_bytes": 103631
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:21.305867+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "health-report",
+      "case_latency_ms": 8379.630833864212,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "health-report",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/health-report",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "8",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:48.724247+00:00",
+      "cpu_ms": 6083.793999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 8,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/health-report/our-output.md",
+          "role": "markdown",
+          "sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+          "size_bytes": 1897
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/health-report/our-output.json",
+          "role": "raw_json",
+          "sha256": "7345d87b295678cf169a2db69e69f10a5c91dbcea919e9fa190d6692dbf1f84c",
+          "size_bytes": 114680
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/health-report/our-output.json",
+          "role": "semantic_json",
+          "sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+          "size_bytes": 55446
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 7300.3630000166595,
+      "peak_rss_bytes": 1508605952,
+      "reference_comparison": {
+        "case_id": "health-report",
+        "current_markdown_sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+        "current_semantic_json_sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "4a1ba6026b146bd7996bf81d592f3e9f47901bf096073afccb100717187e752a",
+        "reference_semantic_json_sha256": "c532e241bad95695c337f2b4aad2b81a27b801ae466a3c6f1f82ed572ef353ba",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/health-report.pdf",
+          "role": "source",
+          "sha256": "fe0bd5c224d5df5cedf26129a04980ac06b67e165875bca0296c6f2cd483b181",
+          "size_bytes": 222282
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/health-report.md",
+          "role": "expert_markdown",
+          "sha256": "a85539100ab3067d149441af72b48ca4ade8cb1bd8d719aba4b610ff4dc3d00d",
+          "size_bytes": 6271
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/health-report.json",
+          "role": "expert_json",
+          "sha256": "e1b7c94e8eefc1eac9611222848cd2680eb70a4993a8a7d1710fa0b3783f45dc",
+          "size_bytes": 43114
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:41.415714+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "insurance-acord",
+      "case_latency_ms": 9569.29525011219,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "insurance-acord",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "9",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:42:58.234371+00:00",
+      "cpu_ms": 10204.006,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 9,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.md",
+          "role": "markdown",
+          "sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+          "size_bytes": 5127
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.json",
+          "role": "raw_json",
+          "sha256": "830c8e4a9929014d351ca705b2b5b701f6e625d106fddf799f574ad947d30ec2",
+          "size_bytes": 71729
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/insurance-acord/our-output.json",
+          "role": "semantic_json",
+          "sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+          "size_bytes": 37750
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 8438.320916844532,
+      "peak_rss_bytes": 1499873280,
+      "reference_comparison": {
+        "case_id": "insurance-acord",
+        "current_markdown_sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+        "current_semantic_json_sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "e1b2e3601f507ce75317b727e682a62616b81ce2868f49740a1967d02680250c",
+        "reference_semantic_json_sha256": "1ce18508462dee0fd90821d4e1d974f77bed9e733c3f82954986efdd08b46432",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/insurance-acord.pdf",
+          "role": "source",
+          "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+          "size_bytes": 17086
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/insurance-acord.md",
+          "role": "expert_markdown",
+          "sha256": "7d2379b35fb2a6bbc566d0b6549f0804e4a3166cd7b113303811fa662eee4e54",
+          "size_bytes": 5523
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/insurance-acord.json",
+          "role": "expert_json",
+          "sha256": "2c507394d3452d73e1cf341611cd0a803b48628d588cd95481a678600bc37652",
+          "size_bytes": 54844
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:49.790832+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "manufacturing-report",
+      "case_latency_ms": 12009.974499931559,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "manufacturing-report",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "10",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:43:10.244366+00:00",
+      "cpu_ms": 8138.450000000001,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 10,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.md",
+          "role": "markdown",
+          "sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+          "size_bytes": 6296
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.json",
+          "role": "raw_json",
+          "sha256": "04c1802f7b57196b492d9c9c52765434e60982d727a23582b83c2afe87ad6827",
+          "size_bytes": 456364
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/manufacturing-report/our-output.json",
+          "role": "semantic_json",
+          "sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+          "size_bytes": 218509
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 10863.770333118737,
+      "peak_rss_bytes": 1826603008,
+      "reference_comparison": {
+        "case_id": "manufacturing-report",
+        "current_markdown_sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+        "current_semantic_json_sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "5825a6f58b1b59197ea287c5838258c2419519ef1068482176da3c5f981d19a8",
+        "reference_semantic_json_sha256": "eece6c9fe1b35e77a404e5a989c0396db14cf349da432cfc76fef21851abf1a7",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/manufacturing-report.pdf",
+          "role": "source",
+          "sha256": "414570f576f16adb8cbe37c43f92ef474a0a0a218d3a2b5a77ffb595dc9eb58f",
+          "size_bytes": 380274
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/manufacturing-report.md",
+          "role": "expert_markdown",
+          "sha256": "c33f1b327e2cf2c6176a64598ea20bb65beebbdede348201e2bb614f1aa68d1c",
+          "size_bytes": 13763
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/manufacturing-report.json",
+          "role": "expert_json",
+          "sha256": "dbe5763deaf9a31864cbf0d962282f9d05d1a4dabff78d892f021b8c987505e0",
+          "size_bytes": 112176
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:42:59.367959+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "ny-timetable",
+      "case_latency_ms": 45585.87383409031,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "ny-timetable",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/ny-timetable",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "11",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:43:55.745551+00:00",
+      "cpu_ms": 52283.503000000004,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 11,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/ny-timetable/our-output.md",
+          "role": "markdown",
+          "sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+          "size_bytes": 40319
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/ny-timetable/our-output.json",
+          "role": "raw_json",
+          "sha256": "9a452359d699aa14c96e6f0abe83aa9603213ae4c558840d52163a9ad7a2bc3e",
+          "size_bytes": 2313602
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/ny-timetable/our-output.json",
+          "role": "semantic_json",
+          "sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+          "size_bytes": 1081782
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 44267.14804186486,
+      "peak_rss_bytes": 2173288448,
+      "reference_comparison": {
+        "case_id": "ny-timetable",
+        "current_markdown_sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+        "current_semantic_json_sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "f8c2a61c0e795e16bc4022e153ee89e96a5b2c37ff7b8b1e217a3a794fd4823e",
+        "reference_semantic_json_sha256": "ebdc1985c66a590a0085e07cb9fa4d1cdf5b1b2cbd7731c412371488b2a06e56",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/ny-timetable.pdf",
+          "role": "source",
+          "sha256": "f9c4069d4a7910d64de79c0f0635c009a4d20f092c4ca09deebfa2f6a2d7bd30",
+          "size_bytes": 26109
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/ny-timetable.md",
+          "role": "expert_markdown",
+          "sha256": "cc939684182ad5220dddba6bdf3f60f3bbfd8e14977900c1814b129e0df7d396",
+          "size_bytes": 47316
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/ny-timetable.json",
+          "role": "expert_json",
+          "sha256": "075e663d4cf4af674bf518343b4fabea6e281efc4606cb77bc2f854931af463d",
+          "size_bytes": 239491
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:43:11.409253+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "postal-10k",
+      "case_latency_ms": 20259.771082783118,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "postal-10k",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/postal-10k",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "12",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:44:16.062812+00:00",
+      "cpu_ms": 14998.154999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 12,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/postal-10k/our-output.md",
+          "role": "markdown",
+          "sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+          "size_bytes": 11109
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/postal-10k/our-output.json",
+          "role": "raw_json",
+          "sha256": "3fe4e910565589d050ddaac314195cdff340b095f7a286f50a029b9e115a9ba8",
+          "size_bytes": 541018
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/postal-10k/our-output.json",
+          "role": "semantic_json",
+          "sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+          "size_bytes": 277566
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 19037.886957870796,
+      "peak_rss_bytes": 1774878720,
+      "reference_comparison": {
+        "case_id": "postal-10k",
+        "current_markdown_sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+        "current_semantic_json_sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "3288912afb3677a846dd6ac190e40e2b015122292564a038031e85b9759a9f87",
+        "reference_semantic_json_sha256": "ea51e1fd5dbb8b9c0dc0d1ef46033f7d808c5daf8092fe4f4daccc5495752524",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/postal-10k.pdf",
+          "role": "source",
+          "sha256": "72b984cde38a5dc8e13949c3699eb371eb26e14cdd92480091fe3f10f2857e74",
+          "size_bytes": 83589
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/postal-10k.md",
+          "role": "expert_markdown",
+          "sha256": "49513ae511062bd4ad54ef281b696bb87dd6bb84a20100fd0a055b15c5fd9f05",
+          "size_bytes": 11472
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/postal-10k.json",
+          "role": "expert_json",
+          "sha256": "c312e77b9cc9ae0d90d1f20f67dd485f085497d7131ceb9342c4066deb2f7966",
+          "size_bytes": 86821
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:43:57.001109+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "purchase-agreement",
+      "case_latency_ms": 7501.037125010043,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "purchase-agreement",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "13",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:44:23.574857+00:00",
+      "cpu_ms": 5851.397999999999,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 13,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.md",
+          "role": "markdown",
+          "sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+          "size_bytes": 3370
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.json",
+          "role": "raw_json",
+          "sha256": "c29047bcb7c9c958985e2cddfac5d866ff328347eb545e6dab7c9bea42f002fe",
+          "size_bytes": 14093
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/purchase-agreement/our-output.json",
+          "role": "semantic_json",
+          "sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+          "size_bytes": 10567
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 6289.367208024487,
+      "peak_rss_bytes": 1469169664,
+      "reference_comparison": {
+        "case_id": "purchase-agreement",
+        "current_markdown_sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+        "current_semantic_json_sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "51c10e783da3400010151f11ea6cb7120513561c3b68f2ddebe869574852a7ce",
+        "reference_semantic_json_sha256": "64b7e33c88ba63223eb860cd0c550768aa52659ab47a92e008f52282c8879bf6",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/purchase-agreement.pdf",
+          "role": "source",
+          "sha256": "00a8eec6c3ade84be7f9016c8c27547eab4a1802746bc146b00af71216ccfd14",
+          "size_bytes": 152828
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/purchase-agreement.md",
+          "role": "expert_markdown",
+          "sha256": "6223d338aefe324f0d364b5b7b442d337964fec91d96e650ce62557b8de4f229",
+          "size_bytes": 3473
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/purchase-agreement.json",
+          "role": "expert_json",
+          "sha256": "6b8437b4763cfbb1c1d3daed2d496d881fc96afc5ffba16acd71061d2037e869",
+          "size_bytes": 22943
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:44:17.283102+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "settlement-agreement",
+      "case_latency_ms": 7138.926625018939,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "settlement-agreement",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/settlement-agreement",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "14",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:44:30.755269+00:00",
+      "cpu_ms": 6148.615,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 14,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 1,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/settlement-agreement/our-output.md",
+          "role": "markdown",
+          "sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+          "size_bytes": 3144
+        },
+        "observed_page_count": 1,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/settlement-agreement/our-output.json",
+          "role": "raw_json",
+          "sha256": "58646031dedd01e7003fc9deb82d53442d7e50929590b7666a98152fda3e878c",
+          "size_bytes": 23135
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/settlement-agreement/our-output.json",
+          "role": "semantic_json",
+          "sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+          "size_bytes": 14798
+        },
+        "successful_page_count": 1
+      },
+      "parse_latency_ms": 5977.096374845132,
+      "peak_rss_bytes": 1479426048,
+      "reference_comparison": {
+        "case_id": "settlement-agreement",
+        "current_markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+        "current_semantic_json_sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "6fe637d18229a5ab90b501b687d41902335c70a41d39d410e4fa41015c0f3305",
+        "reference_semantic_json_sha256": "acb56e5c38c208d9a6b84a4be71711e2aeb807e7b3e3e79a205a59d0099a2491",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 1,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/settlement-agreement.pdf",
+          "role": "source",
+          "sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+          "size_bytes": 164483
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/settlement-agreement.md",
+          "role": "expert_markdown",
+          "sha256": "7e86bd18f28470c52ccfa3f5156b56e3cbe01366274233aa4956ae56d4b30a34",
+          "size_bytes": 3210
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/settlement-agreement.json",
+          "role": "expert_json",
+          "sha256": "cca63534b7853e8ea64ce106dc82629ce3172bfdaba8353cf7b7881d7af137ae",
+          "size_bytes": 25242
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:44:24.775240+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    },
+    {
+      "case_id": "uber-earnings",
+      "case_latency_ms": 27677.921457914636,
+      "command": [
+        ".venv/bin/python3",
+        "-m",
+        "tests.benchmarks.corpus_runner",
+        "worker",
+        "--workspace",
+        ".",
+        "--corpus-registry",
+        "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+        "--case-id",
+        "uber-earnings",
+        "--output-dir",
+        "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/uber-earnings",
+        "--run-id",
+        "p00-us10-corpus-20260729-01",
+        "--order",
+        "15",
+        "--settings-sha256",
+        "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+        "--environment-sha256",
+        "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205"
+      ],
+      "completed_at_utc": "2026-07-29T08:44:58.409445+00:00",
+      "cpu_ms": 14184.285000000002,
+      "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+      "error": null,
+      "order": 15,
+      "output": {
+        "document_warnings": [],
+        "expected_page_count": 3,
+        "markdown": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/uber-earnings/our-output.md",
+          "role": "markdown",
+          "sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+          "size_bytes": 1453
+        },
+        "observed_page_count": 3,
+        "raw_json": {
+          "derivation": null,
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/uber-earnings/our-output.json",
+          "role": "raw_json",
+          "sha256": "7341be3453c8d8d450af1fa6de0f627c3287325ced487d9039a570fc51074c67",
+          "size_bytes": 225361
+        },
+        "semantic_json": {
+          "derivation": "canonical JSON excluding /processing/duration_ms",
+          "path": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01/uber-earnings/our-output.json",
+          "role": "semantic_json",
+          "sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+          "size_bytes": 108233
+        },
+        "successful_page_count": 3
+      },
+      "parse_latency_ms": 26486.429791897535,
+      "peak_rss_bytes": 2626043904,
+      "reference_comparison": {
+        "case_id": "uber-earnings",
+        "current_markdown_sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+        "current_semantic_json_sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+        "markdown_stable": true,
+        "reference_markdown_sha256": "9beb6dc3d71d0ff97718df827390831e0e4942e88f1399a24d17fc8823c799df",
+        "reference_semantic_json_sha256": "b4d3afe7b93370a97b96aee04416497baa93b52bfefcbecd48074971859219e3",
+        "semantic_json_stable": true
+      },
+      "registered_page_count": 3,
+      "run_id": "p00-us10-corpus-20260729-01",
+      "runner_version": "P00-US10-1.0",
+      "schema_version": "1.0",
+      "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+      "skip": null,
+      "source_triplet": [
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/uber-earnings.pdf",
+          "role": "source",
+          "sha256": "76a4d3fb8af06adc88ed68538997ef28afb26b377f41014cd83eeaddcbcd29e5",
+          "size_bytes": 7584019
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/uber-earnings.md",
+          "role": "expert_markdown",
+          "sha256": "1b0d635b20cd7d6244109516606ad50ff8fee463ea266ddda13236cda9e03a7e",
+          "size_bytes": 2677
+        },
+        {
+          "derivation": null,
+          "path": "benchmark-expertmodeldata/uber-earnings.json",
+          "role": "expert_json",
+          "sha256": "eb2800cb910789901261fb585aa80176c975b11403534a488f3b02dfcec44c34",
+          "size_bytes": 77213
+        }
+      ],
+      "started_at_utc": "2026-07-29T08:44:31.910568+00:00",
+      "status": "success",
+      "warnings": [],
+      "worker_exit_code": 0
+    }
+  ],
+  "command": [
+    ".venv/bin/python3",
+    "-m",
+    "tests.benchmarks.corpus_runner",
+    "capture",
+    "--workspace",
+    ".",
+    "--run-dir",
+    "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01",
+    "--run-id",
+    "p00-us10-corpus-20260729-01",
+    "--timeout-seconds",
+    "420.0"
+  ],
+  "completed_at_utc": "2026-07-29T08:44:59.163060+00:00",
+  "cwd": ".",
+  "diagnostics": [],
+  "environment": {
+    "application_source_sha256": "72e3e1bfd2c3efe9abca2d916cb683d3c2c24e4e110014a034320ceff164a4fc",
+    "application_version": "0.1.0",
+    "engines": [
+      {
+        "name": "docling",
+        "version": "2.114.0"
+      },
+      {
+        "name": "docling-core",
+        "version": "2.87.1"
+      },
+      {
+        "name": "pdfplumber",
+        "version": "0.11.10"
+      },
+      {
+        "name": "pypdfium2",
+        "version": "5.12.1"
+      },
+      {
+        "name": "pillow",
+        "version": "12.3.0"
+      },
+      {
+        "name": "tesseract",
+        "version": "tesseract 5.5.3"
+      }
+    ],
+    "logical_cpu_count": 10,
+    "machine": "arm64",
+    "physical_cpu_count": 10,
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python_executable": "/Users/vignesh/Downloads/taffybop/.venv/bin/python3",
+    "python_version": "3.13.5 (v3.13.5:6cb20a219a8, Jun 11 2025, 12:23:45) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "runner_source_sha256": "52ba5f920913e8b2d2487eda86f9564abd52ec386b4866d09a6434c61a086f59",
+    "total_memory_bytes": 34359738368
+  },
+  "environment_sha256": "8653b08d2b0beebcc08381147dc766611b74a3fd52734e39499b7fe96647d205",
+  "error_count": 0,
+  "execution_policy": {
+    "hf_hub_offline": true,
+    "hosted_services": "disabled",
+    "image_captioning": false,
+    "network_access": "disabled",
+    "optional_models": "disabled",
+    "tokenizers_parallelism": false,
+    "transformers_offline": true
+  },
+  "expected_page_count": 30,
+  "frozen_inputs": {
+    "control_registry": {
+      "file_sha256": "a383938d41d067e0b3e01729d12def7b573764092100ef76228e4c23707c86b5",
+      "identity": "p00-us09-benchmark-control-registry",
+      "path": "tracker/phase-00-baseline/evidence/P00-US09-control-registry.json",
+      "semantic_sha256": "d3c734957b507f07508f8eeffe43ac450f50f53d5f42f8cf63e354fe60738fce"
+    },
+    "corpus_registry": {
+      "file_sha256": "f8024ab7a47df2cedf2d10b996fc8eb140404cdafea0b0a0a9ae2bb059263ceb",
+      "identity": "llamaparse-15",
+      "path": "tracker/phase-00-baseline/evidence/P00-US04-corpus-registry.json",
+      "semantic_sha256": "f7c3bdf460f64c51a7d7e29765ab1e621dc5f59224ddeba8c8a66959c901e4ca"
+    },
+    "legacy_comparison_sha256": "2a23aabc812e6723621174f9c66027c2cf3e852de31a8481262e7a2708710e7b",
+    "legacy_metadata_sha256": "386c333bff8ec0678d1194fff5899f82ec9475d29be7d72999a58c3817e3128f",
+    "review_batches": [
+      {
+        "file_sha256": "f987d84ca1b0d08dfd304d7ea3164a78366643f4b42ef03bc4975d4d09548de4",
+        "identity": "p00-us06-reviewed-claims-batch-a",
+        "path": "tracker/phase-00-baseline/evidence/P00-US06-reviewed-claims-batch-a.json",
+        "semantic_sha256": "f6f0ef58f4cb1379f808e8d5bb7253f260a8f643a83e98e75e4d2e1a3fff01ee"
+      },
+      {
+        "file_sha256": "7e4728c1c5d76a6453d42c640de8a25c24989ed3a160cac2fe4640b22a55814e",
+        "identity": "p00-us07-reviewed-claims-batch-b",
+        "path": "tracker/phase-00-baseline/evidence/P00-US07-reviewed-claims-batch-b.json",
+        "semantic_sha256": "9afe6c098adcd32e3a8370af5ecb2b27ac4730f098e39128e787eef991990d0f"
+      },
+      {
+        "file_sha256": "1411d75d2701e51b815f9f3c0e0e5ba5f799f6ec32ca2788cd31ee4f69f05be1",
+        "identity": "p00-us08-reviewed-claims-batch-c",
+        "path": "tracker/phase-00-baseline/evidence/P00-US08-reviewed-claims-batch-c.json",
+        "semantic_sha256": "69c58b8ab7a3b9bdd21bc49183fb5334ee88bee1a4850061820b551ae416eb89"
+      }
+    ]
+  },
+  "partial_count": 0,
+  "record_kind": "p00-us10-corpus-run",
+  "requested_case_count": 15,
+  "run_dir": "tracker/phase-00-baseline/evidence/P00-US10-corpus-20260729-01",
+  "run_id": "p00-us10-corpus-20260729-01",
+  "runner_version": "P00-US10-1.0",
+  "schema_version": "1.0",
+  "selected_case_ids": [
+    "catastrophe-recap",
+    "clean-energy",
+    "clinical-study",
+    "component-datasheet",
+    "egov-survey",
+    "esg-metrics",
+    "finance-10k",
+    "health-report",
+    "insurance-acord",
+    "manufacturing-report",
+    "ny-timetable",
+    "postal-10k",
+    "purchase-agreement",
+    "settlement-agreement",
+    "uber-earnings"
+  ],
+  "settings": {
+    "docling_artifacts_path": null,
+    "document_timeout_seconds": 300.0,
+    "image_captioning_enabled": false,
+    "image_captioning_prompt": "Describe this visible image faithfully in one concise sentence. Do not infer hidden text, values, or relationships.",
+    "image_heading_height_ratio": 1.8,
+    "image_heading_min_confidence": 0.75,
+    "image_heading_min_page_height_ratio": 0.025,
+    "image_low_confidence_min_alnum_chars": 8,
+    "image_picture_classification_threshold": 0.6,
+    "image_primary_ocr_min_confidence": 0.45,
+    "max_image_pixels": 50000000,
+    "max_image_total_pixels": 100000000,
+    "max_pages": 100,
+    "max_upload_bytes": 26214400,
+    "ocr_languages": [
+      "eng"
+    ],
+    "pdf_render_ocr_min_layout_coverage": 0.55,
+    "pdf_render_ocr_min_native_alnum_chars": 24,
+    "pdf_visual_analysis_enabled": true,
+    "targeted_ocr_max_pixels": 16000000,
+    "targeted_ocr_scale": 5.0,
+    "targeted_ocr_timeout_seconds": 30.0,
+    "tesseract_cmd": "tesseract",
+    "tesseract_data_path": null
+  },
+  "settings_sha256": "27931e7bf4a5a04afcaa4c6139f35dadb7dc18a7ed16b2121c41b4e72d69e2e3",
+  "skipped_count": 0,
+  "started_at_utc": "2026-07-29T08:41:22.285267+00:00",
+  "status": "success",
+  "success_count": 15,
+  "successful_page_count": 30,
+  "timeout_count": 0
+}

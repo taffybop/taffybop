@@ -1,0 +1,210 @@
+{
+  "authority": {
+    "authorized_on": "2026-08-07",
+    "owner": "project owner/requester",
+    "scope": "narrow administrative renewal of the existing P03-US08 latency exception required to permit unrelated Phase 04 table changes",
+    "source": "active Codex thread",
+    "sponsor_authority_is_independent_review": false
+  },
+  "change_classifier": {
+    "admitted_change_classes": [
+      "phase04_table_production_implementation",
+      "compatible_phase04_table_schema_extension",
+      "default_off_phase04_table_configuration",
+      "phase04_table_fixture_or_reviewed_benchmark_control",
+      "phase04_table_frontend_behavior",
+      "phase04_table_test_or_adversarial_control",
+      "phase04_table_performance_or_rss_infrastructure",
+      "phase04_table_documentation_or_evidence",
+      "phase04_table_rollback",
+      "this_renewal_administration"
+    ],
+    "admitted_stories_in_dependency_order": [
+      "P04-US01",
+      "P04-US02",
+      "P04-US04",
+      "P04-US03"
+    ],
+    "ambiguity_result": "not_admitted_and_renewal_expires_before_reliance",
+    "decision_rule": "admitted only when every required predicate is true and no protected-change or expiry trigger is present",
+    "file_hashes_authorize_future_phase04_bytes": false,
+    "mixed_table_and_protected_change_result": "protected_change",
+    "one_story_in_progress_maximum": true,
+    "phase04_flags": [
+      "table_span_fidelity_enabled",
+      "table_evidence_reconciliation_enabled",
+      "table_candidate_gate_enabled",
+      "table_multi_page_merge_enabled"
+    ],
+    "protected_domains": [
+      "p03_running_region_semantics",
+      "p03_running_region_runtime_behavior_or_reachability",
+      "printed_page_identity_semantics",
+      "running_region_feature_flag_behavior",
+      "running_region_outputs_or_serializer_meaning",
+      "running_region_public_compatibility",
+      "running_region_dependency_or_lockfile_custody",
+      "running_region_benchmark_input_or_evidence_custody",
+      "p03_metrics_policy_measurement_or_evidence_interpretation",
+      "p03_default_off_rollback",
+      "any_nonwaived_gate_or_ceiling",
+      "production_enablement_or_reliance",
+      "hosted_use",
+      "phase05_status_scope_or_behavior"
+    ],
+    "required_predicates": {
+      "all_phase04_flags_default_false": true,
+      "change_is_exclusively_owned_by_four_authorized_phase04_table_stories": true,
+      "disabled_phase04_flag_chain_restores_exact_predecessor_without_table_stage_work": true,
+      "candidate_retention_or_reliance_requires_every_applicable_nonwaived_gate_to_execute_and_pass": true,
+      "no_gate_ceiling_failure_skip_warning_finding_or_evidence_requirement_is_changed_or_suppressed": true,
+      "no_phase05_work_or_status_transition": true,
+      "no_production_enablement_or_hosted_use": true,
+      "no_protected_domain_changes": true,
+      "running_region_flag_default_false_and_independent_from_table_flags": true,
+      "running_region_rollback_performs_zero_p03_us08_work_and_returns_exact_predecessor": true
+    },
+    "schema_id": "p03-us08-phase04-operative-administrative-semantic-classifier-v1"
+  },
+  "classifier_identity": {
+    "canonicalization": "UTF-8 bytes emitted by jq -j -S -c '.change_classifier'",
+    "sha256": "a776f175759752777cbc4db465386b8af17737552750b0c5411d6ca1622f3a30"
+  },
+  "decision_identity": {
+    "path": "tracker/phase-03-layout/decisions/P03-US08-phase04-tables-latency-exception-operative-administrative-renewal.md",
+    "raw_sha256": "93b95e2d07b4e58a6f8f9a8ae43e587ec199d4fbaaeac4d59c8770702fd32504",
+    "size_bytes": 10226
+  },
+  "exception_scope": {
+    "candidate_specific": true,
+    "exact_observed_seconds": "0.050946750",
+    "exact_overrun_fraction": "0.018935",
+    "exact_overrun_percent": "1.8935%",
+    "exact_overrun_seconds": "0.000946750",
+    "exact_strict_ceiling_seconds": "0.050000000",
+    "maximum_overrun_fraction": 0.05,
+    "maximum_overrun_percent": "5%",
+    "metric": "latency_p95_seconds",
+    "observed_seconds": 0.05094675,
+    "overrun_fraction": 0.018935,
+    "overrun_seconds": 0.00094675,
+    "stage": "running_region_projection",
+    "strict_ceiling_seconds": 0.05,
+    "target_id": "ny-timetable"
+  },
+  "expiry": {
+    "absolute_expiry_utc": "2026-09-02T23:59:59Z",
+    "expired_effect": "P03-US08 returns to In Progress and every dependent completion or exit claim is blocked",
+    "expires_before": [
+      "production enablement or production reliance",
+      "relevant P03 running-region semantic or runtime behavior change",
+      "relevant running-region metrics dependency benchmark input or evidence custody change",
+      "any ceiling maximum bound default-off rollback or nonwaived gate change",
+      "Phase 04 expansion beyond P04-US01 P04-US02 P04-US04 and P04-US03",
+      "any Phase 05 work or status transition",
+      "semantic classifier relaxation"
+    ],
+    "expires_immediately_on": [
+      "classifier ambiguity",
+      "mixed Phase 04 table and protected P03 effect",
+      "required gate bypass or suppression or declared rollback failure",
+      "loss of exact immutable evidence binding"
+    ],
+    "review_due_on": "2026-09-02"
+  },
+  "failed_history": {
+    "artifact_count": 55,
+    "first_path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-01-failed.json",
+    "last_artifact_identity": {
+      "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-55-failed.json",
+      "raw_sha256": "62fff75d28fcc666a606a755b677e20720ebfd76b50d1940f29687e012257b6e",
+      "size_bytes": 161497
+    },
+    "manifest_sha256": "bca401f2207619ba84422e020104b9a609e0be0f4dc2b42f3ae4fb53d315ceff"
+  },
+  "immutable_attempt_48_identity": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-running-region-metrics-attempt-48-failed.json",
+    "raw_sha256": "1289f186c1cd6ee7f99eaa843f66e5416f15c0215e205e0ed5936737cd2a7123",
+    "recorded_semantic_sha256": "51433843638d69a2d09ced0d96a44a34323b1f5ece9c890c7c91088bac2df2e5",
+    "size_bytes": 158921,
+    "status": "failed_measurement_candidate"
+  },
+  "inherited_ceilings": {
+    "allocation_ceiling_bytes": 67108864,
+    "all_other_original_limits_and_ceilings_unchanged": true,
+    "paired_parser_ceiling_seconds": {
+      "ny-timetable": 2.338,
+      "uber-earnings": 1.4575
+    },
+    "peak_rss_delta_ceiling_bytes": 67108864,
+    "projection_p95_ceiling_seconds": 0.05,
+    "source_extraction_p95_ceiling_seconds": 0.25,
+    "source_report_size_ceiling_bytes": 8388608
+  },
+  "not_waived": [
+    "allocation",
+    "api_schema_serializer_frontend_and_predecessor_compatibility",
+    "code_dependency_input_fixture_benchmark_evidence_and_model_custody",
+    "correctness_quality_source_fidelity_and_nonfabrication",
+    "deadlines_memory_cpu_file_descriptor_process_and_resource_boundaries",
+    "hosted_use_requests_tokens_and_cost",
+    "malformed_input_timeout_and_fail_closed_behavior",
+    "output_sizes_and_bounded_diagnostics",
+    "paired_parser_latency",
+    "peak_rss",
+    "rollback_and_default_off_behavior",
+    "security",
+    "source_extraction_latency",
+    "uber_projection_latency"
+  ],
+  "operational_constraints": {
+    "canonical_strict_final_artifact_present": false,
+    "phase03_strict_current_artifact_metrics_pass_claim_allowed": false,
+    "phase04_flags_default": false,
+    "production_use_authorized": false,
+    "running_region_feature_flag": "PARSER_LAYOUT_RUNNING_REGIONS_ENABLED",
+    "running_region_feature_flag_default": false,
+    "running_region_rollback": "disable the flag to skip P03-US08 work and return the exact configured predecessor"
+  },
+  "operative_scope": {
+    "authorized_now": [
+      "Phase 04 table development",
+      "Phase 04 table testing and adversarial controls",
+      "Phase 04 table evidence and benchmark work",
+      "Phase 04 table documentation and review",
+      "Phase 04 table metrics and resource measurement infrastructure"
+    ],
+    "exact_final_code_freeze_required_before_story_done": true,
+    "independent_policy_custody_review_required_before_p04_us01_done": true,
+    "operative_for_authorized_phase04_development_only": true,
+    "phase04_exit_authorized_by_this_record": false,
+    "phase05_authorized": false,
+    "production_authorized": false,
+    "retained_final_metrics_pass_claim_authorized_by_this_record": false,
+    "story_done_authorized_by_this_record": false
+  },
+  "prior_record": {
+    "path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-latency-waiver-semantic-isolation-renewal.json",
+    "role": "historical non-operative exact-freeze candidate; its stale Phase 04 hashes do not authorize current bytes"
+  },
+  "record_kind": "p03_us08_phase04_tables_operative_administrative_latency_exception_renewal",
+  "renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260807-PHASE04-TABLES-ADMINISTRATIVE-CONTINUITY",
+  "renews_renewal_id": "P03-US08-LATENCY-EXCEPTION-RENEWAL-20260805-PHASE04-TABLES-SEMANTIC-ISOLATION",
+  "review_requirement": {
+    "approval_claimed": false,
+    "independent_review_required_before": "P04-US01 Done or reliance for any story completion or Phase 04 exit",
+    "pending_review_request_path": "tracker/phase-03-layout/evidence/P03-US08-phase04-tables-operative-administrative-renewal-independent-review-request.md",
+    "required_review_scope": [
+      "immutable attempt-48 and attempt-55 evidence",
+      "closed semantic classifier",
+      "expiry and production prohibition",
+      "all nonwaived gates and ceilings",
+      "default-off rollback",
+      "strict-final absence and claim language",
+      "Phase 05 boundary"
+    ]
+  },
+  "schema_version": "1.0",
+  "status": "operative_for_authorized_phase04_development_only",
+  "story": "P03-US08"
+}

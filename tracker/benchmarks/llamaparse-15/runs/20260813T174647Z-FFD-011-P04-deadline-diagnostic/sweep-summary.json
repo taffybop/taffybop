@@ -1,0 +1,796 @@
+{
+  "schema_version": "p04-document-budget-diagnostic-summary-v1",
+  "classification": "diagnostic_non_closure",
+  "diagnostic_only": true,
+  "release_eligible": false,
+  "closure_evidence": false,
+  "production_document_seconds": 5.0,
+  "page_seconds": 0.5,
+  "budgets_seconds": [
+    5.0,
+    10.0,
+    15.0,
+    30.0
+  ],
+  "case_ids": [
+    "clinical-study",
+    "ny-timetable"
+  ],
+  "fresh_process_count": 8,
+  "code_identity_sha256": "d7f6cb886a54a3d25bf72c01c69f220ac15e5ceb6408c07598d591e0c96264dd",
+  "observations": [
+    {
+      "case_id": "clinical-study",
+      "budget_seconds": 5.0,
+      "pid": 97023,
+      "wall_ms": 18182.050250004977,
+      "terminal": {
+        "outcome": "rolled_back_integrity_or_resource",
+        "pre_cleanup_state": {
+          "custody_rejected": true
+        },
+        "errors": [
+          {
+            "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.terminal_table_canonical_splice",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.table_custody_document_segment",
+            "status": "error:OpaqueGroupCustodyIntegrityError",
+            "error": "terminal table canonical splice differs"
+          }
+        ]
+      },
+      "table_count": 2,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": true,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "e9a075dc82acc46e9648bf9a0c097286296cb2b8c1682ad1022ed12165c25551",
+      "reviewed_invariants": {
+        "page_2_column_count_is_6": true,
+        "page_2_has_5_first_row_headers": true,
+        "page_2_first_row_headers_are_owned": true,
+        "page_2_section_spans_are_1x1": true,
+        "page_4_column_count_is_9": true,
+        "page_4_group_spans_are_3_and_4": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 4,
+        "public_json_table_count": 2,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 150.15350002795458
+        },
+        {
+          "sequence": 5,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 114.30212506093085
+        },
+        {
+          "sequence": 7,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 176.3678751885891
+        },
+        {
+          "sequence": 9,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 29.362833127379417,
+          "remaining_ms_at_start": 4684.5305832102895
+        },
+        {
+          "sequence": 13,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 1272.1512499265373
+        },
+        {
+          "sequence": 24,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "error:OpaqueGroupCustodyIntegrityError",
+          "elapsed_ms": 370.53579092025757,
+          "remaining_ms_at_start": 3364.8715410381556,
+          "error": "terminal table canonical splice differs"
+        },
+        {
+          "sequence": 25,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 388.66116595454514
+        }
+      ]
+    },
+    {
+      "case_id": "ny-timetable",
+      "budget_seconds": 5.0,
+      "pid": 97064,
+      "wall_ms": 61330.75058297254,
+      "terminal": {
+        "outcome": "rolled_back_timeout",
+        "pre_cleanup_state": {
+          "timed_out": true
+        },
+        "errors": [
+          {
+            "stage": "table.orchestrate_docling_projection",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          },
+          {
+            "stage": "pipeline.docling_table_item",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          },
+          {
+            "stage": "pipeline.table_custody_document_segment",
+            "status": "error:OpaqueGroupCustodyTimeoutError",
+            "error": "table custody document deadline exceeded"
+          }
+        ]
+      },
+      "table_count": 3,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": false,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "2ec30754b3182cbc7df01503684699ba719d2e648cccec478384820c165ea6d9",
+      "reviewed_invariants": {
+        "one_table_on_each_page": true,
+        "page_3_reviewed_row_is_exact": true,
+        "all_rows_retain_12_columns": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 3,
+        "public_json_table_count": 3,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 1.2028750497847795
+        },
+        {
+          "sequence": 8,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 980.0670421682298
+        },
+        {
+          "sequence": 10,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 1897.3813329357654
+        },
+        {
+          "sequence": 12,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 140.8579999115318,
+          "remaining_ms_at_start": 3699.652124894783
+        },
+        {
+          "sequence": 16,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 7186.099666170776
+        },
+        {
+          "sequence": 27,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "error:OpaqueGroupCustodyTimeoutError",
+          "elapsed_ms": 4405.581209110096,
+          "remaining_ms_at_start": -3823.99758300744,
+          "error": "table custody document deadline exceeded"
+        },
+        {
+          "sequence": 28,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 4606.554334051907
+        }
+      ]
+    },
+    {
+      "case_id": "clinical-study",
+      "budget_seconds": 10.0,
+      "pid": 97487,
+      "wall_ms": 19277.960374951363,
+      "terminal": {
+        "outcome": "rolled_back_integrity_or_resource",
+        "pre_cleanup_state": {
+          "custody_rejected": true
+        },
+        "errors": [
+          {
+            "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.terminal_table_canonical_splice",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.table_custody_document_segment",
+            "status": "error:OpaqueGroupCustodyIntegrityError",
+            "error": "terminal table canonical splice differs"
+          }
+        ]
+      },
+      "table_count": 2,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": true,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "e9a075dc82acc46e9648bf9a0c097286296cb2b8c1682ad1022ed12165c25551",
+      "reviewed_invariants": {
+        "page_2_column_count_is_6": true,
+        "page_2_has_5_first_row_headers": true,
+        "page_2_first_row_headers_are_owned": true,
+        "page_2_section_spans_are_1x1": true,
+        "page_4_column_count_is_9": true,
+        "page_4_group_spans_are_3_and_4": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 4,
+        "public_json_table_count": 2,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 146.22087497264147
+        },
+        {
+          "sequence": 5,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 108.24770806357265
+        },
+        {
+          "sequence": 7,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 169.8155829217285
+        },
+        {
+          "sequence": 9,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 29.939916217699647,
+          "remaining_ms_at_start": 9695.044332416728
+        },
+        {
+          "sequence": 13,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 1270.332499872893
+        },
+        {
+          "sequence": 24,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "error:OpaqueGroupCustodyIntegrityError",
+          "elapsed_ms": 372.83133296296,
+          "remaining_ms_at_start": 8375.732582295313,
+          "error": "terminal table canonical splice differs"
+        },
+        {
+          "sequence": 25,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 391.7460418306291
+        }
+      ]
+    },
+    {
+      "case_id": "ny-timetable",
+      "budget_seconds": 10.0,
+      "pid": 97532,
+      "wall_ms": 62201.89770916477,
+      "terminal": {
+        "outcome": "committed_with_custody",
+        "pre_cleanup_state": {},
+        "errors": [
+          {
+            "stage": "table.orchestrate_docling_projection",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          },
+          {
+            "stage": "pipeline.docling_table_item",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          }
+        ]
+      },
+      "table_count": 3,
+      "table_evidence_count": 2,
+      "sidecar_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "canonical_source_custody_present": true,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": false,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "7d6a90c4f87c8d0544e07fe66617deeb5ad9518af68c9f56ddee2d77973ee1f0",
+      "reviewed_invariants": {
+        "one_table_on_each_page": true,
+        "page_3_reviewed_row_is_exact": true,
+        "all_rows_retain_12_columns": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 3,
+        "public_json_table_count": 3,
+        "rendered_table_count": 2,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 1.025250181555748
+        },
+        {
+          "sequence": 8,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 977.3203330114484
+        },
+        {
+          "sequence": 10,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 1892.7396670915186
+        },
+        {
+          "sequence": 12,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 143.73775012791157,
+          "remaining_ms_at_start": 8696.8448322732
+        },
+        {
+          "sequence": 16,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 7193.678667070344
+        },
+        {
+          "sequence": 27,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "ok",
+          "elapsed_ms": 4415.474625071511,
+          "remaining_ms_at_start": 1163.2260822225362
+        },
+        {
+          "sequence": 28,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 4614.015792030841
+        }
+      ]
+    },
+    {
+      "case_id": "clinical-study",
+      "budget_seconds": 15.0,
+      "pid": 97975,
+      "wall_ms": 17782.99691597931,
+      "terminal": {
+        "outcome": "rolled_back_integrity_or_resource",
+        "pre_cleanup_state": {
+          "custody_rejected": true
+        },
+        "errors": [
+          {
+            "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.terminal_table_canonical_splice",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.table_custody_document_segment",
+            "status": "error:OpaqueGroupCustodyIntegrityError",
+            "error": "terminal table canonical splice differs"
+          }
+        ]
+      },
+      "table_count": 2,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": true,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "e9a075dc82acc46e9648bf9a0c097286296cb2b8c1682ad1022ed12165c25551",
+      "reviewed_invariants": {
+        "page_2_column_count_is_6": true,
+        "page_2_has_5_first_row_headers": true,
+        "page_2_first_row_headers_are_owned": true,
+        "page_2_section_spans_are_1x1": true,
+        "page_4_column_count_is_9": true,
+        "page_4_group_spans_are_3_and_4": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 4,
+        "public_json_table_count": 2,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 146.4778338558972
+        },
+        {
+          "sequence": 5,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 108.54220786131918
+        },
+        {
+          "sequence": 7,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 172.17779089696705
+        },
+        {
+          "sequence": 9,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 29.55958293750882,
+          "remaining_ms_at_start": 14693.101333919913
+        },
+        {
+          "sequence": 13,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 1256.8913749419153
+        },
+        {
+          "sequence": 24,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "error:OpaqueGroupCustodyIntegrityError",
+          "elapsed_ms": 369.8163749650121,
+          "remaining_ms_at_start": 13389.036916894838,
+          "error": "terminal table canonical splice differs"
+        },
+        {
+          "sequence": 25,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 387.3400001320988
+        }
+      ]
+    },
+    {
+      "case_id": "ny-timetable",
+      "budget_seconds": 15.0,
+      "pid": 98364,
+      "wall_ms": 62560.887875035405,
+      "terminal": {
+        "outcome": "committed_with_custody",
+        "pre_cleanup_state": {},
+        "errors": [
+          {
+            "stage": "table.orchestrate_docling_projection",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          },
+          {
+            "stage": "pipeline.docling_table_item",
+            "status": "error:TimeoutError",
+            "error": "table operation deadline exceeded"
+          }
+        ]
+      },
+      "table_count": 3,
+      "table_evidence_count": 2,
+      "sidecar_statuses": [
+        "unresolved",
+        "unresolved"
+      ],
+      "canonical_source_custody_present": true,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": false,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "7d6a90c4f87c8d0544e07fe66617deeb5ad9518af68c9f56ddee2d77973ee1f0",
+      "reviewed_invariants": {
+        "one_table_on_each_page": true,
+        "page_3_reviewed_row_is_exact": true,
+        "all_rows_retain_12_columns": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 3,
+        "public_json_table_count": 3,
+        "rendered_table_count": 2,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 1.3199998065829277
+        },
+        {
+          "sequence": 8,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 966.27700002864
+        },
+        {
+          "sequence": 10,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 1887.8446670714766
+        },
+        {
+          "sequence": 12,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 138.13362480141222,
+          "remaining_ms_at_start": 13709.775668103248
+        },
+        {
+          "sequence": 16,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 7177.649958059192
+        },
+        {
+          "sequence": 27,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "ok",
+          "elapsed_ms": 4402.786750113592,
+          "remaining_ms_at_start": 6196.897502290085
+        },
+        {
+          "sequence": 28,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 4602.126833051443
+        }
+      ]
+    },
+    {
+      "case_id": "clinical-study",
+      "budget_seconds": 30.0,
+      "pid": 98825,
+      "wall_ms": 19119.60104200989,
+      "terminal": {
+        "outcome": "rolled_back_integrity_or_resource",
+        "pre_cleanup_state": {
+          "custody_rejected": true
+        },
+        "errors": [
+          {
+            "stage": "pipeline.terminal_non_target_visual_overlay_rebind",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.terminal_table_canonical_splice",
+            "status": "error:ValueError",
+            "error": "terminal table visual overlay block shape differs"
+          },
+          {
+            "stage": "pipeline.table_custody_document_segment",
+            "status": "error:OpaqueGroupCustodyIntegrityError",
+            "error": "terminal table canonical splice differs"
+          }
+        ]
+      },
+      "table_count": 2,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": true,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "e9a075dc82acc46e9648bf9a0c097286296cb2b8c1682ad1022ed12165c25551",
+      "reviewed_invariants": {
+        "page_2_column_count_is_6": true,
+        "page_2_has_5_first_row_headers": true,
+        "page_2_first_row_headers_are_owned": true,
+        "page_2_section_spans_are_1x1": true,
+        "page_4_column_count_is_9": true,
+        "page_4_group_spans_are_3_and_4": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 4,
+        "public_json_table_count": 2,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 146.94979088380933
+        },
+        {
+          "sequence": 5,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 109.76379201747477
+        },
+        {
+          "sequence": 7,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 173.6482079140842
+        },
+        {
+          "sequence": 9,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_parse_loaded_document.<locals>.detach_public_tables",
+          "status": "ok",
+          "elapsed_ms": 29.577000066637993,
+          "remaining_ms_at_start": 29689.936209470034
+        },
+        {
+          "sequence": 13,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 1277.8941250871867
+        },
+        {
+          "sequence": 24,
+          "stage": "pipeline.table_custody_document_segment",
+          "operation": "_apply_terminal_table_authority.<locals>.commit",
+          "status": "error:OpaqueGroupCustodyIntegrityError",
+          "elapsed_ms": 372.52662517130375,
+          "remaining_ms_at_start": 28363.77595947124,
+          "error": "terminal table canonical splice differs"
+        },
+        {
+          "sequence": 25,
+          "stage": "pipeline.terminal_table_authority",
+          "status": "ok",
+          "elapsed_ms": 391.16754196584225
+        }
+      ]
+    },
+    {
+      "case_id": "ny-timetable",
+      "budget_seconds": 30.0,
+      "pid": 98869,
+      "wall_ms": 56526.36904199608,
+      "terminal": {
+        "outcome": "completed_without_custody_or_state",
+        "pre_cleanup_state": {},
+        "errors": []
+      },
+      "table_count": 3,
+      "table_evidence_count": 0,
+      "sidecar_statuses": [],
+      "canonical_source_custody_present": false,
+      "all_table_content_matches_predecessor": true,
+      "all_table_projections_match_predecessor": false,
+      "raw_canonical_markdown_byte_identical": true,
+      "stable_payload_sha256": "2ec30754b3182cbc7df01503684699ba719d2e648cccec478384820c165ea6d9",
+      "reviewed_invariants": {
+        "one_table_on_each_page": true,
+        "page_3_reviewed_row_is_exact": true,
+        "all_rows_retain_12_columns": true
+      },
+      "render": {
+        "renderer": "ClearleafWorkspace/RenderedPageCapture",
+        "presentation_view": "full",
+        "page_count": 3,
+        "public_json_table_count": 3,
+        "rendered_table_count": 0,
+        "rendered_table_count_matches_table_evidence": true
+      },
+      "major_stage_timings": [
+        {
+          "sequence": 0,
+          "stage": "pipeline.partitioned_table_repair_words",
+          "status": "ok",
+          "elapsed_ms": 1.035582972690463
+        },
+        {
+          "sequence": 7,
+          "stage": "pipeline.normalize_docling_body",
+          "status": "ok",
+          "elapsed_ms": 974.2640829645097
+        },
+        {
+          "sequence": 9,
+          "stage": "pipeline.shared_page_analysis",
+          "status": "ok",
+          "elapsed_ms": 1641.893792198971
+        },
+        {
+          "sequence": 13,
+          "stage": "pipeline.shared_ir_compatibility_projection",
+          "status": "ok",
+          "elapsed_ms": 7188.560541952029
+        }
+      ]
+    }
+  ],
+  "case_conclusions": {
+    "clinical-study": {
+      "first_observed_custody_budget_seconds": null,
+      "first_observed_full_table_evidence_budget_seconds": null,
+      "stable_payload_variant_count": 1,
+      "all_reviewed_content_invariants_pass": true
+    },
+    "ny-timetable": {
+      "first_observed_custody_budget_seconds": 10.0,
+      "first_observed_full_table_evidence_budget_seconds": null,
+      "stable_payload_variant_count": 2,
+      "all_reviewed_content_invariants_pass": true
+    }
+  },
+  "interpretation": {
+    "clinical_study": "Increasing the document clock does not commit Clinical custody. Every lane reaches the same terminal visual-overlay canonical-splice integrity rejection and restores exact table content.",
+    "ny_timetable": "The 5-second lane times out in terminal custody. Longer document lanes can commit custody, but the unchanged 500 ms page clock can still withhold one or all table sidecars near its boundary.",
+    "closure": "No elevated-budget artifact is release or FFD-011 closure evidence. The experiment identifies separate P04 integrity and performance/page-budget work; production remains at 5.0 seconds per document and 0.5 seconds per page."
+  },
+  "completed_at_utc": "2026-08-13T18:06:42.913587Z"
+}

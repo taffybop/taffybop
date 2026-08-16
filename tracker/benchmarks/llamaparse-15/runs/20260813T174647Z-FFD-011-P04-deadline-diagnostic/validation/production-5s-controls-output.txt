@@ -1,0 +1,21 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+Clinical source-supported table control failed at line 678 because the page-2
+table had no table_evidence sidecar.
+
+NY timetable fail-closed table control failed at line 743 because the page-1
+table had no table_evidence sidecar.
+
+Clinical context-free custody control failed at line 861 because
+canonical_source_custody was absent. Public warnings were empty.
+
+=========================== short test summary info ============================
+FAILED tests/stories/phase_04/test_p04_us01_production_benchmarks.py::test_clinical_headers_sections_and_group_spans_are_source_supported
+FAILED tests/stories/phase_04/test_p04_us01_production_benchmarks.py::test_timetable_fails_closed_without_shifting_or_silently_merging_rows
+FAILED tests/stories/phase_04/test_p04_us01_production_benchmarks.py::test_clinical_output_context_free_json_round_trip_is_exact_and_bounded
+3 failed, 5 warnings in 73.35s (0:01:13)
+
+Exit status: 1
+Classification: expected production-default confirmation after the diagnostic
+harness restored exact production callables. The elevated diagnostic results
+are not substituted for these current red controls.

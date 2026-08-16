@@ -1,0 +1,201 @@
+{
+  "schema_version": "functional-fidelity-final-frontend-validation-v1",
+  "validated_at_utc": "2026-08-13T08:42:58Z",
+  "overall_status": "pass",
+  "scope": "Frozen frontend quality gates and Clearleaf rendered-DOM verification for the final source-grounded 15-PDF service run.",
+  "source_run": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/service-final-source-grounded-20260813",
+  "frontend_snapshot": {
+    "git_head": "07e035c8828d3976d35ec54a230a194f7d2cb48a",
+    "node_runtime": "v24.19.0",
+    "node_runtime_path": "/Users/vignesh/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "package_json_sha256": "213d8bb3c1bd6f1359b3827d7a752c38aaf0ca2a04302c5bc32dcefcdd9eca2c",
+    "package_lock_sha256": "9df758a5fef8b3d6ed33bafb2129c7f710373e261ec744516dd6d597a985796e",
+    "form_semantics_sha256": "5bb7f73fc0625e5f539b8bdde0a015e804121a6f548838382195b89c48520141",
+    "rendered_page_capture_sha256": "769cd122fe333094454e26dcd35216db634b1b4302687ae48d1f0efdb4de6b16",
+    "production_source_modified_by_validation": false
+  },
+  "quality_gates": {
+    "unit_tests": {
+      "command": "npm run test:unit",
+      "exit_code": 0,
+      "tests": 161,
+      "passed": 161,
+      "failed": 0,
+      "duration_ms": 3501.595709
+    },
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    "lint": {
+      "command": "npm run lint",
+      "exit_code": 0,
+      "status": "pass"
+    },
+    "production_build": {
+      "command": "npm run build",
+      "exit_code": 0,
+      "status": "pass",
+      "route_output": [
+        "/",
+        "/api/parse"
+      ]
+    },
+    "bundle_test": {
+      "command": "npm run test:bundle",
+      "exit_code": 0,
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "duration_ms": 78.462958
+    }
+  },
+  "rendered_dom_validation": {
+    "status": "pass",
+    "case_count": 15,
+    "page_count": 30,
+    "json_parseable_pages": 30,
+    "nonempty_html_pages": 30,
+    "nonempty_text_pages": 30,
+    "article_wrapped_pages": 30,
+    "xml_well_formed_pages": 30,
+    "artifact_sha256_mismatches": [],
+    "html_sha256_mismatches": [],
+    "text_sha256_mismatches": [],
+    "source_response_sha256_mismatches": [],
+    "page_number_mismatches": [],
+    "manifest_page_count_mismatches": [],
+    "empty_artifacts": [],
+    "per_case": [
+      {
+        "case_id": "catastrophe-recap",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "clean-energy",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "clinical-study",
+        "validated_pages": [1, 2, 3, 4]
+      },
+      {
+        "case_id": "component-datasheet",
+        "validated_pages": [1, 2, 3]
+      },
+      {
+        "case_id": "egov-survey",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "esg-metrics",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "finance-10k",
+        "validated_pages": [1, 2, 3]
+      },
+      {
+        "case_id": "health-report",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "insurance-acord",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "manufacturing-report",
+        "validated_pages": [1, 2, 3]
+      },
+      {
+        "case_id": "ny-timetable",
+        "validated_pages": [1, 2, 3]
+      },
+      {
+        "case_id": "postal-10k",
+        "validated_pages": [1, 2, 3]
+      },
+      {
+        "case_id": "purchase-agreement",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "settlement-agreement",
+        "validated_pages": [1]
+      },
+      {
+        "case_id": "uber-earnings",
+        "validated_pages": [1, 2, 3]
+      }
+    ]
+  },
+  "focused_ui_assertions": {
+    "insurance_acord_page_1": {
+      "status": "pass",
+      "synthetic_empty_phrase_absent": true,
+      "phone_name_absent": true,
+      "signature_absent": true,
+      "form_semantic_table_count": 1,
+      "parties_and_insurers_table_count": 1,
+      "contact_name_visible_count": 1
+    },
+    "purchase_agreement_page_1": {
+      "status": "pass",
+      "draft_banner_is_paragraph": true,
+      "asset_purchase_agreement_is_h1": true,
+      "background_is_h2": true,
+      "source_order_preserved": true,
+      "h1_count": 1,
+      "h2_count": 1
+    },
+    "ny_timetable_pages_1_to_3": {
+      "status": "pass",
+      "all_pages_one_13_column_table": true,
+      "pages": [
+        {
+          "page_number": 1,
+          "table_count": 1,
+          "title_colspan": 13,
+          "column_header_count": 13,
+          "body_row_count": 50,
+          "body_rows_with_13_cells": 50
+        },
+        {
+          "page_number": 2,
+          "table_count": 1,
+          "title_colspan": 13,
+          "column_header_count": 13,
+          "body_row_count": 50,
+          "body_rows_with_13_cells": 50
+        },
+        {
+          "page_number": 3,
+          "table_count": 1,
+          "title_colspan": 13,
+          "column_header_count": 13,
+          "body_row_count": 50,
+          "body_rows_with_13_cells": 50
+        }
+      ]
+    },
+    "egov_survey_page_1": {
+      "status": "pass",
+      "chart_item_present": true,
+      "source_grounded_40_label_present": true,
+      "source_grounded_44_label_present": true,
+      "ao_4a_4o_ocr_substitutions_absent": true
+    },
+    "uber_earnings_page_1": {
+      "status": "pass",
+      "image_item_count": 1,
+      "placeholder_exact": "[Image detected; no reliable text extracted.]",
+      "photo_ocr_gibberish_absent": true
+    }
+  },
+  "notes": [
+    "The production build emitted vinext's informational route-classification note for /api/parse; the build completed successfully.",
+    "Shell startup emitted a pyenv rehash permission warning before npm commands; every requested frontend command itself exited 0.",
+    "XML well-formedness was checked on the serialized React article fragment from every rendered-dom.json artifact with xmllint --noout."
+  ]
+}

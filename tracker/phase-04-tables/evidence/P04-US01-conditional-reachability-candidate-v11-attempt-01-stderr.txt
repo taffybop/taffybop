@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "<string>", line 29, in <module>
+    off = metrics.fresh_snapshot(metrics.WORKSPACE, case_id, False)
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10950, in fresh_snapshot
+    return_code, stdout_raw, stderr_raw = _run_worker_process_bounded(
+                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        worker_command(
+        ^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        monitor_binding=monitor_binding,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10920, in _run_worker_process_bounded
+    return _run_acquired_worker_process_bounded(
+        guard,
+    ...<4 lines>...
+        monitor_binding=monitor_binding,
+    )
+  File "/Users/vignesh/Downloads/taffybop/tests/fixtures/phase_04/tables/metrics.py", line 10755, in _run_acquired_worker_process_bounded
+    raise RuntimeError(
+    ...<4 lines>...
+    ) from None
+RuntimeError: fresh P04-US01 worker category=external_monitor_failure error_type=RuntimeError failure_code=rss_sampling_cadence_exceeded observed_gap_ns=32442083 hard_gap_ns=10000000 accepted_continuous_count=783

@@ -1,0 +1,65 @@
+{
+  "schema_version": "ffd014-artifact-manifest-v1",
+  "attempt_id": "20260814T034433Z-FFD-014-clinical-page1",
+  "manifest_excludes_itself": true,
+  "source": {
+    "path": "benchmark-expertmodeldata/clinical-study.pdf",
+    "size_bytes": 750004,
+    "sha256": "4e33db9cb9171f0b274ab3ba20a288510b5aee309a723412e59f843b59c76ff2"
+  },
+  "code_identity": {
+    "backend_git_metadata_available": false,
+    "pipeline_sha256": "daa0a69f3f4f985af3d3f43d707910f68ffeae390944c5d55e75c1ac036b8436",
+    "focused_regression_sha256": "e781164ff410a6f29b247744ff15172e29406700663ce699efdbc221ae97fbcb",
+    "frontend_git_head": "07e035c8828d3976d35ec54a230a194f7d2cb48a"
+  },
+  "artifacts": [
+    {
+      "path": "attempt-status.json",
+      "size_bytes": 1367,
+      "sha256": "e68c14faad665b2fd1f2f7d578fc316650c20b79deb0bd7c822a68f33aa1944d"
+    },
+    {
+      "path": "report.md",
+      "size_bytes": 4757,
+      "sha256": "b052a1014ecdb3a24a0445f62c030f9aa4d404e676d8cd585ad9012a4fd540c5"
+    },
+    {
+      "path": "service/run.json",
+      "size_bytes": 3671,
+      "sha256": "1b0cba5e3cb9cb957020d6a0b3b63a9d2714709e3603d5a17a7d89cb393d7b61"
+    },
+    {
+      "path": "service/clinical-study/response.json",
+      "size_bytes": 1429265,
+      "sha256": "71fab04b875278d04f5f8d9477a346b2820b1a0e2ad9a971d6940267c8993546"
+    },
+    {
+      "path": "service/clinical-study/response.md",
+      "size_bytes": 17695,
+      "sha256": "8239dab80521dc2cefd42f50c1dcb3cc19255bb6bc6208a0e085e3e28b348ef2"
+    },
+    {
+      "path": "service/clinical-study/pages/page-1/capture-metadata.json",
+      "size_bytes": 624,
+      "sha256": "50595aabb8986daee5b03b909b5eccddb983e7a118e802c99d1a49c25203d5cf"
+    },
+    {
+      "path": "service/clinical-study/pages/page-1/clearleaf-viewport.png",
+      "size_bytes": 269675,
+      "sha256": "375ac3047212ae7c9f9820c1351cd694bea30773385fc3ecbb563f3324fa2eef",
+      "media_type": "image/jpeg",
+      "note": "Original browser bytes retained under the capture filename."
+    },
+    {
+      "path": "service/clinical-study/pages/page-1/dom-verdict.json",
+      "size_bytes": 353,
+      "sha256": "4a8424141be89e26abb62b976e87f38c996266bd6c7974f47f27f1e7767589aa"
+    },
+    {
+      "path": "service/clinical-study/pages/page-1/rendered-article.html",
+      "size_bytes": 6159,
+      "sha256": "2b58bd015c381f0eb2f88b786e17dc3ab6b128a22cd19ba05a256f1de15e2ff6"
+    }
+  ]
+}

@@ -1,0 +1,2261 @@
+{
+  "document": {
+    "content_region_count": 1,
+    "content_region_types": {
+      "image": 1
+    },
+    "filename": "insurance-acord.pdf",
+    "image_count": 1,
+    "mime_type": "application/pdf",
+    "page_count": 1,
+    "page_source_region_count": 0,
+    "rendered_visual_region_count": 0,
+    "sha256": "85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4",
+    "source_format": "PDF"
+  },
+  "pages": [
+    {
+      "detected_images": [
+        {
+          "area_ratio": 0.004132,
+          "bbox": {
+            "h": 29.28,
+            "height": 29.28,
+            "unit": "pt",
+            "w": 68.4,
+            "width": 68.4,
+            "x": 21.6,
+            "y": 18.0
+          },
+          "cleaned_ocr_text": "ACORD\nACORD",
+          "confidence": 0.6477,
+          "coordinate_unit": "pt",
+          "detected_text": true,
+          "id": "p1-image1",
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 12.0,
+                "height": 12.0,
+                "unit": "pt",
+                "w": 66.8,
+                "width": 66.8,
+                "x": 22.4,
+                "y": 25.2
+              },
+              "confidence": 0.7119,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ACORD",
+              "value": "ACORD",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 8.2,
+                "height": 8.2,
+                "unit": "pt",
+                "w": 63.4,
+                "width": 63.4,
+                "x": 22.4,
+                "y": 29.0
+              },
+              "confidence": 0.9106,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ACORD",
+              "value": "ACORD",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 11.4,
+                "height": 11.4,
+                "unit": "pt",
+                "w": 33.0,
+                "width": 33.0,
+                "x": 30.2,
+                "y": 37.2
+              },
+              "confidence": 0.3207,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "(ca —",
+              "value": "(ca —",
+              "word_count": 2
+            }
+          ],
+          "md": "ACORD\nACORD",
+          "ocr_text": "ACORD\nACORD",
+          "pixel_height": 122,
+          "pixel_width": 285,
+          "raw_ocr_text": "ACORD\nACORD\n(ca —",
+          "region_origin": "pdf_embedded",
+          "region_role": "content_region",
+          "rejected_ocr_candidates": [
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 9.4,
+                "height": 9.4,
+                "unit": "pt",
+                "w": 11.8,
+                "width": 11.8,
+                "x": 77.4,
+                "y": 20.6
+              },
+              "confidence": 0.6549,
+              "ocr_pass": "standard",
+              "rejection_reason": "overlapping_ocr_candidate",
+              "replaced_by": "ACORD",
+              "source": "ocr",
+              "text": ") ®",
+              "word_count": 2
+            }
+          ],
+          "source": "ocr",
+          "type": "image",
+          "value": "ACORD\nACORD",
+          "warnings": []
+        }
+      ],
+      "items": [
+        {
+          "annotations": [
+            {
+              "kind": "classification",
+              "predicted_classes": [
+                {
+                  "class_name": "logo",
+                  "confidence": 1.0
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0
+                }
+              ],
+              "provenance": "DocumentPictureClassifier"
+            }
+          ],
+          "bbox": {
+            "h": 30.048,
+            "height": 30.048,
+            "unit": "pt",
+            "w": 68.54,
+            "width": 68.54,
+            "x": 21.423,
+            "y": 17.569
+          },
+          "caption": null,
+          "caption_confidence": null,
+          "caption_generated": false,
+          "caption_source": null,
+          "classification": {
+            "class_name": "logo",
+            "confidence": 1.0
+          },
+          "confidence": 0.8113,
+          "content_type": "image",
+          "detected_text": true,
+          "id": "p1-i1",
+          "include_ocr_in_primary": false,
+          "items": [
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 12.0,
+                "height": 12.0,
+                "unit": "pt",
+                "w": 66.8,
+                "width": 66.8,
+                "x": 22.4,
+                "y": 25.2
+              },
+              "confidence": 0.7119,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ACORD",
+              "value": "ACORD",
+              "word_count": 1
+            },
+            {
+              "accepted": true,
+              "bbox": {
+                "h": 8.2,
+                "height": 8.2,
+                "unit": "pt",
+                "w": 63.4,
+                "width": 63.4,
+                "x": 22.4,
+                "y": 29.0
+              },
+              "confidence": 0.9106,
+              "rejection_reason": null,
+              "source": "ocr",
+              "text": "ACORD",
+              "value": "ACORD",
+              "word_count": 1
+            },
+            {
+              "accepted": false,
+              "bbox": {
+                "h": 11.4,
+                "height": 11.4,
+                "unit": "pt",
+                "w": 33.0,
+                "width": 33.0,
+                "x": 30.2,
+                "y": 37.2
+              },
+              "confidence": 0.3207,
+              "rejection_reason": "low_confidence",
+              "source": "ocr",
+              "text": "(ca —",
+              "value": "(ca —",
+              "word_count": 2
+            }
+          ],
+          "md": "[Image detected; no reliable text extracted.]",
+          "meta": {
+            "classification": {
+              "predictions": [
+                {
+                  "class_name": "logo",
+                  "confidence": 1.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "icon",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "page_thumbnail",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "calendar",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_manual",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "other",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "music",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "stamp",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "full_page_image",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "signature",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "engineering_drawing",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "chemistry_structure",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "crossword_puzzle",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "flow_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "pie_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "photograph",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "geographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "screenshot_from_computer",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "qr_code",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "bar_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "table",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "line_chart",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "topographical_map",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "scatter_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                },
+                {
+                  "class_name": "box_plot",
+                  "confidence": 0.0,
+                  "created_by": "DocumentPictureClassifier"
+                }
+              ]
+            }
+          },
+          "ocr_text": "ACORD",
+          "parse_concerns": [],
+          "raw_ocr_text": "ACORD\n(ca —",
+          "reading_order": 0,
+          "region_role": "content_region",
+          "source": "derived",
+          "type": "image",
+          "value": "",
+          "warnings": [
+            "OCR detected inside this visual region and was retained as image-level metadata."
+          ]
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 59.004,
+            "width": 59.004,
+            "x": 521.28,
+            "y": 27.696
+          },
+          "confidence": null,
+          "id": "p1-i2",
+          "label": "text",
+          "level": 1,
+          "md": "# DATE (MM/DD/YYYY)",
+          "reading_order": 1,
+          "source": "native",
+          "type": "heading",
+          "value": "DATE (MM/DD/YYYY)"
+        },
+        {
+          "bbox": {
+            "h": 14.841,
+            "height": 14.841,
+            "unit": "pt",
+            "w": 328.527,
+            "width": 328.527,
+            "x": 134.52,
+            "y": 29.614
+          },
+          "confidence": null,
+          "id": "p1-i3",
+          "label": "section_header",
+          "level": 1,
+          "md": "# CERTIFICATE OF LIABILITY INSURANCE",
+          "reading_order": 2,
+          "source": "native",
+          "type": "heading",
+          "value": "CERTIFICATE OF LIABILITY INSURANCE"
+        },
+        {
+          "bbox": {
+            "h": 35.868,
+            "height": 35.868,
+            "unit": "pt",
+            "w": 554.432,
+            "width": 554.432,
+            "x": 28.8,
+            "y": 51.513
+          },
+          "confidence": null,
+          "id": "p1-i4",
+          "label": "text",
+          "md": "THIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES BELOW. THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER.",
+          "reading_order": 3,
+          "source": "native",
+          "type": "text",
+          "value": "THIS CERTIFICATE IS ISSUED AS A MATTER OF INFORMATION ONLY AND CONFERS NO RIGHTS UPON THE CERTIFICATE HOLDER. THIS CERTIFICATE DOES NOT AFFIRMATIVELY OR NEGATIVELY AMEND, EXTEND OR ALTER THE COVERAGE AFFORDED BY THE POLICIES BELOW. THIS CERTIFICATE OF INSURANCE DOES NOT CONSTITUTE A CONTRACT BETWEEN THE ISSUING INSURER(S), AUTHORIZED REPRESENTATIVE OR PRODUCER, AND THE CERTIFICATE HOLDER."
+        },
+        {
+          "bbox": {
+            "h": 26.268,
+            "height": 26.268,
+            "unit": "pt",
+            "w": 554.42,
+            "width": 554.42,
+            "x": 28.8,
+            "y": 92.313
+          },
+          "confidence": null,
+          "id": "p1-i5",
+          "label": "text",
+          "md": "IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the certificate holder in lieu of such endorsement(s).",
+          "reading_order": 4,
+          "source": "native",
+          "type": "text",
+          "value": "IMPORTANT: If the certificate holder is an ADDITIONAL INSURED, the policy(ies) must be endorsed. If SUBROGATION IS WAIVED, subject to the terms and conditions of the policy, certain policies may require an endorsement. A statement on this certificate does not confer rights to the certificate holder in lieu of such endorsement(s)."
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 33.766,
+            "width": 33.766,
+            "x": 21.6,
+            "y": 123.696
+          },
+          "confidence": null,
+          "id": "p1-i6",
+          "label": "text",
+          "md": "PRODUCER",
+          "reading_order": 5,
+          "source": "native",
+          "type": "text",
+          "value": "PRODUCER"
+        },
+        {
+          "bbox": {
+            "h": 108.0,
+            "height": 108.0,
+            "unit": "pt",
+            "w": 288.0,
+            "width": 288.0,
+            "x": 306.0,
+            "y": 132.0
+          },
+          "cells": [],
+          "column_count": 1,
+          "confidence": null,
+          "csv": "\"PHONE FAX\n(A/C, No, Ext): (A/C, No):\nE-MAIL\nADDRESS:\nINSURER(S) AFFORDING COVERAGE NAIC #\"\n\"INSURER A :\nINSURER B :\"\nINSURER C :\nINSURER D :\nINSURER E :\nINSURER F :",
+          "embedded_images": [],
+          "engine": "pdfplumber",
+          "html": "<table>\n  <tr>\n    <th>PHONE FAX<br>(A/C, No, Ext): (A/C, No):<br>E-MAIL<br>ADDRESS:<br>INSURER(S) AFFORDING COVERAGE NAIC #</th>\n  </tr>\n  <tr>\n    <td>INSURER A :<br>INSURER B :</td>\n  </tr>\n  <tr>\n    <td>INSURER C :</td>\n  </tr>\n  <tr>\n    <td>INSURER D :</td>\n  </tr>\n  <tr>\n    <td>INSURER E :</td>\n  </tr>\n  <tr>\n    <td>INSURER F :</td>\n  </tr>\n</table>",
+          "id": "p1-i7",
+          "md": "<table>\n  <tr>\n    <th>PHONE FAX<br>(A/C, No, Ext): (A/C, No):<br>E-MAIL<br>ADDRESS:<br>INSURER(S) AFFORDING COVERAGE NAIC #</th>\n  </tr>\n  <tr>\n    <td>INSURER A :<br>INSURER B :</td>\n  </tr>\n  <tr>\n    <td>INSURER C :</td>\n  </tr>\n  <tr>\n    <td>INSURER D :</td>\n  </tr>\n  <tr>\n    <td>INSURER E :</td>\n  </tr>\n  <tr>\n    <td>INSURER F :</td>\n  </tr>\n</table>",
+          "parse_concerns": [],
+          "reading_order": 6,
+          "row_bboxes": [
+            {
+              "h": 36.0,
+              "height": 36.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 132.0
+            },
+            {
+              "h": 24.0,
+              "height": 24.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 168.0
+            },
+            {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 192.0
+            },
+            {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 204.0
+            },
+            {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 216.0
+            },
+            {
+              "h": 12.0,
+              "height": 12.0,
+              "unit": "pt",
+              "w": 288.0,
+              "width": 288.0,
+              "x": 306.0,
+              "y": 228.0
+            }
+          ],
+          "row_count": 6,
+          "rows": [
+            [
+              "PHONE FAX\n(A/C, No, Ext): (A/C, No):\nE-MAIL\nADDRESS:\nINSURER(S) AFFORDING COVERAGE NAIC #"
+            ],
+            [
+              "INSURER A :\nINSURER B :"
+            ],
+            [
+              "INSURER C :"
+            ],
+            [
+              "INSURER D :"
+            ],
+            [
+              "INSURER E :"
+            ],
+            [
+              "INSURER F :"
+            ]
+          ],
+          "source": "native",
+          "type": "table",
+          "value": [
+            [
+              "PHONE FAX\n(A/C, No, Ext): (A/C, No):\nE-MAIL\nADDRESS:\nINSURER(S) AFFORDING COVERAGE NAIC #"
+            ],
+            [
+              "INSURER A :\nINSURER B :"
+            ],
+            [
+              "INSURER C :"
+            ],
+            [
+              "INSURER D :"
+            ],
+            [
+              "INSURER E :"
+            ],
+            [
+              "INSURER F :"
+            ]
+          ]
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 26.555,
+            "width": 26.555,
+            "x": 21.6,
+            "y": 183.696
+          },
+          "confidence": null,
+          "id": "p1-i8",
+          "label": "text",
+          "md": "INSURED",
+          "reading_order": 7,
+          "source": "native",
+          "type": "text",
+          "value": "INSURED"
+        },
+        {
+          "bbox": {
+            "h": 7.421,
+            "height": 7.421,
+            "unit": "pt",
+            "w": 53.677,
+            "width": 53.677,
+            "x": 21.6,
+            "y": 243.587
+          },
+          "confidence": null,
+          "id": "p1-i9",
+          "label": "section_header",
+          "level": 1,
+          "md": "# COVERAGES",
+          "reading_order": 8,
+          "source": "native",
+          "type": "heading",
+          "value": "COVERAGES"
+        },
+        {
+          "bbox": {
+            "h": 7.421,
+            "height": 7.421,
+            "unit": "pt",
+            "w": 97.527,
+            "width": 97.527,
+            "x": 158.4,
+            "y": 243.587
+          },
+          "confidence": null,
+          "id": "p1-i10",
+          "label": "section_header",
+          "level": 1,
+          "md": "# CERTIFICATE NUMBER:",
+          "reading_order": 9,
+          "source": "native",
+          "type": "heading",
+          "value": "CERTIFICATE NUMBER:"
+        },
+        {
+          "bbox": {
+            "h": 7.421,
+            "height": 7.421,
+            "unit": "pt",
+            "w": 82.138,
+            "width": 82.138,
+            "x": 424.8,
+            "y": 243.587
+          },
+          "confidence": null,
+          "id": "p1-i11",
+          "label": "section_header",
+          "level": 1,
+          "md": "# REVISION NUMBER:",
+          "reading_order": 10,
+          "source": "native",
+          "type": "heading",
+          "value": "REVISION NUMBER:"
+        },
+        {
+          "bbox": {
+            "h": 31.2,
+            "height": 31.2,
+            "unit": "pt",
+            "w": 554.41,
+            "width": 554.41,
+            "x": 28.8,
+            "y": 254.766
+          },
+          "confidence": null,
+          "id": "p1-i12",
+          "label": "text",
+          "md": "THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD INDICATED. NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS, EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS.",
+          "reading_order": 11,
+          "source": "native",
+          "type": "text",
+          "value": "THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE LISTED BELOW HAVE BEEN ISSUED TO THE INSURED NAMED ABOVE FOR THE POLICY PERIOD INDICATED. NOTWITHSTANDING ANY REQUIREMENT, TERM OR CONDITION OF ANY CONTRACT OR OTHER DOCUMENT WITH RESPECT TO WHICH THIS CERTIFICATE MAY BE ISSUED OR MAY PERTAIN, THE INSURANCE AFFORDED BY THE POLICIES DESCRIBED HEREIN IS SUBJECT TO ALL THE TERMS, EXCLUSIONS AND CONDITIONS OF SUCH POLICIES. LIMITS SHOWN MAY HAVE BEEN REDUCED BY PAID CLAIMS."
+        },
+        {
+          "bbox": {
+            "h": 277.886,
+            "height": 277.886,
+            "unit": "pt",
+            "w": 576.327,
+            "width": 576.327,
+            "x": 17.99,
+            "y": 287.406
+          },
+          "cells": [
+            {
+              "bbox": {
+                "h": 10.7,
+                "height": 10.7,
+                "unit": "pt",
+                "w": 98.737,
+                "width": 98.737,
+                "x": 54.0,
+                "y": 373.705
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "LOC JECT PRO- POLICY"
+            },
+            {
+              "bbox": {
+                "h": 67.269,
+                "height": 67.269,
+                "unit": "pt",
+                "w": 116.511,
+                "width": 116.511,
+                "x": 39.6,
+                "y": 303.696
+              },
+              "col_span": 9,
+              "column": 0,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "GEN'L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 75.357,
+                "width": 75.357,
+                "x": 428.4,
+                "y": 318.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 3,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "PREMISES (Ea occurrence)"
+            },
+            {
+              "bbox": {
+                "h": 10.22,
+                "height": 10.22,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 312.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 2,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "$ DAMAGE TO RENTED"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 305.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 1,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "EACH OCCURRENCE $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 341.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 4,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "PERSONAL & ADV INJURY $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 28.676,
+                "width": 28.676,
+                "x": 428.4,
+                "y": 353.665
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "GENERAL"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 62.994,
+                "width": 62.994,
+                "x": 458.743,
+                "y": 353.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 5,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "AGGREGATE $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 365.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 6,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "PRODUCTS - COMP/OP AGG $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 75.337,
+                "width": 75.337,
+                "x": 54.0,
+                "y": 474.145
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 15,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "$ RETENTION DED"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 41.672,
+                "width": 41.672,
+                "x": 133.2,
+                "y": 461.665
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 14,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "CLAIMS-MADE"
+            },
+            {
+              "bbox": {
+                "h": 18.86,
+                "height": 18.86,
+                "unit": "pt",
+                "w": 79.777,
+                "width": 79.777,
+                "x": 441.96,
+                "y": 473.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 15,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "$ WC STATU- TORY LIMITS OTH- ER"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 461.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 14,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "AGGREGATE $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 449.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 13,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "EACH OCCURRENCE $"
+            },
+            {
+              "bbox": {
+                "h": 10.523,
+                "height": 10.523,
+                "unit": "pt",
+                "w": 13.856,
+                "width": 13.856,
+                "x": 20.04,
+                "y": 289.249
+              },
+              "col_span": 1,
+              "column": 0,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "INSR LTR"
+            },
+            {
+              "bbox": {
+                "h": 5.213,
+                "height": 5.213,
+                "unit": "pt",
+                "w": 61.96,
+                "width": 61.96,
+                "x": 75.12,
+                "y": 293.136
+              },
+              "col_span": 1,
+              "column": 1,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "TYPE OF INSURANCE"
+            },
+            {
+              "bbox": {
+                "h": 5.213,
+                "height": 5.213,
+                "unit": "pt",
+                "w": 49.499,
+                "width": 49.499,
+                "x": 246.96,
+                "y": 294.216
+              },
+              "col_span": 1,
+              "column": 3,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "POLICY NUMBER"
+            },
+            {
+              "bbox": {
+                "h": 10.613,
+                "height": 10.613,
+                "unit": "pt",
+                "w": 41.303,
+                "width": 41.303,
+                "x": 333.84,
+                "y": 289.176
+              },
+              "col_span": 1,
+              "column": 4,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "POLICY EFF (MM/DD/YYYY)"
+            },
+            {
+              "bbox": {
+                "h": 10.613,
+                "height": 10.613,
+                "unit": "pt",
+                "w": 41.303,
+                "width": 41.303,
+                "x": 380.64,
+                "y": 289.176
+              },
+              "col_span": 1,
+              "column": 5,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "POLICY EXP (MM/DD/YYYY)"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 10.673,
+                "width": 10.673,
+                "x": 428.4,
+                "y": 497.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 17,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "E.L."
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 80.997,
+                "width": 80.997,
+                "x": 440.74,
+                "y": 497.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 16,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "EACH ACCIDENT $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 509.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 18,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "E.L. DISEASE - EA EMPLOYEE $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 10.673,
+                "width": 10.673,
+                "x": 428.4,
+                "y": 521.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 20,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "E.L."
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 80.997,
+                "width": 80.997,
+                "x": 440.74,
+                "y": 521.665
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 19,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "DISEASE - POLICY LIMIT $"
+            },
+            {
+              "bbox": {
+                "h": 19.956,
+                "height": 19.956,
+                "unit": "pt",
+                "w": 133.096,
+                "width": 133.096,
+                "x": 39.6,
+                "y": 482.496
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 16,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS' LIABILITY Y / N"
+            },
+            {
+              "bbox": {
+                "h": 11.3,
+                "height": 11.3,
+                "unit": "pt",
+                "w": 109.354,
+                "width": 109.354,
+                "x": 39.6,
+                "y": 516.145
+              },
+              "col_span": 9,
+              "column": 0,
+              "column_header": false,
+              "row": 19,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "If yes, describe under DESCRIPTION OF OPERATIONS below"
+            },
+            {
+              "bbox": {
+                "h": 12.74,
+                "height": 12.74,
+                "unit": "pt",
+                "w": 152.627,
+                "width": 152.627,
+                "x": 39.6,
+                "y": 501.745
+              },
+              "col_span": 9,
+              "column": 0,
+              "column_header": false,
+              "row": 17,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A"
+            },
+            {
+              "bbox": {
+                "h": 5.213,
+                "height": 5.213,
+                "unit": "pt",
+                "w": 69.488,
+                "width": 69.488,
+                "x": 39.6,
+                "y": 387.696
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "AUTOMOBILE LIABILITY"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 30.671,
+                "width": 30.671,
+                "x": 54.0,
+                "y": 401.665
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "ANY AUTO"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 105.408,
+                "width": 105.408,
+                "x": 54.0,
+                "y": 409.225
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 10,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "ALL OWNED SCHEDULED"
+            },
+            {
+              "bbox": {
+                "h": 17.3,
+                "height": 17.3,
+                "unit": "pt",
+                "w": 106.729,
+                "width": 106.729,
+                "x": 54.0,
+                "y": 415.225
+              },
+              "col_span": 8,
+              "column": 1,
+              "column_header": false,
+              "row": 11,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS"
+            },
+            {
+              "bbox": {
+                "h": 14.78,
+                "height": 14.78,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 375.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 7,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "COMBINED SINGLE LIMIT $"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 399.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 9,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "BODILY INJURY (Per person) $"
+            },
+            {
+              "bbox": {
+                "h": 10.82,
+                "height": 10.82,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 421.225
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 11,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "PROPERTY DAMAGE $ (Per accident)"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 93.337,
+                "width": 93.337,
+                "x": 428.4,
+                "y": 390.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 8,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "$ (Ea accident)"
+            },
+            {
+              "bbox": {
+                "h": 11.603,
+                "height": 11.603,
+                "unit": "pt",
+                "w": 34.313,
+                "width": 34.313,
+                "x": 177.24,
+                "y": 288.769
+              },
+              "col_span": 1,
+              "column": 2,
+              "column_header": true,
+              "row": 0,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "INSR ADDL WVD SUBR"
+            },
+            {
+              "bbox": {
+                "h": 5.3,
+                "height": 5.3,
+                "unit": "pt",
+                "w": 3.337,
+                "width": 3.337,
+                "x": 518.4,
+                "y": 435.745
+              },
+              "col_span": 2,
+              "column": 6,
+              "column_header": false,
+              "row": 12,
+              "row_header": false,
+              "row_section": false,
+              "row_span": 1,
+              "source": "native",
+              "text": "$"
+            }
+          ],
+          "column_count": 9,
+          "confidence": null,
+          "csv": "INSR LTR,TYPE OF INSURANCE,INSR ADDL WVD SUBR,POLICY NUMBER,POLICY EFF (MM/DD/YYYY),POLICY EXP (MM/DD/YYYY),,,\nGEN'L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY,,,,,,EACH OCCURRENCE $,,\n,,,,,,$ DAMAGE TO RENTED,,\n,,,,,,PREMISES (Ea occurrence),,\n,,,,,,PERSONAL & ADV INJURY $,,\n,GENERAL,,,,,AGGREGATE $,,\n,,,,,,PRODUCTS - COMP/OP AGG $,,\n,LOC JECT PRO- POLICY,,,,,COMBINED SINGLE LIMIT $,,\n,AUTOMOBILE LIABILITY,,,,,$ (Ea accident),,\n,ANY AUTO,,,,,BODILY INJURY (Per person) $,,\n,ALL OWNED SCHEDULED,,,,,,,\n,HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS,,,,,PROPERTY DAMAGE $ (Per accident),,\n,,,,,,$,,\n,,,,,,EACH OCCURRENCE $,,\n,CLAIMS-MADE,,,,,AGGREGATE $,,\n,$ RETENTION DED,,,,,$ WC STATU- TORY LIMITS OTH- ER,,\n,ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS' LIABILITY Y / N,,,,,EACH ACCIDENT $,,\n(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A,,,,,,E.L.,,\n,,,,,,E.L. DISEASE - EA EMPLOYEE $,,\n\"If yes, describe under DESCRIPTION OF OPERATIONS below\",,,,,,DISEASE - POLICY LIMIT $,,\n,,,,,,E.L.,,",
+          "embedded_images": [],
+          "engine": "docling",
+          "html": "<table>\n  <thead>\n    <tr>\n      <th>INSR LTR</th>\n      <th>TYPE OF INSURANCE</th>\n      <th>INSR ADDL WVD SUBR</th>\n      <th>POLICY NUMBER</th>\n      <th>POLICY EFF (MM/DD/YYYY)</th>\n      <th>POLICY EXP (MM/DD/YYYY)</th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"9\">GEN&#x27;L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">$ DAMAGE TO RENTED</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PREMISES (Ea occurrence)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PERSONAL &amp; ADV INJURY $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">GENERAL</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PRODUCTS - COMP/OP AGG $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">LOC JECT PRO- POLICY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">AUTOMOBILE LIABILITY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ANY AUTO</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ALL OWNED SCHEDULED</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">$</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">EACH OCCURRENCE $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">CLAIMS-MADE</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">$ RETENTION DED</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS&#x27; LIABILITY Y / N</td>\n    </tr>\n    <tr>\n      <td colspan=\"9\">(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">E.L. DISEASE - EA EMPLOYEE $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"9\">If yes, describe under DESCRIPTION OF OPERATIONS below</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">E.L.</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>",
+          "id": "p1-i13",
+          "md": "<table>\n  <thead>\n    <tr>\n      <th>INSR LTR</th>\n      <th>TYPE OF INSURANCE</th>\n      <th>INSR ADDL WVD SUBR</th>\n      <th>POLICY NUMBER</th>\n      <th>POLICY EFF (MM/DD/YYYY)</th>\n      <th>POLICY EXP (MM/DD/YYYY)</th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"9\">GEN&#x27;L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">$ DAMAGE TO RENTED</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PREMISES (Ea occurrence)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PERSONAL &amp; ADV INJURY $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">GENERAL</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">PRODUCTS - COMP/OP AGG $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">LOC JECT PRO- POLICY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">AUTOMOBILE LIABILITY</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ANY AUTO</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ALL OWNED SCHEDULED</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">$</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">EACH OCCURRENCE $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">CLAIMS-MADE</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">$ RETENTION DED</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td colspan=\"8\">ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS&#x27; LIABILITY Y / N</td>\n    </tr>\n    <tr>\n      <td colspan=\"9\">(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">E.L. DISEASE - EA EMPLOYEE $</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td colspan=\"9\">If yes, describe under DESCRIPTION OF OPERATIONS below</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td colspan=\"2\">E.L.</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>",
+          "parse_concerns": [],
+          "reading_order": 12,
+          "row_count": 21,
+          "rows": [
+            [
+              "INSR LTR",
+              "TYPE OF INSURANCE",
+              "INSR ADDL WVD SUBR",
+              "POLICY NUMBER",
+              "POLICY EFF (MM/DD/YYYY)",
+              "POLICY EXP (MM/DD/YYYY)",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GEN'L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "EACH OCCURRENCE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$ DAMAGE TO RENTED",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PREMISES (Ea occurrence)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PERSONAL & ADV INJURY $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "GENERAL",
+              "",
+              "",
+              "",
+              "",
+              "AGGREGATE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PRODUCTS - COMP/OP AGG $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "LOC JECT PRO- POLICY",
+              "",
+              "",
+              "",
+              "",
+              "COMBINED SINGLE LIMIT $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "AUTOMOBILE LIABILITY",
+              "",
+              "",
+              "",
+              "",
+              "$ (Ea accident)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ANY AUTO",
+              "",
+              "",
+              "",
+              "",
+              "BODILY INJURY (Per person) $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ALL OWNED SCHEDULED",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS",
+              "",
+              "",
+              "",
+              "",
+              "PROPERTY DAMAGE $ (Per accident)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "EACH OCCURRENCE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "CLAIMS-MADE",
+              "",
+              "",
+              "",
+              "",
+              "AGGREGATE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "$ RETENTION DED",
+              "",
+              "",
+              "",
+              "",
+              "$ WC STATU- TORY LIMITS OTH- ER",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS' LIABILITY Y / N",
+              "",
+              "",
+              "",
+              "",
+              "EACH ACCIDENT $",
+              "",
+              ""
+            ],
+            [
+              "(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L.",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L. DISEASE - EA EMPLOYEE $",
+              "",
+              ""
+            ],
+            [
+              "If yes, describe under DESCRIPTION OF OPERATIONS below",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "DISEASE - POLICY LIMIT $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L.",
+              "",
+              ""
+            ]
+          ],
+          "source": "native",
+          "type": "table",
+          "value": [
+            [
+              "INSR LTR",
+              "TYPE OF INSURANCE",
+              "INSR ADDL WVD SUBR",
+              "POLICY NUMBER",
+              "POLICY EFF (MM/DD/YYYY)",
+              "POLICY EXP (MM/DD/YYYY)",
+              "",
+              "",
+              ""
+            ],
+            [
+              "GEN'L AGGREGATE LIMIT APPLIES PER: OCCUR CLAIMS-MADE COMMERCIAL GENERAL LIABILITY GENERAL LIABILITY",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "EACH OCCURRENCE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$ DAMAGE TO RENTED",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PREMISES (Ea occurrence)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PERSONAL & ADV INJURY $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "GENERAL",
+              "",
+              "",
+              "",
+              "",
+              "AGGREGATE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "PRODUCTS - COMP/OP AGG $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "LOC JECT PRO- POLICY",
+              "",
+              "",
+              "",
+              "",
+              "COMBINED SINGLE LIMIT $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "AUTOMOBILE LIABILITY",
+              "",
+              "",
+              "",
+              "",
+              "$ (Ea accident)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ANY AUTO",
+              "",
+              "",
+              "",
+              "",
+              "BODILY INJURY (Per person) $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ALL OWNED SCHEDULED",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "",
+              "HIRED AUTOS NON-OWNED AUTOS AUTOS AUTOS",
+              "",
+              "",
+              "",
+              "",
+              "PROPERTY DAMAGE $ (Per accident)",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "$",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "EACH OCCURRENCE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "CLAIMS-MADE",
+              "",
+              "",
+              "",
+              "",
+              "AGGREGATE $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "$ RETENTION DED",
+              "",
+              "",
+              "",
+              "",
+              "$ WC STATU- TORY LIMITS OTH- ER",
+              "",
+              ""
+            ],
+            [
+              "",
+              "ANY PROPRIETOR/PARTNER/EXECUTIVE WORKERS COMPENSATION AND EMPLOYERS' LIABILITY Y / N",
+              "",
+              "",
+              "",
+              "",
+              "EACH ACCIDENT $",
+              "",
+              ""
+            ],
+            [
+              "(Mandatory in NH) OFFICER/MEMBER EXCLUDED? N / A",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L.",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L. DISEASE - EA EMPLOYEE $",
+              "",
+              ""
+            ],
+            [
+              "If yes, describe under DESCRIPTION OF OPERATIONS below",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "DISEASE - POLICY LIMIT $",
+              "",
+              ""
+            ],
+            [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "E.L.",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 384.909,
+            "width": 384.909,
+            "x": 21.6,
+            "y": 567.696
+          },
+          "confidence": null,
+          "id": "p1-i14",
+          "label": "text",
+          "md": "DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)",
+          "reading_order": 13,
+          "source": "native",
+          "type": "text",
+          "value": "DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES (Attach ACORD 101, Additional Remarks Schedule, if more space is required)"
+        },
+        {
+          "bbox": {
+            "h": 7.421,
+            "height": 7.421,
+            "unit": "pt",
+            "w": 93.331,
+            "width": 93.331,
+            "x": 21.6,
+            "y": 651.947
+          },
+          "confidence": null,
+          "id": "p1-i15",
+          "label": "section_header",
+          "level": 1,
+          "md": "# CERTIFICATE HOLDER",
+          "reading_order": 14,
+          "source": "native",
+          "type": "heading",
+          "value": "CERTIFICATE HOLDER"
+        },
+        {
+          "bbox": {
+            "h": 7.421,
+            "height": 7.421,
+            "unit": "pt",
+            "w": 66.261,
+            "width": 66.261,
+            "x": 309.6,
+            "y": 651.947
+          },
+          "confidence": null,
+          "id": "p1-i16",
+          "label": "section_header",
+          "level": 1,
+          "md": "# CANCELLATION",
+          "reading_order": 15,
+          "source": "native",
+          "type": "heading",
+          "value": "CANCELLATION"
+        },
+        {
+          "bbox": {
+            "h": 22.743,
+            "height": 22.743,
+            "unit": "pt",
+            "w": 266.391,
+            "width": 266.391,
+            "x": 316.8,
+            "y": 672.99
+          },
+          "confidence": null,
+          "id": "p1-i17",
+          "label": "text",
+          "md": "SHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE THE EXPIRATION DATE THEREOF, NOTICE WILL BE DELIVERED IN ACCORDANCE WITH THE POLICY PROVISIONS.",
+          "reading_order": 16,
+          "source": "native",
+          "type": "text",
+          "value": "SHOULD ANY OF THE ABOVE DESCRIBED POLICIES BE CANCELLED BEFORE THE EXPIRATION DATE THEREOF, NOTICE WILL BE DELIVERED IN ACCORDANCE WITH THE POLICY PROVISIONS."
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 93.758,
+            "width": 93.758,
+            "x": 309.6,
+            "y": 711.696
+          },
+          "confidence": null,
+          "id": "p1-i18",
+          "label": "text",
+          "md": "AUTHORIZED REPRESENTATIVE",
+          "reading_order": 17,
+          "source": "native",
+          "type": "text",
+          "value": "AUTHORIZED REPRESENTATIVE"
+        },
+        {
+          "bbox": {
+            "h": 5.213,
+            "height": 5.213,
+            "unit": "pt",
+            "w": 28.842,
+            "width": 28.842,
+            "x": 309.6,
+            "y": 121.176
+          },
+          "confidence": null,
+          "id": "p1-i19",
+          "label": "text",
+          "md": "CONTACT",
+          "reading_order": 18,
+          "source": "native",
+          "type": "text",
+          "value": "CONTACT"
+        },
+        {
+          "bbox": {
+            "h": 12.173,
+            "height": 12.173,
+            "unit": "pt",
+            "w": 20.983,
+            "width": 20.983,
+            "x": 309.6,
+            "y": 126.696
+          },
+          "confidence": null,
+          "id": "p1-i20",
+          "label": "text",
+          "md": "PHONE NAME:",
+          "reading_order": 19,
+          "source": "ocr",
+          "type": "text",
+          "value": "PHONE NAME:"
+        },
+        {
+          "bbox": {
+            "h": 19.421,
+            "height": 19.421,
+            "unit": "pt",
+            "w": 568.778,
+            "width": 568.778,
+            "x": 21.6,
+            "y": 746.867
+          },
+          "confidence": null,
+          "id": "p1-i21",
+          "items": [
+            {
+              "bbox": {
+                "h": 7.421,
+                "height": 7.421,
+                "unit": "pt",
+                "w": 230.258,
+                "width": 230.258,
+                "x": 360.12,
+                "y": 746.867
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "© 1988-2010 ACORD CORPORATION. All rights reserved.",
+              "source": "native",
+              "type": "text",
+              "value": "© 1988-2010 ACORD CORPORATION. All rights reserved."
+            },
+            {
+              "bbox": {
+                "h": 7.421,
+                "height": 7.421,
+                "unit": "pt",
+                "w": 80.768,
+                "width": 80.768,
+                "x": 21.6,
+                "y": 758.867
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "ACORD 25 (2010/05)",
+              "source": "native",
+              "type": "text",
+              "value": "ACORD 25 (2010/05)"
+            },
+            {
+              "bbox": {
+                "h": 7.421,
+                "height": 7.421,
+                "unit": "pt",
+                "w": 238.051,
+                "width": 238.051,
+                "x": 186.96,
+                "y": 758.867
+              },
+              "confidence": null,
+              "label": "page_footer",
+              "md": "The ACORD name and logo are registered marks of ACORD",
+              "source": "native",
+              "type": "text",
+              "value": "The ACORD name and logo are registered marks of ACORD"
+            }
+          ],
+          "md": "© 1988-2010 ACORD CORPORATION. All rights reserved.\n\nACORD 25 (2010/05)\n\nThe ACORD name and logo are registered marks of ACORD",
+          "reading_order": 20,
+          "source": "native",
+          "type": "footer",
+          "value": "© 1988-2010 ACORD CORPORATION. All rights reserved.\nACORD 25 (2010/05)\nThe ACORD name and logo are registered marks of ACORD"
+        }
+      ],
+      "page_height": 792.0,
+      "page_index": 1,
+      "page_label": "1",
+      "page_number": 1,
+      "page_width": 612.0,
+      "success": true,
+      "unit": "pt",
+      "warnings": []
+    }
+  ],
+  "processing": {
+    "duration_ms": 8655,
+    "engine": "docling",
+    "input_format": "pdf",
+    "local_processing": true,
+    "native_text_engine": "pypdfium2",
+    "ocr_engine": "tesseract",
+    "ocr_languages": [
+      "eng"
+    ],
+    "picture_captioning": {
+      "local_model_available": false,
+      "requested": false
+    },
+    "table_engines": [
+      "docling",
+      "pdfplumber"
+    ],
+    "visual_analysis": {
+      "heading_height_ratio": 1.8,
+      "heading_min_confidence": 0.75,
+      "low_confidence_min_alnum_chars": 8,
+      "pdf_selective_rendering_enabled": true,
+      "picture_classification_threshold": 0.6,
+      "primary_ocr_min_confidence": 0.45,
+      "shared_pipeline": true
+    }
+  },
+  "schema_version": "1.0",
+  "warnings": []
+}

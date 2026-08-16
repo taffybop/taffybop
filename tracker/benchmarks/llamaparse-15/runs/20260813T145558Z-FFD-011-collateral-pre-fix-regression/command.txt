@@ -1,0 +1,1 @@
+.venv/bin/pytest -q tests/stories/phase_02/test_p02_us04_table_owned_supplemental_reconciliation.py

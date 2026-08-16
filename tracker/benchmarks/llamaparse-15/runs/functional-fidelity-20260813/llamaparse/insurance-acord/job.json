@@ -1,0 +1,16 @@
+{
+  "job": {
+    "user_metadata": null,
+    "id": "pjb-e949skk13ihc9wbmdhk348mw2t69",
+    "created_at": "2026-08-12T18:31:42.657627Z",
+    "updated_at": "2026-08-12T18:32:05.327567Z",
+    "project_id": "ec7edb70-8bec-4b1b-9a17-451533884780",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "insurance-acord.pdf",
+    "tier": "agentic"
+  },
+  "page_count": 1,
+  "captured_at": "2026-08-12T18:43:52.725Z",
+  "source_url": "https://cloud.llamaindex.ai/project/ec7edb70-8bec-4b1b-9a17-451533884780/parse/pjb-e949skk13ihc9wbmdhk348mw2t69?fileName=insurance-acord.pdf"
+}

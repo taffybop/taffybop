@@ -1,0 +1,1471 @@
+{
+  "case_id": "catastrophe-recap",
+  "document": {
+    "expert_page_count": 1,
+    "expert_standalone_matches_json_body": false,
+    "our_page_count": 1,
+    "our_status": "success",
+    "our_warnings": [],
+    "source_filename": "catastrophe-recap.pdf",
+    "source_page_count": 1
+  },
+  "duplicates": {
+    "expert": [
+      {
+        "count": 17,
+        "line": "<td>5</td>"
+      },
+      {
+        "count": 11,
+        "line": "<td>americas</td>"
+      },
+      {
+        "count": 11,
+        "line": "<td>apac</td>"
+      },
+      {
+        "count": 11,
+        "line": "<td>emea</td>"
+      },
+      {
+        "count": 11,
+        "line": "<td>usa</td>"
+      },
+      {
+        "count": 10,
+        "line": "<td>2</td>"
+      },
+      {
+        "count": 8,
+        "line": "<td>15</td>"
+      },
+      {
+        "count": 7,
+        "line": "<td>10</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>united states</td>"
+      },
+      {
+        "count": 5,
+        "line": "<td>3</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>12</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>30</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2015</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2016</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2017</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2018</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2019</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2020</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2021</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2022</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2023</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2024</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>2025</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>20</td>"
+      },
+      {
+        "count": 4,
+        "line": "<td>35</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>18</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>severe convective storm</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>22</td>"
+      },
+      {
+        "count": 2,
+        "line": "</thead>"
+      },
+      {
+        "count": 2,
+        "line": "<td>01/07-01/28</td>"
+      }
+    ],
+    "ours": [
+      {
+        "count": 5,
+        "line": "<td>united states</td>"
+      },
+      {
+        "count": 3,
+        "line": "<td>severe convective storm</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>01/07-01/28</td>"
+      },
+      {
+        "count": 2,
+        "line": "<td>8.0</td>"
+      }
+    ]
+  },
+  "item_profiles": {
+    "expert": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.8888888888888888,
+      "item_count": 9,
+      "parse_concern_count": 2,
+      "provenance_coverage": 0.0,
+      "tables": [
+        {
+          "column_count": 5,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 4,
+          "parse_concerns": [
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 6
+        },
+        {
+          "column_count": 4,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 7,
+          "parse_concerns": [
+            {
+              "details": "2 tables on page",
+              "type": "multi_table_page"
+            }
+          ],
+          "row_count": 45
+        }
+      ],
+      "type_counts": {
+        "footer": 1,
+        "table": 2,
+        "text": 6
+      }
+    },
+    "ours": {
+      "bbox_coverage": 1.0,
+      "confidence_coverage": 0.3333333333333333,
+      "item_count": 6,
+      "parse_concern_count": 1,
+      "provenance_coverage": 1.0,
+      "tables": [
+        {
+          "column_count": 5,
+          "has_csv": true,
+          "has_html": true,
+          "has_markdown": true,
+          "item_index": 3,
+          "parse_concerns": [],
+          "row_count": 6
+        }
+      ],
+      "type_counts": {
+        "chart": 1,
+        "footer": 1,
+        "image": 1,
+        "table": 1,
+        "text": 2
+      }
+    }
+  },
+  "pages": [
+    {
+      "expert_body_chars": 6689,
+      "expert_success": true,
+      "expert_vs_ours": {
+        "candidate_chars": 2004,
+        "candidate_tokens": 313,
+        "extra_token_counts": [
+          [
+            "image",
+            1
+          ],
+          [
+            "detected",
+            1
+          ],
+          [
+            "no",
+            1
+          ],
+          [
+            "reliable",
+            1
+          ],
+          [
+            "text",
+            1
+          ],
+          [
+            "extracted",
+            1
+          ],
+          [
+            "é",
+            1
+          ],
+          [
+            "w",
+            1
+          ],
+          [
+            "global",
+            1
+          ],
+          [
+            "er",
+            1
+          ],
+          [
+            "cas",
+            1
+          ],
+          [
+            "c",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "75",
+            1
+          ],
+          [
+            "201520202025201520202025201520202025201520202025",
+            1
+          ],
+          [
+            "recap",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "td",
+            352
+          ],
+          [
+            "tr",
+            90
+          ],
+          [
+            "5",
+            18
+          ],
+          [
+            "americas",
+            10
+          ],
+          [
+            "2",
+            10
+          ],
+          [
+            "apac",
+            10
+          ],
+          [
+            "emea",
+            10
+          ],
+          [
+            "usa",
+            10
+          ],
+          [
+            "th",
+            8
+          ],
+          [
+            "15",
+            8
+          ],
+          [
+            "10",
+            7
+          ],
+          [
+            "3",
+            5
+          ],
+          [
+            "20",
+            4
+          ],
+          [
+            "2016",
+            4
+          ],
+          [
+            "2017",
+            4
+          ],
+          [
+            "2018",
+            4
+          ],
+          [
+            "2019",
+            4
+          ],
+          [
+            "2021",
+            4
+          ],
+          [
+            "2022",
+            4
+          ],
+          [
+            "2023",
+            4
+          ],
+          [
+            "2024",
+            4
+          ],
+          [
+            "35",
+            4
+          ],
+          [
+            "2025",
+            3
+          ],
+          [
+            "12",
+            3
+          ],
+          [
+            "30",
+            3
+          ],
+          [
+            "2015",
+            3
+          ],
+          [
+            "2020",
+            3
+          ],
+          [
+            "22",
+            3
+          ],
+          [
+            "aon",
+            2
+          ],
+          [
+            "18",
+            2
+          ]
+        ],
+        "normalized_sequence_ratio": 0.49092916863858654,
+        "reference_chars": 6689,
+        "reference_tokens": 939,
+        "token_f1": 0.4744408945686901,
+        "token_multiset_overlap": 297,
+        "token_precision": 0.9488817891373802,
+        "token_recall": 0.31629392971246006
+      },
+      "our_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "our_item_markdown_chars": 2004,
+      "our_success": true,
+      "page_number": 1,
+      "source_chars": 1269,
+      "source_dimensions": {
+        "height": 792.0,
+        "unit": "pt",
+        "width": 612.0
+      },
+      "source_vs_expert": {
+        "candidate_chars": 6689,
+        "candidate_tokens": 939,
+        "extra_token_counts": [
+          [
+            "td",
+            402
+          ],
+          [
+            "tr",
+            102
+          ],
+          [
+            "th",
+            18
+          ],
+          [
+            "5",
+            17
+          ],
+          [
+            "americas",
+            11
+          ],
+          [
+            "apac",
+            11
+          ],
+          [
+            "emea",
+            11
+          ],
+          [
+            "usa",
+            11
+          ],
+          [
+            "2",
+            10
+          ],
+          [
+            "15",
+            8
+          ],
+          [
+            "10",
+            7
+          ],
+          [
+            "3",
+            5
+          ],
+          [
+            "table",
+            4
+          ],
+          [
+            "thead",
+            4
+          ],
+          [
+            "tbody",
+            4
+          ],
+          [
+            "20",
+            4
+          ],
+          [
+            "2015",
+            4
+          ],
+          [
+            "2016",
+            4
+          ],
+          [
+            "2017",
+            4
+          ],
+          [
+            "2018",
+            4
+          ],
+          [
+            "2019",
+            4
+          ],
+          [
+            "2020",
+            4
+          ],
+          [
+            "2021",
+            4
+          ],
+          [
+            "2022",
+            4
+          ],
+          [
+            "2023",
+            4
+          ],
+          [
+            "2024",
+            4
+          ],
+          [
+            "35",
+            4
+          ],
+          [
+            "2025",
+            3
+          ],
+          [
+            "12",
+            3
+          ],
+          [
+            "30",
+            3
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "é",
+            1
+          ],
+          [
+            "w",
+            1
+          ],
+          [
+            "global",
+            1
+          ],
+          [
+            "er",
+            1
+          ],
+          [
+            "cas",
+            1
+          ],
+          [
+            "c",
+            1
+          ],
+          [
+            "recap",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.4071159767362299,
+        "reference_chars": 1269,
+        "reference_tokens": 225,
+        "token_f1": 0.3745704467353952,
+        "token_multiset_overlap": 218,
+        "token_precision": 0.2321618743343983,
+        "token_recall": 0.9688888888888889
+      },
+      "source_vs_ours": {
+        "candidate_chars": 2004,
+        "candidate_tokens": 313,
+        "extra_token_counts": [
+          [
+            "td",
+            50
+          ],
+          [
+            "tr",
+            12
+          ],
+          [
+            "th",
+            10
+          ],
+          [
+            "table",
+            2
+          ],
+          [
+            "thead",
+            2
+          ],
+          [
+            "tbody",
+            2
+          ],
+          [
+            "image",
+            1
+          ],
+          [
+            "detected",
+            1
+          ],
+          [
+            "no",
+            1
+          ],
+          [
+            "reliable",
+            1
+          ],
+          [
+            "text",
+            1
+          ],
+          [
+            "extracted",
+            1
+          ],
+          [
+            "total",
+            1
+          ],
+          [
+            "americas",
+            1
+          ],
+          [
+            "apac",
+            1
+          ],
+          [
+            "emea",
+            1
+          ],
+          [
+            "usa",
+            1
+          ],
+          [
+            "125",
+            1
+          ],
+          [
+            "100",
+            1
+          ],
+          [
+            "75",
+            1
+          ],
+          [
+            "50",
+            1
+          ],
+          [
+            "25",
+            1
+          ],
+          [
+            "201520202025201520202025201520202025201520202025",
+            1
+          ],
+          [
+            "2015",
+            1
+          ],
+          [
+            "2020",
+            1
+          ],
+          [
+            "annual",
+            1
+          ]
+        ],
+        "missing_token_counts": [
+          [
+            "insured",
+            1
+          ],
+          [
+            "in",
+            1
+          ],
+          [
+            "events",
+            1
+          ],
+          [
+            "exhibit",
+            1
+          ],
+          [
+            "7",
+            1
+          ],
+          [
+            "top",
+            1
+          ],
+          [
+            "5",
+            1
+          ],
+          [
+            "costliest",
+            1
+          ],
+          [
+            "loss",
+            1
+          ],
+          [
+            "1h",
+            1
+          ]
+        ],
+        "normalized_sequence_ratio": 0.7258330583965688,
+        "reference_chars": 1269,
+        "reference_tokens": 225,
+        "token_f1": 0.7992565055762083,
+        "token_multiset_overlap": 215,
+        "token_precision": 0.6869009584664537,
+        "token_recall": 0.9555555555555556
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "text_comparisons": {
+    "expert_json_body_vs_ours": {
+      "candidate_chars": 2005,
+      "candidate_tokens": 313,
+      "extra_token_counts": [
+        [
+          "image",
+          1
+        ],
+        [
+          "detected",
+          1
+        ],
+        [
+          "no",
+          1
+        ],
+        [
+          "reliable",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "extracted",
+          1
+        ],
+        [
+          "é",
+          1
+        ],
+        [
+          "w",
+          1
+        ],
+        [
+          "global",
+          1
+        ],
+        [
+          "er",
+          1
+        ],
+        [
+          "cas",
+          1
+        ],
+        [
+          "c",
+          1
+        ],
+        [
+          "100",
+          1
+        ],
+        [
+          "75",
+          1
+        ],
+        [
+          "201520202025201520202025201520202025201520202025",
+          1
+        ],
+        [
+          "recap",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          352
+        ],
+        [
+          "tr",
+          90
+        ],
+        [
+          "5",
+          18
+        ],
+        [
+          "americas",
+          10
+        ],
+        [
+          "2",
+          10
+        ],
+        [
+          "apac",
+          10
+        ],
+        [
+          "emea",
+          10
+        ],
+        [
+          "usa",
+          10
+        ],
+        [
+          "th",
+          8
+        ],
+        [
+          "15",
+          8
+        ],
+        [
+          "10",
+          7
+        ],
+        [
+          "3",
+          5
+        ],
+        [
+          "20",
+          4
+        ],
+        [
+          "2016",
+          4
+        ],
+        [
+          "2017",
+          4
+        ],
+        [
+          "2018",
+          4
+        ],
+        [
+          "2019",
+          4
+        ],
+        [
+          "2021",
+          4
+        ],
+        [
+          "2022",
+          4
+        ],
+        [
+          "2023",
+          4
+        ],
+        [
+          "2024",
+          4
+        ],
+        [
+          "35",
+          4
+        ],
+        [
+          "2025",
+          3
+        ],
+        [
+          "12",
+          3
+        ],
+        [
+          "30",
+          3
+        ],
+        [
+          "2015",
+          3
+        ],
+        [
+          "2020",
+          3
+        ],
+        [
+          "22",
+          3
+        ],
+        [
+          "aon",
+          2
+        ],
+        [
+          "18",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.49092916863858654,
+      "reference_chars": 6689,
+      "reference_tokens": 939,
+      "token_f1": 0.4744408945686901,
+      "token_multiset_overlap": 297,
+      "token_precision": 0.9488817891373802,
+      "token_recall": 0.31629392971246006
+    },
+    "expert_vs_ours": {
+      "candidate_chars": 2005,
+      "candidate_tokens": 313,
+      "extra_token_counts": [
+        [
+          "image",
+          1
+        ],
+        [
+          "detected",
+          1
+        ],
+        [
+          "no",
+          1
+        ],
+        [
+          "reliable",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "extracted",
+          1
+        ],
+        [
+          "é",
+          1
+        ],
+        [
+          "w",
+          1
+        ],
+        [
+          "er",
+          1
+        ],
+        [
+          "cas",
+          1
+        ],
+        [
+          "c",
+          1
+        ],
+        [
+          "100",
+          1
+        ],
+        [
+          "75",
+          1
+        ],
+        [
+          "201520202025201520202025201520202025201520202025",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "td",
+          352
+        ],
+        [
+          "tr",
+          90
+        ],
+        [
+          "5",
+          18
+        ],
+        [
+          "americas",
+          10
+        ],
+        [
+          "2",
+          10
+        ],
+        [
+          "apac",
+          10
+        ],
+        [
+          "emea",
+          10
+        ],
+        [
+          "usa",
+          10
+        ],
+        [
+          "th",
+          8
+        ],
+        [
+          "15",
+          8
+        ],
+        [
+          "10",
+          7
+        ],
+        [
+          "3",
+          5
+        ],
+        [
+          "2025",
+          4
+        ],
+        [
+          "20",
+          4
+        ],
+        [
+          "2016",
+          4
+        ],
+        [
+          "2017",
+          4
+        ],
+        [
+          "2018",
+          4
+        ],
+        [
+          "2019",
+          4
+        ],
+        [
+          "2021",
+          4
+        ],
+        [
+          "2022",
+          4
+        ],
+        [
+          "2023",
+          4
+        ],
+        [
+          "2024",
+          4
+        ],
+        [
+          "35",
+          4
+        ],
+        [
+          "12",
+          3
+        ],
+        [
+          "30",
+          3
+        ],
+        [
+          "2015",
+          3
+        ],
+        [
+          "2020",
+          3
+        ],
+        [
+          "22",
+          3
+        ],
+        [
+          "aon",
+          2
+        ],
+        [
+          "18",
+          2
+        ]
+      ],
+      "normalized_sequence_ratio": 0.4861740353069833,
+      "reference_chars": 6752,
+      "reference_tokens": 949,
+      "token_f1": 0.473851030110935,
+      "token_multiset_overlap": 299,
+      "token_precision": 0.9552715654952076,
+      "token_recall": 0.3150684931506849
+    },
+    "source_native_proxy_vs_expert": {
+      "candidate_chars": 6752,
+      "candidate_tokens": 949,
+      "extra_token_counts": [
+        [
+          "td",
+          402
+        ],
+        [
+          "tr",
+          102
+        ],
+        [
+          "th",
+          18
+        ],
+        [
+          "5",
+          17
+        ],
+        [
+          "americas",
+          11
+        ],
+        [
+          "apac",
+          11
+        ],
+        [
+          "emea",
+          11
+        ],
+        [
+          "usa",
+          11
+        ],
+        [
+          "2",
+          10
+        ],
+        [
+          "15",
+          8
+        ],
+        [
+          "10",
+          7
+        ],
+        [
+          "3",
+          5
+        ],
+        [
+          "2025",
+          4
+        ],
+        [
+          "table",
+          4
+        ],
+        [
+          "thead",
+          4
+        ],
+        [
+          "tbody",
+          4
+        ],
+        [
+          "20",
+          4
+        ],
+        [
+          "2015",
+          4
+        ],
+        [
+          "2016",
+          4
+        ],
+        [
+          "2017",
+          4
+        ],
+        [
+          "2018",
+          4
+        ],
+        [
+          "2019",
+          4
+        ],
+        [
+          "2020",
+          4
+        ],
+        [
+          "2021",
+          4
+        ],
+        [
+          "2022",
+          4
+        ],
+        [
+          "2023",
+          4
+        ],
+        [
+          "2024",
+          4
+        ],
+        [
+          "35",
+          4
+        ],
+        [
+          "12",
+          3
+        ],
+        [
+          "30",
+          3
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "é",
+          1
+        ],
+        [
+          "w",
+          1
+        ],
+        [
+          "er",
+          1
+        ],
+        [
+          "cas",
+          1
+        ],
+        [
+          "c",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.4028436018957346,
+      "reference_chars": 1269,
+      "reference_tokens": 225,
+      "token_f1": 0.3747870528109029,
+      "token_multiset_overlap": 220,
+      "token_precision": 0.23182297154899895,
+      "token_recall": 0.9777777777777777
+    },
+    "source_native_proxy_vs_ours": {
+      "candidate_chars": 2005,
+      "candidate_tokens": 313,
+      "extra_token_counts": [
+        [
+          "td",
+          50
+        ],
+        [
+          "tr",
+          12
+        ],
+        [
+          "th",
+          10
+        ],
+        [
+          "table",
+          2
+        ],
+        [
+          "thead",
+          2
+        ],
+        [
+          "tbody",
+          2
+        ],
+        [
+          "image",
+          1
+        ],
+        [
+          "detected",
+          1
+        ],
+        [
+          "no",
+          1
+        ],
+        [
+          "reliable",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "extracted",
+          1
+        ],
+        [
+          "total",
+          1
+        ],
+        [
+          "americas",
+          1
+        ],
+        [
+          "apac",
+          1
+        ],
+        [
+          "emea",
+          1
+        ],
+        [
+          "usa",
+          1
+        ],
+        [
+          "125",
+          1
+        ],
+        [
+          "100",
+          1
+        ],
+        [
+          "75",
+          1
+        ],
+        [
+          "50",
+          1
+        ],
+        [
+          "25",
+          1
+        ],
+        [
+          "201520202025201520202025201520202025201520202025",
+          1
+        ],
+        [
+          "2015",
+          1
+        ],
+        [
+          "2020",
+          1
+        ],
+        [
+          "annual",
+          1
+        ]
+      ],
+      "missing_token_counts": [
+        [
+          "insured",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "events",
+          1
+        ],
+        [
+          "exhibit",
+          1
+        ],
+        [
+          "7",
+          1
+        ],
+        [
+          "top",
+          1
+        ],
+        [
+          "5",
+          1
+        ],
+        [
+          "costliest",
+          1
+        ],
+        [
+          "loss",
+          1
+        ],
+        [
+          "1h",
+          1
+        ]
+      ],
+      "normalized_sequence_ratio": 0.7258330583965688,
+      "reference_chars": 1269,
+      "reference_tokens": 225,
+      "token_f1": 0.7992565055762083,
+      "token_multiset_overlap": 215,
+      "token_precision": 0.6869009584664537,
+      "token_recall": 0.9555555555555556
+    }
+  }
+}
