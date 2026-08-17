@@ -1,4 +1,4 @@
-# Document Parse API
+# TaffyBop
 
 A local Python API that accepts PDF, PNG, JPEG/JPG, TIFF, and WebP documents,
 plus default-off DOCX, PPTX, and XLSX native adapters, and returns normalized
