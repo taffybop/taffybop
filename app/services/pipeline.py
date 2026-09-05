@@ -9107,6 +9107,13 @@ def _parse_loaded_document(
             if region.region_origin != "pdf_page_render"
         ),
     }
+    if settings.charts_source_asset_enabled:
+        # Raster inputs are normalized before shared analysis. Preserve both
+        # the immutable upload identity and the exact byte identity used by
+        # the bounded chart renderer; they are identical for PDFs.
+        document_metadata["render_source_sha256"] = hashlib.sha256(
+            loaded.processing_bytes
+        ).hexdigest()
     processing_metadata: dict[str, Any] = {
         "engine": "docling",
         "ocr_engine": "tesseract",

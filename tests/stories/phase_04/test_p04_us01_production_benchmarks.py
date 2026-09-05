@@ -14,6 +14,7 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import re
 from typing import Any, Mapping
 
 import pytest
@@ -766,17 +767,22 @@ def test_timetable_fails_closed_without_shifting_or_silently_merging_rows() -> N
 
 
 @pytest.mark.integration
-def test_acord_form_owned_grid_retains_evidence_but_not_canonical_topology() -> None:
+def test_acord_form_grid_resolves_canonical_topology_with_diagnostic_table_evidence() -> None:
     payload = _parse_real("insurance-acord", True)
     predecessor = _frozen_predecessor("insurance-acord")
-    assert len(_tables(payload, page_index=1)) == len(
-        _tables(predecessor, page_index=1)
-    ) == 2
-    table = max(_tables(payload, page_index=1), key=lambda item: item["column_count"])
-    predecessor_table = max(
-        _tables(predecessor, page_index=1),
-        key=lambda item: item["column_count"],
-    )
+
+    def coverage_table(source: Mapping[str, Any]) -> dict[str, Any]:
+        matches = [
+            table
+            for table in _tables(source, page_index=1)
+            if "INSR LTR" in str(table.get("rows") or "")
+            and "TYPE OF INSURANCE" in str(table.get("rows") or "")
+        ]
+        assert len(matches) == 1
+        return matches[0]
+
+    table = coverage_table(payload)
+    predecessor_table = coverage_table(predecessor)
     sidecar = table.get("table_evidence")
 
     assert isinstance(sidecar, dict)
@@ -784,39 +790,106 @@ def test_acord_form_owned_grid_retains_evidence_but_not_canonical_topology() -> 
     assert sidecar["status"] != "valid"
     assert "table_source_form_grid_topology_unresolved" in sidecar["concerns"]
     assert sidecar["source_objects"] and sidecar["evidence"]
-    assert _table_projection(table) == _table_projection(predecessor_table)
+    for key in (
+        "type",
+        "value",
+        "md",
+        "rows",
+        "row_count",
+        "column_count",
+        "csv",
+        "bbox",
+    ):
+        assert table.get(key) == predecessor_table.get(key)
     assert "INSR LTR" in table["rows"][0][0]
     assert "TYPE OF INSURANCE" in table["rows"][0][1]
 
     form_groups = {
-        item["form_group"]["group_key"]: (
-            item["id"],
-            item["form_group"]["anchor_public_item_id"],
-        )
+        item["form_group"]["group_key"]: item
         for page in payload["pages"]
         for item in page["items"]
         if item.get("layout_forms_projected") is True
     }
-    assert form_groups == {
-        "date": ("p1-i2", "p1-i2"),
-        "parties-and-insurers": ("p1-i7", "p1-i7"),
-        "coverages": ("p1-i13", "p1-i13"),
-        "description-of-operations": ("p1-i14", "p1-i14"),
-        "certificate-holder": ("p1-i15", "p1-i15"),
-        "cancellation": ("p1-i16", "p1-i16"),
+    assert set(form_groups) == {
+        "date",
+        "parties-and-insurers",
+        "coverages-header-fields",
+        "coverages",
+        "description-of-operations",
+        "certificate-holder",
+        "cancellation",
     }
-    assert len({anchor for _item, anchor in form_groups.values()}) == 6
+    assert all(
+        item["id"] == item["form_group"]["anchor_public_item_id"]
+        for item in form_groups.values()
+    )
+    assert len(
+        {
+            item["form_group"]["anchor_element_id"]
+            for item in form_groups.values()
+        }
+    ) == len(form_groups)
+
+    coverage = form_groups["coverages"]
+    coverage_group = coverage["form_group"]
+    grid = coverage_group["form_grid"]
+    assert coverage["type"] in {"table", "table_candidate"}
+    assert coverage_group["status"] == "resolved"
+    assert coverage_group["canonical_mode"] == "replace"
+    assert coverage_group["concern_codes"] == []
+    assert (
+        len(grid["row_boundaries"]) - 1,
+        len(grid["column_boundaries"]) - 1,
+        len(grid["cells"]),
+    ) == (21, 9, 82)
+    assert coverage["id"] == table["id"]
+    predecessor_block = _canonical_block_for_public_item(
+        predecessor,
+        page_index=1,
+        public_item_id=predecessor_table["id"],
+    )
+    assert predecessor_block["contributing_element_ids"][0] == (
+        predecessor_block["primary_element_id"]
+    )
+    assert len(predecessor_block["contributing_element_ids"]) == 38
+    coverage_blocks = [
+        block
+        for page in payload["canonical_presentation"]["pages"]
+        for block in page["blocks"]
+        if block["primary_element_id"] == coverage_group["anchor_element_id"]
+    ]
+    assert len(coverage_blocks) == 1
+    assert coverage_blocks[0]["contributing_element_ids"][0] == (
+        coverage_group["anchor_element_id"]
+    )
+    coverage_markdown = coverage_blocks[0]["markdown"]
+    assert coverage_markdown.count('data-form-grid="true"') == 1
+    assert coverage_markdown.count("<thead>") == 1
+    assert coverage_markdown.count("</thead>") == 1
+    assert len(
+        re.findall(r'<(?:th|td) id="[^"]+-cell-\d+"', coverage_markdown)
+    ) == 82
+    assert coverage_markdown != table["md"]
+    assert table["md"] not in coverage_markdown
+    assert {
+        key: item["form_group"]["canonical_mode"]
+        for key, item in form_groups.items()
+        if key != "coverages"
+    } == {
+        key: "replace" if key == "parties-and-insurers" else "inert"
+        for key in form_groups
+        if key != "coverages"
+    }
+
     assert any(
-        item.get("id") == "p1-i17"
-        and str(item.get("value") or "").startswith(
+        str(item.get("value") or "").startswith(
             "SHOULD ANY OF THE ABOVE DESCRIBED POLICIES"
         )
         for page in payload["pages"]
         for item in page["items"]
     )
     assert any(
-        item.get("id") == "p1-i18"
-        and item.get("value") == "AUTHORIZED REPRESENTATIVE"
+        item.get("value") == "AUTHORIZED REPRESENTATIVE"
         for page in payload["pages"]
         for item in page["items"]
     )

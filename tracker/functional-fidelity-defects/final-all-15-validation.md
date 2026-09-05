@@ -1,7 +1,8 @@
 # Final All-15 Functional-Parity Validation Gate
 
 Status: **Mandatory release gate; not yet executed**  
-Applies after: **all 23 remediation slices have a final disposition**  
+Applies after: **all 24 remediation slices have a final disposition**
+
 Scope: **functional correctness and output fidelity only**  
 Reference baseline: **a fresh LlamaParse run for every benchmark PDF**  
 Implementation under test: **the frozen release-candidate build of this service**
@@ -284,7 +285,10 @@ or lost span semantics does not pass.
 
 Compare form detection, field labels, values, check/radio state, groups,
 sections, key/value association, source order, repeated labels, blank fields,
-and table-versus-form ownership. Confirm the same meaning is available in
+and table-versus-form ownership. For structure-bearing form grids, also compare
+logical row/column groups, spans, field/control geometry, and whether every
+blank or entered value remains in its source-relative cell rather than a
+flattened list. Confirm the same meaning and structure are available in
 Markdown, UI, and public JSON without duplication.
 
 ### Charts and graphs
@@ -292,9 +296,23 @@ Markdown, UI, and public JSON without duplication.
 Compare chart detection and placement; panel boundaries and order; title,
 caption, source note, axes, units, ticks, legend, categories, series, printed
 labels/values, and the association of marks to labels. Distinguish printed or
-source-provable values from interpolated or invented values. Compare the
-semantic JSON representation and the Markdown/UI presentation, including
-once-only placement relative to surrounding content.
+source-provable values from interpolated or invented values. Every detected
+chart must retain one integrity-bound source asset or record the safe
+`asset_unavailable` refusal. Verify family and `regular`/`complex`
+classification independently; complexity alone must not select a fallback.
+
+Validate exactly one terminal state and primary across JSON, Markdown, and the
+rendered UI: `structured_primary` only after the family completeness gate;
+`image_primary_unsupported` when no approved analyzer exists;
+`image_primary_incomplete` after attempted but incomplete, ambiguous, failed,
+timed-out, or resource-refused analysis; or `asset_unavailable` with no image
+link or semantic authority. A complete complex chart remains structured-
+primary. Structured output retains the original asset only as supplemental
+evidence; image-primary output renders that asset exactly once. Focused state
+tests supplement the normal full-PDF run, which must expose its naturally
+selected state. Any later enrichment must preserve the original asset ID,
+bytes, hash, bbox, and custody record and pass the same completeness validator
+before atomic promotion.
 
 ### Diagrams and visual models
 
@@ -426,9 +444,9 @@ but it must pass the rows its changed code can affect.
 | Reading order | Main text, columns, captions, callouts, headers/footers, and visual owners reordered from source geometry/relationships rather than known phrases or pages |
 | Tables and merged cells | Bordered and borderless tables, empty cells, row/column spans, repeated headers, and changed row/column counts with exact cell ordering |
 | Forms | Key/value, grouped fields, check/radio states, blanks, and form/table boundary negatives |
-| Images | Photographs, logos, decorative images, image captions, and image-versus-chart/diagram/form classification controls |
+| Images | Photographs, logos, decorative images, image captions, integrity-bound source assets for every detected chart, and image-versus-chart/diagram/form classification controls |
 | OCR content | Native, scanned, rotated, multilingual/Unicode, low-resolution, fused, and duplicate candidates with attributable fail-closed selection |
-| Charts and graphs | Bar, line, combination, and multi-panel layouts with changed labels/scales and explicit printed-versus-inferred value controls |
+| Charts and graphs | Bar, line, combination, bubble/multi-encoding, and multi-panel layouts with changed labels/scales, explicit printed-versus-inferred value controls, independent family/complexity classification, all four terminal states, and asset-preserving semantic promotion |
 | Diagrams and visual models | Directed flow, undirected grouping, containment, and engineering/pinout layouts with missing/ambiguous connector negatives |
 | Formatting and UI | Headings, lists, links, emphasis, code, whitespace, table rendering, sanitization, accessibility, and responsive/viewport presentation controls |
 

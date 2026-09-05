@@ -23,6 +23,7 @@ from pydantic import (
 
 from app.models import PageIdentity
 
+from app.services.chart_assets import ChartResolution, chart_resolution_markdown
 from app.services.ir import (
     DocumentIR,
     ElementRecord,
@@ -203,9 +204,11 @@ class CanonicalBlock(PresentationModel):
                 raise ValueError("an intrinsic omission cannot declare a suppressor")
             if (
                 self.omission_reason == "overlapping_visual_table"
-                and element_type != "table"
+                and element_type not in {"table", "table_candidate"}
             ):
-                raise ValueError("only a table can declare an overlap omission")
+                raise ValueError(
+                    "only a table or table candidate can declare an overlap omission"
+                )
             if (
                 self.omission_reason
                 in {
@@ -639,6 +642,22 @@ def _stable_id(prefix: str, *parts: Any) -> str:
     return f"{prefix}-{hashlib.sha256(encoded).hexdigest()[:20]}"
 
 
+def _expected_layout_visual_relationship_id(
+    relationship_type: RelationshipType,
+    source_public_id: str,
+    target_public_id: str,
+) -> str:
+    """Replay the public P03-US02 relationship identity exactly."""
+
+    digest = hashlib.sha256(
+        (
+            f"P03-US02\0{relationship_type.value}\0"
+            f"{source_public_id}\0{target_public_id}"
+        ).encode("utf-8")
+    ).hexdigest()
+    return f"layout-rel-{digest[:20]}"
+
+
 def _clean(value: Any) -> str:
     return "" if value is None else str(value).strip()
 
@@ -957,7 +976,16 @@ def augment_canonical_visual_model_evidence(
 
 def _legacy_item(element: ElementRecord) -> Mapping[str, Any]:
     legacy = element.properties.get("legacy_item")
-    return legacy if isinstance(legacy, Mapping) else {}
+    if not isinstance(legacy, Mapping):
+        return {}
+    if element.chart_resolution is None:
+        return legacy
+    projected = dict(legacy)
+    projected["chart_resolution"] = element.chart_resolution.model_dump(
+        mode="json",
+        exclude_none=True,
+    )
+    return projected
 
 
 @dataclass(frozen=True)
@@ -1098,6 +1126,88 @@ def _structured_visual_output(
         text=markdown,
         caption_occurrences=serialization.caption_occurrences,
     )
+
+
+def _chart_resolution_output(
+    element: ElementRecord,
+) -> _StructuredVisualOutput | None:
+    """Replay one validated terminal chart primary from its public owner."""
+
+    if element.type.casefold() != "chart":
+        return None
+    legacy = _legacy_item(element)
+    raw_resolution = legacy.get("chart_resolution")
+    resolution_dump = getattr(raw_resolution, "model_dump", None)
+    if callable(resolution_dump):
+        raw_resolution = resolution_dump(mode="json")
+    raw_structure = legacy.get("visual_structure")
+    structure_dump = getattr(raw_structure, "model_dump", None)
+    if callable(structure_dump):
+        raw_structure = structure_dump(mode="json")
+    if not isinstance(raw_resolution, Mapping) or not isinstance(
+        raw_structure,
+        Mapping,
+    ):
+        return None
+    try:
+        resolution = ChartResolution.model_validate(raw_resolution, strict=True)
+        structure = VisualStructure.model_validate(raw_structure, strict=True)
+    except (TypeError, ValueError):
+        return None
+    if (
+        resolution.owner_item_id != _clean(legacy.get("id"))
+        or resolution.source_bbox != structure.region.page_bbox
+    ):
+        return None
+    structured = (
+        not structure.fallback.active
+        and structure.serialization is not None
+        and structure.serialization.status == "structured_chart"
+    )
+    if (resolution.status == "structured_primary") != structured:
+        if resolution.status == "structured_primary":
+            return None
+    if resolution.status == "structured_primary":
+        return _structured_visual_output(element)
+    if resolution.status == "asset_unavailable" and not structure.fallback.active:
+        return None
+    caption = _clean(legacy.get("caption"))
+    markdown = chart_resolution_markdown(
+        resolution,
+        caption=caption or None,
+    )
+    if markdown is None:
+        return None
+    transcript = resolution.transcript
+    if transcript.status == "available" and transcript.text is not None:
+        text = transcript.text
+    else:
+        text = ""
+        for value in (
+            legacy.get("value"),
+            legacy.get("text"),
+            legacy.get("md"),
+            legacy.get("caption"),
+        ):
+            if rendered := _plain_value(value):
+                text = rendered
+                break
+    return _StructuredVisualOutput(
+        markdown=markdown,
+        text=text,
+        caption_occurrences=1 if caption else 0,
+    )
+
+
+def _resolved_visual_output(
+    element: ElementRecord,
+) -> _StructuredVisualOutput | None:
+    legacy = _legacy_item(element)
+    if element.type.casefold() == "chart" and "chart_resolution" in legacy:
+        # Presence of a malformed terminal marker cannot fall through and
+        # accidentally revive an independently structured chart projection.
+        return _chart_resolution_output(element)
+    return _structured_visual_output(element)
 
 
 def _is_visual_payload(element: ElementRecord) -> bool:
@@ -1656,8 +1766,13 @@ def _standard_output(
 ) -> tuple[str, str]:
     element_type = element.type.casefold()
     legacy = _legacy_item(element)
-    structured_visual = _structured_visual_output(element)
+    structured_visual = _resolved_visual_output(element)
     if structured_visual is not None:
+        if element_type == "chart" and "chart_resolution" in legacy:
+            # Terminal chart arbitration owns the sole primary. Model/VLM
+            # observations remain subordinate JSON evidence until a future
+            # family completeness gate explicitly promotes a revision.
+            return structured_visual.markdown, structured_visual.text
         return _append_visual_model_evidence(
             element,
             (structured_visual.markdown, structured_visual.text),
@@ -2186,7 +2301,7 @@ def _diagnosed_table_suppressors(
                 ):
                     best_visual_tie = element
                 continue
-            if element_type != "table":
+            if element_type not in {"table", "table_candidate"}:
                 continue
             concerns = _legacy_item(element).get("parse_concerns") or []
             if (
@@ -2269,6 +2384,7 @@ def _audit_relationship_assertions(
     pages: Sequence[CanonicalPage],
     edge_groups: Sequence[_EdgeGroup],
     elements: Mapping[str, ElementRecord],
+    ignored_relationship_ids: set[str] | None = None,
 ) -> None:
     """Retain every presentation/evidence assertion on a relevant block.
 
@@ -2279,6 +2395,7 @@ def _audit_relationship_assertions(
     on the earliest endpoint-page block when neither endpoint is presented.
     """
 
+    ignored_ids = ignored_relationship_ids or set()
     blocks = [block for page in pages for block in page.blocks]
     if not blocks:
         return
@@ -2307,7 +2424,8 @@ def _audit_relationship_assertions(
     edge_groups = [
         edge
         for edge in edge_groups
-        if not (
+        if not set(edge.relationship_ids).intersection(ignored_ids)
+        and not (
             (
                 edge.type is RelationshipType.CAPTION_OF
                 and edge.target_id in layout_managed_visual_ids
@@ -2478,6 +2596,13 @@ def _alternative_suppressors(
         element_id: index for index, element_id in enumerate(primary_sequence)
     }
     elements = {element.id: element for element in ir.elements}
+    base_owner_by_contribution = {
+        element_id: block.primary_element_id
+        for page in base.pages
+        for block in page.blocks
+        if block.omission_reason is None
+        for element_id in block.contributing_element_ids
+    }
 
     def stable_node_key(
         element_id: str,
@@ -2502,6 +2627,12 @@ def _alternative_suppressors(
         if (
             relationship.type is not RelationshipType.ALTERNATIVE_OF
             or relationship.metadata.get("canonical_presentation_inert") is True
+            or (
+                relationship.metadata.get("canonical_dedup_only") is True
+                and relationship.source_id in base_owner_by_contribution
+                and base_owner_by_contribution.get(relationship.source_id)
+                == base_owner_by_contribution.get(relationship.target_id)
+            )
             or relationship.source_id not in included
             or relationship.target_id not in included
             or relationship.source_id == relationship.target_id
@@ -2648,6 +2779,33 @@ def _form_semantic_replacements(
         for page in predecessor.pages
         for block in page.blocks
     }
+
+    def contributor_has_available_predecessor(
+        contributor_id: str,
+        page_primary_ids: set[str],
+    ) -> bool:
+        """Allow one primary to retain only its represented substructure."""
+
+        block = predecessor_blocks_by_primary.get(contributor_id)
+        owner = elements.get(contributor_id)
+        if (
+            block is None
+            or owner is None
+            or block.omission_reason is not None
+            or block.suppressed_by_element_id is not None
+            or not block.contributing_element_ids
+            or block.contributing_element_ids[0] != contributor_id
+            or predecessor_owner_by_contribution.get(contributor_id)
+            != contributor_id
+        ):
+            return False
+        return all(
+            child_id not in page_primary_ids
+            and child_id in elements
+            and _structured_child_is_represented(owner, elements[child_id])
+            for child_id in block.contributing_element_ids[1:]
+        )
+
     candidates: list[Any] = []
     for page in sorted(validated.pages, key=lambda value: value.page_index):
         page_primary_ids = tuple(page.presentation_element_ids)
@@ -2677,20 +2835,9 @@ def _form_semantic_replacements(
                 or not set(contributor_ids).issubset(page_primary_set)
                 or set(contributor_ids) & unavailable_contributor_ids
                 or any(
-                    (
-                        predecessor_blocks_by_primary.get(contributor_id) is None
-                        or predecessor_blocks_by_primary[contributor_id].omission_reason
-                        is not None
-                        or predecessor_blocks_by_primary[
-                            contributor_id
-                        ].contributing_element_ids
-                        != [contributor_id]
-                        or predecessor_blocks_by_primary[
-                            contributor_id
-                        ].suppressed_by_element_id
-                        is not None
-                        or predecessor_owner_by_contribution.get(contributor_id)
-                        != contributor_id
+                    not contributor_has_available_predecessor(
+                        contributor_id,
+                        page_primary_set,
                     )
                     for contributor_id in contributor_ids
                 )
@@ -2879,7 +3026,7 @@ def _build_canonical_presentation(
     structured_visual_outputs = {
         element.id: output
         for element in validated.elements
-        if (output := _structured_visual_output(element)) is not None
+        if (output := _resolved_visual_output(element)) is not None
     }
     public_element_ids = {
         str(legacy_id): element.id
@@ -3949,6 +4096,12 @@ def _build_canonical_presentation(
                     primary,
                     (markdown, text),
                 )
+                legacy = _legacy_item(primary)
+                is_layout_caption = (
+                    isinstance(layout_projection, Mapping)
+                    and layout_projection.get("story") == "P03-US02"
+                    and primary.type.casefold() == "caption"
+                )
                 public_relationship_ids: set[str] = set()
                 for projection in (
                     layout_projection,
@@ -3956,11 +4109,37 @@ def _build_canonical_presentation(
                 ):
                     if not isinstance(projection, Mapping):
                         continue
+                    if projection is layout_projection and is_layout_caption:
+                        # P03 caption IDs are content-addressed.  Do not admit
+                        # a merely well-shaped or reciprocally copied value.
+                        continue
                     relationship_id = projection.get("relationship_id")
                     if isinstance(relationship_id, str) and relationship_id:
                         public_relationship_ids.add(relationship_id)
-                legacy = _legacy_item(primary)
+                if is_layout_caption:
+                    caption_public_id = legacy.get("id")
+                    owner_public_id = legacy.get("caption_of")
+                    relationship_id = layout_projection.get("relationship_id")
+                    if (
+                        type(caption_public_id) is str
+                        and caption_public_id
+                        and type(owner_public_id) is str
+                        and owner_public_id
+                        and type(relationship_id) is str
+                        and relationship_id
+                        == _expected_layout_visual_relationship_id(
+                            RelationshipType.CAPTION_OF,
+                            caption_public_id,
+                            owner_public_id,
+                        )
+                        and legacy.get("relationship_id") == relationship_id
+                        and legacy.get("relationship_type")
+                        == RelationshipType.CAPTION_OF.value
+                    ):
+                        public_relationship_ids.add(relationship_id)
                 for descriptor in legacy.get("relationships") or []:
+                    if is_layout_caption:
+                        break
                     if not isinstance(descriptor, Mapping):
                         continue
                     descriptor_id = descriptor.get("id")
@@ -4624,6 +4803,27 @@ def _build_canonical_presentation(
                             for element_id in contributing_ids
                             if element_id not in external_caption_ids
                         ]
+                        # The source IR caption edge is intentionally made
+                        # canonical-inert by P03.  Its internal ID can differ
+                        # when an already-projected compatibility document is
+                        # rebuilt because the original inline ``caption`` slot
+                        # is no longer present.  Keep only the stable public
+                        # layout assertion attached after the block audit, and
+                        # do not diagnose the terminal owner as its own
+                        # suppressed OCR contribution.
+                        source_caption_relationship_ids = {
+                            relationship_id
+                            for claim in direct_caption_claims
+                            for relationship_id in claim.edge.relationship_ids
+                        }
+                        relationship_ids = sorted(
+                            set(relationship_ids)
+                            - source_caption_relationship_ids
+                        )
+                        exclusions.pop(
+                            (primary_id, "caption_precedes_subordinate_ocr"),
+                            None,
+                        )
                     inline_captions = (
                         []
                         if owner_is_layout_managed
@@ -4983,10 +5183,28 @@ def _build_canonical_presentation(
             )
         )
 
+    # A complete form replacement supersedes the standard output of its
+    # source owner.  Keep that owner's represented child edges in the IR, but
+    # do not reattach them as evidence-only canonical edges after the exact
+    # form graph has taken custody of the block.
+    form_replaced_structure_relationship_ids = {
+        relationship_id
+        for edge in edge_groups
+        if edge.type is RelationshipType.CONTAINS
+        and edge.source_id in form_replacements_by_anchor
+        and edge.source_id in elements
+        and edge.target_id in elements
+        and _structured_child_is_represented(
+            elements[edge.source_id],
+            elements[edge.target_id],
+        )
+        for relationship_id in edge.relationship_ids
+    }
     _audit_relationship_assertions(
         pages,
         edge_groups,
         elements,
+        ignored_relationship_ids=form_replaced_structure_relationship_ids,
     )
     # Layout-managed note assertions are canonical-inert so the note remains
     # a distinct primary block instead of being consumed into its owner.
@@ -5022,6 +5240,99 @@ def _build_canonical_presentation(
             ):
                 relationship_ids.add(str(descriptor["id"]))
         block.relationship_ids = sorted(set(block.relationship_ids) | relationship_ids)
+
+    # P03-US02 caption assertions are projected as compatibility descriptors
+    # after the source IR edge has been made canonical-inert.  A terminal chart
+    # keeps its caption in a separate primary block, so the public layout
+    # assertion must remain discoverable from both endpoint blocks.  Admit only
+    # a fully reciprocal owner/caption pair; a stale, partial, or ambiguous
+    # descriptor must not become canonical evidence merely because it uses the
+    # ``layout-rel-`` prefix.
+    public_id_counts = Counter(
+        str(public_id)
+        for element in validated.elements
+        if isinstance((legacy := _legacy_item(element)), Mapping)
+        and isinstance((public_id := legacy.get("id")), str)
+        and public_id
+    )
+    elements_by_public_id = {
+        str(public_id): element
+        for element in validated.elements
+        if isinstance((legacy := _legacy_item(element)), Mapping)
+        and isinstance((public_id := legacy.get("id")), str)
+        and public_id
+        and public_id_counts[str(public_id)] == 1
+    }
+    for owner in validated.elements:
+        owner_projection = owner.properties.get("layout_projection")
+        owner_block = blocks_by_primary_id.get(owner.id)
+        owner_legacy = _legacy_item(owner)
+        owner_public_id = owner_legacy.get("id")
+        caption_ids = owner_legacy.get("caption_ids")
+        legacy_caption_of = owner_legacy.get("caption_of")
+        descriptors = owner_legacy.get("relationships")
+        if (
+            owner_block is None
+            or owner.type.casefold() not in _VISUAL_TYPES
+            or not isinstance(owner_projection, Mapping)
+            or owner_projection.get("story") != "P03-US02"
+            or type(owner_public_id) is not str
+            or not owner_public_id
+            or type(caption_ids) is not list
+            or type(legacy_caption_of) is not list
+            or caption_ids != legacy_caption_of
+            or len(caption_ids) != len(set(caption_ids))
+            or not all(type(value) is str and value for value in caption_ids)
+            or type(descriptors) is not list
+        ):
+            continue
+        for descriptor in descriptors:
+            if (
+                not isinstance(descriptor, Mapping)
+                or set(descriptor)
+                != {"id", "type", "source_id", "target_id"}
+                or descriptor.get("type")
+                != RelationshipType.CAPTION_OF.value
+                or descriptor.get("target_id") != owner_public_id
+                or descriptor.get("source_id") not in caption_ids
+                or type(descriptor.get("id")) is not str
+                or not str(descriptor["id"]).startswith("layout-rel-")
+            ):
+                continue
+            relationship_id = str(descriptor["id"])
+            caption_public_id = str(descriptor["source_id"])
+            if relationship_id != _expected_layout_visual_relationship_id(
+                RelationshipType.CAPTION_OF,
+                caption_public_id,
+                owner_public_id,
+            ):
+                continue
+            caption = elements_by_public_id.get(caption_public_id)
+            if caption is None or caption.page_id != owner.page_id:
+                continue
+            caption_projection = caption.properties.get("layout_projection")
+            caption_legacy = _legacy_item(caption)
+            caption_block = blocks_by_primary_id.get(caption.id)
+            if (
+                caption_block is None
+                or caption.type.casefold() != "caption"
+                or not isinstance(caption_projection, Mapping)
+                or caption_projection.get("story") != "P03-US02"
+                or caption_projection.get("relationship_id") != relationship_id
+                or caption_legacy.get("id") != caption_public_id
+                or caption_legacy.get("type") != "caption"
+                or caption_legacy.get("caption_of") != owner_public_id
+                or caption_legacy.get("relationship_id") != relationship_id
+                or caption_legacy.get("relationship_type")
+                != RelationshipType.CAPTION_OF.value
+            ):
+                continue
+            owner_block.relationship_ids = sorted(
+                set(owner_block.relationship_ids) | {relationship_id}
+            )
+            caption_block.relationship_ids = sorted(
+                set(caption_block.relationship_ids) | {relationship_id}
+            )
     document_blocks = [block for page in pages for block in page.blocks]
     return CanonicalPresentation.model_validate(
         {

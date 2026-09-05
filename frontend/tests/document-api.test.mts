@@ -3,11 +3,13 @@ import { afterEach, test } from "node:test";
 
 import {
   DEFAULT_PARSE_MAX_UPLOAD_BYTES,
+  DEFAULT_PARSE_MAX_RESPONSE_BYTES,
   DocumentApiError,
   getBrowserPreviewKind,
   getConfiguredMaxUploadBytes,
   getDocumentInputKind,
   parseJson,
+  readBoundedParserResponseText,
   stripSupportedDocumentExtension,
   validateDocumentFile,
 } from "../lib/document-api.ts";
@@ -169,6 +171,67 @@ test("JSON parsing posts the original PDF to a normalized direct endpoint", asyn
   assert.deepEqual(requestInit?.headers, { accept: "application/json" });
   assert.ok(requestInit?.body instanceof FormData);
   assert.equal((requestInit.body as FormData).get("file") instanceof File, true);
+});
+
+test("JSON parsing rejects an oversized declared response before parsing", async () => {
+  globalThis.fetch = async () =>
+    new Response("{}", {
+      status: 200,
+      headers: {
+        "content-length": String(DEFAULT_PARSE_MAX_RESPONSE_BYTES + 1),
+        "content-type": "application/json",
+      },
+    });
+
+  await assert.rejects(
+    () => parseJson(pdf()),
+    (error: unknown) => {
+      assert.ok(error instanceof DocumentApiError);
+      assert.equal(error.kind, "server");
+      assert.equal(error.code, "response_too_large");
+      assert.equal(error.status, 200);
+      assert.deepEqual(error.details, {
+        max_bytes: DEFAULT_PARSE_MAX_RESPONSE_BYTES,
+        received_bytes: DEFAULT_PARSE_MAX_RESPONSE_BYTES + 1,
+      });
+      return true;
+    },
+  );
+});
+
+test("bounded parser response reading cancels a stream as soon as bytes cross its cap", async () => {
+  const encoder = new TextEncoder();
+  const chunks = [encoder.encode("1234"), encoder.encode("56789")];
+  let chunkIndex = 0;
+  let cancelled = false;
+  let aborted = false;
+  const body = new ReadableStream<Uint8Array>({
+    pull(controller) {
+      controller.enqueue(chunks[chunkIndex] ?? encoder.encode("overflow"));
+      chunkIndex += 1;
+    },
+    cancel() {
+      cancelled = true;
+    },
+  });
+
+  await assert.rejects(
+    () =>
+      readBoundedParserResponseText(new Response(body), 8, () => {
+        aborted = true;
+      }),
+    (error: unknown) => {
+      assert.ok(error instanceof DocumentApiError);
+      assert.equal(error.code, "response_too_large");
+      assert.deepEqual(error.details, {
+        max_bytes: 8,
+        received_bytes: 9,
+      });
+      return true;
+    },
+  );
+  assert.equal(cancelled, true);
+  assert.equal(aborted, true);
 });
 
 test("JSON parsing posts an image through the unchanged API contract", async () => {

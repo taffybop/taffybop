@@ -1,4 +1,9 @@
-import { createElement, type ReactNode } from "react";
+import {
+  createElement,
+  Fragment,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
 
 import type {
   CanonicalBlock,
@@ -9,6 +14,9 @@ import type {
   FormControlState,
   FormEvidenceMethod,
   FormField,
+  FormGrid,
+  FormGridCell,
+  FormGridContentFragment,
   FormGroup,
   FormKeyValuePair,
   FormLabel,
@@ -33,6 +41,10 @@ const MAX_CONTROLS = 256;
 const MAX_KEY_VALUE_PAIRS = 32;
 const MAX_CONCERNS = 13;
 const MAX_RELATIONSHIPS = 32_768;
+const MAX_FORM_GRID_ROWS = 4_096;
+const MAX_FORM_GRID_COLUMNS = 256;
+const MAX_FORM_GRID_SLOTS = 4_096;
+const MAX_FORM_GRID_FRAGMENTS_PER_CELL = 64;
 
 const COMMON_KEYS = [
   "id",
@@ -122,9 +134,11 @@ function exactKeys(
   record: JsonRecord,
   additional: readonly string[],
   path: string,
+  optional: readonly string[] = [],
 ): void {
-  const expected = new Set<string>([...COMMON_KEYS, ...additional]);
-  for (const key of expected) {
+  const required = new Set<string>([...COMMON_KEYS, ...additional]);
+  const expected = new Set<string>([...required, ...optional]);
+  for (const key of required) {
     if (!Object.prototype.hasOwnProperty.call(record, key)) {
       invalid(path, `is missing ${JSON.stringify(key)}`);
     }
@@ -308,8 +322,9 @@ function validateCommon(
   path: string,
   relationshipMinimum: number,
   relationshipMaximum: number,
+  optional: readonly string[] = [],
 ): void {
-  exactKeys(record, additional, path);
+  exactKeys(record, additional, path, optional);
   boundedString(record.id, `${path}.id`);
   boundedString(record.element_id, `${path}.element_id`);
   if (integerAt(record.page_index, `${path}.page_index`, 1) !== page.page_index) {
@@ -404,6 +419,504 @@ function validateValue(
   }
 }
 
+function validateGridSourceObjects(
+  value: unknown,
+  path: string,
+): FormSourceObject[] {
+  const sourceObjects = arrayAt(value, path, 1, 64).map((entry, index) =>
+    validateSourceObject(entry, `${path}[${index}]`),
+  );
+  const fingerprints = sourceObjects.map((source) => {
+    if (source.kind === "character_range") {
+      return `${source.kind}:${source.start}:${source.end}`;
+    }
+    if ("index" in source) {
+      return `${source.kind}:${source.index}`;
+    }
+    return `${source.kind}:${source.object_ref_digest}`;
+  });
+  if (new Set(fingerprints).size !== fingerprints.length) {
+    invalid(path, "must not repeat source references");
+  }
+  return sourceObjects;
+}
+
+function sourceObjectFingerprint(source: FormSourceObject): string {
+  if (source.kind === "character_range") {
+    return `${source.kind}:${source.start}:${source.end}`;
+  }
+  if ("index" in source) {
+    return `${source.kind}:${source.index}`;
+  }
+  return `${source.kind}:${source.object_ref_digest}`;
+}
+
+function validateGridConfidenceDimensions(
+  value: unknown,
+  path: string,
+): FormGridCell["confidence_dimensions"] {
+  const record = recordAt(value, path);
+  exactObjectKeys(
+    record,
+    ["geometry", "role", "transcription", "state"],
+    path,
+  );
+  for (const key of ["geometry", "role", "transcription", "state"] as const) {
+    validateConfidenceDimension(record[key], `${path}.${key}`);
+  }
+  return record as unknown as FormGridCell["confidence_dimensions"];
+}
+
+function validateGridConcernCodes(value: unknown, path: string): string[] {
+  const concerns = uniqueStrings(value, path, 0, MAX_CONCERNS);
+  const ranks = concerns.map((code) =>
+    CONCERN_CODES.indexOf(code as (typeof CONCERN_CODES)[number]),
+  );
+  if (
+    ranks.some((rank) => rank < 0) ||
+    ranks.some((rank, index) => index > 0 && rank <= ranks[index - 1])
+  ) {
+    invalid(path, "must follow the concern-code order");
+  }
+  return concerns;
+}
+
+function validateGridOrders(
+  value: unknown,
+  path: string,
+): number[] {
+  const orders = arrayAt(value, path, 0, MAX_FORM_GRID_COLUMNS).map(
+    (entry, index) => integerAt(entry, `${path}[${index}]`),
+  );
+  if (new Set(orders).size !== orders.length) {
+    invalid(path, "must not repeat reading-order references");
+  }
+  return orders;
+}
+
+function bboxMatches(
+  actual: FormBoundingBox,
+  expected: readonly [number, number, number, number],
+  tolerance: number,
+): boolean {
+  return [actual.x, actual.y, actual.width, actual.height].every(
+    (value, index) => Math.abs(value - expected[index]!) <= tolerance,
+  );
+}
+
+function validateGridContentFragment(
+  value: unknown,
+  page: PageResult,
+  path: string,
+): FormGridContentFragment {
+  const record = recordAt(value, path);
+  exactObjectKeys(
+    record,
+    ["source_order", "kind", "bbox", "text", "control_id", "source_objects"],
+    path,
+  );
+  integerAt(record.source_order, `${path}.source_order`);
+  validateBBox(record.bbox, page, `${path}.bbox`);
+  if (record.kind === "text") {
+    boundedString(record.text, `${path}.text`, MAX_TEXT_BYTES, true);
+    if (record.control_id !== null) {
+      invalid(`${path}.control_id`, "must be null for a text fragment");
+    }
+  } else if (record.kind === "control") {
+    boundedString(record.control_id, `${path}.control_id`);
+    if (record.text !== null) {
+      invalid(`${path}.text`, "must be null for a control fragment");
+    }
+  } else {
+    invalid(`${path}.kind`, "is unsupported");
+  }
+  validateGridSourceObjects(record.source_objects, `${path}.source_objects`);
+  return record as unknown as FormGridContentFragment;
+}
+
+function validateGridCell(
+  value: unknown,
+  page: PageResult,
+  path: string,
+): FormGridCell {
+  const record = recordAt(value, path);
+  exactObjectKeys(
+    record,
+    [
+      "reading_order",
+      "row",
+      "column",
+      "row_span",
+      "column_span",
+      "bbox",
+      "cell_role",
+      "static_kind",
+      "text",
+      "text_state",
+      "value",
+      "value_state",
+      "control_ids",
+      "content_fragments",
+      "header_cell_orders",
+      "section_cell_orders",
+      "label_cell_orders",
+      "source_objects",
+      "confidence_dimensions",
+      "concern_codes",
+    ],
+    path,
+  );
+  integerAt(record.reading_order, `${path}.reading_order`);
+  const row = integerAt(record.row, `${path}.row`);
+  const column = integerAt(record.column, `${path}.column`);
+  const rowSpan = integerAt(record.row_span, `${path}.row_span`, 1);
+  const columnSpan = integerAt(record.column_span, `${path}.column_span`, 1);
+  if (row >= MAX_FORM_GRID_ROWS || rowSpan > MAX_FORM_GRID_ROWS) {
+    invalid(path, "exceeds the form-grid row limit");
+  }
+  if (column >= MAX_FORM_GRID_COLUMNS || columnSpan > MAX_FORM_GRID_COLUMNS) {
+    invalid(path, "exceeds the form-grid column limit");
+  }
+  const bbox = validateBBox(record.bbox, page, `${path}.bbox`);
+  const controlIds = uniqueStrings(
+    record.control_ids,
+    `${path}.control_ids`,
+    0,
+    MAX_CONTROLS,
+  );
+  const fragments = arrayAt(
+    record.content_fragments,
+    `${path}.content_fragments`,
+    0,
+    MAX_FORM_GRID_FRAGMENTS_PER_CELL,
+  ).map((entry, index) =>
+    validateGridContentFragment(
+      entry,
+      page,
+      `${path}.content_fragments[${index}]`,
+    ),
+  );
+  if (
+    fragments.some((fragment, index) => fragment.source_order !== index)
+  ) {
+    invalid(`${path}.content_fragments`, "must be in contiguous source order");
+  }
+  const fragmentControlIds = fragments.flatMap((fragment) =>
+    fragment.kind === "control" ? [fragment.control_id!] : [],
+  );
+  if (!sameStrings(fragmentControlIds, controlIds)) {
+    invalid(`${path}.content_fragments`, "must own exactly the declared controls");
+  }
+  const fragmentText =
+    fragments
+      .flatMap((fragment) => (fragment.kind === "text" ? [fragment.text!] : []))
+      .join("\n") || null;
+  if (fragmentText !== record.text) {
+    invalid(`${path}.content_fragments`, "must reproduce the declared cell text");
+  }
+
+  const sourceObjects = validateGridSourceObjects(
+    record.source_objects,
+    `${path}.source_objects`,
+  );
+  const sourceFingerprints = new Set(sourceObjects.map(sourceObjectFingerprint));
+  for (const [index, fragment] of fragments.entries()) {
+    if (!bboxContainsWithTolerance(bbox, fragment.bbox, 1)) {
+      invalid(
+        `${path}.content_fragments[${index}].bbox`,
+        "must remain within its owning cell",
+      );
+    }
+    if (
+      fragment.source_objects.some(
+        (source) => !sourceFingerprints.has(sourceObjectFingerprint(source)),
+      )
+    ) {
+      invalid(
+        `${path}.content_fragments[${index}].source_objects`,
+        "must be a subset of its owning cell evidence",
+      );
+    }
+  }
+
+  if (record.text_state === "present") {
+    boundedString(record.text, `${path}.text`, MAX_TEXT_BYTES, true);
+  } else if (record.text_state === "empty") {
+    if (record.text !== null) invalid(`${path}.text`, "must be null when empty");
+  } else {
+    invalid(`${path}.text_state`, "is unsupported");
+  }
+  validateValue(record.value, record.value_state, path);
+
+  if (record.cell_role === "static") {
+    if (record.value_state !== "not_applicable") {
+      invalid(path, "static cells cannot claim field values");
+    }
+    if (
+      !["column_header", "row_header", "section_header", "qualifier"].includes(
+        record.static_kind as string,
+      )
+    ) {
+      invalid(`${path}.static_kind`, "is unsupported for a static cell");
+    }
+    if ((record.static_kind === "column_header") !== (row === 0)) {
+      invalid(path, "has an invalid column-header placement");
+    }
+    if (record.static_kind === "row_header" && rowSpan !== 1) {
+      invalid(path, "row headers cannot span logical rows");
+    }
+    if (
+      record.static_kind === "section_header" &&
+      (row === 0 || rowSpan === 1)
+    ) {
+      invalid(path, "has an invalid section-header placement");
+    }
+    if (record.static_kind === "qualifier" && row === 0) {
+      invalid(path, "qualifiers cannot occupy the header band");
+    }
+  } else if (record.cell_role === "value") {
+    if (record.static_kind !== null || record.value_state === "not_applicable") {
+      invalid(path, "has an invalid value-cell role");
+    }
+  } else {
+    invalid(`${path}.cell_role`, "is unsupported");
+  }
+
+  const headerOrders = validateGridOrders(
+    record.header_cell_orders,
+    `${path}.header_cell_orders`,
+  );
+  const sectionOrders = validateGridOrders(
+    record.section_cell_orders,
+    `${path}.section_cell_orders`,
+  );
+  const labelOrders = validateGridOrders(
+    record.label_cell_orders,
+    `${path}.label_cell_orders`,
+  );
+  const semanticOrders = [...headerOrders, ...sectionOrders, ...labelOrders];
+  if (new Set(semanticOrders).size !== semanticOrders.length) {
+    invalid(path, "must not repeat semantic cell references");
+  }
+  validateGridConfidenceDimensions(
+    record.confidence_dimensions,
+    `${path}.confidence_dimensions`,
+  );
+  const concernCodes = validateGridConcernCodes(
+    record.concern_codes,
+    `${path}.concern_codes`,
+  );
+  if (
+    (record.value_state === "ambiguous") !==
+    concernCodes.includes("form_value_state_ambiguous")
+  ) {
+    invalid(path, "must explicitly mark ambiguous values");
+  }
+  return record as unknown as FormGridCell;
+}
+
+function bboxContainsWithTolerance(
+  outer: FormBoundingBox,
+  inner: FormBoundingBox,
+  tolerance: number,
+): boolean {
+  return (
+    inner.x >= outer.x - tolerance &&
+    inner.y >= outer.y - tolerance &&
+    inner.x + inner.width <= outer.x + outer.width + tolerance &&
+    inner.y + inner.height <= outer.y + outer.height + tolerance
+  );
+}
+
+function validateFormGrid(
+  value: unknown,
+  page: PageResult,
+  path: string,
+): FormGrid {
+  const record = recordAt(value, path);
+  exactObjectKeys(
+    record,
+    ["bbox", "row_boundaries", "column_boundaries", "cells"],
+    path,
+  );
+  const bbox = validateBBox(record.bbox, page, `${path}.bbox`);
+  const boundaries = (
+    candidate: unknown,
+    candidatePath: string,
+    maximum: number,
+  ): number[] => {
+    const result = arrayAt(candidate, candidatePath, 3, maximum + 1).map(
+      (entry, index) => finiteAt(entry, `${candidatePath}[${index}]`),
+    );
+    if (result.some((entry, index) => index > 0 && entry <= result[index - 1]!)) {
+      invalid(candidatePath, "must be strictly increasing");
+    }
+    return result;
+  };
+  const rowBoundaries = boundaries(
+    record.row_boundaries,
+    `${path}.row_boundaries`,
+    MAX_FORM_GRID_ROWS,
+  );
+  const columnBoundaries = boundaries(
+    record.column_boundaries,
+    `${path}.column_boundaries`,
+    MAX_FORM_GRID_COLUMNS,
+  );
+  const rowCount = rowBoundaries.length - 1;
+  const columnCount = columnBoundaries.length - 1;
+  if (rowCount * columnCount > MAX_FORM_GRID_SLOTS) {
+    invalid(path, "exceeds the logical-slot limit");
+  }
+  if (
+    !bboxMatches(
+      bbox,
+      [
+        columnBoundaries[0]!,
+        rowBoundaries[0]!,
+        columnBoundaries.at(-1)! - columnBoundaries[0]!,
+        rowBoundaries.at(-1)! - rowBoundaries[0]!,
+      ],
+      0.001,
+    )
+  ) {
+    invalid(`${path}.bbox`, "must equal the boundary extent");
+  }
+
+  const cells = arrayAt(record.cells, `${path}.cells`, 4, MAX_FORM_GRID_SLOTS).map(
+    (entry, index) => validateGridCell(entry, page, `${path}.cells[${index}]`),
+  );
+  const occupied = new Set<string>();
+  const seenControls = new Set<string>();
+  let priorPosition: readonly [number, number] | null = null;
+  for (const [index, cell] of cells.entries()) {
+    if (cell.reading_order !== index) {
+      invalid(`${path}.cells[${index}].reading_order`, "must equal its source index");
+    }
+    if (
+      priorPosition &&
+      (cell.row < priorPosition[0] ||
+        (cell.row === priorPosition[0] && cell.column <= priorPosition[1]))
+    ) {
+      invalid(`${path}.cells`, "must follow row-major source order");
+    }
+    priorPosition = [cell.row, cell.column];
+    if (
+      cell.row + cell.row_span > rowCount ||
+      cell.column + cell.column_span > columnCount
+    ) {
+      invalid(`${path}.cells[${index}]`, "spans outside the grid");
+    }
+    if (
+      !bboxMatches(
+        cell.bbox,
+        [
+          columnBoundaries[cell.column]!,
+          rowBoundaries[cell.row]!,
+          columnBoundaries[cell.column + cell.column_span]! -
+            columnBoundaries[cell.column]!,
+          rowBoundaries[cell.row + cell.row_span]! - rowBoundaries[cell.row]!,
+        ],
+        0.001,
+      )
+    ) {
+      invalid(`${path}.cells[${index}].bbox`, "must equal its logical span");
+    }
+    for (let row = cell.row; row < cell.row + cell.row_span; row += 1) {
+      for (
+        let column = cell.column;
+        column < cell.column + cell.column_span;
+        column += 1
+      ) {
+        const slot = `${row}:${column}`;
+        if (occupied.has(slot)) invalid(`${path}.cells`, "must not overlap");
+        occupied.add(slot);
+      }
+    }
+    for (const controlId of cell.control_ids) {
+      if (seenControls.has(controlId)) {
+        invalid(`${path}.cells`, "cannot assign one control to multiple cells");
+      }
+      seenControls.add(controlId);
+    }
+  }
+  if (occupied.size !== rowCount * columnCount) {
+    invalid(`${path}.cells`, "must cover every logical slot");
+  }
+
+  const headers = cells.filter(
+    (cell) => cell.static_kind === "column_header" && cell.text_state === "present",
+  );
+  const sections = cells.filter(
+    (cell) => cell.static_kind === "section_header" && cell.text_state === "present",
+  );
+  const labels = cells.filter(
+    (cell) => cell.static_kind === "row_header" && cell.text_state === "present",
+  );
+  for (const [index, cell] of cells.entries()) {
+    const expectedHeaders = headers
+      .filter(
+        (candidate) =>
+          cell.static_kind !== "column_header" &&
+          Math.max(candidate.column, cell.column) <
+            Math.min(
+              candidate.column + candidate.column_span,
+              cell.column + cell.column_span,
+            ),
+      )
+      .map((candidate) => candidate.reading_order);
+    const expectedSections = sections
+      .filter(
+        (candidate) =>
+          cell.cell_role === "value" &&
+          candidate.row <= cell.row &&
+          cell.row < candidate.row + candidate.row_span,
+      )
+      .map((candidate) => candidate.reading_order);
+    const expectedLabels = labels
+      .filter(
+        (candidate) =>
+          cell.cell_role === "value" &&
+          cell.row_span === 1 &&
+          candidate.row === cell.row &&
+          candidate.column + candidate.column_span === cell.column,
+      )
+      .map((candidate) => candidate.reading_order);
+    if (
+      !sameStrings(
+        cell.header_cell_orders.map(String),
+        expectedHeaders.map(String),
+      ) ||
+      !sameStrings(
+        cell.section_cell_orders.map(String),
+        expectedSections.map(String),
+      ) ||
+      !sameStrings(
+        cell.label_cell_orders.map(String),
+        expectedLabels.map(String),
+      )
+    ) {
+      invalid(`${path}.cells[${index}]`, "has inconsistent semantic headers");
+    }
+    const referencedOrders = [
+      ...cell.header_cell_orders,
+      ...cell.section_cell_orders,
+      ...cell.label_cell_orders,
+    ];
+    if (
+      referencedOrders.some(
+        (order) => order === cell.reading_order || cells[order] === undefined,
+      ) ||
+      [...cell.header_cell_orders, ...cell.label_cell_orders].some(
+        (order) => order >= cell.reading_order,
+      )
+    ) {
+      invalid(`${path}.cells[${index}]`, "references an invalid semantic header");
+    }
+  }
+  return record as unknown as FormGrid;
+}
+
 function validateGroup(
   value: unknown,
   page: PageResult,
@@ -432,6 +945,7 @@ function validateGroup(
     path,
     1,
     2_816,
+    ["form_grid"],
   );
   boundedString(record.group_key, `${path}.group_key`);
   if (record.status !== "resolved" && record.status !== "unresolved") {
@@ -499,11 +1013,35 @@ function validateGroup(
     0,
     MAX_KEY_VALUE_PAIRS,
   );
-  if (!fieldIds.length && !controlIds.length && !pairIds.length) {
-    invalid(path, "must own fields, controls, or key-value pairs");
+  const formGrid = Object.prototype.hasOwnProperty.call(record, "form_grid")
+    ? validateFormGrid(record.form_grid, page, `${path}.form_grid`)
+    : undefined;
+  if (!fieldIds.length && !controlIds.length && !pairIds.length && !formGrid) {
+    invalid(path, "must own fields, controls, key-value pairs, or a form grid");
   }
   if (pairIds.length && (fieldIds.length || controlIds.length)) {
     invalid(path, "must not mix key-value pairs with form fields or controls");
+  }
+  if (
+    formGrid &&
+    (record.status !== "resolved" ||
+      record.interactivity !== "static" ||
+      record.canonical_mode !== "replace" ||
+      (record.concern_codes as unknown[]).length !== 0 ||
+      fieldIds.length !== 0 ||
+      pairIds.length !== 0 ||
+      !bboxMatches(
+        record.bbox as FormBoundingBox,
+        [
+          formGrid.bbox.x,
+          formGrid.bbox.y,
+          formGrid.bbox.width,
+          formGrid.bbox.height,
+        ],
+        0.001,
+      ))
+  ) {
+    invalid(path, "has inconsistent form-grid ownership");
   }
   return record as unknown as FormGroup;
 }
@@ -840,6 +1378,36 @@ function validateAnchor(
     [pairs.map((entry) => entry.id), group.key_value_pair_ids, "form_key_value_pairs"],
   ] as const) {
     if (!sameStrings(actual, expected)) invalid(`item.${path}`, "is not in group-declared order");
+  }
+
+  if (group.form_grid) {
+    const gridControlIds = group.form_grid.cells.flatMap(
+      (cell) => cell.control_ids,
+    );
+    if (
+      gridControlIds.length !== group.control_ids.length ||
+      gridControlIds.some((id) => !group.control_ids.includes(id))
+    ) {
+      invalid("item.form_group.form_grid", "does not own exactly the group controls");
+    }
+    const owningCellByControlId = new Map<string, FormGridCell>();
+    for (const cell of group.form_grid.cells) {
+      for (const controlId of cell.control_ids) {
+        owningCellByControlId.set(controlId, cell);
+      }
+    }
+    for (const control of controls) {
+      const cell = owningCellByControlId.get(control.id);
+      if (
+        !cell ||
+        control.origin !== "static_vector" ||
+        !bboxContainsWithTolerance(cell.bbox, control.bbox, 0.5) ||
+        ((control.state === "ambiguous") !==
+          control.concern_codes.includes("form_control_state_ambiguous"))
+      ) {
+        invalid(`control ${control.id}`, "has inconsistent form-grid custody");
+      }
+    }
   }
 
   const allRecords: FormSemanticRecordBase[] = [
@@ -1389,6 +1957,352 @@ function renderCompleteStaticParties(
   );
 }
 
+function formGridDomToken(value: string): string {
+  let hash = 2_166_136_261;
+  for (const character of value) {
+    hash ^= character.codePointAt(0) ?? 0;
+    hash = Math.imul(hash, 16_777_619);
+  }
+  const readable = value.replace(/[^A-Za-z0-9_-]/gu, "_").slice(0, 32);
+  return `${readable || "group"}-${(hash >>> 0).toString(16).padStart(8, "0")}`;
+}
+
+function formGridConfidenceValue(
+  value: FormGridCell["confidence_dimensions"]["geometry"],
+): string {
+  return "score" in value
+    ? String(value.score)
+    : `unavailable:${value.unavailable_reason}`;
+}
+
+function formGridConfidenceDescription(
+  dimensions: FormGridCell["confidence_dimensions"],
+): string {
+  const labels = {
+    geometry: "Geometry",
+    role: "Role",
+    transcription: "Transcription",
+    state: "State",
+  } as const;
+  return (Object.keys(labels) as Array<keyof typeof labels>)
+    .map((key) => {
+      const value = dimensions[key];
+      if ("score" in value) {
+        return `${labels[key]} confidence ${Math.round(value.score * 100)} percent`;
+      }
+      return `${labels[key]} confidence unavailable: ${value.unavailable_reason.replaceAll("_", " ")}`;
+    })
+    .join("; ");
+}
+
+function formGridFragmentStyle(
+  cell: FormGridCell,
+  fragment: FormGridContentFragment,
+): CSSProperties {
+  const left = Math.max(0, fragment.bbox.x - cell.bbox.x);
+  const top = Math.max(0, fragment.bbox.y - cell.bbox.y);
+  const right = Math.min(
+    cell.bbox.width,
+    fragment.bbox.x + fragment.bbox.width - cell.bbox.x,
+  );
+  const bottom = Math.min(
+    cell.bbox.height,
+    fragment.bbox.y + fragment.bbox.height - cell.bbox.y,
+  );
+  return {
+    left: `${(left / cell.bbox.width) * 100}%`,
+    top: `${(top / cell.bbox.height) * 100}%`,
+    width: `${(Math.max(0.5, right - left) / cell.bbox.width) * 100}%`,
+    height: `${(Math.max(0.5, bottom - top) / cell.bbox.height) * 100}%`,
+  };
+}
+
+function renderFormGridControl(
+  control: FormControl,
+  labels: ReadonlyMap<string, FormLabel>,
+  style: CSSProperties,
+  key: string,
+  sourceOrder: number,
+  confidenceId: string,
+): ReactNode {
+  const glyph = {
+    checked: "☑",
+    unchecked: "☐",
+    ambiguous: "☐?",
+    not_applicable: "□—",
+  }[control.state];
+  const label = control.label_id === null ? null : labels.get(control.label_id);
+  const fallback =
+    control.control_type === "radio" ? "Unlabeled radio" : "Unlabeled checkbox";
+  const stateText = controlStateText(control);
+  const confidenceDescription = formGridConfidenceDescription(
+    control.confidence_dimensions,
+  );
+  const concerns = control.concern_codes.join(" ");
+  return createElement(
+    Fragment,
+    { key },
+    createElement(
+      "span",
+      {
+        className: `form-grid-fragment form-grid-control-fragment${
+          control.state === "ambiguous" ? " form-grid-uncertain" : ""
+        }`,
+        role: control.control_type,
+        "aria-checked":
+          control.state === "ambiguous" ? "mixed" : control.state === "checked",
+        "aria-label": `${label?.text ?? fallback}: ${stateText}`,
+        "aria-describedby": confidenceId,
+        "data-control-id": control.id,
+        "data-control-state": control.state,
+        "data-control-type": control.control_type,
+        "data-concern-codes": concerns || undefined,
+        "data-confidence-geometry": formGridConfidenceValue(
+          control.confidence_dimensions.geometry,
+        ),
+        "data-confidence-role": formGridConfidenceValue(
+          control.confidence_dimensions.role,
+        ),
+        "data-confidence-transcription": formGridConfidenceValue(
+          control.confidence_dimensions.transcription,
+        ),
+        "data-confidence-state": formGridConfidenceValue(
+          control.confidence_dimensions.state,
+        ),
+        "data-source-order": sourceOrder,
+        ...sourceAttributes(control),
+        title: `${label?.text ?? fallback}: ${stateText}. ${confidenceDescription}${
+          concerns ? `. Concerns: ${concerns.replaceAll("_", " ")}` : ""
+        }`,
+        style,
+      },
+      glyph,
+    ),
+    createElement(
+      "span",
+      { className: "visually-hidden", id: confidenceId },
+      confidenceDescription,
+      concerns ? `. Concerns: ${concerns.replaceAll("_", " ")}` : "",
+    ),
+  );
+}
+
+function renderCompleteFormGrid(
+  semantics: ValidatedFormSemantics,
+  options: { overlay?: boolean },
+): ReactNode | null {
+  const grid = semantics.group.form_grid;
+  if (!grid) return null;
+  const controls = new Map(
+    semantics.controls.map((control) => [control.id, control]),
+  );
+  const labels = new Map(semantics.labels.map((label) => [label.id, label]));
+  const domPrefix = `form-grid-${formGridDomToken(semantics.group.id)}`;
+  const rowCount = grid.row_boundaries.length - 1;
+  const columnCount = grid.column_boundaries.length - 1;
+  const confidenceKeys = [
+    "geometry",
+    "role",
+    "transcription",
+    "state",
+  ] as const;
+  const renderCell = (cell: FormGridCell): ReactNode => {
+    const structuralOrders = [
+      ...cell.header_cell_orders,
+      ...cell.section_cell_orders,
+      ...cell.label_cell_orders,
+    ];
+    const tag =
+      cell.static_kind === "column_header" ||
+      cell.static_kind === "row_header" ||
+      cell.static_kind === "section_header"
+        ? "th"
+        : "td";
+    const scope =
+      cell.static_kind === "column_header"
+        ? "col"
+        : cell.static_kind === "row_header"
+          ? "row"
+          : undefined;
+    const confidenceId = `${domPrefix}-confidence-${cell.reading_order}`;
+    const scores = confidenceKeys.flatMap((key) => {
+      const value = cell.confidence_dimensions[key];
+      return "score" in value ? [value.score] : [];
+    });
+    const minimumConfidence = scores.length ? Math.min(...scores) : null;
+    const content: ReactNode[] = cell.content_fragments.map((fragment) => {
+      const style = formGridFragmentStyle(cell, fragment);
+      const key = `${cell.reading_order}-${fragment.source_order}`;
+      if (fragment.kind === "control") {
+        const controlConfidenceId = `${domPrefix}-control-confidence-${formGridDomToken(
+          fragment.control_id!,
+        )}`;
+        return renderFormGridControl(
+          controls.get(fragment.control_id!)!,
+          labels,
+          style,
+          key,
+          fragment.source_order,
+          controlConfidenceId,
+        );
+      }
+      return createElement(
+        "span",
+        {
+          className: "form-grid-fragment form-grid-text-fragment",
+          "data-source-order": fragment.source_order,
+          key,
+          style,
+        },
+        fragment.text,
+      );
+    });
+    if (cell.value !== null && cell.value !== cell.text) {
+      content.push(
+        createElement(
+          "span",
+          { className: "form-grid-explicit-value", key: "value" },
+          cell.value,
+        ),
+      );
+    }
+    if (cell.value_state === "ambiguous") {
+      content.push(
+        createElement(
+          "span",
+          {
+            className: "form-grid-value-warning",
+            key: "uncertain-value",
+            role: "note",
+          },
+          "Uncertain value",
+        ),
+      );
+    }
+    if (minimumConfidence !== null && minimumConfidence < 1) {
+      content.push(
+        createElement(
+          "span",
+          {
+            className: "form-grid-confidence-badge",
+            key: "confidence-badge",
+          },
+          `Confidence ${Math.round(minimumConfidence * 100)}%`,
+        ),
+      );
+    }
+    content.push(
+      createElement(
+        "span",
+        { className: "visually-hidden", id: confidenceId, key: "confidence" },
+        formGridConfidenceDescription(cell.confidence_dimensions),
+      ),
+    );
+
+    return createElement(
+      tag,
+      {
+        id: `${domPrefix}-cell-${cell.reading_order}`,
+        key: cell.reading_order,
+        rowSpan: cell.row_span > 1 ? cell.row_span : undefined,
+        colSpan: cell.column_span > 1 ? cell.column_span : undefined,
+        scope,
+        headers: structuralOrders.length
+          ? structuralOrders
+              .map((order) => `${domPrefix}-cell-${order}`)
+              .join(" ")
+          : undefined,
+        "aria-describedby": confidenceId,
+        "aria-label":
+          cell.value_state === "empty" && cell.text_state === "empty"
+            ? "Blank source-visible value"
+            : undefined,
+        "data-reading-order": cell.reading_order,
+        "data-cell-role": cell.cell_role,
+        "data-static-kind": cell.static_kind ?? undefined,
+        "data-text-state": cell.text_state,
+        "data-value-state": cell.value_state,
+        "data-concern-codes": cell.concern_codes.join(" ") || undefined,
+        "data-confidence-geometry": formGridConfidenceValue(
+          cell.confidence_dimensions.geometry,
+        ),
+        "data-confidence-role": formGridConfidenceValue(
+          cell.confidence_dimensions.role,
+        ),
+        "data-confidence-transcription": formGridConfidenceValue(
+          cell.confidence_dimensions.transcription,
+        ),
+        "data-confidence-state": formGridConfidenceValue(
+          cell.confidence_dimensions.state,
+        ),
+      },
+      createElement(
+        "div",
+        {
+          className: "form-grid-cell-content",
+          style: {
+            aspectRatio: `${cell.bbox.width} / ${cell.bbox.height}`,
+          },
+        },
+        ...content,
+      ),
+    );
+  };
+  const rows = Array.from({ length: rowCount }, (_, row) =>
+    createElement(
+      "tr",
+      { key: row, "data-form-grid-row": row },
+      ...grid.cells.filter((cell) => cell.row === row).map(renderCell),
+    ),
+  );
+  const totalWidth = grid.bbox.width;
+  const columns = Array.from({ length: columnCount }, (_, column) =>
+    createElement("col", {
+      key: column,
+      style: {
+        width: `${
+          ((grid.column_boundaries[column + 1]! -
+            grid.column_boundaries[column]!) /
+            totalWidth) *
+          100
+        }%`,
+      },
+    }),
+  );
+
+  return createElement(
+    "aside",
+    {
+      className: `form-semantics-panel form-grid-panel${
+        options.overlay ? " form-semantics-overlay-panel" : ""
+      }`,
+      "data-form-canonical-mode": semantics.group.canonical_mode,
+      "data-form-group-key": semantics.group.group_key,
+      ...sourceAttributes(semantics.group),
+    },
+    createElement(
+      "div",
+      { className: "parsed-table-wrap form-grid-table-wrap" },
+      createElement(
+        "table",
+        {
+          className: "parsed-table form-grid-table",
+          "aria-label": `${semantics.group.group_key.replaceAll("-", " ")} form grid`,
+          "data-form-grid": "true",
+        },
+        createElement(
+          "caption",
+          { className: "visually-hidden" },
+          `${rowCount} rows and ${columnCount} columns; blank fields remain blank and uncertain states are explicitly marked.`,
+        ),
+        createElement("colgroup", null, ...columns),
+        createElement("thead", null, rows[0]),
+        createElement("tbody", null, ...rows.slice(1)),
+      ),
+    ),
+  );
+}
+
 function controlStateText(control: FormControl): string {
   if (control.control_type === "radio") {
     if (control.state === "checked") return "Selected";
@@ -1407,6 +2321,8 @@ export function renderValidatedFormSemantics(
 ): ReactNode {
   const staticParties = renderCompleteStaticParties(semantics, options);
   if (staticParties) return staticParties;
+  const formGrid = renderCompleteFormGrid(semantics, options);
+  if (formGrid) return formGrid;
   const labels = new Map(semantics.labels.map((label) => [label.id, label]));
   const sections: ReactNode[] = [];
 

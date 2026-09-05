@@ -1,0 +1,36 @@
+{
+  "organization": {
+    "name": "BEIJING JISHUITAN HOSPITAL",
+    "statusCodeValue": "ACTIVE",
+    "timezone": "Europe/Lisbon",
+    "orgTypeCodeValue": "Institution",
+    "categoryTypeCodeValue": "Hospital"
+  },
+  "properties": [],
+  "orgAddressesDetails": [
+    {
+      "mainPrimary": false,
+      "entityType": "Organization",
+      "addressTypeCodeValue": "SHIPPING",
+      "countryCodeValue": "CN",
+      "addressPostalcode": "102208",
+      "addressStreet1": "No.68 Huilongguan Huinanbei Road, Changping District, Beijing",
+      "addressCity": "Beijing"
+    },
+    {
+      "mainPrimary": true,
+      "entityType": "Organization",
+      "addressTypeCodeValue": "PRIMARY",
+      "countryCodeValue": "CN",
+      "addressPostalcode": "102208",
+      "addressStreet1": "No.68 Huilongguan Huinanbei Road, Changping District, Beijing",
+      "addressCity": "Beijing"
+    }
+  ],
+  "modes": [
+    {
+      "entityType": "Organization",
+      "modeCodeValue": "ACTIVE"
+    }
+  ]
+}

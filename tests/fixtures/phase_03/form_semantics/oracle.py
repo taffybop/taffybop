@@ -111,37 +111,33 @@ ACORD_GROUP_ORACLE: Final = (
         "concern_codes": (),
     },
     {
+        "group_key": "coverages-header-fields",
+        "page_index": 1,
+        "bbox": (255.924, 240.0, 338.076, 12.0),
+        "status": "resolved",
+        "interactivity": "static",
+        "canonical_mode": "inert",
+        "source_objects": (("line", 120),),
+        "field_keys": ("certificate-number", "revision-number"),
+        "label_keys": ("certificate-number", "revision-number"),
+        "control_keys": (),
+        "concern_codes": (),
+    },
+    {
         "group_key": "coverages",
         "page_index": 1,
-        "bbox": (18.0, 240.0, 576.0, 324.0),
-        "status": "unresolved",
+        "bbox": (18.0, 288.0, 576.0, 276.0),
+        "status": "resolved",
         "interactivity": "static",
-        "anchor_public_item_id": "p1-i13",
-        "anchor_element_id": "el-2300235f191fabb4bfc4",
-        "contributor_public_item_ids": (
-            "p1-i9",
-            "p1-i10",
-            "p1-i11",
-            "p1-i13",
-        ),
-        "contributor_element_ids": (
-            "el-4d2be7c46173fc783231",
-            "el-da7dd9f1ace6b7a2ac6f",
-            "el-133f0b79942b1f372fcf",
-            "el-2300235f191fabb4bfc4",
-        ),
-        "canonical_mode": "inert",
+        "canonical_mode": "replace",
         "source_objects": (
             ("line", 6),
             ("line", 100),
-            ("line", 120),
             ("rect", 3),
         ),
-        "field_keys": ("certificate-number", "revision-number"),
+        "field_keys": (),
         "label_keys": (
             "coverages",
-            "certificate-number",
-            "revision-number",
             "commercial-general-liability",
             "claims-made-general",
             "occur-general",
@@ -189,8 +185,9 @@ ACORD_GROUP_ORACLE: Final = (
             "other",
             "yn-response",
         ),
-        "preserved_table_bbox": (18.0, 288.0, 576.0, 276.0),
-        "concern_codes": ("form_table_ownership_ambiguous",),
+        "form_grid_bbox": (18.0, 288.0, 576.0, 276.0),
+        "form_grid_shape": (21, 9, 82),
+        "concern_codes": (),
     },
     {
         "group_key": "description-of-operations",
@@ -1104,7 +1101,7 @@ ACORD_CONTROL_ORACLE: Final = (
         36.0,
         336.0,
         None,
-        "ambiguous",
+        "unchecked",
         "lines",
     ),
     _control(
@@ -1112,7 +1109,7 @@ ACORD_CONTROL_ORACLE: Final = (
         36.0,
         348.0,
         None,
-        "ambiguous",
+        "unchecked",
         "lines",
     ),
     _control("policy", 36.0, 372.0, "POLICY", "unchecked", "lines"),
@@ -1156,7 +1153,7 @@ ACORD_CONTROL_ORACLE: Final = (
         36.0,
         432.0,
         None,
-        "ambiguous",
+        "unchecked",
         "rect",
     ),
     _control(
@@ -1164,7 +1161,7 @@ ACORD_CONTROL_ORACLE: Final = (
         104.4,
         432.0,
         None,
-        "ambiguous",
+        "unchecked",
         "rect",
     ),
     _control(
@@ -1229,7 +1226,7 @@ ACORD_CONTROL_ORACLE: Final = (
         158.4,
         498.0,
         "Y / N",
-        "ambiguous",
+        "unchecked",
         "rect",
     ),
 )
@@ -1740,24 +1737,17 @@ COMPONENT_RELATIONSHIP_ORACLE: Final = (
 
 
 ACORD_CANONICAL_INERT_ORACLE: Final = {
-    # All other static groups remain inert.  The complete resolved
-    # parties/insurers group is the sole source-reviewed replacement.
-    "body_markdown_utf8_bytes": 4_965,
-    "body_markdown_sha256": (
-        "6cdfa104f231d2352b6601cc5eaf4772f1ca47d76b25fa58736a921c60737c85"
-    ),
-    "body_text_utf8_bytes": 2_863,
-    "body_text_sha256": (
-        "d87874de46c6043510359d07a2b4e320a9cc8c8f32df2428580dc080eb47ad42"
-    ),
-    "full_markdown_utf8_bytes": 5_094,
-    "full_markdown_sha256": (
-        "0457321777c49fef2cc7b230c431a30490203bed5f5f260e45b7195fe444832d"
-    ),
-    "full_text_utf8_bytes": 2_992,
-    "full_text_sha256": (
-        "7e4af01b8ec9c45d32e6142a06f976a9291cd57e0fe6b387cf98c10306a1c423"
-    ),
+    # The legacy export name is retained for metric compatibility. Canonical
+    # acceptance is semantic now that the coverage owner renders grid HTML;
+    # byte hashes would couple the oracle to opaque DOM identifiers.
+    "form_grid_table_count": 1,
+    "form_grid_cell_count": 82,
+    "column_header_count": 8,
+    "row_header_count": 16,
+    "section_header_count": 4,
+    "qualifier_count": 1,
+    "unchecked_control_count": 24,
+    "ambiguous_control_count": 0,
 }
 
 
@@ -1836,7 +1826,7 @@ COMPONENT_CANONICAL_ORACLE: Final = {
 
 
 ACORD_REVIEWED_COUNTS: Final = {
-    "group_count": 6,
+    "group_count": 7,
     "field_group_label_header_count": 22,
     "field_bearing_label_header_count": 19,
     "group_only_heading_count": 3,
@@ -1848,8 +1838,8 @@ ACORD_REVIEWED_COUNTS: Final = {
     "label_control_relationship_count": 20,
     "total_label_relationship_count": 53,
     "control_count": 24,
-    "unchecked_control_count": 19,
-    "ambiguous_control_count": 5,
+    "unchecked_control_count": 24,
+    "ambiguous_control_count": 0,
     "checked_control_count": 0,
     "contains_relationship_count": 114,
     "value_relationship_count": 24,

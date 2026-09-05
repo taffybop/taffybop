@@ -869,18 +869,26 @@ class _ProjectionPresentationIndex:
             self.page_index,
             len(self.records),
         )
-        candidates = tuple(
+        candidates = tuple({
             value.bbox
             for value in self.records
-            if value.element.type.casefold() == "table"
+            if value.element.type.casefold() in {"table", "table_candidate"}
             and value.bbox[2] >= 0.8 * page_width
             and value.bbox[3] >= 0.25 * page_height
-        )
-        result = max(
+        })
+        ranked = sorted(
             candidates,
             key=lambda value: value[2] * value[3],
-            default=None,
+            reverse=True,
         )
+        result = ranked[0] if ranked else None
+        if len(ranked) > 1 and (
+            ranked[0][2] * ranked[0][3]
+            < 1.2 * ranked[1][2] * ranked[1][3]
+        ):
+            # Similar, distinct dense owners provide no source authority for
+            # selecting one by list order or page position.
+            result = None
         self.dense_table_cache[cache_key] = result
         return result
 
@@ -1799,6 +1807,335 @@ class _PublicRecord(_StrictModel):
         return self
 
 
+class PublicFormGridContentFragment(_StrictModel):
+    """One source-positioned piece of visible content inside a grid cell."""
+
+    source_order: int = Field(ge=0, le=65_535)
+    kind: Literal["text", "control"]
+    bbox: FormBBox
+    text: str | None = None
+    control_id: str | None = None
+    source_objects: list[SourceObjectRef] = Field(min_length=1, max_length=64)
+
+    @model_validator(mode="after")
+    def validate_content_fragment(self) -> "PublicFormGridContentFragment":
+        if self.kind == "text":
+            if (
+                self.text is None
+                or not _bounded_text_value(self.text)
+                or self.control_id is not None
+            ):
+                raise ValueError("form-grid text fragment is invalid")
+        elif (
+            self.text is not None
+            or self.control_id is None
+            or not _bounded_public_string(self.control_id)
+        ):
+            raise ValueError("form-grid control fragment is invalid")
+        source_identities = [
+            json.dumps(
+                value.model_dump(mode="json"),
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            for value in self.source_objects
+        ]
+        if len(source_identities) != len(set(source_identities)):
+            raise ValueError("form-grid fragment source identities repeat")
+        return self
+
+
+class PublicFormGridCell(_StrictModel):
+    """One source-ordered anchor cell in a structure-preserving form grid."""
+
+    reading_order: int = Field(ge=0, le=65_535)
+    row: int = Field(ge=0, le=4_095)
+    column: int = Field(ge=0, le=255)
+    row_span: int = Field(ge=1, le=4_096)
+    column_span: int = Field(ge=1, le=256)
+    bbox: FormBBox
+    cell_role: Literal["static", "value"]
+    static_kind: Literal[
+        "column_header", "row_header", "section_header", "qualifier"
+    ] | None
+    text: str | None
+    text_state: Literal["empty", "present"]
+    value: str | None
+    value_state: Literal["empty", "present", "ambiguous", "not_applicable"]
+    control_ids: list[str] = Field(max_length=MAX_FORM_CONTROLS_PER_GROUP)
+    content_fragments: list[PublicFormGridContentFragment] = Field(max_length=64)
+    header_cell_orders: list[int] = Field(max_length=256)
+    section_cell_orders: list[int] = Field(max_length=256)
+    label_cell_orders: list[int] = Field(max_length=256)
+    source_objects: list[SourceObjectRef] = Field(min_length=1, max_length=64)
+    confidence_dimensions: ConfidenceDimensions
+    concern_codes: list[str] = Field(max_length=MAX_FORM_CONCERNS_PER_GROUP)
+
+    @model_validator(mode="after")
+    def validate_grid_cell(self) -> "PublicFormGridCell":
+        if [fragment.source_order for fragment in self.content_fragments] != list(
+            range(len(self.content_fragments))
+        ):
+            raise ValueError("form-grid content fragments are not in source order")
+        fragment_control_ids = [
+            fragment.control_id
+            for fragment in self.content_fragments
+            if fragment.kind == "control"
+        ]
+        if fragment_control_ids != self.control_ids:
+            raise ValueError("form-grid control fragments differ from cell controls")
+        fragment_text = "\n".join(
+            fragment.text or ""
+            for fragment in self.content_fragments
+            if fragment.kind == "text"
+        ) or None
+        if fragment_text != self.text:
+            raise ValueError("form-grid text fragments differ from cell text")
+        cell_bbox = (self.bbox.x, self.bbox.y, self.bbox.width, self.bbox.height)
+        cell_source_identities = {
+            json.dumps(
+                value.model_dump(mode="json"),
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            for value in self.source_objects
+        }
+        if any(
+            not _bbox_contains(
+                cell_bbox,
+                (
+                    fragment.bbox.x,
+                    fragment.bbox.y,
+                    fragment.bbox.width,
+                    fragment.bbox.height,
+                ),
+                tolerance=1.0,
+            )
+            or not {
+                json.dumps(
+                    value.model_dump(mode="json"),
+                    sort_keys=True,
+                    separators=(",", ":"),
+                )
+                for value in fragment.source_objects
+            }.issubset(cell_source_identities)
+            for fragment in self.content_fragments
+        ):
+            raise ValueError("form-grid content fragment evidence differs from its cell")
+        semantic_orders = (
+            *self.header_cell_orders,
+            *self.section_cell_orders,
+            *self.label_cell_orders,
+        )
+        if not _unique_strings(self.control_ids) or any(
+            type(value) is not int or value < 0
+            for value in semantic_orders
+        ) or len(self.header_cell_orders) != len(set(self.header_cell_orders)) or len(
+            self.section_cell_orders
+        ) != len(set(self.section_cell_orders)) or len(
+            self.label_cell_orders
+        ) != len(set(self.label_cell_orders)) or len(semantic_orders) != len(
+            set(semantic_orders)
+        ):
+            raise ValueError("form-grid cell controls are invalid")
+        source_identities = [
+            json.dumps(
+                value.model_dump(mode="json"),
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            for value in self.source_objects
+        ]
+        if len(source_identities) != len(set(source_identities)):
+            raise ValueError("form-grid cell source identities repeat")
+        if not _unique_strings(self.concern_codes) or not set(
+            self.concern_codes
+        ).issubset(_ALLOWED_CONCERNS):
+            raise ValueError("form-grid cell concerns are invalid")
+        if self.text_state == "present":
+            if self.text is None or not _bounded_text_value(self.text):
+                raise ValueError("present form-grid text is invalid")
+        elif self.text is not None:
+            raise ValueError("empty form-grid text must be null")
+        if self.value_state == "present":
+            if self.value is None or not _bounded_text_value(self.value):
+                raise ValueError("present form-grid value is invalid")
+        elif self.value is not None:
+            raise ValueError("non-present form-grid value must be null")
+        if self.cell_role == "static" and self.value_state != "not_applicable":
+            raise ValueError("static form-grid cells cannot claim field values")
+        if self.cell_role == "value" and self.value_state == "not_applicable":
+            raise ValueError("form-grid value cells require a value state")
+        if self.cell_role == "static":
+            if self.static_kind is None:
+                raise ValueError("static form-grid cells require a semantic kind")
+            if (self.static_kind == "column_header") != (self.row == 0):
+                raise ValueError("form-grid column-header placement differs")
+            if self.static_kind == "row_header" and self.row_span != 1:
+                raise ValueError("form-grid row headers cannot span logical rows")
+            if self.static_kind == "section_header" and (
+                self.row == 0 or self.row_span == 1
+            ):
+                raise ValueError("form-grid section-header placement differs")
+            if self.static_kind == "qualifier" and self.row == 0:
+                raise ValueError("form-grid qualifiers cannot occupy the header band")
+        elif self.static_kind is not None:
+            raise ValueError("form-grid value cells cannot claim a static kind")
+        if (self.value_state == "ambiguous") != (
+            "form_value_state_ambiguous" in self.concern_codes
+        ):
+            raise ValueError("ambiguous form-grid values require an explicit concern")
+        return self
+
+
+class PublicFormGrid(_StrictModel):
+    """Closed logical grid derived from visible source ruling."""
+
+    bbox: FormBBox
+    row_boundaries: list[float] = Field(min_length=3, max_length=4_097)
+    column_boundaries: list[float] = Field(min_length=3, max_length=257)
+    cells: list[PublicFormGridCell] = Field(
+        min_length=4,
+        max_length=MAX_CANDIDATE_SHAPES_PER_PAGE,
+    )
+
+    @model_validator(mode="after")
+    def validate_grid(self) -> "PublicFormGrid":
+        if self.row_boundaries != sorted(set(self.row_boundaries)) or (
+            self.column_boundaries != sorted(set(self.column_boundaries))
+        ):
+            raise ValueError("form-grid boundaries are not canonical")
+        expected_extent = (
+            self.column_boundaries[0],
+            self.row_boundaries[0],
+            self.column_boundaries[-1] - self.column_boundaries[0],
+            self.row_boundaries[-1] - self.row_boundaries[0],
+        )
+        actual_extent = (self.bbox.x, self.bbox.y, self.bbox.width, self.bbox.height)
+        if any(
+            not math.isclose(actual, expected, rel_tol=0.0, abs_tol=0.001)
+            for actual, expected in zip(actual_extent, expected_extent, strict=True)
+        ):
+            raise ValueError("form-grid bbox differs from its boundaries")
+
+        row_count = len(self.row_boundaries) - 1
+        column_count = len(self.column_boundaries) - 1
+        if row_count * column_count > MAX_CANDIDATE_SHAPES_PER_PAGE:
+            raise ValueError("form-grid logical-slot limit exceeded")
+        occupied: set[tuple[int, int]] = set()
+        seen_controls: set[str] = set()
+        cells_by_order = {cell.reading_order: cell for cell in self.cells}
+        header_cells = [
+            cell
+            for cell in self.cells
+            if cell.static_kind == "column_header"
+            and cell.text_state == "present"
+        ]
+        row_labels = [
+            candidate
+            for candidate in self.cells
+            if candidate.static_kind == "row_header"
+            and candidate.text_state == "present"
+        ]
+        section_headers = [
+            candidate
+            for candidate in self.cells
+            if candidate.static_kind == "section_header"
+            and candidate.text_state == "present"
+        ]
+        for expected_order, cell in enumerate(self.cells):
+            if cell.reading_order != expected_order or (
+                expected_order
+                and (cell.row, cell.column)
+                <= (self.cells[expected_order - 1].row, self.cells[expected_order - 1].column)
+            ):
+                raise ValueError("form-grid cells are not in source order")
+            if (
+                cell.row + cell.row_span > row_count
+                or cell.column + cell.column_span > column_count
+            ):
+                raise ValueError("form-grid cell span exceeds the grid")
+            expected_bbox = (
+                self.column_boundaries[cell.column],
+                self.row_boundaries[cell.row],
+                self.column_boundaries[cell.column + cell.column_span]
+                - self.column_boundaries[cell.column],
+                self.row_boundaries[cell.row + cell.row_span]
+                - self.row_boundaries[cell.row],
+            )
+            actual_bbox = (
+                cell.bbox.x,
+                cell.bbox.y,
+                cell.bbox.width,
+                cell.bbox.height,
+            )
+            if any(
+                not math.isclose(actual, expected, rel_tol=0.0, abs_tol=0.001)
+                for actual, expected in zip(actual_bbox, expected_bbox, strict=True)
+            ):
+                raise ValueError("form-grid cell bbox differs from its span")
+            slots = {
+                (row, column)
+                for row in range(cell.row, cell.row + cell.row_span)
+                for column in range(cell.column, cell.column + cell.column_span)
+            }
+            if occupied.intersection(slots):
+                raise ValueError("form-grid cells overlap")
+            occupied.update(slots)
+            if seen_controls.intersection(cell.control_ids):
+                raise ValueError("form-grid controls have multiple cell owners")
+            seen_controls.update(cell.control_ids)
+            expected_headers = [
+                candidate.reading_order
+                for candidate in header_cells
+                if cell.static_kind != "column_header"
+                and max(candidate.column, cell.column)
+                < min(
+                    candidate.column + candidate.column_span,
+                    cell.column + cell.column_span,
+                )
+            ]
+            expected_sections = [
+                candidate.reading_order
+                for candidate in section_headers
+                if cell.cell_role == "value"
+                and candidate.row <= cell.row < candidate.row + candidate.row_span
+            ]
+            expected_labels = [
+                candidate.reading_order
+                for candidate in row_labels
+                if cell.cell_role == "value"
+                and cell.row_span == 1
+                and candidate.row == cell.row
+                and candidate.column + candidate.column_span == cell.column
+            ]
+            if (
+                cell.header_cell_orders != expected_headers
+                or cell.section_cell_orders != expected_sections
+                or cell.label_cell_orders != expected_labels
+                or any(
+                    reference == cell.reading_order
+                    or reference not in cells_by_order
+                    for reference in (
+                        *cell.header_cell_orders,
+                        *cell.section_cell_orders,
+                        *cell.label_cell_orders,
+                    )
+                )
+                or any(
+                    reference >= cell.reading_order
+                    for reference in (
+                        *cell.header_cell_orders,
+                        *cell.label_cell_orders,
+                    )
+                )
+            ):
+                raise ValueError("form-grid label/value relationships differ")
+        if len(occupied) != row_count * column_count:
+            raise ValueError("form-grid cells do not cover every logical slot")
+        return self
+
+
 class PublicFormGroup(_PublicRecord):
     relationship_ids: list[str] = Field(min_length=1, max_length=2_816)
     group_key: str
@@ -1818,6 +2155,10 @@ class PublicFormGroup(_PublicRecord):
     control_ids: list[str] = Field(max_length=MAX_FORM_CONTROLS_PER_GROUP)
     key_value_pair_ids: list[str] = Field(
         max_length=MAX_FORM_KEY_VALUE_PAIRS_PER_GROUP
+    )
+    form_grid: PublicFormGrid | None = Field(
+        default=None,
+        exclude_if=lambda value: value is None,
     )
 
     @model_validator(mode="after")
@@ -1861,10 +2202,40 @@ class PublicFormGroup(_PublicRecord):
             or self.element_id in self.contributor_element_ids
         ):
             raise ValueError("form group anchor custody is invalid")
-        if not (self.field_ids or self.control_ids or self.key_value_pair_ids) or (
+        if not (
+            self.field_ids
+            or self.control_ids
+            or self.key_value_pair_ids
+            or self.form_grid is not None
+        ) or (
             self.key_value_pair_ids and (self.field_ids or self.control_ids)
         ):
             raise ValueError("form group role composition is invalid")
+        if self.form_grid is not None:
+            grid_bbox = self.form_grid.bbox
+            if (
+                self.status != "resolved"
+                or self.interactivity != "static"
+                or self.canonical_mode != "replace"
+                or self.concern_codes
+                or self.field_ids
+                or self.key_value_pair_ids
+                or {
+                    control_id
+                    for cell in self.form_grid.cells
+                    for control_id in cell.control_ids
+                }
+                != set(self.control_ids)
+                or any(
+                    not math.isclose(actual, expected, rel_tol=0.0, abs_tol=0.001)
+                    for actual, expected in zip(
+                        (self.bbox.x, self.bbox.y, self.bbox.width, self.bbox.height),
+                        (grid_bbox.x, grid_bbox.y, grid_bbox.width, grid_bbox.height),
+                        strict=True,
+                    )
+                )
+            ):
+                raise ValueError("form-grid group ownership is invalid")
         return self
 
 
@@ -2025,6 +2396,49 @@ class _RecordCandidate:
 
 
 @dataclass(frozen=True, slots=True)
+class _DetectedFormGridCell:
+    reading_order: int
+    row: int
+    column: int
+    row_span: int
+    column_span: int
+    bbox: tuple[float, float, float, float]
+    cell_role: Literal["static", "value"]
+    static_kind: Literal[
+        "column_header", "row_header", "section_header", "qualifier"
+    ] | None
+    text: str | None
+    text_state: Literal["empty", "present"]
+    value: str | None
+    value_state: Literal["empty", "present", "ambiguous", "not_applicable"]
+    control_keys: tuple[str, ...]
+    content_fragments: tuple["_DetectedFormGridContentFragment", ...]
+    header_cell_orders: tuple[int, ...]
+    section_cell_orders: tuple[int, ...]
+    label_cell_orders: tuple[int, ...]
+    source_objects: tuple[_SourceIdentity, ...]
+    concern_codes: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True, slots=True)
+class _DetectedFormGridContentFragment:
+    source_order: int
+    kind: Literal["text", "control"]
+    bbox: tuple[float, float, float, float]
+    text: str | None
+    control_key: str | None
+    source_objects: tuple[_SourceIdentity, ...]
+
+
+@dataclass(frozen=True, slots=True)
+class _DetectedFormGrid:
+    bbox: tuple[float, float, float, float]
+    row_boundaries: tuple[float, ...]
+    column_boundaries: tuple[float, ...]
+    cells: tuple[_DetectedFormGridCell, ...]
+
+
+@dataclass(frozen=True, slots=True)
 class _GroupCandidate:
     group_key: str
     page_index: int
@@ -2039,6 +2453,7 @@ class _GroupCandidate:
     records: tuple[_RecordCandidate, ...]
     relationships: tuple[tuple[str, str, str], ...]
     source_objects: tuple[_SourceIdentity, ...]
+    form_grid: _DetectedFormGrid | None = None
     concern_codes: tuple[str, ...] = ()
 
 
@@ -3829,6 +4244,74 @@ def _materialize_group(ir: DocumentIR, candidate: _GroupCandidate) -> None:
     }
     for record in candidate.records:
         role_tokens[record.role].append(record.token)
+    public_grid: PublicFormGrid | None = None
+    if candidate.form_grid is not None:
+        public_grid = PublicFormGrid(
+            bbox=FormBBox(
+                x=candidate.form_grid.bbox[0],
+                y=candidate.form_grid.bbox[1],
+                width=candidate.form_grid.bbox[2],
+                height=candidate.form_grid.bbox[3],
+            ),
+            row_boundaries=list(candidate.form_grid.row_boundaries),
+            column_boundaries=list(candidate.form_grid.column_boundaries),
+            cells=[
+                PublicFormGridCell(
+                    reading_order=cell.reading_order,
+                    row=cell.row,
+                    column=cell.column,
+                    row_span=cell.row_span,
+                    column_span=cell.column_span,
+                    bbox=FormBBox(
+                        x=cell.bbox[0],
+                        y=cell.bbox[1],
+                        width=cell.bbox[2],
+                        height=cell.bbox[3],
+                    ),
+                    cell_role=cell.cell_role,
+                    static_kind=cell.static_kind,
+                    text=cell.text,
+                    text_state=cell.text_state,
+                    value=cell.value,
+                    value_state=cell.value_state,
+                    control_ids=[
+                        token_to_record[f"control:{key}"]
+                        for key in cell.control_keys
+                    ],
+                    content_fragments=[
+                        PublicFormGridContentFragment(
+                            source_order=fragment.source_order,
+                            kind=fragment.kind,
+                            bbox=FormBBox(
+                                x=fragment.bbox[0],
+                                y=fragment.bbox[1],
+                                width=fragment.bbox[2],
+                                height=fragment.bbox[3],
+                            ),
+                            text=fragment.text,
+                            control_id=(
+                                token_to_record[f"control:{fragment.control_key}"]
+                                if fragment.control_key is not None
+                                else None
+                            ),
+                            source_objects=_public_source_objects(
+                                fragment.source_objects
+                            ),
+                        )
+                        for fragment in cell.content_fragments
+                    ],
+                    header_cell_orders=list(cell.header_cell_orders),
+                    section_cell_orders=list(cell.section_cell_orders),
+                    label_cell_orders=list(cell.label_cell_orders),
+                    source_objects=_public_source_objects(cell.source_objects),
+                    confidence_dimensions=_confidence_dimensions(
+                        transcription=cell.text is not None
+                    ),
+                    concern_codes=list(cell.concern_codes),
+                )
+                for cell in candidate.form_grid.cells
+            ],
+        )
     public_group = PublicFormGroup(
         **common_public[group_token],
         group_key=candidate.group_key,
@@ -3849,6 +4332,7 @@ def _materialize_group(ir: DocumentIR, candidate: _GroupCandidate) -> None:
         key_value_pair_ids=[
             token_to_record[token] for token in role_tokens["key_value_pair"]
         ],
+        form_grid=public_grid,
     )
     public_fields: list[PublicFormField] = []
     public_labels: list[PublicFormLabel] = []
@@ -4190,8 +4674,17 @@ def _projection_working_copy(
     complete accepted IR merely to append a bounded semantic overlay.
     """
 
-    anchor_ids = {
-        candidate.anchor_element_id for candidate in candidates
+    anchor_ids = {candidate.anchor_element_id for candidate in candidates}
+    grid_page_indexes = {
+        candidate.page_index
+        for candidate in candidates
+        if candidate.form_grid is not None
+    }
+    mutable_primary_ids = anchor_ids | {
+        element_id
+        for page in predecessor.pages
+        if page.page_index in grid_page_indexes
+        for element_id in page.presentation_element_ids
     }
     return predecessor.model_copy(
         update={
@@ -4216,7 +4709,7 @@ def _projection_working_copy(
             ],
             "elements": [
                 element.model_copy(deep=True)
-                if element.id in anchor_ids
+                if element.id in mutable_primary_ids
                 else element
                 for element in predecessor.elements
             ],
@@ -4225,6 +4718,269 @@ def _projection_working_copy(
             "concerns": list(predecessor.concerns),
         }
     )
+
+
+def _rebuild_local_legacy_reading_chain(
+    ir: DocumentIR,
+    old_order: Sequence[str],
+    new_order: Sequence[str],
+    *,
+    page_index: int,
+) -> None:
+    """Reconcile only the legacy edges crossed by one bounded move."""
+
+    _charge_projection_comparisons(page_index, len(old_order))
+    changed = [
+        index
+        for index, (old_id, new_id) in enumerate(
+            zip(old_order, new_order, strict=True)
+        )
+        if old_id != new_id
+    ]
+    if not changed:
+        return
+    start = max(0, min(changed) - 1)
+    stop = min(len(old_order), max(changed) + 2)
+    old_pairs = list(zip(old_order[start:stop], old_order[start + 1 : stop]))
+    new_pairs = list(zip(new_order[start:stop], new_order[start + 1 : stop]))
+    old_pair_set = set(old_pairs)
+    new_pair_set = set(new_pairs)
+    legacy_by_pair: dict[tuple[str, str], RelationshipRecord] = {}
+    raw_by_pair: dict[tuple[str, str], list[RelationshipRecord]] = {}
+    _charge_projection_comparisons(page_index, len(ir.relationships))
+    for relationship in ir.relationships:
+        if relationship.type is not RelationshipType.READING_BEFORE:
+            continue
+        pair = (relationship.source_id, relationship.target_id)
+        if relationship.metadata.get("basis") == "legacy_reading_order":
+            if pair in old_pair_set:
+                if pair in legacy_by_pair:
+                    raise ValueError("legacy reading-order edge repeats")
+                legacy_by_pair[pair] = relationship
+            continue
+        if pair not in new_pair_set - old_pair_set:
+            continue
+        reference_metadata = relationship.metadata.get("reference_metadata")
+        if (
+            not relationship.evidence_ids
+            or not isinstance(reference_metadata, list)
+            or not reference_metadata
+            or any(not isinstance(value, Mapping) for value in reference_metadata)
+        ):
+            raise ValueError("source reading-order custody is incomplete")
+        raw_by_pair.setdefault(pair, []).append(relationship)
+    if set(legacy_by_pair) != old_pair_set:
+        raise ValueError("local legacy reading-order custody differs")
+    if any(
+        relationship.metadata != {"basis": "legacy_reading_order"}
+        or relationship.evidence_ids
+        for pair, relationship in legacy_by_pair.items()
+        if pair not in new_pair_set
+    ):
+        raise ValueError("coalesced source reading edge cannot be discarded")
+
+    coalesced_raw_ids: set[str] = set()
+    rebuilt_chain: list[RelationshipRecord] = []
+    for source_id, target_id in new_pairs:
+        pair = (source_id, target_id)
+        existing = legacy_by_pair.get(pair)
+        if existing is not None:
+            rebuilt_chain.append(existing)
+            continue
+        matching_raw = raw_by_pair.get(pair, [])
+        if len(matching_raw) > 1:
+            raise ValueError("source reading-order edge repeats")
+        evidence_ids: list[str] = []
+        metadata: dict[str, Any] = {"basis": "legacy_reading_order"}
+        if matching_raw:
+            [raw_relationship] = matching_raw
+            coalesced_raw_ids.add(raw_relationship.id)
+            evidence_ids = list(raw_relationship.evidence_ids)
+            reference_metadata = raw_relationship.metadata.get("reference_metadata")
+            if isinstance(reference_metadata, list) and reference_metadata:
+                metadata["reference_metadata"] = deepcopy(reference_metadata)
+        rebuilt_chain.append(
+            RelationshipRecord(
+                id=_stable_id(
+                    "rel",
+                    RelationshipType.READING_BEFORE.value,
+                    source_id,
+                    target_id,
+                ),
+                type=RelationshipType.READING_BEFORE,
+                source_id=source_id,
+                target_id=target_id,
+                evidence_ids=evidence_ids,
+                metadata=metadata,
+            )
+        )
+
+    removed_legacy_ids = {
+        relationship.id for relationship in legacy_by_pair.values()
+    }
+    retained_relationships = [
+        relationship
+        for relationship in ir.relationships
+        if relationship.id not in removed_legacy_ids
+        and relationship.id not in coalesced_raw_ids
+    ]
+    retained_ids = {relationship.id for relationship in retained_relationships}
+    if any(relationship.id in retained_ids for relationship in rebuilt_chain):
+        raise ValueError("rebuilt reading-order identity collides")
+    ir.relationships = [*retained_relationships, *rebuilt_chain]
+
+
+def _raw_reading_constraints_allow_move(
+    ir: DocumentIR,
+    old_order: Sequence[str],
+    new_order: Sequence[str],
+    *,
+    page_index: int,
+) -> bool:
+    """Refuse a geometric move that reverses source-backed order evidence."""
+
+    old_position = {element_id: index for index, element_id in enumerate(old_order)}
+    new_position = {element_id: index for index, element_id in enumerate(new_order)}
+    _charge_projection_comparisons(page_index, len(ir.relationships))
+    for relationship in ir.relationships:
+        if relationship.type is not RelationshipType.READING_BEFORE:
+            continue
+        source = relationship.source_id
+        target = relationship.target_id
+        if source not in old_position or target not in old_position:
+            continue
+        reference_metadata = relationship.metadata.get("reference_metadata")
+        source_backed = bool(relationship.evidence_ids) or (
+            isinstance(reference_metadata, list) and bool(reference_metadata)
+        )
+        if not source_backed:
+            continue
+        if (
+            old_position[source] < old_position[target]
+            and new_position[source] >= new_position[target]
+        ):
+            return False
+    return True
+
+
+def _reorder_form_grid_anchors(
+    ir: DocumentIR,
+    candidates: Sequence[_GroupCandidate],
+) -> None:
+    """Place resolved grids between their source-adjacent regions.
+
+    A broad upstream table-candidate bbox can begin in a disclaimer and make
+    an otherwise valid grid sort before that disclaimer.  Once ruling-line
+    evidence proves a tighter grid extent, move only that grid's existing
+    primary anchor into the unambiguous interval between horizontally
+    overlapping content above and below it.  Public numeric reading order is
+    renumbered with the primary sequence so the two representations cannot
+    contradict one another.
+    """
+
+    grid_candidates = [
+        candidate for candidate in candidates if candidate.form_grid is not None
+    ]
+    if not grid_candidates:
+        return
+    pages = {page.page_index: page for page in ir.pages}
+    elements = {element.id: element for element in ir.elements}
+    bboxes = {bbox.id: bbox for bbox in ir.bboxes}
+    candidates_by_page: dict[int, list[_GroupCandidate]] = {}
+    for candidate in grid_candidates:
+        candidates_by_page.setdefault(candidate.page_index, []).append(candidate)
+
+    for page_index, page_candidates in candidates_by_page.items():
+        page = pages.get(page_index)
+        if page is None:
+            raise ValueError("form-grid page is unavailable")
+        order = list(page.presentation_element_ids)
+        if len({candidate.anchor_element_id for candidate in page_candidates}) != len(
+            page_candidates
+        ):
+            raise ValueError("form-grid anchors repeat on a page")
+        for candidate in sorted(
+            page_candidates,
+            key=lambda value: (
+                value.form_grid.bbox[1] if value.form_grid is not None else 0.0,
+                value.form_grid.bbox[0] if value.form_grid is not None else 0.0,
+                value.anchor_element_id,
+            ),
+        ):
+            grid = candidate.form_grid
+            if grid is None or order.count(candidate.anchor_element_id) != 1:
+                raise ValueError("form-grid anchor custody differs")
+            old_order = tuple(order)
+            anchor_index = order.index(candidate.anchor_element_id)
+            order.pop(anchor_index)
+            grid_left, grid_top, grid_width, grid_height = grid.bbox
+            grid_right = grid_left + grid_width
+            grid_bottom = grid_top + grid_height
+            preceding_positions: list[int] = []
+            following_positions: list[int] = []
+            _charge_projection_comparisons(page_index, len(order))
+            for position, element_id in enumerate(order):
+                element = elements.get(element_id)
+                element_bbox = (
+                    _bbox_tuple(element, bboxes) if element is not None else None
+                )
+                if element_bbox is None:
+                    continue
+                left, top, width, height = element_bbox
+                overlap = max(
+                    0.0,
+                    min(grid_right, left + width) - max(grid_left, left),
+                )
+                if overlap < max(0.5, min(grid_width, width) * 0.1):
+                    continue
+                if top + height <= grid_top + 0.5:
+                    preceding_positions.append(position)
+                elif top >= grid_bottom - 0.5:
+                    following_positions.append(position)
+            lower_bound = (
+                max(preceding_positions) + 1 if preceding_positions else 0
+            )
+            upper_bound = (
+                min(following_positions) if following_positions else len(order)
+            )
+            if lower_bound > upper_bound:
+                raise ValueError("form-grid reading interval is ambiguous")
+            insertion = min(max(anchor_index, lower_bound), upper_bound)
+            order.insert(insertion, candidate.anchor_element_id)
+            new_order = tuple(order)
+            if new_order == old_order:
+                continue
+            if not _raw_reading_constraints_allow_move(
+                ir,
+                old_order,
+                new_order,
+                page_index=page_index,
+            ):
+                order = list(old_order)
+                continue
+            _rebuild_local_legacy_reading_chain(
+                ir,
+                old_order,
+                new_order,
+                page_index=page_index,
+            )
+            changed = [
+                index
+                for index, (old_id, new_id) in enumerate(
+                    zip(old_order, new_order, strict=True)
+                )
+                if old_id != new_id
+            ]
+            for reading_order in range(min(changed), max(changed) + 1):
+                element = elements[order[reading_order]]
+                element.reading_order = reading_order
+                element.properties["source_position"] = reading_order
+                legacy = _legacy_item(element)
+                if legacy is not None:
+                    updated = deepcopy(dict(legacy))
+                    updated["reading_order"] = reading_order
+                    element.properties["legacy_item"] = updated
+        page.presentation_element_ids = order
 
 
 def project_form_semantics(
@@ -4406,6 +5162,7 @@ def project_form_semantics(
             detailed_concern_count += 1
 
         projection_budget.check_deadline()
+        materialized_grid_candidates: list[_GroupCandidate] = []
         for page_index, page_candidates in candidates_by_page.items():
             projection_budget.check_deadline()
             snapshot = _snapshot_page_mutations(
@@ -4430,6 +5187,11 @@ def project_form_semantics(
                     source_ref=f"page:{page_index}",
                 )
                 continue
+            materialized_grid_candidates.extend(
+                candidate
+                for candidate in page_candidates
+                if candidate.form_grid is not None
+            )
             for candidate in page_candidates:
                 group_element_id = _stable_id(
                     "form-el",
@@ -4450,6 +5212,8 @@ def project_form_semantics(
                         source_ref=group_element_id,
                         target_ref=candidate.anchor_element_id,
                     )
+        projection_budget.check_deadline()
+        _reorder_form_grid_anchors(working, materialized_grid_candidates)
         for page_index in sorted(rejected_pages):
             append_detailed_concern(
                 page_index=page_index,
@@ -5706,6 +6470,974 @@ def _minimal_ruled_cells(
     return tuple(sorted(minimal, key=lambda value: (value[1], value[0])))
 
 
+def _nearest_rule_coordinate(
+    coordinates: Sequence[float],
+    target: float,
+    *,
+    tolerance: float,
+) -> float | None:
+    lower = bisect_left(coordinates, target - tolerance)
+    upper = bisect_right(coordinates, target + tolerance)
+    if lower >= upper:
+        return None
+    return min(
+        coordinates[lower:upper],
+        key=lambda value: (abs(value - target), value),
+    )
+
+
+def _snapped_ruled_region_bbox(
+    page: FormSourcePage,
+    candidate_bbox: tuple[float, float, float, float],
+) -> tuple[float, float, float, float] | None:
+    """Snap a presentation candidate to one closed source-vector region."""
+
+    x, y, width, height = candidate_bbox
+    if width <= 0 or height <= 0:
+        return None
+    edge_index = _rule_edge_index(page)
+    x_values = tuple(edge_index.vertical_by_x)
+    y_values = tuple(edge_index.horizontal_by_y)
+    tolerance = max(3.0, min(width, height) * 0.01)
+    left = _nearest_rule_coordinate(x_values, x, tolerance=tolerance)
+    right = _nearest_rule_coordinate(
+        x_values,
+        x + width,
+        tolerance=tolerance,
+    )
+    top = _nearest_rule_coordinate(y_values, y, tolerance=tolerance)
+    bottom = _nearest_rule_coordinate(
+        y_values,
+        y + height,
+        tolerance=tolerance,
+    )
+    if (
+        left is None
+        or right is None
+        or top is None
+        or bottom is None
+        or right - left < 12
+        or bottom - top < 12
+    ):
+        return None
+
+    # A coarse presentation table can include adjacent full-width boxes.  The
+    # actual grid is the dominant interval shared by several internal column
+    # partitions; trim to that source-derived interval before resolving spans.
+    shared_intervals: Counter[tuple[float, float]] = Counter()
+    initial_height = bottom - top
+    _charge_projection_comparisons(
+        page.page_index,
+        len(edge_index.vertical_coverage),
+    )
+    for coordinate, coverage in edge_index.vertical_coverage.items():
+        if coordinate <= left + 0.15 or coordinate >= right - 0.15:
+            continue
+        for chain_start, chain_end in coverage.chains_milli:
+            clipped_top = max(top, chain_start / 1_000)
+            clipped_bottom = min(bottom, chain_end / 1_000)
+            if clipped_bottom - clipped_top >= 0.4 * initial_height:
+                shared_intervals[(clipped_top, clipped_bottom)] += 1
+    dominant = [
+        (support, interval_bottom - interval_top, interval_top, interval_bottom)
+        for (interval_top, interval_bottom), support in shared_intervals.items()
+        if support >= 3
+        and edge_index.coverage("horizontal", interval_top, left, right)
+        and edge_index.coverage("horizontal", interval_bottom, left, right)
+    ]
+    if dominant:
+        strongest_support = max(value[0] for value in dominant)
+        strongest = sorted(
+            (
+                value
+                for value in dominant
+                if value[0] == strongest_support
+            ),
+            key=lambda value: value[1],
+            reverse=True,
+        )
+        if len(strongest) > 1 and strongest[0][1] < 1.2 * strongest[1][1]:
+            # Two similarly supported closed regions inside one coarse owner
+            # do not authorize choosing one by its page position.
+            return None
+        _support, _span, top, bottom = strongest[0]
+    if (
+        not edge_index.coverage("horizontal", top, left, right)
+        or not edge_index.coverage("horizontal", bottom, left, right)
+        or not edge_index.coverage("vertical", left, top, bottom)
+        or not edge_index.coverage("vertical", right, top, bottom)
+    ):
+        return None
+    return _rounded_bbox((left, top, right - left, bottom - top))
+
+
+def _grid_cell_text(
+    page: FormSourcePage,
+    bbox: tuple[float, float, float, float],
+    semantic_labels: Sequence["_DetectedLabel"] = (),
+    excluded_source_objects: Sequence[_SourceIdentity] = (),
+) -> tuple[
+    str | None,
+    tuple[_SourceIdentity, ...],
+    tuple[_DetectedFormGridContentFragment, ...],
+]:
+    """Transcribe one cell in visual line order without flattening lines."""
+
+    def character_ranges(
+        indexes: Sequence[int],
+    ) -> tuple[_SourceIdentity, ...]:
+        if not indexes:
+            return ()
+        refs: list[_SourceIdentity] = []
+        start = prior_index = indexes[0]
+        for index in indexes[1:]:
+            if index == prior_index + 1:
+                prior_index = index
+                continue
+            refs.append(("character_range", start, prior_index + 1))
+            start = prior_index = index
+        refs.append(("character_range", start, prior_index + 1))
+        return _bounded_source_identities(refs, page_index=page.page_index)
+
+    def normalized_fragment_text(value: str) -> str:
+        normalized = re.sub(r"\s+", " ", value).strip()
+        return re.sub(
+            r"(?<=\w)([\$\u00a3\u00a5\u20ac\u20b9])",
+            r" \1",
+            normalized,
+        )
+
+    contained_labels = [
+        label
+        for label in semantic_labels
+        if _bbox_contains(bbox, label.bbox, tolerance=1.0)
+    ]
+    label_char_indexes: set[int] = set()
+    for label in contained_labels:
+        for kind, start, end in label.source_objects:
+            if kind == "character_range" and isinstance(start, int) and end is not None:
+                label_char_indexes.update(range(start, end))
+
+    excluded_char_indexes = {
+        index
+        for kind, start, end in excluded_source_objects
+        if kind == "character_range" and isinstance(start, int) and end is not None
+        for index in range(start, end)
+    }
+    text_fragments: list[_DetectedFormGridContentFragment] = []
+    for label in contained_labels:
+        label_text = normalized_fragment_text(label.text)
+        label_sources = _bounded_source_identities(
+            label.source_objects,
+            page_index=page.page_index,
+        )
+        if label_text and label_sources:
+            text_fragments.append(
+                _DetectedFormGridContentFragment(
+                    source_order=0,
+                    kind="text",
+                    bbox=_rounded_bbox(label.bbox),
+                    text=label_text,
+                    control_key=None,
+                    source_objects=label_sources,
+                )
+            )
+
+    chars = sorted(
+        _projection_spatial_index(page).chars_centered(bbox, above=0.0),
+        key=lambda char: (char.top, char.x0, char.index),
+    )
+    if chars:
+        residual_lines: list[list[SourceChar]] = []
+        for char in (
+            value
+            for value in chars
+            if value.index not in label_char_indexes
+            and value.index not in excluded_char_indexes
+        ):
+            if not residual_lines or abs(char.top - residual_lines[-1][0].top) > 1.25:
+                residual_lines.append([char])
+            else:
+                residual_lines[-1].append(char)
+
+        for line in residual_lines:
+            ordered_line = sorted(line, key=lambda value: (value.x0, value.index))
+            pieces: list[str] = []
+            prior: SourceChar | None = None
+            for char in ordered_line:
+                if (
+                    prior is not None
+                    and char.text.strip()
+                    and prior.text.strip()
+                    and char.x0 - prior.x1
+                    > max(1.0, 0.35 * min(char.size, prior.size))
+                ):
+                    pieces.append(" ")
+                pieces.append(char.text)
+                prior = char
+            line_text = normalized_fragment_text("".join(pieces))
+            line_sources = character_ranges(
+                sorted({char.index for char in ordered_line})
+            )
+            if line_text and line_sources:
+                line_left = min(char.x0 for char in ordered_line)
+                line_top = min(char.top for char in ordered_line)
+                line_right = max(char.x1 for char in ordered_line)
+                line_bottom = max(char.bottom for char in ordered_line)
+                text_fragments.append(
+                    _DetectedFormGridContentFragment(
+                        source_order=0,
+                        kind="text",
+                        bbox=_rounded_bbox(
+                            (
+                                line_left,
+                                line_top,
+                                line_right - line_left,
+                                line_bottom - line_top,
+                            )
+                        ),
+                        text=line_text,
+                        control_key=None,
+                        source_objects=line_sources,
+                    )
+                )
+    else:
+        words = sorted(
+            _projection_spatial_index(page).words_centered(bbox, above=0.0),
+            key=lambda word: (word.top, word.x0, word.index),
+        )
+        label_ranges = [
+            (start, end)
+            for label in contained_labels
+            for kind, start, end in label.source_objects
+            if kind == "character_range" and isinstance(start, int) and end is not None
+        ]
+        excluded_ranges = [
+            (start, end)
+            for kind, start, end in excluded_source_objects
+            if kind == "character_range" and isinstance(start, int) and end is not None
+        ]
+        words = [
+            word
+            for word in words
+            if not any(
+                max(word.char_start, start) < min(word.char_end, end)
+                for start, end in (*label_ranges, *excluded_ranges)
+            )
+        ]
+        lines: list[list[SourceWord]] = []
+        for word in words:
+            if not lines or abs(word.top - lines[-1][0].top) > 1.25:
+                lines.append([word])
+            else:
+                lines[-1].append(word)
+        for line in lines:
+            ordered_line = sorted(line, key=lambda value: (value.x0, value.index))
+            line_text = normalized_fragment_text(
+                " ".join(word.text for word in ordered_line)
+            )
+            line_sources = _bounded_source_identities(
+                (
+                    ("character_range", word.char_start, word.char_end)
+                    for word in sorted(
+                        ordered_line,
+                        key=lambda value: value.char_start,
+                    )
+                ),
+                page_index=page.page_index,
+            )
+            if line_text and line_sources:
+                line_left = min(word.x0 for word in ordered_line)
+                line_top = min(word.top for word in ordered_line)
+                line_right = max(word.x1 for word in ordered_line)
+                line_bottom = max(word.bottom for word in ordered_line)
+                text_fragments.append(
+                    _DetectedFormGridContentFragment(
+                        source_order=0,
+                        kind="text",
+                        bbox=_rounded_bbox(
+                            (
+                                line_left,
+                                line_top,
+                                line_right - line_left,
+                                line_bottom - line_top,
+                            )
+                        ),
+                        text=line_text,
+                        control_key=None,
+                        source_objects=line_sources,
+                    )
+                )
+
+    text_fragments.sort(
+        key=lambda value: (
+            value.bbox[1],
+            value.bbox[0],
+            value.text or "",
+        )
+    )
+    text_fragments = [
+        replace(fragment, source_order=index)
+        for index, fragment in enumerate(text_fragments)
+    ]
+    text = "\n".join(fragment.text or "" for fragment in text_fragments) or None
+    sources = _bounded_source_identities(
+        (
+            source
+            for fragment in text_fragments
+            for source in fragment.source_objects
+        ),
+        page_index=page.page_index,
+    )
+    return text, sources, tuple(text_fragments)
+
+
+def _build_ruled_form_grid(
+    page: FormSourcePage,
+    candidate_bbox: tuple[float, float, float, float],
+    controls: Sequence["_DetectedControl"],
+    semantic_labels: Sequence["_DetectedLabel"] = (),
+) -> _DetectedFormGrid | None:
+    """Build a closed merged-cell grid from persistent source ruling.
+
+    Long vertical partitions define logical columns. Horizontal partitions
+    must span at least two adjacent logical columns, which excludes checkbox
+    edges and short write-in rules without relying on labels or fixed sizes.
+    Missing internal separators are then resolved as rectangular row/column
+    spans. Non-rectangular components fail closed.
+    """
+
+    bbox = _snapped_ruled_region_bbox(page, candidate_bbox)
+    if bbox is None or not controls:
+        return None
+    left, top, width, height = bbox
+    right = left + width
+    bottom = top + height
+    edge_index = _rule_edge_index(page)
+
+    column_boundaries: list[float] = []
+    _charge_projection_comparisons(
+        page.page_index,
+        len(edge_index.vertical_coverage),
+    )
+    for coordinate, coverage in edge_index.vertical_coverage.items():
+        if coordinate < left - 0.15 or coordinate > right + 0.15:
+            continue
+        covered = sum(
+            max(
+                0,
+                min(_millipoints(bottom), chain_end)
+                - max(_millipoints(top), chain_start),
+            )
+            for chain_start, chain_end in coverage.chains_milli
+        )
+        if (
+            _within_points(coordinate, left)
+            or _within_points(coordinate, right)
+            # A merged value cell legitimately interrupts an otherwise
+            # persistent partition.  Union all disjoint source-supported
+            # chains instead of requiring one continuous run, then let the
+            # per-cell separator pass below recover that local colspan.
+            or covered * 100 >= 60 * _millipoints(height)
+        ):
+            column_boundaries.append(coordinate)
+    column_boundaries = sorted(set(column_boundaries))
+    if (
+        len(column_boundaries) < 3
+        or len(column_boundaries) > 257
+        or not _within_points(column_boundaries[0], left)
+        or not _within_points(column_boundaries[-1], right)
+        or any(
+            next_value - value <= 0.5
+            for value, next_value in zip(
+                column_boundaries,
+                column_boundaries[1:],
+                strict=False,
+            )
+        )
+    ):
+        return None
+
+    row_boundaries: list[float] = []
+    _charge_projection_comparisons(
+        page.page_index,
+        len(edge_index.horizontal_coverage)
+        * max(1, len(column_boundaries) - 2),
+    )
+    for coordinate, coverage in edge_index.horizontal_coverage.items():
+        if coordinate < top - 0.15 or coordinate > bottom + 0.15:
+            continue
+        spans_multiple_columns = any(
+            coverage.covers(
+                column_boundaries[start],
+                column_boundaries[start + 2],
+            )
+            for start in range(len(column_boundaries) - 2)
+        )
+        if (
+            _within_points(coordinate, top)
+            or _within_points(coordinate, bottom)
+            or spans_multiple_columns
+        ):
+            row_boundaries.append(coordinate)
+    row_boundaries = sorted(set(row_boundaries))
+    if (
+        len(row_boundaries) < 3
+        or len(row_boundaries) > 4_097
+        or not _within_points(row_boundaries[0], top)
+        or not _within_points(row_boundaries[-1], bottom)
+        or any(
+            next_value - value <= 0.5
+            for value, next_value in zip(
+                row_boundaries,
+                row_boundaries[1:],
+                strict=False,
+            )
+        )
+    ):
+        return None
+
+    row_count = len(row_boundaries) - 1
+    column_count = len(column_boundaries) - 1
+    slot_count = row_count * column_count
+    if slot_count > MAX_CANDIDATE_SHAPES_PER_PAGE:
+        raise _ProjectionPageLimitError(page.page_index)
+    _charge_projection_comparisons(page.page_index, 2 * slot_count)
+    parent = list(range(slot_count))
+
+    def slot(row: int, column: int) -> int:
+        return row * column_count + column
+
+    def root(index: int) -> int:
+        while parent[index] != index:
+            parent[index] = parent[parent[index]]
+            index = parent[index]
+        return index
+
+    def union(first: int, second: int) -> None:
+        left_root = root(first)
+        right_root = root(second)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    control_centers = tuple(
+        (
+            control.bbox[0] + control.bbox[2] / 2,
+            control.bbox[1] + control.bbox[3] / 2,
+        )
+        for control in controls
+    )
+
+    def band_has_control(row: int, column: int) -> bool:
+        return any(
+            column_boundaries[column] - 0.15
+            <= control_x
+            <= column_boundaries[column + 1] + 0.15
+            and row_boundaries[row] - 0.15
+            <= control_y
+            <= row_boundaries[row + 1] + 0.15
+            for control_x, control_y in control_centers
+        )
+
+    for row in range(row_count):
+        row_top = row_boundaries[row]
+        row_bottom = row_boundaries[row + 1]
+        for column in range(column_count):
+            if column + 1 < column_count and not edge_index.coverage(
+                "vertical",
+                column_boundaries[column + 1],
+                row_top,
+                row_bottom,
+            ):
+                union(slot(row, column), slot(row, column + 1))
+            if row + 1 < row_count:
+                separator = edge_index.coverage(
+                    "horizontal",
+                    row_boundaries[row + 1],
+                    column_boundaries[column],
+                    column_boundaries[column + 1],
+                )
+                # A fully ruled line inside one control-rich cell is a nested
+                # subform separator, not a new outer-grid row, when a sibling
+                # column demonstrably spans across it.
+                sibling_spans = any(
+                    not edge_index.coverage(
+                        "horizontal",
+                        row_boundaries[row + 1],
+                        column_boundaries[sibling],
+                        column_boundaries[sibling + 1],
+                    )
+                    for sibling in (column - 1, column + 1)
+                    if 0 <= sibling < column_count
+                )
+                nested_control_separator = (
+                    separator
+                    and sibling_spans
+                    and band_has_control(row, column)
+                    and band_has_control(row + 1, column)
+                )
+                if not separator or nested_control_separator:
+                    union(slot(row, column), slot(row + 1, column))
+
+    components: dict[int, set[tuple[int, int]]] = {}
+    for row in range(row_count):
+        for column in range(column_count):
+            components.setdefault(root(slot(row, column)), set()).add((row, column))
+
+    raw_cells: list[
+        tuple[
+            int,
+            int,
+            int,
+            int,
+            tuple[float, float, float, float],
+            str | None,
+            tuple[str, ...],
+            tuple[_DetectedFormGridContentFragment, ...],
+            tuple[_SourceIdentity, ...],
+            tuple[str, ...],
+        ]
+    ] = []
+    controls_by_key = {control.key: control for control in controls}
+    assigned_control_keys: set[str] = set()
+
+    def boundary_sources(
+        cell_bbox: tuple[float, float, float, float],
+    ) -> tuple[_SourceIdentity, ...]:
+        cell_left, cell_top, cell_width, cell_height = cell_bbox
+        cell_right = cell_left + cell_width
+        cell_bottom = cell_top + cell_height
+        selected: list[_SourceIdentity] = []
+        edge_pools = (
+            (edge_index.horizontal_by_y.get(cell_top, ()), cell_left, cell_right),
+            (edge_index.horizontal_by_y.get(cell_bottom, ()), cell_left, cell_right),
+            (edge_index.vertical_by_x.get(cell_left, ()), cell_top, cell_bottom),
+            (edge_index.vertical_by_x.get(cell_right, ()), cell_top, cell_bottom),
+        )
+        _charge_projection_comparisons(
+            page.page_index,
+            sum(len(edges) for edges, _start, _end in edge_pools),
+        )
+        for edges, start, end in edge_pools:
+            selected.extend(
+                (edge.source_kind, edge.source_index, None)
+                for edge in edges
+                if min(edge.end, end) - max(edge.start, start) > 0.01
+            )
+        return _bounded_source_identities(
+            selected,
+            page_index=page.page_index,
+        )
+
+    for slots in components.values():
+        rows = sorted({value[0] for value in slots})
+        columns = sorted({value[1] for value in slots})
+        expected_slots = {
+            (row, column)
+            for row in range(rows[0], rows[-1] + 1)
+            for column in range(columns[0], columns[-1] + 1)
+        }
+        if slots != expected_slots:
+            return None
+        row = rows[0]
+        column = columns[0]
+        row_span = len(rows)
+        column_span = len(columns)
+        cell_bbox = _rounded_bbox(
+            (
+                column_boundaries[column],
+                row_boundaries[row],
+                column_boundaries[column + column_span]
+                - column_boundaries[column],
+                row_boundaries[row + row_span] - row_boundaries[row],
+            )
+        )
+        if not all(
+            (
+                edge_index.coverage(
+                    "horizontal",
+                    cell_bbox[1],
+                    cell_bbox[0],
+                    cell_bbox[0] + cell_bbox[2],
+                ),
+                edge_index.coverage(
+                    "horizontal",
+                    cell_bbox[1] + cell_bbox[3],
+                    cell_bbox[0],
+                    cell_bbox[0] + cell_bbox[2],
+                ),
+                edge_index.coverage(
+                    "vertical",
+                    cell_bbox[0],
+                    cell_bbox[1],
+                    cell_bbox[1] + cell_bbox[3],
+                ),
+                edge_index.coverage(
+                    "vertical",
+                    cell_bbox[0] + cell_bbox[2],
+                    cell_bbox[1],
+                    cell_bbox[1] + cell_bbox[3],
+                ),
+            )
+        ):
+            return None
+        cell_controls = sorted(
+            (
+                control
+                for control in controls
+                if cell_bbox[0] - 0.15
+                <= (control.bbox[0] + control.bbox[2] / 2)
+                <= cell_bbox[0] + cell_bbox[2] + 0.15
+                and cell_bbox[1] - 0.15
+                <= (control.bbox[1] + control.bbox[3] / 2)
+                <= cell_bbox[1] + cell_bbox[3] + 0.15
+            ),
+            key=lambda control: (
+                control.bbox[1],
+                control.bbox[0],
+                control.key,
+            ),
+        )
+        cell_control_keys = tuple(control.key for control in cell_controls)
+        text, text_sources, text_fragments = _grid_cell_text(
+            page,
+            cell_bbox,
+            semantic_labels,
+            tuple(
+                source
+                for control in cell_controls
+                for source in control.source_objects
+                if source[0] == "character_range"
+            ),
+        )
+        unordered_content_fragments = [
+            *text_fragments,
+            *(
+                _DetectedFormGridContentFragment(
+                    source_order=0,
+                    kind="control",
+                    bbox=control.bbox,
+                    text=None,
+                    control_key=control.key,
+                    source_objects=control.source_objects,
+                )
+                for control in cell_controls
+            ),
+        ]
+        fragment_lines: list[list[_DetectedFormGridContentFragment]] = []
+        for fragment in sorted(
+            unordered_content_fragments,
+            key=lambda value: (
+                value.bbox[1] + value.bbox[3] / 2,
+                value.bbox[0],
+                value.kind,
+                value.text or value.control_key or "",
+            ),
+        ):
+            if fragment_lines:
+                line_anchor = fragment_lines[-1][0]
+                same_line_tolerance = max(
+                    1.25,
+                    0.5 * min(line_anchor.bbox[3], fragment.bbox[3]),
+                )
+            else:
+                same_line_tolerance = 0.0
+            if not fragment_lines or (
+                abs(
+                    fragment.bbox[1]
+                    + fragment.bbox[3] / 2
+                    - (
+                        fragment_lines[-1][0].bbox[1]
+                        + fragment_lines[-1][0].bbox[3] / 2
+                    )
+                )
+                > same_line_tolerance
+            ):
+                fragment_lines.append([fragment])
+            else:
+                fragment_lines[-1].append(fragment)
+        ordered_content_fragments = tuple(
+            replace(fragment, source_order=source_order)
+            for source_order, fragment in enumerate(
+                fragment
+                for line in fragment_lines
+                for fragment in sorted(
+                    line,
+                    key=lambda value: (
+                        value.bbox[0],
+                        value.bbox[1],
+                        0 if value.kind == "control" else 1,
+                        value.text or value.control_key or "",
+                    ),
+                )
+            )
+        )
+        cell_control_keys = tuple(
+            fragment.control_key
+            for fragment in ordered_content_fragments
+            if fragment.kind == "control" and fragment.control_key is not None
+        )
+        text = "\n".join(
+            fragment.text or ""
+            for fragment in ordered_content_fragments
+            if fragment.kind == "text"
+        ) or None
+        if assigned_control_keys.intersection(cell_control_keys):
+            return None
+        assigned_control_keys.update(cell_control_keys)
+        concerns = tuple(
+            dict.fromkeys(
+                concern
+                for key in cell_control_keys
+                for concern in controls_by_key[key].concern_codes
+            )
+        )
+        sources = _bounded_source_identities(
+            (
+                *boundary_sources(cell_bbox),
+                *text_sources,
+                *(
+                    source
+                    for fragment in ordered_content_fragments
+                    for source in fragment.source_objects
+                ),
+            ),
+            page_index=page.page_index,
+        )
+        if not sources:
+            return None
+        raw_cells.append(
+            (
+                row,
+                column,
+                row_span,
+                column_span,
+                cell_bbox,
+                text,
+                cell_control_keys,
+                ordered_content_fragments,
+                sources,
+                concerns,
+            )
+        )
+    if assigned_control_keys != set(controls_by_key) or not any(
+        row_span > 1 or column_span > 1
+        for _row, _column, row_span, column_span, *_rest in raw_cells
+    ):
+        return None
+
+    raw_cells.sort(key=lambda value: (value[0], value[1]))
+    currency_only = re.compile(r"^[\$\u00a3\u00a5\u20ac\u20b9]\s*$")
+    raw_by_origin = {
+        (raw[0], raw[1]): raw
+        for raw in raw_cells
+    }
+    origin_by_slot: dict[tuple[int, int], tuple[int, int]] = {}
+    _charge_projection_comparisons(page.page_index, slot_count)
+    for raw in raw_cells:
+        row, column, row_span, column_span = raw[:4]
+        for covered_row in range(row, row + row_span):
+            for covered_column in range(column, column + column_span):
+                origin_by_slot[(covered_row, covered_column)] = (row, column)
+
+    # Role evidence must be independent of whether a value slot happens to be
+    # populated.  Text-density by column is therefore unsafe: completing all
+    # policy/date slots would otherwise turn those values into labels.  A
+    # static label is established only by its own local source relationship:
+    # an adjacent currency/value decoration in the same row, or a left-edge
+    # merged label beside finer-grained value rows. One such relationship must
+    # never promote unrelated entered values elsewhere in the same column.
+    row_label_origins: set[tuple[int, int]] = set()
+    for raw in raw_cells:
+        (
+            row,
+            column,
+            row_span,
+            column_span,
+            _cell_bbox,
+            text,
+            _cell_control_keys,
+            *_rest,
+        ) = raw
+        if row == 0 or text is None or column_span != 1:
+            continue
+        if column + 1 < column_count:
+            right_origin = origin_by_slot[(row, column + 1)]
+            right = raw_by_origin[right_origin]
+            if (
+                right[0] == row
+                and right[2] == row_span
+                and right[5] is not None
+                and currency_only.fullmatch(right[5]) is not None
+            ):
+                row_label_origins.add((row, column))
+            if column == 0 and row_span > 1 and len(
+                {
+                    origin_by_slot[(covered_row, column + 1)]
+                    for covered_row in range(row, row + row_span)
+                }
+            ) > 1:
+                row_label_origins.add((row, column))
+
+    # A preprinted not-applicable annotation can sit immediately beside a
+    # composite control question without labelling the remaining row (the
+    # ACORD N/A cell is one example).  Topology and font similarity alone do
+    # not prove that arbitrary text is static: entered values commonly reuse
+    # the form's font.  Require an explicit not-applicable token as well so an
+    # unfamiliar populated cell fails closed as a value.
+    def is_explicit_not_applicable(text: str) -> bool:
+        normalized = re.sub(r"[^A-Z]", "", text.upper())
+        return normalized in {"NA", "NOTAPPLICABLE"}
+
+    static_annotation_origins: set[tuple[int, int]] = set()
+    for raw in raw_cells:
+        row, column, row_span, column_span, _cell_bbox, text, controls_here, *_rest = raw
+        if (
+            row == 0
+            or column == 0
+            or row_span == 1
+            or column_span != 1
+            or text is None
+            or not is_explicit_not_applicable(text)
+            or controls_here
+        ):
+            continue
+        left = raw_by_origin[origin_by_slot[(row, column - 1)]]
+        if (
+            left[0] == row
+            and left[2] == row_span
+            and len(left[6]) == 1
+        ):
+            static_annotation_origins.add((row, column))
+
+    cells: list[_DetectedFormGridCell] = []
+    for reading_order, raw in enumerate(raw_cells):
+        (
+            row,
+            column,
+            row_span,
+            column_span,
+            cell_bbox,
+            text,
+            cell_control_keys,
+            content_fragments,
+            sources,
+            concerns,
+        ) = raw
+        is_static = row == 0 or (
+            text is not None
+            and (
+                bool(cell_control_keys)
+                or (row, column) in row_label_origins
+                or (row, column) in static_annotation_origins
+            )
+        )
+        if is_static:
+            cell_role: Literal["static", "value"] = "static"
+            if row == 0:
+                static_kind: Literal[
+                    "column_header", "row_header", "section_header", "qualifier"
+                ] | None = "column_header"
+            elif (row, column) in static_annotation_origins:
+                static_kind = "qualifier"
+            elif row_span > 1:
+                static_kind = "section_header"
+            else:
+                static_kind = "row_header"
+            value = None
+            value_state: Literal[
+                "empty", "present", "ambiguous", "not_applicable"
+            ] = "not_applicable"
+        else:
+            cell_role = "value"
+            static_kind = None
+            if text is None or currency_only.fullmatch(text) is not None:
+                value = None
+                value_state = "empty"
+            else:
+                value = text
+                value_state = "present"
+        cells.append(
+            _DetectedFormGridCell(
+                reading_order=reading_order,
+                row=row,
+                column=column,
+                row_span=row_span,
+                column_span=column_span,
+                bbox=cell_bbox,
+                cell_role=cell_role,
+                static_kind=static_kind,
+                text=text,
+                text_state="present" if text is not None else "empty",
+                value=value,
+                value_state=value_state,
+                control_keys=cell_control_keys,
+                content_fragments=content_fragments,
+                header_cell_orders=(),
+                section_cell_orders=(),
+                label_cell_orders=(),
+                source_objects=sources,
+                concern_codes=concerns,
+            )
+        )
+    header_cells = [
+        cell
+        for cell in cells
+        if cell.static_kind == "column_header"
+        and cell.text_state == "present"
+    ]
+    row_labels = [
+        cell
+        for cell in cells
+        if cell.static_kind == "row_header"
+        and cell.text_state == "present"
+    ]
+    section_headers = [
+        cell
+        for cell in cells
+        if cell.static_kind == "section_header"
+        and cell.text_state == "present"
+    ]
+    cells = [
+        replace(
+            cell,
+            header_cell_orders=tuple(
+                candidate.reading_order
+                for candidate in header_cells
+                if cell.static_kind != "column_header"
+                and max(candidate.column, cell.column)
+                < min(
+                    candidate.column + candidate.column_span,
+                    cell.column + cell.column_span,
+                )
+            ),
+            section_cell_orders=tuple(
+                candidate.reading_order
+                for candidate in section_headers
+                if cell.cell_role == "value"
+                and candidate.row <= cell.row < candidate.row + candidate.row_span
+            ),
+            label_cell_orders=tuple(
+                candidate.reading_order
+                for candidate in row_labels
+                if cell.cell_role == "value"
+                and cell.row_span == 1
+                and candidate.row == cell.row
+                and candidate.column + candidate.column_span == cell.column
+            ),
+        )
+        if cell.static_kind != "column_header"
+        else cell
+        for cell in cells
+    ]
+    return _DetectedFormGrid(
+        bbox=bbox,
+        row_boundaries=tuple(row_boundaries),
+        column_boundaries=tuple(column_boundaries),
+        cells=tuple(cells),
+    )
+
+
 def _words_in_region(
     page: FormSourcePage,
     bbox: tuple[float, float, float, float],
@@ -6293,7 +8025,8 @@ def _control_label_for_box(
             budget.check_deadline()
 
     # A visible response label immediately above/overlapping the outline is
-    # retained as unresolved choice meaning, never as a selected state.
+    # retained as the choice meaning.  Selection still comes exclusively from
+    # marks inside the outline, so an empty labelled box stays unchecked.
     overlapping: list[_TextFragment] = []
     for fragment in fragments:
         account()
@@ -6435,6 +8168,28 @@ def _static_control_state(
     x, y, width, height = box.bbox
     inset = (x + 1, y + 1, width - 2, height - 2)
     _ix, _iy, iw, ih = inset
+    interior_chars = tuple(
+        char
+        for char in _chars_intersecting_bbox(page, inset)
+        if char.text.strip()
+    )
+    _charge_projection_comparisons(page.page_index, len(interior_chars))
+    char_sources: tuple[_SourceIdentity, ...] = ()
+    if interior_chars:
+        char_indexes = sorted({char.index for char in interior_chars})
+        ranges: list[_SourceIdentity] = []
+        start = prior = char_indexes[0]
+        for index in char_indexes[1:]:
+            if index == prior + 1:
+                prior = index
+                continue
+            ranges.append(("character_range", start, prior + 1))
+            start = prior = index
+        ranges.append(("character_range", start, prior + 1))
+        char_sources = _bounded_source_identities(
+            ranges,
+            page_index=page.page_index,
+        )
     boundary_sources = {
         (kind, index)
         for kind, index, _unused in box.source_objects
@@ -6451,7 +8206,7 @@ def _static_control_state(
         len(boundary_sources) + len(boundary_vectors),
     )
     if any(vector.fill for vector in boundary_vectors):
-        return "ambiguous", ()
+        return "ambiguous", char_sources
     interior_vectors = tuple(
         vector
         for vector in vector_index.inside(inset)
@@ -6467,12 +8222,12 @@ def _static_control_state(
         > 0.5 * iw * ih
         for vector in interior_vectors
     ):
-        return "ambiguous", ()
+        return "ambiguous", char_sources
     if any(
         vector.fill or vector.kind not in {"line", "curve"}
         for vector in interior_vectors
     ):
-        return "ambiguous", ()
+        return "ambiguous", char_sources
     _charge_projection_comparisons(
         page.page_index,
         len(interior_vectors),
@@ -6482,6 +8237,18 @@ def _static_control_state(
         for vector in interior_vectors
         if vector.kind in {"line", "curve"} and not vector.fill
     )
+    if interior_chars:
+        mark_text = "".join(
+            char.text
+            for char in sorted(
+                interior_chars,
+                key=lambda value: (value.top, value.x0, value.index),
+            )
+        ).strip()
+        recognized_marks = frozenset("xX\u2713\u2714\u2611\u2715\u2716\u00d7/\\")
+        if mark_text and all(value in recognized_marks for value in mark_text):
+            return "checked", char_sources
+        return "ambiguous", char_sources
     if not segments:
         return "unchecked", ()
     _charge_projection_comparisons(page.page_index, len(segments))
@@ -6527,15 +8294,6 @@ def _detect_static_controls(
         box
         for box in all_boxes
         if _intersects(box.bbox, group_bbox)
-        and not _chars_intersecting_bbox(
-            page,
-            (
-                box.bbox[0] + 1,
-                box.bbox[1] + 1,
-                max(0.1, box.bbox[2] - 2),
-                max(0.1, box.bbox[3] - 2),
-            ),
-        )
     ]
     geometry_counts: dict[tuple[float, float], int] = {}
     _charge_projection_comparisons(page.page_index, len(boxes))
@@ -6593,7 +8351,7 @@ def _detect_static_controls(
         label = label_candidates.get(box.bbox)
         if label is None or label_owner.get((label[1], label[2])) != box.bbox:
             continue
-        text, raw_text, label_bbox, refs, overlapping = label
+        text, raw_text, label_bbox, refs, _overlapping = label
         if not _bounded_text_value(text):
             continue
         key = _control_key(
@@ -6606,8 +8364,6 @@ def _detect_static_controls(
             ),
         )
         state, mark_sources = _static_control_state(page, box)
-        if overlapping:
-            state = "ambiguous"
         concerns = (
             ("form_control_state_ambiguous",) if state == "ambiguous" else ()
         )
@@ -6700,15 +8456,23 @@ def _detect_static_controls(
             continue
         section = max(repeated, key=lambda value: (value[0], value[1]))[1]
         section_indexes[section] = section_indexes.get(section, 0) + 1
+        state, mark_source_objects = _static_control_state(page, box)
         detected.append(
             _DetectedControl(
                 key=f"unlabeled-{section}-{section_indexes[section]}",
                 group_key=group_key,
                 bbox=box.bbox,
                 label_key=None,
-                source_objects=box.source_objects,
-                state="ambiguous",
-                concern_codes=("form_control_state_ambiguous",),
+                source_objects=_bounded_source_identities(
+                    (*box.source_objects, *mark_source_objects),
+                    page_index=page.page_index,
+                ),
+                state=state,
+                concern_codes=(
+                    ("form_control_state_ambiguous",)
+                    if state == "ambiguous"
+                    else ()
+                ),
             )
         )
     detected.sort(key=lambda value: (value.bbox[1], value.bbox[0], value.key))
@@ -7740,6 +9504,46 @@ def _complete_static_parties_and_insurers_candidate(
     return True
 
 
+def _nearby_form_grid_group_key(
+    ir: DocumentIR,
+    page: FormSourcePage,
+    grid_bbox: tuple[float, float, float, float],
+    fields: Sequence[_DetectedField],
+) -> str:
+    """Name a ruled form from nearby source structure, never file identity."""
+
+    left, top, width, height = grid_bbox
+    right = left + width
+    maximum_gap = max(48.0, min(96.0, height * 0.25))
+    candidates: list[tuple[float, float, str]] = []
+    for field in fields:
+        field_right = field.bbox[0] + field.bbox[2]
+        field_bottom = field.bbox[1] + field.bbox[3]
+        overlap = max(0.0, min(right, field_right) - max(left, field.bbox[0]))
+        gap = top - field_bottom
+        if overlap > 0.5 and -0.5 <= gap <= maximum_gap:
+            candidates.append((gap, -overlap, field.group_key))
+    if candidates:
+        return min(candidates)[2]
+
+    lookup = _projection_ir_lookup(ir)
+    page_record = lookup.pages_by_index[page.page_index]
+    headings: list[tuple[float, float, str]] = []
+    for element_id in page_record.presentation_element_ids:
+        element = lookup.elements[element_id]
+        text = _element_text(element)
+        bbox = _bbox_tuple(element, lookup.bboxes)
+        if text is None or bbox is None or element.type.casefold() != "heading":
+            continue
+        heading_right = bbox[0] + bbox[2]
+        heading_bottom = bbox[1] + bbox[3]
+        overlap = max(0.0, min(right, heading_right) - max(left, bbox[0]))
+        gap = top - heading_bottom
+        if overlap > 0.5 and -0.5 <= gap <= maximum_gap:
+            headings.append((gap, -overlap, _slug(text.rstrip(":"))))
+    return min(headings)[2] if headings else "ruled-form-grid"
+
+
 def _static_page_form_candidate(
     ir: DocumentIR,
     page: FormSourcePage,
@@ -7762,80 +9566,58 @@ def _static_page_form_candidate(
     labels: dict[str, _DetectedLabel] = {
         label.key: label for label in (*ruled_labels, *implicit_labels)
     }
-    if not fields:
-        return ()
-
     dense_table = _dense_preserved_table_bbox(
         ir, page.page_index, page.width, page.height
     )
-    _charge_projection_comparisons(page.page_index, len(fields))
-    coverage_fields = [field for field in fields if field.group_key == "coverages"]
-    if coverage_fields and dense_table is not None:
-        top = min(field.bbox[1] for field in coverage_fields)
-        edge_index = _rule_edge_index(page)
-        left_edges = edge_index.nearby(
-            "vertical",
-            dense_table[0],
-            tolerance=2.0,
-        )
-        _charge_projection_comparisons(
-            page.page_index,
-            len(left_edges),
-        )
-        left = min(
-            (
-                edge.coordinate
-                for edge in left_edges
-            ),
-            default=round(dense_table[0], 3),
-        )
-        right_edges = edge_index.nearby(
-            "vertical",
-            dense_table[0] + dense_table[2],
-            tolerance=2.0,
-        )
-        _charge_projection_comparisons(
-            page.page_index,
-            len(right_edges),
-        )
-        right = max(
-            (
-                edge.coordinate
-                for edge in right_edges
-            ),
-            default=round(dense_table[0] + dense_table[2], 3),
-        )
-        table_bottom = dense_table[1] + dense_table[3]
-        bottom_edges = edge_index.nearby(
-            "horizontal",
-            table_bottom,
-            tolerance=3.0,
-        )
-        _charge_projection_comparisons(
-            page.page_index,
-            len(bottom_edges),
-        )
-        bottom = min(
-            (
-                edge.coordinate
-                for edge in bottom_edges
-            ),
-            key=lambda value: abs(value - table_bottom),
-            default=round(table_bottom, 3),
-        )
-        coverage_bbox = _rounded_bbox((left, top, right - left, bottom - top))
-        coverage_group_key = coverage_fields[0].group_key
-        controls, control_labels = _detect_static_controls(
+    ruled_grid_bbox = (
+        _snapped_ruled_region_bbox(page, dense_table)
+        if dense_table is not None
+        else None
+    )
+    form_grid: _DetectedFormGrid | None = None
+    form_grid_group_key: str | None = None
+    controls: tuple[_DetectedControl, ...] = ()
+    if ruled_grid_bbox is not None:
+        provisional_group_key = _nearby_form_grid_group_key(
+            ir,
             page,
-            group_bbox=coverage_bbox,
-            group_key=coverage_group_key,
+            ruled_grid_bbox,
+            fields,
         )
-        if len(controls) > MAX_FORM_CONTROLS_PER_GROUP:
+        candidate_controls, control_labels = _detect_static_controls(
+            page,
+            group_bbox=ruled_grid_bbox,
+            group_key=provisional_group_key,
+        )
+        if len(candidate_controls) > MAX_FORM_CONTROLS_PER_GROUP:
             raise _ProjectionPageLimitError(page.page_index)
-        labels.update({label.key: label for label in control_labels})
-    else:
-        coverage_bbox = None
-        controls = ()
+        form_grid = _build_ruled_form_grid(
+            page,
+            ruled_grid_bbox,
+            candidate_controls,
+            control_labels,
+        )
+        if form_grid is not None:
+            form_grid_group_key = provisional_group_key
+            controls = candidate_controls
+            labels.update({label.key: label for label in control_labels})
+            detached = [
+                field
+                for field in fields
+                if field.group_key == form_grid_group_key
+                and not _intersects(field.bbox, form_grid.bbox)
+            ]
+            if detached:
+                detached_key = _slug(f"{form_grid_group_key} header fields")
+                fields = [
+                    replace(field, group_key=detached_key)
+                    if field in detached
+                    else field
+                    for field in fields
+                ]
+
+    if not fields and form_grid is None:
+        return ()
 
     # Existing source-grounded headings become group labels only when their
     # visible slug names an already detected spatial group and no field owns
@@ -7898,13 +9680,19 @@ def _static_page_form_candidate(
         group_controls = [
             control for control in controls if control.group_key == group_key
         ]
+        group_grid = (
+            form_grid
+            if form_grid_group_key is not None
+            and group_key == form_grid_group_key
+            else None
+        )
         if (
             len(group_fields) > MAX_FORM_FIELDS_PER_GROUP
             or len(group_controls) > MAX_FORM_CONTROLS_PER_GROUP
         ):
             raise _ProjectionPageLimitError(page.page_index)
-        if group_key == "coverages" and coverage_bbox is not None:
-            group_bbox = coverage_bbox
+        if group_grid is not None:
+            group_bbox = group_grid.bbox
         elif group_key == "cancellation" and group_fields:
             group_bbox = _smallest_native_container(
                 page, group_fields[0].bbox
@@ -7916,11 +9704,17 @@ def _static_page_form_candidate(
             )
         contributor_data = _group_contributors(
             ir,
+            source_page=page,
             page_index=page.page_index,
             group_key=group_key,
             group_bbox=group_bbox,
-            dense_table_bbox=(dense_table if group_key == "coverages" else None),
+            dense_table_bbox=(dense_table if group_grid is not None else None),
+            grid_owner=group_grid is not None,
         )
+        if contributor_data is None and group_grid is not None:
+            # A ruled grid cannot acquire a substitute prose/control anchor.
+            # Without one source-complete table owner it remains diagnostic.
+            continue
         if contributor_data is None:
             owner_keys = {
                 *(field.key for field in group_fields),
@@ -7982,7 +9776,8 @@ def _static_page_form_candidate(
         )
         canonical_mode: Literal["inert", "replace"] = (
             "replace"
-            if _complete_static_parties_and_insurers_candidate(
+            if group_grid is not None
+            or _complete_static_parties_and_insurers_candidate(
                 group_key=group_key,
                 group_bbox=group_bbox,
                 fields=group_fields,
@@ -8022,7 +9817,7 @@ def _static_page_form_candidate(
                 + 2 * len(group_controls)
                 + len(group_labels)
                 + valid_label_relationships
-                + (group_key == "coverages" or canonical_mode == "replace")
+                + (canonical_mode == "replace")
             ),
         )
         for field in group_fields:
@@ -8116,7 +9911,7 @@ def _static_page_form_candidate(
                     ("control_of", control_token, f"group:{group_key}"),
                 )
             )
-        if group_key == "coverages" or canonical_mode == "replace":
+        if canonical_mode == "replace":
             relationships.append(
                 (
                     "form_overlay_of",
@@ -8125,7 +9920,7 @@ def _static_page_form_candidate(
                 )
             )
         group_sources = _cell_source_objects(page, group_bbox)
-        if group_key == "coverages" and dense_table is not None:
+        if group_grid is not None and dense_table is not None:
             retained: list[tuple[str, int, int | None]] = []
             vector_index = _projection_vector_index(page)
             _charge_projection_comparisons(
@@ -8145,7 +9940,7 @@ def _static_page_form_candidate(
                 ):
                     continue
                 retained.append(source)
-            table_top = dense_table[1]
+            table_top = group_grid.bbox[1]
             nearby_table_edges = _rule_edge_index(page).nearby(
                 "line_horizontal",
                 table_top,
@@ -8178,15 +9973,15 @@ def _static_page_form_candidate(
                 for vector in vector_index.rects_by_area
                 if max(
                     0.0,
-                    min(vector.x1, dense_table[0] + dense_table[2])
-                    - max(vector.x0, dense_table[0]),
+                    min(vector.x1, group_bbox[0] + group_bbox[2])
+                    - max(vector.x0, group_bbox[0]),
                 )
                 * max(
                     0.0,
-                    min(vector.bottom, dense_table[1] + dense_table[3])
-                    - max(vector.top, dense_table[1]),
+                    min(vector.bottom, group_bbox[1] + group_bbox[3])
+                    - max(vector.top, group_bbox[1]),
                 )
-                >= 0.9 * dense_table[2] * dense_table[3]
+                >= 0.9 * group_bbox[2] * group_bbox[3]
             ]
             if table_containers:
                 table_container = min(
@@ -8208,11 +10003,7 @@ def _static_page_form_candidate(
                 ),
                 page_index=page.page_index,
             )
-        group_concerns = (
-            ["form_table_ownership_ambiguous"]
-            if group_key == "coverages"
-            else []
-        )
+        group_concerns: list[str] = []
         if any(field.value_state == "ambiguous" for field in group_fields):
             group_concerns.append("form_value_state_ambiguous")
         candidates.append(
@@ -8230,6 +10021,7 @@ def _static_page_form_candidate(
                 records=tuple(records),
                 relationships=tuple(relationships),
                 source_objects=group_sources,
+                form_grid=group_grid,
                 concern_codes=tuple(group_concerns),
             )
         )
@@ -8515,10 +10307,12 @@ def _smallest_native_container(
 def _group_contributors(
     ir: DocumentIR,
     *,
+    source_page: FormSourcePage,
     page_index: int,
     group_key: str,
     group_bbox: tuple[float, float, float, float],
     dense_table_bbox: tuple[float, float, float, float] | None,
+    grid_owner: bool = False,
 ) -> tuple[str, str, tuple[str, ...], tuple[str, ...]] | None:
     index = _projection_presentation_index(ir, page_index)
     if not index.records:
@@ -8550,16 +10344,21 @@ def _group_contributors(
             and _looks_like_form_label(visible_text)
         ):
             values.append(candidate)
-    if group_key == "coverages":
+    if grid_owner:
         _charge_projection_comparisons(page_index, len(values))
         values = [
             value
             for value in values
-            if value.element.type.casefold() in {"heading", "table"}
-            and not (
-                value.element.type.casefold() == "table"
-                and dense_table_bbox is not None
-                and not _intersects(value.bbox, dense_table_bbox)
+            if (
+                value.element.type.casefold() in {"table", "table_candidate"}
+                and (
+                    dense_table_bbox is None
+                    or _intersects(value.bbox, dense_table_bbox)
+                )
+            )
+            or (
+                value.element.type.casefold() in {"text", "heading"}
+                and _bbox_contains(group_bbox, value.bbox)
             )
         ]
     elif group_key == "parties-and-insurers":
@@ -8587,13 +10386,114 @@ def _group_contributors(
     tables = [
         value
         for value in values
-        if value.element.type.casefold() == "table"
+        if value.element.type.casefold()
+        in ({"table", "table_candidate"} if grid_owner else {"table"})
     ]
-    anchor = tables[0] if tables else values[0]
-    if group_key == "coverages":
+    _charge_projection_comparisons(page_index, len(tables))
+    tight_tables = [
+        value
+        for value in tables
+        if grid_owner
+        or (
+            max(
+                0.0,
+                min(value.bbox[0] + value.bbox[2], group_bbox[0] + group_bbox[2])
+                - max(value.bbox[0], group_bbox[0]),
+            )
+            * max(
+                0.0,
+                min(value.bbox[1] + value.bbox[3], group_bbox[1] + group_bbox[3])
+                - max(value.bbox[1], group_bbox[1]),
+            )
+            >= 0.8 * value.bbox[2] * value.bbox[3]
+        )
+    ]
+    if grid_owner:
+        # A coarse table candidate may extend beyond the snapped form grid.
+        # Replacing it is lossless only when every source character in that
+        # outside fringe has an independently source-matching prose owner.
+        safe_tables: list[_PresentationCandidate] = []
+        spatial_index = _projection_spatial_index(source_page)
+        for table in tight_tables:
+            table_left, table_top, table_width, table_height = table.bbox
+            table_right = table_left + table_width
+            table_bottom = table_top + table_height
+            group_left, group_top, group_width, group_height = group_bbox
+            group_right = group_left + group_width
+            group_bottom = group_top + group_height
+            overlap_left = max(table_left, group_left)
+            overlap_top = max(table_top, group_top)
+            overlap_right = min(table_right, group_right)
+            overlap_bottom = min(table_bottom, group_bottom)
+            if overlap_left >= overlap_right or overlap_top >= overlap_bottom:
+                fringe_boxes = [table.bbox]
+            else:
+                fringe_boxes = [
+                    (table_left, table_top, table_width, overlap_top - table_top),
+                    (
+                        table_left,
+                        overlap_bottom,
+                        table_width,
+                        table_bottom - overlap_bottom,
+                    ),
+                    (
+                        table_left,
+                        overlap_top,
+                        overlap_left - table_left,
+                        overlap_bottom - overlap_top,
+                    ),
+                    (
+                        overlap_right,
+                        overlap_top,
+                        table_right - overlap_right,
+                        overlap_bottom - overlap_top,
+                    ),
+                ]
+            outside_chars = {
+                char.index
+                for fringe in fringe_boxes
+                if fringe[2] > 0.01 and fringe[3] > 0.01
+                for char in spatial_index.chars_centered(fringe, above=0.0)
+            }
+            independently_owned_char_indexes: set[int] = set()
+            if outside_chars:
+                fringe_candidates = index.intersecting(table.bbox)
+                _charge_projection_comparisons(
+                    page_index,
+                    len(fringe_candidates),
+                )
+                for candidate in fringe_candidates:
+                    if candidate.element.type.casefold() in {
+                        "table",
+                        "table_candidate",
+                    } or _bbox_contains(group_bbox, candidate.bbox):
+                        continue
+                    visible_text = _element_text(candidate.element)
+                    if visible_text is None:
+                        continue
+                    source = _spatial_chars(source_page, candidate.bbox)
+                    if source is None or re.sub(
+                        r"\s+", " ", source[0]
+                    ).strip() != re.sub(r"\s+", " ", visible_text).strip():
+                        continue
+                    for kind, start, end in source[3]:
+                        if kind == "character_range" and end is not None:
+                            independently_owned_char_indexes.update(
+                                range(start, end)
+                            )
+            if outside_chars.issubset(independently_owned_char_indexes):
+                safe_tables.append(table)
+        tight_tables = safe_tables
+        if not tight_tables:
+            return None
+    anchor = tight_tables[0] if tight_tables else values[0]
+    if grid_owner:
         values.sort(
             key=lambda value: (
-                1 if value.element.type.casefold() == "table" else 0,
+                1
+                if value.element.type.casefold()
+                in {"table", "table_candidate"}
+                else 0,
                 value.bbox[0],
             )
         )
@@ -9126,6 +11026,332 @@ def _render_static_parties_and_insurers(
     return "\n".join(markdown_lines), "\n".join(text_lines)
 
 
+def _safe_html_lines(value: str) -> str:
+    return "<br>".join(
+        html.escape(_safe_plain_text(line), quote=True)
+        for line in value.splitlines()
+    )
+
+
+def _render_public_form_grid(
+    *,
+    group: PublicFormGroup,
+    controls: Sequence[PublicFormControl],
+    labels: Sequence[PublicFormLabel],
+) -> tuple[str, str] | None:
+    grid = group.form_grid
+    if grid is None:
+        return None
+    controls_by_id = {control.id: control for control in controls}
+    if len(controls_by_id) != len(controls) or set(controls_by_id) != set(
+        group.control_ids
+    ):
+        return None
+    labels_by_id = {label.id: label for label in labels}
+    if len(labels_by_id) != len(labels):
+        return None
+    dom_prefix = "form-grid-" + hashlib.sha256(
+        group.id.encode("utf-8")
+    ).hexdigest()[:16]
+    cell_by_slot: dict[tuple[int, int], PublicFormGridCell] = {}
+    for cell in grid.cells:
+        for control_id in cell.control_ids:
+            control = controls_by_id.get(control_id)
+            if (
+                control is None
+                or control.origin != "static_vector"
+                or not _bbox_contains(
+                    (cell.bbox.x, cell.bbox.y, cell.bbox.width, cell.bbox.height),
+                    _public_form_bbox(control),
+                    tolerance=0.5,
+                )
+                or (control.state == "ambiguous")
+                != ("form_control_state_ambiguous" in control.concern_codes)
+            ):
+                return None
+        for row in range(cell.row, cell.row + cell.row_span):
+            for column in range(cell.column, cell.column + cell.column_span):
+                cell_by_slot[(row, column)] = cell
+
+    control_glyph = {
+        "checked": "☑",
+        "unchecked": "☐",
+        "ambiguous": "☐?",
+        "not_applicable": "□—",
+    }
+
+    def rendered_control(control_id: str, *, html_mode: bool) -> str:
+        control = controls_by_id[control_id]
+        if not html_mode:
+            return control_glyph[control.state]
+        attributes = [
+            'role="checkbox"',
+            'aria-checked="'
+            + (
+                "mixed"
+                if control.state == "ambiguous"
+                else str(control.state == "checked").lower()
+            )
+            + '"',
+            f'data-state="{control.state}"',
+        ]
+        if control.label_id in labels_by_id:
+            attributes.append(
+                'aria-label="'
+                + html.escape(labels_by_id[control.label_id].text, quote=True)
+                + '"'
+            )
+        return (
+            f"<span {' '.join(attributes)}>"
+            f"{html.escape(control_glyph[control.state])}</span>"
+        )
+
+    def fragment_rows(
+        cell: PublicFormGridCell,
+    ) -> tuple[tuple[PublicFormGridContentFragment, ...], ...]:
+        """Recover source-visible rows inside a merged outer-grid cell.
+
+        ``content_fragments`` intentionally retain source bboxes.  Joining
+        those fragments with ``<br>`` discards paired options (for example,
+        CLAIMS-MADE/OCCUR) and turns a nested form into one vertical list.
+        Cluster only fragments whose vertical centres are source-aligned;
+        horizontal placement remains available on every emitted fragment.
+        """
+
+        rows: list[list[PublicFormGridContentFragment]] = []
+        for fragment in sorted(
+            cell.content_fragments,
+            key=lambda value: (
+                value.bbox.y + value.bbox.height / 2,
+                value.bbox.x,
+                value.source_order,
+            ),
+        ):
+            if rows:
+                anchor = rows[-1][0]
+                tolerance = max(
+                    1.25,
+                    0.5 * min(anchor.bbox.height, fragment.bbox.height),
+                )
+                anchor_center = anchor.bbox.y + anchor.bbox.height / 2
+                fragment_center = fragment.bbox.y + fragment.bbox.height / 2
+            else:
+                tolerance = 0.0
+                anchor_center = fragment_center = 0.0
+            if not rows or abs(fragment_center - anchor_center) > tolerance:
+                rows.append([fragment])
+            else:
+                rows[-1].append(fragment)
+        return tuple(
+            tuple(
+                sorted(
+                    row,
+                    key=lambda value: (
+                        value.bbox.x,
+                        value.bbox.y,
+                        value.source_order,
+                    ),
+                )
+            )
+            for row in rows
+        )
+
+    def compact_coordinate(value: float) -> str:
+        return f"{value:.3f}".rstrip("0").rstrip(".") or "0"
+
+    def positioned_cell_content(cell: PublicFormGridCell) -> str:
+        """Render a composite cell without throwing away nested geometry."""
+
+        rendered_rows: list[str] = []
+        for row_index, fragments in enumerate(fragment_rows(cell)):
+            row_top = min(fragment.bbox.y for fragment in fragments)
+            row_bottom = max(
+                fragment.bbox.y + fragment.bbox.height for fragment in fragments
+            )
+            prior_right = cell.bbox.x
+            rendered_fragments: list[str] = []
+            for fragment in fragments:
+                gap = max(0.0, fragment.bbox.x - prior_right)
+                source_bbox = " ".join(
+                    compact_coordinate(value)
+                    for value in (
+                        fragment.bbox.x,
+                        fragment.bbox.y,
+                        fragment.bbox.width,
+                        fragment.bbox.height,
+                    )
+                )
+                content = (
+                    _safe_html_lines(fragment.text or "")
+                    if fragment.kind == "text"
+                    else rendered_control(fragment.control_id or "", html_mode=True)
+                )
+                fragment_style = (
+                    "display:inline-flex;box-sizing:border-box;"
+                    f"flex:0 0 {compact_coordinate(fragment.bbox.width)}pt;"
+                    f"min-height:{compact_coordinate(fragment.bbox.height)}pt;"
+                    f"margin-left:{compact_coordinate(gap)}pt;"
+                    "align-items:flex-start;white-space:normal;overflow-wrap:anywhere"
+                )
+                rendered_fragments.append(
+                    '<span data-form-fragment="'
+                    + fragment.kind
+                    + '" data-source-bbox="'
+                    + source_bbox
+                    + '" style="'
+                    + fragment_style
+                    + '">'
+                    + content
+                    + "</span>"
+                )
+                prior_right = max(
+                    prior_right,
+                    fragment.bbox.x + fragment.bbox.width,
+                )
+            row_style = (
+                "display:flex;position:absolute;box-sizing:border-box;"
+                "align-items:flex-start;left:0;"
+                f"top:{compact_coordinate(row_top - cell.bbox.y)}pt;"
+                f"min-height:{compact_coordinate(row_bottom - row_top)}pt;"
+                "text-align:left"
+            )
+            rendered_rows.append(
+                f'<div data-form-fragment-row="{row_index}" '
+                f'data-source-y="{compact_coordinate(row_top)}" '
+                f'style="{row_style}">{"".join(rendered_fragments)}</div>'
+            )
+        return (
+            '<div data-form-fragment-layout="source-rows" '
+            'style="display:block;position:relative;box-sizing:border-box;'
+            f'width:{compact_coordinate(cell.bbox.width)}pt;'
+            f'height:{compact_coordinate(cell.bbox.height)}pt;text-align:left">'
+            + "".join(rendered_rows)
+            + "</div>"
+        )
+
+    def cell_content(cell: PublicFormGridCell, *, html_mode: bool) -> str:
+        # A row-spanning static cell is commonly a nested subform rather than
+        # a single paragraph.  Preserve its source rows and horizontal gaps;
+        # simple cells retain compact HTML/plain-text serialization.
+        source_rows = fragment_rows(cell)
+        source_positioned = cell.row_span > 1 and len(source_rows) > 1
+        if source_positioned and html_mode:
+            parts = [positioned_cell_content(cell)]
+        elif source_positioned:
+            parts = [
+                "\n".join(
+                    " ".join(
+                        _safe_plain_text(fragment.text or "")
+                        if fragment.kind == "text"
+                        else rendered_control(
+                            fragment.control_id or "",
+                            html_mode=False,
+                        )
+                        for fragment in row
+                    )
+                    for row in source_rows
+                )
+            ]
+        else:
+            parts = [
+                (
+                    _safe_html_lines(fragment.text or "")
+                    if html_mode and fragment.kind == "text"
+                    else _safe_plain_text(fragment.text or "")
+                    if fragment.kind == "text"
+                    else rendered_control(
+                        fragment.control_id or "",
+                        html_mode=html_mode,
+                    )
+                )
+                for fragment in cell.content_fragments
+            ]
+        if cell.value is not None and cell.value != cell.text:
+            parts.append(
+                _safe_html_lines(cell.value)
+                if html_mode
+                else " ".join(
+                    _safe_plain_text(line)
+                    for line in cell.value.splitlines()
+                    if line.strip()
+                )
+            )
+        if cell.value_state == "ambiguous":
+            parts.append(
+                '<span data-value-state="ambiguous">?</span>'
+                if html_mode
+                else "[uncertain value]"
+            )
+        return ("<br>" if html_mode else " ").join(parts)
+
+    row_count = len(grid.row_boundaries) - 1
+    column_count = len(grid.column_boundaries) - 1
+    markdown_lines = ['<table data-form-grid="true">', "<thead>"]
+    for row in range(row_count):
+        if row == 1:
+            markdown_lines.extend(("</thead>", "<tbody>"))
+        markdown_lines.append("<tr>")
+        for cell in (value for value in grid.cells if value.row == row):
+            tag = "th" if cell.static_kind in {
+                "column_header",
+                "row_header",
+                "section_header",
+            } else "td"
+            cell_dom_id = f"{dom_prefix}-cell-{cell.reading_order}"
+            attributes = [
+                f'id="{html.escape(cell_dom_id, quote=True)}"',
+                f'data-reading-order="{cell.reading_order}"',
+                f'data-cell-role="{cell.cell_role}"',
+                f'data-text-state="{cell.text_state}"',
+                f'data-value-state="{cell.value_state}"',
+            ]
+            if cell.static_kind is not None:
+                attributes.append(f'data-static-kind="{cell.static_kind}"')
+            if cell.static_kind == "column_header":
+                attributes.append('scope="col"')
+            elif cell.static_kind == "row_header":
+                attributes.append('scope="row"')
+            elif cell.static_kind == "section_header":
+                attributes.append('scope="rowgroup"')
+            structural_orders = [
+                *cell.header_cell_orders,
+                *cell.section_cell_orders,
+                *cell.label_cell_orders,
+            ]
+            if structural_orders:
+                attributes.append(
+                    'headers="'
+                    + " ".join(
+                        f"{dom_prefix}-cell-{value}"
+                        for value in structural_orders
+                    )
+                    + '"'
+                )
+            if cell.row_span > 1:
+                attributes.append(f'rowspan="{cell.row_span}"')
+            if cell.column_span > 1:
+                attributes.append(f'colspan="{cell.column_span}"')
+            markdown_lines.append(
+                f"<{tag} {' '.join(attributes)}>"
+                f"{cell_content(cell, html_mode=True)}</{tag}>"
+            )
+        markdown_lines.append("</tr>")
+    markdown_lines.extend(("</tbody>", "</table>"))
+
+    text_lines: list[str] = []
+    for row in range(row_count):
+        values: list[str] = []
+        for column in range(column_count):
+            cell = cell_by_slot[(row, column)]
+            values.append(
+                cell_content(cell, html_mode=False)
+                if (cell.row, cell.column) == (row, column)
+                else ""
+            )
+        text_lines.append("\t".join(values).rstrip())
+    return "\n".join(markdown_lines), "\n".join(text_lines).rstrip("\r\n")
+
+
 def _render_public_form_records(
     *,
     group: PublicFormGroup,
@@ -9134,6 +11360,13 @@ def _render_public_form_records(
     controls: Sequence[PublicFormControl],
     pairs: Sequence[PublicKeyValuePair],
 ) -> tuple[str, str]:
+    if group.form_grid is not None:
+        rendered_grid = _render_public_form_grid(
+            group=group,
+            controls=controls,
+            labels=labels,
+        )
+        return rendered_grid if rendered_grid is not None else ("", "")
     if group.group_key == "parties-and-insurers":
         rendered = _render_static_parties_and_insurers(
             group=group,
@@ -9234,6 +11467,9 @@ def _render_public_form_records(
 __all__ = [
     "FormEvidenceReport",
     "FormGroupRendering",
+    "PublicFormGrid",
+    "PublicFormGridCell",
+    "PublicFormGridContentFragment",
     "extract_form_evidence",
     "form_processing_summary",
     "project_form_semantics",

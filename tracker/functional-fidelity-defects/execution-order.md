@@ -8,12 +8,13 @@ Operating limit: **one production work item in progress at a time**
 ## Purpose
 
 This is the operative order for resolving the 13 source-grounded root defects
-tracked as `FFD-001` through `FFD-013` and the post-baseline P04 production-
-control defect `FFD-014`. It deliberately does not sequence the 278 raw
+tracked as `FFD-001` through `FFD-013` and the post-baseline FFD-014 P04
+production-control and FFD-015 chart asset/arbitration defects. It deliberately
+does not sequence the 278 raw
 comparator signals: those signals are correlated Markdown, JSON, table,
 visual, and DOM manifestations rather than 278 independent defects.
 
-The queue contains 23 bounded implementation slices. A slice is small enough
+The queue contains 24 bounded implementation slices. A slice is small enough
 to reproduce, correct, review, and validate independently. One correction may
 improve more than one PDF, but each affected defect and PDF keeps its own
 acceptance evidence and may close only after its focused three-surface gate
@@ -113,7 +114,7 @@ independent requirements.
 |---|---:|---|---|---|
 | A — bounded text/table closures | 1, 1a, 2–6 | Close the blocking Clinical P04 control, the narrow Postal and ACORD gaps, then stabilize source Unicode/text | Final v2 baseline and issue-card DoR | Focused matrices pass; all 15 service outputs are drift-screened |
 | B — ownership and page semantics | 7–11 | Establish safe cross-owner text attribution, then stabilize order and hierarchy | Wave A | All visual-owner controls and all relationship/order controls pass; all 15 drift-screened |
-| C — chart semantics | 12–18 | Assemble only printed, source-grounded panels, axes, categories, legends, series, and values | Wave B | All seven chart PDFs and non-chart controls pass; all 15 drift-screened |
+| C — chart asset custody and semantics | 11a, 12–18 | Retain every detected chart asset, classify family/complexity, arbitrate one terminal primary, then assemble only source-grounded semantics | Wave B | All seven chart PDFs and non-chart controls pass; all 15 drift-screened |
 | D — diagram semantics | 19–21 | Recover only source-proven topology for three distinct diagram families | Wave B; relevant chart controls from Wave C must remain stable | Clinical, Uber, and Component diagram matrix passes; all 15 drift-screened |
 | E — diagnostic adjudication and release | 22 | Decide whether diagnostic-only board OCR is a functional release gap and, if so, correct it safely | Waves A–D | Fresh all-15 LlamaParse/service benchmark and consolidated release decision |
 
@@ -244,11 +245,14 @@ the final frozen all-15 campaign remain pending.
 - Closure evidence: exact four source em dashes; numeric negatives, ordinary
   hyphens, smart quotes, and table column structure remain unchanged.
 
-#### 4. ACORD lower coverage-grid ownership — `FFD-010`
+#### 4. ACORD structure-preserving coverage form-grid ownership — `FFD-010`
 
-- Target: `insurance-acord`, physical/printed page 1, lower coverage grid.
-- Expected: one source-faithful semantic owner represents the lower grid with
-  correct table-versus-form ownership; it is neither omitted nor duplicated.
+- Target: `insurance-acord`, physical/printed page 1, bounded lower coverage
+  grid excluding the disclaimer above and description box below.
+- Expected: one source-faithful semantic owner preserves the original logical
+  row/column groups, spans, labels, blank/entered value slots, and static
+  control states. Every field label and value remains in its source-relative
+  cell; the grid is neither flattened, omitted, nor duplicated.
 - Owner: P04-US04, with P03-US06 and P03-US04 secondary.
 - Dependency: item 3, because the shared table presentation path must be
   stable first.
@@ -259,8 +263,10 @@ the final frozen all-15 campaign remain pending.
   `clinical-study` pp2 and 4, `ny-timetable` pp1–3, `finance-10k` pp1–3, and
   `postal-10k` pp1–3.
 - Closure evidence: upper parties-and-insurers form remains once-only and
-  unchanged; lower coverage grid has one owner; Health's blank visual-owned
-  table remains suppressed; NY keeps 13 columns.
+  unchanged; the bounded lower grid has one structure-preserving owner across
+  JSON/Markdown/accessible DOM; blank and entered variants preserve cell/span/
+  control positions; adjacent disclaimer/description remain separate; Health's
+  blank visual-owned table remains suppressed; NY keeps 13 columns.
 
 #### 5. Component NOTE private-use glyph — `FFD-007`
 
@@ -396,6 +402,39 @@ source-proven mark relationships. They must not reproduce LlamaParse's
 interpolated bar/line values without an independently validated derivation,
 provenance, and tolerance contract.
 
+FFD-015 first retains one source-faithful asset for every detected chart and
+records family/complexity evidence. FFD-003 semantic analyzers may then promote
+an owner to `structured_primary` only through a family completeness gate;
+unsupported or incomplete analysis remains image-primary with the exact same
+asset. Asset retention alone never satisfies FFD-003 semantic assembly.
+
+#### 11a. Seven-PDF chart source-asset and arbitration substrate — `FFD-015`
+
+- Target: every detected chart owner in `catastrophe-recap`, `clean-energy`,
+  `egov-survey`, `esg-metrics`, `health-report`, `manufacturing-report`, and
+  `uber-earnings`; Health's mixed bar/marker and bubble charts are the initial
+  visual oracles.
+- Expected: each owner first retains one deterministic source PNG with complete
+  bbox/render/hash custody, then records independent family and regular/complex
+  evidence, semantic capability/completeness disposition, and exactly one of
+  `structured_primary`, `image_primary_unsupported`,
+  `image_primary_incomplete`, or `asset_unavailable`.
+- Owner: P05-US01/P05-US05 with canonical/frontend asset projection.
+- Dependency: Wave B and item 7's visual-text owner attribution. This substrate
+  must land before every FFD-003 semantic-family slice.
+- Risk/size: high; universal crop custody, response caps, terminal-state schema,
+  asset transport, Markdown/DOM arbitration, accessibility, and false chart
+  promotion cross backend/frontend boundaries.
+- Affected rerun through both systems: all seven chart PDFs listed above.
+- Service controls: `insurance-acord`, `clinical-study`, `component-datasheet`,
+  `ny-timetable`, `postal-10k`, `finance-10k`, and `purchase-agreement`.
+- Closure evidence: every routed owner has one reviewed crop or an explicit
+  `asset_unavailable` refusal; the focused matrix proves all four terminal
+  states and legal transitions; one primary per owner appears across JSON,
+  Markdown, and DOM; asset identity survives semantic promotion; transcript,
+  caption, and source note occur once; no dangling asset, fabricated point,
+  neighbor crop, or non-chart promotion exists.
+
 #### 12. eGov year/category series association — `FFD-003`
 
 - Target: `egov-survey` p1.
@@ -403,8 +442,8 @@ provenance, and tolerance contract.
   printed years, EGDI categories, and bar-label series with closed evidence
   references; `40` and `44` remain exact.
 - Owner: P05-US03.
-- Dependency: Wave B. This is the first chart case because it has complete,
-  exact native labels and a single conventional panel.
+- Dependency: item 11a. This is the first semantic chart case because it has
+  complete, exact native labels and a single conventional panel.
 - Risk/size: medium and the safest reusable chart-assembly proving case.
 - Affected rerun through both systems: `egov-survey` full PDF.
 - Service controls: `catastrophe-recap`, `clean-energy`, `esg-metrics`,
@@ -438,14 +477,17 @@ provenance, and tolerance contract.
   expose source-grounded axes, categories, and series organization without
   reviving the blank visual-owned table.
 - Owner: P03-US02/P02-US06 and P05-US03.
-- Dependency: items 7, 12, and 13.
+- Dependency: items 7, 11a, 12, and 13. Item 11a establishes immutable source
+  custody and terminal-state arbitration before semantic promotion.
 - Risk/size: high; owner attribution, character coalescing, chart assembly, and
   false-table suppression interact on one page.
 - Affected rerun through both systems: `health-report` full PDF.
 - Service controls: `egov-survey`, `esg-metrics`, `catastrophe-recap`,
   `manufacturing-report`, and `insurance-acord`.
 - Closure evidence: both charts validate; chart 2 contains correct labels once;
-  series use only printed evidence; zero user-visible blank table rows.
+  series use only printed evidence; zero user-visible blank table rows. Each
+  complete grounded chart becomes `structured_primary` without changing its
+  item-11a asset; any incomplete analyzer remains `image_primary_incomplete`.
 
 #### 15. Clean Energy rotated OCR and six-panel structure — `FFD-002`, `FFD-003`
 
@@ -613,6 +655,7 @@ reviewed surface.
 | 9 | FFD-004, FFD-006 | esg-metrics | clinical-study, clean-energy, manufacturing-report, finance-10k |
 | 10 | FFD-004, FFD-005 | manufacturing-report | clinical-study, esg-metrics, uber-earnings, clean-energy |
 | 11 | FFD-004, FFD-005 | uber-earnings | finance-10k, clinical-study, manufacturing-report, purchase-agreement, settlement-agreement |
+| 11a | FFD-015 | catastrophe-recap, clean-energy, egov-survey, esg-metrics, health-report, manufacturing-report, uber-earnings | insurance-acord, clinical-study, component-datasheet, ny-timetable, postal-10k, finance-10k, purchase-agreement |
 | 12 | FFD-003 | egov-survey | catastrophe-recap, clean-energy, esg-metrics, health-report, manufacturing-report, uber-earnings, insurance-acord, component-datasheet, ny-timetable |
 | 13 | FFD-002, FFD-003 | catastrophe-recap | egov-survey, clean-energy, health-report, manufacturing-report, uber-earnings, postal-10k, finance-10k |
 | 14 | FFD-001, FFD-003 | health-report | egov-survey, esg-metrics, catastrophe-recap, manufacturing-report, insurance-acord |
@@ -656,7 +699,11 @@ raw/canonical Markdown, rendered DOM, and source-page renders.
 
 ### Wave C gate
 
-- Items 12–18 pass their focused regressions and exact matrices.
+- Item 11a and items 12–18 pass their focused regressions and exact matrices.
+- Every detected chart owner retains one immutable source asset or an explicit
+  `asset_unavailable` disposition. Focused evidence covers all four terminal
+  states and legal transitions; normal integrated runs expose one natural state
+  per owner without duplicate image/structured primaries.
 - All seven chart PDFs (`catastrophe-recap`, `clean-energy`, `egov-survey`,
   `esg-metrics`, `health-report`, `manufacturing-report`, and
   `uber-earnings`) are rerun through both systems into fresh immutable roots.

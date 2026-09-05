@@ -13,6 +13,12 @@ import { normalizeDocumentJson } from "../lib/normalize-document-json.ts";
 import type {
   CanonicalBlock,
   DocumentContentItem,
+  FormControl,
+  FormGrid,
+  FormGridCell,
+  FormGridContentFragment,
+  FormGroup,
+  FormLabel,
   FormRelationship,
   FormSemanticRecordBase,
   PageResult,
@@ -346,6 +352,457 @@ function formOverlayFixture(): {
   };
 }
 
+const ACORD_GRID_ROWS = [
+  288, 300, 312, 324, 336, 348, 360, 372, 384, 396, 408, 420, 432,
+  444, 456, 468, 480, 492, 504, 516, 528, 564,
+];
+const ACORD_GRID_COLUMNS = [
+  18, 36, 176.4, 194.4, 212.4, 331.2, 378, 424.8, 514.8, 594,
+];
+
+function realisticAcordGridFixture(): {
+  page: PageResult;
+  anchor: DocumentContentItem;
+  block: CanonicalBlock;
+} {
+  const bboxFor = (
+    row: number,
+    column: number,
+    rowSpan: number,
+    columnSpan: number,
+  ) => ({
+    x: ACORD_GRID_COLUMNS[column]!,
+    y: ACORD_GRID_ROWS[row]!,
+    width:
+      ACORD_GRID_COLUMNS[column + columnSpan]! - ACORD_GRID_COLUMNS[column]!,
+    height: ACORD_GRID_ROWS[row + rowSpan]! - ACORD_GRID_ROWS[row]!,
+    unit: "pt" as const,
+  });
+  const confidence = (state = 1) => ({
+    geometry: { score: 1 },
+    role: { score: 1 },
+    transcription: { score: 1 },
+    state: { score: state },
+  });
+  const cells: FormGridCell[] = [];
+  let sourceOffset = 1_000;
+  const appendCell = ({
+    row,
+    column,
+    rowSpan = 1,
+    columnSpan = 1,
+    cellRole,
+    staticKind,
+    text,
+    valueState,
+    controlIds = [],
+    fragments,
+    stateConfidence = 1,
+  }: {
+    row: number;
+    column: number;
+    rowSpan?: number;
+    columnSpan?: number;
+    cellRole: FormGridCell["cell_role"];
+    staticKind: FormGridCell["static_kind"];
+    text: string | null;
+    valueState: FormGridCell["value_state"];
+    controlIds?: string[];
+    fragments?: FormGridContentFragment[];
+    stateConfidence?: number;
+  }) => {
+    const bbox = bboxFor(row, column, rowSpan, columnSpan);
+    const readingOrder = cells.length;
+    const contentFragments =
+      fragments ??
+      (text === null
+        ? []
+        : [
+            {
+              source_order: 0,
+              kind: "text" as const,
+              bbox: {
+                x: bbox.x + 1,
+                y: bbox.y + 1,
+                width: Math.max(1, bbox.width - 2),
+                height: Math.min(8, bbox.height - 2),
+                unit: "pt" as const,
+              },
+              text,
+              control_id: null,
+              source_objects: [
+                {
+                  kind: "character_range" as const,
+                  start: sourceOffset,
+                  end: sourceOffset + 1,
+                },
+              ],
+            },
+          ]);
+    sourceOffset += 2;
+    const sourceObjects = [
+      { kind: "line" as const, index: readingOrder },
+      ...contentFragments.flatMap((fragment) => fragment.source_objects),
+    ];
+    cells.push({
+      reading_order: readingOrder,
+      row,
+      column,
+      row_span: rowSpan,
+      column_span: columnSpan,
+      bbox,
+      cell_role: cellRole,
+      static_kind: staticKind,
+      text,
+      text_state: text === null ? "empty" : "present",
+      value: null,
+      value_state: valueState,
+      control_ids: controlIds,
+      content_fragments: contentFragments,
+      header_cell_orders: [],
+      section_cell_orders: [],
+      label_cell_orders: [],
+      source_objects: sourceObjects,
+      confidence_dimensions: confidence(stateConfidence),
+      concern_codes:
+        valueState === "ambiguous" ? ["form_value_state_ambiguous"] : [],
+    });
+  };
+
+  const columnHeaders = [
+    "INSR LTR",
+    "TYPE OF INSURANCE",
+    "ADDL INSR",
+    "SUBR WVD",
+    "POLICY NUMBER",
+    "POLICY EFF (MM/DD/YYYY)",
+    "POLICY EXP (MM/DD/YYYY)",
+  ];
+  columnHeaders.forEach((text, column) =>
+    appendCell({
+      row: 0,
+      column,
+      cellRole: "static",
+      staticKind: "column_header",
+      text,
+      valueState: "not_applicable",
+    }),
+  );
+  appendCell({
+    row: 0,
+    column: 7,
+    columnSpan: 2,
+    cellRole: "static",
+    staticKind: "column_header",
+    text: "LIMITS",
+    valueState: "not_applicable",
+  });
+
+  const sectionSpecs = [
+    { row: 1, span: 7, title: "GENERAL LIABILITY", controlId: "control-cgl" },
+    { row: 8, span: 5, title: "AUTOMOBILE LIABILITY", controlId: "control-auto" },
+    { row: 13, span: 3, title: "UMBRELLA LIABILITY", controlId: null },
+    { row: 16, span: 4, title: "WORKERS COMPENSATION", controlId: null },
+  ];
+  for (const section of sectionSpecs) {
+    appendCell({
+      row: section.row,
+      column: 0,
+      rowSpan: section.span,
+      cellRole: "value",
+      staticKind: null,
+      text: null,
+      valueState: "empty",
+    });
+    const sectionBox = bboxFor(section.row, 1, section.span, 1);
+    const sectionFragments: FormGridContentFragment[] = [
+      {
+        source_order: 0,
+        kind: "text",
+        bbox: {
+          x: sectionBox.x + 3,
+          y: sectionBox.y + 3,
+          width: sectionBox.width - 6,
+          height: 7,
+          unit: "pt",
+        },
+        text: section.title,
+        control_id: null,
+        source_objects: [
+          { kind: "character_range", start: sourceOffset, end: sourceOffset + 1 },
+        ],
+      },
+    ];
+    sourceOffset += 2;
+    if (section.controlId !== null) {
+      sectionFragments.push(
+        {
+          source_order: 1,
+          kind: "control",
+          bbox: {
+            x: sectionBox.x + 3,
+            y: sectionBox.y + 14,
+            width: 10,
+            height: 10,
+            unit: "pt",
+          },
+          text: null,
+          control_id: section.controlId,
+          source_objects: [{ kind: "rect", index: 200 + section.row }],
+        },
+        {
+          source_order: 2,
+          kind: "text",
+          bbox: {
+            x: sectionBox.x + 18,
+            y: sectionBox.y + 15,
+            width: sectionBox.width - 21,
+            height: 8,
+            unit: "pt",
+          },
+          text:
+            section.controlId === "control-cgl"
+              ? "COMMERCIAL GENERAL LIABILITY"
+              : "ANY AUTO",
+          control_id: null,
+          source_objects: [
+            { kind: "character_range", start: sourceOffset, end: sourceOffset + 1 },
+          ],
+        },
+      );
+      sourceOffset += 2;
+    }
+    appendCell({
+      row: section.row,
+      column: 1,
+      rowSpan: section.span,
+      cellRole: "static",
+      staticKind: "section_header",
+      text: sectionFragments
+        .flatMap((fragment) => (fragment.kind === "text" ? [fragment.text!] : []))
+        .join("\n"),
+      valueState: "not_applicable",
+      controlIds: section.controlId === null ? [] : [section.controlId],
+      fragments: sectionFragments,
+    });
+    for (let column = 2; column <= 6; column += 1) {
+      appendCell({
+        row: section.row,
+        column,
+        rowSpan: section.span,
+        cellRole: "value",
+        staticKind: null,
+        text: null,
+        valueState: "empty",
+      });
+    }
+    for (let row = section.row; row < section.row + section.span; row += 1) {
+      appendCell({
+        row,
+        column: 7,
+        cellRole: "static",
+        staticKind: "row_header",
+        text: `LIMIT ${row}`,
+        valueState: "not_applicable",
+      });
+      appendCell({
+        row,
+        column: 8,
+        cellRole: "value",
+        staticKind: null,
+        text: null,
+        valueState: row === 1 ? "ambiguous" : "empty",
+        stateConfidence: row === 1 ? 0.62 : 1,
+      });
+    }
+  }
+  appendCell({
+    row: 20,
+    column: 0,
+    columnSpan: 9,
+    cellRole: "static",
+    staticKind: "qualifier",
+    text: "DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES",
+    valueState: "not_applicable",
+  });
+
+  cells.sort((left, right) => left.row - right.row || left.column - right.column);
+  cells.forEach((cell, index) => {
+    cell.reading_order = index;
+  });
+  const headers = cells.filter((cell) => cell.static_kind === "column_header");
+  const sections = cells.filter((cell) => cell.static_kind === "section_header");
+  const rowLabels = cells.filter((cell) => cell.static_kind === "row_header");
+  for (const cell of cells) {
+    cell.header_cell_orders = headers
+      .filter(
+        (header) =>
+          cell.static_kind !== "column_header" &&
+          Math.max(header.column, cell.column) <
+            Math.min(
+              header.column + header.column_span,
+              cell.column + cell.column_span,
+            ),
+      )
+      .map((header) => header.reading_order);
+    cell.section_cell_orders = sections
+      .filter(
+        (section) =>
+          cell.cell_role === "value" &&
+          section.row <= cell.row &&
+          cell.row < section.row + section.row_span,
+      )
+      .map((section) => section.reading_order);
+    cell.label_cell_orders = rowLabels
+      .filter(
+        (label) =>
+          cell.cell_role === "value" &&
+          cell.row_span === 1 &&
+          label.row === cell.row &&
+          label.column + label.column_span === cell.column,
+      )
+      .map((label) => label.reading_order);
+  }
+
+  const grid: FormGrid = {
+    bbox: { x: 18, y: 288, width: 576, height: 276, unit: "pt" },
+    row_boundaries: [...ACORD_GRID_ROWS],
+    column_boundaries: [...ACORD_GRID_COLUMNS],
+    cells,
+  };
+  const group = {
+    ...common("coverage-grid-group", "coverage-grid-element", [], grid.bbox),
+    evidence_methods: ["vector"] as const,
+    source_objects: [{ kind: "rect" as const, index: 900 }],
+    group_key: "coverages",
+    status: "resolved" as const,
+    interactivity: "static" as const,
+    canonical_mode: "replace" as const,
+    anchor_public_item_id: "coverage-grid-anchor",
+    anchor_element_id: "coverage-grid-source",
+    anchor_relationship_ids: ["rel-grid-overlay"],
+    contributor_public_item_ids: ["coverage-grid-anchor"],
+    contributor_element_ids: ["coverage-grid-source"],
+    field_ids: [],
+    label_ids: ["label-cgl", "label-auto"],
+    value_region_ids: [],
+    control_ids: ["control-cgl", "control-auto"],
+    key_value_pair_ids: [],
+    form_grid: grid,
+  } satisfies FormGroup;
+  const labels: FormLabel[] = [
+    {
+      ...common("label-cgl", "label-cgl-element", []),
+      group_id: group.id,
+      label_role: "control",
+      text: "COMMERCIAL GENERAL LIABILITY",
+      raw_text: "COMMERCIAL GENERAL LIABILITY",
+      label_of_ids: ["control-cgl"],
+      key_of_ids: [],
+    },
+    {
+      ...common("label-auto", "label-auto-element", []),
+      group_id: group.id,
+      label_role: "control",
+      text: "ANY AUTO",
+      raw_text: "ANY AUTO",
+      label_of_ids: ["control-auto"],
+      key_of_ids: [],
+    },
+  ];
+  const controls: FormControl[] = [
+    {
+      ...common("control-cgl", "control-cgl-element", [], {
+        x: 39,
+        y: 314,
+        width: 8,
+        height: 8,
+        unit: "pt",
+      }),
+      evidence_methods: ["vector"],
+      source_objects: [{ kind: "rect", index: 201 }],
+      group_id: group.id,
+      owner_field_id: null,
+      label_id: "label-cgl",
+      control_type: "checkbox",
+      state: "unchecked",
+      origin: "static_vector",
+    },
+    {
+      ...common("control-auto", "control-auto-element", [], {
+        x: 39,
+        y: 398,
+        width: 8,
+        height: 8,
+        unit: "pt",
+      }),
+      evidence_methods: ["vector"],
+      source_objects: [{ kind: "rect", index: 208 }],
+      confidence_dimensions: {
+        geometry: { score: 1 },
+        role: { score: 0.9 },
+        transcription: { unavailable_reason: "transcription_not_applicable" },
+        state: { score: 0.44 },
+      },
+      concern_codes: ["form_control_state_ambiguous"],
+      group_id: group.id,
+      owner_field_id: null,
+      label_id: "label-auto",
+      control_type: "checkbox",
+      state: "ambiguous",
+      origin: "static_vector",
+    },
+  ];
+  const edges: FormRelationship[] = [
+    relationship("rel-grid-label-cgl", "contains", group.element_id, labels[0]!.element_id),
+    relationship("rel-grid-label-auto", "contains", group.element_id, labels[1]!.element_id),
+    relationship("rel-grid-control-cgl", "contains", group.element_id, controls[0]!.element_id),
+    relationship("rel-grid-control-auto", "contains", group.element_id, controls[1]!.element_id),
+    relationship("rel-grid-label-of-cgl", "label_of", labels[0]!.element_id, controls[0]!.element_id),
+    relationship("rel-grid-label-of-auto", "label_of", labels[1]!.element_id, controls[1]!.element_id),
+    relationship("rel-grid-control-of-cgl", "control_of", controls[0]!.element_id, group.element_id),
+    relationship("rel-grid-control-of-auto", "control_of", controls[1]!.element_id, group.element_id),
+    relationship("rel-grid-overlay", "form_overlay_of", group.element_id, group.anchor_element_id),
+  ];
+  for (const record of [group, ...labels, ...controls]) {
+    record.relationship_ids = edges
+      .filter(
+        (edge) =>
+          edge.source_id === record.element_id || edge.target_id === record.element_id,
+      )
+      .map((edge) => edge.id);
+  }
+  const anchor: DocumentContentItem = {
+    id: group.anchor_public_item_id,
+    type: "table_candidate",
+    reading_order: 14,
+    value: "flattened fallback must not render",
+    md: "flattened fallback must not render",
+    bbox: { ...grid.bbox },
+    layout_forms_projected: true,
+    form_policy: "p03-form-semantics-v1",
+    form_group: group,
+    form_labels: labels,
+    form_controls: controls,
+    relationships: edges,
+  };
+  return {
+    page: samplePage({
+      page_index: 1,
+      page_width: 612,
+      page_height: 792,
+      items: [anchor],
+    }),
+    anchor,
+    block: {
+      ...canonicalBlock(group.anchor_element_id, [group.anchor_element_id]),
+      primary_element_type: "table_candidate",
+      markdown: "<table data-form-grid=\"true\">",
+      text: "flattened fallback must not render",
+    },
+  };
+}
+
 function completeStaticPartiesSemantics(): ValidatedFormSemantics {
   const groupId = "parties-group";
   const groupElementId = "parties-group-element";
@@ -575,6 +1032,154 @@ test("inert coverage semantics render fields and labeled read-only controls", ()
   assert.match(html, /COMMERCIAL GENERAL LIABILITY/);
   assert.match(html, /Unchecked/);
   assert.doesNotMatch(html, /<input|dangerouslySetInnerHTML/i);
+});
+
+test("a realistic 21x9 ACORD coverage grid renders as one accessible source-ordered table", () => {
+  const { page, block } = realisticAcordGridFixture();
+  const semantics = readFormSemanticsForCanonicalBlock(block, page);
+  assert.ok(semantics);
+  assert.equal(semantics.group.form_grid?.row_boundaries.length, 22);
+  assert.equal(semantics.group.form_grid?.column_boundaries.length, 10);
+
+  const html = renderToStaticMarkup(
+    renderValidatedFormSemantics(semantics, { overlay: true }),
+  );
+  assert.match(
+    html,
+    /<table class="parsed-table form-grid-table" aria-label="coverages form grid" data-form-grid="true">/,
+  );
+  assert.equal(html.match(/<tr /gu)?.length, 21);
+  assert.match(html, /<thead>/);
+  assert.match(html, /<tbody>/);
+  assert.match(html, /rowSpan="7"/);
+  assert.match(html, /colSpan="2"/);
+  assert.match(html, /scope="col"/);
+  assert.match(html, /scope="row"/);
+  assert.doesNotMatch(html, /scope="rowgroup"/);
+  assert.match(
+    html,
+    /<th[^>]*headers="[^"]+"[^>]*data-static-kind="section_header"/,
+  );
+  assert.match(html, /headers="form-grid-[^"]+-cell-7/);
+  assert.match(html, /role="checkbox" aria-checked="false"/);
+  assert.match(html, /role="checkbox" aria-checked="mixed"/);
+  assert.match(html, /COMMERCIAL GENERAL LIABILITY: Unchecked/);
+  assert.match(html, /ANY AUTO: State ambiguous/);
+  assert.match(
+    html,
+    /data-control-id="control-auto"[^>]*data-concern-codes="form_control_state_ambiguous"/,
+  );
+  assert.match(
+    html,
+    /data-control-id="control-auto"[^>]*data-confidence-role="0.9"[^>]*data-confidence-transcription="unavailable:transcription_not_applicable"[^>]*data-confidence-state="0.44"/,
+  );
+  assert.match(
+    html,
+    /aria-describedby="[^"]+-control-confidence-control-auto-[0-9a-f]{8}"/,
+  );
+  assert.match(html, /data-value-state="ambiguous"/);
+  assert.match(html, />Uncertain value</);
+  assert.match(html, />Confidence 62%<\/span>/);
+  assert.match(html, /data-confidence-state="0.62"/);
+  assert.match(html, /data-confidence-geometry="1"/);
+  assert.match(html, /left:[^;]+%;top:[^;]+%;width:[^;]+%;height:[^;]+%/);
+  assert.match(html, /aspect-ratio:[^;]+\//);
+  assert.doesNotMatch(html, /flattened fallback must not render/);
+  assert.doesNotMatch(html, /<input|dangerouslySetInnerHTML/i);
+
+  const generalIndex = html.indexOf(">GENERAL LIABILITY<");
+  const checkboxIndex = html.indexOf('data-control-id="control-cgl"');
+  const commercialIndex = html.indexOf(">COMMERCIAL GENERAL LIABILITY<");
+  assert.ok(
+    generalIndex >= 0 &&
+      generalIndex < checkboxIndex &&
+      checkboxIndex < commercialIndex,
+    "positioned fragments must preserve source order in the DOM",
+  );
+});
+
+test("ACORD form-grid topology and custody failures fall back closed", () => {
+  const cases: Array<{
+    name: string;
+    mutate: (anchor: DocumentContentItem) => void;
+  }> = [
+    {
+      name: "unknown group member",
+      mutate: (anchor) => {
+        (anchor.form_group as unknown as Record<string, unknown>).unexpected = true;
+      },
+    },
+    {
+      name: "non-canonical reading order",
+      mutate: (anchor) => {
+        anchor.form_group!.form_grid!.cells[1]!.reading_order = 9;
+      },
+    },
+    {
+      name: "overlapping logical cell",
+      mutate: (anchor) => {
+        const cells = anchor.form_group!.form_grid!.cells;
+        cells[1]!.column = cells[0]!.column;
+        cells[1]!.bbox = structuredClone(cells[0]!.bbox);
+      },
+    },
+    {
+      name: "uncovered logical slot",
+      mutate: (anchor) => {
+        anchor.form_group!.form_grid!.cells.pop();
+      },
+    },
+    {
+      name: "cell bbox disagrees with its span",
+      mutate: (anchor) => {
+        anchor.form_group!.form_grid!.cells[0]!.bbox.width += 1;
+      },
+    },
+    {
+      name: "fragment order is not contiguous",
+      mutate: (anchor) => {
+        const section = anchor.form_group!.form_grid!.cells.find(
+          (cell) => cell.content_fragments.length > 1,
+        )!;
+        section.content_fragments[1]!.source_order = 8;
+      },
+    },
+    {
+      name: "semantic header reference is incomplete",
+      mutate: (anchor) => {
+        const value = anchor.form_group!.form_grid!.cells.find(
+          (cell) => cell.row > 0 && cell.cell_role === "value",
+        )!;
+        value.header_cell_orders = [];
+      },
+    },
+    {
+      name: "grid control is not declared by the group",
+      mutate: (anchor) => {
+        anchor.form_group!.control_ids.pop();
+        anchor.form_controls!.pop();
+      },
+    },
+    {
+      name: "ambiguous value lacks an uncertainty concern",
+      mutate: (anchor) => {
+        const ambiguous = anchor.form_group!.form_grid!.cells.find(
+          (cell) => cell.value_state === "ambiguous",
+        )!;
+        ambiguous.concern_codes = [];
+      },
+    },
+  ];
+
+  for (const testCase of cases) {
+    const fixture = realisticAcordGridFixture();
+    testCase.mutate(fixture.anchor);
+    assert.equal(
+      readFormSemanticsForCanonicalBlock(fixture.block, fixture.page),
+      null,
+      testCase.name,
+    );
+  }
 });
 
 test("complete blank parties and insurers render once in source visual order", () => {

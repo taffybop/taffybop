@@ -8,8 +8,9 @@ Proposed scope: 77 stories, 362 story points
 
 Current source-grounded remediation is tracked separately in the
 [`functional-fidelity-defects`](functional-fidelity-defects/README.md) queue.
-That queue reconciles all 25 remaining LlamaParse-15 functional gaps into 13
-root-cause defects and 22 one-at-a-time implementation slices without
+That queue preserves the 25 remaining LlamaParse-15 functional gaps and their
+13 baseline root causes, plus two separately evidenced post-baseline defects,
+for 15 tracked defects and 24 one-at-a-time implementation slices without
 rewriting the historical phase records below.
 
 This tracker decomposes the assessment into independently executable stories.

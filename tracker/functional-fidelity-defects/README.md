@@ -11,20 +11,29 @@ back to the final v2 evidence package.
 
 ## What is tracked
 
-- **14 root-cause defects** in [`issues/`](issues/): 13 from the frozen v2
-  source-gap inventory plus the post-baseline P04 control defect FFD-014.
+- **15 root-cause defects** in [`issues/`](issues/): 13 from the frozen v2
+  source-gap inventory plus post-baseline FFD-014 P04 control evidence and
+  FFD-015 chart source-asset-first arbitration requirements.
 - **25/25 authoritative remaining-gap statements** mapped in
   [`source-gap-coverage.md`](source-gap-coverage.md).
-- **23 ordered implementation slices** in [`execution-order.md`](execution-order.md).
+- **24 ordered implementation slices** in [`execution-order.md`](execution-order.md).
 - The machine-readable mirror in [`registry.json`](registry.json).
 
 The comparator's **278 functional signals are not 278 defects**. They include
 correlated Markdown, JSON, table, visual, and DOM manifestations of the same
 root cause. They remain available for audit, but work is planned from the 25
-source-grounded gaps and the 13 deduplicated baseline causes. FFD-014 is a
-separately evidenced post-baseline production-control discovery and does not
-rewrite that immutable denominator. See
+source-grounded gaps and the 13 deduplicated baseline causes. FFD-014 and
+FFD-015 are separately evidenced post-baseline requirements and do not rewrite
+that immutable denominator. See
 [`signal-adjudication.md`](signal-adjudication.md).
+
+The 2026-08-23 user amendment clarifies that FFD-010 must preserve the ACORD
+form-grid's original logical structure and adds FFD-015's staged chart pipeline:
+retain the source asset for every detected chart, classify family and complexity
+independently, attempt approved semantic analysis, validate completeness, and
+select exactly one primary representation. Complexity alone never selects the
+fallback. It records requirements only and starts no production work. See the
+[`ACORD/chart requirement amendment`](decisions/2026-08-23-ffd-010-ffd-015-user-requirement-amendment.md).
 
 Every remediation is also governed by the mandatory
 [`generic-production-policy.md`](generic-production-policy.md). Benchmark PDFs

@@ -1,12 +1,12 @@
 {
   "schema_version": "functional-fidelity-defect-registry-v1",
-  "generated_date": "2026-08-14",
+  "generated_date": "2026-08-23",
   "evidence_baseline": {
     "path": "tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/source-grounded-final-disposition-v2.json",
     "sha256": "5bb478ca60486969293ec12e2099987130b33f25b5d37af9bcff649138dd7a17",
     "remaining_gap_count": 25
   },
-  "defect_count": 14,
+  "defect_count": 15,
   "source_gap_count": 25,
   "closure_validation_policy": {
     "path": "tracker/functional-fidelity-defects/immediate-affected-benchmark-validation.md",
@@ -34,7 +34,7 @@
     "final_all_15_gate_still_required": true
   },
   "status_counts": {
-    "Proposed": 12,
+    "Proposed": 13,
     "Ready": 0,
     "In Progress": 1,
     "Validating": 0,
@@ -76,7 +76,7 @@
       "priority": "P0",
       "owners": ["P05-US03"],
       "cases": ["catastrophe-recap", "clean-energy", "egov-survey", "esg-metrics", "health-report", "manufacturing-report", "uber-earnings"],
-      "dependencies": ["FFD-001", "FFD-002"],
+      "dependencies": ["FFD-001", "FFD-002", "FFD-015"],
       "issue_path": "tracker/functional-fidelity-defects/issues/FFD-003-chart-semantic-assembly.md",
       "source_gap_ids": ["SG-001", "SG-003", "SG-011", "SG-012", "SG-015", "SG-018", "SG-023"]
     },
@@ -154,7 +154,7 @@
     },
     {
       "id": "FFD-010",
-      "title": "ACORD lower coverage grid lacks one semantic owner",
+      "title": "ACORD coverage form grid lacks a structure-preserving semantic owner",
       "status": "Proposed",
       "severity": "Critical",
       "priority": "P1",
@@ -212,6 +212,19 @@
       "issue_path": "tracker/functional-fidelity-defects/issues/FFD-014-clinical-crossmark-visual-overlay-custody.md",
       "source_gap_ids": [],
       "evidence_classification": "post_baseline_production_control"
+    },
+    {
+      "id": "FFD-015",
+      "title": "Detected charts lack source-asset-first semantic arbitration",
+      "status": "Proposed",
+      "severity": "Major",
+      "priority": "P1",
+      "owners": ["P05-US01", "P05-US05", "canonical/frontend asset projection"],
+      "cases": ["catastrophe-recap", "clean-energy", "egov-survey", "esg-metrics", "health-report", "manufacturing-report", "uber-earnings"],
+      "dependencies": ["FFD-001"],
+      "issue_path": "tracker/functional-fidelity-defects/issues/FFD-015-complex-chart-image-fallback.md",
+      "source_gap_ids": [],
+      "evidence_classification": "post_baseline_user_requirement"
     }
   ],
   "source_gaps": [

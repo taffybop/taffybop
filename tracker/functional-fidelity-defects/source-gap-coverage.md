@@ -2,7 +2,7 @@
 
 Evidence baseline: `tracker/benchmarks/llamaparse-15/runs/functional-fidelity-20260813/source-grounded-final-disposition-v2.json`  
 Baseline SHA-256: `5bb478ca60486969293ec12e2099987130b33f25b5d37af9bcff649138dd7a17`  
-Coverage: **25/25 authoritative remaining gaps mapped to 13/13 baseline root-cause defects; plus one post-baseline control defect**
+Coverage: **25/25 authoritative remaining gaps mapped to 13/13 baseline root-cause defects; plus two post-baseline defects**
 
 The gap text below is copied verbatim from each case's
 `remaining_functional_gaps` array. A composite source gap can map to more than
@@ -55,14 +55,15 @@ create another source gap or another root-cause defect.
 | FFD-012 | SG-021 |
 | FFD-013 | SG-022 |
 | FFD-014 | Post-baseline P04 production control; no `SG-*` row |
+| FFD-015 | Post-baseline chart source-asset-first arbitration requirement; no `SG-*` row |
 
 ## Coverage invariants
 
 - Every baseline gap string appears exactly once as an `SG-*` row.
 - Every `SG-*` row maps to at least one `FFD-*` defect.
 - Every baseline defect `FFD-001` through `FFD-013` covers at least one
-  authoritative source gap. FFD-014 is separately admitted post-baseline
-  production-control evidence and does not create or claim `SG-026`.
+  authoritative source gap. FFD-014 and FFD-015 are separately admitted
+  post-baseline requirements and do not create or claim `SG-026`.
 - Multiple output-surface signals remain manifestations, not additional gaps.
 - Accepted differences and fixed cases are excluded from this open-gap denominator.
 
@@ -110,3 +111,19 @@ This is local implementation/UI validation only. SG-007 remains in the frozen
 Component and Uber topology families remain unresolved, and the affected-
 benchmark dual-system, Wave D, and final all-15 gates have not passed. No
 baseline gap wording, mapping, defect, or count is added or changed.
+
+## 2026-08-23 user requirement clarification
+
+- The requirement to preserve the original ACORD coverage form-grid structure,
+  including blanks, spans, controls, and entered label/value pairs in their
+  source-relative cells, clarifies existing SG-016/FFD-010. It does not add a
+  second source gap for the same ownership root cause.
+- The staged chart requirement is tracked as post-baseline FFD-015: every
+  detected chart first retains a bounded source-faithful asset, then receives
+  independent family and regular/complex classification, approved semantic
+  analysis where available, a family-specific completeness decision, and one
+  terminal primary. It is intentionally separate from FFD-003 semantic
+  assembly: asset custody prevents information loss but does not establish
+  axes, categories, legends, series, or points.
+- The immutable baseline remains 25 gaps and 13 baseline causes. See the
+  [`ACORD/chart requirement amendment`](decisions/2026-08-23-ffd-010-ffd-015-user-requirement-amendment.md).
