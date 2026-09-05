@@ -78,7 +78,7 @@ test("canonical rendering cannot leak omitted legacy OCR or raw HTML", () => {
   assert.match(tableAuthority, /ownerIds\.length !== 0/);
   assert.match(
     canonicalRenderer,
-    /return \(\s*<ContentItemView\s+key=\{block\.id\}\s+item=\{primaryItem\}\s+sourcePage=\{sourcePage\}\s+sourceSha256=\{sourceSha256\}\s*\/>\s*\);/,
+    /return \(\s*<ContentItemView\s+key=\{block\.id\}\s+item=\{primaryItem\}\s+sourcePage=\{sourcePage\}\s+sourceSha256=\{sourceSha256\}\s+renderSourceSha256=\{renderSourceSha256\}\s*\/>\s*\);/,
   );
   assert.doesNotMatch(workspace, /dangerouslySetInnerHTML/);
 });
@@ -136,10 +136,10 @@ test("an absent canonical contract retains the existing item renderer", () => {
   assert.match(legacyRenderer, /page\.items/);
   assert.match(
     legacyRenderer,
-    /<ContentItemView\s+key=\{item\.id\}\s+item=\{item\}\s+sourcePage=\{page\}\s+sourceSha256=\{sourceSha256\}\s*\/>/,
+    /<ContentItemView\s+chartCaptionLink=\{chartCaptions\.get\(item\.id\)\}\s+key=\{item\.id\}\s+item=\{item\}\s+sourcePage=\{page\}\s+sourceSha256=\{sourceSha256\}\s+renderSourceSha256=\{renderSourceSha256\}\s*\/>/,
   );
   assert.match(
     workspace,
-    /: currentPage \? \(\s*<RenderedPage\s+page=\{currentPage\}\s+sourceSha256=\{result\?\.document\.sha256 \?\? ""\}\s*\/>/,
+    /: currentPage \? \(\s*<RenderedPage\s+page=\{currentPage\}\s+sourceSha256=\{result\?\.document\.sha256 \?\? ""\}\s+renderSourceSha256=\{[\s\S]*?result\?\.document\.render_source_sha256 \?\?[\s\S]*?result\?\.document\.sha256 \?\?[\s\S]*?""[\s\S]*?\}\s*\/>/,
   );
 });

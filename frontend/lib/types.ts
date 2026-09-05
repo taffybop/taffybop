@@ -282,6 +282,51 @@ export interface FormSemanticRecordBase {
   relationship_ids: string[];
 }
 
+export interface FormGridContentFragment {
+  source_order: number;
+  kind: "text" | "control";
+  bbox: FormBoundingBox;
+  text: string | null;
+  control_id: string | null;
+  source_objects: FormSourceObject[];
+}
+
+export type FormGridStaticKind =
+  | "column_header"
+  | "row_header"
+  | "section_header"
+  | "qualifier";
+
+export interface FormGridCell {
+  reading_order: number;
+  row: number;
+  column: number;
+  row_span: number;
+  column_span: number;
+  bbox: FormBoundingBox;
+  cell_role: "static" | "value";
+  static_kind: FormGridStaticKind | null;
+  text: string | null;
+  text_state: "empty" | "present";
+  value: string | null;
+  value_state: FormValueState;
+  control_ids: string[];
+  content_fragments: FormGridContentFragment[];
+  header_cell_orders: number[];
+  section_cell_orders: number[];
+  label_cell_orders: number[];
+  source_objects: FormSourceObject[];
+  confidence_dimensions: FormConfidenceDimensions;
+  concern_codes: string[];
+}
+
+export interface FormGrid {
+  bbox: FormBoundingBox;
+  row_boundaries: number[];
+  column_boundaries: number[];
+  cells: FormGridCell[];
+}
+
 export interface FormGroup extends FormSemanticRecordBase {
   group_key: string;
   status: "resolved" | "unresolved";
@@ -297,6 +342,7 @@ export interface FormGroup extends FormSemanticRecordBase {
   value_region_ids: string[];
   control_ids: string[];
   key_value_pair_ids: string[];
+  form_grid?: FormGrid;
 }
 
 export interface FormField extends FormSemanticRecordBase {
@@ -561,6 +607,213 @@ export interface VisualStructure {
   serialization: VisualSerialization | null;
 }
 
+export interface ChartConfidence {
+  value: number | null;
+  unavailable_reason:
+    | "not_calibrated"
+    | "source_confidence_unavailable"
+    | "asset_unavailable"
+    | null;
+}
+
+export interface ChartConfidenceDimensions {
+  ownership: ChartConfidence;
+  transcription: ChartConfidence;
+  family: ChartConfidence;
+  complexity: ChartConfidence;
+}
+
+export interface ChartTranscript {
+  status: "available" | "unavailable";
+  source: "native" | "ocr" | "mixed" | "source_labels" | null;
+  text: string | null;
+  text_sha256: string | null;
+  evidence_ids: string[];
+  confidence: ChartConfidence;
+}
+
+export interface ChartFamilyClassification {
+  status: "classified" | "undetermined" | "not_run";
+  family:
+    | "bar"
+    | "line"
+    | "pie"
+    | "area"
+    | "scatter"
+    | "bubble"
+    | "mixed"
+    | "multi_panel"
+    | "other"
+    | "undetermined";
+  classifier_version: "chart-family-source-evidence-v1";
+  reason_codes: Array<
+    | "declared_classifier_family"
+    | "native_office_family"
+    | "multiple_family_signals"
+    | "insufficient_source_features"
+    | "asset_unavailable"
+  >;
+  evidence_ids: string[];
+  confidence: ChartConfidence;
+}
+
+export interface ChartComplexityClassification {
+  status: "regular" | "complex" | "undetermined" | "not_run";
+  classifier_version: "chart-complexity-source-evidence-v1";
+  reason_codes: Array<
+    | "single_supported_family"
+    | "multi_panel_geometry"
+    | "multiple_axes"
+    | "multiple_legends"
+    | "multiple_mark_types"
+    | "dense_source_labels"
+    | "multi_encoding_family"
+    | "insufficient_source_features"
+    | "asset_unavailable"
+  >;
+  evidence_ids: string[];
+  confidence: ChartConfidence;
+}
+
+export type ChartSemanticFeature =
+  | "region"
+  | "source_evidence"
+  | "family"
+  | "panels"
+  | "axes"
+  | "categories"
+  | "legends"
+  | "series"
+  | "points"
+  | "ownership"
+  | "ambiguity_closure"
+  | "serialization";
+
+export interface ChartSemanticAnalysis {
+  capability_matrix_version: "chart-semantic-capabilities-v1";
+  attempt_status:
+    | "not_run_asset_unavailable"
+    | "not_run_no_approved_analyzer"
+    | "completed"
+    | "failed"
+    | "timed_out"
+    | "resource_refused";
+  analyzer_ids: string[];
+  configuration_sha256: string;
+  completeness_gate_status: "not_run" | "passed" | "failed";
+  required_features: ChartSemanticFeature[];
+  observed_features: ChartSemanticFeature[];
+  missing_features: ChartSemanticFeature[];
+  ambiguous_evidence_ids: string[];
+  failure_reason:
+    | "unresolved"
+    | "unsupported"
+    | "malformed_input"
+    | "validation_failed"
+    | "resource_limit"
+    | "timeout"
+    | "low_quality"
+    | "incomplete"
+    | "asset_unavailable"
+    | null;
+}
+
+export interface ChartSourceAsset {
+  asset_id: string;
+  source_document_sha256: string;
+  render_source_sha256: string;
+  owner_item_id: string;
+  physical_page: number;
+  source_bbox: VisualBoundingBox;
+  owner_geometry_proof_kind:
+    | "detected_image"
+    | "docling_picture"
+    | "detected_image_and_docling_picture";
+  owner_geometry_evidence_ids: string[];
+  owner_geometry_evidence_sha256: string;
+  rendered_bbox: VisualBoundingBox;
+  coordinate_system: "page_top_left";
+  pixel_to_page_transform: [number, number, number, number, number, number];
+  page_device_dimensions: [number, number] | null;
+  crop_device_margins: [number, number, number, number] | null;
+  renderer: "pypdfium2" | "pillow";
+  renderer_version: string;
+  render_policy: "chart-source-inline-png-v1";
+  source_kind: "pdf" | "image";
+  render_scale: number;
+  effective_dpi: number | null;
+  width: number;
+  height: number;
+  mime_type: "image/png";
+  encoding: "data_uri_base64";
+  byte_length: number;
+  sha256: string;
+  data_uri: string;
+  color_space: "srgb";
+  alpha_policy: "flatten_white";
+  antialiasing_policy: "renderer_default";
+  interpolation_policy: "none";
+  bbox_rounding: "outward_device_pixels" | "exact_integer";
+  padding: 0;
+}
+
+export type ChartAssetUnavailableReason =
+  | "source_bytes_unavailable"
+  | "source_kind_unsupported"
+  | "owner_geometry_invalid"
+  | "owner_outside_page"
+  | "page_unavailable"
+  | "render_failed"
+  | "render_timeout"
+  | "crop_dimension_limit"
+  | "crop_pixel_limit"
+  | "asset_byte_limit"
+  | "document_asset_count_limit"
+  | "document_asset_byte_limit"
+  | "response_byte_limit"
+  | "document_render_timeout"
+  | "mime_validation_failed"
+  | "source_integrity_mismatch"
+  | "crop_legibility_limit";
+
+export interface ChartResolution {
+  schema_version: "1.0";
+  policy_id: "ffd-015-chart-source-asset-v1";
+  owner_item_id: string;
+  page_index: number;
+  source_order: number;
+  source_bbox: VisualBoundingBox;
+  status:
+    | "structured_primary"
+    | "image_primary_unsupported"
+    | "image_primary_incomplete"
+    | "asset_unavailable";
+  asset_status: "retained" | "unavailable";
+  asset_unavailable_reason: ChartAssetUnavailableReason | null;
+  asset: ChartSourceAsset | null;
+  family_classification: ChartFamilyClassification;
+  complexity_classification: ChartComplexityClassification;
+  semantic_analysis: ChartSemanticAnalysis;
+  primary_representation:
+    | "structured_chart"
+    | "source_image"
+    | "grounded_predecessor";
+  primary_reason:
+    | "semantic_completeness_passed"
+    | "semantic_family_not_supported"
+    | "semantic_analysis_incomplete"
+    | "source_asset_unavailable";
+  transcript: ChartTranscript;
+  confidence_dimensions: ChartConfidenceDimensions;
+  concern_codes: Array<
+    | "chart_family_undetermined"
+    | "chart_complexity_undetermined"
+    | "chart_semantics_unsupported"
+    | "chart_semantics_incomplete"
+    | "chart_source_asset_unavailable"
+  >;
+}
+
 /**
  * A normalized item in page reading order.
  *
@@ -616,6 +869,8 @@ export interface DocumentContentItem {
   contained_items?: ContainedVisualItem[];
   /** Closed Phase 05 chart/diagram evidence and serialization sidecar. */
   visual_structure?: VisualStructure;
+  /** Terminal source-image/structured/predecessor authority for a chart. */
+  chart_resolution?: ChartResolution;
   relationships?: LayoutRelationship[];
   relationship_id?: string;
   relationship_type?: string;
@@ -670,6 +925,7 @@ export interface DocumentMetadata {
   filename: string;
   mime_type: string;
   sha256: string;
+  render_source_sha256?: string | null;
   page_count: number;
   image_count?: number;
   [key: string]: unknown;

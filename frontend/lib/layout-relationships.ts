@@ -15,6 +15,78 @@ export interface CanonicalCaptionLink {
   relationship: LayoutRelationship;
 }
 
+/**
+ * Resolve the one external, source-visible caption owned by a chart.
+ *
+ * P03 keeps that caption as its own public item. Image/structured chart DOM
+ * may move the same text into a figure only after this complete page-local
+ * graph proves unique custody; otherwise both items retain their predecessor
+ * rendering and no relationship metadata is inferred.
+ */
+export function resolveChartCaptionLink(
+  owner: DocumentContentItem,
+  page: PageResult,
+): CanonicalCaptionLink | null {
+  if (
+    owner.type.toLowerCase() !== "chart" ||
+    owner.layout_visual_relationships_projected !== true
+  ) {
+    return null;
+  }
+  const graph = readStrictPageCaptionGraph(page);
+  if (!graph || graph.itemsById.get(owner.id) !== owner) return null;
+
+  const captionIds = owner.caption_ids;
+  const compatibilityCaptionIds = owner.caption_of;
+  if (
+    !Array.isArray(captionIds) ||
+    captionIds.length !== 1 ||
+    !Array.isArray(compatibilityCaptionIds) ||
+    compatibilityCaptionIds.length !== 1 ||
+    compatibilityCaptionIds[0] !== captionIds[0]
+  ) {
+    return null;
+  }
+  const caption = graph.itemsById.get(captionIds[0]!);
+  if (
+    !caption ||
+    caption.type.toLowerCase() !== "caption" ||
+    caption.caption_of !== owner.id ||
+    caption.relationship_type !== "caption_of" ||
+    caption.relationship_basis !== "graph_and_geometry" ||
+    !isNonEmptyString(caption.relationship_id) ||
+    !primaryItemText(caption).trim()
+  ) {
+    return null;
+  }
+  const record = graph.relationshipsById.get(caption.relationship_id);
+  if (
+    !record ||
+    record.declaringItemId !== owner.id ||
+    graph.relationshipClaims.get(caption.relationship_id) !== caption.id ||
+    record.relationship.type !== "caption_of" ||
+    record.relationship.source_id !== caption.id ||
+    record.relationship.target_id !== owner.id
+  ) {
+    return null;
+  }
+
+  const pageBacklinkCount = page.items.reduce(
+    (count, item) =>
+      count +
+      (item.caption_ids ?? []).filter((id) => id === caption.id).length,
+    0,
+  );
+  const pageOwnerClaimCount = page.items.filter(
+    (item) =>
+      item.type.toLowerCase() === "caption" &&
+      item.caption_of === owner.id,
+  ).length;
+  if (pageBacklinkCount !== 1 || pageOwnerClaimCount !== 1) return null;
+
+  return { caption, owner, relationship: record.relationship };
+}
+
 interface PageCaptionGraph {
   itemsById: Map<string, DocumentContentItem>;
   relationshipClaims: Map<string, string>;

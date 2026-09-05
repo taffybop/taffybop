@@ -1,7 +1,7 @@
 # Defect Index
 
 Inventory baseline: `source-grounded-final-disposition-v2.json`  
-Current counts: **12 Proposed, 0 Ready, 1 In Progress, 0 Validating, 1 Blocked, 0 Done**
+Current counts: **13 Proposed, 0 Ready, 1 In Progress, 0 Validating, 1 Blocked, 0 Done**
 
 Every card is governed by the mandatory
 [`generic production policy`](generic-production-policy.md), the recorded
@@ -28,11 +28,12 @@ logic or lacks new-PDF variation evidence.
 | [FFD-007](issues/FFD-007-private-use-glyph-recovery.md) | Component NOTE private-use glyph lacks safe recovery | Minor | P3 | Component | P02-US01 | Proposed | 5 |
 | [FFD-008](issues/FFD-008-diagram-topology.md) | Diagram topology is incomplete for source-visible geometry | Major | P1 | Clinical, Component, Uber | P05-US10 + new stories | Proposed | 19 |
 | [FFD-009](issues/FFD-009-photo-diagnostic-ocr.md) | Board-photo diagnostic OCR remains noisy in JSON | Minor | P3 | Component | New diagnostics story if retained | Proposed | 22 |
-| [FFD-010](issues/FFD-010-acord-coverage-grid-ownership.md) | ACORD lower coverage grid lacks one semantic owner | Critical | P1 | Insurance ACORD | P03-US06 / P04-US04 | Proposed | 4 |
+| [FFD-010](issues/FFD-010-acord-coverage-grid-ownership.md) | ACORD coverage form grid lacks a structure-preserving semantic owner | Critical | P1 | Insurance ACORD | P03-US06 / P04-US04 | Proposed | 4 |
 | [FFD-011](issues/FFD-011-postal-detached-fers-duplicate.md) | Detached FERS paragraph duplicates the glossary row | Major | P1 | Postal | P02-US04 / P04-US01 | Blocked | 1 |
 | [FFD-012](issues/FFD-012-postal-table-inline-emphasis.md) | Table-cell italics are not serialized or rendered | Minor | P2 | Postal | P03-US05 / P04-US01 | Proposed | 2 |
 | [FFD-013](issues/FFD-013-postal-table-em-dashes.md) | Source em dashes become ASCII hyphens in table cells | Minor | P2 | Postal | P02-US04 / P04-US01 | Proposed | 3 |
 | [FFD-014](issues/FFD-014-clinical-crossmark-visual-overlay-custody.md) | Clinical Crossmark visual overlay blocks terminal table custody | Major | P1 | Clinical | P04-US01 / P01-US03 | In Progress | 1a |
+| [FFD-015](issues/FFD-015-complex-chart-image-fallback.md) | Detected charts lack source-asset-first semantic arbitration | Major | P1 | Catastrophe, Clean, eGov, ESG, Health, Manufacturing, Uber | P05-US01 / P05-US05 | Proposed | 11a |
 
 ## Release tracking
 
@@ -45,14 +46,21 @@ logic or lacks new-PDF variation evidence.
   the exact Clinical included-placeholder-versus-omitted-visual graph-custody
   transition. The separately governed NY document/page deadline blocker also
   remains. FFD-012 is unstarted and the other 12 cards remain `Proposed`.
-- FFD-014 is post-baseline control evidence. It does not add an `SG-*` row or
-  rewrite the immutable 25-gap v2 disposition. Its user-authorized first
+- FFD-014 and FFD-015 are post-baseline requirements. Neither adds an `SG-*`
+  row nor rewrites the immutable 25-gap v2 disposition. FFD-014's
+  user-authorized first
   segment is Clinical physical page 1 only and pauses before page-2-specific
   work; production remains at 5.0 seconds/document and 0.500 seconds/page. The
   final bounded page-one HTTP/Full-renderer handoff passes, but terminal P04
   custody remains unclosed and the result is not the fresh transaction-
   exercising dual-system closure bundle required for `Done`. See the
   [`page-one release-slice amendment`](decisions/2026-08-14-ffd-014-clinical-page-one-release-slice-amendment.md).
+- The 2026-08-23 user requirement keeps ACORD source-structure fidelity inside
+  existing FFD-010 and adds FFD-015's source-asset-first staged pipeline for
+  every detected chart. Family and regular/complex classification remain
+  separate from semantic completeness; only a complete grounded result becomes
+  structured-primary. Retaining an image does not close FFD-003 assembly.
+  See the [`ACORD/chart requirement amendment`](decisions/2026-08-23-ffd-010-ffd-015-user-requirement-amendment.md).
 - FFD-014 returned from `Validating` to `In Progress` on 2026-08-14. The latest
   named production-5-second and test-only-10-second custody observations both
   lack `canonical_source_custody`; they predate the final footer replay and
@@ -72,4 +80,4 @@ logic or lacks new-PDF variation evidence.
   the mandatory fresh dual-system transition bundle. Component and Uber
   topology remain unresolved, so FFD-008 remains `Proposed`. FFD-014 remains
   `In Progress`, FFD-011 remains `Blocked`, and registry status counts remain
-  **12 Proposed, 0 Ready, 1 In Progress, 0 Validating, 1 Blocked, 0 Done**.
+  **13 Proposed, 0 Ready, 1 In Progress, 0 Validating, 1 Blocked, 0 Done**.

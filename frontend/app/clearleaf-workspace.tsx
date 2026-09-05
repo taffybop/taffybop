@@ -69,11 +69,14 @@ import {
   mapPhysicalPages,
 } from "@/lib/page-results";
 import { primaryItemText } from "@/lib/primary-item-text";
+import { pageHasContent } from "@/lib/page-content";
 import { readTableSemantics } from "@/lib/table-semantics";
 import {
+  resolveChartCaptionLink,
   resolveCanonicalCaptionLink,
   resolveCanonicalCaptionedTableLink,
   resolveCanonicalNoteLink,
+  type CanonicalCaptionLink,
 } from "@/lib/layout-relationships";
 import {
   readTextRunSemantics,
@@ -88,6 +91,12 @@ import {
   readDiagramSemanticsForCanonicalBlock,
   renderValidatedDiagramSemantics,
 } from "@/lib/diagram-semantics";
+import {
+  readChartResolution,
+  readChartResolutionForCanonicalBlock,
+  renderValidatedChartResolution,
+  type ValidatedChartResolution,
+} from "@/lib/chart-resolution";
 import {
   pageDisplayLabel,
   readRunningRegions,
@@ -168,6 +177,32 @@ function itemTableText(item: DocumentContentItem): string {
     .map((row) => row.join("\t").replace(/\t+$/u, ""))
     .join("\n")
     .trim();
+}
+
+function ChartSourceImage({
+  chart,
+  captionLink,
+  captionPlacement,
+}: {
+  chart: ValidatedChartResolution;
+  captionLink?: CanonicalCaptionLink | null;
+  captionPlacement?: "before" | "after";
+}) {
+  return renderValidatedChartResolution(
+    chart,
+    captionLink
+      ? {
+          itemId: captionLink.caption.id,
+          placement:
+            captionPlacement ??
+            (captionLink.caption.reading_order < chart.owner.reading_order
+              ? "before"
+              : "after"),
+          relationshipId: captionLink.relationship.id,
+          text: itemText(captionLink.caption),
+        }
+      : null,
+  );
 }
 
 function tableItemAuthority(
@@ -318,14 +353,6 @@ function errorForUi(error: unknown): UiError {
   };
 }
 
-function pageHasContent(page: PageResult): boolean {
-  return page.items.some((item) => {
-    if (item.type === "table") return Boolean(item.rows?.length);
-    if (item.type === "list") return Boolean(item.items?.length);
-    return Boolean(itemText(item).trim());
-  });
-}
-
 function canonicalPageBlocks(
   page: CanonicalPage,
   view: PagePresentationView = "full",
@@ -348,10 +375,14 @@ const ContentItemView = memo(function ContentItemView({
   item,
   sourcePage,
   sourceSha256,
+  renderSourceSha256,
+  chartCaptionLink,
 }: {
   item: DocumentContentItem;
   sourcePage?: PageResult;
   sourceSha256?: string;
+  renderSourceSha256?: string;
+  chartCaptionLink?: CanonicalCaptionLink | null;
 }) {
   const type = item.type.toLowerCase();
   const value = itemText(item);
@@ -362,6 +393,24 @@ const ContentItemView = memo(function ContentItemView({
   const valueOverlay = textRunSemantics
     ? renderValidatedTextRunOverlay(textRunSemantics, ["value"], item.id)
     : null;
+
+  const chartResolution =
+    type === "chart" && sourcePage
+      ? readChartResolution(
+          item,
+          sourcePage,
+          sourceSha256,
+          renderSourceSha256,
+        )
+      : null;
+  if (chartResolution) {
+    return (
+      <ChartSourceImage
+        captionLink={chartCaptionLink}
+        chart={chartResolution}
+      />
+    );
+  }
 
   if (type === "heading") {
     const level = Math.min(Math.max(Number(item.level) || 1, 1), 6);
@@ -683,17 +732,49 @@ const ContentItemView = memo(function ContentItemView({
 function RenderedPage({
   page,
   sourceSha256,
+  renderSourceSha256,
 }: {
   page: PageResult;
   sourceSha256: string;
+  renderSourceSha256?: string;
 }) {
-  if (!pageHasContent(page)) {
+  if (!pageHasContent(page, sourceSha256, renderSourceSha256)) {
     return (
       <div className="inline-empty">
         <FileText aria-hidden="true" size={22} />
         <p>No extractable content was found on this page.</p>
       </div>
     );
+  }
+
+  const proposedChartCaptions = page.items.flatMap((item) => {
+    if (
+      item.type.toLowerCase() !== "chart" ||
+      readChartResolution(
+        item,
+        page,
+        sourceSha256,
+        renderSourceSha256,
+      ) === null
+    ) {
+      return [];
+    }
+    const link = resolveChartCaptionLink(item, page);
+    return link ? [{ ownerId: item.id, link }] : [];
+  });
+  const captionClaimCounts = new Map<string, number>();
+  for (const { link } of proposedChartCaptions) {
+    captionClaimCounts.set(
+      link.caption.id,
+      (captionClaimCounts.get(link.caption.id) ?? 0) + 1,
+    );
+  }
+  const chartCaptions = new Map<string, CanonicalCaptionLink>();
+  const consumedCaptionIds = new Set<string>();
+  for (const { ownerId, link } of proposedChartCaptions) {
+    if (captionClaimCounts.get(link.caption.id) !== 1) continue;
+    chartCaptions.set(ownerId, link);
+    consumedCaptionIds.add(link.caption.id);
   }
 
   return (
@@ -704,14 +785,18 @@ function RenderedPage({
       {page.items
         .slice()
         .sort((left, right) => left.reading_order - right.reading_order)
-        .map((item) => (
-          <ContentItemView
-            key={item.id}
-            item={item}
-            sourcePage={page}
-            sourceSha256={sourceSha256}
-          />
-        ))}
+        .map((item) =>
+          consumedCaptionIds.has(item.id) ? null : (
+            <ContentItemView
+              chartCaptionLink={chartCaptions.get(item.id)}
+              key={item.id}
+              item={item}
+              sourcePage={page}
+              sourceSha256={sourceSha256}
+              renderSourceSha256={renderSourceSha256}
+            />
+          ),
+        )}
     </article>
   );
 }
@@ -787,20 +872,89 @@ function CanonicalRenderedPage({
   blocks,
   sourcePage,
   sourceSha256,
+  renderSourceSha256,
   outlineStructures,
 }: {
   page: CanonicalPage;
   blocks: CanonicalBlock[];
   sourcePage: PageResult;
   sourceSha256: string;
+  renderSourceSha256?: string;
   outlineStructures: ReadonlyMap<string, ValidatedOutlineStructure> | null;
 }) {
+  const blockOrderById = new Map(
+    blocks.map((block, index) => [block.id, index]),
+  );
+  const chartResolutions = new Map<string, ValidatedChartResolution>();
+  const proposedChartCaptions: Array<{
+    blockId: string;
+    link: CanonicalCaptionLink;
+  }> = [];
+  for (const block of blocks) {
+    const chart = readChartResolutionForCanonicalBlock(
+      block,
+      page,
+      sourcePage,
+      sourceSha256,
+      renderSourceSha256,
+    );
+    if (chart === null) continue;
+    chartResolutions.set(block.id, chart);
+    const link = resolveChartCaptionLink(chart.owner, sourcePage);
+    if (
+      link &&
+      Array.isArray(block.relationship_ids) &&
+      block.relationship_ids.filter((id) => id === link.relationship.id)
+        .length === 1
+    ) {
+      proposedChartCaptions.push({ blockId: block.id, link });
+    }
+  }
+  const captionClaimCounts = new Map<string, number>();
+  for (const { link } of proposedChartCaptions) {
+    captionClaimCounts.set(
+      link.caption.id,
+      (captionClaimCounts.get(link.caption.id) ?? 0) + 1,
+    );
+  }
+  const captionBlocksByRelationship = new Map<string, string[]>();
+  for (const block of blocks) {
+    const link = resolveCanonicalCaptionLink(block, sourcePage);
+    if (!link) continue;
+    const blockIds = captionBlocksByRelationship.get(link.relationship.id) ?? [];
+    blockIds.push(block.id);
+    captionBlocksByRelationship.set(link.relationship.id, blockIds);
+  }
+  const chartCaptions = new Map<string, CanonicalCaptionLink>();
+  const chartCaptionPlacements = new Map<string, "before" | "after">();
+  const consumedCaptionBlockIds = new Set<string>();
+  for (const { blockId, link } of proposedChartCaptions) {
+    const captionBlockIds =
+      captionBlocksByRelationship.get(link.relationship.id) ?? [];
+    if (
+      captionClaimCounts.get(link.caption.id) !== 1 ||
+      captionBlockIds.length !== 1
+    ) {
+      continue;
+    }
+    chartCaptions.set(blockId, link);
+    chartCaptionPlacements.set(
+      blockId,
+      (blockOrderById.get(captionBlockIds[0]!) ?? Number.MAX_SAFE_INTEGER) <
+        (blockOrderById.get(blockId) ?? -1)
+        ? "before"
+        : "after",
+    );
+    consumedCaptionBlockIds.add(captionBlockIds[0]!);
+  }
+
   return (
     <article
       className="rendered-page"
       aria-label={`Canonical content for physical page ${page.page_index}`}
     >
       {blocks.map((block) => {
+        if (consumedCaptionBlockIds.has(block.id)) return null;
         const isCaption =
           block.primary_element_type.toLowerCase() === "caption";
         const primaryElementType =
@@ -850,6 +1004,7 @@ function CanonicalRenderedPage({
           block,
           sourcePage,
         );
+        const chartResolution = chartResolutions.get(block.id) ?? null;
         const outlineStructure = outlineStructures?.get(block.id) ?? null;
         const canonicalFallback =
           primaryElementType === "heading" && headingLevel !== null ? (
@@ -909,6 +1064,17 @@ function CanonicalRenderedPage({
         }
 
         if (outlineStructures === null) return canonicalFallback;
+
+        if (chartResolution) {
+          return (
+            <ChartSourceImage
+              captionLink={chartCaptions.get(block.id)}
+              captionPlacement={chartCaptionPlacements.get(block.id)}
+              chart={chartResolution}
+              key={block.id}
+            />
+          );
+        }
 
         if (diagramSemantics) {
           return (
@@ -980,6 +1146,7 @@ function CanonicalRenderedPage({
                 item={primaryItem}
                 sourcePage={sourcePage}
                 sourceSha256={sourceSha256}
+                renderSourceSha256={renderSourceSha256}
               />
             </div>
           );
@@ -990,6 +1157,7 @@ function CanonicalRenderedPage({
             item={primaryItem}
             sourcePage={sourcePage}
             sourceSha256={sourceSha256}
+            renderSourceSha256={renderSourceSha256}
           />
         );
       })}
@@ -1219,7 +1387,14 @@ export function TaffyBopWorkspace() {
   const isSuccess = requestState === "success" && result !== null;
   const currentPageHasContent = canonicalPresentation
     ? currentCanonicalBlocks.length > 0
-    : currentPage !== null && pageHasContent(currentPage);
+    : currentPage !== null &&
+      pageHasContent(
+        currentPage,
+        result?.document.sha256 ?? "",
+        result?.document.render_source_sha256 ??
+          result?.document.sha256 ??
+          "",
+      );
   const previewControlsDisabled = previewKind === "tiff";
   const normalizedDocumentJson = useMemo(
     () => (result ? normalizeDocumentJson(result) : null),
@@ -2185,12 +2360,22 @@ export function TaffyBopWorkspace() {
                         blocks={currentCanonicalBlocks}
                         sourcePage={currentPage}
                         sourceSha256={result?.document.sha256 ?? ""}
+                        renderSourceSha256={
+                          result?.document.render_source_sha256 ??
+                          result?.document.sha256 ??
+                          ""
+                        }
                         outlineStructures={outlineStructures}
                       />
                     ) : currentPage ? (
                       <RenderedPage
                         page={currentPage}
                         sourceSha256={result?.document.sha256 ?? ""}
+                        renderSourceSha256={
+                          result?.document.render_source_sha256 ??
+                          result?.document.sha256 ??
+                          ""
+                        }
                       />
                     ) : null
                   ) : null}

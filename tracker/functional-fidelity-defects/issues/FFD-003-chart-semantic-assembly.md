@@ -4,7 +4,7 @@ Status: **Proposed**
 Severity: **Critical**  
 Priority: **P0**  
 Primary story: **P05-US03; P05-US04 only for source-printed or safely measured values**  
-Dependencies: **FFD-001, FFD-002**
+Dependencies: **FFD-001, FFD-002, FFD-015**
 
 ## Scope and impact
 
@@ -38,6 +38,10 @@ Non-goals:
   individually printed or safely measured from supported geometry.
 - Do not invent intermediate values, hidden source data, or semantic prose.
 - Do not fix OCR/token ownership in this card; those are prerequisites.
+- Do not treat a retained source-chart image or partial semantic transcript as
+  completed semantic assembly. FFD-015 first retains the source asset and owns
+  terminal-state arbitration; only its `structured_primary` state can satisfy
+  this card's panel/axis/legend/category/series requirements.
 
 ## Source-grounded oracle
 
@@ -100,8 +104,9 @@ primary; associated text/table/DOM rows are correlated manifestations.
 
 - State: **Confirmed missing semantic assembly; per-family capability limits
   and oracles pending**
-- Production boundary: P05 axis/panel/legend/category/series association after
-  visual typing and source-text reconciliation.
+- Production boundary: P05 family analyzers run only after FFD-015 asset custody
+  and family/complexity classification. Their output becomes authoritative only
+  after the recorded family-specific completeness gate passes.
 - Why one defect: all cases lack the same intermediate chart structure rather
   than independent Markdown/JSON/UI fixes.
 - Safety constraint: an association requires source geometry/provenance and
@@ -119,12 +124,25 @@ primary; associated text/table/DOM rows are correlated manifestations.
 5. A data point is emitted only when its value is explicitly printed or a
    supported P05-US04 measurement has recorded geometry, calibration, method,
    tolerance, and confidence. Otherwise points remain absent.
-6. Unsupported log/dual axes, ambiguous swatches, curves, or inferred values
-   fail closed with concern codes rather than approximate output.
+6. Every supported family has a versioned completeness contract enumerating
+   required, optional, and deliberately unresolved panels, axes, legends,
+   categories, series, printed values, evidence, and tolerances. Unsupported
+   log/dual axes, ambiguous swatches, curves, or inferred values fail the gate
+   with concern codes rather than producing approximate primary output.
 7. Public JSON validates context-free; raw Markdown equals canonical Markdown;
    the rendered UI groups each chart in source order with no flat-text duplicate.
 8. Fresh seven-case reference/service/UI captures pass source review; a final
    all-15 drift screen proves tables, diagrams, photos, and prose did not move.
+9. A passing completeness gate selects FFD-015 `structured_primary`; failure,
+   ambiguity, timeout, or resource refusal preserves the exact retained asset
+   and selects `image_primary_incomplete`, never a partial structured primary.
+   A family with no approved analyzer selects `image_primary_unsupported` and
+   remains an open semantic gap under this card.
+10. Semantic promotion preserves the exact FFD-015 owner ID, asset ID/SHA,
+    bytes, bbox/transform/render record, transcript/caption/source-note custody,
+    reading-order anchor, and prior evidence revisions. FFD-003 cannot mint,
+    rerender, replace, or delete the source asset or bypass terminal-state
+    schema validation.
 
 ## Generic-production requirements
 
@@ -137,6 +155,9 @@ primary; associated text/table/DOM rows are correlated manifestations.
   record finite rules/tolerances for association or measurement. Unsupported
   families and ambiguous marks must remain explicit, concern-bearing gaps rather
   than receive a LlamaParse-derived or benchmark-specific reconstruction.
+- Treat chart-to-table/VLM output as derived evidence until it passes the
+  family-specific completeness contract. A nonempty table or high model score
+  cannot independently select `structured_primary`.
 - Add transformed/synthetic chart variants that rename and reserialize the PDF,
   prepend a page, reorder/resize panels, move legends, change titles/categories/
   values, and vary axis scales and plot geometry. Structure and printed-value
@@ -159,9 +180,10 @@ Genericity closure gates:
 
 ## Test and rerun plan
 
-- Focused tests: one supported multi-panel chart, grouped/stacked legend chart,
-  printed-value series, and curve/unresolved fallback; then one oracle-driven
-  assertion for every real chart owner.
+- Focused tests: paired complete/incomplete versions of each supported family,
+  one multi-panel chart, grouped/stacked legend chart, printed-value series,
+  and curve/unsupported case; assert terminal-state selection plus invariant
+  FFD-015 asset identity before one oracle-driven assertion per real owner.
 - Adversarial: ambiguous swatch, duplicated year label, missing tick, clipped
   baseline, unprinted value from baseline JSON, and chart-shaped table.
 - Controls: NY and Postal tables, ACORD form, Clinical diagram, Component image,
@@ -191,7 +213,8 @@ Genericity closure gates:
   slice, manually compare only its source oracle and named chart owners below:
   the relevant Markdown chart/fallback fragments and local placement, rendered
   chart/panel/label-value DOM selectors and snapshots, and JSON paths for owner
-  linkage, axes, series, categories, values, evidence, ambiguity, and provenance.
+  linkage, axes, series, categories, values, evidence, ambiguity, provenance,
+  completeness result, terminal state, and unchanged FFD-015 asset custody.
   Broader unrelated comparison belongs to the control, wave, and final all-15 gates.
 - Apply the per-chart source oracle to Catastrophe p1/7, Clean p1/11, eGov
   p1/37, ESG p1/80, both Health p1/103 charts, all five Manufacturing owners on

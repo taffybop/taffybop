@@ -168,6 +168,39 @@ keeps the useful predecessor image/chart/diagram fallback instead of returning
 fabricated series, values, connectors, or labels. Structured output remains
 owned by the original chart or diagram and is never promoted to a second table.
 
+`PARSER_CHARTS_SOURCE_ASSET_ENABLED=true` adds a bounded, source-faithful PNG
+crop and a single terminal `chart_resolution` decision for each admitted chart.
+It requires `PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED`, `PARSER_SHARED_IR_ENABLED`,
+`PARSER_SHARED_IR_NORMALIZATION_ENABLED`, and
+`PARSER_CANONICAL_SERIALIZATION_ENABLED`; configuration fails closed when any
+dependency is absent. The terminal states are:
+
+- `structured_primary`: a supported analyzer passed the complete semantic gate;
+  structured chart output is primary and the source crop remains retained.
+- `image_primary_unsupported`: no approved analyzer supports the chart family;
+  the retained source crop is primary.
+- `image_primary_incomplete`: analysis ran but was incomplete, ambiguous,
+  timed out, or exceeded its work budget; the retained source crop is primary.
+- `asset_unavailable`: a safe source crop could not be retained because source,
+  geometry, integrity, rendering, deadline, or resource checks failed; the
+  grounded predecessor representation remains primary.
+
+The feature does not automatically call advanced OCR or a hosted model. It
+returns the existing transcript plus ownership, transcription, family, and
+complexity confidence, missing semantic features, ambiguous evidence IDs,
+concern codes, and any asset-unavailable reason. A downstream caller can use
+that evidence to decide whether a separate advanced-OCR pass is warranted.
+For PDFs, crop retention also requires one exact raw Docling picture owner;
+the page's detected-image inventory may corroborate it but cannot establish
+ownership by itself. The retained asset records the geometry-proof kind,
+evidence IDs, and evidence digest. Clipped, materially overlapping,
+duplicate-identity, or spatially relevant malformed owner evidence fails
+closed as `owner_geometry_invalid` before a renderer is started.
+No uncertain or estimated chart value is promoted merely because an image was
+retained: only the complete supported semantic state can become structured
+primary. Disabling the flag removes this additive resolution/asset path and
+ignores its auxiliary limit variables.
+
 Markdown keeps headings and lists as Markdown, emits tables as HTML where that
 is necessary to preserve row or column spans, and represents detected images
 by their recognized text. Detailed geometry and provenance remain available in
@@ -526,6 +559,19 @@ The app reads environment variables directly; it does not automatically load a
 | `PARSER_LAYOUT_OUTLINE_STRUCTURE_ENABLED` | `false` | Preserve source-grounded bullet, decimal, and lower-alpha hierarchy plus one bounded same-page table continuation. Requires shared IR, shared IR normalization, canonical serialization, and relationship order; malformed, ambiguous, form-owned, or over-limit candidates fail closed. |
 | `PARSER_LAYOUT_RUNNING_REGIONS_ENABLED` | `false` | Separate source-grounded running headers, footers, bounded navigation, and printed page identity from the canonical Body view while retaining each once in Full. Requires shared IR, normalization, canonical serialization, and relationship order; malformed, ambiguous, invisible, unowned, or over-limit evidence fails closed. |
 | `PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED` | `false` | Add the strict, typed chart/diagram `visual_structure` sidecar and conservative fallback routing. This is the Phase 05 schema foundation and has no Phase 05 prerequisite. |
+| `PARSER_CHARTS_SOURCE_ASSET_ENABLED` | `false` | Retain bounded source-faithful chart PNGs and emit a terminal `chart_resolution`. Requires the visual schema, shared IR, normalization, and canonical serialization. It does not automatically invoke advanced OCR. |
+| `PARSER_CHARTS_SOURCE_ASSET_MIN_WIDTH` | `64` | Enabled-only minimum retained chart-crop width in pixels (1–8192); smaller crops fail closed as illegible. |
+| `PARSER_CHARTS_SOURCE_ASSET_MIN_HEIGHT` | `64` | Enabled-only minimum retained chart-crop height in pixels (1–8192); smaller crops fail closed as illegible. |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_WIDTH` | `2048` | Enabled-only maximum retained chart-crop width in pixels (1–8192). |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_HEIGHT` | `2048` | Enabled-only maximum retained chart-crop height in pixels (1–8192). |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_PIXELS` | `4000000` | Enabled-only maximum pixels in one retained chart crop (1–16000000). |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_BYTES` | `2097152` | Enabled-only maximum encoded PNG bytes for one chart source asset (1024–8388608). |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_ASSETS` | `64` | Enabled-only maximum chart source-asset attempts/retained assets per document (1–256). |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_TOTAL_BYTES` | `16777216` | Enabled-only cumulative encoded PNG-byte budget per document (1024–67108864), and it must cover one configured asset. |
+| `PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES` | `50331648` | Enabled-only response budget for the repeated public data-URI representations of retained chart assets (1024–50331648). The ceiling matches the public parse-result preflight cap. |
+| `PARSER_CHARTS_SOURCE_ASSET_TIMEOUT_SECONDS` | `2.0` | Enabled-only hard rendering deadline for one chart source asset in seconds (0.001–30). |
+| `PARSER_CHARTS_SOURCE_ASSET_DOCUMENT_TIMEOUT_SECONDS` | `8.0` | Enabled-only cumulative chart source-asset rendering deadline for one document in seconds (0.001–120). |
+| `PARSER_CHARTS_SOURCE_ASSET_PDF_DPI` | `144.0` | Enabled-only PDF chart-crop rendering resolution in DPI (96–288); direct image crops remain in source pixels. |
 | `PARSER_CHARTS_VECTOR_INVENTORY_ENABLED` | `false` | Inventory only chart-owned vector primitives, panels, transforms, and clips. Requires the visual-structure schema. |
 | `PARSER_CHARTS_STRUCTURE_ENABLED` | `false` | Ground supported chart labels, linear axes, legends, panels, and series without values. Requires vector inventory. |
 | `PARSER_CHARTS_VECTOR_VALUES_ENABLED` | `false` | Measure supported vertical linear vector bars with grounded category, series, axis, geometry, method, and tolerance. Requires chart structure. |

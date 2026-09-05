@@ -100,10 +100,12 @@ def test_acord_complete_blank_parties_form_owns_canonical_region_once() -> None:
         for key, item in groups.items()
         if key != "parties-and-insurers"
     } == {
-        key: "inert"
+        key: "replace" if key == "coverages" else "inert"
         for key in groups
         if key != "parties-and-insurers"
     }
+    assert groups["coverages"]["form_group"]["status"] == "resolved"
+    assert groups["coverages"]["form_group"]["form_grid"]
     assert len(parties["form_fields"]) == 18
     assert len(parties["form_labels"]) == 14
     assert all(

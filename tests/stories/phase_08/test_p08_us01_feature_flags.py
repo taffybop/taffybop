@@ -37,9 +37,10 @@ def test_registry_owns_safe_defaults_dependencies_and_rollback_metadata() -> Non
     registry = shipping_flag_registry()
 
     registry.validate(settings)
-    assert len(registry.flags) == 53
+    assert len(registry.flags) == 54
     assert {flag.setting for flag in registry.flags} >= {
         "shared_ir_enabled",
+        "charts_source_asset_enabled",
         "table_multi_page_merge_enabled",
         "visual_models_merge_enabled",
         "adapters_future_conformance_gate_enabled",
@@ -58,6 +59,8 @@ def test_existing_environment_names_load_one_valid_dependency_chain(
         "PARSER_SHARED_IR_ENABLED",
         "PARSER_SHARED_IR_NORMALIZATION_ENABLED",
         "PARSER_CANONICAL_SERIALIZATION_ENABLED",
+        "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED",
+        "PARSER_CHARTS_SOURCE_ASSET_ENABLED",
         "PARSER_TABLES_SPAN_FIDELITY_ENABLED",
         "PARSER_TABLES_EVIDENCE_RECONCILIATION_ENABLED",
         "PARSER_TABLES_CANDIDATE_GATE_ENABLED",
@@ -67,6 +70,7 @@ def test_existing_environment_names_load_one_valid_dependency_chain(
 
     settings = Settings.from_env()
 
+    assert settings.charts_source_asset_enabled is True
     assert settings.table_multi_page_merge_enabled is True
     shipping_flag_registry().validate(settings)
 
@@ -101,6 +105,74 @@ def test_capability_rollback_disables_dependants_and_keeps_unrelated_flags() -> 
     assert effective.table_evidence_reconciliation_enabled is False
     assert effective.table_candidate_gate_enabled is False
     assert effective.table_multi_page_merge_enabled is False
+
+
+def test_chart_asset_rollback_keeps_its_visual_and_ir_dependencies() -> None:
+    configured = Settings(
+        shared_ir_enabled=True,
+        shared_ir_normalization_enabled=True,
+        canonical_serialization_enabled=True,
+        visual_structure_schema_enabled=True,
+        charts_source_asset_enabled=True,
+    )
+
+    effective = shipping_flag_registry().rollback(configured, "chart_assets")
+
+    assert effective.charts_source_asset_enabled is False
+    assert effective.visual_structure_schema_enabled is True
+    assert effective.shared_ir_enabled is True
+    assert effective.shared_ir_normalization_enabled is True
+    assert effective.canonical_serialization_enabled is True
+
+
+def test_chart_asset_response_budget_cannot_exceed_public_inline_cap(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    dependency_chain = {
+        "shared_ir_enabled": True,
+        "shared_ir_normalization_enabled": True,
+        "canonical_serialization_enabled": True,
+        "visual_structure_schema_enabled": True,
+        "charts_source_asset_enabled": True,
+    }
+    public_inline_cap = 48 * 1024 * 1024
+
+    configured = Settings(
+        **dependency_chain,
+        charts_source_asset_max_response_bytes=public_inline_cap,
+    )
+    assert configured.charts_source_asset_max_response_bytes == public_inline_cap
+
+    with pytest.raises(
+        ValueError,
+        match="PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES",
+    ):
+        Settings(
+            **dependency_chain,
+            charts_source_asset_max_response_bytes=public_inline_cap + 1,
+        )
+
+    monkeypatch.setenv(
+        "PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES",
+        str(public_inline_cap + 1),
+    )
+    disabled = Settings.from_env()
+    assert disabled.charts_source_asset_enabled is False
+    assert disabled.charts_source_asset_max_response_bytes == public_inline_cap
+
+    for name in (
+        "PARSER_SHARED_IR_ENABLED",
+        "PARSER_SHARED_IR_NORMALIZATION_ENABLED",
+        "PARSER_CANONICAL_SERIALIZATION_ENABLED",
+        "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED",
+        "PARSER_CHARTS_SOURCE_ASSET_ENABLED",
+    ):
+        monkeypatch.setenv(name, "true")
+    with pytest.raises(
+        ValueError,
+        match="PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES",
+    ):
+        Settings.from_env()
 
 
 def test_unknown_capability_fails_closed_before_effective_configuration() -> None:

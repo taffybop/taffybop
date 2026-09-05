@@ -379,6 +379,16 @@ def shipping_flag_registry() -> ShippingFlagRegistry:
             "visual",
         ),
         _flag(
+            "charts_source_asset_enabled",
+            "PARSER_CHARTS_SOURCE_ASSET_ENABLED",
+            "charts",
+            "chart_assets",
+            "visual_structure_schema_enabled",
+            "shared_ir_enabled",
+            "shared_ir_normalization_enabled",
+            "canonical_serialization_enabled",
+        ),
+        _flag(
             "charts_vector_inventory_enabled",
             "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED",
             "charts",

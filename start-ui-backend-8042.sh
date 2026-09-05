@@ -3,6 +3,24 @@ set -euo pipefail
 
 workspace="/Users/vignesh/Downloads/taffybop"
 
+# Keep this launcher usable from non-login shells, which do not always inherit
+# Homebrew's bin directory on macOS. Explicit caller overrides still win.
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+if [[ -z "${TESSERACT_CMD:-}" ]] && command -v tesseract >/dev/null 2>&1; then
+  export TESSERACT_CMD="$(command -v tesseract)"
+fi
+if [[ -z "${TESSERACT_DATA_PATH:-}" ]]; then
+  for tessdata_candidate in \
+    /opt/homebrew/share/tessdata \
+    /usr/local/share/tessdata \
+    /usr/share/tesseract-ocr/5/tessdata; do
+    if [[ -d "$tessdata_candidate" ]]; then
+      export TESSERACT_DATA_PATH="$tessdata_candidate"
+      break
+    fi
+  done
+fi
+
 export HF_HUB_OFFLINE="1"
 export TRANSFORMERS_OFFLINE="1"
 export TOKENIZERS_PARALLELISM="false"
@@ -39,6 +57,7 @@ export PARSER_CHARTS_RASTER_BAR_VALUES_ENABLED="true"
 export PARSER_CHARTS_RASTER_LINE_VALUES_ENABLED="true"
 export PARSER_CHARTS_RASTER_ANALYSIS_ENABLED="true"
 export PARSER_DIAGRAMS_TOPOLOGY_ENABLED="true"
+export PARSER_CHARTS_SOURCE_ASSET_ENABLED="true"
 
 cd "$workspace"
 exec "$workspace/.venv/bin/uvicorn" app.main:app \

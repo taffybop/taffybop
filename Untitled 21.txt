@@ -1,0 +1,85 @@
+Here’s a simple copy-ready prompt:
+
+> Research active micro-SaaS products focused on document parsing and structured data extraction. Look specifically for simple, narrow products that do one or a few tasks well, such as PDF data extraction, text from images, 
+
+-Texts - Heading , sub heading, 
+-properly understanding alignments - (two columns , 3 or multi columns - but parsing in a proper order), And make sure the continuity in next page. 
+-Exclude complex graphs or images with complex data sets except for simple texts - we can just parse the text but retain original image. 
+-Any content (texts) mentioned inside a small box or right side of image. had to be properly read. (Ex: userearnings.pdf - page 3)
+-finance-10k.pdf is just perfect extraction.
+-catastrophe recap - only the graph part we can skip remaining all good - we can retain image - and use for advanced OCR.
+-insurance-accord.pdf - why don't we retain its original structure of the complex form type table? Even though any value is entered in the form why don't we have same structure of original table and just have field name and values(if any) captured on same structure.
+-clinical-study is all good.
+-For any graphs - why don't we have only the image? Is it possible to identify whether its a complex graph/? we can parse text part and just ratain the graph as an image? - and later use for advanced OCR. - health-report.pdf
+-settlement-agreement.pdf is all good
+-purchase-agreement.pdf is all good
+-component-datasheet.pdf - except for images of microcontroller and pico digram parsing - all are good - and use image for advanced OCR.
+- esg-metrics.pdf all good except for reading image data.
+- egov-survey.pdf all good except for reading image data.
+- postal-10k.pdf is all good.
+- ny-timetable.pdf was just perfect.
+
+
+
+forms, invoice parsing, bank-statement parsing, form-field extraction, parsing doc sent via email/whatsapp ,document full read, or document comparison, mainly focussed on content text, and any complex structured table, line items, alignments - (two columns , 3 or multi columns - but parsing in a proper order) to markdown or json etc,.
+>
+> Exclude large enterprise platforms such as Rossum, Nanonets, Adobe, Google, Microsoft, and AWS.
+>
+> For each product, provide:
+>
+> - Product name and website
+> - The single main problem it solves
+> - Target customer
+> - Core features
+> - Pricing
+> - Evidence of traction, such as revenue, customers, reviews, acquisition, or longevity
+> - Whether traction is verified, founder-reported, vendor-claimed, or unknown
+> - Why the product remains simple
+> - What we could learn from it
+>
+> Present at least 20 products in a comparison table. Do not invent revenue or customer numbers. Clearly label information that cannot be verified.
+>
+> Finally, identify: (along with listing the above)
+>
+> 1. The five strongest successful micro-SaaS examples.
+> 2. The most common successful product pattern.
+> 3. Underserved document-parsing niches.
+> 4. Which opportunity would best fit a source-faithful parser supporting tables, text, forms, geometry, and provenance.
+
+
+
+---------------------
+
+
+> Research active micro-SaaS products focused on text-first, source-faithful document parsing and structured data extraction. Products may address one or a few of these capabilities:
+>
+> - Extract headings, subheadings, paragraphs, lists, and complete document text.
+> - Preserve correct reading order across two-column, three-column, or multi-column layouts, including continuity across pages.
+> - Capture text inside boxes, callouts, sidebars, and beside images.
+> - Preserve complex tables and forms in their original row, column, merged-cell, field-name, empty-field, and entered-value structure.
+> - Extract invoices, bank statements, line items, forms, and documents received through email or WhatsApp.
+> - Convert documents into source-linked Markdown, JSON, etc,.
+> - Support complete document reading or document comparison.
+>
+> Focus on simple, narrow products that perform one or a few of these tasks well. Exclude large enterprise platforms such as Rossum, Nanonets, Adobe, Google, Microsoft, and AWS.
+>
+> For each product, provide:
+>
+> - Product name and website
+> - Its single main use case
+> - Target customer
+> - Core features
+> - Pricing
+> - Evidence of traction: revenue, customers, reviews, acquisition, or longevity
+> - Whether the evidence is verified, founder-reported, vendor-claimed, or unknown
+> - Why the product remains simple
+> - What we can learn from it
+>
+> Present at least 20 products in a comparison table. Do not invent revenue or customer numbers, and clearly label unverifiable information.
+>
+> Finally, identify:(after printing the above 20)
+>
+> 1. The five strongest successful micro-SaaS examples.
+> 2. The most common successful product pattern.
+> 3. Underserved document-parsing niches.
+> 4. The best opportunity for a source-faithful parser supporting text, reading order, tables, forms, geometry, images, and provenance.

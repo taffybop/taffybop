@@ -9,6 +9,7 @@ import { readCanonicalPresentation } from "./canonical-presentation.ts";
 
 export const DEFAULT_PARSE_TIMEOUT_MS = 330_000;
 export const DEFAULT_PARSE_MAX_UPLOAD_BYTES = 20 * 1024 * 1024;
+export const DEFAULT_PARSE_MAX_RESPONSE_BYTES = 64 * 1024 * 1024;
 export const PARSE_PROXY_ENDPOINT = "/api/parse";
 export const SUPPORTED_DOCUMENT_ACCEPT = [
   ".pdf",
@@ -146,6 +147,114 @@ export class DocumentApiError extends Error {
     this.code = code;
     this.status = options.status ?? null;
     this.details = options.details ?? {};
+  }
+}
+
+function responseTooLarge(
+  response: Response,
+  maximumBytes: number,
+  receivedBytes: number,
+): DocumentApiError {
+  return new DocumentApiError(
+    "server",
+    "response_too_large",
+    "The parsing service returned more data than the browser can safely process.",
+    {
+      status: response.status,
+      details: {
+        max_bytes: maximumBytes,
+        received_bytes: receivedBytes,
+      },
+    },
+  );
+}
+
+/**
+ * Read parser output without allowing an upstream response to grow without
+ * bound. The byte ceiling applies to the decoded HTTP body stream; cancelling
+ * the reader also terminates the underlying fetch body when the cap is crossed.
+ */
+export async function readBoundedParserResponseText(
+  response: Response,
+  maximumBytes = DEFAULT_PARSE_MAX_RESPONSE_BYTES,
+  onLimitExceeded?: () => void,
+): Promise<string> {
+  if (!Number.isSafeInteger(maximumBytes) || maximumBytes <= 0) {
+    throw new DocumentApiError(
+      "configuration",
+      "invalid_response_limit",
+      "The parser response limit must be a positive whole number of bytes.",
+    );
+  }
+
+  const contentLengthValue = response.headers.get("content-length")?.trim();
+  let declaredLength: number | null = null;
+  let declaredTooLarge = false;
+  if (contentLengthValue !== undefined && /^[0-9]+$/u.test(contentLengthValue)) {
+    const normalizedLength = contentLengthValue.replace(/^0+/u, "") || "0";
+    const maximumText = String(maximumBytes);
+    declaredTooLarge =
+      normalizedLength.length > maximumText.length ||
+      (normalizedLength.length === maximumText.length &&
+        normalizedLength > maximumText);
+    const numericLength = Number(normalizedLength);
+    if (Number.isSafeInteger(numericLength)) declaredLength = numericLength;
+  }
+  if (declaredTooLarge) {
+    try {
+      onLimitExceeded?.();
+    } catch {
+      // A caller callback cannot replace the stable response-size failure.
+    }
+    try {
+      await response.body?.cancel("Parser response byte limit exceeded.");
+    } catch {
+      // The typed size error remains authoritative if transport cancellation races.
+    }
+    throw responseTooLarge(
+      response,
+      maximumBytes,
+      declaredLength ?? maximumBytes + 1,
+    );
+  }
+
+  if (response.body === null) return "";
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  const fragments: string[] = [];
+  let receivedBytes = 0;
+  try {
+    while (true) {
+      const chunk = await reader.read();
+      if (chunk.done) break;
+      if (!(chunk.value instanceof Uint8Array)) {
+        throw new DocumentApiError(
+          "server",
+          "invalid_response_body",
+          "The parsing service returned an invalid response body.",
+          { status: response.status },
+        );
+      }
+      receivedBytes += chunk.value.byteLength;
+      if (receivedBytes > maximumBytes) {
+        try {
+          onLimitExceeded?.();
+        } catch {
+          // A caller callback cannot replace the stable response-size failure.
+        }
+        try {
+          await reader.cancel("Parser response byte limit exceeded.");
+        } catch {
+          // The typed size error remains authoritative if transport cancellation races.
+        }
+        throw responseTooLarge(response, maximumBytes, receivedBytes);
+      }
+      fragments.push(decoder.decode(chunk.value, { stream: true }));
+    }
+    fragments.push(decoder.decode());
+    return fragments.join("");
+  } finally {
+    reader.releaseLock();
   }
 }
 
@@ -349,14 +458,22 @@ function errorKindForStatus(
   return status >= 400 && status < 500 ? "validation" : "server";
 }
 
-async function errorFromResponse(response: Response): Promise<DocumentApiError> {
+async function errorFromResponse(
+  response: Response,
+  onLimitExceeded?: () => void,
+): Promise<DocumentApiError> {
   let payload: unknown;
   let rawBody = "";
 
   try {
-    rawBody = await response.text();
+    rawBody = await readBoundedParserResponseText(
+      response,
+      DEFAULT_PARSE_MAX_RESPONSE_BYTES,
+      onLimitExceeded,
+    );
     payload = rawBody ? JSON.parse(rawBody) : undefined;
-  } catch {
+  } catch (error) {
+    if (error instanceof DocumentApiError) throw error;
     payload = undefined;
   }
 
@@ -472,9 +589,19 @@ async function requestParse<Format extends ParseOutputFormat>(
       },
     );
 
-    if (!response.ok) throw await errorFromResponse(response);
+    const abortOversizedResponse = () =>
+      abort.controller.abort(
+        new DOMException("Parser response byte limit exceeded.", "AbortError"),
+      );
+    if (!response.ok) {
+      throw await errorFromResponse(response, abortOversizedResponse);
+    }
 
-    const body = await response.text();
+    const body = await readBoundedParserResponseText(
+      response,
+      DEFAULT_PARSE_MAX_RESPONSE_BYTES,
+      abortOversizedResponse,
+    );
     if (!body.trim()) {
       throw new DocumentApiError(
         "empty",

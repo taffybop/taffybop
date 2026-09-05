@@ -199,6 +199,33 @@ def _build_markdown(
     return markdown, 1 if caption is not None else 0
 
 
+def replay_chart_serialization(
+    item: Mapping[str, Any],
+    structure: VisualStructure,
+) -> VisualSerialization:
+    """Rebuild the canonical public chart projection from grounded points.
+
+    Terminal promotion must never trust analyzer-carried Markdown.  Keeping
+    this replay beside the sole serializer makes the final resolution gate
+    compare against the same escaping, ordering, caption, and tolerance rules
+    that originally produced the structured chart.
+    """
+
+    if structure.region.kind != "chart" or not structure.points:
+        raise ValueError("chart serialization replay requires grounded points")
+    markdown, caption_occurrences = _build_markdown(
+        item,
+        structure,
+        structure.points,
+    )
+    return VisualSerialization(
+        status="structured_chart",
+        markdown=markdown,
+        caption_occurrences=caption_occurrences,
+        row_count=len(structure.points),
+    )
+
+
 def _normalized_semantic(value: str) -> str:
     normalized = unicodedata.normalize("NFKC", value).casefold().strip()
     return " ".join(normalized.split())
@@ -620,4 +647,4 @@ def validate_and_serialize_chart(
         )
 
 
-__all__ = ["validate_and_serialize_chart"]
+__all__ = ["replay_chart_serialization", "validate_and_serialize_chart"]

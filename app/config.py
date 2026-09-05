@@ -267,6 +267,19 @@ class Settings:
     table_candidate_gate_enabled: bool = False
     table_multi_page_merge_enabled: bool = False
     visual_structure_schema_enabled: bool = False
+    charts_source_asset_enabled: bool = False
+    charts_source_asset_min_width: int = 64
+    charts_source_asset_min_height: int = 64
+    charts_source_asset_max_width: int = 2_048
+    charts_source_asset_max_height: int = 2_048
+    charts_source_asset_max_pixels: int = 4_000_000
+    charts_source_asset_max_bytes: int = 2 * MEBIBYTE
+    charts_source_asset_max_assets: int = 64
+    charts_source_asset_max_total_bytes: int = 16 * MEBIBYTE
+    charts_source_asset_max_response_bytes: int = 48 * MEBIBYTE
+    charts_source_asset_timeout_seconds: float = 2.0
+    charts_source_asset_document_timeout_seconds: float = 8.0
+    charts_source_asset_pdf_dpi: float = 144.0
     charts_vector_inventory_enabled: bool = False
     charts_structure_enabled: bool = False
     charts_vector_values_enabled: bool = False
@@ -627,6 +640,17 @@ class Settings:
             raise ValueError(
                 "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED requires "
                 "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED"
+            )
+        if self.charts_source_asset_enabled and (
+            not self.visual_structure_schema_enabled
+            or not self.shared_ir_enabled
+            or not self.shared_ir_normalization_enabled
+            or not self.canonical_serialization_enabled
+        ):
+            raise ValueError(
+                "PARSER_CHARTS_SOURCE_ASSET_ENABLED requires the visual "
+                "schema, shared IR, shared IR normalization, and canonical "
+                "serialization"
             )
         if (
             self.charts_structure_enabled
@@ -1201,6 +1225,118 @@ class Settings:
                 if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or not minimum <= float(value) <= maximum:
                     raise ValueError(f"{name} must be between {minimum:g} and {maximum:g}")
 
+        if self.charts_source_asset_enabled:
+            for name, value, minimum, maximum in (
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MIN_WIDTH",
+                    self.charts_source_asset_min_width,
+                    1,
+                    8_192,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MIN_HEIGHT",
+                    self.charts_source_asset_min_height,
+                    1,
+                    8_192,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_WIDTH",
+                    self.charts_source_asset_max_width,
+                    1,
+                    8_192,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_HEIGHT",
+                    self.charts_source_asset_max_height,
+                    1,
+                    8_192,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_PIXELS",
+                    self.charts_source_asset_max_pixels,
+                    1,
+                    16_000_000,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_BYTES",
+                    self.charts_source_asset_max_bytes,
+                    1_024,
+                    8 * MEBIBYTE,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_ASSETS",
+                    self.charts_source_asset_max_assets,
+                    1,
+                    256,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_TOTAL_BYTES",
+                    self.charts_source_asset_max_total_bytes,
+                    1_024,
+                    64 * MEBIBYTE,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES",
+                    self.charts_source_asset_max_response_bytes,
+                    1_024,
+                    48 * MEBIBYTE,
+                ),
+            ):
+                if (
+                    isinstance(value, bool)
+                    or not isinstance(value, int)
+                    or not minimum <= value <= maximum
+                ):
+                    raise ValueError(
+                        f"{name} must be between {minimum} and {maximum}"
+                    )
+            if (
+                self.charts_source_asset_min_width
+                > self.charts_source_asset_max_width
+                or self.charts_source_asset_min_height
+                > self.charts_source_asset_max_height
+            ):
+                raise ValueError(
+                    "PARSER_CHARTS_SOURCE_ASSET minimum dimensions must not "
+                    "exceed maximum dimensions"
+                )
+            if self.charts_source_asset_max_total_bytes < (
+                self.charts_source_asset_max_bytes
+            ):
+                raise ValueError(
+                    "PARSER_CHARTS_SOURCE_ASSET_MAX_TOTAL_BYTES must cover "
+                    "one source asset"
+                )
+            for name, value, minimum, maximum in (
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_TIMEOUT_SECONDS",
+                    self.charts_source_asset_timeout_seconds,
+                    0.001,
+                    30.0,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_DOCUMENT_TIMEOUT_SECONDS",
+                    self.charts_source_asset_document_timeout_seconds,
+                    0.001,
+                    120.0,
+                ),
+                (
+                    "PARSER_CHARTS_SOURCE_ASSET_PDF_DPI",
+                    self.charts_source_asset_pdf_dpi,
+                    96.0,
+                    288.0,
+                ),
+            ):
+                if (
+                    isinstance(value, bool)
+                    or not isinstance(value, (int, float))
+                    or not math.isfinite(value)
+                    or not minimum <= float(value) <= maximum
+                ):
+                    raise ValueError(
+                        f"{name} must be between {minimum:g} and {maximum:g}"
+                    )
+
         phase07_dependencies = (
             (
                 "PARSER_ADAPTERS_IMAGE_PARITY_ENABLED",
@@ -1420,6 +1556,68 @@ class Settings:
             )
             prewarm_dependency_sha256 = _read_sha256(
                 "PARSER_LATENCY_PREWARM_DEPENDENCY_SHA256"
+            )
+        charts_source_asset_enabled = _read_bool(
+            "PARSER_CHARTS_SOURCE_ASSET_ENABLED",
+            False,
+        )
+        charts_source_asset_min_width = 64
+        charts_source_asset_min_height = 64
+        charts_source_asset_max_width = 2_048
+        charts_source_asset_max_height = 2_048
+        charts_source_asset_max_pixels = 4_000_000
+        charts_source_asset_max_bytes = 2 * MEBIBYTE
+        charts_source_asset_max_assets = 64
+        charts_source_asset_max_total_bytes = 16 * MEBIBYTE
+        charts_source_asset_max_response_bytes = 48 * MEBIBYTE
+        charts_source_asset_timeout_seconds = 2.0
+        charts_source_asset_document_timeout_seconds = 8.0
+        charts_source_asset_pdf_dpi = 144.0
+        if charts_source_asset_enabled:
+            charts_source_asset_min_width = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MIN_WIDTH", 64
+            )
+            charts_source_asset_min_height = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MIN_HEIGHT", 64
+            )
+            charts_source_asset_max_width = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_WIDTH", 2_048
+            )
+            charts_source_asset_max_height = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_HEIGHT", 2_048
+            )
+            charts_source_asset_max_pixels = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_PIXELS", 4_000_000
+            )
+            charts_source_asset_max_bytes = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_BYTES", 2 * MEBIBYTE
+            )
+            charts_source_asset_max_assets = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_ASSETS", 64
+            )
+            charts_source_asset_max_total_bytes = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_TOTAL_BYTES", 16 * MEBIBYTE
+            )
+            charts_source_asset_max_response_bytes = _read_int(
+                "PARSER_CHARTS_SOURCE_ASSET_MAX_RESPONSE_BYTES", 48 * MEBIBYTE
+            )
+            charts_source_asset_timeout_seconds = _read_float(
+                "PARSER_CHARTS_SOURCE_ASSET_TIMEOUT_SECONDS",
+                2.0,
+                minimum=0.001,
+                maximum=30.0,
+            )
+            charts_source_asset_document_timeout_seconds = _read_float(
+                "PARSER_CHARTS_SOURCE_ASSET_DOCUMENT_TIMEOUT_SECONDS",
+                8.0,
+                minimum=0.001,
+                maximum=120.0,
+            )
+            charts_source_asset_pdf_dpi = _read_float(
+                "PARSER_CHARTS_SOURCE_ASSET_PDF_DPI",
+                144.0,
+                minimum=96.0,
+                maximum=288.0,
             )
         raster_analysis_enabled = _read_bool(
             "PARSER_CHARTS_RASTER_ANALYSIS_ENABLED",
@@ -2078,6 +2276,27 @@ class Settings:
                 "PARSER_VISUAL_STRUCTURE_SCHEMA_ENABLED",
                 False,
             ),
+            charts_source_asset_enabled=charts_source_asset_enabled,
+            charts_source_asset_min_width=charts_source_asset_min_width,
+            charts_source_asset_min_height=charts_source_asset_min_height,
+            charts_source_asset_max_width=charts_source_asset_max_width,
+            charts_source_asset_max_height=charts_source_asset_max_height,
+            charts_source_asset_max_pixels=charts_source_asset_max_pixels,
+            charts_source_asset_max_bytes=charts_source_asset_max_bytes,
+            charts_source_asset_max_assets=charts_source_asset_max_assets,
+            charts_source_asset_max_total_bytes=(
+                charts_source_asset_max_total_bytes
+            ),
+            charts_source_asset_max_response_bytes=(
+                charts_source_asset_max_response_bytes
+            ),
+            charts_source_asset_timeout_seconds=(
+                charts_source_asset_timeout_seconds
+            ),
+            charts_source_asset_document_timeout_seconds=(
+                charts_source_asset_document_timeout_seconds
+            ),
+            charts_source_asset_pdf_dpi=charts_source_asset_pdf_dpi,
             charts_vector_inventory_enabled=_read_bool(
                 "PARSER_CHARTS_VECTOR_INVENTORY_ENABLED",
                 False,

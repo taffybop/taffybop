@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import Any, Mapping
 
+from app.services.chart_assets import ChartResolution, chart_resolution_markdown
 from app.services.visual_contracts import VisualStructure
 from app.services.visual_model_contracts import VisualModelEvidenceBundle
 
@@ -98,12 +99,74 @@ def _structured_visual_markdown(item: Mapping[str, Any]) -> str | None:
     return markdown
 
 
+def _validated_chart_resolution(
+    item: Mapping[str, Any],
+) -> ChartResolution | None:
+    if _text(item.get("type")).lower() != "chart":
+        return None
+    raw = item.get("chart_resolution")
+    model_dump = getattr(raw, "model_dump", None)
+    if callable(model_dump):
+        raw = model_dump(mode="json")
+    if not isinstance(raw, Mapping):
+        return None
+    raw_structure = item.get("visual_structure")
+    structure_dump = getattr(raw_structure, "model_dump", None)
+    if callable(structure_dump):
+        raw_structure = structure_dump(mode="json")
+    try:
+        resolution = ChartResolution.model_validate(
+            _as_primitive(raw),
+            strict=True,
+        )
+        structure = VisualStructure.model_validate(
+            _as_primitive(raw_structure),
+            strict=True,
+        )
+    except (TypeError, ValueError):
+        return None
+    if (
+        resolution.owner_item_id != _text(item.get("id"))
+        or resolution.source_bbox != structure.region.page_bbox
+    ):
+        return None
+    structured = (
+        not structure.fallback.active
+        and structure.serialization is not None
+        and structure.serialization.status == "structured_chart"
+    )
+    if (resolution.status == "structured_primary") != structured:
+        if resolution.status == "structured_primary":
+            return None
+    if resolution.status == "asset_unavailable" and not structure.fallback.active:
+        return None
+    return resolution
+
+
 def _source_item_markdown(item: Mapping[str, Any]) -> str:
     item_type = _text(item.get("type")).lower()
 
-    structured_visual = _structured_visual_markdown(item)
-    if structured_visual is not None:
-        return structured_visual
+    has_chart_resolution = item_type == "chart" and "chart_resolution" in item
+    chart_resolution = _validated_chart_resolution(item)
+    if chart_resolution is not None:
+        if chart_resolution.status == "structured_primary":
+            return _structured_visual_markdown(item) or ""
+        chart_image = chart_resolution_markdown(
+            chart_resolution,
+            caption=_text(item.get("caption")) or None,
+        )
+        if chart_image is not None:
+            return chart_image
+        return _text(
+            item.get("md")
+            or item.get("value")
+            or item.get("text")
+            or item.get("caption")
+        )
+    elif not has_chart_resolution:
+        structured_visual = _structured_visual_markdown(item)
+        if structured_visual is not None:
+            return structured_visual
 
     if item_type == "heading":
         value = _text(item.get("value"))
@@ -221,6 +284,13 @@ def _item_markdown(
     page_index: int | None = None,
 ) -> str:
     source_markdown = _source_item_markdown(item)
+    if (
+        _text(item.get("type")).lower() == "chart"
+        and "chart_resolution" in item
+    ):
+        # The terminal chart arbiter owns the sole primary representation.
+        # Keep model and Office projections as JSON-only subordinate evidence.
+        return source_markdown
     model_markdown = _visual_model_markdown(item, page_index=page_index)
     office_markdown = _office_fallback_projection(item, field="markdown")
     return "\n\n".join(
@@ -270,6 +340,21 @@ def to_markdown(result: Any) -> str:
 
 def _source_item_text(item: Mapping[str, Any]) -> str:
     item_type = _text(item.get("type")).lower()
+    chart_resolution = _validated_chart_resolution(item)
+    if chart_resolution is not None:
+        if chart_resolution.status == "structured_primary":
+            return _structured_visual_markdown(item) or ""
+        if (
+            chart_resolution.transcript.status == "available"
+            and chart_resolution.transcript.text is not None
+        ):
+            return chart_resolution.transcript.text
+        return _text(
+            item.get("value")
+            or item.get("text")
+            or item.get("md")
+            or item.get("caption")
+        )
     if item_type == "chart" and item.get("office_chart") is not None:
         try:
             from app.services.office_charts import OfficeChartStructure
@@ -342,9 +427,13 @@ def to_text(result: Any) -> str:
             if not isinstance(item, Mapping):
                 continue
             source_text = _source_item_text(item)
+            has_chart_resolution = (
+                _text(item.get("type")).lower() == "chart"
+                and "chart_resolution" in item
+            )
             model_text = ""
             raw_bundle = item.get("visual_model_evidence")
-            if raw_bundle is not None:
+            if raw_bundle is not None and not has_chart_resolution:
                 try:
                     bundle = VisualModelEvidenceBundle.model_validate(
                         _as_primitive(raw_bundle), strict=True
@@ -366,7 +455,11 @@ def to_text(result: Any) -> str:
                 for value in (
                     source_text,
                     model_text,
-                    _office_fallback_projection(item, field="text"),
+                    (
+                        ""
+                        if has_chart_resolution
+                        else _office_fallback_projection(item, field="text")
+                    ),
                 )
                 if value.strip()
             )

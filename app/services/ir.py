@@ -11,7 +11,7 @@ import hashlib
 import json
 import math
 import re
-from collections import deque
+from collections import Counter, deque
 from copy import deepcopy
 from enum import Enum
 from typing import Annotated, Any, Iterable, Literal, Mapping, MutableMapping, Sequence
@@ -19,6 +19,7 @@ from typing import Annotated, Any, Iterable, Literal, Mapping, MutableMapping, S
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from app.models import PageIdentity, RunningRegionDescriptor
+from app.services.chart_assets import ChartResolution
 from app.services.source_note_contracts import (
     is_eligible_unresolved_table_candidate,
 )
@@ -40,6 +41,10 @@ _MAX_TEXT_RUNS_PER_PAGE = 4_096
 _MAX_TEXT_RUNS_PER_DOCUMENT = 10_000
 _MAX_TEXT_RULES_PER_PAGE = 4_096
 _MAX_TEXT_RULES_PER_DOCUMENT = 10_000
+_MAX_NATIVE_TABLE_CELL_PROJECTIONS_PER_PAGE = 512
+_MAX_NATIVE_TABLE_CELLS_FOR_PROJECTION = 4_096
+_MAX_NATIVE_TABLE_CELL_TEXT_BYTES = 2_048
+_MAX_NATIVE_TABLE_MATCHES_PER_TEXT = 64
 _SHA256_PATTERN = r"^[0-9a-f]{64}$"
 _MAX_TEXT_COLOR_COMPONENT_DELTA = 1.0 / 255.0
 MAX_FORM_SEMANTIC_RECORDS_PER_PAGE = 8_192
@@ -1011,6 +1016,10 @@ class ElementRecord(IRModel):
         default=None,
         exclude_if=_exclude_none,
     )
+    chart_resolution: ChartResolution | None = Field(
+        default=None,
+        exclude_if=_exclude_none,
+    )
     presentation_role: Literal[
         "primary",
         "subordinate",
@@ -1021,6 +1030,54 @@ class ElementRecord(IRModel):
         default_factory=ElementPresentationDirective
     )
     properties: dict[str, Any] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def validate_chart_resolution_custody(self) -> "ElementRecord":
+        resolution = self.chart_resolution
+        if resolution is None:
+            return self
+        legacy = self.properties.get("legacy_item")
+        if (
+            self.type.casefold() != "chart"
+            or not isinstance(legacy, Mapping)
+            or resolution.owner_item_id != str(legacy.get("id") or "")
+        ):
+            raise ValueError("IR chart resolution ownership differs")
+        raw_bbox = legacy.get("bbox")
+        if not isinstance(raw_bbox, Mapping):
+            raise ValueError("IR chart resolution bbox is unavailable")
+        expected_bbox = resolution.source_bbox
+        raw_values = (
+            raw_bbox.get("x"),
+            raw_bbox.get("y"),
+            raw_bbox.get("width", raw_bbox.get("w")),
+            raw_bbox.get("height", raw_bbox.get("h")),
+        )
+        if (
+            str(raw_bbox.get("unit") or "") != expected_bbox.unit
+            or any(
+                isinstance(value, bool)
+                or not isinstance(value, (int, float))
+                or not math.isclose(
+                    float(value),
+                    expected,
+                    rel_tol=0.0,
+                    abs_tol=1e-6,
+                )
+                for value, expected in zip(
+                    raw_values,
+                    (
+                        expected_bbox.x,
+                        expected_bbox.y,
+                        expected_bbox.width,
+                        expected_bbox.height,
+                    ),
+                    strict=True,
+                )
+            )
+        ):
+            raise ValueError("IR chart resolution bbox differs")
+        return self
 
 
 class RelationshipRecord(IRModel):
@@ -1218,8 +1275,24 @@ class DocumentIR(IRModel):
                 )
                 if elements[element_id].page_id != region.page_id:
                     raise ValueError(f"region {region.id} lists a cross-page element")
+        chart_source_slots: set[tuple[str, int]] = set()
         for element in self.elements:
             _require_reference(element.page_id, page_ids, f"element {element.id} page")
+            if element.chart_resolution is not None:
+                resolution = element.chart_resolution
+                source_slot = (element.page_id, resolution.source_order)
+                if source_slot in chart_source_slots:
+                    raise ValueError("IR chart resolution source order repeats")
+                chart_source_slots.add(source_slot)
+                if (
+                    resolution.page_index != pages[element.page_id].page_index
+                    or (
+                        resolution.asset is not None
+                        and resolution.asset.source_document_sha256
+                        != self.source_sha256
+                    )
+                ):
+                    raise ValueError("IR chart resolution document custody differs")
             for bbox_id in element.bbox_ids:
                 _require_reference(bbox_id, bbox_ids, f"element {element.id} bbox")
                 coordinate_id = bboxes[bbox_id].coordinate_system_id
@@ -3565,6 +3638,526 @@ def _semantic_children(
                 yield key, index, relationship_type, element_type, child
 
 
+def _native_table_cell_text_alternatives(
+    primary_records: Sequence[
+        tuple[int, Mapping[str, Any], ElementRecord, IRBoundingBox | None]
+    ],
+) -> list[RelationshipRecord]:
+    """Relate exact native text projections to their structured table owner.
+
+    Some native PDF extractors return both a table and separate text items for
+    text already represented by the table cells. The relationship is inferred
+    only when source method, reading order, exact whitespace-normalized cell
+    text, and both table/row geometry all agree without ambiguity. This keeps
+    repeated text outside the table, partial OCR, and repeated-cell matches
+    independent.
+    """
+
+    def exact_text(value: Any) -> str:
+        if not isinstance(value, str):
+            return ""
+        try:
+            if len(value.encode("utf-8")) > _MAX_NATIVE_TABLE_CELL_TEXT_BYTES:
+                return ""
+        except UnicodeEncodeError:
+            return ""
+        return " ".join(value.split())
+
+    def raw_box(
+        value: Any,
+    ) -> tuple[float, float, float, float] | None:
+        if not isinstance(value, Mapping):
+            return None
+        try:
+            coordinates = (
+                float(value["x"]),
+                float(value["y"]),
+                float(value.get("width", value.get("w"))),
+                float(value.get("height", value.get("h"))),
+            )
+        except (KeyError, TypeError, ValueError):
+            return None
+        if (
+            not all(math.isfinite(coordinate) for coordinate in coordinates)
+            or coordinates[2] <= 0
+            or coordinates[3] <= 0
+        ):
+            return None
+        return coordinates
+
+    def covered_by(
+        inner: tuple[float, float, float, float],
+        outer: tuple[float, float, float, float],
+    ) -> bool:
+        inner_x, inner_y, inner_width, inner_height = inner
+        outer_x, outer_y, outer_width, outer_height = outer
+        intersection_width = max(
+            min(inner_x + inner_width, outer_x + outer_width)
+            - max(inner_x, outer_x),
+            0.0,
+        )
+        intersection_height = max(
+            min(inner_y + inner_height, outer_y + outer_height)
+            - max(inner_y, outer_y),
+            0.0,
+        )
+        return (
+            intersection_width * intersection_height
+            >= 0.995 * inner_width * inner_height
+        )
+
+    def integer(value: Any) -> int | None:
+        if isinstance(value, bool):
+            return None
+        try:
+            converted = int(value)
+        except (TypeError, ValueError):
+            return None
+        if converted < 0 or (
+            isinstance(value, float) and not value.is_integer()
+        ):
+            return None
+        return converted
+
+    def position(value: Mapping[str, Any]) -> tuple[int, int] | None:
+        row = next(
+            (
+                integer(value[key])
+                for key in ("row", "row_index", "start_row_offset_idx")
+                if key in value
+            ),
+            None,
+        )
+        column = next(
+            (
+                integer(value[key])
+                for key in (
+                    "column",
+                    "col",
+                    "column_index",
+                    "start_col_offset_idx",
+                )
+                if key in value
+            ),
+            None,
+        )
+        return (row, column) if row is not None and column is not None else None
+
+    def same_horizontal_extent(
+        first: tuple[float, float, float, float],
+        second: tuple[float, float, float, float],
+    ) -> bool:
+        return abs(first[0] - second[0]) <= 0.25 and abs(
+            first[0] + first[2] - second[0] - second[2]
+        ) <= 0.25
+
+    # text -> (owner record, row, column, row bbox, proven cell bbox).
+    # Buckets retain at most one sentinel beyond the scan cap, bounding every
+    # later text-to-cell match independently of repeated table values.
+    cell_index: dict[
+        str,
+        list[
+            tuple[
+                tuple[int, Mapping[str, Any], ElementRecord, IRBoundingBox | None],
+                int,
+                int,
+                tuple[float, float, float, float],
+                tuple[float, float, float, float],
+            ]
+        ],
+    ] = {}
+    cell_count = 0
+    for record in primary_records:
+        _position, item, element, element_box = record
+        element_type = element.type.casefold()
+        source_methods = set(_source_methods(item))
+        if (
+            element_type not in {"table", "table_candidate"}
+            or element_box is None
+            or EvidenceMethod.NATIVE not in source_methods
+            or not source_methods.issubset(
+                {EvidenceMethod.NATIVE, EvidenceMethod.VECTOR}
+            )
+            or has_untrusted_generation_provenance(item)
+            or not any(
+                isinstance(item.get(field), str) and bool(str(item[field]).strip())
+                for field in ("html", "md")
+            )
+        ):
+            continue
+        if element_type == "table_candidate":
+            reconciliation = item.get("table_reconciliation")
+            if not isinstance(reconciliation, Mapping) or (
+                reconciliation.get("outcome")
+                not in {"singleton", "selected", "duplicate_collapsed"}
+                or not isinstance(
+                    reconciliation.get("selected_candidate_id"),
+                    str,
+                )
+                or not reconciliation.get("selected_candidate_id")
+            ):
+                continue
+        rows = item.get("rows")
+        row_boxes = item.get("row_bboxes")
+        if (
+            not isinstance(rows, Sequence)
+            or isinstance(rows, (str, bytes, bytearray))
+            or not isinstance(row_boxes, Sequence)
+            or isinstance(row_boxes, (str, bytes, bytearray))
+            or len(rows) != len(row_boxes)
+        ):
+            continue
+        owner_unit = str(
+            (item.get("bbox") or {}).get("unit")
+            if isinstance(item.get("bbox"), Mapping)
+            else ""
+        )
+        normalized_rows = [
+            list(row)
+            for row in rows
+            if isinstance(row, Sequence)
+            and not isinstance(row, (str, bytes, bytearray))
+        ]
+        column_count = len(normalized_rows[0]) if normalized_rows else 0
+        if (
+            len(normalized_rows) != len(rows)
+            or column_count < 1
+            or column_count > 256
+            or any(len(row) != column_count for row in normalized_rows)
+        ):
+            continue
+        cell_count += len(normalized_rows) * column_count
+        if cell_count > _MAX_NATIVE_TABLE_CELLS_FOR_PROJECTION:
+            return []
+        owner_bbox = (
+            element_box.x,
+            element_box.y,
+            element_box.width,
+            element_box.height,
+        )
+        normalized_row_boxes: list[tuple[float, float, float, float]] = []
+        for row_box_value in row_boxes:
+            row_bbox = raw_box(row_box_value)
+            row_unit = str(
+                row_box_value.get("unit")
+                if isinstance(row_box_value, Mapping)
+                else ""
+            )
+            if (
+                row_bbox is None
+                or (owner_unit and row_unit and row_unit != owner_unit)
+                or not covered_by(row_bbox, owner_bbox)
+            ):
+                normalized_row_boxes = []
+                break
+            normalized_row_boxes.append(row_bbox)
+        if len(normalized_row_boxes) != len(normalized_rows):
+            continue
+
+        # Exact per-cell boxes have first priority. They can arrive either as
+        # a rectangular matrix or as positioned cell records.
+        cell_geometry: dict[
+            tuple[int, int],
+            list[tuple[float, float, float, float]],
+        ] = {}
+        raw_cell_rows = item.get("cell_bboxes")
+        if (
+            isinstance(raw_cell_rows, Sequence)
+            and not isinstance(raw_cell_rows, (str, bytes, bytearray))
+            and len(raw_cell_rows) == len(normalized_rows)
+        ):
+            for row_index, raw_cell_row in enumerate(raw_cell_rows):
+                if (
+                    not isinstance(raw_cell_row, Sequence)
+                    or isinstance(raw_cell_row, (str, bytes, bytearray))
+                    or len(raw_cell_row) != column_count
+                ):
+                    cell_geometry = {}
+                    break
+                for column_index, raw_cell_box in enumerate(raw_cell_row):
+                    cell_bbox = raw_box(raw_cell_box)
+                    cell_unit = str(
+                        raw_cell_box.get("unit")
+                        if isinstance(raw_cell_box, Mapping)
+                        else ""
+                    )
+                    if (
+                        cell_bbox is not None
+                        and not (
+                            owner_unit and cell_unit and cell_unit != owner_unit
+                        )
+                        and covered_by(cell_bbox, owner_bbox)
+                        and covered_by(
+                            cell_bbox,
+                            normalized_row_boxes[row_index],
+                        )
+                    ):
+                        cell_geometry.setdefault(
+                            (row_index, column_index),
+                            [],
+                        ).append(cell_bbox)
+        raw_cells = item.get("cells")
+        if isinstance(raw_cells, Sequence) and not isinstance(
+            raw_cells,
+            (str, bytes, bytearray),
+        ):
+            for raw_cell in raw_cells[: _MAX_NATIVE_TABLE_CELLS_FOR_PROJECTION + 1]:
+                if not isinstance(raw_cell, Mapping):
+                    continue
+                cell_position = position(raw_cell)
+                cell_bbox = raw_box(raw_cell.get("bbox"))
+                if cell_position is None or cell_bbox is None:
+                    continue
+                row_index, column_index = cell_position
+                cell_box_value = raw_cell.get("bbox")
+                cell_unit = str(
+                    cell_box_value.get("unit")
+                    if isinstance(cell_box_value, Mapping)
+                    else ""
+                )
+                if (
+                    row_index >= len(normalized_rows)
+                    or column_index >= column_count
+                    or (owner_unit and cell_unit and cell_unit != owner_unit)
+                    or not covered_by(cell_bbox, owner_bbox)
+                    or not covered_by(
+                        cell_bbox,
+                        normalized_row_boxes[row_index],
+                    )
+                ):
+                    continue
+                cell_geometry.setdefault((row_index, column_index), []).append(
+                    cell_bbox
+                )
+
+        # Without exact cell boxes, a source row with one visible edge-column
+        # cell and a narrower row bbox proves that edge column's horizontal
+        # extent. Conflicting witnesses make the column unusable.
+        column_witnesses: dict[
+            int,
+            list[tuple[float, float, float, float]],
+        ] = {}
+        owner_left = owner_bbox[0]
+        owner_right = owner_bbox[0] + owner_bbox[2]
+        for row, row_bbox in zip(
+            normalized_rows,
+            normalized_row_boxes,
+            strict=True,
+        ):
+            nonempty_columns = [
+                column_index
+                for column_index, cell in enumerate(row)
+                if exact_text(cell)
+            ]
+            if len(nonempty_columns) != 1 or row_bbox[2] >= owner_bbox[2] - 0.5:
+                continue
+            [column_index] = nonempty_columns
+            row_left = row_bbox[0]
+            row_right = row_bbox[0] + row_bbox[2]
+            if not (
+                (column_index == 0 and abs(row_left - owner_left) <= 0.25)
+                or (
+                    column_index == column_count - 1
+                    and abs(row_right - owner_right) <= 0.25
+                )
+            ):
+                continue
+            column_witnesses.setdefault(column_index, []).append(row_bbox)
+        column_geometry = {
+            column_index: witnesses[0]
+            for column_index, witnesses in column_witnesses.items()
+            if witnesses
+            and all(
+                same_horizontal_extent(witnesses[0], witness)
+                for witness in witnesses[1:]
+            )
+        }
+
+        for row_index, (row, row_bbox) in enumerate(
+            zip(normalized_rows, normalized_row_boxes, strict=True)
+        ):
+            for column_index, cell in enumerate(row):
+                cell_text = exact_text(cell)
+                if not cell_text:
+                    continue
+                exact_boxes = cell_geometry.get((row_index, column_index), [])
+                if exact_boxes:
+                    if not all(
+                        same_horizontal_extent(exact_boxes[0], candidate)
+                        for candidate in exact_boxes[1:]
+                    ):
+                        continue
+                    proven_cell_bbox = exact_boxes[0]
+                else:
+                    proven_cell_bbox = column_geometry.get(column_index)
+                if proven_cell_bbox is None:
+                    continue
+                bucket = cell_index.setdefault(cell_text, [])
+                if len(bucket) <= _MAX_NATIVE_TABLE_MATCHES_PER_TEXT:
+                    bucket.append(
+                        (
+                            record,
+                            row_index,
+                            column_index,
+                            row_bbox,
+                            proven_cell_bbox,
+                        )
+                    )
+
+    proposals: list[
+        tuple[
+            ElementRecord,
+            ElementRecord,
+            int,
+            int,
+            int,
+            int,
+        ]
+    ] = []
+    for source_position, item, element, element_box in primary_records:
+        if (
+            element.type.casefold() != "text"
+            or element_box is None
+            or set(_source_methods(item)) != {EvidenceMethod.NATIVE}
+            or has_untrusted_generation_provenance(item)
+        ):
+            continue
+        value = exact_text(item.get("value"))
+        if not value:
+            continue
+        candidate_bbox = (
+            element_box.x,
+            element_box.y,
+            element_box.width,
+            element_box.height,
+        )
+        candidate_unit = str(
+            (item.get("bbox") or {}).get("unit")
+            if isinstance(item.get("bbox"), Mapping)
+            else ""
+        )
+        indexed_cells = cell_index.get(value, ())
+        if len(indexed_cells) > _MAX_NATIVE_TABLE_MATCHES_PER_TEXT:
+            continue
+        matches: list[tuple[ElementRecord, int, int, int]] = []
+        for (
+            owner_record,
+            row_index,
+            column_index,
+            row_bbox,
+            cell_bbox,
+        ) in indexed_cells:
+            owner_position, owner_item, owner, owner_box = owner_record
+            if (
+                owner_box is None
+                or owner_position >= source_position
+                or owner.reading_order is None
+                or element.reading_order is None
+                or owner.reading_order >= element.reading_order
+                or owner_box.coordinate_system_id != element_box.coordinate_system_id
+                or str(owner_item.get("source") or "").casefold()
+                != str(item.get("source") or "").casefold()
+            ):
+                continue
+            owner_unit = str(
+                (owner_item.get("bbox") or {}).get("unit")
+                if isinstance(owner_item.get("bbox"), Mapping)
+                else ""
+            )
+            owner_bbox = (
+                owner_box.x,
+                owner_box.y,
+                owner_box.width,
+                owner_box.height,
+            )
+            if (
+                owner_unit
+                and candidate_unit
+                and owner_unit != candidate_unit
+            ) or not covered_by(candidate_bbox, owner_bbox) or not covered_by(
+                candidate_bbox,
+                row_bbox,
+            ) or not covered_by(
+                candidate_bbox,
+                (
+                    cell_bbox[0],
+                    candidate_bbox[1],
+                    cell_bbox[2],
+                    candidate_bbox[3],
+                ),
+            ):
+                continue
+            matches.append((owner, owner_position, row_index, column_index))
+        if len(matches) == 1:
+            owner, owner_position, row_index, column_index = matches[0]
+            proposals.append(
+                (
+                    element,
+                    owner,
+                    source_position,
+                    owner_position,
+                    row_index,
+                    column_index,
+                )
+            )
+            if len(proposals) > _MAX_NATIVE_TABLE_CELL_PROJECTIONS_PER_PAGE:
+                return []
+
+    # Multiple independent native items claiming the same table cell are
+    # ambiguous; retain all of them instead of guessing which is redundant.
+    cell_use = {
+        key: count
+        for key, count in Counter(
+            (owner.id, row_index, column_index)
+            for (
+                _source,
+                owner,
+                _source_position,
+                _owner_position,
+                row_index,
+                column_index,
+            ) in proposals
+        ).items()
+    }
+    relationships: list[RelationshipRecord] = []
+    for (
+        source,
+        owner,
+        source_position,
+        owner_position,
+        row_index,
+        column_index,
+    ) in proposals:
+        if cell_use[(owner.id, row_index, column_index)] != 1:
+            continue
+        relationships.append(
+            RelationshipRecord(
+                id=_stable_id(
+                    "rel",
+                    RelationshipType.ALTERNATIVE_OF.value,
+                    source.id,
+                    owner.id,
+                    "native_table_cell_text_projection",
+                    row_index,
+                    column_index,
+                ),
+                type=RelationshipType.ALTERNATIVE_OF,
+                source_id=source.id,
+                target_id=owner.id,
+                evidence_ids=list(source.evidence_ids),
+                metadata={
+                    "basis": "native_table_cell_text_projection",
+                    "canonical_dedup_only": True,
+                    "source_order": source_position,
+                    "owner_source_order": owner_position,
+                    "row_index": row_index,
+                    "column_index": column_index,
+                },
+            )
+        )
+    return relationships
+
+
 def build_document_ir(
     document: Any,
     *,
@@ -3748,6 +4341,9 @@ def build_document_ir(
         page_element_ids: list[str] = []
         presentation_element_ids: list[str] = []
         primary_orders: list[tuple[int, int, str]] = []
+        primary_records: list[
+            tuple[int, Mapping[str, Any], ElementRecord, IRBoundingBox | None]
+        ] = []
 
         raw_items = raw_page.get("items") or []
         if not isinstance(raw_items, Sequence):
@@ -3891,11 +4487,21 @@ def build_document_ir(
                 if raw_visual_model_evidence is not None
                 else None
             )
+            raw_chart_resolution = raw_item.get("chart_resolution")
+            chart_resolution = (
+                ChartResolution.model_validate(
+                    raw_chart_resolution,
+                    strict=True,
+                )
+                if raw_chart_resolution is not None
+                else None
+            )
             legacy_projection = deepcopy(dict(raw_item))
             # Keep model output outside the source/predecessor snapshot. Layout
             # provenance scanners must continue to evaluate the exact Phase 05
             # item, while the typed IR field carries the additive observation.
             legacy_projection.pop("visual_model_evidence", None)
+            legacy_projection.pop("chart_resolution", None)
 
             elements.append(
                 ElementRecord(
@@ -3932,6 +4538,7 @@ def build_document_ir(
                         else None
                     ),
                     visual_model_evidence=visual_model_evidence,
+                    chart_resolution=chart_resolution,
                     presentation_role="primary",
                     presentation=ElementPresentationDirective(
                         include_subordinate_ocr=(
@@ -3953,6 +4560,7 @@ def build_document_ir(
                     },
                 )
             )
+            primary_records.append((item_offset, raw_item, elements[-1], item_box))
 
             for collection_name, child_index, child in _child_collections(raw_item):
                 child_id = _stable_id(
@@ -4017,6 +4625,8 @@ def build_document_ir(
                     ),
                     relation_source_is_child=True,
                 )
+
+        relationships.extend(_native_table_cell_text_alternatives(primary_records))
 
         ordered_primary = sorted(primary_orders)
         for (_order, _position, source_id), (
@@ -7927,6 +8537,13 @@ def project_legacy_pages(
             if element.visual_model_evidence is not None:
                 projected_item["visual_model_evidence"] = (
                     element.visual_model_evidence.model_dump(
+                        mode="json",
+                        exclude_none=True,
+                    )
+                )
+            if element.chart_resolution is not None:
+                projected_item["chart_resolution"] = (
+                    element.chart_resolution.model_dump(
                         mode="json",
                         exclude_none=True,
                     )

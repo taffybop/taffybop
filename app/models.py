@@ -31,6 +31,7 @@ from pydantic import (
 from pydantic.json_schema import SkipJsonSchema
 from pydantic_core import CoreSchema
 
+from app.services.chart_assets import ChartResolution, replay_chart_transcript
 from app.services.office_charts import OfficeChartStructure
 from app.services.source_note_contracts import (
     is_eligible_unresolved_table_candidate,
@@ -128,6 +129,11 @@ _TABLE_MAX_WORDS_PER_SOURCE = 64
 _TABLE_MAX_FONT_NAME_BYTES = 256
 _TABLE_MAX_SIDECAR_BYTES = 8 * 1024 * 1024
 _TABLE_MAX_DOCUMENT_SIDECAR_BYTES = 64 * 1024 * 1024
+_CHART_MAX_DOCUMENT_ASSET_BYTES = 64 * 1024 * 1024
+_CHART_MAX_ASSET_BYTES = 8 * 1024 * 1024
+_CHART_PNG_PREFIX = "data:image/png;base64,"
+_CHART_MAX_PUBLIC_INLINE_BYTES = 48 * 1024 * 1024
+_CHART_PUBLIC_ASSET_COPIES = 6
 _TABLE_MAX_ITEM_BYTES = 8 * 1024 * 1024
 _TABLE_MAX_CANONICAL_PAGES = _TABLE_MAX_ROWS
 _TABLE_MAX_CANONICAL_BLOCKS = _TABLE_MAX_CELLS
@@ -1443,6 +1449,73 @@ def _preflight_raw_table_document(value: Any) -> int | None:
         if reading_orders != list(range(len(items))):
             raise ValueError("marked table item identity/order differs")
     return aggregate_bytes
+
+
+def _preflight_raw_chart_assets(value: Any) -> None:
+    """Bound inline chart bytes before nested Pydantic validation decodes them."""
+
+    if type(value) is not dict:
+        return
+    pages = value.get("pages")
+    if type(pages) is not list:
+        return
+    asset_count = 0
+    aggregate_payload_chars = 0
+    maximum_asset_chars = 4 * ((_CHART_MAX_ASSET_BYTES + 2) // 3)
+    maximum_document_chars = 4 * (
+        (_CHART_MAX_DOCUMENT_ASSET_BYTES + 2) // 3
+    )
+    for page in pages:
+        if type(page) is not dict:
+            continue
+        items = page.get("items")
+        if type(items) is not list:
+            continue
+        for item in items:
+            if type(item) is not dict or "chart_resolution" not in item:
+                continue
+            resolution = item.get("chart_resolution")
+            if type(resolution) is not dict:
+                raise ValueError("chart resolution must be an exact object")
+            asset = resolution.get("asset")
+            if asset is None:
+                continue
+            if type(asset) is not dict:
+                raise ValueError("chart source asset must be an exact object")
+            data_uri = asset.get("data_uri")
+            if type(data_uri) is not str or not data_uri.startswith(
+                _CHART_PNG_PREFIX
+            ):
+                raise ValueError("chart source asset URI is malformed")
+            payload_chars = len(data_uri) - len(_CHART_PNG_PREFIX)
+            if payload_chars > maximum_asset_chars:
+                raise ValueError("chart source asset exceeds its encoded byte cap")
+            asset_count += 1
+            if asset_count > 256:
+                raise ValueError("chart source asset count exceeds its document cap")
+            aggregate_payload_chars += payload_chars
+            if aggregate_payload_chars > maximum_document_chars + 4 * asset_count:
+                raise ValueError("chart source assets exceed their document byte cap")
+
+    # Canonical and shared-IR projections may repeat the same inline asset.
+    # Count the actual raw response representation before Pydantic allocates
+    # nested copies; this is deliberately broader than the item-sidecar loop.
+    inline_chars = 0
+    visited_nodes = 0
+    stack: list[Any] = [value]
+    while stack:
+        node = stack.pop()
+        visited_nodes += 1
+        if visited_nodes > 2_000_000:
+            raise ValueError("chart response preflight exceeds its work cap")
+        if type(node) is dict:
+            stack.extend(node.values())
+        elif type(node) is list:
+            stack.extend(node)
+        elif type(node) is str and node.startswith(_CHART_PNG_PREFIX):
+            inline_chars += len(node)
+            if inline_chars > _CHART_MAX_PUBLIC_INLINE_BYTES:
+                raise ValueError("chart inline response exceeds its byte cap")
 
 
 def _preflight_raw_marked_canonical(value: Any) -> None:
@@ -4497,6 +4570,15 @@ class ContentItem(ApiModel):
             "The sidecar is absent when its owning schema feature is disabled."
         ),
     )
+    chart_resolution: ChartResolution | None = Field(
+        default=None,
+        exclude_if=lambda value: value is None,
+        description=(
+            "Default-off terminal chart arbitration. Source-image primaries "
+            "carry one integrity-bound inline PNG; complete structured charts "
+            "retain that asset only as supplemental evidence."
+        ),
+    )
     office_chart: OfficeChartStructure | None = Field(
         default=None,
         exclude_if=lambda value: value is None,
@@ -4654,6 +4736,71 @@ class ContentItem(ApiModel):
         return self
 
     @model_validator(mode="after")
+    def validate_chart_resolution_sidecar(self) -> ContentItem:
+        resolution = self.chart_resolution
+        if resolution is None:
+            if "chart_resolution" in self.model_fields_set:
+                raise ValueError("chart resolution marker must not be null")
+            return self
+        structure = self.visual_structure
+        if self.type != "chart" or structure is None:
+            raise ValueError("chart resolution requires a chart visual owner")
+        if (
+            resolution.owner_item_id != self.id
+            or resolution.source_bbox != structure.region.page_bbox
+        ):
+            raise ValueError("chart resolution public ownership differs")
+        structured = (
+            not structure.fallback.active
+            and structure.serialization is not None
+            and structure.serialization.status == "structured_chart"
+        )
+        if (resolution.status == "structured_primary") != structured:
+            if resolution.status == "structured_primary":
+                raise ValueError("chart resolution semantic authority differs")
+        if resolution.status == "asset_unavailable" and not structure.fallback.active:
+            raise ValueError("chart image/predecessor primary lacks fallback state")
+        expected_transcript = replay_chart_transcript(
+            self.model_dump(mode="python", exclude_none=True),
+            structure,
+        )
+        if resolution.transcript != expected_transcript:
+            raise ValueError("chart transcript replay differs")
+        evidence_by_id = {record.id: record for record in structure.evidence}
+        allowed_evidence_ids = set(evidence_by_id)
+        for references, label in (
+            (resolution.family_classification.evidence_ids, "family"),
+            (resolution.complexity_classification.evidence_ids, "complexity"),
+            (
+                resolution.semantic_analysis.ambiguous_evidence_ids,
+                "semantic ambiguity",
+            ),
+        ):
+            if not set(references) <= allowed_evidence_ids:
+                raise ValueError(f"chart resolution {label} evidence differs")
+        transcript = resolution.transcript
+        transcript_evidence_ids = set(transcript.evidence_ids)
+        label_evidence_ids = {
+            evidence_id
+            for label in structure.labels
+            for evidence_id in label.evidence_ids
+        }
+        if not transcript_evidence_ids <= label_evidence_ids:
+            raise ValueError("chart transcript evidence differs")
+        if transcript.status == "available":
+            expected_method = {
+                "native": "explicit_text",
+                "ocr": "ocr",
+            }.get(transcript.source)
+            if expected_method is not None and any(
+                evidence_by_id[evidence_id].provenance.extraction_method
+                != expected_method
+                for evidence_id in transcript.evidence_ids
+            ):
+                raise ValueError("chart transcript source evidence differs")
+        return self
+
+    @model_validator(mode="after")
     def validate_visual_model_evidence_sidecar(self) -> ContentItem:
         bundle = self.visual_model_evidence
         if bundle is None:
@@ -4790,6 +4937,11 @@ class DocumentMetadata(ApiModel):
     filename: str
     mime_type: str = "application/pdf"
     sha256: str
+    render_source_sha256: str | None = Field(
+        default=None,
+        pattern=r"^[0-9a-f]{64}$",
+        exclude_if=lambda value: value is None,
+    )
     page_count: int = Field(ge=0)
 
 
@@ -5371,6 +5523,7 @@ class ParseResult(ApiModel):
         raw_aggregate_bytes = _preflight_raw_table_document(value)
         _preflight_raw_marked_canonical(value)
         raw_custody_bytes = _preflight_raw_canonical_source_custody(value)
+        _preflight_raw_chart_assets(value)
         if (
             raw_aggregate_bytes is not None
             and raw_custody_bytes is not None
@@ -5394,6 +5547,10 @@ class ParseResult(ApiModel):
         visual_region_ids: set[str] = set()
         visual_evidence_ids: set[str] = set()
         visual_model_observation_ids: set[str] = set()
+        chart_asset_ids: set[str] = set()
+        chart_source_slots: set[tuple[int, int]] = set()
+        chart_asset_bytes = 0
+        chart_inline_estimated_bytes = 0
         has_visual_structure = False
         for page in result.pages:
             if [item.reading_order for item in page.items] != list(
@@ -5443,6 +5600,50 @@ class ParseResult(ApiModel):
                         ):
                             raise ValueError(
                                 "visual evidence public ownership differs"
+                            )
+                chart_resolution = item.chart_resolution
+                if chart_resolution is not None:
+                    if chart_resolution.page_index != page.page_index:
+                        raise ValueError("chart resolution page binding differs")
+                    source_slot = (
+                        chart_resolution.page_index,
+                        chart_resolution.source_order,
+                    )
+                    if source_slot in chart_source_slots:
+                        raise ValueError("chart resolution source order repeats")
+                    chart_source_slots.add(source_slot)
+                    asset = chart_resolution.asset
+                    if asset is not None:
+                        expected_render_source = (
+                            result.document.render_source_sha256
+                            or result.document.sha256
+                        )
+                        if (
+                            asset.asset_id in chart_asset_ids
+                            or asset.source_document_sha256
+                            != result.document.sha256
+                            or asset.render_source_sha256
+                            != expected_render_source
+                        ):
+                            raise ValueError(
+                                "chart source asset document custody differs"
+                            )
+                        chart_asset_ids.add(asset.asset_id)
+                        chart_asset_bytes += asset.byte_length
+                        chart_inline_estimated_bytes += (
+                            len(asset.data_uri.encode("ascii"))
+                            * _CHART_PUBLIC_ASSET_COPIES
+                        )
+                        if chart_asset_bytes > _CHART_MAX_DOCUMENT_ASSET_BYTES:
+                            raise ValueError(
+                                "chart source assets exceed their document byte cap"
+                            )
+                        if (
+                            chart_inline_estimated_bytes
+                            > _CHART_MAX_PUBLIC_INLINE_BYTES
+                        ):
+                            raise ValueError(
+                                "chart inline response exceeds its byte cap"
                             )
                 model_bundle = item.visual_model_evidence
                 if model_bundle is not None:

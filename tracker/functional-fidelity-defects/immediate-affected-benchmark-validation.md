@@ -49,6 +49,13 @@ Before the run, the defect card must declare a bounded **validation target**:
 Do not expand this local gate into a manual feature-by-feature review of
 unrelated tables, forms, charts, diagrams, images, or prose in the same PDF.
 
+For a staged or stateful capability such as FFD-015, the normal integrated
+full-PDF run must expose the naturally selected terminal state. A focused
+state/transition matrix may supplement that run to exercise otherwise
+unreachable states, but cannot replace it. The focused evidence must also prove
+all monotonic custody invariants—such as stable owner/asset IDs, bytes, hashes,
+coordinates, and provenance—across every legal promotion or fallback.
+
 ## Required fresh captures
 
 Create a new immutable attempt directory. Never overwrite the pre-fix evidence

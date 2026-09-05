@@ -1,4 +1,4 @@
-# FFD-010 — ACORD lower coverage grid lacks one semantic owner
+# FFD-010 — ACORD coverage form grid lacks a structure-preserving semantic owner
 
 Status: **Proposed**  
 Severity: **Critical**  
@@ -11,24 +11,42 @@ Dependencies: **P04-US01/P04-US02 table custody and reconciliation contracts**
 - PDF: `benchmark-expertmodeldata/insurance-acord.pdf`
 - SHA-256: `85571deac2362e67829587656d915df1b4d1683f9df62f3b77971743a963cfd4`
 - Page: physical p1.
-- Region: lower `COVERAGES` policy grid, excluding the already-corrected
+- Region: bounded lower `COVERAGES` policy grid, approximately page points in
+  the parser's top-left-origin coordinate system, `x=18–594, y=287–565`,
+  excluding the coverage disclaimer above, the
+  `DESCRIPTION OF OPERATIONS` box below, and the already-corrected
   producer/contact/insured/insurer block.
 - Surfaces: public JSON owner/type/cells/controls, raw Markdown, rendered DOM.
-- Impact: the grid's table-versus-form ownership is unresolved, so row/column,
-  blank-field, checkbox, policy, and limit semantics cannot be trusted as one
-  coherent component.
+- Impact: the grid's table-versus-form ownership is unresolved, so its original
+  row/column groups, merged/spanning cells, insurance-type sections,
+  field-label/value relationships, blank value slots, checkboxes, policy
+  fields, and limits cannot be trusted as one coherent component. Preserving
+  extracted words without preserving this source structure is not sufficient.
 
 Non-goals: do not reopen the fixed 14-label/18-blank parties block; do not
 invent filled values/signatures; ACORD logo semantics remain unadjudicated.
 
 ## Source-grounded oracle
 
-Expected: exactly one semantic owner represents the visible coverage grid,
-with source-faithful rows, columns/spans, labels, blank cells, and form controls.
-Actual: final JSON retains a generic lower `table_candidate` (`p1-i14`) while
-form/table alternatives and ownership remain unresolved; canonical Markdown
-renders a broad 17-column HTML table, but this has not been adjudicated as the
-correct semantic model.
+Expected: exactly one semantic owner represents the visible coverage grid in
+the same logical source structure, with source-faithful row/column groups,
+spans, section headers, labels, blank or entered value slots, and static form
+controls. A blank source field remains an explicit structural empty value; a
+filled source field keeps its label and value in the same source-relative cell
+or group. The result must not flatten the form into a detached label/value
+list.
+
+Actual: final JSON retains a generic unresolved `23 x 17` lower
+`table_candidate` (`p1-i14`) whose broad bbox also captures adjacent content,
+whose gate reports a `cell_coverage` feature score of `0.13555`, and whose
+checkbox/form ownership is not trustworthy. Form/table alternatives and ownership remain
+unresolved; canonical Markdown renders a broad HTML table, but this has not
+been adjudicated as the correct source-grid model. The catalog contains an
+empty `/AcroForm` dictionary, but `get_fields()` and page-widget inspection
+both return zero fields/widgets. The visible source is therefore a static
+vector form rather than an interactive widget contract, so drawn boxes and
+blanks must be grounded from visible geometry without manufacturing fields or
+values.
 
 Before Ready, manually enumerate the bounded grid bbox, every visible logical
 row/column/span, label, checkbox/control state, blank/value cell, and expected
@@ -60,23 +78,50 @@ correlated until the Ready oracle identifies the exact target component.
 
 ## Acceptance criteria
 
-1. Ready includes the exact bbox and complete cell/control ownership oracle.
-2. One and only one public owner covers the region; overlapping table/form
-   alternatives do not enter canonical Markdown or DOM.
-3. Every oracle label/control/value/blank appears once, in exact row/column
-   order, with finite geometry and provenance.
-4. Blank fields remain blank; checkbox states are `checked`, `unchecked`, or
-   `ambiguous` only from visible evidence; no values/signatures are fabricated.
-5. Public JSON validates context-free; raw Markdown equals canonical full
-   Markdown; Clearleaf renders an accessible coherent grid.
-6. The fixed parties block remains exactly 14 labels and 18 blank values with
-   no `PHONE NAME` corruption or synthetic placeholder prose.
-7. Fresh ACORD Llama/service/DOM evidence and table/form control PDFs pass.
+1. Ready includes the exact bounded bbox and a complete source-reviewed oracle
+   for every logical row, column, span, cell, field, label, value slot, blank,
+   and static control.
+2. One and only one public owner covers only the bounded grid; the disclaimer
+   above and description box below remain separate, and overlapping table/form
+   alternatives remain diagnostic rather than entering canonical Markdown or
+   DOM.
+3. The owner exposes one source-derived grid model with deterministic logical
+   coordinates, row/column spans, section grouping, cell/field/control
+   geometry, label-to-value-slot relationships, reading order, provenance,
+   confidence, and concerns.
+4. Every visible header, section, label, control, value, and blank appears once
+   in its source-relative cell or group. Blank slots remain explicit structural
+   empties such as `value: null` with `value_state: "empty"`; they are not
+   omitted and do not receive placeholder prose.
+5. A completed variant keeps every entered value with its source field label
+   in the same logical row/column/cell. Values must not be detached into a flat
+   list, shifted into a neighboring column, or duplicated as primary prose.
+6. Every drawn checkbox or radio-like square remains in its source cell with
+   `origin: "static_vector"` and a visibly grounded state of `checked`,
+   `unchecked`, or `ambiguous`. No AcroForm widget or checked state is invented.
+7. Public JSON validates context-free; raw Markdown equals canonical full
+   Markdown and preserves merged-cell topology where HTML `rowspan`/`colspan`
+   is required. Clearleaf renders one accessible table/form grid with matching
+   headers, spans, empty cells, control states, and source-order navigation.
+8. Incomplete ruling or ambiguous ownership fails closed as one bounded,
+   concern-bearing unresolved candidate retained only in diagnostic/public JSON.
+   Until one owner is proven, no unresolved/flattened grid fragment enters
+   canonical Markdown or DOM, and no duplicate labels/values or partially
+   authoritative structure is emitted.
+9. The fixed parties block remains exactly 14 labels and 18 blank values with
+   no `PHONE NAME` corruption or synthetic placeholder prose; surrounding
+   headings, disclaimer, description box, holder/cancellation/signature/footer,
+   page count, and order remain unchanged.
+10. Fresh full-PDF ACORD Llama/service/DOM evidence passes together with
+    renamed, rescaled, page-prepended, blank, partially entered, fully entered,
+    merged-cell, and checked/unchecked/ambiguous synthetic grid variants.
 
 ## Generic-production requirements
 
-- Resolve table/form ownership from reusable grid, ruling-line, cell/span,
-  control, label/value, containment, candidate-custody, and provenance evidence.
+- Resolve table/form ownership from a reusable structure-preserving form-grid
+  contract: ruling lines, row/column coordinates and spans, section groups,
+  cell/field/control geometry, label/value pairing, containment,
+  candidate-custody, and provenance evidence.
   Production behavior must not branch on a filename/hash/case, page number,
   component/element ID, `COVERAGES` or another label string, expected row/column
   count, or fixed coordinate/bbox.
@@ -103,10 +148,13 @@ Genericity closure gates:
 
 ## Test and rerun plan
 
-- Focused failing real-PDF test driven by the completed grid oracle; add one
-  synthetic mixed table/form positive.
-- Adversarial: incomplete grid, entered values, ambiguous checkbox, overlapping
-  candidate, shared caption, decorative boxes, and concern-bearing alternative.
+- Focused failing real-PDF test driven by the completed grid oracle; add blank,
+  partially entered, fully entered, renamed/rescaled, page-prepended, and
+  merged-cell mixed table/form positives.
+- Adversarial: incomplete grid, shifted/detached entered values, ambiguous
+  checkbox, widget-versus-static-control ambiguity, overlapping candidate,
+  nested subgrid, shared caption, decorative boxes, and concern-bearing
+  alternative.
 - Controls: fixed ACORD parties block, Component key-values, NY/Postal tables,
   Health blank-table suppression.
 - Suites: P03-US06, P04-US01/02/04, canonical/public closure, frontend form/table.
@@ -135,11 +183,13 @@ Genericity closure gates:
 - On ACORD physical p1, apply the completed lower-coverage-grid oracle: assert
   one semantic owner contains every source-approved row, cell, label, checkbox/
   control, and value in correct row/column order without duplication, while the
-  adjacent table and existing parties block remain separate and unchanged.
+  adjacent disclaimer and description-box boundaries and existing parties block
+  remain separate and unchanged.
 - Run an automated full-result drift screen over the complete Markdown, rendered
   DOM, and JSON result. Manually adjudicate changes inside the declared impact
   boundary: the lower coverage grid, its owner, every row/cell/control/value, its
-  immediate adjacent table boundary, and the existing parties block. Any
+  immediate adjacent disclaimer and description-box boundaries, and the
+  existing parties block. Any
   unexpected material change outside that boundary blocks closure and must be
   escalated as a cross-defect regression or separately tracked defect.
 - Source-ground every target-grid mismatch and every automated drift alert against

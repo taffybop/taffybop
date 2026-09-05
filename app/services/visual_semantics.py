@@ -400,6 +400,39 @@ def _accepted_visual_ocr_profile(
     return line_count, word_count, numeric_count, aggregate
 
 
+_TABULAR_OR_FORM_OWNER_KEYS = (
+    "table_evidence",
+    "table_continuation",
+    "rows",
+    "cells",
+    "fields",
+)
+
+
+def _has_tabular_or_form_owner(item: Mapping[str, Any]) -> bool:
+    """Return whether an item carries an actual competing owner claim.
+
+    Compatibility serializers may emit table-shaped keys with ``None``.  A
+    null placeholder has no ownership authority; any concrete value remains a
+    conservative exclusion from chart/diagram routing.
+    """
+
+    return any(item.get(key) is not None for key in _TABULAR_OR_FORM_OWNER_KEYS)
+
+
+def _has_tabular_or_form_compatibility_shape(item: Mapping[str, Any]) -> bool:
+    """Return whether an otherwise-generic image has an ownership-shaped key.
+
+    Explicit chart/diagram records may pass through compatibility serializers
+    that add null table fields.  A generic image has no such declared visual
+    authority, so even a null ownership-shaped field keeps it out of visual
+    inference.  This preserves the conservative image boundary without making
+    null serializer placeholders override an explicit visual type.
+    """
+
+    return any(key in item for key in _TABULAR_OR_FORM_OWNER_KEYS)
+
+
 def _caption_grounded_visual_kind(
     item: Mapping[str, Any],
     routing: _SourceCaptionRouting,
@@ -410,10 +443,7 @@ def _caption_grounded_visual_kind(
     if (
         declared != "image"
         or item.get("region_role") != "content_region"
-        or any(
-            key in item
-            for key in ("table_evidence", "table_continuation", "rows", "cells", "fields")
-        )
+        or _has_tabular_or_form_compatibility_shape(item)
     ):
         return None
     caption = routing.caption
@@ -447,17 +477,17 @@ def _declared_visual_kind(
     """Return a conservative source-backed kind and classifier availability."""
 
     declared = str(item.get("type") or item.get("content_type") or "").casefold()
+    classifier_available = isinstance(item.get("classification"), Mapping)
+    if _has_tabular_or_form_owner(item):
+        return None, classifier_available
     if declared in _TARGET_KINDS:
-        return declared, isinstance(item.get("classification"), Mapping)  # type: ignore[return-value]
+        return declared, classifier_available  # type: ignore[return-value]
     if (
         declared != "image"
         or item.get("region_role") != "content_region"
-        or any(
-            key in item
-            for key in ("table_evidence", "table_continuation", "rows", "cells", "fields")
-        )
+        or _has_tabular_or_form_compatibility_shape(item)
     ):
-        return None, isinstance(item.get("classification"), Mapping)
+        return None, classifier_available
 
     for annotation in item.get("annotations") or ():
         if not isinstance(annotation, Mapping):
@@ -466,7 +496,7 @@ def _declared_visual_kind(
             continue
         label = str(annotation.get("label") or "").casefold()
         if label in _TARGET_KINDS:
-            return label, isinstance(item.get("classification"), Mapping)  # type: ignore[return-value]
+            return label, classifier_available  # type: ignore[return-value]
 
     metadata = item.get("metadata")
     if isinstance(metadata, Mapping):
@@ -474,7 +504,7 @@ def _declared_visual_kind(
             metadata.get("layout_label") or metadata.get("visual_kind") or ""
         ).casefold()
         if label in _TARGET_KINDS:
-            return label, isinstance(item.get("classification"), Mapping)  # type: ignore[return-value]
+            return label, classifier_available  # type: ignore[return-value]
 
     classification = item.get("classification")
     if not isinstance(classification, Mapping):
@@ -503,20 +533,11 @@ def _could_require_visual_source_recovery(item: Mapping[str, Any]) -> bool:
 
     declared = str(item.get("type") or item.get("content_type") or "").casefold()
     if declared in _TARGET_KINDS:
-        return True
+        return not _has_tabular_or_form_owner(item)
     return bool(
         declared == "image"
         and item.get("region_role") == "content_region"
-        and not any(
-            key in item
-            for key in (
-                "table_evidence",
-                "table_continuation",
-                "rows",
-                "cells",
-                "fields",
-            )
-        )
+        and not _has_tabular_or_form_compatibility_shape(item)
     )
 
 
@@ -988,6 +1009,24 @@ def apply_visual_semantics(
     threshold = float(
         getattr(settings, "image_picture_classification_threshold", 0.6)
     )
+    chart_assets_enabled = bool(
+        getattr(settings, "charts_source_asset_enabled", False)
+    )
+    chart_asset_ledger: Any | None = None
+    chart_asset_limits_value: Any | None = None
+    expected_render_source_sha256 = (
+        str(document.get("render_source_sha256") or document_identity)
+        if isinstance(document, Mapping)
+        else document_identity
+    )
+    if chart_assets_enabled:
+        from app.services.chart_assets import (
+            ChartAssetLedger,
+            chart_asset_limits,
+        )
+
+        chart_asset_ledger = ChartAssetLedger()
+        chart_asset_limits_value = chart_asset_limits(settings)
     visual_count = 0
     pages = payload.get("pages")
     if not isinstance(pages, list):
@@ -1109,6 +1148,9 @@ def apply_visual_semantics(
             if kind is None:
                 continue
             visual_count += 1
+            chart_asset_attempt: Any | None = None
+            chart_family_classification: Any | None = None
+            chart_complexity_classification: Any | None = None
             try:
                 if source_text is not None:
                     from app.services.visual_source_text import (
@@ -1296,6 +1338,83 @@ def apply_visual_semantics(
                     item_index=item_index,
                     input_kind=normalized_input_kind,
                 )
+                if kind == "chart" and chart_assets_enabled:
+                    from app.models import ContentItem
+                    from app.services.chart_assets import (
+                        build_chart_resolution,
+                        classify_chart_complexity,
+                        classify_chart_family,
+                        prove_chart_owner_geometry,
+                        render_chart_source_asset,
+                    )
+
+                    assert chart_asset_ledger is not None
+                    assert chart_asset_limits_value is not None
+                    predecessor_structure = VisualStructure.model_validate(
+                        staged["visual_structure"]
+                    )
+                    detected_images = page.get("detected_images")
+                    owner_geometry_proof = prove_chart_owner_geometry(
+                        item=staged,
+                        page_items=items,
+                        item_index=item_index,
+                        detected_images=(
+                            detected_images
+                            if isinstance(detected_images, list)
+                            else None
+                        ),
+                        raw_graph=raw_graph,
+                        page_index=page_index,
+                        page_width=page.get("page_width"),
+                        page_height=page.get("page_height"),
+                        page_unit=page_unit,
+                        input_kind=normalized_input_kind,
+                        source_document_sha256=document_identity,
+                        render_source_sha256=expected_render_source_sha256,
+                    )
+                    chart_asset_attempt = render_chart_source_asset(
+                        source=source_document_bytes,
+                        input_kind=normalized_input_kind,
+                        page_index=page_index,
+                        bbox=predecessor_structure.region.page_bbox,
+                        owner_item_id=str(staged.get("id") or ""),
+                        source_document_sha256=document_identity,
+                        owner_geometry_proof=owner_geometry_proof,
+                        expected_render_source_sha256=(
+                            expected_render_source_sha256
+                        ),
+                        limits=chart_asset_limits_value,
+                        ledger=chart_asset_ledger,
+                    )
+                    if chart_asset_attempt.asset is None:
+                        resolution = build_chart_resolution(
+                            item=staged,
+                            structure=predecessor_structure,
+                            page_index=page_index,
+                            source_order=int(staged["reading_order"]),
+                            asset_attempt=chart_asset_attempt,
+                            settings=settings,
+                        )
+                        staged["chart_resolution"] = resolution.model_dump(
+                            mode="json",
+                            exclude_none=True,
+                        )
+                        ContentItem.model_validate(deepcopy(staged))
+                        items[item_index] = staged
+                        # Asset custody is the first chart stage. A refusal is
+                        # terminal and cannot authorize downstream analyzers.
+                        continue
+                    chart_family_classification = classify_chart_family(
+                        staged,
+                        predecessor_structure,
+                        minimum_confidence=threshold,
+                    )
+                    chart_complexity_classification = (
+                        classify_chart_complexity(
+                            predecessor_structure,
+                            chart_family_classification,
+                        )
+                    )
                 if kind == "chart" and source_text is not None:
                     from app.models import ContentItem
                     from app.services.visual_source_text import (
@@ -1320,27 +1439,117 @@ def apply_visual_semantics(
                         ContentItem.model_validate(deepcopy(candidate))
                         staged = candidate
             except (MemoryError, TypeError, ValueError):
-                # One malformed region retains its useful predecessor and a
-                # bounded targeted concern; no partial sidecar is committed.
-                staged = deepcopy(dict(item))
-                concern = _fallback_concern(kind)
-                existing = staged.get("parse_concerns")
-                existing_values = (
-                    [value for value in existing if isinstance(value, str)]
-                    if isinstance(existing, list)
-                    else []
+                retained_chart_asset = bool(
+                    kind == "chart"
+                    and chart_assets_enabled
+                    and chart_asset_attempt is not None
+                    and chart_asset_attempt.asset is not None
                 )
-                staged["parse_concerns"] = list(
-                    dict.fromkeys(
-                        [
-                            *existing_values,
-                            concern,
-                            "visual_structure_malformed_input",
-                        ]
+                if retained_chart_asset:
+                    # Once exact source bytes are retained, no later analyzer
+                    # failure may erase or relabel that custody. Classification
+                    # failures are invariant defects; a source-text analyzer
+                    # failure is represented as incomplete semantics and flows
+                    # to the terminal image-primary arbiter below.
+                    if (
+                        chart_family_classification is None
+                        or chart_complexity_classification is None
+                    ):
+                        raise
+                    failed_structure = VisualStructure.model_validate(
+                        staged["visual_structure"]
                     )
-                )
-                items[item_index] = staged
-                continue
+                    failed_payload = failed_structure.model_dump(
+                        mode="json",
+                        exclude_none=True,
+                    )
+                    failed_payload["fallback"] = {
+                        "active": True,
+                        "reason": "validation_failed",
+                        "predecessor_concern": "chart_values_not_structured",
+                    }
+                    concerns = failed_payload.get("concerns")
+                    if not isinstance(concerns, list):
+                        concerns = []
+                        failed_payload["concerns"] = concerns
+                    if not any(
+                        isinstance(value, Mapping)
+                        and value.get("code")
+                        == "chart_source_text_failed_closed"
+                        for value in concerns
+                    ):
+                        concerns.append(
+                            VisualConcern(
+                                code="chart_source_text_failed_closed",
+                                stage="validation",
+                                evidence_ids=list(
+                                    failed_structure.region.evidence_ids
+                                ),
+                            ).model_dump(mode="json", exclude_none=True)
+                        )
+                    fallback_markdown = str(
+                        staged.get("md")
+                        or staged.get("value")
+                        or staged.get("caption")
+                        or ""
+                    )
+                    raw_caption = staged.get("caption")
+                    fallback_caption = (
+                        raw_caption.strip()
+                        if isinstance(raw_caption, str) and raw_caption.strip()
+                        else None
+                    )
+                    failed_payload["serialization"] = {
+                        "status": "fallback",
+                        "markdown": fallback_markdown,
+                        "caption_occurrences": (
+                            1
+                            if fallback_caption is not None
+                            and fallback_caption in fallback_markdown
+                            else 0
+                        ),
+                        "row_count": 0,
+                    }
+                    staged["visual_structure"] = VisualStructure.model_validate(
+                        failed_payload
+                    ).model_dump(mode="json", exclude_none=True)
+                    existing = staged.get("parse_concerns")
+                    existing_values = (
+                        [value for value in existing if isinstance(value, str)]
+                        if isinstance(existing, list)
+                        else []
+                    )
+                    staged["parse_concerns"] = list(
+                        dict.fromkeys(
+                            [
+                                *existing_values,
+                                "chart_values_not_structured",
+                                "visual_structure_malformed_input",
+                            ]
+                        )
+                    )
+                else:
+                    # Before asset custody exists, one malformed region keeps
+                    # its useful predecessor and cannot poison its neighbors.
+                    staged = deepcopy(dict(item))
+                    concern = _fallback_concern(kind)
+                    existing = staged.get("parse_concerns")
+                    existing_values = (
+                        [value for value in existing if isinstance(value, str)]
+                        if isinstance(existing, list)
+                        else []
+                    )
+                    staged["parse_concerns"] = list(
+                        dict.fromkeys(
+                            [
+                                *existing_values,
+                                concern,
+                                "visual_structure_malformed_input",
+                            ]
+                        )
+                    )
+                    items[item_index] = staged
+                    continue
             raster_umbrella = bool(
                 getattr(settings, "charts_raster_analysis_enabled", False)
             )
@@ -1906,6 +2115,45 @@ def apply_visual_semantics(
                     staged["visual_structure"] = VisualStructure.model_validate(
                         structure_payload
                     ).model_dump(mode="json", exclude_none=True)
+            if kind == "chart" and chart_assets_enabled:
+                from app.models import ContentItem
+                from app.services.chart_assets import (
+                    build_chart_resolution,
+                )
+
+                assert chart_asset_attempt is not None
+                assert chart_asset_attempt.asset is not None
+                assert chart_family_classification is not None
+                assert chart_complexity_classification is not None
+                # Asset-stage failures are the only route to
+                # ``asset_unavailable``. Analyzer stages above already fail
+                # closed into a validated fallback structure, which resolves
+                # here as image-primary/incomplete while preserving the exact
+                # retained asset. A terminal schema invariant error is a code
+                # defect and must remain visible instead of being mislabeled
+                # as a MIME/render failure.
+                final_structure = VisualStructure.model_validate(
+                    staged["visual_structure"]
+                )
+                resolution = build_chart_resolution(
+                    item=staged,
+                    structure=final_structure,
+                    page_index=page_index,
+                    source_order=int(staged["reading_order"]),
+                    asset_attempt=chart_asset_attempt,
+                    settings=settings,
+                    family_classification=chart_family_classification,
+                    complexity_classification=(
+                        chart_complexity_classification
+                    ),
+                )
+                candidate = deepcopy(staged)
+                candidate["chart_resolution"] = resolution.model_dump(
+                    mode="json",
+                    exclude_none=True,
+                )
+                ContentItem.model_validate(deepcopy(candidate))
+                staged = candidate
             items[item_index] = staged
     return payload
 

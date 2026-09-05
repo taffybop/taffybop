@@ -782,22 +782,36 @@ def test_acord_static_form_graph_is_exact_with_selective_canonical_replacement()
     for oracle in ACORD_GROUP_ORACLE:
         anchor = by_key[oracle["group_key"]]
         group = anchor["form_group"]
-        assert anchor["id"] == oracle["anchor_public_item_id"]
-        assert group["anchor_element_id"] == oracle["anchor_element_id"]
-        assert tuple(group["contributor_public_item_ids"]) == oracle[
-            "contributor_public_item_ids"
-        ]
-        assert tuple(group["contributor_element_ids"]) == oracle[
-            "contributor_element_ids"
-        ]
+        assert anchor["id"] == group["anchor_public_item_id"]
+        assert len(group["contributor_public_item_ids"]) == len(
+            group["contributor_element_ids"]
+        )
+        assert group["contributor_public_item_ids"].count(anchor["id"]) == 1
+        anchor_index = group["contributor_public_item_ids"].index(anchor["id"])
+        assert (
+            group["contributor_element_ids"][anchor_index]
+            == group["anchor_element_id"]
+        )
         assert group["canonical_mode"] == oracle["canonical_mode"]
         assert group["status"] == oracle["status"]
         assert _bbox(group) == oracle["bbox"]
         assert _source_objects(group) == oracle["source_objects"]
+        if oracle["group_key"] == "coverages":
+            grid = group["form_grid"]
+            assert _bbox(grid) == oracle["form_grid_bbox"]
+            assert (
+                len(grid["row_boundaries"]) - 1,
+                len(grid["column_boundaries"]) - 1,
+                len(grid["cells"]),
+            ) == oracle["form_grid_shape"]
+        else:
+            assert group.get("form_grid") is None
         assert {field["field_key"] for field in anchor.get("form_fields", [])} == (
             set(oracle["field_keys"])
         )
         assert {label["text"] for label in anchor.get("form_labels", [])}
+        assert len(anchor.get("form_labels", [])) == len(oracle["label_keys"])
+        assert len(anchor.get("form_controls", [])) == len(oracle["control_keys"])
         assert all(
             field["value"] is None and field["value_state"] == "empty"
             for field in anchor.get("form_fields", [])
@@ -808,10 +822,23 @@ def test_acord_static_form_graph_is_exact_with_selective_canonical_replacement()
         for anchor in anchors
         for control in anchor.get("form_controls", [])
     ]
-    assert Counter(control["state"] for control in controls) == {
-        "unchecked": ACORD_REVIEWED_COUNTS["unchecked_control_count"],
-        "ambiguous": ACORD_REVIEWED_COUNTS["ambiguous_control_count"],
+    expected_control_states = {
+        state: count
+        for state, count in (
+            (
+                "unchecked",
+                ACORD_REVIEWED_COUNTS["unchecked_control_count"],
+            ),
+            (
+                "ambiguous",
+                ACORD_REVIEWED_COUNTS["ambiguous_control_count"],
+            ),
+        )
+        if count
     }
+    assert Counter(control["state"] for control in controls) == (
+        expected_control_states
+    )
     fields_by_key = {
         field["field_key"]: field
         for anchor in anchors
@@ -877,15 +904,37 @@ def test_acord_static_form_graph_is_exact_with_selective_canonical_replacement()
 
     canonical = payload["canonical_presentation"]
     for scope in ("body", "full"):
-        for representation in ("markdown", "text"):
-            value = canonical[scope][representation]
-            prefix = f"{scope}_{representation}"
-            assert len(value.encode("utf-8")) == ACORD_CANONICAL_INERT_ORACLE[
-                f"{prefix}_utf8_bytes"
-            ]
-            assert _sha256_text(value) == ACORD_CANONICAL_INERT_ORACLE[
-                f"{prefix}_sha256"
-            ]
+        markdown = canonical[scope]["markdown"]
+        text = canonical[scope]["text"]
+        assert markdown.count('data-form-grid="true"') == (
+            ACORD_CANONICAL_INERT_ORACLE["form_grid_table_count"]
+        )
+        assert markdown.count('data-reading-order="') == (
+            ACORD_CANONICAL_INERT_ORACLE["form_grid_cell_count"]
+        )
+        for static_kind in (
+            "column_header",
+            "row_header",
+            "section_header",
+            "qualifier",
+        ):
+            assert markdown.count(f'data-static-kind="{static_kind}"') == (
+                ACORD_CANONICAL_INERT_ORACLE[f"{static_kind}_count"]
+            )
+        assert markdown.count('aria-checked="false"') == (
+            ACORD_CANONICAL_INERT_ORACLE["unchecked_control_count"]
+        )
+        assert markdown.count('data-state="unchecked"') == (
+            ACORD_CANONICAL_INERT_ORACLE["unchecked_control_count"]
+        )
+        assert markdown.count('aria-checked="mixed"') == (
+            ACORD_CANONICAL_INERT_ORACLE["ambiguous_control_count"]
+        )
+        assert markdown.count('data-state="ambiguous"') == (
+            ACORD_CANONICAL_INERT_ORACLE["ambiguous_control_count"]
+        )
+        assert text.count("THIS IS TO CERTIFY THAT THE POLICIES OF INSURANCE") == 1
+        assert text.count("DESCRIPTION OF OPERATIONS / LOCATIONS / VEHICLES") == 1
 
     parties = by_key["parties-and-insurers"]
     parties_group = parties["form_group"]
