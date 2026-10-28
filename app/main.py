@@ -10,6 +10,7 @@ from app import __version__
 from app.api import router
 from app.config import parser_latency_prewarm_requested
 from app.errors import register_exception_handlers
+from app.ui import register_public_routes
 
 
 def create_app() -> FastAPI:
@@ -63,6 +64,7 @@ def create_app() -> FastAPI:
     )
     register_exception_handlers(application)
     application.include_router(router)
+    register_public_routes(application)
     if artifact_verification is not None and settings_dependency is not None:
         effective_settings = artifact_verification.effective_settings
         application.dependency_overrides[settings_dependency] = (

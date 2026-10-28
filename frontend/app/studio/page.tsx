@@ -1,5 +1,5 @@
-import { KnowledgeStudio } from "../knowledge-studio";
+import { BackendWorkspace } from "../backend-workspace";
 
 export default function StudioPage() {
-  return <KnowledgeStudio />;
+  return <BackendWorkspace />;
 }

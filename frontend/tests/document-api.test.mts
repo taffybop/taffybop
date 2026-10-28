@@ -9,6 +9,7 @@ import {
   getConfiguredMaxUploadBytes,
   getDocumentInputKind,
   parseJson,
+  parseJsonResponse,
   readBoundedParserResponseText,
   stripSupportedDocumentExtension,
   validateDocumentFile,
@@ -40,6 +41,43 @@ const image = (
   type = "image/png",
   contents = "image-bytes",
 ) => new File([contents], name, { type });
+
+test("raw JSON response retains original bytes, formatting, unknown fields, and numeric spelling", async () => {
+  const raw = ' {\n "schema_version":"1.0", "document":{}, "pages":[], "processing":{},\n "future_field":{"id":9007199254740993,"text":"\\u0061","amount":1.2300}\n}\n';
+  const bytes = new TextEncoder().encode(raw);
+  globalThis.fetch = async () => new Response(bytes, { status: 200, headers: { "content-type": "application/json; charset=utf-8" } });
+  const response = await parseJsonResponse(pdf(), { apiBaseUrl: "/v1/parse" });
+  assert.equal(response.rawText, raw);
+  assert.deepEqual(response.rawBytes, bytes);
+  assert.equal(response.contentType, "application/json; charset=utf-8");
+  assert.equal(response.status, 200);
+  assert.ok(response.data.future_field);
+  assert.notEqual(JSON.stringify(response.data), response.rawText);
+  assert.match(response.rawText, /9007199254740993/);
+  assert.match(response.rawText, /1\.2300/);
+});
+
+test("raw JSON retains split UTF-8 bytes and a BOM without changing the response", async () => {
+  const raw = '\uFEFF{"schema_version":"1.0","document":{},"pages":[],"processing":{},"note":"café ₹"}\n';
+  const bytes = new TextEncoder().encode(raw);
+  globalThis.fetch = async () => new Response(new ReadableStream<Uint8Array>({
+    start(controller) {
+      for (const byte of bytes) controller.enqueue(Uint8Array.of(byte));
+      controller.close();
+    },
+  }));
+  const response = await parseJsonResponse(pdf());
+  assert.equal(response.rawText, raw);
+  assert.deepEqual(response.rawBytes, bytes);
+  assert.equal(response.data.note, "café ₹");
+});
+
+test("raw JSON preserves an unfamiliar presentation sidecar while legacy preview validation remains strict", async () => {
+  const raw = JSON.stringify(sampleResult({ canonical_presentation: { future: true } } as never));
+  globalThis.fetch = async () => new Response(raw);
+  assert.equal((await parseJsonResponse(pdf())).rawText, raw);
+  await assert.rejects(parseJson(pdf()), (error: unknown) => error instanceof DocumentApiError && error.code === "invalid_canonical_presentation");
+});
 
 test("upload preflight defaults to 20 MiB and honors its environment override", () => {
   delete process.env.NEXT_PUBLIC_PARSE_API_MAX_UPLOAD_BYTES;

@@ -688,6 +688,7 @@ def test_production_profile_owns_selected_docker_classes_and_model_evidence(
     )
     monkeypatch.setenv(STARTUP_MANIFEST_PATH_ENV, "/app/release/manifest.json")
     monkeypatch.delenv(STARTUP_MANIFEST_SHA256_ENV, raising=False)
+    monkeypatch.delenv("PORT", raising=False)
     invocations: list[tuple[object, ...]] = []
     monkeypatch.setattr(
         release_start.uvicorn,
@@ -707,6 +708,60 @@ def test_production_profile_owns_selected_docker_classes_and_model_evidence(
             release_start.main()
     finally:
         os.environ.pop(STARTUP_MANIFEST_SHA256_ENV, None)
+
+
+@pytest.mark.parametrize(
+    ("configured_port", "expected_port"),
+    [
+        (None, 8000),
+        ("10000", 10000),
+        ("1", 1),
+        ("65535", 65535),
+        ("0", None),
+        ("65536", None),
+        ("-1", None),
+        ("", None),
+        ("not-a-port", None),
+    ],
+)
+def test_release_entrypoint_honors_platform_port_and_rejects_invalid_values(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    configured_port: str | None,
+    expected_port: int | None,
+) -> None:
+    import app.release_start as release_start
+
+    digest_path = tmp_path / "shipped-artifacts.sha256"
+    digest_path.write_text("b" * 64 + "\n", encoding="ascii")
+    monkeypatch.setenv(
+        "PARSER_RELEASE_ARTIFACT_MANIFEST_DIGEST_PATH", str(digest_path)
+    )
+    monkeypatch.setenv(STARTUP_MANIFEST_PATH_ENV, "/app/release/manifest.json")
+    # main writes this environment key; register it with monkeypatch so each
+    # parameter case restores it instead of leaking a digest to later tests.
+    monkeypatch.setenv(STARTUP_MANIFEST_SHA256_ENV, "b" * 64)
+    if configured_port is None:
+        monkeypatch.delenv("PORT", raising=False)
+    else:
+        monkeypatch.setenv("PORT", configured_port)
+    invocations: list[tuple[object, ...]] = []
+    monkeypatch.setattr(
+        release_start.uvicorn,
+        "run",
+        lambda *args, **kwargs: invocations.append((*args, kwargs)),
+    )
+
+    if expected_port is None:
+        with pytest.raises((RuntimeError, ValueError)):
+            release_start.main()
+        assert invocations == []
+    else:
+        release_start.main()
+        assert invocations == [
+            ("app.main:app", {"host": "0.0.0.0", "port": expected_port, "workers": 1})
+        ]
+        assert os.environ[STARTUP_MANIFEST_SHA256_ENV] == "b" * 64
 
 
 def test_optional_artifact_failure_operationally_disables_effective_flags(

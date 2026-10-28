@@ -1,28 +1,56 @@
-# TaffyBop Knowledge Studio
+# TaffyBop Document Studio
 
-The current product is a private, browser-based preparation workspace for AI
-knowledge bases. Visit `/studio` to import PDF/TXT/Markdown, review page text,
-adjust chunks, save locally, and download Markdown or JSONL. `/parse` and
-`/extract` redirect to the studio. The original parsing implementation remains
-in the repository but the current studio does not call its API.
+`/studio` is the backend-connected workspace. It accepts PDF, PNG, JPEG, TIFF
+and WebP, posts multipart `file` to `/v1/parse?output_format=json`, and displays
+the original document alongside a stable result pane.
 
-Use Node.js 24. `npm run check` runs lint, typecheck, unit tests and Worker
-bundle checks. `npm run build:static` creates a portable static site in
-`dist-static`; `npm run build:release` also writes the public deployment files
-to the repository root and records their hashes in `../site-manifest.json`.
-The static application can be hosted by Render without a Python service,
-database, environment secrets, or paid model API. For a new Render static-site
-configuration, use root `frontend`, build command `npm ci && npm run
-build:static`, and publish directory `dist-static`.
+- **Raw API JSON**: original response text, including unknown/additive fields.
+  Copy retains that text; download retains the captured response bytes.
+- **Structured preview**: selected API page items, returned table rows/cells,
+  inline raster image assets and item concerns. This is explicitly a display
+  view; it never replaces the raw response or supplies missing extraction.
+- **Metadata & warnings**: backend processing/document fields and warnings.
+  HTTP 200 and absent warnings are not extraction-quality guarantees.
 
-Limits: 10 sources per pack, 20 MB per file, 200 pages per PDF, and 2 million
-extracted characters per pack. Scanned/encrypted PDFs get actionable errors.
-Chunks stay on their original physical page; sizes are words, not tokens.
-Header cleanup is opt-in. PDF reading order and tables require review.
-Saved packs contain extracted text and settings in this browser's IndexedDB;
-they do not contain the original PDF and do not sync between devices.
+PDF page navigation uses the backend physical page index. Raster originals are
+shown when the browser supports them; TIFF has an explicit preview limitation.
+Text is escaped, remote image URLs and HTML are not executed, and exports do
+not pass through the older normalization code.
 
-## Original parser workspace reference
+`/knowledge` preserves the separate browser-only Knowledge Studio and its saved
+IndexedDB packs. It accepts selectable-text PDF/TXT/Markdown and exports Markdown
+or JSONL chunks. `/parse` and `/extract` lead to the new document workspace.
+
+## Development and deployment
+
+Use Node.js 24. Start the Python API at `http://127.0.0.1:8042`, then:
+
+```bash
+npm ci
+npm run dev:backend
+```
+
+Open `http://127.0.0.1:3019/studio`. Vite proxies `/v1` to the local API. For the
+Worker/Next-style development path instead, set `PARSE_API_URL` and run
+`npm run dev`; the server-side `/api/parse` proxy forwards to `/v1/parse`.
+
+`npm run check` runs lint, typecheck, unit tests and Worker bundle checks.
+`npm run build:static` creates `dist-static`. The Python service can host this
+build with `PARSER_UI_DIST_PATH` set to its absolute path. The repository
+Dockerfile builds and includes this UI. Restart the Python process when the UI
+build changes. The same deployment serves UI and API, avoiding browser CORS
+configuration and exposing no private repository files.
+
+The existing Render static site cannot run the parser. Do not publish this
+backend UI there until a tested API gateway exists or the domain moves to the
+unified web service. `build:release` requires explicit
+`TAFFYBOP_STATIC_API_GATEWAY_READY=1` to prevent a disconnected release.
+
+## Legacy workspace reference
+
+The sections below document the retained `clearleaf-workspace.tsx` and its
+existing rendered-output benchmark capture. That component is not mounted at
+`/studio`; its normalized JSON behavior does not apply to the new raw API view.
 
 TaffyBop is a standalone web interface for the existing Python document parser.
 It uploads PDFs and supported image files over HTTP, previews the original file

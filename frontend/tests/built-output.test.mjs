@@ -57,8 +57,24 @@ test("browser extraction and its PDF worker are packaged for local processing", 
 
 test("production landing offers the live studio instead of the former coming-soon product", async () => {
   const serverSource = await readFile(new URL("../dist/server/index.js", import.meta.url), "utf8");
-  assert.ok(serverSource.includes("Prepare a document"));
+  assert.ok(serverSource.includes("Extract a document"));
   assert.ok(serverSource.includes("/studio"));
-  assert.ok(serverSource.includes("No sign-up. No API key."));
+  assert.ok(serverSource.includes("Files are sent to this deployment"));
+  assert.ok(serverSource.includes("/knowledge"));
   assert.doesNotMatch(serverSource, /Extract is still chasing its yarn|Coming soon/u);
+});
+
+
+test("production bundle includes the backend workspace and exact API exports", async () => {
+  const manifest = await readManifest();
+  const studio = Object.values(manifest).find((entry) =>
+    entry.src?.endsWith("app/backend-workspace.tsx"),
+  );
+  assert.ok(studio?.file, "backend workspace client entry is present");
+  const source = await readFile(new URL(studio.file, clientRoot), "utf8");
+  for (const label of ["Raw API JSON", "Structured preview", "Metadata & warnings", "Parse document", "Download JSON"]) {
+    assert.ok(source.includes(label), `backend workspace includes ${label}`);
+  }
+  assert.ok(source.includes("rawBytes"), "download uses captured response bytes");
+  assert.ok(source.includes("rawText"), "copy and raw view use captured response text");
 });

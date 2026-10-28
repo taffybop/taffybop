@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
-const title = "TaffyBop — Knowledge Studio for AI assistants";
+const title = "TaffyBop — Document Studio";
 const description =
-  "Prepare better context for your AI assistant. Turn PDFs, Markdown, and text into reviewable chunks with page citations. Private, in-browser processing. Free beta.";
+  "Extract PDFs and images with a source preview, structured results, and the exact backend API response. Review document data before using it.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1200,
           height: 630,
-          alt: "TaffyBop Knowledge Studio. Better source material. Better answers.",
+          alt: "TaffyBop document tools",
         },
       ],
     },

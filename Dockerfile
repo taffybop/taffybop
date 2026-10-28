@@ -1,3 +1,10 @@
+FROM node:24-bookworm-slim AS frontend-build
+WORKDIR /ui
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci
+COPY frontend/ ./
+RUN npm run build:static
+
 FROM python:3.13-slim-bookworm
 
 ARG TORCH_VERSION=2.13.0
@@ -34,6 +41,8 @@ RUN mkdir -p /opt/docling-models \
         picture_classifier \
         -o /opt/docling-models
 
+COPY --from=frontend-build /ui/dist-static /app/site
+
 # Generate only from the finished candidate image. The authoritative profile
 # rejects missing dpkg copyright/file inventories, Python source/license
 # metadata, model revisions/licenses, or changed bytes. Verification is local
@@ -49,7 +58,8 @@ RUN mkdir -p /app/release \
         --expected-sha256-file /app/release/shipped-artifacts.sha256 \
         --candidate-root /
 
-ENV DOCLING_ARTIFACTS_PATH=/opt/docling-models \
+ENV PARSER_UI_DIST_PATH=/app/site \
+    DOCLING_ARTIFACTS_PATH=/opt/docling-models \
     HF_HUB_OFFLINE=1 \
     TRANSFORMERS_OFFLINE=1 \
     PARSER_RELEASE_ARTIFACT_MANIFEST_PATH=/app/release/shipped-artifacts.json \

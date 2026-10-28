@@ -119,7 +119,19 @@ export interface ParseBundle {
   markdown: () => Promise<string>;
 }
 
+export interface ParseJsonResponse {
+  /** Parsed only for the optional preview; no field normalization is applied. */
+  data: ParseResult;
+  /** Exact decoded UTF-8 response text, including whitespace and number spelling. */
+  rawText: string;
+  /** Original decoded HTTP response-body bytes, used directly for download. */
+  rawBytes: Uint8Array;
+  contentType: string;
+  status: number;
+}
+
 export interface DocumentApiClient {
+  parseJsonResponse(file: File, options?: ParseRequestOptions): Promise<ParseJsonResponse>;
   parseJson(file: File, options?: ParseRequestOptions): Promise<ParseResult>;
   parseMarkdown(file: File, options?: ParseRequestOptions): Promise<string>;
   createParseBundle(file: File, options?: ParseRequestOptions): ParseBundle;
@@ -174,11 +186,11 @@ function responseTooLarge(
  * bound. The byte ceiling applies to the decoded HTTP body stream; cancelling
  * the reader also terminates the underlying fetch body when the cap is crossed.
  */
-export async function readBoundedParserResponseText(
+export async function readBoundedParserResponseBytes(
   response: Response,
   maximumBytes = DEFAULT_PARSE_MAX_RESPONSE_BYTES,
   onLimitExceeded?: () => void,
-): Promise<string> {
+): Promise<Uint8Array> {
   if (!Number.isSafeInteger(maximumBytes) || maximumBytes <= 0) {
     throw new DocumentApiError(
       "configuration",
@@ -218,10 +230,9 @@ export async function readBoundedParserResponseText(
     );
   }
 
-  if (response.body === null) return "";
+  if (response.body === null) return new Uint8Array();
   const reader = response.body.getReader();
-  const decoder = new TextDecoder();
-  const fragments: string[] = [];
+  const fragments: Uint8Array[] = [];
   let receivedBytes = 0;
   try {
     while (true) {
@@ -249,13 +260,23 @@ export async function readBoundedParserResponseText(
         }
         throw responseTooLarge(response, maximumBytes, receivedBytes);
       }
-      fragments.push(decoder.decode(chunk.value, { stream: true }));
+      fragments.push(chunk.value.slice());
     }
-    fragments.push(decoder.decode());
-    return fragments.join("");
+    const bytes = new Uint8Array(receivedBytes);
+    let offset = 0;
+    for (const fragment of fragments) { bytes.set(fragment, offset); offset += fragment.length; }
+    return bytes;
   } finally {
     reader.releaseLock();
   }
+}
+
+export async function readBoundedParserResponseText(
+  response: Response,
+  maximumBytes = DEFAULT_PARSE_MAX_RESPONSE_BYTES,
+  onLimitExceeded?: () => void,
+): Promise<string> {
+  return new TextDecoder().decode(await readBoundedParserResponseBytes(response, maximumBytes, onLimitExceeded));
 }
 
 function readPositiveNumber(value: string | undefined, fallback: number): number {
@@ -541,6 +562,7 @@ async function requestParse<Format extends ParseOutputFormat>(
   file: File,
   outputFormat: Format,
   options: ParseRequestOptions = {},
+  captureResponse?: (response: ParseJsonResponse) => void,
 ): Promise<ParseResponseFor<Format>> {
   const timeoutMs = options.timeoutMs ?? configuredTimeoutMs();
   const maxUploadBytes =
@@ -597,11 +619,12 @@ async function requestParse<Format extends ParseOutputFormat>(
       throw await errorFromResponse(response, abortOversizedResponse);
     }
 
-    const body = await readBoundedParserResponseText(
+    const rawBytes = await readBoundedParserResponseBytes(
       response,
       DEFAULT_PARSE_MAX_RESPONSE_BYTES,
       abortOversizedResponse,
     );
+    const body = new TextDecoder("utf-8", { ignoreBOM: true }).decode(rawBytes);
     if (!body.trim()) {
       throw new DocumentApiError(
         "empty",
@@ -617,7 +640,7 @@ async function requestParse<Format extends ParseOutputFormat>(
 
     let parsed: unknown;
     try {
-      parsed = JSON.parse(body);
+      parsed = JSON.parse(body.replace(/^\uFEFF/u, ""));
     } catch (cause) {
       throw new DocumentApiError(
         "server",
@@ -634,6 +657,12 @@ async function requestParse<Format extends ParseOutputFormat>(
         "The parsing service returned an unexpected JSON structure.",
         { status: response.status },
       );
+    }
+    if (captureResponse) {
+      // The raw-result workspace must retain even an empty or unfamiliar
+      // presentation sidecar. Optional preview validation cannot hide API bytes.
+      captureResponse({ data: parsed, rawText: body, rawBytes, contentType: response.headers.get("content-type") ?? "application/json", status: response.status });
+      return parsed as ParseResponseFor<Format>;
     }
     if (parsed.pages.length === 0) {
       throw new DocumentApiError(
@@ -685,6 +714,16 @@ async function requestParse<Format extends ParseOutputFormat>(
   } finally {
     abort.dispose();
   }
+}
+
+export async function parseJsonResponse(
+  file: File,
+  options?: ParseRequestOptions,
+): Promise<ParseJsonResponse> {
+  let captured: ParseJsonResponse | undefined;
+  await requestParse(file, "json", options, response => { captured = response; });
+  if (!captured) throw new DocumentApiError("server", "missing_response_body", "The parsing service returned no JSON body.");
+  return captured;
 }
 
 export function parseJson(
@@ -740,6 +779,8 @@ export function createDocumentApiClient(
   defaults: DocumentApiClientOptions = {},
 ): DocumentApiClient {
   return {
+    parseJsonResponse: (file, options) =>
+      parseJsonResponse(file, mergeOptions(defaults, options)),
     parseJson: (file, options) =>
       parseJson(file, mergeOptions(defaults, options)),
     parseMarkdown: (file, options) =>

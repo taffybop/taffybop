@@ -1,32 +1,48 @@
 # TaffyBop
 
-## Knowledge Studio
+## Document Studio
 
-The web product prepares documents for AI assistants: import text-based PDF,
-TXT or Markdown, review and edit extracted source pages, tune word-based chunks,
-and export Markdown or JSONL with page citations. Processing happens in the
-browser. Saved packs use local IndexedDB; there are no accounts, cloud sync,
-payments, or hosted OCR in this free beta.
+`/studio` uploads PDFs and supported images to the Python parsing API and shows
+source pages beside a fixed result panel. **Raw API JSON** is the default view;
+copy preserves the response text and download preserves the response bytes.
+The separate **Structured preview** displays returned items, tables and image
+assets. **Metadata & warnings** exposes backend warnings. A successful HTTP
+status does not certify extraction accuracy.
 
-From `frontend`, with Node.js 24:
+The earlier browser-only Knowledge Studio remains at `/knowledge`, including
+existing IndexedDB saved packs. It accepts selectable-text PDF, TXT and Markdown
+and exports knowledge chunks; it does not perform OCR.
+
+For local development, start the parser at port 8042, then from `frontend` with
+Node.js 24:
 
 ```bash
 npm ci
-npm run dev
-npm run check
-npm run build:release
+npm run dev:backend
 ```
 
-`build:static` produces the portable `frontend/dist-static` site.
-`build:release` also copies its verified public assets to the repository root,
-matching the existing Render static-site setup for `https://taffybop.io`.
-`site-manifest.json` records each published file's SHA-256 and size. Push the
-release commit to the branch tracked by Render, then verify the live manifest
-and the browser workflow. Reverting the release commit restores the preceding
-site without affecting visitors' browser storage.
+Open `http://127.0.0.1:3019/studio`. The development server forwards `/v1` to
+`http://127.0.0.1:8042`. `npm run check` runs frontend checks.
 
-The original Python parsing API and its advanced extraction work remain below.
-They are independent of Knowledge Studio and are not required by the web app.
+For a single-origin deployment, `npm run build:static` creates
+`frontend/dist-static`. Set `PARSER_UI_DIST_PATH` to that directory before
+starting the Python API; it serves the approved public files beside `/v1/parse`.
+The Dockerfile builds both services into one image and uses the host's `PORT`
+(default 8000). `/healthz` checks the process only, not model readiness. The
+existing release model manifest checks still apply. Restart after rebuilding UI
+assets because approved files are snapshotted at startup.
+
+**Hosting:** the existing Render static site cannot execute the Python API.
+Publish this version as a Python/container web service, or configure a tested
+same-origin API gateway before publishing static assets. `build:release` refuses
+to copy to the live static-site root unless
+`TAFFYBOP_STATIC_API_GATEWAY_READY=1` is explicitly set. A compiled frontend alone
+is not a working deployment.
+
+The offline [routing evaluator](tests/benchmarks/routing_evaluation.md) compares
+saved API responses with reviewed source truth and records routing signals,
+corrections, regressions, measured latency and cost separately. Missing evidence
+is unevaluated, not a passing result.
 
 ## Document Parse API
 

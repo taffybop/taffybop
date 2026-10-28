@@ -4,12 +4,18 @@ import { dirname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const projectRoot = fileURLToPath(new URL("../../", import.meta.url));
+// This legacy publication destination is a static Render site. It cannot
+// execute /v1/parse. Require an explicit operator opt-in only after a gateway
+// has been provisioned; the default release target is now the API container.
+if (process.env.TAFFYBOP_STATIC_API_GATEWAY_READY !== "1") {
+  throw new Error("Document Studio requires /v1/parse. Deploy the unified API+UI image; static publication requires TAFFYBOP_STATIC_API_GATEWAY_READY=1 after a working API gateway is provisioned.");
+}
 const buildRoot = fileURLToPath(new URL("../dist-static/", import.meta.url));
 const manifestPath = resolve(projectRoot, "site-manifest.json");
 const fixedFiles = [
   "index.html", "404.html", "_redirects", "robots.txt", "icon.svg", "og-knowledge.svg",
   "pdf.worker.min.mjs", "studio/index.html", "privacy/index.html", "parse/index.html",
-  "extract/index.html", "samples/customer-support-handbook.pdf",
+  "extract/index.html", "knowledge/index.html", "samples/customer-support-handbook.pdf",
 ];
 
 function isPublishedPath(path) {
@@ -67,7 +73,7 @@ for (const path of files) {
   const content = await readFile(source);
   if (/\.(?:js|mjs|html|css)$/u.test(path)) {
     const text = content.toString("utf8");
-    if (/(?:PARSE_API_URL|NEXT_PUBLIC_PARSE_API_URL|\/api\/parse|\/v1\/parse|expertmodel\.json)/u.test(text)) {
+    if (/expertmodel\.json/u.test(text)) {
       throw new Error(`Unexpected parser configuration or private fixture reference in ${path}`);
     }
   }
