@@ -1,5 +1,35 @@
 # TaffyBop
 
+## Knowledge Studio
+
+The web product prepares documents for AI assistants: import text-based PDF,
+TXT or Markdown, review and edit extracted source pages, tune word-based chunks,
+and export Markdown or JSONL with page citations. Processing happens in the
+browser. Saved packs use local IndexedDB; there are no accounts, cloud sync,
+payments, or hosted OCR in this free beta.
+
+From `frontend`, with Node.js 24:
+
+```bash
+npm ci
+npm run dev
+npm run check
+npm run build:release
+```
+
+`build:static` produces the portable `frontend/dist-static` site.
+`build:release` also copies its verified public assets to the repository root,
+matching the existing Render static-site setup for `https://taffybop.io`.
+`site-manifest.json` records each published file's SHA-256 and size. Push the
+release commit to the branch tracked by Render, then verify the live manifest
+and the browser workflow. Reverting the release commit restores the preceding
+site without affecting visitors' browser storage.
+
+The original Python parsing API and its advanced extraction work remain below.
+They are independent of Knowledge Studio and are not required by the web app.
+
+## Document Parse API
+
 A local Python API that accepts PDF, PNG, JPEG/JPG, TIFF, and WebP documents,
 plus default-off DOCX, PPTX, and XLSX native adapters, and returns normalized
 JSON, Markdown, or plain text. It combines native source evidence, layout and

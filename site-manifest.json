@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "frontend/tools/publish-static.mjs",
+  "files": [
+    {
+      "path": "404.html",
+      "sha256": "2412fc17c4be6882bc53b7c7b84afcfc610b16610cfd5d187fd2db15de0c9161",
+      "bytes": 1370
+    },
+    {
+      "path": "_redirects",
+      "sha256": "d0f8496ab0f9ea8117c6d5ee2e9358fe1fe6bcb40f310e199e28323714a50e3f",
+      "bytes": 59
+    },
+    {
+      "path": "assets/index-B5f_7UOW.js",
+      "sha256": "21618c51b5e240f41d0add2c9269edcdfc199367e9b6532925db568f4bf4d7d4",
+      "bytes": 249746
+    },
+    {
+      "path": "assets/index-BQftIVWR.css",
+      "sha256": "8e3968716ee966b5d5bbd76a73b349e96874d0340ba1ebeea0c705335bae01a5",
+      "bytes": 98910
+    },
+    {
+      "path": "assets/pdf-BKtUzkGx.js",
+      "sha256": "50fe60ba51101656c7a9a4cd06c98aad2ce1476d5da64dba41099351f3a3e435",
+      "bytes": 394414
+    },
+    {
+      "path": "extract/index.html",
+      "sha256": "9b6af72e83e486c1b6061e0c28a1ae551ed391392633ec99d671a06a6eccbd44",
+      "bytes": 230
+    },
+    {
+      "path": "icon.svg",
+      "sha256": "9044086eb1e41995193f0c067220f9b58b8b4191fa444454642910e0136c4bf6",
+      "bytes": 282
+    },
+    {
+      "path": "index.html",
+      "sha256": "2412fc17c4be6882bc53b7c7b84afcfc610b16610cfd5d187fd2db15de0c9161",
+      "bytes": 1370
+    },
+    {
+      "path": "og-knowledge.svg",
+      "sha256": "d80e1e575aef70c2b48b09d3bfff07641484e3df65e143e4aff967820d4f01be",
+      "bytes": 836
+    },
+    {
+      "path": "parse/index.html",
+      "sha256": "9b6af72e83e486c1b6061e0c28a1ae551ed391392633ec99d671a06a6eccbd44",
+      "bytes": 230
+    },
+    {
+      "path": "pdf.worker.min.mjs",
+      "sha256": "dbcae78a691b3c501508f74b774c6066a57a14a76cefdc9e25ad86b651bb75d5",
+      "bytes": 1046214
+    },
+    {
+      "path": "privacy/index.html",
+      "sha256": "2412fc17c4be6882bc53b7c7b84afcfc610b16610cfd5d187fd2db15de0c9161",
+      "bytes": 1370
+    },
+    {
+      "path": "robots.txt",
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95",
+      "bytes": 23
+    },
+    {
+      "path": "samples/customer-support-handbook.pdf",
+      "sha256": "f56e759a74129ac7d914622171349ab5b8dd0e70c888a501e09bbf8b5a64105e",
+      "bytes": 11928
+    },
+    {
+      "path": "studio/index.html",
+      "sha256": "2412fc17c4be6882bc53b7c7b84afcfc610b16610cfd5d187fd2db15de0c9161",
+      "bytes": 1370
+    }
+  ]
+}

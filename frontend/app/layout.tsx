@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
-const title = "TaffyBop — Messy data in. Clean data out.";
+const title = "TaffyBop — Knowledge Studio for AI assistants";
 const description =
-  "Turn PDFs and images into clean, page-aligned Markdown and complete JSON with TaffyBop.";
+  "Prepare better context for your AI assistant. Turn PDFs, Markdown, and text into reviewable chunks with page citations. Private, in-browser processing. Free beta.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -31,12 +31,13 @@ export async function generateMetadata(): Promise<Metadata> {
     // Keep metadata valid if a development proxy supplies a malformed host.
   }
 
-  const socialImage = new URL("/og-taffybop.png", origin).toString();
+  const socialImage = new URL("/og-knowledge.svg", origin).toString();
 
   return {
     metadataBase: origin,
     title,
     description,
+    icons: { icon: "/icon.svg" },
     openGraph: {
       type: "website",
       title,
@@ -46,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: socialImage,
           width: 1200,
           height: 630,
-          alt: "TaffyBop turns messy documents into clean, structured data.",
+          alt: "TaffyBop Knowledge Studio. Better source material. Better answers.",
         },
       ],
     },

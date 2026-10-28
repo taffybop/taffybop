@@ -1,5 +1,5 @@
-import { TaffyBopWorkspace } from "../clearleaf-workspace";
+import { redirect } from "next/navigation";
 
 export default function ParsePage() {
-  return <TaffyBopWorkspace />;
+  redirect("/studio");
 }

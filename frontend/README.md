@@ -1,4 +1,28 @@
-# TaffyBop document workspace
+# TaffyBop Knowledge Studio
+
+The current product is a private, browser-based preparation workspace for AI
+knowledge bases. Visit `/studio` to import PDF/TXT/Markdown, review page text,
+adjust chunks, save locally, and download Markdown or JSONL. `/parse` and
+`/extract` redirect to the studio. The original parsing implementation remains
+in the repository but the current studio does not call its API.
+
+Use Node.js 24. `npm run check` runs lint, typecheck, unit tests and Worker
+bundle checks. `npm run build:static` creates a portable static site in
+`dist-static`; `npm run build:release` also writes the public deployment files
+to the repository root and records their hashes in `../site-manifest.json`.
+The static application can be hosted by Render without a Python service,
+database, environment secrets, or paid model API. For a new Render static-site
+configuration, use root `frontend`, build command `npm ci && npm run
+build:static`, and publish directory `dist-static`.
+
+Limits: 10 sources per pack, 20 MB per file, 200 pages per PDF, and 2 million
+extracted characters per pack. Scanned/encrypted PDFs get actionable errors.
+Chunks stay on their original physical page; sizes are words, not tokens.
+Header cleanup is opt-in. PDF reading order and tables require review.
+Saved packs contain extracted text and settings in this browser's IndexedDB;
+they do not contain the original PDF and do not sync between devices.
+
+## Original parser workspace reference
 
 TaffyBop is a standalone web interface for the existing Python document parser.
 It uploads PDFs and supported image files over HTTP, previews the original file

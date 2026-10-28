@@ -15,8 +15,10 @@
     "capture:rendered-ui": "node tools/capture-rendered-ui.mjs",
     "typecheck": "tsc --noEmit --pretty false",
     "check": "npm run lint && npm run typecheck && npm test",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern public/pdf.worker.min.mjs",
-    "clean": "vinext clean"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern dist-static --ignore-pattern .next --ignore-pattern public/pdf.worker.min.mjs",
+    "clean": "vinext clean",
+    "build:static": "vite build --config vite.static.config.ts && node tools/finalize-static.mjs",
+    "build:release": "npm run build:static && node tools/publish-static.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.27.0",
