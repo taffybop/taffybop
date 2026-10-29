@@ -22,6 +22,7 @@ frontend/dist-static
 frontend/.wrangler
 frontend/.env*
 tests
+tracker
 *.pdf
 !frontend/public/samples/customer-support-handbook.pdf
 markdown.md

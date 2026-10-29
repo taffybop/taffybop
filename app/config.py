@@ -4,11 +4,47 @@ from __future__ import annotations
 
 import math
 import os
+import re
 from dataclasses import dataclass
 from functools import lru_cache
+from urllib.parse import urlsplit
 
 
 MEBIBYTE = 1024 * 1024
+
+
+def parser_cors_origins() -> tuple[str, ...]:
+    """Read an explicit browser-origin allowlist; unset keeps CORS disabled."""
+
+    raw = os.getenv("PARSER_CORS_ALLOWED_ORIGINS", "").strip()
+    if not raw:
+        return ()
+    origins: list[str] = []
+    for value in raw.split(","):
+        origin = value.strip()
+        message = (
+            "PARSER_CORS_ALLOWED_ORIGINS must contain comma-separated HTTPS "
+            "origins without credentials, wildcards, paths, queries, or fragments "
+            "(HTTP is allowed only for loopback development origins)"
+        )
+        if not re.fullmatch(
+            r"https?://(?:[A-Za-z0-9][A-Za-z0-9.-]*|\[[0-9A-Fa-f:]+\])(?::[0-9]{1,5})?/?",
+            origin,
+        ):
+            raise ValueError(message)
+        try:
+            parsed = urlsplit(origin)
+            port = parsed.port
+        except ValueError as exc:
+            raise ValueError(message) from exc
+        hostname = parsed.hostname or ""
+        if (parsed.scheme != "https" and hostname not in {"localhost", "127.0.0.1", "::1"}) or port == 0:
+            raise ValueError(message)
+        host = f"[{hostname}]" if ":" in hostname else hostname
+        default_port = 443 if parsed.scheme == "https" else 80
+        suffix = f":{port}" if port is not None and port != default_port else ""
+        origins.append(f"{parsed.scheme}://{host}{suffix}")
+    return tuple(dict.fromkeys(origins))
 
 
 def parser_latency_prewarm_requested() -> bool:

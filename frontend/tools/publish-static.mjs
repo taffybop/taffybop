@@ -2,15 +2,15 @@ import { createHash } from "node:crypto";
 import { lstat, mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import { dirname, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { assertStaticPublishReady } from "./static-api-config.mjs";
 
 const projectRoot = fileURLToPath(new URL("../../", import.meta.url));
 // This legacy publication destination is a static Render site. It cannot
-// execute /v1/parse. Require an explicit operator opt-in only after a gateway
-// has been provisioned; the default release target is now the API container.
-if (process.env.TAFFYBOP_STATIC_API_GATEWAY_READY !== "1") {
-  throw new Error("Document Studio requires /v1/parse. Deploy the unified API+UI image; static publication requires TAFFYBOP_STATIC_API_GATEWAY_READY=1 after a working API gateway is provisioned.");
-}
+// execute /v1/parse. Require an explicit readiness opt-in and confirm that the
+// build embeds the intended same-origin gateway or public HTTPS API endpoint.
 const buildRoot = fileURLToPath(new URL("../dist-static/", import.meta.url));
+const apiMetadata = JSON.parse(await readFile(resolve(buildRoot, "static-api-config.json"), "utf8"));
+assertStaticPublishReady(apiMetadata, process.env);
 const manifestPath = resolve(projectRoot, "site-manifest.json");
 const fixedFiles = [
   "index.html", "404.html", "_redirects", "robots.txt", "icon.svg", "og-knowledge.svg",

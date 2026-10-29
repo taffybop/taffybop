@@ -2,23 +2,30 @@ import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import { staticApiEndpoint, staticParserDefines } from "./tools/static-api-config.mjs";
 
 const frontendRoot = fileURLToPath(new URL(".", import.meta.url));
+const publicApiUrl = staticApiEndpoint(process.env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL);
 
 export default defineConfig({
   root: resolve(frontendRoot, "static"),
   base: "/",
   publicDir: resolve(frontendRoot, "public"),
   envDir: resolve(frontendRoot, "static"),
-  envPrefix: "TAFFYBOP_STATIC_PUBLIC_",
-  // Static deployments use the explicit same-origin endpoint. Define only
-  // these client settings; never expose the build process environment.
-  define: {
-    "process.env.NEXT_PUBLIC_PARSE_API_URL": "undefined",
-    "process.env.NEXT_PUBLIC_PARSE_API_TIMEOUT_MS": "undefined",
-    "process.env.NEXT_PUBLIC_PARSE_API_MAX_UPLOAD_BYTES": "undefined",
-  },
-  plugins: [react()],
+  // Only the validated endpoint below is public. Never expose a general
+  // environment prefix or build-process environment to browser code.
+  envPrefix: [],
+  define: staticParserDefines(process.env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL),
+  plugins: [react(), {
+    name: "static-api-build-metadata",
+    generateBundle() {
+      this.emitFile({
+        type: "asset",
+        fileName: "static-api-config.json",
+        source: JSON.stringify({ schemaVersion: 1, parseApiUrl: publicApiUrl }) + "\n",
+      });
+    },
+  }],
   resolve: {
     alias: [
       { find: "next/link", replacement: resolve(frontendRoot, "static/link.tsx") },

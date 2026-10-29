@@ -5,10 +5,11 @@ from __future__ import annotations
 import sys
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from app import __version__
 from app.api import router
-from app.config import parser_latency_prewarm_requested
+from app.config import parser_cors_origins, parser_latency_prewarm_requested
 from app.errors import register_exception_handlers
 from app.ui import register_public_routes
 
@@ -65,6 +66,16 @@ def create_app() -> FastAPI:
     register_exception_handlers(application)
     application.include_router(router)
     register_public_routes(application)
+    cors_origins = parser_cors_origins()
+    if cors_origins:
+        application.add_middleware(
+            CORSMiddleware,
+            allow_origins=list(cors_origins),
+            allow_methods=["POST"],
+            allow_headers=["Accept", "Content-Type"],
+            allow_credentials=False,
+            max_age=600,
+        )
     if artifact_verification is not None and settings_dependency is not None:
         effective_settings = artifact_verification.effective_settings
         application.dependency_overrides[settings_dependency] = (
