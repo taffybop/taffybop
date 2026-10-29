@@ -1,0 +1,88 @@
+name: Linux deployment smoke
+
+on:
+  push:
+    branches: [codex/backend-fidelity-foundation]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docker-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docker-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Build the deployment image
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p tmp/docker-smoke
+          docker build --platform linux/amd64 --progress plain \
+            -t taffybop:render-audit . 2>&1 | tee tmp/docker-smoke/build.log
+          docker image inspect taffybop:render-audit \
+            --format 'id={{.Id}} os={{.Os}} arch={{.Architecture}} bytes={{.Size}}' \
+            > tmp/docker-smoke/image.txt
+
+      - name: Start with deployment settings and bounded resources
+        shell: bash
+        run: |
+          set -euo pipefail
+          docker run --detach --name taffybop-render-audit \
+            --platform linux/amd64 --memory=4g --memory-swap=4g --cpus=2 \
+            --env-file deploy/render-api.env.example --env PORT=8000 \
+            --publish 127.0.0.1:18042:8000 taffybop:render-audit
+          # Generate a public synthetic fixture using Pillow already pinned in
+          # the tested image. Do not install extra packages on the CI runner.
+          docker exec -i taffybop-render-audit python - <<'PY' > tmp/docker-smoke/smoke.png
+          import sys
+          from PIL import Image, ImageDraw, ImageFont
+          image = Image.new("RGB", (1200, 500), "white")
+          draw = ImageDraw.Draw(image)
+          font = ImageFont.load_default(size=64)
+          for row, text in enumerate(["TAFFYBOP SMOKE TEST", "INVOICE 123", "TOTAL 42.00 USD"]):
+              draw.text((60, 60 + row * 130), text, fill="black", font=font)
+          image.save(sys.stdout.buffer, format="PNG")
+          PY
+
+      - name: Verify startup, public routes, and actual PDF and PNG parsing
+        run: |
+          python3 deploy/container_smoke.py \
+            --base-url http://127.0.0.1:18042 \
+            --pdf frontend/public/samples/customer-support-handbook.pdf \
+            --png tmp/docker-smoke/smoke.png \
+            --output tmp/docker-smoke
+
+      - name: Collect runtime evidence and stop the container
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p tmp/docker-smoke
+          if docker container inspect taffybop-render-audit >/dev/null 2>&1; then
+            docker logs taffybop-render-audit > tmp/docker-smoke/container.log 2>&1 || true
+            docker inspect taffybop-render-audit --format '{{json .State}}' \
+              > tmp/docker-smoke/container-state.json || true
+            docker stats --no-stream taffybop-render-audit \
+              > tmp/docker-smoke/resources.txt 2>&1 || true
+            docker exec taffybop-render-audit sh -c \
+              'for name in memory.peak memory.current memory.events; do echo "$name"; cat "/sys/fs/cgroup/$name"; done' \
+              > tmp/docker-smoke/cgroup-memory.txt 2>&1 || true
+            docker rm --force taffybop-render-audit >/dev/null || true
+          fi
+
+      - name: Retain exact responses and diagnostic artifacts
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: linux-amd64-smoke-${{ github.run_id }}-${{ github.run_attempt }}
+          path: tmp/docker-smoke/
+          if-no-files-found: warn
+          retention-days: 7
