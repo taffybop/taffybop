@@ -16,7 +16,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-RUN apt-get update \
+# The slim base excludes package docs/manpages while dpkg still lists them.
+# Preserve complete installed files for the strict shipped-artifact inventory.
+RUN rm -f /etc/dpkg/dpkg.cfg.d/docker \
+    && apt-get update \
     && apt-get install -y --no-install-recommends \
         libgl1 \
         libglib2.0-0 \
