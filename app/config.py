@@ -13,6 +13,22 @@ from urllib.parse import urlsplit
 MEBIBYTE = 1024 * 1024
 
 
+def parser_public_resource_limits() -> tuple[int, int, float]:
+    """Return whole-body bytes, admitted requests, and upload deadline seconds."""
+
+    max_upload_bytes = _read_int("MAX_UPLOAD_BYTES", 20 * MEBIBYTE)
+    upload_timeout = _read_float(
+        "PARSER_UPLOAD_TIMEOUT_SECONDS", 60.0, minimum=0.001, maximum=300.0
+    )
+    if not math.isfinite(upload_timeout):
+        raise ValueError("PARSER_UPLOAD_TIMEOUT_SECONDS must be finite")
+    return (
+        _read_int("PARSER_MAX_REQUEST_BODY_BYTES", max_upload_bytes + MEBIBYTE),
+        _read_int("PARSER_MAX_CONCURRENT_PARSE_REQUESTS", 1),
+        upload_timeout,
+    )
+
+
 def parser_cors_origins() -> tuple[str, ...]:
     """Read an explicit browser-origin allowlist; unset keeps CORS disabled."""
 

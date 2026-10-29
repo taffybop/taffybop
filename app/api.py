@@ -22,6 +22,7 @@ from app.errors import (
     UploadTooLargeError,
 )
 from app.models import ErrorResponse, OutputFormat, ParseResult
+from app.upload_request import UploadCleanupRoute
 from app.services.input_documents import (
     DeclaredInput,
     detect_upload_type,
@@ -30,7 +31,7 @@ from app.services.input_documents import (
 
 logger = logging.getLogger(__name__)
 
-router = APIRouter()
+router = APIRouter(route_class=UploadCleanupRoute)
 
 READ_CHUNK_BYTES = 1024 * 1024
 
@@ -213,9 +214,11 @@ def _serialize_text(result: Any) -> str:
                 },
             },
         },
+        408: {"model": ErrorResponse},
         413: {"model": ErrorResponse},
         415: {"model": ErrorResponse},
         422: {"model": ErrorResponse},
+        429: {"model": ErrorResponse},
         500: {"model": ErrorResponse},
         503: {"model": ErrorResponse},
         504: {"model": ErrorResponse},

@@ -9,8 +9,13 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app import __version__
 from app.api import router
-from app.config import parser_cors_origins, parser_latency_prewarm_requested
+from app.config import (
+    parser_cors_origins,
+    parser_latency_prewarm_requested,
+    parser_public_resource_limits,
+)
 from app.errors import register_exception_handlers
+from app.request_limits import ParserRequestLimitsMiddleware
 from app.ui import register_public_routes
 
 
@@ -66,6 +71,14 @@ def create_app() -> FastAPI:
     register_exception_handlers(application)
     application.include_router(router)
     register_public_routes(application)
+    max_body_bytes, max_concurrent, upload_timeout = parser_public_resource_limits()
+    application.add_middleware(
+        ParserRequestLimitsMiddleware,
+        max_request_body_bytes=max_body_bytes,
+        max_concurrent_parse_requests=max_concurrent,
+        upload_timeout_seconds=upload_timeout,
+    )
+    # Keep CORS outside request limits so admitted origins can read 413/429.
     cors_origins = parser_cors_origins()
     if cors_origins:
         application.add_middleware(

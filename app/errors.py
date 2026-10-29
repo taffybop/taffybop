@@ -55,6 +55,18 @@ class UploadTooLargeError(AppError):
     default_message = "The uploaded document exceeds the configured size limit."
 
 
+class ParserBusyError(AppError):
+    status_code = 429
+    code = "parser_busy"
+    default_message = "The parser is busy. Try again after the current document finishes."
+
+
+class UploadTimeoutError(AppError):
+    status_code = 408
+    code = "upload_timeout"
+    default_message = "The upload did not finish within the configured time limit."
+
+
 class InvalidPdfError(AppError):
     status_code = 422
     code = "invalid_pdf"
