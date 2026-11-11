@@ -1,0 +1,53 @@
+{
+  "schema_version": "px-evaluation-expectations/1",
+  "expectation_origin": "Independently authored source-reading oracle; no parser or LLM response used.",
+  "cases": [
+    {
+      "document_id": "dev-invoice-104",
+      "fields": [
+        {"name": "invoice_number", "type": "string", "status": "found", "value": "TB-DEV-104", "critical": true, "evidence": {"page": 1, "quote": "Invoice number: TB-DEV-104"}},
+        {"name": "invoice_date", "type": "date", "status": "found", "value": "2026-10-12", "critical": false, "evidence": {"page": 1, "quote": "Invoice date: 2026-10-12"}},
+        {"name": "currency", "type": "string", "status": "found", "value": "USD", "critical": true, "evidence": {"page": 1, "quote": "Currency: USD"}},
+        {"name": "total_due", "type": "decimal", "status": "found", "value": "73.20", "critical": true, "evidence": {"page": 1, "quote": "Total due: USD 73.20"}}
+      ],
+      "repeating_rows": {
+        "name": "line_items",
+        "page": 1,
+        "columns": ["line", "sku", "quantity", "unit_price", "amount"],
+        "critical_columns": ["sku", "quantity", "amount"],
+        "rows": [
+          {"line": 1, "sku": "A100", "quantity": 2, "unit_price": "12.50", "amount": "25.00"},
+          {"line": 2, "sku": "B200", "quantity": 4, "unit_price": "9.00", "amount": "36.00"},
+          {"line": 3, "sku": "A100", "quantity": 1, "unit_price": "12.20", "amount": "12.20"}
+        ]
+      }
+    },
+    {
+      "document_id": "dev-contract-201",
+      "fields": [
+        {"name": "first_party_representative_first_name", "type": "string", "status": "found", "value": "Mara", "critical": true, "evidence": {"page": 1, "quote": "First party: North Lantern Labs, represented by Mara Quinn."}},
+        {"name": "first_party_representative_last_name", "type": "string", "status": "found", "value": "Quinn", "critical": true, "evidence": {"page": 1, "quote": "First party: North Lantern Labs, represented by Mara Quinn."}},
+        {"name": "effective_date", "type": "date", "status": "found", "value": "2026-10-01", "critical": false, "evidence": {"page": 1, "quote": "Effective date: 2026-10-01"}},
+        {"name": "governing_law", "type": "string", "status": "missing", "value": null, "critical": false, "evidence": {"page": 1, "quote": "No governing law is specified in this agreement."}}
+      ]
+    },
+    {
+      "document_id": "holdout-request-305",
+      "fields": [
+        {"name": "request_id", "type": "string", "status": "found", "value": "SR-305-H", "critical": true, "evidence": {"page": 1, "quote": "Request ID: SR-305-H"}},
+        {"name": "applicant", "type": "string", "status": "found", "value": "Eleni Sato", "critical": true, "evidence": {"page": 1, "quote": "Applicant: Eleni Sato"}},
+        {"name": "requested_on", "type": "date", "status": "found", "value": "2026-09-23", "critical": false, "evidence": {"page": 1, "quote": "Requested on: 23 September 2026"}},
+        {"name": "approved_amount", "type": "decimal", "status": "found", "value": "240.00", "critical": true, "evidence": {"page": 1, "quote": "Approved amount: USD 240.00"}},
+        {"name": "contact_email", "type": "string", "status": "missing", "value": null, "critical": false, "evidence": {"page": 1, "quote": "Contact email: [left blank]"}}
+      ]
+    },
+    {
+      "document_id": "holdout-agreement-407",
+      "fields": [
+        {"name": "first_party_representative", "type": "string", "status": "ambiguous", "value": null, "critical": true, "candidates": ["Leah Ortiz", "Nina Rao"], "evidence": {"page": 1, "quote": "Copy A: First-party representative: Leah Ortiz.\nCopy B: First-party representative: Nina Rao."}},
+        {"name": "second_party_representative", "type": "string", "status": "found", "value": "Jonas Reed", "critical": true, "evidence": {"page": 1, "quote": "Second party: Lake Frame LLC, represented by Jonas Reed."}},
+        {"name": "expiry_date", "type": "date", "status": "missing", "value": null, "critical": false, "evidence": {"page": 1, "quote": "Expiry date: not specified."}}
+      ]
+    }
+  ]
+}

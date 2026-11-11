@@ -1170,6 +1170,21 @@ def _debian_query(
     return completed.stdout
 
 
+def _debian_copyright_digest(
+    path: Path,
+    root: Path,
+    budget: _DigestBudget,
+) -> tuple[str, int]:
+    try:
+        resolved = path.resolve(strict=True)
+        resolved.relative_to(root)
+    except (OSError, RuntimeError, ValueError) as exc:
+        raise _LocalVerificationFailure("debian_license_record_missing") from exc
+    if not resolved.is_file():
+        raise _LocalVerificationFailure("debian_license_record_missing")
+    return _hash_file_bytes(resolved, budget)
+
+
 def _debian_package_evidence(
     name: str,
     budget: _DigestBudget,
@@ -1232,18 +1247,7 @@ def _debian_package_evidence(
             raise _LocalVerificationFailure("artifact_missing")
         if relative_text == f"usr/share/doc/{binary_name}/copyright":
             copyright_seen = True
-            try:
-                resolved_copyright = path.resolve(strict=True)
-                resolved_copyright.relative_to(root)
-            except (OSError, ValueError) as exc:
-                raise _LocalVerificationFailure(
-                    "debian_license_record_missing"
-                ) from exc
-            if not resolved_copyright.is_file():
-                raise _LocalVerificationFailure("debian_license_record_missing")
-            copyright_digest, copyright_size = _hash_file_bytes(
-                resolved_copyright, budget
-            )
+            copyright_digest, copyright_size = _debian_copyright_digest(path, root, budget)
             digest.update(b"copyright-target\0")
             digest.update(copyright_size.to_bytes(8, "big"))
             digest.update(bytes.fromhex(copyright_digest))
@@ -1253,8 +1257,25 @@ def _debian_package_evidence(
         digest.update(size.to_bytes(8, "big"))
         digest.update(bytes.fromhex(entry_digest))
         hashed_entries += 1
-    if not hashed_entries or not copyright_seen:
+    if not hashed_entries:
         raise _LocalVerificationFailure("debian_license_record_missing")
+    if not copyright_seen:
+        # Debian packages may own a documentation-directory symlink rather
+        # than separate files, e.g. libgomp1 -> gcc-12-base. Its link is already
+        # bound by the dpkg inventory digest above; also bind the real license
+        # bytes without accepting an arbitrary, unlisted documentation tree.
+        doc_relative = f"usr/share/doc/{binary_name}"
+        doc_directory = root / doc_relative
+        if f"/{doc_relative}" not in listed or not doc_directory.is_symlink():
+            raise _LocalVerificationFailure("debian_license_record_missing")
+        budget.files += 1
+        budget.check()
+        copyright_digest, copyright_size = _debian_copyright_digest(
+            doc_directory / "copyright", root, budget
+        )
+        digest.update(b"copyright-target\0")
+        digest.update(copyright_size.to_bytes(8, "big"))
+        digest.update(bytes.fromhex(copyright_digest))
     return digest.hexdigest(), version, source, license_record
 
 
@@ -1555,7 +1576,7 @@ def debian_package_artifact(
         )
     except _LocalVerificationFailure as exc:
         raise ArtifactManifestError(
-            f"installed Debian package cannot be inventoried: {exc.reason}"
+            f"installed Debian package '{locator}' cannot be inventoried: {exc.reason}"
         ) from exc
     return ArtifactRecord(
         artifact_id=artifact_id,

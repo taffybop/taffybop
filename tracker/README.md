@@ -1,5 +1,12 @@
 # Document Parser Improvement Tracker
 
+The active [parse and extract product plan](parse-extract-v1/README.md) extends
+the [parsing prototype](../README.md) through local PX phases. Read its
+[current status](parse-extract-v1/STATUS.md) and [handoff](parse-extract-v1/HANDOFF.md)
+to continue in a new chat. The older [PP product roadmap](product-platform/README.md)
+is retained as an archived proposal. Product planning does not alter the parser
+history or completion records below.
+
 Status: Phases 0–3 complete (Phase 3 exception-bound; 28 stories, 127 points); LAT-US01 and LAT-US02 administratively Done with their stated deferrals; remaining latency work paused; Phase 04 is release-first complete; Phase 05 is Complete — release-first core functionality validated; Phase 06 has not started; Phases 07–08 remain unstarted  
 Source assessments:
 [Catastrophe Recap Parsing Assessment](../analysis/catastrophe-recap-benchmark-assessment.md)

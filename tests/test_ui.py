@@ -17,6 +17,8 @@ def ui_dist(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     files = {
         "index.html": "<h1>Home</h1>",
         "studio/index.html": "<h1>Studio</h1>",
+        "documents/index.html": "<h1>Documents</h1>",
+        "legacy/index.html": "<h1>Legacy</h1>",
         "knowledge/index.html": "<h1>Knowledge</h1>",
         "privacy/index.html": "<h1>Privacy</h1>",
         "parse/index.html": "<a href='/studio'>Parse redirect</a>",
@@ -62,6 +64,8 @@ def test_only_public_routes_and_hashed_assets_are_served(ui_dist: Path) -> None:
     expected = {
         "/": ("index.html", "text/html"),
         "/studio": ("studio/index.html", "text/html"),
+        "/documents": ("documents/index.html", "text/html"),
+        "/legacy": ("legacy/index.html", "text/html"),
         "/knowledge": ("knowledge/index.html", "text/html"),
         "/privacy": ("privacy/index.html", "text/html"),
         "/parse": ("parse/index.html", "text/html"),

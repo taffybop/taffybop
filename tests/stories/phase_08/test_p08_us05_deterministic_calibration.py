@@ -142,6 +142,68 @@ def _result(
     )
 
 
+def _table_candidate_item() -> dict[str, Any]:
+    # Shape observed in the real intake PNG response: partial rows, a rejected
+    # gate and its evidence IDs, no authoritative table_evidence sidecar.
+    item = _table_item(rows=[["Partial description", "Accepted"]], source="ocr")
+    item["type"] = "table_candidate"
+    item["parse_concerns"] = ["table_candidate_structure_invalid"]
+    item["table_candidate_gate"].update(
+        outcome="structural_failure",
+        owner_item_ids=[],
+        concern_codes=["table_candidate_structure_invalid"],
+    )
+    item["bbox"].update(w=100.0, h=20.0)
+    return item
+
+
+@pytest.mark.parametrize("gate_state", ["rejected", "missing", "malformed", "canonical"])
+def test_unresolved_table_candidate_never_becomes_not_applicable_or_accepted(
+    gate_state: str,
+) -> None:
+    item = _table_candidate_item()
+    if gate_state == "missing":
+        item.pop("table_candidate_gate")
+    elif gate_state == "malformed":
+        item["table_candidate_gate"] = {"outcome": "structural_failure"}
+    elif gate_state == "canonical":
+        item["table_candidate_gate"]["outcome"] = "canonical_table"
+    # Even a candidate with no emitted concern must remain explicitly unresolved.
+    item.pop("parse_concerns")
+    source = _result([_text_item(), item])
+    before = source.model_dump(mode="json")
+    assessed = apply_deterministic_confidence(source, enabled=True)
+    table = _by_name(assessed)["table"]
+
+    assert table["applicability"] == "applicable"
+    assert table["decision"] == "fallback"
+    assert table["reason_codes"] == ["table_candidate_unresolved"]
+    assert source.model_dump(mode="json") == before
+    assert assessed.pages[0].items[1].type == "table_candidate"
+    assert assessed.pages[0].items[1].model_dump(mode="json") == before["pages"][0]["items"][1]
+    assert to_markdown(assessed) == to_markdown(source)
+    assert apply_deterministic_confidence(source, enabled=False) is source
+
+
+@pytest.mark.parametrize("rows", [[], [["A", "12"], ["B"]]])
+def test_incomplete_candidate_is_not_hidden_by_a_supported_table(
+    rows: list[list[str]],
+) -> None:
+    item = _table_candidate_item()
+    item.update(id="p1-candidate", reading_order=2, value=rows, rows=rows)
+    result = apply_deterministic_confidence(
+        _result([_text_item(), _table_item(), item]), enabled=True
+    )
+    table = _by_name(result)["table"]
+
+    assert table["decision"] == "fallback"
+    assert table["reason_codes"] == [
+        "table_candidate_unresolved",
+        "explicit_concern_reported",
+        "table_shape_contradictory",
+    ]
+
+
 def _enabled_settings() -> Settings:
     return Settings(
         telemetry_enabled=True,

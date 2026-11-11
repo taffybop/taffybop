@@ -28,13 +28,56 @@ export function staticParserDefines(raw) {
   };
 }
 
+/** @param {string | undefined} raw */
+export function staticDeploymentMode(raw) {
+  const mode = raw?.trim() || "api";
+  if (mode !== "api" && mode !== "preview") {
+    throw new Error("TAFFYBOP_STATIC_MODE must be api or preview.");
+  }
+  return mode;
+}
+
+/** @param {Record<string, string | undefined>} env */
+export function staticBuildMetadata(env) {
+  const deploymentMode = staticDeploymentMode(env.TAFFYBOP_STATIC_MODE);
+  if (deploymentMode === "preview") {
+    if (env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL?.trim()
+      || env.TAFFYBOP_STATIC_API_GATEWAY_READY?.trim()) {
+      throw new Error("Preview mode must not configure a public API or API-gateway readiness.");
+    }
+    return { schemaVersion: 1, deploymentMode, parseApiUrl: null };
+  }
+  return { schemaVersion: 1, deploymentMode, parseApiUrl: staticApiEndpoint(env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL) };
+}
+
 /**
- * @param {{ schemaVersion?: number, parseApiUrl?: string } | null} build
+ * @param {{ schemaVersion?: number, deploymentMode?: string, parseApiUrl?: string | null } | null} build
  * @param {Record<string, string | undefined>} env
  */
 export function assertStaticPublishReady(build, env) {
-  if (!build || build.schemaVersion !== 1 || typeof build.parseApiUrl !== "string") {
+  if (!build || build.schemaVersion !== 1
+    || (build.deploymentMode !== undefined && !["api", "preview"].includes(build.deploymentMode))) {
     throw new Error("Static API build metadata is missing or invalid. Run build:static again.");
+  }
+  const mode = staticDeploymentMode(env.TAFFYBOP_STATIC_MODE);
+  if ((build.deploymentMode ?? "api") !== mode) {
+    throw new Error("The static build mode differs from the publication environment. Rebuild with the intended mode before publishing.");
+  }
+  if (mode === "preview") {
+    staticBuildMetadata(env);
+    if (build.parseApiUrl !== null) {
+      throw new Error("Preview build metadata must contain no API endpoint. Run build:static again.");
+    }
+    if (env.TAFFYBOP_STATIC_PREVIEW_READY !== "1") {
+      throw new Error("Preview publication requires TAFFYBOP_STATIC_PREVIEW_READY=1 after verifying disabled actions and no API requests.");
+    }
+    return null;
+  }
+  if (typeof build.parseApiUrl !== "string") {
+    throw new Error("Static API build metadata is missing or invalid. Run build:static again.");
+  }
+  if (env.TAFFYBOP_STATIC_PREVIEW_READY?.trim()) {
+    throw new Error("API publication must not use preview readiness.");
   }
   const endpoint = staticApiEndpoint(env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL);
   if (build.parseApiUrl !== endpoint) {

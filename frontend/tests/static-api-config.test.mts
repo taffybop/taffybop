@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { assertStaticPublishReady, staticApiEndpoint, staticParserDefines } from "../tools/static-api-config.mjs";
+import { assertStaticPublishReady, staticApiEndpoint, staticBuildMetadata, staticDeploymentMode, staticParserDefines } from "../tools/static-api-config.mjs";
 
 test("static endpoint defaults to same origin and accepts only explicit public HTTPS API locations", () => {
   for (const value of [undefined, "", "  ", "/v1/parse"]) assert.equal(staticApiEndpoint(value), "/v1/parse");
@@ -39,4 +39,44 @@ test("static publication requires readiness and the exact endpoint embedded in t
   const sameOrigin = { schemaVersion: 1, parseApiUrl: "/v1/parse" };
   assert.throws(() => assertStaticPublishReady(sameOrigin, {}), /requires/);
   assert.equal(assertStaticPublishReady(sameOrigin, { TAFFYBOP_STATIC_API_GATEWAY_READY: "1" }), "/v1/parse");
+});
+
+test("static mode is explicit and preview metadata cannot bind an API", () => {
+  for (const value of [undefined, "", " ", "api"]) assert.equal(staticDeploymentMode(value), "api");
+  assert.equal(staticDeploymentMode("preview"), "preview");
+  assert.throws(() => staticDeploymentMode("unknown-secret-value"), error => {
+    assert.ok(error instanceof Error);
+    assert.match(error.message, /must be api or preview/);
+    assert.doesNotMatch(error.message, /secret/);
+    return true;
+  });
+  assert.deepEqual(staticBuildMetadata({}), { schemaVersion: 1, deploymentMode: "api", parseApiUrl: "/v1/parse" });
+  assert.deepEqual(staticBuildMetadata({ TAFFYBOP_STATIC_MODE: "preview" }), { schemaVersion: 1, deploymentMode: "preview", parseApiUrl: null });
+  for (const extra of [
+    { TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL: "https://api.example" },
+    { TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL: "/v1/parse" },
+    { TAFFYBOP_STATIC_API_GATEWAY_READY: "1" },
+  ]) {
+    assert.throws(() => staticBuildMetadata({ TAFFYBOP_STATIC_MODE: "preview", ...extra }), /must not configure/);
+  }
+});
+
+test("preview publication requires matching preview metadata and its own readiness", () => {
+  const preview = { schemaVersion: 1, deploymentMode: "preview", parseApiUrl: null };
+  const env = { TAFFYBOP_STATIC_MODE: "preview", TAFFYBOP_STATIC_PREVIEW_READY: "1" };
+  assert.equal(assertStaticPublishReady(preview, env), null);
+  assert.throws(() => assertStaticPublishReady(preview, { TAFFYBOP_STATIC_MODE: "preview" }), /PREVIEW_READY/);
+  assert.throws(() => assertStaticPublishReady(preview, { TAFFYBOP_STATIC_PREVIEW_READY: "1" }), /mode differs/);
+  assert.throws(() => assertStaticPublishReady(preview, { ...env, TAFFYBOP_STATIC_API_GATEWAY_READY: "1" }), /must not configure/);
+  assert.throws(() => assertStaticPublishReady(preview, { ...env, TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL: "https://api.example" }), /must not configure/);
+  assert.throws(() => assertStaticPublishReady({ ...preview, parseApiUrl: "/v1/parse" }, env), /must contain no API/);
+  assert.throws(() => assertStaticPublishReady({ schemaVersion: 1, parseApiUrl: "/v1/parse" }, env), /mode differs/);
+  assert.throws(() => assertStaticPublishReady({ ...preview, deploymentMode: "invalid" }, env), /metadata/);
+});
+
+test("preview readiness cannot authorize API publication", () => {
+  const api = { schemaVersion: 1, deploymentMode: "api", parseApiUrl: "/v1/parse" };
+  assert.throws(() => assertStaticPublishReady(api, { TAFFYBOP_STATIC_PREVIEW_READY: "1" }), /must not use preview/);
+  assert.throws(() => assertStaticPublishReady(api, { TAFFYBOP_STATIC_API_GATEWAY_READY: "1", TAFFYBOP_STATIC_PREVIEW_READY: "1" }), /must not use preview/);
+  assert.equal(assertStaticPublishReady(api, { TAFFYBOP_STATIC_API_GATEWAY_READY: "1" }), "/v1/parse");
 });

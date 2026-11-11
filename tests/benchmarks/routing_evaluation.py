@@ -475,18 +475,63 @@ def evaluate_manifest(manifest_path: Path, workspace: Path) -> dict[str, Any]:
     return {"schema_version": VERSION, "report_kind": "offline_routing_evaluation", "manifest_sha256": manifest_sha, "limitations": LIMITATIONS, "summary": summary, "cases": cases}
 
 
+def quality_gate(report: dict[str, Any]) -> dict[str, Any]:
+    """Gate reviewed claims on the selected output, without grading unknowns."""
+
+    selected_roles: Counter[str] = Counter()
+    coverage_counts: Counter[str] = Counter()
+    failed_cases: list[str] = []
+    unevaluated_cases: list[str] = []
+    for case in report["cases"]:
+        role = "candidate" if case["candidate"] is not None else "baseline"
+        selected_roles[role] += 1
+        quality = case[role]["quality"]
+        if quality["status"] == "unevaluated":
+            unevaluated_cases.append(case["case_id"])
+        else:
+            coverage_counts[quality["coverage"]] += 1
+            if quality["failed"]:
+                failed_cases.append(case["case_id"])
+    harmed = report["summary"]["paired_checks"]["harmed"]
+    if failed_cases or harmed:
+        status, exit_code = "checked_errors", 1
+    elif unevaluated_cases:
+        status, exit_code = "unevaluated", 3
+    else:
+        status, exit_code = "checked_claims_pass", 0
+    return {
+        "scope": "candidate_when_present_else_baseline",
+        "status": status,
+        "exit_code": exit_code,
+        "selected_roles": dict(selected_roles),
+        "coverage_counts": dict(coverage_counts),
+        "failed_cases": failed_cases,
+        "unevaluated_cases": unevaluated_cases,
+        "harmed_checks": harmed,
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--manifest", required=True, type=Path)
     parser.add_argument("--workspace", type=Path, default=Path.cwd())
+    parser.add_argument(
+        "--fail-on-quality",
+        action="store_true",
+        help="Exit 1 for failed reviewed claims or harm, 3 for unevaluated selected outputs; candidate when supplied, otherwise baseline.",
+    )
     args = parser.parse_args(argv)
     try:
         report = evaluate_manifest(args.manifest, args.workspace.resolve())
     except (ValueError, OSError) as error:
         print(json.dumps({"error": str(error), "report_kind": "offline_routing_evaluation"}), file=sys.stderr)
         return 2
+    exit_code = 0
+    if args.fail_on_quality:
+        report["quality_gate"] = quality_gate(report)
+        exit_code = report["quality_gate"]["exit_code"]
     print(json.dumps(report, ensure_ascii=False, sort_keys=True, indent=2, allow_nan=False))
-    return 0
+    return exit_code
 
 
 if __name__ == "__main__":

@@ -5733,7 +5733,12 @@ def _build_docling_table_predecessor(
         "cells": cells,
         "row_count": row_count,
         "column_count": column_count,
-        "parse_concerns": [],
+        "parse_concerns": (
+            ["raster_table_recovered_by_regional_ocr"]
+            if isinstance(raw_item.get("meta"), Mapping)
+            and isinstance(raw_item["meta"].get("raster_table_retry"), Mapping)
+            else []
+        ),
         "engine": "docling",
         "embedded_images": [],
     }
@@ -7339,6 +7344,7 @@ def _supplement_unrepresented_raster_ocr(
     )
     for page_index, regions in image_regions.items():
         representations: list[tuple[dict[str, Any] | None, str]] = []
+        recovered_cell_representations: list[tuple[Mapping[str, Any], str]] = []
         subordinate_visual_boxes: list[dict[str, Any]] = []
         for item in body_items.get(page_index, []):
             if (
@@ -7362,6 +7368,23 @@ def _supplement_unrepresented_raster_ocr(
             text = str(item.get("value") or "")
             if text:
                 representations.append((item.get("bbox"), text))
+
+        # This narrow retry checked cell geometry against the visible source
+        # grid and preserved the original OCR values at their positions.
+        # Keep its owned text from being repeated as supplemental page prose.
+        # Other tables retain the existing terminal source-alignment policy.
+        for table in tables.get(page_index, []):
+            if (
+                table.get("type") != "table"
+                or "raster_table_recovered_by_regional_ocr"
+                not in (table.get("parse_concerns") or [])
+            ):
+                continue
+            for cell in table.get("cells") or []:
+                if isinstance(cell, Mapping) and isinstance(cell.get("bbox"), Mapping):
+                    text = str(cell.get("text") or "").strip()
+                    if text:
+                        recovered_cell_representations.append((cell["bbox"], text))
 
         for region in regions:
             if _region_role(region) != "page_source":
@@ -7394,6 +7417,18 @@ def _supplement_unrepresented_raster_ocr(
                         or _vertical_overlap_of_smaller(line_box, box) >= 0.7
                     )
                 )
+                # Table-owned values require overlap in both axes. A separate
+                # occurrence beside the table must survive even at the same y.
+                recovered_text = " ".join(
+                    text for box, text in recovered_cell_representations
+                    if line_box is not None and _overlap_of_smaller(line_box, box) >= 0.5
+                )
+                # Exact contiguous words preserve multiplicity and additional
+                # OCR evidence. The generic token-coverage heuristic below is
+                # intentionally not used to grant ownership to retry cells.
+                recovered_words = _normalized_search_text(recovered_text)
+                if f" {needle} " in f" {recovered_words} ":
+                    continue
                 haystack = _normalized_search_text(nearby_text)
                 compact_needle = needle.replace(" ", "")
                 compact_haystack = haystack.replace(" ", "")
@@ -8804,6 +8839,36 @@ def _parse_loaded_document(
             input_kind=loaded.kind,
             parser_worker=parser_worker,
         )
+    raster_table_retry: dict[str, Any] | None = None
+    if loaded.kind is InputKind.IMAGE:
+        from app.services.raster_table_retry import recover_raster_tables
+
+        def retry_image_table(crop: bytes) -> dict[str, Any]:
+            # Reuse the same cached local converter and its configured timeout.
+            # No optional model, remote provider, or new converter is enabled.
+            # This is a fresh per-conversion cooperative timeout, not a hard
+            # wall-clock budget for the entire parse request.
+            retried, retry_warnings = _convert_with_docling(
+                crop,
+                "table-region.png",
+                settings,
+                input_kind=InputKind.IMAGE,
+                parser_worker=parser_worker,
+            )
+            retried["_raster_retry_warnings"] = retry_warnings
+            return retried
+
+        raster_table_retry = recover_raster_tables(
+            raw_docling,
+            loaded.pages,
+            convert=retry_image_table,
+            max_pixels=min(settings.targeted_ocr_max_pixels, 4_000_000),
+        )
+        raster_table_retry["retry_document_timeout_seconds"] = settings.document_timeout_seconds
+        for event in raster_table_retry["events"]:
+            for warning in event.get("warnings", []):
+                if warning not in processing_warnings:
+                    processing_warnings.append(warning)
     text_run_evidence: Any | None = None
     if loaded.kind is InputKind.PDF and settings.layout_text_run_semantics_enabled:
         try:
@@ -9145,6 +9210,8 @@ def _parse_loaded_document(
             ),
         },
     }
+    if raster_table_retry is not None and raster_table_retry["attempted"]:
+        processing_metadata["raster_table_retry"] = raster_table_retry
     content_regions = [
         item
         for page in pages
@@ -9413,9 +9480,20 @@ def _parse_loaded_document(
     )
     if context.table_span_fidelity_state is not None:
         _finish_table_span_fidelity_budget(context.table_span_fidelity_state)
-    if isinstance(validated_result, ParseResult):
-        return validated_result
-    return ParseResult.model_validate(payload)
+    final_result = (
+        validated_result
+        if isinstance(validated_result, ParseResult)
+        else ParseResult.model_validate(payload)
+    )
+    if loaded.kind is InputKind.PDF:
+        from app.services.embedded_image_assets import (
+            attach_pdf_embedded_image_assets_to_result,
+        )
+
+        final_result = attach_pdf_embedded_image_assets_to_result(
+            final_result, loaded.original_bytes
+        )
+    return final_result
 
 
 def _apply_shared_ir_compatibility_projection(

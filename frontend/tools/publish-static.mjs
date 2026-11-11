@@ -5,9 +5,8 @@ import { fileURLToPath } from "node:url";
 import { assertStaticPublishReady } from "./static-api-config.mjs";
 
 const projectRoot = fileURLToPath(new URL("../../", import.meta.url));
-// This legacy publication destination is a static Render site. It cannot
-// execute /v1/parse. Require an explicit readiness opt-in and confirm that the
-// build embeds the intended same-origin gateway or public HTTPS API endpoint.
+// This publication destination is a static Render site. API builds require a
+// verified API; preview builds require their separate disabled-action check.
 const buildRoot = fileURLToPath(new URL("../dist-static/", import.meta.url));
 const apiMetadata = JSON.parse(await readFile(resolve(buildRoot, "static-api-config.json"), "utf8"));
 assertStaticPublishReady(apiMetadata, process.env);
@@ -15,7 +14,8 @@ const manifestPath = resolve(projectRoot, "site-manifest.json");
 const fixedFiles = [
   "index.html", "404.html", "_redirects", "robots.txt", "icon.svg", "og-knowledge.svg",
   "pdf.worker.min.mjs", "studio/index.html", "privacy/index.html", "parse/index.html",
-  "extract/index.html", "knowledge/index.html", "samples/customer-support-handbook.pdf",
+  "extract/index.html", "knowledge/index.html", "documents/index.html", "legacy/index.html",
+  "static-api-config.json", "samples/customer-support-handbook.pdf",
 ];
 
 function isPublishedPath(path) {

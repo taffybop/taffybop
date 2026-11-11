@@ -1,5 +1,5 @@
-import { BackendWorkspace } from "../backend-workspace";
+import { DocumentsWorkspace } from "../documents-workspace";
 
 export default function StudioPage() {
-  return <BackendWorkspace />;
+  return <DocumentsWorkspace />;
 }

@@ -1,0 +1,595 @@
+{
+  "$defs": {
+    "Artifact": {
+      "additionalProperties": false,
+      "description": "Opaque reference; retrieval must check the resource's owner and retention.",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "media_type": {
+          "enum": [
+            "application/pdf",
+            "image/png",
+            "image/jpeg",
+            "application/json"
+          ],
+          "title": "Media Type",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "title": "Size Bytes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "sha256",
+        "size_bytes",
+        "media_type"
+      ],
+      "title": "Artifact",
+      "type": "object"
+    },
+    "Document": {
+      "additionalProperties": false,
+      "properties": {
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "deleted_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Deleted At"
+        },
+        "display_name": {
+          "maxLength": 180,
+          "minLength": 1,
+          "title": "Display Name",
+          "type": "string"
+        },
+        "expires_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expires At"
+        },
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "page_count": {
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Page Count",
+          "type": "integer"
+        },
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/Artifact"
+        },
+        "state": {
+          "default": "active",
+          "enum": [
+            "active",
+            "deleted",
+            "expired"
+          ],
+          "title": "State",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "display_name",
+        "source",
+        "page_count",
+        "created_at"
+      ],
+      "title": "Document",
+      "type": "object"
+    },
+    "DocumentList": {
+      "additionalProperties": false,
+      "properties": {
+        "documents": {
+          "items": {
+            "$ref": "#/$defs/Document"
+          },
+          "title": "Documents",
+          "type": "array"
+        },
+        "next_cursor": {
+          "anyOf": [
+            {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Next Cursor"
+        },
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "documents"
+      ],
+      "title": "DocumentList",
+      "type": "object"
+    },
+    "Job": {
+      "additionalProperties": false,
+      "properties": {
+        "attempt": {
+          "default": 1,
+          "exclusiveMinimum": 0,
+          "title": "Attempt",
+          "type": "integer"
+        },
+        "cancellation_confirmed": {
+          "default": false,
+          "title": "Cancellation Confirmed",
+          "type": "boolean"
+        },
+        "cancellation_requested_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cancellation Requested At"
+        },
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "document_id": {
+          "format": "uuid",
+          "title": "Document Id",
+          "type": "string"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PublicError"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "finished_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finished At"
+        },
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "raw_response": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Artifact"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "result_id": {
+          "anyOf": [
+            {
+              "format": "uuid",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Result Id"
+        },
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "settings": {
+          "$ref": "#/$defs/ParseSettings"
+        },
+        "stage": {
+          "const": "parse",
+          "default": "parse",
+          "title": "Stage",
+          "type": "string"
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Started At"
+        },
+        "status": {
+          "enum": [
+            "queued",
+            "submitting",
+            "submission_unknown",
+            "running",
+            "succeeded",
+            "failed",
+            "cancel_requested",
+            "cancelled"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "updated_at": {
+          "format": "date-time",
+          "title": "Updated At",
+          "type": "string"
+        },
+        "usage": {
+          "$ref": "#/$defs/Usage"
+        }
+      },
+      "required": [
+        "id",
+        "document_id",
+        "status",
+        "settings",
+        "created_at",
+        "updated_at"
+      ],
+      "title": "Job",
+      "type": "object"
+    },
+    "Page": {
+      "additionalProperties": false,
+      "properties": {
+        "content": {
+          "title": "Content",
+          "type": "string"
+        },
+        "page_number": {
+          "exclusiveMinimum": 0,
+          "title": "Page Number",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "page_number",
+        "content"
+      ],
+      "title": "Page",
+      "type": "object"
+    },
+    "PageSection": {
+      "additionalProperties": false,
+      "description": "Formats retain independent source order, including repeated page IDs.",
+      "properties": {
+        "pages": {
+          "default": [],
+          "items": {
+            "$ref": "#/$defs/Page"
+          },
+          "title": "Pages",
+          "type": "array"
+        },
+        "state": {
+          "enum": [
+            "available",
+            "empty",
+            "not_returned",
+            "unsupported"
+          ],
+          "title": "State",
+          "type": "string"
+        }
+      },
+      "required": [
+        "state"
+      ],
+      "title": "PageSection",
+      "type": "object"
+    },
+    "ParseRequest": {
+      "additionalProperties": false,
+      "description": "Body of POST /v2/documents/{id}/parse; idempotency is a header.",
+      "properties": {
+        "mode": {
+          "enum": [
+            "fast",
+            "cost_effective",
+            "agentic"
+          ],
+          "title": "Mode",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "title": "ParseRequest",
+      "type": "object"
+    },
+    "ParseResult": {
+      "additionalProperties": false,
+      "properties": {
+        "created_at": {
+          "format": "date-time",
+          "title": "Created At",
+          "type": "string"
+        },
+        "document_id": {
+          "format": "uuid",
+          "title": "Document Id",
+          "type": "string"
+        },
+        "id": {
+          "format": "uuid",
+          "title": "Id",
+          "type": "string"
+        },
+        "job_id": {
+          "format": "uuid",
+          "title": "Job Id",
+          "type": "string"
+        },
+        "markdown": {
+          "$ref": "#/$defs/PageSection"
+        },
+        "provider_version": {
+          "anyOf": [
+            {
+              "maxLength": 128,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider Version"
+        },
+        "raw": {
+          "$ref": "#/$defs/Artifact"
+        },
+        "schema_version": {
+          "const": "2.0",
+          "default": "2.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "settings": {
+          "$ref": "#/$defs/ParseSettings"
+        },
+        "text": {
+          "$ref": "#/$defs/PageSection"
+        },
+        "usage": {
+          "$ref": "#/$defs/Usage"
+        },
+        "warnings": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "document_id",
+        "job_id",
+        "created_at",
+        "settings",
+        "raw",
+        "markdown",
+        "text"
+      ],
+      "title": "ParseResult",
+      "type": "object"
+    },
+    "ParseSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "adapter_version": {
+          "const": "llamaparse-v2/1",
+          "default": "llamaparse-v2/1",
+          "title": "Adapter Version",
+          "type": "string"
+        },
+        "max_pages": {
+          "default": 10,
+          "maximum": 10,
+          "minimum": 1,
+          "title": "Max Pages",
+          "type": "integer"
+        },
+        "mode": {
+          "enum": [
+            "fast",
+            "cost_effective",
+            "agentic"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "provider": {
+          "const": "llamaparse",
+          "default": "llamaparse",
+          "title": "Provider",
+          "type": "string"
+        },
+        "requested_version": {
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "title": "Requested Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mode",
+        "requested_version"
+      ],
+      "title": "ParseSettings",
+      "type": "object"
+    },
+    "PublicError": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "pattern": "^[a-z][a-z0-9_]{0,79}$",
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "PublicError",
+      "type": "object"
+    },
+    "Usage": {
+      "additionalProperties": false,
+      "description": "Null means unknown; zero is an observed/estimated numeric zero only.",
+      "properties": {
+        "actual_credits": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Actual Credits"
+        },
+        "estimate_price_version": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Estimate Price Version"
+        },
+        "estimated_credits": {
+          "anyOf": [
+            {
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "pattern": "^(?!^[-+.]*$)[+-]?0*\\d*\\.?\\d*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Estimated Credits"
+        },
+        "reconciliation": {
+          "default": "pending",
+          "enum": [
+            "pending",
+            "observed",
+            "unavailable"
+          ],
+          "title": "Reconciliation",
+          "type": "string"
+        }
+      },
+      "title": "Usage",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TaffyBop product API v2.0 (PX1 contracts; routes pending)"
+}

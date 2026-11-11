@@ -34,6 +34,11 @@ from app.services.telemetry import (
     use_telemetry,
 )
 from tests.stories.phase_06.test_p06_us05_grounding import _fallback_chart
+from tests.stories.phase_08.test_p08_us05_deterministic_calibration import (
+    _result as _table_result,
+    _table_candidate_item,
+    _text_item,
+)
 
 
 VALID_PDF = b"%PDF-1.7\n% review routing fixture\n"
@@ -126,6 +131,80 @@ def _enabled_settings() -> Settings:
         visual_confidence_enabled=True,
         review_escalation_enabled=True,
     )
+
+
+def test_rejected_table_candidate_routes_gate_evidence_without_promoting_content() -> None:
+    source = apply_deterministic_confidence(
+        _table_result([_text_item(), _table_candidate_item()]), enabled=True
+    )
+    before = source.model_dump(mode="json")
+    adapter = ReviewTestAdapter()
+    routed = route_parse_result_for_review(
+        source, enabled=True, runtime=ReviewRuntime(adapter=adapter)
+    )
+
+    assert routed.status == "queued"
+    assert routed.adapter_calls == len(adapter.calls) == len(routed.packets) == 1
+    packet = routed.packets[0]
+    assert packet.element_id == "p1-table"
+    assert packet.reason == "deterministic_fallback"
+    assert packet.method == "table_grid"
+    assert packet.evidence_ids == ("c" * 64,)
+    assert packet.region.width == 100.0
+    assert packet.confidence_dimensions[0].outcome == "unsupported"
+    assert "Partial description" not in packet.model_dump_json()
+    assert "Accepted" not in packet.model_dump_json()
+    assert source.model_dump(mode="json") == before
+    assert routed.result.pages[0].items[1].model_dump(mode="json") == before["pages"][0]["items"][1]
+    assert routed.result.pages[0].items[1].type == "table_candidate"
+    assert to_markdown(routed.result) == to_markdown(source)
+
+
+@pytest.mark.parametrize(
+    "failure", ["missing_gate", "malformed_gate", "no_evidence", "missing_bbox", "conflicting_alias"]
+)
+def test_ungrounded_candidate_keeps_fallback_without_fabricating_review_evidence(
+    failure: str,
+) -> None:
+    item = _table_candidate_item()
+    if failure == "missing_gate":
+        item.pop("table_candidate_gate")
+    elif failure == "malformed_gate":
+        item["table_candidate_gate"] = {"evidence_ids": ["not-a-real-evidence-id"]}
+    elif failure == "no_evidence":
+        item["table_candidate_gate"]["evidence_ids"] = []
+    elif failure == "missing_bbox":
+        item.pop("bbox")
+    else:
+        item["bbox"]["w"] = 999.0
+    source = apply_deterministic_confidence(
+        _table_result([_text_item(), item]), enabled=True
+    )
+    adapter = ReviewTestAdapter()
+    routed = route_parse_result_for_review(
+        source, enabled=True, runtime=ReviewRuntime(adapter=adapter)
+    )
+
+    assert routed.status == "no_candidates"
+    assert routed.result is source
+    assert routed.packets == ()
+    assert adapter.calls == []
+    table = source.model_extra["deterministic_confidence"]["dimensions"][2]
+    assert table["decision"] == "fallback"
+    assert "table_candidate_unresolved" in table["reason_codes"]
+
+
+def test_candidate_without_review_adapter_reports_unavailable_and_keeps_fallback() -> None:
+    source = apply_deterministic_confidence(
+        _table_result([_text_item(), _table_candidate_item()]), enabled=True
+    )
+    routed = route_parse_result_for_review(source, enabled=True)
+
+    assert routed.status == "unavailable"
+    assert len(routed.packets) == 1
+    assert routed.adapter_calls == 0
+    assert routed.result is source
+    assert "review_routing" not in source.model_extra
 
 
 def test_low_confidence_visual_creates_one_grounded_content_free_packet() -> None:

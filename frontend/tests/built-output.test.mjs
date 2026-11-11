@@ -55,25 +55,49 @@ test("browser extraction and its PDF worker are packaged for local processing", 
   assert.equal(sample.subarray(0, 5).toString(), "%PDF-", "public sample is a PDF asset");
 });
 
-test("production landing offers the live studio instead of the former coming-soon product", async () => {
+test("production home, studio and documents open the durable library; legacy remains separate", async () => {
   const serverSource = await readFile(new URL("../dist/server/index.js", import.meta.url), "utf8");
-  assert.ok(serverSource.includes("Extract a document"));
+  for (const page of ["Home", "StudioPage", "DocumentsPage"]) {
+    assert.match(
+      serverSource,
+      new RegExp(`function ${page}\\(\\) \\{[^}]*\\bDocumentsWorkspace\\b`, "u"),
+      `${page} renders the persistent document workspace`,
+    );
+  }
   assert.ok(serverSource.includes("/studio"));
-  assert.ok(serverSource.includes("Files are sent to this deployment"));
   assert.ok(serverSource.includes("/knowledge"));
+  assert.match(serverSource, /function LegacyPage\(\) \{[^}]*\bLlamaParseWorkspace\b/u);
   assert.doesNotMatch(serverSource, /Extract is still chasing its yarn|Coming soon/u);
 });
 
+test("production product workspace ships saved records, simulation labels and owned artifact downloads", async () => {
+  const manifest = await readManifest();
+  const workspace = Object.values(manifest).find((entry) => entry.src?.endsWith("app/documents-workspace.tsx"));
+  assert.ok(workspace?.file, "Persistent document workspace client entry is present");
+  const source = await readFile(new URL(workspace.file, clientRoot), "utf8");
+  for (const label of ["Upload document", "Saved parsing run", "Live parsing is unavailable", "Simulation — not a live parse", "Actual provider credits:", "Original raw JSON", "Result page occurrence", "Download original raw JSON"]) {
+    assert.ok(source.includes(label), `Product workspace includes ${label}`);
+  }
+  assert.ok(source.includes("/v2/documents"), "Owned library API is bundled");
+  assert.ok(source.includes("/v2/artifacts/"), "Original downloads use the authenticated artifact route");
+  assert.ok(source.includes("SHA-256"), "Source preview verifies artifact integrity");
+  assert.ok(source.includes("cancellation_requested_at"), "Cancellation request remains distinct from confirmation");
+});
 
-test("production bundle includes the backend workspace and exact API exports", async () => {
+
+test("production bundle includes LlamaParse upload, output views, and exact API exports", async () => {
   const manifest = await readManifest();
   const studio = Object.values(manifest).find((entry) =>
-    entry.src?.endsWith("app/backend-workspace.tsx"),
+    entry.src?.endsWith("app/llamaparse-workspace.tsx"),
   );
-  assert.ok(studio?.file, "backend workspace client entry is present");
+  assert.ok(studio?.file, "LlamaParse workspace client entry is present");
   const source = await readFile(new URL(studio.file, clientRoot), "utf8");
-  for (const label of ["Raw API JSON", "Structured preview", "Metadata & warnings", "Parse document", "Download JSON"]) {
-    assert.ok(source.includes(label), `backend workspace includes ${label}`);
+  for (const label of [
+    "Powered by LlamaParse", "Choose a document", "Choose a parsing mode",
+    "Parse document", "Source document", "Markdown", "Text", "Raw JSON",
+    "Copy result", "Download result", "Original API response",
+  ]) {
+    assert.ok(source.includes(label), `LlamaParse workspace includes ${label}`);
   }
   assert.ok(source.includes("rawBytes"), "download uses captured response bytes");
   assert.ok(source.includes("rawText"), "copy and raw view use captured response text");

@@ -13,6 +13,9 @@ dependencies = [
     "starlette==1.3.1",
     "uvicorn[standard]==0.51.0",
     "python-multipart==0.0.32",
+    "httpx==0.28.1",
+    "pydantic==2.13.4",
+    "psycopg[binary]==3.3.8",
     "docling==2.114.0",
     "numpy==2.4.6; python_version < '3.12'",
     "numpy==2.5.1; python_version >= '3.12'",
@@ -26,12 +29,14 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest==9.1.1",
-    "httpx==0.28.1",
     "psutil==7.2.2",
 ]
 
 [tool.setuptools.packages.find]
 include = ["app", "app.*"]
+
+[tool.setuptools.package-data]
+"app.product" = ["migrations/*.sql"]
 
 [tool.pytest.ini_options]
 addopts = "-ra"

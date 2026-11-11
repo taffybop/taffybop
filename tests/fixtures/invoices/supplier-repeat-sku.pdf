@@ -1,0 +1,109 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3060 >>
+stream
+0 g
+0 G
+0.6 w
+BT /F2 19 Tf 1 0 0 1 44 736 Tm (CEDAR DEMO SUPPLIES) Tj ET
+BT /F1 10 Tf 1 0 0 1 44 713 Tm (SYNTHETIC SUPPLIER INVOICE) Tj ET
+BT /F2 20 Tf 1 0 0 1 421 736 Tm (INVOICE) Tj ET
+BT /F1 11 Tf 1 0 0 1 44 666 Tm (Bill to: NORTH LAB DEMO) Tj ET
+BT /F1 11 Tf 1 0 0 1 44 643 Tm (Invoice number: SYN-2026-001) Tj ET
+BT /F1 11 Tf 1 0 0 1 44 620 Tm (Invoice date: 2026-01-15) Tj ET
+BT /F2 11 Tf 1 0 0 1 421 666 Tm (Currency: USD) Tj ET
+BT /F2 12 Tf 1 0 0 1 44 581 Tm (Line items) Tj ET
+44 562 m 44 332 l S
+76 562 m 76 332 l S
+151 562 m 151 332 l S
+352 562 m 352 332 l S
+393 562 m 393 332 l S
+478 562 m 478 332 l S
+568 562 m 568 332 l S
+44 562 m 568 562 l S
+44 532 m 568 532 l S
+44 482 m 568 482 l S
+44 432 m 568 432 l S
+44 382 m 568 382 l S
+44 332 m 568 332 l S
+BT /F2 9 Tf 1 0 0 1 49 543 Tm (Line) Tj ET
+BT /F2 9 Tf 1 0 0 1 81 543 Tm (SKU) Tj ET
+BT /F2 9 Tf 1 0 0 1 156 543 Tm (Description) Tj ET
+BT /F2 9 Tf 1 0 0 1 357 543 Tm (Qty) Tj ET
+BT /F2 9 Tf 1 0 0 1 398 543 Tm (Unit price USD) Tj ET
+BT /F2 9 Tf 1 0 0 1 483 543 Tm (Amount USD) Tj ET
+BT /F1 10 Tf 1 0 0 1 49 513 Tm (1) Tj ET
+BT /F1 10 Tf 1 0 0 1 81 513 Tm (BRK-101) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 513 Tm (Stainless steel bracket) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 499 Tm (Matte finish, 40 mm) Tj ET
+BT /F1 10 Tf 1 0 0 1 357 513 Tm (2) Tj ET
+BT /F1 10 Tf 1 0 0 1 398 513 Tm (12.50) Tj ET
+BT /F1 10 Tf 1 0 0 1 483 513 Tm (25.00) Tj ET
+BT /F1 10 Tf 1 0 0 1 49 463 Tm (2) Tj ET
+BT /F1 10 Tf 1 0 0 1 81 463 Tm (CAB-220) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 463 Tm (Shielded sensor cable) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 449 Tm (2 m, straight connector) Tj ET
+BT /F1 10 Tf 1 0 0 1 357 463 Tm (3) Tj ET
+BT /F1 10 Tf 1 0 0 1 398 463 Tm (8.40) Tj ET
+BT /F1 10 Tf 1 0 0 1 483 463 Tm (25.20) Tj ET
+BT /F1 10 Tf 1 0 0 1 49 413 Tm (3) Tj ET
+BT /F1 10 Tf 1 0 0 1 81 413 Tm (BRK-101) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 413 Tm (Stainless steel bracket) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 399 Tm (Matte finish, 40 mm) Tj ET
+BT /F1 10 Tf 1 0 0 1 357 413 Tm (5) Tj ET
+BT /F1 10 Tf 1 0 0 1 398 413 Tm (12.50) Tj ET
+BT /F1 10 Tf 1 0 0 1 483 413 Tm (62.50) Tj ET
+BT /F1 10 Tf 1 0 0 1 49 363 Tm (4) Tj ET
+BT /F1 10 Tf 1 0 0 1 81 363 Tm (PAD-030) Tj ET
+BT /F1 10 Tf 1 0 0 1 156 363 Tm (Protective felt pad set) Tj ET
+BT /F1 10 Tf 1 0 0 1 357 363 Tm (4) Tj ET
+BT /F1 10 Tf 1 0 0 1 398 363 Tm (3.25) Tj ET
+BT /F1 10 Tf 1 0 0 1 483 363 Tm (13.00) Tj ET
+352 298 m 352 208 l S
+490 298 m 490 208 l S
+568 298 m 568 208 l S
+352 298 m 568 298 l S
+352 268 m 568 268 l S
+352 238 m 568 238 l S
+352 208 m 568 208 l S
+BT /F1 10 Tf 1 0 0 1 359 279 Tm (Subtotal \(USD\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 497 279 Tm (125.70) Tj ET
+BT /F1 10 Tf 1 0 0 1 359 249 Tm (Tax 10% \(USD\)) Tj ET
+BT /F1 10 Tf 1 0 0 1 497 249 Tm (12.57) Tj ET
+BT /F2 10 Tf 1 0 0 1 359 219 Tm (Total \(USD\)) Tj ET
+BT /F2 10 Tf 1 0 0 1 497 219 Tm (138.27) Tj ET
+BT /F1 10 Tf 1 0 0 1 44 163 Tm (Keep both BRK-101 lines: they are separate deliveries.) Tj ET
+BT /F1 9 Tf 1 0 0 1 44 68 Tm (Fictional fixture. Not payable. No customer data.) Tj ET
+BT /F1 9 Tf 1 0 0 1 513 47 Tm (Page 1 of 1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000003369 00000 n 
+0000003466 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3568
+%%EOF

@@ -615,6 +615,126 @@ def test_debian_inventory_fails_closed_without_candidate_dpkg_metadata(
         )
 
 
+@pytest.mark.parametrize(
+    "missing_path", ["usr/bin/tesseract", "usr/share/man/man1/tesseract.1.gz"]
+)
+def test_debian_inventory_requires_every_listed_file_until_restored(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    missing_path: str,
+) -> None:
+    import app.services.artifact_manifest as artifact_module
+
+    files = {
+        "usr/bin/tesseract": b"synthetic installed binary",
+        "usr/share/doc/tesseract-ocr/copyright": b"synthetic package copyright",
+        "usr/share/man/man1/tesseract.1.gz": b"synthetic packaged documentation",
+    }
+    for relative, content in files.items():
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if relative != missing_path:
+            path.write_bytes(content)
+
+    def query(name, *, candidate_root, arguments, timeout_seconds):
+        assert name == "tesseract-ocr"
+        assert candidate_root == tmp_path
+        assert timeout_seconds > 0
+        if arguments[0] == "-W":
+            return "tesseract-ocr\ntesseract\n5.3.0-2\nii \n"
+        assert arguments == ("-L",)
+        return "/.\n" + "".join(f"/{relative}\n" for relative in files)
+
+    monkeypatch.setattr(artifact_module, "_debian_query", query)
+    with pytest.raises(ArtifactManifestError, match="tesseract-ocr.*artifact_missing") as error:
+        artifact_module.debian_package_artifact(
+            "tesseract-ocr", root=tmp_path, artifact_id="docker.debian.tesseract-ocr"
+        )
+    # CLI diagnosis identifies the public package, never candidate-host paths.
+    assert str(tmp_path) not in str(error.value)
+    assert missing_path not in str(error.value)
+
+    (tmp_path / missing_path).write_bytes(files[missing_path])
+    record = artifact_module.debian_package_artifact(
+        "tesseract-ocr", root=tmp_path, artifact_id="docker.debian.tesseract-ocr"
+    )
+    manifest = ArtifactManifest.create(release_id="complete-debian-fixture", artifacts=(record,))
+    assert verify_manifest(manifest, root=tmp_path, purpose="build").accepted is True
+
+    (tmp_path / missing_path).unlink()
+    verification = verify_manifest(manifest, root=tmp_path, purpose="startup")
+    assert verification.accepted is False
+    assert verification.blocking_reasons == ("docker.debian.tesseract-ocr:artifact_missing",)
+
+
+def _shared_debian_copyright_fixture(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+) -> tuple[Path, Path, Path, list[str]]:
+    import app.services.artifact_manifest as artifact_module
+
+    root = tmp_path / "candidate"
+    library = root / "usr/lib/libgomp.so.1"
+    library.parent.mkdir(parents=True)
+    library.write_bytes(b"synthetic installed library")
+    copyright = root / "usr/share/doc/gcc-12-base/copyright"
+    copyright.parent.mkdir(parents=True)
+    copyright.write_bytes(b"shared concrete copyright bytes")
+    doc_link = root / "usr/share/doc/libgomp1"
+    doc_link.symlink_to("gcc-12-base", target_is_directory=True)
+    listed = ["/.", "/usr/lib/libgomp.so.1", "/usr/share/doc/libgomp1"]
+
+    def query(name, *, candidate_root, arguments, timeout_seconds):
+        assert name == "libgomp1"
+        assert candidate_root == root
+        assert timeout_seconds > 0
+        if arguments[0] == "-W":
+            return "libgomp1:amd64\ngcc-12\n12.2.0-14\nii \n"
+        assert arguments == ("-L",)
+        return "\n".join(listed) + "\n"
+
+    monkeypatch.setattr(artifact_module, "_debian_query", query)
+    return root, copyright, doc_link, listed
+
+
+def test_debian_shared_doc_symlink_binds_real_copyright_bytes(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from app.services.artifact_manifest import debian_package_artifact
+
+    root, copyright, _doc_link, _listed = _shared_debian_copyright_fixture(tmp_path, monkeypatch)
+    record = debian_package_artifact("libgomp1", root=root, artifact_id="docker.debian.libgomp1")
+    manifest = ArtifactManifest.create(release_id="shared-debian-license", artifacts=(record,))
+    assert verify_manifest(manifest, root=root, purpose="startup").accepted is True
+    copyright.write_bytes(b"changed shared copyright bytes")
+    changed = verify_manifest(manifest, root=root, purpose="startup")
+    assert changed.accepted is False
+    assert changed.blocking_reasons == ("docker.debian.libgomp1:hash_mismatch",)
+
+
+@pytest.mark.parametrize("failure", ["missing", "outside_root", "not_a_file", "unlisted_link"])
+def test_debian_shared_copyright_requires_safe_concrete_inventory_evidence(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch, failure: str,
+) -> None:
+    from app.services.artifact_manifest import debian_package_artifact
+
+    root, copyright, doc_link, listed = _shared_debian_copyright_fixture(tmp_path, monkeypatch)
+    if failure == "missing":
+        copyright.unlink()
+    elif failure == "outside_root":
+        outside = tmp_path / "outside"
+        outside.mkdir()
+        (outside / "copyright").write_bytes(b"outside candidate license")
+        doc_link.unlink()
+        doc_link.symlink_to(outside, target_is_directory=True)
+    elif failure == "not_a_file":
+        copyright.unlink()
+        copyright.mkdir()
+    else:
+        listed.remove("/usr/share/doc/libgomp1")
+    with pytest.raises(ArtifactManifestError, match="libgomp1.*debian_license_record_missing"):
+        debian_package_artifact("libgomp1", root=root, artifact_id="docker.debian.libgomp1")
+
+
 def test_production_profile_owns_selected_docker_classes_and_model_evidence(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

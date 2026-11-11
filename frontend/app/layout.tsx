@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
-const title = "TaffyBop — Document Studio";
+const title = "TaffyBop — Parse documents";
 const description =
-  "Extract PDFs and images with a source preview, structured results, and the exact backend API response. Review document data before using it.";
+  "Parse PDFs and images with three LlamaParse modes. Inspect and download the original result.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();

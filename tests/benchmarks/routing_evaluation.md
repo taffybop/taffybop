@@ -20,6 +20,21 @@ errors or candidate harm; report creation is not an accuracy/release gate.
 Never redirect stdout over an input file. Reports can contain source values and
 must be handled with the same access restrictions as the documents.
 
+Add `--fail-on-quality` for an explicit check of the candidate when supplied,
+otherwise the baseline. The full report is still printed, with a `quality_gate`
+record identifying the selected roles, coverage, failed cases and unevaluated
+cases. Exit 1 means a selected output failed a reviewed check or a paired check
+was harmed. A corrected historical baseline does not fail a passing candidate.
+Exit 3 means at least one selected output has no reviewed expectations; measured
+failures take precedence if both occur. Input errors still exit 2.
+
+With this flag, exit 0 means only that the configured reviewed claims passed.
+Partial coverage stays partial. An absent candidate selects the baseline;
+missing or invalid routing metadata remains unobserved or invalid in the report
+and is not itself a value-quality failure. This flag does not validate routing
+effectiveness, unreviewed content, general document accuracy or release readiness.
+Without the flag, behavior and report structure remain unchanged.
+
 ## Manifest
 
 All artifact paths are relative to `--workspace`; escapes and symlink escapes

@@ -1,0 +1,80 @@
+{
+  "schema_version": "px-evaluation-sources/1",
+  "documents": [
+    {
+      "id": "dev-invoice-104",
+      "split": "development",
+      "family": "invoice_table",
+      "image_format": "png",
+      "title": "BIRCH PAPER SUPPLIES",
+      "lines": [
+        "SYNTHETIC INVOICE - NOT PAYABLE",
+        "Invoice number: TB-DEV-104",
+        "Invoice date: 2026-10-12",
+        "Bill to: Ember Row Workshop",
+        "Currency: USD",
+        "Separate deliveries may repeat a SKU. Keep printed row order."
+      ],
+      "table": {
+        "headers": ["Line", "SKU", "Quantity", "Unit price", "Amount"],
+        "rows": [
+          ["1", "A100", "2", "12.50", "25.00"],
+          ["2", "B200", "4", "9.00", "36.00"],
+          ["3", "A100", "1", "12.20", "12.20"]
+        ]
+      },
+      "after_table": ["Subtotal: 73.20", "Tax: 0.00", "Total due: USD 73.20"]
+    },
+    {
+      "id": "dev-contract-201",
+      "split": "development",
+      "family": "contract_roles",
+      "image_format": "png",
+      "title": "SYNTHETIC SERVICES AGREEMENT",
+      "lines": [
+        "Fictional parties. This fixture creates no legal obligations.",
+        "Effective date: 2026-10-01",
+        "First party: North Lantern Labs, represented by Mara Quinn.",
+        "Second party: Stone Reach Studio, represented by Ivo Chen.",
+        "Mara Quinn signs for the first party as Operations Director.",
+        "Ivo Chen signs for the second party as Studio Manager.",
+        "Scope: prepare a fictional quarterly inventory report.",
+        "No governing law is specified in this agreement."
+      ]
+    },
+    {
+      "id": "holdout-request-305",
+      "split": "held_out",
+      "family": "request_form",
+      "image_format": "jpeg",
+      "title": "SYNTHETIC SERVICE REQUEST",
+      "lines": [
+        "Fictional sample. Do not submit or pay.",
+        "Request ID: SR-305-H",
+        "Applicant: Eleni Sato",
+        "Service vendor: Redwood Bench Services",
+        "Requested on: 23 September 2026",
+        "Approved amount: USD 240.00",
+        "Contact email: [left blank]",
+        "Requested service: repair two training benches."
+      ]
+    },
+    {
+      "id": "holdout-agreement-407",
+      "split": "held_out",
+      "family": "ambiguous_contract",
+      "image_format": "jpeg",
+      "title": "SYNTHETIC AGREEMENT - CONFLICTING COPIES",
+      "lines": [
+        "Fictional document. This fixture creates no legal obligations.",
+        "First party: Harbor Cedar Ltd.",
+        "Second party: Lake Frame LLC, represented by Jonas Reed.",
+        "Copy A: First-party representative: Leah Ortiz.",
+        "Copy B: First-party representative: Nina Rao.",
+        "Both copies are included without dates or precedence instructions.",
+        "The first-party representative cannot be resolved from this source.",
+        "Expiry date: not specified."
+      ]
+    }
+  ]
+}

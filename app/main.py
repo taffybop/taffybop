@@ -15,6 +15,8 @@ from app.config import (
     parser_public_resource_limits,
 )
 from app.errors import register_exception_handlers
+from app.llamaparse_api import router as llamaparse_router
+from app.product.api import configure_product_api
 from app.request_limits import ParserRequestLimitsMiddleware
 from app.ui import register_public_routes
 
@@ -70,6 +72,8 @@ def create_app() -> FastAPI:
     )
     register_exception_handlers(application)
     application.include_router(router)
+    application.include_router(llamaparse_router)
+    configure_product_api(application)
     register_public_routes(application)
     max_body_bytes, max_concurrent, upload_timeout = parser_public_resource_limits()
     application.add_middleware(
@@ -84,7 +88,7 @@ def create_app() -> FastAPI:
         application.add_middleware(
             CORSMiddleware,
             allow_origins=list(cors_origins),
-            allow_methods=["POST"],
+            allow_methods=["GET", "POST"],
             allow_headers=["Accept", "Content-Type"],
             allow_credentials=False,
             max_age=600,

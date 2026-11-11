@@ -3,6 +3,7 @@ from __future__ import annotations
 import io
 import os
 import shutil
+from dataclasses import replace
 from pathlib import Path
 
 import pytest
@@ -172,13 +173,13 @@ def _two_frame_tiff() -> bytes:
 
 
 def _parse(data: bytes, filename: str) -> dict:
-    from app.config import Settings
+    from app.config import get_settings
     from app.services.pipeline import parse_document
 
     return parse_document(
         data,
         filename,
-        Settings(document_timeout_seconds=180.0),
+        replace(get_settings(), document_timeout_seconds=180.0),
     ).model_dump(mode="json")
 
 
@@ -205,6 +206,15 @@ def test_real_text_form_and_table_image_preserves_available_content() -> None:
     assert "[ ] []" not in text
     assert text.count("RECOVERY_TOKEN_Z9Q7") == 1
     assert "RECOVERY_TOKEN_Z9Q7" in to_markdown(result)
+    tables = [item for item in page["items"] if item["type"] in {"table", "table_candidate"}]
+    assert len(tables) == 1
+    assert tables[0]["rows"] == [
+        ["Field", "Description", "Value"],
+        ["Route", "Route of Administration", "Intravenous"],
+        ["Comment", "Complete after data entry for Route item is done", "Accepted"],
+    ]
+    assert "raster_table_recovered_by_regional_ocr" in tables[0]["parse_concerns"]
+    assert result["processing"]["raster_table_retry"]["recovered"] == 1
     for table in (item for item in page["items"] if item["type"] == "table"):
         assert table["rows"]
         assert table["cells"]

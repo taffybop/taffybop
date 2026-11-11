@@ -216,6 +216,84 @@ def test_cli_report_is_deterministic_and_does_not_write_inputs(tmp_path, capsys)
     assert before == {p.name: p.read_bytes() for p in tmp_path.iterdir()}
 
 
+@pytest.mark.parametrize(
+    ("baseline_value", "candidate_value", "expected_exit", "harmed"),
+    [
+        ("32.00", None, 0, 0),
+        ("320.00", None, 1, 0),
+        ("320.00", "32.00", 0, 0),
+        ("32.00", "320.00", 1, 1),
+        ("320.00", "320.00", 1, 0),
+    ],
+)
+def test_optional_quality_exit_selects_candidate_and_never_hides_harm(
+    tmp_path, capsys, baseline_value, candidate_value, expected_exit, harmed
+):
+    path, payload = write_manifest(tmp_path)
+    (tmp_path / "response.json").write_text(json.dumps(response(item("key_value", baseline_value, key="total"))))
+    if candidate_value is not None:
+        (tmp_path / "candidate.json").write_text(json.dumps(response(item("key_value", candidate_value, key="total"))))
+        payload["cases"][0]["candidate"] = {"path": "candidate.json"}
+        path.write_text(json.dumps(payload))
+    before = {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+    args = ["--manifest", str(path), "--workspace", str(tmp_path)]
+
+    assert main(args) == 0
+    default_report = json.loads(capsys.readouterr().out)
+    assert "quality_gate" not in default_report
+    assert main([*args, "--fail-on-quality"]) == expected_exit
+    gated = json.loads(capsys.readouterr().out)
+    gate = gated.pop("quality_gate")
+    assert gated == default_report
+    assert gate["harmed_checks"] == harmed
+    assert gate["selected_roles"] == {"candidate" if candidate_value is not None else "baseline": 1}
+    assert gate["failed_cases"] == (["synthetic"] if expected_exit else [])
+    assert before == {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+
+
+def test_quality_exit_distinguishes_missing_truth_from_failed_claims(tmp_path, capsys):
+    path, payload = write_manifest(tmp_path)
+    payload["cases"][0].pop("expected_path")
+    path.write_text(json.dumps(payload))
+    args = ["--manifest", str(path), "--workspace", str(tmp_path)]
+
+    assert main(args) == 0
+    assert json.loads(capsys.readouterr().out)["cases"][0]["baseline"]["quality"]["status"] == "unevaluated"
+    assert main([*args, "--fail-on-quality"]) == 3
+    gate = json.loads(capsys.readouterr().out)["quality_gate"]
+    assert gate["status"] == "unevaluated"
+    assert gate["unevaluated_cases"] == ["synthetic"]
+    assert gate["failed_cases"] == []
+
+
+def test_quality_exit_only_accepts_checked_claims_despite_unobserved_routing(tmp_path, capsys):
+    path, _ = write_manifest(tmp_path)
+    raw = response(item("key_value", "32.00", key="total"))
+    del raw["deterministic_confidence"]
+    (tmp_path / "response.json").write_text(json.dumps(raw))
+    (tmp_path / "expected.json").write_text(expectations(field_check()).model_dump_json())
+
+    assert main(["--manifest", str(path), "--workspace", str(tmp_path), "--fail-on-quality"]) == 0
+    report = json.loads(capsys.readouterr().out)
+    assert report["cases"][0]["baseline"]["routing"]["status"] == "unobserved"
+    assert report["quality_gate"]["status"] == "checked_claims_pass"
+    assert report["quality_gate"]["coverage_counts"] == {"selected_claims": 1}
+
+
+def test_quality_exit_preserves_unevaluated_cases_when_another_case_fails(tmp_path, capsys):
+    path, payload = write_manifest(tmp_path)
+    (tmp_path / "response.json").write_text(json.dumps(response(item("key_value", "320.00", key="total"))))
+    payload["cases"].append({
+        **payload["cases"][0], "case_id": "unreviewed", "expected_path": None,
+    })
+    path.write_text(json.dumps(payload))
+
+    assert main(["--manifest", str(path), "--workspace", str(tmp_path), "--fail-on-quality"]) == 1
+    gate = json.loads(capsys.readouterr().out)["quality_gate"]
+    assert gate["failed_cases"] == ["synthetic"]
+    assert gate["unevaluated_cases"] == ["unreviewed"]
+
+
 @pytest.mark.parametrize("surface", ["source", "response", "expected"])
 def test_source_identity_drift_fails_closed(tmp_path, surface):
     path, payload = write_manifest(tmp_path)
@@ -251,10 +329,11 @@ def test_unknown_truth_classes_and_nonfinite_measurements_rejected():
         Measurements(latency_ms=float("nan"), method="invalid")
 
 
-def test_overflowed_json_number_is_a_structured_input_error(tmp_path, capsys):
+@pytest.mark.parametrize("gate_args", [[], ["--fail-on-quality"]])
+def test_overflowed_json_number_is_a_structured_input_error(tmp_path, capsys, gate_args):
     path, _ = write_manifest(tmp_path)
     (tmp_path / "response.json").write_text('{"processing":{"duration_ms":1e999}}')
-    assert main(["--manifest", str(path), "--workspace", str(tmp_path)]) == 2
+    assert main(["--manifest", str(path), "--workspace", str(tmp_path), *gate_args]) == 2
     assert "non-finite JSON number" in json.loads(capsys.readouterr().err)["error"]
 
 

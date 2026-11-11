@@ -1,20 +1,129 @@
 # TaffyBop
 
+The active [parse and extract implementation plan](tracker/parse-extract-v1/README.md)
+extends the prototype below in local phases. Its [status](tracker/parse-extract-v1/STATUS.md)
+and [new chat handoff](tracker/parse-extract-v1/HANDOFF.md) record the durable
+parsing work and the remaining live qualification gate.
+
+## Public workspace preview
+
+The separately built static UI preview requires no database or backend. It
+shows the current workspace layout with uploads, saved history, parsing,
+extraction, templates and downloads disabled. It does not call the product API
+or a provider. See [preview deployment](docs/deployment-static-preview.md) for
+the explicit build mode and publication checks. The full local implementation
+described below is preserved separately.
+
+## Saved document workspace
+
+The home page, `/studio` and `/documents` use the persistent local library.
+Save PDF/PNG/JPEG originals, reopen documents and stored jobs, inspect page
+output and download original source/response bytes. Live parsing is unavailable
+until provider account conditions and enforceable spending bounds are verified.
+Simulation results are labelled; extraction and templates remain unavailable.
+
+With the existing dependencies, a migrated local PostgreSQL database and a
+private artifact directory, set `TAFFYBOP_DATABASE_URL`,
+`TAFFYBOP_ARTIFACT_ROOT` (absolute path) and a stable `TAFFYBOP_LOCAL_OWNER`.
+Run `bash start-local-product.sh` and open `http://127.0.0.1:8042/documents`.
+The launcher selects a loopback development identity and needs no provider key.
+Read [local routes and validation](tracker/parse-extract-v1/ROUTES.md) for setup,
+the identity boundary and the exact evidence. This mode is not production login.
+
+## Historical parsing prototype — compatibility UI
+
+The separate `/legacy` screen retains the earlier flow: upload a PDF, PNG or JPEG,
+select **Cost Effective**, **Agentic** or **Agentic Plus**, then inspect and
+download the LlamaParse response. Documents are sent to LlamaCloud by the
+Python backend. The browser never receives the API key. This local prototype
+does not add extraction schemas, workflows, provider fallback or deployment.
+
+`start-local-parse.sh` remains the compatibility launcher. Product mode disables
+its independent provider submissions. The active workstream uses
+`start-local-product.sh`; no live execution is currently qualified.
+
+Fresh setup uses Python 3.11–3.14 (`python3 -m venv .venv`, then
+`.venv/bin/pip install -e '.[dev]'`) and Node.js 24
+(`cd frontend && npm ci`). The existing repository still includes its local
+OCR dependencies; this prototype does not run or prewarm those models.
+
+The app accepts at most 10 MiB and 10 pages per document; images are limited
+to 20 million pixels. Up to 128 job references are held in memory for one
+hour, not saved as a document library. Download results
+before refreshing or restarting. Stop waiting only stops browser polling;
+it does not cancel an already submitted provider job. A failed status check
+can resume the same job without submitting and charging again.
+
+Markdown and text views expose returned page content; absent output stays
+unavailable. Raw JSON copy/download preserves the provider response. Parsing
+success does not certify table, equation or other content accuracy.
+
+The historical prototype used 10,000 monthly Free-plan credits and base rates of
+3 / 10 / 45 credits per page for the three modes. Estimates in the app are
+not the remaining account balance. There is no documented per-request
+`free_only` flag: use a Free organization and stop on quota errors. The app
+does not upgrade plans or automatically resubmit jobs. See
+[LlamaCloud billing](https://developers.llamaindex.ai/llamaparse/general/billing/)
+and [LlamaParse pricing](https://developers.llamaindex.ai/llamaparse/general/pricing/).
+
+API: `GET /v1/llamaparse/config`, multipart
+`POST /v1/llamaparse/jobs` (`file`, `mode`), and
+`GET /v1/llamaparse/jobs/{job_id}`. The last endpoint returns the original
+provider JSON; status is under `job.status`. The adapter is isolated in
+`app/services/llamaparse_client.py` so another provider can be added later.
+
+Local validation on 2026-11-04: all three modes completed the fictional
+one-page invoice PDF; a Chrome upload completed its PNG counterpart. The
+browser-downloaded raw JSON matched the live backend response byte for byte.
+The four jobs reported 61 provider credits in total. This is an integration
+smoke check, not a representative parsing-accuracy benchmark. Contract tests
+use HTTP doubles to cover limits, provider errors and response fidelity.
+
 ## Document Studio
 
-`/studio` uploads PDFs and supported images to the Python parsing API and shows
+The previous local-OCR workspace remains in source as `BackendWorkspace`;
+it is no longer the primary UI. The following notes describe that workspace
+and its unchanged `/v1/parse` API, not the LlamaParse flow above.
+
+That workspace uploads PDFs and supported images to the Python parsing API and shows
 source pages beside a fixed result panel. **Raw API JSON** is the default view;
 copy preserves the response text and download preserves the response bytes.
 The separate **Structured preview** displays returned items, tables and image
 assets. **Metadata & warnings** exposes backend warnings. A successful HTTP
 status does not certify extraction accuracy.
 
+Supported embedded PDF bitmaps now include a downloadable image in the
+structured preview. These are native-size source pixels converted to RGB and
+losslessly re-encoded as PNG, with source, byte and pixel hashes. They are
+neither page crops nor the original compressed PDF streams. Unsupported masks,
+color spaces, encodings or resource limits leave the image metadata available
+with an export reason where association is known.
+
 The earlier browser-only Knowledge Studio remains at `/knowledge`, including
 existing IndexedDB saved packs. It accepts selectable-text PDF, TXT and Markdown
 and exports knowledge chunks; it does not perform OCR.
 
-For local development, start the parser at port 8042, then from `frontend` with
-Node.js 24:
+To run the complete app locally with the existing Python environment and
+frontend dependencies installed, use Node.js 24 and run:
+
+```bash
+bash start-local-studio.sh
+```
+
+This older launcher builds the current UI and serves the original API with
+local models and the parser's feature settings. Use `start-local-parse.sh`
+for the historical hosted-parser prototype. Stop it
+with Ctrl+C; rerun the command after changing code or UI assets.
+
+The local launcher enables the existing categorical confidence assessment and
+review eligibility checks, including their telemetry dependencies. Inspect
+`deterministic_confidence` in the original API JSON; these rule outcomes are not
+probabilities. No review adapter is configured, so an eligible result is not a
+queued review and no document is sent to another model or service. Explicit
+environment overrides are preserved; related feature dependencies must remain
+consistent.
+
+For frontend hot reload, start the parser at port 8042, then from `frontend`:
 
 ```bash
 npm ci
@@ -44,6 +153,21 @@ saved API responses with reviewed source truth and records routing signals,
 corrections, regressions, measured latency and cost separately. Missing evidence
 is unevaluated, not a passing result.
 
+Use `--fail-on-quality` with that evaluator to make failed reviewed claims or
+regressions exit with status 1; missing truth exits with status 3. This checks
+the candidate when supplied, otherwise the baseline, and does not turn partial
+coverage into a production-readiness claim. The source-authored
+[invoice controls](tests/fixtures/invoices/README.md) provide PDF and PNG cases
+with repeated SKUs, wrapped descriptions, linked numeric cells and totals.
+
+Collapsed, fully ruled raster tables can receive one bounded local Docling
+retry on a crop inside the source border. The recovered grid must agree with
+the visible ruling and preserve prior cell values at their source positions.
+Recovery provenance and unverified OCR status remain in the API response.
+This uses the converter's cooperative timeout for the additional conversion;
+it is not a hard deadline for the whole request. Incomplete, merged or
+borderless grids retain the original result.
+
 ## Document Parse API
 
 A local Python API that accepts PDF, PNG, JPEG/JPG, TIFF, and WebP documents,
@@ -58,7 +182,7 @@ service without network access afterward.
 
 ## API
 
-`POST /v1/parse` is the only document-processing endpoint.
+`POST /v1/parse` is the original local document-processing endpoint.
 
 It accepts:
 

@@ -99,6 +99,7 @@ ReasonCode = Literal[
     "page_failure_reported",
     "reading_order_contiguous",
     "source_supported_table",
+    "table_candidate_unresolved",
     "table_shape_contradictory",
     "table_structure_evidence_limited",
     "text_items_present",
@@ -482,7 +483,7 @@ def _table_dimension(
     items: list[tuple[ContentItem, int]],
     item_limit: bool,
 ) -> DeterministicConfidenceDimension:
-    tables = [item for item, _ in items if item.type == "table"]
+    tables = [item for item, _ in items if item.type in {"table", "table_candidate"}]
     if not tables:
         return _table_not_applicable()
     if item_limit:
@@ -503,6 +504,16 @@ def _table_dimension(
         )
     if _has_page_failure(result):
         return _dimension("table", "unsupported", "page_failure_reported")
+    candidates = [item for item in tables if item.type == "table_candidate"]
+    if candidates:
+        # A plausible rectangular grid is not proof that an unresolved candidate
+        # recovered the source table. Keep its public type and values unchanged.
+        candidate_reasons: list[ReasonCode] = ["table_candidate_unresolved"]
+        if concerns:
+            candidate_reasons.append("explicit_concern_reported")
+        if any(not _rectangular_table(item) for item in candidates):
+            candidate_reasons.append("table_shape_contradictory")
+        return _dimension("table", "unsupported", *candidate_reasons)
     if concerns:
         return _dimension(
             "table",

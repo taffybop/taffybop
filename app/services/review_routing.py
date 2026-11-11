@@ -20,7 +20,7 @@ from typing import Any, Annotated, Iterator, Literal, Mapping, Protocol
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
-from app.models import ContentItem, ParseResult
+from app.models import ContentItem, ParseResult, TableCandidateGate
 from app.services.deterministic_confidence import DeterministicConfidence
 from app.services.telemetry import current_telemetry_client
 from app.services.visual_contracts import VisualStructure
@@ -318,8 +318,16 @@ def _region(value: Any) -> ReviewRegion | None:
         value = dump(mode="json")
     if not isinstance(value, Mapping):
         return None
+    value = dict(value)
+    # Public boxes may carry the legacy aliases alongside canonical dimensions.
+    # Only equal aliases are redundant; contradictory geometry stays unrouteable.
+    for alias, canonical in (("w", "width"), ("h", "height")):
+        if alias in value:
+            if type(value[alias]) not in {int, float} or value[alias] != value.get(canonical):
+                return None
+            del value[alias]
     try:
-        return ReviewRegion.model_validate(dict(value), strict=True)
+        return ReviewRegion.model_validate(value, strict=True)
     except (TypeError, ValueError, OverflowError):
         return None
 
@@ -422,14 +430,28 @@ def _table_packet(
     dimension: Any,
     cost_units: int,
 ) -> ReviewPacket | None:
-    evidence = item.table_evidence
-    if evidence is None or dimension.decision not in {
+    if dimension.decision not in {
         "concern",
         "fallback",
         "withhold",
     }:
         return None
-    evidence_ids = sorted(record.id for record in evidence.evidence)
+    evidence = item.table_evidence
+    if item.type == "table_candidate" and evidence is None:
+        # Rejected candidates retain their validated gate and its source evidence,
+        # but deliberately have no authoritative table_evidence sidecar.
+        raw_gate = (item.model_extra or {}).get("table_candidate_gate")
+        if type(raw_gate) is not dict:
+            return None
+        try:
+            gate = TableCandidateGate.model_validate(raw_gate, strict=True)
+        except (TypeError, ValueError, OverflowError):
+            return None
+        evidence_ids = list(gate.evidence_ids)
+    elif evidence is not None:
+        evidence_ids = sorted(record.id for record in evidence.evidence)
+    else:
+        return None
     region = _region(item.bbox)
     if not evidence_ids or region is None:
         return None
@@ -495,7 +517,7 @@ def build_review_packets(
                     printed_page_label=page.page_label,
                     cost_units=budget.cost_per_packet,
                 )
-                if packet is None and item.type == "table":
+                if packet is None and item.type in {"table", "table_candidate"}:
                     packet = _table_packet(
                         item,
                         physical_page=page.page_index,

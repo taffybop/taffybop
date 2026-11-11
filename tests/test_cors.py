@@ -42,7 +42,15 @@ def test_allowed_browser_upload_and_error_keep_json_contract(
         })
         assert preflight.status_code == 200
         assert preflight.headers["access-control-allow-origin"] == origin
-        assert preflight.headers["access-control-allow-methods"] == "POST"
+        assert preflight.headers["access-control-allow-methods"] == "GET, POST"
+        poll_preflight = client.options("/v1/llamaparse/config", headers={
+            "Origin": origin,
+            "Access-Control-Request-Method": "GET",
+        })
+        assert poll_preflight.status_code == 200
+        assert client.get("/v1/llamaparse/config", headers={
+            "Origin": origin,
+        }).headers["access-control-allow-origin"] == origin
         assert "access-control-allow-credentials" not in preflight.headers
         response = client.post(
             "/v1/parse?output_format=json",

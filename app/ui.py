@@ -15,6 +15,8 @@ from fastapi.responses import Response
 _PUBLIC_FILES = {
     "/": ("index.html", "text/html"),
     "/studio": ("studio/index.html", "text/html"),
+    "/documents": ("documents/index.html", "text/html"),
+    "/legacy": ("legacy/index.html", "text/html"),
     "/knowledge": ("knowledge/index.html", "text/html"),
     "/privacy": ("privacy/index.html", "text/html"),
     "/parse": ("parse/index.html", "text/html"),

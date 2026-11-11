@@ -1,0 +1,22 @@
+{
+  "fixture_id": "supplier-repeat-sku-v1",
+  "supplier": "CEDAR DEMO SUPPLIES",
+  "customer": "NORTH LAB DEMO",
+  "invoice_number": "SYN-2026-001",
+  "invoice_date": "2026-01-15",
+  "currency": "USD",
+  "headers": ["Line", "SKU", "Description", "Qty", "Unit price USD", "Amount USD"],
+  "line_items": [
+    ["1", "BRK-101", "Stainless steel bracket\nMatte finish, 40 mm", "2", "12.50", "25.00"],
+    ["2", "CAB-220", "Shielded sensor cable\n2 m, straight connector", "3", "8.40", "25.20"],
+    ["3", "BRK-101", "Stainless steel bracket\nMatte finish, 40 mm", "5", "12.50", "62.50"],
+    ["4", "PAD-030", "Protective felt pad set", "4", "3.25", "13.00"]
+  ],
+  "summary_rows": [
+    ["Subtotal (USD)", "125.70"],
+    ["Tax 10% (USD)", "12.57"],
+    ["Total (USD)", "138.27"]
+  ],
+  "tax_rate": "0.10",
+  "footer": "Fictional fixture. Not payable. No customer data."
+}

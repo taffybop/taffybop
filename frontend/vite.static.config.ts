@@ -2,10 +2,11 @@ import { fileURLToPath } from "node:url";
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { staticApiEndpoint, staticParserDefines } from "./tools/static-api-config.mjs";
+import { staticBuildMetadata, staticParserDefines } from "./tools/static-api-config.mjs";
 
 const frontendRoot = fileURLToPath(new URL(".", import.meta.url));
-const publicApiUrl = staticApiEndpoint(process.env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL);
+const metadata = staticBuildMetadata(process.env);
+const preview = metadata.deploymentMode === "preview";
 
 export default defineConfig({
   root: resolve(frontendRoot, "static"),
@@ -15,14 +16,27 @@ export default defineConfig({
   // Only the validated endpoint below is public. Never expose a general
   // environment prefix or build-process environment to browser code.
   envPrefix: [],
-  define: staticParserDefines(process.env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL),
+  define: preview ? {} : staticParserDefines(process.env.TAFFYBOP_STATIC_PUBLIC_PARSE_API_URL),
   plugins: [react(), {
     name: "static-api-build-metadata",
+    transformIndexHtml: {
+      order: "pre",
+      handler(html) {
+        if (!preview) return html;
+        const title = "TaffyBop — Workspace preview";
+        const description = "Preview the TaffyBop document workspace. Uploads, saved history and parsing are disabled in this preview.";
+        return html.replace('src="/main.tsx"', 'src="/preview.tsx"')
+          .replace(/<title>[^<]*<\/title>/u, `<title>${title}</title>`)
+          .replace(/<meta name="description" content="[^"]*"\s*\/>/u, `<meta name="description" content="${description}" />`)
+          .replace(/<meta property="og:title" content="[^"]*"\s*\/>/u, `<meta property="og:title" content="${title}" />`)
+          .replace(/<meta property="og:description" content="[^"]*"\s*\/>/u, `<meta property="og:description" content="${description}" />`);
+      },
+    },
     generateBundle() {
       this.emitFile({
         type: "asset",
         fileName: "static-api-config.json",
-        source: JSON.stringify({ schemaVersion: 1, parseApiUrl: publicApiUrl }) + "\n",
+        source: JSON.stringify(metadata) + "\n",
       });
     },
   }],
@@ -37,8 +51,9 @@ export default defineConfig({
     host: "127.0.0.1",
     port: 3019,
     strictPort: true,
-    proxy: {
+    proxy: preview ? undefined : {
       "/v1": { target: "http://127.0.0.1:8042", timeout: 330_000, proxyTimeout: 330_000 },
+      "/v2": { target: "http://127.0.0.1:8042", timeout: 90_000, proxyTimeout: 90_000 },
       "/healthz": { target: "http://127.0.0.1:8042" },
     },
   },
